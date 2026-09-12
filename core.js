@@ -341,7 +341,7 @@
             var msg = (j && j.error && j.error.message) || (r.status + ' ' + r.statusText);
             if (r.status === 400 || r.status === 401 || r.status === 403) msg = 'キーが無効か権限がありません（' + msg + '）';
             if (r.status === 404) msg = 'モデル名が違うようです（' + msg + '）';
-            if (r.status === 429) msg = '呼び出し回数の上限に達しました';
+            if (r.status === 429) msg = '回数・割当の上限です（' + msg + '）';
             throw new Error(msg);
           }
           return j;
