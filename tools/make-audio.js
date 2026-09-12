@@ -9,7 +9,9 @@
      --force を付けると、すでに音声があるセットも作り直す。
 
    できること:
-     data/part3/audio/<id>.mp3 を作り、セットの JSON に audio を書き足す。
+     data/part3/audio/<id>.mp3       会話まるごと（設問ステップで流す）
+     data/part3/audio/<id>/NN.mp3    1行ずつ（対訳で1文だけ鳴らす用）
+     どちらも作り、セットの JSON に audio を書き足す。
      ffmpeg が無い環境では WAV のまま置く（容量が5倍以上になるので注意）。 */
 
 'use strict';
@@ -119,6 +121,40 @@ function toMp3(wavPath, mp3Path) {
     '-codec:a', 'libmp3lame', '-b:a', '48k', mp3Path], { stdio: ['ignore', 'ignore', 'pipe'] });
 }
 
+/* 生PCM を1本の音声ファイルとして書き出す。ffmpeg があれば MP3 にする。
+   戻り値は置いたファイル名（拡張子込み）。 */
+function writeAudio(dir, base, parts) {
+  fs.mkdirSync(dir, { recursive: true });
+  const { buf, sec } = wav(parts);
+  const wavPath = path.join(dir, `${base}.wav`);
+  fs.writeFileSync(wavPath, buf);
+  if (!hasFfmpeg()) return { name: `${base}.wav`, sec };
+  const mp3Path = path.join(dir, `${base}.mp3`);
+  toMp3(wavPath, mp3Path);
+  fs.unlinkSync(wavPath);
+  return { name: `${base}.mp3`, sec };
+}
+
+/* 対訳で1行だけ鳴らすための音声。会話本体と同じ声を使うので、
+   端末の読み上げに切り替わって声が変わることがなくなる。
+   会話本体は流れを保つため2人ずつのかたまりで作り、こちらは別に作る。 */
+async function lineClips(set, id, voices) {
+  const dir = path.join(AUDIO_DIR, id);
+  const out = [];
+  for (let i = 0; i < set.lines.length; i++) {
+    const l = set.lines[i];
+    const base = String(i).padStart(2, '0');
+    process.stdout.write(`  行 ${i + 1}/${set.lines.length} `);
+    const pcm = await tts('Say this line naturally, at a steady pace: ' + l.en, {
+      voiceConfig: { prebuiltVoiceConfig: { voiceName: voices[l.tag] || 'Kore' } }
+    });
+    const r = writeAudio(dir, base, [pcm]);
+    out.push(`audio/${id}/${r.name}`);
+    console.log('できました');
+  }
+  return out;
+}
+
 /* ---------------- 1セット分 ---------------- */
 
 async function build(file, force) {
@@ -138,6 +174,17 @@ async function build(file, force) {
         set.audio.bytes = fs.statSync(mp3).size;
         fs.writeFileSync(file, JSON.stringify(set, null, 2) + '\n');
         console.log(`${id}: WAV を MP3 にしました（${Math.round(set.audio.bytes / 1024)} KB）`);
+        if (!set.audio.lines || !set.audio.lines.length) {
+          set.audio.lines = await lineClips(set, id, VOICES);
+        }
+        fs.writeFileSync(file, JSON.stringify(set, null, 2) + '\n');
+        return true;
+      }
+      /* 会話本体はあるが行ごとのクリップが無い場合は、それだけ足す */
+      if (!set.audio.lines || !set.audio.lines.length) {
+        console.log(`${id}: 会話はあるので、行ごとの音声だけ作ります（${set.lines.length}行）`);
+        set.audio.lines = await lineClips(set, id, VOICES);
+        fs.writeFileSync(file, JSON.stringify(set, null, 2) + '\n');
         return true;
       }
       console.log(`${id}: すでに音声あり。とばします`);
@@ -146,8 +193,9 @@ async function build(file, force) {
   }
   if (!Array.isArray(set.lines) || !set.lines.length) { console.log(`${id}: lines が無いのでとばします`); return false; }
 
+  const v = VOICES;
   const chunks = chunkBySpeaker(set.lines);
-  console.log(`${id}: ${set.lines.length}行 / 話者${(set.speakers || []).length}人 → ${chunks.length}回の呼び出し`);
+  console.log(`${id}: ${set.lines.length}行 / 話者${(set.speakers || []).length}人 → 会話 ${chunks.length}回 + 行ごと ${set.lines.length}回の呼び出し`);
 
   const parts = [];
   for (let i = 0; i < chunks.length; i++) {
@@ -174,31 +222,24 @@ async function build(file, force) {
     console.log('できました');
   }
 
-  fs.mkdirSync(AUDIO_DIR, { recursive: true });
-  const { buf, sec } = wav(parts);
-  const wavPath = path.join(AUDIO_DIR, `${id}.wav`);
-  fs.writeFileSync(wavPath, buf);
+  if (!hasFfmpeg()) console.log('  ffmpeg が無いので WAV のまま置きます（容量が大きいので注意）');
+  const conv = writeAudio(AUDIO_DIR, id, parts);
+  const bytes = fs.statSync(path.join(AUDIO_DIR, conv.name)).size;
 
-  let out = `${id}.wav`;
-  if (hasFfmpeg()) {
-    const mp3Path = path.join(AUDIO_DIR, `${id}.mp3`);
-    toMp3(wavPath, mp3Path);
-    fs.unlinkSync(wavPath);
-    out = `${id}.mp3`;
-  } else {
-    console.log('  ffmpeg が無いので WAV のまま置きます（容量が大きいので注意）');
-  }
+  /* 対訳用に1行ずつも作る */
+  const clips = await lineClips(set, id, v);
 
-  const bytes = fs.statSync(path.join(AUDIO_DIR, out)).size;
   set.audio = {
-    file: `audio/${out}`,
-    sec: Math.round(sec * 10) / 10,
+    file: `audio/${conv.name}`,
+    sec: Math.round(conv.sec * 10) / 10,
     bytes,
+    lines: clips,
     model: MODEL,
     madeAt: new Date().toISOString()
   };
   fs.writeFileSync(file, JSON.stringify(set, null, 2) + '\n');
-  console.log(`  → data/part3/audio/${out}（${Math.round(bytes / 1024)} KB / ${set.audio.sec} 秒）`);
+  console.log(`  → data/part3/audio/${conv.name}（${Math.round(bytes / 1024)} KB / ${set.audio.sec} 秒）` +
+    ` ＋ 行ごと ${clips.length} 本`);
   return true;
 }
 

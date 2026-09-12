@@ -296,7 +296,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     return (typeof v === 'number' && v >= 0) ? v : ANS_DEFAULT;
   }
   function clearTimer() { clearInterval(timer); timer = null; }
-  function stopAll() { clearTimer(); phase = 'answer'; T.TTS.cancel(); stopAudio(); markLine(-1); }
+  function stopAll() { clearTimer(); phase = 'answer'; T.TTS.cancel(); stopAudio(); stopLineAudio(); markLine(-1); }
 
   /* 残り秒。画面は作り直さず、数字とバーだけ書き換える */
   function countdown(sec, onDone) {
@@ -725,14 +725,51 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       if (c) c.scrollIntoView({ block: 'center', behavior: 'smooth' });
     }
   }
-  function stopPlay() { chain = false; T.TTS.cancel(); markLine(-1); }
+  var lineAudio = null;
 
-  function speakLine(i, onend) {
+  /* 先に作っておいた1行ぶんの音声。会話本体と同じ声なので、
+     対訳に移った瞬間に声が変わることがなくなる。 */
+  function lineURL(i) {
+    var a = SET && SET.audio;
+    return a && a.lines && a.lines[i] ? 'data/part3/' + a.lines[i] : '';
+  }
+
+  function stopLineAudio() {
+    if (!lineAudio) return;
+    try { lineAudio.pause(); } catch (e) {}
+    lineAudio.onended = lineAudio.onerror = null;
+    lineAudio = null;
+  }
+
+  function stopPlay() { chain = false; T.TTS.cancel(); stopLineAudio(); markLine(-1); }
+
+  function speakByTTS(i, onend) {
     var p = T.TTS.speakerPlan(SET.speakers);
     var l = lines()[i];
     var sp = p[l.tag] || {};
-    markLine(i);
     T.TTS.speak(l.en, { rate: T.Settings.get('rate'), voiceURI: sp.voiceURI, pitch: sp.pitch, onend: onend });
+  }
+
+  function speakLine(i, onend) {
+    markLine(i);
+    var url = lineURL(i);
+    if (!url) { speakByTTS(i, onend); return; }
+
+    stopLineAudio();
+    var a = new Audio(url);
+    lineAudio = a;
+    a.playbackRate = T.Settings.get('rate') || 1;
+    var fell = false;
+    /* 音声が無い・鳴らせないときは端末の読み上げに戻す。学習を止めないため */
+    var fallback = function () {
+      if (fell) return;
+      fell = true;
+      stopLineAudio();
+      speakByTTS(i, onend);
+    };
+    a.onended = function () { stopLineAudio(); if (onend) onend(); };
+    a.onerror = fallback;
+    a.play().catch(fallback);
   }
   function playLine(i) {
     if (!lines()[i]) return;
