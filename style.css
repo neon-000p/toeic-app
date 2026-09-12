@@ -177,12 +177,16 @@ hr.sep{border:0;border-top:1px solid var(--line);margin:16px 0}
 .pop .ja{margin-top:3px;font-size:14px}
 .pop .note{margin-top:4px;font-size:12px;color:var(--muted)}
 .pop .row{display:flex;gap:8px;margin-top:10px}
+.pop .icon{
+  width:34px;height:34px;min-height:0;padding:0;border-radius:9px;
+  display:inline-flex;align-items:center;justify-content:center;font-size:15px;
+}
+.pop .icon.on{background:var(--mark-soft);border-color:var(--mark);color:var(--mark-ink)}
 
 .pop{max-width:min(360px,calc(100vw - 24px))}
-.pop-ai{margin-top:10px;padding-top:9px;border-top:1px solid var(--line)}
-.pop-ai-h{font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--muted);margin-bottom:4px}
-.pop-ai-ja{font-size:13.5px}
-.pop-ai-u{font-size:12.5px;color:var(--ink-2);margin-top:3px;line-height:1.6}
+.pop-ai-b{margin-top:3px}
+.pop-ai-ja{font-size:14px}
+.pop-ai-u{font-size:12.5px;color:var(--ink-2);margin-top:4px;line-height:1.65}
 .pop-hint{margin-top:9px;padding-top:8px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted)}
 
 .toast{
