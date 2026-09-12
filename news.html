@@ -85,8 +85,13 @@ details.src[open]>summary::before{content:"▾ ";}
 }
 
 /* 解説 */
-.score{display:flex;align-items:baseline;gap:8px;margin-bottom:2px}
-.score .n{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.02em}
+.score-bar{
+  display:flex;align-items:center;gap:8px;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:7px 12px;margin-top:14px;
+}
+.score-bar .lb{font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted)}
+.score-bar .n{font-size:15px;font-weight:800;letter-spacing:-.01em}
 .verdict{font-size:12px;font-weight:800;padding:2px 8px;border-radius:999px}
 .verdict.ok{background:var(--ok-soft);color:var(--ok)}
 .verdict.ng{background:var(--ng-soft);color:var(--ng)}
@@ -647,7 +652,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=8ac525b1"></script>
+<script src="core.js?v=3b70e94e"></script>
 <script>
 (function () {
   'use strict';
@@ -926,14 +931,13 @@ details.src[open]>summary::before{content:"▾ ";}
   function viewAns() {
     var qs = DATA.questions || [], n = correctCount();
     var unanswered = qs.filter(function (q) { return !state.answers[q.id]; }).length;
-    var head = '<div class="card">' +
-      '<div class="sec-label">結果</div>' +
-      '<div class="score"><span class="n">' + n + ' / ' + qs.length + '</span>' +
+    var head = '<div class="score-bar"><span class="lb">結果</span>' +
+      '<span class="n">' + n + ' / ' + qs.length + '</span>' +
       (unanswered === qs.length
         ? '<span class="verdict na">未解答</span>'
         : '<span class="verdict ' + (n === qs.length ? 'ok' : 'ng') + '">' +
           (n === qs.length ? '全問正解' : (qs.length - n) + '問 要復習') + '</span>') +
-      '</div></div>';
+      '</div>';
     return head + qs.map(function (q, i) {
       var mine = state.answers[q.id], ok = mine === q.answer;
       var mark = !mine ? '<span class="verdict na">未解答</span>'

@@ -35,8 +35,9 @@ function check(file) {
   /* ---- 器 ---- */
   if (set.schemaVersion !== 1) say('schemaVersion が 1 でない');
   if (set.type !== 'part3') say('type が part3 でない');
-  if (!/^\d{4}-\d{2}-\d{2}-\d{4}$/.test(set.id || '') && !/^p3-sample/.test(set.id || '')) {
-    say('id が YYYY-MM-DD-HHMM の形でない: ' + set.id);
+  /* 5本まとめて作るので、末尾に -1 〜 -9 の連番が付く */
+  if (!/^\d{4}-\d{2}-\d{2}-\d{4}(-[1-9])?$/.test(set.id || '') && !/^p3-sample/.test(set.id || '')) {
+    say('id が YYYY-MM-DD-HHMM[-N] の形でない: ' + set.id);
   }
   /* audio は Actions が付ける。実物が無いのに書いてあるときだけ止める
      （手で書いた、あるいはファイルを消した状態）。 */

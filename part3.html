@@ -69,8 +69,13 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 .choice.ng .k{background:var(--ng);border-color:var(--ng);color:#fff}
 
 /* 結果 */
-.score{display:flex;align-items:baseline;gap:8px}
-.score .n{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.02em}
+.score-bar{
+  display:flex;align-items:center;gap:8px;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:7px 12px;margin-top:14px;
+}
+.score-bar .lb{font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted)}
+.score-bar .n{font-size:15px;font-weight:800;letter-spacing:-.01em}
 .verdict{font-size:12px;font-weight:800;padding:2px 8px;border-radius:999px}
 .verdict.ok{background:var(--ok-soft);color:var(--ok)}
 .verdict.ng{background:var(--ng-soft);color:var(--ng)}
@@ -157,7 +162,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   </div>
 </nav>
 
-<script src="core.js?v=8ac525b1"></script>
+<script src="core.js?v=3b70e94e"></script>
 <script>
 (function () {
   'use strict';
@@ -486,11 +491,10 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   function viewAns() {
     var list = qs();
     var n = list.filter(function (q) { return ans[q.id] === q.answer; }).length;
-    var html = '<div class="card">' +
-      '<div class="sec-label">結果</div>' +
-      '<div class="score"><span class="n">' + n + ' / ' + list.length + '</span>' +
+    var html = '<div class="score-bar"><span class="lb">結果</span>' +
+      '<span class="n">' + n + ' / ' + list.length + '</span>' +
       '<span class="verdict ' + (n === list.length ? 'ok' : 'ng') + '">' +
-      (n === list.length ? '全問正解' : (list.length - n) + '問 要復習') + '</span></div></div>';
+      (n === list.length ? '全問正解' : (list.length - n) + '問 要復習') + '</span></div>';
 
     list.forEach(function (q, i) {
       var mine = ans[q.id], ok = mine === q.answer;

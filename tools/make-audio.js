@@ -30,7 +30,10 @@ const KEY = process.env.GEMINI_API_KEY || '';
 
 const VOICES = { M: 'Puck', W: 'Kore', M2: 'Charon', W2: 'Leda' };
 const RATE = 24000;          /* 返ってくる PCM は 24kHz モノラル 16bit 固定 */
-const GAP = 1500;            /* 呼び出しの間隔。無料枠は分あたりの回数が小さい */
+/* 呼び出しの間隔。無料枠は分あたりの回数が小さい。
+   週1回5セットぶんをまとめて作ると60回以上になるので、
+   429 で弾かれて待たされるより、最初から間隔を空けたほうが速く終わる。 */
+const GAP = Number(process.env.TTS_GAP_MS || 4000);
 const TRIES = 4;             /* 429 のときのやり直し回数 */
 
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
