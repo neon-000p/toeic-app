@@ -115,6 +115,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 .expl{font-size:14px;margin:8px 0 0;line-height:1.75}
 .tip{background:var(--surface-2);border-radius:8px;padding:10px 12px;font-size:13.5px;line-height:1.75}
 .tip b{display:block;font-size:10px;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}
+.flow{font-size:14.5px;font-weight:700;line-height:1.7;margin:0}
+.ptcard h3{margin:0 0 7px;font-size:15px;color:var(--accent-ink);line-height:1.5}
+.ptcard p{margin:0;font-size:14px;line-height:1.8}
 
 .app-foot{
   position:fixed;left:0;right:0;bottom:0;z-index:40;
@@ -154,7 +157,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   </div>
 </nav>
 
-<script src="core.js?v=b5507b47"></script>
+<script src="core.js?v=dfd207d4"></script>
 <script>
 (function () {
   'use strict';
@@ -458,6 +461,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
             '<span class="j">' + esc(l.ja || '') + '</span></span></div>';
         }).join('') +
         '<p class="expl">' + esc(q.explanation || '') + '</p>' +
+        (q.tip ? '<div class="tip" style="margin-top:10px"><b>ここでの聞き方</b>' + esc(q.tip) + '</div>' : '') +
         '</div>';
     });
     return html;
@@ -512,16 +516,21 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   }
 
   function viewPoint() {
-    var list = qs();
-    return '<div class="card"><div class="sec-label">Point</div>' +
-      '<p class="small muted" style="margin:0 0 12px">この3問から持ち帰れる聞き方です。' +
-      '会話の中身より、こちらが次のセットに効きます。</p>' +
-      list.map(function (q, i) {
-        if (!q.tip) return '';
-        return '<div class="tip" style="margin-top:' + (i ? '10px' : '0') + '"><b>Q' + (i + 1) +
-          (q.type && TYPE_LABEL[q.type] ? '　' + TYPE_LABEL[q.type] : '') + '</b>' + esc(q.tip) + '</div>';
-      }).join('') +
-      '</div>';
+    var p = SET.point;
+    if (!p || !(p.items || []).length) {
+      return '<div class="card"><p class="small muted" style="margin:0">' +
+        'このセットには総括がありません。設問ごとの聞き方は解説にあります。</p></div>';
+    }
+    return '<div class="card">' +
+      '<div class="sec-label">会話の型</div>' +
+      '<p class="flow">' + esc(p.flow || '') + '</p>' +
+      '<p class="small muted" style="margin:8px 0 0">この型を覚えておくと、次に同じ展開が来たときに' +
+      '設問の順番まで予測できます。</p></div>' +
+      p.items.map(function (it) {
+        return '<div class="card ptcard">' +
+          '<h3>' + esc(it.title) + '</h3>' +
+          '<p>' + esc(it.body) + '</p></div>';
+      }).join('');
   }
 
   /* scroll: 'top' / 'q' / 省略 */
@@ -795,8 +804,18 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
           '<input type="range" id="p3prep" min="5" max="30" step="1" value="' + prepSec() + '"></label>' +
         '<label class="field"><span>設問ごとの間 <b id="p3av">' + (ansSec() || 0) + '</b> 秒</span>' +
           '<input type="range" id="p3ans" min="0" max="20" step="1" value="' + ansSec() + '"></label>' +
-        '<p class="small muted" style="margin:-4px 0 0">本番は各設問の読み上げのあとに約8秒の間があります。' +
-        '慣れるまで長めにしても構いません。<b>0 にすると3問を続けて読み上げます</b>（速く回したいとき用）。</p>',
+        '<p class="small muted" style="margin:-4px 0 8px">本番は各設問の読み上げのあとに約8秒の間があります。' +
+        '慣れるまで長めにしても構いません。<b>0 にすると3問を続けて読み上げます</b>（速く回したいとき用）。</p>' +
+        '<hr class="sep">' +
+        '<h2>音声を Gemini で作る（試験中）</h2>' +
+        '<p class="small muted" style="margin:-6px 0 8px">端末内蔵の読み上げより自然かどうかを確かめる試聴です。' +
+        'いま開いているセットの会話を Gemini に読ませます。<b>話者は2人までが1回で作れ、3人の場合は1行ずつ作って繋ぎます</b>' +
+        '（その分、時間と回数がかかります）。アクセント（米・英・豪）の指定はできません。</p>' +
+        '<label class="field"><span>TTS のモデル</span>' +
+          '<input type="text" id="ttsModel" value="' + esc(T.AI.ttsCfg().model) + '"></label>' +
+        '<div class="tool-row"><button class="btn btn-sm btn-primary" id="ttsTry">この会話を試聴</button></div>' +
+        '<div class="small muted" id="ttsInfo" style="margin-top:8px"></div>' +
+        '<div id="ttsOut" style="margin-top:8px"></div>',
       onMount: function (bg) {
         var r1 = bg.querySelector('#p3prep');
         r1.oninput = function () {
@@ -807,6 +826,30 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
         r2.oninput = function () {
           T.Settings.set('p3ans', parseInt(r2.value, 10));
           bg.querySelector('#p3av').textContent = r2.value;
+        };
+
+        var tm = bg.querySelector('#ttsModel');
+        tm.onchange = function () { T.AI.setCfg({ ttsModel: tm.value.trim() }); };
+        bg.querySelector('#ttsTry').onclick = function () {
+          var info = bg.querySelector('#ttsInfo'), out = bg.querySelector('#ttsOut');
+          if (!T.AI.enabled()) { info.textContent = '先に Gemini の API キーを設定してください。'; return; }
+          T.AI.setCfg({ ttsModel: tm.value.trim() });
+          out.innerHTML = '';
+          var t0 = Date.now();
+          info.textContent = '作成中…';
+          T.AI.conversationAudio(lines(), SET.speakers, function (done, total) {
+            info.textContent = '作成中… ' + done + ' / ' + total;
+          }).then(function (blob) {
+            var sec = ((Date.now() - t0) / 1000).toFixed(1);
+            info.innerHTML = '完了。<b>' + Math.round(blob.size / 1024) + ' KB</b>（WAV）／ 作成 ' + sec + ' 秒。' +
+              '<br>MP3 に変換すれば 1/5 ほどになります。';
+            var a = document.createElement('audio');
+            a.controls = true; a.style.width = '100%';
+            a.src = URL.createObjectURL(blob);
+            out.appendChild(a);
+          }).catch(function (e) {
+            info.textContent = '失敗: ' + ((e && e.message) || e);
+          });
         };
       }
     });

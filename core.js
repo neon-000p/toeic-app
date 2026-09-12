@@ -429,6 +429,98 @@
         });
     }
 
+    /* ---- 音声合成（Gemini TTS） ----
+       返るのは 24kHz モノラル 16bit の生PCM。WAV ヘッダーを付けて鳴らす。
+       複数話者は1回の呼び出しで最大2人までなので、3人以上は1行ずつ作って繋ぐ。
+       アクセント（米・英・豪）は指定できない。 */
+
+    var TTS_MODEL = 'gemini-3.1-flash-tts-preview';
+    var TTS_VOICES = { M: 'Puck', W: 'Kore', M2: 'Charon', W2: 'Leda' };
+    var PCM_RATE = 24000;
+
+    function ttsCfg() {
+      var c = read('gemini', {}) || {};
+      return {
+        model: c.ttsModel || TTS_MODEL,
+        voices: c.ttsVoices || TTS_VOICES
+      };
+    }
+
+    function b64ToBytes(b64) {
+      var s = atob(b64), n = s.length, out = new Uint8Array(n);
+      for (var i = 0; i < n; i++) out[i] = s.charCodeAt(i);
+      return out;
+    }
+
+    /* 生PCM の断片をつないで WAV にする */
+    function wavBlob(parts) {
+      var total = parts.reduce(function (n, p) { return n + p.length; }, 0);
+      var buf = new ArrayBuffer(44 + total);
+      var dv = new DataView(buf);
+      function str(o, s) { for (var i = 0; i < s.length; i++) dv.setUint8(o + i, s.charCodeAt(i)); }
+      var ch = 1, bits = 16;
+      str(0, 'RIFF'); dv.setUint32(4, 36 + total, true); str(8, 'WAVE');
+      str(12, 'fmt '); dv.setUint32(16, 16, true); dv.setUint16(20, 1, true);
+      dv.setUint16(22, ch, true); dv.setUint32(24, PCM_RATE, true);
+      dv.setUint32(28, PCM_RATE * ch * bits / 8, true);
+      dv.setUint16(32, ch * bits / 8, true); dv.setUint16(34, bits, true);
+      str(36, 'data'); dv.setUint32(40, total, true);
+      var u8 = new Uint8Array(buf), off = 44;
+      parts.forEach(function (p) { u8.set(p, off); off += p.length; });
+      return new Blob([buf], { type: 'audio/wav' });
+    }
+
+    function ttsCall(text, speechConfig) {
+      return call('/models/' + encodeURIComponent(ttsCfg().model) + ':generateContent', {
+        contents: [{ parts: [{ text: text }] }],
+        generationConfig: { responseModalities: ['AUDIO'], speechConfig: speechConfig }
+      }).then(function (j) {
+        var c = j && j.candidates && j.candidates[0];
+        var parts = (c && c.content && c.content.parts) || [];
+        var d = null;
+        parts.forEach(function (p) { if (!d && p && p.inlineData && p.inlineData.data) d = p.inlineData.data; });
+        if (!d) throw new Error('音声が返りませんでした' + (c && c.finishReason ? '（' + c.finishReason + '）' : ''));
+        return b64ToBytes(d);
+      });
+    }
+
+    /* lines: [{tag, en}] / speakers: [{tag}] → WAV の Blob
+       onProgress(done, total) で進み具合を知らせる */
+    function conversationAudio(lines, speakers, onProgress) {
+      var v = ttsCfg().voices;
+      var tags = (speakers || []).map(function (s) { return s.tag; });
+      var report = onProgress || function () {};
+
+      if (tags.length && tags.length <= 2) {
+        var text = 'Read the following conversation naturally, at a steady pace suitable for an English listening test. ' +
+          'Do not add any words of your own.\n\n' +
+          lines.map(function (l) { return l.tag + ': ' + l.en; }).join('\n');
+        var cfg = {
+          multiSpeakerVoiceConfig: {
+            speakerVoiceConfigs: tags.map(function (t) {
+              return { speaker: t, voiceConfig: { prebuiltVoiceConfig: { voiceName: v[t] || 'Kore' } } };
+            })
+          }
+        };
+        report(0, 1);
+        return ttsCall(text, cfg).then(function (b) { report(1, 1); return wavBlob([b]); });
+      }
+
+      /* 3人以上。1行ずつ作って繋ぐ */
+      var out = [];
+      return lines.reduce(function (chain, l, i) {
+        return chain.then(function () {
+          report(i, lines.length);
+          return ttsCall('Say this line naturally, as part of a conversation: ' + l.en, {
+            voiceConfig: { prebuiltVoiceConfig: { voiceName: v[l.tag] || 'Kore' } }
+          }).then(function (b) { out.push(b); });
+        });
+      }, Promise.resolve()).then(function () {
+        report(lines.length, lines.length);
+        return wavBlob(out);
+      });
+    }
+
     /* 背景解説（日本語）を英語に書き直す。段落ごとの配列で返す。
        一度訳したら端末に残すので、同じ教材で2度目は通信しない。 */
     function toEnglish(texts, scope) {
@@ -455,7 +547,8 @@
         });
     }
 
-    return { cfg: cfg, setCfg: setCfg, enabled: enabled, models: models, lookup: lookup, toEnglish: toEnglish };
+    return { cfg: cfg, setCfg: setCfg, enabled: enabled, models: models, lookup: lookup,
+             toEnglish: toEnglish, ttsCfg: ttsCfg, wavBlob: wavBlob, conversationAudio: conversationAudio };
 
   })();
 
