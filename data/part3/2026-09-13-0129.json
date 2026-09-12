@@ -6,8 +6,16 @@
   "time": "01:29",
   "scene": "顧客対応｜納品日の前倒し依頼",
   "speakers": [
-    { "tag": "M", "role": "男性", "accent": "en-US" },
-    { "tag": "W", "role": "女性", "accent": "en-GB" }
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-GB"
+    }
   ],
   "lines": [
     {
@@ -67,13 +75,32 @@
       "type": "gist",
       "prompt": "Why is the man calling?",
       "choices": [
-        { "key": "A", "text": "To place a new order", "ja": "新規の注文をするため" },
-        { "key": "B", "text": "To request an earlier delivery", "ja": "納品を早めてもらうため" },
-        { "key": "C", "text": "To report a damaged shipment", "ja": "破損した荷物を報告するため" },
-        { "key": "D", "text": "To confirm an invoice amount", "ja": "請求額を確認するため" }
+        {
+          "key": "A",
+          "text": "To place a new order",
+          "ja": "新規の注文をするため"
+        },
+        {
+          "key": "B",
+          "text": "To request an earlier delivery",
+          "ja": "納品を早めてもらうため"
+        },
+        {
+          "key": "C",
+          "text": "To report a damaged shipment",
+          "ja": "破損した荷物を報告するため"
+        },
+        {
+          "key": "D",
+          "text": "To confirm an invoice amount",
+          "ja": "請求額を確認するため"
+        }
       ],
       "answer": "B",
-      "evidence": [0, 2],
+      "evidence": [
+        0,
+        2
+      ],
       "explanation": "男性は冒頭で「デスク40台の注文の件で」と用件を告げ、続けて we need them sooner と希望を出している。正解は sooner を earlier delivery に言い換えたもの。(D) の請求額は後半の Would splitting it add anything to the invoice? で確かに触れられるが、これは話の途中で出た確認事項で、電話をかけた目的ではない。",
       "tip": "電話の冒頭は「名乗り → 用件」。ただし本当の要望は次の発言に来ることが多い。sooner のような比較級が要望の合図になる。"
     },
@@ -82,13 +109,31 @@
       "type": "detail",
       "prompt": "According to the woman, what is delaying the full order?",
       "choices": [
-        { "key": "A", "text": "An increase in the order size", "ja": "注文数の増加" },
-        { "key": "B", "text": "A late shipment of parts", "ja": "部品の入荷の遅れ" },
-        { "key": "C", "text": "An extra delivery charge", "ja": "追加の配送料" },
-        { "key": "D", "text": "A change to the floor plan", "ja": "フロアの図面の変更" }
+        {
+          "key": "A",
+          "text": "An increase in the order size",
+          "ja": "注文数の増加"
+        },
+        {
+          "key": "B",
+          "text": "A late shipment of parts",
+          "ja": "部品の入荷の遅れ"
+        },
+        {
+          "key": "C",
+          "text": "An extra delivery charge",
+          "ja": "追加の配送料"
+        },
+        {
+          "key": "D",
+          "text": "A change to the floor plan",
+          "ja": "フロアの図面の変更"
+        }
       ],
       "answer": "B",
-      "evidence": [3],
+      "evidence": [
+        3
+      ],
       "explanation": "女性は The frames don't reach us until the eleventh と述べ、枠が11日まで届かないことを理由に挙げている。frames が parts に言い換えられている点に注意。(C) の配送料は次の発言に出てくるが、それは分割して送る場合の費用の話であって、遅れの原因ではない。",
       "tip": "原因を問う設問の根拠は「できない理由」を述べる行にある。don't ... until のような否定＋期限の形が目印。"
     },
@@ -97,37 +142,151 @@
       "type": "next",
       "prompt": "What will the man most likely do next?",
       "choices": [
-        { "key": "A", "text": "Send a written request", "ja": "依頼を書面で送る" },
-        { "key": "B", "text": "Cancel half of the order", "ja": "注文の半分を取り消す" },
-        { "key": "C", "text": "Pay a second delivery charge", "ja": "2回目の配送料を払う" },
-        { "key": "D", "text": "Visit the woman's warehouse", "ja": "相手の倉庫を訪ねる" }
+        {
+          "key": "A",
+          "text": "Send a written request",
+          "ja": "依頼を書面で送る"
+        },
+        {
+          "key": "B",
+          "text": "Cancel half of the order",
+          "ja": "注文の半分を取り消す"
+        },
+        {
+          "key": "C",
+          "text": "Pay a second delivery charge",
+          "ja": "2回目の配送料を払う"
+        },
+        {
+          "key": "D",
+          "text": "Visit the woman's warehouse",
+          "ja": "相手の倉庫を訪ねる"
+        }
       ],
       "answer": "A",
-      "evidence": [8, 9],
+      "evidence": [
+        8,
+        9
+      ],
       "explanation": "男性が Should I send the request in writing? と申し出て、女性が Please do. Email me by tomorrow morning と答えている。したがって次の行動は書面（メール）での依頼。(C) は配送料の話が出た直後に I'll waive it と免除されているので支払う必要がない。料金という語だけを拾うと引っかかる。",
       "tip": "次の行動は Should I 〜? → Please do. の受け答えで確定する。直前に出た料金や数字が打ち消されていないかを必ず確かめる。"
     }
   ],
   "glossary": {
-    "scheduled": { "lemma": "schedule", "pos": "v", "ja": "予定されている", "note": "be scheduled to do の形で「〜する予定」" },
-    "ship": { "lemma": "ship", "pos": "v", "ja": "出荷する", "note": "名詞の「船」ではなく動詞で使われる" },
-    "floor": { "lemma": "floor", "pos": "n", "ja": "フロア、階", "note": "ここでは新しく開く売り場・執務フロア" },
-    "sooner": { "lemma": "soon", "pos": "adv", "ja": "もっと早く", "note": "比較級。納期の前倒し依頼の合図" },
-    "moving": { "lemma": "move up", "pos": "v", "ja": "（日程を）前倒しする", "note": "move up ... の up を聞き取る" },
-    "frames": { "lemma": "frame", "pos": "n", "ja": "枠、フレーム", "note": "机の骨組み。設問では parts に言い換えられる" },
-    "reach": { "lemma": "reach", "pos": "v", "ja": "届く", "note": "reach us で「こちらに届く」" },
-    "part": { "lemma": "part", "pos": "n", "ja": "一部", "note": "part of it で「その一部」" },
-    "half": { "lemma": "half", "pos": "n", "ja": "半分", "note": "" },
-    "stock": { "lemma": "stock", "pos": "n", "ja": "在庫", "note": "from stock で「在庫から」" },
-    "rest": { "lemma": "rest", "pos": "n", "ja": "残り", "note": "the rest で「残りの分」" },
-    "splitting": { "lemma": "split", "pos": "v", "ja": "分ける", "note": "配送を2回に分けること" },
-    "invoice": { "lemma": "invoice", "pos": "n", "ja": "請求書、請求額", "note": "" },
-    "delivery charge": { "lemma": "delivery charge", "pos": "n", "ja": "配送料", "note": "" },
-    "waive": { "lemma": "waive", "pos": "v", "ja": "（料金を）免除する", "note": "請求しないという意味。誤答の作り所" },
-    "delay": { "lemma": "delay", "pos": "n", "ja": "遅れ", "note": "" },
-    "appreciate": { "lemma": "appreciate", "pos": "v", "ja": "ありがたく思う", "note": "I appreciate that. で感謝を表す定型" },
-    "in writing": { "lemma": "in writing", "pos": "adv", "ja": "書面で", "note": "メールも含む" },
-    "lock in": { "lemma": "lock in", "pos": "v", "ja": "確定する", "note": "日程や価格を固める" }
+    "scheduled": {
+      "lemma": "schedule",
+      "pos": "v",
+      "ja": "予定されている",
+      "note": "be scheduled to do の形で「〜する予定」"
+    },
+    "ship": {
+      "lemma": "ship",
+      "pos": "v",
+      "ja": "出荷する",
+      "note": "名詞の「船」ではなく動詞で使われる"
+    },
+    "floor": {
+      "lemma": "floor",
+      "pos": "n",
+      "ja": "フロア、階",
+      "note": "ここでは新しく開く売り場・執務フロア"
+    },
+    "sooner": {
+      "lemma": "soon",
+      "pos": "adv",
+      "ja": "もっと早く",
+      "note": "比較級。納期の前倒し依頼の合図"
+    },
+    "moving": {
+      "lemma": "move up",
+      "pos": "v",
+      "ja": "（日程を）前倒しする",
+      "note": "move up ... の up を聞き取る"
+    },
+    "frames": {
+      "lemma": "frame",
+      "pos": "n",
+      "ja": "枠、フレーム",
+      "note": "机の骨組み。設問では parts に言い換えられる"
+    },
+    "reach": {
+      "lemma": "reach",
+      "pos": "v",
+      "ja": "届く",
+      "note": "reach us で「こちらに届く」"
+    },
+    "part": {
+      "lemma": "part",
+      "pos": "n",
+      "ja": "一部",
+      "note": "part of it で「その一部」"
+    },
+    "half": {
+      "lemma": "half",
+      "pos": "n",
+      "ja": "半分",
+      "note": ""
+    },
+    "stock": {
+      "lemma": "stock",
+      "pos": "n",
+      "ja": "在庫",
+      "note": "from stock で「在庫から」"
+    },
+    "rest": {
+      "lemma": "rest",
+      "pos": "n",
+      "ja": "残り",
+      "note": "the rest で「残りの分」"
+    },
+    "splitting": {
+      "lemma": "split",
+      "pos": "v",
+      "ja": "分ける",
+      "note": "配送を2回に分けること"
+    },
+    "invoice": {
+      "lemma": "invoice",
+      "pos": "n",
+      "ja": "請求書、請求額",
+      "note": ""
+    },
+    "delivery charge": {
+      "lemma": "delivery charge",
+      "pos": "n",
+      "ja": "配送料",
+      "note": ""
+    },
+    "waive": {
+      "lemma": "waive",
+      "pos": "v",
+      "ja": "（料金を）免除する",
+      "note": "請求しないという意味。誤答の作り所"
+    },
+    "delay": {
+      "lemma": "delay",
+      "pos": "n",
+      "ja": "遅れ",
+      "note": ""
+    },
+    "appreciate": {
+      "lemma": "appreciate",
+      "pos": "v",
+      "ja": "ありがたく思う",
+      "note": "I appreciate that. で感謝を表す定型"
+    },
+    "in writing": {
+      "lemma": "in writing",
+      "pos": "adv",
+      "ja": "書面で",
+      "note": "メールも含む"
+    },
+    "lock in": {
+      "lemma": "lock in",
+      "pos": "v",
+      "ja": "確定する",
+      "note": "日程や価格を固める"
+    }
   },
   "point": {
     "flow": "依頼 → 制約の提示 → 妥協案 → 費用の確認 → 次の行動",
@@ -145,5 +304,12 @@
         "body": "誰が何をいつするかは終盤の受け答えで確定します。選択肢では send the request in writing → send a written request のように必ず言い換えられるので、動詞そのものを探すのではなく「誰が何をすると言ったか」で捉えます。"
       }
     ]
+  },
+  "audio": {
+    "file": "audio/2026-09-13-0129.mp3",
+    "sec": 48.9,
+    "bytes": 293853,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-12T16:36:09.645Z"
   }
 }
