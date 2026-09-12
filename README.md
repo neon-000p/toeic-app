@@ -1,4 +1,4 @@
-# TOEIC 学習アプリ
+# TOEIC Daily
 
 時事英語と実践対策（Part 3〜7）を1つにまとめる自作アプリ。GitHub Pages に置いて Android Chrome から使う。
 ビルド不要・npm 不要。静的ファイルをそのまま置けば動く。
