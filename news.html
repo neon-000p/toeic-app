@@ -735,13 +735,16 @@ details.src[open]>summary::before{content:"▾ ";}
     bgEn = null; bgBusy = false;
     progKey = 'news:' + (d.id || d.date || 'unknown');
     var p = T.Log.progress(progKey);
+    /* 解き終わった教材をもう一度開いたときは、前回の選択を残さない。
+       done は残すので、ホームの「済」は消えない。 */
+    var fin = !!(p && p.done);
     state = {
-      answers: (p && p.answers) || {},
-      graded: !!(p && p.graded),
-      maxStep: (p && p.maxStep) || 0,
-      done: !!(p && p.done)
+      answers: fin ? {} : ((p && p.answers) || {}),
+      graded: fin ? false : !!(p && p.graded),
+      maxStep: fin ? 0 : ((p && p.maxStep) || 0),
+      done: fin
     };
-    step = Math.min((p && p.step) || 0, STEPS.length - 1);
+    step = fin ? 0 : Math.min((p && p.step) || 0, STEPS.length - 1);
     renderHead();
     render();
   }

@@ -49,7 +49,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
         <h1 id="ttl">実践対策</h1>
         <div class="sub" id="sub"></div>
       </div>
-      <a class="icon-btn" href="index.html" title="ホーム">⌂</a>
+      <a class="icon-btn" href="index.html?tab=drill" title="ホーム">⌂</a>
       <a class="icon-btn" href="vocab.html" title="語彙帳">▤</a>
       <button class="icon-btn" id="btnCfg" title="設定">⚙</button>
     </div>
@@ -94,7 +94,8 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
   function statusOf(id) {
     var q = T.Log.progress(P.key + id);
     if (!q) return '';
-    if (q.maxStep >= 4) return '済';
+    /* 解き直しを始めると maxStep は 0 に戻るので、done も見る */
+    if (q.done || q.maxStep >= 4) return '済';
     if (q.scored || (q.answers && Object.keys(q.answers).length) || q.maxStep > 0) return '途中';
     return '';
   }

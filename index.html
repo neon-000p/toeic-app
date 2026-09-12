@@ -101,7 +101,9 @@ a.row .w{color:var(--accent)}
   var T = window.TOEIC, esc = T.esc;
   var main = document.getElementById('main');
   var items = [];
-  var tab = 'news';
+  /* 実践の教材から戻ったときは実践タブで開く。
+     毎回「時事」に戻ると、続きを選び直すのに1手増えるため。 */
+  var tab = (new URLSearchParams(location.search).get('tab') === 'drill') ? 'drill' : 'news';
 
   document.getElementById('btnCfg').addEventListener('click', function () { T.openSettings(); });
 
@@ -183,7 +185,8 @@ a.row .w{color:var(--accent)}
   function drillStatus(part, id) {
     var q = T.Log.progress('part' + part + ':' + id);
     if (!q) return '';
-    if (q.maxStep >= 4) return '済';
+    /* 解き直しを始めると maxStep は 0 に戻るので、done も見る */
+    if (q.done || q.maxStep >= 4) return '済';
     if (q.scored || (q.answers && Object.keys(q.answers).length) || q.maxStep > 0) return '途中';
     return '';
   }
@@ -267,6 +270,11 @@ a.row .w{color:var(--accent)}
     if (!e.target.closest('#newsAll')) return;
     newsAll = !newsAll;
     render();
+  });
+
+  /* URL で指定されたタブに見た目を合わせる */
+  document.querySelectorAll('.tabs button').forEach(function (b) {
+    b.classList.toggle('on', b.dataset.tab === tab);
   });
 
   document.querySelector('.tabs').addEventListener('click', function (e) {
