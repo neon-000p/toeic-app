@@ -88,3 +88,29 @@ Notion 側の既存ページは残しておいてよい。過去の教材アー�
 なお、**これでルーティンの本数は減らない**。もともと1本のルーティンが Notion と
 GitHub の両方に書いていて、その片方をやめるだけだから。本数の枠を空けたい場合は、
 別のルーティンを止める必要がある。
+
+## Part 3 の音声（GitHub Actions）
+
+会話の音声は、あらかじめ作ってリポジトリに置く。再生のたびに作ると待たされるため。
+
+**仕組み**
+
+`data/part3/*.json` が main に入ると `.github/workflows/part3-audio.yml` が動き、`tools/make-audio.js` が Gemini TTS で音声を作る。できた MP3 は `data/part3/audio/<id>.mp3` に置かれ、セットの JSON に `audio` が足されて `[audio]` 付きのコミットで main に入る。ルーティン側は音声のことを何もしなくてよい。
+
+**最初に1回だけ必要な準備**
+
+1. GitHub の対象リポジトリで Settings → Secrets and variables → Actions → New repository secret
+2. Name に `GEMINI_API_KEY`、Secret に Google AI Studio のキーを貼って保存
+
+Secret は公開リポジトリでも中身は見えない。コードにも履歴にも残らない。
+
+**手で動かす**
+
+Actions タブ →「Part 3 の音声を作る」→ Run workflow。`force` を on にすると、すでに音声があるセットも作り直す。
+
+**注意**
+
+- 無料枠の TTS は分あたりの回数が小さい。`tools/make-audio.js` は呼び出しの間を 1.5 秒空け、429 なら API の指示秒数だけ待って最大3回やり直す。
+- 1回の呼び出しで指定できる声は2人まで。3人の会話は「同時に出てくる話者が2人まで」のかたまりに切って作り、つなぐ。10行の3人会話で5回ほど。
+- アクセント（米・英・豪）は指定できない。`speakers[].accent` は端末読み上げに落ちたときだけ効く。
+- 音声がまだ無いセットは端末の読み上げで再生される。学習は止まらない。

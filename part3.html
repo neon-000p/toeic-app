@@ -185,6 +185,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   var lineIdx = -1, plan = {};
   var progKey = '';
 
+  var audioEl = null;   /* 用意された会話音声。鳴らしている間だけ入る */
   var PREP_DEFAULT = 13;   // 設問の先読み
   var ANS_DEFAULT = 8;     // 本番は設問の読み上げごとに約8秒の間がある
   var TYPE_LABEL = { gist: '概要', detail: '詳細', intent: '意図', next: '次の行動', infer: '推測', graphic: '図表' };
@@ -295,7 +296,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     return (typeof v === 'number' && v >= 0) ? v : ANS_DEFAULT;
   }
   function clearTimer() { clearInterval(timer); timer = null; }
-  function stopAll() { clearTimer(); phase = 'answer'; T.TTS.cancel(); markLine(-1); }
+  function stopAll() { clearTimer(); phase = 'answer'; T.TTS.cancel(); stopAudio(); markLine(-1); }
 
   /* 残り秒。画面は作り直さず、数字とバーだけ書き換える */
   function countdown(sec, onDone) {
@@ -318,11 +319,56 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     countdown(prepSec(), playConv);
   }
 
+  /* あらかじめ作ってリポジトリに置いた会話音声。無ければ端末の読み上げに落ちる */
+  function audioURL() {
+    var a = SET && SET.audio;
+    return a && a.file ? 'data/part3/' + a.file : '';
+  }
+
+  function stopAudio() {
+    if (!audioEl) return;
+    try { audioEl.pause(); } catch (e) {}
+    audioEl.onended = audioEl.onerror = audioEl.ontimeupdate = null;
+    audioEl = null;
+  }
+
+  function paintAudio() {
+    if (!audioEl) return;
+    var total = audioEl.duration || (SET.audio && SET.audio.sec) || 0;
+    var rest = Math.max(0, Math.ceil(total - audioEl.currentTime));
+    var bar = $('abar'), n = $('anum');
+    if (bar && total) bar.style.width = ((audioEl.currentTime / total) * 100) + '%';
+    if (n) n.textContent = rest + ' 秒';
+  }
+
+  /* 音声ファイルで流す。落ちていたら端末の読み上げに戻す（学習を止めないため） */
+  function playFile() {
+    T.TTS.cancel();
+    stopAudio();
+    var a = new Audio(audioURL());
+    audioEl = a;
+    a.playbackRate = T.Settings.get('rate') || 1;
+    a.onended = function () { stopAudio(); if (phase === 'play') readQuestions(); };
+    a.onerror = function () { stopAudio(); if (phase === 'play') playByTTS(); };
+    a.ontimeupdate = paintAudio;
+    a.play().catch(function () {
+      /* 端末が自動再生を止めた場合。押してもらう */
+      var h = stage.querySelector('.status .hint');
+      if (h) h.innerHTML = '<button class="btn btn-sm btn-primary" id="aGo">▶ 会話を再生</button>';
+      var b = $('aGo');
+      if (b) b.onclick = function () { if (audioEl) audioEl.play(); b.remove(); };
+    });
+  }
+
   function playConv() {
     clearTimer();
     phase = 'play'; lineIdx = -1;
     render('top');
+    if (audioURL()) { playFile(); return; }
+    playByTTS();
+  }
 
+  function playByTTS() {
     /* 声が揃う前に始めると、読み上げの失敗が連鎖して全部の行が一瞬で
        流れてしまう。一覧が届いてから始め、届かない端末でも詰まらせない。 */
     var started = false;
@@ -357,6 +403,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   /* 会話のあと、設問を1問ずつ読み上げてから解答時間を取る */
   function readQuestions() {
     T.TTS.cancel();
+    stopAudio();
     phase = 'read'; qi = -1;
     var list = qs();
     (function stepQ(i) {
@@ -394,6 +441,14 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
         '<p class="hint">何を聞かれるかを頭に入れてください。まだ音声は流れません。</p></div>';
     }
     if (phase === 'play') {
+      /* 用意された音声のときは誰が話しているかを追えないので、残り時間を出す */
+      if (audioURL()) {
+        return '<div class="card status">' +
+          '<div class="count"><i id="abar" style="width:0%"></i></div>' +
+          '<div class="st"><b>会話 再生中</b><span class="num" id="anum">' +
+            Math.ceil((SET.audio && SET.audio.sec) || 0) + ' 秒</span></div>' +
+          '<p class="hint">会話は1回だけです。設問を見ながら聞いてください。</p></div>';
+      }
       return '<div class="card status">' +
         '<div class="st"><b>会話 再生中</b><span class="mics">' +
           (SET.speakers || []).map(function (s) {
@@ -573,7 +628,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   $('btnNext').addEventListener('click', function () {
     if (step === 0) {
       if (phase === 'prep') { clearTimer(); playConv(); return; }
-      if (phase === 'play') { T.TTS.cancel(); readQuestions(); return; }
+      if (phase === 'play') { T.TTS.cancel(); stopAudio(); readQuestions(); return; }
       if (phase === 'read') { clearTimer(); T.TTS.cancel(); phase = 'answer'; render('top'); return; }
       go(1);
       return;

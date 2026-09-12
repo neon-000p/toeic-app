@@ -1,0 +1,65 @@
+name: Part 3 の音声を作る
+
+# data/part3/ に新しいセットが入ったら、会話の音声（MP3）を作って main に足す。
+# API キーはリポジトリの Secret（GEMINI_API_KEY）から環境変数で渡すので、
+# コードにも履歴にも残らない。手で動かしたいときは Actions の画面から実行できる。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/part3/*.json'
+      - 'tools/make-audio.js'
+      - '.github/workflows/part3-audio.yml'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'すでに音声があるセットも作り直す'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# 同時に走らせない。2つが同じファイルを書くと push がぶつかる
+concurrency:
+  group: part3-audio
+
+jobs:
+  build:
+    # 自分が作ったコミット（[audio] 付き）では動かさない。堂々巡りを防ぐため
+    if: ${{ !contains(github.event.head_commit.message, '[audio]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 鍵があるか確かめる
+        env:
+          KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then
+            echo "::error::Secret の GEMINI_API_KEY が未登録です。" \
+                 "Settings → Secrets and variables → Actions で登録してください。"
+            exit 1
+          fi
+
+      - name: 音声を作る
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node tools/make-audio.js --all ${{ inputs.force && '--force' || '' }}
+
+      - name: main に足す
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "作った音声はありません。何もしません"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Part 3 の会話音声を追加 [audio]"
+          git push
