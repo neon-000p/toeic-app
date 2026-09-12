@@ -56,6 +56,9 @@ main{padding-top:14px}
 .list .s{flex:none;font-size:11px;font-weight:700;color:var(--accent)}
 .list .s.done{color:var(--ok)}
 
+.sec-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+.sec-row .cnt{margin-left:8px;font-weight:700;color:var(--muted);letter-spacing:0}
+
 .soon .row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 0;font-size:14px}
 a.row{text-decoration:none;color:inherit}
 a.row .w{color:var(--accent)}
@@ -105,6 +108,8 @@ a.row .w{color:var(--accent)}
   document.getElementById('stStreak').textContent = T.Log.streak();
   document.getElementById('stVocab').textContent = T.Vocab.count();
 
+  var newsAll = false;   /* 時事英語の一覧を全部出すか */
+
   /* パート番号 → そのパートの教材。増えたらここに読み込む */
   var drills = { '3': [] };
 
@@ -140,8 +145,19 @@ a.row .w{color:var(--accent)}
     '</a>';
 
     if (items.length > 1) {
-      html += '<div class="card"><div class="sec-label">これまでの教材</div><div class="list">' +
-        items.slice(1, 21).map(function (it) {
+      /* 直近1年ぶんを残すようにしたので、全部出すと長い。
+         既定は20件までにして、必要なときだけ広げる。 */
+      var rest = items.slice(1);
+      var shown = newsAll ? rest : rest.slice(0, 20);
+
+      html += '<div class="card">' +
+        '<div class="sec-row"><span class="sec-label" style="margin:0">これまでの教材　' +
+          '<span class="cnt">' + shown.length + ' / ' + rest.length + '</span></span>' +
+          (rest.length > 20
+            ? '<button class="btn btn-sm" id="newsAll">' + (newsAll ? '最近だけ' : 'すべて表示') + '</button>'
+            : '') +
+        '</div><div class="list">' +
+        shown.map(function (it) {
           var q = progressOf(it.id), s = statusLabel(q);
           return '<a href="news.html?id=' + encodeURIComponent(it.id) + '">' +
             '<span class="d">' + esc((it.date || '').slice(5).replace('-', '/') + (it.time ? ' ' + it.time : '')) + '</span>' +
@@ -246,6 +262,12 @@ a.row .w{color:var(--accent)}
       recentDrills().filter(function (r) { return drillStatus(r.part, r.it.id) === '済'; }).length;
     document.getElementById('stDone').textContent = done;
   }
+
+  main.addEventListener('click', function (e) {
+    if (!e.target.closest('#newsAll')) return;
+    newsAll = !newsAll;
+    render();
+  });
 
   document.querySelector('.tabs').addEventListener('click', function (e) {
     var b = e.target.closest('button[data-tab]');
