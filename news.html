@@ -41,7 +41,7 @@ a.icon-btn{font-size:17px}
 .stage{padding-top:16px}
 .para{font-family:var(--serif);font-size:17.5px;line-height:1.95;margin:0 0 14px}
 .para:last-child{margin-bottom:0}
-.sent.evid{background:var(--mark-soft);box-shadow:0 0 0 3px var(--mark-soft);border-radius:2px}
+.sent.evid,.sent.play{background:var(--mark-soft);box-shadow:0 0 0 3px var(--mark-soft);border-radius:2px}
 .tool-row{display:flex;gap:8px;align-items:center;margin-top:14px;flex-wrap:wrap}
 .hint{font-size:12.5px;color:var(--muted);margin-top:10px}
 
@@ -872,9 +872,12 @@ details.src[open]>summary::before{content:"▾ ";}
 
   function summaryHTML() {
     var ps = (DATA.summary && DATA.summary.paragraphs) || [];
+    var n = -1;   /* 段落をまたぐ通し番号。flatSummary の並びと合わせる */
     return ps.map(function (p) {
       return '<p class="para">' + p.sentences.map(function (s) {
-        return '<span class="sent">' + T.markupEnglish(s.en, DATA.glossary) + '</span> ';
+        n++;
+        return '<span class="sent" data-src="sum" data-i="' + n + '">' +
+          T.markupEnglish(s.en, DATA.glossary) + '</span> ';
       }).join('') + '</p>';
     }).join('');
   }
@@ -1106,12 +1109,13 @@ details.src[open]>summary::before{content:"▾ ";}
   /* ================= 再生 ================= */
 
   function markPlay(src, i) {
-    var rows = stage.querySelectorAll('.sline');
+    /* 対訳の行（.sline）と、設問の本文中の文（.sent）の両方に印を付ける */
+    var rows = stage.querySelectorAll('.sline, .sent[data-src]');
     for (var k = 0; k < rows.length; k++) {
       rows[k].classList.toggle('play', !!src && rows[k].dataset.src === src && +rows[k].dataset.i === i);
     }
     if (src && i >= 0) {
-      var cur = stage.querySelector('.sline[data-src="' + src + '"][data-i="' + i + '"]');
+      var cur = stage.querySelector('[data-src="' + src + '"][data-i="' + i + '"]');
       if (cur) cur.scrollIntoView({ block: 'center', behavior: 'smooth' });
     }
   }
