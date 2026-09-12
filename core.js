@@ -20,12 +20,16 @@
   }
 
   /* ---------- 設定 ---------- */
-  var SETTINGS_DEFAULT = { voiceURI: '', rate: 1, showJa: false };
+  var SETTINGS_DEFAULT = { voiceURI: '', rate: 1, showJa: false, vocabJa: true };
   var Settings = {
     all: function () {
-      var s = read('settings', {});
+      var s = read('settings', {}) || {};
       var out = {};
-      for (var k in SETTINGS_DEFAULT) out[k] = (s && s[k] !== undefined) ? s[k] : SETTINGS_DEFAULT[k];
+      for (var k in SETTINGS_DEFAULT) out[k] = SETTINGS_DEFAULT[k];
+      /* 既定値に無いキーも保存されていれば返す。
+         以前は SETTINGS_DEFAULT にある分しか返さず、新しく足した設定が
+         保存しても読み出せない状態になっていた。 */
+      for (var k2 in s) if (s[k2] !== undefined) out[k2] = s[k2];
       return out;
     },
     get: function (k) { return Settings.all()[k]; },

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>時事英語 | TOEIC Daily</title>
-<link rel="stylesheet" href="style.css?v=d0958a97">
+<link rel="stylesheet" href="style.css?v=136e9fdd">
 <style>
 body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
@@ -160,6 +160,12 @@ details.src[open]>summary::before{content:"▾ ";}
 .trans-bar{display:flex;gap:8px;flex-wrap:wrap}
 .sec-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 4px}
 .sec-head .sec-label{margin:0}
+.sec-tools{display:flex;gap:6px;flex:none}
+
+/* 語彙：英単語だけを出す。カードをタップするとその語だけ開く */
+.terms-only .vja,.terms-only .vgloss,.terms-only .vex{display:none}
+.terms-only .vcard.open .vja,.terms-only .vcard.open .vgloss,.terms-only .vcard.open .vex{display:block}
+.terms-only .vcard{cursor:pointer}
 .sline{display:flex;gap:10px;align-items:flex-start;padding:8px 8px;border-radius:9px;cursor:pointer}
 /* 区切り線は置かない。再生中の行が光るので、行の切れ目はそれで分かる */
 .sline .i{flex:none;width:18px;font-size:11px;font-weight:800;color:var(--muted);text-align:right;margin-top:4px}
@@ -649,7 +655,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=3854c17c"></script>
+<script src="core.js?v=533974b8"></script>
 <script>
 (function () {
   'use strict';
@@ -975,14 +981,14 @@ details.src[open]>summary::before{content:"▾ ";}
     var showJa = T.Settings.get('showJa');
     var rate = T.Settings.get('rate');
     return '<div class="card' + (showJa ? '' : ' hide-ja') + '" id="transCard">' +
-      '<div class="sec-label">対訳</div>' +
-      '<div class="trans-bar">' +
-        '<button class="btn btn-sm btn-primary" data-play-all="sum">▶ 通し再生</button>' +
-        '<button class="btn btn-sm" id="stopAll">■ 停止</button>' +
-        '<button class="btn btn-sm" id="toggleJa">' + (showJa ? '和訳を隠す' : '和訳を出す') + '</button>' +
-        '<button class="btn btn-sm icon" id="copyAll" title="英文をすべてコピー">📋</button>' +
-      '</div>' +
-      '<hr class="sep">' +
+      '<div class="sec-head"><span class="sec-label">対訳</span>' +
+        '<span class="sec-tools">' +
+          '<button class="btn btn-sm icon" data-play-all="sum" title="通して再生">▶</button>' +
+          '<button class="btn btn-sm icon" id="stopAll" title="停止">■</button>' +
+          '<button class="btn btn-sm icon' + (showJa ? ' on' : '') + '" id="toggleJa" title="' +
+            (showJa ? '和訳を隠す' : '和訳を出す') + '">訳</button>' +
+          '<button class="btn btn-sm icon" id="copyAll" title="英文をすべてコピー">📋</button>' +
+        '</span></div>' +
       lineRows('sum') +
       '<hr class="sep">' +
       '<div class="rate-row"><span class="small muted" style="flex:none">速度</span>' +
@@ -995,7 +1001,13 @@ details.src[open]>summary::before{content:"▾ ";}
   /* ---- 語彙 ---- */
 
   function viewVocab() {
-    return '<div class="card"><div class="sec-label">Vocabulary</div>' +
+    var showMean = T.Settings.get('vocabJa') !== false;
+    return '<div class="card' + (showMean ? '' : ' terms-only') + '" id="vocabCard">' +
+      '<div class="sec-head"><span class="sec-label">Vocabulary</span>' +
+        '<span class="sec-tools">' +
+          '<button class="btn btn-sm icon' + (showMean ? ' on' : '') + '" id="toggleVocabJa" title="' +
+            (showMean ? '英単語だけにする' : '意味を出す') + '">訳</button>' +
+        '</span></div>' +
       (DATA.vocabulary || []).map(function (v) {
         var on = T.Vocab.has(v.term);
         return '<div class="vcard">' +
@@ -1014,8 +1026,10 @@ details.src[open]>summary::before{content:"▾ ";}
             (on ? '★' : '☆') + '</button>' +
         '</div>';
       }).join('') +
-      '</div><p class="hint">★ を押すと<a href="vocab.html" style="color:var(--accent)">語彙帳</a>に入り、間隔をあけて復習できます。現在 ' +
-      T.Vocab.count() + ' 語。</p>';
+      '</div><p class="hint">' +
+      (showMean
+        ? '★ を押すと<a href="vocab.html" style="color:var(--accent)">語彙帳</a>に入り、間隔をあけて復習できます。現在 ' + T.Vocab.count() + ' 語。'
+        : '英単語だけを出しています。意味を思い出してから、カードをタップして答え合わせ。') + '</p>';
   }
 
   /* ---- 文法・背景 ---- */
@@ -1193,6 +1207,12 @@ details.src[open]>summary::before{content:"▾ ";}
       return;
     }
 
+    if (t.id === 'toggleVocabJa') {
+      T.Settings.set('vocabJa', T.Settings.get('vocabJa') === false);
+      render();
+      return;
+    }
+
     if (t.id === 'stopAll') { stopPlay(); return; }
 
     if (t.id === 'toggleJa') {
@@ -1200,9 +1220,14 @@ details.src[open]>summary::before{content:"▾ ";}
       T.Settings.set('showJa', show);
       var card = $('transCard');
       if (card) card.classList.toggle('hide-ja', !show);
-      t.textContent = show ? '和訳を隠す' : '和訳を出す';
+      t.classList.toggle('on', show);
+      t.title = show ? '和訳を隠す' : '和訳を出す';
       return;
     }
+
+    /* 英単語だけの表示のとき、カードをタップするとその語だけ開く */
+    var vc = t.closest('.vcard');
+    if (vc && vc.closest('.terms-only')) { vc.classList.toggle('open'); return; }
 
     /* 語注が先。行の再生よりも単語タップを優先する */
     var w = t.closest('.w');
