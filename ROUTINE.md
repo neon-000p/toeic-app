@@ -35,6 +35,9 @@ claude.ai のルーティン「時事英語TOEIC教材 to notion」の設定内�
      `updatedAt` を JST の実時刻に更新する
    - `data/news/history.json` の `items` 先頭に、今回のジャンルと文法トピックを追記する
      （これを忘れると次回以降の重複判定が壊れる）
+   - **`audio` は書かない。** 本文の読み上げ音声は GitHub Actions が別途作って足す
+   - **`index.json` の件数は減らさない。** 古い教材の整理は `tools/prune.js` が毎朝行う
+     （直近1年ぶんを残す）。ここで消すと、消えた教材の音声が片づけられずに残り続ける
    - **`main` ブランチに対して**作業し、`git add` → `git commit` → `git push origin main` まで行う。
      作業用ブランチを切ったりプルリクエストを作ったりしないこと（GitHub Pages は main だけを配信している）
    - コミットメッセージは `教材追加: <id> <ジャンル>` の形にする
