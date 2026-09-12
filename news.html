@@ -674,10 +674,10 @@ details.src[open]>summary::before{content:"▾ ";}
       Object.keys(PACKS).forEach(function (id) {
         if (!INDEX.some(function (it) { return it.id === id; })) {
           var p = PACKS[id];
-          INDEX.push({ id: id, date: p.date || id, genre: p.genre || '', title: (p.title && p.title.ja) || id, local: true });
+          INDEX.push({ id: id, date: p.date || id, time: p.time || '', genre: p.genre || '', title: (p.title && p.title.ja) || id, local: true });
         }
       });
-      INDEX.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
+      INDEX.sort(function (a, b) { return (b.id || '').localeCompare(a.id || ''); });
       var id = want || (INDEX[0] && INDEX[0].id) || null;
       return load(id);
     }).catch(function (e) { fail(e); });
@@ -737,7 +737,7 @@ details.src[open]>summary::before{content:"▾ ";}
 
   function renderHead() {
     var m = [];
-    if (DATA.date) m.push('<span>' + esc(DATA.date.replace(/-/g, '/')) + '</span>');
+    if (DATA.date) m.push('<span>' + esc(DATA.date.replace(/-/g, '/')) + (DATA.time ? ' ' + esc(DATA.time) : '') + '</span>');
     if (DATA.genre) m.push('<span class="chip">' + esc(DATA.genre) + '</span>');
     if (DATA.sample) m.push('<span class="chip chip-mark">サンプル</span>');
     $('meta').innerHTML = m.join('');
@@ -1206,7 +1206,7 @@ details.src[open]>summary::before{content:"▾ ";}
     var rows = INDEX.length ? INDEX.map(function (it) {
       var cur = DATA && it.id === DATA.id;
       return '<p style="margin:0 0 4px"><a href="?id=' + encodeURIComponent(it.id) + '" style="color:inherit;text-decoration:none">' +
-        '<span class="chip chip-plain">' + esc(it.date || it.id) + '</span> ' +
+        '<span class="chip chip-plain">' + esc((it.date || it.id) + (it.time ? ' ' + it.time : '')) + '</span> ' +
         (it.genre ? '<span class="chip">' + esc(it.genre) + '</span> ' : '') +
         (cur ? '<b>' : '') + esc(it.title || it.id) + (cur ? '</b>' : '') +
         (it.local ? ' <span class="muted small">（取り込み）</span>' : '') + '</a></p>';

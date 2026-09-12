@@ -34,7 +34,7 @@ body{padding-bottom:24px}
   text-decoration:none;color:inherit;
 }
 .list a:last-child{border-bottom:0}
-.list .d{flex:none;font-size:11px;font-weight:700;color:var(--muted);width:44px}
+.list .d{flex:none;font-size:11px;font-weight:700;color:var(--muted);width:72px;line-height:1.35}
 .list .t{flex:1;min-width:0;font-size:14px;line-height:1.5}
 .list .s{flex:none;font-size:11px;font-weight:700;color:var(--accent)}
 .list .s.done{color:var(--ok)}
@@ -99,7 +99,7 @@ body{padding-bottom:24px}
 
     var html = '<a class="card today" href="news.html?id=' + encodeURIComponent(top.id) + '">' +
       '<div class="meta-row"><span class="sec-label" style="margin:0">最新の教材</span>' +
-        '<span>' + esc((top.date || '').replace(/-/g, '/')) + '</span>' +
+        '<span>' + esc((top.date || '').replace(/-/g, '/')) + (top.time ? ' ' + esc(top.time) : '') + '</span>' +
         (top.genre ? '<span class="chip">' + esc(top.genre) + '</span>' : '') +
         (statusLabel(p) ? '<span class="chip chip-plain">' + statusLabel(p) + '</span>' : '') +
       '</div>' +
@@ -112,7 +112,7 @@ body{padding-bottom:24px}
         items.slice(1, 11).map(function (it) {
           var q = progressOf(it.id), s = statusLabel(q);
           return '<a href="news.html?id=' + encodeURIComponent(it.id) + '">' +
-            '<span class="d">' + esc((it.date || '').slice(5).replace('-', '/')) + '</span>' +
+            '<span class="d">' + esc((it.date || '').slice(5).replace('-', '/') + (it.time ? ' ' + it.time : '')) + '</span>' +
             '<span class="t">' + esc(it.title || it.id) + '</span>' +
             (s ? '<span class="s' + (s === '済' ? ' done' : '') + '">' + s + '</span>' : '') +
           '</a>';
@@ -131,7 +131,11 @@ body{padding-bottom:24px}
 
   fetch('data/news/index.json', { cache: 'no-store' })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(function (idx) { render((idx && idx.items) || []); })
+    .then(function (idx) {
+      var items = (idx && idx.items) || [];
+      items.sort(function (a, b) { return (b.id || '').localeCompare(a.id || ''); });
+      render(items);
+    })
     .catch(function () { render([]); });
 })();
 </script>
