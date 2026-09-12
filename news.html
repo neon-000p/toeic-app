@@ -74,6 +74,20 @@ details.src>summary::-webkit-details-marker{display:none}
 details.src>summary::before{content:"▸ ";}
 details.src[open]>summary::before{content:"▾ ";}
 
+/* 設問の見開き（広い画面のみ） */
+.quiz-grid{display:grid;gap:14px}
+@media (min-width:980px){
+  body.split .wrap{max-width:1140px}
+  .quiz-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start}
+  .quiz-src{
+    position:sticky;
+    top:calc(var(--head-h,150px) + 14px);
+    max-height:calc(100vh - var(--head-h,150px) - 104px);
+    overflow:auto;
+  }
+  .quiz-src .para{font-size:17px;line-height:1.9}
+}
+
 /* 解説 */
 .score{display:flex;align-items:baseline;gap:8px;margin-bottom:2px}
 .score .n{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.02em}
@@ -805,6 +819,14 @@ details.src[open]>summary::before{content:"▾ ";}
 
   /* ================= 描画 ================= */
 
+  /* 見出しは sticky で高さが変わるため、実測して CSS 変数に渡す。
+     これが左カラムを貼り付ける位置の基準になる。 */
+  function syncHeadHeight() {
+    var el = document.querySelector('.app-head');
+    if (el) document.documentElement.style.setProperty('--head-h', el.offsetHeight + 'px');
+  }
+  window.addEventListener('resize', syncHeadHeight);
+
   function render() {
     stage.dataset.view = '';
     var fn = {
@@ -812,6 +834,8 @@ details.src[open]>summary::before{content:"▾ ";}
       vocab: viewVocab, gram: viewGram, bg: viewBg
     }[STEPS[step].key];
     stage.innerHTML = fn();
+    document.body.classList.toggle('split', STEPS[step].key === 'quiz' && stage.dataset.view !== 'done');
+    syncHeadHeight();
     renderFoot();
   }
 
@@ -846,11 +870,10 @@ details.src[open]>summary::before{content:"▾ ";}
   /* ---- 設問 ---- */
 
   function viewQuiz() {
-    var body = sampleNote() +
-      '<details class="src" open><summary>本文を表示</summary>' +
+    var src = '<details class="src" open><summary>本文を表示</summary>' +
       '<div class="card">' + summaryHTML() +
       '<p class="hint">語をタップすると語注が出ます。</p></div></details>';
-    body += (DATA.questions || []).map(function (q, i) {
+    var body = (DATA.questions || []).map(function (q, i) {
       return '<div class="card qbox">' +
         '<div class="qnum">Q' + (i + 1) + '</div>' +
         '<p class="qprompt">' + esc(q.prompt) + '</p>' +
@@ -863,7 +886,11 @@ details.src[open]>summary::before{content:"▾ ";}
       '</div>';
     }).join('');
     if (state.graded) body += '<p class="hint">採点済みです。解説は次の画面にあります。</p>';
-    return body;
+    return sampleNote() +
+      '<div class="quiz-grid">' +
+        '<div class="quiz-src">' + src + '</div>' +
+        '<div class="quiz-qs">' + body + '</div>' +
+      '</div>';
   }
 
   function allAnswered() {
@@ -1014,6 +1041,7 @@ details.src[open]>summary::before{content:"▾ ";}
     var streak = T.Log.touchToday();
     var n = correctCount(), tot = (DATA.questions || []).length;
     stage.dataset.view = 'done';
+    document.body.classList.remove('split');
     stage.innerHTML = '<div class="card done-wrap">' +
       '<div class="big">Done</div>' +
       '<p class="muted small" style="margin:8px 0 0">' + esc((DATA.title && DATA.title.ja) || '') + '</p>' +
@@ -1231,19 +1259,20 @@ details.src[open]>summary::before{content:"▾ ";}
       function (bg) {
         var sel = bg.querySelector('#cfgVoice');
         T.TTS.onReady(function () {
-          var list = T.TTS.english();
+          var list = T.TTS.ranked();
           list.forEach(function (v) {
             var o = document.createElement('option');
             o.value = v.voiceURI;
-            o.textContent = v.name + '（' + v.lang + (v.localService ? '・端末内' : '・通信') + '）';
+            o.textContent = v.name + '（' + v.lang + '・' + T.TTS.label(v) + '）';
             if (v.voiceURI === s.voiceURI) o.selected = true;
             sel.appendChild(o);
           });
-          var langs = {};
-          list.forEach(function (v) { langs[(v.lang || '').replace('_', '-')] = 1; });
-          bg.querySelector('#cfgVoiceInfo').textContent =
-            list.length ? '英語の音声を ' + list.length + '種類検出（' + Object.keys(langs).sort().join(' / ') + '）'
-                        : '英語の音声が見つかりません。端末の音声データを確認してください。';
+          var auto = T.TTS.pickDefault();
+          bg.querySelector('#cfgVoiceInfo').innerHTML =
+            list.length
+              ? '品質の高い順に並べています。自動では <b>' + T.esc(auto ? auto.name : '') + '</b> を使います。' +
+                '<br>通信が不安定な場所で使うなら「端末内」の音声を選んでおくと確実です。'
+              : '英語の音声が見つかりません。端末の音声データを確認してください。';
         });
         sel.onchange = function () { T.Settings.set('voiceURI', sel.value); };
         var rate = bg.querySelector('#cfgRate');

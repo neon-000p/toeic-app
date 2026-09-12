@@ -126,19 +126,30 @@
     function english() {
       return cache.filter(function (v) { return /^en(-|_|$)/i.test(v.lang || ''); });
     }
-    /* 米→英→豪→その他の英語 の順で妥当なものを選ぶ */
-    function pickDefault() {
-      var list = english();
-      if (!list.length) return null;
-      var order = ['en-US', 'en-GB', 'en-AU', 'en-CA'];
-      for (var i = 0; i < order.length; i++) {
-        var hit = list.filter(function (v) { return (v.lang || '').replace('_', '-') === order[i]; });
-        if (hit.length) {
-          var local = hit.filter(function (v) { return v.localService; });
-          return (local[0] || hit[0]);
-        }
-      }
-      return list[0];
+    /* 音声の品質を名前から推し量って点数化する。
+       Edge/Windows では高品質な Natural 系がオンライン音声として提供され、
+       端末内にあるのは旧 SAPI（... Desktop）なので、localService を
+       優先すると逆に品質が落ちる。判断材料は名前に置く。 */
+    var LOCALE_BONUS = { 'en-US': 20, 'en-GB': 14, 'en-AU': 8, 'en-CA': 6, 'en-IE': 4, 'en-NZ': 4 };
+    function score(v) {
+      var n = v.name || '', lang = (v.lang || '').replace('_', '-'), s = 0;
+      if (/natural/i.test(n)) s += 100;        // Microsoft ... (Natural)
+      else if (/online/i.test(n)) s += 70;     // Edge のオンライン音声
+      else if (/google/i.test(n)) s += 40;     // Android/Chrome の標準
+      if (/desktop/i.test(n)) s -= 60;         // 旧 SAPI。機械的で聞き取りにくい
+      if (/compact|espeak/i.test(n)) s -= 40;
+      s += (LOCALE_BONUS[lang] !== undefined ? LOCALE_BONUS[lang] : 2);
+      return s;
+    }
+    /* 品質の高い順に並べた英語音声 */
+    function ranked() {
+      return english().slice().sort(function (a, b) { return score(b) - score(a); });
+    }
+    function pickDefault() { return ranked()[0] || null; }
+    /* 設定画面に出す品質の表示 */
+    function label(v) {
+      if (/natural/i.test(v.name || '')) return '自然音声';
+      return v.localService ? '端末内' : '通信';
     }
     function resolve(uri) {
       if (uri) {
@@ -159,13 +170,30 @@
       u.rate = opts.rate || 1;
       u.pitch = opts.pitch || 1;
       if (opts.onend) u.onend = opts.onend;
-      u.onerror = opts.onerror || function () { if (opts.onend) opts.onend(); };
+      u.onerror = function (e) {
+        var why = (e && e.error) || '';
+        /* cancel() 由来は失敗ではないので何もしない */
+        if (why === 'canceled' || why === 'interrupted') return;
+        /* 通信音声が鳴らなかった場合（オフライン等）は端末内の音声で1度だけやり直す */
+        if (!opts._retried && v && !v.localService) {
+          var fallback = ranked().filter(function (x) { return x.localService; })[0];
+          if (fallback) {
+            opts._retried = true;
+            opts.voiceURI = fallback.voiceURI;
+            speak(text, opts);
+            return;
+          }
+        }
+        if (opts.onerror) opts.onerror(e);
+        else if (opts.onend) opts.onend();
+      };
       try { synth.speak(u); } catch (e) { if (opts.onend) opts.onend(); }
       return u;
     }
     return {
       available: !!synth, onReady: onReady, voices: function () { return cache; },
-      english: english, pickDefault: pickDefault, speak: speak, cancel: cancel
+      english: english, ranked: ranked, label: label,
+      pickDefault: pickDefault, speak: speak, cancel: cancel
     };
   })();
 
