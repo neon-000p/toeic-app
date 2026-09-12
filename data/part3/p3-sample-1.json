@@ -234,6 +234,54 @@
       "pos": "n",
       "ja": "確認書",
       "note": "動詞は confirm"
+    },
+    "a chance": {
+      "lemma": "get a chance to do",
+      "pos": "phr",
+      "ja": "〜する機会を得る",
+      "note": "Did you get a chance to 〜? で「〜できた？」"
+    },
+    "stay": {
+      "lemma": "stay",
+      "pos": "n",
+      "ja": "滞在",
+      "note": "a four-night stay で「4泊の滞在」"
+    },
+    "per night": {
+      "lemma": "per night",
+      "pos": "adv",
+      "ja": "1泊あたり",
+      "note": "per は「〜あたり」。料金の比較で頻出"
+    },
+    "stops": {
+      "lemma": "stop",
+      "pos": "n",
+      "ja": "（電車・バスの）停車駅",
+      "note": "two subway stops away で「地下鉄2駅ぶん先」"
+    },
+    "run": {
+      "lemma": "run",
+      "pos": "v",
+      "ja": "（乗り物が）運行する",
+      "note": "走る、ではなく運行する"
+    },
+    "rush hour": {
+      "lemma": "rush hour",
+      "pos": "n",
+      "ja": "通勤ラッシュの時間",
+      "note": ""
+    },
+    "go with": {
+      "lemma": "go with",
+      "pos": "v",
+      "ja": "〜に決める",
+      "note": "Let's go with 〜 で決定の合図"
+    },
+    "toward": {
+      "lemma": "toward",
+      "pos": "prep",
+      "ja": "〜に充てる",
+      "note": "put A toward B で「A を B に回す」"
     }
   },
   "point": {

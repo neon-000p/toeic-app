@@ -247,6 +247,42 @@
       "pos": "n",
       "ja": "資料",
       "note": ""
+    },
+    "cable": {
+      "lemma": "cable",
+      "pos": "n",
+      "ja": "ケーブル",
+      "note": ""
+    },
+    "desk": {
+      "lemma": "desk",
+      "pos": "n",
+      "ja": "受付、窓口",
+      "note": "the facilities desk で「設備管理の窓口」"
+    },
+    "free": {
+      "lemma": "free",
+      "pos": "adj",
+      "ja": "空いている",
+      "note": "無料ではなく「空室」の意味"
+    },
+    "hand out": {
+      "lemma": "hand out",
+      "pos": "v",
+      "ja": "配る",
+      "note": ""
+    },
+    "printed": {
+      "lemma": "print",
+      "pos": "v",
+      "ja": "印刷した",
+      "note": "printed materials で「印刷した資料」"
+    },
+    "lose": {
+      "lemma": "lose",
+      "pos": "v",
+      "ja": "（時間などを）無駄にする",
+      "note": "lose the whole session で「研修が丸ごと無駄になる」"
     }
   },
   "point": {

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "type": "part3-history",
+  "updatedAt": "2026-09-13T01:29:00+09:00",
+  "items": [
+    {
+      "id": "2026-09-13-0129",
+      "date": "2026-09-13",
+      "scene": "顧客対応｜納品日の前倒し依頼",
+      "genre": "顧客対応",
+      "speakers": 2,
+      "types": [
+        "gist",
+        "detail",
+        "next"
+      ],
+      "flow": "依頼と調整"
+    },
+    {
+      "id": "p3-sample-2",
+      "date": "2026-09-12",
+      "scene": "社内｜研修室の設備トラブル（3人）",
+      "genre": "設備トラブル",
+      "speakers": 3,
+      "types": [
+        "gist",
+        "detail",
+        "intent"
+      ],
+      "flow": "問題と解決"
+    },
+    {
+      "id": "p3-sample-1",
+      "date": "2026-09-12",
+      "scene": "オフィス｜出張の宿泊手配",
+      "genre": "出張・移動",
+      "speakers": 2,
+      "types": [
+        "gist",
+        "detail",
+        "next"
+      ],
+      "flow": "比較と決定"
+    }
+  ]
+}
