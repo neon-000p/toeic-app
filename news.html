@@ -671,6 +671,8 @@ details.src[open]>summary::before{content:"▾ ";}
 
   var DATA = null, INDEX = [], PACKS = {};
   var step = 0, state = { answers: {}, graded: false, maxStep: 0, done: false };
+  /* 今回の画面で選んだぶん。設問はこれだけを塗る */
+  var fresh = {};
   var progKey = '';
   var playing = null;
   var bgEn = null;      // 背景解説の英訳（Gemini の結果）
@@ -738,16 +740,16 @@ details.src[open]>summary::before{content:"▾ ";}
     bgEn = null; bgBusy = false;
     progKey = 'news:' + (d.id || d.date || 'unknown');
     var p = T.Log.progress(progKey);
-    /* 解き終わった教材をもう一度開いたときは、前回の選択を残さない。
-       done は残すので、ホームの「済」は消えない。 */
-    var fin = !!(p && p.done);
+    /* 前回の答えは残しておく。解説で「前回どれを選んだか」を見るため。
+       ただし設問では出さない（fresh を参照）。 */
     state = {
-      answers: fin ? {} : ((p && p.answers) || {}),
-      graded: fin ? false : !!(p && p.graded),
-      maxStep: fin ? 0 : ((p && p.maxStep) || 0),
-      done: fin
+      answers: (p && p.answers) || {},
+      graded: !!(p && p.graded),
+      maxStep: (p && p.maxStep) || 0,
+      done: !!(p && p.done)
     };
-    step = fin ? 0 : Math.min((p && p.step) || 0, STEPS.length - 1);
+    fresh = {};
+    step = Math.min((p && p.step) || 0, STEPS.length - 1);
     renderHead();
     render();
   }
@@ -903,7 +905,7 @@ details.src[open]>summary::before{content:"▾ ";}
         '<div class="qnum">Q' + (i + 1) + '</div>' +
         '<p class="qprompt">' + esc(q.prompt) + '</p>' +
         q.choices.map(function (c) {
-          var sel = state.answers[q.id] === c.key;
+          var sel = fresh[q.id] === c.key;
           return '<button class="choice' + (sel ? ' sel' : '') + '" data-q="' + esc(q.id) + '" data-k="' + esc(c.key) + '"' +
             (state.graded ? ' disabled' : '') + '>' +
             '<span class="k">' + esc(c.key) + '</span><span class="t">' + esc(c.text) + '</span></button>';
@@ -1233,6 +1235,7 @@ details.src[open]>summary::before{content:"▾ ";}
     var ch = t.closest('.choice[data-q]');
     if (ch && !ch.disabled) {
       state.answers[ch.dataset.q] = ch.dataset.k;
+      fresh[ch.dataset.q] = ch.dataset.k;
       save(); render(); return;
     }
 

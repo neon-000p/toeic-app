@@ -190,6 +190,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   var qi = -1, reading = false;
   var ans = {}, scored = false;
   var done = false;   /* 一度でも最後まで解いたか。解き直しても消さない */
+  /* 今回の画面で選んだぶん。設問はこれだけを塗る。
+     前回の選択が入ったままだと、開き直しても解き直しにならないため。 */
+  var fresh = {};
   var left = 0, timer = null;
   var lineIdx = -1, plan = {};
   var progKey = '';
@@ -239,17 +242,13 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     progKey = 'part3:' + (d.id || 'unknown');
     var p = T.Log.progress(progKey);
 
-    /* 解き終わったセットをもう一度開いたときは、前回の選択を残さない。
-       答えを覚えていなくても、選択が入ったままだと解き直しにならないため。
-       done は残すので、ホームの「済」は消えない。 */
+    /* 前回の答えは残しておく。解説で「前回どれを選んだか」を見るため。
+       ただし設問では出さない（下の fresh を参照）。 */
     done = !!(p && (p.done || p.maxStep >= STEPS.length - 1));
-    if (done) {
-      ans = {}; scored = false; maxStep = 0;
-    } else {
-      ans = (p && p.answers) || {};
-      scored = !!(p && p.scored);
-      maxStep = (p && p.maxStep) || 0;
-    }
+    ans = (p && p.answers) || {};
+    scored = !!(p && p.scored);
+    maxStep = (p && p.maxStep) || 0;
+    fresh = {};
     step = 0;
     renderHead();
     enterPrep();
@@ -494,7 +493,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
           (q.type && TYPE_LABEL[q.type] ? '　' + TYPE_LABEL[q.type] : '') + '</div>' +
         '<p class="qprompt">' + esc(q.prompt) + '</p>' +
         q.choices.map(function (c) {
-          var sel = ans[q.id] === c.key;
+          var sel = fresh[q.id] === c.key;
           return '<button class="choice' + (sel ? ' sel' : '') + '" data-q="' + esc(q.id) + '" data-k="' + esc(c.key) + '">' +
             '<span class="k">' + esc(c.key) + '</span><span class="t">' + esc(c.text) + '</span></button>';
         }).join('') +
@@ -675,6 +674,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     var ch = t.closest('.choice[data-q]');
     if (ch && !ch.disabled) {
       ans[ch.dataset.q] = ch.dataset.k;
+      fresh[ch.dataset.q] = ch.dataset.k;
       save();
       /* 押した位置を動かさないよう、その設問の中だけ塗り替える */
       var box = ch.closest('.qbox');
