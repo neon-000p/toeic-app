@@ -341,8 +341,29 @@
             var msg = (j && j.error && j.error.message) || (r.status + ' ' + r.statusText);
             if (r.status === 400 || r.status === 401 || r.status === 403) msg = 'キーが無効か権限がありません（' + msg + '）';
             if (r.status === 404) msg = 'モデル名が違うようです（' + msg + '）';
-            if (r.status === 429) msg = '回数・割当の上限です（' + msg + '）';
-            throw new Error(msg);
+            var wait = 0;
+            if (r.status === 429) {
+              /* 429 は details に「どの枠に当たったか」と「何秒待てばよいか」が入っている。
+                 ここを拾わないと、枠自体が無いのか呼びすぎただけなのかが区別できない。 */
+              var det = (j && j.error && j.error.details) || [], q = [];
+              for (var di = 0; di < det.length; di++) {
+                var ty = String(det[di]['@type'] || '');
+                if (/QuotaFailure/.test(ty)) {
+                  var vs = det[di].violations || [];
+                  for (var vi = 0; vi < vs.length; vi++) {
+                    q.push(String(vs[vi].quotaId || vs[vi].quotaMetric || '') +
+                      (vs[vi].quotaValue !== undefined ? '=' + vs[vi].quotaValue : ''));
+                  }
+                }
+                if (/RetryInfo/.test(ty)) wait = parseFloat(String(det[di].retryDelay || '').replace('s', '')) || 0;
+              }
+              msg = '回数・割当の上限です（' + msg + (q.length ? ' / ' + q.join(', ') : '') +
+                (wait ? ' / ' + wait + '秒待つ' : '') + '）';
+            }
+            var err = new Error(msg);
+            err.status = r.status;
+            err.retryAfter = wait;
+            throw err;
           }
           return j;
         });
@@ -470,55 +491,99 @@
       return new Blob([buf], { type: 'audio/wav' });
     }
 
-    function ttsCall(text, speechConfig) {
-      return call('/models/' + encodeURIComponent(ttsCfg().model) + ':generateContent', {
-        contents: [{ parts: [{ text: text }] }],
-        generationConfig: { responseModalities: ['AUDIO'], speechConfig: speechConfig }
+    /* TTS は無料枠だと分あたりの回数がごく小さい。連続で投げると 429 になるので、
+       呼び出しの間隔を空け、それでも詰まったら API が言う秒数だけ待って1度やり直す。 */
+    var TTS_GAP = 1500;
+    var ttsLast = 0;
+
+    function sleep(ms) {
+      return new Promise(function (res) { setTimeout(res, ms); });
+    }
+
+    function ttsOnce(text, speechConfig) {
+      return sleep(Math.max(0, TTS_GAP - (Date.now() - ttsLast))).then(function () {
+        ttsLast = Date.now();
+        return call('/models/' + encodeURIComponent(ttsCfg().model) + ':generateContent', {
+          contents: [{ parts: [{ text: text }] }],
+          generationConfig: { responseModalities: ['AUDIO'], speechConfig: speechConfig }
+        });
       }).then(function (j) {
         var c = j && j.candidates && j.candidates[0];
         var parts = (c && c.content && c.content.parts) || [];
         var d = null;
-        parts.forEach(function (p) { if (!d && p && p.inlineData && p.inlineData.data) d = p.inlineData.data; });
+        parts.forEach(function (pt) { if (!d && pt && pt.inlineData && pt.inlineData.data) d = pt.inlineData.data; });
         if (!d) throw new Error('音声が返りませんでした' + (c && c.finishReason ? '（' + c.finishReason + '）' : ''));
         return b64ToBytes(d);
       });
     }
 
-    /* lines: [{tag, en}] / speakers: [{tag}] → WAV の Blob
-       onProgress(done, total) で進み具合を知らせる */
-    function conversationAudio(lines, speakers, onProgress) {
-      var v = ttsCfg().voices;
-      var tags = (speakers || []).map(function (s) { return s.tag; });
-      var report = onProgress || function () {};
+    function ttsCall(text, speechConfig) {
+      return ttsOnce(text, speechConfig).catch(function (e) {
+        if (!e || e.status !== 429) throw e;
+        return sleep(Math.max(e.retryAfter || 0, 8) * 1000).then(function () {
+          return ttsOnce(text, speechConfig);
+        });
+      });
+    }
 
-      if (tags.length && tags.length <= 2) {
-        var text = 'Read the following conversation naturally, at a steady pace suitable for an English listening test. ' +
-          'Do not add any words of your own.\n\n' +
-          lines.map(function (l) { return l.tag + ': ' + l.en; }).join('\n');
-        var cfg = {
+    /* 会話を「同時に出てくる話者が2人までのかたまり」に切る。
+       1回の呼び出しで指定できる声は2人までなので、3人会話でも
+       1行ずつではなくこの単位で作れば呼び出し回数がぐっと減る。 */
+    function chunkBySpeaker(lines) {
+      var out = [], cur = [], seen = [];
+      lines.forEach(function (l) {
+        if (seen.indexOf(l.tag) < 0 && seen.length >= 2) {
+          out.push({ lines: cur, tags: seen });
+          cur = []; seen = [];
+        }
+        if (seen.indexOf(l.tag) < 0) seen.push(l.tag);
+        cur.push(l);
+      });
+      if (cur.length) out.push({ lines: cur, tags: seen });
+      return out;
+    }
+
+    function chunkAudio(chunk, voices) {
+      /* 話者が1人だけのかたまりは multiSpeaker が使えないので単独指定にする */
+      if (chunk.tags.length < 2) {
+        return ttsCall('Say this naturally, as part of a conversation, at a steady pace: ' +
+          chunk.lines.map(function (l) { return l.en; }).join(' '),
+          { voiceConfig: { prebuiltVoiceConfig: { voiceName: voices[chunk.tags[0]] || 'Kore' } } });
+      }
+      return ttsCall(
+        'Read the following conversation naturally, at a steady pace suitable for an English listening test. ' +
+        'Do not add any words of your own.\n\n' +
+        chunk.lines.map(function (l) { return l.tag + ': ' + l.en; }).join('\n'),
+        {
           multiSpeakerVoiceConfig: {
-            speakerVoiceConfigs: tags.map(function (t) {
-              return { speaker: t, voiceConfig: { prebuiltVoiceConfig: { voiceName: v[t] || 'Kore' } } };
+            speakerVoiceConfigs: chunk.tags.map(function (t) {
+              return { speaker: t, voiceConfig: { prebuiltVoiceConfig: { voiceName: voices[t] || 'Kore' } } };
             })
           }
-        };
-        report(0, 1);
-        return ttsCall(text, cfg).then(function (b) { report(1, 1); return wavBlob([b]); });
-      }
-
-      /* 3人以上。1行ずつ作って繋ぐ */
-      var out = [];
-      return lines.reduce(function (chain, l, i) {
-        return chain.then(function () {
-          report(i, lines.length);
-          return ttsCall('Say this line naturally, as part of a conversation: ' + l.en, {
-            voiceConfig: { prebuiltVoiceConfig: { voiceName: v[l.tag] || 'Kore' } }
-          }).then(function (b) { out.push(b); });
         });
-      }, Promise.resolve()).then(function () {
-        report(lines.length, lines.length);
-        return wavBlob(out);
-      });
+    }
+
+    /* lines: [{tag, en}] → WAV の Blob。onProgress(done, total) で進み具合を知らせる */
+    function conversationAudio(lines, speakers, onProgress) {
+      var v = ttsCfg().voices;
+      var report = onProgress || function () {};
+      var chunks = chunkBySpeaker(lines || []);
+      var out = [];
+
+      report(0, chunks.length);
+      return chunks.reduce(function (chain, c, i) {
+        return chain.then(function () {
+          return chunkAudio(c, v).then(function (b) {
+            out.push(b);
+            report(i + 1, chunks.length);
+          });
+        });
+      }, Promise.resolve()).then(function () { return wavBlob(out); });
+    }
+
+    /* 何回の呼び出しになるか。試聴の前に画面に出す */
+    function audioCalls(lines) {
+      return chunkBySpeaker(lines || []).length;
     }
 
     /* 背景解説（日本語）を英語に書き直す。段落ごとの配列で返す。
@@ -548,7 +613,8 @@
     }
 
     return { cfg: cfg, setCfg: setCfg, enabled: enabled, models: models, lookup: lookup,
-             toEnglish: toEnglish, ttsCfg: ttsCfg, wavBlob: wavBlob, conversationAudio: conversationAudio };
+             toEnglish: toEnglish, ttsCfg: ttsCfg, wavBlob: wavBlob, conversationAudio: conversationAudio,
+             audioCalls: audioCalls };
 
   })();
 

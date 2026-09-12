@@ -157,7 +157,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   </div>
 </nav>
 
-<script src="core.js?v=6ac61f77"></script>
+<script src="core.js?v=150ce600"></script>
 <script>
 (function () {
   'use strict';
@@ -364,7 +364,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       if (i >= list.length) { clearTimer(); phase = 'answer'; render(); return; }
       qi = i; reading = true;
       render('q');
-      T.TTS.speak(list[i].prompt, {
+      /* 本番と同じく「Question 〜」と番号を読んでから設問に入る */
+      T.TTS.speak('Question ' + (i + 1) + '. ' + list[i].prompt, {
         rate: T.Settings.get('rate'),
         onend: function () {
           if (phase !== 'read') return;
@@ -796,6 +797,12 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       function (bg) { bg.querySelector('#mClose').onclick = function () { bg.remove(); }; });
   });
 
+  /* 全部作ると何回の呼び出しになるか。core.js が古ければ ? と出す */
+  function calls() {
+    try { return T.AI && T.AI.audioCalls ? T.AI.audioCalls(lines()) : '?'; }
+    catch (e) { return '?'; }
+  }
+
   $('btnCfg').addEventListener('click', function () {
     T.openSettings({
       extraHTML:
@@ -809,11 +816,15 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
         '<hr class="sep">' +
         '<h2>音声を Gemini で作る（試験中）</h2>' +
         '<p class="small muted" style="margin:-6px 0 8px">端末内蔵の読み上げより自然かどうかを確かめる試聴です。' +
-        'いま開いているセットの会話を Gemini に読ませます。<b>話者は2人までが1回で作れ、3人の場合は1行ずつ作って繋ぎます</b>' +
-        '（その分、時間と回数がかかります）。アクセント（米・英・豪）の指定はできません。</p>' +
+        '1回の呼び出しで指定できる声は<b>2人まで</b>。3人の会話は2人ずつのかたまりに切って繋ぎます。' +
+        '<b>無料枠は分あたりの回数がごく小さい</b>ので、まず「冒頭だけ」で音の質を確かめてください。' +
+        'アクセント（米・英・豪）の指定はできません。</p>' +
         '<label class="field"><span>TTS のモデル</span>' +
           '<input type="text" id="ttsModel" value="' + esc(T.AI.ttsCfg().model) + '"></label>' +
-        '<div class="tool-row"><button class="btn btn-sm btn-primary" id="ttsTry">この会話を試聴</button></div>' +
+        '<div class="tool-row">' +
+          '<button class="btn btn-sm btn-primary" id="ttsHead">冒頭だけ試聴（1回）</button>' +
+          '<button class="btn btn-sm" id="ttsTry">全部作る（' + calls() + '回）</button>' +
+        '</div>' +
         '<div class="small muted" id="ttsInfo" style="margin-top:8px"></div>' +
         '<div id="ttsOut" style="margin-top:8px"></div>',
       onMount: function (bg) {
@@ -830,19 +841,35 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
         var tm = bg.querySelector('#ttsModel');
         tm.onchange = function () { T.AI.setCfg({ ttsModel: tm.value.trim() }); };
-        bg.querySelector('#ttsTry').onclick = function () {
+        /* head = true なら冒頭のかたまり1つだけ。無料枠を使い切らずに音の質だけ見る用 */
+        var run = function (head) {
           var info = bg.querySelector('#ttsInfo'), out = bg.querySelector('#ttsOut');
           if (!T.AI.enabled()) { info.textContent = '先に Gemini の API キーを設定してください。'; return; }
+          if (!T.AI.audioCalls) { info.textContent = 'core.js が古いようです。ページを再読み込みしてください。'; return; }
           T.AI.setCfg({ ttsModel: tm.value.trim() });
           out.innerHTML = '';
+
+          var ls = lines();
+          if (head) {
+            /* 先頭から、出てくる話者が3人目になる手前まで */
+            var seen = [], cut = ls.length;
+            for (var i = 0; i < ls.length; i++) {
+              if (seen.indexOf(ls[i].tag) < 0) {
+                if (seen.length >= 2) { cut = i; break; }
+                seen.push(ls[i].tag);
+              }
+            }
+            ls = ls.slice(0, cut);
+          }
+
           var t0 = Date.now();
           info.textContent = '作成中…';
-          T.AI.conversationAudio(lines(), SET.speakers, function (done, total) {
-            info.textContent = '作成中… ' + done + ' / ' + total;
+          T.AI.conversationAudio(ls, SET.speakers, function (done, total) {
+            info.textContent = '作成中… ' + done + ' / ' + total + ' 回';
           }).then(function (blob) {
             var sec = ((Date.now() - t0) / 1000).toFixed(1);
-            info.innerHTML = '完了。<b>' + Math.round(blob.size / 1024) + ' KB</b>（WAV）／ 作成 ' + sec + ' 秒。' +
-              '<br>MP3 に変換すれば 1/5 ほどになります。';
+            info.innerHTML = '完了。' + ls.length + '行 ／ <b>' + Math.round(blob.size / 1024) + ' KB</b>（WAV）' +
+              '／ 作成 ' + sec + ' 秒。<br>MP3 に変換すれば 1/5 ほどになります。';
             var a = document.createElement('audio');
             a.controls = true; a.style.width = '100%';
             a.src = URL.createObjectURL(blob);
@@ -851,6 +878,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
             info.textContent = '失敗: ' + ((e && e.message) || e);
           });
         };
+        bg.querySelector('#ttsHead').onclick = function () { run(true); };
+        bg.querySelector('#ttsTry').onclick = function () { run(false); };
       }
     });
   });
