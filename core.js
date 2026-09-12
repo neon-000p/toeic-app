@@ -771,6 +771,18 @@
     }
     return out;
   }
+  /* 教材に通し番号を振る。古いものから 1、2、… とし、返すのは新しい順。
+     index.json に no があればそれを使う（あとから過去分を足しても番号がずれない）。
+     ホームと一覧ページで同じ番号を出すため、ここに置いて共有する。 */
+  function numberSets(items) {
+    var list = (items || []).slice();
+    var key = function (x) { return (x.date || '') + ' ' + (x.time || '') + ' ' + (x.id || ''); };
+    list.sort(function (a, b) { return key(a).localeCompare(key(b)); });
+    list.forEach(function (it, i) { if (!it.no) it.no = i + 1; });
+    list.reverse();
+    return list;
+  }
+
   function toast(msg, ms) {
     var el = document.getElementById('toast');
     if (!el) { el = document.createElement('div'); el.id = 'toast'; el.className = 'toast'; document.body.appendChild(el); }
@@ -798,7 +810,7 @@
     read: read, write: write,
     Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS, AI: AI,
     modal: modal, openSettings: openSettings,
-    flash: flash, takeFlash: takeFlash,
+    flash: flash, takeFlash: takeFlash, numberSets: numberSets,
     esc: esc, splitWords: splitWords, markupEnglish: markupEnglish, toast: toast
   };
 })(window);

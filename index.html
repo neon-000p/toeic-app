@@ -57,6 +57,8 @@ main{padding-top:14px}
 .list .s.done{color:var(--ok)}
 
 .soon .row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 0;font-size:14px}
+a.row{text-decoration:none;color:inherit}
+a.row .w{color:var(--accent)}
 .soon .row+.row{border-top:1px solid var(--line)}
 .soon .row .w{color:var(--muted);font-size:12px}
 .soon .row .name{color:var(--ink-2)}
@@ -89,7 +91,7 @@ main{padding-top:14px}
   </main>
 </div>
 
-<script src="core.js?v=3d1f1bb7"></script>
+<script src="core.js?v=8ac525b1"></script>
 <script>
 (function () {
   'use strict';
@@ -103,7 +105,8 @@ main{padding-top:14px}
   document.getElementById('stStreak').textContent = T.Log.streak();
   document.getElementById('stVocab').textContent = T.Vocab.count();
 
-  var p3items = [];
+  /* パート番号 → そのパートの教材。増えたらここに読み込む */
+  var drills = { '3': [] };
 
   function progressOf(id) { return T.Log.progress('news:' + id); }
 
@@ -150,82 +153,107 @@ main{padding-top:14px}
     return html;
   }
 
-  /* Part 3 は1ファイル＝1セット。どれが新しい分かを選べるように一覧で出す。
-     場面（scene）は出さない。何の話かを先に知ると先読みの練習にならない。 */
-  function p3Status(id) {
-    var q = T.Log.progress('part3:' + id);
+  /* 実践対策。パートごとの一覧は drills.html に任せ、
+     ホームには「最近追加された分」と各パートの入口だけを置く。
+     パートが増えてもホームが散らからないようにするため。 */
+  var PARTS = [
+    { n: '3', name: '会話問題', note: '2〜3人の会話を1回だけ聞いて3問', ready: true },
+    { n: '4', name: '説明文', note: 'アナウンス・留守電・スピーチ', ready: false },
+    { n: '5', name: '短文穴埋め', note: '文法と語彙', ready: false },
+    { n: '6', name: '長文穴埋め', note: '文脈に合う語と一文挿入', ready: false },
+    { n: '7', name: '読解', note: '単一文書・複数文書', ready: false }
+  ];
+
+  function drillStatus(part, id) {
+    var q = T.Log.progress('part' + part + ':' + id);
     if (!q) return '';
     if (q.maxStep >= 4) return '済';
     if (q.scored || (q.answers && Object.keys(q.answers).length) || q.maxStep > 0) return '途中';
     return '';
   }
 
-  function p3Card() {
-    if (!p3items.length) {
-      return '<a class="card today" href="part3.html" style="display:block">' +
-        '<div class="meta-row"><span class="sec-label" style="margin:0">Part 3</span>' +
-          '<span class="chip">会話問題</span></div>' +
-        '<h2>会話を1回だけ聞いて3問</h2>' +
-        '<p class="small muted" style="margin:6px 0 0">目次を読めませんでした。' +
-        'ローカルのファイルを直接開いた場合は読めません。</p>' +
-        '<span class="go">開く →</span></a>';
-    }
+  function drillLabel(part, it) {
+    if (part === '3') return '会話 ' + (it.speakers || 2) + '人・3問';
+    return (it.kind || '') + (it.questions ? ' ' + it.questions + '問' : '');
+  }
 
-    var top = p3items[0], s = p3Status(top.id);
-    var label = s === '済' ? 'もう一度' : (s === '途中' ? '続きから' : 'はじめる');
-
-    var html = '<a class="card today" href="part3.html?id=' + encodeURIComponent(top.id) + '">' +
-      '<div class="meta-row"><span class="sec-label" style="margin:0">最新のセット</span>' +
-        '<span>' + esc((top.date || '').replace(/-/g, '/')) + (top.time ? ' ' + esc(top.time) : '') + '</span>' +
-        '<span class="chip">Part 3</span>' +
-        '<span class="chip chip-plain">' + (top.speakers || 2) + '人</span>' +
-        (s ? '<span class="chip chip-plain">' + s + '</span>' : '') +
-      '</div>' +
-      '<h2>会話を1回だけ聞いて3問</h2>' +
-      '<p class="small muted" style="margin:6px 0 0">設問を先読みしてから再生。本文は出ません。</p>' +
-      '<span class="go">' + label + ' →</span>' +
-    '</a>';
-
-    if (p3items.length > 1) {
-      html += '<div class="card"><div class="sec-label">これまでのセット</div><div class="list">' +
-        p3items.slice(1, 31).map(function (it) {
-          var st = p3Status(it.id);
-          return '<a href="part3.html?id=' + encodeURIComponent(it.id) + '">' +
-            '<span class="d">' + esc((it.date || '').slice(5).replace('-', '/') + (it.time ? ' ' + it.time : '')) + '</span>' +
-            '<span class="t">会話 ' + (it.speakers || 2) + '人・3問</span>' +
-            (st ? '<span class="s' + (st === '済' ? ' done' : '') + '">' + st + '</span>' : '') +
-          '</a>';
-        }).join('') + '</div></div>';
-    }
-    return html;
+  /* 各パートの教材を1本の列にまとめ、新しい順に返す */
+  function recentDrills() {
+    var all = [];
+    Object.keys(drills).forEach(function (part) {
+      drills[part].forEach(function (it) {
+        all.push({ part: part, it: it });
+      });
+    });
+    all.sort(function (a, b) {
+      var k = function (x) { return (x.it.date || '') + ' ' + (x.it.time || '') + ' ' + (x.it.id || ''); };
+      return k(b).localeCompare(k(a));
+    });
+    return all;
   }
 
   function drillHTML() {
-    var parts = [
-      ['Part 4', '説明文', 'アナウンス・留守電・スピーチ'],
-      ['Part 5', '短文穴埋め', '文法と語彙'],
-      ['Part 6', '長文穴埋め', '文脈に合う語と一文挿入'],
-      ['Part 7', '読解', '単一文書・複数文書']
-    ];
-    return p3Card() +
-      '<div class="card soon">' +
-      parts.map(function (p) {
+    var recent = recentDrills();
+    var html = '';
+
+    if (recent.length) {
+      var top = recent[0], s0 = drillStatus(top.part, top.it.id);
+      var go = s0 === '済' ? 'もう一度' : (s0 === '途中' ? '続きから' : 'はじめる');
+
+      html += '<a class="card today" href="part' + top.part + '.html?id=' + encodeURIComponent(top.it.id) + '">' +
+        '<div class="meta-row"><span class="sec-label" style="margin:0">最新</span>' +
+          '<span>' + esc((top.it.date || '').replace(/-/g, '/')) +
+            (top.it.time ? ' ' + esc(top.it.time) : '') + '</span>' +
+          '<span class="chip">Part ' + top.part + ' #' + top.it.no + '</span>' +
+          (s0 ? '<span class="chip chip-plain">' + s0 + '</span>' : '') +
+        '</div>' +
+        '<h2>' + esc(drillLabel(top.part, top.it)) + '</h2>' +
+        '<p class="small muted" style="margin:6px 0 0">設問を先読みしてから再生。本文は出ません。</p>' +
+        '<span class="go">' + go + ' →</span>' +
+      '</a>';
+
+      if (recent.length > 1) {
+        html += '<div class="card"><div class="sec-label">最近追加された教材</div><div class="list">' +
+          recent.slice(1, 4).map(function (r) {
+            var st = drillStatus(r.part, r.it.id);
+            return '<a href="part' + r.part + '.html?id=' + encodeURIComponent(r.it.id) + '">' +
+              '<span class="d">' + esc((r.it.date || '').slice(5).replace('-', '/') +
+                (r.it.time ? ' ' + r.it.time : '')) + '</span>' +
+              '<span class="t"><b>Part ' + r.part + ' #' + r.it.no + '</b>　' +
+                esc(drillLabel(r.part, r.it)) + '</span>' +
+              (st ? '<span class="s' + (st === '済' ? ' done' : '') + '">' + st + '</span>' : '') +
+            '</a>';
+          }).join('') + '</div></div>';
+      }
+    }
+
+    /* パートの入口。教材のあるパートは一覧ページへ */
+    html += '<div class="card soon">' +
+      PARTS.map(function (p) {
+        var list = drills[p.n] || [];
+        if (p.ready) {
+          var done = list.filter(function (it) { return drillStatus(p.n, it.id) === '済'; }).length;
+          return '<a class="row" href="drills.html?part=' + p.n + '">' +
+            '<span><b>Part ' + p.n + '</b>　<span class="name">' + p.name + '</span>' +
+            '<div class="w" style="margin-top:2px">' + p.note + '</div></span>' +
+            '<span class="w">' + list.length + ' セット' +
+              (done ? '・済 ' + done : '') + ' →</span></a>';
+        }
         return '<div class="row">' +
-          '<span><b>' + p[0] + '</b>　<span class="name">' + p[1] + '</span>' +
-          '<div class="w" style="margin-top:2px">' + p[2] + '</div></span>' +
+          '<span><b>Part ' + p.n + '</b>　<span class="name">' + p.name + '</span>' +
+          '<div class="w" style="margin-top:2px">' + p.note + '</div></span>' +
           '<span class="w">準備中</span></div>';
       }).join('') +
-      '</div>' +
-      '<p class="small muted" style="margin:12px 2px 0">' +
-      '時事英語と Part 3 は別のルーティンで作られ、<code>data/news/</code> と <code>data/part3/</code> に分けて置かれます。' +
-      '片方が止まっても、もう片方に影響しません。会話の音声は先に作って置いてあるので、再生まで待ちません。</p>';
+      '</div>';
+
+    return html;
   }
 
   function render() {
     main.innerHTML = tab === 'news' ? newsHTML() : drillHTML();
-    /* 「学習した教材」は時事と Part 3 の合計。片方だけ数えると実態と合わない */
+    /* 「学習した教材」は時事と実践の合計。片方だけ数えると実態と合わない */
     var done = items.filter(function (it) { var p = progressOf(it.id); return p && p.done; }).length +
-      p3items.filter(function (it) { return p3Status(it.id) === '済'; }).length;
+      recentDrills().filter(function (r) { return drillStatus(r.part, r.it.id) === '済'; }).length;
     document.getElementById('stDone').textContent = done;
   }
 
@@ -257,7 +285,7 @@ main{padding-top:14px}
     loadIndex('data/part3/index.json')
   ]).then(function (r) {
     items = r[0];
-    p3items = r[1];
+    drills['3'] = T.numberSets(r[1]);
     render();
   });
 

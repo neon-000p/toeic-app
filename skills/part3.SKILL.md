@@ -267,8 +267,10 @@ push したら `git branch --show-current` が `main` であることと、`git 
 `data/part3/index.json` の `items` の**先頭**に次を挿入する。`scene` は入れない（一覧で場面が見えると先読みの意味が薄れる）。
 
 ```json
-{ "id": "2026-09-14-0530", "date": "2026-09-14", "time": "05:30", "speakers": 2, "file": "2026-09-14-0530.json" }
+{ "id": "2026-09-14-0530", "no": 12, "date": "2026-09-14", "time": "05:30", "speakers": 2, "file": "2026-09-14-0530.json" }
 ```
+
+`no` は Part 3 の通し番号。**既存項目の最大値 + 1**（無ければ 1）。アプリはこれを「Part 3 #12」として出す。
 
 `updatedAt` を JST の実時刻に更新する。**古い項目は削除しない。**
 
@@ -306,7 +308,7 @@ push したら `git branch --show-current` が `main` であることと、`git 
 - `glossary` が12〜20語で、全キーが会話本文に実在する小文字表層形である
 - `point.items` が2〜3項目で、設問1問に閉じた話になっていない
 - `audio` を書いていない
-- `index.json` と `history.json` の先頭に今回の項目を追記した
+- `index.json` に `no`（既存の最大値 + 1）を入れ、`index.json` と `history.json` の先頭に今回の項目を追記した
 - 3人会話の回なら、`evidence` に別の話者の行を2つ以上含む設問が1問以上ある
 
 ---
