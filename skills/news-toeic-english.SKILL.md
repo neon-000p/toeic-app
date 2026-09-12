@@ -341,7 +341,7 @@ Part 3 など他パートの教材は**別ルーティン・別ディレクト�
     "quoteJa": "その訳",
     "blocks": [ { "heading": "構文", "body": "日本語解説" } ]
   },
-  "background": [ { "heading": "📌 見出し", "body": "日本語解説", "bodyEn": "同じ内容の英語版" } ],
+  "background": [ { "heading": "📌 見出し", "body": "日本語解説" } ],
   "sources": [
     { "title": "記事タイトル", "publisher": "媒体名", "url": "https://...", "date": "2026-09-11" }
   ]
@@ -371,14 +371,6 @@ Summary に**実際に登場する語**のうち、TOEIC 600点前後の学習�
 - `lemma` に原形、`ja` に短い訳（10文字程度）、`note` は使い方の補足があるときだけ（無ければ空文字）。
 - 中学レベルの基本語（the, company, said, new など）は入れない。
 - `vocabulary` の8語も忘れずに含める（本文中の形で）。
-
-**`background[].bodyEn`（新規に作る）**
-(7) の各項目を**英語でも書く**。アプリで日本語と英語を切り替えて読めるようにするため。日本語をそのまま訳すのではなく、**同じ内容を英語で書き直す**。
-
-- 難易度は (1) Summary と同じに揃える。1文の平均18語前後、関係代名詞は1文に1つまで。背景解説だからといって難しくしない
-- 日本語版に出てくる固有名詞や数字はそのまま使ってよい（ステップ3の上限はここには適用しない）
-- 長さは日本語版と同程度。無理に縮めない
-- Markdown 側の (7) は日本語のままでよい。英語版は JSON だけに入れる
 
 **`title`**
 Markdown には無い項目なので新たに付ける。`en` は Summary 冒頭の太字タイトル、`ja` はその自然な日本語訳（20字前後）。
@@ -424,7 +416,6 @@ Markdown には無い項目なので新たに付ける。`en` は Summary 冒頭
 - `vocabulary` が8件、全 `term` が Summary に実在する
 - `glossary` が20語以上30語以下で、全キーが Summary に実在する小文字表層形である
 - `genre` が10種のいずれかで、Markdown 冒頭の「ジャンル：」と一致する
-- `background` の各項目に `body` と `bodyEn` の両方がある
 - `history.json` の先頭に今回の項目（`date` / `seq` / `genre` / `grammar`）を追記した
 
 ---
@@ -456,7 +447,6 @@ Markdown には無い項目なので新たに付ける。`en` は Summary 冒頭
 - [ ] JSON の evidence がすべて実在する段落・文を指しているか
 - [ ] JSON の glossary が20〜30語で、全キーが Summary の小文字表層形か
 - [ ] JSON の vocabulary 8語が Markdown の (5) と一致しているか
-- [ ] JSON の background の各項目に bodyEn（英語版）を書いたか
 - [ ] `main` ブランチに push したか（作業ブランチに置いたままにしていないか）
 - [ ] index.json の先頭に追加し、31件目以降を削除し、updatedAt を JST 実時刻で更新したか
 - [ ] history.json の先頭にジャンルと文法トピックを追記したか（次回の重複判定に使う）

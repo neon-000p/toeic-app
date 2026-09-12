@@ -295,6 +295,45 @@
       });
     }
 
+    /* ---- 応答の取り出し（lookup と翻訳で共用） ---- */
+
+    /* 思考の断片（thought）は混ぜない。parts が複数に割れて返ることがあるので全部つなぐ */
+    function pick(j) {
+      var c = j && j.candidates && j.candidates[0];
+      var parts = (c && c.content && c.content.parts) || [];
+      var text = parts.filter(function (x) { return x && x.text && !x.thought; })
+                      .map(function (x) { return x.text; }).join('');
+      return { text: text, finish: (c && c.finishReason) || '' };
+    }
+    /* responseMimeType を指定していてもコードブロックで返ることがある */
+    function unfence(t) {
+      t = String(t || '').trim();
+      var m = t.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
+      return m ? m[1].trim() : t;
+    }
+
+    /* JSON で答えさせる。空で返ることがあるので1度だけ引き直す。
+       maxOutputTokens は内部の思考でも消費されるため、余裕を持たせる。 */
+    function generate(prompt, maxTokens, isOk, isRetry) {
+      return call('/models/' + encodeURIComponent(cfg().model) + ':generateContent', {
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: {
+          temperature: 0.2,
+          maxOutputTokens: maxTokens || 2048,
+          responseMimeType: 'application/json'
+        }
+      }).then(function (j) {
+        var got = pick(j);
+        var obj = null;
+        try { obj = JSON.parse(unfence(got.text)); } catch (e) {}
+        if (!obj || (isOk && !isOk(obj))) {
+          if (!isRetry) return generate(prompt, maxTokens, isOk, true);
+          throw new Error('応答が空でした' + (got.finish ? '（' + got.finish + '）' : ''));
+        }
+        return obj;
+      });
+    }
+
     /* 語と、それが入っている英文を渡して、意味と TOEIC 向けの一言を得る。
        構文の説明（「主語である」等）は読めば分かるので求めない。
        点に直結するのは言い換えとコロケーションなので、そこに絞る。 */
@@ -319,50 +358,42 @@
         'tip を空文字にしてください。無理に埋めないこと。' +
         '構文上の役割（主語・目的語など）の説明は読めば分かるので書かないこと。';
 
-      /* 応答から本文だけを拾う。思考の断片（thought）は混ぜない。
-         parts が複数に割れて返ることがあるので全部つなぐ。 */
-      function pick(j) {
-        var c = j && j.candidates && j.candidates[0];
-        var parts = (c && c.content && c.content.parts) || [];
-        var text = parts.filter(function (x) { return x && x.text && !x.thought; })
-                        .map(function (x) { return x.text; }).join('');
-        return { text: text, finish: (c && c.finishReason) || '' };
-      }
-      /* responseMimeType を指定していてもコードブロックで返ることがある */
-      function unfence(t) {
-        t = String(t || '').trim();
-        var m = t.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
-        return m ? m[1].trim() : t;
-      }
-
-      function ask(isRetry) {
-        return call('/models/' + encodeURIComponent(cfg().model) + ':generateContent', {
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: {
-            temperature: 0.2,
-            /* 内部の思考でトークンを使い切ると本文が空で返るため、多めに取る */
-            maxOutputTokens: 2048,
-            responseMimeType: 'application/json'
-          }
-        }).then(function (j) {
-          var got = pick(j);
-          var obj = null;
-          try { obj = JSON.parse(unfence(got.text)); } catch (e) {}
-          var out = obj ? { pos: obj.pos || '', ja: obj.ja || '', tip: obj.tip || '' } : null;
-          if (!out || (!out.ja && !out.tip)) {
-            /* まれに空で返るので1度だけ引き直す */
-            if (!isRetry) return ask(true);
-            throw new Error('応答が空でした' + (got.finish ? '（' + got.finish + '）' : ''));
-          }
-          out.at = Date.now();
+      return generate(prompt, 2048, function (o) { return o.ja || o.tip; })
+        .then(function (o) {
+          var out = { pos: o.pos || '', ja: o.ja || '', tip: o.tip || '', at: Date.now() };
           cachePut(key, out);
           return out;
         });
-      }
-      return ask(false);
     }
 
-    return { cfg: cfg, setCfg: setCfg, enabled: enabled, models: models, lookup: lookup };
+    /* 背景解説（日本語）を英語に書き直す。段落ごとの配列で返す。
+       一度訳したら端末に残すので、同じ教材で2度目は通信しない。 */
+    function toEnglish(texts, scope) {
+      var store = read('gemini.bg', {}) || {};
+      var k = String(scope || '') + '|' + texts.length;
+      if (store[k] && store[k].length === texts.length) return Promise.resolve(store[k]);
+
+      var prompt =
+        'TOEIC 学習者向けの読み物として、次の日本語の解説を英語に書き直してください。\n\n' +
+        '条件:\n' +
+        '- 直訳ではなく、同じ内容を自然な英語で書く\n' +
+        '- 1文の平均は18語前後。関係代名詞は1文に1つまで。解説だからといって難しくしない\n' +
+        '- 段落の数と順番は変えない。1つの段落を分割も結合もしない\n' +
+        '- 固有名詞と数字はそのまま使う\n\n' +
+        '出力は、各段落の英文を順番に並べた JSON 配列だけ。前後に説明を付けないこと。\n' +
+        '例: ["First paragraph in English.", "Second paragraph in English."]\n\n' +
+        texts.map(function (t, i) { return '[' + (i + 1) + ']\n' + t; }).join('\n\n');
+
+      return generate(prompt, 4096, function (o) { return Array.isArray(o) && o.length === texts.length; })
+        .then(function (arr) {
+          store[k] = arr;
+          write('gemini.bg', store);
+          return arr;
+        });
+    }
+
+    return { cfg: cfg, setCfg: setCfg, enabled: enabled, models: models, lookup: lookup, toEnglish: toEnglish };
+
   })();
 
   /* ---------- ユーティリティ ---------- */

@@ -656,7 +656,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=533974b8"></script>
+<script src="core.js?v=d8e95294"></script>
 <script>
 (function () {
   'use strict';
@@ -675,6 +675,8 @@ details.src[open]>summary::before{content:"▾ ";}
   var step = 0, state = { answers: {}, graded: false, maxStep: 0, done: false };
   var progKey = '';
   var playing = null;
+  var bgEn = null;      // 背景解説の英訳（Gemini の結果）
+  var bgBusy = false;
 
   var $ = function (id) { return document.getElementById(id); };
   var stage = $('stage');
@@ -735,6 +737,7 @@ details.src[open]>summary::before{content:"▾ ";}
 
   function start(d) {
     DATA = d;
+    bgEn = null; bgBusy = false;
     progKey = 'news:' + (d.id || d.date || 'unknown');
     var p = T.Log.progress(progKey);
     state = {
@@ -1052,21 +1055,23 @@ details.src[open]>summary::before{content:"▾ ";}
   function viewBg() {
     var src = (DATA.sources || []).filter(function (s) { return s.url; });
     var blocks = DATA.background || [];
-    var hasEn = blocks.some(function (b) { return b.bodyEn; });
-    var en = hasEn && T.Settings.get('bgEn') === true;
+    var can = hasAI();
+    var en = can && T.Settings.get('bgEn') === true;
     return '<div class="card">' +
       '<div class="sec-head"><span class="sec-label">Background</span>' +
-        (hasEn
+        (can
           ? '<span class="sec-tools"><button class="btn btn-sm icon' + (en ? ' on' : '') +
             '" id="toggleBgEn" title="' + (en ? '日本語で読む' : '英語で読む') + '">EN</button></span>'
           : '') +
       '</div>' +
-      blocks.map(function (b) {
-        var useEn = en && b.bodyEn;
+      (en && bgBusy ? '<p class="hint" style="margin-top:0">英訳しています…</p>' : '') +
+      blocks.map(function (b, i) {
+        var t = (en && bgEn && bgEn[i]) ? bgEn[i] : b.body;
+        var useEn = en && bgEn && bgEn[i];
         return '<div class="blk"><h3>' + esc(b.heading) + '</h3>' +
-          '<p' + (useEn ? ' class="en"' : '') + '>' + esc(useEn ? b.bodyEn : b.body) + '</p></div>';
+          '<p' + (useEn ? ' class="en"' : '') + '>' + esc(t) + '</p></div>';
       }).join('') +
-      (hasEn ? '' : '<p class="hint">英語版はこれ以降に作られる教材から入ります。</p>') +
+      (can ? '' : '<p class="hint">⚙ で Gemini のキーを設定すると、英語で読めます。</p>') +
     '</div>' +
     (src.length ? '<div class="card"><div class="sec-label">出典</div>' + src.map(function (s) {
       return '<p class="small" style="margin:0 0 6px"><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' +
@@ -1220,7 +1225,27 @@ details.src[open]>summary::before{content:"▾ ";}
     }
 
     if (t.id === 'toggleBgEn') {
-      T.Settings.set('bgEn', T.Settings.get('bgEn') !== true);
+      var on = T.Settings.get('bgEn') !== true;
+      T.Settings.set('bgEn', on);
+      /* 訳がまだ無ければ Gemini に頼む。一度訳したらこの端末に残るので、
+         同じ教材で切り替え直しても通信しない。 */
+      if (on && !bgEn && !bgBusy) {
+        var texts = (DATA.background || []).map(function (b) { return b.body; });
+        if (texts.length) {
+          bgBusy = true;
+          render();
+          T.AI.toEnglish(texts, DATA.id).then(function (arr) {
+            bgEn = arr; bgBusy = false;
+            if (STEPS[step].key === 'bg') render();
+          }).catch(function (err) {
+            bgBusy = false;
+            T.Settings.set('bgEn', false);
+            T.toast((err && err.message) || '英訳できませんでした');
+            if (STEPS[step].key === 'bg') render();
+          });
+          return;
+        }
+      }
       render();
       return;
     }
