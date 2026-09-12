@@ -102,8 +102,12 @@ a.row .w{color:var(--accent)}
   var main = document.getElementById('main');
   var items = [];
   /* 実践の教材から戻ったときは実践タブで開く。
-     毎回「時事」に戻ると、続きを選び直すのに1手増えるため。 */
-  var tab = (new URLSearchParams(location.search).get('tab') === 'drill') ? 'drill' : 'news';
+     URL の指定を優先し、無ければ最後に見ていたタブを使う。
+     古いページのリンク（?tab= が付いていない）から戻っても
+     実践に戻れるよう、教材ページ側でも覚えさせている。 */
+  var tab = (new URLSearchParams(location.search).get('tab') === 'drill')
+    ? 'drill'
+    : (T.Settings.get('hubTab') === 'drill' ? 'drill' : 'news');
 
   document.getElementById('btnCfg').addEventListener('click', function () { T.openSettings(); });
 
@@ -281,6 +285,7 @@ a.row .w{color:var(--accent)}
     var b = e.target.closest('button[data-tab]');
     if (!b) return;
     tab = b.dataset.tab;
+    T.Settings.set('hubTab', tab);
     document.querySelectorAll('.tabs button').forEach(function (x) { x.classList.toggle('on', x === b); });
     render();
   });

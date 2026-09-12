@@ -65,6 +65,9 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
   var T = window.TOEIC;
   var esc = T.esc;
 
+  /* ホームに戻ったときにこのタブで開くよう覚えておく */
+  T.Settings.set('hubTab', 'drill');
+
   /* パートごとの定義。Part 4 以降を足すときはここに1行足して
      data/part4/ に教材を置けばよい。ページは使い回せる。 */
   var PARTS = {

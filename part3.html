@@ -171,6 +171,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   var stage = $('stage');
 
   /* 1回に1セット（会話1本＋設問3問）。本番の1セットと同じ単位。 */
+  /* ホームに戻ったときにこのタブで開くよう覚えておく */
+  T.Settings.set('hubTab', 'drill');
+
   var STEPS = [
     { key: 'quiz',   label: '設問' },
     { key: 'ans',    label: '解説' },

@@ -657,6 +657,9 @@ details.src[open]>summary::before{content:"▾ ";}
   'use strict';
   var T = window.TOEIC, esc = T.esc;
 
+  /* ホームに戻ったときにこのタブで開くよう覚えておく */
+  T.Settings.set('hubTab', 'news');
+
   var STEPS = [
     { key: 'quiz',  label: '設問' },
     { key: 'ans',   label: '解説' },
