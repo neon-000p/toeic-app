@@ -252,5 +252,12 @@
         "body": "会話の最後2〜3往復は必ず聞き切ってください。I'll book it this afternoon が答えでした。選択肢では book → reserve のように必ず言い換えられるので、動詞そのものを探すのではなく「誰が何をすると言ったか」で捉えます。"
       }
     ]
+  },
+  "audio": {
+    "file": "audio/p3-sample-1.wav",
+    "sec": 47.6,
+    "bytes": 2286764,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-12T16:12:40.514Z"
   }
 }
