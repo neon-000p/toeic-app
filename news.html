@@ -171,7 +171,6 @@ details.src[open]>summary::before{content:"▾ ";}
 .terms-only .vcard{cursor:pointer}
 .sline{display:flex;gap:10px;align-items:flex-start;padding:8px 8px;border-radius:9px;cursor:pointer}
 /* 区切り線は置かない。再生中の行が光るので、行の切れ目はそれで分かる */
-.sline .i{flex:none;width:18px;font-size:11px;font-weight:800;color:var(--muted);text-align:right;margin-top:4px}
 /* 対訳では読みを妨げないよう語の下線を出さない（タップは従来どおり効く） */
 .sline .w.has-gloss{border-bottom-color:transparent}
 .sline .body{flex:1;min-width:0}
@@ -974,7 +973,6 @@ details.src[open]>summary::before{content:"▾ ";}
   function lineRows(src) {
     return linesFor(src).map(function (s, i) {
       return '<div class="sline" data-src="' + src + '" data-i="' + i + '">' +
-        '<span class="i">' + (i + 1) + '</span>' +
         '<span class="body"><span class="e">' + T.markupEnglish(s.en, DATA.glossary) + '</span>' +
         '<span class="j">' + esc(s.ja || '') + '</span></span>' +
         '<span class="pl">▶</span></div>';
