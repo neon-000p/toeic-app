@@ -35,7 +35,8 @@ claude.ai のルーティン「時事英語TOEIC教材 to notion」の設定内�
      `updatedAt` を JST の実時刻に更新する
    - `data/news/history.json` の `items` 先頭に、今回のジャンルと文法トピックを追記する
      （これを忘れると次回以降の重複判定が壊れる）
-   - `git add` → `git commit` → `git push` まで行う
+   - **`main` ブランチに対して**作業し、`git add` → `git commit` → `git push origin main` まで行う。
+     作業用ブランチを切ったりプルリクエストを作ったりしないこと（GitHub Pages は main だけを配信している）
    - コミットメッセージは `教材追加: <id> <ジャンル>` の形にする
 
 4. `news-toeic-english-notion` スキルの手順に従い、2 で作った本文を Notion にも保存する。
@@ -57,7 +58,7 @@ claude.ai のルーティン「時事英語TOEIC教材 to notion」の設定内�
 
 確認すること:
 
-1. `data/news/` に `<id>.json` が増えているか
+1. **`main` ブランチに** `data/news/<id>.json` が増えているか（作業ブランチに入っていないか）
 2. `index.json` の先頭がその id になっているか
 3. `history.json` の先頭に今回のジャンルと文法トピックが入っているか
 4. https://neon-000p.github.io/toeic-app/ を開いて最新の教材が出るか

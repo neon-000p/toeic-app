@@ -275,6 +275,19 @@ JSON は「教材を作り直したもの」ではなく「同じ教材の別表
 **`id` の付け方**: ステップ0で取得した JST の実時刻を使い `YYYY-MM-DD-HHMM` とする（例 `2026-09-12-0530`）。ファイル名は `<id>.json`。
 本スキルは**1日2回**（JST 5:30 と 16:30）実行されるため、日付だけを id にすると2本目が1本目を上書きしてしまう。時刻まで必ず含めること。
 
+**作業は必ず `main` ブランチに対して行う。** クラウドの実行環境は既定で作業用ブランチ（`claude/...`）を切ることがあるが、**GitHub Pages が配信しているのは `main` だけ**なので、作業ブランチに置いた教材はアプリに出てこない。プルリクエストも作らない（毎回のデータ追記にレビューは要らない）。
+
+```bash
+git checkout main
+git pull --ff-only origin main
+# ここで JSON を書き出す
+git add data/news
+git commit -m "教材追加: <id> <ジャンル>"
+git push origin main
+```
+
+push したら `git branch --show-current` が `main` であることと、`git status` が clean であることを確認する。
+
 Part 3 など他パートの教材は**別ルーティン・別ディレクトリ**（`data/part3/`）で管理する。本スキルは `data/news/` 以外に触れない。
 
 ### 5-2. スキーマ（v1）
@@ -434,6 +447,7 @@ Markdown には無い項目なので新たに付ける。`en` は Summary 冒頭
 - [ ] JSON の evidence がすべて実在する段落・文を指しているか
 - [ ] JSON の glossary が20〜30語で、全キーが Summary の小文字表層形か
 - [ ] JSON の vocabulary 8語が Markdown の (5) と一致しているか
+- [ ] `main` ブランチに push したか（作業ブランチに置いたままにしていないか）
 - [ ] index.json の先頭に追加し、31件目以降を削除し、updatedAt を JST 実時刻で更新したか
 - [ ] history.json の先頭にジャンルと文法トピックを追記したか（次回の重複判定に使う）
 
