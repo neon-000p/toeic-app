@@ -196,35 +196,25 @@ a.row .w{color:var(--accent)}
     var recent = recentDrills();
     var html = '';
 
-    if (recent.length) {
-      var top = recent[0], s0 = drillStatus(top.part, top.it.id);
-      var go = s0 === '済' ? 'もう一度' : (s0 === '途中' ? '続きから' : 'はじめる');
+    /* まだ解いていないものを上に3件。大きなカードは置かない。
+       「次に何をやるか」だけ分かればよく、最新1件を大きく出す必要がない。 */
+    var todo = recent.filter(function (r) { return drillStatus(r.part, r.it.id) !== '済'; });
+    var show = todo.length ? todo.slice(0, 3) : recent.slice(0, 3);
 
-      html += '<a class="card today" href="part' + top.part + '.html?id=' + encodeURIComponent(top.it.id) + '">' +
-        '<div class="meta-row"><span class="sec-label" style="margin:0">最新</span>' +
-          '<span>' + esc((top.it.date || '').replace(/-/g, '/')) +
-            (top.it.time ? ' ' + esc(top.it.time) : '') + '</span>' +
-          '<span class="chip">Part ' + top.part + ' #' + top.it.no + '</span>' +
-          (s0 ? '<span class="chip chip-plain">' + s0 + '</span>' : '') +
-        '</div>' +
-        '<h2>' + esc(drillLabel(top.part, top.it)) + '</h2>' +
-        '<p class="small muted" style="margin:6px 0 0">設問を先読みしてから再生。本文は出ません。</p>' +
-        '<span class="go">' + go + ' →</span>' +
-      '</a>';
-
-      if (recent.length > 1) {
-        html += '<div class="card"><div class="sec-label">最近追加された教材</div><div class="list">' +
-          recent.slice(1, 4).map(function (r) {
-            var st = drillStatus(r.part, r.it.id);
-            return '<a href="part' + r.part + '.html?id=' + encodeURIComponent(r.it.id) + '">' +
-              '<span class="d">' + esc((r.it.date || '').slice(5).replace('-', '/') +
-                (r.it.time ? ' ' + r.it.time : '')) + '</span>' +
-              '<span class="t"><b>Part ' + r.part + ' #' + r.it.no + '</b>　' +
-                esc(drillLabel(r.part, r.it)) + '</span>' +
-              (st ? '<span class="s' + (st === '済' ? ' done' : '') + '">' + st + '</span>' : '') +
-            '</a>';
-          }).join('') + '</div></div>';
-      }
+    if (show.length) {
+      html += '<div class="card"><div class="sec-label">' +
+        (todo.length ? '未着手の教材' : 'すべて解き終えました。もう一度やるなら') +
+        '</div><div class="list">' +
+        show.map(function (r) {
+          var st = drillStatus(r.part, r.it.id);
+          return '<a href="part' + r.part + '.html?id=' + encodeURIComponent(r.it.id) + '">' +
+            '<span class="d">' + esc((r.it.date || '').slice(5).replace('-', '/') +
+              (r.it.time ? ' ' + r.it.time : '')) + '</span>' +
+            '<span class="t"><b>Part ' + r.part + ' #' + r.it.no + '</b>　' +
+              esc(drillLabel(r.part, r.it)) + '</span>' +
+            (st ? '<span class="s' + (st === '済' ? ' done' : '') + '">' + st + '</span>' : '') +
+          '</a>';
+        }).join('') + '</div></div>';
     }
 
     /* パートの入口。教材のあるパートは一覧ページへ */
