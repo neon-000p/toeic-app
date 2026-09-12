@@ -306,6 +306,18 @@
     "sec": 47.6,
     "bytes": 286365,
     "model": "gemini-3.1-flash-tts-preview",
-    "madeAt": "2026-09-12T16:12:40.514Z"
+    "madeAt": "2026-09-12T16:12:40.514Z",
+    "lines": [
+      "audio/p3-sample-1/00.mp3",
+      "audio/p3-sample-1/01.mp3",
+      "audio/p3-sample-1/02.mp3",
+      "audio/p3-sample-1/03.mp3",
+      "audio/p3-sample-1/04.mp3",
+      "audio/p3-sample-1/05.mp3",
+      "audio/p3-sample-1/06.mp3",
+      "audio/p3-sample-1/07.mp3",
+      "audio/p3-sample-1/08.mp3",
+      "audio/p3-sample-1/09.mp3"
+    ]
   }
 }
