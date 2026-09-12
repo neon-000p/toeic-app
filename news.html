@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>時事英語 | TOEIC Daily</title>
-<link rel="stylesheet" href="style.css?v=00756fed">
+<link rel="stylesheet" href="style.css?v=c4aa1bdf">
 <style>
 body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
 
@@ -975,6 +975,7 @@ details.src[open]>summary::before{content:"▾ ";}
         '<button class="btn btn-sm btn-primary" data-play-all="sum">▶ 通し再生</button>' +
         '<button class="btn btn-sm" id="stopAll">■ 停止</button>' +
         '<button class="btn btn-sm" id="toggleJa">' + (showJa ? '和訳を隠す' : '和訳を出す') + '</button>' +
+        '<button class="btn btn-sm icon" id="copyAll" title="英文をすべてコピー">📋</button>' +
       '</div>' +
       '<hr class="sep">' +
       lineRows('sum') +
@@ -1096,6 +1097,57 @@ details.src[open]>summary::before{content:"▾ ";}
 
   function stopPlay() { T.TTS.cancel(); playing = null; markPlay(null, -1); }
 
+  /* 自動コピーが拒否される端末向けの受け皿。選択済みで出すので、
+     長押しやキー操作でそのままコピーできる。 */
+  function showCopyFallback(text) {
+    modal('<h2>英文をコピー</h2>' +
+      '<p class="small muted" style="margin:-6px 0 8px">自動でコピーできませんでした。' +
+      '下の枠はすでに選択してあります。長押し（PC は Ctrl+C）でコピーしてください。</p>' +
+      '<textarea id="copyBox" readonly></textarea>' +
+      '<div class="tool-row"><button class="btn btn-sm" id="copyClose">閉じる</button></div>',
+      function (bg) {
+        var ta = bg.querySelector('#copyBox');
+        ta.value = text;
+        ta.focus();
+        ta.select();
+        ta.setSelectionRange(0, text.length);
+        bg.querySelector('#copyClose').onclick = function () { bg.remove(); };
+      });
+  }
+
+  /* 英文だけを1つの連続したテキストにして返す。
+     読み上げアプリに貼ったとき、改行で区切られて途切れないようにするため。 */
+  function fullText() {
+    return linesFor('sum').map(function (s) { return s.en; }).join(' ');
+  }
+  function copyText(text) {
+    /* 選択して execCommand で写す昔ながらの方法。https でない場合や、
+       クリップボードAPIが拒否された場合の受け皿。 */
+    function legacy() {
+      return new Promise(function (res, rej) {
+        try {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'fixed';
+          ta.style.top = '0';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.focus();
+          ta.select();
+          ta.setSelectionRange(0, text.length);
+          var ok = document.execCommand('copy');
+          ta.remove();
+          ok ? res() : rej(new Error('copy failed'));
+        } catch (e) { rej(e); }
+      });
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text).catch(legacy);
+    }
+    return legacy();
+  }
+
   /* ================= 操作 ================= */
 
   stage.addEventListener('click', function (e) {
@@ -1127,6 +1179,14 @@ details.src[open]>summary::before{content:"▾ ";}
 
     var pa = t.closest('[data-play-all]');
     if (pa) { stopPlay(); playAll(pa.dataset.playAll); return; }
+
+    if (t.closest('#copyAll')) {
+      var full = fullText();
+      copyText(full)
+        .then(function () { T.toast('英文をコピーしました'); })
+        .catch(function () { showCopyFallback(full); });
+      return;
+    }
 
     if (t.id === 'stopAll') { stopPlay(); return; }
 
