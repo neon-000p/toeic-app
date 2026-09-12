@@ -18,65 +18,19 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execFileSync } = require('child_process');
+const lib = require('./tts-lib');
 
 const ROOT = path.resolve(__dirname, '..');
 const DIR = path.join(ROOT, 'data', 'part3');
 const AUDIO_DIR = path.join(DIR, 'audio');
 
-const HOST = 'https://generativelanguage.googleapis.com/v1beta';
-const MODEL = process.env.GEMINI_TTS_MODEL || 'gemini-3.1-flash-tts-preview';
-const KEY = process.env.GEMINI_API_KEY || '';
-
 const VOICES = { M: 'Puck', W: 'Kore', M2: 'Charon', W2: 'Leda' };
-const RATE = 24000;          /* 返ってくる PCM は 24kHz モノラル 16bit 固定 */
-/* 呼び出しの間隔。無料枠は分あたりの回数が小さい。
-   週1回5セットぶんをまとめて作ると60回以上になるので、
-   429 で弾かれて待たされるより、最初から間隔を空けたほうが速く終わる。 */
-const GAP = Number(process.env.TTS_GAP_MS || 4000);
-const TRIES = 4;             /* 429 のときのやり直し回数 */
+const KBPS = 48;   /* 会話は聞き取りが要なので、時事英語より少し良い音にする */
 
-const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
-let last = 0;
-
-/* ---------------- API ---------------- */
-
-async function tts(text, speechConfig) {
-  for (let n = 1; ; n++) {
-    await sleep(Math.max(0, GAP - (Date.now() - last)));
-    last = Date.now();
-
-    const r = await fetch(`${HOST}/models/${encodeURIComponent(MODEL)}:generateContent`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-goog-api-key': KEY },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text }] }],
-        generationConfig: { responseModalities: ['AUDIO'], speechConfig }
-      })
-    });
-
-    const body = await r.text();
-    let j = null;
-    try { j = JSON.parse(body); } catch (e) { /* そのまま下で扱う */ }
-
-    if (r.ok) {
-      const parts = j?.candidates?.[0]?.content?.parts || [];
-      const d = parts.find((p) => p?.inlineData?.data)?.inlineData?.data;
-      if (d) return Buffer.from(d, 'base64');
-      throw new Error(`音声が返らなかった（${j?.candidates?.[0]?.finishReason || '理由不明'}）`);
-    }
-
-    const msg = j?.error?.message || `${r.status} ${r.statusText}`;
-    if (r.status !== 429 || n >= TRIES) throw new Error(`${r.status}: ${msg}`);
-
-    /* 429 は details に「何秒待て」が入っている。無ければ様子を見て延ばす */
-    const det = j?.error?.details || [];
-    const info = det.find((d) => /RetryInfo/.test(String(d['@type'] || '')));
-    const wait = Math.max(parseFloat(String(info?.retryDelay || '').replace('s', '')) || 0, 10 * n);
-    console.log(`  429。${wait} 秒待ってやり直します（${n}/${TRIES - 1}）`);
-    await sleep(wait * 1000);
-  }
-}
+const tts = lib.tts;
+const hasFfmpeg = lib.hasFfmpeg;
+const toMp3 = (a, b) => lib.toMp3(a, b, KBPS);
+const writeAudio = (dir, base, parts) => lib.writeAudio(dir, base, parts, KBPS);
 
 /* ---------------- 音声を組む ---------------- */
 
@@ -94,50 +48,6 @@ function chunkBySpeaker(lines) {
   return out;
 }
 
-function wav(parts) {
-  const pcm = Buffer.concat(parts);
-  const h = Buffer.alloc(44);
-  h.write('RIFF', 0);
-  h.writeUInt32LE(36 + pcm.length, 4);
-  h.write('WAVE', 8);
-  h.write('fmt ', 12);
-  h.writeUInt32LE(16, 16);
-  h.writeUInt16LE(1, 20);            /* PCM */
-  h.writeUInt16LE(1, 22);            /* モノラル */
-  h.writeUInt32LE(RATE, 24);
-  h.writeUInt32LE(RATE * 2, 28);     /* 1秒あたりのバイト数 */
-  h.writeUInt16LE(2, 32);
-  h.writeUInt16LE(16, 34);
-  h.write('data', 36);
-  h.writeUInt32LE(pcm.length, 40);
-  return { buf: Buffer.concat([h, pcm]), sec: pcm.length / (RATE * 2) };
-}
-
-function hasFfmpeg() {
-  try { execFileSync('ffmpeg', ['-version'], { stdio: 'ignore' }); return true; }
-  catch (e) { return false; }
-}
-
-/* 会話は声だけなので、モノラル 24kHz・48kbps で足りる */
-function toMp3(wavPath, mp3Path) {
-  execFileSync('ffmpeg', ['-y', '-i', wavPath, '-ac', '1', '-ar', String(RATE),
-    '-codec:a', 'libmp3lame', '-b:a', '48k', mp3Path], { stdio: ['ignore', 'ignore', 'pipe'] });
-}
-
-/* 生PCM を1本の音声ファイルとして書き出す。ffmpeg があれば MP3 にする。
-   戻り値は置いたファイル名（拡張子込み）。 */
-function writeAudio(dir, base, parts) {
-  fs.mkdirSync(dir, { recursive: true });
-  const { buf, sec } = wav(parts);
-  const wavPath = path.join(dir, `${base}.wav`);
-  fs.writeFileSync(wavPath, buf);
-  if (!hasFfmpeg()) return { name: `${base}.wav`, sec };
-  const mp3Path = path.join(dir, `${base}.mp3`);
-  toMp3(wavPath, mp3Path);
-  fs.unlinkSync(wavPath);
-  return { name: `${base}.mp3`, sec };
-}
-
 /* 対訳で1行だけ鳴らすための音声。会話本体と同じ声を使うので、
    端末の読み上げに切り替わって声が変わることがなくなる。
    会話本体は流れを保つため2人ずつのかたまりで作り、こちらは別に作る。 */
@@ -148,9 +58,8 @@ async function lineClips(set, id, voices) {
     const l = set.lines[i];
     const base = String(i).padStart(2, '0');
     process.stdout.write(`  行 ${i + 1}/${set.lines.length} `);
-    const pcm = await tts('Say this line naturally, at a steady pace: ' + l.en, {
-      voiceConfig: { prebuiltVoiceConfig: { voiceName: voices[l.tag] || 'Kore' } }
-    });
+    const pcm = await tts('Say this line naturally, at a steady pace: ' + l.en,
+      lib.oneVoice(voices[l.tag]));
     const r = writeAudio(dir, base, [pcm]);
     out.push(`audio/${id}/${r.name}`);
     console.log('できました');
@@ -207,18 +116,12 @@ async function build(file, force) {
     if (c.tags.length < 2) {
       text = 'Say this naturally, as part of a conversation, at a steady pace: ' +
         c.lines.map((l) => l.en).join(' ');
-      speechConfig = { voiceConfig: { prebuiltVoiceConfig: { voiceName: VOICES[c.tags[0]] || 'Kore' } } };
+      speechConfig = lib.oneVoice(VOICES[c.tags[0]]);
     } else {
       text = 'Read the following conversation naturally, at a steady pace suitable for an English ' +
         'listening test. Do not add any words of your own.\n\n' +
         c.lines.map((l) => `${l.tag}: ${l.en}`).join('\n');
-      speechConfig = {
-        multiSpeakerVoiceConfig: {
-          speakerVoiceConfigs: c.tags.map((t) => ({
-            speaker: t, voiceConfig: { prebuiltVoiceConfig: { voiceName: VOICES[t] || 'Kore' } }
-          }))
-        }
-      };
+      speechConfig = lib.twoVoices(c.tags, VOICES);
     }
     process.stdout.write(`  ${i + 1}/${chunks.length} [${c.tags.join(',')}] `);
     parts.push(await tts(text, speechConfig));
@@ -237,7 +140,7 @@ async function build(file, force) {
     sec: Math.round(conv.sec * 10) / 10,
     bytes,
     lines: clips,
-    model: MODEL,
+    model: lib.MODEL,
     madeAt: new Date().toISOString()
   };
   fs.writeFileSync(file, JSON.stringify(set, null, 2) + '\n');
@@ -256,14 +159,14 @@ async function build(file, force) {
 
   if (all || !files.length) {
     files = fs.readdirSync(DIR)
-      .filter((f) => f.endsWith('.json') && f !== 'index.json')
+      .filter((f) => f.endsWith('.json') && f !== 'index.json' && f !== 'history.json')
       .map((f) => path.join(DIR, f));
   } else {
     files = files.map((f) => path.resolve(ROOT, f));
   }
 
   if (!files.length) { console.log('対象のセットがありません'); return; }
-  if (!KEY) {
+  if (!lib.KEY) {
     console.error('GEMINI_API_KEY が渡っていません。' +
       'Actions なら Secret（GEMINI_API_KEY）を登録してください。');
     process.exit(1);

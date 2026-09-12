@@ -1,6 +1,8 @@
-name: Part 3 の音声を作る
+name: 音声を作る
 
-# data/part3/ に新しいセットが入ったら、会話の音声（MP3）を作って main に足す。
+# data/ に新しい教材が入ったら、読み上げ音声を作って main に足す。
+#   時事英語（data/news/）… 本文を1文ずつ
+#   Part 3（data/part3/） … 会話まるごと ＋ 1行ずつ
 # API キーはリポジトリの Secret（GEMINI_API_KEY）から環境変数で渡すので、
 # コードにも履歴にも残らない。手で動かしたいときは Actions の画面から実行できる。
 
@@ -8,17 +10,20 @@ on:
   push:
     branches: [main]
     paths:
+      - 'data/news/*.json'
       - 'data/part3/*.json'
       - 'tools/make-audio.js'
+      - 'tools/make-news-audio.js'
+      - 'tools/tts-lib.js'
       - '.github/workflows/part3-audio.yml'
   # 作り損ねた音声を翌朝拾う。無料枠の上限に当たって途中で止まっても、
-  # 次の日の実行で足りない分だけが作られる。
+  # 次の日の実行で足りない分だけが作られる。古い教材の片づけもここで走る。
   schedule:
     - cron: '0 20 * * *'   # JST 5:00
   workflow_dispatch:
     inputs:
       force:
-        description: 'すでに音声があるセットも作り直す'
+        description: 'すでに音声がある教材も作り直す'
         type: boolean
         default: false
 
@@ -30,7 +35,7 @@ permissions:
 
 # 同時に走らせない。2つが同じファイルを書くと push がぶつかる
 concurrency:
-  group: part3-audio
+  group: audio
 
 jobs:
   build:
@@ -59,19 +64,31 @@ jobs:
           sudo apt-get install -y -qq ffmpeg
           ffmpeg -version | head -1
 
-      - name: 音声を作る
+      # 先に古いものを片づける。消す予定の教材の音声を作っても無駄になる
+      - name: 古い教材を片づける
+        run: node tools/prune.js
+
+      - name: Part 3 の音声
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node tools/make-audio.js --all ${{ inputs.force && '--force' || '' }}
 
+      # 片方が上限に当たっても、もう片方は作らせる
+      - name: 時事英語の音声
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node tools/make-news-audio.js --all ${{ inputs.force && '--force' || '' }}
+
       - name: main に足す
+        if: always()
         run: |
           if [ -z "$(git status --porcelain)" ]; then
-            echo "作った音声はありません。何もしません"
+            echo "変更はありません。何もしません"
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Part 3 の会話音声を追加 [audio]"
+          git commit -m "読み上げ音声を追加 [audio]"
           git push

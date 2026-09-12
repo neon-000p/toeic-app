@@ -31,7 +31,7 @@ claude.ai のルーティン「時事英語TOEIC教材 to notion」の設定内�
 3. スキルのステップ5に従って、リポジトリに書き出す。
    - `data/news/<id>.json` を新規作成する（`<id>` はステップ0で取得した JST の
      実時刻から `YYYY-MM-DD-HHMM` の形で作る）
-   - `data/news/index.json` の `items` 先頭に1件追加し、31件目以降を配列から削除し、
+   - `data/news/index.json` の `items` 先頭に1件追加し、
      `updatedAt` を JST の実時刻に更新する
    - `data/news/history.json` の `items` 先頭に、今回のジャンルと文法トピックを追記する
      （これを忘れると次回以降の重複判定が壊れる）

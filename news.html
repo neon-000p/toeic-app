@@ -1107,14 +1107,55 @@ details.src[open]>summary::before{content:"▾ ";}
     }
   }
 
+  var sentAudio = null;
+
+  /* 先に作ってリポジトリに置いた文ごとの音声。
+     並びは flatSummary と同じなので、data-i がそのまま添字になる。 */
+  function sentURL(i) {
+    var a = DATA && DATA.audio;
+    return a && a.lines && a.lines[i] ? 'data/news/' + a.lines[i] : '';
+  }
+
+  function stopSentAudio() {
+    if (!sentAudio) return;
+    try { sentAudio.pause(); } catch (e) {}
+    sentAudio.onended = sentAudio.onerror = null;
+    sentAudio = null;
+  }
+
+  /* 用意された音声があればそれを、無ければ端末の読み上げを使う。
+     音声待ちの教材でも読めなくならないようにするため。 */
+  function saySent(i, onend) {
+    var ss = linesFor();
+    if (!ss[i]) { if (onend) onend(); return; }
+
+    var url = sentURL(i);
+    if (!url) {
+      T.TTS.speak(ss[i].en, { rate: T.Settings.get('rate'), onend: onend });
+      return;
+    }
+
+    stopSentAudio();
+    var a = new Audio(url);
+    sentAudio = a;
+    a.playbackRate = T.Settings.get('rate') || 1;
+    var fell = false;
+    var fallback = function () {
+      if (fell) return;
+      fell = true;
+      stopSentAudio();
+      T.TTS.speak(ss[i].en, { rate: T.Settings.get('rate'), onend: onend });
+    };
+    a.onended = function () { stopSentAudio(); if (onend) onend(); };
+    a.onerror = fallback;
+    a.play().catch(fallback);
+  }
+
   function playOne(src, i) {
     var ss = linesFor(src);
     if (!ss[i]) return;
     playing = 'one'; markPlay(src, i);
-    T.TTS.speak(ss[i].en, {
-      rate: T.Settings.get('rate'),
-      onend: function () { if (playing === 'one') { playing = null; markPlay(null, -1); } }
-    });
+    saySent(i, function () { if (playing === 'one') { playing = null; markPlay(null, -1); } });
   }
 
   function playAll(src) {
@@ -1123,11 +1164,11 @@ details.src[open]>summary::before{content:"▾ ";}
     (function next(i) {
       if (playing !== 'all' || i >= ss.length) { playing = null; markPlay(null, -1); return; }
       markPlay(src, i);
-      T.TTS.speak(ss[i].en, { rate: T.Settings.get('rate'), onend: function () { next(i + 1); } });
+      saySent(i, function () { next(i + 1); });
     })(0);
   }
 
-  function stopPlay() { T.TTS.cancel(); playing = null; markPlay(null, -1); }
+  function stopPlay() { T.TTS.cancel(); stopSentAudio(); playing = null; markPlay(null, -1); }
 
   /* 自動コピーが拒否される端末向けの受け皿。選択済みで出すので、
      長押しやキー操作でそのままコピーできる。 */

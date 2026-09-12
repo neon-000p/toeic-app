@@ -385,6 +385,10 @@ Markdown には無い項目なので新たに付ける。`en` は Summary 冒頭
 
 ### 5-4. index.json の更新
 
+**件数の上限は設けない。** 古い教材の整理は `tools/prune.js` が行い、**直近1年ぶん**（`data/news/`）を残して、それより古い教材と音声を index ごと片づける。ここで消す必要はない。
+
+**`audio` は書かない。** 本文の読み上げ音声は GitHub Actions が作って足す。
+
 `data/news/index.json` を読み、`items` の**先頭**に次を挿入する。
 
 ```json
@@ -392,7 +396,7 @@ Markdown には無い項目なので新たに付ける。`en` は Summary 冒頭
   "title": "日本語タイトル", "file": "2026-09-12-0530.json" }
 ```
 
-- `items` は `id` の降順（新しい順）。**31件目以降は配列から削除する**（ファイル本体は消さない）。
+- `items` は `id` の降順（新しい順）。件数の上限は設けない（古い分は prune.js が片づける）。
 - `updatedAt` を JST の実時刻で更新する。
 - 同じ `id` が既にある場合は、追加せず置き換える（同日再生成時の重複防止）。
 
@@ -455,7 +459,7 @@ Markdown には無い項目なので新たに付ける。`en` は Summary 冒頭
 - [ ] JSON の glossary が20〜30語で、全キーが Summary の小文字表層形か
 - [ ] JSON の vocabulary 8語が Markdown の (5) と一致しているか
 - [ ] `main` ブランチに push したか（作業ブランチに置いたままにしていないか）
-- [ ] index.json の先頭に追加し、31件目以降を削除し、updatedAt を JST 実時刻で更新したか
+- [ ] index.json の先頭に追加し、updatedAt を JST 実時刻で更新したか（件数の上限は無い）
 - [ ] history.json の先頭にジャンルと文法トピックを追記したか（次回の重複判定に使う）
 
 ---
