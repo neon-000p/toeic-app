@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>時事英語 | TOEIC Daily</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=e477293f">
 <style>
 body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
 
@@ -647,7 +647,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js"></script>
+<script src="core.js?v=4ee00474"></script>
 <script>
 (function () {
   'use strict';
@@ -669,6 +669,11 @@ details.src[open]>summary::before{content:"▾ ";}
 
   var $ = function (id) { return document.getElementById(id); };
   var stage = $('stage');
+
+  /* core.js が古いまま配信された場合でも落ちないようにする保険。
+     アセットには内容ハッシュを付けているので通常は起きないが、
+     壊れるより機能が消えるだけのほうがましなので握っておく。 */
+  function hasAI() { try { return !!(T.AI && T.AI.enabled()); } catch (e) { return false; } }
 
   /* ================= 起動 ================= */
 
@@ -1188,7 +1193,7 @@ details.src[open]>summary::before{content:"▾ ";}
            (inBook ? '★ 語彙帳にあり' : '☆ 語彙帳に追加') + '</button>' : '') +
       '<button class="btn btn-sm" data-sayw="' + esc(raw) + '">🔊</button></div>';
     var ctx = contextOf(el);
-    var tail = T.AI.enabled()
+    var tail = hasAI()
       ? '<div class="pop-ai"><div class="pop-ai-h">この文での使い方</div>' +
         '<div class="pop-ai-b muted small">照会中…</div></div>'
       : '<div class="pop-hint">⚙ で Gemini のキーを設定すると、この文での使われ方も出ます。</div>';
@@ -1197,7 +1202,7 @@ details.src[open]>summary::before{content:"▾ ";}
     pop.innerHTML = head + body + row + tail;
     document.body.appendChild(pop);
 
-    if (T.AI.enabled() && ctx) {
+    if (hasAI() && ctx) {
       var mine = raw;
       T.AI.lookup(raw, ctx, DATA.id).then(function (r) {
         if (!pop || pop.dataset.word !== mine) return;
@@ -1279,18 +1284,18 @@ details.src[open]>summary::before{content:"▾ ";}
         '<input type="range" id="cfgRate" min="0.6" max="1.2" step="0.05" value="' + s.rate + '"></label>' +
       '<div class="tool-row"><button class="btn btn-sm" id="cfgTest">🔊 テスト再生</button></div>' +
       '<hr class="sep">' +
-      '<h2>語の意味（Gemini）</h2>' +
+      (T.AI ? '<h2>語の意味（Gemini）</h2>' +
       '<p class="small muted" style="margin:-6px 0 10px">語をタップしたとき、その文での使われ方を Gemini に尋ねます。' +
         'キーは<b>この端末にだけ</b>保存され、GitHub には入りません。' +
         'Google Cloud 側で HTTP リファラを <code>neon-000p.github.io</code> に制限しておくと安全です。</p>' +
       '<label class="field"><span>API キー</span>' +
-        '<input type="password" id="gKey" placeholder="AIza…" autocomplete="off" value="' + esc(T.AI.cfg().key) + '"></label>' +
+        '<input type="password" id="gKey" placeholder="AIza…" autocomplete="off" value="' + esc(T.AI ? T.AI.cfg().key : '') + '"></label>' +
       '<label class="field"><span>モデル</span><select id="gModel"></select></label>' +
       '<div class="tool-row"><button class="btn btn-sm" id="gFetch">モデル一覧を取得</button>' +
         '<button class="btn btn-sm" id="gTest">動作テスト</button>' +
         '<button class="btn btn-sm" id="gClear">キーを消す</button></div>' +
       '<div class="small muted" id="gInfo" style="margin-top:8px"></div>' +
-      '<hr class="sep">' +
+      '<hr class="sep">' : '') +
       '<h2>教材を取り込む</h2>' +
       '<p class="small muted" style="margin:-6px 0 8px">ルーティンが出力した JSON を貼り付けるか、ファイルを選びます。取り込んだ教材はこの端末に保存されます。</p>' +
       '<textarea id="impText" placeholder="ここに JSON を貼り付け"></textarea>' +
@@ -1340,6 +1345,8 @@ details.src[open]>summary::before{content:"▾ ";}
         };
         /* --- Gemini --- */
         var gKey = bg.querySelector('#gKey'), gModel = bg.querySelector('#gModel'), gInfo = bg.querySelector('#gInfo');
+        if (gKey) setupGemini();
+        function setupGemini() {
         function fillModels(list) {
           var cur = T.AI.cfg().model;
           gModel.innerHTML = '';
@@ -1373,6 +1380,7 @@ details.src[open]>summary::before{content:"▾ ";}
         bg.querySelector('#gClear').onclick = function () {
           T.AI.setCfg({ key: '' }); gKey.value = ''; gInfo.textContent = 'キーを消しました。';
         };
+        }
 
         bg.querySelector('#cfgClose').onclick = function () { bg.remove(); };
       });
