@@ -418,5 +418,21 @@
       "url": "https://www.fxstreet.com/news/bojs-ueda-says-no-comment-on-daily-moves-markets-price-in-high-likelihood-of-september-rate-hike-202609020019",
       "date": "2026-09-02"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-12-1411/00.mp3",
+      "audio/2026-09-12-1411/01.mp3",
+      "audio/2026-09-12-1411/02.mp3",
+      "audio/2026-09-12-1411/03.mp3",
+      "audio/2026-09-12-1411/04.mp3",
+      "audio/2026-09-12-1411/05.mp3",
+      "audio/2026-09-12-1411/06.mp3",
+      "audio/2026-09-12-1411/07.mp3"
+    ],
+    "voice": "Charon",
+    "bytes": 255816,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-12T23:08:26.947Z"
+  }
 }

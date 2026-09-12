@@ -68,14 +68,29 @@
       "type": "detail",
       "prompt": "What is the new starting price of the iPhone 18 Pro?",
       "choices": [
-        { "key": "A", "text": "1,099 dollars" },
-        { "key": "B", "text": "1,199 dollars" },
-        { "key": "C", "text": "1,299 dollars" },
-        { "key": "D", "text": "1,399 dollars" }
+        {
+          "key": "A",
+          "text": "1,099 dollars"
+        },
+        {
+          "key": "B",
+          "text": "1,199 dollars"
+        },
+        {
+          "key": "C",
+          "text": "1,299 dollars"
+        },
+        {
+          "key": "D",
+          "text": "1,399 dollars"
+        }
       ],
       "answer": "B",
       "explanation": "本文（Summary）第1段落3文目に「新しい始値は1,199ドルで、昨年モデルの1,099ドルから上がった」とある。この文から、新モデルの価格が1,199ドルだと分かる。(A)の1,099ドルは「昨年モデル」の価格であり、今回の新価格と取り違えないよう注意が必要。(C)1,299ドル、(D)1,399ドルは本文に登場しない数字を使った引っかけ選択肢。",
-      "evidence": { "p": 0, "s": 2 },
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
       "tip": "TOEIC Part 7では、複数の価格や年度が同じ文に並ぶことが多く、this year / last year など直前直後の語を手がかりに、どちらが問われている数値かを正確に区別することが重要。"
     },
     {
@@ -83,14 +98,29 @@
       "type": "reason",
       "prompt": "Why did Apple raise the price of the iPhone 18 Pro?",
       "choices": [
-        { "key": "A", "text": "Because of a shortage of memory chips" },
-        { "key": "B", "text": "Because it added a new foldable design" },
-        { "key": "C", "text": "Because it opened new stores overseas" },
-        { "key": "D", "text": "Because it hired more engineers" }
+        {
+          "key": "A",
+          "text": "Because of a shortage of memory chips"
+        },
+        {
+          "key": "B",
+          "text": "Because it added a new foldable design"
+        },
+        {
+          "key": "C",
+          "text": "Because it opened new stores overseas"
+        },
+        {
+          "key": "D",
+          "text": "Because it hired more engineers"
+        }
       ],
       "answer": "A",
       "explanation": "本文第2段落1文目に「主な理由は、メモリーチップの世界的な不足である」とある。(B)の折りたたみデザインの追加、(C)の海外新店舗、(D)の技術者増員は、いずれも本文に一切記載のない情報であり、出題者が作った紛らわしい選択肢である。",
-      "evidence": { "p": 1, "s": 0 },
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
       "tip": "理由・目的を問う設問では、reason / because / due to など因果関係を示す語の直後に根拠が置かれることが多いため、そうした表現に注目して読むのが解法のポイント。"
     }
   ],
@@ -185,36 +215,186 @@
     }
   ],
   "glossary": {
-    "raised": { "lemma": "raise", "pos": "v", "ja": "上げた", "note": "" },
-    "price": { "lemma": "price", "pos": "n", "ja": "価格", "note": "" },
-    "newest": { "lemma": "new", "pos": "adj", "ja": "最新の", "note": "" },
-    "flagship": { "lemma": "flagship", "pos": "n", "ja": "主力製品", "note": "" },
-    "phone": { "lemma": "phone", "pos": "n", "ja": "電話、携帯電話", "note": "" },
-    "announced": { "lemma": "announce", "pos": "v", "ja": "発表した", "note": "" },
-    "change": { "lemma": "change", "pos": "n", "ja": "変更、変化", "note": "" },
-    "starting": { "lemma": "start", "pos": "adj", "ja": "当初の、開始時の", "note": "starting price で「当初価格」" },
-    "increase": { "lemma": "increase", "pos": "n", "ja": "増加、値上げ", "note": "" },
-    "smaller": { "lemma": "small", "pos": "adj", "ja": "より小さい", "note": "" },
-    "expected": { "lemma": "expect", "pos": "v", "ja": "予想した", "note": "" },
-    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト", "note": "" },
-    "reason": { "lemma": "reason", "pos": "n", "ja": "理由", "note": "" },
-    "global": { "lemma": "global", "pos": "adj", "ja": "世界的な", "note": "" },
-    "shortage": { "lemma": "shortage", "pos": "n", "ja": "不足", "note": "" },
-    "memory": { "lemma": "memory", "pos": "n", "ja": "メモリー、記憶装置", "note": "" },
-    "chips": { "lemma": "chip", "pos": "n", "ja": "チップ（半導体部品）", "note": "" },
-    "store": { "lemma": "store", "pos": "v", "ja": "保存する", "note": "ここでは動詞" },
-    "data": { "lemma": "data", "pos": "n", "ja": "データ", "note": "" },
-    "inside": { "lemma": "inside", "pos": "prep", "ja": "〜の内部に", "note": "" },
-    "computers": { "lemma": "computer", "pos": "n", "ja": "コンピューター", "note": "" },
-    "chipmakers": { "lemma": "chipmaker", "pos": "n", "ja": "半導体メーカー", "note": "" },
-    "shifting": { "lemma": "shift", "pos": "v", "ja": "移している", "note": "" },
-    "factory": { "lemma": "factory", "pos": "n", "ja": "工場", "note": "" },
-    "parts": { "lemma": "part", "pos": "n", "ja": "部品", "note": "" },
-    "artificial intelligence": { "lemma": "artificial intelligence", "pos": "n", "ja": "人工知能", "note": "" },
-    "leaving": { "lemma": "leave", "pos": "v", "ja": "残して、〜のままにして", "note": "" },
-    "fewer": { "lemma": "few", "pos": "adj", "ja": "より少ない", "note": "" },
-    "electronics": { "lemma": "electronics", "pos": "n", "ja": "電子機器", "note": "" },
-    "raising": { "lemma": "raise", "pos": "v", "ja": "上げている", "note": "" }
+    "raised": {
+      "lemma": "raise",
+      "pos": "v",
+      "ja": "上げた",
+      "note": ""
+    },
+    "price": {
+      "lemma": "price",
+      "pos": "n",
+      "ja": "価格",
+      "note": ""
+    },
+    "newest": {
+      "lemma": "new",
+      "pos": "adj",
+      "ja": "最新の",
+      "note": ""
+    },
+    "flagship": {
+      "lemma": "flagship",
+      "pos": "n",
+      "ja": "主力製品",
+      "note": ""
+    },
+    "phone": {
+      "lemma": "phone",
+      "pos": "n",
+      "ja": "電話、携帯電話",
+      "note": ""
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "v",
+      "ja": "発表した",
+      "note": ""
+    },
+    "change": {
+      "lemma": "change",
+      "pos": "n",
+      "ja": "変更、変化",
+      "note": ""
+    },
+    "starting": {
+      "lemma": "start",
+      "pos": "adj",
+      "ja": "当初の、開始時の",
+      "note": "starting price で「当初価格」"
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "n",
+      "ja": "増加、値上げ",
+      "note": ""
+    },
+    "smaller": {
+      "lemma": "small",
+      "pos": "adj",
+      "ja": "より小さい",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "v",
+      "ja": "予想した",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "n",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "reason": {
+      "lemma": "reason",
+      "pos": "n",
+      "ja": "理由",
+      "note": ""
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "adj",
+      "ja": "世界的な",
+      "note": ""
+    },
+    "shortage": {
+      "lemma": "shortage",
+      "pos": "n",
+      "ja": "不足",
+      "note": ""
+    },
+    "memory": {
+      "lemma": "memory",
+      "pos": "n",
+      "ja": "メモリー、記憶装置",
+      "note": ""
+    },
+    "chips": {
+      "lemma": "chip",
+      "pos": "n",
+      "ja": "チップ（半導体部品）",
+      "note": ""
+    },
+    "store": {
+      "lemma": "store",
+      "pos": "v",
+      "ja": "保存する",
+      "note": "ここでは動詞"
+    },
+    "data": {
+      "lemma": "data",
+      "pos": "n",
+      "ja": "データ",
+      "note": ""
+    },
+    "inside": {
+      "lemma": "inside",
+      "pos": "prep",
+      "ja": "〜の内部に",
+      "note": ""
+    },
+    "computers": {
+      "lemma": "computer",
+      "pos": "n",
+      "ja": "コンピューター",
+      "note": ""
+    },
+    "chipmakers": {
+      "lemma": "chipmaker",
+      "pos": "n",
+      "ja": "半導体メーカー",
+      "note": ""
+    },
+    "shifting": {
+      "lemma": "shift",
+      "pos": "v",
+      "ja": "移している",
+      "note": ""
+    },
+    "factory": {
+      "lemma": "factory",
+      "pos": "n",
+      "ja": "工場",
+      "note": ""
+    },
+    "parts": {
+      "lemma": "part",
+      "pos": "n",
+      "ja": "部品",
+      "note": ""
+    },
+    "artificial intelligence": {
+      "lemma": "artificial intelligence",
+      "pos": "n",
+      "ja": "人工知能",
+      "note": ""
+    },
+    "leaving": {
+      "lemma": "leave",
+      "pos": "v",
+      "ja": "残して、〜のままにして",
+      "note": ""
+    },
+    "fewer": {
+      "lemma": "few",
+      "pos": "adj",
+      "ja": "より少ない",
+      "note": ""
+    },
+    "electronics": {
+      "lemma": "electronics",
+      "pos": "n",
+      "ja": "電子機器",
+      "note": ""
+    },
+    "raising": {
+      "lemma": "raise",
+      "pos": "v",
+      "ja": "上げている",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "非制限用法の関係代名詞（コンマ＋which）",
@@ -270,5 +450,22 @@
       "url": "https://www.macworld.com/article/2953687/iphone-18-pro-max-2026-release-date-design-specs-price.html",
       "date": "2026-09-09"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-12-1640/00.mp3",
+      "audio/2026-09-12-1640/01.mp3",
+      "audio/2026-09-12-1640/02.mp3",
+      "audio/2026-09-12-1640/03.mp3",
+      "audio/2026-09-12-1640/04.mp3",
+      "audio/2026-09-12-1640/05.mp3",
+      "audio/2026-09-12-1640/06.mp3",
+      "audio/2026-09-12-1640/07.mp3",
+      "audio/2026-09-12-1640/08.mp3"
+    ],
+    "voice": "Charon",
+    "bytes": 232917,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-12T23:09:24.513Z"
+  }
 }
