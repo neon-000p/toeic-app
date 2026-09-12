@@ -316,8 +316,10 @@ Part 3 など他パートの教材は**別ルーティン・別ディレクト�
       "type": "detail",
       "prompt": "設問文",
       "choices": [
-        { "key": "A", "text": "..." }, { "key": "B", "text": "..." },
-        { "key": "C", "text": "..." }, { "key": "D", "text": "..." }
+        { "key": "A", "text": "...", "ja": "選択肢の訳" },
+        { "key": "B", "text": "...", "ja": "選択肢の訳" },
+        { "key": "C", "text": "...", "ja": "選択肢の訳" },
+        { "key": "D", "text": "...", "ja": "選択肢の訳" }
       ],
       "answer": "C",
       "explanation": "日本語解説。正解の根拠と、誤答がなぜ誤りかを必ず含む。",
@@ -357,6 +359,9 @@ Markdown の (1) Summary を**文単位に分割**し、各文に (4) Japanese T
 **`questions[].evidence`**
 正解の根拠となる文の位置を `{"p": 段落番号, "s": 文番号}` で示す（いずれも0始まり）。`p` は `summary.paragraphs` の添字、`s` はその段落の `sentences` の添字。**根拠が本文に無い設問は作らない。**
 `type` は `detail`（数字・事実）／`reason`（理由・目的）／`contrast`（違い）／`not`（NOT問題）のいずれか。
+
+**`questions[].choices[].ja`（新規に作る）**
+各選択肢の日本語訳。アプリの解説画面で英文の下に小さく出す。20字以内を目安に、意訳しすぎず意味が分かる程度にする。誤答がなぜ誤りかを読むとき、英語のまま並べられるより速く判断できるようにするための項目。Markdown 側の (2) は英語のままでよい。
 
 **`questions[].explanation` と `tip`**
 Markdown の (3) をそのまま使う。解説本体を `explanation`、Part 7 の解法ポイントを `tip` に分ける。
@@ -412,6 +417,7 @@ Markdown には無い項目なので新たに付ける。`en` は Summary 冒頭
 
 - `summary.paragraphs` が2つあり、すべての `sentences` に `en` と `ja` が揃っている
 - `questions` が2問、各4択、`answer` が `choices` の `key` のいずれかと一致する
+- すべての選択肢に `ja` がある
 - すべての `evidence` の `p` / `s` が実在する添字を指している
 - `vocabulary` が8件、全 `term` が Summary に実在する
 - `glossary` が20語以上30語以下で、全キーが Summary に実在する小文字表層形である
@@ -445,6 +451,7 @@ Markdown には無い項目なので新たに付ける。`en` は Summary 冒頭
 - [ ] ステップ5の JSON を出力したか（リポジトリに書けない場合はチャットにコードブロックで出したか）
 - [ ] JSON の summary が文単位で英日対応しているか（en と ja が1対1か）
 - [ ] JSON の evidence がすべて実在する段落・文を指しているか
+- [ ] JSON の選択肢すべてに ja（訳）を付けたか
 - [ ] JSON の glossary が20〜30語で、全キーが Summary の小文字表層形か
 - [ ] JSON の vocabulary 8語が Markdown の (5) と一致しているか
 - [ ] `main` ブランチに push したか（作業ブランチに置いたままにしていないか）

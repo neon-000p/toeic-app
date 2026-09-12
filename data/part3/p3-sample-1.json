@@ -80,19 +80,23 @@
       "choices": [
         {
           "key": "A",
-          "text": "A change to a flight schedule"
+          "text": "A change to a flight schedule",
+          "ja": "航空便の予定変更"
         },
         {
           "key": "B",
-          "text": "Accommodations for a business trip"
+          "text": "Accommodations for a business trip",
+          "ja": "出張の宿泊先"
         },
         {
           "key": "C",
-          "text": "An invitation to a client dinner"
+          "text": "An invitation to a client dinner",
+          "ja": "顧客との会食への招待"
         },
         {
           "key": "D",
-          "text": "A move to a new office"
+          "text": "A move to a new office",
+          "ja": "新オフィスへの移転"
         }
       ],
       "answer": "B",
@@ -110,19 +114,23 @@
       "choices": [
         {
           "key": "A",
-          "text": "It is closer to the convention center"
+          "text": "It is closer to the convention center",
+          "ja": "会議場により近い"
         },
         {
           "key": "B",
-          "text": "It offers a late checkout"
+          "text": "It offers a late checkout",
+          "ja": "レイトチェックアウトができる"
         },
         {
           "key": "C",
-          "text": "It leaves more money for another expense"
+          "text": "It leaves more money for another expense",
+          "ja": "別の費用に回せる金額が増える"
         },
         {
           "key": "D",
-          "text": "It has better reviews than the other one"
+          "text": "It has better reviews than the other one",
+          "ja": "もう一方より評価が高い"
         }
       ],
       "answer": "C",
@@ -139,19 +147,23 @@
       "choices": [
         {
           "key": "A",
-          "text": "Reserve a hotel room"
+          "text": "Reserve a hotel room",
+          "ja": "ホテルを予約する"
         },
         {
           "key": "B",
-          "text": "Call the convention center"
+          "text": "Call the convention center",
+          "ja": "会議場に電話する"
         },
         {
           "key": "C",
-          "text": "Change the departure time"
+          "text": "Change the departure time",
+          "ja": "出発時刻を変更する"
         },
         {
           "key": "D",
-          "text": "Meet with a client"
+          "text": "Meet with a client",
+          "ja": "顧客と会う"
         }
       ],
       "answer": "A",

@@ -7,7 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=65cf95f1">
+<link rel="stylesheet" href="style.css?v=1cbf9e46">
 <style>
 body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
@@ -446,7 +446,10 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
         q.choices.map(function (c) {
           var cls = c.key === q.answer ? ' ok' : (c.key === mine ? ' ng' : '');
           return '<button class="choice' + cls + '" disabled>' +
-            '<span class="k">' + esc(c.key) + '</span><span class="t">' + esc(c.text) + '</span></button>';
+            '<span class="k">' + esc(c.key) + '</span>' +
+            '<span class="t">' + esc(c.text) +
+            (c.ja ? '<span class="cja">' + esc(c.ja) + '</span>' : '') +
+            '</span></button>';
         }).join('') +
         ev.map(function (l) {
           return '<div class="line evid" style="margin-top:10px;cursor:default">' +

@@ -96,7 +96,7 @@ data/
       "id": "q1",
       "type": "detail",
       "prompt": "How long do ships now wait on average?",
-      "choices": [ { "key": "A", "text": "Two days" } ],
+      "choices": [ { "key": "A", "text": "Two days", "ja": "2日" } ],
       "answer": "C",
       "explanation": "日本語解説。正解の根拠と誤答がなぜ誤りかを書く。",
       "evidence": { "p": 0, "s": 0 },
@@ -184,7 +184,7 @@ Part 3（会話問題）。**1ファイル＝1セット＝1回分**。会話1本
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
-      "choices": [ { "key": "A", "text": "..." } ],
+      "choices": [ { "key": "A", "text": "...", "ja": "選択肢の訳" } ],
       "answer": "B",
       "evidence": [0, 1],
       "explanation": "日本語解説",
@@ -208,6 +208,9 @@ Part 3（会話問題）。**1ファイル＝1セット＝1回分**。会話1本
 
 **`type` は6種**
 `gist`（概要）／`detail`（詳細）／`intent`（意図）／`next`（次の行動）／`infer`（推測）／`graphic`（図表）。画面に型を出すので必ず入れる。
+
+**`choices[].ja` は選択肢の訳**
+解説ステップで英文の下に小さく出す。20字以内を目安に、意訳しすぎず意味が分かる程度に。誤答がなぜ誤りかを読むとき、英語のまま並べられるより速く判断できる。時事英語の設問にも同じ項目を持たせる。
 
 **`tip` は Point ステップの中身**
 会話の内容そのものより、次のセットに効く聞き方を書く。1問に1つ。

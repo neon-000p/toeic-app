@@ -85,19 +85,23 @@
       "choices": [
         {
           "key": "A",
-          "text": "A room is too small for the group"
+          "text": "A room is too small for the group",
+          "ja": "部屋が人数に対して狭い"
         },
         {
           "key": "B",
-          "text": "A piece of equipment is not working"
+          "text": "A piece of equipment is not working",
+          "ja": "機器が動かない"
         },
         {
           "key": "C",
-          "text": "A training session has been canceled"
+          "text": "A training session has been canceled",
+          "ja": "研修が中止された"
         },
         {
           "key": "D",
-          "text": "Some materials were not delivered"
+          "text": "Some materials were not delivered",
+          "ja": "資料が届かなかった"
         }
       ],
       "answer": "B",
@@ -115,19 +119,23 @@
       "choices": [
         {
           "key": "A",
-          "text": "It is reserved until noon"
+          "text": "It is reserved until noon",
+          "ja": "正午まで予約が入っている"
         },
         {
           "key": "B",
-          "text": "It does not have a projector"
+          "text": "It does not have a projector",
+          "ja": "プロジェクターがない"
         },
         {
           "key": "C",
-          "text": "It is not large enough"
+          "text": "It is not large enough",
+          "ja": "十分な広さがない"
         },
         {
           "key": "D",
-          "text": "It is on another floor"
+          "text": "It is on another floor",
+          "ja": "別の階にある"
         }
       ],
       "answer": "C",
@@ -145,19 +153,23 @@
       "choices": [
         {
           "key": "A",
-          "text": "She expects the repair to be finished quickly"
+          "text": "She expects the repair to be finished quickly",
+          "ja": "修理がすぐ終わると見ている"
         },
         {
           "key": "B",
-          "text": "She wants to cancel the session"
+          "text": "She wants to cancel the session",
+          "ja": "研修を中止したい"
         },
         {
           "key": "C",
-          "text": "She has decided against moving rooms"
+          "text": "She has decided against moving rooms",
+          "ja": "部屋を移らないことに決めた"
         },
         {
           "key": "D",
-          "text": "She will contact the participants right away"
+          "text": "She will contact the participants right away",
+          "ja": "すぐに参加者へ連絡する"
         }
       ],
       "answer": "C",
