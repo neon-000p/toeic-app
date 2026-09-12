@@ -127,7 +127,22 @@ async function build(file, force) {
 
   if (set.audio && set.audio.file && !force) {
     const p = path.join(DIR, set.audio.file);
-    if (fs.existsSync(p)) { console.log(`${id}: すでに音声あり。とばします`); return false; }
+    if (fs.existsSync(p)) {
+      /* WAV のまま置かれているなら、API を呼ばずに MP3 へ差し替える。
+         ffmpeg の無い環境で作った音声を、あとから軽くするため。 */
+      if (p.endsWith('.wav') && hasFfmpeg()) {
+        const mp3 = p.replace(/\.wav$/, '.mp3');
+        toMp3(p, mp3);
+        fs.unlinkSync(p);
+        set.audio.file = set.audio.file.replace(/\.wav$/, '.mp3');
+        set.audio.bytes = fs.statSync(mp3).size;
+        fs.writeFileSync(file, JSON.stringify(set, null, 2) + '\n');
+        console.log(`${id}: WAV を MP3 にしました（${Math.round(set.audio.bytes / 1024)} KB）`);
+        return true;
+      }
+      console.log(`${id}: すでに音声あり。とばします`);
+      return false;
+    }
   }
   if (!Array.isArray(set.lines) || !set.lines.length) { console.log(`${id}: lines が無いのでとばします`); return false; }
 

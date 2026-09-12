@@ -48,6 +48,13 @@ jobs:
             exit 1
           fi
 
+      # runner に ffmpeg は入っていない。MP3 にしないと1本2MB を超える
+      - name: ffmpeg を入れる
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffmpeg -version | head -1
+
       - name: 音声を作る
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
