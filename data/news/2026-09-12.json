@@ -64,14 +64,29 @@
       "type": "detail",
       "prompt": "How long do ships now wait on average at the Port of Halford?",
       "choices": [
-        { "key": "A", "text": "Two days" },
-        { "key": "B", "text": "Three days" },
-        { "key": "C", "text": "Five days" },
-        { "key": "D", "text": "Ten days" }
+        {
+          "key": "A",
+          "text": "Two days"
+        },
+        {
+          "key": "B",
+          "text": "Three days"
+        },
+        {
+          "key": "C",
+          "text": "Five days"
+        },
+        {
+          "key": "D",
+          "text": "Ten days"
+        }
       ],
       "answer": "C",
       "explanation": "第1段落1文目の have risen to five days, up from two days a year ago が根拠です。現在の値は five days で、two days は1年前の数字にあたります。up from 〜 は「〜から上昇して」の意味で、from の後ろには必ず過去の値や比較対象が来ます。(A) はその1年前の数字を答えさせる引っかけ、(B) と (D) は本文に出てこない数字です。",
-      "evidence": { "p": 0, "s": 0 },
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
       "tip": "Part 7 では up from / down from / compared with の後ろは「比較の相手」であって、問われている現在の値ではありません。設問が現在と過去のどちらを聞いているかを先に確認すると、この型の引っかけは外せます。"
     },
     {
@@ -79,92 +94,291 @@
       "type": "reason",
       "prompt": "Why do analysts doubt that the new night shifts will solve the problem this year?",
       "choices": [
-        { "key": "A", "text": "Because the port will close for repairs in October" },
-        { "key": "B", "text": "Because the shifts may start too late to help during the peak season" },
-        { "key": "C", "text": "Because the port already has too many dock workers" },
-        { "key": "D", "text": "Because retailers have stopped shipping through the port" }
+        {
+          "key": "A",
+          "text": "Because the port will close for repairs in October"
+        },
+        {
+          "key": "B",
+          "text": "Because the shifts may start too late to help during the peak season"
+        },
+        {
+          "key": "C",
+          "text": "Because the port already has too many dock workers"
+        },
+        {
+          "key": "D",
+          "text": "Because retailers have stopped shipping through the port"
+        }
       ],
       "answer": "B",
       "explanation": "第2段落3文目の analysts warn that the change may not take effect before the peak season ends が根拠です。take effect は「効力を発する、実施される」で、繁忙期が終わる前に効果が表れないおそれがある、という意味になります。(A) は本文にない情報です。(C) は本文と逆で、実際には a shortage of dock workers（労働者の不足）と書かれています。(D) も本文と逆で、顧客は貨物の一部を他港へ移しただけであり、利用をやめたとは書かれていません。",
-      "evidence": { "p": 1, "s": 2 },
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
       "tip": "誤答選択肢には本文と同じ語（dock workers、retailers）がわざと使われます。語が一致しているかではなく、増えているのか減っているのか、あるのか無いのかという「向き」を本文と照合してください。"
     }
   ],
   "vocabulary": [
     {
-      "no": 1, "term": "handle", "pos": "動", "ja": "取り扱う、処理する", "gloss": "",
-      "example": { "en": "Our Osaka office handles all overseas orders.", "ja": "大阪支店が海外からの注文をすべて取り扱っている。" }
+      "no": 1,
+      "term": "handle",
+      "pos": "動",
+      "ja": "取り扱う、処理する",
+      "gloss": "",
+      "example": {
+        "en": "Our Osaka office handles all overseas orders.",
+        "ja": "大阪支店が海外からの注文をすべて取り扱っている。"
+      }
     },
     {
-      "no": 2, "term": "shortage", "pos": "名", "ja": "不足", "gloss": "",
-      "example": { "en": "A shortage of parts delayed the production line.", "ja": "部品不足が生産ラインを遅らせた。" }
+      "no": 2,
+      "term": "shortage",
+      "pos": "名",
+      "ja": "不足",
+      "gloss": "",
+      "example": {
+        "en": "A shortage of parts delayed the production line.",
+        "ja": "部品不足が生産ラインを遅らせた。"
+      }
     },
     {
-      "no": 3, "term": "inventory", "pos": "名", "ja": "在庫", "gloss": "（＝倉庫や店舗に抱えている商品の量のこと）",
-      "example": { "en": "The store reduced its inventory before the move.", "ja": "その店舗は移転前に在庫を減らした。" }
+      "no": 3,
+      "term": "inventory",
+      "pos": "名",
+      "ja": "在庫",
+      "gloss": "（＝倉庫や店舗に抱えている商品の量のこと）",
+      "example": {
+        "en": "The store reduced its inventory before the move.",
+        "ja": "その店舗は移転前に在庫を減らした。"
+      }
     },
     {
-      "no": 4, "term": "freight", "pos": "名", "ja": "貨物、運送", "gloss": "",
-      "example": { "en": "The freight will be sent by rail instead of by truck.", "ja": "その貨物はトラックではなく鉄道で送られる。" }
+      "no": 4,
+      "term": "freight",
+      "pos": "名",
+      "ja": "貨物、運送",
+      "gloss": "",
+      "example": {
+        "en": "The freight will be sent by rail instead of by truck.",
+        "ja": "その貨物はトラックではなく鉄道で送られる。"
+      }
     },
     {
-      "no": 5, "term": "shift", "pos": "名・動", "ja": "交代勤務／移す", "gloss": "（名詞では勤務の「シフト」、動詞では別の場所や方針へ移すこと）",
-      "example": { "en": "She works the night shift twice a week.", "ja": "彼女は週に2回、夜勤に入っている。" }
+      "no": 5,
+      "term": "shift",
+      "pos": "名・動",
+      "ja": "交代勤務／移す",
+      "gloss": "（名詞では勤務の「シフト」、動詞では別の場所や方針へ移すこと）",
+      "example": {
+        "en": "She works the night shift twice a week.",
+        "ja": "彼女は週に2回、夜勤に入っている。"
+      }
     },
     {
-      "no": 6, "term": "take effect", "pos": "熟", "ja": "効力を発する、実施される", "gloss": "",
-      "example": { "en": "The new policy will take effect on April 1.", "ja": "新しい方針は4月1日から実施される。" }
+      "no": 6,
+      "term": "take effect",
+      "pos": "熟",
+      "ja": "効力を発する、実施される",
+      "gloss": "",
+      "example": {
+        "en": "The new policy will take effect on April 1.",
+        "ja": "新しい方針は4月1日から実施される。"
+      }
     },
     {
-      "no": 7, "term": "approval", "pos": "名", "ja": "承認", "gloss": "",
-      "example": { "en": "The budget needs approval from the head office.", "ja": "その予算は本社の承認を必要とする。" }
+      "no": 7,
+      "term": "approval",
+      "pos": "名",
+      "ja": "承認",
+      "gloss": "",
+      "example": {
+        "en": "The budget needs approval from the head office.",
+        "ja": "その予算は本社の承認を必要とする。"
+      }
     },
     {
-      "no": 8, "term": "lead time", "pos": "熟", "ja": "リードタイム、発注から納品までの期間", "gloss": "（＝注文してから実際に届くまでにかかる時間のこと）",
-      "example": { "en": "The supplier shortened its lead time to ten days.", "ja": "その仕入先はリードタイムを10日に短縮した。" }
+      "no": 8,
+      "term": "lead time",
+      "pos": "熟",
+      "ja": "リードタイム、発注から納品までの期間",
+      "gloss": "（＝注文してから実際に届くまでにかかる時間のこと）",
+      "example": {
+        "en": "The supplier shortened its lead time to ten days.",
+        "ja": "その仕入先はリードタイムを10日に短縮した。"
+      }
     }
   ],
   "glossary": {
-    "logistics": { "lemma": "logistics", "pos": "n", "ja": "物流、ロジスティクス", "note": "" },
-    "average": { "lemma": "average", "pos": "adj", "ja": "平均の", "note": "on average で「平均して」" },
-    "waiting": { "lemma": "wait", "pos": "v", "ja": "待つこと", "note": "waiting time で「待機時間」" },
-    "risen": { "lemma": "rise", "pos": "v", "ja": "上昇した", "note": "rise-rose-risen。自動詞なので目的語を取らない" },
-    "handles": { "lemma": "handle", "pos": "v", "ja": "取り扱う", "note": "" },
-    "percent": { "lemma": "percent", "pos": "n", "ja": "パーセント", "note": "" },
-    "region": { "lemma": "region", "pos": "n", "ja": "地域", "note": "" },
-    "container": { "lemma": "container", "pos": "n", "ja": "コンテナ", "note": "" },
-    "traffic": { "lemma": "traffic", "pos": "n", "ja": "取扱量、往来", "note": "交通量だけでなく貨物量にも使う" },
-    "managers": { "lemma": "manager", "pos": "n", "ja": "経営陣、管理職", "note": "" },
-    "blamed": { "lemma": "blame", "pos": "v", "ja": "〜のせいにした", "note": "blame A for B / blame B on A" },
-    "shortage": { "lemma": "shortage", "pos": "n", "ja": "不足", "note": "a shortage of 〜" },
-    "dock": { "lemma": "dock", "pos": "n", "ja": "波止場、荷役場", "note": "dock worker で「港湾労働者」" },
-    "unusually": { "lemma": "unusually", "pos": "adv", "ja": "異例なほど", "note": "" },
-    "shipping": { "lemma": "shipping", "pos": "n", "ja": "出荷、海運", "note": "" },
-    "delays": { "lemma": "delay", "pos": "n", "ja": "遅延", "note": "" },
-    "forcing": { "lemma": "force", "pos": "v", "ja": "〜させる", "note": "force A to do で「Aに〜せざるを得なくさせる」" },
-    "retailers": { "lemma": "retailer", "pos": "n", "ja": "小売業者", "note": "" },
-    "inventories": { "lemma": "inventory", "pos": "n", "ja": "在庫", "note": "" },
-    "raises": { "lemma": "raise", "pos": "v", "ja": "押し上げる", "note": "他動詞。自動詞の rise と混同しやすい" },
-    "warehouse": { "lemma": "warehouse", "pos": "n", "ja": "倉庫", "note": "" },
-    "costs": { "lemma": "cost", "pos": "n", "ja": "費用", "note": "" },
-    "customers": { "lemma": "customer", "pos": "n", "ja": "顧客", "note": "" },
-    "shifted": { "lemma": "shift", "pos": "v", "ja": "移した", "note": "shift A to B" },
-    "freight": { "lemma": "freight", "pos": "n", "ja": "貨物", "note": "" },
-    "nearby": { "lemma": "nearby", "pos": "adj", "ja": "近隣の", "note": "" },
-    "shifts": { "lemma": "shift", "pos": "n", "ja": "交代勤務", "note": "night shift で「夜勤」" },
-    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト、調査員", "note": "" },
-    "warn": { "lemma": "warn", "pos": "v", "ja": "警告する", "note": "warn that 節" },
-    "effect": { "lemma": "effect", "pos": "n", "ja": "効果、効力", "note": "take effect で「実施される」" },
-    "peak": { "lemma": "peak", "pos": "adj", "ja": "最盛期の", "note": "peak season で「繁忙期」" },
-    "industry": { "lemma": "industry", "pos": "n", "ja": "業界", "note": "industry group で「業界団体」" },
-    "speed": { "lemma": "speed", "pos": "v", "ja": "早める", "note": "speed up 〜" },
-    "approval": { "lemma": "approval", "pos": "n", "ja": "承認", "note": "動詞は approve" },
-    "terminal": { "lemma": "terminal", "pos": "n", "ja": "ターミナル、積み下ろし施設", "note": "" },
-    "equipment": { "lemma": "equipment", "pos": "n", "ja": "設備、機材", "note": "不可算名詞。equipments とはしない" },
-    "shippers": { "lemma": "shipper", "pos": "n", "ja": "荷主", "note": "運ぶ側ではなく「送る側」" },
-    "lead": { "lemma": "lead", "pos": "n", "ja": "先行", "note": "lead time で「発注から納品までの期間」" },
-    "climbed": { "lemma": "climb", "pos": "v", "ja": "上昇した", "note": "" },
-    "causes": { "lemma": "cause", "pos": "n", "ja": "原因", "note": "" }
+    "logistics": {
+      "lemma": "logistics",
+      "pos": "n",
+      "ja": "物流、ロジスティクス",
+      "note": ""
+    },
+    "risen": {
+      "lemma": "rise",
+      "pos": "v",
+      "ja": "上昇した",
+      "note": "rise-rose-risen。自動詞なので目的語を取らない"
+    },
+    "handles": {
+      "lemma": "handle",
+      "pos": "v",
+      "ja": "取り扱う",
+      "note": ""
+    },
+    "container": {
+      "lemma": "container",
+      "pos": "n",
+      "ja": "コンテナ",
+      "note": ""
+    },
+    "traffic": {
+      "lemma": "traffic",
+      "pos": "n",
+      "ja": "取扱量、往来",
+      "note": "交通量だけでなく貨物量にも使う"
+    },
+    "blamed": {
+      "lemma": "blame",
+      "pos": "v",
+      "ja": "〜のせいにした",
+      "note": "blame A for B / blame B on A"
+    },
+    "shortage": {
+      "lemma": "shortage",
+      "pos": "n",
+      "ja": "不足",
+      "note": "a shortage of 〜"
+    },
+    "dock": {
+      "lemma": "dock",
+      "pos": "n",
+      "ja": "波止場、荷役場",
+      "note": "dock worker で「港湾労働者」"
+    },
+    "unusually": {
+      "lemma": "unusually",
+      "pos": "adv",
+      "ja": "異例なほど",
+      "note": ""
+    },
+    "shipping": {
+      "lemma": "shipping",
+      "pos": "n",
+      "ja": "出荷、海運",
+      "note": ""
+    },
+    "delays": {
+      "lemma": "delay",
+      "pos": "n",
+      "ja": "遅延",
+      "note": ""
+    },
+    "forcing": {
+      "lemma": "force",
+      "pos": "v",
+      "ja": "〜させる",
+      "note": "force A to do で「Aに〜せざるを得なくさせる」"
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "n",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "inventories": {
+      "lemma": "inventory",
+      "pos": "n",
+      "ja": "在庫",
+      "note": ""
+    },
+    "raises": {
+      "lemma": "raise",
+      "pos": "v",
+      "ja": "押し上げる",
+      "note": "他動詞。自動詞の rise と混同しやすい"
+    },
+    "warehouse": {
+      "lemma": "warehouse",
+      "pos": "n",
+      "ja": "倉庫",
+      "note": ""
+    },
+    "shifted": {
+      "lemma": "shift",
+      "pos": "v",
+      "ja": "移した",
+      "note": "shift A to B"
+    },
+    "freight": {
+      "lemma": "freight",
+      "pos": "n",
+      "ja": "貨物",
+      "note": ""
+    },
+    "shifts": {
+      "lemma": "shift",
+      "pos": "n",
+      "ja": "交代勤務",
+      "note": "night shift で「夜勤」"
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "n",
+      "ja": "アナリスト、調査員",
+      "note": ""
+    },
+    "warn": {
+      "lemma": "warn",
+      "pos": "v",
+      "ja": "警告する",
+      "note": "warn that 節"
+    },
+    "effect": {
+      "lemma": "effect",
+      "pos": "n",
+      "ja": "効果、効力",
+      "note": "take effect で「実施される」"
+    },
+    "peak": {
+      "lemma": "peak",
+      "pos": "adj",
+      "ja": "最盛期の",
+      "note": "peak season で「繁忙期」"
+    },
+    "approval": {
+      "lemma": "approval",
+      "pos": "n",
+      "ja": "承認",
+      "note": "動詞は approve"
+    },
+    "terminal": {
+      "lemma": "terminal",
+      "pos": "n",
+      "ja": "ターミナル、積み下ろし施設",
+      "note": ""
+    },
+    "equipment": {
+      "lemma": "equipment",
+      "pos": "n",
+      "ja": "設備、機材",
+      "note": "不可算名詞。equipments とはしない"
+    },
+    "shippers": {
+      "lemma": "shipper",
+      "pos": "n",
+      "ja": "荷主",
+      "note": "運ぶ側ではなく「送る側」"
+    },
+    "lead": {
+      "lemma": "lead",
+      "pos": "n",
+      "ja": "先行",
+      "note": "lead time で「発注から納品までの期間」"
+    }
   },
   "grammar": {
     "topic": "関係代名詞 which の非制限用法（前の節全体を受ける）",
@@ -207,16 +421,5 @@
       "body": "日本は輸入の大半を海上輸送に頼っており、海外港湾の混雑は調達部門にとって直接の問題になります。仕入先との交渉では、価格だけでなくリードタイムと欠品時の対応をどう契約に書き込むかが問われます。英文メールでは delay、lead time、inventory、shipment といった語が繰り返し登場するため、この教材の語彙はそのまま実務で再会します。"
     }
   ],
-  "script": {
-    "sentences": [
-      { "en": "Waiting times at the Port of Halford have climbed to five days, more than double the level of a year ago.", "ja": "ハルフォード港での待機時間は5日に達し、1年前の水準の2倍を超えた。" },
-      { "en": "Northwind Logistics, which handles about forty percent of container traffic in the region, says the main causes are a shortage of dock workers and a strong shipping season.", "ja": "この地域のコンテナ取扱量の約4割を担うノースウィンド・ロジスティクスは、主な原因は港湾労働者の不足と好調な出荷シーズンだとしている。" },
-      { "en": "Because of the delays, retailers are holding more inventory, and warehouse costs are rising.", "ja": "この遅延のため、小売各社は在庫を多めに抱えており、倉庫費用が上昇している。" },
-      { "en": "Some customers have moved part of their freight to smaller ports nearby.", "ja": "一部の顧客は貨物の一部を近隣の小規模な港へ移した。" },
-      { "en": "The company will add two night shifts in October.", "ja": "同社は10月に夜間シフトを2つ増やす。" },
-      { "en": "Analysts say the change may not take effect before the peak season ends.", "ja": "アナリストは、その変更は繁忙期が終わる前には効果を表さないかもしれないと述べている。" },
-      { "en": "Industry groups want faster approval for new terminal equipment, and shippers are planning for longer lead times.", "ja": "業界団体は新しいターミナル設備の承認の迅速化を求めており、荷主側はより長いリードタイムを見込んで計画を立てている。" }
-    ]
-  },
   "sources": []
 }
