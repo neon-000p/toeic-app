@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-13-0540",
+  "date": "2026-09-13",
+  "time": "05:40",
+  "createdAt": "2026-09-13T05:40:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": { "en": "Saudi Arabia Shuts Key Oil Pipeline After Drone Attack", "ja": "サウジアラビア、ドローン攻撃で主要石油パイプライン停止" },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          { "en": "Saudi Arabia shut down its main oil pipeline on September 10 after drone strikes hit two pumping stations.", "ja": "サウジアラビアは9月10日、2つの揚圧ポンプ施設がドローン攻撃を受けたことを受けて、主要な石油パイプラインの稼働を停止した。" },
+          { "en": "No group has claimed responsibility for the attack.", "ja": "この攻撃について、犯行声明を出した組織は今のところない。" },
+          { "en": "The line, called the East-West Pipeline, normally moves about five million barrels of crude oil a day toward the coast.", "ja": "同パイプラインは「東西パイプライン」と呼ばれ、通常は1日あたり約500万バレルの原油を沿岸部へ輸送している。" },
+          { "en": "That route lets the country export oil without using the Strait of Hormuz.", "ja": "このルートにより、同国はホルムズ海峡を使わずに原油を輸出することができる。" }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          { "en": "The attack matters because Iran has kept the strait mostly closed during the wider regional conflict.", "ja": "この攻撃が重要なのは、地域紛争の拡大を背景に、イランがホルムズ海峡をほぼ封鎖してきたためだ。" },
+          { "en": "That left the pipeline as the kingdom's main safe route for oil exports.", "ja": "そのため、同パイプラインは同国にとって石油輸出のための主要な安全ルートとなっていた。" },
+          { "en": "With both major paths now disrupted, traders worry that global oil supply could tighten even further.", "ja": "両方の主要ルートが同時に寸断されたことで、トレーダーの間では世界的な原油供給がさらに逼迫するとの懸念が広がっている。" },
+          { "en": "Crude prices, already trading near 155 dollars a barrel, stayed volatile as markets watched for repair updates.", "ja": "原油価格はすでに1バレル=155ドル前後で推移しており、修復状況をめぐって相場は不安定な動きを続けた。" }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many barrels of crude oil does the pipeline normally carry each day?",
+      "choices": [
+        { "key": "A", "text": "1 million", "ja": "100万バレル" },
+        { "key": "B", "text": "3 million", "ja": "300万バレル" },
+        { "key": "C", "text": "5 million", "ja": "500万バレル" },
+        { "key": "D", "text": "8 million", "ja": "800万バレル" }
+      ],
+      "answer": "C",
+      "explanation": "正解は(C)。本文第1段落3文目に「about five million barrels of crude oil a day」と明記されている。(A)(B)(D)はいずれも本文に登場しない数字を使ったひっかけ選択肢である。",
+      "evidence": { "p": 0, "s": 2 },
+      "tip": "数字を問う設問では、選択肢の数字を先に確認してから本文を読み、一致する箇所を素早く探すと時間短縮になる。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why does the East-West Pipeline matter to Saudi Arabia right now?",
+      "choices": [
+        { "key": "A", "text": "It is the kingdom's only source of tax revenue.", "ja": "王国唯一の税収源だから" },
+        { "key": "B", "text": "It lets the kingdom avoid drone attacks entirely.", "ja": "ドローン攻撃を完全に避けられるから" },
+        { "key": "C", "text": "It allows oil exports without passing through the largely closed Strait of Hormuz.", "ja": "ほぼ封鎖された海峡を通らず輸出できるから" },
+        { "key": "D", "text": "It connects Saudi Arabia directly to Iran's ports.", "ja": "サウジとイランの港を直接結ぶから" }
+      ],
+      "answer": "C",
+      "explanation": "正解は(C)。第2段落で、イランがホルムズ海峡をほぼ封鎖しており、そのためこのパイプラインが石油輸出の主要な安全ルートになっていた、と説明されている。(A)は本文に記載のない情報。(B)は本文と矛盾する内容で、パイプライン自体がドローン攻撃の対象になっている。(D)も本文にない情報である。",
+      "evidence": { "p": 1, "s": 1 },
+      "tip": "理由を問う設問は1文だけでなく前後の文脈をまとめて読むことで根拠を正確に特定できる。"
+    }
+  ],
+  "vocabulary": [
+    { "no": 1, "term": "shut down", "pos": "動・熟", "ja": "停止する、操業を止める", "gloss": "", "example": { "en": "The factory had to shut down after the power failure.", "ja": "その工場は停電のため操業を停止せざるを得なかった。" } },
+    { "no": 2, "term": "claim responsibility", "pos": "熟", "ja": "犯行声明を出す", "gloss": "", "example": { "en": "No organization has claimed responsibility for the cyberattack.", "ja": "そのサイバー攻撃について、犯行声明を出した組織はない。" } },
+    { "no": 3, "term": "crude oil", "pos": "名", "ja": "原油", "gloss": "（＝精製前の石油のこと）", "example": { "en": "The refinery processes crude oil into gasoline and diesel.", "ja": "その製油所は原油をガソリンや軽油に精製している。" } },
+    { "no": 4, "term": "route", "pos": "名", "ja": "経路、輸送ルート", "gloss": "", "example": { "en": "The company found a new route to ship goods overseas.", "ja": "その会社は海外へ商品を輸送する新しいルートを見つけた。" } },
+    { "no": 5, "term": "disrupted", "pos": "形", "ja": "中断された、寸断された", "gloss": "", "example": { "en": "Flights were disrupted by the storm for two days.", "ja": "フライトは嵐のため2日間、運航が乱れた。" } },
+    { "no": 6, "term": "volatile", "pos": "形", "ja": "変動が激しい", "gloss": "", "example": { "en": "Investors are cautious because the stock market is volatile.", "ja": "株式市場が不安定なため、投資家は慎重になっている。" } },
+    { "no": 7, "term": "tighten", "pos": "動", "ja": "引き締まる、逼迫する", "gloss": "", "example": { "en": "Analysts expect the labor market to tighten next year.", "ja": "アナリストは来年、労働市場が逼迫すると予想している。" } },
+    { "no": 8, "term": "update", "pos": "名", "ja": "最新情報、進捗報告", "gloss": "", "example": { "en": "The manager gave the team a quick update on the project.", "ja": "マネージャーはチームにプロジェクトの進捗を手短に報告した。" } }
+  ],
+  "glossary": {
+    "shut": { "lemma": "shut", "pos": "v", "ja": "閉鎖する、停止する", "note": "shut downで「操業を止める」という意味の熟語" },
+    "pipeline": { "lemma": "pipeline", "pos": "n", "ja": "パイプライン、輸送管", "note": "" },
+    "strikes": { "lemma": "strike", "pos": "n", "ja": "攻撃", "note": "" },
+    "stations": { "lemma": "station", "pos": "n", "ja": "施設、基地", "note": "" },
+    "claimed": { "lemma": "claim", "pos": "v", "ja": "（責任などを）主張した", "note": "" },
+    "responsibility": { "lemma": "responsibility", "pos": "n", "ja": "責任", "note": "" },
+    "attack": { "lemma": "attack", "pos": "n", "ja": "攻撃", "note": "" },
+    "barrels": { "lemma": "barrel", "pos": "n", "ja": "バレル", "note": "（＝原油の量を表す単位）" },
+    "crude": { "lemma": "crude", "pos": "adj", "ja": "原油の", "note": "（＝精製されていない、の意味）" },
+    "route": { "lemma": "route", "pos": "n", "ja": "ルート、経路", "note": "" },
+    "export": { "lemma": "export", "pos": "v", "ja": "輸出する", "note": "" },
+    "kept": { "lemma": "keep", "pos": "v", "ja": "保ってきた", "note": "" },
+    "closed": { "lemma": "close", "pos": "adj", "ja": "閉鎖された", "note": "" },
+    "conflict": { "lemma": "conflict", "pos": "n", "ja": "紛争", "note": "" },
+    "left": { "lemma": "leave", "pos": "v", "ja": "〜の状態にした", "note": "" },
+    "kingdom's": { "lemma": "kingdom", "pos": "n", "ja": "王国の", "note": "" },
+    "exports": { "lemma": "export", "pos": "n", "ja": "輸出", "note": "" },
+    "paths": { "lemma": "path", "pos": "n", "ja": "経路", "note": "" },
+    "disrupted": { "lemma": "disrupt", "pos": "adj", "ja": "寸断された", "note": "" },
+    "traders": { "lemma": "trader", "pos": "n", "ja": "取引業者", "note": "" },
+    "supply": { "lemma": "supply", "pos": "n", "ja": "供給", "note": "" },
+    "tighten": { "lemma": "tighten", "pos": "v", "ja": "逼迫する", "note": "" },
+    "trading": { "lemma": "trade", "pos": "v", "ja": "取引されている", "note": "" },
+    "volatile": { "lemma": "volatile", "pos": "adj", "ja": "変動が激しい", "note": "" },
+    "watched": { "lemma": "watch", "pos": "v", "ja": "注視した", "note": "" },
+    "updates": { "lemma": "update", "pos": "n", "ja": "最新情報", "note": "" }
+  },
+  "grammar": {
+    "topic": "第5文型 leave＋O＋C（結果を表すSVOC構文）",
+    "quote": "That left the pipeline as the kingdom's main safe route for oil exports.",
+    "quoteJa": "そのことにより、そのパイプラインは同国にとって石油輸出のための主要な安全ルートとなった。",
+    "blocks": [
+      { "heading": "構文", "body": "leave＋O＋Cは「OをCの状態にする／Oの結果としてCになる」という意味を表す第5文型（SVOC）の代表的な動詞の一つ。Cには名詞や形容詞が来る。ここではO（the pipeline）が、C（the kingdom's main safe route）という結果になったことを表している。" },
+      { "heading": "書き換え例", "body": "\"That left the pipeline as X\" は \"As a result, the pipeline became X\" とほぼ同じ意味に言い換えられる。同じくSVOCを作る動詞にはmake（〜にする）、find（〜だと分かる）、keep（〜のままにする）、consider（〜だとみなす）などがある。" },
+      { "heading": "TOEICでの出題傾向", "body": "Part 5では、leave／keep／make／findなどのSVOC動詞の後に続く語形（名詞か形容詞か）を問う問題が頻出する。Cの位置に何が来るかは動詞の意味によって決まるため、動詞ごとのパターンを覚えておくと得点しやすい。Part 6・7では、原因→結果の流れを示す表現として登場し、文脈把握のヒントになることが多い。" },
+      { "heading": "ビジネス文書での応用", "body": "\"The delay left the project behind schedule.\"（遅延によりプロジェクトはスケジュールより遅れることになった。）や \"The merger left the company as the market leader.\"（合併により同社は市場のリーダーとなった。）のように、結果を報告する場面でよく使われる。" }
+    ]
+  },
+  "background": [
+    { "heading": "📌 何が起きたのか（専門用語の噛み砕き）", "body": "「パイプライン」とは、石油やガスなどを地中や地上の管を通じて長距離輸送する設備のこと。今回停止した東西パイプラインは、サウジアラビアが紅海側の港へ原油を送るための代替ルートとして機能してきた。ドローン攻撃で稼働が止まったことで、同国は主要な輸出手段の一つを一時的に失った形になる。" },
+    { "heading": "📌 業界全体・競合国の動向", "body": "中東情勢が緊迫する中、石油輸出国は輸送ルートの分散を急いでいる。ホルムズ海峡が事実上の封鎖に近い状態にある今、東西パイプラインは数少ない代替ルートだった。同様の輸送リスクは他の産油国やエネルギー企業にも波及しており、保険料の上昇や航路変更によるコスト増という形で業界全体に影響が広がっている。" },
+    { "heading": "📌 日本経済・日本企業への影響", "body": "日本は原油の多くを中東に依存しており、供給不安は輸入価格の上昇につながりやすい。ガソリンや電気料金、輸送コストの上昇を通じて、製造業や物流業を中心に日本企業のコスト構造に影響する可能性がある。海外出張や資材調達を担当するビジネスパーソンにとっても、コスト上昇や納期遅延のリスクとして注視すべき動きだ。" },
+    { "heading": "📌 投資家・経営者の視点", "body": "原油価格の変動は、エネルギーコストを多く抱える企業の収益予想に直結する。経営者にとっては、調達コストの上振れリスクをどう価格転嫁するかが課題になる。投資家は、今回のような地政学リスクが一時的な供給ショックにとどまるか長期化するかを見極めながら、エネルギー関連銘柄への投資判断を調整することになるだろう。" }
+  ],
+  "sources": [
+    { "title": "Saudi Arabia shuts critical oil pipeline after drone attack: What it means", "publisher": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened", "date": "2026-09-12" },
+    { "title": "Saudi oil pipeline shut down after attack triggers fires", "publisher": "CNN", "url": "https://www.cnn.com/2026/09/11/politics/saudi-arabian-oil-pipeline-hit-by-projectiles-triggering-fires", "date": "2026-09-11" },
+    { "title": "Drone Strikes Hit Saudi Arabia's Vital East-West Oil Pipeline", "publisher": "OilPrice.com", "url": "https://oilprice.com/Latest-Energy-News/World-News/Drone-Strikes-Hit-Saudi-Arabias-Vital-East-West-Oil-Pipeline.html", "date": "2026-09-11" }
+  ]
+}
