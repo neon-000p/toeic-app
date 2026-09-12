@@ -89,7 +89,7 @@ main{padding-top:14px}
   </main>
 </div>
 
-<script src="core.js?v=150ce600"></script>
+<script src="core.js?v=3d1f1bb7"></script>
 <script>
 (function () {
   'use strict';
@@ -197,6 +197,13 @@ main{padding-top:14px}
       render();
     })
     .catch(function () { items = []; render(); });
+
+  /* 教材を終えて戻ってきたときだけ、数秒「Done」を出す。
+     .toast は pointer-events:none なので操作の邪魔にならない。 */
+  (function () {
+    var m = T.takeFlash ? T.takeFlash() : '';
+    if (m) T.toast(m, 2600);
+  })();
 })();
 </script>
 </body>

@@ -181,12 +181,6 @@ details.src[open]>summary::before{content:"▾ ";}
 .rate-row .v{font-size:13px;font-weight:700;width:42px;text-align:right;color:var(--muted)}
 
 /* 完了 */
-.done-wrap{text-align:center;padding:20px 0 8px}
-.done-wrap .big{font-size:40px;font-weight:800;letter-spacing:-.03em;line-height:1}
-.done-grid{display:flex;gap:10px;margin-top:18px}
-.done-grid div{flex:1;background:var(--surface-2);border-radius:10px;padding:12px 8px}
-.done-grid .n{font-size:20px;font-weight:800}
-.done-grid .l{font-size:11px;color:var(--muted);margin-top:2px}
 
 /* フッター */
 .app-foot{
@@ -653,7 +647,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=150ce600"></script>
+<script src="core.js?v=3d1f1bb7"></script>
 <script>
 (function () {
   'use strict';
@@ -1085,23 +1079,14 @@ details.src[open]>summary::before{content:"▾ ";}
     }).join('') + '</div>' : '');
   }
 
+  /* 終わったらホームに戻る。結果の画面は出さない（数字はホームに出ている）。
+     「Done」はホーム側で数秒だけ出す。 */
   function finish() {
     T.TTS.cancel(); playing = null;
     state.done = true; state.maxStep = STEPS.length - 1; save();
-    var streak = T.Log.touchToday();
-    var n = correctCount(), tot = (DATA.questions || []).length;
-    stage.dataset.view = 'done';
-    document.body.classList.remove('split');
-    stage.innerHTML = '<div class="card done-wrap">' +
-      '<div class="big">Done</div>' +
-      '<p class="muted small" style="margin:8px 0 0">' + esc((DATA.title && DATA.title.ja) || '') + '</p>' +
-      '<div class="done-grid">' +
-        '<div><div class="n">' + n + '/' + tot + '</div><div class="l">設問</div></div>' +
-        '<div><div class="n">' + T.Vocab.count() + '</div><div class="l">語彙帳</div></div>' +
-        '<div><div class="n">' + streak + '</div><div class="l">連続日数</div></div>' +
-      '</div></div>';
-    renderFoot();
-    window.scrollTo(0, 0);
+    T.Log.touchToday();
+    if (T.flash) T.flash('Done');
+    location.href = 'index.html';
   }
 
   /* ================= 再生 ================= */

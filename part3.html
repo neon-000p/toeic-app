@@ -157,7 +157,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   </div>
 </nav>
 
-<script src="core.js?v=150ce600"></script>
+<script src="core.js?v=3d1f1bb7"></script>
 <script>
 (function () {
   'use strict';
@@ -646,6 +646,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     if (!scored) { scored = true; T.Log.touchToday(); }
     maxStep = STEPS.length - 1;
     save();
+    if (T.flash) T.flash('Done');
     location.href = 'index.html';
   }
 

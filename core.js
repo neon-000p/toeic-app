@@ -771,19 +771,34 @@
     }
     return out;
   }
-  function toast(msg) {
+  function toast(msg, ms) {
     var el = document.getElementById('toast');
     if (!el) { el = document.createElement('div'); el.id = 'toast'; el.className = 'toast'; document.body.appendChild(el); }
     el.textContent = msg;
     el.classList.add('show');
     clearTimeout(el._t);
-    el._t = setTimeout(function () { el.classList.remove('show'); }, 1600);
+    el._t = setTimeout(function () { el.classList.remove('show'); }, ms || 1600);
+  }
+
+  /* ページをまたいで一度だけ出す短い知らせ。
+     Finish のあとホームに戻り、そこで「Done」を出すために使う。
+     タブを閉じたら消えてよいので sessionStorage に置く。 */
+  function flash(msg) {
+    try { sessionStorage.setItem('toeic.flash', msg); } catch (e) {}
+  }
+  function takeFlash() {
+    try {
+      var m = sessionStorage.getItem('toeic.flash');
+      if (m) sessionStorage.removeItem('toeic.flash');
+      return m || '';
+    } catch (e) { return ''; }
   }
 
   global.TOEIC = {
     read: read, write: write,
     Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS, AI: AI,
     modal: modal, openSettings: openSettings,
+    flash: flash, takeFlash: takeFlash,
     esc: esc, splitWords: splitWords, markupEnglish: markupEnglish, toast: toast
   };
 })(window);
