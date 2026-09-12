@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="TOEIC Daily">
+  <!-- 画面と同じ「文が並び、いま読んでいる行が光る」形。16px でも3本の帯として読める -->
+  <rect width="64" height="64" rx="14" fill="#132026"/>
+  <rect x="13" y="17" width="38" height="7" rx="3.5" fill="#43b3a6"/>
+  <rect x="13" y="30" width="32" height="7" rx="3.5" fill="#3a5560"/>
+  <rect x="13" y="43" width="22" height="7" rx="3.5" fill="#3a5560"/>
+</svg>
