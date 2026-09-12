@@ -262,21 +262,29 @@
       });
     }
 
-    /* 語と、それが入っている英文を渡して、意味とこの文での使われ方を得る */
+    /* 語と、それが入っている英文を渡して、意味と TOEIC 向けの一言を得る。
+       構文の説明（「主語である」等）は読めば分かるので求めない。
+       点に直結するのは言い換えとコロケーションなので、そこに絞る。 */
     function lookup(word, sentence, scope) {
-      var key = (scope || '') + '|' + String(word).toLowerCase() + '|' + String(sentence || '').slice(0, 60);
+      var key = 'v2|' + (scope || '') + '|' + String(word).toLowerCase() + '|' + String(sentence || '').slice(0, 60);
       var hit = cacheGet(key);
       if (hit) return Promise.resolve(hit);
 
       var prompt =
-        '次の英文に出てくる語について、日本語で簡潔に答えてください。\n\n' +
+        'TOEIC 学習者向けに、次の英文に出てくる語を説明してください。\n\n' +
         '語: ' + word + '\n' +
         '英文: ' + sentence + '\n\n' +
         '出力は下記のキーを持つ JSON だけにしてください。\n' +
         '- pos: 品詞。名/動/形/副/前/接/熟 のいずれか\n' +
-        '- ja: その語の基本的な意味。20字以内\n' +
-        '- usage: この英文の中での使われ方。70字以内。訳語の言い換えではなく、' +
-        'どの語とつながっているか（目的語・前置詞・修飾先）や、なぜその意味になるかに触れること';
+        '- ja: この英文での意味。多義語ならこの文に当てはまる意味だけを書く。20字以内\n' +
+        '- tip: TOEIC で再会したときに効くことを1つだけ。45字以内。' +
+        '次の優先順で、最も価値の高いものを選ぶ。\n' +
+        '  1. 言い換え（本文と選択肢で置き換わりやすい同義語）。例「≒ increase, rise」\n' +
+        '  2. よく使う形（コロケーション・語法・とる前置詞）。例「raise rates ⇔ cut rates」\n' +
+        '  3. 紛らわしい語との違い。例「rise は自動詞、raise は他動詞」\n' +
+        '重要: 固有名詞や、中学レベルで多義でもない語のように、書くべきことが無い場合は ' +
+        'tip を空文字にしてください。無理に埋めないこと。' +
+        '構文上の役割（主語・目的語など）の説明は読めば分かるので書かないこと。';
 
       return call('/models/' + encodeURIComponent(cfg().model) + ':generateContent', {
         contents: [{ parts: [{ text: prompt }] }],
@@ -291,8 +299,8 @@
         var obj;
         try { obj = JSON.parse(text); }
         catch (e) { throw new Error('応答を読み取れませんでした'); }
-        var out = { pos: obj.pos || '', ja: obj.ja || '', usage: obj.usage || '', at: Date.now() };
-        if (!out.ja && !out.usage) throw new Error('応答が空でした');
+        var out = { pos: obj.pos || '', ja: obj.ja || '', tip: obj.tip || '', at: Date.now() };
+        if (!out.ja && !out.tip) throw new Error('応答が空でした');
         cachePut(key, out);
         return out;
       });

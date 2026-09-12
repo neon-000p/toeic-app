@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>時事英語 | TOEIC Daily</title>
-<link rel="stylesheet" href="style.css?v=c4aa1bdf">
+<link rel="stylesheet" href="style.css?v=d0958a97">
 <style>
 body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
 
@@ -649,7 +649,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=4ee00474"></script>
+<script src="core.js?v=7bfcd3e8"></script>
 <script>
 (function () {
   'use strict';
@@ -1279,7 +1279,7 @@ details.src[open]>summary::before{content:"▾ ";}
         b.innerHTML =
           (r.ja ? '<div class="pop-ai-ja">' + (r.pos ? '<span class="muted small">(' + esc(r.pos) + ') </span>' : '') +
             esc(r.ja) + '</div>' : '') +
-          (r.usage ? '<div class="pop-ai-u">' + esc(r.usage) + '</div>' : '');
+          (r.tip ? '<div class="pop-ai-u">' + esc(r.tip) + '</div>' : '');
       }).catch(function (e) {
         if (!pop || pop.dataset.word !== mine) return;
         var b = pop.querySelector('.pop-ai-b');
@@ -1304,7 +1304,7 @@ details.src[open]>summary::before{content:"▾ ";}
         if (!T.Vocab.has(term)) {
           var m = g || aiData || {};
           T.Vocab.add({ term: term, pos: m.pos || '', ja: m.ja || '',
-                        gloss: (g && g.note) || (aiData && aiData.usage) || '',
+                        gloss: (g && g.note) || (aiData && aiData.tip) || '',
                         src: DATA.id, srcTitle: (DATA.title && DATA.title.ja) || '' });
           T.toast('語彙帳に追加しました');
         } else { T.Vocab.remove(term); T.toast('語彙帳から外しました'); }
@@ -1445,7 +1445,7 @@ details.src[open]>summary::before{content:"▾ ";}
           T.AI.setCfg({ key: gKey.value.trim(), model: gModel.value });
           gInfo.textContent = 'テスト中…';
           T.AI.lookup('hike', 'A Reuters poll of 68 economists found that 97% now expect a hike.', 'test')
-            .then(function (r) { gInfo.textContent = 'OK: hike（' + r.pos + '）' + r.ja + ' ／ ' + r.usage; })
+            .then(function (r) { gInfo.textContent = 'OK: hike（' + r.pos + '）' + r.ja + (r.tip ? ' ／ ' + r.tip : ''); })
             .catch(function (e) { gInfo.textContent = '失敗: ' + (e.message || e); });
         };
         bg.querySelector('#gClear').onclick = function () {
