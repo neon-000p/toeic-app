@@ -156,6 +156,7 @@ details.src[open]>summary::before{content:"▾ ";}
 .blk h3{font-size:14px;margin:0 0 6px;color:var(--accent-ink)}
 .blk p{margin:0;font-size:14.5px;white-space:pre-wrap}
 .blk p.en{font-family:var(--serif);font-size:15.5px;line-height:1.8}
+.blk .w.has-gloss{border-bottom-color:transparent}
 
 /* 対訳（音読を統合） */
 .trans-bar{display:flex;gap:8px;flex-wrap:wrap}
@@ -1066,12 +1067,16 @@ details.src[open]>summary::before{content:"▾ ";}
       '</div>' +
       (en && bgBusy ? '<p class="hint" style="margin-top:0">英訳しています…</p>' : '') +
       blocks.map(function (b, i) {
-        var t = (en && bgEn && bgEn[i]) ? bgEn[i] : b.body;
         var useEn = en && bgEn && bgEn[i];
-        return '<div class="blk"><h3>' + esc(b.heading) + '</h3>' +
-          '<p' + (useEn ? ' class="en"' : '') + '>' + esc(t) + '</p></div>';
+        if (!useEn) return '<div class="blk"><h3>' + esc(b.heading) + '</h3><p>' + esc(b.body) + '</p></div>';
+        /* 文ごとに包む。語注の照会に渡すのは段落ではなくこの1文 */
+        var sents = String(bgEn[i]).match(/[^.!?]+[.!?]*s*/g) || [String(bgEn[i])];
+        return '<div class="blk"><h3>' + esc(b.heading) + '</h3><p class="en">' +
+          sents.map(function (s) {
+            return '<span class="sent">' + T.markupEnglish(s, DATA.glossary) + '</span>';
+          }).join('') + '</p></div>';
       }).join('') +
-      (can ? '' : '<p class="hint">⚙ で Gemini のキーを設定すると、英語で読めます。</p>') +
+      (can ? (en && bgEn ? '<p class="hint">英単語をタップすると意味が出ます。</p>' : '') : '<p class="hint">⚙ で Gemini のキーを設定すると、英語で読めます。</p>') +
     '</div>' +
     (src.length ? '<div class="card"><div class="sec-label">出典</div>' + src.map(function (s) {
       return '<p class="small" style="margin:0 0 6px"><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' +
