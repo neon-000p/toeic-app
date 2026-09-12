@@ -7,7 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=136e9fdd">
+<link rel="stylesheet" href="style.css?v=65cf95f1">
 <style>
 body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
@@ -20,12 +20,6 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 .head-row .grow{flex:1;min-width:0}
 .head-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:11.5px;color:var(--muted)}
 .head-title-en{font-family:var(--serif);font-size:13.5px;color:var(--ink-2);margin-top:2px;line-height:1.35}
-.icon-btn{
-  flex:none;width:34px;height:34px;border-radius:9px;border:1px solid var(--line);
-  background:var(--surface-2);color:var(--ink-2);font-size:15px;line-height:1;cursor:pointer;
-  display:inline-flex;align-items:center;justify-content:center;text-decoration:none;
-}
-a.icon-btn{font-size:17px}
 .rail{display:flex;gap:3px;padding:8px 0 6px}
 .rail button{
   flex:1;padding:0;border:0;background:transparent;cursor:pointer;
@@ -658,7 +652,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=d8e95294"></script>
+<script src="core.js?v=20203ece"></script>
 <script>
 (function () {
   'use strict';
@@ -1403,15 +1397,7 @@ details.src[open]>summary::before{content:"▾ ";}
 
   /* ================= モーダル ================= */
 
-  function modal(html, onMount) {
-    var bg = document.createElement('div');
-    bg.className = 'modal-bg';
-    bg.innerHTML = '<div class="modal">' + html + '</div>';
-    bg.addEventListener('click', function (e) { if (e.target === bg) bg.remove(); });
-    document.body.appendChild(bg);
-    if (onMount) onMount(bg);
-    return bg;
-  }
+  var modal = T.modal;
 
   $('btnPick').addEventListener('click', function () {
     var rows = INDEX.length ? INDEX.map(function (it) {
@@ -1427,116 +1413,39 @@ details.src[open]>summary::before{content:"▾ ";}
       function (bg) { bg.querySelector('#mClose').onclick = function () { bg.remove(); }; });
   });
 
+  /* 音声と Gemini の設定は core.js で共通。ここでは教材まわりだけ足す */
   $('btnCfg').addEventListener('click', function () {
-    var s = T.Settings.all();
-    modal(
-      '<h2>設定</h2>' +
-      '<label class="field"><span>読み上げの音声</span><select id="cfgVoice"><option value="">自動で選ぶ</option></select></label>' +
-      '<div class="small muted" id="cfgVoiceInfo" style="margin:-6px 0 12px"></div>' +
-      '<label class="field"><span>速度 <b id="cfgRateV">' + Number(s.rate).toFixed(2) + '</b></span>' +
-        '<input type="range" id="cfgRate" min="0.6" max="1.2" step="0.05" value="' + s.rate + '"></label>' +
-      '<div class="tool-row"><button class="btn btn-sm" id="cfgTest">🔊 テスト再生</button></div>' +
-      '<hr class="sep">' +
-      (T.AI ? '<h2>語の意味（Gemini）</h2>' +
-      '<p class="small muted" style="margin:-6px 0 10px">語をタップしたとき、その文での使われ方を Gemini に尋ねます。' +
-        'キーは<b>この端末にだけ</b>保存され、GitHub には入りません。' +
-        'Google Cloud 側で HTTP リファラを <code>neon-000p.github.io</code> に制限しておくと安全です。</p>' +
-      '<label class="field"><span>API キー</span>' +
-        '<input type="password" id="gKey" placeholder="AIza…" autocomplete="off" value="' + esc(T.AI ? T.AI.cfg().key : '') + '"></label>' +
-      '<label class="field"><span>モデル</span><select id="gModel"></select></label>' +
-      '<div class="tool-row"><button class="btn btn-sm" id="gFetch">モデル一覧を取得</button>' +
-        '<button class="btn btn-sm" id="gTest">動作テスト</button>' +
-        '<button class="btn btn-sm" id="gClear">キーを消す</button></div>' +
-      '<div class="small muted" id="gInfo" style="margin-top:8px"></div>' +
-      '<hr class="sep">' : '') +
-      '<h2>教材を取り込む</h2>' +
-      '<p class="small muted" style="margin:-6px 0 8px">ルーティンが出力した JSON を貼り付けるか、ファイルを選びます。取り込んだ教材はこの端末に保存されます。</p>' +
-      '<textarea id="impText" placeholder="ここに JSON を貼り付け"></textarea>' +
-      '<div class="tool-row"><button class="btn btn-sm btn-primary" id="impGo">取り込む</button>' +
-        '<input type="file" id="impFile" accept=".json,application/json" class="small"></div>' +
-      '<hr class="sep">' +
-      '<div class="tool-row"><button class="btn btn-sm" id="cfgReset">この教材の記録を消す</button>' +
-        '<button class="btn btn-sm" id="cfgClose">閉じる</button></div>',
-      function (bg) {
-        var sel = bg.querySelector('#cfgVoice');
-        T.TTS.onReady(function () {
-          var list = T.TTS.ranked();
-          list.forEach(function (v) {
-            var o = document.createElement('option');
-            o.value = v.voiceURI;
-            o.textContent = v.name + '（' + v.lang + '・' + T.TTS.label(v) + '）';
-            if (v.voiceURI === s.voiceURI) o.selected = true;
-            sel.appendChild(o);
-          });
-          var auto = T.TTS.pickDefault();
-          bg.querySelector('#cfgVoiceInfo').innerHTML =
-            list.length
-              ? '品質の高い順に並べています。自動では <b>' + T.esc(auto ? auto.name : '') + '</b> を使います。' +
-                '<br>通信が不安定な場所で使うなら「端末内」の音声を選んでおくと確実です。'
-              : '英語の音声が見つかりません。端末の音声データを確認してください。';
-        });
-        sel.onchange = function () { T.Settings.set('voiceURI', sel.value); };
-        var rate = bg.querySelector('#cfgRate');
-        rate.oninput = function () {
-          T.Settings.set('rate', parseFloat(rate.value));
-          bg.querySelector('#cfgRateV').textContent = parseFloat(rate.value).toFixed(2);
-        };
-        bg.querySelector('#cfgTest').onclick = function () {
-          T.TTS.speak('The shipment will arrive at the warehouse on Friday.', { rate: T.Settings.get('rate') });
-        };
+    T.openSettings({
+      extraHTML:
+        '<h2>教材を取り込む</h2>' +
+        '<p class="small muted" style="margin:-6px 0 8px">ルーティンが出力した JSON を貼り付けるか、ファイルを選びます。' +
+        '取り込んだ教材はこの端末に保存されます。</p>' +
+        '<textarea id="impText" placeholder="ここに JSON を貼り付け"></textarea>' +
+        '<div class="tool-row"><button class="btn btn-sm btn-primary" id="impGo">取り込む</button>' +
+          '<input type="file" id="impFile" accept=".json,application/json" class="small"></div>',
+      extraButtons: '<button class="btn btn-sm" id="cfgReset">この教材の記録を消す</button>',
+      onMount: function (bg) {
         bg.querySelector('#impGo').onclick = function () { doImport(bg.querySelector('#impText').value, bg); };
         bg.querySelector('#impFile').onchange = function (e) {
-          var f = e.target.files && e.target.files[0]; if (!f) return;
+          var f = e.target.files && e.target.files[0];
+          if (!f) return;
           var fr = new FileReader();
           fr.onload = function () { doImport(String(fr.result), bg); };
           fr.readAsText(f);
         };
         bg.querySelector('#cfgReset').onclick = function () {
-          var all = T.read('progress', {}); delete all[progKey]; T.write('progress', all);
+          var all = T.read('progress', {});
+          delete all[progKey];
+          T.write('progress', all);
           state = { answers: {}, graded: false, maxStep: 0, done: false };
-          step = 0; bg.remove(); renderRail(); render(); T.toast('この教材の記録を消しました');
+          step = 0;
+          bg.remove();
+          renderRail();
+          render();
+          T.toast('この教材の記録を消しました');
         };
-        /* --- Gemini --- */
-        var gKey = bg.querySelector('#gKey'), gModel = bg.querySelector('#gModel'), gInfo = bg.querySelector('#gInfo');
-        if (gKey) setupGemini();
-        function setupGemini() {
-        function fillModels(list) {
-          var cur = T.AI.cfg().model;
-          gModel.innerHTML = '';
-          if (!list.some(function (m) { return m.id === cur; })) list = [{ id: cur, label: '（現在の設定）' }].concat(list);
-          list.forEach(function (m) {
-            var o = document.createElement('option');
-            o.value = m.id;
-            o.textContent = m.id + (m.label ? '　' + m.label : '');
-            if (m.id === cur) o.selected = true;
-            gModel.appendChild(o);
-          });
-        }
-        fillModels([]);
-        gKey.onchange = function () { T.AI.setCfg({ key: gKey.value.trim() }); gInfo.textContent = gKey.value.trim() ? 'キーを保存しました。' : 'キーを消しました。'; };
-        gModel.onchange = function () { T.AI.setCfg({ model: gModel.value }); };
-        bg.querySelector('#gFetch').onclick = function () {
-          T.AI.setCfg({ key: gKey.value.trim() });
-          gInfo.textContent = '取得中…';
-          T.AI.models().then(function (list) {
-            fillModels(list);
-            gInfo.textContent = list.length + ' 件のモデルが使えます。flash 系が速くて安価です。';
-          }).catch(function (e) { gInfo.textContent = '取得できません: ' + (e.message || e); });
-        };
-        bg.querySelector('#gTest').onclick = function () {
-          T.AI.setCfg({ key: gKey.value.trim(), model: gModel.value });
-          gInfo.textContent = 'テスト中…';
-          T.AI.lookup('hike', 'A Reuters poll of 68 economists found that 97% now expect a hike.', 'test')
-            .then(function (r) { gInfo.textContent = 'OK: hike（' + r.pos + '）' + r.ja + (r.tip ? ' ／ ' + r.tip : ''); })
-            .catch(function (e) { gInfo.textContent = '失敗: ' + (e.message || e); });
-        };
-        bg.querySelector('#gClear').onclick = function () {
-          T.AI.setCfg({ key: '' }); gKey.value = ''; gInfo.textContent = 'キーを消しました。';
-        };
-        }
-
-        bg.querySelector('#cfgClose').onclick = function () { bg.remove(); };
-      });
+      }
+    });
   });
 
   function doImport(text, bg) {

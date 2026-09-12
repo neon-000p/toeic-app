@@ -113,6 +113,13 @@ body{
 .btn-ghost{background:transparent;border-color:transparent;color:var(--accent);padding:8px 10px;font-weight:600}
 .btn-sm{min-height:34px;padding:5px 11px;font-size:13px;border-radius:8px}
 
+.icon-btn{
+  flex:none;width:34px;height:34px;border-radius:9px;border:1px solid var(--line);
+  background:var(--surface-2);color:var(--ink-2);font-size:15px;line-height:1;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;text-decoration:none;
+}
+a.icon-btn{font-size:17px}
+
 .chip{
   display:inline-block;font-size:12px;font-weight:700;letter-spacing:.02em;
   padding:2px 9px;border-radius:999px;

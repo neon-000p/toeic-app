@@ -7,7 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=136e9fdd">
+<link rel="stylesheet" href="style.css?v=65cf95f1">
 <style>
 body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 
@@ -15,11 +15,6 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 .head-row{display:flex;align-items:center;gap:8px;padding:12px 0}
 .head-row .grow{flex:1;min-width:0}
 .head-row h1{margin:0;font-size:17px;font-weight:800;letter-spacing:.02em}
-.icon-btn{
-  flex:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);
-  background:var(--surface-2);color:var(--ink-2);font-size:20px;line-height:1;cursor:pointer;
-  display:inline-flex;align-items:center;justify-content:center;text-decoration:none;
-}
 .tabs{display:flex;gap:4px;padding-bottom:10px}
 .tabs button{
   flex:1;padding:8px 4px;border:0;border-radius:9px;background:transparent;
@@ -78,6 +73,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
     <div class="head-row">
       <div class="grow"><h1>語彙帳</h1></div>
       <a class="icon-btn" href="index.html" title="ホーム">⌂</a>
+      <button class="icon-btn" id="btnCfg" title="設定">⚙</button>
     </div>
     <div class="tabs">
       <button data-tab="review" class="on">復習</button>
@@ -89,7 +85,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 
 <main class="wrap" id="main"></main>
 
-<script src="core.js?v=d8e95294"></script>
+<script src="core.js?v=20203ece"></script>
 <script>
 (function () {
   'use strict';
@@ -289,6 +285,8 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
   }
 
   /* ---------- 操作 ---------- */
+
+  document.getElementById('btnCfg').addEventListener('click', function () { T.openSettings(); });
 
   document.querySelector('.tabs').addEventListener('click', function (ev) {
     var b = ev.target.closest('button[data-tab]');

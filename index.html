@@ -7,10 +7,12 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=136e9fdd">
+<link rel="stylesheet" href="style.css?v=65cf95f1">
 <style>
 body{padding-bottom:24px}
 .hub-head{padding:22px 0 12px}
+.head-top{display:flex;align-items:flex-start;gap:10px}
+.head-top .grow{flex:1;min-width:0}
 .hub-head h1{margin:0;font-size:22px;letter-spacing:.04em;font-weight:800}
 .hub-head .sub{font-size:12.5px;color:var(--muted);margin-top:2px}
 
@@ -64,8 +66,13 @@ main{padding-top:14px}
 
 <div class="wrap">
   <header class="hub-head">
-    <h1>TOEIC Daily</h1>
-    <div class="sub">時事英語と実践対策</div>
+    <div class="head-top">
+      <div class="grow">
+        <h1>TOEIC Daily</h1>
+        <div class="sub">時事英語と実践対策</div>
+      </div>
+      <button class="icon-btn" id="btnCfg" title="設定">⚙</button>
+    </div>
     <div class="stats">
       <div><div class="n" id="stStreak">0</div><div class="l">連続日数</div></div>
       <a class="stat" href="vocab.html"><div class="n" id="stVocab">0</div><div class="l">語彙帳 →</div></a>
@@ -82,7 +89,7 @@ main{padding-top:14px}
   </main>
 </div>
 
-<script src="core.js?v=d8e95294"></script>
+<script src="core.js?v=20203ece"></script>
 <script>
 (function () {
   'use strict';
@@ -90,6 +97,8 @@ main{padding-top:14px}
   var main = document.getElementById('main');
   var items = [];
   var tab = 'news';
+
+  document.getElementById('btnCfg').addEventListener('click', function () { T.openSettings(); });
 
   document.getElementById('stStreak').textContent = T.Log.streak();
   document.getElementById('stVocab').textContent = T.Vocab.count();

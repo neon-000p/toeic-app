@@ -396,6 +396,134 @@
 
   })();
 
+  /* ---------- 画面部品（全ページ共有） ---------- */
+
+  function modal(html, onMount) {
+    var bg = document.createElement('div');
+    bg.className = 'modal-bg';
+    bg.innerHTML = '<div class="modal">' + html + '</div>';
+    bg.addEventListener('click', function (e) { if (e.target === bg) bg.remove(); });
+    document.body.appendChild(bg);
+    if (onMount) onMount(bg);
+    return bg;
+  }
+
+  /* 音声と Gemini の設定。どのページからも同じものを開く。
+     ページ固有の項目は extraHTML / extraButtons / onMount で足す。 */
+  function openSettings(opts) {
+    opts = opts || {};
+    var s = Settings.all();
+
+    var voiceHTML =
+      '<h2>設定</h2>' +
+      '<label class="field"><span>読み上げの音声</span>' +
+        '<select id="cfgVoice"><option value="">自動で選ぶ</option></select></label>' +
+      '<div class="small muted" id="cfgVoiceInfo" style="margin:-6px 0 12px"></div>' +
+      '<label class="field"><span>速度 <b id="cfgRateV">' + Number(s.rate).toFixed(2) + '</b></span>' +
+        '<input type="range" id="cfgRate" min="0.6" max="1.2" step="0.05" value="' + s.rate + '"></label>' +
+      '<div class="tool-row"><button class="btn btn-sm" id="cfgTest">🔊 テスト再生</button></div>';
+
+    var aiHTML =
+      '<hr class="sep">' +
+      '<h2>語の意味（Gemini）</h2>' +
+      '<p class="small muted" style="margin:-6px 0 10px">語をタップしたとき、その文での使われ方を Gemini に尋ねます。' +
+        '背景の英訳にも使います。キーは<b>この端末にだけ</b>保存され、GitHub には入りません。' +
+        'Google Cloud 側で HTTP リファラを <code>neon-000p.github.io</code> に制限しておくと安全です。</p>' +
+      '<label class="field"><span>API キー</span>' +
+        '<input type="password" id="gKey" placeholder="AIza…" autocomplete="off" value="' + esc(AI.cfg().key) + '"></label>' +
+      '<label class="field"><span>モデル</span><select id="gModel"></select></label>' +
+      '<div class="tool-row"><button class="btn btn-sm" id="gFetch">モデル一覧を取得</button>' +
+        '<button class="btn btn-sm" id="gTest">動作テスト</button>' +
+        '<button class="btn btn-sm" id="gClear">キーを消す</button></div>' +
+      '<div class="small muted" id="gInfo" style="margin-top:8px"></div>';
+
+    return modal(
+      voiceHTML + aiHTML +
+      (opts.extraHTML ? '<hr class="sep">' + opts.extraHTML : '') +
+      '<hr class="sep">' +
+      '<div class="tool-row">' + (opts.extraButtons || '') +
+        '<button class="btn btn-sm" id="cfgClose">閉じる</button></div>',
+      function (bg) {
+        /* --- 音声 --- */
+        var sel = bg.querySelector('#cfgVoice');
+        TTS.onReady(function () {
+          var list = TTS.ranked();
+          list.forEach(function (v) {
+            var o = document.createElement('option');
+            o.value = v.voiceURI;
+            o.textContent = v.name + '（' + v.lang + '・' + TTS.label(v) + '）';
+            if (v.voiceURI === s.voiceURI) o.selected = true;
+            sel.appendChild(o);
+          });
+          var auto = TTS.pickDefault();
+          bg.querySelector('#cfgVoiceInfo').innerHTML =
+            list.length
+              ? '品質の高い順に並べています。自動では <b>' + esc(auto ? auto.name : '') + '</b> を使います。' +
+                '<br>通信が不安定な場所で使うなら「端末内」の音声を選んでおくと確実です。'
+              : '英語の音声が見つかりません。端末の音声データを確認してください。';
+        });
+        sel.onchange = function () { Settings.set('voiceURI', sel.value); };
+
+        var rate = bg.querySelector('#cfgRate');
+        rate.oninput = function () {
+          Settings.set('rate', parseFloat(rate.value));
+          bg.querySelector('#cfgRateV').textContent = parseFloat(rate.value).toFixed(2);
+        };
+        bg.querySelector('#cfgTest').onclick = function () {
+          TTS.speak('The shipment will arrive at the warehouse on Friday.', { rate: Settings.get('rate') });
+        };
+
+        /* --- Gemini --- */
+        var gKey = bg.querySelector('#gKey'),
+            gModel = bg.querySelector('#gModel'),
+            gInfo = bg.querySelector('#gInfo');
+
+        function fillModels(list) {
+          var cur = AI.cfg().model;
+          gModel.innerHTML = '';
+          if (!list.some(function (m) { return m.id === cur; })) {
+            list = [{ id: cur, label: '（現在の設定）' }].concat(list);
+          }
+          list.forEach(function (m) {
+            var o = document.createElement('option');
+            o.value = m.id;
+            o.textContent = m.id + (m.label ? '　' + m.label : '');
+            if (m.id === cur) o.selected = true;
+            gModel.appendChild(o);
+          });
+        }
+        fillModels([]);
+
+        gKey.onchange = function () {
+          AI.setCfg({ key: gKey.value.trim() });
+          gInfo.textContent = gKey.value.trim() ? 'キーを保存しました。' : 'キーを消しました。';
+        };
+        gModel.onchange = function () { AI.setCfg({ model: gModel.value }); };
+        bg.querySelector('#gFetch').onclick = function () {
+          AI.setCfg({ key: gKey.value.trim() });
+          gInfo.textContent = '取得中…';
+          AI.models().then(function (list) {
+            fillModels(list);
+            gInfo.textContent = list.length + ' 件のモデルが使えます。flash 系が速くて安価です。';
+          }).catch(function (e) { gInfo.textContent = '取得できません: ' + (e.message || e); });
+        };
+        bg.querySelector('#gTest').onclick = function () {
+          AI.setCfg({ key: gKey.value.trim(), model: gModel.value });
+          gInfo.textContent = 'テスト中…';
+          AI.lookup('hike', 'A Reuters poll of 68 economists found that 97% now expect a hike.', 'test')
+            .then(function (r) { gInfo.textContent = 'OK: hike（' + r.pos + '）' + r.ja + (r.tip ? ' ／ ' + r.tip : ''); })
+            .catch(function (e) { gInfo.textContent = '失敗: ' + (e.message || e); });
+        };
+        bg.querySelector('#gClear').onclick = function () {
+          AI.setCfg({ key: '' }); gKey.value = ''; gInfo.textContent = 'キーを消しました。';
+        };
+
+        if (opts.onMount) opts.onMount(bg);
+        bg.querySelector('#cfgClose').onclick = function () { bg.remove(); };
+      }
+    );
+  }
+
   /* ---------- ユーティリティ ---------- */
   function esc(s) {
     return String(s == null ? '' : s)
@@ -433,6 +561,7 @@
   global.TOEIC = {
     read: read, write: write,
     Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS, AI: AI,
+    modal: modal, openSettings: openSettings,
     esc: esc, splitWords: splitWords, markupEnglish: markupEnglish, toast: toast
   };
 })(window);
