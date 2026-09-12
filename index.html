@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TOEIC</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{padding-bottom:24px}
+.hub-head{padding:22px 0 14px}
+.hub-head h1{margin:0;font-size:22px;letter-spacing:.04em;font-weight:800}
+.hub-head .sub{font-size:12.5px;color:var(--muted);margin-top:2px}
+.stats{display:flex;gap:10px;margin-top:16px}
+.stats div{
+  flex:1;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r);padding:12px 10px;text-align:center;
+}
+.stats .n{font-size:22px;font-weight:800;line-height:1.1}
+.stats .l{font-size:11px;color:var(--muted);margin-top:3px}
+
+.today{display:block;text-decoration:none;color:inherit}
+.today .en{font-family:var(--serif);font-size:13px;color:var(--muted);margin-top:3px;line-height:1.4}
+.today h2{margin:6px 0 0;font-size:17px;line-height:1.5}
+.today .go{
+  display:inline-flex;align-items:center;gap:6px;margin-top:14px;
+  background:var(--accent);color:#fff;font-weight:700;font-size:14px;
+  padding:10px 18px;border-radius:10px;
+}
+.meta-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+
+.list a{
+  display:flex;align-items:center;gap:10px;
+  padding:12px 2px;border-bottom:1px solid var(--line);
+  text-decoration:none;color:inherit;
+}
+.list a:last-child{border-bottom:0}
+.list .d{flex:none;font-size:11px;font-weight:700;color:var(--muted);width:44px}
+.list .t{flex:1;min-width:0;font-size:14px;line-height:1.5}
+.list .s{flex:none;font-size:11px;font-weight:700;color:var(--accent)}
+.list .s.done{color:var(--ok)}
+
+.soon{opacity:.55}
+.soon .row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;font-size:14px}
+.soon .row+.row{border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hub-head">
+    <h1>TOEIC</h1>
+    <div class="sub">時事英語と実践対策</div>
+    <div class="stats">
+      <div><div class="n" id="stStreak">0</div><div class="l">連続日数</div></div>
+      <div><div class="n" id="stVocab">0</div><div class="l">語彙帳</div></div>
+      <div><div class="n" id="stDone">0</div><div class="l">学習した教材</div></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="card"><p class="muted small" style="margin:0">読み込み中…</p></div>
+  </main>
+</div>
+
+<script src="core.js"></script>
+<script>
+(function () {
+  'use strict';
+  var T = window.TOEIC, esc = T.esc;
+  var main = document.getElementById('main');
+
+  document.getElementById('stStreak').textContent = T.Log.streak();
+  document.getElementById('stVocab').textContent = T.Vocab.count();
+
+  function progressOf(id) { return T.Log.progress('news:' + id); }
+
+  function statusLabel(p) {
+    if (!p) return '';
+    if (p.done) return '済';
+    if (p.graded) return '途中';
+    if (p.answers && Object.keys(p.answers).length) return '途中';
+    return '';
+  }
+
+  function render(items) {
+    var doneCount = items.filter(function (it) { var p = progressOf(it.id); return p && p.done; }).length;
+    document.getElementById('stDone').textContent = doneCount;
+
+    if (!items.length) {
+      main.innerHTML = '<div class="card"><div class="sec-label">時事英語</div>' +
+        '<p class="small muted" style="margin:0 0 12px">教材の目次を読めませんでした。' +
+        'ローカルのファイルを直接開いた場合は読めません（GitHub Pages 上では読めます）。</p>' +
+        '<a class="go" href="news.html" style="display:inline-flex">開く →</a></div>' + soonHTML();
+      return;
+    }
+
+    var top = items[0], p = progressOf(top.id);
+    var label = p && p.done ? 'もう一度' : (statusLabel(p) === '途中' ? '続きから' : 'はじめる');
+
+    var html = '<a class="card today" href="news.html?id=' + encodeURIComponent(top.id) + '">' +
+      '<div class="meta-row"><span class="sec-label" style="margin:0">最新の教材</span>' +
+        '<span>' + esc((top.date || '').replace(/-/g, '/')) + '</span>' +
+        (top.genre ? '<span class="chip">' + esc(top.genre) + '</span>' : '') +
+        (statusLabel(p) ? '<span class="chip chip-plain">' + statusLabel(p) + '</span>' : '') +
+      '</div>' +
+      '<h2>' + esc(top.title || top.id) + '</h2>' +
+      '<span class="go">' + label + ' →</span>' +
+    '</a>';
+
+    if (items.length > 1) {
+      html += '<div class="card"><div class="sec-label">これまでの教材</div><div class="list">' +
+        items.slice(1, 11).map(function (it) {
+          var q = progressOf(it.id), s = statusLabel(q);
+          return '<a href="news.html?id=' + encodeURIComponent(it.id) + '">' +
+            '<span class="d">' + esc((it.date || '').slice(5).replace('-', '/')) + '</span>' +
+            '<span class="t">' + esc(it.title || it.id) + '</span>' +
+            (s ? '<span class="s' + (s === '済' ? ' done' : '') + '">' + s + '</span>' : '') +
+          '</a>';
+        }).join('') + '</div></div>';
+    }
+
+    main.innerHTML = html + soonHTML();
+  }
+
+  function soonHTML() {
+    return '<div class="card soon"><div class="sec-label">実践対策（準備中）</div>' +
+      ['Part 3　会話問題', 'Part 4　説明文', 'Part 5　短文穴埋め', 'Part 6　長文穴埋め', 'Part 7　読解']
+        .map(function (t) { return '<div class="row"><span>' + t + '</span><span class="small muted">準備中</span></div>'; })
+        .join('') + '</div>';
+  }
+
+  fetch('data/news/index.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (idx) { render((idx && idx.items) || []); })
+    .catch(function () { render([]); });
+})();
+</script>
+</body>
+</html>

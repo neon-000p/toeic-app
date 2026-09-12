@@ -21,7 +21,9 @@ body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
 .icon-btn{
   flex:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);
   background:var(--surface-2);color:var(--ink-2);font-size:17px;line-height:1;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;text-decoration:none;
 }
+a.icon-btn{font-size:20px}
 .rail{display:flex;gap:3px;padding:11px 0 9px}
 .rail button{
   flex:1;padding:0;border:0;background:transparent;cursor:pointer;
@@ -187,6 +189,7 @@ details.src[open]>summary::before{content:"▾ ";}
         <div class="head-title" id="titleJa">読み込み中…</div>
         <div class="head-title-en en" id="titleEn"></div>
       </div>
+      <a class="icon-btn" href="index.html" title="ホーム">⌂</a>
       <button class="icon-btn" id="btnPick" title="教材を選ぶ">▤</button>
       <button class="icon-btn" id="btnCfg" title="設定">⚙</button>
     </div>
@@ -740,9 +743,6 @@ details.src[open]>summary::before{content:"▾ ";}
         '<button class="btn btn-sm" id="toggleJa">' + (showJa ? '和訳を隠す' : '和訳を出す') + '</button>' +
         '<button class="btn btn-sm" id="stopAll">■ 停止</button>' +
       '</div>' +
-      '<div class="rate-row"><span class="small muted" style="flex:none">速度</span>' +
-        '<input type="range" id="rate" min="0.6" max="1.2" step="0.05" value="' + rate + '">' +
-        '<span class="v" id="rateV">' + Number(rate).toFixed(2) + '</span></div>' +
       '<hr class="sep">' +
       '<div class="sec-head"><span class="sec-label">Summary</span>' +
         '<button class="btn btn-sm btn-primary" data-play-all="sum">▶ 通し再生</button></div>' +
@@ -752,6 +752,10 @@ details.src[open]>summary::before{content:"▾ ";}
         '<div class="sec-head"><span class="sec-label">Listening Script</span>' +
           '<button class="btn btn-sm btn-primary" data-play-all="scr">▶ 通し再生</button></div>' +
         lineRows('scr') : '') +
+      '<hr class="sep">' +
+      '<div class="rate-row"><span class="small muted" style="flex:none">速度</span>' +
+        '<input type="range" id="rate" min="0.6" max="1.2" step="0.05" value="' + rate + '">' +
+        '<span class="v" id="rateV">' + Number(rate).toFixed(2) + '</span></div>' +
       '</div>' +
       '<p class="hint">行をタップするとその1文を再生し、再生中の行が光ります。英単語のタップは語注です。シャドーイングは速度 0.8 前後から。</p>';
   }
