@@ -8,7 +8,7 @@
 ```
 news.html            時事英語モード（6ステップ）
 vocab.html           語彙帳（間隔反復の復習・持ち出し）
-part3.html           Part 3 トレーナー（先読み→再生→解答→復習）
+part3.html           Part 3 トレーナー（1回1セット・5ステップ）
 core.js              共通コア（設定・語彙帳・学習ログ・読み上げ）
 style.css            共通スタイル（色・部品）
 data/news/index.json 目次（新しい順・最大30件）

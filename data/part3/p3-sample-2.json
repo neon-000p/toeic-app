@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "p3-sample-2",
+  "date": "2026-09-12",
+  "time": "20:10",
+  "createdAt": "2026-09-12T20:01:00+09:00",
+  "sample": true,
+  "sampleNote": "動作確認用のサンプルです。ルーティンが作る教材に置き換わります。",
+  "scene": "社内｜研修室の設備トラブル（3人）",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性1",
+      "accent": "en-GB"
+    },
+    {
+      "tag": "M2",
+      "role": "男性2",
+      "accent": "en-AU"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "Excuse me, are you two here for the training session in Room B?",
+      "ja": "すみません、お二人はB室の研修にいらした方ですか。"
+    },
+    {
+      "tag": "M",
+      "en": "We are, but the projector doesn't seem to be working.",
+      "ja": "そうです。ただ、プロジェクターが動かないようで。"
+    },
+    {
+      "tag": "M2",
+      "en": "I tried switching the cable twice. The screen just stays blank.",
+      "ja": "ケーブルを2回差し替えてみました。画面は真っ白のままです。"
+    },
+    {
+      "tag": "W",
+      "en": "That's odd. It was fine yesterday afternoon. Let me call the facilities desk.",
+      "ja": "おかしいですね。昨日の午後は問題なかったのですが。設備管理に電話してみます。"
+    },
+    {
+      "tag": "M",
+      "en": "We're supposed to start in about ten minutes. Should we move everyone to another room?",
+      "ja": "あと10分ほどで始める予定です。別の部屋に移動しましょうか。"
+    },
+    {
+      "tag": "W",
+      "en": "Room D is free until noon, but it only holds fifteen people.",
+      "ja": "D室が正午まで空いていますが、15人しか入りません。"
+    },
+    {
+      "tag": "M2",
+      "en": "We have twenty-two people signed up.",
+      "ja": "申し込みは22人です。"
+    },
+    {
+      "tag": "W",
+      "en": "Then let's wait for facilities. If they can't fix it by ten fifteen, I'll email everyone about a new time.",
+      "ja": "では設備管理を待ちましょう。10時15分までに直らなければ、全員に時間変更をメールします。"
+    },
+    {
+      "tag": "M",
+      "en": "In the meantime, I can hand out the printed materials so we don't lose the whole session.",
+      "ja": "その間、印刷資料を配っておきます。まるまる無駄にならないように。"
+    },
+    {
+      "tag": "W",
+      "en": "Good idea. Thank you both.",
+      "ja": "助かります。お二人ともありがとうございます。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What problem do the speakers have?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A room is too small for the group"
+        },
+        {
+          "key": "B",
+          "text": "A piece of equipment is not working"
+        },
+        {
+          "key": "C",
+          "text": "A training session has been canceled"
+        },
+        {
+          "key": "D",
+          "text": "Some materials were not delivered"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        1,
+        2
+      ],
+      "explanation": "the projector doesn't seem to be working と the screen just stays blank が根拠です。選択肢では projector が a piece of equipment と一般化されています。(A) は後で出る別室の話であって、いま起きている問題ではありません。(C) は検討中で決定していません。",
+      "tip": "問題を問う設問では、選択肢が本文の具体語を一般語に置き換えてきます。projector → equipment のように、上位の語に言い換えられる前提で聞いてください。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why is Room D not suitable?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is reserved until noon"
+        },
+        {
+          "key": "B",
+          "text": "It does not have a projector"
+        },
+        {
+          "key": "C",
+          "text": "It is not large enough"
+        },
+        {
+          "key": "D",
+          "text": "It is on another floor"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        5,
+        6
+      ],
+      "explanation": "it only holds fifteen people と twenty-two people signed up を突き合わせると、人数が入りきらないと分かります。(A) は逆で、D室は正午まで空いています。(B)(D) は本文にありません。",
+      "tip": "2人の発言をまたいで初めて答えが出る設問があります。数字が別々の行に出てきたら、突き合わせを求められていると考えてください。"
+    },
+    {
+      "id": "q3",
+      "type": "intent",
+      "prompt": "What does the woman imply when she says, \"Then let's wait for facilities\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "She expects the repair to be finished quickly"
+        },
+        {
+          "key": "B",
+          "text": "She wants to cancel the session"
+        },
+        {
+          "key": "C",
+          "text": "She has decided against moving rooms"
+        },
+        {
+          "key": "D",
+          "text": "She will contact the participants right away"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        6,
+        7
+      ],
+      "explanation": "直前で「D室は15人まで、申し込みは22人」と確認されたため、移動という案が消えます。それを受けての Then なので、部屋を移らずに待つという判断を表しています。(D) はメールを送るのが「直らなかった場合」なので right away が誤りです。",
+      "tip": "意図問題は、引用文そのものではなく直前のやり取りに答えがあります。Then や So で始まる発言は、直前の内容を受けた判断であることがほとんどです。"
+    }
+  ],
+  "glossary": {
+    "session": {
+      "lemma": "session",
+      "pos": "n",
+      "ja": "講習、会",
+      "note": "training session で「研修」"
+    },
+    "projector": {
+      "lemma": "projector",
+      "pos": "n",
+      "ja": "プロジェクター",
+      "note": ""
+    },
+    "switching": {
+      "lemma": "switch",
+      "pos": "v",
+      "ja": "取り替える",
+      "note": "switch A for B"
+    },
+    "blank": {
+      "lemma": "blank",
+      "pos": "adj",
+      "ja": "何も映っていない",
+      "note": ""
+    },
+    "odd": {
+      "lemma": "odd",
+      "pos": "adj",
+      "ja": "妙な",
+      "note": "≒ strange"
+    },
+    "facilities": {
+      "lemma": "facility",
+      "pos": "n",
+      "ja": "設備、施設",
+      "note": "facilities desk で「設備管理窓口」"
+    },
+    "supposed": {
+      "lemma": "suppose",
+      "pos": "v",
+      "ja": "〜することになっている",
+      "note": "be supposed to do"
+    },
+    "holds": {
+      "lemma": "hold",
+      "pos": "v",
+      "ja": "収容する",
+      "note": "部屋が主語のとき「〜人入る」"
+    },
+    "signed": {
+      "lemma": "sign",
+      "pos": "v",
+      "ja": "申し込んだ",
+      "note": "sign up で「登録する」"
+    },
+    "meantime": {
+      "lemma": "meantime",
+      "pos": "n",
+      "ja": "その間",
+      "note": "in the meantime で「それまでの間に」"
+    },
+    "materials": {
+      "lemma": "material",
+      "pos": "n",
+      "ja": "資料",
+      "note": ""
+    }
+  }
+}

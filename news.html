@@ -209,6 +209,7 @@ details.src[open]>summary::before{content:"▾ ";}
         <div class="head-title-en en" id="titleEn">読み込み中…</div>
       </div>
       <a class="icon-btn" href="index.html" title="ホーム">⌂</a>
+      <button class="icon-btn" id="btnFinish" title="学習を終える">✓</button>
       <button class="icon-btn" id="btnPick" title="教材を選ぶ">▤</button>
       <button class="icon-btn" id="btnCfg" title="設定">⚙</button>
     </div>
@@ -1398,6 +1399,8 @@ details.src[open]>summary::before{content:"▾ ";}
   /* ================= モーダル ================= */
 
   var modal = T.modal;
+
+  $('btnFinish').addEventListener('click', function () { if (stage.dataset.view !== 'done') finish(); });
 
   $('btnPick').addEventListener('click', function () {
     var rows = INDEX.length ? INDEX.map(function (it) {

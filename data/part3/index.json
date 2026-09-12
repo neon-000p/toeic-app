@@ -1,14 +1,21 @@
 {
   "schemaVersion": 1,
   "type": "part3",
-  "updatedAt": "2026-09-12T20:00:00+09:00",
+  "updatedAt": "2026-09-12T14:29:24.342Z",
   "items": [
     {
-      "id": "p3-sample",
+      "id": "p3-sample-2",
+      "date": "2026-09-12",
+      "time": "20:10",
+      "speakers": 3,
+      "file": "p3-sample-2.json"
+    },
+    {
+      "id": "p3-sample-1",
       "date": "2026-09-12",
       "time": "20:00",
-      "sets": 2,
-      "file": "p3-sample.json"
+      "speakers": 2,
+      "file": "p3-sample-1.json"
     }
   ]
 }
