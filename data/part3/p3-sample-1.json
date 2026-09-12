@@ -254,9 +254,9 @@
     ]
   },
   "audio": {
-    "file": "audio/p3-sample-1.wav",
+    "file": "audio/p3-sample-1.mp3",
     "sec": 47.6,
-    "bytes": 2286764,
+    "bytes": 286365,
     "model": "gemini-3.1-flash-tts-preview",
     "madeAt": "2026-09-12T16:12:40.514Z"
   }
