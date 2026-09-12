@@ -649,7 +649,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=7bfcd3e8"></script>
+<script src="core.js?v=4d141fa0"></script>
 <script>
 (function () {
   'use strict';
@@ -879,7 +879,11 @@ details.src[open]>summary::before{content:"▾ ";}
   function viewQuiz() {
     var src = '<details class="src" open><summary>本文を表示</summary>' +
       '<div class="card">' + summaryHTML() +
-      '<p class="hint">語をタップすると語注が出ます。</p></div></details>';
+        '<div class="tool-row">' +
+          '<button class="btn btn-sm icon" data-play-all="sum" title="本文を通して再生">▶</button>' +
+          '<button class="btn btn-sm icon" id="stopAll" title="停止">■</button>' +
+          '<span class="hint" style="margin:0">語をタップすると語注が出ます。</span>' +
+        '</div></div></details>';
     var body = (DATA.questions || []).map(function (q, i) {
       return '<div class="card qbox">' +
         '<div class="qnum">Q' + (i + 1) + '</div>' +

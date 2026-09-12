@@ -286,24 +286,47 @@
         'tip を空文字にしてください。無理に埋めないこと。' +
         '構文上の役割（主語・目的語など）の説明は読めば分かるので書かないこと。';
 
-      return call('/models/' + encodeURIComponent(cfg().model) + ':generateContent', {
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: {
-          temperature: 0.2,
-          maxOutputTokens: 400,
-          responseMimeType: 'application/json'
-        }
-      }).then(function (j) {
-        var parts = j && j.candidates && j.candidates[0] && j.candidates[0].content && j.candidates[0].content.parts;
-        var text = (parts && parts[0] && parts[0].text) || '';
-        var obj;
-        try { obj = JSON.parse(text); }
-        catch (e) { throw new Error('応答を読み取れませんでした'); }
-        var out = { pos: obj.pos || '', ja: obj.ja || '', tip: obj.tip || '', at: Date.now() };
-        if (!out.ja && !out.tip) throw new Error('応答が空でした');
-        cachePut(key, out);
-        return out;
-      });
+      /* 応答から本文だけを拾う。思考の断片（thought）は混ぜない。
+         parts が複数に割れて返ることがあるので全部つなぐ。 */
+      function pick(j) {
+        var c = j && j.candidates && j.candidates[0];
+        var parts = (c && c.content && c.content.parts) || [];
+        var text = parts.filter(function (x) { return x && x.text && !x.thought; })
+                        .map(function (x) { return x.text; }).join('');
+        return { text: text, finish: (c && c.finishReason) || '' };
+      }
+      /* responseMimeType を指定していてもコードブロックで返ることがある */
+      function unfence(t) {
+        t = String(t || '').trim();
+        var m = t.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
+        return m ? m[1].trim() : t;
+      }
+
+      function ask(isRetry) {
+        return call('/models/' + encodeURIComponent(cfg().model) + ':generateContent', {
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: {
+            temperature: 0.2,
+            /* 内部の思考でトークンを使い切ると本文が空で返るため、多めに取る */
+            maxOutputTokens: 2048,
+            responseMimeType: 'application/json'
+          }
+        }).then(function (j) {
+          var got = pick(j);
+          var obj = null;
+          try { obj = JSON.parse(unfence(got.text)); } catch (e) {}
+          var out = obj ? { pos: obj.pos || '', ja: obj.ja || '', tip: obj.tip || '' } : null;
+          if (!out || (!out.ja && !out.tip)) {
+            /* まれに空で返るので1度だけ引き直す */
+            if (!isRetry) return ask(true);
+            throw new Error('応答が空でした' + (got.finish ? '（' + got.finish + '）' : ''));
+          }
+          out.at = Date.now();
+          cachePut(key, out);
+          return out;
+        });
+      }
+      return ask(false);
     }
 
     return { cfg: cfg, setCfg: setCfg, enabled: enabled, models: models, lookup: lookup };
