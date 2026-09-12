@@ -1,0 +1,1082 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>時事英語 | TOEIC</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+
+/* ヘッダー */
+.app-head{
+  position:sticky;top:0;z-index:40;
+  background:var(--surface);border-bottom:1px solid var(--line);
+}
+.head-row{display:flex;align-items:center;gap:8px;padding:10px 0 0}
+.head-row .grow{flex:1;min-width:0}
+.head-meta{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.head-title{margin:3px 0 0;font-size:16px;font-weight:700;line-height:1.45}
+.head-title-en{font-family:var(--serif);font-size:12.5px;color:var(--muted);margin-top:1px;line-height:1.4}
+.icon-btn{
+  flex:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);
+  background:var(--surface-2);color:var(--ink-2);font-size:17px;line-height:1;cursor:pointer;
+}
+.rail{display:flex;gap:3px;padding:11px 0 9px}
+.rail button{
+  flex:1;padding:0;border:0;background:transparent;cursor:pointer;
+  display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0;
+}
+.rail .bar{width:100%;height:4px;border-radius:2px;background:var(--line)}
+.rail .t{font-size:10px;color:var(--muted);white-space:nowrap;letter-spacing:.02em}
+.rail button.done .bar{background:var(--accent)}
+.rail button.cur .bar{background:var(--accent)}
+.rail button.cur .t{color:var(--accent);font-weight:800}
+.rail button.lock .t{opacity:.45}
+
+/* 本文 */
+.stage{padding-top:16px}
+.para{font-family:var(--serif);font-size:17.5px;line-height:1.95;margin:0 0 14px}
+.para:last-child{margin-bottom:0}
+.sent.evid{background:var(--mark-soft);box-shadow:0 0 0 3px var(--mark-soft);border-radius:2px}
+.tool-row{display:flex;gap:8px;align-items:center;margin-top:14px;flex-wrap:wrap}
+.hint{font-size:12.5px;color:var(--muted);margin-top:10px}
+
+/* 設問 */
+.qbox+.qbox{margin-top:12px}
+.qnum{font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--accent);margin-bottom:5px}
+.qprompt{font-family:var(--serif);font-size:16px;font-weight:700;line-height:1.6;margin:0 0 11px}
+.choice{
+  display:flex;gap:10px;width:100%;text-align:left;align-items:flex-start;
+  padding:11px 12px;margin-top:7px;border:1px solid var(--line-2);border-radius:10px;
+  background:var(--surface-2);color:var(--ink);font:inherit;cursor:pointer;min-height:44px;white-space:normal;
+}
+.choice .k{
+  flex:none;width:22px;height:22px;border-radius:50%;background:var(--surface);
+  border:1px solid var(--line-2);font-size:12px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:2px;
+}
+.choice .t{font-family:var(--serif);font-size:15.5px;line-height:1.55}
+.choice.sel{border-color:var(--accent);background:var(--accent-soft)}
+.choice.sel .k{background:var(--accent);border-color:var(--accent);color:#fff}
+.choice.ok{border-color:var(--ok);background:var(--ok-soft)}
+.choice.ok .k{background:var(--ok);border-color:var(--ok);color:#fff}
+.choice.ng{border-color:var(--ng);background:var(--ng-soft)}
+.choice.ng .k{background:var(--ng);border-color:var(--ng);color:#fff}
+.choice[disabled]{cursor:default;opacity:1}
+details.src{margin-bottom:12px}
+details.src>summary{
+  cursor:pointer;font-size:12px;font-weight:700;color:var(--muted);
+  padding:6px 0;list-style:none;
+}
+details.src>summary::-webkit-details-marker{display:none}
+details.src>summary::before{content:"▸ ";}
+details.src[open]>summary::before{content:"▾ ";}
+
+/* 解説 */
+.score{display:flex;align-items:baseline;gap:8px;margin-bottom:2px}
+.score .n{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.02em}
+.verdict{font-size:12px;font-weight:800;padding:2px 8px;border-radius:999px}
+.verdict.ok{background:var(--ok-soft);color:var(--ok)}
+.verdict.ng{background:var(--ng-soft);color:var(--ng)}
+.evid-line{
+  font-family:var(--serif);font-size:15.5px;line-height:1.8;
+  background:var(--mark-soft);border-left:3px solid var(--mark);
+  padding:9px 12px;border-radius:0 8px 8px 0;margin:10px 0;
+}
+.tip{background:var(--surface-2);border-radius:8px;padding:10px 12px;font-size:13.5px;margin-top:10px}
+.tip b{display:block;font-size:11px;letter-spacing:.1em;color:var(--muted);margin-bottom:3px}
+
+/* 対訳 */
+.pair{padding:12px 0;border-bottom:1px dashed var(--line)}
+.pair:last-child{border-bottom:0}
+.pair .e{font-family:var(--serif);font-size:16px;line-height:1.8}
+.pair .j{font-size:14px;color:var(--ink-2);margin-top:5px}
+
+/* 語彙 */
+.vcard{display:flex;gap:11px;padding:14px 0;border-bottom:1px solid var(--line)}
+.vcard:first-child{padding-top:0}
+.vcard:last-child{border-bottom:0;padding-bottom:0}
+.vcard .no{
+  flex:none;width:22px;height:22px;border-radius:6px;background:var(--surface-2);
+  color:var(--muted);font-size:11px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:3px;
+}
+.vcard .body{flex:1;min-width:0}
+.vterm{font-family:var(--serif);font-size:19px;font-weight:700;line-height:1.25}
+.vpos{font-size:11px;font-weight:700;color:var(--muted);margin-left:6px}
+.vja{font-size:14.5px;margin-top:2px}
+.vgloss{font-size:12.5px;color:var(--muted);margin-top:1px}
+.vex{
+  font-family:var(--serif);font-size:14px;line-height:1.7;color:var(--ink-2);
+  border-left:2px solid var(--line-2);padding-left:10px;margin-top:8px;
+}
+.vex .j{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:2px}
+.star{
+  flex:none;width:38px;height:38px;border-radius:10px;border:1px solid var(--line-2);
+  background:var(--surface);color:var(--muted);font-size:16px;cursor:pointer;
+}
+.star.on{background:var(--mark-soft);border-color:var(--mark);color:var(--mark-ink)}
+
+/* 文法・背景 */
+.quote{
+  font-family:var(--serif);font-size:16.5px;line-height:1.8;
+  border-left:3px solid var(--accent);padding:2px 0 2px 13px;margin:0 0 6px;
+}
+.quote-ja{font-size:13px;color:var(--muted);padding-left:16px;margin-bottom:16px}
+.blk{margin-top:16px}
+.blk:first-of-type{margin-top:0}
+.blk h3{font-size:14px;margin:0 0 6px;color:var(--accent-ink)}
+.blk p{margin:0;font-size:14.5px;white-space:pre-wrap}
+
+/* 音読 */
+.sline{
+  display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;
+  padding:11px 10px;border:0;border-radius:9px;background:transparent;
+  color:var(--ink);font:inherit;cursor:pointer;
+}
+.sline+.sline{border-top:1px solid var(--line);border-radius:0}
+.sline .i{
+  flex:none;width:20px;font-size:11px;font-weight:800;color:var(--muted);
+  text-align:right;margin-top:5px;
+}
+.sline{white-space:normal}
+.sline>span:last-child{flex:1;min-width:0}
+.sline .e{display:block;font-family:var(--serif);font-size:16px;line-height:1.8}
+.sline .j{display:block;font-size:12.5px;color:var(--muted);margin-top:3px}
+.sline.play{background:var(--mark-soft)}
+.rate-row{display:flex;align-items:center;gap:10px;margin-top:12px}
+.rate-row input{flex:1}
+.rate-row .v{font-size:13px;font-weight:700;width:42px;text-align:right;color:var(--muted)}
+
+/* 完了 */
+.done-wrap{text-align:center;padding:20px 0 8px}
+.done-wrap .big{font-size:40px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.done-grid{display:flex;gap:10px;margin-top:18px}
+.done-grid div{flex:1;background:var(--surface-2);border-radius:10px;padding:12px 8px}
+.done-grid .n{font-size:20px;font-weight:800}
+.done-grid .l{font-size:11px;color:var(--muted);margin-top:2px}
+
+/* フッター */
+.app-foot{
+  position:fixed;left:0;right:0;bottom:0;z-index:40;
+  background:var(--surface);border-top:1px solid var(--line);
+  padding:9px 0 calc(9px + env(safe-area-inset-bottom));
+}
+.foot-row{display:flex;align-items:center;gap:10px}
+.foot-row .mid{flex:1;text-align:center;font-size:12px;color:var(--muted);font-weight:700}
+.foot-row .btn{min-width:96px}
+</style>
+</head>
+<body>
+
+<header class="app-head">
+  <div class="wrap">
+    <div class="head-row">
+      <div class="grow">
+        <div class="head-meta" id="meta"></div>
+        <div class="head-title" id="titleJa">読み込み中…</div>
+        <div class="head-title-en en" id="titleEn"></div>
+      </div>
+      <button class="icon-btn" id="btnPick" title="教材を選ぶ">▤</button>
+      <button class="icon-btn" id="btnCfg" title="設定">⚙</button>
+    </div>
+    <div class="rail" id="rail"></div>
+  </div>
+</header>
+
+<main class="wrap stage" id="stage"></main>
+
+<nav class="app-foot">
+  <div class="wrap foot-row">
+    <button class="btn" id="btnPrev">← 戻る</button>
+    <div class="mid" id="footMid"></div>
+    <button class="btn btn-primary" id="btnNext">次へ →</button>
+  </div>
+</nav>
+
+<script id="sample-data" type="application/json">{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-12",
+  "date": "2026-09-12",
+  "createdAt": "2026-09-12T07:10:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": true,
+  "sampleNote": "レイアウト確認用のサンプル教材です。企業名・港名は架空で、実際のニュースではありません。",
+  "title": {
+    "en": "Port Delays Push Shippers to Rethink Inventory",
+    "ja": "港湾の遅延、荷主に在庫戦略の見直しを迫る"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Northwind Logistics said this week that average waiting times at the Port of Halford have risen to five days, up from two days a year ago.",
+            "ja": "ノースウィンド・ロジスティクスは今週、ハルフォード港での平均待機時間が1年前の2日から5日に延びたと明らかにした。"
+          },
+          {
+            "en": "The company handles about 40 percent of the region's container traffic.",
+            "ja": "同社はこの地域のコンテナ取扱量の約4割を担っている。"
+          },
+          {
+            "en": "Managers blamed a shortage of dock workers and an unusually strong holiday shipping season.",
+            "ja": "経営陣は、港湾労働者の不足と、例年になく好調な年末商戦期の出荷を原因として挙げた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The delays are forcing retailers to hold larger inventories, which raises warehouse costs.",
+            "ja": "この遅延により小売各社はより多くの在庫を抱えざるを得ず、それが倉庫費用を押し上げている。"
+          },
+          {
+            "en": "Several customers have already shifted part of their freight to smaller ports nearby.",
+            "ja": "一部の顧客は、すでに貨物の一部を近隣の小規模な港へ移している。"
+          },
+          {
+            "en": "Northwind plans to add two night shifts in October, but analysts warn that the change may not take effect before the peak season ends.",
+            "ja": "ノースウィンドは10月に夜間シフトを2つ増やす計画だが、アナリストは繁忙期が終わるまでにその効果は表れないおそれがあると指摘する。"
+          },
+          {
+            "en": "Industry groups are asking the government to speed up approval for new terminal equipment.",
+            "ja": "業界団体は、新しいターミナル設備の承認を早めるよう政府に求めている。"
+          },
+          {
+            "en": "For now, shippers say they must plan for longer lead times.",
+            "ja": "当面、荷主側は従来より長いリードタイムを見込んで計画を立てざるを得ないとしている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How long do ships now wait on average at the Port of Halford?",
+      "choices": [
+        { "key": "A", "text": "Two days" },
+        { "key": "B", "text": "Three days" },
+        { "key": "C", "text": "Five days" },
+        { "key": "D", "text": "Ten days" }
+      ],
+      "answer": "C",
+      "explanation": "第1段落1文目の have risen to five days, up from two days a year ago が根拠です。現在の値は five days で、two days は1年前の数字にあたります。up from 〜 は「〜から上昇して」の意味で、from の後ろには必ず過去の値や比較対象が来ます。(A) はその1年前の数字を答えさせる引っかけ、(B) と (D) は本文に出てこない数字です。",
+      "evidence": { "p": 0, "s": 0 },
+      "tip": "Part 7 では up from / down from / compared with の後ろは「比較の相手」であって、問われている現在の値ではありません。設問が現在と過去のどちらを聞いているかを先に確認すると、この型の引っかけは外せます。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why do analysts doubt that the new night shifts will solve the problem this year?",
+      "choices": [
+        { "key": "A", "text": "Because the port will close for repairs in October" },
+        { "key": "B", "text": "Because the shifts may start too late to help during the peak season" },
+        { "key": "C", "text": "Because the port already has too many dock workers" },
+        { "key": "D", "text": "Because retailers have stopped shipping through the port" }
+      ],
+      "answer": "B",
+      "explanation": "第2段落3文目の analysts warn that the change may not take effect before the peak season ends が根拠です。take effect は「効力を発する、実施される」で、繁忙期が終わる前に効果が表れないおそれがある、という意味になります。(A) は本文にない情報です。(C) は本文と逆で、実際には a shortage of dock workers（労働者の不足）と書かれています。(D) も本文と逆で、顧客は貨物の一部を他港へ移しただけであり、利用をやめたとは書かれていません。",
+      "evidence": { "p": 1, "s": 2 },
+      "tip": "誤答選択肢には本文と同じ語（dock workers、retailers）がわざと使われます。語が一致しているかではなく、増えているのか減っているのか、あるのか無いのかという「向き」を本文と照合してください。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1, "term": "handle", "pos": "動", "ja": "取り扱う、処理する", "gloss": "",
+      "example": { "en": "Our Osaka office handles all overseas orders.", "ja": "大阪支店が海外からの注文をすべて取り扱っている。" }
+    },
+    {
+      "no": 2, "term": "shortage", "pos": "名", "ja": "不足", "gloss": "",
+      "example": { "en": "A shortage of parts delayed the production line.", "ja": "部品不足が生産ラインを遅らせた。" }
+    },
+    {
+      "no": 3, "term": "inventory", "pos": "名", "ja": "在庫", "gloss": "（＝倉庫や店舗に抱えている商品の量のこと）",
+      "example": { "en": "The store reduced its inventory before the move.", "ja": "その店舗は移転前に在庫を減らした。" }
+    },
+    {
+      "no": 4, "term": "freight", "pos": "名", "ja": "貨物、運送", "gloss": "",
+      "example": { "en": "The freight will be sent by rail instead of by truck.", "ja": "その貨物はトラックではなく鉄道で送られる。" }
+    },
+    {
+      "no": 5, "term": "shift", "pos": "名・動", "ja": "交代勤務／移す", "gloss": "（名詞では勤務の「シフト」、動詞では別の場所や方針へ移すこと）",
+      "example": { "en": "She works the night shift twice a week.", "ja": "彼女は週に2回、夜勤に入っている。" }
+    },
+    {
+      "no": 6, "term": "take effect", "pos": "熟", "ja": "効力を発する、実施される", "gloss": "",
+      "example": { "en": "The new policy will take effect on April 1.", "ja": "新しい方針は4月1日から実施される。" }
+    },
+    {
+      "no": 7, "term": "approval", "pos": "名", "ja": "承認", "gloss": "",
+      "example": { "en": "The budget needs approval from the head office.", "ja": "その予算は本社の承認を必要とする。" }
+    },
+    {
+      "no": 8, "term": "lead time", "pos": "熟", "ja": "リードタイム、発注から納品までの期間", "gloss": "（＝注文してから実際に届くまでにかかる時間のこと）",
+      "example": { "en": "The supplier shortened its lead time to ten days.", "ja": "その仕入先はリードタイムを10日に短縮した。" }
+    }
+  ],
+  "glossary": {
+    "logistics": { "lemma": "logistics", "pos": "n", "ja": "物流、ロジスティクス", "note": "" },
+    "average": { "lemma": "average", "pos": "adj", "ja": "平均の", "note": "on average で「平均して」" },
+    "waiting": { "lemma": "wait", "pos": "v", "ja": "待つこと", "note": "waiting time で「待機時間」" },
+    "risen": { "lemma": "rise", "pos": "v", "ja": "上昇した", "note": "rise-rose-risen。自動詞なので目的語を取らない" },
+    "handles": { "lemma": "handle", "pos": "v", "ja": "取り扱う", "note": "" },
+    "percent": { "lemma": "percent", "pos": "n", "ja": "パーセント", "note": "" },
+    "region": { "lemma": "region", "pos": "n", "ja": "地域", "note": "" },
+    "container": { "lemma": "container", "pos": "n", "ja": "コンテナ", "note": "" },
+    "traffic": { "lemma": "traffic", "pos": "n", "ja": "取扱量、往来", "note": "交通量だけでなく貨物量にも使う" },
+    "managers": { "lemma": "manager", "pos": "n", "ja": "経営陣、管理職", "note": "" },
+    "blamed": { "lemma": "blame", "pos": "v", "ja": "〜のせいにした", "note": "blame A for B / blame B on A" },
+    "shortage": { "lemma": "shortage", "pos": "n", "ja": "不足", "note": "a shortage of 〜" },
+    "dock": { "lemma": "dock", "pos": "n", "ja": "波止場、荷役場", "note": "dock worker で「港湾労働者」" },
+    "unusually": { "lemma": "unusually", "pos": "adv", "ja": "異例なほど", "note": "" },
+    "shipping": { "lemma": "shipping", "pos": "n", "ja": "出荷、海運", "note": "" },
+    "delays": { "lemma": "delay", "pos": "n", "ja": "遅延", "note": "" },
+    "forcing": { "lemma": "force", "pos": "v", "ja": "〜させる", "note": "force A to do で「Aに〜せざるを得なくさせる」" },
+    "retailers": { "lemma": "retailer", "pos": "n", "ja": "小売業者", "note": "" },
+    "inventories": { "lemma": "inventory", "pos": "n", "ja": "在庫", "note": "" },
+    "raises": { "lemma": "raise", "pos": "v", "ja": "押し上げる", "note": "他動詞。自動詞の rise と混同しやすい" },
+    "warehouse": { "lemma": "warehouse", "pos": "n", "ja": "倉庫", "note": "" },
+    "costs": { "lemma": "cost", "pos": "n", "ja": "費用", "note": "" },
+    "customers": { "lemma": "customer", "pos": "n", "ja": "顧客", "note": "" },
+    "shifted": { "lemma": "shift", "pos": "v", "ja": "移した", "note": "shift A to B" },
+    "freight": { "lemma": "freight", "pos": "n", "ja": "貨物", "note": "" },
+    "nearby": { "lemma": "nearby", "pos": "adj", "ja": "近隣の", "note": "" },
+    "shifts": { "lemma": "shift", "pos": "n", "ja": "交代勤務", "note": "night shift で「夜勤」" },
+    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト、調査員", "note": "" },
+    "warn": { "lemma": "warn", "pos": "v", "ja": "警告する", "note": "warn that 節" },
+    "effect": { "lemma": "effect", "pos": "n", "ja": "効果、効力", "note": "take effect で「実施される」" },
+    "peak": { "lemma": "peak", "pos": "adj", "ja": "最盛期の", "note": "peak season で「繁忙期」" },
+    "industry": { "lemma": "industry", "pos": "n", "ja": "業界", "note": "industry group で「業界団体」" },
+    "speed": { "lemma": "speed", "pos": "v", "ja": "早める", "note": "speed up 〜" },
+    "approval": { "lemma": "approval", "pos": "n", "ja": "承認", "note": "動詞は approve" },
+    "terminal": { "lemma": "terminal", "pos": "n", "ja": "ターミナル、積み下ろし施設", "note": "" },
+    "equipment": { "lemma": "equipment", "pos": "n", "ja": "設備、機材", "note": "不可算名詞。equipments とはしない" },
+    "shippers": { "lemma": "shipper", "pos": "n", "ja": "荷主", "note": "運ぶ側ではなく「送る側」" },
+    "lead": { "lemma": "lead", "pos": "n", "ja": "先行", "note": "lead time で「発注から納品までの期間」" },
+    "climbed": { "lemma": "climb", "pos": "v", "ja": "上昇した", "note": "" },
+    "causes": { "lemma": "cause", "pos": "n", "ja": "原因", "note": "" }
+  },
+  "grammar": {
+    "topic": "関係代名詞 which の非制限用法（前の節全体を受ける）",
+    "quote": "The delays are forcing retailers to hold larger inventories, which raises warehouse costs.",
+    "quoteJa": "この遅延により小売各社はより多くの在庫を抱えざるを得ず、それが倉庫費用を押し上げている。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "コンマ＋which の形です。ここでの which は直前の名詞 inventories ではなく、その前の節全体（「小売各社がより多くの在庫を抱えること」）を受けています。見分けの手がかりは動詞の形です。which が複数形の inventories を受けているなら raise になるはずですが、実際は raises と三人称単数になっています。つまり which が指しているのは「ひとつの事柄」＝前の節全体だと分かります。"
+      },
+      {
+        "heading": "書き換え",
+        "body": "非制限用法の which は and this に置き換えられることがほとんどです。\n・..., and this raises warehouse costs.\n・...; as a result, warehouse costs rise.\n逆に言えば、and this で置き換えて意味が通るなら「前の節全体を受ける which」だと判断できます。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では、空所に which / that / what のどれを入れるかを問う形で出ます。重要なのは、コンマの直後に that は置けないという点です。非制限用法に that は使えないため、コンマがあれば that は真っ先に消せます。what も先行詞を取らないので不可です。\nPart 6 では、文と文のつながりを問う問題で、which 節の内容が前の文全体を受けているかどうかが解答の鍵になります。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "・We will move the server on Sunday, which means the system will be unavailable that morning.（日曜にサーバーを移設します。そのため、当日の午前中はシステムをご利用いただけません）\n・The supplier raised its prices, which forced us to review the contract.（仕入先が値上げを行い、そのため契約の見直しを迫られました）\nメールで「そのため」「その結果」とつなぎたいときに使える型です。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 港の遅延が企業の数字に響く理由",
+      "body": "港湾の待機時間は、単に「船が遅れる」という話では終わりません。荷物が届く時期が読めなくなると、企業は欠品を避けるために普段より多めに在庫を持とうとします。この「念のための在庫」が積み上がると、倉庫の賃料、保険、資金の寝かせ方すべてにコストがかかります。港の2〜3日の差が、決算の利益率に効いてくるのはこのためです。"
+    },
+    {
+      "heading": "📌 在庫を持つコストという考え方",
+      "body": "英語では carrying cost や holding cost と呼ばれます。在庫は貸借対照表の上では資産に見えますが、実務では「売れるまで現金にならないもの」です。近年は多くの企業が在庫を絞る方向で運営してきましたが、供給が不安定になると一転して積み増しに動きます。TOEIC の Part 7 でも、在庫や納期をめぐる社内メールは定番の題材です。"
+    },
+    {
+      "heading": "📌 業界の動き — 港湾の分散",
+      "body": "大きな港が詰まると、荷主は近隣の中小規模の港へ振り替えます。ただし小さな港は設備も人員も限られるため、振り替えられる量には上限があります。結果として、大型港の設備投資や労働環境の改善が中期的な争点になります。記事中で業界団体が設備の承認を急ぐよう求めているのは、この文脈です。"
+    },
+    {
+      "heading": "📌 日本のビジネスパーソンへの示唆",
+      "body": "日本は輸入の大半を海上輸送に頼っており、海外港湾の混雑は調達部門にとって直接の問題になります。仕入先との交渉では、価格だけでなくリードタイムと欠品時の対応をどう契約に書き込むかが問われます。英文メールでは delay、lead time、inventory、shipment といった語が繰り返し登場するため、この教材の語彙はそのまま実務で再会します。"
+    }
+  ],
+  "script": {
+    "sentences": [
+      { "en": "Waiting times at the Port of Halford have climbed to five days, more than double the level of a year ago.", "ja": "ハルフォード港での待機時間は5日に達し、1年前の水準の2倍を超えた。" },
+      { "en": "Northwind Logistics, which handles about forty percent of container traffic in the region, says the main causes are a shortage of dock workers and a strong shipping season.", "ja": "この地域のコンテナ取扱量の約4割を担うノースウィンド・ロジスティクスは、主な原因は港湾労働者の不足と好調な出荷シーズンだとしている。" },
+      { "en": "Because of the delays, retailers are holding more inventory, and warehouse costs are rising.", "ja": "この遅延のため、小売各社は在庫を多めに抱えており、倉庫費用が上昇している。" },
+      { "en": "Some customers have moved part of their freight to smaller ports nearby.", "ja": "一部の顧客は貨物の一部を近隣の小規模な港へ移した。" },
+      { "en": "The company will add two night shifts in October.", "ja": "同社は10月に夜間シフトを2つ増やす。" },
+      { "en": "Analysts say the change may not take effect before the peak season ends.", "ja": "アナリストは、その変更は繁忙期が終わる前には効果を表さないかもしれないと述べている。" },
+      { "en": "Industry groups want faster approval for new terminal equipment, and shippers are planning for longer lead times.", "ja": "業界団体は新しいターミナル設備の承認の迅速化を求めており、荷主側はより長いリードタイムを見込んで計画を立てている。" }
+    ]
+  },
+  "sources": []
+}</script>
+<script src="core.js"></script>
+<script>
+(function () {
+  'use strict';
+  var T = window.TOEIC, esc = T.esc;
+
+  var STEPS = [
+    { key: 'read',   label: '読解' },
+    { key: 'quiz',   label: '設問' },
+    { key: 'ans',    label: '解説', gate: 'graded' },
+    { key: 'trans',  label: '対訳', gate: 'graded' },
+    { key: 'vocab',  label: '語彙' },
+    { key: 'gram',   label: '文法' },
+    { key: 'bg',     label: '背景' },
+    { key: 'script', label: '音読' }
+  ];
+
+  var DATA = null, INDEX = [], PACKS = {};
+  var step = 0, state = { answers: {}, graded: false, maxStep: 0, done: false };
+  var progKey = '';
+  var playing = null;
+
+  var $ = function (id) { return document.getElementById(id); };
+  var stage = $('stage');
+
+  /* ================= 起動 ================= */
+
+  function embeddedSample() {
+    try { return JSON.parse($('sample-data').textContent); } catch (e) { return null; }
+  }
+
+  function boot() {
+    PACKS = T.read('news.packs', {}) || {};
+    var want = new URLSearchParams(location.search).get('id');
+
+    fetchJSON('data/news/index.json').then(function (idx) {
+      INDEX = (idx && idx.items) || [];
+    }).catch(function () {
+      INDEX = [];
+    }).then(function () {
+      // 取り込み済みパックを目次に合流（重複は index 側を優先）
+      Object.keys(PACKS).forEach(function (id) {
+        if (!INDEX.some(function (it) { return it.id === id; })) {
+          var p = PACKS[id];
+          INDEX.push({ id: id, date: p.date || id, genre: p.genre || '', title: (p.title && p.title.ja) || id, local: true });
+        }
+      });
+      INDEX.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
+
+      var id = want || (INDEX[0] && INDEX[0].id) || null;
+      return load(id);
+    }).catch(function (e) {
+      fail(e);
+    });
+  }
+
+  function fetchJSON(url) {
+    return fetch(url, { cache: 'no-store' }).then(function (r) {
+      if (!r.ok) throw new Error(r.status + ' ' + url);
+      return r.json();
+    });
+  }
+
+  function load(id) {
+    if (id && PACKS[id]) return start(PACKS[id]);
+    var item = INDEX.filter(function (it) { return it.id === id; })[0];
+    if (!item) {
+      var s = embeddedSample();
+      if (!s) throw new Error('教材が見つかりません');
+      return start(s);
+    }
+    return fetchJSON('data/news/' + (item.file || (item.id + '.json'))).then(start).catch(function () {
+      var s = embeddedSample();
+      if (s) { start(s); T.toast('データを読めないため内蔵サンプルを表示しています'); }
+      else throw new Error('教材を読み込めませんでした');
+    });
+  }
+
+  function start(d) {
+    DATA = d;
+    progKey = 'news:' + (d.id || d.date || 'unknown');
+    var p = T.Log.progress(progKey);
+    state = {
+      answers: (p && p.answers) || {},
+      graded: !!(p && p.graded),
+      maxStep: (p && p.maxStep) || 0,
+      done: !!(p && p.done)
+    };
+    step = Math.min((p && p.step) || 0, STEPS.length - 1);
+    renderHead();
+    render();
+  }
+
+  function fail(e) {
+    stage.innerHTML = '<div class="card"><div class="sec-label">読み込めません</div><p>' +
+      esc(e && e.message || e) + '</p><p class="small muted">⚙ から JSON を貼り付けて取り込むこともできます。</p></div>';
+  }
+
+  function save() {
+    T.Log.saveProgress(progKey, {
+      answers: state.answers, graded: state.graded,
+      maxStep: state.maxStep, done: state.done, step: step,
+      title: DATA.title && DATA.title.ja, date: DATA.date
+    });
+  }
+
+  /* ================= ヘッダー ================= */
+
+  function renderHead() {
+    var m = [];
+    if (DATA.date) m.push('<span>' + esc(DATA.date.replace(/-/g, '/')) + '</span>');
+    if (DATA.genre) m.push('<span class="chip">' + esc(DATA.genre) + '</span>');
+    if (DATA.sample) m.push('<span class="chip chip-mark">サンプル</span>');
+    $('meta').innerHTML = m.join('');
+    $('titleJa').textContent = (DATA.title && DATA.title.ja) || '（無題）';
+    $('titleEn').textContent = (DATA.title && DATA.title.en) || '';
+    renderRail();
+  }
+
+  function gateOpen(i) {
+    var g = STEPS[i].gate;
+    if (g === 'graded') return state.graded;
+    return true;
+  }
+
+  function renderRail() {
+    $('rail').innerHTML = STEPS.map(function (s, i) {
+      var cls = [];
+      if (i === step) cls.push('cur');
+      else if (i < state.maxStep || (i < step)) cls.push('done');
+      if (!gateOpen(i)) cls.push('lock');
+      return '<button data-i="' + i + '" class="' + cls.join(' ') + '">' +
+        '<span class="bar"></span><span class="t">' + esc(s.label) + '</span></button>';
+    }).join('');
+  }
+
+  $('rail').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-i]'); if (!b) return;
+    var i = +b.dataset.i;
+    if (!gateOpen(i)) { T.toast('設問に答えると開きます'); return; }
+    go(i);
+  });
+
+  /* ================= 画面遷移 ================= */
+
+  function go(i) {
+    T.TTS.cancel(); playing = null;
+    step = Math.max(0, Math.min(i, STEPS.length - 1));
+    state.maxStep = Math.max(state.maxStep, step);
+    save(); renderRail(); render();
+    window.scrollTo(0, 0);
+  }
+
+  $('btnPrev').addEventListener('click', function () {
+    if (stage.dataset.view === 'done') { stage.dataset.view = ''; render(); return; }
+    go(step - 1);
+  });
+
+  $('btnNext').addEventListener('click', function () {
+    if (stage.dataset.view === 'done') { stage.dataset.view = ''; go(0); return; }
+    if (STEPS[step].key === 'quiz' && !state.graded) { grade(); return; }
+    if (step === STEPS.length - 1) { finish(); return; }
+    go(step + 1);
+  });
+
+  function renderFoot() {
+    var isDone = stage.dataset.view === 'done';
+    $('btnPrev').disabled = !isDone && step === 0;
+    var next = $('btnNext');
+    next.disabled = false;
+    if (isDone) {
+      $('footMid').textContent = '完了';
+      next.textContent = '最初から';
+      return;
+    }
+    $('footMid').textContent = (step + 1) + ' / ' + STEPS.length + '　' + STEPS[step].label;
+    if (STEPS[step].key === 'quiz' && !state.graded) {
+      next.textContent = '採点する';
+      next.disabled = !allAnswered();
+    } else if (step === STEPS.length - 1) {
+      next.textContent = '学習を終える';
+    } else {
+      next.textContent = '次へ →';
+    }
+  }
+
+  /* ================= 描画 ================= */
+
+  function render() {
+    stage.dataset.view = '';
+    var fn = {
+      read: viewRead, quiz: viewQuiz, ans: viewAns, trans: viewTrans,
+      vocab: viewVocab, gram: viewGram, bg: viewBg, script: viewScript
+    }[STEPS[step].key];
+    stage.innerHTML = fn();
+    renderFoot();
+  }
+
+  function sentencesOf(pi) {
+    return (DATA.summary && DATA.summary.paragraphs[pi] && DATA.summary.paragraphs[pi].sentences) || [];
+  }
+
+  function summaryHTML(evid) {
+    var ps = (DATA.summary && DATA.summary.paragraphs) || [];
+    return ps.map(function (p, pi) {
+      return '<p class="para">' + p.sentences.map(function (s, si) {
+        var hit = evid && evid.some(function (e) { return e.p === pi && e.s === si; });
+        return '<span class="sent' + (hit ? ' evid' : '') + '">' +
+          T.markupEnglish(s.en, DATA.glossary) + '</span> ';
+      }).join('') + '</p>';
+    }).join('');
+  }
+
+  function viewRead() {
+    var note = DATA.sample && DATA.sampleNote
+      ? '<div class="card" style="background:var(--mark-soft);border-color:var(--mark)"><p class="small" style="margin:0">' + esc(DATA.sampleNote) + '</p></div>'
+      : '';
+    return note +
+      '<div class="card">' +
+        '<div class="sec-label">Summary</div>' +
+        summaryHTML(null) +
+        '<div class="tool-row">' +
+          '<button class="btn btn-sm" id="readAloud">🔊 通して聞く</button>' +
+          '<span class="small muted">語をタップすると語注が出ます</span>' +
+        '</div>' +
+      '</div>';
+  }
+
+  function viewQuiz() {
+    var body = '<details class="src" open><summary>本文を表示</summary>' +
+      '<div class="card">' + summaryHTML(null) + '</div></details>';
+    body += (DATA.questions || []).map(function (q, i) {
+      return '<div class="card qbox">' +
+        '<div class="qnum">Q' + (i + 1) + '</div>' +
+        '<p class="qprompt">' + esc(q.prompt) + '</p>' +
+        q.choices.map(function (c) {
+          var sel = state.answers[q.id] === c.key;
+          return '<button class="choice' + (sel ? ' sel' : '') + '" data-q="' + esc(q.id) + '" data-k="' + esc(c.key) + '"' +
+            (state.graded ? ' disabled' : '') + '>' +
+            '<span class="k">' + esc(c.key) + '</span><span class="t">' + esc(c.text) + '</span></button>';
+        }).join('') +
+      '</div>';
+    }).join('');
+    if (state.graded) body += '<p class="hint">採点済みです。解説は次の画面にあります。</p>';
+    return body;
+  }
+
+  function allAnswered() {
+    return (DATA.questions || []).every(function (q) { return !!state.answers[q.id]; });
+  }
+
+  function grade() {
+    state.graded = true;
+    save(); renderRail(); go(step + 1);
+  }
+
+  function correctCount() {
+    return (DATA.questions || []).filter(function (q) { return state.answers[q.id] === q.answer; }).length;
+  }
+
+  function viewAns() {
+    var qs = DATA.questions || [], n = correctCount();
+    var head = '<div class="card">' +
+      '<div class="sec-label">結果</div>' +
+      '<div class="score"><span class="n">' + n + ' / ' + qs.length + '</span>' +
+      '<span class="verdict ' + (n === qs.length ? 'ok' : 'ng') + '">' +
+      (n === qs.length ? '全問正解' : (qs.length - n) + '問 要復習') + '</span></div>' +
+      '</div>';
+    return head + qs.map(function (q, i) {
+      var mine = state.answers[q.id], ok = mine === q.answer;
+      var ev = q.evidence ? (sentencesOf(q.evidence.p)[q.evidence.s] || null) : null;
+      return '<div class="card">' +
+        '<div class="qnum">Q' + (i + 1) + ' ' +
+          '<span class="verdict ' + (ok ? 'ok' : 'ng') + '">' + (ok ? '正解' : '不正解') + '</span></div>' +
+        '<p class="qprompt">' + esc(q.prompt) + '</p>' +
+        q.choices.map(function (c) {
+          var cls = '';
+          if (c.key === q.answer) cls = ' ok';
+          else if (c.key === mine) cls = ' ng';
+          return '<button class="choice' + cls + '" disabled>' +
+            '<span class="k">' + esc(c.key) + '</span><span class="t">' + esc(c.text) + '</span></button>';
+        }).join('') +
+        (ev ? '<div class="evid-line">' + T.markupEnglish(ev.en, DATA.glossary) +
+              '<div class="small muted" style="font-family:var(--sans);margin-top:5px">' + esc(ev.ja) + '</div></div>' : '') +
+        '<p style="font-size:14.5px;margin:10px 0 0">' + esc(q.explanation) + '</p>' +
+        (q.tip ? '<div class="tip"><b>PART 7 の解き方</b>' + esc(q.tip) + '</div>' : '') +
+      '</div>';
+    }).join('');
+  }
+
+  function viewTrans() {
+    var out = '<div class="card"><div class="sec-label">対訳</div>';
+    ((DATA.summary && DATA.summary.paragraphs) || []).forEach(function (p) {
+      p.sentences.forEach(function (s) {
+        out += '<div class="pair"><div class="e">' + T.markupEnglish(s.en, DATA.glossary) +
+               '</div><div class="j">' + esc(s.ja) + '</div></div>';
+      });
+    });
+    return out + '</div>';
+  }
+
+  function viewVocab() {
+    var src = DATA.id || '', st = (DATA.title && DATA.title.ja) || '';
+    return '<div class="card"><div class="sec-label">Vocabulary</div>' +
+      (DATA.vocabulary || []).map(function (v) {
+        var on = T.Vocab.has(v.term);
+        return '<div class="vcard">' +
+          '<span class="no">' + esc(v.no || '') + '</span>' +
+          '<div class="body">' +
+            '<div class="vterm">' + esc(v.term) + '<span class="vpos">（' + esc(v.pos) + '）</span></div>' +
+            '<div class="vja">' + esc(v.ja) + '</div>' +
+            (v.gloss ? '<div class="vgloss">' + esc(v.gloss) + '</div>' : '') +
+            (v.example ? '<div class="vex">' + esc(v.example.en) +
+              (v.example.ja ? '<div class="j">' + esc(v.example.ja) + '</div>' : '') + '</div>' : '') +
+          '</div>' +
+          '<button class="star' + (on ? ' on' : '') + '" data-term="' + esc(v.term) + '" title="語彙帳">' +
+            (on ? '★' : '☆') + '</button>' +
+        '</div>';
+      }).join('') +
+      '</div><p class="hint">★ を押すと語彙帳に入ります（語彙帳の復習画面は今後追加）。現在 ' +
+      T.Vocab.count() + ' 語。</p>';
+  }
+
+  function viewGram() {
+    var g = DATA.grammar || {};
+    return '<div class="card">' +
+      '<div class="sec-label">Grammar Focus</div>' +
+      (g.topic ? '<p style="margin:0 0 12px;font-weight:700">' + esc(g.topic) + '</p>' : '') +
+      (g.quote ? '<p class="quote">' + T.markupEnglish(g.quote, DATA.glossary) + '</p>' : '') +
+      (g.quoteJa ? '<p class="quote-ja">' + esc(g.quoteJa) + '</p>' : '') +
+      (g.blocks || []).map(function (b) {
+        return '<div class="blk"><h3>' + esc(b.heading) + '</h3><p>' + esc(b.body) + '</p></div>';
+      }).join('') +
+    '</div>';
+  }
+
+  function viewBg() {
+    var src = (DATA.sources || []).filter(function (s) { return s.url; });
+    return '<div class="card">' +
+      '<div class="sec-label">Background</div>' +
+      (DATA.background || []).map(function (b) {
+        return '<div class="blk"><h3>' + esc(b.heading) + '</h3><p>' + esc(b.body) + '</p></div>';
+      }).join('') +
+    '</div>' +
+    (src.length ? '<div class="card"><div class="sec-label">出典</div>' + src.map(function (s) {
+      return '<p class="small" style="margin:0 0 6px"><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' +
+        esc(s.title || s.url) + '</a>' + (s.publisher ? ' <span class="muted">— ' + esc(s.publisher) + '</span>' : '') + '</p>';
+    }).join('') + '</div>' : '');
+  }
+
+  function viewScript() {
+    var rate = T.Settings.get('rate');
+    var showJa = T.Settings.get('showJa');
+    return '<div class="card">' +
+      '<div class="sec-label">Listening Script</div>' +
+      '<div id="slines">' + (DATA.script && DATA.script.sentences || []).map(function (s, i) {
+        return '<button class="sline" data-i="' + i + '">' +
+          '<span class="i">' + (i + 1) + '</span>' +
+          '<span><span class="e">' + esc(s.en) + '</span>' +
+          (showJa ? '<span class="j">' + esc(s.ja) + '</span>' : '') + '</span></button>';
+      }).join('') + '</div>' +
+      '<div class="rate-row"><span class="small muted" style="flex:none">速度</span>' +
+        '<input type="range" id="rate" min="0.6" max="1.2" step="0.05" value="' + rate + '">' +
+        '<span class="v" id="rateV">' + Number(rate).toFixed(2) + '</span></div>' +
+      '<div class="tool-row">' +
+        '<button class="btn btn-sm btn-primary" id="playAll">▶ 通し再生</button>' +
+        '<button class="btn btn-sm" id="stopAll">■ 停止</button>' +
+        '<button class="btn btn-sm" id="toggleJa">' + (showJa ? '和訳を隠す' : '和訳を出す') + '</button>' +
+      '</div>' +
+      '<p class="hint">行をタップするとその1文だけ再生します。シャドーイングは速度 0.8 前後から。</p>' +
+    '</div>';
+  }
+
+  function finish() {
+    T.TTS.cancel();
+    state.done = true; state.maxStep = STEPS.length - 1; save();
+    var streak = T.Log.touchToday();
+    var n = correctCount(), tot = (DATA.questions || []).length;
+    stage.dataset.view = 'done';
+    stage.innerHTML = '<div class="card done-wrap">' +
+      '<div class="big">Done</div>' +
+      '<p class="muted small" style="margin:8px 0 0">' + esc((DATA.title && DATA.title.ja) || '') + '</p>' +
+      '<div class="done-grid">' +
+        '<div><div class="n">' + n + '/' + tot + '</div><div class="l">設問</div></div>' +
+        '<div><div class="n">' + T.Vocab.count() + '</div><div class="l">語彙帳</div></div>' +
+        '<div><div class="n">' + streak + '</div><div class="l">連続日数</div></div>' +
+      '</div></div>';
+    renderFoot();
+    window.scrollTo(0, 0);
+  }
+
+  /* ================= 操作 ================= */
+
+  stage.addEventListener('click', function (e) {
+    var t = e.target;
+
+    var ch = t.closest('.choice[data-q]');
+    if (ch && !ch.disabled) {
+      state.answers[ch.dataset.q] = ch.dataset.k;
+      save(); render(); return;
+    }
+
+    var st = t.closest('.star[data-term]');
+    if (st) {
+      var term = st.dataset.term;
+      var v = (DATA.vocabulary || []).filter(function (x) { return x.term === term; })[0] || { term: term };
+      if (T.Vocab.has(term)) { T.Vocab.remove(term); T.toast('語彙帳から外しました'); }
+      else {
+        T.Vocab.add({
+          term: v.term, pos: v.pos, ja: v.ja, gloss: v.gloss, example: v.example,
+          src: DATA.id, srcTitle: (DATA.title && DATA.title.ja) || ''
+        });
+        T.toast('語彙帳に追加しました');
+      }
+      render(); return;
+    }
+
+    if (t.id === 'readAloud') { readAloud(t); return; }
+    if (t.id === 'playAll') { playAll(); return; }
+    if (t.id === 'stopAll') { T.TTS.cancel(); playing = null; markPlay(-1); return; }
+    if (t.id === 'toggleJa') { T.Settings.set('showJa', !T.Settings.get('showJa')); render(); return; }
+
+    var sl = t.closest('.sline[data-i]');
+    if (sl) { playOne(+sl.dataset.i); return; }
+
+    var w = t.closest('.w');
+    if (w) { openPop(w); return; }
+
+    closePop();
+  });
+
+  stage.addEventListener('input', function (e) {
+    if (e.target.id === 'rate') {
+      var v = parseFloat(e.target.value);
+      T.Settings.set('rate', v);
+      $('rateV').textContent = v.toFixed(2);
+    }
+  });
+
+  /* ---- 読み上げ ---- */
+
+  function summaryText() {
+    return ((DATA.summary && DATA.summary.paragraphs) || []).map(function (p) {
+      return p.sentences.map(function (s) { return s.en; }).join(' ');
+    }).join(' ');
+  }
+
+  function readAloud(btn) {
+    if (playing === 'read') { T.TTS.cancel(); playing = null; btn.textContent = '🔊 通して聞く'; return; }
+    playing = 'read';
+    btn.textContent = '■ 停止';
+    T.TTS.speak(summaryText(), {
+      rate: T.Settings.get('rate'),
+      onend: function () { playing = null; var b = $('readAloud'); if (b) b.textContent = '🔊 通して聞く'; }
+    });
+  }
+
+  function markPlay(i) {
+    var rows = stage.querySelectorAll('.sline');
+    for (var k = 0; k < rows.length; k++) rows[k].classList.toggle('play', k === i);
+    if (i >= 0 && rows[i]) rows[i].scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+
+  function playOne(i) {
+    var ss = (DATA.script && DATA.script.sentences) || [];
+    if (!ss[i]) return;
+    playing = 'one'; markPlay(i);
+    T.TTS.speak(ss[i].en, {
+      rate: T.Settings.get('rate'),
+      onend: function () { if (playing === 'one') { playing = null; markPlay(-1); } }
+    });
+  }
+
+  function playAll() {
+    var ss = (DATA.script && DATA.script.sentences) || [];
+    playing = 'all';
+    (function next(i) {
+      if (playing !== 'all' || i >= ss.length) { playing = null; markPlay(-1); return; }
+      markPlay(i);
+      T.TTS.speak(ss[i].en, { rate: T.Settings.get('rate'), onend: function () { next(i + 1); } });
+    })(0);
+  }
+
+  /* ---- 語注ポップ ---- */
+
+  var pop = null, popWord = null;
+
+  function closePop() {
+    if (pop) { pop.remove(); pop = null; }
+    if (popWord) { popWord.classList.remove('open'); popWord = null; }
+  }
+
+  function openPop(el) {
+    closePop();
+    var k = el.dataset.w, raw = el.dataset.raw;
+    var g = DATA.glossary && DATA.glossary[k];
+    popWord = el; el.classList.add('open');
+    pop = document.createElement('div');
+    pop.className = 'pop';
+    if (g) {
+      var inBook = T.Vocab.has(g.lemma || raw);
+      pop.innerHTML =
+        '<div class="term">' + esc(raw) +
+          (g.lemma && g.lemma.toLowerCase() !== k ? '<span class="lemma">← ' + esc(g.lemma) + '</span>' : '') +
+        '</div>' +
+        '<div class="ja">' + (g.pos ? '<span class="muted small">(' + esc(g.pos) + ') </span>' : '') + esc(g.ja) + '</div>' +
+        (g.note ? '<div class="note">' + esc(g.note) + '</div>' : '') +
+        '<div class="row"><button class="btn btn-sm" data-add="' + esc(g.lemma || raw) + '">' +
+          (inBook ? '★ 語彙帳にあり' : '☆ 語彙帳に追加') + '</button>' +
+          '<button class="btn btn-sm" data-say="' + esc(raw) + '">🔊</button></div>';
+    } else {
+      pop.innerHTML = '<div class="term">' + esc(raw) + '</div>' +
+        '<div class="note">この語の語注はありません。</div>' +
+        '<div class="row"><button class="btn btn-sm" data-say="' + esc(raw) + '">🔊</button></div>';
+    }
+    document.body.appendChild(pop);
+
+    var r = el.getBoundingClientRect();
+    var top = r.bottom + window.scrollY + 6;
+    var left = r.left + window.scrollX;
+    left = Math.min(left, window.scrollX + document.documentElement.clientWidth - pop.offsetWidth - 12);
+    left = Math.max(window.scrollX + 12, left);
+    pop.style.top = top + 'px';
+    pop.style.left = left + 'px';
+
+    pop.addEventListener('click', function (e) {
+      var a = e.target.closest('[data-add]');
+      if (a) {
+        var term = a.dataset.add;
+        if (!T.Vocab.has(term)) {
+          T.Vocab.add({ term: term, pos: (g && g.pos) || '', ja: (g && g.ja) || '', gloss: (g && g.note) || '',
+                        src: DATA.id, srcTitle: (DATA.title && DATA.title.ja) || '' });
+          T.toast('語彙帳に追加しました');
+        } else { T.Vocab.remove(term); T.toast('語彙帳から外しました'); }
+        closePop(); return;
+      }
+      var s = e.target.closest('[data-say]');
+      if (s) { T.TTS.speak(s.dataset.say, { rate: 0.85 }); }
+    });
+  }
+
+  document.addEventListener('click', function (e) {
+    if (pop && !pop.contains(e.target) && !e.target.closest('.w')) closePop();
+  }, true);
+
+  /* ================= モーダル ================= */
+
+  function modal(html, onMount) {
+    var bg = document.createElement('div');
+    bg.className = 'modal-bg';
+    bg.innerHTML = '<div class="modal">' + html + '</div>';
+    bg.addEventListener('click', function (e) { if (e.target === bg) bg.remove(); });
+    document.body.appendChild(bg);
+    if (onMount) onMount(bg);
+    return bg;
+  }
+
+  $('btnPick').addEventListener('click', function () {
+    var rows = INDEX.length ? INDEX.map(function (it) {
+      var cur = DATA && it.id === DATA.id;
+      return '<p style="margin:0 0 4px"><a href="?id=' + encodeURIComponent(it.id) + '" style="color:inherit;text-decoration:none">' +
+        '<span class="chip chip-plain">' + esc(it.date || it.id) + '</span> ' +
+        (it.genre ? '<span class="chip">' + esc(it.genre) + '</span> ' : '') +
+        (cur ? '<b>' : '') + esc(it.title || it.id) + (cur ? '</b>' : '') +
+        (it.local ? ' <span class="muted small">（取り込み）</span>' : '') + '</a></p>';
+    }).join('') : '<p class="muted small">目次が読めませんでした。GitHub Pages 上では data/news/index.json を読みます。ローカルのファイルを直接開いた場合は読めません（内蔵サンプルで動作します）。</p>';
+    modal('<h2>教材を選ぶ</h2>' + rows +
+      '<div class="tool-row"><button class="btn btn-sm" id="mClose">閉じる</button></div>',
+      function (bg) { bg.querySelector('#mClose').onclick = function () { bg.remove(); }; });
+  });
+
+  $('btnCfg').addEventListener('click', function () {
+    var s = T.Settings.all();
+    var bg = modal(
+      '<h2>設定</h2>' +
+      '<label class="field"><span>読み上げの音声</span><select id="cfgVoice"><option value="">自動で選ぶ</option></select></label>' +
+      '<div class="small muted" id="cfgVoiceInfo" style="margin:-6px 0 12px"></div>' +
+      '<label class="field"><span>速度 <b id="cfgRateV">' + Number(s.rate).toFixed(2) + '</b></span>' +
+        '<input type="range" id="cfgRate" min="0.6" max="1.2" step="0.05" value="' + s.rate + '"></label>' +
+      '<div class="tool-row"><button class="btn btn-sm" id="cfgTest">🔊 テスト再生</button></div>' +
+      '<hr class="sep">' +
+      '<h2>教材を取り込む</h2>' +
+      '<p class="small muted" style="margin:-6px 0 8px">ルーティンが出力した JSON を貼り付けるか、ファイルを選びます。取り込んだ教材はこの端末に保存されます。</p>' +
+      '<textarea id="impText" placeholder="ここに JSON を貼り付け"></textarea>' +
+      '<div class="tool-row"><button class="btn btn-sm btn-primary" id="impGo">取り込む</button>' +
+        '<input type="file" id="impFile" accept=".json,application/json" class="small"></div>' +
+      '<hr class="sep">' +
+      '<div class="tool-row"><button class="btn btn-sm" id="cfgReset">この教材の記録を消す</button>' +
+        '<button class="btn btn-sm" id="cfgClose">閉じる</button></div>',
+      function (bg) {
+        var sel = bg.querySelector('#cfgVoice');
+        T.TTS.onReady(function () {
+          var list = T.TTS.english();
+          list.forEach(function (v) {
+            var o = document.createElement('option');
+            o.value = v.voiceURI;
+            o.textContent = v.name + '（' + v.lang + (v.localService ? '・端末内' : '・通信') + '）';
+            if (v.voiceURI === s.voiceURI) o.selected = true;
+            sel.appendChild(o);
+          });
+          var langs = {};
+          list.forEach(function (v) { langs[(v.lang || '').replace('_', '-')] = 1; });
+          bg.querySelector('#cfgVoiceInfo').textContent =
+            list.length ? '英語の音声を ' + list.length + '種類検出（' + Object.keys(langs).sort().join(' / ') + '）'
+                        : '英語の音声が見つかりません。端末の音声データを確認してください。';
+        });
+        sel.onchange = function () { T.Settings.set('voiceURI', sel.value); };
+        var rate = bg.querySelector('#cfgRate');
+        rate.oninput = function () {
+          T.Settings.set('rate', parseFloat(rate.value));
+          bg.querySelector('#cfgRateV').textContent = parseFloat(rate.value).toFixed(2);
+        };
+        bg.querySelector('#cfgTest').onclick = function () {
+          T.TTS.speak('The shipment will arrive at the warehouse on Friday.', { rate: T.Settings.get('rate') });
+        };
+        bg.querySelector('#impGo').onclick = function () {
+          doImport(bg.querySelector('#impText').value, bg);
+        };
+        bg.querySelector('#impFile').onchange = function (e) {
+          var f = e.target.files && e.target.files[0]; if (!f) return;
+          var fr = new FileReader();
+          fr.onload = function () { doImport(String(fr.result), bg); };
+          fr.readAsText(f);
+        };
+        bg.querySelector('#cfgReset').onclick = function () {
+          var all = T.read('progress', {}); delete all[progKey]; T.write('progress', all);
+          state = { answers: {}, graded: false, maxStep: 0, done: false };
+          step = 0; bg.remove(); renderRail(); render(); T.toast('この教材の記録を消しました');
+        };
+        bg.querySelector('#cfgClose').onclick = function () { bg.remove(); };
+      });
+  });
+
+  function doImport(text, bg) {
+    var d;
+    try { d = JSON.parse(text); }
+    catch (e) { T.toast('JSON として読めません'); return; }
+    var bad = validate(d);
+    if (bad) { T.toast(bad); return; }
+    PACKS[d.id] = d;
+    if (!T.write('news.packs', PACKS)) { T.toast('保存できませんでした（容量）'); return; }
+    bg.remove();
+    location.search = '?id=' + encodeURIComponent(d.id);
+  }
+
+  function validate(d) {
+    if (!d || d.type !== 'news') return 'type が news ではありません';
+    if (!d.id) return 'id がありません';
+    if (!d.summary || !Array.isArray(d.summary.paragraphs) || !d.summary.paragraphs.length) return 'summary がありません';
+    if (!Array.isArray(d.questions) || !d.questions.length) return 'questions がありません';
+    for (var i = 0; i < d.questions.length; i++) {
+      var q = d.questions[i];
+      if (!Array.isArray(q.choices) || !q.choices.length) return 'Q' + (i + 1) + ' の選択肢がありません';
+      if (!q.choices.some(function (c) { return c.key === q.answer; })) return 'Q' + (i + 1) + ' の answer が選択肢と一致しません';
+    }
+    return null;
+  }
+
+  boot();
+})();
+</script>
+</body>
+</html>
