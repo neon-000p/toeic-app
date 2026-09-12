@@ -183,7 +183,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   var progKey = '';
 
   var PREP_DEFAULT = 13;   // 設問の先読み
-  var ANS_DEFAULT = 0;     // 0 は連続読み上げ（設問と設問の間を置かない）
+  var ANS_DEFAULT = 8;     // 本番は設問の読み上げごとに約8秒の間がある
   var TYPE_LABEL = { gist: '概要', detail: '詳細', intent: '意図', next: '次の行動', infer: '推測', graphic: '図表' };
 
   /* ================= 起動 ================= */
@@ -792,8 +792,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
           '<input type="range" id="p3prep" min="5" max="30" step="1" value="' + prepSec() + '"></label>' +
         '<label class="field"><span>設問ごとの間 <b id="p3av">' + (ansSec() || 0) + '</b> 秒</span>' +
           '<input type="range" id="p3ans" min="0" max="20" step="1" value="' + ansSec() + '"></label>' +
-        '<p class="small muted" style="margin:-4px 0 0"><b>0 にすると3問を続けて読み上げます。</b>' +
-        '秒数を入れると、各設問のあとにその長さの解答時間が入ります。</p>',
+        '<p class="small muted" style="margin:-4px 0 0">本番は各設問の読み上げのあとに約8秒の間があります。' +
+        '慣れるまで長めにしても構いません。<b>0 にすると3問を続けて読み上げます</b>（速く回したいとき用）。</p>',
       onMount: function (bg) {
         var r1 = bg.querySelector('#p3prep');
         r1.oninput = function () {
