@@ -83,6 +83,7 @@ details.src[open]>summary::before{content:"▾ ";}
   font-family:var(--serif);font-size:15.5px;line-height:1.8;
   background:var(--mark-soft);border-left:3px solid var(--mark);
   padding:9px 12px;border-radius:0 8px 8px 0;margin:10px 0;
+  position:relative;padding-right:40px;
 }
 .tip{background:var(--surface-2);border-radius:8px;padding:10px 12px;font-size:13.5px;margin-top:10px}
 .tip b{display:block;font-size:11px;letter-spacing:.1em;color:var(--muted);margin-bottom:3px}
@@ -110,6 +111,7 @@ details.src[open]>summary::before{content:"▾ ";}
 .vex{
   font-family:var(--serif);font-size:14px;line-height:1.7;color:var(--ink-2);
   border-left:2px solid var(--line-2);padding-left:10px;margin-top:8px;
+  position:relative;padding-right:32px;
 }
 .vex .j{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:2px}
 .star{
@@ -117,6 +119,15 @@ details.src[open]>summary::before{content:"▾ ";}
   background:var(--surface);color:var(--muted);font-size:16px;cursor:pointer;
 }
 .star.on{background:var(--mark-soft);border-color:var(--mark);color:var(--mark-ink)}
+.say-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:24px;height:24px;padding:0;border-radius:7px;vertical-align:2px;
+  border:1px solid var(--line-2);background:var(--surface);
+  color:var(--accent);font-size:9px;line-height:1;cursor:pointer;
+}
+.vterm .say-btn{margin:0 6px 0 8px}
+.quote .say-btn{margin-left:8px}
+.evid-line .say-btn{position:absolute;right:8px;top:7px}
 
 /* 文法・背景 */
 .quote{
@@ -129,22 +140,20 @@ details.src[open]>summary::before{content:"▾ ";}
 .blk h3{font-size:14px;margin:0 0 6px;color:var(--accent-ink)}
 .blk p{margin:0;font-size:14.5px;white-space:pre-wrap}
 
-/* 音読 */
-.sline{
-  display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;
-  padding:11px 10px;border:0;border-radius:9px;background:transparent;
-  color:var(--ink);font:inherit;cursor:pointer;
-}
+/* 対訳（音読を統合） */
+.trans-bar{display:flex;gap:8px;flex-wrap:wrap}
+.sec-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 4px}
+.sec-head .sec-label{margin:0}
+.sline{display:flex;gap:10px;align-items:flex-start;padding:12px 8px;border-radius:9px;cursor:pointer}
 .sline+.sline{border-top:1px solid var(--line);border-radius:0}
-.sline .i{
-  flex:none;width:20px;font-size:11px;font-weight:800;color:var(--muted);
-  text-align:right;margin-top:5px;
-}
-.sline{white-space:normal}
-.sline>span:last-child{flex:1;min-width:0}
-.sline .e{display:block;font-family:var(--serif);font-size:16px;line-height:1.8}
-.sline .j{display:block;font-size:12.5px;color:var(--muted);margin-top:3px}
+.sline .i{flex:none;width:18px;font-size:11px;font-weight:800;color:var(--muted);text-align:right;margin-top:6px}
+.sline .body{flex:1;min-width:0}
+.sline .e{display:block;font-family:var(--serif);font-size:16.5px;line-height:1.85}
+.sline .j{display:block;font-size:13px;color:var(--ink-2);margin-top:4px}
+.sline .pl{flex:none;color:var(--muted);font-size:11px;margin-top:7px}
 .sline.play{background:var(--mark-soft)}
+.sline.play .pl{color:var(--mark-ink)}
+.hide-ja .sline .j{display:none}
 .rate-row{display:flex;align-items:center;gap:10px;margin-top:12px}
 .rate-row input{flex:1}
 .rate-row .v{font-size:13px;font-weight:700;width:42px;text-align:right;color:var(--muted)}
@@ -424,14 +433,12 @@ details.src[open]>summary::before{content:"▾ ";}
   var T = window.TOEIC, esc = T.esc;
 
   var STEPS = [
-    { key: 'read',   label: '読解' },
-    { key: 'quiz',   label: '設問' },
-    { key: 'ans',    label: '解説', gate: 'graded' },
-    { key: 'trans',  label: '対訳', gate: 'graded' },
-    { key: 'vocab',  label: '語彙' },
-    { key: 'gram',   label: '文法' },
-    { key: 'bg',     label: '背景' },
-    { key: 'script', label: '音読' }
+    { key: 'quiz',  label: '設問' },
+    { key: 'ans',   label: '解説', gate: 'graded' },
+    { key: 'trans', label: '対訳', gate: 'graded' },
+    { key: 'vocab', label: '語彙' },
+    { key: 'gram',  label: '文法' },
+    { key: 'bg',    label: '背景' }
   ];
 
   var DATA = null, INDEX = [], PACKS = {};
@@ -457,7 +464,6 @@ details.src[open]>summary::before{content:"▾ ";}
     }).catch(function () {
       INDEX = [];
     }).then(function () {
-      // 取り込み済みパックを目次に合流（重複は index 側を優先）
       Object.keys(PACKS).forEach(function (id) {
         if (!INDEX.some(function (it) { return it.id === id; })) {
           var p = PACKS[id];
@@ -465,12 +471,9 @@ details.src[open]>summary::before{content:"▾ ";}
         }
       });
       INDEX.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
-
       var id = want || (INDEX[0] && INDEX[0].id) || null;
       return load(id);
-    }).catch(function (e) {
-      fail(e);
-    });
+    }).catch(function (e) { fail(e); });
   }
 
   function fetchJSON(url) {
@@ -546,7 +549,7 @@ details.src[open]>summary::before{content:"▾ ";}
     $('rail').innerHTML = STEPS.map(function (s, i) {
       var cls = [];
       if (i === step) cls.push('cur');
-      else if (i < state.maxStep || (i < step)) cls.push('done');
+      else if (i < state.maxStep || i < step) cls.push('done');
       if (!gateOpen(i)) cls.push('lock');
       return '<button data-i="' + i + '" class="' + cls.join(' ') + '">' +
         '<span class="bar"></span><span class="t">' + esc(s.label) + '</span></button>';
@@ -608,8 +611,8 @@ details.src[open]>summary::before{content:"▾ ";}
   function render() {
     stage.dataset.view = '';
     var fn = {
-      read: viewRead, quiz: viewQuiz, ans: viewAns, trans: viewTrans,
-      vocab: viewVocab, gram: viewGram, bg: viewBg, script: viewScript
+      quiz: viewQuiz, ans: viewAns, trans: viewTrans,
+      vocab: viewVocab, gram: viewGram, bg: viewBg
     }[STEPS[step].key];
     stage.innerHTML = fn();
     renderFoot();
@@ -619,35 +622,37 @@ details.src[open]>summary::before{content:"▾ ";}
     return (DATA.summary && DATA.summary.paragraphs[pi] && DATA.summary.paragraphs[pi].sentences) || [];
   }
 
-  function summaryHTML(evid) {
+  function flatSummary() {
+    var out = [];
+    ((DATA.summary && DATA.summary.paragraphs) || []).forEach(function (p) {
+      (p.sentences || []).forEach(function (s) { out.push(s); });
+    });
+    return out;
+  }
+
+  function summaryHTML() {
     var ps = (DATA.summary && DATA.summary.paragraphs) || [];
-    return ps.map(function (p, pi) {
-      return '<p class="para">' + p.sentences.map(function (s, si) {
-        var hit = evid && evid.some(function (e) { return e.p === pi && e.s === si; });
-        return '<span class="sent' + (hit ? ' evid' : '') + '">' +
-          T.markupEnglish(s.en, DATA.glossary) + '</span> ';
+    return ps.map(function (p) {
+      return '<p class="para">' + p.sentences.map(function (s) {
+        return '<span class="sent">' + T.markupEnglish(s.en, DATA.glossary) + '</span> ';
       }).join('') + '</p>';
     }).join('');
   }
 
-  function viewRead() {
-    var note = DATA.sample && DATA.sampleNote
-      ? '<div class="card" style="background:var(--mark-soft);border-color:var(--mark)"><p class="small" style="margin:0">' + esc(DATA.sampleNote) + '</p></div>'
+  function sampleNote() {
+    return DATA.sample && DATA.sampleNote
+      ? '<div class="card" style="background:var(--mark-soft);border-color:var(--mark)"><p class="small" style="margin:0">' +
+        esc(DATA.sampleNote) + '</p></div>'
       : '';
-    return note +
-      '<div class="card">' +
-        '<div class="sec-label">Summary</div>' +
-        summaryHTML(null) +
-        '<div class="tool-row">' +
-          '<button class="btn btn-sm" id="readAloud">🔊 通して聞く</button>' +
-          '<span class="small muted">語をタップすると語注が出ます</span>' +
-        '</div>' +
-      '</div>';
   }
 
+  /* ---- 設問 ---- */
+
   function viewQuiz() {
-    var body = '<details class="src" open><summary>本文を表示</summary>' +
-      '<div class="card">' + summaryHTML(null) + '</div></details>';
+    var body = sampleNote() +
+      '<details class="src" open><summary>本文を表示</summary>' +
+      '<div class="card">' + summaryHTML() +
+      '<p class="hint">語をタップすると語注が出ます。</p></div></details>';
     body += (DATA.questions || []).map(function (q, i) {
       return '<div class="card qbox">' +
         '<div class="qnum">Q' + (i + 1) + '</div>' +
@@ -677,6 +682,8 @@ details.src[open]>summary::before{content:"▾ ";}
     return (DATA.questions || []).filter(function (q) { return state.answers[q.id] === q.answer; }).length;
   }
 
+  /* ---- 解説 ---- */
+
   function viewAns() {
     var qs = DATA.questions || [], n = correctCount();
     var head = '<div class="card">' +
@@ -700,6 +707,7 @@ details.src[open]>summary::before{content:"▾ ";}
             '<span class="k">' + esc(c.key) + '</span><span class="t">' + esc(c.text) + '</span></button>';
         }).join('') +
         (ev ? '<div class="evid-line">' + T.markupEnglish(ev.en, DATA.glossary) +
+              '<button class="say-btn" data-say="' + esc(ev.en) + '" title="再生">▶</button>' +
               '<div class="small muted" style="font-family:var(--sans);margin-top:5px">' + esc(ev.ja) + '</div></div>' : '') +
         '<p style="font-size:14.5px;margin:10px 0 0">' + esc(q.explanation) + '</p>' +
         (q.tip ? '<div class="tip"><b>PART 7 の解き方</b>' + esc(q.tip) + '</div>' : '') +
@@ -707,29 +715,63 @@ details.src[open]>summary::before{content:"▾ ";}
     }).join('');
   }
 
-  function viewTrans() {
-    var out = '<div class="card"><div class="sec-label">対訳</div>';
-    ((DATA.summary && DATA.summary.paragraphs) || []).forEach(function (p) {
-      p.sentences.forEach(function (s) {
-        out += '<div class="pair"><div class="e">' + T.markupEnglish(s.en, DATA.glossary) +
-               '</div><div class="j">' + esc(s.ja) + '</div></div>';
-      });
-    });
-    return out + '</div>';
+  /* ---- 対訳（音読を統合） ---- */
+
+  function linesFor(src) {
+    return src === 'scr' ? ((DATA.script && DATA.script.sentences) || []) : flatSummary();
   }
 
+  function lineRows(src) {
+    return linesFor(src).map(function (s, i) {
+      return '<div class="sline" data-src="' + src + '" data-i="' + i + '">' +
+        '<span class="i">' + (i + 1) + '</span>' +
+        '<span class="body"><span class="e">' + T.markupEnglish(s.en, DATA.glossary) + '</span>' +
+        '<span class="j">' + esc(s.ja || '') + '</span></span>' +
+        '<span class="pl">▶</span></div>';
+    }).join('');
+  }
+
+  function viewTrans() {
+    var showJa = T.Settings.get('showJa');
+    var rate = T.Settings.get('rate');
+    var hasScript = ((DATA.script && DATA.script.sentences) || []).length > 0;
+    return '<div class="card' + (showJa ? '' : ' hide-ja') + '" id="transCard">' +
+      '<div class="trans-bar">' +
+        '<button class="btn btn-sm" id="toggleJa">' + (showJa ? '和訳を隠す' : '和訳を出す') + '</button>' +
+        '<button class="btn btn-sm" id="stopAll">■ 停止</button>' +
+      '</div>' +
+      '<div class="rate-row"><span class="small muted" style="flex:none">速度</span>' +
+        '<input type="range" id="rate" min="0.6" max="1.2" step="0.05" value="' + rate + '">' +
+        '<span class="v" id="rateV">' + Number(rate).toFixed(2) + '</span></div>' +
+      '<hr class="sep">' +
+      '<div class="sec-head"><span class="sec-label">Summary</span>' +
+        '<button class="btn btn-sm btn-primary" data-play-all="sum">▶ 通し再生</button></div>' +
+      lineRows('sum') +
+      (hasScript ?
+        '<hr class="sep">' +
+        '<div class="sec-head"><span class="sec-label">Listening Script</span>' +
+          '<button class="btn btn-sm btn-primary" data-play-all="scr">▶ 通し再生</button></div>' +
+        lineRows('scr') : '') +
+      '</div>' +
+      '<p class="hint">行をタップするとその1文を再生し、再生中の行が光ります。英単語のタップは語注です。シャドーイングは速度 0.8 前後から。</p>';
+  }
+
+  /* ---- 語彙 ---- */
+
   function viewVocab() {
-    var src = DATA.id || '', st = (DATA.title && DATA.title.ja) || '';
     return '<div class="card"><div class="sec-label">Vocabulary</div>' +
       (DATA.vocabulary || []).map(function (v) {
         var on = T.Vocab.has(v.term);
         return '<div class="vcard">' +
           '<span class="no">' + esc(v.no || '') + '</span>' +
           '<div class="body">' +
-            '<div class="vterm">' + esc(v.term) + '<span class="vpos">（' + esc(v.pos) + '）</span></div>' +
+            '<div class="vterm">' + esc(v.term) +
+              '<button class="say-btn" data-say="' + esc(v.term) + '" title="単語を再生">▶</button>' +
+              '<span class="vpos">（' + esc(v.pos) + '）</span></div>' +
             '<div class="vja">' + esc(v.ja) + '</div>' +
             (v.gloss ? '<div class="vgloss">' + esc(v.gloss) + '</div>' : '') +
             (v.example ? '<div class="vex">' + esc(v.example.en) +
+              '<button class="say-btn" data-say="' + esc(v.example.en) + '" title="例文を再生">▶</button>' +
               (v.example.ja ? '<div class="j">' + esc(v.example.ja) + '</div>' : '') + '</div>' : '') +
           '</div>' +
           '<button class="star' + (on ? ' on' : '') + '" data-term="' + esc(v.term) + '" title="語彙帳">' +
@@ -740,12 +782,15 @@ details.src[open]>summary::before{content:"▾ ";}
       T.Vocab.count() + ' 語。</p>';
   }
 
+  /* ---- 文法・背景 ---- */
+
   function viewGram() {
     var g = DATA.grammar || {};
     return '<div class="card">' +
       '<div class="sec-label">Grammar Focus</div>' +
       (g.topic ? '<p style="margin:0 0 12px;font-weight:700">' + esc(g.topic) + '</p>' : '') +
-      (g.quote ? '<p class="quote">' + T.markupEnglish(g.quote, DATA.glossary) + '</p>' : '') +
+      (g.quote ? '<p class="quote">' + T.markupEnglish(g.quote, DATA.glossary) +
+        '<button class="say-btn" data-say="' + esc(g.quote) + '" title="再生">▶</button></p>' : '') +
       (g.quoteJa ? '<p class="quote-ja">' + esc(g.quoteJa) + '</p>' : '') +
       (g.blocks || []).map(function (b) {
         return '<div class="blk"><h3>' + esc(b.heading) + '</h3><p>' + esc(b.body) + '</p></div>';
@@ -767,31 +812,8 @@ details.src[open]>summary::before{content:"▾ ";}
     }).join('') + '</div>' : '');
   }
 
-  function viewScript() {
-    var rate = T.Settings.get('rate');
-    var showJa = T.Settings.get('showJa');
-    return '<div class="card">' +
-      '<div class="sec-label">Listening Script</div>' +
-      '<div id="slines">' + (DATA.script && DATA.script.sentences || []).map(function (s, i) {
-        return '<button class="sline" data-i="' + i + '">' +
-          '<span class="i">' + (i + 1) + '</span>' +
-          '<span><span class="e">' + esc(s.en) + '</span>' +
-          (showJa ? '<span class="j">' + esc(s.ja) + '</span>' : '') + '</span></button>';
-      }).join('') + '</div>' +
-      '<div class="rate-row"><span class="small muted" style="flex:none">速度</span>' +
-        '<input type="range" id="rate" min="0.6" max="1.2" step="0.05" value="' + rate + '">' +
-        '<span class="v" id="rateV">' + Number(rate).toFixed(2) + '</span></div>' +
-      '<div class="tool-row">' +
-        '<button class="btn btn-sm btn-primary" id="playAll">▶ 通し再生</button>' +
-        '<button class="btn btn-sm" id="stopAll">■ 停止</button>' +
-        '<button class="btn btn-sm" id="toggleJa">' + (showJa ? '和訳を隠す' : '和訳を出す') + '</button>' +
-      '</div>' +
-      '<p class="hint">行をタップするとその1文だけ再生します。シャドーイングは速度 0.8 前後から。</p>' +
-    '</div>';
-  }
-
   function finish() {
-    T.TTS.cancel();
+    T.TTS.cancel(); playing = null;
     state.done = true; state.maxStep = STEPS.length - 1; save();
     var streak = T.Log.touchToday();
     var n = correctCount(), tot = (DATA.questions || []).length;
@@ -808,6 +830,41 @@ details.src[open]>summary::before{content:"▾ ";}
     window.scrollTo(0, 0);
   }
 
+  /* ================= 再生 ================= */
+
+  function markPlay(src, i) {
+    var rows = stage.querySelectorAll('.sline');
+    for (var k = 0; k < rows.length; k++) {
+      rows[k].classList.toggle('play', !!src && rows[k].dataset.src === src && +rows[k].dataset.i === i);
+    }
+    if (src && i >= 0) {
+      var cur = stage.querySelector('.sline[data-src="' + src + '"][data-i="' + i + '"]');
+      if (cur) cur.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }
+  }
+
+  function playOne(src, i) {
+    var ss = linesFor(src);
+    if (!ss[i]) return;
+    playing = 'one'; markPlay(src, i);
+    T.TTS.speak(ss[i].en, {
+      rate: T.Settings.get('rate'),
+      onend: function () { if (playing === 'one') { playing = null; markPlay(null, -1); } }
+    });
+  }
+
+  function playAll(src) {
+    var ss = linesFor(src);
+    playing = 'all';
+    (function next(i) {
+      if (playing !== 'all' || i >= ss.length) { playing = null; markPlay(null, -1); return; }
+      markPlay(src, i);
+      T.TTS.speak(ss[i].en, { rate: T.Settings.get('rate'), onend: function () { next(i + 1); } });
+    })(0);
+  }
+
+  function stopPlay() { T.TTS.cancel(); playing = null; markPlay(null, -1); }
+
   /* ================= 操作 ================= */
 
   stage.addEventListener('click', function (e) {
@@ -818,6 +875,9 @@ details.src[open]>summary::before{content:"▾ ";}
       state.answers[ch.dataset.q] = ch.dataset.k;
       save(); render(); return;
     }
+
+    var say = t.closest('[data-say]');
+    if (say) { stopPlay(); T.TTS.speak(say.dataset.say, { rate: T.Settings.get('rate') }); return; }
 
     var st = t.closest('.star[data-term]');
     if (st) {
@@ -834,16 +894,26 @@ details.src[open]>summary::before{content:"▾ ";}
       render(); return;
     }
 
-    if (t.id === 'readAloud') { readAloud(t); return; }
-    if (t.id === 'playAll') { playAll(); return; }
-    if (t.id === 'stopAll') { T.TTS.cancel(); playing = null; markPlay(-1); return; }
-    if (t.id === 'toggleJa') { T.Settings.set('showJa', !T.Settings.get('showJa')); render(); return; }
+    var pa = t.closest('[data-play-all]');
+    if (pa) { stopPlay(); playAll(pa.dataset.playAll); return; }
 
-    var sl = t.closest('.sline[data-i]');
-    if (sl) { playOne(+sl.dataset.i); return; }
+    if (t.id === 'stopAll') { stopPlay(); return; }
 
+    if (t.id === 'toggleJa') {
+      var show = !T.Settings.get('showJa');
+      T.Settings.set('showJa', show);
+      var card = $('transCard');
+      if (card) card.classList.toggle('hide-ja', !show);
+      t.textContent = show ? '和訳を隠す' : '和訳を出す';
+      return;
+    }
+
+    /* 語注が先。行の再生よりも単語タップを優先する */
     var w = t.closest('.w');
     if (w) { openPop(w); return; }
+
+    var sl = t.closest('.sline[data-src]');
+    if (sl) { stopPlay(); playOne(sl.dataset.src, +sl.dataset.i); return; }
 
     closePop();
   });
@@ -855,50 +925,6 @@ details.src[open]>summary::before{content:"▾ ";}
       $('rateV').textContent = v.toFixed(2);
     }
   });
-
-  /* ---- 読み上げ ---- */
-
-  function summaryText() {
-    return ((DATA.summary && DATA.summary.paragraphs) || []).map(function (p) {
-      return p.sentences.map(function (s) { return s.en; }).join(' ');
-    }).join(' ');
-  }
-
-  function readAloud(btn) {
-    if (playing === 'read') { T.TTS.cancel(); playing = null; btn.textContent = '🔊 通して聞く'; return; }
-    playing = 'read';
-    btn.textContent = '■ 停止';
-    T.TTS.speak(summaryText(), {
-      rate: T.Settings.get('rate'),
-      onend: function () { playing = null; var b = $('readAloud'); if (b) b.textContent = '🔊 通して聞く'; }
-    });
-  }
-
-  function markPlay(i) {
-    var rows = stage.querySelectorAll('.sline');
-    for (var k = 0; k < rows.length; k++) rows[k].classList.toggle('play', k === i);
-    if (i >= 0 && rows[i]) rows[i].scrollIntoView({ block: 'center', behavior: 'smooth' });
-  }
-
-  function playOne(i) {
-    var ss = (DATA.script && DATA.script.sentences) || [];
-    if (!ss[i]) return;
-    playing = 'one'; markPlay(i);
-    T.TTS.speak(ss[i].en, {
-      rate: T.Settings.get('rate'),
-      onend: function () { if (playing === 'one') { playing = null; markPlay(-1); } }
-    });
-  }
-
-  function playAll() {
-    var ss = (DATA.script && DATA.script.sentences) || [];
-    playing = 'all';
-    (function next(i) {
-      if (playing !== 'all' || i >= ss.length) { playing = null; markPlay(-1); return; }
-      markPlay(i);
-      T.TTS.speak(ss[i].en, { rate: T.Settings.get('rate'), onend: function () { next(i + 1); } });
-    })(0);
-  }
 
   /* ---- 語注ポップ ---- */
 
@@ -926,11 +952,11 @@ details.src[open]>summary::before{content:"▾ ";}
         (g.note ? '<div class="note">' + esc(g.note) + '</div>' : '') +
         '<div class="row"><button class="btn btn-sm" data-add="' + esc(g.lemma || raw) + '">' +
           (inBook ? '★ 語彙帳にあり' : '☆ 語彙帳に追加') + '</button>' +
-          '<button class="btn btn-sm" data-say="' + esc(raw) + '">🔊</button></div>';
+          '<button class="btn btn-sm" data-sayw="' + esc(raw) + '">🔊</button></div>';
     } else {
       pop.innerHTML = '<div class="term">' + esc(raw) + '</div>' +
         '<div class="note">この語の語注はありません。</div>' +
-        '<div class="row"><button class="btn btn-sm" data-say="' + esc(raw) + '">🔊</button></div>';
+        '<div class="row"><button class="btn btn-sm" data-sayw="' + esc(raw) + '">🔊</button></div>';
     }
     document.body.appendChild(pop);
 
@@ -953,8 +979,8 @@ details.src[open]>summary::before{content:"▾ ";}
         } else { T.Vocab.remove(term); T.toast('語彙帳から外しました'); }
         closePop(); return;
       }
-      var s = e.target.closest('[data-say]');
-      if (s) { T.TTS.speak(s.dataset.say, { rate: 0.85 }); }
+      var s = e.target.closest('[data-sayw]');
+      if (s) { stopPlay(); T.TTS.speak(s.dataset.sayw, { rate: 0.85 }); }
     });
   }
 
@@ -982,7 +1008,7 @@ details.src[open]>summary::before{content:"▾ ";}
         (it.genre ? '<span class="chip">' + esc(it.genre) + '</span> ' : '') +
         (cur ? '<b>' : '') + esc(it.title || it.id) + (cur ? '</b>' : '') +
         (it.local ? ' <span class="muted small">（取り込み）</span>' : '') + '</a></p>';
-    }).join('') : '<p class="muted small">目次が読めませんでした。GitHub Pages 上では data/news/index.json を読みます。ローカルのファイルを直接開いた場合は読めません（内蔵サンプルで動作します）。</p>';
+    }).join('') : '<p class="muted small">目次が読めませんでした。ローカルのファイルを直接開いた場合は読めません（内蔵サンプルで動作します）。</p>';
     modal('<h2>教材を選ぶ</h2>' + rows +
       '<div class="tool-row"><button class="btn btn-sm" id="mClose">閉じる</button></div>',
       function (bg) { bg.querySelector('#mClose').onclick = function () { bg.remove(); }; });
@@ -990,7 +1016,7 @@ details.src[open]>summary::before{content:"▾ ";}
 
   $('btnCfg').addEventListener('click', function () {
     var s = T.Settings.all();
-    var bg = modal(
+    modal(
       '<h2>設定</h2>' +
       '<label class="field"><span>読み上げの音声</span><select id="cfgVoice"><option value="">自動で選ぶ</option></select></label>' +
       '<div class="small muted" id="cfgVoiceInfo" style="margin:-6px 0 12px"></div>' +
@@ -1032,9 +1058,7 @@ details.src[open]>summary::before{content:"▾ ";}
         bg.querySelector('#cfgTest').onclick = function () {
           T.TTS.speak('The shipment will arrive at the warehouse on Friday.', { rate: T.Settings.get('rate') });
         };
-        bg.querySelector('#impGo').onclick = function () {
-          doImport(bg.querySelector('#impText').value, bg);
-        };
+        bg.querySelector('#impGo').onclick = function () { doImport(bg.querySelector('#impText').value, bg); };
         bg.querySelector('#impFile').onchange = function (e) {
           var f = e.target.files && e.target.files[0]; if (!f) return;
           var fr = new FileReader();
