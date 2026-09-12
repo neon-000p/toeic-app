@@ -183,7 +183,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   var progKey = '';
 
   var PREP_DEFAULT = 13;   // 設問の先読み
-  var ANS_DEFAULT = 8;     // 本番の解答時間はおよそ8秒
+  var ANS_DEFAULT = 0;     // 0 は連続読み上げ（設問と設問の間を置かない）
   var TYPE_LABEL = { gist: '概要', detail: '詳細', intent: '意図', next: '次の行動', infer: '推測', graphic: '図表' };
 
   /* ================= 起動 ================= */
@@ -289,7 +289,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   }
   function ansSec() {
     var v = T.Settings.get('p3ans');
-    return (typeof v === 'number' && v > 0) ? v : ANS_DEFAULT;
+    return (typeof v === 'number' && v >= 0) ? v : ANS_DEFAULT;
   }
   function clearTimer() { clearInterval(timer); timer = null; }
   function stopAll() { clearTimer(); phase = 'answer'; T.TTS.cancel(); markLine(-1); }
@@ -365,8 +365,10 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
         rate: T.Settings.get('rate'),
         onend: function () {
           if (phase !== 'read') return;
+          var wait = ansSec();
+          if (!wait) { stepQ(i + 1); return; }   /* 0 なら間を置かず次へ */
           reading = false; render('q');
-          countdown(ansSec(), function () { stepQ(i + 1); });
+          countdown(wait, function () { stepQ(i + 1); });
         }
       });
     })(0);
@@ -398,7 +400,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     if (phase === 'read') {
       return '<div class="card status">' +
         (reading ? '' : '<div class="count"><i id="cbar" style="width:100%"></i></div>') +
-        '<div class="st"><b>Q' + (qi + 1) + (reading ? '　読み上げ中' : '　解答') + '</b>' +
+        '<div class="st"><b>設問の読み上げ　Q' + (qi + 1) + ' / ' + qs().length +
+        (reading ? '' : '　解答') + '</b>' +
         (reading ? '' : '<span class="num" id="cnum">' + left + ' 秒</span>') + '</div></div>';
     }
     return '<div class="card status"><div class="st"><b>見直し</b></div>' +
@@ -459,8 +462,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
   function viewScript() {
     var showJa = T.Settings.get('showJa');
-    var evid = {};
-    qs().forEach(function (q) { (q.evidence || []).forEach(function (li) { evid[li] = 1; }); });
+    /* 根拠の印は付けない。解説ステップで設問ごとに該当行を引用しているので、
+       対訳では素の会話として読めるほうがよい。 */
     return '<div class="card' + (showJa ? '' : ' hide-ja') + '" id="scriptCard">' +
       '<div class="sec-head"><span class="sec-label">対訳</span>' +
         '<span class="sec-tools">' +
@@ -470,13 +473,12 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
             (showJa ? '和訳を隠す' : '和訳を出す') + '">訳</button>' +
         '</span></div>' +
       lines().map(function (l, li) {
-        return '<div class="line' + (evid[li] ? ' evid' : '') + '" data-i="' + li + '">' +
+        return '<div class="line" data-i="' + li + '">' +
           '<span class="tag">' + esc(l.tag) + '</span>' +
           '<span class="body"><span class="e">' + T.markupEnglish(l.en, SET.glossary) + '</span>' +
           '<span class="j">' + esc(l.ja || '') + '</span></span></div>';
       }).join('') +
-      '<p class="hint">行をタップするとその1文を再生します。左に線が入っているのが根拠の行です。' +
-      '英単語のタップは語注です。</p></div>';
+      '</div>';
   }
 
   function viewVocab() {
@@ -788,10 +790,10 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
         '<h2>Part 3</h2>' +
         '<label class="field"><span>設問の先読み <b id="p3v">' + prepSec() + '</b> 秒</span>' +
           '<input type="range" id="p3prep" min="5" max="30" step="1" value="' + prepSec() + '"></label>' +
-        '<label class="field"><span>1問あたりの解答時間 <b id="p3av">' + ansSec() + '</b> 秒</span>' +
-          '<input type="range" id="p3ans" min="4" max="20" step="1" value="' + ansSec() + '"></label>' +
-        '<p class="small muted" style="margin:-4px 0 0">本番は設問の読み上げのあと約8秒です。' +
-        '慣れるまで長めにして、最終的に8秒で足りるようにするのが目安です。</p>',
+        '<label class="field"><span>設問ごとの間 <b id="p3av">' + (ansSec() || 0) + '</b> 秒</span>' +
+          '<input type="range" id="p3ans" min="0" max="20" step="1" value="' + ansSec() + '"></label>' +
+        '<p class="small muted" style="margin:-4px 0 0"><b>0 にすると3問を続けて読み上げます。</b>' +
+        '秒数を入れると、各設問のあとにその長さの解答時間が入ります。</p>',
       onMount: function (bg) {
         var r1 = bg.querySelector('#p3prep');
         r1.oninput = function () {
