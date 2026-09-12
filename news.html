@@ -34,7 +34,6 @@ a.icon-btn{font-size:20px}
 .rail button.done .bar{background:var(--accent)}
 .rail button.cur .bar{background:var(--accent)}
 .rail button.cur .t{color:var(--accent);font-weight:800}
-.rail button.lock .t{opacity:.45}
 
 /* 本文 */
 .stage{padding-top:16px}
@@ -81,6 +80,7 @@ details.src[open]>summary::before{content:"▾ ";}
 .verdict{font-size:12px;font-weight:800;padding:2px 8px;border-radius:999px}
 .verdict.ok{background:var(--ok-soft);color:var(--ok)}
 .verdict.ng{background:var(--ng-soft);color:var(--ng)}
+.verdict.na{background:var(--surface-2);color:var(--muted)}
 .evid-line{
   font-family:var(--serif);font-size:15.5px;line-height:1.8;
   background:var(--mark-soft);border-left:3px solid var(--mark);
@@ -641,8 +641,8 @@ details.src[open]>summary::before{content:"▾ ";}
 
   var STEPS = [
     { key: 'quiz',  label: '設問' },
-    { key: 'ans',   label: '解説', gate: 'graded' },
-    { key: 'trans', label: '対訳', gate: 'graded' },
+    { key: 'ans',   label: '解説' },
+    { key: 'trans', label: '対訳' },
     { key: 'vocab', label: '語彙' },
     { key: 'gram',  label: '文法' },
     { key: 'bg',    label: '背景' }
@@ -746,18 +746,11 @@ details.src[open]>summary::before{content:"▾ ";}
     renderRail();
   }
 
-  function gateOpen(i) {
-    var g = STEPS[i].gate;
-    if (g === 'graded') return state.graded;
-    return true;
-  }
-
   function renderRail() {
     $('rail').innerHTML = STEPS.map(function (s, i) {
       var cls = [];
       if (i === step) cls.push('cur');
       else if (i <= state.maxStep) cls.push('done');
-      if (!gateOpen(i)) cls.push('lock');
       return '<button data-i="' + i + '" class="' + cls.join(' ') + '">' +
         '<span class="bar"></span><span class="t">' + esc(s.label) + '</span></button>';
     }).join('');
@@ -765,9 +758,7 @@ details.src[open]>summary::before{content:"▾ ";}
 
   $('rail').addEventListener('click', function (e) {
     var b = e.target.closest('button[data-i]'); if (!b) return;
-    var i = +b.dataset.i;
-    if (!gateOpen(i)) { T.toast('設問に答えると開きます'); return; }
-    go(i);
+    go(+b.dataset.i);
   });
 
   /* ================= 画面遷移 ================= */
@@ -787,7 +778,7 @@ details.src[open]>summary::before{content:"▾ ";}
 
   $('btnNext').addEventListener('click', function () {
     if (stage.dataset.view === 'done') { stage.dataset.view = ''; go(0); return; }
-    if (STEPS[step].key === 'quiz' && !state.graded) { grade(); return; }
+    if (STEPS[step].key === 'quiz' && !state.graded && allAnswered()) { grade(); return; }
     if (step === STEPS.length - 1) { finish(); return; }
     go(step + 1);
   });
@@ -803,9 +794,8 @@ details.src[open]>summary::before{content:"▾ ";}
       return;
     }
     $('footMid').textContent = (step + 1) + ' / ' + STEPS.length + '　' + STEPS[step].label;
-    if (STEPS[step].key === 'quiz' && !state.graded) {
+    if (STEPS[step].key === 'quiz' && !state.graded && allAnswered()) {
       next.textContent = '採点する';
-      next.disabled = !allAnswered();
     } else if (step === STEPS.length - 1) {
       next.textContent = '学習を終える';
     } else {
@@ -893,18 +883,22 @@ details.src[open]>summary::before{content:"▾ ";}
 
   function viewAns() {
     var qs = DATA.questions || [], n = correctCount();
+    var unanswered = qs.filter(function (q) { return !state.answers[q.id]; }).length;
     var head = '<div class="card">' +
       '<div class="sec-label">結果</div>' +
       '<div class="score"><span class="n">' + n + ' / ' + qs.length + '</span>' +
-      '<span class="verdict ' + (n === qs.length ? 'ok' : 'ng') + '">' +
-      (n === qs.length ? '全問正解' : (qs.length - n) + '問 要復習') + '</span></div>' +
-      '</div>';
+      (unanswered === qs.length
+        ? '<span class="verdict na">未解答</span>'
+        : '<span class="verdict ' + (n === qs.length ? 'ok' : 'ng') + '">' +
+          (n === qs.length ? '全問正解' : (qs.length - n) + '問 要復習') + '</span>') +
+      '</div></div>';
     return head + qs.map(function (q, i) {
       var mine = state.answers[q.id], ok = mine === q.answer;
+      var mark = !mine ? '<span class="verdict na">未解答</span>'
+                       : '<span class="verdict ' + (ok ? 'ok' : 'ng') + '">' + (ok ? '正解' : '不正解') + '</span>';
       var ev = q.evidence ? (sentencesOf(q.evidence.p)[q.evidence.s] || null) : null;
       return '<div class="card">' +
-        '<div class="qnum">Q' + (i + 1) + ' ' +
-          '<span class="verdict ' + (ok ? 'ok' : 'ng') + '">' + (ok ? '正解' : '不正解') + '</span></div>' +
+        '<div class="qnum">Q' + (i + 1) + ' ' + mark + '</div>' +
         '<p class="qprompt">' + esc(q.prompt) + '</p>' +
         q.choices.map(function (c) {
           var cls = '';
