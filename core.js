@@ -184,6 +184,54 @@
       if (/natural/i.test(v.name || '')) return '自然音声';
       return v.localService ? '端末内' : '通信';
     }
+    /* ---- Part 3 用：話者ごとに別の声を割り当てる ----
+       Edge のように名前で性別が分かる音声はそれに従い、Android のように
+       ロケール名しか持たない音声では高さ（pitch）で作り分ける。
+       accent はデータ側の指定（en-US / en-GB / en-AU）。TOEIC が4か国の
+       発音を混ぜるので、聞き分けの練習としてもそこに寄せる。 */
+    var FEMALE_NAME = /aria|jenny|michelle|sonia|libby|maisie|natasha|emma|clara|neerja|ava|nova|zira|hazel|susan|catherine|linda|female/i;
+    var MALE_NAME = /guy|ryan|brian|eric|steffan|roger|davis|tony|andrew|christopher|jason|william|liam|david|mark|george|male/i;
+
+    function genderOf(v) {
+      var n = v.name || '';
+      if (FEMALE_NAME.test(n)) return 'f';
+      if (MALE_NAME.test(n)) return 'm';
+      return '';
+    }
+
+    /* speakers: [{ tag, accent }] を渡すと { tag: {voiceURI, pitch} } を返す */
+    function speakerPlan(speakers) {
+      var list = ranked(), used = {}, plan = {};
+      var over = Settings.all().p3voice || {};
+
+      (speakers || []).forEach(function (sp) {
+        var tag = sp.tag || 'M';
+        if (over[tag]) {
+          used[over[tag]] = 1;
+          plan[tag] = { voiceURI: over[tag], pitch: 1 };
+          return;
+        }
+        var want = tag.charAt(0).toUpperCase() === 'W' ? 'f' : 'm';
+        var acc = (sp.accent || '').replace('_', '-');
+        var byAccent = acc ? list.filter(function (v) { return (v.lang || '').replace('_', '-') === acc; }) : [];
+
+        function pick(pool) {
+          var free = pool.filter(function (v) { return !used[v.voiceURI]; });
+          return free[0] || null;
+        }
+        var v = pick(byAccent.filter(function (x) { return genderOf(x) === want; })) ||
+                pick(byAccent) ||
+                pick(list.filter(function (x) { return genderOf(x) === want; })) ||
+                pick(list) ||
+                byAccent[0] || list[0] || null;
+
+        if (!v) { plan[tag] = { voiceURI: '', pitch: 1 }; return; }
+        used[v.voiceURI] = 1;
+        plan[tag] = { voiceURI: v.voiceURI, pitch: genderOf(v) ? 1 : (want === 'f' ? 1.22 : 0.85) };
+      });
+      return plan;
+    }
+
     function resolve(uri) {
       if (uri) {
         var hit = cache.filter(function (v) { return v.voiceURI === uri; })[0];
@@ -192,9 +240,23 @@
       return pickDefault();
     }
     function cancel() { if (synth) { try { synth.cancel(); } catch (e) {} } }
-    /* speak(text, {rate, voiceURI, onend, onerror}) */
+    /* speak(text, {rate, voiceURI, pitch, onend, onerror})
+       音声一覧がまだ届いていない状態で喋らせると、声が無いまま失敗して
+       onend が即座に呼ばれる。連続再生だと全部の行が一瞬で流れてしまうので、
+       一覧が来るまで待ってから喋る。 */
     function speak(text, opts) {
       if (!synth || !text) { if (opts && opts.onend) opts.onend(); return null; }
+      if (!ready && !cache.length) {
+        var fired = false;
+        var go = function () { if (fired) return; fired = true; doSpeak(text, opts); };
+        onReady(go);
+        setTimeout(go, 2500);   /* 一覧が来ない端末でも詰まらないように */
+        return null;
+      }
+      return doSpeak(text, opts);
+    }
+
+    function doSpeak(text, opts) {
       opts = opts || {};
       cancel();
       var u = new SpeechSynthesisUtterance(text);
@@ -213,7 +275,7 @@
           if (fallback) {
             opts._retried = true;
             opts.voiceURI = fallback.voiceURI;
-            speak(text, opts);
+            doSpeak(text, opts);
             return;
           }
         }
@@ -226,6 +288,7 @@
     return {
       available: !!synth, onReady: onReady, voices: function () { return cache; },
       english: english, ranked: ranked, label: label,
+      speakerPlan: speakerPlan,
       pickDefault: pickDefault, speak: speak, cancel: cancel
     };
   })();

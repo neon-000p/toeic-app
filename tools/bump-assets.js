@@ -15,7 +15,7 @@ const ASSETS = [
   { file: 'core.js', attr: 'src' },
   { file: 'style.css', attr: 'href' }
 ];
-const PAGES = ['index.html', 'news.html', 'vocab.html'];
+const PAGES = ['index.html', 'news.html', 'vocab.html', 'part3.html'];
 
 function hash(file) {
   return crypto.createHash('sha1').update(fs.readFileSync(path.join(ROOT, file))).digest('hex').slice(0, 8);

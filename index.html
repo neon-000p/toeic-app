@@ -89,7 +89,7 @@ main{padding-top:14px}
   </main>
 </div>
 
-<script src="core.js?v=20203ece"></script>
+<script src="core.js?v=b5507b47"></script>
 <script>
 (function () {
   'use strict';
@@ -156,8 +156,14 @@ main{padding-top:14px}
       ['Part 6', '長文穴埋め', '文脈に合う語と一文挿入'],
       ['Part 7', '読解', '単一文書・複数文書']
     ];
-    return '<div class="card soon">' +
-      parts.map(function (p) {
+    return '<a class="card today" href="part3.html" style="display:block">' +
+      '<div class="meta-row"><span class="sec-label" style="margin:0">Part 3</span>' +
+        '<span class="chip">会話問題</span></div>' +
+      '<h2>会話を1回だけ聞いて3問</h2>' +
+      '<p class="small muted" style="margin:6px 0 0">設問を先読みしてから再生。本文は出ません。</p>' +
+      '<span class="go">はじめる →</span></a>' +
+      '<div class="card soon">' +
+      parts.slice(1).map(function (p) {
         return '<div class="row">' +
           '<span><b>' + p[0] + '</b>　<span class="name">' + p[1] + '</span>' +
           '<div class="w" style="margin-top:2px">' + p[2] + '</div></span>' +
