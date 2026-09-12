@@ -756,7 +756,7 @@ details.src[open]>summary::before{content:"▾ ";}
     $('rail').innerHTML = STEPS.map(function (s, i) {
       var cls = [];
       if (i === step) cls.push('cur');
-      else if (i < state.maxStep || i < step) cls.push('done');
+      else if (i <= state.maxStep) cls.push('done');
       if (!gateOpen(i)) cls.push('lock');
       return '<button data-i="' + i + '" class="' + cls.join(' ') + '">' +
         '<span class="bar"></span><span class="t">' + esc(s.label) + '</span></button>';
