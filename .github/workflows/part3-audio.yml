@@ -21,14 +21,15 @@ on:
 permissions:
   contents: write
 
+# GITHUB_TOKEN で push したコミットは新しいワークフローを起動しない
+# （GitHub の仕様）ので、自分の push で動き続ける心配はない。
+
 # 同時に走らせない。2つが同じファイルを書くと push がぶつかる
 concurrency:
   group: part3-audio
 
 jobs:
   build:
-    # 自分が作ったコミット（[audio] 付き）では動かさない。堂々巡りを防ぐため
-    if: ${{ !contains(github.event.head_commit.message, '[audio]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
