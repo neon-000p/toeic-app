@@ -103,6 +103,8 @@ main{padding-top:14px}
   document.getElementById('stStreak').textContent = T.Log.streak();
   document.getElementById('stVocab').textContent = T.Vocab.count();
 
+  var p3items = [];
+
   function progressOf(id) { return T.Log.progress('news:' + id); }
 
   function statusLabel(p) {
@@ -148,22 +150,66 @@ main{padding-top:14px}
     return html;
   }
 
+  /* Part 3 は1ファイル＝1セット。どれが新しい分かを選べるように一覧で出す。
+     場面（scene）は出さない。何の話かを先に知ると先読みの練習にならない。 */
+  function p3Status(id) {
+    var q = T.Log.progress('part3:' + id);
+    if (!q) return '';
+    if (q.maxStep >= 4) return '済';
+    if (q.scored || (q.answers && Object.keys(q.answers).length) || q.maxStep > 0) return '途中';
+    return '';
+  }
+
+  function p3Card() {
+    if (!p3items.length) {
+      return '<a class="card today" href="part3.html" style="display:block">' +
+        '<div class="meta-row"><span class="sec-label" style="margin:0">Part 3</span>' +
+          '<span class="chip">会話問題</span></div>' +
+        '<h2>会話を1回だけ聞いて3問</h2>' +
+        '<p class="small muted" style="margin:6px 0 0">目次を読めませんでした。' +
+        'ローカルのファイルを直接開いた場合は読めません。</p>' +
+        '<span class="go">開く →</span></a>';
+    }
+
+    var top = p3items[0], s = p3Status(top.id);
+    var label = s === '済' ? 'もう一度' : (s === '途中' ? '続きから' : 'はじめる');
+
+    var html = '<a class="card today" href="part3.html?id=' + encodeURIComponent(top.id) + '">' +
+      '<div class="meta-row"><span class="sec-label" style="margin:0">最新のセット</span>' +
+        '<span>' + esc((top.date || '').replace(/-/g, '/')) + (top.time ? ' ' + esc(top.time) : '') + '</span>' +
+        '<span class="chip">Part 3</span>' +
+        '<span class="chip chip-plain">' + (top.speakers || 2) + '人</span>' +
+        (s ? '<span class="chip chip-plain">' + s + '</span>' : '') +
+      '</div>' +
+      '<h2>会話を1回だけ聞いて3問</h2>' +
+      '<p class="small muted" style="margin:6px 0 0">設問を先読みしてから再生。本文は出ません。</p>' +
+      '<span class="go">' + label + ' →</span>' +
+    '</a>';
+
+    if (p3items.length > 1) {
+      html += '<div class="card"><div class="sec-label">これまでのセット</div><div class="list">' +
+        p3items.slice(1, 31).map(function (it) {
+          var st = p3Status(it.id);
+          return '<a href="part3.html?id=' + encodeURIComponent(it.id) + '">' +
+            '<span class="d">' + esc((it.date || '').slice(5).replace('-', '/') + (it.time ? ' ' + it.time : '')) + '</span>' +
+            '<span class="t">会話 ' + (it.speakers || 2) + '人・3問</span>' +
+            (st ? '<span class="s' + (st === '済' ? ' done' : '') + '">' + st + '</span>' : '') +
+          '</a>';
+        }).join('') + '</div></div>';
+    }
+    return html;
+  }
+
   function drillHTML() {
     var parts = [
-      ['Part 3', '会話問題', '3人の会話・意図問題・図表'],
       ['Part 4', '説明文', 'アナウンス・留守電・スピーチ'],
       ['Part 5', '短文穴埋め', '文法と語彙'],
       ['Part 6', '長文穴埋め', '文脈に合う語と一文挿入'],
       ['Part 7', '読解', '単一文書・複数文書']
     ];
-    return '<a class="card today" href="part3.html" style="display:block">' +
-      '<div class="meta-row"><span class="sec-label" style="margin:0">Part 3</span>' +
-        '<span class="chip">会話問題</span></div>' +
-      '<h2>会話を1回だけ聞いて3問</h2>' +
-      '<p class="small muted" style="margin:6px 0 0">設問を先読みしてから再生。本文は出ません。</p>' +
-      '<span class="go">はじめる →</span></a>' +
+    return p3Card() +
       '<div class="card soon">' +
-      parts.slice(1).map(function (p) {
+      parts.map(function (p) {
         return '<div class="row">' +
           '<span><b>' + p[0] + '</b>　<span class="name">' + p[1] + '</span>' +
           '<div class="w" style="margin-top:2px">' + p[2] + '</div></span>' +
@@ -171,13 +217,15 @@ main{padding-top:14px}
       }).join('') +
       '</div>' +
       '<p class="small muted" style="margin:12px 2px 0">' +
-      '時事英語とは別のルーティンで教材を作り、<code>data/part3/</code> のようにパートごとに分けて置く予定です。' +
-      '片方が止まっても、もう片方に影響しないようにするためです。</p>';
+      '時事英語と Part 3 は別のルーティンで作られ、<code>data/news/</code> と <code>data/part3/</code> に分けて置かれます。' +
+      '片方が止まっても、もう片方に影響しません。会話の音声は先に作って置いてあるので、再生まで待ちません。</p>';
   }
 
   function render() {
     main.innerHTML = tab === 'news' ? newsHTML() : drillHTML();
-    var done = items.filter(function (it) { var p = progressOf(it.id); return p && p.done; }).length;
+    /* 「学習した教材」は時事と Part 3 の合計。片方だけ数えると実態と合わない */
+    var done = items.filter(function (it) { var p = progressOf(it.id); return p && p.done; }).length +
+      p3items.filter(function (it) { return p3Status(it.id) === '済'; }).length;
     document.getElementById('stDone').textContent = done;
   }
 
@@ -189,14 +237,29 @@ main{padding-top:14px}
     render();
   });
 
-  fetch('data/news/index.json', { cache: 'no-store' })
-    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(function (idx) {
-      items = (idx && idx.items) || [];
-      items.sort(function (a, b) { return (b.id || '').localeCompare(a.id || ''); });
-      render();
-    })
-    .catch(function () { items = []; render(); });
+  /* 時事と Part 3 の目次を別々に読む。片方が読めなくても、もう片方は出す。 */
+  function loadIndex(url) {
+    return fetch(url, { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (idx) {
+        var list = (idx && idx.items) || [];
+        /* 日付＋時刻で新しい順。id で並べると p3-sample-… のような
+           日付以外の id が先頭に来てしまう。 */
+        var key = function (x) { return (x.date || '') + ' ' + (x.time || '') + ' ' + (x.id || ''); };
+        list.sort(function (a, b) { return key(b).localeCompare(key(a)); });
+        return list;
+      })
+      .catch(function () { return []; });
+  }
+
+  Promise.all([
+    loadIndex('data/news/index.json'),
+    loadIndex('data/part3/index.json')
+  ]).then(function (r) {
+    items = r[0];
+    p3items = r[1];
+    render();
+  });
 
   /* 教材を終えて戻ってきたときだけ、数秒「Done」を出す。
      .toast は pointer-events:none なので操作の邪魔にならない。 */

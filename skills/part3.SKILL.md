@@ -17,8 +17,18 @@ TOEIC Part 3（3人以下の会話 + 設問3問）の練習セットを作る。
 
 日付・時刻の基準は必ず **JST（日本標準時, UTC+9）** とする。
 
-1. 最初に必ずシェルで現在時刻を取得する。例：`TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M:%S %A'`
-   （`TZ` が使えない場合は UTC を取得し、手動で +9 時間して JST に変換する）
+1. 最初に必ずシェルで現在時刻を取得する。**`TZ=Asia/Tokyo date` を単独で信用しない。**
+   タイムゾーン情報を持たない環境（Windows の Git Bash など）では `TZ` が黙って無視され、
+   **UTC がそのまま返る**。9時間ずれた時刻で id を作ると、その日の分が前日扱いになる。
+   次のどちらかで取り、結果が日本時間として妥当かを必ず目で確かめる。
+
+   ```bash
+   node -e "console.log(new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Tokyo',dateStyle:'short',timeStyle:'short'}).format(new Date()))"
+   ```
+
+   ```bash
+   date -u '+%Y-%m-%d %H:%M'   # この結果に手で +9 時間する
+   ```
 2. `id` はこの実時刻から `YYYY-MM-DD-HHMM` として作る（例 `2026-09-14-0530`）。
 3. 実行環境が返すキャッシュ時刻（「as of ...Z」など）を現在時刻として使ってはならない。
 
