@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-12-1411",
+  "date": "2026-09-12",
+  "time": "14:11",
+  "createdAt": "2026-09-12T14:11:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "BOJ Set to Raise Interest Rates to 31-Year High",
+    "ja": "日銀、政策金利を31年ぶりの水準に引き上げへ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The Bank of Japan (BOJ) is expected to raise interest rates to 1.25% at its meeting on September 17-18.",
+            "ja": "日本銀行(日銀)は、9月17〜18日の会合で政策金利を1.25%に引き上げるとみられている。"
+          },
+          {
+            "en": "That would be the highest level in about 31 years.",
+            "ja": "実現すれば、約31年ぶりの高水準となる。"
+          },
+          {
+            "en": "A Reuters poll of 68 economists found that 97% now expect a hike, sharply up from 57% in an earlier survey.",
+            "ja": "ロイターが68人のエコノミストを対象に行った調査では、97%が利上げを予想しており、前回調査の57%から大きく上昇した。"
+          },
+          {
+            "en": "Rising oil prices and a weak yen are pushing inflation above the BOJ's 2% target.",
+            "ja": "原油価格の上昇と円安により、インフレ率が日銀の目標である2%を上回っている。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Governor Ueda has avoided commenting on daily market moves, but investors are already pricing in a hike.",
+            "ja": "植田総裁は日々の市場の動きへのコメントを控えているが、投資家はすでに利上げを織り込み済みだ。"
+          },
+          {
+            "en": "Board member Hajime Takata said the BOJ should act \"nimbly\" as prices keep rising.",
+            "ja": "高田創審議委員は、物価上昇が続く中で日銀は「機敏に」対応すべきだと述べた。"
+          },
+          {
+            "en": "The country's 10-year government bond yield has already crossed 3% for the first time in three decades.",
+            "ja": "同国の10年国債利回りはすでに3%を突破しており、30年ぶりの水準となっている。"
+          },
+          {
+            "en": "A hike would mark the shortest gap between rate increases since the BOJ began tightening policy in 2024.",
+            "ja": "利上げが実施されれば、日銀が2024年に金融引き締めを開始して以降、最も短い利上げ間隔となる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the Reuters poll, what percentage of economists now expect the BOJ to raise rates?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "57%"
+        },
+        {
+          "key": "B",
+          "text": "68%"
+        },
+        {
+          "key": "C",
+          "text": "31%"
+        },
+        {
+          "key": "D",
+          "text": "97%"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本文第1段落3文目に「A Reuters poll of 68 economists found that 97% now expect a hike, sharply up from 57% in an earlier survey.」とある。この文から、現在利上げを予想しているエコノミストの割合は97%だと分かる。(A)の57%は「前回調査」での割合であり、今回の数値ではない。(B)の68%は調査対象となったエコノミストの人数(68人)であり、割合ではない。(C)の31%は「約31年ぶり」という別の文脈の数字を流用した引っかけで、本文にそのような割合は登場しない。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "TOEIC Part 7では、1つの文中や近接する文に複数の数字が並ぶことが多く、それぞれの数字が人数なのか割合なのか、今回の数値なのか過去の数値なのかを正確に区別する必要がある。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why are economists expecting the BOJ to raise interest rates?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Because the yen has become too strong"
+        },
+        {
+          "key": "B",
+          "text": "Because rising oil prices and a weak yen are pushing inflation higher"
+        },
+        {
+          "key": "C",
+          "text": "Because the BOJ wants to lower government bond yields"
+        },
+        {
+          "key": "D",
+          "text": "Because the economists surveyed requested it"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本文第1段落4文目に「Rising oil prices and a weak yen are pushing inflation above the BOJ's 2% target.」とあり、これが利上げが見込まれている直接の理由である。(A)は本文と逆の内容で、実際には「円安(weak yen)」であり「円高」ではない。(C)と(D)はいずれも本文に記載のない情報である。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "TOEIC Part 7で理由・目的を問う設問では、because や as など因果関係を示す語の前後に根拠が置かれることが多いため、そうした接続表現に注目して読むのが解法のポイントである。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "hike",
+      "pos": "名",
+      "ja": "（急激な）引き上げ、上昇",
+      "gloss": "",
+      "example": {
+        "en": "The company announced a hike in shipping fees for next month.",
+        "ja": "その会社は来月の送料値上げを発表した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "poll",
+      "pos": "名",
+      "ja": "世論調査",
+      "gloss": "",
+      "example": {
+        "en": "A recent poll showed strong support for the new policy.",
+        "ja": "最近の世論調査では、新政策への強い支持が示された。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "economist",
+      "pos": "名",
+      "ja": "エコノミスト、経済学者",
+      "gloss": "",
+      "example": {
+        "en": "The economist predicted slower growth next year.",
+        "ja": "そのエコノミストは来年の成長鈍化を予測した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "target",
+      "pos": "名",
+      "ja": "目標",
+      "gloss": "",
+      "example": {
+        "en": "The firm set a target of 10% growth this year.",
+        "ja": "その会社は今年10%の成長という目標を設定した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "avoid",
+      "pos": "動",
+      "ja": "避ける",
+      "gloss": "",
+      "example": {
+        "en": "Managers should avoid making promises they cannot keep.",
+        "ja": "管理職は守れない約束をすることを避けるべきだ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "mark",
+      "pos": "動",
+      "ja": "（出来事などを）示す、記す",
+      "gloss": "",
+      "example": {
+        "en": "The deal will mark the company's largest acquisition to date.",
+        "ja": "その取引は、同社にとって過去最大の買収となる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "tightening",
+      "pos": "名",
+      "ja": "（金融）引き締め",
+      "gloss": "（＝金利を上げてお金を借りにくくすること）",
+      "example": {
+        "en": "The central bank's tightening made loans more expensive for businesses.",
+        "ja": "中央銀行の金融引き締めにより、企業向け融資のコストが上昇した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "gloss": "（＝投資した金額に対して得られる利益の割合のこと）",
+      "example": {
+        "en": "Investors watched the bond's yield rise throughout the week.",
+        "ja": "投資家たちは、その週を通して債券の利回りが上昇するのを注視した。"
+      }
+    }
+  ],
+  "glossary": {
+    "expected": {
+      "lemma": "expect",
+      "pos": "v",
+      "ja": "予想される",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "v",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "n",
+      "ja": "金利、率",
+      "note": ""
+    },
+    "meeting": {
+      "lemma": "meeting",
+      "pos": "n",
+      "ja": "会合",
+      "note": ""
+    },
+    "poll": {
+      "lemma": "poll",
+      "pos": "n",
+      "ja": "世論調査",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "n",
+      "ja": "エコノミスト",
+      "note": ""
+    },
+    "hike": {
+      "lemma": "hike",
+      "pos": "n",
+      "ja": "引き上げ",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "adv",
+      "ja": "急激に",
+      "note": ""
+    },
+    "survey": {
+      "lemma": "survey",
+      "pos": "n",
+      "ja": "調査",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "v",
+      "ja": "上昇している",
+      "note": ""
+    },
+    "weak": {
+      "lemma": "weak",
+      "pos": "adj",
+      "ja": "弱い",
+      "note": ""
+    },
+    "pushing": {
+      "lemma": "push",
+      "pos": "v",
+      "ja": "押し上げている",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "n",
+      "ja": "インフレ、物価上昇",
+      "note": ""
+    },
+    "target": {
+      "lemma": "target",
+      "pos": "n",
+      "ja": "目標",
+      "note": ""
+    },
+    "governor": {
+      "lemma": "governor",
+      "pos": "n",
+      "ja": "総裁",
+      "note": ""
+    },
+    "avoided": {
+      "lemma": "avoid",
+      "pos": "v",
+      "ja": "避けた",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "n",
+      "ja": "投資家",
+      "note": ""
+    },
+    "pricing": {
+      "lemma": "price",
+      "pos": "v",
+      "ja": "織り込むこと",
+      "note": "pricing in ＝ 織り込み済みにする"
+    },
+    "nimbly": {
+      "lemma": "nimbly",
+      "pos": "adv",
+      "ja": "機敏に",
+      "note": ""
+    },
+    "bond": {
+      "lemma": "bond",
+      "pos": "n",
+      "ja": "債券",
+      "note": ""
+    },
+    "yield": {
+      "lemma": "yield",
+      "pos": "n",
+      "ja": "利回り",
+      "note": ""
+    },
+    "crossed": {
+      "lemma": "cross",
+      "pos": "v",
+      "ja": "超えた",
+      "note": ""
+    },
+    "decades": {
+      "lemma": "decade",
+      "pos": "n",
+      "ja": "数十年",
+      "note": ""
+    },
+    "mark": {
+      "lemma": "mark",
+      "pos": "v",
+      "ja": "記す、示す",
+      "note": ""
+    },
+    "tightening": {
+      "lemma": "tighten",
+      "pos": "n",
+      "ja": "引き締め",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "keep + 現在分詞（〜し続ける）",
+    "quote": "Board member Hajime Takata said the BOJ should act \"nimbly\" as prices keep rising.",
+    "quoteJa": "高田創審議委員は、物価上昇が続く中で日銀は「機敏に」対応すべきだと述べた。",
+    "blocks": [
+      {
+        "heading": "構文：keep + 現在分詞（〜し続ける）",
+        "body": "「keep + doing」は「〜し続ける」という継続の意味を表す構文です。この文の keep rising は「上がり続ける」という意味になっています。keep はここでは「(ある状態や動作を)続ける」という意味の動詞として使われており、後ろに動名詞(-ing形)を取る点がポイントです。同じ意味は continue to rise や remain on an upward trend といった表現でも書き換えられます。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "TOEIC Part 5では、keep の後ろに動詞の原形ではなく-ing形が続くかどうかを問う語法問題が頻出です。「keep to rise」ではなく「keep rising」が正しい形である点に注意しましょう。また Part 7 の記事文では、物価や売上といった数値の動きを説明する際に keep rising / keep falling のような表現が繰り返し登場するため、意味を素早く把握できるようにしておくと読解のスピードが上がります。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "ビジネスメールや報告書でも、\"Sales have kept growing since the launch.\"(発売以来、売上は伸び続けている)のように、数値の継続的な変化を伝える際によく使われます。また \"Please keep me updated on the progress.\"(進捗について随時知らせてください)という依頼表現も、同じ keep + doing の応用形です。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜこの利上げが注目されているのか",
+      "body": "日銀が政策金利を1.25%に引き上げれば、1995年以来およそ31年ぶりの高水準となります。政策金利とは、中央銀行が銀行同士の短期的な資金の貸し借りに適用する基準の金利のことで、これが上がると企業や個人がお金を借りる際の金利も連動して上がりやすくなります。原油価格の上昇と円安がインフレ圧力を強め、日銀を利上げへと後押ししています。"
+    },
+    {
+      "heading": "📌 他の中央銀行との比較",
+      "body": "日本の10年国債利回りはすでに3%を超え、30年ぶりの水準に達しました。これは、米連邦準備制度理事会(FRB)や欧州中央銀行(ECB)が2022年以降に急速な利上げを進めてきた流れに、日本もようやく追随し始めたことを示しています。もっとも日本の政策金利は依然として主要国の中で最も低い水準にあり、金融政策の正常化はまだ道半ばです。"
+    },
+    {
+      "heading": "📌 日本企業・日本人ビジネスパーソンへの影響",
+      "body": "借入コストの上昇は、住宅ローン金利の引き上げや、企業による設備投資計画の見直しにつながる可能性があります。一方で円安の是正が進めば、輸入原材料コストの上昇に苦しんできた企業には追い風となります。海外出張や輸入品の調達を担当するビジネスパーソンは、為替と金利の両方の動きを注視しておく必要があります。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "金利が上がる局面では、借入の多い企業の株価は下押し圧力を受けやすい一方、銀行株は利ざや拡大への期待から買われやすくなります。経営者にとっては、資金調達のタイミングや、金利上昇を見込んだ財務計画の見直しが急務となります。投資家は今後の追加利上げのペースを見極めながら、金利に敏感な銘柄の保有比率を調整していくことになりそうです。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bank of Japan set to raise policy rate to 1.25% next week",
+      "publisher": "Nikkei Asia",
+      "url": "https://asia.nikkei.com/economy/bank-of-japan/bank-of-japan-set-to-raise-policy-rate-to-1.25-next-week",
+      "date": "2026-09-12"
+    },
+    {
+      "title": "BOJ set to raise interest rate to 1.25% next week",
+      "publisher": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/business/2026/09/12/economy/boj-interest-rate/",
+      "date": "2026-09-12"
+    },
+    {
+      "title": "BoJ's Ueda says no comment on daily moves, markets price in high likelihood of September rate hike",
+      "publisher": "FXStreet",
+      "url": "https://www.fxstreet.com/news/bojs-ueda-says-no-comment-on-daily-moves-markets-price-in-high-likelihood-of-september-rate-hike-202609020019",
+      "date": "2026-09-02"
+    }
+  ]
+}
