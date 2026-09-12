@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-12-1640",
+  "date": "2026-09-12",
+  "time": "16:40",
+  "createdAt": "2026-09-12T16:40:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Apple Raises iPhone 18 Pro Price by $100",
+    "ja": "アップル、iPhone最上位モデルを100ドル値上げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Apple raised the price of its newest flagship phone, the iPhone 18 Pro, by 100 dollars.",
+            "ja": "アップルは、最新の上位モデルであるiPhone 18 Proの価格を100ドル値上げした。"
+          },
+          {
+            "en": "The company announced the change on September 9, together with the new device itself.",
+            "ja": "同社は9月9日、新型機の発表と同時にこの価格改定を発表した。"
+          },
+          {
+            "en": "The new starting price is 1,199 dollars, up from 1,099 dollars for last year's model.",
+            "ja": "新しい本体価格は1,199ドルで、昨年モデルの1,099ドルから上がった。"
+          },
+          {
+            "en": "Apple said the increase was smaller than many analysts had expected.",
+            "ja": "アップルによると、今回の値上げ幅は多くのアナリストの予想よりも小さかった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The main reason is a global shortage of memory chips, which store data inside phones and computers.",
+            "ja": "主な理由は、スマートフォンやパソコンの内部でデータを保存するメモリーチップの世界的な不足である。"
+          },
+          {
+            "en": "Chipmakers are shifting factory space toward parts for artificial intelligence, leaving fewer chips for phones.",
+            "ja": "半導体メーカーが工場の生産能力を人工知能向け部品に振り向けており、スマートフォン向けのチップが不足している。"
+          },
+          {
+            "en": "As a result, many electronics makers are raising prices this year.",
+            "ja": "この結果、多くの電子機器メーカーが今年、値上げに踏み切っている。"
+          },
+          {
+            "en": "Pre-orders for the new phone start today, and it will reach stores on September 18.",
+            "ja": "新型機の予約は本日から始まり、9月18日に発売される。"
+          },
+          {
+            "en": "Analysts will watch closely to see whether customers accept the higher price.",
+            "ja": "顧客がこの値上げを受け入れるかどうか、アナリストは注視していく構えだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What is the new starting price of the iPhone 18 Pro?",
+      "choices": [
+        { "key": "A", "text": "1,099 dollars" },
+        { "key": "B", "text": "1,199 dollars" },
+        { "key": "C", "text": "1,299 dollars" },
+        { "key": "D", "text": "1,399 dollars" }
+      ],
+      "answer": "B",
+      "explanation": "本文（Summary）第1段落3文目に「新しい始値は1,199ドルで、昨年モデルの1,099ドルから上がった」とある。この文から、新モデルの価格が1,199ドルだと分かる。(A)の1,099ドルは「昨年モデル」の価格であり、今回の新価格と取り違えないよう注意が必要。(C)1,299ドル、(D)1,399ドルは本文に登場しない数字を使った引っかけ選択肢。",
+      "evidence": { "p": 0, "s": 2 },
+      "tip": "TOEIC Part 7では、複数の価格や年度が同じ文に並ぶことが多く、this year / last year など直前直後の語を手がかりに、どちらが問われている数値かを正確に区別することが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did Apple raise the price of the iPhone 18 Pro?",
+      "choices": [
+        { "key": "A", "text": "Because of a shortage of memory chips" },
+        { "key": "B", "text": "Because it added a new foldable design" },
+        { "key": "C", "text": "Because it opened new stores overseas" },
+        { "key": "D", "text": "Because it hired more engineers" }
+      ],
+      "answer": "A",
+      "explanation": "本文第2段落1文目に「主な理由は、メモリーチップの世界的な不足である」とある。(B)の折りたたみデザインの追加、(C)の海外新店舗、(D)の技術者増員は、いずれも本文に一切記載のない情報であり、出題者が作った紛らわしい選択肢である。",
+      "evidence": { "p": 1, "s": 0 },
+      "tip": "理由・目的を問う設問では、reason / because / due to など因果関係を示す語の直後に根拠が置かれることが多いため、そうした表現に注目して読むのが解法のポイント。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "flagship",
+      "pos": "名",
+      "ja": "主力製品、看板モデル",
+      "gloss": "（＝その企業が最も力を入れている代表的な製品のこと）",
+      "example": {
+        "en": "The new laptop is the company's flagship product this year.",
+        "ja": "その新しいノートパソコンは、今年の同社の主力製品だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "shortage",
+      "pos": "名",
+      "ja": "不足",
+      "gloss": "",
+      "example": {
+        "en": "The factory is dealing with a shortage of parts.",
+        "ja": "その工場は部品不足に対応している。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "shifting",
+      "pos": "動",
+      "ja": "移している（原形：shift）",
+      "gloss": "",
+      "example": {
+        "en": "The company is shifting production to a new plant this year.",
+        "ja": "その会社は今年、生産を新しい工場に移している。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "leaving",
+      "pos": "動",
+      "ja": "〜のままにしている（原形：leave）",
+      "gloss": "",
+      "example": {
+        "en": "The delay is leaving many customers waiting longer than expected.",
+        "ja": "その遅延により、多くの顧客が予想より長く待たされている。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "electronics",
+      "pos": "名",
+      "ja": "電子機器",
+      "gloss": "",
+      "example": {
+        "en": "Electronics makers are raising prices this quarter.",
+        "ja": "電子機器メーカーは今四半期、値上げを行っている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "analysts",
+      "pos": "名",
+      "ja": "アナリストたち",
+      "gloss": "",
+      "example": {
+        "en": "Several analysts expect sales to slow next year.",
+        "ja": "何人かのアナリストは、来年は売上が鈍化すると予想している。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "expected",
+      "pos": "動",
+      "ja": "予想した",
+      "gloss": "",
+      "example": {
+        "en": "The firm expected demand to stay strong through the year.",
+        "ja": "その会社は、需要が年間を通じて堅調に推移すると予想した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "announced",
+      "pos": "動",
+      "ja": "発表した",
+      "gloss": "",
+      "example": {
+        "en": "The company announced its new product last week.",
+        "ja": "その会社は先週、新製品を発表した。"
+      }
+    }
+  ],
+  "glossary": {
+    "raised": { "lemma": "raise", "pos": "v", "ja": "上げた", "note": "" },
+    "price": { "lemma": "price", "pos": "n", "ja": "価格", "note": "" },
+    "newest": { "lemma": "new", "pos": "adj", "ja": "最新の", "note": "" },
+    "flagship": { "lemma": "flagship", "pos": "n", "ja": "主力製品", "note": "" },
+    "phone": { "lemma": "phone", "pos": "n", "ja": "電話、携帯電話", "note": "" },
+    "announced": { "lemma": "announce", "pos": "v", "ja": "発表した", "note": "" },
+    "change": { "lemma": "change", "pos": "n", "ja": "変更、変化", "note": "" },
+    "starting": { "lemma": "start", "pos": "adj", "ja": "当初の、開始時の", "note": "starting price で「当初価格」" },
+    "increase": { "lemma": "increase", "pos": "n", "ja": "増加、値上げ", "note": "" },
+    "smaller": { "lemma": "small", "pos": "adj", "ja": "より小さい", "note": "" },
+    "expected": { "lemma": "expect", "pos": "v", "ja": "予想した", "note": "" },
+    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト", "note": "" },
+    "reason": { "lemma": "reason", "pos": "n", "ja": "理由", "note": "" },
+    "global": { "lemma": "global", "pos": "adj", "ja": "世界的な", "note": "" },
+    "shortage": { "lemma": "shortage", "pos": "n", "ja": "不足", "note": "" },
+    "memory": { "lemma": "memory", "pos": "n", "ja": "メモリー、記憶装置", "note": "" },
+    "chips": { "lemma": "chip", "pos": "n", "ja": "チップ（半導体部品）", "note": "" },
+    "store": { "lemma": "store", "pos": "v", "ja": "保存する", "note": "ここでは動詞" },
+    "data": { "lemma": "data", "pos": "n", "ja": "データ", "note": "" },
+    "inside": { "lemma": "inside", "pos": "prep", "ja": "〜の内部に", "note": "" },
+    "computers": { "lemma": "computer", "pos": "n", "ja": "コンピューター", "note": "" },
+    "chipmakers": { "lemma": "chipmaker", "pos": "n", "ja": "半導体メーカー", "note": "" },
+    "shifting": { "lemma": "shift", "pos": "v", "ja": "移している", "note": "" },
+    "factory": { "lemma": "factory", "pos": "n", "ja": "工場", "note": "" },
+    "parts": { "lemma": "part", "pos": "n", "ja": "部品", "note": "" },
+    "artificial intelligence": { "lemma": "artificial intelligence", "pos": "n", "ja": "人工知能", "note": "" },
+    "leaving": { "lemma": "leave", "pos": "v", "ja": "残して、〜のままにして", "note": "" },
+    "fewer": { "lemma": "few", "pos": "adj", "ja": "より少ない", "note": "" },
+    "electronics": { "lemma": "electronics", "pos": "n", "ja": "電子機器", "note": "" },
+    "raising": { "lemma": "raise", "pos": "v", "ja": "上げている", "note": "" }
+  },
+  "grammar": {
+    "topic": "非制限用法の関係代名詞（コンマ＋which）",
+    "quote": "The main reason is a global shortage of memory chips, which store data inside phones and computers.",
+    "quoteJa": "主な理由は、スマートフォンやパソコンの内部でデータを保存するメモリーチップの世界的な不足である。",
+    "blocks": [
+      {
+        "heading": "構文：コンマ＋which（非制限用法）",
+        "body": "コンマの後に置かれた which は、直前の名詞（ここでは memory chips）に補足説明を加える働きをします。制限用法（コンマなし）と違い、which以下の情報がなくても文の骨格（主語・動詞・補語）はすでに成立している点がポイントです。「メモリーチップが不足している。ちなみにそれはスマホやパソコンの中でデータを保存するものだ」という追加情報を、コンマ以下でさりげなく付け加えるイメージです。"
+      },
+      {
+        "heading": "書き換え・比較で理解する",
+        "body": "制限用法：\"The chips that failed the test were discarded.\"（検査に落ちたチップだけが廃棄された＝一部を限定）。非制限用法：\"The chips, which failed the test, were discarded.\"（そのチップは検査に落ち、廃棄された＝全部について追加説明）。コンマの有無だけで意味が大きく変わる点に注意してください。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、コンマ＋which に続く動詞の形（単数・複数の一致）を問う問題が頻出です。今回の文でも先行詞が複数名詞 chips なので、動詞も複数形 store になっています。Part 6・7では、非制限用法のwhich節が長い修飾語句を挟むため、主語と動詞の対応関係を見失いやすく、読解のスピードが落ちる原因になります。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"Please review the attached report, which summarizes last quarter's results.\"（添付の報告書をご確認ください。これは前四半期の結果をまとめたものです）のように、直前の名詞に補足説明を加えて丁寧に説明する際によく使われる表現です。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きているのか（用語のかみ砕き）",
+      "body": "「メモリーチップ」とは、スマートフォンやパソコンの中でデータを一時的・長期的に保存する半導体部品のことです。生成AIブームでAI用データセンター向けの需要が急増し、半導体メーカーはそちらへ生産ラインを優先的に振り向けています。その結果、スマホやパソコン向けのメモリーチップの供給が細り、部品価格が上昇しています。今回のiPhone値上げは、こうした値上げの波が消費者向け製品にも及び始めた一例です。"
+    },
+    {
+      "heading": "📌 業界全体・競合の動向",
+      "body": "値上げに動いているのはアップルだけではありません。パソコンメーカーや他のスマートフォンメーカーも同様に部品コスト増を理由に価格改定を進めており、業界調査会社は今年、スマートフォンやパソコンの世界出荷台数が前年より落ち込むと予測しています。今回の値上げ幅が「事前予想より小さかった」という点も注目され、値上げによる販売への打撃を避けたいという各社の慎重な姿勢の表れとも読めます。"
+    },
+    {
+      "heading": "📌 日本への影響",
+      "body": "日本の家電量販店やキャリアでも、iPhoneをはじめとするスマートフォンの店頭価格は今後上昇しやすくなります。為替が円安局面にあると、ドル建ての値上げがさらに重くのしかかり、消費者の買い替えサイクルが伸びる可能性があります。一方で、日本国内には半導体材料・製造装置を手掛ける企業も多く、メモリー不足そのものはこうした企業にとって追い風となる面もあります。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "値上げを最小限に抑えつつ増収を確保できるかどうかは、ブランド力と価格決定力の強さを映す指標として投資家に注目されます。経営者にとっては、部品コスト増を価格転嫁だけで吸収せず、サプライヤーとの長期契約や代替調達によってどこまでコストを抑えられるかが、来期以降の利益率を左右する重要な経営課題となります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "iPhone 18 Pro Price Hike to Be Lower Than Expected",
+      "publisher": "MacRumors",
+      "url": "https://www.macrumors.com/2026/09/09/iphone-18-pro-price-hike-to-be-lower-than-expected/",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "iPhone 18 Pro is here with a faster chip, huge battery gains and $100 price hike",
+      "publisher": "Macworld",
+      "url": "https://www.macworld.com/article/2953687/iphone-18-pro-max-2026-release-date-design-specs-price.html",
+      "date": "2026-09-09"
+    }
+  ]
+}
