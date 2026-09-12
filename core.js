@@ -59,6 +59,35 @@
       var k = Vocab.key(term);
       write('vocab', Vocab.all().filter(function (e) { return Vocab.key(e.term) !== k; }));
     },
+    /* 1件を部分更新する。復習結果（box と次回の期日）を書き戻すのに使う */
+    update: function (term, patch) {
+      var k = Vocab.key(term), list = Vocab.all(), hit = false;
+      list.forEach(function (e) {
+        if (Vocab.key(e.term) === k) { for (var p in patch) e[p] = patch[p]; hit = true; }
+      });
+      if (hit) write('vocab', list);
+      return hit;
+    },
+    /* 読み込み（他端末からの取り込み）。同じ語は既存を残す */
+    merge: function (incoming) {
+      if (!Array.isArray(incoming)) return 0;
+      var list = Vocab.all(), have = {}, added = 0;
+      list.forEach(function (e) { have[Vocab.key(e.term)] = 1; });
+      incoming.forEach(function (e) {
+        if (!e || !e.term) return;
+        var k = Vocab.key(e.term);
+        if (have[k]) return;
+        have[k] = 1; added++;
+        list.push({
+          term: e.term, pos: e.pos || '', ja: e.ja || '', gloss: e.gloss || '',
+          example: e.example || null, src: e.src || '', srcTitle: e.srcTitle || '',
+          addedAt: e.addedAt || new Date().toISOString(),
+          box: e.box || 0, due: e.due || '', reviewedAt: e.reviewedAt || ''
+        });
+      });
+      write('vocab', list);
+      return added;
+    },
     count: function () { return Vocab.all().length; }
   };
 

@@ -7,19 +7,31 @@
 <link rel="stylesheet" href="style.css?v=d0958a97">
 <style>
 body{padding-bottom:24px}
-.hub-head{padding:22px 0 14px}
+.hub-head{padding:22px 0 12px}
 .hub-head h1{margin:0;font-size:22px;letter-spacing:.04em;font-weight:800}
 .hub-head .sub{font-size:12.5px;color:var(--muted);margin-top:2px}
+
 .stats{display:flex;gap:10px;margin-top:16px}
-.stats div{
+.stats>*{
   flex:1;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--r);padding:12px 10px;text-align:center;
+  text-decoration:none;color:inherit;display:block;
 }
 .stats .n{font-size:22px;font-weight:800;line-height:1.1}
 .stats .l{font-size:11px;color:var(--muted);margin-top:3px}
+a.stat .l{color:var(--accent)}
+
+.tabs{display:flex;gap:4px;margin-top:18px;border-bottom:1px solid var(--line)}
+.tabs button{
+  flex:1;padding:10px 4px;border:0;background:transparent;
+  color:var(--muted);font:inherit;font-weight:700;font-size:14px;cursor:pointer;
+  border-bottom:2px solid transparent;margin-bottom:-1px;
+}
+.tabs button.on{color:var(--accent);border-bottom-color:var(--accent)}
+
+main{padding-top:14px}
 
 .today{display:block;text-decoration:none;color:inherit}
-.today .en{font-family:var(--serif);font-size:13px;color:var(--muted);margin-top:3px;line-height:1.4}
 .today h2{margin:6px 0 0;font-size:17px;line-height:1.5}
 .today .go{
   display:inline-flex;align-items:center;gap:6px;margin-top:14px;
@@ -39,9 +51,10 @@ body{padding-bottom:24px}
 .list .s{flex:none;font-size:11px;font-weight:700;color:var(--accent)}
 .list .s.done{color:var(--ok)}
 
-.soon{opacity:.55}
-.soon .row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;font-size:14px}
+.soon .row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 0;font-size:14px}
 .soon .row+.row{border-top:1px solid var(--line)}
+.soon .row .w{color:var(--muted);font-size:12px}
+.soon .row .name{color:var(--ink-2)}
 </style>
 </head>
 <body>
@@ -52,8 +65,12 @@ body{padding-bottom:24px}
     <div class="sub">時事英語と実践対策</div>
     <div class="stats">
       <div><div class="n" id="stStreak">0</div><div class="l">連続日数</div></div>
-      <div><div class="n" id="stVocab">0</div><div class="l">語彙帳</div></div>
+      <a class="stat" href="vocab.html"><div class="n" id="stVocab">0</div><div class="l">語彙帳 →</div></a>
       <div><div class="n" id="stDone">0</div><div class="l">学習した教材</div></div>
+    </div>
+    <div class="tabs">
+      <button data-tab="news" class="on">時事</button>
+      <button data-tab="drill">実践</button>
     </div>
   </header>
 
@@ -62,12 +79,14 @@ body{padding-bottom:24px}
   </main>
 </div>
 
-<script src="core.js?v=4d141fa0"></script>
+<script src="core.js?v=3854c17c"></script>
 <script>
 (function () {
   'use strict';
   var T = window.TOEIC, esc = T.esc;
   var main = document.getElementById('main');
+  var items = [];
+  var tab = 'news';
 
   document.getElementById('stStreak').textContent = T.Log.streak();
   document.getElementById('stVocab').textContent = T.Vocab.count();
@@ -82,16 +101,12 @@ body{padding-bottom:24px}
     return '';
   }
 
-  function render(items) {
-    var doneCount = items.filter(function (it) { var p = progressOf(it.id); return p && p.done; }).length;
-    document.getElementById('stDone').textContent = doneCount;
-
+  function newsHTML() {
     if (!items.length) {
-      main.innerHTML = '<div class="card"><div class="sec-label">時事英語</div>' +
+      return '<div class="card">' +
         '<p class="small muted" style="margin:0 0 12px">教材の目次を読めませんでした。' +
         'ローカルのファイルを直接開いた場合は読めません（GitHub Pages 上では読めます）。</p>' +
-        '<a class="go" href="news.html" style="display:inline-flex">開く →</a></div>' + soonHTML();
-      return;
+        '<a class="go" href="news.html" style="display:inline-flex">開く →</a></div>';
     }
 
     var top = items[0], p = progressOf(top.id);
@@ -109,7 +124,7 @@ body{padding-bottom:24px}
 
     if (items.length > 1) {
       html += '<div class="card"><div class="sec-label">これまでの教材</div><div class="list">' +
-        items.slice(1, 11).map(function (it) {
+        items.slice(1, 21).map(function (it) {
           var q = progressOf(it.id), s = statusLabel(q);
           return '<a href="news.html?id=' + encodeURIComponent(it.id) + '">' +
             '<span class="d">' + esc((it.date || '').slice(5).replace('-', '/') + (it.time ? ' ' + it.time : '')) + '</span>' +
@@ -118,25 +133,52 @@ body{padding-bottom:24px}
           '</a>';
         }).join('') + '</div></div>';
     }
-
-    main.innerHTML = html + soonHTML();
+    return html;
   }
 
-  function soonHTML() {
-    return '<div class="card soon"><div class="sec-label">実践対策（準備中）</div>' +
-      ['Part 3　会話問題', 'Part 4　説明文', 'Part 5　短文穴埋め', 'Part 6　長文穴埋め', 'Part 7　読解']
-        .map(function (t) { return '<div class="row"><span>' + t + '</span><span class="small muted">準備中</span></div>'; })
-        .join('') + '</div>';
+  function drillHTML() {
+    var parts = [
+      ['Part 3', '会話問題', '3人の会話・意図問題・図表'],
+      ['Part 4', '説明文', 'アナウンス・留守電・スピーチ'],
+      ['Part 5', '短文穴埋め', '文法と語彙'],
+      ['Part 6', '長文穴埋め', '文脈に合う語と一文挿入'],
+      ['Part 7', '読解', '単一文書・複数文書']
+    ];
+    return '<div class="card soon">' +
+      parts.map(function (p) {
+        return '<div class="row">' +
+          '<span><b>' + p[0] + '</b>　<span class="name">' + p[1] + '</span>' +
+          '<div class="w" style="margin-top:2px">' + p[2] + '</div></span>' +
+          '<span class="w">準備中</span></div>';
+      }).join('') +
+      '</div>' +
+      '<p class="small muted" style="margin:12px 2px 0">' +
+      '時事英語とは別のルーティンで教材を作り、<code>data/part3/</code> のようにパートごとに分けて置く予定です。' +
+      '片方が止まっても、もう片方に影響しないようにするためです。</p>';
   }
+
+  function render() {
+    main.innerHTML = tab === 'news' ? newsHTML() : drillHTML();
+    var done = items.filter(function (it) { var p = progressOf(it.id); return p && p.done; }).length;
+    document.getElementById('stDone').textContent = done;
+  }
+
+  document.querySelector('.tabs').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-tab]');
+    if (!b) return;
+    tab = b.dataset.tab;
+    document.querySelectorAll('.tabs button').forEach(function (x) { x.classList.toggle('on', x === b); });
+    render();
+  });
 
   fetch('data/news/index.json', { cache: 'no-store' })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (idx) {
-      var items = (idx && idx.items) || [];
+      items = (idx && idx.items) || [];
       items.sort(function (a, b) { return (b.id || '').localeCompare(a.id || ''); });
-      render(items);
+      render();
     })
-    .catch(function () { render([]); });
+    .catch(function () { items = []; render(); });
 })();
 </script>
 </body>

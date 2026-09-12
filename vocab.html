@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>語彙帳 | TOEIC Daily</title>
+<link rel="stylesheet" href="style.css?v=d0958a97">
+<style>
+body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
+
+.app-head{position:sticky;top:0;z-index:40;background:var(--surface);border-bottom:1px solid var(--line)}
+.head-row{display:flex;align-items:center;gap:8px;padding:12px 0}
+.head-row .grow{flex:1;min-width:0}
+.head-row h1{margin:0;font-size:17px;font-weight:800;letter-spacing:.02em}
+.icon-btn{
+  flex:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);
+  background:var(--surface-2);color:var(--ink-2);font-size:20px;line-height:1;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;text-decoration:none;
+}
+.tabs{display:flex;gap:4px;padding-bottom:10px}
+.tabs button{
+  flex:1;padding:8px 4px;border:0;border-radius:9px;background:transparent;
+  color:var(--muted);font:inherit;font-weight:700;font-size:13px;cursor:pointer;
+}
+.tabs button.on{background:var(--accent-soft);color:var(--accent-ink)}
+
+.stats{display:flex;gap:10px;margin:16px 0}
+.stats div{flex:1;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:11px 8px;text-align:center}
+.stats .n{font-size:20px;font-weight:800;line-height:1.1}
+.stats .l{font-size:11px;color:var(--muted);margin-top:3px}
+
+/* 復習カード */
+.card-wrap{margin-top:16px}
+.flash{min-height:230px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+.flash .term{font-family:var(--serif);font-size:32px;font-weight:700;line-height:1.2;word-break:break-word}
+.flash .pos{font-size:12px;color:var(--muted);margin-top:6px}
+.flash .reveal{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);text-align:left}
+.flash .ja{font-size:17px;font-weight:700}
+.flash .tip{font-size:13px;color:var(--ink-2);margin-top:6px;line-height:1.65}
+.flash .ex{
+  font-family:var(--serif);font-size:14px;line-height:1.7;color:var(--ink-2);
+  border-left:2px solid var(--line-2);padding-left:10px;margin-top:10px;
+}
+.flash .ex .j{font-family:var(--sans);font-size:12px;color:var(--muted);margin-top:2px}
+.flash .from{font-size:11px;color:var(--muted);margin-top:10px}
+.judge{display:flex;gap:10px;margin-top:12px}
+.judge .btn{flex:1;min-height:50px;font-size:15px}
+.btn-ng{border-color:var(--ng);color:var(--ng)}
+.btn-ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.progress{font-size:12px;color:var(--muted);text-align:center;margin-top:12px}
+
+/* 一覧 */
+.search{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
+  border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink);margin-bottom:12px}
+.vrow{display:flex;gap:10px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line)}
+.vrow:last-child{border-bottom:0}
+.vrow .body{flex:1;min-width:0}
+.vrow .t{font-family:var(--serif);font-size:17px;font-weight:700;line-height:1.25}
+.vrow .t .pos{font-family:var(--sans);font-size:11px;color:var(--muted);margin-left:6px;font-weight:400}
+.vrow .j{font-size:13.5px;margin-top:2px}
+.vrow .g{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.55}
+.vrow .meta{font-size:11px;color:var(--muted);margin-top:4px}
+.vrow .del{
+  flex:none;width:32px;height:32px;border-radius:8px;border:1px solid var(--line);
+  background:var(--surface-2);color:var(--muted);font-size:13px;cursor:pointer;
+}
+.boxdot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--line-2);margin-right:2px}
+.boxdot.on{background:var(--accent)}
+</style>
+</head>
+<body>
+
+<header class="app-head">
+  <div class="wrap">
+    <div class="head-row">
+      <div class="grow"><h1>語彙帳</h1></div>
+      <a class="icon-btn" href="index.html" title="ホーム">⌂</a>
+    </div>
+    <div class="tabs">
+      <button data-tab="review" class="on">復習</button>
+      <button data-tab="list">一覧</button>
+      <button data-tab="data">持ち出し</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main"></main>
+
+<script src="core.js?v=3854c17c"></script>
+<script>
+(function () {
+  'use strict';
+  var T = window.TOEIC, esc = T.esc;
+  var main = document.getElementById('main');
+
+  /* 間隔反復。できた回数が増えるほど次に会うまでを延ばす */
+  var DAYS = [1, 2, 4, 8, 16, 32];
+  var MAX_BOX = DAYS.length;
+
+  var tab = 'review';
+  var queue = [];     // 復習する語（term の配列）
+  var shown = false;  // いま表の面を見せているか
+  var doneCount = 0;
+
+  function today() { return T.Log.todayKey(); }
+  function addDays(n) {
+    var d = new Date();
+    d.setDate(d.getDate() + n);
+    return T.Log.todayKey(d);
+  }
+  function isDue(e) {
+    if (!e.due) return true;              // 一度も復習していない語はすぐ対象
+    return e.due <= today();
+  }
+  function dueList() { return T.Vocab.all().filter(isDue); }
+  function mastered() { return T.Vocab.all().filter(function (e) { return (e.box || 0) >= MAX_BOX; }).length; }
+
+  /* ---------- 描画 ---------- */
+
+  function renderStats() {
+    var all = T.Vocab.all();
+    return '<div class="stats">' +
+      '<div><div class="n">' + all.length + '</div><div class="l">登録</div></div>' +
+      '<div><div class="n">' + dueList().length + '</div><div class="l">今日の復習</div></div>' +
+      '<div><div class="n">' + mastered() + '</div><div class="l">習得</div></div>' +
+      '</div>';
+  }
+
+  function boxDots(box) {
+    var s = '';
+    for (var i = 0; i < MAX_BOX; i++) s += '<span class="boxdot' + (i < box ? ' on' : '') + '"></span>';
+    return s;
+  }
+
+  function render() {
+    if (tab === 'review') renderReview();
+    else if (tab === 'list') renderList();
+    else renderData();
+  }
+
+  /* ---------- 復習 ---------- */
+
+  function renderReview() {
+    var all = T.Vocab.all();
+    if (!all.length) {
+      main.innerHTML = renderStats() +
+        '<div class="card"><p class="small muted" style="margin:0">' +
+        'まだ語がありません。教材の語彙ステップや、本文の語をタップして ☆ を押すと貯まります。</p></div>';
+      return;
+    }
+    if (!queue.length) {
+      var left = dueList().length;
+      main.innerHTML = renderStats() +
+        '<div class="card" style="text-align:center;padding:28px 16px">' +
+        (left
+          ? '<p style="margin:0 0 14px">今日の復習が <b>' + left + '</b> 語あります。</p>' +
+            '<button class="btn btn-primary" id="start">はじめる</button>'
+          : '<p style="margin:0 0 6px;font-size:18px;font-weight:700">今日の復習は終わりです</p>' +
+            '<p class="small muted" style="margin:0">' +
+            (doneCount ? doneCount + ' 語を復習しました。' : '') +
+            '次に出てくるのは ' + esc(nextDue() || '—') + ' 以降です。</p>') +
+        '</div>';
+      return;
+    }
+
+    var e = byTerm(queue[0]);
+    if (!e) { queue.shift(); return render(); }
+
+    main.innerHTML = renderStats() +
+      '<div class="card card-wrap flash">' +
+        '<div>' +
+          '<div class="term">' + esc(e.term) + '</div>' +
+          (e.pos ? '<div class="pos">（' + esc(e.pos) + '）</div>' : '') +
+        '</div>' +
+        (shown
+          ? '<div class="reveal">' +
+              '<div class="ja">' + esc(e.ja || '（意味が未登録）') + '</div>' +
+              (e.gloss ? '<div class="tip">' + esc(e.gloss) + '</div>' : '') +
+              (e.example && e.example.en
+                ? '<div class="ex">' + esc(e.example.en) +
+                  (e.example.ja ? '<div class="j">' + esc(e.example.ja) + '</div>' : '') + '</div>'
+                : '') +
+              '<div class="from">' + boxDots(e.box || 0) +
+                (e.srcTitle ? '　' + esc(e.srcTitle) : '') + '</div>' +
+            '</div>'
+          : '') +
+      '</div>' +
+      (shown
+        ? '<div class="judge">' +
+            '<button class="btn btn-ng" data-judge="ng">あやしい</button>' +
+            '<button class="btn btn-ok" data-judge="ok">できた</button>' +
+          '</div>'
+        : '<div class="judge"><button class="btn btn-primary" id="show">意味を見る</button></div>') +
+      '<div class="progress">残り ' + queue.length + ' 語　　' +
+        '<button class="btn btn-sm" id="say">🔊 発音</button></div>';
+  }
+
+  function nextDue() {
+    var ds = T.Vocab.all().map(function (e) { return e.due; }).filter(Boolean).sort();
+    return ds[0] || '';
+  }
+  function byTerm(t) {
+    var k = T.Vocab.key(t);
+    return T.Vocab.all().filter(function (e) { return T.Vocab.key(e.term) === k; })[0] || null;
+  }
+
+  function judge(ok) {
+    var term = queue[0];
+    var e = byTerm(term);
+    if (e) {
+      var box = ok ? Math.min((e.box || 0) + 1, MAX_BOX) : 0;
+      var days = ok ? DAYS[Math.min(box, DAYS.length) - 1] : 0;
+      T.Vocab.update(term, {
+        box: box,
+        due: ok ? addDays(days) : today(),
+        reviewedAt: new Date().toISOString()
+      });
+    }
+    queue.shift();
+    if (!ok) queue.push(term);   // あやしい語はこの回のうちにもう一度出す
+    else doneCount++;
+    shown = false;
+    render();
+  }
+
+  /* ---------- 一覧 ---------- */
+
+  var filter = '';
+
+  function renderList() {
+    var all = T.Vocab.all().slice().sort(function (a, b) {
+      return String(b.addedAt || '').localeCompare(String(a.addedAt || ''));
+    });
+    var q = filter.trim().toLowerCase();
+    var list = q
+      ? all.filter(function (e) {
+          return (e.term || '').toLowerCase().indexOf(q) >= 0 ||
+                 (e.ja || '').indexOf(filter.trim()) >= 0;
+        })
+      : all;
+
+    main.innerHTML = renderStats() +
+      '<input class="search" id="q" placeholder="語・意味で絞り込む" value="' + esc(filter) + '">' +
+      '<div class="card">' +
+        (list.length
+          ? list.map(function (e) {
+              return '<div class="vrow">' +
+                '<div class="body">' +
+                  '<div class="t">' + esc(e.term) + (e.pos ? '<span class="pos">（' + esc(e.pos) + '）</span>' : '') + '</div>' +
+                  '<div class="j">' + esc(e.ja || '') + '</div>' +
+                  (e.gloss ? '<div class="g">' + esc(e.gloss) + '</div>' : '') +
+                  '<div class="meta">' + boxDots(e.box || 0) +
+                    (e.due ? '　次回 ' + esc(e.due.slice(5).replace('-', '/')) : '　未復習') +
+                    (e.srcTitle ? '　' + esc(e.srcTitle) : '') + '</div>' +
+                '</div>' +
+                '<button class="del" data-del="' + esc(e.term) + '" title="削除">✕</button>' +
+              '</div>';
+            }).join('')
+          : '<p class="small muted" style="margin:0">該当する語がありません。</p>') +
+      '</div>';
+  }
+
+  /* ---------- 書き出し・読み込み ---------- */
+
+  function renderData() {
+    main.innerHTML = renderStats() +
+      '<div class="card">' +
+        '<div class="sec-label">書き出し</div>' +
+        '<p class="small muted" style="margin:0 0 8px">学習記録はこの端末にしか残りません。' +
+        '別の端末で続けるには、下の内容をコピーして、向こうの「読み込み」に貼ってください。</p>' +
+        '<textarea id="out" readonly style="width:100%;min-height:140px;font-family:ui-monospace,monospace;' +
+        'font-size:11px;padding:10px;border-radius:8px;border:1px solid var(--line-2);' +
+        'background:var(--surface-2);color:var(--ink)"></textarea>' +
+        '<div class="tool-row"><button class="btn btn-sm btn-primary" id="copy">コピー</button></div>' +
+      '</div>' +
+      '<div class="card">' +
+        '<div class="sec-label">読み込み</div>' +
+        '<p class="small muted" style="margin:0 0 8px">貼り付けて取り込みます。' +
+        '<b>すでにある語はそのまま</b>で、無い語だけが足されます。復習の進み具合は上書きしません。</p>' +
+        '<textarea id="in" placeholder="ここに貼り付け" style="width:100%;min-height:120px;' +
+        'font-family:ui-monospace,monospace;font-size:11px;padding:10px;border-radius:8px;' +
+        'border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink)"></textarea>' +
+        '<div class="tool-row"><button class="btn btn-sm" id="imp">取り込む</button></div>' +
+      '</div>';
+    document.getElementById('out').value = JSON.stringify(T.Vocab.all());
+  }
+
+  /* ---------- 操作 ---------- */
+
+  document.querySelector('.tabs').addEventListener('click', function (ev) {
+    var b = ev.target.closest('button[data-tab]');
+    if (!b) return;
+    tab = b.dataset.tab;
+    document.querySelectorAll('.tabs button').forEach(function (x) { x.classList.toggle('on', x === b); });
+    render();
+  });
+
+  main.addEventListener('click', function (ev) {
+    var t = ev.target;
+
+    if (t.id === 'start') { queue = dueList().map(function (e) { return e.term; }); shown = false; doneCount = 0; render(); return; }
+    if (t.id === 'show') { shown = true; render(); return; }
+
+    var j = t.closest('[data-judge]');
+    if (j) { judge(j.dataset.judge === 'ok'); return; }
+
+    if (t.id === 'say') {
+      var e = byTerm(queue[0]);
+      if (e) T.TTS.speak(e.term, { rate: T.Settings.get('rate') });
+      return;
+    }
+
+    var d = t.closest('[data-del]');
+    if (d) {
+      T.Vocab.remove(d.dataset.del);
+      queue = queue.filter(function (x) { return T.Vocab.key(x) !== T.Vocab.key(d.dataset.del); });
+      T.toast('削除しました');
+      render();
+      return;
+    }
+
+    if (t.id === 'copy') {
+      var ta = document.getElementById('out');
+      ta.focus(); ta.select(); ta.setSelectionRange(0, ta.value.length);
+      var done = function () { T.toast('コピーしました'); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(ta.value).then(done).catch(function () {
+          try { document.execCommand('copy') ? done() : T.toast('選択したので手動でコピーしてください'); }
+          catch (e) { T.toast('選択したので手動でコピーしてください'); }
+        });
+      } else {
+        try { document.execCommand('copy') ? done() : T.toast('選択したので手動でコピーしてください'); }
+        catch (e) { T.toast('選択したので手動でコピーしてください'); }
+      }
+      return;
+    }
+
+    if (t.id === 'imp') {
+      var v = document.getElementById('in').value.trim();
+      if (!v) { T.toast('貼り付けてください'); return; }
+      var arr;
+      try { arr = JSON.parse(v); } catch (e) { T.toast('読み取れません'); return; }
+      if (!Array.isArray(arr)) { T.toast('語彙帳の形式ではありません'); return; }
+      var n = T.Vocab.merge(arr);
+      T.toast(n ? n + ' 語を取り込みました' : '新しい語はありませんでした');
+      render();
+      return;
+    }
+  });
+
+  main.addEventListener('input', function (ev) {
+    if (ev.target.id === 'q') {
+      filter = ev.target.value;
+      var pos = ev.target.selectionStart;
+      renderList();
+      var q = document.getElementById('q');
+      if (q) { q.focus(); q.setSelectionRange(pos, pos); }
+    }
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
