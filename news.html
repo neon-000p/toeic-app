@@ -6,7 +6,7 @@
 <title>時事英語 | TOEIC Daily</title>
 <link rel="stylesheet" href="style.css?v=d0958a97">
 <style>
-body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
 /* ヘッダー */
 .app-head{
@@ -188,11 +188,11 @@ details.src[open]>summary::before{content:"▾ ";}
 .app-foot{
   position:fixed;left:0;right:0;bottom:0;z-index:40;
   background:var(--surface);border-top:1px solid var(--line);
-  padding:9px 0 calc(9px + env(safe-area-inset-bottom));
+  padding:5px 0 calc(5px + env(safe-area-inset-bottom));
 }
-.foot-row{display:flex;align-items:center;gap:10px}
-.foot-row .mid{flex:1;text-align:center;font-size:12px;color:var(--muted);font-weight:700}
-.foot-row .btn{min-width:96px}
+.foot-row{display:flex;align-items:center;gap:8px}
+.foot-row .mid{flex:1;text-align:center;font-size:11.5px;color:var(--muted);font-weight:700}
+.foot-row .btn{min-width:80px;min-height:36px;padding:6px 12px;font-size:13.5px}
 </style>
 </head>
 <body>
@@ -217,9 +217,9 @@ details.src[open]>summary::before{content:"▾ ";}
 
 <nav class="app-foot">
   <div class="wrap foot-row">
-    <button class="btn" id="btnPrev">← 戻る</button>
+    <button class="btn" id="btnPrev">← Back</button>
     <div class="mid" id="footMid"></div>
-    <button class="btn btn-primary" id="btnNext">次へ →</button>
+    <button class="btn btn-primary" id="btnNext">Next →</button>
   </div>
 </nav>
 
@@ -807,20 +807,21 @@ details.src[open]>summary::before{content:"▾ ";}
   function renderFoot() {
     var isDone = stage.dataset.view === 'done';
     $('btnPrev').disabled = !isDone && step === 0;
+    $('btnPrev').textContent = '← Back';
     var next = $('btnNext');
     next.disabled = false;
     if (isDone) {
       $('footMid').textContent = '完了';
-      next.textContent = '最初から';
+      next.textContent = 'Restart';
       return;
     }
     $('footMid').textContent = (step + 1) + ' / ' + STEPS.length + '　' + STEPS[step].label;
     if (STEPS[step].key === 'quiz' && !state.graded && allAnswered()) {
-      next.textContent = '採点する';
+      next.textContent = 'Check';
     } else if (step === STEPS.length - 1) {
-      next.textContent = '学習を終える';
+      next.textContent = 'Finish';
     } else {
-      next.textContent = '次へ →';
+      next.textContent = 'Next →';
     }
   }
 
