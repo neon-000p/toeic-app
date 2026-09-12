@@ -20,7 +20,7 @@
   }
 
   /* ---------- 設定 ---------- */
-  var SETTINGS_DEFAULT = { voiceURI: '', rate: 0.95, showJa: false };
+  var SETTINGS_DEFAULT = { voiceURI: '', rate: 1, showJa: false };
   var Settings = {
     all: function () {
       var s = read('settings', {});
@@ -197,6 +197,110 @@
     };
   })();
 
+  /* ---------- Gemini（語の文脈的な意味） ----------
+     API キーはこの端末の localStorage にだけ置く。リポジトリは公開なので
+     キーを同梱することはできない。Google Cloud 側で HTTP リファラを
+     この Pages のドメインに制限しておくと、漏れたときの被害を抑えられる。 */
+  var AI = (function () {
+    var HOST = 'https://generativelanguage.googleapis.com/v1beta';
+    var CACHE_MAX = 600;
+
+    function cfg() {
+      var c = read('gemini', {}) || {};
+      return { key: c.key || '', model: c.model || 'gemini-3.5-flash' };
+    }
+    function setCfg(patch) {
+      var c = cfg();
+      for (var k in patch) c[k] = patch[k];
+      write('gemini', c);
+    }
+    function enabled() { return !!cfg().key; }
+
+    function cacheGet(k) { var c = read('gemini.cache', {}); return c[k] || null; }
+    function cachePut(k, v) {
+      var c = read('gemini.cache', {}) || {};
+      c[k] = v;
+      var keys = Object.keys(c);
+      if (keys.length > CACHE_MAX) {
+        keys.sort(function (a, b) { return (c[a].at || 0) - (c[b].at || 0); });
+        keys.slice(0, keys.length - CACHE_MAX).forEach(function (x) { delete c[x]; });
+      }
+      write('gemini.cache', c);
+    }
+
+    function call(path, body) {
+      var c = cfg();
+      if (!c.key) return Promise.reject(new Error('APIキーが未設定です'));
+      return fetch(HOST + path, {
+        method: body ? 'POST' : 'GET',
+        headers: body
+          ? { 'Content-Type': 'application/json', 'x-goog-api-key': c.key }
+          : { 'x-goog-api-key': c.key },
+        body: body ? JSON.stringify(body) : undefined
+      }).then(function (r) {
+        return r.text().then(function (t) {
+          var j = null;
+          try { j = JSON.parse(t); } catch (e) {}
+          if (!r.ok) {
+            var msg = (j && j.error && j.error.message) || (r.status + ' ' + r.statusText);
+            if (r.status === 400 || r.status === 401 || r.status === 403) msg = 'キーが無効か権限がありません（' + msg + '）';
+            if (r.status === 404) msg = 'モデル名が違うようです（' + msg + '）';
+            if (r.status === 429) msg = '呼び出し回数の上限に達しました';
+            throw new Error(msg);
+          }
+          return j;
+        });
+      });
+    }
+
+    /* generateContent が使えるモデルの一覧 */
+    function models() {
+      return call('/models').then(function (j) {
+        return ((j && j.models) || [])
+          .filter(function (m) { return (m.supportedGenerationMethods || []).indexOf('generateContent') >= 0; })
+          .map(function (m) { return { id: String(m.name || '').replace(/^models\//, ''), label: m.displayName || '' }; });
+      });
+    }
+
+    /* 語と、それが入っている英文を渡して、意味とこの文での使われ方を得る */
+    function lookup(word, sentence, scope) {
+      var key = (scope || '') + '|' + String(word).toLowerCase() + '|' + String(sentence || '').slice(0, 60);
+      var hit = cacheGet(key);
+      if (hit) return Promise.resolve(hit);
+
+      var prompt =
+        '次の英文に出てくる語について、日本語で簡潔に答えてください。\n\n' +
+        '語: ' + word + '\n' +
+        '英文: ' + sentence + '\n\n' +
+        '出力は下記のキーを持つ JSON だけにしてください。\n' +
+        '- pos: 品詞。名/動/形/副/前/接/熟 のいずれか\n' +
+        '- ja: その語の基本的な意味。20字以内\n' +
+        '- usage: この英文の中での使われ方。70字以内。訳語の言い換えではなく、' +
+        'どの語とつながっているか（目的語・前置詞・修飾先）や、なぜその意味になるかに触れること';
+
+      return call('/models/' + encodeURIComponent(cfg().model) + ':generateContent', {
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: {
+          temperature: 0.2,
+          maxOutputTokens: 400,
+          responseMimeType: 'application/json'
+        }
+      }).then(function (j) {
+        var parts = j && j.candidates && j.candidates[0] && j.candidates[0].content && j.candidates[0].content.parts;
+        var text = (parts && parts[0] && parts[0].text) || '';
+        var obj;
+        try { obj = JSON.parse(text); }
+        catch (e) { throw new Error('応答を読み取れませんでした'); }
+        var out = { pos: obj.pos || '', ja: obj.ja || '', usage: obj.usage || '', at: Date.now() };
+        if (!out.ja && !out.usage) throw new Error('応答が空でした');
+        cachePut(key, out);
+        return out;
+      });
+    }
+
+    return { cfg: cfg, setCfg: setCfg, enabled: enabled, models: models, lookup: lookup };
+  })();
+
   /* ---------- ユーティリティ ---------- */
   function esc(s) {
     return String(s == null ? '' : s)
@@ -233,7 +337,7 @@
 
   global.TOEIC = {
     read: read, write: write,
-    Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS,
+    Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS, AI: AI,
     esc: esc, splitWords: splitWords, markupEnglish: markupEnglish, toast: toast
   };
 })(window);

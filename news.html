@@ -1159,6 +1159,15 @@ details.src[open]>summary::before{content:"▾ ";}
     if (popWord) { popWord.classList.remove('open'); popWord = null; }
   }
 
+  /* タップした語が入っている英文だけを取り出す（和訳や補足は除く） */
+  function contextOf(el) {
+    var host = el.closest('.sent, .sline, .evid-line, .quote, .vex, .para');
+    if (!host) return '';
+    var c = host.cloneNode(true);
+    Array.prototype.forEach.call(c.querySelectorAll('.j, .small, .muted, .hint'), function (n) { n.remove(); });
+    return (c.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 400);
+  }
+
   function openPop(el) {
     closePop();
     var k = el.dataset.w, raw = el.dataset.raw;
@@ -1166,23 +1175,45 @@ details.src[open]>summary::before{content:"▾ ";}
     popWord = el; el.classList.add('open');
     pop = document.createElement('div');
     pop.className = 'pop';
-    if (g) {
-      var inBook = T.Vocab.has(g.lemma || raw);
-      pop.innerHTML =
-        '<div class="term">' + esc(raw) +
-          (g.lemma && g.lemma.toLowerCase() !== k ? '<span class="lemma">← ' + esc(g.lemma) + '</span>' : '') +
-        '</div>' +
-        '<div class="ja">' + (g.pos ? '<span class="muted small">(' + esc(g.pos) + ') </span>' : '') + esc(g.ja) + '</div>' +
-        (g.note ? '<div class="note">' + esc(g.note) + '</div>' : '') +
-        '<div class="row"><button class="btn btn-sm" data-add="' + esc(g.lemma || raw) + '">' +
-          (inBook ? '★ 語彙帳にあり' : '☆ 語彙帳に追加') + '</button>' +
-          '<button class="btn btn-sm" data-sayw="' + esc(raw) + '">🔊</button></div>';
-    } else {
-      pop.innerHTML = '<div class="term">' + esc(raw) + '</div>' +
-        '<div class="note">この語の語注はありません。</div>' +
-        '<div class="row"><button class="btn btn-sm" data-sayw="' + esc(raw) + '">🔊</button></div>';
-    }
+    var inBook = T.Vocab.has((g && g.lemma) || raw);
+    var head = '<div class="term">' + esc(raw) +
+      (g && g.lemma && g.lemma.toLowerCase() !== k ? '<span class="lemma">← ' + esc(g.lemma) + '</span>' : '') +
+      '</div>';
+    var body = g
+      ? '<div class="ja">' + (g.pos ? '<span class="muted small">(' + esc(g.pos) + ') </span>' : '') + esc(g.ja) + '</div>' +
+        (g.note ? '<div class="note">' + esc(g.note) + '</div>' : '')
+      : '<div class="note">この語の語注はありません。</div>';
+    var row = '<div class="row">' +
+      (g ? '<button class="btn btn-sm" data-add="' + esc(g.lemma || raw) + '">' +
+           (inBook ? '★ 語彙帳にあり' : '☆ 語彙帳に追加') + '</button>' : '') +
+      '<button class="btn btn-sm" data-sayw="' + esc(raw) + '">🔊</button></div>';
+    var ctx = contextOf(el);
+    var tail = T.AI.enabled()
+      ? '<div class="pop-ai"><div class="pop-ai-h">この文での使い方</div>' +
+        '<div class="pop-ai-b muted small">照会中…</div></div>'
+      : '<div class="pop-hint">⚙ で Gemini のキーを設定すると、この文での使われ方も出ます。</div>';
+
+    pop.dataset.word = raw;
+    pop.innerHTML = head + body + row + tail;
     document.body.appendChild(pop);
+
+    if (T.AI.enabled() && ctx) {
+      var mine = raw;
+      T.AI.lookup(raw, ctx, DATA.id).then(function (r) {
+        if (!pop || pop.dataset.word !== mine) return;
+        var b = pop.querySelector('.pop-ai-b');
+        if (!b) return;
+        b.className = 'pop-ai-b';
+        b.innerHTML =
+          (r.ja ? '<div class="pop-ai-ja">' + (r.pos ? '<span class="muted small">(' + esc(r.pos) + ') </span>' : '') +
+            esc(r.ja) + '</div>' : '') +
+          (r.usage ? '<div class="pop-ai-u">' + esc(r.usage) + '</div>' : '');
+      }).catch(function (e) {
+        if (!pop || pop.dataset.word !== mine) return;
+        var b = pop.querySelector('.pop-ai-b');
+        if (b) b.textContent = (e && e.message) || '取得できませんでした';
+      });
+    }
 
     var r = el.getBoundingClientRect();
     var top = r.bottom + window.scrollY + 6;
@@ -1248,6 +1279,18 @@ details.src[open]>summary::before{content:"▾ ";}
         '<input type="range" id="cfgRate" min="0.6" max="1.2" step="0.05" value="' + s.rate + '"></label>' +
       '<div class="tool-row"><button class="btn btn-sm" id="cfgTest">🔊 テスト再生</button></div>' +
       '<hr class="sep">' +
+      '<h2>語の意味（Gemini）</h2>' +
+      '<p class="small muted" style="margin:-6px 0 10px">語をタップしたとき、その文での使われ方を Gemini に尋ねます。' +
+        'キーは<b>この端末にだけ</b>保存され、GitHub には入りません。' +
+        'Google Cloud 側で HTTP リファラを <code>neon-000p.github.io</code> に制限しておくと安全です。</p>' +
+      '<label class="field"><span>API キー</span>' +
+        '<input type="password" id="gKey" placeholder="AIza…" autocomplete="off" value="' + esc(T.AI.cfg().key) + '"></label>' +
+      '<label class="field"><span>モデル</span><select id="gModel"></select></label>' +
+      '<div class="tool-row"><button class="btn btn-sm" id="gFetch">モデル一覧を取得</button>' +
+        '<button class="btn btn-sm" id="gTest">動作テスト</button>' +
+        '<button class="btn btn-sm" id="gClear">キーを消す</button></div>' +
+      '<div class="small muted" id="gInfo" style="margin-top:8px"></div>' +
+      '<hr class="sep">' +
       '<h2>教材を取り込む</h2>' +
       '<p class="small muted" style="margin:-6px 0 8px">ルーティンが出力した JSON を貼り付けるか、ファイルを選びます。取り込んだ教材はこの端末に保存されます。</p>' +
       '<textarea id="impText" placeholder="ここに JSON を貼り付け"></textarea>' +
@@ -1295,6 +1338,42 @@ details.src[open]>summary::before{content:"▾ ";}
           state = { answers: {}, graded: false, maxStep: 0, done: false };
           step = 0; bg.remove(); renderRail(); render(); T.toast('この教材の記録を消しました');
         };
+        /* --- Gemini --- */
+        var gKey = bg.querySelector('#gKey'), gModel = bg.querySelector('#gModel'), gInfo = bg.querySelector('#gInfo');
+        function fillModels(list) {
+          var cur = T.AI.cfg().model;
+          gModel.innerHTML = '';
+          if (!list.some(function (m) { return m.id === cur; })) list = [{ id: cur, label: '（現在の設定）' }].concat(list);
+          list.forEach(function (m) {
+            var o = document.createElement('option');
+            o.value = m.id;
+            o.textContent = m.id + (m.label ? '　' + m.label : '');
+            if (m.id === cur) o.selected = true;
+            gModel.appendChild(o);
+          });
+        }
+        fillModels([]);
+        gKey.onchange = function () { T.AI.setCfg({ key: gKey.value.trim() }); gInfo.textContent = gKey.value.trim() ? 'キーを保存しました。' : 'キーを消しました。'; };
+        gModel.onchange = function () { T.AI.setCfg({ model: gModel.value }); };
+        bg.querySelector('#gFetch').onclick = function () {
+          T.AI.setCfg({ key: gKey.value.trim() });
+          gInfo.textContent = '取得中…';
+          T.AI.models().then(function (list) {
+            fillModels(list);
+            gInfo.textContent = list.length + ' 件のモデルが使えます。flash 系が速くて安価です。';
+          }).catch(function (e) { gInfo.textContent = '取得できません: ' + (e.message || e); });
+        };
+        bg.querySelector('#gTest').onclick = function () {
+          T.AI.setCfg({ key: gKey.value.trim(), model: gModel.value });
+          gInfo.textContent = 'テスト中…';
+          T.AI.lookup('hike', 'A Reuters poll of 68 economists found that 97% now expect a hike.', 'test')
+            .then(function (r) { gInfo.textContent = 'OK: hike（' + r.pos + '）' + r.ja + ' ／ ' + r.usage; })
+            .catch(function (e) { gInfo.textContent = '失敗: ' + (e.message || e); });
+        };
+        bg.querySelector('#gClear').onclick = function () {
+          T.AI.setCfg({ key: '' }); gKey.value = ''; gInfo.textContent = 'キーを消しました。';
+        };
+
         bg.querySelector('#cfgClose').onclick = function () { bg.remove(); };
       });
   });
