@@ -109,7 +109,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
        解いたときに残した記録から取る。まだ解いていないセットは伏せたままにする。 */
     var q = T.Log.progress(P.key + it.id);
     if (q && q.scene && statusOf(it.id) === '済') return q.scene;
-    if (n === '3') return '会話 ' + (it.speakers || 2) + '人・3問';
+    if (n === '3') return (it.speakers || 2) + '人の会話';
     return (it.kind || '') + (it.questions ? ' ' + it.questions + '問' : '');
   }
 

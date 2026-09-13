@@ -199,7 +199,7 @@ a.row .w{color:var(--accent)}
     /* 解き終わったものは場面名を出す（一覧ページと揃える） */
     var q = T.Log.progress('part' + part + ':' + it.id);
     if (q && q.scene && drillStatus(part, it.id) === '済') return q.scene;
-    if (part === '3') return '会話 ' + (it.speakers || 2) + '人・3問';
+    if (part === '3') return (it.speakers || 2) + '人の会話';
     return (it.kind || '') + (it.questions ? ' ' + it.questions + '問' : '');
   }
 
