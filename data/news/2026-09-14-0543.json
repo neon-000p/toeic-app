@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-14-0543",
+  "date": "2026-09-14",
+  "time": "05:43",
+  "createdAt": "2026-09-14T05:43:00+09:00",
+  "genre": "宇宙",
+  "genreEn": "Space",
+  "sample": false,
+  "title": {
+    "en": "Arianespace Wins Record Order for Ariane 6 Rocket",
+    "ja": "アリアンスペース、アリアン6ロケットで過去最大の受注"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "European rocket company Arianespace has landed its biggest order yet for the Ariane 6 launch vehicle.",
+            "ja": "欧州のロケット企業アリアンスペースが、アリアン6ロケットでこれまでで最大となる受注を獲得した。"
+          },
+          {
+            "en": "At a major space industry summit, the firm signed seven new agreements covering roughly ten future missions.",
+            "ja": "大規模な宇宙産業サミットにおいて、同社は今後の打ち上げ約10回分をカバーする新たな契約7件に調印した。"
+          },
+          {
+            "en": "Amazon Leo, Amazon's satellite internet project, ordered six more Ariane 6 launches, raising its total booking from 18 to 24 flights through 2031.",
+            "ja": "アマゾンの衛星インターネット事業であるアマゾン・レオは、アリアン6の打ち上げをさらに6回追加発注し、2031年までの総契約数は18回から24回に増えた。"
+          },
+          {
+            "en": "Satellite operator Eutelsat also added two launches, planned for 2027 and 2028, to support its broadband network.",
+            "ja": "衛星通信事業者ユーテルサットも、自社のブロードバンド網を支えるため、2027年と2028年に予定する打ち上げを2回追加した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The surge in orders shows how much demand exists for launch capacity as companies build large satellite networks.",
+            "ja": "各社が大規模な衛星ネットワークを構築する中で、今回の受注急増は打ち上げ能力への需要の高さを物語っている。"
+          },
+          {
+            "en": "Because Ariane 6 already completed three successful missions this year, customers now trust its reliability.",
+            "ja": "アリアン6は今年すでに3回の打ち上げに成功しており、顧客はその信頼性を評価するようになっている。"
+          },
+          {
+            "en": "The new deals also cut the region's need to rely on rival rockets from elsewhere, strengthening the local space industry for years to come.",
+            "ja": "今回の契約はまた、他地域の競合ロケットへの依存を減らし、今後何年にもわたって地元の宇宙産業を強化することにもつながる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many total Ariane 6 launches has Amazon Leo now booked with Arianespace?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "18",
+          "ja": "18回"
+        },
+        {
+          "key": "B",
+          "text": "20",
+          "ja": "20回"
+        },
+        {
+          "key": "C",
+          "text": "22",
+          "ja": "22回"
+        },
+        {
+          "key": "D",
+          "text": "24",
+          "ja": "24回"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解はD（24）。第1段落3文目に \"raising its total booking from 18 to 24 flights through 2031\" とあり、契約の総数が18回から24回に増えたと明記されている。(A)の18は増加前の数字、(B)(C)は本文に登場しない数字であるため誤り。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "TOEIC Part 7では、\"from A to B\" のような変化を表す表現に注目し、質問が変化前と変化後のどちらを聞いているかを正確に見極めることが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT true about the new agreements described in the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Amazon Leo added six more Ariane 6 launches.",
+          "ja": "アマゾン・レオが6回追加発注した"
+        },
+        {
+          "key": "B",
+          "text": "Eutelsat booked two launches for 2027 and 2028.",
+          "ja": "ユーテルサットが2027・28年分を予約した"
+        },
+        {
+          "key": "C",
+          "text": "The agreements were signed at a major space industry summit.",
+          "ja": "契約はサミットで締結された"
+        },
+        {
+          "key": "D",
+          "text": "The new deals reduced the total number of launches Arianespace has booked.",
+          "ja": "受注総数は減少した"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解はD。本文では受注（契約数）が「増えた」と述べられており、「減った」とするDの内容は本文と正反対である。(A)(B)(C)はいずれも第1段落に明記されている事実であり正しい。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "NOT問題を解く際は、選択肢を1つずつ本文と照らし合わせ、本文の内容と矛盾するものを消去法で探すとよい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "order",
+      "pos": "名",
+      "ja": "受注、注文",
+      "gloss": "",
+      "example": {
+        "en": "The company received a large order from an overseas client.",
+        "ja": "その会社は海外の顧客から大口の注文を受けた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "agreements",
+      "pos": "名",
+      "ja": "契約、合意",
+      "gloss": "",
+      "example": {
+        "en": "Both companies signed several agreements last month.",
+        "ja": "両社は先月、複数の契約を結んだ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "covering",
+      "pos": "動",
+      "ja": "対象とする、扱う",
+      "gloss": "",
+      "example": {
+        "en": "The report is covering the whole fiscal year.",
+        "ja": "その報告書は会計年度全体を対象としている。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "raising",
+      "pos": "動",
+      "ja": "引き上げる、増やす",
+      "gloss": "",
+      "example": {
+        "en": "The firm is raising its sales target for next year.",
+        "ja": "その企業は来年の販売目標を引き上げようとしている。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "booking",
+      "pos": "名",
+      "ja": "契約件数、予約",
+      "gloss": "（＝ここでは契約・受注の件数のこと）",
+      "example": {
+        "en": "Hotel bookings increased sharply during the holiday season.",
+        "ja": "休暇シーズン中にホテルの予約が急増した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "surge",
+      "pos": "名",
+      "ja": "急増",
+      "gloss": "",
+      "example": {
+        "en": "There was a sudden surge in demand for the product.",
+        "ja": "その製品の需要が急激に増加した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "reliability",
+      "pos": "名",
+      "ja": "信頼性",
+      "gloss": "",
+      "example": {
+        "en": "Customers value the reliability of the service.",
+        "ja": "顧客はそのサービスの信頼性を重視している。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "rely on",
+      "pos": "熟",
+      "ja": "～に頼る",
+      "gloss": "",
+      "example": {
+        "en": "Many companies rely on a single supplier for key parts.",
+        "ja": "多くの企業が主要部品を一つの仕入先に頼っている。"
+      }
+    }
+  ],
+  "glossary": {
+    "landed": {
+      "lemma": "land",
+      "pos": "v",
+      "ja": "獲得した",
+      "note": ""
+    },
+    "biggest": {
+      "lemma": "big",
+      "pos": "adj",
+      "ja": "最大の",
+      "note": ""
+    },
+    "order": {
+      "lemma": "order",
+      "pos": "n",
+      "ja": "受注、注文",
+      "note": ""
+    },
+    "launch": {
+      "lemma": "launch",
+      "pos": "n",
+      "ja": "打ち上げ",
+      "note": ""
+    },
+    "vehicle": {
+      "lemma": "vehicle",
+      "pos": "n",
+      "ja": "機体",
+      "note": ""
+    },
+    "summit": {
+      "lemma": "summit",
+      "pos": "n",
+      "ja": "サミット、首脳会議",
+      "note": ""
+    },
+    "firm": {
+      "lemma": "firm",
+      "pos": "n",
+      "ja": "会社",
+      "note": ""
+    },
+    "signed": {
+      "lemma": "sign",
+      "pos": "v",
+      "ja": "署名した",
+      "note": ""
+    },
+    "agreements": {
+      "lemma": "agreement",
+      "pos": "n",
+      "ja": "契約",
+      "note": ""
+    },
+    "covering": {
+      "lemma": "cover",
+      "pos": "v",
+      "ja": "対象とする",
+      "note": ""
+    },
+    "roughly": {
+      "lemma": "roughly",
+      "pos": "adv",
+      "ja": "おおよそ",
+      "note": ""
+    },
+    "missions": {
+      "lemma": "mission",
+      "pos": "n",
+      "ja": "打ち上げ任務",
+      "note": ""
+    },
+    "project": {
+      "lemma": "project",
+      "pos": "n",
+      "ja": "事業",
+      "note": ""
+    },
+    "ordered": {
+      "lemma": "order",
+      "pos": "v",
+      "ja": "発注した",
+      "note": ""
+    },
+    "raising": {
+      "lemma": "raise",
+      "pos": "v",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "booking": {
+      "lemma": "booking",
+      "pos": "n",
+      "ja": "契約件数、予約",
+      "note": ""
+    },
+    "flights": {
+      "lemma": "flight",
+      "pos": "n",
+      "ja": "便、飛行",
+      "note": ""
+    },
+    "operator": {
+      "lemma": "operator",
+      "pos": "n",
+      "ja": "事業者",
+      "note": ""
+    },
+    "added": {
+      "lemma": "add",
+      "pos": "v",
+      "ja": "追加した",
+      "note": ""
+    },
+    "planned": {
+      "lemma": "plan",
+      "pos": "v",
+      "ja": "予定されている",
+      "note": ""
+    },
+    "broadband": {
+      "lemma": "broadband",
+      "pos": "n",
+      "ja": "ブロードバンド",
+      "note": ""
+    },
+    "surge": {
+      "lemma": "surge",
+      "pos": "n",
+      "ja": "急増",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "n",
+      "ja": "需要",
+      "note": ""
+    },
+    "capacity": {
+      "lemma": "capacity",
+      "pos": "n",
+      "ja": "能力",
+      "note": ""
+    },
+    "completed": {
+      "lemma": "complete",
+      "pos": "v",
+      "ja": "完了した",
+      "note": ""
+    },
+    "reliability": {
+      "lemma": "reliability",
+      "pos": "n",
+      "ja": "信頼性",
+      "note": ""
+    },
+    "rely": {
+      "lemma": "rely",
+      "pos": "v",
+      "ja": "頼る",
+      "note": ""
+    },
+    "rival": {
+      "lemma": "rival",
+      "pos": "adj",
+      "ja": "競合の",
+      "note": ""
+    },
+    "strengthening": {
+      "lemma": "strengthen",
+      "pos": "v",
+      "ja": "強化する",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "結果を表す分詞構文（, raising 〜）",
+    "quote": "Amazon Leo, Amazon's satellite internet project, ordered six more Ariane 6 launches, raising its total booking from 18 to 24 flights through 2031.",
+    "quoteJa": "アマゾンの衛星インターネット事業であるアマゾン・レオは、アリアン6の打ち上げをさらに6回追加発注し、これにより2031年までの総契約数は18回から24回に増えた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "カンマの後に現在分詞（raising）が続く分詞構文で、前の内容（発注したこと）が引き起こした「結果」を追加的に説明している。「そしてその結果〜になった」という意味合いで、and it raised... と2文に書き換えられる。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "\"...ordered six more launches. This raised its total booking from 18 to 24.\" のように2文に分けても意味は同じ。bringing / pushing / lifting なども同様に「結果」を表す分詞として使われる。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part5では、文末のカンマ＋現在分詞の空所補充で「~ing」形を選ばせる問題が頻出する。主語と分詞の関係が能動（増やす側）か受動（増やされる側）かを見極めるのがポイントで、ここでは「the order が booking を raise する」という能動関係なので raising（現在分詞）が正しい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"The company cut costs by 10%, boosting its profit margin.\" のように、決算資料やプレスリリースで「施策→結果」を1文で示す際によく使われる表現。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 業界の動き",
+      "body": "衛星インターネット事業の拡大により、ロケット打ち上げの需要が急増している。アリアン6のような大型ロケットは一度に多数の衛星を運べるため、アマゾン・レオのような大規模プロジェクトにとって欠かせない存在になっている。"
+    },
+    {
+      "heading": "📌 競合との関係",
+      "body": "打ち上げ市場では、SpaceXが低価格と高頻度の打ち上げで圧倒的なシェアを握ってきた。今回のアリアンスペースへの大量受注は、欧州企業がSpaceX一辺倒だった調達先を分散させたいという思惑の表れとも言える。"
+    },
+    {
+      "heading": "📌 日本への示唆",
+      "body": "日本の通信・商社業界も衛星通信サービスへの投資を強めており、海外ロケット会社の受注動向は、将来の打ち上げコストや納期に直結する重要な情報となる。国産ロケットH3にとっても、受注獲得の参考になる事例である。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "受注残（バックログ）の増加は、その企業の将来収益の安定性を示す重要な指標である。経営者にとっては、単発の大型契約よりも、複数年にわたる継続的な受注を積み上げることが、事業の持続可能性を高める鍵となる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "International Space Summit Highlights the Strength of Europe's Space Ecosystem",
+      "publisher": "Payload",
+      "url": "https://payloadspace.com/international-space-summit-highlights-the-strength-of-europes-space-ecosystem/",
+      "date": "2026-09-11"
+    },
+    {
+      "title": "Amazon Leo adds 6 new Arianespace launches, expanding its launch partnership",
+      "publisher": "About Amazon",
+      "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-arianespace-new-launches",
+      "date": "2026-09-10"
+    },
+    {
+      "title": "Amazon adds 6 Ariane rocket launches as Europe races to expand space sector",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/10/amazon-ariane-rocket-launch-space-spacex.html",
+      "date": "2026-09-10"
+    }
+  ]
+}
