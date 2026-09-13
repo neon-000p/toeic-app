@@ -806,7 +806,10 @@ details.src[open]>summary::before{content:"▾ ";}
 
   $('btnPrev').addEventListener('click', function () {
     if (stage.dataset.view === 'done') { stage.dataset.view = ''; render(); return; }
-    go(step - 1);
+    if (step > 0) { go(step - 1); return; }
+    /* 設問の画面では戻る先が無いので、ホームへ出る */
+    stopPlay();
+    location.href = 'index.html';
   });
 
   $('btnNext').addEventListener('click', function () {
@@ -818,8 +821,8 @@ details.src[open]>summary::before{content:"▾ ";}
 
   function renderFoot() {
     var isDone = stage.dataset.view === 'done';
-    $('btnPrev').disabled = !isDone && step === 0;
-    $('btnPrev').textContent = '← Back';
+    $('btnPrev').disabled = false;
+    $('btnPrev').textContent = (!isDone && step === 0) ? '← Home' : '← Back';
     var next = $('btnNext');
     next.disabled = false;
     if (isDone) {

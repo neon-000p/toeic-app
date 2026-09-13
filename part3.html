@@ -121,8 +121,13 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 .tip{background:var(--surface-2);border-radius:8px;padding:10px 12px;font-size:13.5px;line-height:1.75}
 .tip b{display:block;font-size:10px;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}
 .flow{font-size:14.5px;font-weight:700;line-height:1.7;margin:0}
-.ptcard h3{margin:0 0 7px;font-size:15px;color:var(--accent-ink);line-height:1.5}
-.ptcard p{margin:0;font-size:14px;line-height:1.8}
+/* Point は枠で区切らず、見出しと本文を続けて読ませる */
+.point{padding:16px 2px 0}
+.point h3{
+  margin:26px 0 8px;font-size:15px;color:var(--accent-ink);line-height:1.5;
+  padding-top:16px;border-top:1px solid var(--line);
+}
+.point p{margin:0;font-size:14px;line-height:1.8}
 
 .app-foot{
   position:fixed;left:0;right:0;bottom:0;z-index:40;
@@ -582,16 +587,16 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       return '<div class="card"><p class="small muted" style="margin:0">' +
         'このセットには総括がありません。設問ごとの聞き方は解説にあります。</p></div>';
     }
-    return '<div class="card">' +
+    /* 枠で囲まず、見出しと本文だけを並べる。読み物として続けて読めるように。 */
+    return '<div class="point">' +
       '<div class="sec-label">会話の型</div>' +
       '<p class="flow">' + esc(p.flow || '') + '</p>' +
-      '<p class="small muted" style="margin:8px 0 0">この型を覚えておくと、次に同じ展開が来たときに' +
-      '設問の順番まで予測できます。</p></div>' +
+      '<p class="small muted" style="margin:6px 0 0">この型を覚えておくと、次に同じ展開が来たときに' +
+      '設問の順番まで予測できます。</p>' +
       p.items.map(function (it) {
-        return '<div class="card ptcard">' +
-          '<h3>' + esc(it.title) + '</h3>' +
-          '<p>' + esc(it.body) + '</p></div>';
-      }).join('');
+        return '<h3>' + esc(it.title) + '</h3><p>' + esc(it.body) + '</p>';
+      }).join('') +
+      '</div>';
   }
 
   /* scroll: 'top' / 'q' / 省略 */
@@ -624,8 +629,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
   function renderFoot() {
     var prev = $('btnPrev'), next = $('btnNext'), mid = $('footMid');
-    prev.disabled = step === 0;
-    prev.textContent = '← Back';
+    prev.disabled = false;
+    prev.textContent = step === 0 ? '← Home' : '← Back';
     next.disabled = false;
     mid.textContent = midLabel();
 
@@ -652,7 +657,12 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     go(step + 1);
   });
 
-  $('btnPrev').addEventListener('click', function () { if (step > 0) go(step - 1); });
+  $('btnPrev').addEventListener('click', function () {
+    if (step > 0) { go(step - 1); return; }
+    /* 設問の画面では戻る先が無いので、ホーム（実践タブ）へ出る */
+    stopAll();
+    location.href = 'index.html?tab=drill';
+  });
 
   $('btnFinish').addEventListener('click', finish);
 
