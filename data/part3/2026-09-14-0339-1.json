@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-09-14-0339-1",
+  "date": "2026-09-14",
+  "time": "03:39",
+  "scene": "社内｜備品予算の承認待ち",
+  "speakers": [
+    { "tag": "M", "role": "男性", "accent": "en-US" },
+    { "tag": "W", "role": "女性", "accent": "en-GB" }
+  ],
+  "lines": [
+    { "tag": "M", "en": "Have you heard anything about the printer budget request I submitted last week?", "ja": "先週提出したプリンターの予算申請について何か聞いていますか。" },
+    { "tag": "W", "en": "Not yet. Finance moved it up to the director for a second review.", "ja": "まだです。経理がディレクターの再審査に回したところです。" },
+    { "tag": "M", "en": "A second review? I thought the department head already approved it.", "ja": "再審査ですか。部門長はもう承認したと思っていました。" },
+    { "tag": "W", "en": "He did, but the total went over the quarterly limit, so it needs one more signature.", "ja": "承認はしましたが、合計額が四半期の上限を超えたので、もう一つ署名が必要なんです。" },
+    { "tag": "M", "en": "That's a problem. My team needs the new printer by Wednesday for the client demo.", "ja": "それは困りますね。うちのチームは水曜日の顧客デモまでに新しいプリンターが必要です。" },
+    { "tag": "W", "en": "Could we split the request? Order just the printer now and add the ink cartridges later.", "ja": "申請を分けませんか。プリンターだけ先に注文して、インクカートリッジは後にする形で。" },
+    { "tag": "M", "en": "Would a smaller total avoid the second signature?", "ja": "金額を小さくすれば、その2つ目の署名は避けられますか。" },
+    { "tag": "W", "en": "Yes, anything under the quarterly limit only needs the department head's approval.", "ja": "はい、四半期の上限内であれば部門長の承認だけで済みます。" },
+    { "tag": "M", "en": "Then let's do that. Can you revise the form today?", "ja": "それでいきましょう。今日中に申請書を修正してもらえますか。" },
+    { "tag": "W", "en": "I'll update the numbers and send the revised form to you by four.", "ja": "金額を直して、修正した申請書を4時までにお送りします。" },
+    { "tag": "M", "en": "Great, I'll forward it to Finance the moment it arrives.", "ja": "助かります。届き次第、経理に転送します。" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        { "key": "A", "text": "Whether an equipment purchase has been approved", "ja": "備品の購入が承認されたかどうか" },
+        { "key": "B", "text": "A problem with the client demo", "ja": "顧客デモに関する問題" },
+        { "key": "C", "text": "A shortage of ink cartridges", "ja": "インクカートリッジの不足" },
+        { "key": "D", "text": "A change in the department head's role", "ja": "部門長の役割の変更" }
+      ],
+      "answer": "A",
+      "evidence": [0, 3],
+      "explanation": "男性は冒頭でプリンターの予算申請の状況を尋ね、女性は承認自体は済んだが総額が四半期の上限を超えたため追加の署名が必要だと説明している。つまり話題は備品購入の承認状況である。(B) の顧客デモは後半で納期の理由として出るだけで、話し合いの中心ではない。",
+      "tip": "冒頭の質問がそのまま話題の骨格になる。後半で出る具体的な理由（デモ、カートリッジ）は話題そのものではなく詳細に過ぎない点に注意する。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "According to the woman, why does the request need a second signature?",
+      "choices": [
+        { "key": "A", "text": "The director already rejected the form", "ja": "ディレクターがすでに申請書を却下したから" },
+        { "key": "B", "text": "The total cost is over the quarterly limit", "ja": "合計額が四半期の上限を超えているから" },
+        { "key": "C", "text": "The ink cartridges were out of stock", "ja": "インクカートリッジの在庫が切れていたから" },
+        { "key": "D", "text": "The client demo was rescheduled", "ja": "顧客デモの日程が変更されたから" }
+      ],
+      "answer": "B",
+      "evidence": [3],
+      "explanation": "女性は He did, but the total went over the quarterly limit, so it needs one more signature. と述べており、承認自体はされたが総額が上限を超えたことが追加署名の理由である。(A) は「却下された」としている点が、実際には承認済みという本文と矛盾する。",
+      "tip": "but の後に本当の理由が来ることが多い。「承認はされたが〜」という構造を聞き取れば、却下ではなく条件付きの承認だと分かる。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the man most likely do next?",
+      "choices": [
+        { "key": "A", "text": "Cancel the printer order", "ja": "プリンターの注文を取り消す" },
+        { "key": "B", "text": "Ask the director for a meeting", "ja": "ディレクターに面談を申し込む" },
+        { "key": "C", "text": "Forward the revised form to Finance", "ja": "修正した申請書を経理に転送する" },
+        { "key": "D", "text": "Pay for the ink cartridges himself", "ja": "自分でインクカートリッジの代金を払う" }
+      ],
+      "answer": "C",
+      "evidence": [9, 10],
+      "explanation": "女性が修正した申請書を4時までに送ると言い、男性は Great, I'll forward it to Finance the moment it arrives. と応じている。したがって次の行動は、届いた申請書を経理へ転送することである。(A) の注文取り消しは会話のどこにも出てこない。",
+      "tip": "「送ります」→「届いたら〜します」という受け答えの流れをそのまま追えば次の行動が分かる。"
+    }
+  ],
+  "glossary": {
+    "moved": { "lemma": "move", "pos": "v", "ja": "動かす、回す", "note": "ここでは案件を上位の承認者に回す意味" },
+    "review": { "lemma": "review", "pos": "n", "ja": "審査、再確認", "note": "" },
+    "approved": { "lemma": "approve", "pos": "v", "ja": "承認する", "note": "" },
+    "total": { "lemma": "total", "pos": "n", "ja": "合計額", "note": "" },
+    "quarterly": { "lemma": "quarterly", "pos": "adj", "ja": "四半期の", "note": "" },
+    "limit": { "lemma": "limit", "pos": "n", "ja": "上限", "note": "quarterly limit で「四半期の上限」" },
+    "signature": { "lemma": "signature", "pos": "n", "ja": "署名", "note": "承認のための署名" },
+    "split": { "lemma": "split", "pos": "v", "ja": "分割する", "note": "申請を2つに分ける" },
+    "cartridges": { "lemma": "cartridge", "pos": "n", "ja": "カートリッジ", "note": "ink cartridges で「インクカートリッジ」" },
+    "revise": { "lemma": "revise", "pos": "v", "ja": "修正する", "note": "" },
+    "form": { "lemma": "form", "pos": "n", "ja": "申請書、用紙", "note": "" },
+    "forward": { "lemma": "forward", "pos": "v", "ja": "転送する", "note": "" },
+    "demo": { "lemma": "demo", "pos": "n", "ja": "デモ、実演", "note": "demonstration の略" },
+    "department": { "lemma": "department", "pos": "n", "ja": "部門", "note": "department head で「部門長」" }
+  },
+  "point": {
+    "flow": "依頼の状況確認 → 制約の提示 → 妥協案 → 合意 → 分担",
+    "items": [
+      { "title": "承認は『済み／未』の二択ではない", "body": "承認済みでも金額次第で追加の署名が必要になる展開がよく出る。approved のような肯定的な語が出ても、その直後の but や however に続く条件を聞き逃すと、状況を逆に取ってしまう。" },
+      { "title": "妥協案は金額や範囲を削る形で来る", "body": "全部は無理という展開のあと、split や smaller のように対象を絞る代案が出る。代案の対象（何を後回しにするか）が detail 設問の根拠になりやすいので、Could we ...? の直後の具体的な内容を押さえる。" },
+      { "title": "次の行動は最後の2往復に集約される", "body": "誰が何をいつまでにするかは、終盤の I'll ... by ... という発言と、それを受けた相手の応答で確定する。この2行をセットで読めば next 設問はほぼ解ける。" }
+    ]
+  }
+}

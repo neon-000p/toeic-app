@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-09-14-0339-3",
+  "date": "2026-09-14",
+  "time": "03:39",
+  "scene": "出張・移動｜空港送迎の時間変更",
+  "speakers": [
+    { "tag": "W", "role": "女性", "accent": "en-US" },
+    { "tag": "M", "role": "男性", "accent": "en-GB" }
+  ],
+  "lines": [
+    { "tag": "W", "en": "Hi, I just wanted to confirm the driver for tomorrow's airport pickup.", "ja": "こんにちは、明日の空港送迎のドライバーについて確認したくて連絡しました。" },
+    { "tag": "M", "en": "Actually, that's why I'm calling. My flight got moved up two hours because of a schedule change.", "ja": "実は私もその件で電話しようと思っていました。スケジュール変更でフライトが2時間早まったんです。" },
+    { "tag": "W", "en": "Oh no, that means you'll land at nine instead of eleven.", "ja": "それは大変。11時ではなく9時に到着するということですね。" },
+    { "tag": "M", "en": "Right, and I'm not sure the driver we booked can make it that early.", "ja": "そうなんです。予約したドライバーがそんなに早く来られるか分かりません。" },
+    { "tag": "W", "en": "Let me check. Our regular driver starts at ten, so he can't cover nine.", "ja": "確認します。いつものドライバーは10時からなので、9時には対応できません。" },
+    { "tag": "M", "en": "Is there anyone else available, or should I just take a taxi from the airport?", "ja": "他に対応できる人はいますか。それとも空港からタクシーに乗った方がいいでしょうか。" },
+    { "tag": "W", "en": "There's a backup driver who starts at eight. I can switch the booking to him.", "ja": "8時から動ける予備のドライバーがいます。予約をその人に切り替えられます。" },
+    { "tag": "M", "en": "That would be great, as long as it doesn't cost extra.", "ja": "それは助かります。追加費用がかからないなら、ですが。" },
+    { "tag": "W", "en": "It won't. The backup driver charges the same flat rate.", "ja": "かかりません。予備のドライバーも同じ定額料金です。" },
+    { "tag": "M", "en": "Perfect. Can you send me his name and the car number once it's confirmed?", "ja": "助かります。確定したら、名前と車のナンバーを送ってもらえますか。" },
+    { "tag": "W", "en": "Of course. I'll text you the details as soon as I update the booking.", "ja": "もちろんです。予約を更新し次第、詳細をメッセージでお送りします。" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What problem does the man report?",
+      "choices": [
+        { "key": "A", "text": "His flight was canceled", "ja": "フライトが欠航になった" },
+        { "key": "B", "text": "His driver did not show up", "ja": "ドライバーが来なかった" },
+        { "key": "C", "text": "His flight will now arrive earlier than planned", "ja": "フライトが予定より早く到着することになった" },
+        { "key": "D", "text": "His taxi fare increased", "ja": "タクシー料金が上がった" }
+      ],
+      "answer": "C",
+      "evidence": [1, 2],
+      "explanation": "男性は My flight got moved up two hours と述べ、女性がそれを you'll land at nine instead of eleven と言い換えて確認している。つまり問題はフライトの到着が予定より早まったことである。(A) の欠航は本文に出てこない。",
+      "tip": "moved up は「時間が早まる」という意味。canceled（欠航）と混同しないよう、時刻がどう変わったかを具体的に聞き取る。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why can't the regular driver handle the new pickup time?",
+      "choices": [
+        { "key": "A", "text": "He was already booked for another airport run", "ja": "すでに別の空港送迎の予約が入っているから" },
+        { "key": "B", "text": "He asked to switch to the backup schedule", "ja": "予備のスケジュールへの変更を自分から希望したから" },
+        { "key": "C", "text": "He charges an extra fee for early pickups", "ja": "早朝の送迎には追加料金を取るから" },
+        { "key": "D", "text": "He does not start work early enough to cover 9 a.m.", "ja": "始業時刻が遅く、午前9時に対応できないから" }
+      ],
+      "answer": "D",
+      "evidence": [4],
+      "explanation": "女性は Our regular driver starts at ten, so he can't cover nine. と述べており、いつものドライバーの始業時刻が10時のため9時の送迎に対応できないことが理由である。(C) の追加料金は後半で backup driver について出る話で、regular driver の理由ではない。",
+      "tip": "できない理由を問う設問では、starts at や can't のような時間の制約を表す語に注目する。料金の話と時間の話を混同しないこと。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about the backup driver?",
+      "choices": [
+        { "key": "A", "text": "He is available earlier than the regular driver", "ja": "いつものドライバーより早い時間から対応できる" },
+        { "key": "B", "text": "He charges more than the regular driver", "ja": "いつものドライバーより料金が高い" },
+        { "key": "C", "text": "He works only on weekends", "ja": "週末しか働かない" },
+        { "key": "D", "text": "He is new to the company", "ja": "会社に入ったばかりだ" }
+      ],
+      "answer": "A",
+      "evidence": [6, 8],
+      "explanation": "女性は backup driver が starts at eight だと述べ、いつものドライバーの ten よりも早く動けることが分かる。さらに料金は The backup driver charges the same flat rate. と、いつものドライバーと変わらないと明言しているため、(B) の「料金が高い」は誤り。",
+      "tip": "明示されない情報を問う設問では、2つの発言（開始時刻と料金）を突き合わせて初めて分かる事実を選ぶ。片方だけでは判断しない。"
+    }
+  ],
+  "glossary": {
+    "confirm": { "lemma": "confirm", "pos": "v", "ja": "確認する", "note": "" },
+    "pickup": { "lemma": "pickup", "pos": "n", "ja": "送迎、出迎え", "note": "" },
+    "moved": { "lemma": "move up", "pos": "v", "ja": "（時間を）早める", "note": "move up の up で「前倒し」を表す" },
+    "schedule": { "lemma": "schedule", "pos": "n", "ja": "予定、スケジュール", "note": "" },
+    "land": { "lemma": "land", "pos": "v", "ja": "着陸する", "note": "" },
+    "booked": { "lemma": "book", "pos": "v", "ja": "予約する", "note": "" },
+    "regular": { "lemma": "regular", "pos": "adj", "ja": "いつもの、定期の", "note": "regular driver で「いつものドライバー」" },
+    "cover": { "lemma": "cover", "pos": "v", "ja": "対応する、カバーする", "note": "" },
+    "backup": { "lemma": "backup", "pos": "adj", "ja": "予備の", "note": "backup driver で「予備のドライバー」" },
+    "switch": { "lemma": "switch", "pos": "v", "ja": "切り替える", "note": "" },
+    "booking": { "lemma": "booking", "pos": "n", "ja": "予約", "note": "" },
+    "charges": { "lemma": "charge", "pos": "v", "ja": "請求する", "note": "" },
+    "flat rate": { "lemma": "flat rate", "pos": "n", "ja": "定額料金", "note": "" },
+    "confirmed": { "lemma": "confirm", "pos": "v", "ja": "確定される", "note": "" },
+    "details": { "lemma": "detail", "pos": "n", "ja": "詳細", "note": "" }
+  },
+  "point": {
+    "flow": "問題の発生 → 原因 → 代替案 → 可否確認 → 次の行動",
+    "items": [
+      { "title": "時刻がずれたら『誰の何時』を全部書き出す", "body": "出張系の会話では到着時刻や開始時刻の数字がいくつも出る。到着が9時、いつものドライバーは10時から、予備は8時からのように、誰の話が何時なのかを混同すると detail や infer の設問で数字を取り違える。" },
+      { "title": "できない理由は職務条件のズレで説明される", "body": "「対応できない」理由は、料金ではなく時間や条件のズレであることが多い。can't cover のあとに続く理由（開始時刻など）をそのまま根拠にし、料金の話と混ぜないようにする。" },
+      { "title": "代替案は費用が変わらない点が決め手になる", "body": "代替案が採用される決め手は、追加費用がかからないことである場合が多い。It won't. のような短い否定のあとに、費用が変わらない理由が続くので、その1文を聞き逃さないようにする。" }
+    ]
+  }
+}

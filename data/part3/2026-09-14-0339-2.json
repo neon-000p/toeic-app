@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-09-14-0339-2",
+  "date": "2026-09-14",
+  "time": "03:39",
+  "scene": "顧客対応｜見積もりプランの選定",
+  "speakers": [
+    { "tag": "W", "role": "女性", "accent": "en-AU" },
+    { "tag": "M", "role": "男性", "accent": "en-CA" }
+  ],
+  "lines": [
+    { "tag": "M", "en": "I got your email about the two design packages, but I'd like to ask a few questions first.", "ja": "2つのデザインプランについてのメールを拝見しました。先にいくつか質問させてください。" },
+    { "tag": "W", "en": "Of course. The standard package is one thousand two hundred dollars and takes four weeks.", "ja": "もちろんです。スタンダードプランは1200ドルで、期間は4週間です。" },
+    { "tag": "M", "en": "And how much is the premium option, and how long does that take?", "ja": "プレミアムの方はいくらで、期間はどのくらいですか。" },
+    { "tag": "W", "en": "That's one thousand nine hundred dollars, but we can finish it in ten days.", "ja": "1900ドルになりますが、10日で仕上げられます。" },
+    { "tag": "M", "en": "Ten days would work much better. We need the brochure ready for the trade show in two weeks.", "ja": "10日ならずっと助かります。展示会が2週間後なので、それまでにパンフレットを仕上げたいんです。" },
+    { "tag": "W", "en": "Then the premium package makes more sense here, even with the higher price.", "ja": "それでしたら、価格は高くてもプレミアムプランの方が理にかなっていますね。" },
+    { "tag": "M", "en": "Agreed. The extra cost is worth it if we don't miss the show.", "ja": "そうですね。展示会に間に合うなら、追加費用の価値はあります。" },
+    { "tag": "W", "en": "Great. I'll send over the updated contract for you to sign this afternoon.", "ja": "承知しました。今日の午後、署名用の更新した契約書をお送りします。" },
+    { "tag": "M", "en": "Perfect. Once I sign it, when does the design work actually start?", "ja": "了解です。署名したら、実際のデザイン作業はいつ始まりますか。" },
+    { "tag": "W", "en": "As soon as we receive your signature, our designer starts the same day.", "ja": "署名をいただき次第、デザイナーが同じ日に作業を始めます。" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the woman, what is different about the premium package?",
+      "choices": [
+        { "key": "A", "text": "It costs less than the standard package", "ja": "スタンダードプランより安い" },
+        { "key": "B", "text": "It takes four weeks to complete", "ja": "完成まで4週間かかる" },
+        { "key": "C", "text": "It requires signing a longer contract", "ja": "より長い契約書への署名が必要になる" },
+        { "key": "D", "text": "It can be completed in ten days", "ja": "10日で完成できる" }
+      ],
+      "answer": "D",
+      "evidence": [3],
+      "explanation": "女性はスタンダードプランについて one thousand two hundred dollars and takes four weeks と述べたあと、プレミアムについて we can finish it in ten days と対比している。(B) の四週間はスタンダードプランの期間であり、プレミアムのものと入れ替えた誤答である。",
+      "tip": "2案の比較設問では、価格と期間を取り違えた選択肢がよく出る。どちらの案の数字かを線でつなぐ意識で聞く。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the woman mean when she says, \"the premium package makes more sense here\"?",
+      "choices": [
+        { "key": "A", "text": "The faster option is worth the extra cost given the deadline", "ja": "納期を考えれば、早い方の選択肢は追加費用に見合う" },
+        { "key": "B", "text": "The trade show date should be moved instead", "ja": "展示会の日程の方を変更すべきだ" },
+        { "key": "C", "text": "The client should keep the lower-priced package", "ja": "顧客は価格の低いプランを選ぶべきだ" },
+        { "key": "D", "text": "The contract terms need to change before deciding", "ja": "決定の前に契約条件を変える必要がある" }
+      ],
+      "answer": "A",
+      "evidence": [4, 5],
+      "explanation": "男性が展示会までにパンフレットが必要だと期限を伝えた直後に、女性は even with the higher price と価格が高い点を認めたうえでプレミアムを勧めている。つまり期限を考えれば追加費用を払う価値があるという趣旨。(C) は本文の流れと逆で、実際には高い方を勧めている。",
+      "tip": "even with 〜 は「〜という欠点はあるが」という譲歩の合図。その後に続く結論（premium の方が良い）が発言の本当の意図になる。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will most likely happen after the man signs the contract?",
+      "choices": [
+        { "key": "A", "text": "The woman will issue a refund", "ja": "女性が返金を行う" },
+        { "key": "B", "text": "The designer will start work the same day", "ja": "デザイナーが同じ日に作業を始める" },
+        { "key": "C", "text": "The trade show will be postponed", "ja": "展示会が延期される" },
+        { "key": "D", "text": "The standard package will be canceled", "ja": "スタンダードプランが取り消される" }
+      ],
+      "answer": "B",
+      "evidence": [7, 9],
+      "explanation": "女性は契約書を送ると伝えたあと、男性の質問に対して As soon as we receive your signature, our designer starts the same day. と答えている。したがって署名の直後にデザイナーが作業を始めることが分かる。",
+      "tip": "As soon as we receive ... の直後に続く内容が、署名後の具体的な動きを示す答えになる。"
+    }
+  ],
+  "glossary": {
+    "package": { "lemma": "package", "pos": "n", "ja": "プラン、パッケージ", "note": "" },
+    "standard": { "lemma": "standard", "pos": "adj", "ja": "標準の", "note": "standard package で「標準プラン」" },
+    "premium": { "lemma": "premium", "pos": "adj", "ja": "上位の、割増の", "note": "premium package で「上位プラン」" },
+    "finish": { "lemma": "finish", "pos": "v", "ja": "仕上げる、完成させる", "note": "" },
+    "brochure": { "lemma": "brochure", "pos": "n", "ja": "パンフレット", "note": "" },
+    "trade show": { "lemma": "trade show", "pos": "n", "ja": "展示会", "note": "" },
+    "sense": { "lemma": "sense", "pos": "n", "ja": "道理、意味", "note": "makes sense で「理にかなう」" },
+    "agreed": { "lemma": "agree", "pos": "v", "ja": "同意する", "note": "" },
+    "worth": { "lemma": "worth", "pos": "adj", "ja": "価値がある", "note": "worth it で「その価値がある」" },
+    "contract": { "lemma": "contract", "pos": "n", "ja": "契約書", "note": "" },
+    "sign": { "lemma": "sign", "pos": "v", "ja": "署名する", "note": "" },
+    "receive": { "lemma": "receive", "pos": "v", "ja": "受け取る", "note": "" },
+    "signature": { "lemma": "signature", "pos": "n", "ja": "署名", "note": "" },
+    "designer": { "lemma": "designer", "pos": "n", "ja": "デザイナー", "note": "" },
+    "afternoon": { "lemma": "afternoon", "pos": "n", "ja": "午後", "note": "" }
+  },
+  "point": {
+    "flow": "依頼への提案 → 2案の提示 → 条件の比較 → 決定と理由 → 次の行動",
+    "items": [
+      { "title": "2案が出たら価格と期間を対で覚える", "body": "比較と決定型では、必ず2つの案がそれぞれ「金額」と「期間（または条件）」の対で提示される。どちらの数字がどちらの案のものかを線でつなぐ意識で聞かないと、detail 設問で数字を取り違える誤答を選んでしまう。" },
+      { "title": "決定の理由は直前に出た制約と結びつく", "body": "高い方や早い方を選ぶ決定には必ず理由がある。多くは直前に出た締め切りや制約（この会話では展示会の日程）が根拠になっているので、決定の発言だけでなく、その一つ前の発言もセットで根拠に含める。" },
+      { "title": "署名や合意のあとの手順まで問われる", "body": "決定して終わりではなく、契約や署名のあとに何が起こるかまで会話に含まれることが多い。次の行動を問う設問は、最後の1〜2往復にある「〜したら、すぐに…」という時系列の発言が根拠になる。" }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-09-14-0339-5",
+  "date": "2026-09-14",
+  "time": "03:39",
+  "scene": "イベント運営｜展示会ブースの人員配置",
+  "speakers": [
+    { "tag": "W", "role": "女性", "accent": "en-US" },
+    { "tag": "M", "role": "男性", "accent": "en-GB" },
+    { "tag": "M2", "role": "男性", "accent": "en-AU" }
+  ],
+  "lines": [
+    { "tag": "W", "en": "We have a problem with the trade show booth schedule for Friday afternoon.", "ja": "金曜午後の展示会ブースのシフトで問題が起きています。" },
+    { "tag": "M", "en": "What's wrong? I thought we had four people covering the shifts.", "ja": "何が問題ですか。4人でシフトをカバーする予定だったと思いますが。" },
+    { "tag": "W", "en": "Two of them just told me they're stuck in a training session until three.", "ja": "そのうち2人が、3時まで研修に出ずっぱりになると今伝えてきたんです。" },
+    { "tag": "M2", "en": "I could cover the noon to two slot if someone else takes over after that.", "ja": "誰かがその後を引き継いでくれるなら、私が正午から2時の枠を担当できます。" },
+    { "tag": "W", "en": "That would help, but we still need someone from two to three.", "ja": "それは助かりますが、2時から3時の枠がまだ空いています。" },
+    { "tag": "M", "en": "I can shift my lunch and take that hour if it's only sixty minutes.", "ja": "1時間だけなら、昼休みをずらしてその時間を担当できます。" },
+    { "tag": "W", "en": "That works. So Priya covers noon to two, and you take two to three.", "ja": "それでいきましょう。Priyaが正午から2時、あなたが2時から3時ですね。" },
+    { "tag": "M2", "en": "Should we also print an extra schedule sheet for the booth table?", "ja": "ブースの机に置く予備のスケジュール表も印刷しておきましょうか。" },
+    { "tag": "M", "en": "Good idea. People keep asking who's on duty when.", "ja": "いい考えですね。誰が何時に担当か、みんなよく聞いてきますから。" },
+    { "tag": "W", "en": "I'll print three copies, one for each of us, before we leave tonight.", "ja": "今夜出る前に、3人分の3枚を印刷しておきます。" },
+    { "tag": "M2", "en": "Perfect. I'll let the training instructor know I might step out a few minutes early.", "ja": "助かります。研修の講師には少し早めに抜けるかもしれないと伝えておきます。" },
+    { "tag": "W", "en": "Thanks, both. That solves the gap completely.", "ja": "二人ともありがとう。それで穴は完全に埋まりますね。" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What problem are the speakers discussing?",
+      "choices": [
+        { "key": "A", "text": "A gap in staffing the trade show booth", "ja": "展示会ブースの人員に穴が空いていること" },
+        { "key": "B", "text": "A shortage of printed schedule sheets", "ja": "印刷したスケジュール表の不足" },
+        { "key": "C", "text": "A delay in the training session start time", "ja": "研修の開始時刻の遅れ" },
+        { "key": "D", "text": "A change in the trade show location", "ja": "展示会の会場の変更" }
+      ],
+      "answer": "A",
+      "evidence": [0, 2],
+      "explanation": "女性は We have a problem with the trade show booth schedule for Friday afternoon. と切り出し、続けて2人が研修で抜けられないことを伝えている。つまり問題はブースの人員が足りなくなることである。(B) のスケジュール表の不足は後半で出る別の話題であり、最初の問題ではない。",
+      "tip": "冒頭の problem という語のあとに、原因（研修で2人が抜ける）が続く。この2文をセットで読めば話題がつかめる。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the man mean when he says, \"if it's only sixty minutes\"?",
+      "choices": [
+        { "key": "A", "text": "He refuses to change his lunch schedule", "ja": "昼休みの変更を拒否している" },
+        { "key": "B", "text": "He is willing to help only if the gap is short", "ja": "空いている時間が短ければ手伝ってもよいと考えている" },
+        { "key": "C", "text": "He wants to reduce the length of the training session", "ja": "研修時間を短くしたいと考えている" },
+        { "key": "D", "text": "He thinks the schedule sheet is inaccurate", "ja": "スケジュール表が不正確だと考えている" }
+      ],
+      "answer": "B",
+      "evidence": [5],
+      "explanation": "女性が2時から3時の枠がまだ空いていると伝えた直後に、男性は I can shift my lunch and take that hour if it's only sixty minutes. と答えている。if it's only ~ は「その程度の短さなら」という条件付きの申し出で、長ければ難しいという含みがある。",
+      "tip": "if only ~ の形は「その条件なら OK」という限定的な承諾を表す。条件そのものが何を指しているか（ここでは1時間という短さ）を確認する。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will most likely happen before the end of the day?",
+      "choices": [
+        { "key": "A", "text": "The trade show will be canceled", "ja": "展示会が中止になる" },
+        { "key": "B", "text": "The training session will be shortened", "ja": "研修時間が短縮される" },
+        { "key": "C", "text": "Three copies of the schedule will be printed and shared", "ja": "スケジュール表が3枚印刷されて共有される" },
+        { "key": "D", "text": "A new staff member will be hired", "ja": "新しいスタッフが採用される" }
+      ],
+      "answer": "C",
+      "evidence": [9, 10],
+      "explanation": "女性は I'll print three copies, one for each of us, before we leave tonight. と述べ、続けてM2も研修の講師に早退の可能性を伝えると応じている。したがって、今日中にスケジュール表が3部印刷されて共有されることが分かる。",
+      "tip": "今日中の行動を問う設問では、before we leave tonight のような期限つきの発言と、それに応じるもう一人の発言を両方確認する。"
+    }
+  ],
+  "glossary": {
+    "booth": { "lemma": "booth", "pos": "n", "ja": "ブース", "note": "" },
+    "schedule": { "lemma": "schedule", "pos": "n", "ja": "予定表、シフト", "note": "" },
+    "training": { "lemma": "training", "pos": "n", "ja": "研修", "note": "" },
+    "session": { "lemma": "session", "pos": "n", "ja": "セッション、会", "note": "training session で「研修」" },
+    "cover": { "lemma": "cover", "pos": "v", "ja": "担当する、カバーする", "note": "" },
+    "slot": { "lemma": "slot", "pos": "n", "ja": "時間枠", "note": "" },
+    "shift": { "lemma": "shift", "pos": "v", "ja": "ずらす", "note": "ここでは昼休みの時間を動かす意味" },
+    "lunch": { "lemma": "lunch", "pos": "n", "ja": "昼休み", "note": "" },
+    "minutes": { "lemma": "minute", "pos": "n", "ja": "分", "note": "" },
+    "works": { "lemma": "work", "pos": "v", "ja": "うまくいく", "note": "That works. で「それでいきましょう」" },
+    "print": { "lemma": "print", "pos": "v", "ja": "印刷する", "note": "" },
+    "extra": { "lemma": "extra", "pos": "adj", "ja": "予備の、追加の", "note": "" },
+    "sheet": { "lemma": "sheet", "pos": "n", "ja": "用紙、表", "note": "schedule sheet で「スケジュール表」" },
+    "duty": { "lemma": "duty", "pos": "n", "ja": "担当、勤務", "note": "on duty で「担当中」" },
+    "copies": { "lemma": "copy", "pos": "n", "ja": "部数、コピー", "note": "" },
+    "instructor": { "lemma": "instructor", "pos": "n", "ja": "講師", "note": "" },
+    "gap": { "lemma": "gap", "pos": "n", "ja": "隙間、穴", "note": "人員の空きを指す" }
+  },
+  "point": {
+    "flow": "問題の発生 → 原因 → 代替案 → 可否 → 次の行動",
+    "items": [
+      { "title": "3人会話は担当の突き合わせが要になる", "body": "誰がどの時間帯を担当するかが複数の発言に分かれて出るため、話者ごとに担当時間を対応づけながら聞く必要がある。この会話でも noon to two と two to three が別の話者からそれぞれ出ており、突き合わせないと担当が分からない。" },
+      { "title": "条件付きの申し出は『その条件』の中身を確認する" ,"body": "if it's only ~ のような条件付きの申し出は、条件が満たされない場合は成立しないことを含んでいる。申し出の言葉だけでなく、直前にどんな条件（時間の長さなど）が示されたかをセットで捉える。" },
+      { "title": "最後の合意のあとに実務的な後処理が続く" ,"body": "担当が決まったあとも、共有資料の準備や関係者への連絡といった細かい後処理が会話の終盤に足される。next 設問の根拠は、担当の決定そのものではなく、その後に出る具体的な作業の発言にあることが多い。" }
+    ]
+  }
+}

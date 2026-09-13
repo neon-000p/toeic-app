@@ -1,8 +1,53 @@
 {
   "schemaVersion": 1,
   "type": "part3-history",
-  "updatedAt": "2026-09-13T01:29:00+09:00",
+  "updatedAt": "2026-09-14T03:39:00+09:00",
   "items": [
+    {
+      "id": "2026-09-14-0339-5",
+      "date": "2026-09-14",
+      "scene": "イベント運営｜展示会ブースの人員配置",
+      "genre": "イベント運営",
+      "speakers": 3,
+      "types": ["gist", "intent", "next"],
+      "flow": "問題と解決"
+    },
+    {
+      "id": "2026-09-14-0339-4",
+      "date": "2026-09-14",
+      "scene": "経理｜請求書の金額誤り",
+      "genre": "請求・経理",
+      "speakers": 2,
+      "types": ["detail", "next", "infer"],
+      "flow": "報告と指示"
+    },
+    {
+      "id": "2026-09-14-0339-3",
+      "date": "2026-09-14",
+      "scene": "出張・移動｜空港送迎の時間変更",
+      "genre": "出張・移動",
+      "speakers": 2,
+      "types": ["gist", "detail", "infer"],
+      "flow": "問題と解決"
+    },
+    {
+      "id": "2026-09-14-0339-2",
+      "date": "2026-09-14",
+      "scene": "顧客対応｜見積もりプランの選定",
+      "genre": "顧客対応",
+      "speakers": 2,
+      "types": ["detail", "intent", "next"],
+      "flow": "比較と決定"
+    },
+    {
+      "id": "2026-09-14-0339-1",
+      "date": "2026-09-14",
+      "scene": "社内｜備品予算の承認待ち",
+      "genre": "社内調整",
+      "speakers": 2,
+      "types": ["gist", "detail", "next"],
+      "flow": "依頼と調整"
+    },
     {
       "id": "2026-09-13-0129",
       "date": "2026-09-13",
