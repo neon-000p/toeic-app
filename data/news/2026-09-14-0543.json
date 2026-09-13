@@ -450,5 +450,21 @@
       "url": "https://www.cnbc.com/2026/09/10/amazon-ariane-rocket-launch-space-spacex.html",
       "date": "2026-09-10"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-14-0543/00.mp3",
+      "audio/2026-09-14-0543/01.mp3",
+      "audio/2026-09-14-0543/02.mp3",
+      "audio/2026-09-14-0543/03.mp3",
+      "audio/2026-09-14-0543/04.mp3",
+      "audio/2026-09-14-0543/05.mp3",
+      "audio/2026-09-14-0543/06.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 244251,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-13T20:48:11.351Z",
+    "trimmed": true
+  }
 }
