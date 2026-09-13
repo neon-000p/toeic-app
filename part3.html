@@ -756,7 +756,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     lineAudio = null;
   }
 
-  function stopPlay() { chain = false; T.TTS.cancel(); stopLineAudio(); markLine(-1); }
+  function stopPlay() { chain = false; T.TTS.cancel(); stopLineAudio(); nextClip = null; markLine(-1); }
 
   function speakByTTS(i, onend) {
     var p = T.TTS.speakerPlan(SET.speakers);
@@ -765,13 +765,28 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     T.TTS.speak(l.en, { rate: T.Settings.get('rate'), voiceURI: sp.voiceURI, pitch: sp.pitch, onend: onend });
   }
 
+  /* 次の1本を先に読み込んでおく。鳴り終わってから読み始めると、
+     その待ち時間ぶん文と文の間が空いてしまう。 */
+  var nextClip = null;
+
+  function preload(i) {
+    var url = lineURL(i);
+    if (!url) { nextClip = null; return; }
+    var a = new Audio();
+    a.preload = 'auto';
+    a.src = url;
+    nextClip = { url: url, el: a };
+  }
+
   function speakLine(i, onend) {
     markLine(i);
     var url = lineURL(i);
     if (!url) { speakByTTS(i, onend); return; }
 
     stopLineAudio();
-    var a = new Audio(url);
+    var a = (nextClip && nextClip.url === url) ? nextClip.el : new Audio(url);
+    nextClip = null;
+    preload(i + 1);
     lineAudio = a;
     a.playbackRate = T.Settings.get('rate') || 1;
     var fell = false;

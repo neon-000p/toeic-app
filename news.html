@@ -1131,6 +1131,19 @@ details.src[open]>summary::before{content:"▾ ";}
 
   /* 用意された音声があればそれを、無ければ端末の読み上げを使う。
      音声待ちの教材でも読めなくならないようにするため。 */
+  /* 次の1文を先に読み込んでおく。鳴り終わってから読み始めると、
+     その待ち時間ぶん文と文の間が空いてしまう。 */
+  var nextClip = null;
+
+  function preload(i) {
+    var url = sentURL(i);
+    if (!url) { nextClip = null; return; }
+    var a = new Audio();
+    a.preload = 'auto';
+    a.src = url;
+    nextClip = { url: url, el: a };
+  }
+
   function saySent(i, onend) {
     var ss = linesFor();
     if (!ss[i]) { if (onend) onend(); return; }
@@ -1142,7 +1155,9 @@ details.src[open]>summary::before{content:"▾ ";}
     }
 
     stopSentAudio();
-    var a = new Audio(url);
+    var a = (nextClip && nextClip.url === url) ? nextClip.el : new Audio(url);
+    nextClip = null;
+    preload(i + 1);
     sentAudio = a;
     a.playbackRate = T.Settings.get('rate') || 1;
     var fell = false;
@@ -1174,7 +1189,7 @@ details.src[open]>summary::before{content:"▾ ";}
     })(0);
   }
 
-  function stopPlay() { T.TTS.cancel(); stopSentAudio(); playing = null; markPlay(null, -1); }
+  function stopPlay() { T.TTS.cancel(); stopSentAudio(); nextClip = null; playing = null; markPlay(null, -1); }
 
   /* 自動コピーが拒否される端末向けの受け皿。選択済みで出すので、
      長押しやキー操作でそのままコピーできる。 */

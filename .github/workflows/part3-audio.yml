@@ -80,6 +80,11 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node tools/make-news-audio.js --all ${{ inputs.force && '--force' || '' }}
 
+      # すでに置いてあるクリップの前後の無音を削る。API は呼ばない
+      - name: 既存の音声を整える
+        if: always()
+        run: node tools/trim-existing.js
+
       - name: main に足す
         if: always()
         run: |

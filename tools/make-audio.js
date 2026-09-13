@@ -61,6 +61,7 @@ async function lineClips(set, id, voices) {
     const pcm = await tts('Say this line naturally, at a steady pace: ' + l.en,
       lib.oneVoice(voices[l.tag]));
     const r = writeAudio(dir, base, [pcm]);
+    lib.trimSilence(path.join(dir, r.name), KBPS);
     out.push(`audio/${id}/${r.name}`);
     console.log('できました');
   }

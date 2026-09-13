@@ -68,6 +68,7 @@ async function build(file, force) {
       'Read this sentence clearly, at a steady pace, as a news reader would: ' + sents[i].en,
       lib.oneVoice(VOICE));
     const r = lib.writeAudio(dir, base, [pcm], KBPS);
+    lib.trimSilence(path.join(dir, r.name), KBPS);
     lines.push(`audio/${id}/${r.name}`);
     console.log('できました');
   }

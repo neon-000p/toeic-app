@@ -117,6 +117,29 @@ function toMp3(wavPath, mp3Path, kbps) {
     { stdio: ['ignore', 'ignore', 'pipe'] });
 }
 
+/* 前後の無音を削る。文ごと・行ごとのクリップは、そのままだと前後に
+   0.3秒ほどの間が入っていて、続けて鳴らすと不自然に空く。
+   ffmpeg が無い、あるいはフィルタが通らない環境では、何もせず元のまま残す
+   （間が空くだけで、学習はできる）。 */
+function trimSilence(file, kbps) {
+  if (!hasFfmpeg() || !/\.mp3$/.test(file)) return false;
+  const tmp = file.replace(/\.mp3$/, '.trim.mp3');
+  const f = 'silenceremove=start_periods=1:start_duration=0:start_threshold=-45dB';
+  try {
+    execFileSync('ffmpeg', ['-y', '-i', file,
+      '-af', f + ',areverse,' + f + ',areverse',
+      '-codec:a', 'libmp3lame', '-b:a', (kbps || 48) + 'k', tmp],
+      { stdio: ['ignore', 'ignore', 'pipe'] });
+    if (!fs.existsSync(tmp) || fs.statSync(tmp).size < 512) { fs.rmSync(tmp, { force: true }); return false; }
+    fs.renameSync(tmp, file);
+    return true;
+  } catch (e) {
+    fs.rmSync(tmp, { force: true });
+    console.log('  無音の削除に失敗したのでそのままにします（' + (e.message || e).slice(0, 80) + '）');
+    return false;
+  }
+}
+
 /* 生PCM を1本の音声ファイルとして書き出す。ffmpeg があれば MP3 にする。
    戻り値は置いたファイル名（拡張子込み）と長さ。 */
 function writeAudio(dir, base, parts, kbps) {
@@ -134,5 +157,5 @@ function writeAudio(dir, base, parts, kbps) {
 module.exports = {
   MODEL, RATE, GAP, KEY,
   sleep, tts, oneVoice, twoVoices,
-  wav, hasFfmpeg, toMp3, writeAudio
+  wav, hasFfmpeg, toMp3, writeAudio, trimSilence
 };
