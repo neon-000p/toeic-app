@@ -604,6 +604,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       k === 'vocab' ? viewVocab() : viewPoint();
     if (k === 'quiz' && phase === 'play') markMic();
     renderFoot();
+    /* 先読みの残りが他の画面に持ち越されないようにする */
+    if (!lineAudio && !audioEl) setBar(0);
     /* 設問の読み上げ中は動かさない。本番は紙の問題用紙なので、
        勝手に画面が動くと目で追っている場所を見失う。
        いまどの設問かは枠の色で分かる。 */
@@ -752,11 +754,14 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   function stopLineAudio() {
     if (!lineAudio) return;
     try { lineAudio.pause(); } catch (e) {}
-    lineAudio.onended = lineAudio.onerror = null;
+    lineAudio.onended = lineAudio.onerror = lineAudio.ontimeupdate = null;
     lineAudio = null;
   }
 
-  function stopPlay() { chain = false; T.TTS.cancel(); stopLineAudio(); nextClip = null; markLine(-1); }
+  function stopPlay() {
+    chain = false; T.TTS.cancel(); stopLineAudio(); nextClip = null;
+    setBar(0); markLine(-1);
+  }
 
   function speakByTTS(i, onend) {
     var p = T.TTS.speakerPlan(SET.speakers);
@@ -789,6 +794,16 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     preload(i + 1);
     lineAudio = a;
     a.playbackRate = T.Settings.get('rate') || 1;
+
+    /* フッターのバーを再生の進み具合にする。
+       続けて鳴らしているときは会話全体、1行だけならその行の中での位置。 */
+    a.ontimeupdate = function () {
+      var d = a.duration || 0;
+      if (!d) return;
+      var frac = a.currentTime / d;
+      var total = lines().length || 1;
+      setBar(chain ? ((i + frac) / total) * 100 : frac * 100);
+    };
     var fell = false;
     /* 音声が無い・鳴らせないときは端末の読み上げに戻す。学習を止めないため */
     var fallback = function () {
@@ -804,12 +819,12 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   function playLine(i) {
     if (!lines()[i]) return;
     chain = false;
-    speakLine(i, function () { markLine(-1); });
+    speakLine(i, function () { setBar(0); markLine(-1); });
   }
   function replayAll() {
     stopPlay(); chain = true;
     (function next(i) {
-      if (!chain || i >= lines().length) { chain = false; markLine(-1); return; }
+      if (!chain || i >= lines().length) { chain = false; setBar(0); markLine(-1); return; }
       speakLine(i, function () { next(i + 1); });
     })(0);
   }
