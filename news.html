@@ -7,7 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=89a966a8">
+<link rel="stylesheet" href="style.css?v=6fa34579">
 <style>
 body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
@@ -168,13 +168,18 @@ details.src[open]>summary::before{content:"▾ ";}
 .terms-only .vja,.terms-only .vgloss,.terms-only .vex{display:none}
 .terms-only .vcard.open .vja,.terms-only .vcard.open .vgloss,.terms-only .vcard.open .vex{display:block}
 .terms-only .vcard{cursor:pointer}
-.sline{display:flex;gap:10px;align-items:flex-start;padding:8px 8px;border-radius:9px;cursor:pointer}
+.sline{display:flex;gap:10px;align-items:flex-start;padding:8px 8px;border-radius:9px}
 /* 区切り線は置かない。再生中の行が光るので、行の切れ目はそれで分かる */
 /* 対訳では読みを妨げないよう語の下線を出さない（タップは従来どおり効く） */
 .sline .body{flex:1;min-width:0}
 .sline .e{display:block;font-family:var(--serif);font-size:16.5px;line-height:1.6}
 .sline .j{display:block;font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.6}
-.sline .pl{flex:none;color:var(--muted);font-size:11px;margin-top:5px}
+.sline .pl{
+  flex:none;align-self:flex-start;margin-top:2px;
+  width:26px;height:26px;padding:0;border-radius:8px;
+  border:1px solid var(--line-2);background:var(--surface);
+  color:var(--accent);font-size:10px;line-height:1;cursor:pointer;
+}
 .sline.play{background:var(--mark-soft)}
 .sline.play .pl{color:var(--mark-ink)}
 .hide-ja .sline .j{display:none}
@@ -656,7 +661,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=3b70e94e"></script>
+<script src="core.js?v=a929b745"></script>
 <script>
 (function () {
   'use strict';
@@ -1045,7 +1050,7 @@ details.src[open]>summary::before{content:"▾ ";}
       return '<div class="sline" data-src="' + src + '" data-i="' + i + '">' +
         '<span class="body"><span class="e">' + T.markupEnglish(s.en, DATA.glossary) + '</span>' +
         '<span class="j">' + esc(s.ja || '') + '</span></span>' +
-        '<span class="pl">▶</span></div>';
+        '<button class="pl" data-play="' + i + '" title="この文を再生">▶</button></div>';
     }).join('');
   }
 
@@ -1402,10 +1407,15 @@ details.src[open]>summary::before{content:"▾ ";}
 
     /* 語注が先。行の再生よりも単語タップを優先する */
     var w = t.closest('.w');
-    if (w) { openPop(w); return; }
+    if (w) {
+      /* なぞって選んでいる最中に語注が開かないようにする */
+      var sel = window.getSelection && window.getSelection();
+      if (sel && !sel.isCollapsed) return;
+      openPop(w); return;
+    }
 
-    var sl = t.closest('.sline[data-src]');
-    if (sl) { stopPlay(); playOne(sl.dataset.src, +sl.dataset.i); return; }
+    var pl = t.closest('.pl[data-play]');
+    if (pl) { stopPlay(); playOne('sum', +pl.dataset.play); return; }
 
     closePop();
   });
@@ -1611,6 +1621,16 @@ details.src[open]>summary::before{content:"▾ ";}
     }
     return null;
   }
+
+  /* 文中をなぞって選ぶと「意味」のボタンが出る。熟語はタップでは指せないため */
+  T.watchSelection(stage, {
+    ctx: '.sent, .sline, .evid-line, .quote, .vex, .para',
+    onPick: function (text, ctx, rect) {
+      var g = DATA.glossary && DATA.glossary[text.toLowerCase()];
+      T.phrasePop({ text: text, ctx: ctx, rect: rect, gloss: g,
+        scope: DATA.id, srcTitle: (DATA.title && DATA.title.ja) || '' });
+    }
+  });
 
   boot();
 })();

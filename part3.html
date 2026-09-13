@@ -7,7 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=89a966a8">
+<link rel="stylesheet" href="style.css?v=6fa34579">
 <style>
 body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
@@ -82,7 +82,13 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 .verdict.na{background:var(--surface-2);color:var(--muted)}
 
 /* スクリプト */
-.line{display:flex;gap:9px;align-items:flex-start;padding:7px 6px;border-radius:8px;cursor:pointer}
+.line{display:flex;gap:9px;align-items:flex-start;padding:7px 6px;border-radius:8px}
+.line .pl{
+  flex:none;align-self:flex-start;margin-top:2px;
+  width:26px;height:26px;padding:0;border-radius:8px;
+  border:1px solid var(--line-2);background:var(--surface);
+  color:var(--accent);font-size:10px;line-height:1;cursor:pointer;
+}
 .line .tag{
   flex:none;width:26px;height:20px;border-radius:5px;background:var(--surface-2);
   border:1px solid var(--line);font-size:10px;font-weight:800;color:var(--muted);
@@ -184,7 +190,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   </div>
 </nav>
 
-<script src="core.js?v=3b70e94e"></script>
+<script src="core.js?v=a929b745"></script>
 <script>
 (function () {
   'use strict';
@@ -560,7 +566,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
         return '<div class="line" data-i="' + li + '">' +
           '<span class="tag">' + esc(l.tag) + '</span>' +
           '<span class="body"><span class="e">' + T.markupEnglish(l.en, SET.glossary) + '</span>' +
-          '<span class="j">' + esc(l.ja || '') + '</span></span></div>';
+          '<span class="j">' + esc(l.ja || '') + '</span></span>' +
+          '<button class="pl" data-play="' + li + '" title="この行を再生">▶</button></div>';
       }).join('') +
       '</div>';
   }
@@ -750,10 +757,15 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     }
 
     var w = t.closest('.w');
-    if (w) { openPop(w); return; }
+    if (w) {
+      /* なぞって選んでいる最中に語注が開かないようにする */
+      var sel = window.getSelection && window.getSelection();
+      if (sel && !sel.isCollapsed) return;
+      openPop(w); return;
+    }
 
-    var ln = t.closest('.line[data-i]');
-    if (ln) { stopPlay(); playLine(+ln.dataset.i); return; }
+    var pl = t.closest('.pl[data-play]');
+    if (pl) { stopPlay(); playLine(+pl.dataset.play); return; }
 
     closePop();
   });
@@ -1055,6 +1067,16 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
         bg.querySelector('#ttsTry').onclick = function () { run(false); };
       }
     });
+  });
+
+  /* 文中をなぞって選ぶと「意味」のボタンが出る。熟語はタップでは指せないため */
+  T.watchSelection(stage, {
+    ctx: '.line, .evid-line, .qprompt, .choice',
+    onPick: function (text, ctx, rect) {
+      var g = SET && SET.glossary && SET.glossary[text.toLowerCase()];
+      T.phrasePop({ text: text, ctx: ctx, rect: rect, gloss: g,
+        scope: (SET && SET.id) || '', srcTitle: 'Part 3 ' + ((SET && SET.scene) || '') });
+    }
   });
 
   boot();

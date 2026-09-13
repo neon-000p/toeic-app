@@ -783,6 +783,181 @@
     return list;
   }
 
+  /* ================= 選択して意味を引く =================
+     単語は1タップで引けるが、熟語はタップでは指せない。
+     文中をなぞって選ぶと「意味」のボタンが浮き、押すと語注と同じ形で出る。
+
+     単語タップとは競合しない。選択が残っている間は、各ページ側で
+     タップを無視するようにしている。 */
+
+  var SEL_MIN = 2;      /* これより短い選択は相手にしない */
+  var SEL_MAX = 60;     /* 段落ごと投げられても意味が薄く、通信も無駄 */
+
+  function selectionText() {
+    var sel = window.getSelection && window.getSelection();
+    if (!sel || sel.isCollapsed || !sel.rangeCount) return null;
+    var text = String(sel).replace(/\s+/g, ' ').trim();
+    if (text.length < SEL_MIN || text.length > SEL_MAX) return null;
+    if (!/[A-Za-z]/.test(text)) return null;
+    return { text: text, range: sel.getRangeAt(0) };
+  }
+
+  /* 選択した場所の1文。語義を文脈つきで引くために渡す */
+  function contextOfRange(range, selector) {
+    var n = range.commonAncestorContainer;
+    if (n.nodeType !== 1) n = n.parentNode;
+    var host = n.closest ? n.closest(selector) : null;
+    if (!host) return String(range).replace(/\s+/g, ' ').trim();
+    var c = host.cloneNode(true);
+    Array.prototype.forEach.call(c.querySelectorAll('.j, .small, .muted, .hint'), function (x) { x.remove(); });
+    return (c.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 400);
+  }
+
+  /* root の中で選択が起きたら「意味」のボタンを出す。
+     opts: { ctx: 文を探すセレクタ, onPick: function (text, ctx) } */
+  function watchSelection(root, opts) {
+    if (!root || root.dataset.selWatch) return;
+    root.dataset.selWatch = '1';
+
+    var btn = null, timer = null;
+
+    function hide() { if (btn) { btn.remove(); btn = null; } }
+
+    function place(rect) {
+      /* 端末の選択メニュー（コピー等）は選択の上下に出る。
+         こちらは上に置き、画面の上端に近いときだけ下へ逃がす。 */
+      var top = rect.top + window.scrollY - 40;
+      if (rect.top < 56) top = rect.bottom + window.scrollY + 10;
+      var left = rect.left + window.scrollX + rect.width / 2 - 32;
+      left = Math.max(window.scrollX + 8, Math.min(left,
+        window.scrollX + document.documentElement.clientWidth - 76));
+      btn.style.top = top + 'px';
+      btn.style.left = left + 'px';
+    }
+
+    function show() {
+      var got = selectionText();
+      if (!got) { hide(); return; }
+
+      var n = got.range.commonAncestorContainer;
+      if (n.nodeType !== 1) n = n.parentNode;
+      if (!root.contains(n)) { hide(); return; }
+
+      var rect = got.range.getBoundingClientRect();
+      if (!rect || !rect.width) { hide(); return; }
+
+      if (!btn) {
+        btn = document.createElement('button');
+        btn.className = 'sel-btn';
+        btn.type = 'button';
+        btn.textContent = '意味';
+        /* 押した瞬間に選択が消えないようにする */
+        btn.addEventListener('mousedown', function (e) { e.preventDefault(); });
+        btn.addEventListener('touchstart', function (e) { e.preventDefault(); }, { passive: false });
+        btn.addEventListener('click', function () {
+          var g = selectionText();
+          if (!g) { hide(); return; }
+          var ctx = contextOfRange(g.range, (opts && opts.ctx) || 'p, div');
+          var r = g.range.getBoundingClientRect();
+          hide();
+          if (opts && opts.onPick) opts.onPick(g.text, ctx, r);
+        });
+        document.body.appendChild(btn);
+      }
+      place(rect);
+    }
+
+    document.addEventListener('selectionchange', function () {
+      clearTimeout(timer);
+      timer = setTimeout(show, 150);
+    });
+    window.addEventListener('scroll', hide, true);
+  }
+
+  /* 選んだ語句の意味をポップで出す。語注にあればそれも使う。
+     opts: { text, ctx, rect, scope, gloss } */
+  function phrasePop(opts) {
+    var text = opts.text;
+    var g = opts.gloss || null;
+    var inBook = Vocab.has(text);
+    var ok = AI.enabled();
+
+    var pop = document.createElement('div');
+    pop.className = 'pop';
+    pop.dataset.word = text;
+
+    var glossHTML = g
+      ? '<div class="ja">' + (g.pos ? '<span class="muted small">(' + esc(g.pos) + ') </span>' : '') + esc(g.ja) + '</div>' +
+        (g.note ? '<div class="note">' + esc(g.note) + '</div>' : '')
+      : '<div class="note">この語句の語注はありません。</div>';
+
+    pop.innerHTML = '<div class="term">' + esc(text) + '</div>' +
+      (ok ? '<div class="pop-ai-b muted small">照会中…</div>'
+          : glossHTML + '<div class="pop-hint">⚙ で Gemini のキーを設定すると、この文での使われ方も出ます。</div>') +
+      '<div class="row">' +
+        '<button class="btn btn-sm icon' + (inBook ? ' on' : '') + '" data-add="' + esc(text) + '" title="' +
+          (inBook ? '語彙帳から外す' : '語彙帳に追加') + '">' + (inBook ? '★' : '☆') + '</button>' +
+        '<button class="btn btn-sm icon" data-sayw="' + esc(text) + '" title="発音を聞く">🔊</button>' +
+      '</div>';
+    document.body.appendChild(pop);
+
+    var r = opts.rect;
+    var top = r.bottom + window.scrollY + 8;
+    var left = Math.min(r.left + window.scrollX,
+      window.scrollX + document.documentElement.clientWidth - pop.offsetWidth - 12);
+    pop.style.top = top + 'px';
+    pop.style.left = Math.max(window.scrollX + 12, left) + 'px';
+
+    if (ok) {
+      AI.lookup(text, opts.ctx || text, opts.scope || '').then(function (res) {
+        var b = pop.querySelector('.pop-ai-b');
+        if (!b) return;
+        b.className = 'pop-ai-b';
+        b.innerHTML =
+          (res.ja ? '<div class="pop-ai-ja">' + (res.pos ? '<span class="muted small">(' + esc(res.pos) + ') </span>' : '') +
+            esc(res.ja) + '</div>' : '') +
+          (res.tip ? '<div class="pop-ai-u">' + esc(res.tip) + '</div>' : '');
+        pop.dataset.ja = res.ja || '';
+        pop.dataset.pos = res.pos || '';
+        pop.dataset.tip = res.tip || '';
+      }).catch(function (e) {
+        var b = pop.querySelector('.pop-ai-b');
+        if (b) b.outerHTML = glossHTML +
+          '<div class="pop-hint">' + esc((e && e.message) || '取得できませんでした') + '</div>';
+      });
+    }
+
+    function close() {
+      pop.remove();
+      document.removeEventListener('click', outside, true);
+    }
+    function outside(e) {
+      if (pop.contains(e.target)) return;
+      close();
+    }
+    setTimeout(function () { document.addEventListener('click', outside, true); }, 0);
+
+    pop.addEventListener('click', function (e) {
+      var add = e.target.closest('[data-add]');
+      if (add) {
+        var term = add.dataset.add;
+        if (Vocab.has(term)) { Vocab.remove(term); toast('語彙帳から外しました'); }
+        else {
+          Vocab.add({ term: term, pos: pop.dataset.pos || '', ja: pop.dataset.ja || (g && g.ja) || '',
+                      gloss: pop.dataset.tip || (g && g.note) || '',
+                      src: opts.scope || '', srcTitle: opts.srcTitle || '' });
+          toast('語彙帳に追加しました');
+        }
+        close();
+        return;
+      }
+      var say = e.target.closest('[data-sayw]');
+      if (say) { TTS.cancel(); TTS.speak(say.dataset.sayw, { rate: 0.85 }); }
+    });
+
+    return pop;
+  }
+
   function toast(msg, ms) {
     var el = document.getElementById('toast');
     if (!el) { el = document.createElement('div'); el.id = 'toast'; el.className = 'toast'; document.body.appendChild(el); }
@@ -811,6 +986,7 @@
     Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS, AI: AI,
     modal: modal, openSettings: openSettings,
     flash: flash, takeFlash: takeFlash, numberSets: numberSets,
+    watchSelection: watchSelection, phrasePop: phrasePop,
     esc: esc, splitWords: splitWords, markupEnglish: markupEnglish, toast: toast
   };
 })(window);
