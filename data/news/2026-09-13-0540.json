@@ -436,22 +436,5 @@
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Drone-Strikes-Hit-Saudi-Arabias-Vital-East-West-Oil-Pipeline.html",
       "date": "2026-09-11"
     }
-  ],
-  "audio": {
-    "lines": [
-      "audio/2026-09-13-0540/00.mp3",
-      "audio/2026-09-13-0540/01.mp3",
-      "audio/2026-09-13-0540/02.mp3",
-      "audio/2026-09-13-0540/03.mp3",
-      "audio/2026-09-13-0540/04.mp3",
-      "audio/2026-09-13-0540/05.mp3",
-      "audio/2026-09-13-0540/06.mp3",
-      "audio/2026-09-13-0540/07.mp3"
-    ],
-    "voice": "Charon",
-    "bytes": 201480,
-    "model": "gemini-3.1-flash-tts-preview",
-    "madeAt": "2026-09-12T23:10:13.044Z",
-    "trimmed": true
-  }
+  ]
 }

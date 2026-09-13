@@ -165,7 +165,7 @@ Markdown 版は段落まるごとの訳だが、JSON は **文単位で英日を
 ```json
 "audio": {
   "lines": ["audio/2026-09-13-0540/00.mp3", "audio/2026-09-13-0540/01.mp3"],
-  "voice": "Charon",
+  "voice": "Leda",
   "bytes": 348120
 }
 ```

@@ -27,8 +27,9 @@ const ROOT = path.resolve(__dirname, '..');
 const DIR = path.join(ROOT, 'data', 'news');
 const AUDIO_DIR = path.join(DIR, 'audio');
 
-/* 読み手は1人。Part 3 の話者と混ざらないよう別の声にする */
-const VOICE = process.env.NEWS_TTS_VOICE || 'Charon';
+/* 読み手は1人。記事ごとに変えない。
+   Part 3 の女性（W = Kore）と紛れないよう、別の女性の声にする。 */
+const VOICE = process.env.NEWS_TTS_VOICE || 'Leda';
 const KBPS = 32;   /* 1人が淡々と読むだけなので、会話より落として容量を抑える */
 
 /* 段落をまたいで1本の列にする。アプリの data-i と同じ並びにしないと、
