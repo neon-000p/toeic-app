@@ -499,8 +499,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     return statusHTML() + qs().map(function (q, i) {
       var on = (phase === 'read' && i === qi);
       return '<div class="card qbox' + (on ? ' cur' : '') + '" data-qi="' + i + '">' +
-        '<div class="qnum">Q' + (i + 1) +
-          (q.type && TYPE_LABEL[q.type] ? '　' + TYPE_LABEL[q.type] : '') + '</div>' +
+        /* 設問では型（概要・詳細など）を出さない。何を問われているかの
+           見当が先に付いてしまい、本番より易しくなるため。解説には出す。 */
+        '<div class="qnum">Q' + (i + 1) + '</div>' +
         '<p class="qprompt">' + esc(q.prompt) + '</p>' +
         q.choices.map(function (c) {
           var sel = fresh[q.id] === c.key;
