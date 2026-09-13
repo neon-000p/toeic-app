@@ -173,8 +173,9 @@ hr.sep{border:0;border-top:1px solid var(--line);margin:16px 0}
 }
 
 /* --- 語注ポップ --- */
-.w{cursor:pointer;border-bottom:1px dotted transparent}
-.w.has-gloss{border-bottom-color:var(--line-2)}
+/* 語注のある語に下線は引かない。本文が読みにくくなるうえ、
+   タップすれば語注が出ることはもう分かっている。 */
+.w{cursor:pointer}
 .w.open{background:var(--mark-soft);border-radius:3px}
 .pop{
   position:absolute;z-index:70;max-width:min(320px,calc(100vw - 24px));

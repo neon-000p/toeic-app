@@ -7,7 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=1cbf9e46">
+<link rel="stylesheet" href="style.css?v=a4167bd9">
 <style>
 body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
@@ -157,7 +157,6 @@ details.src[open]>summary::before{content:"▾ ";}
 .blk h3{font-size:14px;margin:0 0 6px;color:var(--accent-ink)}
 .blk p{margin:0;font-size:14.5px;white-space:pre-wrap}
 .blk p.en{font-family:var(--serif);font-size:15.5px;line-height:1.8}
-.blk .w.has-gloss{border-bottom-color:transparent}
 
 /* 対訳（音読を統合） */
 .trans-bar{display:flex;gap:8px;flex-wrap:wrap}
@@ -172,7 +171,6 @@ details.src[open]>summary::before{content:"▾ ";}
 .sline{display:flex;gap:10px;align-items:flex-start;padding:8px 8px;border-radius:9px;cursor:pointer}
 /* 区切り線は置かない。再生中の行が光るので、行の切れ目はそれで分かる */
 /* 対訳では読みを妨げないよう語の下線を出さない（タップは従来どおり効く） */
-.sline .w.has-gloss{border-bottom-color:transparent}
 .sline .body{flex:1;min-width:0}
 .sline .e{display:block;font-family:var(--serif);font-size:16.5px;line-height:1.6}
 .sline .j{display:block;font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.6}
@@ -192,6 +190,12 @@ details.src[open]>summary::before{content:"▾ ";}
   background:var(--surface);border-top:1px solid var(--line);
   padding:5px 0 calc(5px + env(safe-area-inset-bottom));
 }
+/* 残り時間はフッターの上端に薄く出す。本文の場所を取らないため */
+.app-foot .bar{
+  position:absolute;left:0;top:0;height:3px;width:0;
+  background:var(--mark);transition:width .25s linear;
+}
+.app-foot .bar.over{background:var(--ng)}
 .foot-row{display:flex;align-items:center;gap:8px}
 .foot-row .mid{flex:1;text-align:center;font-size:11.5px;color:var(--muted);font-weight:700}
 .foot-row .btn{min-width:80px;min-height:36px;padding:6px 12px;font-size:13.5px}
@@ -218,6 +222,7 @@ details.src[open]>summary::before{content:"▾ ";}
 <main class="wrap stage" id="stage"></main>
 
 <nav class="app-foot">
+  <i class="bar" id="fbar"></i>
   <div class="wrap foot-row">
     <button class="btn" id="btnPrev">← Back</button>
     <div class="mid" id="footMid"></div>
@@ -819,6 +824,58 @@ details.src[open]>summary::before{content:"▾ ";}
     go(step + 1);
   });
 
+  /* 設問を解く時間。本文を読み直しながら2問なので、
+     本番の Part 7（1問あたり約1分＋読む時間）に寄せた既定にしてある。
+     0 にすると計らない。⚙ で変えられる。 */
+  var QUIZ_DEFAULT = 150;
+
+  var qTimer = null, qLeft = 0, qTotal = 0;
+
+  function quizSec() {
+    var v = T.Settings.get('newsSec');
+    return v === undefined ? QUIZ_DEFAULT : (parseInt(v, 10) || 0);
+  }
+
+  function clearQuizTimer() {
+    if (qTimer) { clearInterval(qTimer); qTimer = null; }
+  }
+
+  function paintQuizTimer() {
+    var bar = $('fbar'), mid = $('footMid');
+    if (!bar) return;
+    var plain = (step + 1) + ' / ' + STEPS.length + '　' + STEPS[step].label;
+    if (!qTotal) {
+      bar.style.width = '0%';
+      bar.classList.remove('over');
+      /* 前の画面の残り時間が文字に残らないようにする */
+      if (mid && stage.dataset.view !== 'done') mid.textContent = plain;
+      return;
+    }
+    var pct = Math.max(0, (qLeft / qTotal) * 100);
+    bar.style.width = pct + '%';
+    bar.classList.toggle('over', qLeft <= 0);
+    if (!mid) return;
+    if (qLeft <= 0) { mid.textContent = plain + '　時間です'; return; }
+    var m = Math.floor(qLeft / 60), sec = qLeft % 60;
+    mid.textContent = plain + '　' + m + ':' + (sec < 10 ? '0' : '') + sec;
+  }
+
+  /* 設問を開いている間だけ計る。採点したら止める（読み直しは時間外） */
+  function syncQuizTimer() {
+    clearQuizTimer();
+    var on = STEPS[step].key === 'quiz' && !state.graded &&
+      stage.dataset.view !== 'done' && quizSec() > 0;
+    if (!on) { qTotal = 0; qLeft = 0; paintQuizTimer(); return; }
+    qTotal = quizSec();
+    qLeft = qTotal;
+    paintQuizTimer();
+    qTimer = setInterval(function () {
+      qLeft--;
+      paintQuizTimer();
+      if (qLeft <= 0) clearQuizTimer();   /* 0 で止めるだけ。先へは進めない */
+    }, 1000);
+  }
+
   function renderFoot() {
     var isDone = stage.dataset.view === 'done';
     $('btnPrev').disabled = false;
@@ -831,6 +888,7 @@ details.src[open]>summary::before{content:"▾ ";}
       return;
     }
     $('footMid').textContent = (step + 1) + ' / ' + STEPS.length + '　' + STEPS[step].label;
+    if (qTotal) paintQuizTimer();
     if (STEPS[step].key === 'quiz' && !state.graded && allAnswered()) {
       next.textContent = 'Check';
     } else if (step === STEPS.length - 1) {
@@ -860,6 +918,7 @@ details.src[open]>summary::before{content:"▾ ";}
     document.body.classList.toggle('split', STEPS[step].key === 'quiz' && stage.dataset.view !== 'done');
     syncHeadHeight();
     renderFoot();
+    syncQuizTimer();
   }
 
   function sentencesOf(pi) {
@@ -1485,6 +1544,12 @@ details.src[open]>summary::before{content:"▾ ";}
   $('btnCfg').addEventListener('click', function () {
     T.openSettings({
       extraHTML:
+        '<h2>設問を解く時間</h2>' +
+        '<p class="small muted" style="margin:-6px 0 8px">設問を開いている間だけ計ります。' +
+        '0 にすると計りません。時間が来ても先へは進まず、目安として出るだけです。</p>' +
+        '<label class="field"><span>時間　<b id="qsv">' + quizSec() + '</b> 秒</span>' +
+          '<input type="range" id="qsec" min="0" max="300" step="15" value="' + quizSec() + '"></label>' +
+        '<hr class="sep">' +
         '<h2>教材を取り込む</h2>' +
         '<p class="small muted" style="margin:-6px 0 8px">ルーティンが出力した JSON を貼り付けるか、ファイルを選びます。' +
         '取り込んだ教材はこの端末に保存されます。</p>' +
@@ -1493,6 +1558,12 @@ details.src[open]>summary::before{content:"▾ ";}
           '<input type="file" id="impFile" accept=".json,application/json" class="small"></div>',
       extraButtons: '<button class="btn btn-sm" id="cfgReset">この教材の記録を消す</button>',
       onMount: function (bg) {
+        var r = bg.querySelector('#qsec');
+        r.oninput = function () {
+          T.Settings.set('newsSec', parseInt(r.value, 10));
+          bg.querySelector('#qsv').textContent = r.value;
+          syncQuizTimer();
+        };
         bg.querySelector('#impGo').onclick = function () { doImport(bg.querySelector('#impText').value, bg); };
         bg.querySelector('#impFile').onchange = function (e) {
           var f = e.target.files && e.target.files[0];
