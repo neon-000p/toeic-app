@@ -104,7 +104,11 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
   }
 
   function label(it) {
-    /* Part 3 は会話なので話者数を出す。他のパートは種別を出す想定 */
+    /* 解き終わったセットは場面名を出す。何の話だったか思い出せたほうが選びやすい。
+       index.json には場面を入れていない（先読みの練習が崩れるため）ので、
+       解いたときに残した記録から取る。まだ解いていないセットは伏せたままにする。 */
+    var q = T.Log.progress(P.key + it.id);
+    if (q && q.scene && statusOf(it.id) === '済') return q.scene;
     if (n === '3') return '会話 ' + (it.speakers || 2) + '人・3問';
     return (it.kind || '') + (it.questions ? ' ' + it.questions + '問' : '');
   }
