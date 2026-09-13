@@ -1182,13 +1182,20 @@ details.src[open]>summary::before{content:"▾ ";}
     saySent(i, function () { if (playing === 'one') { playing = null; markPlay(null, -1); } });
   }
 
+  /* 文と文の間。音声からは前後の無音を削ってあるので、
+     続けて鳴らすと切れ目が無くなる。息継ぎのぶんだけここで空ける。 */
+  var SENT_GAP = 450;
+
   function playAll(src) {
     var ss = linesFor(src);
     playing = 'all';
     (function next(i) {
       if (playing !== 'all' || i >= ss.length) { playing = null; markPlay(null, -1); return; }
       markPlay(src, i);
-      saySent(i, function () { next(i + 1); });
+      saySent(i, function () {
+        if (playing !== 'all') return;
+        setTimeout(function () { if (playing === 'all') next(i + 1); }, SENT_GAP);
+      });
     })(0);
   }
 
