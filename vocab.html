@@ -7,7 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=a4167bd9">
+<link rel="stylesheet" href="style.css?v=89a966a8">
 <style>
 body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 
@@ -57,7 +57,21 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 .vrow .t .pos{font-family:var(--sans);font-size:11px;color:var(--muted);margin-left:6px;font-weight:400}
 .vrow .j{font-size:13.5px;margin-top:2px}
 .vrow .g{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.55}
+.vrow .ex{
+  font-family:var(--serif);font-size:13px;line-height:1.65;margin-top:5px;
+  padding-left:9px;border-left:2px solid var(--line-2);color:var(--ink-2);
+}
+.vrow .ex .exj{display:block;font-family:var(--sans);font-size:11.5px;color:var(--muted);margin-top:2px}
 .vrow .meta{font-size:11px;color:var(--muted);margin-top:4px}
+
+.sec-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px}
+.sec-row .cnt{font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted)}
+
+/* 訳を隠しているとき。行をタップするとその1件だけ開く */
+.terms-only .vrow .j,.terms-only .vrow .g,.terms-only .vrow .ex{display:none}
+.terms-only .vrow.open .j,.terms-only .vrow.open .g,.terms-only .vrow.open .ex{display:block}
+.terms-only .vrow{cursor:pointer}
+.hint{font-size:12px;color:var(--muted);line-height:1.7;margin:10px 2px 0}
 .vrow .del{
   flex:none;width:32px;height:32px;border-radius:8px;border:1px solid var(--line);
   background:var(--surface-2);color:var(--muted);font-size:13px;cursor:pointer;
@@ -238,16 +252,26 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
         })
       : all;
 
+    /* 教材の語彙ステップと同じで、訳を隠して思い出す練習ができるようにする。
+       隠しているときは行をタップするとその1件だけ開く。 */
+    var showMean = T.Settings.get('vocabJa') !== false;
+
     main.innerHTML = renderStats() +
       '<input class="search" id="q" placeholder="語・意味で絞り込む" value="' + esc(filter) + '">' +
-      '<div class="card">' +
+      '<div class="card' + (showMean ? '' : ' terms-only') + '">' +
+        '<div class="sec-row"><span class="cnt">' + list.length + ' 語</span>' +
+          '<button class="btn btn-sm icon' + (showMean ? ' on' : '') + '" id="toggleJa" title="' +
+            (showMean ? '英単語だけにする' : '意味を出す') + '">訳</button></div>' +
         (list.length
           ? list.map(function (e) {
+              var ex = e.example || null;
               return '<div class="vrow">' +
                 '<div class="body">' +
                   '<div class="t">' + esc(e.term) + (e.pos ? '<span class="pos">（' + esc(e.pos) + '）</span>' : '') + '</div>' +
                   '<div class="j">' + esc(e.ja || '') + '</div>' +
                   (e.gloss ? '<div class="g">' + esc(e.gloss) + '</div>' : '') +
+                  (ex && ex.en ? '<div class="ex">' + esc(ex.en) +
+                    (ex.ja ? '<span class="exj">' + esc(ex.ja) + '</span>' : '') + '</div>' : '') +
                   '<div class="meta">' + boxDots(e.box || 0) +
                     (e.due ? '　次回 ' + esc(e.due.slice(5).replace('-', '/')) : '　未復習') +
                     (e.srcTitle ? '　' + esc(e.srcTitle) : '') + '</div>' +
@@ -256,7 +280,8 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
               '</div>';
             }).join('')
           : '<p class="small muted" style="margin:0">該当する語がありません。</p>') +
-      '</div>';
+      '</div>' +
+      (showMean ? '' : '<p class="hint">英単語だけを出しています。意味を思い出してから、行をタップして答え合わせ。</p>');
   }
 
   /* ---------- 書き出し・読み込み ---------- */
@@ -311,6 +336,12 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
       return;
     }
 
+    if (t.closest('#toggleJa')) {
+      T.Settings.set('vocabJa', T.Settings.get('vocabJa') === false);
+      render();
+      return;
+    }
+
     var d = t.closest('[data-del]');
     if (d) {
       T.Vocab.remove(d.dataset.del);
@@ -319,6 +350,10 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
       render();
       return;
     }
+
+    /* 訳を隠しているときは、行をタップするとその1件だけ開く */
+    var row = t.closest('.vrow');
+    if (row && row.closest('.terms-only')) { row.classList.toggle('open'); return; }
 
     if (t.id === 'copy') {
       var ta = document.getElementById('out');
