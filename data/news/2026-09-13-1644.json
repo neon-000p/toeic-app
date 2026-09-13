@@ -8,25 +8,52 @@
   "genre": "企業決算",
   "genreEn": "Corporate Earnings",
   "sample": false,
-  "title": { "en": "Kroger's Profit Tops Forecasts, but Full-Year Sales Outlook Is Cut", "ja": "クローガー、利益は予想上回るも通期の売上見通しを下方修正" },
+  "title": {
+    "en": "Kroger's Profit Tops Forecasts, but Full-Year Sales Outlook Is Cut",
+    "ja": "クローガー、利益は予想上回るも通期の売上見通しを下方修正"
+  },
   "summary": {
     "paragraphs": [
       {
         "role": "what",
         "sentences": [
-          { "en": "Kroger, one of the largest supermarket chains in the United States, reported its second-quarter earnings on September 11.", "ja": "米国最大級のスーパーマーケットチェーンであるクローガーは、9月11日に第2四半期の決算を発表した。" },
-          { "en": "Revenue rose to $34.6 billion, above analysts' forecasts, and adjusted profit per share came in at $1.09, four cents above expectations.", "ja": "売上高は344億ドルとアナリスト予想を上回り、調整後の1株当たり利益は1.09ドルと予想を4セント上回った。" },
-          { "en": "However, same-store sales, meaning sales at stores open more than a year, grew only slightly after a produce-related health scare cut into fresh food sales.", "ja": "しかし、既存店売上高、つまり1年以上営業している店舗の売上高は、生鮮食品に関わる衛生上の問題を受けてわずかな伸びにとどまった。" },
-          { "en": "As a result, it lowered its full-year sales forecast to between 0.2 and 0.8 percent, down from 1 to 2 percent.", "ja": "この結果を受け、同社は通期の売上高見通しを従来の1〜2%から0.2〜0.8%へ引き下げた。" }
+          {
+            "en": "Kroger, one of the largest supermarket chains in the United States, reported its second-quarter earnings on September 11.",
+            "ja": "米国最大級のスーパーマーケットチェーンであるクローガーは、9月11日に第2四半期の決算を発表した。"
+          },
+          {
+            "en": "Revenue rose to $34.6 billion, above analysts' forecasts, and adjusted profit per share came in at $1.09, four cents above expectations.",
+            "ja": "売上高は344億ドルとアナリスト予想を上回り、調整後の1株当たり利益は1.09ドルと予想を4セント上回った。"
+          },
+          {
+            "en": "However, same-store sales, meaning sales at stores open more than a year, grew only slightly after a produce-related health scare cut into fresh food sales.",
+            "ja": "しかし、既存店売上高、つまり1年以上営業している店舗の売上高は、生鮮食品に関わる衛生上の問題を受けてわずかな伸びにとどまった。"
+          },
+          {
+            "en": "As a result, it lowered its full-year sales forecast to between 0.2 and 0.8 percent, down from 1 to 2 percent.",
+            "ja": "この結果を受け、同社は通期の売上高見通しを従来の1〜2%から0.2〜0.8%へ引き下げた。"
+          }
         ]
       },
       {
         "role": "why",
         "sentences": [
-          { "en": "Even so, Kroger kept its profit outlook unchanged, since gains elsewhere made up for weaker in-store spending.", "ja": "それでもクローガーは利益見通しを据え置いた。店舗での売上の弱さを、他の分野での伸びが補ったためだ。" },
-          { "en": "Digital sales rose 20 percent, and revenue from its advertising business climbed 24 percent.", "ja": "デジタル売上高は20%増加し、広告事業からの収入も24%伸びた。" },
-          { "en": "Executives said cost-cutting across stores also helped protect profit margins.", "ja": "経営陣は、店舗全体でのコスト削減も利益率の維持に貢献したと述べた。" },
-          { "en": "The results show how retailers can offset a slow sales quarter through online growth and tighter cost control.", "ja": "今回の結果は、小売企業が販売不振の四半期を、オンライン事業の伸びとコスト管理の徹底で補えることを示している。" }
+          {
+            "en": "Even so, Kroger kept its profit outlook unchanged, since gains elsewhere made up for weaker in-store spending.",
+            "ja": "それでもクローガーは利益見通しを据え置いた。店舗での売上の弱さを、他の分野での伸びが補ったためだ。"
+          },
+          {
+            "en": "Digital sales rose 20 percent, and revenue from its advertising business climbed 24 percent.",
+            "ja": "デジタル売上高は20%増加し、広告事業からの収入も24%伸びた。"
+          },
+          {
+            "en": "Executives said cost-cutting across stores also helped protect profit margins.",
+            "ja": "経営陣は、店舗全体でのコスト削減も利益率の維持に貢献したと述べた。"
+          },
+          {
+            "en": "The results show how retailers can offset a slow sales quarter through online growth and tighter cost control.",
+            "ja": "今回の結果は、小売企業が販売不振の四半期を、オンライン事業の伸びとコスト管理の徹底で補えることを示している。"
+          }
         ]
       }
     ]
@@ -37,14 +64,33 @@
       "type": "detail",
       "prompt": "How much did Kroger's adjusted earnings per share exceed analysts' expectations by?",
       "choices": [
-        { "key": "A", "text": "$0.01", "ja": "0.01ドル" },
-        { "key": "B", "text": "$0.04", "ja": "0.04ドル" },
-        { "key": "C", "text": "$0.09", "ja": "0.09ドル" },
-        { "key": "D", "text": "$0.20", "ja": "0.20ドル" }
+        {
+          "key": "A",
+          "text": "$0.01",
+          "ja": "0.01ドル"
+        },
+        {
+          "key": "B",
+          "text": "$0.04",
+          "ja": "0.04ドル"
+        },
+        {
+          "key": "C",
+          "text": "$0.09",
+          "ja": "0.09ドル"
+        },
+        {
+          "key": "D",
+          "text": "$0.20",
+          "ja": "0.20ドル"
+        }
       ],
       "answer": "B",
       "explanation": "本文2文目に「adjusted profit per share came in at $1.09, four cents above expectations」とあり、調整後EPSは予想を4セント（0.04ドル）上回ったと明記されている。(A)(C)(D)は本文にない数値を使った誤答。",
-      "evidence": { "p": 0, "s": 1 },
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
       "tip": "TOEIC Part 7では、本文中の具体的な数値表現（ここでは\"four cents\"）を選択肢の数値（$0.04）に言い換える設問が頻出。表現の言い換えパターンに慣れておく。"
     },
     {
@@ -52,79 +98,384 @@
       "type": "reason",
       "prompt": "According to the article, why did Kroger lower its full-year sales forecast?",
       "choices": [
-        { "key": "A", "text": "A health-related issue with produce hurt sales", "ja": "生鮮食品に関わる衛生上の問題が売上に影響したため" },
-        { "key": "B", "text": "The company closed a number of underperforming stores", "ja": "業績不振の店舗を複数閉鎖したため" },
-        { "key": "C", "text": "Rising fuel costs increased delivery expenses", "ja": "燃料費の上昇で配送コストが増加したため" },
-        { "key": "D", "text": "Online competitors gained more market share", "ja": "オンライン競合が市場シェアを拡大したため" }
+        {
+          "key": "A",
+          "text": "A health-related issue with produce hurt sales",
+          "ja": "生鮮食品に関わる衛生上の問題が売上に影響したため"
+        },
+        {
+          "key": "B",
+          "text": "The company closed a number of underperforming stores",
+          "ja": "業績不振の店舗を複数閉鎖したため"
+        },
+        {
+          "key": "C",
+          "text": "Rising fuel costs increased delivery expenses",
+          "ja": "燃料費の上昇で配送コストが増加したため"
+        },
+        {
+          "key": "D",
+          "text": "Online competitors gained more market share",
+          "ja": "オンライン競合が市場シェアを拡大したため"
+        }
       ],
       "answer": "A",
       "explanation": "本文3文目に「same-store sales ... grew only slightly after a produce-related health scare cut into fresh food sales」とあり、既存店売上高の伸び悩みの原因が生鮮食品に関わる衛生上の問題であることが分かる。(B)(C)(D)はいずれも本文に記載がない情報。",
-      "evidence": { "p": 0, "s": 2 },
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
       "tip": "理由を問う設問では、because / after / due to など因果関係を示す語の直後に根拠が来ることが多い。ここでは after 以下が理由に当たる。"
     }
   ],
   "vocabulary": [
-    { "no": 1, "term": "forecast", "pos": "名", "ja": "予測、見通し", "gloss": "", "example": { "en": "The company raised its sales forecast for next year.", "ja": "その会社は来年の売上予測を引き上げた。" } },
-    { "no": 2, "term": "adjusted", "pos": "形", "ja": "調整済みの", "gloss": "", "example": { "en": "Adjusted earnings exclude one-time costs.", "ja": "調整後利益には一時的な費用は含まれない。" } },
-    { "no": 3, "term": "expectations", "pos": "名", "ja": "予想、期待", "gloss": "", "example": { "en": "The results fell short of investors' expectations.", "ja": "その業績は投資家の予想を下回った。" } },
-    { "no": 4, "term": "outlook", "pos": "名", "ja": "(業績などの)見通し", "gloss": "", "example": { "en": "Management gave a cautious outlook for the next quarter.", "ja": "経営陣は来四半期について慎重な見通しを示した。" } },
-    { "no": 5, "term": "cost-cutting", "pos": "名", "ja": "経費削減", "gloss": "（＝支出を減らす取り組みのこと）", "example": { "en": "The firm launched a cost-cutting program to protect profits.", "ja": "その企業は利益を守るため経費削減策を打ち出した。" } },
-    { "no": 6, "term": "margins", "pos": "名", "ja": "利益率", "gloss": "（＝売上に対する利益の割合のこと）", "example": { "en": "Higher prices helped the company protect its profit margins.", "ja": "値上げにより同社は利益率を維持できた。" } },
-    { "no": 7, "term": "offset", "pos": "動", "ja": "相殺する、埋め合わせる", "gloss": "", "example": { "en": "Higher online sales offset weaker store traffic.", "ja": "オンライン売上の増加が店舗客数の落ち込みを埋め合わせた。" } },
-    { "no": 8, "term": "climbed", "pos": "動", "ja": "上昇した", "gloss": "", "example": { "en": "Shipping costs climbed sharply during the holiday season.", "ja": "繁忙期には輸送費が大きく上昇した。" } }
+    {
+      "no": 1,
+      "term": "forecast",
+      "pos": "名",
+      "ja": "予測、見通し",
+      "gloss": "",
+      "example": {
+        "en": "The company raised its sales forecast for next year.",
+        "ja": "その会社は来年の売上予測を引き上げた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "adjusted",
+      "pos": "形",
+      "ja": "調整済みの",
+      "gloss": "",
+      "example": {
+        "en": "Adjusted earnings exclude one-time costs.",
+        "ja": "調整後利益には一時的な費用は含まれない。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "expectations",
+      "pos": "名",
+      "ja": "予想、期待",
+      "gloss": "",
+      "example": {
+        "en": "The results fell short of investors' expectations.",
+        "ja": "その業績は投資家の予想を下回った。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "outlook",
+      "pos": "名",
+      "ja": "(業績などの)見通し",
+      "gloss": "",
+      "example": {
+        "en": "Management gave a cautious outlook for the next quarter.",
+        "ja": "経営陣は来四半期について慎重な見通しを示した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "cost-cutting",
+      "pos": "名",
+      "ja": "経費削減",
+      "gloss": "（＝支出を減らす取り組みのこと）",
+      "example": {
+        "en": "The firm launched a cost-cutting program to protect profits.",
+        "ja": "その企業は利益を守るため経費削減策を打ち出した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "margins",
+      "pos": "名",
+      "ja": "利益率",
+      "gloss": "（＝売上に対する利益の割合のこと）",
+      "example": {
+        "en": "Higher prices helped the company protect its profit margins.",
+        "ja": "値上げにより同社は利益率を維持できた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "offset",
+      "pos": "動",
+      "ja": "相殺する、埋め合わせる",
+      "gloss": "",
+      "example": {
+        "en": "Higher online sales offset weaker store traffic.",
+        "ja": "オンライン売上の増加が店舗客数の落ち込みを埋め合わせた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "climbed",
+      "pos": "動",
+      "ja": "上昇した",
+      "gloss": "",
+      "example": {
+        "en": "Shipping costs climbed sharply during the holiday season.",
+        "ja": "繁忙期には輸送費が大きく上昇した。"
+      }
+    }
   ],
   "glossary": {
-    "kroger": { "lemma": "kroger", "pos": "n", "ja": "クローガー（企業名）", "note": "" },
-    "supermarket": { "lemma": "supermarket", "pos": "n", "ja": "スーパーマーケット", "note": "" },
-    "chains": { "lemma": "chain", "pos": "n", "ja": "チェーン店", "note": "" },
-    "earnings": { "lemma": "earning", "pos": "n", "ja": "収益、決算", "note": "" },
-    "revenue": { "lemma": "revenue", "pos": "n", "ja": "売上高", "note": "" },
-    "forecasts": { "lemma": "forecast", "pos": "n", "ja": "予測、見通し", "note": "" },
-    "forecast": { "lemma": "forecast", "pos": "n", "ja": "予測、見通し", "note": "" },
-    "adjusted": { "lemma": "adjust", "pos": "v", "ja": "調整済みの", "note": "" },
-    "profit": { "lemma": "profit", "pos": "n", "ja": "利益", "note": "" },
-    "expectations": { "lemma": "expectation", "pos": "n", "ja": "予想", "note": "" },
-    "same-store": { "lemma": "same-store", "pos": "adj", "ja": "既存店の", "note": "" },
-    "sales": { "lemma": "sale", "pos": "n", "ja": "売上", "note": "" },
-    "meaning": { "lemma": "mean", "pos": "v", "ja": "つまり〜を意味する", "note": "現在分詞で「言い換え」を導く用法" },
-    "scare": { "lemma": "scare", "pos": "n", "ja": "不安、懸念", "note": "" },
-    "produce-related": { "lemma": "produce-related", "pos": "adj", "ja": "農産物関連の", "note": "" },
-    "lowered": { "lemma": "lower", "pos": "v", "ja": "引き下げた", "note": "" },
-    "full-year": { "lemma": "full-year", "pos": "adj", "ja": "通期の", "note": "" },
-    "outlook": { "lemma": "outlook", "pos": "n", "ja": "見通し", "note": "" },
-    "unchanged": { "lemma": "unchanged", "pos": "adj", "ja": "変わらない", "note": "" },
-    "gains": { "lemma": "gain", "pos": "n", "ja": "増加、伸び", "note": "" },
-    "in-store": { "lemma": "in-store", "pos": "adj", "ja": "店舗内の", "note": "" },
-    "spending": { "lemma": "spend", "pos": "n", "ja": "支出", "note": "" },
-    "digital": { "lemma": "digital", "pos": "adj", "ja": "デジタルの", "note": "" },
-    "climbed": { "lemma": "climb", "pos": "v", "ja": "上昇した", "note": "" },
-    "advertising": { "lemma": "advertise", "pos": "n", "ja": "広告", "note": "" },
-    "executives": { "lemma": "executive", "pos": "n", "ja": "経営幹部", "note": "" },
-    "cost-cutting": { "lemma": "cost-cutting", "pos": "n", "ja": "経費削減", "note": "" },
-    "margins": { "lemma": "margin", "pos": "n", "ja": "利益率", "note": "" },
-    "offset": { "lemma": "offset", "pos": "v", "ja": "相殺する", "note": "" },
-    "retailers": { "lemma": "retailer", "pos": "n", "ja": "小売業者", "note": "" }
+    "kroger": {
+      "lemma": "kroger",
+      "pos": "n",
+      "ja": "クローガー（企業名）",
+      "note": ""
+    },
+    "supermarket": {
+      "lemma": "supermarket",
+      "pos": "n",
+      "ja": "スーパーマーケット",
+      "note": ""
+    },
+    "chains": {
+      "lemma": "chain",
+      "pos": "n",
+      "ja": "チェーン店",
+      "note": ""
+    },
+    "earnings": {
+      "lemma": "earning",
+      "pos": "n",
+      "ja": "収益、決算",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "n",
+      "ja": "売上高",
+      "note": ""
+    },
+    "forecasts": {
+      "lemma": "forecast",
+      "pos": "n",
+      "ja": "予測、見通し",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "n",
+      "ja": "予測、見通し",
+      "note": ""
+    },
+    "adjusted": {
+      "lemma": "adjust",
+      "pos": "v",
+      "ja": "調整済みの",
+      "note": ""
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "n",
+      "ja": "利益",
+      "note": ""
+    },
+    "expectations": {
+      "lemma": "expectation",
+      "pos": "n",
+      "ja": "予想",
+      "note": ""
+    },
+    "same-store": {
+      "lemma": "same-store",
+      "pos": "adj",
+      "ja": "既存店の",
+      "note": ""
+    },
+    "sales": {
+      "lemma": "sale",
+      "pos": "n",
+      "ja": "売上",
+      "note": ""
+    },
+    "meaning": {
+      "lemma": "mean",
+      "pos": "v",
+      "ja": "つまり〜を意味する",
+      "note": "現在分詞で「言い換え」を導く用法"
+    },
+    "scare": {
+      "lemma": "scare",
+      "pos": "n",
+      "ja": "不安、懸念",
+      "note": ""
+    },
+    "produce-related": {
+      "lemma": "produce-related",
+      "pos": "adj",
+      "ja": "農産物関連の",
+      "note": ""
+    },
+    "lowered": {
+      "lemma": "lower",
+      "pos": "v",
+      "ja": "引き下げた",
+      "note": ""
+    },
+    "full-year": {
+      "lemma": "full-year",
+      "pos": "adj",
+      "ja": "通期の",
+      "note": ""
+    },
+    "outlook": {
+      "lemma": "outlook",
+      "pos": "n",
+      "ja": "見通し",
+      "note": ""
+    },
+    "unchanged": {
+      "lemma": "unchanged",
+      "pos": "adj",
+      "ja": "変わらない",
+      "note": ""
+    },
+    "gains": {
+      "lemma": "gain",
+      "pos": "n",
+      "ja": "増加、伸び",
+      "note": ""
+    },
+    "in-store": {
+      "lemma": "in-store",
+      "pos": "adj",
+      "ja": "店舗内の",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spend",
+      "pos": "n",
+      "ja": "支出",
+      "note": ""
+    },
+    "digital": {
+      "lemma": "digital",
+      "pos": "adj",
+      "ja": "デジタルの",
+      "note": ""
+    },
+    "climbed": {
+      "lemma": "climb",
+      "pos": "v",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "advertising": {
+      "lemma": "advertise",
+      "pos": "n",
+      "ja": "広告",
+      "note": ""
+    },
+    "executives": {
+      "lemma": "executive",
+      "pos": "n",
+      "ja": "経営幹部",
+      "note": ""
+    },
+    "cost-cutting": {
+      "lemma": "cost-cutting",
+      "pos": "n",
+      "ja": "経費削減",
+      "note": ""
+    },
+    "margins": {
+      "lemma": "margin",
+      "pos": "n",
+      "ja": "利益率",
+      "note": ""
+    },
+    "offset": {
+      "lemma": "offset",
+      "pos": "v",
+      "ja": "相殺する",
+      "note": ""
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "n",
+      "ja": "小売業者",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "現在分詞 meaning 〜（言い換え・補足説明を加える分詞用法）",
     "quote": "same-store sales, meaning sales at stores open more than a year, grew only slightly after a produce-related health scare cut into fresh food sales.",
     "quoteJa": "既存店売上高、つまり1年以上営業している店舗の売上高は、生鮮食品に関わる衛生上の問題を受けてわずかな伸びにとどまった。",
     "blocks": [
-      { "heading": "構文", "body": "「meaning ~」は動詞 mean の現在分詞で、直前の名詞句を補足的に言い換えるときに使う。「, meaning 〜」の形でコンマの後に置き、「つまり〜ということだ」という意味を加える。ここでは same-store sales（既存店売上高）の意味を、sales at stores open more than a year（1年以上営業している店舗の売上高）と言い換えている。" },
-      { "heading": "書き換え例", "body": "\"same-store sales, meaning sales at stores open more than a year\" は \"same-store sales, which means sales at stores open more than a year\" と関係代名詞 which を使って書き換えられる。ただし meaning を使うほうが簡潔で、ビジネス文書でもよく使われる。" },
-      { "heading": "TOEICでの注意点", "body": "Part 5では、動詞 mean を -ing形（meaning）にするか -ed形にするか、あるいは接続詞 which と迷わせる問題が出やすい。meaning は「主語が〜を意味する」という能動的な関係を表すため -ing形になる点を押さえる。Part 6・7では、専門用語や社内用語の直後にこの形で説明が挿入される文が読解のヒントになることが多い。" },
-      { "heading": "ビジネス文書での応用", "body": "\"Revenue grew 5%, meaning growth slowed compared with last quarter.\" のように、数値の後に \"meaning ~\" を続けると、その数値が持つ意味を簡潔に補足できる。社内レポートや決算資料でよく使われる表現である。" }
+      {
+        "heading": "構文",
+        "body": "「meaning ~」は動詞 mean の現在分詞で、直前の名詞句を補足的に言い換えるときに使う。「, meaning 〜」の形でコンマの後に置き、「つまり〜ということだ」という意味を加える。ここでは same-store sales（既存店売上高）の意味を、sales at stores open more than a year（1年以上営業している店舗の売上高）と言い換えている。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "\"same-store sales, meaning sales at stores open more than a year\" は \"same-store sales, which means sales at stores open more than a year\" と関係代名詞 which を使って書き換えられる。ただし meaning を使うほうが簡潔で、ビジネス文書でもよく使われる。"
+      },
+      {
+        "heading": "TOEICでの注意点",
+        "body": "Part 5では、動詞 mean を -ing形（meaning）にするか -ed形にするか、あるいは接続詞 which と迷わせる問題が出やすい。meaning は「主語が〜を意味する」という能動的な関係を表すため -ing形になる点を押さえる。Part 6・7では、専門用語や社内用語の直後にこの形で説明が挿入される文が読解のヒントになることが多い。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"Revenue grew 5%, meaning growth slowed compared with last quarter.\" のように、数値の後に \"meaning ~\" を続けると、その数値が持つ意味を簡潔に補足できる。社内レポートや決算資料でよく使われる表現である。"
+      }
     ]
   },
   "background": [
-    { "heading": "📌 何が起きたか（業界の背景）", "body": "クローガーは米国最大級のスーパーマーケットチェーンで、日本のイオンやセブン&アイに近い存在といえる。今回の決算では、売上高・利益ともに市場予想を上回ったにもかかわらず、既存店売上高（1年以上営業している店舗だけで比較した売上の伸び率）の低迷を理由に通期見通しを引き下げた。「増収増益なのに見通しは慎重」という一見矛盾した動きが投資家の間で注目された。" },
-    { "heading": "📌 業界全体・競合の動向", "body": "米国の食品小売業界では、生鮮食品の安全性問題が業績に直接響きやすい。競合のウォルマートやコストコも、店舗経由の売上が伸び悩む一方でオンライン注文や自社の広告事業（リテールメディア）を収益の柱に育てており、クローガーの今回の決算はこの業界共通のトレンドを象徴している。" },
-    { "heading": "📌 日本企業・日本人ビジネスパーソンへの示唆", "body": "日本の小売各社も、食品の安全管理コストの上昇や人手不足によるコスト増に直面している。クローガーのように、店舗運営の効率化と広告・データ事業といった「小売の外」の収益源を組み合わせる発想は、日本のスーパーやドラッグストアが海外事例を検討する際の参考になる。" },
-    { "heading": "📌 投資家・経営者の視点", "body": "通期の増益見通しを据え置いたことは、経営陣が短期的な売上の伸び悩みよりも利益率の管理を優先している姿勢の表れといえる。投資家にとっては、売上高だけでなく「どの部分の利益で通期目標を守れるか」を見極めることが、小売株を評価するうえで重要になる。" }
+    {
+      "heading": "📌 何が起きたか（業界の背景）",
+      "body": "クローガーは米国最大級のスーパーマーケットチェーンで、日本のイオンやセブン&アイに近い存在といえる。今回の決算では、売上高・利益ともに市場予想を上回ったにもかかわらず、既存店売上高（1年以上営業している店舗だけで比較した売上の伸び率）の低迷を理由に通期見通しを引き下げた。「増収増益なのに見通しは慎重」という一見矛盾した動きが投資家の間で注目された。"
+    },
+    {
+      "heading": "📌 業界全体・競合の動向",
+      "body": "米国の食品小売業界では、生鮮食品の安全性問題が業績に直接響きやすい。競合のウォルマートやコストコも、店舗経由の売上が伸び悩む一方でオンライン注文や自社の広告事業（リテールメディア）を収益の柱に育てており、クローガーの今回の決算はこの業界共通のトレンドを象徴している。"
+    },
+    {
+      "heading": "📌 日本企業・日本人ビジネスパーソンへの示唆",
+      "body": "日本の小売各社も、食品の安全管理コストの上昇や人手不足によるコスト増に直面している。クローガーのように、店舗運営の効率化と広告・データ事業といった「小売の外」の収益源を組み合わせる発想は、日本のスーパーやドラッグストアが海外事例を検討する際の参考になる。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "通期の増益見通しを据え置いたことは、経営陣が短期的な売上の伸び悩みよりも利益率の管理を優先している姿勢の表れといえる。投資家にとっては、売上高だけでなく「どの部分の利益で通期目標を守れるか」を見極めることが、小売株を評価するうえで重要になる。"
+    }
   ],
   "sources": [
-    { "title": "Kroger Reports Second Quarter 2026 Results and Updates Guidance for 2026", "publisher": "Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/kroger-reports-second-quarter-2026-104500615.html", "date": "2026-09-11" },
-    { "title": "Kroger's comps slide to near zero as cyclospora outbreak eats into produce sales", "publisher": "Grocery Dive", "url": "https://www.grocerydive.com/news/kroger-earnings-second-quarter-2026-grocery-supermarkets/830070/", "date": "2026-09-11" },
-    { "title": "Kroger Reports Second Quarter 2026 Results and Updates Guidance for 2026", "publisher": "StockTitan", "url": "https://www.stocktitan.net/news/KR/kroger-reports-second-quarter-2026-results-and-updates-guidance-for-9u40w1l6wnxj.html", "date": "2026-09-11" }
-  ]
+    {
+      "title": "Kroger Reports Second Quarter 2026 Results and Updates Guidance for 2026",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/kroger-reports-second-quarter-2026-104500615.html",
+      "date": "2026-09-11"
+    },
+    {
+      "title": "Kroger's comps slide to near zero as cyclospora outbreak eats into produce sales",
+      "publisher": "Grocery Dive",
+      "url": "https://www.grocerydive.com/news/kroger-earnings-second-quarter-2026-grocery-supermarkets/830070/",
+      "date": "2026-09-11"
+    },
+    {
+      "title": "Kroger Reports Second Quarter 2026 Results and Updates Guidance for 2026",
+      "publisher": "StockTitan",
+      "url": "https://www.stocktitan.net/news/KR/kroger-reports-second-quarter-2026-results-and-updates-guidance-for-9u40w1l6wnxj.html",
+      "date": "2026-09-11"
+    }
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-13-1644/00.mp3",
+      "audio/2026-09-13-1644/01.mp3",
+      "audio/2026-09-13-1644/02.mp3",
+      "audio/2026-09-13-1644/03.mp3",
+      "audio/2026-09-13-1644/04.mp3",
+      "audio/2026-09-13-1644/05.mp3",
+      "audio/2026-09-13-1644/06.mp3",
+      "audio/2026-09-13-1644/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 269448,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-13T07:48:33.471Z",
+    "trimmed": true
+  }
 }
