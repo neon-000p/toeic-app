@@ -445,7 +445,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       if (phase !== 'read') return;
       if (i >= list.length) { clearTimer(); phase = 'answer'; render(); return; }
       qi = i; reading = true;
-      render('q');
+      render();
       /* 本番と同じく「Question 〜」と番号を読んでから設問に入る */
       T.TTS.speak('Question ' + (i + 1) + '. ' + list[i].prompt, {
         rate: T.Settings.get('rate'),
@@ -453,7 +453,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
           if (phase !== 'read') return;
           var wait = ansSec();
           if (!wait) { stepQ(i + 1); return; }   /* 0 なら間を置かず次へ */
-          reading = false; render('q');
+          reading = false; render();
           countdown(wait, function () { stepQ(i + 1); });
         }
       });
@@ -604,11 +604,10 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       k === 'vocab' ? viewVocab() : viewPoint();
     if (k === 'quiz' && phase === 'play') markMic();
     renderFoot();
+    /* 設問の読み上げ中は動かさない。本番は紙の問題用紙なので、
+       勝手に画面が動くと目で追っている場所を見失う。
+       いまどの設問かは枠の色で分かる。 */
     if (scroll === 'top') window.scrollTo(0, 0);
-    else if (scroll === 'q') {
-      var el = stage.querySelector('.qbox.cur');
-      if (el) el.scrollIntoView({ block: 'center', behavior: 'smooth' });
-    }
   }
 
   function midLabel() {
