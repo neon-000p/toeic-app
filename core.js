@@ -398,24 +398,49 @@
 
     /* JSON で答えさせる。空で返ることがあるので1度だけ引き直す。
        maxOutputTokens は内部の思考でも消費されるため、余裕を持たせる。 */
-    function generate(prompt, maxTokens, isOk, isRetry) {
+    /* 1回ぶんの呼び出し。条件を変えながら generate から呼ばれる。
+       mode.noThink: 考える枠を 0 にする（短い JSON を返すだけなので不要）
+       mode.plain:   JSON 指定を外して素のテキストで受ける */
+    function genOnce(prompt, maxTokens, mode) {
+      var gc = { temperature: 0.2, maxOutputTokens: maxTokens || 2048 };
+      if (!mode.plain) gc.responseMimeType = 'application/json';
+      if (!mode.noThink) gc.thinkingConfig = { thinkingBudget: 0 };
       return call('/models/' + encodeURIComponent(cfg().model) + ':generateContent', {
         contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: {
-          temperature: 0.2,
-          maxOutputTokens: maxTokens || 2048,
-          responseMimeType: 'application/json'
+        generationConfig: gc
+      }).then(pick);
+    }
+
+    /* JSON で答えさせる。
+
+       考えるモデルは、考えただけで本文を返さずに終わることがある
+       （finishReason は STOP なのに中身が空）。同じ条件で引き直しても
+       同じ結果になりやすいので、条件を変えながら最大3回試す。
+         1回目: 考える枠 0 ＋ JSON 指定
+         2回目: 考える枠の指定を外す（受け付けないモデルがあるため）
+         3回目: JSON 指定も外し、素のテキストとして受けて自力で解釈する */
+    function generate(prompt, maxTokens, isOk) {
+      var modes = [{}, { noThink: true }, { noThink: true, plain: true }];
+      var lastFinish = '';
+
+      function run(i) {
+        if (i >= modes.length) {
+          return Promise.reject(new Error('答えが返りませんでした' +
+            (lastFinish ? '（' + lastFinish + '／' + cfg().model + '）' : '（' + cfg().model + '）')));
         }
-      }).then(function (j) {
-        var got = pick(j);
-        var obj = null;
-        try { obj = JSON.parse(unfence(got.text)); } catch (e) {}
-        if (!obj || (isOk && !isOk(obj))) {
-          if (!isRetry) return generate(prompt, maxTokens, isOk, true);
-          throw new Error('応答が空でした' + (got.finish ? '（' + got.finish + '）' : ''));
-        }
-        return obj;
-      });
+        return genOnce(prompt, maxTokens, modes[i]).then(function (got) {
+          if (got.finish) lastFinish = got.finish;
+          var obj = null;
+          try { obj = JSON.parse(unfence(got.text)); } catch (e) {}
+          if (obj && (!isOk || isOk(obj))) return obj;
+          return run(i + 1);
+        }, function (err) {
+          /* 考える枠の指定を受け付けないモデルもある。その場合は外して続ける */
+          if (i === 0 && /thinking|thought/i.test((err && err.message) || '')) return run(1);
+          throw err;
+        });
+      }
+      return run(0);
     }
 
     /* 語と、それが入っている英文を渡して、意味と TOEIC 向けの一言を得る。
