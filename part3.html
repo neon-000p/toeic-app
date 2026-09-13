@@ -129,6 +129,11 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   background:var(--surface);border-top:1px solid var(--line);
   padding:5px 0 calc(5px + env(safe-area-inset-bottom));
 }
+/* 残り時間はフッターの上端に薄く出す。画面の上を設問に明け渡すため */
+.app-foot .bar{
+  position:absolute;left:0;top:0;height:3px;width:0;
+  background:var(--mark);transition:width .25s linear;
+}
 .foot-row{display:flex;align-items:center;gap:8px}
 .foot-row .mid{flex:1;text-align:center;font-size:11.5px;color:var(--muted);font-weight:700}
 .foot-row .btn{min-width:80px;min-height:36px;padding:6px 12px;font-size:13.5px}
@@ -155,6 +160,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 <main class="wrap stage" id="stage"></main>
 
 <nav class="app-foot">
+  <i class="bar" id="fbar"></i>
   <div class="wrap foot-row">
     <button class="btn" id="btnPrev">← Back</button>
     <div class="mid" id="footMid"></div>
@@ -193,6 +199,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   /* 今回の画面で選んだぶん。設問はこれだけを塗る。
      前回の選択が入ったままだと、開き直しても解き直しにならないため。 */
   var fresh = {};
+
+  var audioRest = 0;   /* 会話音声の残り秒。フッターに出す */
+  var curTag = '';     /* 読み上げ中の話者。フッターに出す */
   var left = 0, timer = null;
   var lineIdx = -1, plan = {};
   var progKey = '';
@@ -325,14 +334,19 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       if (left <= 0) { clearTimer(); onDone(); }
     }, 1000);
   }
+  function setBar(pct) {
+    var b = $('fbar');
+    if (b) b.style.width = Math.max(0, Math.min(100, pct)) + '%';
+  }
+
   function paintCount(total) {
-    var bar = $('cbar'), n = $('cnum');
-    if (bar) bar.style.width = Math.max(0, (left / total) * 100) + '%';
-    if (n) n.textContent = left + ' 秒';
+    setBar((left / total) * 100);
+    renderFoot();
   }
 
   function enterPrep() {
     phase = 'prep'; qi = -1; reading = false;
+    audioRest = 0; curTag = '';
     render('top');
     countdown(prepSec(), playConv);
   }
@@ -353,10 +367,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   function paintAudio() {
     if (!audioEl) return;
     var total = audioEl.duration || (SET.audio && SET.audio.sec) || 0;
-    var rest = Math.max(0, Math.ceil(total - audioEl.currentTime));
-    var bar = $('abar'), n = $('anum');
-    if (bar && total) bar.style.width = ((audioEl.currentTime / total) * 100) + '%';
-    if (n) n.textContent = rest + ' 秒';
+    audioRest = Math.max(0, Math.ceil(total - audioEl.currentTime));
+    if (total) setBar(100 - (audioEl.currentTime / total) * 100);
+    renderFoot();
   }
 
   /* 音声ファイルで流す。落ちていたら端末の読み上げに戻す（学習を止めないため） */
@@ -380,7 +393,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
   function playConv() {
     clearTimer();
-    phase = 'play'; lineIdx = -1;
+    phase = 'play'; lineIdx = -1; audioRest = 0; curTag = '';
+    setBar(0);
     render('top');
     if (audioURL()) { playFile(); return; }
     playByTTS();
@@ -413,9 +427,12 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   }
 
   function noVoice() {
-    var n = stage.querySelector('.status .hint');
-    if (n) n.innerHTML = 'この端末で英語の音声が見つかりません。' +
-      '⚙ の「読み上げの音声」を確認してください。Skip で先に進めます。';
+    if (stage.querySelector('.novoice')) return;
+    var d = document.createElement('div');
+    d.className = 'card novoice';
+    d.innerHTML = '<p class="hint" style="margin:0">この端末で英語の音声が見つかりません。' +
+      '⚙ の「読み上げの音声」を確認してください。Skip で先に進めます。</p>';
+    stage.insertBefore(d, stage.firstChild);
   }
 
   /* 会話のあと、設問を1問ずつ読み上げてから解答時間を取る */
@@ -443,47 +460,18 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     })(0);
   }
 
+  /* 端末の読み上げで流すときは、いま誰が話しているかをフッターに出す。
+     用意された音声のときは追えないので、代わりに残り秒が出る。 */
   function markMic() {
-    var tag = (lines()[lineIdx] || {}).tag;
-    var ms = stage.querySelectorAll('.mic');
-    for (var i = 0; i < ms.length; i++) ms[i].classList.toggle('on', ms[i].dataset.tag === tag);
+    curTag = (lines()[lineIdx] || {}).tag || '';
+    renderFoot();
   }
 
   /* ================= 各ステップの画面 ================= */
 
-  function statusHTML() {
-    if (phase === 'prep') {
-      return '<div class="card status">' +
-        '<div class="count"><i id="cbar" style="width:100%"></i></div>' +
-        '<div class="st"><b>設問の先読み</b><span class="num" id="cnum">' + left + ' 秒</span></div>' +
-        '<p class="hint">何を聞かれるかを頭に入れてください。まだ音声は流れません。</p></div>';
-    }
-    if (phase === 'play') {
-      /* 用意された音声のときは誰が話しているかを追えないので、残り時間を出す */
-      if (audioURL()) {
-        return '<div class="card status">' +
-          '<div class="count"><i id="abar" style="width:0%"></i></div>' +
-          '<div class="st"><b>会話 再生中</b><span class="num" id="anum">' +
-            Math.ceil((SET.audio && SET.audio.sec) || 0) + ' 秒</span></div>' +
-          '<p class="hint">会話は1回だけです。設問を見ながら聞いてください。</p></div>';
-      }
-      return '<div class="card status">' +
-        '<div class="st"><b>会話 再生中</b><span class="mics">' +
-          (SET.speakers || []).map(function (s) {
-            return '<span class="mic" data-tag="' + esc(s.tag) + '">' + esc(s.tag) + '</span>';
-          }).join('') + '</span></div>' +
-        '<p class="hint">会話は1回だけです。設問を見ながら聞いてください。</p></div>';
-    }
-    if (phase === 'read') {
-      return '<div class="card status">' +
-        (reading ? '' : '<div class="count"><i id="cbar" style="width:100%"></i></div>') +
-        '<div class="st"><b>設問の読み上げ　Q' + (qi + 1) + ' / ' + qs().length +
-        (reading ? '' : '　解答') + '</b>' +
-        (reading ? '' : '<span class="num" id="cnum">' + left + ' 秒</span>') + '</div></div>';
-    }
-    return '<div class="card status"><div class="st"><b>見直し</b></div>' +
-      '<p class="hint">会話はもう流しません。解説へ進むと答え合わせになります。</p></div>';
-  }
+  /* 画面の上にはもう状態を出さない。残り時間と今の段階はフッターに寄せた。
+     設問を見ながら聞くのが本番の形なので、上は設問だけにしたい。 */
+  function statusHTML() { return ''; }
 
   function viewQuiz() {
     return statusHTML() + qs().map(function (q, i) {
@@ -623,20 +611,29 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     }
   }
 
+  function midLabel() {
+    if (step !== 0) return (step + 1) + ' / ' + STEPS.length + '　' + STEPS[step].label;
+    if (phase === 'prep') return '先読み　' + left + ' 秒';
+    if (phase === 'play') return '会話 再生中' + (audioRest ? '　' + audioRest + ' 秒' : (curTag ? '　' + curTag : ''));
+    if (phase === 'read') {
+      return '設問 ' + (qi + 1) + ' / ' + qs().length + (reading ? '　読み上げ' : '　解答 ' + left + ' 秒');
+    }
+    return '1 / ' + STEPS.length + '　設問';
+  }
+
   function renderFoot() {
     var prev = $('btnPrev'), next = $('btnNext'), mid = $('footMid');
     prev.disabled = step === 0;
     prev.textContent = '← Back';
     next.disabled = false;
+    mid.textContent = midLabel();
 
     if (step === 0) {
-      if (phase === 'prep') { mid.textContent = '先読み'; next.textContent = 'Play ▶'; }
-      else if (phase === 'play') { mid.textContent = '会話 再生中'; next.textContent = 'Skip'; }
-      else if (phase === 'read') { mid.textContent = '設問 ' + (qi + 1) + ' / ' + qs().length; next.textContent = 'Skip'; }
-      else { mid.textContent = '1 / ' + STEPS.length + '　設問'; next.textContent = 'Check'; }
+      if (phase === 'prep') next.textContent = 'Play ▶';
+      else if (phase === 'play' || phase === 'read') next.textContent = 'Skip';
+      else next.textContent = 'Check';
       return;
     }
-    mid.textContent = (step + 1) + ' / ' + STEPS.length + '　' + STEPS[step].label;
     next.textContent = step === STEPS.length - 1 ? 'Finish' : 'Next →';
   }
 
