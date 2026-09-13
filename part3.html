@@ -134,7 +134,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 .tip b{display:block;font-size:10px;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}
 .flow{font-size:14.5px;font-weight:700;line-height:1.7;margin:0}
 /* Point は枠で区切らず、見出しと本文を続けて読ませる */
-.point{padding:16px 2px 0}
+.point h3:first-of-type{margin-top:18px}
 .point h3{
   margin:26px 0 8px;font-size:15px;color:var(--accent-ink);line-height:1.5;
   padding-top:16px;border-top:1px solid var(--line);
@@ -602,8 +602,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       return '<div class="card"><p class="small muted" style="margin:0">' +
         'このセットには総括がありません。設問ごとの聞き方は解説にあります。</p></div>';
     }
-    /* 枠で囲まず、見出しと本文だけを並べる。読み物として続けて読めるように。 */
-    return '<div class="point">' +
+    /* 全体を1枚の枠に入れ、中は見出しと本文を続けて並べる。
+       項目ごとに枠を切ると読み物として途切れるため。 */
+    return '<div class="card point">' +
       '<div class="sec-label">会話の型</div>' +
       '<p class="flow">' + esc(p.flow || '') + '</p>' +
       '<p class="small muted" style="margin:6px 0 0">この型を覚えておくと、次に同じ展開が来たときに' +
