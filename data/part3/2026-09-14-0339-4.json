@@ -6,20 +6,68 @@
   "time": "03:39",
   "scene": "経理｜請求書の金額誤り",
   "speakers": [
-    { "tag": "W", "role": "女性", "accent": "en-CA" },
-    { "tag": "M", "role": "男性", "accent": "en-AU" }
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-CA"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-AU"
+    }
   ],
   "lines": [
-    { "tag": "W", "en": "I found an error on the invoice we sent to Halden Manufacturing yesterday.", "ja": "昨日Halden Manufacturingに送った請求書に誤りを見つけました。" },
-    { "tag": "M", "en": "What kind of error are we talking about?", "ja": "どんな種類の誤りですか。" },
-    { "tag": "W", "en": "The unit price is listed as fifty-five dollars, but it should be forty-five.", "ja": "単価が55ドルと記載されていますが、正しくは45ドルです。" },
-    { "tag": "M", "en": "That's a ten-dollar difference per unit. How many units were on that invoice?", "ja": "1台あたり10ドルの差ですね。その請求書には何台分ありましたか。" },
-    { "tag": "W", "en": "Two hundred units, so the total is overcharged by two thousand dollars.", "ja": "200台分なので、合計で2000ドル多く請求してしまっています。" },
-    { "tag": "M", "en": "We need to fix that before they notice and lose trust in us.", "ja": "先方が気づいて信頼を失う前に、直す必要がありますね。" },
-    { "tag": "W", "en": "Should I issue a corrected invoice, or just send a credit note for the difference?", "ja": "訂正した請求書を発行しますか、それとも差額分のクレジットノートを送るだけにしますか。" },
-    { "tag": "M", "en": "Send a credit note. It's faster, and it keeps the original invoice number on record.", "ja": "クレジットノートを送ってください。その方が早いですし、元の請求書番号がそのまま記録に残ります。" },
-    { "tag": "W", "en": "Understood. I'll prepare it this afternoon.", "ja": "承知しました。今日の午後に作成します。" },
-    { "tag": "M", "en": "Get it out before the end of the day so it reaches them before their accounting team closes the books.", "ja": "先方の経理が帳簿を締める前に届くよう、今日中に送り出してください。" }
+    {
+      "tag": "W",
+      "en": "I found an error on the invoice we sent to Halden Manufacturing yesterday.",
+      "ja": "昨日Halden Manufacturingに送った請求書に誤りを見つけました。"
+    },
+    {
+      "tag": "M",
+      "en": "What kind of error are we talking about?",
+      "ja": "どんな種類の誤りですか。"
+    },
+    {
+      "tag": "W",
+      "en": "The unit price is listed as fifty-five dollars, but it should be forty-five.",
+      "ja": "単価が55ドルと記載されていますが、正しくは45ドルです。"
+    },
+    {
+      "tag": "M",
+      "en": "That's a ten-dollar difference per unit. How many units were on that invoice?",
+      "ja": "1台あたり10ドルの差ですね。その請求書には何台分ありましたか。"
+    },
+    {
+      "tag": "W",
+      "en": "Two hundred units, so the total is overcharged by two thousand dollars.",
+      "ja": "200台分なので、合計で2000ドル多く請求してしまっています。"
+    },
+    {
+      "tag": "M",
+      "en": "We need to fix that before they notice and lose trust in us.",
+      "ja": "先方が気づいて信頼を失う前に、直す必要がありますね。"
+    },
+    {
+      "tag": "W",
+      "en": "Should I issue a corrected invoice, or just send a credit note for the difference?",
+      "ja": "訂正した請求書を発行しますか、それとも差額分のクレジットノートを送るだけにしますか。"
+    },
+    {
+      "tag": "M",
+      "en": "Send a credit note. It's faster, and it keeps the original invoice number on record.",
+      "ja": "クレジットノートを送ってください。その方が早いですし、元の請求書番号がそのまま記録に残ります。"
+    },
+    {
+      "tag": "W",
+      "en": "Understood. I'll prepare it this afternoon.",
+      "ja": "承知しました。今日の午後に作成します。"
+    },
+    {
+      "tag": "M",
+      "en": "Get it out before the end of the day so it reaches them before their accounting team closes the books.",
+      "ja": "先方の経理が帳簿を締める前に届くよう、今日中に送り出してください。"
+    }
   ],
   "questions": [
     {
@@ -27,13 +75,31 @@
       "type": "detail",
       "prompt": "What was the error on the invoice?",
       "choices": [
-        { "key": "A", "text": "The invoice was sent to the wrong company", "ja": "請求書が違う会社に送られた" },
-        { "key": "B", "text": "The unit price was listed too high", "ja": "単価が実際より高く記載されていた" },
-        { "key": "C", "text": "The number of units was miscounted", "ja": "台数が数え間違えられていた" },
-        { "key": "D", "text": "The invoice number was duplicated", "ja": "請求書番号が重複していた" }
+        {
+          "key": "A",
+          "text": "The invoice was sent to the wrong company",
+          "ja": "請求書が違う会社に送られた"
+        },
+        {
+          "key": "B",
+          "text": "The unit price was listed too high",
+          "ja": "単価が実際より高く記載されていた"
+        },
+        {
+          "key": "C",
+          "text": "The number of units was miscounted",
+          "ja": "台数が数え間違えられていた"
+        },
+        {
+          "key": "D",
+          "text": "The invoice number was duplicated",
+          "ja": "請求書番号が重複していた"
+        }
       ],
       "answer": "B",
-      "evidence": [2],
+      "evidence": [
+        2
+      ],
       "explanation": "女性は The unit price is listed as fifty-five dollars, but it should be forty-five. と述べており、単価が本来より10ドル高く記載されていたことが誤りの内容である。(C) の台数の数え間違いは本文に出てこない。",
       "tip": "誤りの内容を問う設問では、should be の後に来る「本来の正しい値」と、その前の「実際の記載」を両方押さえて比較する。"
     },
@@ -42,13 +108,32 @@
       "type": "next",
       "prompt": "What will the woman most likely do next?",
       "choices": [
-        { "key": "A", "text": "Cancel the original invoice entirely", "ja": "元の請求書を全て取り消す" },
-        { "key": "B", "text": "Contact Halden Manufacturing by phone", "ja": "Halden Manufacturingに電話で連絡する" },
-        { "key": "C", "text": "Prepare a credit note this afternoon", "ja": "今日の午後にクレジットノートを作成する" },
-        { "key": "D", "text": "Recalculate the total number of units", "ja": "台数の合計を再計算する" }
+        {
+          "key": "A",
+          "text": "Cancel the original invoice entirely",
+          "ja": "元の請求書を全て取り消す"
+        },
+        {
+          "key": "B",
+          "text": "Contact Halden Manufacturing by phone",
+          "ja": "Halden Manufacturingに電話で連絡する"
+        },
+        {
+          "key": "C",
+          "text": "Prepare a credit note this afternoon",
+          "ja": "今日の午後にクレジットノートを作成する"
+        },
+        {
+          "key": "D",
+          "text": "Recalculate the total number of units",
+          "ja": "台数の合計を再計算する"
+        }
       ],
       "answer": "C",
-      "evidence": [7, 8],
+      "evidence": [
+        7,
+        8
+      ],
       "explanation": "男性が Send a credit note. と指示し、女性は Understood. I'll prepare it this afternoon. と応じている。したがって次の行動は今日の午後にクレジットノートを作成することである。(A) の請求書の全面取り消しは、男性が original invoice number on record と述べていることと矛盾する。",
       "tip": "指示（Send a credit note）とその直後の受諾（Understood. I'll ...）をセットで読めば、次の行動がそのまま分かる。"
     },
@@ -57,40 +142,162 @@
       "type": "infer",
       "prompt": "Why does the man want the credit note sent out by the end of the day?",
       "choices": [
-        { "key": "A", "text": "The client's office will be closed tomorrow", "ja": "先方のオフィスが明日休業するから" },
-        { "key": "B", "text": "The woman is leaving on a business trip", "ja": "女性が出張に出るから" },
-        { "key": "C", "text": "The invoice must match a new company policy", "ja": "新しい社内規定に請求書を合わせる必要があるから" },
-        { "key": "D", "text": "It needs to reach the client before their books close", "ja": "先方が帳簿を締める前に届ける必要があるから" }
+        {
+          "key": "A",
+          "text": "The client's office will be closed tomorrow",
+          "ja": "先方のオフィスが明日休業するから"
+        },
+        {
+          "key": "B",
+          "text": "The woman is leaving on a business trip",
+          "ja": "女性が出張に出るから"
+        },
+        {
+          "key": "C",
+          "text": "The invoice must match a new company policy",
+          "ja": "新しい社内規定に請求書を合わせる必要があるから"
+        },
+        {
+          "key": "D",
+          "text": "It needs to reach the client before their books close",
+          "ja": "先方が帳簿を締める前に届ける必要があるから"
+        }
       ],
       "answer": "D",
-      "evidence": [9],
+      "evidence": [
+        9
+      ],
       "explanation": "男性は Get it out before the end of the day so it reaches them before their accounting team closes the books. と述べており、先方の経理が帳簿を締める前に届ける必要があることが期限の理由である。(A)〜(C) はいずれも会話に出てこない。",
       "tip": "期限が示されたら、その直後の so や because に続く部分に理由が来ることが多い。理由を問う infer 設問はそこを根拠にする。"
     }
   ],
   "glossary": {
-    "error": { "lemma": "error", "pos": "n", "ja": "誤り", "note": "" },
-    "invoice": { "lemma": "invoice", "pos": "n", "ja": "請求書", "note": "" },
-    "unit": { "lemma": "unit", "pos": "n", "ja": "台、個", "note": "unit price で「単価」" },
-    "price": { "lemma": "price", "pos": "n", "ja": "価格", "note": "" },
-    "difference": { "lemma": "difference", "pos": "n", "ja": "差額", "note": "" },
-    "overcharged": { "lemma": "overcharge", "pos": "v", "ja": "過剰に請求する", "note": "" },
-    "trust": { "lemma": "trust", "pos": "n", "ja": "信頼", "note": "lose trust で「信頼を失う」" },
-    "corrected": { "lemma": "correct", "pos": "adj", "ja": "訂正された", "note": "corrected invoice で「訂正版の請求書」" },
-    "credit note": { "lemma": "credit note", "pos": "n", "ja": "クレジットノート、貸方票", "note": "差額分を相殺する書類" },
-    "original": { "lemma": "original", "pos": "adj", "ja": "元の", "note": "" },
-    "record": { "lemma": "record", "pos": "n", "ja": "記録", "note": "on record で「記録上」" },
-    "prepare": { "lemma": "prepare", "pos": "v", "ja": "準備する、作成する", "note": "" },
-    "reaches": { "lemma": "reach", "pos": "v", "ja": "届く", "note": "" },
-    "accounting": { "lemma": "accounting", "pos": "n", "ja": "経理", "note": "accounting team で「経理チーム」" },
-    "books": { "lemma": "book", "pos": "n", "ja": "帳簿", "note": "close the books で「帳簿を締める」" }
+    "error": {
+      "lemma": "error",
+      "pos": "n",
+      "ja": "誤り",
+      "note": ""
+    },
+    "invoice": {
+      "lemma": "invoice",
+      "pos": "n",
+      "ja": "請求書",
+      "note": ""
+    },
+    "unit": {
+      "lemma": "unit",
+      "pos": "n",
+      "ja": "台、個",
+      "note": "unit price で「単価」"
+    },
+    "price": {
+      "lemma": "price",
+      "pos": "n",
+      "ja": "価格",
+      "note": ""
+    },
+    "difference": {
+      "lemma": "difference",
+      "pos": "n",
+      "ja": "差額",
+      "note": ""
+    },
+    "overcharged": {
+      "lemma": "overcharge",
+      "pos": "v",
+      "ja": "過剰に請求する",
+      "note": ""
+    },
+    "trust": {
+      "lemma": "trust",
+      "pos": "n",
+      "ja": "信頼",
+      "note": "lose trust で「信頼を失う」"
+    },
+    "corrected": {
+      "lemma": "correct",
+      "pos": "adj",
+      "ja": "訂正された",
+      "note": "corrected invoice で「訂正版の請求書」"
+    },
+    "credit note": {
+      "lemma": "credit note",
+      "pos": "n",
+      "ja": "クレジットノート、貸方票",
+      "note": "差額分を相殺する書類"
+    },
+    "original": {
+      "lemma": "original",
+      "pos": "adj",
+      "ja": "元の",
+      "note": ""
+    },
+    "record": {
+      "lemma": "record",
+      "pos": "n",
+      "ja": "記録",
+      "note": "on record で「記録上」"
+    },
+    "prepare": {
+      "lemma": "prepare",
+      "pos": "v",
+      "ja": "準備する、作成する",
+      "note": ""
+    },
+    "reaches": {
+      "lemma": "reach",
+      "pos": "v",
+      "ja": "届く",
+      "note": ""
+    },
+    "accounting": {
+      "lemma": "accounting",
+      "pos": "n",
+      "ja": "経理",
+      "note": "accounting team で「経理チーム」"
+    },
+    "books": {
+      "lemma": "book",
+      "pos": "n",
+      "ja": "帳簿",
+      "note": "close the books で「帳簿を締める」"
+    }
   },
   "point": {
     "flow": "報告 → 確認の質問 → 判断 → 指示 → 期限",
     "items": [
-      { "title": "数字の誤りは『あるべき値』と『実際の値』を両方拾う", "body": "経理系の報告と指示型では、誤りの内容が price や number のような数字で示される。listed as ... but it should be ... の形で、実際の記載と正しい値が並べて述べられるので、両方をセットで押さえないと detail 設問を誤る。" },
-      { "title": "判断の直後に具体的な指示動詞が来る", "body": "We need to ... のような判断の発言のあと、Send ... や Prepare ... のような命令形に近い指示が続く。判断と指示は別の発言に分かれることが多いので、next 設問の根拠は判断ではなく、その後の具体的な指示の行に置く。" },
-      { "title": "期限には理由が添えられる", "body": "by the end of the day のような期限だけで終わらず、so や because に続けて「なぜその期限なのか」が説明される。理由まで含めて根拠にすることで、infer 設問にも対応できる。" }
+      {
+        "title": "数字の誤りは『あるべき値』と『実際の値』を両方拾う",
+        "body": "経理系の報告と指示型では、誤りの内容が price や number のような数字で示される。listed as ... but it should be ... の形で、実際の記載と正しい値が並べて述べられるので、両方をセットで押さえないと detail 設問を誤る。"
+      },
+      {
+        "title": "判断の直後に具体的な指示動詞が来る",
+        "body": "We need to ... のような判断の発言のあと、Send ... や Prepare ... のような命令形に近い指示が続く。判断と指示は別の発言に分かれることが多いので、next 設問の根拠は判断ではなく、その後の具体的な指示の行に置く。"
+      },
+      {
+        "title": "期限には理由が添えられる",
+        "body": "by the end of the day のような期限だけで終わらず、so や because に続けて「なぜその期限なのか」が説明される。理由まで含めて根拠にすることで、infer 設問にも対応できる。"
+      }
     ]
+  },
+  "audio": {
+    "file": "audio/2026-09-14-0339-4.mp3",
+    "sec": 44.6,
+    "bytes": 244722,
+    "lines": [
+      "audio/2026-09-14-0339-4/00.mp3",
+      "audio/2026-09-14-0339-4/01.mp3",
+      "audio/2026-09-14-0339-4/02.mp3",
+      "audio/2026-09-14-0339-4/03.mp3",
+      "audio/2026-09-14-0339-4/04.mp3",
+      "audio/2026-09-14-0339-4/05.mp3",
+      "audio/2026-09-14-0339-4/06.mp3",
+      "audio/2026-09-14-0339-4/07.mp3",
+      "audio/2026-09-14-0339-4/08.mp3",
+      "audio/2026-09-14-0339-4/09.mp3"
+    ],
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-13T18:53:18.485Z",
+    "trimmed": true
   }
 }
