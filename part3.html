@@ -542,7 +542,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
           var l = lines()[li];
           return '<div class="line evid" data-ev="' + li + '" style="margin-top:10px">' +
             '<span class="tag">' + esc(l.tag) + '</span>' +
-            '<span class="body"><span class="e">' + esc(l.en) + '</span>' +
+            /* 対訳と同じく語をタップできるようにする。
+               聞き取れなかった行こそ、その場で語の意味を引きたい。 */
+            '<span class="body"><span class="e">' + T.markupEnglish(l.en, SET.glossary) + '</span>' +
             '<span class="j">' + esc(l.ja || '') + '</span></span>' +
             '<button class="pl" data-play="' + li + '" title="この行を再生">▶</button></div>';
         }).join('') +
