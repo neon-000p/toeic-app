@@ -308,7 +308,7 @@
   "audio": {
     "file": "audio/2026-09-13-0129.mp3",
     "sec": 48.9,
-    "bytes": 293853,
+    "bytes": 269058,
     "model": "gemini-3.1-flash-tts-preview",
     "madeAt": "2026-09-12T16:36:09.645Z",
     "lines": [
@@ -322,6 +322,7 @@
       "audio/2026-09-13-0129/07.mp3",
       "audio/2026-09-13-0129/08.mp3",
       "audio/2026-09-13-0129/09.mp3"
-    ]
+    ],
+    "trimmed": true
   }
 }

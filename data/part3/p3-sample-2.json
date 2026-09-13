@@ -305,7 +305,7 @@
   "audio": {
     "file": "audio/p3-sample-2.mp3",
     "sec": 49.6,
-    "bytes": 298173,
+    "bytes": 244290,
     "model": "gemini-3.1-flash-tts-preview",
     "madeAt": "2026-09-12T16:13:04.243Z",
     "lines": [
@@ -319,6 +319,7 @@
       "audio/p3-sample-2/07.mp3",
       "audio/p3-sample-2/08.mp3",
       "audio/p3-sample-2/09.mp3"
-    ]
+    ],
+    "trimmed": true
   }
 }

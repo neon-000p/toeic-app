@@ -449,8 +449,9 @@
       "audio/2026-09-13-0540/07.mp3"
     ],
     "voice": "Charon",
-    "bytes": 222888,
+    "bytes": 201480,
     "model": "gemini-3.1-flash-tts-preview",
-    "madeAt": "2026-09-12T23:10:13.044Z"
+    "madeAt": "2026-09-12T23:10:13.044Z",
+    "trimmed": true
   }
 }
