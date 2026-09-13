@@ -97,17 +97,29 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 .line .w.has-gloss{border-bottom-color:transparent}
 
 /* 語彙 */
-.gword{display:flex;gap:11px;padding:12px 0;border-bottom:1px solid var(--line)}
-.gword:first-child{padding-top:0}
-.gword:last-child{border-bottom:0;padding-bottom:0}
-.gword .body{flex:1;min-width:0}
-.gterm{font-family:var(--serif);font-size:18px;font-weight:700;line-height:1.25}
-.gterm .pos{font-family:var(--sans);font-size:11px;font-weight:700;color:var(--muted);margin-left:6px}
-.gja{font-size:14px;margin-top:2px}
-.gnote{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.55}
-.terms-only .gja,.terms-only .gnote{display:none}
-.terms-only .gword.open .gja,.terms-only .gword.open .gnote{display:block}
-.terms-only .gword{cursor:pointer}
+.vcard{display:flex;gap:11px;padding:14px 0;border-bottom:1px solid var(--line)}
+.vcard:first-child{padding-top:0}
+.vcard:last-child{border-bottom:0;padding-bottom:0}
+.vcard .no{
+  flex:none;width:22px;height:22px;border-radius:6px;background:var(--surface-2);
+  color:var(--muted);font-size:11px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:3px;
+}
+.vcard .body{flex:1;min-width:0}
+.vterm{font-family:var(--serif);font-size:19px;font-weight:700;line-height:1.25}
+.vpos{font-size:11px;font-weight:700;color:var(--muted);margin-left:6px}
+.vja{font-size:14.5px;margin-top:2px}
+.vgloss{font-size:12.5px;color:var(--muted);margin-top:1px}
+.say-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:24px;height:24px;padding:0;border-radius:7px;vertical-align:2px;
+  border:1px solid var(--line-2);background:var(--surface);
+  color:var(--accent);font-size:9px;line-height:1;cursor:pointer;
+}
+.vterm .say-btn{margin:0 6px 0 8px}
+.terms-only .vja,.terms-only .vgloss{display:none}
+.terms-only .vcard.open .vja,.terms-only .vcard.open .vgloss{display:block}
+.terms-only .vcard{cursor:pointer}
 .star{
   flex:none;width:34px;height:34px;border-radius:9px;border:1px solid var(--line-2);
   background:var(--surface);color:var(--muted);font-size:15px;cursor:pointer;
@@ -560,17 +572,20 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     if (!keys.length) return '<div class="card"><p class="small muted" style="margin:0">この会話には語注がありません。</p></div>';
     var showMean = T.Settings.get('vocabJa') !== false;
     return '<div class="card' + (showMean ? '' : ' terms-only') + '" id="vocabCard">' +
-      '<div class="sec-head"><span class="sec-label">語彙</span>' +
+      '<div class="sec-head"><span class="sec-label">Vocabulary</span>' +
         '<span class="sec-tools"><button class="btn btn-sm icon' + (showMean ? ' on' : '') +
           '" id="toggleVocabJa" title="' + (showMean ? '英単語だけにする' : '意味を出す') + '">訳</button></span></div>' +
-      keys.map(function (k) {
+      keys.map(function (k, i) {
         var e = g[k], term = e.lemma || k;
         var on = T.Vocab.has(term);
-        return '<div class="gword">' +
+        return '<div class="vcard">' +
+          '<span class="no">' + (i + 1) + '</span>' +
           '<div class="body">' +
-            '<div class="gterm">' + esc(term) + (e.pos ? '<span class="pos">（' + esc(e.pos) + '）</span>' : '') + '</div>' +
-            '<div class="gja">' + esc(e.ja || '') + '</div>' +
-            (e.note ? '<div class="gnote">' + esc(e.note) + '</div>' : '') +
+            '<div class="vterm">' + esc(term) +
+              '<button class="say-btn" data-sayw="' + esc(term) + '" title="単語を再生">▶</button>' +
+              (e.pos ? '<span class="vpos">（' + esc(e.pos) + '）</span>' : '') + '</div>' +
+            '<div class="vja">' + esc(e.ja || '') + '</div>' +
+            (e.note ? '<div class="vgloss">' + esc(e.note) + '</div>' : '') +
           '</div>' +
           '<button class="star' + (on ? ' on' : '') + '" data-term="' + esc(term) + '" title="語彙帳">' +
             (on ? '★' : '☆') + '</button></div>';
@@ -578,7 +593,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       '</div><p class="hint">' +
       (showMean
         ? '★ で<a href="vocab.html" style="color:var(--accent)">語彙帳</a>に入り、間隔をあけて復習できます。現在 ' + T.Vocab.count() + ' 語。'
-        : '英単語だけを出しています。意味を思い出してから、行をタップして答え合わせ。') + '</p>';
+        : '英単語だけを出しています。意味を思い出してから、カードをタップして答え合わせ。') + '</p>';
   }
 
   function viewPoint() {
@@ -692,6 +707,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       return;
     }
 
+    var sw = t.closest('[data-sayw]');
+    if (sw) { stopPlay(); T.TTS.speak(sw.dataset.sayw, { rate: 0.85 }); return; }
+
     var st = t.closest('.star[data-term]');
     if (st) {
       var term = st.dataset.term;
@@ -715,7 +733,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       return;
     }
 
-    var gw = t.closest('.gword');
+    var gw = t.closest('.vcard');
     if (gw && gw.closest('.terms-only')) { gw.classList.toggle('open'); return; }
 
     if (t.closest('#replay')) { replayAll(); return; }
