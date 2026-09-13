@@ -930,6 +930,18 @@ details.src[open]>summary::before{content:"▾ ";}
     return (DATA.summary && DATA.summary.paragraphs[pi] && DATA.summary.paragraphs[pi].sentences) || [];
   }
 
+  /* 段落と文の位置から、段落をまたぐ通し番号を出す。
+     文ごとの音声はこの並びで置いてあるので、引用の再生に使える。 */
+  function flatIndex(p, s) {
+    var ps = (DATA.summary && DATA.summary.paragraphs) || [];
+    var n = 0;
+    for (var i = 0; i < ps.length; i++) {
+      if (i === p) return n + s;
+      n += (ps[i].sentences || []).length;
+    }
+    return -1;
+  }
+
   function flatSummary() {
     var out = [];
     ((DATA.summary && DATA.summary.paragraphs) || []).forEach(function (p) {
@@ -1031,7 +1043,8 @@ details.src[open]>summary::before{content:"▾ ";}
             '</span></button>';
         }).join('') +
         (ev ? '<div class="evid-line">' + T.markupEnglish(ev.en, DATA.glossary) +
-              '<button class="say-btn" data-say="' + esc(ev.en) + '" title="再生">▶</button>' +
+              '<button class="say-btn" data-play="' + flatIndex(q.evidence.p, q.evidence.s) +
+                '" data-say="' + esc(ev.en) + '" title="再生">▶</button>' +
               '<div class="small muted" style="font-family:var(--sans);margin-top:5px">' + esc(ev.ja) + '</div></div>' : '') +
         '<p style="font-size:14.5px;margin:10px 0 0">' + esc(q.explanation) + '</p>' +
         (q.tip ? '<div class="tip"><b>PART 7 の解き方</b>' + esc(q.tip) + '</div>' : '') +
@@ -1329,7 +1342,14 @@ details.src[open]>summary::before{content:"▾ ";}
     }
 
     var say = t.closest('[data-say]');
-    if (say) { stopPlay(); T.TTS.speak(say.dataset.say, { rate: T.Settings.get('rate') }); return; }
+    if (say) {
+      stopPlay();
+      /* 用意した文ごとの音声があればそれを鳴らす。無ければ端末の読み上げ */
+      var pi = say.dataset.play === undefined ? -1 : +say.dataset.play;
+      if (pi >= 0 && sentURL(pi)) playOne('sum', pi);
+      else T.TTS.speak(say.dataset.say, { rate: T.Settings.get('rate') });
+      return;
+    }
 
     var st = t.closest('.star[data-term]');
     if (st) {

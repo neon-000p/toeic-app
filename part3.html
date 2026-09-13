@@ -522,7 +522,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
     list.forEach(function (q, i) {
       var mine = ans[q.id], ok = mine === q.answer;
-      var ev = (q.evidence || []).map(function (li) { return lines()[li]; }).filter(Boolean);
+      var ev = (q.evidence || []).filter(function (li) { return !!lines()[li]; });
       html += '<div class="card">' +
         '<div class="qnum">Q' + (i + 1) +
           (q.type && TYPE_LABEL[q.type] ? '　' + TYPE_LABEL[q.type] : '') + '　' +
@@ -538,11 +538,13 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
             (c.ja ? '<span class="cja">' + esc(c.ja) + '</span>' : '') +
             '</span></button>';
         }).join('') +
-        ev.map(function (l) {
-          return '<div class="line evid" style="margin-top:10px;cursor:default">' +
+        ev.map(function (li) {
+          var l = lines()[li];
+          return '<div class="line evid" data-ev="' + li + '" style="margin-top:10px">' +
             '<span class="tag">' + esc(l.tag) + '</span>' +
             '<span class="body"><span class="e">' + esc(l.en) + '</span>' +
-            '<span class="j">' + esc(l.ja || '') + '</span></span></div>';
+            '<span class="j">' + esc(l.ja || '') + '</span></span>' +
+            '<button class="pl" data-play="' + li + '" title="この行を再生">▶</button></div>';
         }).join('') +
         '<p class="expl">' + esc(q.explanation || '') + '</p>' +
         (q.tip ? '<div class="tip" style="margin-top:10px"><b>ここでの聞き方</b>' + esc(q.tip) + '</div>' : '') +
@@ -776,6 +778,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   var chain = false;
 
   function markLine(i) {
+    /* 解説の引用行にも印を付ける。data-i を持たないので data-play で拾う */
+    var evs = stage.querySelectorAll('.evid[data-ev]');
+    for (var e = 0; e < evs.length; e++) evs[e].classList.toggle('play', +evs[e].dataset.ev === i);
     var ls = stage.querySelectorAll('.line[data-i]');
     for (var k = 0; k < ls.length; k++) ls[k].classList.toggle('play', +ls[k].dataset.i === i);
     if (i >= 0) {
