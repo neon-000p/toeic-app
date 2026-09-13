@@ -850,11 +850,18 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     chain = false;
     speakLine(i, function () { setBar(0); markLine(-1); });
   }
+  /* 行と行の間。音声からは前後の無音を削ってあるので、続けて鳴らすと
+     切れ目が無くなる。話者が代わる間としてここで空ける。 */
+  var LINE_GAP = 450;
+
   function replayAll() {
     stopPlay(); chain = true;
     (function next(i) {
       if (!chain || i >= lines().length) { chain = false; setBar(0); markLine(-1); return; }
-      speakLine(i, function () { next(i + 1); });
+      speakLine(i, function () {
+        if (!chain) return;
+        setTimeout(function () { if (chain) next(i + 1); }, LINE_GAP);
+      });
     })(0);
   }
 
