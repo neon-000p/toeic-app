@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-15-0544",
+  "date": "2026-09-15",
+  "time": "05:44",
+  "createdAt": "2026-09-15T05:44:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "U.S. Treasury Yield Hits 5% Ahead of Fed Decision",
+    "ja": "米国債利回り、FRB決定前に5%到達"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The 10-year U.S. Treasury note's yield, the annual return it pays investors, climbed to 5% on Monday, the highest level since October 2023.",
+            "ja": "米国10年国債の利回り（投資家が受け取る年間の収益率のこと）は、月曜日に5%まで上昇し、2023年10月以来の高水準となった。"
+          },
+          {
+            "en": "The jump came just two days before the Federal Reserve's interest-rate decision this week.",
+            "ja": "この上昇は、今週のFRB（米連邦準備制度理事会）による金利決定のわずか2日前に起きた。"
+          },
+          {
+            "en": "Markets now expect the central bank to raise rates by a quarter point, or 0.25 percentage points, a sharp reversal from earlier hopes of a cut.",
+            "ja": "市場は現在、中央銀行が0.25ポイント（0.25%）の利上げに踏み切ると予想しており、これは利下げ期待からの大きな転換である。"
+          },
+          {
+            "en": "Rising energy prices and worries about heavy government borrowing have pushed bond yields higher for weeks.",
+            "ja": "エネルギー価格の上昇と政府の多額の借り入れへの懸念が、ここ数週間債券利回りを押し上げてきた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Higher yields mean higher borrowing costs for mortgages, car loans, and business credit across the country.",
+            "ja": "利回りの上昇は、住宅ローンや自動車ローン、企業向け融資の金利上昇を意味する。"
+          },
+          {
+            "en": "Some analysts warn that yields above 5% could trigger turmoil in financial markets.",
+            "ja": "一部のアナリストは、5%を超える利回りが金融市場の混乱を引き起こしかねないと警告している。"
+          },
+          {
+            "en": "Capital Economics, a research firm, called the 5% level a possible 'meltdown' threshold.",
+            "ja": "調査会社であるキャピタル・エコノミクスは、5%という水準を市場が「崩壊」しかねない節目だと表現した。"
+          },
+          {
+            "en": "Investors will watch the Federal Reserve's announcement closely this Wednesday.",
+            "ja": "投資家たちは今週水曜日のFRBの発表を注視するだろう。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What level did the 10-year Treasury yield reach on Monday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4.5%",
+          "ja": "4.5%"
+        },
+        {
+          "key": "B",
+          "text": "4.96%",
+          "ja": "4.96%"
+        },
+        {
+          "key": "C",
+          "text": "5%",
+          "ja": "5%"
+        },
+        {
+          "key": "D",
+          "text": "5.5%",
+          "ja": "5.5%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解はC（5%）。第1段落1文目に \"climbed to 5% on Monday\" と明記されている。(A)(B)(D)はいずれも本文に登場しない数字で、正しい数字に近い値を並べた引っかけ選択肢。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "数字を問う設問では、選択肢の数字を本文中からすばやく探し、%やポイントなど単位まで正確に一致するか確認することが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT mentioned as a reason bond yields have been climbing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Investors expect the Federal Reserve to raise rates this week.",
+          "ja": "投資家が今週のFRB利上げを予想している"
+        },
+        {
+          "key": "B",
+          "text": "Energy prices have been rising.",
+          "ja": "エネルギー価格が上昇している"
+        },
+        {
+          "key": "C",
+          "text": "The government has been borrowing heavily.",
+          "ja": "政府が多額の借り入れをしている"
+        },
+        {
+          "key": "D",
+          "text": "The Federal Reserve has already cut interest rates this month.",
+          "ja": "FRBが今月すでに利下げした"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解はD。第1段落3文目に \"a sharp reversal from earlier hopes of a cut\" とあり、市場はむしろ利下げ期待から一転して利上げを予想している、と述べられている。FRBが実際に利下げを行ったという事実は本文になく、内容とも矛盾する。(A)は同じ文の \"Markets now expect the central bank to raise rates\"、(B)(C)は4文目の \"Rising energy prices and worries about heavy government borrowing\" に対応しており、いずれも本文に明記されている。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "NOT問題は選択肢を1つずつ本文と照合し、根拠が見つからないもの、または本文と矛盾するものを消去法で見つけるのがコツ。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "yield",
+      "pos": "名",
+      "ja": "利回り、収益",
+      "gloss": "（＝投資をして得られる年間の収益の割合のこと）",
+      "example": {
+        "en": "This savings account offers a yield of 3% per year.",
+        "ja": "この普通預金口座は年3%の利回りを提供する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "climbed",
+      "pos": "動",
+      "ja": "上昇した",
+      "gloss": "",
+      "example": {
+        "en": "Sales climbed sharply after the new product launch.",
+        "ja": "新製品の発売後、売上は急激に上昇した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "reversal",
+      "pos": "名",
+      "ja": "転換、逆転",
+      "gloss": "",
+      "example": {
+        "en": "The company announced a reversal of its earlier decision.",
+        "ja": "その企業は以前の決定を撤回すると発表した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "gloss": "",
+      "example": {
+        "en": "The firm reduced its borrowing to cut interest costs.",
+        "ja": "その企業は利払いを減らすため借り入れを削減した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "threshold",
+      "pos": "名",
+      "ja": "節目、基準点",
+      "gloss": "",
+      "example": {
+        "en": "Once sales cross this threshold, employees receive a bonus.",
+        "ja": "売上がこの基準点を超えると、従業員はボーナスを受け取る。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "turmoil",
+      "pos": "名",
+      "ja": "混乱",
+      "gloss": "",
+      "example": {
+        "en": "The merger caused turmoil among the staff.",
+        "ja": "その合併は従業員の間に混乱を引き起こした。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "trigger",
+      "pos": "動",
+      "ja": "引き起こす",
+      "gloss": "",
+      "example": {
+        "en": "A single error can trigger a delay in the whole project.",
+        "ja": "一つのミスがプロジェクト全体の遅延を引き起こしかねない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "credit",
+      "pos": "名",
+      "ja": "与信、信用",
+      "gloss": "",
+      "example": {
+        "en": "The bank extended more credit to small businesses this year.",
+        "ja": "その銀行は今年、中小企業への与信を拡大した。"
+      }
+    }
+  ],
+  "glossary": {
+    "yield": {
+      "lemma": "yield",
+      "pos": "n",
+      "ja": "利回り",
+      "note": ""
+    },
+    "yields": {
+      "lemma": "yield",
+      "pos": "n",
+      "ja": "利回り",
+      "note": ""
+    },
+    "climbed": {
+      "lemma": "climb",
+      "pos": "v",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "treasury": {
+      "lemma": "treasury",
+      "pos": "n",
+      "ja": "国債",
+      "note": ""
+    },
+    "jump": {
+      "lemma": "jump",
+      "pos": "n",
+      "ja": "急上昇",
+      "note": ""
+    },
+    "interest-rate": {
+      "lemma": "interest rate",
+      "pos": "adj",
+      "ja": "金利の",
+      "note": ""
+    },
+    "decision": {
+      "lemma": "decision",
+      "pos": "n",
+      "ja": "決定",
+      "note": ""
+    },
+    "markets": {
+      "lemma": "market",
+      "pos": "n",
+      "ja": "市場",
+      "note": ""
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "v",
+      "ja": "予想する",
+      "note": ""
+    },
+    "bank": {
+      "lemma": "bank",
+      "pos": "n",
+      "ja": "銀行",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "v",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "n",
+      "ja": "金利",
+      "note": ""
+    },
+    "reversal": {
+      "lemma": "reversal",
+      "pos": "n",
+      "ja": "転換",
+      "note": ""
+    },
+    "cut": {
+      "lemma": "cut",
+      "pos": "n",
+      "ja": "引き下げ",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "v",
+      "ja": "上昇する",
+      "note": ""
+    },
+    "energy": {
+      "lemma": "energy",
+      "pos": "n",
+      "ja": "エネルギー",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "n",
+      "ja": "価格",
+      "note": ""
+    },
+    "worries": {
+      "lemma": "worry",
+      "pos": "n",
+      "ja": "懸念",
+      "note": ""
+    },
+    "borrowing": {
+      "lemma": "borrow",
+      "pos": "v",
+      "ja": "借り入れ",
+      "note": ""
+    },
+    "bond": {
+      "lemma": "bond",
+      "pos": "n",
+      "ja": "債券",
+      "note": ""
+    },
+    "mortgages": {
+      "lemma": "mortgage",
+      "pos": "n",
+      "ja": "住宅ローン",
+      "note": ""
+    },
+    "loans": {
+      "lemma": "loan",
+      "pos": "n",
+      "ja": "融資",
+      "note": ""
+    },
+    "credit": {
+      "lemma": "credit",
+      "pos": "n",
+      "ja": "与信",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "n",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "trigger": {
+      "lemma": "trigger",
+      "pos": "v",
+      "ja": "引き起こす",
+      "note": ""
+    },
+    "turmoil": {
+      "lemma": "turmoil",
+      "pos": "n",
+      "ja": "混乱",
+      "note": ""
+    },
+    "threshold": {
+      "lemma": "threshold",
+      "pos": "n",
+      "ja": "節目",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "n",
+      "ja": "投資家",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "同格のコンマ（名詞の直後に説明を加える用法）",
+    "quote": "Capital Economics, a research firm, called the 5% level a possible 'meltdown' threshold.",
+    "quoteJa": "調査会社であるキャピタル・エコノミクスは、5%という水準を市場が「崩壊」しかねない節目だと表現した。",
+    "blocks": [
+      {
+        "heading": "同格のコンマとは",
+        "body": "名詞（Capital Economics）の直後にコンマで区切って、その名詞が「何であるか」を説明する語句（a research firm）を置く用法。関係代名詞を使わずに、短く情報を補足できる。「Capital Economics, which is a research firm,」と書き換えることもできるが、同格のコンマのほうが簡潔。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "同格のコンマで説明される名詞句には、a research firm のように必ず冠詞（a/the）が伴う。人名や社名のあとに「役職」「所属」を補足するときによく使われる。例：Tim Cook, the CEO of Apple, announced the new product.（アップルのCEOであるティム・クックが新製品を発表した。）"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、同格のコンマの直後に来る名詞句の形（冠詞の有無、単数・複数）を問う問題が出ることがある。Part 7では、社名や人名のあとの同格句がその人物・組織の説明として設問の根拠になることが多く、読み飛ばさず注目することが得点につながる。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "自己紹介や会議資料で、初出の人物・組織を紹介する際によく使われる。例：John Smith, our new sales director, will join the meeting.（当社の新しい営業部長であるジョン・スミスが会議に参加します。）Alpha Corp, a leading supplier, confirmed the delivery date.（大手サプライヤーであるアルファ社が納品日を確認した。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 利回り上昇の意味",
+      "body": "国債の「利回り」とは、国債を保有することで得られる年間の収益率のこと。国債の価格が下がると、利回りは逆に上がる関係にある。今回の5%到達は、投資家が国債を売り、価格が下落していることを意味する。10年国債の利回りは住宅ローン金利など長期の借入金利の基準になるため、経済全体への影響が大きい。"
+    },
+    {
+      "heading": "📌 世界の中央銀行の動き",
+      "body": "今回の利回り上昇の背景には、FRB（米連邦準備制度理事会）がインフレを抑えるために利上げへ動くとの観測が強まったことがある。欧州中央銀行（ECB）も今月すでに追加利上げを実施しており、エネルギー価格の高騰を受けて世界の主要中央銀行が足並みをそろえて金融引き締めに動く局面に入っている。企業にとっては、世界的に資金調達コストが上昇する局面といえる。"
+    },
+    {
+      "heading": "📌 日本企業・日本人ビジネスパーソンへの影響",
+      "body": "米金利の上昇は円安ドル高の圧力につながりやすく、輸入原材料やエネルギーコストの上昇を通じて日本国内の物価にも影響が及ぶ可能性がある。海外に工場や拠点を持つ企業は、現地での資金調達コストの上昇にも注意が必要になる。日本銀行（BOJ）も金融政策の判断材料として米金利の動向を注視している。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "利回りが5%を超えると、株式など他の資産と比べて国債の魅力が相対的に高まり、株式市場から資金が流出しやすくなる。経営者にとっては、社債発行や借入による資金調達のコストが上がることを意味し、設備投資計画の見直しを迫られる可能性がある。投資家は、金利上昇局面でも安定した収益を確保できる資産への配分を検討する動きを強めている。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "10-year Treasury yield hits 5% before reversing as traders await Fed meeting",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
+      "date": "2026-09-14"
+    },
+    {
+      "title": "10-year Treasury yield hits 5%, critical threshold for US economy and markets",
+      "publisher": "CNN Business",
+      "url": "https://www.cnn.com/2026/09/14/investing/bond-yields-market-turmoil",
+      "date": "2026-09-14"
+    }
+  ]
+}
