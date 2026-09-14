@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-14-1639",
+  "date": "2026-09-14",
+  "time": "16:39",
+  "createdAt": "2026-09-14T16:39:00+09:00",
+  "genre": "医療",
+  "genreEn": "Healthcare",
+  "sample": false,
+  "title": {
+    "en": "FDA Approves First Brain Cancer Scan Drug from Telix",
+    "ja": "FDAがテリックス社の脳腫瘍画像診断薬を承認"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The FDA approved Pixclara, a new scan drug from Telix Pharmaceuticals, on September 14.",
+            "ja": "FDA（米食品医薬品局）は9月14日、Telix Pharmaceuticals社が開発した新しい画像診断薬「Pixclara」を承認した。"
+          },
+          {
+            "en": "Doctors use it before a special brain scan called a PET scan.",
+            "ja": "医師はPET検査と呼ばれる特殊な脳スキャンの前にこの薬を使用する。"
+          },
+          {
+            "en": "The drug helps doctors see brain tissue more clearly.",
+            "ja": "この薬は、医師が脳組織をより鮮明に見るのに役立つ。"
+          },
+          {
+            "en": "Pixclara is the first drug of its kind approved for a brain cancer called glioma.",
+            "ja": "Pixclaraは、グリオーマと呼ばれる脳腫瘍向けに承認された、この種の薬としては初めてのものだ。"
+          },
+          {
+            "en": "It works for both adults and children in the United States.",
+            "ja": "米国では成人・小児のどちらの患者にも使用できる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "After treatment, brain scans can look confusing.",
+            "ja": "治療後、脳のスキャン画像は分かりにくくなることがある。"
+          },
+          {
+            "en": "A bright spot might mean the cancer came back.",
+            "ja": "明るく映った部分が、がんの再発を意味する場合がある。"
+          },
+          {
+            "en": "Or it might just be scar tissue from treatment.",
+            "ja": "あるいは、単に治療による瘢痕組織である場合もある。"
+          },
+          {
+            "en": "The drug helps doctors tell the difference more clearly.",
+            "ja": "この薬は、医師がその違いをより明確に見分ける助けになる。"
+          },
+          {
+            "en": "About 24,000 people get this diagnosis in the U.S. each year.",
+            "ja": "米国では毎年約2万4千人がこの診断を受けている。"
+          },
+          {
+            "en": "The approval also gives Telix a new source of revenue.",
+            "ja": "今回の承認は、テリックス社にとって新たな収益源にもなる。"
+          },
+          {
+            "en": "This success may encourage more hospitals to order the drug soon.",
+            "ja": "この成功により、今後より多くの病院がこの薬を発注するようになる可能性がある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the article, how many people are diagnosed with glioma in the U.S. each year?",
+      "choices": [
+        { "key": "A", "text": "2,400", "ja": "2,400人" },
+        { "key": "B", "text": "14,000", "ja": "14,000人" },
+        { "key": "C", "text": "24,000", "ja": "24,000人" },
+        { "key": "D", "text": "42,000", "ja": "42,000人" }
+      ],
+      "answer": "C",
+      "explanation": "正解はC（24,000）。第2段落5文目に \"About 24,000 people get this diagnosis in the U.S. each year.\" と明記されている。(A)(B)(D)はいずれも本文に登場しない数字で、正しい数字の桁や単位を読み違えさせるための引っかけ選択肢。",
+      "evidence": { "p": 1, "s": 4 },
+      "tip": "TOEIC Part 7では、本文中の具体的な数字をそのまま正確に拾えるかが問われる設問が多い。数字の桁や単位を焦って読み間違えないことが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why do doctors use Pixclara during a brain scan?",
+      "choices": [
+        { "key": "A", "text": "To directly treat the brain tumor", "ja": "脳腫瘍を直接治療するため" },
+        { "key": "B", "text": "To replace the need for surgery", "ja": "手術の必要性をなくすため" },
+        { "key": "C", "text": "To help tell recurring cancer from scar tissue", "ja": "がんの再発と瘢痕組織を見分けるため" },
+        { "key": "D", "text": "To lower the cost of the scan", "ja": "検査費用を下げるため" }
+      ],
+      "answer": "C",
+      "explanation": "正解はC。第2段落2〜4文目で、治療後の脳スキャンでは明るく映った部分ががんの再発なのか、単なる瘢痕組織なのか分かりにくいこと、そしてこの薬がその違いを見分ける助けになることが説明されている。(A)は薬が直接治療に使われるという誤った情報、(B)は手術に置き換わるという本文にない情報、(D)は費用を下げるという本文にない情報で、いずれも根拠がない。",
+      "evidence": { "p": 1, "s": 3 },
+      "tip": "理由・目的を問う設問では、本文に書かれていない情報を紛れ込ませた選択肢に注意する。本文の言葉と選択肢の言葉が一致していても、因果関係が逆や無関係な場合は誤答となる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "approved",
+      "pos": "動",
+      "ja": "承認した",
+      "gloss": "",
+      "example": {
+        "en": "The manager approved the new marketing budget yesterday.",
+        "ja": "マネージャーは昨日、新しいマーケティング予算を承認した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "confusing",
+      "pos": "形",
+      "ja": "紛らわしい、分かりにくい",
+      "gloss": "",
+      "example": {
+        "en": "The instructions in the manual were confusing to new employees.",
+        "ja": "マニュアルの説明は新入社員にとって分かりにくかった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "diagnosis",
+      "pos": "名",
+      "ja": "診断",
+      "gloss": "",
+      "example": {
+        "en": "The consultant's diagnosis of the problem helped the team fix it quickly.",
+        "ja": "コンサルタントによる問題の診断が、チームの迅速な解決に役立った。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "revenue",
+      "pos": "名",
+      "ja": "収益、売上",
+      "gloss": "",
+      "example": {
+        "en": "The company's revenue grew by 15% last quarter.",
+        "ja": "その会社の収益は前四半期に15%増加した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "encourage",
+      "pos": "動",
+      "ja": "促す、後押しする",
+      "gloss": "",
+      "example": {
+        "en": "The discount is designed to encourage customers to buy more.",
+        "ja": "その割引は、顧客によりたくさん購入してもらうことを促すために設けられている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "treatment",
+      "pos": "名",
+      "ja": "治療、対応",
+      "gloss": "",
+      "example": {
+        "en": "The hotel gave the guests special treatment during their stay.",
+        "ja": "そのホテルは滞在中、宿泊客に特別な対応をした。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "scar tissue",
+      "pos": "名",
+      "ja": "瘢痕組織",
+      "gloss": "（＝治療のあとに残る傷の組織のこと）",
+      "example": {
+        "en": "Doctors checked whether the mark was scar tissue or something new.",
+        "ja": "医師たちは、その影が瘢痕組織なのか新しいものなのかを確認した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "source",
+      "pos": "名",
+      "ja": "源、出どころ",
+      "gloss": "",
+      "example": {
+        "en": "The company found a new source of income overseas.",
+        "ja": "その会社は海外に新たな収入源を見つけた。"
+      }
+    }
+  ],
+  "glossary": {
+    "approved": { "lemma": "approve", "pos": "v", "ja": "承認した", "note": "" },
+    "scan": { "lemma": "scan", "pos": "n", "ja": "スキャン、検査", "note": "" },
+    "drug": { "lemma": "drug", "pos": "n", "ja": "薬", "note": "" },
+    "doctors": { "lemma": "doctor", "pos": "n", "ja": "医師", "note": "" },
+    "special": { "lemma": "special", "pos": "adj", "ja": "特別な", "note": "" },
+    "brain": { "lemma": "brain", "pos": "n", "ja": "脳", "note": "" },
+    "called": { "lemma": "call", "pos": "v", "ja": "〜と呼ばれる", "note": "" },
+    "helps": { "lemma": "help", "pos": "v", "ja": "役立つ、助ける", "note": "" },
+    "tissue": { "lemma": "tissue", "pos": "n", "ja": "組織", "note": "" },
+    "clearly": { "lemma": "clearly", "pos": "adv", "ja": "はっきりと", "note": "" },
+    "cancer": { "lemma": "cancer", "pos": "n", "ja": "がん", "note": "" },
+    "glioma": { "lemma": "glioma", "pos": "n", "ja": "神経膠腫（グリオーマ）", "note": "" },
+    "adults": { "lemma": "adult", "pos": "n", "ja": "成人", "note": "" },
+    "treatment": { "lemma": "treatment", "pos": "n", "ja": "治療", "note": "" },
+    "scans": { "lemma": "scan", "pos": "n", "ja": "スキャン（複数形）", "note": "" },
+    "confusing": { "lemma": "confuse", "pos": "adj", "ja": "紛らわしい", "note": "" },
+    "spot": { "lemma": "spot", "pos": "n", "ja": "部分、斑点", "note": "" },
+    "scar": { "lemma": "scar", "pos": "n", "ja": "傷跡", "note": "" },
+    "difference": { "lemma": "difference", "pos": "n", "ja": "違い", "note": "" },
+    "diagnosis": { "lemma": "diagnosis", "pos": "n", "ja": "診断", "note": "" },
+    "approval": { "lemma": "approval", "pos": "n", "ja": "承認", "note": "" },
+    "source": { "lemma": "source", "pos": "n", "ja": "源", "note": "" },
+    "revenue": { "lemma": "revenue", "pos": "n", "ja": "収益", "note": "" },
+    "encourage": { "lemma": "encourage", "pos": "v", "ja": "促す", "note": "" },
+    "hospitals": { "lemma": "hospital", "pos": "n", "ja": "病院", "note": "" },
+    "order": { "lemma": "order", "pos": "v", "ja": "注文する", "note": "" }
+  },
+  "grammar": {
+    "topic": "help＋O＋原形動詞（toのない不定詞）",
+    "quote": "The drug helps doctors tell the difference more clearly.",
+    "quoteJa": "この薬は、医師がその違いをより明確に見分ける助けになる。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "help は「Oが〜するのを助ける」という意味を表し、目的語のあとに動詞の原形（原形不定詞）を置ける数少ない動詞の一つ。to不定詞を使っても意味はほぼ同じだが、口語やニュース英語では to を省いた原形がよく使われる。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "\"helps doctors tell the difference\" は \"helps doctors to tell the difference\" と書き換えても意味は変わらない。同様の例として \"This manual helps employees understand the process.\" のような文もよく使われる。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、help の直後の空所に動詞の原形・to不定詞・動名詞のどれを入れるかを問う問題が頻出する。make / let / have などの使役動詞は原形しか取れないのに対し、help は原形と to不定詞のどちらも正解になりうる点に注意する。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"This tool helps managers track project progress.\" や \"The new policy helps the company reduce costs.\" のように、業務効率化やコスト削減の効果を説明する文でよく使われる構文。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか",
+      "body": "Pixclaraは、脳腫瘍（グリオーマ）の治療後に行うPET検査で使う薬剤で、脳の画像が「がんの再発」なのか「治療の跡（瘢痕組織）」なのかを見分けやすくする。これまで医師は画像だけでは判断が難しく、追加の生検（組織を取って調べる検査）が必要になることもあった。今回の承認により、より早く、体への負担が少ない形で判断できるようになる。"
+    },
+    {
+      "heading": "📌 業界動向",
+      "body": "体に注射してから画像を撮る「放射性医薬品」と呼ばれる分野には、他にも複数の大手製薬企業が参入しており、競争が激しくなっている。Telixはこれまでも前立腺がんや腎臓がん向けの画像診断薬で実績があり、今回の承認で脳腫瘍という新しい領域に事業を広げたことになる。"
+    },
+    {
+      "heading": "📌 日本への影響・示唆",
+      "body": "日本でも脳腫瘍の画像診断は課題が多く、同様の技術は国内の一部医療機関でも研究・利用されている。今回の米国での承認は、同種の薬剤が将来日本の審査でも参考にされる可能性があり、国内の製薬・医療機器企業にとっても注目すべき動きだ。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "今回の承認は、Telixの既存事業に新たな収益源を加えるものだ。対象となる患者数はそれほど多くないが、保険で薬剤費がカバーされやすい市場に参入できた点が評価されている。経営者にとっては、規制当局の承認を積み重ねることで会社への信頼を高め、次の新薬承認にもつなげる狙いがある。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "FDA Approves Telix's Brain Cancer Imaging Drug Pixclara",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/apac/news-releases/fda-approves-telixs-brain-cancer-imaging-drug-pixclara-302877069.html",
+      "date": "2026-09-14"
+    },
+    {
+      "title": "FDA approves Telix brain cancer imaging drug Pixclara",
+      "publisher": "Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4642313-fda-approves-telix-brain-cancer-imaging-drug-pixclara",
+      "date": "2026-09-14"
+    }
+  ]
+}
