@@ -324,6 +324,19 @@
       write('gemini.cache', c);
     }
 
+    /* 400 の details には、どのフィールドが悪いかが入っていることがある */
+    function fieldsOf(j) {
+      var det = (j && j.error && j.error.details) || [], out = [];
+      for (var i = 0; i < det.length; i++) {
+        if (!/BadRequest/.test(String(det[i]['@type'] || ''))) continue;
+        var fv = det[i].fieldViolations || [];
+        for (var k = 0; k < fv.length; k++) {
+          out.push(String(fv[k].field || '') + (fv[k].description ? ': ' + fv[k].description : ''));
+        }
+      }
+      return out.length ? ' / ' + out.join(' / ') : '';
+    }
+
     function call(path, body) {
       var c = cfg();
       if (!c.key) return Promise.reject(new Error('APIキーが未設定です'));
@@ -339,7 +352,15 @@
           try { j = JSON.parse(t); } catch (e) {}
           if (!r.ok) {
             var msg = (j && j.error && j.error.message) || (r.status + ' ' + r.statusText);
-            if (r.status === 400 || r.status === 401 || r.status === 403) msg = 'キーが無効か権限がありません（' + msg + '）';
+            /* 400 はキーの問題とは限らない。リクエストの書き方をモデルが受け付けないときも
+               同じ 400 で返る。ここで「キーが無効」と決めつけると原因を見失う。 */
+            var keyBad = false;
+            if (r.status === 401 || r.status === 403 || /api[ _-]?key/i.test(msg)) {
+              keyBad = true;
+              msg = 'キーが無効か権限がありません（' + msg + '）';
+            } else if (r.status === 400) {
+              msg = 'リクエストが通りませんでした（' + msg + fieldsOf(j) + '）';
+            }
             if (r.status === 404) msg = 'モデル名が違うようです（' + msg + '）';
             var wait = 0;
             if (r.status === 429) {
@@ -362,6 +383,7 @@
             }
             var err = new Error(msg);
             err.status = r.status;
+            err.keyBad = keyBad;
             err.retryAfter = wait;
             throw err;
           }
@@ -396,15 +418,43 @@
       return m ? m[1].trim() : t;
     }
 
-    /* JSON で答えさせる。空で返ることがあるので1度だけ引き直す。
-       maxOutputTokens は内部の思考でも消費されるため、余裕を持たせる。 */
+    /* 考える枠の書き方はモデルによって違う。thinkingBudget: 0 を受け付けないモデルは
+       400（Request contains an invalid argument.）を返すので、書き方を落としながら試す。
+       短い JSON を返すだけなので、考える枠は少ないほど速くて安い。
+         think 'budget': thinkingConfig.thinkingBudget = 0
+         think 'low'   : thinkingConfig.thinkingLevel = 'low'
+         think なし    : 指定しない（モデルの既定に任せる）
+         plain         : JSON 指定も外し、素のテキストとして受けて自力で解釈する */
+    var MODES = [{ think: 'budget' }, { think: 'low' }, {}, { plain: true }];
+
+    /* 通った書き方はモデルごとに覚えておく。毎回1回目から試すと、
+       受け付けないモデルでは呼び出しを1回ぶん無駄にしてしまう。 */
+    function modeStart() {
+      var m = read('gemini.mode', {}) || {};
+      var i = m[cfg().model];
+      return (typeof i === 'number' && i >= 0 && i < MODES.length) ? i : 0;
+    }
+    function modeRemember(i) {
+      var m = read('gemini.mode', {}) || {};
+      if (m[cfg().model] === i) return;
+      m[cfg().model] = i;
+      write('gemini.mode', m);
+    }
+    /* 覚えた書き方でも駄目だったら忘れる。次はまた1回目から試す */
+    function modeForget() {
+      var m = read('gemini.mode', {}) || {};
+      if (m[cfg().model] === undefined) return;
+      delete m[cfg().model];
+      write('gemini.mode', m);
+    }
+
     /* 1回ぶんの呼び出し。条件を変えながら generate から呼ばれる。
-       mode.noThink: 考える枠を 0 にする（短い JSON を返すだけなので不要）
-       mode.plain:   JSON 指定を外して素のテキストで受ける */
+       maxOutputTokens は内部の思考でも消費されるため、余裕を持たせる。 */
     function genOnce(prompt, maxTokens, mode) {
       var gc = { temperature: 0.2, maxOutputTokens: maxTokens || 2048 };
       if (!mode.plain) gc.responseMimeType = 'application/json';
-      if (!mode.noThink) gc.thinkingConfig = { thinkingBudget: 0 };
+      if (mode.think === 'budget') gc.thinkingConfig = { thinkingBudget: 0 };
+      else if (mode.think === 'low') gc.thinkingConfig = { thinkingLevel: 'low' };
       return call('/models/' + encodeURIComponent(cfg().model) + ':generateContent', {
         contents: [{ parts: [{ text: prompt }] }],
         generationConfig: gc
@@ -415,32 +465,33 @@
 
        考えるモデルは、考えただけで本文を返さずに終わることがある
        （finishReason は STOP なのに中身が空）。同じ条件で引き直しても
-       同じ結果になりやすいので、条件を変えながら最大3回試す。
-         1回目: 考える枠 0 ＋ JSON 指定
-         2回目: 考える枠の指定を外す（受け付けないモデルがあるため）
-         3回目: JSON 指定も外し、素のテキストとして受けて自力で解釈する */
+       同じ結果になりやすいので、MODES の条件を変えながら試す。
+       400 で弾かれたときも、書き方が合わないだけなので次の条件へ進む。
+       キー・割当・モデル名の誤りは何度投げても同じなので、そこで止める。 */
     function generate(prompt, maxTokens, isOk) {
-      var modes = [{}, { noThink: true }, { noThink: true, plain: true }];
-      var lastFinish = '';
+      var lastFinish = '', lastErr = null;
 
       function run(i) {
-        if (i >= modes.length) {
-          return Promise.reject(new Error('答えが返りませんでした' +
+        if (i >= MODES.length) {
+          modeForget();
+          return Promise.reject(lastErr || new Error('答えが返りませんでした' +
             (lastFinish ? '（' + lastFinish + '／' + cfg().model + '）' : '（' + cfg().model + '）')));
         }
-        return genOnce(prompt, maxTokens, modes[i]).then(function (got) {
+        return genOnce(prompt, maxTokens, MODES[i]).then(function (got) {
           if (got.finish) lastFinish = got.finish;
           var obj = null;
           try { obj = JSON.parse(unfence(got.text)); } catch (e) {}
-          if (obj && (!isOk || isOk(obj))) return obj;
+          if (obj && (!isOk || isOk(obj))) { modeRemember(i); return obj; }
+          lastErr = null;   /* 返ってはきたので、前の 400 より「空で返った」を伝える */
           return run(i + 1);
         }, function (err) {
+          if (err && err.status === 400 && !err.keyBad) { lastErr = err; return run(i + 1); }
           /* 考える枠の指定を受け付けないモデルもある。その場合は外して続ける */
-          if (i === 0 && /thinking|thought/i.test((err && err.message) || '')) return run(1);
+          if (/thinking|thought/i.test((err && err.message) || '')) { lastErr = err; return run(i + 1); }
           throw err;
         });
       }
-      return run(0);
+      return run(modeStart());
     }
 
     /* 語と、それが入っている英文を渡して、意味と TOEIC 向けの一言を得る。
