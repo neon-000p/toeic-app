@@ -822,6 +822,15 @@
     );
   }
 
+  /* ---------- 版の印 ----------
+     tools/bump-assets.js が各ページの <meta name="app-build"> に書き込む。
+     ホームに小さく出して、push した内容が配信されたかを目で確かめるため。 */
+  function build() {
+    var m = document.querySelector('meta[name="app-build"]');
+    var v = m && m.getAttribute('content');
+    return v && v !== 'dev' ? v : 'dev';
+  }
+
   /* ---------- ユーティリティ ---------- */
   function esc(s) {
     return String(s == null ? '' : s)
@@ -1061,7 +1070,7 @@
     read: read, write: write,
     Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS, AI: AI,
     modal: modal, openSettings: openSettings,
-    flash: flash, takeFlash: takeFlash, numberSets: numberSets,
+    flash: flash, takeFlash: takeFlash, numberSets: numberSets, build: build,
     watchSelection: watchSelection, phrasePop: phrasePop,
     esc: esc, splitWords: splitWords, markupEnglish: markupEnglish, toast: toast
   };

@@ -1,4 +1,5 @@
-/* core.js / style.css の内容ハッシュを HTML の参照に付ける。
+/* core.js / style.css の内容ハッシュを HTML の参照に付け、
+   各ページに版の印（<meta name="app-build">）を書き込む。
    GitHub Pages はアセットを10分ほどキャッシュするため、これが無いと
    「新しい HTML ＋ 古い JS」という組み合わせで読み込まれて壊れる。
    内容が変わればURLが変わるので、その食い違いが起きなくなる。
@@ -24,6 +25,26 @@ function hash(file) {
 const versions = {};
 ASSETS.forEach(function (a) { versions[a.file] = hash(a.file); });
 
+/* 版の印を作る。付け替えた ?v= と前回の印は外してから混ぜる。
+   そうしないと、書き込むたびに中身が変わって印が落ち着かない。 */
+const BUILD_RE = /(<meta name="app-build" content=")[^"]*(">)/;
+function stable(s) {
+  return s.replace(/\?v=[a-f0-9]+/g, '').replace(BUILD_RE, '$1$2');
+}
+function buildId() {
+  const h = crypto.createHash('sha1');
+  ASSETS.forEach(function (a) { h.update(stable(fs.readFileSync(path.join(ROOT, a.file), 'utf8'))); });
+  PAGES.forEach(function (page) {
+    const p = path.join(ROOT, page);
+    if (fs.existsSync(p)) h.update(stable(fs.readFileSync(p, 'utf8')));
+  });
+  /* 日付は日本時間。ハッシュだけだと新しいのか古いのか分からない */
+  const d = new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+  return d + ' ' + h.digest('hex').slice(0, 7);
+}
+
+const build = buildId();
+
 let changed = 0;
 PAGES.forEach(function (page) {
   const p = path.join(ROOT, page);
@@ -35,8 +56,10 @@ PAGES.forEach(function (page) {
     const re = new RegExp('(' + a.attr + '=")' + esc + '(\\?v=[a-f0-9]+)?(")', 'g');
     s = s.replace(re, '$1' + a.file + '?v=' + versions[a.file] + '$3');
   });
+  if (BUILD_RE.test(s)) s = s.replace(BUILD_RE, '$1' + build + '$2');
+  else console.log('!! ' + page + ' に <meta name="app-build"> がありません');
   if (s !== before) { fs.writeFileSync(p, s); changed++; console.log('updated ' + page); }
 });
 
 console.log('core.js=' + versions['core.js'] + '  style.css=' + versions['style.css'] +
-            (changed ? '' : '  (変更なし)'));
+            '  build=' + build + (changed ? '' : '  (変更なし)'));
