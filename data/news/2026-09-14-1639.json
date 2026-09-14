@@ -80,14 +80,33 @@
       "type": "detail",
       "prompt": "According to the article, how many people are diagnosed with glioma in the U.S. each year?",
       "choices": [
-        { "key": "A", "text": "2,400", "ja": "2,400人" },
-        { "key": "B", "text": "14,000", "ja": "14,000人" },
-        { "key": "C", "text": "24,000", "ja": "24,000人" },
-        { "key": "D", "text": "42,000", "ja": "42,000人" }
+        {
+          "key": "A",
+          "text": "2,400",
+          "ja": "2,400人"
+        },
+        {
+          "key": "B",
+          "text": "14,000",
+          "ja": "14,000人"
+        },
+        {
+          "key": "C",
+          "text": "24,000",
+          "ja": "24,000人"
+        },
+        {
+          "key": "D",
+          "text": "42,000",
+          "ja": "42,000人"
+        }
       ],
       "answer": "C",
       "explanation": "正解はC（24,000）。第2段落5文目に \"About 24,000 people get this diagnosis in the U.S. each year.\" と明記されている。(A)(B)(D)はいずれも本文に登場しない数字で、正しい数字の桁や単位を読み違えさせるための引っかけ選択肢。",
-      "evidence": { "p": 1, "s": 4 },
+      "evidence": {
+        "p": 1,
+        "s": 4
+      },
       "tip": "TOEIC Part 7では、本文中の具体的な数字をそのまま正確に拾えるかが問われる設問が多い。数字の桁や単位を焦って読み間違えないことが重要。"
     },
     {
@@ -95,14 +114,33 @@
       "type": "reason",
       "prompt": "Why do doctors use Pixclara during a brain scan?",
       "choices": [
-        { "key": "A", "text": "To directly treat the brain tumor", "ja": "脳腫瘍を直接治療するため" },
-        { "key": "B", "text": "To replace the need for surgery", "ja": "手術の必要性をなくすため" },
-        { "key": "C", "text": "To help tell recurring cancer from scar tissue", "ja": "がんの再発と瘢痕組織を見分けるため" },
-        { "key": "D", "text": "To lower the cost of the scan", "ja": "検査費用を下げるため" }
+        {
+          "key": "A",
+          "text": "To directly treat the brain tumor",
+          "ja": "脳腫瘍を直接治療するため"
+        },
+        {
+          "key": "B",
+          "text": "To replace the need for surgery",
+          "ja": "手術の必要性をなくすため"
+        },
+        {
+          "key": "C",
+          "text": "To help tell recurring cancer from scar tissue",
+          "ja": "がんの再発と瘢痕組織を見分けるため"
+        },
+        {
+          "key": "D",
+          "text": "To lower the cost of the scan",
+          "ja": "検査費用を下げるため"
+        }
       ],
       "answer": "C",
       "explanation": "正解はC。第2段落2〜4文目で、治療後の脳スキャンでは明るく映った部分ががんの再発なのか、単なる瘢痕組織なのか分かりにくいこと、そしてこの薬がその違いを見分ける助けになることが説明されている。(A)は薬が直接治療に使われるという誤った情報、(B)は手術に置き換わるという本文にない情報、(D)は費用を下げるという本文にない情報で、いずれも根拠がない。",
-      "evidence": { "p": 1, "s": 3 },
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
       "tip": "理由・目的を問う設問では、本文に書かれていない情報を紛れ込ませた選択肢に注意する。本文の言葉と選択肢の言葉が一致していても、因果関係が逆や無関係な場合は誤答となる。"
     }
   ],
@@ -197,32 +235,162 @@
     }
   ],
   "glossary": {
-    "approved": { "lemma": "approve", "pos": "v", "ja": "承認した", "note": "" },
-    "scan": { "lemma": "scan", "pos": "n", "ja": "スキャン、検査", "note": "" },
-    "drug": { "lemma": "drug", "pos": "n", "ja": "薬", "note": "" },
-    "doctors": { "lemma": "doctor", "pos": "n", "ja": "医師", "note": "" },
-    "special": { "lemma": "special", "pos": "adj", "ja": "特別な", "note": "" },
-    "brain": { "lemma": "brain", "pos": "n", "ja": "脳", "note": "" },
-    "called": { "lemma": "call", "pos": "v", "ja": "〜と呼ばれる", "note": "" },
-    "helps": { "lemma": "help", "pos": "v", "ja": "役立つ、助ける", "note": "" },
-    "tissue": { "lemma": "tissue", "pos": "n", "ja": "組織", "note": "" },
-    "clearly": { "lemma": "clearly", "pos": "adv", "ja": "はっきりと", "note": "" },
-    "cancer": { "lemma": "cancer", "pos": "n", "ja": "がん", "note": "" },
-    "glioma": { "lemma": "glioma", "pos": "n", "ja": "神経膠腫（グリオーマ）", "note": "" },
-    "adults": { "lemma": "adult", "pos": "n", "ja": "成人", "note": "" },
-    "treatment": { "lemma": "treatment", "pos": "n", "ja": "治療", "note": "" },
-    "scans": { "lemma": "scan", "pos": "n", "ja": "スキャン（複数形）", "note": "" },
-    "confusing": { "lemma": "confuse", "pos": "adj", "ja": "紛らわしい", "note": "" },
-    "spot": { "lemma": "spot", "pos": "n", "ja": "部分、斑点", "note": "" },
-    "scar": { "lemma": "scar", "pos": "n", "ja": "傷跡", "note": "" },
-    "difference": { "lemma": "difference", "pos": "n", "ja": "違い", "note": "" },
-    "diagnosis": { "lemma": "diagnosis", "pos": "n", "ja": "診断", "note": "" },
-    "approval": { "lemma": "approval", "pos": "n", "ja": "承認", "note": "" },
-    "source": { "lemma": "source", "pos": "n", "ja": "源", "note": "" },
-    "revenue": { "lemma": "revenue", "pos": "n", "ja": "収益", "note": "" },
-    "encourage": { "lemma": "encourage", "pos": "v", "ja": "促す", "note": "" },
-    "hospitals": { "lemma": "hospital", "pos": "n", "ja": "病院", "note": "" },
-    "order": { "lemma": "order", "pos": "v", "ja": "注文する", "note": "" }
+    "approved": {
+      "lemma": "approve",
+      "pos": "v",
+      "ja": "承認した",
+      "note": ""
+    },
+    "scan": {
+      "lemma": "scan",
+      "pos": "n",
+      "ja": "スキャン、検査",
+      "note": ""
+    },
+    "drug": {
+      "lemma": "drug",
+      "pos": "n",
+      "ja": "薬",
+      "note": ""
+    },
+    "doctors": {
+      "lemma": "doctor",
+      "pos": "n",
+      "ja": "医師",
+      "note": ""
+    },
+    "special": {
+      "lemma": "special",
+      "pos": "adj",
+      "ja": "特別な",
+      "note": ""
+    },
+    "brain": {
+      "lemma": "brain",
+      "pos": "n",
+      "ja": "脳",
+      "note": ""
+    },
+    "called": {
+      "lemma": "call",
+      "pos": "v",
+      "ja": "〜と呼ばれる",
+      "note": ""
+    },
+    "helps": {
+      "lemma": "help",
+      "pos": "v",
+      "ja": "役立つ、助ける",
+      "note": ""
+    },
+    "tissue": {
+      "lemma": "tissue",
+      "pos": "n",
+      "ja": "組織",
+      "note": ""
+    },
+    "clearly": {
+      "lemma": "clearly",
+      "pos": "adv",
+      "ja": "はっきりと",
+      "note": ""
+    },
+    "cancer": {
+      "lemma": "cancer",
+      "pos": "n",
+      "ja": "がん",
+      "note": ""
+    },
+    "glioma": {
+      "lemma": "glioma",
+      "pos": "n",
+      "ja": "神経膠腫（グリオーマ）",
+      "note": ""
+    },
+    "adults": {
+      "lemma": "adult",
+      "pos": "n",
+      "ja": "成人",
+      "note": ""
+    },
+    "treatment": {
+      "lemma": "treatment",
+      "pos": "n",
+      "ja": "治療",
+      "note": ""
+    },
+    "scans": {
+      "lemma": "scan",
+      "pos": "n",
+      "ja": "スキャン（複数形）",
+      "note": ""
+    },
+    "confusing": {
+      "lemma": "confuse",
+      "pos": "adj",
+      "ja": "紛らわしい",
+      "note": ""
+    },
+    "spot": {
+      "lemma": "spot",
+      "pos": "n",
+      "ja": "部分、斑点",
+      "note": ""
+    },
+    "scar": {
+      "lemma": "scar",
+      "pos": "n",
+      "ja": "傷跡",
+      "note": ""
+    },
+    "difference": {
+      "lemma": "difference",
+      "pos": "n",
+      "ja": "違い",
+      "note": ""
+    },
+    "diagnosis": {
+      "lemma": "diagnosis",
+      "pos": "n",
+      "ja": "診断",
+      "note": ""
+    },
+    "approval": {
+      "lemma": "approval",
+      "pos": "n",
+      "ja": "承認",
+      "note": ""
+    },
+    "source": {
+      "lemma": "source",
+      "pos": "n",
+      "ja": "源",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "n",
+      "ja": "収益",
+      "note": ""
+    },
+    "encourage": {
+      "lemma": "encourage",
+      "pos": "v",
+      "ja": "促す",
+      "note": ""
+    },
+    "hospitals": {
+      "lemma": "hospital",
+      "pos": "n",
+      "ja": "病院",
+      "note": ""
+    },
+    "order": {
+      "lemma": "order",
+      "pos": "v",
+      "ja": "注文する",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "help＋O＋原形動詞（toのない不定詞）",
@@ -278,5 +446,26 @@
       "url": "https://seekingalpha.com/news/4642313-fda-approves-telix-brain-cancer-imaging-drug-pixclara",
       "date": "2026-09-14"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-14-1639/00.mp3",
+      "audio/2026-09-14-1639/01.mp3",
+      "audio/2026-09-14-1639/02.mp3",
+      "audio/2026-09-14-1639/03.mp3",
+      "audio/2026-09-14-1639/04.mp3",
+      "audio/2026-09-14-1639/05.mp3",
+      "audio/2026-09-14-1639/06.mp3",
+      "audio/2026-09-14-1639/07.mp3",
+      "audio/2026-09-14-1639/08.mp3",
+      "audio/2026-09-14-1639/09.mp3",
+      "audio/2026-09-14-1639/10.mp3",
+      "audio/2026-09-14-1639/11.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 205788,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-14T07:50:04.378Z",
+    "trimmed": true
+  }
 }
