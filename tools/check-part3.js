@@ -147,10 +147,23 @@ function check(file) {
     say('3人会話なのに、別の話者の行を突き合わせる設問が無い');
   }
 
-  /* ---- 語注 ---- */
+  /* ---- 語注 ----
+     2026-09-15 に基準を変えた（12〜20語 → 8〜12語、半分以上を熟語・コロケーションに）。
+     それより前のセットは古い基準で作ってあるので、数と中身は見ない。作り直さない限り
+     直らず、毎回の --all が赤くなってルーティンを止めてしまうため。 */
+  const GLOSS_RULE_FROM = '2026-09-15';
+  const madeOn = (/^(\d{4}-\d{2}-\d{2})/.exec(set.id || '') || [])[1] || '';
   const gl = set.glossary || {};
   const gkeys = Object.keys(gl);
-  if (gkeys.length < 12 || gkeys.length > 20) say(`glossary が12〜20語の外: ${gkeys.length}語`);
+  /* 熟語・句動詞・コロケーション。キーか原形に空白が入っているもの */
+  const gPhrases = gkeys.filter((k) => /\s/.test(k) || /\s/.test((gl[k] || {}).lemma || ''));
+  if (madeOn >= GLOSS_RULE_FROM) {
+    if (gkeys.length < 8 || gkeys.length > 12) say(`glossary が8〜12語の外: ${gkeys.length}語`);
+    if (gPhrases.length * 2 < gkeys.length) {
+      say(`glossary の2語以上のまとまりが半分未満: ${gPhrases.length}/${gkeys.length}語` +
+          '（句動詞・熟語・コロケーション・言い換えを増やす）');
+    }
+  }
   gkeys.forEach((k) => {
     if (k !== k.toLowerCase()) say(`glossary のキーが小文字でない: ${k}`);
     if (text.indexOf(k.toLowerCase()) < 0) say(`glossary のキーが本文に無い: ${k}`);
@@ -173,7 +186,8 @@ function check(file) {
     else if (it.body.length < 40) warn.push(`point.items[${i}] の body が短い（${it.body.length}字）`);
   });
 
-  return { bad, warn, info: `${lines.length}行 / ${total}語 / 話者${sp.length}人 / 型 ${usedTypes.join(',')} / 語注${gkeys.length}語` };
+  return { bad, warn, info: `${lines.length}行 / ${total}語 / 話者${sp.length}人 / 型 ${usedTypes.join(',')} / ` +
+    `語注${gkeys.length}語（熟語${gPhrases.length}）` };
 }
 
 /* ---------------- 入口 ---------------- */
