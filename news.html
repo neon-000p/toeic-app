@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-14 8189bfc">
+<meta name="app-build" content="2026-09-14 20edb9b">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>時事英語 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -836,7 +836,13 @@ details.src[open]>summary::before{content:"▾ ";}
      0 にすると計らない。⚙ で変えられる。 */
   var QUIZ_DEFAULT = 150;
 
-  var qTimer = null, qLeft = 0, qTotal = 0;
+  /* 残り時間は「締め切りの時刻」で持つ。1秒ごとに引き算していく持ち方だと、
+     答えを選んで画面を作り直すたびに秒の刻みが振り出しに戻り、表示が
+     一瞬止まって見える（選び続ければ実際に減らなくなる）。
+       qTotal: 計る秒数（0 なら計っていない）
+       qEnd:   動いている間の締め切り（epoch ms）
+       qRest:  止めている間の残り（ms） */
+  var qTimer = null, qTotal = 0, qEnd = 0, qRest = 0;
 
   function quizSec() {
     var v = T.Settings.get('newsSec');
@@ -856,7 +862,11 @@ details.src[open]>summary::before{content:"▾ ";}
   /* 計り直す（別の教材を開いたときと、記録を消したとき） */
   function resetQuizTimer() {
     clearQuizTimer();
-    qTotal = 0; qLeft = 0;
+    qTotal = 0; qEnd = 0; qRest = 0;
+  }
+
+  function quizLeftMs() {
+    return qEnd ? Math.max(0, qEnd - Date.now()) : Math.max(0, qRest);
   }
 
   function paintQuizTimer() {
@@ -870,36 +880,40 @@ details.src[open]>summary::before{content:"▾ ";}
       if (mid && stage.dataset.view !== 'done') mid.textContent = plain;
       return;
     }
-    var pct = Math.max(0, (qLeft / qTotal) * 100);
-    bar.style.width = pct + '%';
-    bar.classList.toggle('over', qLeft <= 0);
+    var ms = quizLeftMs();
+    bar.style.width = (ms / (qTotal * 1000)) * 100 + '%';
+    bar.classList.toggle('over', ms <= 0);
     if (!mid) return;
-    if (qLeft <= 0) { mid.textContent = plain + '　時間です'; return; }
-    var m = Math.floor(qLeft / 60), sec = qLeft % 60;
+    if (ms <= 0) { mid.textContent = plain + '　時間です'; return; }
+    /* 切り上げ。開いた直後に 2:29 から始まらないようにする */
+    var left = Math.ceil(ms / 1000);
+    var m = Math.floor(left / 60), sec = left % 60;
     mid.textContent = plain + '　' + m + ':' + (sec < 10 ? '0' : '') + sec;
   }
 
   /* 設問を開いている間だけ計る。採点したら止める（読み直しは時間外）。
-     答えを選ぶたびに画面を作り直すので、ここで毎回入れ直すと残り時間が戻ってしまう。
-     すでに計り始めていれば、続きから数える。 */
+     答えを選ぶたびに画面を作り直すので、締め切りは持ち越し、時計だけ入れ直す。 */
   function syncQuizTimer() {
     clearQuizTimer();
     var sec = quizSec();
     if (!quizOn()) {
-      /* 採点・完了・0秒で終わり。設問から離れただけなら、残り時間は取っておく */
-      if (state.graded || stage.dataset.view === 'done' || sec <= 0) { qTotal = 0; qLeft = 0; }
+      /* 採点・完了・0秒で終わり。設問から離れただけなら、残りを預かって止める */
+      if (state.graded || stage.dataset.view === 'done' || sec <= 0) { qTotal = 0; qEnd = 0; qRest = 0; }
+      else if (qEnd) { qRest = quizLeftMs(); qEnd = 0; }
       paintQuizTimer();
       return;
     }
     /* 計り始めと、⚙ で秒数を変えたときだけ入れ直す */
-    if (qTotal !== sec) { qTotal = sec; qLeft = sec; }
+    if (qTotal !== sec) { qTotal = sec; qRest = sec * 1000; qEnd = 0; }
+    if (!qEnd) qEnd = Date.now() + qRest;   /* 続きから */
     paintQuizTimer();
-    if (qLeft <= 0) return;   /* 0 のまま止めておく */
+    if (quizLeftMs() <= 0) return;   /* 0 のまま止めておく。先へは進めない */
+    /* 秒の変わり目は時計で決まるので、この間隔は「いつ見に行くか」でしかない。
+       1000 にすると変わり目と最大1秒ずれる。 */
     qTimer = setInterval(function () {
-      qLeft--;
       paintQuizTimer();
-      if (qLeft <= 0) clearQuizTimer();   /* 0 で止めるだけ。先へは進めない */
-    }, 1000);
+      if (quizLeftMs() <= 0) clearQuizTimer();
+    }, 200);
   }
 
   function renderFoot() {
