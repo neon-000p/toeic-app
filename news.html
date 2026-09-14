@@ -760,6 +760,7 @@ details.src[open]>summary::before{content:"▾ ";}
     };
     fresh = {};
     step = Math.min((p && p.step) || 0, STEPS.length - 1);
+    resetQuizTimer();
     renderHead();
     render();
   }
@@ -845,11 +846,23 @@ details.src[open]>summary::before{content:"▾ ";}
     if (qTimer) { clearInterval(qTimer); qTimer = null; }
   }
 
+  /* 時間を計るのは、採点前の設問を開いている間だけ */
+  function quizOn() {
+    return STEPS[step].key === 'quiz' && !state.graded &&
+      stage.dataset.view !== 'done' && quizSec() > 0;
+  }
+
+  /* 計り直す（別の教材を開いたときと、記録を消したとき） */
+  function resetQuizTimer() {
+    clearQuizTimer();
+    qTotal = 0; qLeft = 0;
+  }
+
   function paintQuizTimer() {
     var bar = $('fbar'), mid = $('footMid');
     if (!bar) return;
     var plain = (step + 1) + ' / ' + STEPS.length + '　' + STEPS[step].label;
-    if (!qTotal) {
+    if (!qTotal || !quizOn()) {
       bar.style.width = '0%';
       bar.classList.remove('over');
       /* 前の画面の残り時間が文字に残らないようにする */
@@ -865,15 +878,22 @@ details.src[open]>summary::before{content:"▾ ";}
     mid.textContent = plain + '　' + m + ':' + (sec < 10 ? '0' : '') + sec;
   }
 
-  /* 設問を開いている間だけ計る。採点したら止める（読み直しは時間外） */
+  /* 設問を開いている間だけ計る。採点したら止める（読み直しは時間外）。
+     答えを選ぶたびに画面を作り直すので、ここで毎回入れ直すと残り時間が戻ってしまう。
+     すでに計り始めていれば、続きから数える。 */
   function syncQuizTimer() {
     clearQuizTimer();
-    var on = STEPS[step].key === 'quiz' && !state.graded &&
-      stage.dataset.view !== 'done' && quizSec() > 0;
-    if (!on) { qTotal = 0; qLeft = 0; paintQuizTimer(); return; }
-    qTotal = quizSec();
-    qLeft = qTotal;
+    var sec = quizSec();
+    if (!quizOn()) {
+      /* 採点・完了・0秒で終わり。設問から離れただけなら、残り時間は取っておく */
+      if (state.graded || stage.dataset.view === 'done' || sec <= 0) { qTotal = 0; qLeft = 0; }
+      paintQuizTimer();
+      return;
+    }
+    /* 計り始めと、⚙ で秒数を変えたときだけ入れ直す */
+    if (qTotal !== sec) { qTotal = sec; qLeft = sec; }
     paintQuizTimer();
+    if (qLeft <= 0) return;   /* 0 のまま止めておく */
     qTimer = setInterval(function () {
       qLeft--;
       paintQuizTimer();
@@ -1608,6 +1628,7 @@ details.src[open]>summary::before{content:"▾ ";}
           T.write('progress', all);
           state = { answers: {}, graded: false, maxStep: 0, done: false };
           step = 0;
+          resetQuizTimer();
           bg.remove();
           renderRail();
           render();
