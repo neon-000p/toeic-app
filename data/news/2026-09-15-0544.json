@@ -442,5 +442,22 @@
       "url": "https://www.cnn.com/2026/09/14/investing/bond-yields-market-turmoil",
       "date": "2026-09-14"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-15-0544/00.mp3",
+      "audio/2026-09-15-0544/01.mp3",
+      "audio/2026-09-15-0544/02.mp3",
+      "audio/2026-09-15-0544/03.mp3",
+      "audio/2026-09-15-0544/04.mp3",
+      "audio/2026-09-15-0544/05.mp3",
+      "audio/2026-09-15-0544/06.mp3",
+      "audio/2026-09-15-0544/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 227304,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-14T20:49:02.766Z",
+    "trimmed": true
+  }
 }
