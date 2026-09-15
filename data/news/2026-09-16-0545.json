@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-16-0545",
+  "date": "2026-09-16",
+  "time": "05:45",
+  "createdAt": "2026-09-16T05:45:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "Trump Expands Tariffs on Canadian Goods as Trade Dispute Escalates",
+    "ja": "トランプ大統領、対カナダ関税を拡大 貿易摩擦が激化"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Trade tensions between the United States and Canada escalated sharply this month.",
+            "ja": "米国とカナダの間の貿易摩擦が、今月に入って一段と激しくなった。"
+          },
+          {
+            "en": "After talks between the two countries collapsed last month, Canada imposed new tariffs on roughly $20 billion of American exports, including steel, dairy products, and farm equipment.",
+            "ja": "両国間の協議が先月決裂した後、カナダは鉄鋼や乳製品、農業機械などを含む、米国からの輸出品約200億ドル相当に新たな関税を課した。"
+          },
+          {
+            "en": "In response, President Trump signed a series of proclamations that expanded a 50 percent duty on many Canadian goods, effective September 15.",
+            "ja": "これを受けてトランプ大統領は、多くのカナダ製品に課す50%の関税の対象を広げる一連の布告に署名し、9月15日から適用された。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Trump also announced that more Canadian products will face a full import ban starting September 29.",
+            "ja": "トランプ氏はさらに、一部のカナダ製品について9月29日から輸入を全面的に禁止すると発表した。"
+          },
+          {
+            "en": "He wants Canada to open its market wider to American companies and farmers.",
+            "ja": "同氏は、カナダが自国市場を米国企業や農家に対してより広く開放することを望んでいる。"
+          },
+          {
+            "en": "The administration further ordered federal agencies to stop buying many Canadian-made products under a purchasing program worth more than $50 billion.",
+            "ja": "政権はまた、総額500億ドルを超える政府調達制度の下で、連邦機関にカナダ製品の購入を停止するよう指示した。"
+          },
+          {
+            "en": "The move raises pressure on Canada to return to the negotiating table.",
+            "ja": "この動きは、カナダを交渉の場に戻らせるための圧力を強めるものだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the article, about how much in American exports did Canada's new tariffs target?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$10 billion",
+          "ja": "100億ドル"
+        },
+        {
+          "key": "B",
+          "text": "$20 billion",
+          "ja": "200億ドル"
+        },
+        {
+          "key": "C",
+          "text": "$50 billion",
+          "ja": "500億ドル"
+        },
+        {
+          "key": "D",
+          "text": "$65 billion",
+          "ja": "650億ドル"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B) $20 billion。第1段落2文目に「カナダは...米国からの輸出品約200億ドル相当に新たな関税を課した」と明記されている。(C)の$50 billionは第2段落で言及される政府調達プログラムの規模であり、別の数字を混同させる典型的な引っかけ。(A)(D)は本文に登場しない数字。TOEIC Part 7では複数の金額が出てくる文書ほど、どの数字が何を指すかを文脈で正確に対応づける必要がある。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "本文に複数の数字が出てくる場合、それぞれがどの対象(輸出額・関税率・調達規模など)を表すかを一つずつ設問と照合すると素早く正解にたどり着ける。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT mentioned as an action taken by the Trump administration?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Expanding a 50 percent duty on many Canadian goods",
+          "ja": "カナダ製品への50%関税の対象拡大"
+        },
+        {
+          "key": "B",
+          "text": "Banning some Canadian products starting September 29",
+          "ja": "9月29日からの一部カナダ製品の輸入禁止"
+        },
+        {
+          "key": "C",
+          "text": "Ordering federal agencies to stop buying Canadian-made products",
+          "ja": "連邦機関へのカナダ製品購入停止の指示"
+        },
+        {
+          "key": "D",
+          "text": "Cutting tariffs on Canadian steel imports",
+          "ja": "カナダ産鉄鋼への関税引き下げ"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は(D)。本文では、トランプ政権がカナダ製品への50%関税の対象拡大(第1段落3文目)、9月29日からの輸入全面禁止(第2段落1文目)、連邦機関によるカナダ製品購入の停止(第2段落3文目)を行ったと述べられており、いずれも関税・規制を強化する方向の措置である。(D)の「関税引き下げ」は本文の内容と正反対で、実際には関税は引き上げ・拡大されている。NOT問題では、本文にない選択肢だけでなく、このように本文と逆方向の内容を選ぶ設問にも注意が必要。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "NOT問題は消去法が基本。本文に明記された内容を1つずつ選択肢と照合し、内容が逆転しているものや本文にない情報を見抜くことが得点のカギになる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "tension",
+      "pos": "名",
+      "ja": "緊張、摩擦",
+      "gloss": "",
+      "example": {
+        "en": "Tensions between the two companies grew after the contract dispute.",
+        "ja": "契約をめぐる対立の後、両社の間の緊張が高まった。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "escalate",
+      "pos": "動",
+      "ja": "深刻化する、エスカレートする",
+      "gloss": "",
+      "example": {
+        "en": "The disagreement escalated quickly once both sides stopped communicating.",
+        "ja": "双方が意思疎通をやめると、対立はすぐに深刻化した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "collapse",
+      "pos": "動",
+      "ja": "決裂する、崩壊する",
+      "gloss": "",
+      "example": {
+        "en": "The merger talks collapsed after the two firms failed to agree on price.",
+        "ja": "両社が価格で合意できず、合併協議は決裂した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "impose",
+      "pos": "動",
+      "ja": "（税などを）課す",
+      "gloss": "",
+      "example": {
+        "en": "The government decided to impose a new tax on imported goods.",
+        "ja": "政府は輸入品に新たな税を課すことを決めた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "export",
+      "pos": "名",
+      "ja": "輸出（品）",
+      "gloss": "",
+      "example": {
+        "en": "Exports to overseas markets rose by 15% last quarter.",
+        "ja": "前四半期、海外市場向けの輸出は15%増加した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "proclamation",
+      "pos": "名",
+      "ja": "布告、宣言",
+      "gloss": "（＝政府などが正式に発表する命令や声明のこと）",
+      "example": {
+        "en": "The mayor issued a proclamation declaring a new public holiday.",
+        "ja": "市長は新しい祝日を定める布告を出した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "expand",
+      "pos": "動",
+      "ja": "拡大する",
+      "gloss": "",
+      "example": {
+        "en": "The company plans to expand its operations into new markets next year.",
+        "ja": "同社は来年、新たな市場へ事業を拡大する計画だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "administration",
+      "pos": "名",
+      "ja": "政権、政府、経営陣",
+      "gloss": "",
+      "example": {
+        "en": "The new administration promised to review the current trade policy.",
+        "ja": "新政権は現行の通商政策を見直すと約束した。"
+      }
+    }
+  ],
+  "glossary": {
+    "tensions": {
+      "lemma": "tension",
+      "pos": "n",
+      "ja": "緊張",
+      "note": ""
+    },
+    "escalated": {
+      "lemma": "escalate",
+      "pos": "v",
+      "ja": "深刻化した",
+      "note": ""
+    },
+    "talks": {
+      "lemma": "talk",
+      "pos": "n",
+      "ja": "協議、話し合い",
+      "note": ""
+    },
+    "collapsed": {
+      "lemma": "collapse",
+      "pos": "v",
+      "ja": "決裂した",
+      "note": ""
+    },
+    "imposed": {
+      "lemma": "impose",
+      "pos": "v",
+      "ja": "課した",
+      "note": ""
+    },
+    "tariffs": {
+      "lemma": "tariff",
+      "pos": "n",
+      "ja": "関税",
+      "note": ""
+    },
+    "exports": {
+      "lemma": "export",
+      "pos": "n",
+      "ja": "輸出（品）",
+      "note": ""
+    },
+    "steel": {
+      "lemma": "steel",
+      "pos": "n",
+      "ja": "鉄鋼",
+      "note": ""
+    },
+    "dairy": {
+      "lemma": "dairy",
+      "pos": "adj",
+      "ja": "乳製品の",
+      "note": ""
+    },
+    "equipment": {
+      "lemma": "equipment",
+      "pos": "n",
+      "ja": "機器、設備",
+      "note": ""
+    },
+    "response": {
+      "lemma": "response",
+      "pos": "n",
+      "ja": "対応、返答",
+      "note": ""
+    },
+    "proclamations": {
+      "lemma": "proclamation",
+      "pos": "n",
+      "ja": "布告、宣言",
+      "note": ""
+    },
+    "expanded": {
+      "lemma": "expand",
+      "pos": "v",
+      "ja": "拡大した",
+      "note": ""
+    },
+    "duty": {
+      "lemma": "duty",
+      "pos": "n",
+      "ja": "関税",
+      "note": ""
+    },
+    "percent": {
+      "lemma": "percent",
+      "pos": "n",
+      "ja": "パーセント",
+      "note": ""
+    },
+    "effective": {
+      "lemma": "effective",
+      "pos": "adj",
+      "ja": "効力を持つ、発効した",
+      "note": ""
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "v",
+      "ja": "発表した",
+      "note": ""
+    },
+    "ban": {
+      "lemma": "ban",
+      "pos": "n",
+      "ja": "禁止（措置）",
+      "note": ""
+    },
+    "market": {
+      "lemma": "market",
+      "pos": "n",
+      "ja": "市場",
+      "note": ""
+    },
+    "companies": {
+      "lemma": "company",
+      "pos": "n",
+      "ja": "企業、会社",
+      "note": ""
+    },
+    "farmers": {
+      "lemma": "farmer",
+      "pos": "n",
+      "ja": "農家",
+      "note": ""
+    },
+    "ordered": {
+      "lemma": "order",
+      "pos": "v",
+      "ja": "命じた、指示した",
+      "note": ""
+    },
+    "federal": {
+      "lemma": "federal",
+      "pos": "adj",
+      "ja": "連邦の",
+      "note": ""
+    },
+    "agencies": {
+      "lemma": "agency",
+      "pos": "n",
+      "ja": "機関、省庁",
+      "note": ""
+    },
+    "purchasing": {
+      "lemma": "purchase",
+      "pos": "adj",
+      "ja": "購入の、調達の",
+      "note": ""
+    },
+    "worth": {
+      "lemma": "worth",
+      "pos": "adj",
+      "ja": "〜に相当する、価値がある",
+      "note": ""
+    },
+    "raises": {
+      "lemma": "raise",
+      "pos": "v",
+      "ja": "高める、引き上げる",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "n",
+      "ja": "圧力",
+      "note": ""
+    },
+    "negotiating": {
+      "lemma": "negotiate",
+      "pos": "v",
+      "ja": "交渉する",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "形容詞 effective ＋ 日付（後置修飾で「〜から発効」を表す用法）",
+    "quote": "In response, President Trump signed a series of proclamations that expanded a 50 percent duty on many Canadian goods, effective September 15.",
+    "quoteJa": "これを受けてトランプ大統領は、多くのカナダ製品に課す50%の関税の対象を広げる一連の布告に署名し、9月15日から適用された。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "文末の \"effective September 15\" は、直前の名詞句(a 50 percent duty on many Canadian goods)を後ろから説明する形容詞句。\"effective\" は「効力を持つ、発効している」という意味の形容詞で、日付を直後に置くだけで「〜から適用される」という意味になる、契約書や公式発表でよく使われる簡潔な表現。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "関係代名詞を使って書き換えると \"a 50 percent duty ... which becomes effective on September 15\" となる。effective＋日付の形は、この関係代名詞節を圧縮した表現と考えると理解しやすい。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では \"effective\" と副詞 \"effectively\"(効果的に)の品詞の取り違えを狙う設問が出やすい。Part 7の社内通知や契約書では、\"effective immediately\" \"effective March 1\" のように文末や文頭で使われ、いつから規則が適用されるかを問う設問の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"The new remote-work policy, effective October 1, applies to all full-time employees.\" のように、社内規程の施行日を簡潔に示す表現として日常的に使われる。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 対抗関税の応酬とは",
+      "body": "「対抗関税」とは、相手国が関税を引き上げたことへの報復として、自国も同様に関税を引き上げる措置のこと。米国が対カナダで関税を強化し、カナダも報復関税で応じたことで、双方が段階的に税率を引き上げる「エスカレーション」の構図になっている。今回はさらに、単なる関税引き上げにとどまらず、特定品目の輸入そのものを禁止する動きへと発展している点が特徴的だ。"
+    },
+    {
+      "heading": "📌 業界全体・米国とカナダの通商摩擦の背景",
+      "body": "米国とカナダは自由貿易協定の下で緊密な経済関係を築いてきたが、鉄鋼や乳製品などの分野で長年摩擦を抱えてきた。今回の対立は両国間の通商協議が決裂したことがきっかけで、政府調達からカナダ製品を締め出す動きも加わり、単なる関税紛争を超えた広範な経済的圧力へと発展している。"
+    },
+    {
+      "heading": "📌 日本企業・日本人ビジネスパーソンへの影響・示唆",
+      "body": "北米で事業を展開する日本企業にとって、米国とカナダの関税紛争は他人事ではない。米国拠点からカナダ向けに部品や製品を輸出している企業や、カナダで生産して米国に販売している企業は、サプライチェーンの見直しやコスト増加のリスクに直面しうる。対象品目が頻繁に見直されるため、通関実務や契約条件を柔軟に見直せる体制を整えておくことが重要になる。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点からの意義",
+      "body": "投資家にとっては、関税政策の先行き不透明感が、北米に生産拠点を持つ企業の業績予想を難しくする要因となる。経営者の視点では、特定の1カ国に生産や調達を依存するリスクが改めて浮き彫りになっており、供給網の多元化やコスト転嫁の計画を前倒しで検討する必要性が高まっている。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fact Sheet: President Donald J. Trump Responds to Canada's Retaliation",
+      "publisher": "The White House",
+      "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-responds-to-canadas-retaliation/",
+      "date": "2026-09-08"
+    },
+    {
+      "title": "From Duties to Import Bans: President Trump Escalates Section 338 Actions Against Canadian Goods",
+      "publisher": "Troutman Pepper Locke",
+      "url": "https://www.troutman.com/insights/from-duties-to-import-bans-president-trump-escalates-section-338-actions-against-canadian-goods/",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "Trump lays out next moves after Canada's retaliatory tariffs take effect",
+      "publisher": "CNN Business",
+      "url": "https://www.cnn.com/2026/09/07/economy/trump-carney-canada-us-trade-war",
+      "date": "2026-09-07"
+    }
+  ]
+}
