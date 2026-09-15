@@ -219,32 +219,162 @@
     }
   ],
   "glossary": {
-    "released": { "lemma": "release", "pos": "v", "ja": "公開した", "note": "" },
-    "overhaul": { "lemma": "overhaul", "pos": "n", "ja": "抜本的な見直し", "note": "" },
-    "assistant": { "lemma": "assistant", "pos": "n", "ja": "アシスタント", "note": "" },
-    "conversations": { "lemma": "conversation", "pos": "n", "ja": "会話", "note": "" },
-    "remember": { "lemma": "remember", "pos": "v", "ja": "覚えている", "note": "" },
-    "search": { "lemma": "search", "pos": "v", "ja": "探す、検索する", "note": "" },
-    "details": { "lemma": "detail", "pos": "n", "ja": "詳細", "note": "" },
-    "complete": { "lemma": "complete", "pos": "v", "ja": "完了する、遂行する", "note": "" },
-    "tasks": { "lemma": "task", "pos": "n", "ja": "作業、業務", "note": "" },
-    "apps": { "lemma": "app", "pos": "n", "ja": "アプリ", "note": "" },
-    "information": { "lemma": "information", "pos": "n", "ja": "情報", "note": "" },
-    "rebuilt": { "lemma": "rebuild", "pos": "adj", "ja": "作り直された", "note": "" },
-    "available": { "lemma": "available", "pos": "adj", "ja": "利用できる", "note": "" },
-    "join": { "lemma": "join", "pos": "v", "ja": "加わる、参加する", "note": "" },
-    "waitlist": { "lemma": "waitlist", "pos": "n", "ja": "順番待ちリスト", "note": "" },
-    "settings": { "lemma": "setting", "pos": "n", "ja": "設定", "note": "" },
-    "beta": { "lemma": "beta", "pos": "n", "ja": "ベータ版", "note": "" },
-    "works": { "lemma": "work", "pos": "v", "ja": "機能する、作動する", "note": "" },
-    "advanced": { "lemma": "advanced", "pos": "adj", "ja": "高度な", "note": "" },
-    "features": { "lemma": "feature", "pos": "n", "ja": "機能", "note": "" },
-    "customizable": { "lemma": "customizable", "pos": "adj", "ja": "カスタマイズ可能な", "note": "" },
-    "voice": { "lemma": "voice", "pos": "n", "ja": "音声、声", "note": "" },
-    "models": { "lemma": "model", "pos": "n", "ja": "モデル、機種", "note": "" },
-    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト", "note": "" },
-    "rollout": { "lemma": "rollout", "pos": "n", "ja": "展開、導入", "note": "" },
-    "delayed": { "lemma": "delay", "pos": "adj", "ja": "遅れた", "note": "" }
+    "released": {
+      "lemma": "release",
+      "pos": "v",
+      "ja": "公開した",
+      "note": ""
+    },
+    "overhaul": {
+      "lemma": "overhaul",
+      "pos": "n",
+      "ja": "抜本的な見直し",
+      "note": ""
+    },
+    "assistant": {
+      "lemma": "assistant",
+      "pos": "n",
+      "ja": "アシスタント",
+      "note": ""
+    },
+    "conversations": {
+      "lemma": "conversation",
+      "pos": "n",
+      "ja": "会話",
+      "note": ""
+    },
+    "remember": {
+      "lemma": "remember",
+      "pos": "v",
+      "ja": "覚えている",
+      "note": ""
+    },
+    "search": {
+      "lemma": "search",
+      "pos": "v",
+      "ja": "探す、検索する",
+      "note": ""
+    },
+    "details": {
+      "lemma": "detail",
+      "pos": "n",
+      "ja": "詳細",
+      "note": ""
+    },
+    "complete": {
+      "lemma": "complete",
+      "pos": "v",
+      "ja": "完了する、遂行する",
+      "note": ""
+    },
+    "tasks": {
+      "lemma": "task",
+      "pos": "n",
+      "ja": "作業、業務",
+      "note": ""
+    },
+    "apps": {
+      "lemma": "app",
+      "pos": "n",
+      "ja": "アプリ",
+      "note": ""
+    },
+    "information": {
+      "lemma": "information",
+      "pos": "n",
+      "ja": "情報",
+      "note": ""
+    },
+    "rebuilt": {
+      "lemma": "rebuild",
+      "pos": "adj",
+      "ja": "作り直された",
+      "note": ""
+    },
+    "available": {
+      "lemma": "available",
+      "pos": "adj",
+      "ja": "利用できる",
+      "note": ""
+    },
+    "join": {
+      "lemma": "join",
+      "pos": "v",
+      "ja": "加わる、参加する",
+      "note": ""
+    },
+    "waitlist": {
+      "lemma": "waitlist",
+      "pos": "n",
+      "ja": "順番待ちリスト",
+      "note": ""
+    },
+    "settings": {
+      "lemma": "setting",
+      "pos": "n",
+      "ja": "設定",
+      "note": ""
+    },
+    "beta": {
+      "lemma": "beta",
+      "pos": "n",
+      "ja": "ベータ版",
+      "note": ""
+    },
+    "works": {
+      "lemma": "work",
+      "pos": "v",
+      "ja": "機能する、作動する",
+      "note": ""
+    },
+    "advanced": {
+      "lemma": "advanced",
+      "pos": "adj",
+      "ja": "高度な",
+      "note": ""
+    },
+    "features": {
+      "lemma": "feature",
+      "pos": "n",
+      "ja": "機能",
+      "note": ""
+    },
+    "customizable": {
+      "lemma": "customizable",
+      "pos": "adj",
+      "ja": "カスタマイズ可能な",
+      "note": ""
+    },
+    "voice": {
+      "lemma": "voice",
+      "pos": "n",
+      "ja": "音声、声",
+      "note": ""
+    },
+    "models": {
+      "lemma": "model",
+      "pos": "n",
+      "ja": "モデル、機種",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "n",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "rollout": {
+      "lemma": "rollout",
+      "pos": "n",
+      "ja": "展開、導入",
+      "note": ""
+    },
+    "delayed": {
+      "lemma": "delay",
+      "pos": "adj",
+      "ja": "遅れた",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "過去完了形の受動態（had been＋過去分詞）",
@@ -306,5 +436,22 @@
       "url": "https://www.techtimes.com/articles/327504/20260914/ios-27-launches-today-siri-ai-requires-waitlist-not-just-compatible-iphone.htm",
       "date": "2026-09-14"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-15-1640/00.mp3",
+      "audio/2026-09-15-1640/01.mp3",
+      "audio/2026-09-15-1640/02.mp3",
+      "audio/2026-09-15-1640/03.mp3",
+      "audio/2026-09-15-1640/04.mp3",
+      "audio/2026-09-15-1640/05.mp3",
+      "audio/2026-09-15-1640/06.mp3",
+      "audio/2026-09-15-1640/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 204072,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-15T07:48:43.235Z",
+    "trimmed": true
+  }
 }
