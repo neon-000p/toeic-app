@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-15-1640",
+  "date": "2026-09-15",
+  "time": "16:40",
+  "createdAt": "2026-09-15T16:40:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Apple Launches Overhauled Siri AI in iOS 27",
+    "ja": "アップル、iOS 27で刷新版Siriを提供開始"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Apple released iOS 27 on Monday, giving Siri its biggest overhaul in fifteen years.",
+            "ja": "アップルは月曜日にiOS 27を公開し、Siriにとってこの15年で最大級の刷新を行った。"
+          },
+          {
+            "en": "The new assistant can hold longer conversations, remember earlier questions, and search a user's mail and photos for personal details.",
+            "ja": "新しいアシスタントは会話を長く続けられるようになり、以前の質問を覚えていて、メールや写真からユーザーの個人的な情報を探せる。"
+          },
+          {
+            "en": "It can also complete simple tasks inside other apps and answer questions using live information from the web.",
+            "ja": "他のアプリの中で簡単な作業を代行したり、最新のウェブ情報を使って質問に答えたりすることもできる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The rebuilt assistant is not available to everyone right away.",
+            "ja": "刷新されたアシスタントは、すぐに全員が使えるわけではない。"
+          },
+          {
+            "en": "Users must join a waitlist inside their settings, and the beta works only in English at first.",
+            "ja": "利用者は設定画面からウェイティングリストに登録する必要があり、ベータ版は当初、英語でしか使えない。"
+          },
+          {
+            "en": "The most advanced features, such as a customizable voice, need one of Apple's newest iPhone models.",
+            "ja": "声をカスタマイズできる機能など、最も高度な機能を使うには、アップルの最新のiPhoneが必要になる。"
+          },
+          {
+            "en": "Analysts say the slow rollout shows how carefully the company is testing its new AI features.",
+            "ja": "アナリストは、この慎重な展開ぶりから、同社が新しいAI機能を入念に検証していることがうかがえると指摘する。"
+          },
+          {
+            "en": "Siri had already been delayed several times before this release.",
+            "ja": "Siriの刷新は、今回の公開より前にも何度か延期されていた。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What must users do to try the new Siri assistant?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Buy the newest iPhone Air",
+          "ja": "最新のiPhone Airを買う"
+        },
+        {
+          "key": "B",
+          "text": "Join a waitlist in their settings",
+          "ja": "設定でウェイトリストに登録する"
+        },
+        {
+          "key": "C",
+          "text": "Update their Apple ID",
+          "ja": "Apple IDを更新する"
+        },
+        {
+          "key": "D",
+          "text": "Pay an extra subscription fee",
+          "ja": "追加の利用料を払う"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B)。本文第2段落2文目「Users must join a waitlist inside their settings, and the beta works only in English at first.」に明記されている。(A)の「最新のiPhone Airを買う」は、カスタマイズ音声など高度な機能に必要な条件であり、Siri自体を試すための条件ではない。(C)(D)は本文に記載のない情報。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "手続きや条件を問う設問では、\"must\" \"need to\" のような義務・必要性を表す語の直後に正解の根拠が来ることが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to analysts, why is Apple releasing the new Siri gradually?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To fix bugs found by users first",
+          "ja": "先にバグを直すため"
+        },
+        {
+          "key": "B",
+          "text": "To carefully test its new AI features",
+          "ja": "新AI機能を慎重に検証するため"
+        },
+        {
+          "key": "C",
+          "text": "To wait for iPhone sales to increase",
+          "ja": "iPhoneの販売増を待つため"
+        },
+        {
+          "key": "D",
+          "text": "To avoid competition with Google's assistant",
+          "ja": "グーグルとの競争を避けるため"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B)。本文第2段落4文目「Analysts say the slow rollout shows how carefully the company is testing its new AI features.」が根拠。(A)(C)は本文に記載のない推測、(D)は本文に登場しないGoogleを持ち出した引っかけ選択肢。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "理由を問う設問は、\"show(s) that\" のように因果関係・結論を示す表現の前後を探すと根拠が見つかりやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "overhaul",
+      "pos": "名",
+      "ja": "抜本的な見直し、改修",
+      "gloss": "",
+      "example": {
+        "en": "The company plans a complete overhaul of its supply chain next year.",
+        "ja": "同社は来年、サプライチェーンの抜本的な見直しを計画している。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "assistant",
+      "pos": "名",
+      "ja": "補助役、アシスタント",
+      "gloss": "",
+      "example": {
+        "en": "Many offices now use a virtual assistant to schedule meetings.",
+        "ja": "多くのオフィスが今では会議の予定を組むために仮想アシスタントを使っている。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "rollout",
+      "pos": "名",
+      "ja": "（新製品・新サービスの）展開、導入",
+      "gloss": "",
+      "example": {
+        "en": "The rollout of the new software was delayed by a month.",
+        "ja": "新しいソフトウェアの展開は1か月遅れた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "waitlist",
+      "pos": "名",
+      "ja": "順番待ちリスト、キャンセル待ちリスト",
+      "gloss": "",
+      "example": {
+        "en": "Applicants who missed the deadline were put on a waitlist.",
+        "ja": "締め切りに間に合わなかった応募者は順番待ちリストに載せられた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "customizable",
+      "pos": "形",
+      "ja": "好みに合わせて変更できる、カスタマイズ可能な",
+      "gloss": "",
+      "example": {
+        "en": "The plan offers customizable options for each department.",
+        "ja": "そのプランは部署ごとにカスタマイズ可能な選択肢を提供している。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "analyst",
+      "pos": "名",
+      "ja": "分析担当者、アナリスト",
+      "gloss": "",
+      "example": {
+        "en": "An analyst reviewed the report before it was published.",
+        "ja": "発表前にアナリストがその報告書を確認した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "delayed",
+      "pos": "形",
+      "ja": "遅れた、延期された",
+      "gloss": "",
+      "example": {
+        "en": "The shipment was delayed because of bad weather.",
+        "ja": "その出荷は悪天候のため遅れた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "feature",
+      "pos": "名",
+      "ja": "機能、特徴",
+      "gloss": "",
+      "example": {
+        "en": "The new feature lets users share files more easily.",
+        "ja": "その新機能により、利用者はより簡単にファイルを共有できるようになった。"
+      }
+    }
+  ],
+  "glossary": {
+    "released": { "lemma": "release", "pos": "v", "ja": "公開した", "note": "" },
+    "overhaul": { "lemma": "overhaul", "pos": "n", "ja": "抜本的な見直し", "note": "" },
+    "assistant": { "lemma": "assistant", "pos": "n", "ja": "アシスタント", "note": "" },
+    "conversations": { "lemma": "conversation", "pos": "n", "ja": "会話", "note": "" },
+    "remember": { "lemma": "remember", "pos": "v", "ja": "覚えている", "note": "" },
+    "search": { "lemma": "search", "pos": "v", "ja": "探す、検索する", "note": "" },
+    "details": { "lemma": "detail", "pos": "n", "ja": "詳細", "note": "" },
+    "complete": { "lemma": "complete", "pos": "v", "ja": "完了する、遂行する", "note": "" },
+    "tasks": { "lemma": "task", "pos": "n", "ja": "作業、業務", "note": "" },
+    "apps": { "lemma": "app", "pos": "n", "ja": "アプリ", "note": "" },
+    "information": { "lemma": "information", "pos": "n", "ja": "情報", "note": "" },
+    "rebuilt": { "lemma": "rebuild", "pos": "adj", "ja": "作り直された", "note": "" },
+    "available": { "lemma": "available", "pos": "adj", "ja": "利用できる", "note": "" },
+    "join": { "lemma": "join", "pos": "v", "ja": "加わる、参加する", "note": "" },
+    "waitlist": { "lemma": "waitlist", "pos": "n", "ja": "順番待ちリスト", "note": "" },
+    "settings": { "lemma": "setting", "pos": "n", "ja": "設定", "note": "" },
+    "beta": { "lemma": "beta", "pos": "n", "ja": "ベータ版", "note": "" },
+    "works": { "lemma": "work", "pos": "v", "ja": "機能する、作動する", "note": "" },
+    "advanced": { "lemma": "advanced", "pos": "adj", "ja": "高度な", "note": "" },
+    "features": { "lemma": "feature", "pos": "n", "ja": "機能", "note": "" },
+    "customizable": { "lemma": "customizable", "pos": "adj", "ja": "カスタマイズ可能な", "note": "" },
+    "voice": { "lemma": "voice", "pos": "n", "ja": "音声、声", "note": "" },
+    "models": { "lemma": "model", "pos": "n", "ja": "モデル、機種", "note": "" },
+    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト", "note": "" },
+    "rollout": { "lemma": "rollout", "pos": "n", "ja": "展開、導入", "note": "" },
+    "delayed": { "lemma": "delay", "pos": "adj", "ja": "遅れた", "note": "" }
+  },
+  "grammar": {
+    "topic": "過去完了形の受動態（had been＋過去分詞）",
+    "quote": "Siri had already been delayed several times before this release.",
+    "quoteJa": "Siriの刷新は、今回の公開より前にも何度か延期されていた。",
+    "blocks": [
+      {
+        "heading": "過去完了形の受動態とは",
+        "body": "「had been＋過去分詞」は過去完了形の受動態。文中で基準となる過去の出来事（今回の公開）よりも、さらに前に完了していた動作・状態を、受け身の形で表す。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "能動態にすると \"Apple had already delayed Siri several times before this release.\" となる。受動態にすることで、行為者（アップル）よりも「延期されていた」という結果そのものに焦点が当たる。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6では、\"before\" や \"by the time\" などの語とセットで、過去完了形（had＋過去分詞）を選ばせる空所補充問題として出やすい。2つの過去の出来事の前後関係を正しく読み取れるかがポイントになる。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"The shipment had already been delayed by the time the client called.\" / \"The contract had been signed before the meeting started.\" のように、業務上の遅延や既完了の手続きを説明する場面でよく使われる。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 専門用語の噛み砕き",
+      "body": "Siriは、iPhoneに搭載されている音声アシスタント機能の名称。今回の刷新では、人間のように自然な文章で会話できる「生成AI」と呼ばれる技術を土台にSiriが作り直された。報道では、その基盤モデルはGoogleの生成AI「Gemini」の応答の仕方を学習させる形で開発されたとされ、ライバル企業の技術を活用した点が話題になっている。"
+    },
+    {
+      "heading": "📌 業界全体・競合他社の動向",
+      "body": "スマートフォン各社は、単に質問に答えるだけでなく、メールや写真の中身を理解し、ユーザーに代わってアプリを操作できる音声アシスタントの開発を急いでいる。機能の完成度だけでなく、「安全に、誤りなく個人情報を扱えるか」という信頼性の面でも各社が競い合っており、今回のアップルの段階的な公開はその一例といえる。"
+    },
+    {
+      "heading": "📌 日本企業・日本人ビジネスパーソンへの影響・示唆",
+      "body": "日本でも仕事にiPhoneを使う人は多く、メール確認や写真からの情報探しを音声で済ませられれば、日々の細かな作業時間の削減につながる可能性がある。一方で、今回のベータ版は英語のみでの提供となっており、日本語での本格的な利用開始にはまだ時間がかかる見通しである。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点からの意義",
+      "body": "新機能をいきなり全利用者に公開せず、ウェイティングリストを設けて段階的に広げる進め方は、AIの誤答や誤動作といった問題を大きくする前に発見し、対応するためのリスク管理策と読み取れる。経営者にとっては、新技術の完成度を確かめながら公開範囲を広げる手法が、自社の信頼を守るうえでの参考事例になる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apple releases iOS 27, redesigned Siri AI",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/14/apple-releases-ios-27-redesigned-siri-ai.html",
+      "date": "2026-09-14"
+    },
+    {
+      "title": "With iOS 27, I'm actually using Siri again",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/14/with-ios-27-im-actually-using-siri-again/",
+      "date": "2026-09-14"
+    },
+    {
+      "title": "iOS 27 Launches Today: Siri AI Requires Waitlist, Not Just Compatible iPhone",
+      "publisher": "Tech Times",
+      "url": "https://www.techtimes.com/articles/327504/20260914/ios-27-launches-today-siri-ai-requires-waitlist-not-just-compatible-iphone.htm",
+      "date": "2026-09-14"
+    }
+  ]
+}
