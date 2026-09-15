@@ -450,5 +450,21 @@
       "url": "https://www.cnn.com/2026/09/07/economy/trump-carney-canada-us-trade-war",
       "date": "2026-09-07"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-16-0545/00.mp3",
+      "audio/2026-09-16-0545/01.mp3",
+      "audio/2026-09-16-0545/02.mp3",
+      "audio/2026-09-16-0545/03.mp3",
+      "audio/2026-09-16-0545/04.mp3",
+      "audio/2026-09-16-0545/05.mp3",
+      "audio/2026-09-16-0545/06.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 215643,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-15T20:48:24.160Z",
+    "trimmed": true
+  }
 }
