@@ -64,14 +64,33 @@
       "type": "detail",
       "prompt": "According to the article, on what date did Oracle tell many employees that day would be their last workday?",
       "choices": [
-        { "key": "A", "text": "September 4", "ja": "9月4日" },
-        { "key": "B", "text": "September 11", "ja": "9月11日" },
-        { "key": "C", "text": "September 14", "ja": "9月14日" },
-        { "key": "D", "text": "September 29", "ja": "9月29日" }
+        {
+          "key": "A",
+          "text": "September 4",
+          "ja": "9月4日"
+        },
+        {
+          "key": "B",
+          "text": "September 11",
+          "ja": "9月11日"
+        },
+        {
+          "key": "C",
+          "text": "September 14",
+          "ja": "9月14日"
+        },
+        {
+          "key": "D",
+          "text": "September 29",
+          "ja": "9月29日"
+        }
       ],
       "answer": "C",
       "explanation": "正解は(C) September 14。第1段落1文目に「Oracle started a new round of layoffs on September 14」と明記されている。(A)(B)(D)はいずれも本文に登場しない日付を使った引っかけ選択肢である。TOEIC Part 7では、本文中の日付や数字を安易に記憶に頼らず、根拠となる一文に戻って正確に照合することが得点のカギになる。",
-      "evidence": { "p": 0, "s": 0 },
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
       "tip": "日付を問う設問は、本文中の同じ表現(ここでは September 14)を素早く見つけ出し、その一文だけを読んで判断すると時間の節約になる。"
     },
     {
@@ -79,90 +98,307 @@
       "type": "reason",
       "prompt": "Why does Oracle say it is reducing its workforce, according to the article?",
       "choices": [
-        { "key": "A", "text": "To free up cash for its investment in AI data centers", "ja": "AIデータセンター投資の資金を捻出するため" },
-        { "key": "B", "text": "To pay off a lawsuit settlement", "ja": "訴訟の和解金を支払うため" },
-        { "key": "C", "text": "To move its headquarters to another country", "ja": "本社を他国に移転するため" },
-        { "key": "D", "text": "To respond to a drop in sales", "ja": "売上減少への対応のため" }
+        {
+          "key": "A",
+          "text": "To free up cash for its investment in AI data centers",
+          "ja": "AIデータセンター投資の資金を捻出するため"
+        },
+        {
+          "key": "B",
+          "text": "To pay off a lawsuit settlement",
+          "ja": "訴訟の和解金を支払うため"
+        },
+        {
+          "key": "C",
+          "text": "To move its headquarters to another country",
+          "ja": "本社を他国に移転するため"
+        },
+        {
+          "key": "D",
+          "text": "To respond to a drop in sales",
+          "ja": "売上減少への対応のため"
+        }
       ],
       "answer": "A",
       "explanation": "正解は(A)。第2段落1文目に「Oracle says the layoffs will free up cash to pay for its huge investment in artificial intelligence data centers」とある。(B)(C)(D)はいずれも本文に一切記載がない情報で、理由・目的を問う設問で頻出する『本文にない情報』を選ばせる誤答パターンである。",
-      "evidence": { "p": 1, "s": 0 },
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
       "tip": "理由・目的を問う設問では、本文中の『will do to 〜』や『in order to』のような目的を示す表現の直後に根拠があることが多い。"
     }
   ],
   "vocabulary": [
     {
-      "no": 1, "term": "round", "pos": "名", "ja": "（一連の）ラウンド、回",
+      "no": 1,
+      "term": "round",
+      "pos": "名",
+      "ja": "（一連の）ラウンド、回",
       "gloss": "",
-      "example": { "en": "The company announced another round of job cuts last month.", "ja": "その会社は先月、新たな一連の人員削減を発表した。" }
+      "example": {
+        "en": "The company announced another round of job cuts last month.",
+        "ja": "その会社は先月、新たな一連の人員削減を発表した。"
+      }
     },
     {
-      "no": 2, "term": "termination", "pos": "名", "ja": "解雇、雇用契約の終了",
+      "no": 2,
+      "term": "termination",
+      "pos": "名",
+      "ja": "解雇、雇用契約の終了",
       "gloss": "",
-      "example": { "en": "She received a termination notice by email on Friday afternoon.", "ja": "彼女は金曜の午後、メールで解雇通知を受け取った。" }
+      "example": {
+        "en": "She received a termination notice by email on Friday afternoon.",
+        "ja": "彼女は金曜の午後、メールで解雇通知を受け取った。"
+      }
     },
     {
-      "no": 3, "term": "confirm", "pos": "動", "ja": "確認する、正式に認める",
+      "no": 3,
+      "term": "confirm",
+      "pos": "動",
+      "ja": "確認する、正式に認める",
       "gloss": "",
-      "example": { "en": "The manager has not confirmed the exact number of positions affected.", "ja": "部長は影響を受けるポストの正確な数をまだ確認していない。" }
+      "example": {
+        "en": "The manager has not confirmed the exact number of positions affected.",
+        "ja": "部長は影響を受けるポストの正確な数をまだ確認していない。"
+      }
     },
     {
-      "no": 4, "term": "analyst", "pos": "名", "ja": "アナリスト、分析専門家",
+      "no": 4,
+      "term": "analyst",
+      "pos": "名",
+      "ja": "アナリスト、分析専門家",
       "gloss": "",
-      "example": { "en": "Several analysts expect the company's profits to rise next quarter.", "ja": "数名のアナリストは、同社の利益が来四半期に伸びると予想している。" }
+      "example": {
+        "en": "Several analysts expect the company's profits to rise next quarter.",
+        "ja": "数名のアナリストは、同社の利益が来四半期に伸びると予想している。"
+      }
     },
     {
-      "no": 5, "term": "restructuring", "pos": "名", "ja": "事業再編、組織再編",
+      "no": 5,
+      "term": "restructuring",
+      "pos": "名",
+      "ja": "事業再編、組織再編",
       "gloss": "",
-      "example": { "en": "The restructuring plan aims to cut costs across every department.", "ja": "その再編計画は、全部門にわたるコスト削減を目指している。" }
+      "example": {
+        "en": "The restructuring plan aims to cut costs across every department.",
+        "ja": "その再編計画は、全部門にわたるコスト削減を目指している。"
+      }
     },
     {
-      "no": 6, "term": "filing", "pos": "名", "ja": "（規制当局への）届出書類",
+      "no": 6,
+      "term": "filing",
+      "pos": "名",
+      "ja": "（規制当局への）届出書類",
       "gloss": "（＝会社が政府機関に提出する公式な書類のこと）",
-      "example": { "en": "According to a recent filing, the company plans to raise more capital.", "ja": "最近の届出書類によると、同社はさらなる資金調達を計画している。" }
+      "example": {
+        "en": "According to a recent filing, the company plans to raise more capital.",
+        "ja": "最近の届出書類によると、同社はさらなる資金調達を計画している。"
+      }
     },
     {
-      "no": 7, "term": "fuel", "pos": "動", "ja": "（比喩的に）勢いを与える、後押しする",
+      "no": 7,
+      "term": "fuel",
+      "pos": "動",
+      "ja": "（比喩的に）勢いを与える、後押しする",
       "gloss": "",
-      "example": { "en": "Strong demand for cloud services continues to fuel the industry's growth.", "ja": "クラウドサービスへの強い需要が、業界の成長を後押しし続けている。" }
+      "example": {
+        "en": "Strong demand for cloud services continues to fuel the industry's growth.",
+        "ja": "クラウドサービスへの強い需要が、業界の成長を後押しし続けている。"
+      }
     },
     {
-      "no": 8, "term": "service", "pos": "名", "ja": "勤続、勤務期間",
+      "no": 8,
+      "term": "service",
+      "pos": "名",
+      "ja": "勤続、勤務期間",
       "gloss": "",
-      "example": { "en": "Employees receive extra vacation days for every five years of service.", "ja": "従業員は勤続5年ごとに追加の休暇日数を受け取る。" }
+      "example": {
+        "en": "Employees receive extra vacation days for every five years of service.",
+        "ja": "従業員は勤続5年ごとに追加の休暇日数を受け取る。"
+      }
     }
   ],
   "glossary": {
-    "started": { "lemma": "start", "pos": "v", "ja": "開始した", "note": "" },
-    "round": { "lemma": "round", "pos": "n", "ja": "（一連の）回", "note": "" },
-    "layoffs": { "lemma": "layoff", "pos": "n", "ja": "解雇、人員削減", "note": "" },
-    "telling": { "lemma": "tell", "pos": "v", "ja": "告げる", "note": "" },
-    "employees": { "lemma": "employee", "pos": "n", "ja": "従業員", "note": "" },
-    "termination": { "lemma": "termination", "pos": "n", "ja": "解雇、終了", "note": "" },
-    "emails": { "lemma": "email", "pos": "n", "ja": "メール", "note": "" },
-    "logged": { "lemma": "log", "pos": "v", "ja": "ログインする（log inで）", "note": "" },
-    "confirmed": { "lemma": "confirm", "pos": "v", "ja": "確認した", "note": "" },
-    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト", "note": "" },
-    "total": { "lemma": "total", "pos": "n", "ja": "合計", "note": "" },
-    "reach": { "lemma": "reach", "pos": "v", "ja": "達する", "note": "" },
-    "thousands": { "lemma": "thousand", "pos": "n", "ja": "数千", "note": "" },
-    "once": { "lemma": "once", "pos": "conj", "ja": "いったん〜すると", "note": "" },
-    "latest": { "lemma": "latest", "pos": "adj", "ja": "最新の", "note": "" },
-    "ends": { "lemma": "end", "pos": "v", "ja": "終わる", "note": "" },
-    "earlier": { "lemma": "earlier", "pos": "adv", "ja": "以前に、より早く", "note": "" },
-    "affected": { "lemma": "affect", "pos": "v", "ja": "影響を与えた", "note": "" },
-    "workers": { "lemma": "worker", "pos": "n", "ja": "労働者", "note": "" },
-    "countries": { "lemma": "country", "pos": "n", "ja": "国々", "note": "" },
-    "free": { "lemma": "free", "pos": "v", "ja": "（free up で）捻出する", "note": "" },
-    "cash": { "lemma": "cash", "pos": "n", "ja": "現金、資金", "note": "" },
-    "investment": { "lemma": "investment", "pos": "n", "ja": "投資", "note": "" },
-    "expects": { "lemma": "expect", "pos": "v", "ja": "見込む", "note": "" },
-    "spending": { "lemma": "spending", "pos": "n", "ja": "支出", "note": "" },
-    "fuel": { "lemma": "fuel", "pos": "v", "ja": "勢いを与える", "note": "" },
-    "growth": { "lemma": "growth", "pos": "n", "ja": "成長", "note": "" },
-    "filing": { "lemma": "filing", "pos": "n", "ja": "届出書類", "note": "" },
-    "restructuring": { "lemma": "restructuring", "pos": "n", "ja": "事業再編", "note": "" },
-    "cost": { "lemma": "cost", "pos": "v", "ja": "費用がかかる", "note": "" }
+    "started": {
+      "lemma": "start",
+      "pos": "v",
+      "ja": "開始した",
+      "note": ""
+    },
+    "round": {
+      "lemma": "round",
+      "pos": "n",
+      "ja": "（一連の）回",
+      "note": ""
+    },
+    "layoffs": {
+      "lemma": "layoff",
+      "pos": "n",
+      "ja": "解雇、人員削減",
+      "note": ""
+    },
+    "telling": {
+      "lemma": "tell",
+      "pos": "v",
+      "ja": "告げる",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "n",
+      "ja": "従業員",
+      "note": ""
+    },
+    "termination": {
+      "lemma": "termination",
+      "pos": "n",
+      "ja": "解雇、終了",
+      "note": ""
+    },
+    "emails": {
+      "lemma": "email",
+      "pos": "n",
+      "ja": "メール",
+      "note": ""
+    },
+    "logged": {
+      "lemma": "log",
+      "pos": "v",
+      "ja": "ログインする（log inで）",
+      "note": ""
+    },
+    "confirmed": {
+      "lemma": "confirm",
+      "pos": "v",
+      "ja": "確認した",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "n",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "total": {
+      "lemma": "total",
+      "pos": "n",
+      "ja": "合計",
+      "note": ""
+    },
+    "reach": {
+      "lemma": "reach",
+      "pos": "v",
+      "ja": "達する",
+      "note": ""
+    },
+    "thousands": {
+      "lemma": "thousand",
+      "pos": "n",
+      "ja": "数千",
+      "note": ""
+    },
+    "once": {
+      "lemma": "once",
+      "pos": "conj",
+      "ja": "いったん〜すると",
+      "note": ""
+    },
+    "latest": {
+      "lemma": "latest",
+      "pos": "adj",
+      "ja": "最新の",
+      "note": ""
+    },
+    "ends": {
+      "lemma": "end",
+      "pos": "v",
+      "ja": "終わる",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "earlier",
+      "pos": "adv",
+      "ja": "以前に、より早く",
+      "note": ""
+    },
+    "affected": {
+      "lemma": "affect",
+      "pos": "v",
+      "ja": "影響を与えた",
+      "note": ""
+    },
+    "workers": {
+      "lemma": "worker",
+      "pos": "n",
+      "ja": "労働者",
+      "note": ""
+    },
+    "countries": {
+      "lemma": "country",
+      "pos": "n",
+      "ja": "国々",
+      "note": ""
+    },
+    "free": {
+      "lemma": "free",
+      "pos": "v",
+      "ja": "（free up で）捻出する",
+      "note": ""
+    },
+    "cash": {
+      "lemma": "cash",
+      "pos": "n",
+      "ja": "現金、資金",
+      "note": ""
+    },
+    "investment": {
+      "lemma": "investment",
+      "pos": "n",
+      "ja": "投資",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "v",
+      "ja": "見込む",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "n",
+      "ja": "支出",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "v",
+      "ja": "勢いを与える",
+      "note": ""
+    },
+    "growth": {
+      "lemma": "growth",
+      "pos": "n",
+      "ja": "成長",
+      "note": ""
+    },
+    "filing": {
+      "lemma": "filing",
+      "pos": "n",
+      "ja": "届出書類",
+      "note": ""
+    },
+    "restructuring": {
+      "lemma": "restructuring",
+      "pos": "n",
+      "ja": "事業再編",
+      "note": ""
+    },
+    "cost": {
+      "lemma": "cost",
+      "pos": "v",
+      "ja": "費用がかかる",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "接続詞 once（いったん〜すると／〜し次第、の意味を表す従属接続詞）",
@@ -218,5 +454,22 @@
       "url": "https://americanbazaaronline.com/2026/09/15/oracle-workers-lose-jobs-as-severance-package-comes-into-focus-488147/",
       "date": "2026-09-15"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-16-1650/00.mp3",
+      "audio/2026-09-16-1650/01.mp3",
+      "audio/2026-09-16-1650/02.mp3",
+      "audio/2026-09-16-1650/03.mp3",
+      "audio/2026-09-16-1650/04.mp3",
+      "audio/2026-09-16-1650/05.mp3",
+      "audio/2026-09-16-1650/06.mp3",
+      "audio/2026-09-16-1650/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 224328,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-16T07:55:25.872Z",
+    "trimmed": true
+  }
 }
