@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-16-1650",
+  "date": "2026-09-16",
+  "time": "16:50",
+  "createdAt": "2026-09-16T16:50:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "Oracle Lays Off Employees Overnight to Fund AI Spending",
+    "ja": "オラクル、AI投資の資金捻出へ夜間に一斉解雇"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oracle started a new round of layoffs on September 14, telling many employees that day would be their last.",
+            "ja": "オラクルは9月14日から新たな一斉解雇に踏み切り、多くの従業員にその日が最終出勤日になると告げた。"
+          },
+          {
+            "en": "The company sent termination emails before employees even logged in for work.",
+            "ja": "同社は従業員が出社してログインする前に、解雇通知のメールを送りつけていた。"
+          },
+          {
+            "en": "Oracle has not confirmed the number, but analysts say this year's total could reach tens of thousands once the latest round ends.",
+            "ja": "オラクルは削減人数を明らかにしていないが、アナリストは今回の削減が終わる頃には、今年の削減数が数万人規模に達する可能性があるとみている。"
+          },
+          {
+            "en": "Earlier cuts this year already affected thousands of workers in the United States, India, and other countries.",
+            "ja": "今年すでに実施された削減では、米国やインドをはじめとする国々で数千人の従業員が影響を受けたとされる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Oracle says the layoffs will free up cash to pay for its huge investment in artificial intelligence data centers.",
+            "ja": "オラクルは、今回の人員削減によって人工知能(AI)向けデータセンターへの巨額投資の資金を捻出できると説明している。"
+          },
+          {
+            "en": "The company expects that spending to fuel its future growth.",
+            "ja": "同社はその投資が今後の成長を後押しすると見込んでいる。"
+          },
+          {
+            "en": "In a recent filing, Oracle said the restructuring plan would cost about $2.8 billion in total.",
+            "ja": "オラクルは最近の開示資料の中で、今回の再編計画全体で約28億ドルの費用がかかると明らかにした。"
+          },
+          {
+            "en": "Workers who are let go will receive four weeks of pay plus one extra week for each year of service, up to 26 weeks.",
+            "ja": "解雇される従業員には、基本給4週間分に加え、勤続年数1年につき1週間分の給与が、上限26週間まで支払われる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the article, on what date did Oracle tell many employees that day would be their last workday?",
+      "choices": [
+        { "key": "A", "text": "September 4", "ja": "9月4日" },
+        { "key": "B", "text": "September 11", "ja": "9月11日" },
+        { "key": "C", "text": "September 14", "ja": "9月14日" },
+        { "key": "D", "text": "September 29", "ja": "9月29日" }
+      ],
+      "answer": "C",
+      "explanation": "正解は(C) September 14。第1段落1文目に「Oracle started a new round of layoffs on September 14」と明記されている。(A)(B)(D)はいずれも本文に登場しない日付を使った引っかけ選択肢である。TOEIC Part 7では、本文中の日付や数字を安易に記憶に頼らず、根拠となる一文に戻って正確に照合することが得点のカギになる。",
+      "evidence": { "p": 0, "s": 0 },
+      "tip": "日付を問う設問は、本文中の同じ表現(ここでは September 14)を素早く見つけ出し、その一文だけを読んで判断すると時間の節約になる。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why does Oracle say it is reducing its workforce, according to the article?",
+      "choices": [
+        { "key": "A", "text": "To free up cash for its investment in AI data centers", "ja": "AIデータセンター投資の資金を捻出するため" },
+        { "key": "B", "text": "To pay off a lawsuit settlement", "ja": "訴訟の和解金を支払うため" },
+        { "key": "C", "text": "To move its headquarters to another country", "ja": "本社を他国に移転するため" },
+        { "key": "D", "text": "To respond to a drop in sales", "ja": "売上減少への対応のため" }
+      ],
+      "answer": "A",
+      "explanation": "正解は(A)。第2段落1文目に「Oracle says the layoffs will free up cash to pay for its huge investment in artificial intelligence data centers」とある。(B)(C)(D)はいずれも本文に一切記載がない情報で、理由・目的を問う設問で頻出する『本文にない情報』を選ばせる誤答パターンである。",
+      "evidence": { "p": 1, "s": 0 },
+      "tip": "理由・目的を問う設問では、本文中の『will do to 〜』や『in order to』のような目的を示す表現の直後に根拠があることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1, "term": "round", "pos": "名", "ja": "（一連の）ラウンド、回",
+      "gloss": "",
+      "example": { "en": "The company announced another round of job cuts last month.", "ja": "その会社は先月、新たな一連の人員削減を発表した。" }
+    },
+    {
+      "no": 2, "term": "termination", "pos": "名", "ja": "解雇、雇用契約の終了",
+      "gloss": "",
+      "example": { "en": "She received a termination notice by email on Friday afternoon.", "ja": "彼女は金曜の午後、メールで解雇通知を受け取った。" }
+    },
+    {
+      "no": 3, "term": "confirm", "pos": "動", "ja": "確認する、正式に認める",
+      "gloss": "",
+      "example": { "en": "The manager has not confirmed the exact number of positions affected.", "ja": "部長は影響を受けるポストの正確な数をまだ確認していない。" }
+    },
+    {
+      "no": 4, "term": "analyst", "pos": "名", "ja": "アナリスト、分析専門家",
+      "gloss": "",
+      "example": { "en": "Several analysts expect the company's profits to rise next quarter.", "ja": "数名のアナリストは、同社の利益が来四半期に伸びると予想している。" }
+    },
+    {
+      "no": 5, "term": "restructuring", "pos": "名", "ja": "事業再編、組織再編",
+      "gloss": "",
+      "example": { "en": "The restructuring plan aims to cut costs across every department.", "ja": "その再編計画は、全部門にわたるコスト削減を目指している。" }
+    },
+    {
+      "no": 6, "term": "filing", "pos": "名", "ja": "（規制当局への）届出書類",
+      "gloss": "（＝会社が政府機関に提出する公式な書類のこと）",
+      "example": { "en": "According to a recent filing, the company plans to raise more capital.", "ja": "最近の届出書類によると、同社はさらなる資金調達を計画している。" }
+    },
+    {
+      "no": 7, "term": "fuel", "pos": "動", "ja": "（比喩的に）勢いを与える、後押しする",
+      "gloss": "",
+      "example": { "en": "Strong demand for cloud services continues to fuel the industry's growth.", "ja": "クラウドサービスへの強い需要が、業界の成長を後押しし続けている。" }
+    },
+    {
+      "no": 8, "term": "service", "pos": "名", "ja": "勤続、勤務期間",
+      "gloss": "",
+      "example": { "en": "Employees receive extra vacation days for every five years of service.", "ja": "従業員は勤続5年ごとに追加の休暇日数を受け取る。" }
+    }
+  ],
+  "glossary": {
+    "started": { "lemma": "start", "pos": "v", "ja": "開始した", "note": "" },
+    "round": { "lemma": "round", "pos": "n", "ja": "（一連の）回", "note": "" },
+    "layoffs": { "lemma": "layoff", "pos": "n", "ja": "解雇、人員削減", "note": "" },
+    "telling": { "lemma": "tell", "pos": "v", "ja": "告げる", "note": "" },
+    "employees": { "lemma": "employee", "pos": "n", "ja": "従業員", "note": "" },
+    "termination": { "lemma": "termination", "pos": "n", "ja": "解雇、終了", "note": "" },
+    "emails": { "lemma": "email", "pos": "n", "ja": "メール", "note": "" },
+    "logged": { "lemma": "log", "pos": "v", "ja": "ログインする（log inで）", "note": "" },
+    "confirmed": { "lemma": "confirm", "pos": "v", "ja": "確認した", "note": "" },
+    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト", "note": "" },
+    "total": { "lemma": "total", "pos": "n", "ja": "合計", "note": "" },
+    "reach": { "lemma": "reach", "pos": "v", "ja": "達する", "note": "" },
+    "thousands": { "lemma": "thousand", "pos": "n", "ja": "数千", "note": "" },
+    "once": { "lemma": "once", "pos": "conj", "ja": "いったん〜すると", "note": "" },
+    "latest": { "lemma": "latest", "pos": "adj", "ja": "最新の", "note": "" },
+    "ends": { "lemma": "end", "pos": "v", "ja": "終わる", "note": "" },
+    "earlier": { "lemma": "earlier", "pos": "adv", "ja": "以前に、より早く", "note": "" },
+    "affected": { "lemma": "affect", "pos": "v", "ja": "影響を与えた", "note": "" },
+    "workers": { "lemma": "worker", "pos": "n", "ja": "労働者", "note": "" },
+    "countries": { "lemma": "country", "pos": "n", "ja": "国々", "note": "" },
+    "free": { "lemma": "free", "pos": "v", "ja": "（free up で）捻出する", "note": "" },
+    "cash": { "lemma": "cash", "pos": "n", "ja": "現金、資金", "note": "" },
+    "investment": { "lemma": "investment", "pos": "n", "ja": "投資", "note": "" },
+    "expects": { "lemma": "expect", "pos": "v", "ja": "見込む", "note": "" },
+    "spending": { "lemma": "spending", "pos": "n", "ja": "支出", "note": "" },
+    "fuel": { "lemma": "fuel", "pos": "v", "ja": "勢いを与える", "note": "" },
+    "growth": { "lemma": "growth", "pos": "n", "ja": "成長", "note": "" },
+    "filing": { "lemma": "filing", "pos": "n", "ja": "届出書類", "note": "" },
+    "restructuring": { "lemma": "restructuring", "pos": "n", "ja": "事業再編", "note": "" },
+    "cost": { "lemma": "cost", "pos": "v", "ja": "費用がかかる", "note": "" }
+  },
+  "grammar": {
+    "topic": "接続詞 once（いったん〜すると／〜し次第、の意味を表す従属接続詞）",
+    "quote": "Oracle has not confirmed the number, but analysts say this year's total could reach tens of thousands once the latest round ends.",
+    "quoteJa": "オラクルは削減人数を明らかにしていないが、アナリストは今回の削減が終わる頃には、今年の削減数が数万人規模に達する可能性があるとみている。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "ここでの once は「〜するとすぐに」「いったん〜すると」という意味を表す従属接続詞。if(もし〜なら)と違い、その出来事が実際に起こることを前提として、それが起きた時点を示す。once the latest round ends は「今回の削減が終わり次第」という未来のある時点を表す副詞節。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "once を after に置き換えて ...could reach tens of thousands after the latest round ends. とすることもできるが、once の方が『完了した瞬間に』という切迫感・確実性を強く伝える。逆に if the latest round ends(もし終わるなら)とすると、削減が終わること自体が不確かなニュアンスになり、この文脈にはそぐわない。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では once(接続詞:いったん〜すると)と once(副詞:かつて)の品詞・意味の使い分けを問う問題が出やすい。Part 6・7では、契約書や社内通知で『一定の条件が満たされ次第、次の手続きに進む』という文脈で once 節がよく使われ、いつ・どんな条件で次の行動が起きるかを問う設問の根拠になる。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Once the invoice is approved, payment will be processed within five business days.(請求書が承認され次第、5営業日以内に支払いが行われます。)のように、社内規程やメールで手続きの順序を示す際によく使われる。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜオラクルは人員削減を続けているのか",
+      "body": "オラクルは今年に入り、複数回にわたって人員削減を実施している。背景にあるのは、生成AIブームによってデータセンターへの投資競争が激しくなっていることだ。AI向けのサーバーや電力設備には巨額の先行投資が必要になる一方、人件費は比較的すぐに削減できるコストであるため、多くのIT企業が『人を減らして設備投資に回す』という選択をしている。"
+    },
+    {
+      "heading": "📌 業界全体の動向",
+      "body": "2026年は、配車サービス大手や大手金融機関など幅広い業種で人員削減が相次いだ一方、AI関連の投資だけは各社が積極的に拡大させるという、やや矛盾した状況が続いている。米国の雇用市場全体は『採用も解雇も少ない』落ち着いた状態にあるとされるが、AI投資を進める大手テック企業では、これとは対照的に大規模な人員入れ替えが起きている。"
+    },
+    {
+      "heading": "📌 日本企業・日本人ビジネスパーソンへの影響・示唆",
+      "body": "オラクルの製品やクラウドサービスを利用している日本企業は多く、サポート体制や担当者が変わる可能性がある点には注意が必要だ。また、インドなど海外拠点での人員削減が今回も報じられており、海外に開発・サポート拠点を持つ日本企業にとっても、同様のコスト管理・人員配置の見直しが今後の検討課題になり得る。さらに、退職時の補償(セベランス)制度を英語でどう説明するかは、外資系企業で働く日本人ビジネスパーソンにとって実務的に役立つ知識である。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点からの意義",
+      "body": "投資家にとっては、AI関連投資の規模がその企業の将来の収益力を左右する重要な指標になりつつあり、人員削減のニュースも『コスト管理ができているか』を測る材料として注目されている。一方で経営者にとっては、事前予告なしの解雇通知のような進め方は、残った従業員の士気や企業イメージを損なうリスクもあり、コスト削減と従業員への配慮のバランスをどう取るかが問われている。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Oracle layoffs 2026: Tech giant fires staff in 6 am termination email",
+      "publisher": "Deccan Herald",
+      "url": "https://www.deccanherald.com/business/companies/today-is-your-last-working-day-oracle-fires-6-am-termination-email-to-staff-on-fresh-round-of-job-cuts-this-year-4146598",
+      "date": "2026-09-15"
+    },
+    {
+      "title": "'We are grateful': Oracle workers lose jobs as severance package comes into focus",
+      "publisher": "American Bazaar",
+      "url": "https://americanbazaaronline.com/2026/09/15/oracle-workers-lose-jobs-as-severance-package-comes-into-focus-488147/",
+      "date": "2026-09-15"
+    }
+  ]
+}
