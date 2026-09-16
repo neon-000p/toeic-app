@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-17-0545",
+  "date": "2026-09-17",
+  "time": "05:45",
+  "createdAt": "2026-09-17T05:45:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "Maersk and Hapag-Lloyd Return More Routes to the Suez Canal",
+    "ja": "マースクとハパックロイド、スエズ運河経由の航路をさらに拡大"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Maersk and Hapag-Lloyd, two of the world's biggest shipping companies, said this month that more of their container ships will sail back through the Suez Canal.",
+            "ja": "世界最大級の海運会社であるマースクとハパックロイドは今月、コンテナ船をスエズ運河経由で運航する便を増やすと発表した。"
+          },
+          {
+            "en": "The change affects four routes that connect Asia and Europe.",
+            "ja": "この変更はアジアとヨーロッパを結ぶ4つの航路に影響する。"
+          },
+          {
+            "en": "One route switched on September 19, and the other three will follow within about two weeks.",
+            "ja": "1航路は9月19日に切り替わり、残り3航路も今後2週間ほどで切り替わる予定だ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The companies had avoided the canal since 2023, when attacks on ships in the nearby Red Sea made the route too dangerous.",
+            "ja": "両社は2023年以降、近隣の紅海で船舶への攻撃が相次ぎ航路が危険になったため、この運河の利用を避けてきた。"
+          },
+          {
+            "en": "Sailing around Africa instead added more than a week to each trip.",
+            "ja": "代わりにアフリカ大陸を迂回すると、1回の航海に1週間以上の遅れが生じていた。"
+          },
+          {
+            "en": "Now that the security situation has improved, the shorter route will cut delivery times and lower fuel costs.",
+            "ja": "治安状況が改善した今、短い航路によって配送時間が短縮され、燃料コストも下がる見込みだ。"
+          },
+          {
+            "en": "Still, the companies warned that new attacks would send their ships back to the longer route immediately.",
+            "ja": "とはいえ両社は、新たな攻撃が起きればただちに従来の長い航路へ戻すと警告している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the article, how many routes between Asia and Europe are switching back to the Suez Canal?",
+      "choices": [
+        { "key": "A", "text": "Two", "ja": "2つ" },
+        { "key": "B", "text": "Three", "ja": "3つ" },
+        { "key": "C", "text": "Four", "ja": "4つ" },
+        { "key": "D", "text": "Six", "ja": "6つ" }
+      ],
+      "answer": "C",
+      "explanation": "正解は(C) Four。第1段落2文目に「この変更はアジアとヨーロッパを結ぶ4つの航路に影響する」と明記されている。(A)(B)(D)はいずれも本文に登場しない数字で、数字を混同させる典型的な引っかけ選択肢。",
+      "evidence": { "p": 0, "s": 1 },
+      "tip": "本文に日付や航路数など複数の数字が並ぶ設問では、設問が問うている対象（航路数か、日数か）を先に確認してから本文を探すと素早く正解にたどり着ける。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did Maersk and Hapag-Lloyd avoid the Suez Canal after 2023?",
+      "choices": [
+        { "key": "A", "text": "The canal was too narrow for large container ships", "ja": "運河が大型コンテナ船には狭すぎたため" },
+        { "key": "B", "text": "Attacks on ships in the nearby Red Sea made the route dangerous", "ja": "近くの紅海で船舶への攻撃があり航路が危険になったため" },
+        { "key": "C", "text": "The Egyptian government raised the canal's transit fees", "ja": "エジプト政府が運河の通行料を引き上げたため" },
+        { "key": "D", "text": "The companies wanted to test a cheaper route", "ja": "より安いルートを試したかったため" }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B)。第2段落1文目に「近隣の紅海で船舶への攻撃が相次ぎ航路が危険になったため、この運河の利用を避けてきた」とあり、紅海での攻撃が理由だと分かる。(A)(C)(D)はいずれも本文に記載のない情報で、もっともらしく聞こえるが根拠がない。",
+      "evidence": { "p": 1, "s": 0 },
+      "tip": "理由を問う設問では、本文中の since や because のような理由を示す語の直後に根拠が来ることが多い。該当箇所を素早く見つける手がかりになる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "route",
+      "pos": "名",
+      "ja": "航路、経路",
+      "gloss": "",
+      "example": { "en": "The company is planning a new shipping route to Europe.", "ja": "その会社はヨーロッパへの新しい輸送航路を計画している。" }
+    },
+    {
+      "no": 2,
+      "term": "container",
+      "pos": "名",
+      "ja": "コンテナ",
+      "gloss": "（＝貨物をまとめて運ぶための大きな箱のこと）",
+      "example": { "en": "The container was loaded onto the ship early this morning.", "ja": "そのコンテナは今朝早くに船へ積み込まれた。" }
+    },
+    {
+      "no": 3,
+      "term": "affects",
+      "pos": "動",
+      "ja": "～に影響する",
+      "gloss": "",
+      "example": { "en": "Bad weather often affects flight schedules in winter.", "ja": "悪天候は冬によく飛行機のスケジュールに影響する。" }
+    },
+    {
+      "no": 4,
+      "term": "avoided",
+      "pos": "動",
+      "ja": "避けた、避けていた",
+      "gloss": "",
+      "example": { "en": "The driver avoided the traffic jam by taking a different road.", "ja": "その運転手は別の道を通って渋滞を避けた。" }
+    },
+    {
+      "no": 5,
+      "term": "security",
+      "pos": "名",
+      "ja": "治安、安全（保障）",
+      "gloss": "",
+      "example": { "en": "The airport increased security after the incident.", "ja": "その事件のあと、空港は警備を強化した。" }
+    },
+    {
+      "no": 6,
+      "term": "delivery",
+      "pos": "名",
+      "ja": "配送、配達",
+      "gloss": "",
+      "example": { "en": "Please confirm the delivery date before placing the order.", "ja": "注文する前に配送日を確認してください。" }
+    },
+    {
+      "no": 7,
+      "term": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "gloss": "",
+      "example": { "en": "Rising fuel prices have increased shipping costs this year.", "ja": "燃料価格の上昇で、今年の輸送コストが増加した。" }
+    },
+    {
+      "no": 8,
+      "term": "warned",
+      "pos": "動",
+      "ja": "警告した",
+      "gloss": "",
+      "example": { "en": "The manager warned employees about the new safety rules.", "ja": "マネージャーは従業員に新しい安全規則について警告した。" }
+    }
+  ],
+  "glossary": {
+    "maersk": { "lemma": "Maersk", "pos": "n", "ja": "マースク（海運会社）", "note": "" },
+    "hapag-lloyd": { "lemma": "Hapag-Lloyd", "pos": "n", "ja": "ハパックロイド（海運会社）", "note": "" },
+    "biggest": { "lemma": "big", "pos": "adj", "ja": "最大の", "note": "" },
+    "shipping": { "lemma": "shipping", "pos": "n", "ja": "海運、出荷", "note": "" },
+    "companies": { "lemma": "company", "pos": "n", "ja": "会社（複数形）", "note": "" },
+    "container": { "lemma": "container", "pos": "n", "ja": "コンテナ", "note": "" },
+    "ships": { "lemma": "ship", "pos": "n", "ja": "船（複数形）", "note": "" },
+    "sail": { "lemma": "sail", "pos": "v", "ja": "航行する", "note": "" },
+    "suez": { "lemma": "Suez", "pos": "n", "ja": "スエズ", "note": "" },
+    "canal": { "lemma": "canal", "pos": "n", "ja": "運河", "note": "" },
+    "change": { "lemma": "change", "pos": "n", "ja": "変更", "note": "" },
+    "affects": { "lemma": "affect", "pos": "v", "ja": "～に影響する", "note": "" },
+    "routes": { "lemma": "route", "pos": "n", "ja": "航路（複数形）", "note": "" },
+    "connect": { "lemma": "connect", "pos": "v", "ja": "つなぐ、結ぶ", "note": "" },
+    "asia": { "lemma": "Asia", "pos": "n", "ja": "アジア", "note": "" },
+    "europe": { "lemma": "Europe", "pos": "n", "ja": "ヨーロッパ", "note": "" },
+    "route": { "lemma": "route", "pos": "n", "ja": "航路", "note": "" },
+    "switched": { "lemma": "switch", "pos": "v", "ja": "切り替わった", "note": "" },
+    "weeks": { "lemma": "week", "pos": "n", "ja": "週（複数形）", "note": "" },
+    "avoided": { "lemma": "avoid", "pos": "v", "ja": "避けていた", "note": "" },
+    "attacks": { "lemma": "attack", "pos": "n", "ja": "攻撃", "note": "" },
+    "dangerous": { "lemma": "dangerous", "pos": "adj", "ja": "危険な", "note": "" },
+    "sailing": { "lemma": "sail", "pos": "v", "ja": "航行すること", "note": "" },
+    "africa": { "lemma": "Africa", "pos": "n", "ja": "アフリカ", "note": "" },
+    "security": { "lemma": "security", "pos": "n", "ja": "治安、安全", "note": "" },
+    "improved": { "lemma": "improve", "pos": "v", "ja": "改善した", "note": "" },
+    "shorter": { "lemma": "short", "pos": "adj", "ja": "より短い", "note": "" },
+    "delivery": { "lemma": "delivery", "pos": "n", "ja": "配送", "note": "" },
+    "fuel": { "lemma": "fuel", "pos": "n", "ja": "燃料", "note": "" },
+    "warned": { "lemma": "warn", "pos": "v", "ja": "警告した", "note": "" }
+  },
+  "grammar": {
+    "topic": "接続詞句 now that（〜した今となっては、〜なので）",
+    "quote": "Now that the security situation has improved, the shorter route will cut delivery times and lower fuel costs.",
+    "quoteJa": "治安状況が改善した今、短い航路によって配送時間が短縮され、燃料コストも下がる見込みだ。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "\"now that + S + V\" は「（今は）〜なので」「〜した今となっては」という意味を表す接続詞句である。理由を表す because や since と似ているが、now that は「状況が変化して、今はその新しい状態にある」というニュアンスを含む点が特徴。ここでは「以前は危険だったが、治安状況が改善したので」という変化を強調する文脈で使われている。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "\"Because the security situation has improved, ...\" のように because や since に書き換えても意味はほぼ同じだが、now that を使うことで「以前とは状況が変わった」というニュアンスがより明確に伝わる。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 の接続詞選択問題で、because や since と並んで now that が選択肢に登場することがある。文脈に「状況の変化」が示されているかどうかが判断のポイントになる。また、後ろに完了形（has improved など）が続くことが多く、「変化が完了して現在に至っている」ことを示す点にも注意したい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"Now that the merger has been completed, the two teams will begin working together.\"（合併が完了した今、両チームは協働を開始する）のように、社内通知や決定事項の説明で「状況が変わったので、これから～する」という文脈でよく使われる。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか",
+      "body": "海運業界では、マースクとハパックロイドが共同運航する「Gemini Cooperation」というネットワークが、主要航路をスエズ運河ルートへ戻す動きを進めている。両社は世界のコンテナ輸送量の上位を占める大手であり、このネットワークの航路変更は業界全体の物流コストや納期に大きな影響を与える。"
+    },
+    {
+      "heading": "📌 業界全体・競合他社の動向",
+      "body": "紅海周辺の安全確認が進むにつれ、他の大手海運会社もスエズ運河ルートへの復帰を検討し始めている。航路を短縮できれば輸送コストが下がり、運賃競争でも有利に働く可能性がある。一方で、周辺地域の武装勢力による攻撃再発のリスクは消えておらず、各社は状況を注視しながら慎重に判断している。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響・示唆",
+      "body": "日本の製造業や小売業の多くは、アジアから欧州向けの部品・製品輸送でこうした大手海運会社の航路を利用している。輸送日数が短縮されれば納期の見通しが立てやすくなり、欧州向けビジネスの計画も立てやすくなる。逆に紅海情勢が再び悪化すれば、輸送遅延や運賃上昇という形で日本企業のコストにも跳ね返る点に注意が必要だ。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点からの意義",
+      "body": "海運会社にとって、燃料費と航海日数の削減は収益性に直結する重要な経営指標である。スエズ運河ルートへの回帰は運航コストの引き下げにつながる一方、安全保障上のリスクを常に見極める判断力が経営陣に求められる。投資家にとっても、こうした地政学リスクへの対応力は海運株を評価するうえでの重要な材料となる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Structural changes to AE5, AE11, AE12 and ME2 Gemini services",
+      "publisher": "Maersk",
+      "url": "https://www.maersk.com/news/articles/2026/09/14/structural-changes-ae5-ae11-ae12-me2-gemini-services",
+      "date": "2026-09-14"
+    },
+    {
+      "title": "Gemini steps up return to Suez with four more Asia-Europe services",
+      "publisher": "The Loadstar",
+      "url": "https://theloadstar.com/gemini-steps-up-return-to-suez-with-four-more-asia-europe-services/",
+      "date": "2026-09-14"
+    }
+  ]
+}
