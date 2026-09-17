@@ -919,16 +919,20 @@
 
     function hide() { if (btn) { btn.remove(); btn = null; } }
 
+    /* 端末の選択メニュー（翻訳・コピー・共有）は選択のすぐ上か下に出るうえ、
+       ブラウザが描くものなので重なり順を指定できない。選択のそばに置くと
+       必ずどちらかで隠れてしまうため、画面の下に固定して逃がす。
+       フッターのあるページでは、その上に載せる。 */
     function place(rect) {
-      /* 端末の選択メニュー（コピー等）は選択の上下に出る。
-         こちらは上に置き、画面の上端に近いときだけ下へ逃がす。 */
-      var top = rect.top + window.scrollY - 40;
-      if (rect.top < 56) top = rect.bottom + window.scrollY + 10;
-      var left = rect.left + window.scrollX + rect.width / 2 - 32;
-      left = Math.max(window.scrollX + 8, Math.min(left,
-        window.scrollX + document.documentElement.clientWidth - 76));
-      btn.style.top = top + 'px';
-      btn.style.left = left + 'px';
+      var foot = document.querySelector('.app-foot');
+      var lift = (foot ? Math.ceil(foot.getBoundingClientRect().height) : 6) + 10;
+      var vw = document.documentElement.clientWidth;
+      var vh = document.documentElement.clientHeight;
+      /* 選んだ語がボタンの位置に重なるときは、反対の端へ寄せる */
+      var nearBtn = rect.bottom > vh - lift - 52 && rect.right > vw / 2;
+      btn.style.bottom = lift + 'px';
+      btn.style.right = nearBtn ? '' : '14px';
+      btn.style.left = nearBtn ? '14px' : '';
     }
 
     function show() {
@@ -946,7 +950,7 @@
         btn = document.createElement('button');
         btn.className = 'sel-btn';
         btn.type = 'button';
-        btn.textContent = '意味';
+        btn.innerHTML = '<span>意味</span><span class="sw"></span>';
         /* 押した瞬間に選択が消えないようにする */
         btn.addEventListener('mousedown', function (e) { e.preventDefault(); });
         btn.addEventListener('touchstart', function (e) { e.preventDefault(); }, { passive: false });
@@ -960,6 +964,8 @@
         });
         document.body.appendChild(btn);
       }
+      /* どの語について聞くのかをボタンに出す。選択から離れた場所に出るため */
+      btn.querySelector('.sw').textContent = got.text;
       place(rect);
     }
 

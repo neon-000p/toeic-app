@@ -212,10 +212,21 @@ hr.sep{border:0;border-top:1px solid var(--line);margin:16px 0}
 
 /* 文中をなぞって選んだときに浮く「意味」のボタン。
    端末の選択メニューと重ならないよう、選択の上に出す。 */
+/* なぞって選んだときに出る「意味」。
+   端末の選択メニュー（翻訳・コピー・共有）は選択のすぐ上か下に出るので、
+   選択のそばに置くと必ずどちらかで隠れる。こちらは画面の下に固定して
+   重ならないようにし、親指で届く位置に置く。 */
 .sel-btn{
-  position:absolute;z-index:75;
-  padding:5px 12px;border-radius:999px;
+  position:fixed;z-index:75;
+  display:flex;align-items:center;gap:6px;
+  max-width:70vw;padding:9px 15px;border-radius:999px;
   border:1px solid var(--accent);background:var(--accent);color:var(--on-accent,#04231c);
-  font:inherit;font-size:12px;font-weight:800;line-height:1;cursor:pointer;
-  box-shadow:0 4px 14px rgba(0,0,0,.35);
+  font:inherit;font-size:13px;font-weight:800;line-height:1.2;cursor:pointer;
+  box-shadow:0 6px 18px rgba(0,0,0,.4);
+}
+/* 選んだ語をボタンに出す。選択から離れた位置に出るので、
+   どの語について聞いているのかが一目で分かるようにする。 */
+.sel-btn .sw{
+  font-weight:700;opacity:.85;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
 }
