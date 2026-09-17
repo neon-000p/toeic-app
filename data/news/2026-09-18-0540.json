@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-18-0540",
+  "date": "2026-09-18",
+  "time": "05:40",
+  "createdAt": "2026-09-18T05:40:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Fed Raises Interest Rates for the First Time Since 2023",
+    "ja": "FRB、2023年以来初の利上げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The U.S. Federal Reserve raised its key interest rate on September 16, lifting the target range to 3.75%-4%.",
+            "ja": "米連邦準備制度理事会(FRB)は9月16日、政策金利を引き上げ、誘導目標レンジを3.75~4%とした。"
+          },
+          {
+            "en": "It was the central bank's first rate increase since 2023.",
+            "ja": "利上げは2023年以来、実に3年ぶりとなる。"
+          },
+          {
+            "en": "All members of the policy committee voted for the quarter-point hike.",
+            "ja": "政策委員会のメンバー全員が、0.25%の利上げに賛成した。"
+          },
+          {
+            "en": "Chair Kevin Warsh said inflation had stayed \"too high\" for \"too long.\"",
+            "ja": "ウォーシュ議長は、インフレ率が「高すぎる状態があまりにも長く続いている」と述べた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The committee said inflation remains elevated, and the hike should bring it back toward its 2 percent goal more quickly.",
+            "ja": "委員会は「インフレはなお高止まりしている」とし、今回の利上げによって目標である2%へより早く近づくとの見方を示した。"
+          },
+          {
+            "en": "Officials also signaled that another rate increase is likely later this year.",
+            "ja": "当局者らは、年内にもう一度の利上げがある可能性を示唆した。"
+          },
+          {
+            "en": "Stock prices fell sharply after the announcement, with the Dow index losing more than 600 points.",
+            "ja": "発表後、株価は大きく下落し、ダウ平均は600ドル超値下がりした。"
+          },
+          {
+            "en": "Higher borrowing costs could slow spending by companies and consumers, both in the United States and abroad.",
+            "ja": "借入コストの上昇は、米国内外で企業や消費者の支出を鈍らせる可能性がある。"
+          },
+          {
+            "en": "Investors are now watching closely for the Fed's next policy meeting.",
+            "ja": "投資家たちは、FRBの次回会合の動向を注視している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What is the new target range for the Federal Reserve's key interest rate after the September 16 increase?",
+      "choices": [
+        { "key": "A", "text": "3.00%-3.25%", "ja": "3.00%~3.25%" },
+        { "key": "B", "text": "3.50%-3.75%", "ja": "3.50%~3.75%" },
+        { "key": "C", "text": "3.75%-4.00%", "ja": "3.75%~4.00%" },
+        { "key": "D", "text": "4.25%-4.50%", "ja": "4.25%~4.50%" }
+      ],
+      "answer": "C",
+      "explanation": "正解は(C) 3.75%-4.00%。本文1文目に「raised its key interest rate on September 16, lifting the target range to 3.75%-4%」と明記されている。(A)(B)(D)はいずれも本文に登場しない数値で、近い数字に引っ張られないよう注意したい。TOEIC Part7では、本文中の具体的な数値表現を正確に拾えるかが問われる。",
+      "evidence": { "p": 0, "s": 0 },
+      "tip": "数字を問う設問では、選択肢の数字を先に見てから本文をスキャンすると該当箇所を素早く見つけられる。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why, according to the article, did the Federal Reserve's committee raise interest rates?",
+      "choices": [
+        { "key": "A", "text": "To help the dollar weaken against foreign currencies", "ja": "ドルを意図的に弱めるため" },
+        { "key": "B", "text": "To slow economic growth ahead of elections", "ja": "選挙前に景気を減速させるため" },
+        { "key": "C", "text": "To bring inflation back toward its 2 percent target", "ja": "インフレ率を2%目標に近づけるため" },
+        { "key": "D", "text": "To reduce the federal government's borrowing costs", "ja": "政府の借入コストを減らすため" }
+      ],
+      "answer": "C",
+      "explanation": "正解は(C)。第2段落1文目に「The committee said inflation remains elevated, and the hike should bring it back toward its 2 percent goal more quickly.」とあり、利上げの狙いはインフレ率を2%の目標に近づけることだと分かる。(A)為替を弱める意図についての記述はない。(B)選挙に関する言及はない。(D)本文で述べられている借入コストは企業・消費者一般の話であり、政府の借入コストを減らす目的とは書かれていない。いずれも本文にない情報を使った誤答である。",
+      "evidence": { "p": 1, "s": 0 },
+      "tip": "理由・目的を問う設問は、\"because\" や \"in order to\" のような表現がなくても、文脈から目的を読み取る必要がある。設問のキーワードを本文中で探すのが近道。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "elevated",
+      "pos": "形",
+      "ja": "(物価などが)高い水準にある、高止まりした",
+      "gloss": "",
+      "example": {
+        "en": "Prices remained elevated even after the holiday season ended.",
+        "ja": "休暇シーズンが終わった後も、物価は高い水準のままだった。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "hike",
+      "pos": "名",
+      "ja": "(金利や価格の)引き上げ、値上げ",
+      "gloss": "",
+      "example": {
+        "en": "The airline announced a fare hike starting next month.",
+        "ja": "その航空会社は来月からの運賃値上げを発表した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "signaled",
+      "pos": "動",
+      "ja": "それとなく示した、示唆した",
+      "gloss": "",
+      "example": {
+        "en": "The manager signaled that the project deadline might be extended.",
+        "ja": "部長は、プロジェクトの締め切りが延期されるかもしれないとほのめかした。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ、資金調達",
+      "gloss": "",
+      "example": {
+        "en": "Higher interest rates make borrowing more expensive for small businesses.",
+        "ja": "金利の上昇により、中小企業にとって借り入れのコストが高くなる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "sharply",
+      "pos": "副",
+      "ja": "急激に、大幅に",
+      "gloss": "",
+      "example": {
+        "en": "Sales dropped sharply after the new competitor entered the market.",
+        "ja": "新しい競合他社が市場に参入した後、売上は急激に落ち込んだ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "spending",
+      "pos": "名",
+      "ja": "支出、出費",
+      "gloss": "",
+      "example": {
+        "en": "The company plans to cut spending on non-essential travel.",
+        "ja": "その会社は、不要不急の出張にかかる支出を削減する計画だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "investors",
+      "pos": "名",
+      "ja": "投資家",
+      "gloss": "",
+      "example": {
+        "en": "Investors reacted quickly to the surprise earnings report.",
+        "ja": "投資家たちは、予想外の決算報告に素早く反応した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "announcement",
+      "pos": "名",
+      "ja": "発表、告知",
+      "gloss": "",
+      "example": {
+        "en": "The announcement caused share prices to fall immediately.",
+        "ja": "その発表を受けて、株価は即座に下落した。"
+      }
+    }
+  ],
+  "glossary": {
+    "elevated": { "lemma": "elevated", "pos": "adj", "ja": "高い水準の", "note": "" },
+    "hike": { "lemma": "hike", "pos": "n", "ja": "引き上げ", "note": "" },
+    "signaled": { "lemma": "signal", "pos": "v", "ja": "示唆した", "note": "" },
+    "borrowing": { "lemma": "borrowing", "pos": "n", "ja": "借り入れ", "note": "" },
+    "sharply": { "lemma": "sharply", "pos": "adv", "ja": "急激に", "note": "" },
+    "spending": { "lemma": "spending", "pos": "n", "ja": "支出", "note": "" },
+    "investors": { "lemma": "investor", "pos": "n", "ja": "投資家", "note": "" },
+    "announcement": { "lemma": "announcement", "pos": "n", "ja": "発表", "note": "" },
+    "reserve": { "lemma": "reserve", "pos": "n", "ja": "準備制度", "note": "Federal Reserveで「連邦準備制度(米国の中央銀行)」" },
+    "lifting": { "lemma": "lift", "pos": "v", "ja": "引き上げること", "note": "" },
+    "target": { "lemma": "target", "pos": "n", "ja": "目標、目標の", "note": "" },
+    "range": { "lemma": "range", "pos": "n", "ja": "幅、範囲", "note": "" },
+    "committee": { "lemma": "committee", "pos": "n", "ja": "委員会", "note": "" },
+    "voted": { "lemma": "vote", "pos": "v", "ja": "投票した", "note": "" },
+    "quarter-point": { "lemma": "quarter-point", "pos": "adj", "ja": "0.25ポイント分の", "note": "" },
+    "remains": { "lemma": "remain", "pos": "v", "ja": "〜のままである", "note": "" },
+    "toward": { "lemma": "toward", "pos": "prep", "ja": "〜に向かって", "note": "" },
+    "goal": { "lemma": "goal", "pos": "n", "ja": "目標", "note": "" },
+    "officials": { "lemma": "official", "pos": "n", "ja": "当局者", "note": "" },
+    "fell": { "lemma": "fall", "pos": "v", "ja": "下落した", "note": "" },
+    "prices": { "lemma": "price", "pos": "n", "ja": "価格", "note": "" },
+    "costs": { "lemma": "cost", "pos": "n", "ja": "費用", "note": "" },
+    "companies": { "lemma": "company", "pos": "n", "ja": "企業", "note": "" },
+    "consumers": { "lemma": "consumer", "pos": "n", "ja": "消費者", "note": "" },
+    "abroad": { "lemma": "abroad", "pos": "adv", "ja": "海外で", "note": "" },
+    "meeting": { "lemma": "meeting", "pos": "n", "ja": "会合", "note": "" }
+  },
+  "grammar": {
+    "topic": "must be + 形容詞 + that節（confident thatの構文）",
+    "quote": "We must be confident that underlying inflation is moving to our objective clearly and at sufficient speed.",
+    "quoteJa": "基調的なインフレ率が、目標に向かって明確かつ十分な速さで動いていると確信できなければならない。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "\"must be confident that + S + V\" は、助動詞 must のあとに be動詞、形容詞 confident、that節が続く形。「〜だと確信できていなければならない」という強い必要性・義務を表す。that は省略されることもある。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "confident を sure や certain に置き換えても同じ構文が使える（例：\"We must be sure that the plan will work.\"）。confident of + 名詞／confident about + 名詞 という形もあるが、この場合は後ろに節ではなく名詞(句)が続く点が異なる。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part5では、be動詞のあとに続く形容詞(confident, certain, sure, aware など)を選ぶ問題や、その後ろに that節が続くか of/about+名詞が続くかを問う問題が頻出する。confident that と confident of/about の使い分けは狙われやすいポイント。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"The CEO is confident that the new product will boost sales next quarter.\" のように、経営陣や担当者が見通しや自信を述べる文でよく使われる表現である。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜ利上げをしたのか",
+      "body": "FRBは、物価上昇(インフレ)が想定より収まらないことを懸念し、金利を引き上げて需要を抑えることで物価の伸びを落ち着かせようとしている。金利が上がると企業や個人がお金を借りるコストが増えるため、消費や投資のペースが緩やかになりやすい。"
+    },
+    {
+      "heading": "📌 他の中央銀行・市場全体の動き",
+      "body": "他の主要国の中央銀行も、それぞれ自国のインフレ動向を見ながら金融政策を判断している。米国が利上げに動いたことで、他国との金利差が変化し、為替レートにも影響が及ぶ可能性がある。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響・示唆",
+      "body": "米金利の上昇は、円安・ドル高の要因になりやすい。輸出企業にとっては追い風になる一方、輸入コストの増加や海外での資金調達コストの上昇という形で負担が増える企業もある。海外出張や海外拠点とのやり取りが多いビジネスパーソンは、為替変動のニュースに注意しておく必要がある。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点からの意義",
+      "body": "金利の上昇は株式市場にとって短期的にはマイナス材料になりやすく、実際に今回も株価は下落した。経営者にとっては、借入コストの上昇を踏まえた資金計画の見直しが必要になる場面であり、投資家にとっては、金利動向を踏まえたポートフォリオの調整が求められる局面といえる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fed rate decision September 2026: Rates rise to 3.75%-4%",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "What Kevin Warsh said about the Fed's first rate hike since 2023",
+      "publisher": "CNN Business",
+      "url": "https://www.cnn.com/2026/09/16/economy/fed-rate-decision-september",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "Implementation Note issued September 16, 2026",
+      "publisher": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a1.htm",
+      "date": "2026-09-16"
+    }
+  ]
+}
