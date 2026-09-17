@@ -238,5 +238,26 @@
         "body": "call me back before five o'clock のように、依頼には期限が付く。選択肢は動詞（call back）と期限（by five）の両方で作られるため、どちらか片方だけを聞き取ると引っかかる。"
       }
     ]
+  },
+  "audio": {
+    "file": "audio/2026-09-17-0901-1.mp3",
+    "sec": 59,
+    "bytes": 274005,
+    "lines": [
+      "audio/2026-09-17-0901-1/00.mp3",
+      "audio/2026-09-17-0901-1/01.mp3",
+      "audio/2026-09-17-0901-1/02.mp3",
+      "audio/2026-09-17-0901-1/03.mp3",
+      "audio/2026-09-17-0901-1/04.mp3",
+      "audio/2026-09-17-0901-1/05.mp3",
+      "audio/2026-09-17-0901-1/06.mp3",
+      "audio/2026-09-17-0901-1/07.mp3",
+      "audio/2026-09-17-0901-1/08.mp3"
+    ],
+    "voice": "Puck",
+    "narrator": "Charon",
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-17T02:53:39.584Z",
+    "trimmed": true
   }
 }
