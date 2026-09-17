@@ -852,8 +852,10 @@
   function splitWords(text) {
     return String(text || '').split(/([A-Za-z][A-Za-z'’-]*)/);
   }
-  /* 英文を語注つき HTML にする。glossary のキーは小文字表層形。 */
-  function markupEnglish(text, glossary) {
+  function reEsc(s) { return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+  /* 1語ずつ包む。語注の見出しと一致する語には印を付ける */
+  function markupWords(text, glossary) {
     var parts = splitWords(text), out = '';
     for (var i = 0; i < parts.length; i++) {
       if (i % 2 === 1) {
@@ -866,6 +868,35 @@
       }
     }
     return out;
+  }
+
+  /* 英文を語注つき HTML にする。glossary のキーは小文字表層形。
+
+     語注の半分以上は `put together` のような2語以上のまとまりなので、
+     1語ずつ包むだけだと、その見出しにタップで届かない（put を押しても
+     「語注はありません」になる）。先にまとまりを丸ごと1つの塊として包み、
+     残りを1語ずつ包む。長い見出しから先に当てるので、`at no charge` の中の
+     `charge` だけが別に拾われることはない。 */
+  function markupEnglish(text, glossary) {
+    var keys = glossary
+      ? Object.keys(glossary).filter(function (k) { return /\s/.test(k); })
+      : [];
+    if (!keys.length) return markupWords(text, glossary);
+
+    keys.sort(function (a, b) { return b.length - a.length; });
+    var re = new RegExp('(' + keys.map(reEsc).join('|') + ')', 'gi');
+    var src = String(text || ''), out = '', last = 0, m;
+
+    while ((m = re.exec(src))) {
+      var head = src.charAt(m.index - 1), tail = src.charAt(m.index + m[0].length);
+      /* 語の途中に当たった場合は見送る（`no charge` が `nothing charge` を拾う等） */
+      if (/[A-Za-z]/.test(head) || /[A-Za-z]/.test(tail)) continue;
+      out += markupWords(src.slice(last, m.index), glossary);
+      out += '<span class="w has-gloss phrase" data-w="' + esc(m[0].toLowerCase()) +
+             '" data-raw="' + esc(m[0]) + '">' + esc(m[0]) + '</span>';
+      last = m.index + m[0].length;
+    }
+    return out + markupWords(src.slice(last), glossary);
   }
   /* 教材に通し番号を振る。古いものから 1、2、… とし、返すのは新しい順。
      index.json に no があればそれを使う（あとから過去分を足しても番号がずれない）。
@@ -898,6 +929,14 @@
     return { text: text, range: sel.getRangeAt(0) };
   }
 
+  /* 語義を文脈つきで引くために渡す1文。和訳や小さな注は落とす */
+  function textOf(host) {
+    var c = host.cloneNode(true);
+    Array.prototype.forEach.call(c.querySelectorAll('.j, .tag, .small, .muted, .hint'),
+      function (x) { x.remove(); });
+    return (c.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 400);
+  }
+
   /* 選択した場所の1文。語義を文脈つきで引くために渡す */
   function contextOfRange(range, selector) {
     var n = range.commonAncestorContainer;
@@ -909,35 +948,86 @@
     return (c.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 400);
   }
 
-  /* root の中で選択が起きたら「意味」のボタンを出す。
-     opts: { ctx: 文を探すセレクタ, onPick: function (text, ctx) } */
+  /* root の中で語をタップするか、なぞって選ぶと「意味」のボタンを出す。
+     押して初めて語義を引く。触れただけで出てしまうと、引くつもりのない語で
+     照会が走る（通信も消費する）ので、必ずこのボタンを1つ挟む。
+     opts: { ctx: 文を探すセレクタ, onPick: function (text, ctx, rect) } */
   function watchSelection(root, opts) {
     if (!root || root.dataset.selWatch) return;
     root.dataset.selWatch = '1';
 
-    var btn = null, timer = null;
+    var btn = null, timer = null, mark = null, pick = null;
 
-    function hide() { if (btn) { btn.remove(); btn = null; } }
-
-    /* 端末の選択メニュー（翻訳・コピー・共有）は選択のすぐ上か下に出るうえ、
-       ブラウザが描くものなので重なり順を指定できない。選択のそばに置くと
-       必ずどちらかで隠れてしまうため、画面の下に固定して逃がす。
-       フッターのあるページでは、その上に載せる。 */
-    function place(rect) {
-      var foot = document.querySelector('.app-foot');
-      var lift = (foot ? Math.ceil(foot.getBoundingClientRect().height) : 6) + 10;
-      var vw = document.documentElement.clientWidth;
-      var vh = document.documentElement.clientHeight;
-      /* 選んだ語がボタンの位置に重なるときは、反対の端へ寄せる */
-      var nearBtn = rect.bottom > vh - lift - 52 && rect.right > vw / 2;
-      btn.style.bottom = lift + 'px';
-      btn.style.right = nearBtn ? '' : '14px';
-      btn.style.left = nearBtn ? '14px' : '';
+    function hide() {
+      if (mark) { mark.classList.remove('open'); mark = null; }
+      if (btn) { btn.remove(); btn = null; }
+      pick = null;
     }
 
-    function show() {
+    /* なぞって選んだときは、端末の選択メニュー（翻訳・コピー・共有）が
+       選択のすぐ上か下に出る。ブラウザが描くもので重なり順を指定できないため、
+       そばに置くと必ずどちらかで隠れる。画面の下に固定して逃がす。
+       語をタップしたときは選択メニューが出ないので、その語のそばに出す。 */
+    function place(rect, atBottom) {
+      var vw = document.documentElement.clientWidth;
+      var vh = document.documentElement.clientHeight;
+
+      if (atBottom) {
+        var foot = document.querySelector('.app-foot');
+        var lift = (foot ? Math.ceil(foot.getBoundingClientRect().height) : 6) + 10;
+        /* 選んだ語がボタンの位置に重なるときは、反対の端へ寄せる */
+        var nearBtn = rect.bottom > vh - lift - 52 && rect.right > vw / 2;
+        btn.style.position = 'fixed';
+        btn.style.top = '';
+        btn.style.bottom = lift + 'px';
+        btn.style.right = nearBtn ? '' : '14px';
+        btn.style.left = nearBtn ? '14px' : '';
+        return;
+      }
+
+      var h = btn.offsetHeight || 36;
+      var top = rect.top - h - 8;
+      if (top < 4) top = Math.min(rect.bottom + 8, vh - h - 4);
+      var left = rect.left + rect.width / 2 - btn.offsetWidth / 2;
+      left = Math.max(8, Math.min(left, vw - btn.offsetWidth - 8));
+      btn.style.position = 'fixed';
+      btn.style.bottom = '';
+      btn.style.right = '';
+      btn.style.top = top + 'px';
+      btn.style.left = left + 'px';
+    }
+
+    function ensure() {
+      if (btn) return;
+      btn = document.createElement('button');
+      btn.className = 'sel-btn';
+      btn.type = 'button';
+      btn.innerHTML = '<span>意味</span><span class="sw"></span>';
+      /* 押した瞬間に選択が消えないようにする */
+      btn.addEventListener('mousedown', function (e) { e.preventDefault(); });
+      btn.addEventListener('touchstart', function (e) { e.preventDefault(); }, { passive: false });
+      btn.addEventListener('click', function () {
+        if (!pick) { hide(); return; }
+        var got = pick;
+        hide();
+        if (opts && opts.onPick) opts.onPick(got.text, got.ctx, got.rect);
+      });
+      document.body.appendChild(btn);
+    }
+
+    /* text をボタンに載せて出す。押されたときに onPick へ渡すものを覚えておく */
+    function offer(text, ctx, rect, atBottom) {
+      ensure();
+      pick = { text: text, ctx: ctx, rect: rect };
+      btn.querySelector('.sw').textContent = text;
+      place(rect, atBottom);
+    }
+
+    /* なぞって選んだとき */
+    function fromSelection() {
       var got = selectionText();
-      if (!got) { hide(); return; }
+      /* タップで出したボタンは、選択が無いからといって消さない */
+      if (!got) { if (!mark) hide(); return; }
 
       var n = got.range.commonAncestorContainer;
       if (n.nodeType !== 1) n = n.parentNode;
@@ -946,32 +1036,39 @@
       var rect = got.range.getBoundingClientRect();
       if (!rect || !rect.width) { hide(); return; }
 
-      if (!btn) {
-        btn = document.createElement('button');
-        btn.className = 'sel-btn';
-        btn.type = 'button';
-        btn.innerHTML = '<span>意味</span><span class="sw"></span>';
-        /* 押した瞬間に選択が消えないようにする */
-        btn.addEventListener('mousedown', function (e) { e.preventDefault(); });
-        btn.addEventListener('touchstart', function (e) { e.preventDefault(); }, { passive: false });
-        btn.addEventListener('click', function () {
-          var g = selectionText();
-          if (!g) { hide(); return; }
-          var ctx = contextOfRange(g.range, (opts && opts.ctx) || 'p, div');
-          var r = g.range.getBoundingClientRect();
-          hide();
-          if (opts && opts.onPick) opts.onPick(g.text, ctx, r);
-        });
-        document.body.appendChild(btn);
-      }
-      /* どの語について聞くのかをボタンに出す。選択から離れた場所に出るため */
-      btn.querySelector('.sw').textContent = got.text;
-      place(rect);
+      if (mark) { mark.classList.remove('open'); mark = null; }
+      offer(got.text, contextOfRange(got.range, (opts && opts.ctx) || 'p, div'), rect, true);
     }
+
+    /* 語（または語注の見出しになっているまとまり）をタップしたとき。
+       ここでは語義を出さない。ボタンを出すところまで。 */
+    root.addEventListener('click', function (e) {
+      var w = e.target.closest ? e.target.closest('.w') : null;
+      if (!w) { hide(); return; }
+      /* なぞって選んでいる最中は、その選択のほうを優先する */
+      var sel = window.getSelection && window.getSelection();
+      if (sel && !sel.isCollapsed) return;
+
+      var same = (mark === w);
+      hide();
+      if (same) return;   /* 同じ語をもう一度押したら引っ込める */
+      mark = w;
+      w.classList.add('open');
+      var host = w.closest((opts && opts.ctx) || 'p, div');
+      var ctx = host ? textOf(host) : (w.dataset.raw || w.textContent);
+      offer(w.dataset.raw || w.textContent, ctx, w.getBoundingClientRect(), false);
+    });
+
+    /* 画面の他の場所を触ったら引っ込める */
+    document.addEventListener('click', function (e) {
+      if (!btn) return;
+      if (e.target.closest('.sel-btn') || root.contains(e.target)) return;
+      hide();
+    }, true);
 
     document.addEventListener('selectionchange', function () {
       clearTimeout(timer);
-      timer = setTimeout(show, 150);
+      timer = setTimeout(fromSelection, 150);
     });
     window.addEventListener('scroll', hide, true);
   }

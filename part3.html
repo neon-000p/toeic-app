@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-17 ae60fb9">
+<meta name="app-build" content="2026-09-17 3a5d15e">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Part 3 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -191,7 +191,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   </div>
 </nav>
 
-<script src="core.js?v=63bc0ffc"></script>
+<script src="core.js?v=adfe8441"></script>
 <script>
 (function () {
   'use strict';
@@ -762,18 +762,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       return;
     }
 
-    var w = t.closest('.w');
-    if (w) {
-      /* なぞって選んでいる最中に語注が開かないようにする */
-      var sel = window.getSelection && window.getSelection();
-      if (sel && !sel.isCollapsed) return;
-      openPop(w); return;
-    }
-
     var pl = t.closest('.pl[data-play]');
     if (pl) { stopPlay(); playLine(+pl.dataset.play); return; }
-
-    closePop();
   });
 
   /* ---- 対訳の再生 ---- */
@@ -884,96 +874,6 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       });
     })(0);
   }
-
-  /* ---- 語注ポップ ---- */
-
-  var pop = null, popWord = null;
-
-  function closePop() {
-    if (pop) { pop.remove(); pop = null; }
-    if (popWord) { popWord.classList.remove('open'); popWord = null; }
-  }
-  function contextOf(el) {
-    var host = el.closest('.line');
-    if (!host) return '';
-    var c = host.cloneNode(true);
-    Array.prototype.forEach.call(c.querySelectorAll('.j, .tag'), function (n) { n.remove(); });
-    return (c.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 400);
-  }
-  function hasAI() { try { return !!(T.AI && T.AI.enabled()); } catch (e) { return false; } }
-
-  function openPop(el) {
-    closePop();
-    var k = el.dataset.w, raw = el.dataset.raw;
-    var g = SET.glossary && SET.glossary[k];
-    var aiData = null;
-
-    popWord = el; el.classList.add('open');
-    pop = document.createElement('div');
-    pop.className = 'pop';
-    pop.dataset.word = raw;
-
-    var addTerm = (g && g.lemma) || raw;
-    var inBook = T.Vocab.has(addTerm);
-    var glossHTML = g
-      ? '<div class="ja">' + (g.pos ? '<span class="muted small">(' + esc(g.pos) + ') </span>' : '') + esc(g.ja) + '</div>' +
-        (g.note ? '<div class="note">' + esc(g.note) + '</div>' : '')
-      : '<div class="note">この語の語注はありません。</div>';
-    var row = '<div class="row">' +
-      '<button class="btn btn-sm icon' + (inBook ? ' on' : '') + '" data-add="' + esc(addTerm) + '" title="' +
-        (inBook ? '語彙帳から外す' : '語彙帳に追加') + '">' + (inBook ? '★' : '☆') + '</button>' +
-      '<button class="btn btn-sm icon" data-sayw="' + esc(raw) + '" title="発音を聞く">🔊</button></div>';
-    var mid = hasAI()
-      ? '<div class="pop-ai-b muted small">照会中…</div>'
-      : glossHTML + '<div class="pop-hint">⚙ で Gemini のキーを設定すると、この文での使われ方も出ます。</div>';
-
-    pop.innerHTML = '<div class="term">' + esc(raw) + '</div>' + mid + row;
-    document.body.appendChild(pop);
-
-    var r = el.getBoundingClientRect();
-    pop.style.top = (r.bottom + window.scrollY + 6) + 'px';
-    var lf = Math.min(r.left + window.scrollX,
-      window.scrollX + document.documentElement.clientWidth - pop.offsetWidth - 12);
-    pop.style.left = Math.max(window.scrollX + 12, lf) + 'px';
-
-    if (hasAI()) {
-      var ctx = contextOf(el), mine = raw;
-      T.AI.lookup(raw, ctx, SET.id).then(function (rr) {
-        if (!pop || pop.dataset.word !== mine) return;
-        var b = pop.querySelector('.pop-ai-b'); if (!b) return;
-        aiData = rr; b.className = 'pop-ai-b';
-        b.innerHTML =
-          (rr.ja ? '<div class="pop-ai-ja">' + (rr.pos ? '<span class="muted small">(' + esc(rr.pos) + ') </span>' : '') +
-            esc(rr.ja) + '</div>' : '') +
-          (rr.tip ? '<div class="pop-ai-u">' + esc(rr.tip) + '</div>' : '');
-      }).catch(function (err) {
-        if (!pop || pop.dataset.word !== mine) return;
-        var b = pop.querySelector('.pop-ai-b');
-        if (b) b.outerHTML = glossHTML + '<div class="pop-hint">' + esc((err && err.message) || '取得できませんでした') + '</div>';
-      });
-    }
-
-    pop.addEventListener('click', function (ev) {
-      var a = ev.target.closest('[data-add]');
-      if (a) {
-        var term2 = a.dataset.add;
-        if (!T.Vocab.has(term2)) {
-          var m = g || aiData || {};
-          T.Vocab.add({ term: term2, pos: m.pos || '', ja: m.ja || '',
-                        gloss: (g && g.note) || (aiData && aiData.tip) || '',
-                        src: SET.id, srcTitle: 'Part 3 ' + (SET.scene || '') });
-          T.toast('語彙帳に追加しました');
-        } else { T.Vocab.remove(term2); T.toast('語彙帳から外しました'); }
-        closePop(); return;
-      }
-      var sy = ev.target.closest('[data-sayw]');
-      if (sy) { stopPlay(); T.TTS.speak(sy.dataset.sayw, { rate: 0.85 }); }
-    });
-  }
-
-  document.addEventListener('click', function (e) {
-    if (pop && !pop.contains(e.target) && !e.target.closest('.w')) closePop();
-  }, true);
 
   /* ================= セットを選ぶ・設定 ================= */
 
