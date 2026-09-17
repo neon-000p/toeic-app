@@ -12,9 +12,13 @@ data/
   part3/
     index.json
     p3-001.json
+  part4/
+    index.json
+    history.json
+    2026-09-17-0901-1.json
 ```
 
-`index.json` と個別ファイルは別々のルーティンが更新する（時事英語 / Part 3 は独立運用）。
+`index.json` と個別ファイルは別々のルーティンが更新する（時事英語 / Part 3 / Part 4 は独立運用）。
 ディレクトリが分かれているので、片方のルーティンが失敗してももう片方に影響しない。
 
 ---
@@ -302,3 +306,111 @@ Part 3（会話問題）。**1ファイル＝1セット＝1回分**。会話1本
 `scene` は index に入れない。一覧で場面が見えると先読みの意味が薄れるため。
 
 時事英語と**別ディレクトリ・別ルーティン**で運用する。片方が失敗しても、もう片方に影響しない。
+
+---
+
+## data/part4/&lt;id&gt;.json
+
+Part 4（説明文問題）。**1ファイル＝1セット＝1回分**。1人が話すトーク1本と設問3問で、本番の1セットと同じ単位。
+
+Part 3 との違いは3つ。**話し手が1人**なので `speakers`（配列）ではなく `speaker`（1人）を持つ。**`lines` に `tag` が無い**（文の並びがそのまま読み上げ順）。そして本番でトークの前に読まれる**前置き（`intro`）**を持つ。
+
+```json
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-09-17-0901-1",
+  "date": "2026-09-17",
+  "time": "09:01",
+  "scene": "留守番電話｜納品の遅れと代替案",
+  "talkType": "voicemail",
+  "intro": "Questions 1 through 3 refer to the following telephone message.",
+  "speaker": { "tag": "M", "role": "男性", "accent": "en-US" },
+  "lines": [
+    { "en": "...", "ja": "..." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "Why is the speaker calling?",
+      "choices": [ { "key": "A", "text": "...", "ja": "選択肢の訳" } ],
+      "answer": "B",
+      "evidence": [0, 1],
+      "explanation": "日本語解説",
+      "tip": "Part 4 の聞き方。解説ステップに出る"
+    }
+  ],
+  "audio": { "file": "audio/2026-09-17-0901-1.mp3", "sec": 48.2, "lines": ["audio/2026-09-17-0901-1/00.mp3"] },
+  "glossary": { "held up": { "lemma": "hold up", "pos": "熟", "ja": "遅れる、滞る", "note": "delay の言い換え" } },
+  "point": { "flow": "トークの展開を1行で", "items": [ { "title": "見出し", "body": "本文" } ] }
+}
+```
+
+### 設計上の要点
+
+**`talkType` は9種、`intro` はその決まり文句**
+`announcement` / `voicemail` / `speech` / `broadcast` / `ad` / `tour` / `instructions` / `meeting` / `talk`。
+`intro` は `Questions 1 through 3 refer to the following <言い回し>.` の形で、種類ごとに言い回しが決まっている（`voicemail` なら `telephone message`）。食い違うと `tools/check-part4.js` が止める。
+
+**`intro` は伏せない**
+`scene`（場面）は解き終わるまで出さないが、`intro` は設問ステップに最初から出す。本番でもトークの前に必ず読み上げられるものであり、「何を聞くか」だけが先に分かるのは本番と同じ条件だから。音声も前置き → 0.8秒の間 → トーク本体の順に入っている。
+
+**`speaker` は1人**
+`{ tag, role, accent }`。`tag` は `M` か `W`。`accent`（`en-US` / `en-GB` / `en-AU` / `en-CA`）を手がかりに端末の声を選ぶ。**`speakers`（複数形）を書いてはならない**（Part 3 のデータを流用した取り違えを機械の確認で弾くため）。
+
+**`lines` は文単位。`tag` を持たない**
+アプリは対訳で左に**文番号**を出す。解説で引用された文を、対訳の中から探せるようにするためのもの。
+
+**`evidence` は文番号の配列**
+`lines` の添字（0始まり）。`intent`（意図）の設問では、引用した文とその直前の文を入れる。意図は直前の文脈で決まるため。
+
+**`questions[].type` は6種**
+`gist`（概要）／`who`（話し手・聞き手）／`detail`（詳細）／`intent`（意図）／`next`（次の行動）／`infer`（推測）。
+**1問目は `gist` か `who`。** 本番の Part 4 は「何の話か・誰の話か」から始まる。
+
+**`audio` は先に作っておいたトーク音声**
+
+```json
+"audio": {
+  "file": "audio/2026-09-17-0901-1.mp3",
+  "sec": 48.2,
+  "bytes": 291044,
+  "lines": ["audio/2026-09-17-0901-1/00.mp3"],
+  "voice": "Puck",
+  "narrator": "Charon",
+  "model": "gemini-3.1-flash-tts-preview",
+  "madeAt": "2026-09-17T09:40:11.000Z"
+}
+```
+
+**ルーティンはこれを書かない。** GitHub Actions（`.github/workflows/part3-audio.yml`）が、セットが main に入ったあとで `tools/make-part4-audio.js` を走らせて作り、この `audio` を足して自分でコミットする。
+
+話し手が1人なので、トーク本体は**1回の呼び出しで全文**を作れる（Part 3 は2人ずつのかたまりに切る必要がある）。前置きだけは別の声（ナレーター）で作り、0.8秒の無音を挟んで頭に繋ぐ。`lines` は対訳で1文だけ鳴らすための音声で、文と同じ順に並ぶ（`audio/<id>/00.mp3` から）。**トーク本体と同じ声を使うので、対訳に移った瞬間に声が変わらない。**
+
+アプリは `audio.file` があればそれを鳴らし、無ければ端末の読み上げに落ちる（そのときは前置きも読み上げてからトークに入る）。ファイルが 404 でも読み上げに戻るので、音声待ちのセットでも学習は止まらない。パスは `data/part4/` からの相対。
+
+### data/part4/index.json
+
+```json
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "updatedAt": "2026-09-17T09:01:00+09:00",
+  "items": [
+    { "id": "2026-09-17-0901-1", "no": 1, "date": "2026-09-17", "time": "09:01",
+      "talkType": "voicemail", "kind": "留守番電話", "questions": 3, "file": "2026-09-17-0901-1.json" }
+  ]
+}
+```
+
+`kind` は一覧に出す種類の日本語。`scene` は index に入れない（一覧で場面が見えると先読みの意味が薄れる）。種類は本番でも前置きで告げられるので、一覧に出してよい。
+
+### data/part4/history.json
+
+```json
+{ "id": "2026-09-17-0901-1", "date": "2026-09-17", "scene": "留守番電話｜納品の遅れと代替案",
+  "genre": "留守番電話", "talkType": "voicemail", "types": ["gist", "detail", "next"], "flow": "問題と代替案" }
+```
+
+スキルが場面・種類の重複を判定するためだけに読む。アプリはこのファイルを見ない。**消さずに貯め続ける。**

@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-09-17-0901-2",
+  "date": "2026-09-17",
+  "time": "09:01",
+  "createdAt": "2026-09-17T09:01:00+09:00",
+  "sample": false,
+  "scene": "空港｜搭乗口の変更と手荷物の預け入れ",
+  "talkType": "announcement",
+  "intro": "Questions 1 through 3 refer to the following announcement.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-GB"
+  },
+  "lines": [
+    {
+      "en": "Good afternoon, passengers. This is an announcement for Flight 412 to Vancouver, now boarding from Gate 17.",
+      "ja": "皆さま、こんにちは。バンクーバー行き412便のご案内です。ただいま17番ゲートより搭乗を開始しています。"
+    },
+    {
+      "en": "Please note that we have moved to Gate 17, which is a change from the gate printed on your ticket.",
+      "ja": "17番ゲートへ変更になっておりますので、ご搭乗券に印字されたゲートとは異なる点にご注意ください。"
+    },
+    {
+      "en": "The switch was made because our aircraft arrived at a different terminal earlier this afternoon.",
+      "ja": "本日午後、当機が別のターミナルに到着したため、この変更となりました。"
+    },
+    {
+      "en": "Gate 17 is a ten-minute walk from here, so please make your way over as soon as you hear this.",
+      "ja": "17番ゲートまでは徒歩10分ほどです。このご案内をお聞きになりましたら、すぐにお向かいください。"
+    },
+    {
+      "en": "We will begin boarding passengers who need extra time or are travelling with small children in about five minutes.",
+      "ja": "お手伝いが必要なお客さま、小さなお子さま連れのお客さまのご搭乗を、5分ほどで開始いたします。"
+    },
+    {
+      "en": "All other passengers will board by row number, starting from the back of the aircraft.",
+      "ja": "その他のお客さまは、機体後方から列番号順にご搭乗いただきます。"
+    },
+    {
+      "en": "Because the cabin is full today, we are asking travellers with large bags to check them at the desk free of charge.",
+      "ja": "本日は満席のため、大きなお手荷物をお持ちのお客さまは、カウンターで無料でお預けくださいますようお願いします。"
+    },
+    {
+      "en": "Our staff will hand you a tag and load the bag into the hold for you.",
+      "ja": "係の者が荷札をお渡しし、貨物室へお預かりいたします。"
+    },
+    {
+      "en": "Thank you for your patience, and we apologise for the short notice.",
+      "ja": "ご協力に感謝いたします。急なご案内となり申し訳ございません。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely is the speaker?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A pilot on the aircraft",
+          "ja": "機内のパイロット"
+        },
+        {
+          "key": "B",
+          "text": "A ticket agent at check-in",
+          "ja": "搭乗手続き窓口の係員"
+        },
+        {
+          "key": "C",
+          "text": "A baggage handler in the terminal",
+          "ja": "ターミナルの手荷物係"
+        },
+        {
+          "key": "D",
+          "text": "An airline employee at a gate",
+          "ja": "搭乗口にいる航空会社の係員"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        0,
+        3
+      ],
+      "explanation": "搭乗の開始を告げ、ゲートまで徒歩10分だと案内していることから、話し手はゲート付近にいる地上係員だとわかる。A のパイロットは機内から話すので「ここから徒歩10分」とは言わない。B は搭乗券を発行する段階の係員で、搭乗そのものは扱わない。C は荷物を運ぶ側で、Our staff will hand you a tag と別の人を指している。",
+      "tip": "話し手を問う設問は、肩書きではなく「その人にしかできない行為」で決める。ここでは搭乗の開始を宣言している点が決め手。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why was the gate changed?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A storm delayed several flights",
+          "ja": "悪天候で複数の便が遅れた"
+        },
+        {
+          "key": "B",
+          "text": "The original gate was being repaired",
+          "ja": "元のゲートが修理中だった"
+        },
+        {
+          "key": "C",
+          "text": "The plane landed at another terminal",
+          "ja": "機体が別のターミナルに到着した"
+        },
+        {
+          "key": "D",
+          "text": "A later flight needed the space",
+          "ja": "後の便がその場所を必要とした"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        2
+      ],
+      "explanation": "3文目の because our aircraft arrived at a different terminal がそのまま根拠。B は「変更」から連想しやすいが、修理には一言も触れていない。A の天候も D の別便も本文に出てこないため、消去法でも C が残る。",
+      "tip": "理由を問う設問は because のあとだけを聞けばよい。ただしアナウンスでは The switch was made because … のように、主語が出来事（the switch）になることが多い。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are some passengers asked to do?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Leave large bags at the desk",
+          "ja": "大きな荷物をカウンターに預ける"
+        },
+        {
+          "key": "B",
+          "text": "Pay a fee for extra luggage",
+          "ja": "追加の荷物に料金を払う"
+        },
+        {
+          "key": "C",
+          "text": "Print a new boarding pass",
+          "ja": "搭乗券を印刷し直す"
+        },
+        {
+          "key": "D",
+          "text": "Board in order of arrival",
+          "ja": "到着した順に搭乗する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        6,
+        7
+      ],
+      "explanation": "we are asking travellers with large bags to check them at the desk が依頼。ここでの check は「預ける」の意味で、選択肢では leave に言い換えられている。B は free of charge と正反対。D は board by row number（列番号順）であって到着順ではない。",
+      "tip": "we are asking … to do が依頼の合図。動詞 check は「確認する」ではなく「預ける」の用法があり、空港の設問で繰り返し狙われる。"
+    }
+  ],
+  "glossary": {
+    "now boarding": {
+      "lemma": "now boarding",
+      "pos": "熟",
+      "ja": "ただいま搭乗中",
+      "note": "空港アナウンスの定型"
+    },
+    "make your way over": {
+      "lemma": "make one's way",
+      "pos": "熟",
+      "ja": "（その場所へ）向かう",
+      "note": "go の丁寧な言い換え"
+    },
+    "board by row number": {
+      "lemma": "board by row number",
+      "pos": "熟",
+      "ja": "列番号順に搭乗する",
+      "note": ""
+    },
+    "check them at the desk": {
+      "lemma": "check",
+      "pos": "動",
+      "ja": "（荷物を）預ける",
+      "note": "多義語。「確認する」ではない"
+    },
+    "free of charge": {
+      "lemma": "free of charge",
+      "pos": "熟",
+      "ja": "無料で",
+      "note": "at no charge と同じ"
+    },
+    "into the hold": {
+      "lemma": "hold",
+      "pos": "名",
+      "ja": "（航空機の）貨物室",
+      "note": "多義語。動詞の「持つ」ではない"
+    },
+    "short notice": {
+      "lemma": "short notice",
+      "pos": "名",
+      "ja": "急な連絡、直前の知らせ",
+      "note": "on short notice の形でも出る"
+    },
+    "apologise for": {
+      "lemma": "apologize for",
+      "pos": "熟",
+      "ja": "〜を詫びる",
+      "note": "英国式の綴り。米国式は apologize"
+    },
+    "aircraft": {
+      "lemma": "aircraft",
+      "pos": "名",
+      "ja": "航空機",
+      "note": "単複同形"
+    },
+    "cabin": {
+      "lemma": "cabin",
+      "pos": "名",
+      "ja": "客室",
+      "note": ""
+    }
+  },
+  "point": {
+    "flow": "便名と搭乗開始 → 変更の告知 → 変更の理由 → 移動の指示 → 搭乗の順番 → 手荷物の依頼 → 詫び",
+    "items": [
+      {
+        "title": "アナウンスは「告知 → 理由 → 指示」で必ず動く",
+        "body": "館内アナウンスは3つの塊でできている。何が変わったか、なぜ変わったか、聞き手は何をすべきか。設問3問もほぼこの順に並ぶので、塊の切れ目（Please note that / The switch was made because / we are asking）を合図として聞く。"
+      },
+      {
+        "title": "話し手を問う設問は行為で決める",
+        "body": "Who most likely is the speaker? に答えるとき、肩書きは読み上げられない。搭乗を開始する、ゲートの位置を案内する、といったその人にしかできない行為から絞り込む。選択肢には必ず、本文に出てきた別の職種（ここでは Our staff）が混ぜてある。"
+      },
+      {
+        "title": "日常語の別の用法が狙われる",
+        "body": "check（預ける）、hold（貨物室）のように、初級で覚えた語の別用法が根拠文に置かれる。知っている語ほど、その場面での意味を確かめる癖をつけると、聞こえているのに外すことがなくなる。"
+      }
+    ]
+  }
+}

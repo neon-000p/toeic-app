@@ -19,7 +19,8 @@ const ROOT = path.resolve(__dirname, '..');
 /* 教材の種類ごとに、どこを見て何 kbps で作り直すか */
 const TARGETS = [
   { dir: path.join(ROOT, 'data', 'news'), kbps: 32 },
-  { dir: path.join(ROOT, 'data', 'part3'), kbps: 48 }
+  { dir: path.join(ROOT, 'data', 'part3'), kbps: 48 },
+  { dir: path.join(ROOT, 'data', 'part4'), kbps: 48 }
 ];
 
 function run(target) {

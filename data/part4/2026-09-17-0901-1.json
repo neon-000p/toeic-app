@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-09-17-0901-1",
+  "date": "2026-09-17",
+  "time": "09:01",
+  "createdAt": "2026-09-17T09:01:00+09:00",
+  "sample": false,
+  "scene": "留守番電話｜納品の遅れと代替案",
+  "talkType": "voicemail",
+  "intro": "Questions 1 through 3 refer to the following telephone message.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-US"
+  },
+  "lines": [
+    {
+      "en": "Hello, Ms. Delgado. This is Martin Reyes at Brightline Office Supply, returning your call about the chairs you ordered last week.",
+      "ja": "もしもし、デルガドさん。ブライトライン・オフィス・サプライのマーティン・レイエスです。先週ご注文いただいた椅子の件で折り返しています。"
+    },
+    {
+      "en": "I'm sorry to say the shipment from our warehouse has been held up, so it won't reach you by Thursday as we promised.",
+      "ja": "申し上げにくいのですが、当社倉庫からの出荷が遅れており、お約束した木曜までにはお届けできません。"
+    },
+    {
+      "en": "The manufacturer ran short on a part, and the whole production line is running behind schedule by about two weeks.",
+      "ja": "メーカーで部品が不足し、生産ライン全体が2週間ほど予定より遅れています。"
+    },
+    {
+      "en": "I know your new staff start on Monday, so waiting until the end of the month isn't an option for you.",
+      "ja": "新しいスタッフの方が月曜から入られると伺っているので、月末まで待つという選択肢はないですよね。"
+    },
+    {
+      "en": "What I can do is lend you twenty chairs from our showroom floor at no charge until your order arrives.",
+      "ja": "できることとしては、ご注文の品が届くまで、展示場の椅子を20脚、無料でお貸しすることです。"
+    },
+    {
+      "en": "They are a different color, but the same model, and my driver could drop them off tomorrow morning.",
+      "ja": "色は違いますが同じ型で、うちのドライバーが明日の午前中にお届けできます。"
+    },
+    {
+      "en": "If that works for you, just call me back before five o'clock today and I'll put it on the schedule.",
+      "ja": "それでよろしければ、本日5時までに折り返しお電話ください。手配に入れます。"
+    },
+    {
+      "en": "I'll also take fifteen percent off the invoice for the trouble.",
+      "ja": "ご迷惑をおかけしたお詫びに、請求額から15パーセント引かせていただきます。"
+    },
+    {
+      "en": "Thanks for your patience.",
+      "ja": "お待たせして申し訳ありません。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "Why is the speaker calling?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To confirm a delivery address",
+          "ja": "配送先の住所を確認するため"
+        },
+        {
+          "key": "B",
+          "text": "To explain a problem with an order",
+          "ja": "注文の問題を説明するため"
+        },
+        {
+          "key": "C",
+          "text": "To ask about a damaged product",
+          "ja": "破損した商品について尋ねるため"
+        },
+        {
+          "key": "D",
+          "text": "To introduce a new product line",
+          "ja": "新しい製品ラインを紹介するため"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で「注文の件で折り返している」と名乗り、続けて the shipment ... has been held up と本題に入る。用件は注文品が届かないことの連絡なので B。A の住所は一度も話題にならず、C の破損も出てこない。D は showroom floor の椅子を貸す話を「新製品の紹介」と取り違えさせる誤答。",
+      "tip": "留守電の用件は、名乗りの直後の1〜2文でほぼ確定する。ここを聞き逃したら、あとは細部しか拾えない。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "According to the speaker, what caused the delay?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A shortage of a part",
+          "ja": "部品の不足"
+        },
+        {
+          "key": "B",
+          "text": "A change in staff",
+          "ja": "人員の交代"
+        },
+        {
+          "key": "C",
+          "text": "A damaged warehouse",
+          "ja": "倉庫の損傷"
+        },
+        {
+          "key": "D",
+          "text": "A canceled order",
+          "ja": "注文の取り消し"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        2
+      ],
+      "explanation": "3文目の ran short on a part がそのまま根拠で、選択肢では shortage に言い換えられている。B の staff は買い手側の新入社員の話、C の warehouse は出荷元として出てくるだけで壊れてはいない。本文に出た語をそのまま含む選択肢ほど疑ってよい。",
+      "tip": "原因を問う設問は、because や and でつながれた2文目以降に答えがあることが多い。動詞の熟語（run short on）が言い換えられる形に慣れておく。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What does the speaker ask the listener to do?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Visit the showroom in person",
+          "ja": "展示場に直接足を運ぶ"
+        },
+        {
+          "key": "B",
+          "text": "Send a revised invoice",
+          "ja": "修正した請求書を送る"
+        },
+        {
+          "key": "C",
+          "text": "Return his call by five o'clock",
+          "ja": "5時までに折り返す"
+        },
+        {
+          "key": "D",
+          "text": "Choose a different color",
+          "ja": "別の色を選ぶ"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        6
+      ],
+      "explanation": "call me back before five o'clock today が唯一の依頼。A は showroom floor から椅子を貸すという話で、来訪は求めていない。B の invoice は話し手が値引きする側であり、聞き手が送るものではない。D の color は「色は違うがご了承を」という前置きで、選ばせてはいない。",
+      "tip": "依頼は終盤の If that works for you, just ... の形で来る。just や please の直後の動詞だけを取りに行けばよい。"
+    }
+  ],
+  "glossary": {
+    "returning your call": {
+      "lemma": "return someone's call",
+      "pos": "熟",
+      "ja": "折り返し電話をする",
+      "note": "留守電の定型。この直後に用件が来る"
+    },
+    "held up": {
+      "lemma": "hold up",
+      "pos": "熟",
+      "ja": "遅れる、滞る",
+      "note": "delay の言い換え。選択肢では delayed になりやすい"
+    },
+    "ran short on": {
+      "lemma": "run short on",
+      "pos": "熟",
+      "ja": "〜が足りなくなる",
+      "note": "選択肢では shortage に置き換わる"
+    },
+    "running behind schedule": {
+      "lemma": "run behind schedule",
+      "pos": "熟",
+      "ja": "予定より遅れている",
+      "note": ""
+    },
+    "isn't an option": {
+      "lemma": "be not an option",
+      "pos": "熟",
+      "ja": "選択肢にならない、無理だ",
+      "note": "やんわり不可能だと伝える言い方"
+    },
+    "showroom floor": {
+      "lemma": "showroom floor",
+      "pos": "名",
+      "ja": "展示スペース、店頭の展示品",
+      "note": ""
+    },
+    "at no charge": {
+      "lemma": "at no charge",
+      "pos": "熟",
+      "ja": "無料で",
+      "note": "free of charge と同じ"
+    },
+    "drop them off": {
+      "lemma": "drop off",
+      "pos": "熟",
+      "ja": "届ける、置いていく",
+      "note": "deliver の言い換え"
+    },
+    "shipment": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷、積荷",
+      "note": ""
+    },
+    "manufacturer": {
+      "lemma": "manufacturer",
+      "pos": "名",
+      "ja": "製造元、メーカー",
+      "note": ""
+    },
+    "invoice": {
+      "lemma": "invoice",
+      "pos": "名",
+      "ja": "請求書",
+      "note": ""
+    }
+  },
+  "point": {
+    "flow": "名乗りと用件 → 問題（出荷の遅れ）→ 原因 → 相手の事情への配慮 → 代替案 → 折り返しの依頼と期限",
+    "items": [
+      {
+        "title": "留守電は「名乗り・用件・依頼」の3点で聞く",
+        "body": "Part 4 の電話メッセージは、誰から誰への電話かが最初の1文、用件が次の1〜2文、聞き手への依頼が最後の2文に必ず入る。この3か所さえ押さえれば、途中の数字や色の話を取りこぼしても3問は取れる。"
+      },
+      {
+        "title": "詫びの直後に代替案が来る",
+        "body": "I'm sorry to say … のあとには、ほぼ必ず What I can do is … や Instead, … で代替案が続く。設問は「代わりに何をするか」を問うので、謝罪の文が聞こえた時点で次の文に身構える。"
+      },
+      {
+        "title": "期限つきの依頼が最終問題になる",
+        "body": "call me back before five o'clock のように、依頼には期限が付く。選択肢は動詞（call back）と期限（by five）の両方で作られるため、どちらか片方だけを聞き取ると引っかかる。"
+      }
+    ]
+  }
+}

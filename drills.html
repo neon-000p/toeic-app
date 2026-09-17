@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-14 20edb9b">
+<meta name="app-build" content="2026-09-17 59b8786">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>実践対策 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -74,8 +74,8 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
   var PARTS = {
     '3': { name: '会話問題', dir: 'data/part3/', page: 'part3.html', key: 'part3:', ready: true,
            note: '2〜3人の会話を1回だけ聞いて3問。設問は先読みできる。' },
-    '4': { name: '説明文', dir: 'data/part4/', page: 'part4.html', key: 'part4:', ready: false,
-           note: 'アナウンス・留守電・スピーチ' },
+    '4': { name: '説明文', dir: 'data/part4/', page: 'part4.html', key: 'part4:', ready: true,
+           note: '1人が話す説明文を1回だけ聞いて3問。設問は先読みできる。' },
     '5': { name: '短文穴埋め', dir: 'data/part5/', page: 'part5.html', key: 'part5:', ready: false,
            note: '文法と語彙' },
     '6': { name: '長文穴埋め', dir: 'data/part6/', page: 'part6.html', key: 'part6:', ready: false,
@@ -111,6 +111,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
     var q = T.Log.progress(P.key + it.id);
     if (q && q.scene && statusOf(it.id) === '済') return q.scene;
     if (n === '3') return (it.speakers || 2) + '人の会話';
+    /* Part 4 以降は index.json の kind（種類）と問数をそのまま出す */
     return (it.kind || '') + (it.questions ? ' ' + it.questions + '問' : '');
   }
 

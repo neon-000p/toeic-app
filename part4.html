@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="app-build" content="2026-09-17 59b8786">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Part 3 | TOEIC Daily</title>
+<title>Part 4 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
@@ -90,9 +90,12 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   border:1px solid var(--line-2);background:var(--surface);
   color:var(--accent);font-size:10px;line-height:1;cursor:pointer;
 }
+/* 話し手は1人なので、札には文番号を出す。
+   解説で引用された文を、対訳の中から探せるようにするため。 */
 .line .tag{
-  flex:none;width:26px;height:20px;border-radius:5px;background:var(--surface-2);
+  flex:none;width:22px;height:20px;border-radius:5px;background:var(--surface-2);
   border:1px solid var(--line);font-size:10px;font-weight:800;color:var(--muted);
+  font-variant-numeric:tabular-nums;
   display:flex;align-items:center;justify-content:center;margin-top:3px;
 }
 .line .body{flex:1;min-width:0}
@@ -101,6 +104,11 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 .line.play{background:var(--mark-soft)}
 .line.evid{box-shadow:inset 3px 0 0 var(--mark)}
 .hide-ja .line .j{display:none}
+
+/* 前置き。本番のナレーションにあたる1行 */
+.intro{padding:11px 14px}
+.intro .sec-label{margin-bottom:4px}
+.intro-en{margin:0;font-family:var(--serif);font-size:13.5px;line-height:1.55;color:var(--ink-2)}
 
 /* 語彙 */
 .vcard{display:flex;gap:11px;padding:14px 0;border-bottom:1px solid var(--line)}
@@ -199,7 +207,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   var $ = function (id) { return document.getElementById(id); };
   var stage = $('stage');
 
-  /* 1回に1セット（会話1本＋設問3問）。本番の1セットと同じ単位。 */
+  /* 1回に1セット（説明文1本＋設問3問）。本番の1セットと同じ単位。 */
   /* ホームに戻ったときにこのタブで開くよう覚えておく */
   T.Settings.set('hubTab', 'drill');
 
@@ -223,16 +231,20 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
      前回の選択が入ったままだと、開き直しても解き直しにならないため。 */
   var fresh = {};
 
-  var audioRest = 0;   /* 会話音声の残り秒。フッターに出す */
-  var curTag = '';     /* 読み上げ中の話者。フッターに出す */
+  var audioRest = 0;   /* トーク音声の残り秒。フッターに出す */
   var left = 0, timer = null;
   var lineIdx = -1, plan = {};
   var progKey = '';
 
-  var audioEl = null;   /* 用意された会話音声。鳴らしている間だけ入る */
+  var audioEl = null;   /* 用意されたトーク音声。鳴らしている間だけ入る */
   var PREP_DEFAULT = 13;   // 設問の先読み
   var ANS_DEFAULT = 8;     // 本番は設問の読み上げごとに約8秒の間がある
-  var TYPE_LABEL = { gist: '概要', detail: '詳細', intent: '意図', next: '次の行動', infer: '推測', graphic: '図表' };
+  var TYPE_LABEL = { gist: '概要', who: '話し手・聞き手', detail: '詳細', intent: '意図',
+                     next: '次の行動', infer: '推測', graphic: '図表' };
+  /* トークの種類。ヘッダーの印と、聞く前に出す前置きの言い回しに使う */
+  var TALK_LABEL = { announcement: 'アナウンス', voicemail: '留守番電話', speech: 'スピーチ',
+                     broadcast: '放送', ad: '広告', tour: '案内', instructions: '指示',
+                     meeting: '会議の一部', talk: 'トーク' };
 
   /* ================= 起動 ================= */
 
@@ -245,14 +257,14 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
   function boot() {
     var want = new URLSearchParams(location.search).get('id');
-    fetchJSON('data/part3/index.json')
+    fetchJSON('data/part4/index.json')
       .then(function (idx) { INDEX = (idx && idx.items) || []; })
       .catch(function () { INDEX = []; })
       .then(function () {
         INDEX.sort(function (a, b) { return (b.id || '').localeCompare(a.id || ''); });
         var it = INDEX.filter(function (x) { return x.id === want; })[0] || INDEX[0];
         if (!it) throw new Error('セットが見つかりません');
-        return fetchJSON('data/part3/' + (it.file || (it.id + '.json')));
+        return fetchJSON('data/part4/' + (it.file || (it.id + '.json')));
       })
       .then(start)
       .catch(fail);
@@ -263,15 +275,15 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     $('rail').innerHTML = '';
     stage.innerHTML = '<div class="card"><div class="sec-label">読み込めません</div><p>' +
       esc(e && e.message || e) + '</p>' +
-      '<p class="small muted">Part 3 の教材はまだ作られていないかもしれません。' +
-      'ルーティンが <code>data/part3/</code> に書き出すと、ここに出ます。</p></div>';
+      '<p class="small muted">Part 4 の教材はまだ作られていないかもしれません。' +
+      'ルーティンが <code>data/part4/</code> に書き出すと、ここに出ます。</p></div>';
     $('btnNext').disabled = true;
     $('btnPrev').disabled = true;
   }
 
   function start(d) {
     SET = d;
-    progKey = 'part3:' + (d.id || 'unknown');
+    progKey = 'part4:' + (d.id || 'unknown');
     var p = T.Log.progress(progKey);
 
     /* 前回の答えは残しておく。解説で「前回どれを選んだか」を見るため。
@@ -287,6 +299,20 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   }
 
   function qs() { return (SET && SET.questions) || []; }
+  /* Part 4 の話し手は1人。読み上げの声を選ぶ仕掛けは Part 3 と同じものを使う */
+  function speakers() { return SET && SET.speaker ? [SET.speaker] : []; }
+  function tagOf() { return (SET && SET.speaker && SET.speaker.tag) || 'M'; }
+
+  /* 本番でトークの前に読まれる前置き。「何の話を聞くか」だけが先に分かる。
+     場面（scene）と違って伏せない。本番でも必ず聞かされるものだから。 */
+  function introText() {
+    if (SET && SET.intro) return SET.intro;
+    var k = (SET && SET.talkType) || 'talk';
+    var EN = { announcement: 'announcement', voicemail: 'telephone message', speech: 'speech',
+               broadcast: 'broadcast', ad: 'advertisement', tour: 'tour information',
+               instructions: 'instructions', meeting: 'excerpt from a meeting', talk: 'talk' };
+    return 'Questions 1 through 3 refer to the following ' + (EN[k] || 'talk') + '.';
+  }
   function lines() { return (SET && SET.lines) || []; }
   function save() {
     T.Log.saveProgress(progKey, {
@@ -300,12 +326,14 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   function renderHead() {
     var m = [];
     if (SET.date) m.push('<span>' + esc(SET.date.replace(/-/g, '/')) + (SET.time ? ' ' + esc(SET.time) : '') + '</span>');
-    m.push('<span class="chip">Part 3</span>');
-    m.push('<span class="chip chip-plain">' + ((SET.speakers || []).length) + '人</span>');
+    m.push('<span class="chip">Part 4</span>');
+    if (SET.talkType && TALK_LABEL[SET.talkType]) {
+      m.push('<span class="chip chip-plain">' + esc(TALK_LABEL[SET.talkType]) + '</span>');
+    }
     if (SET.sample) m.push('<span class="chip chip-mark">サンプル</span>');
     $('meta').innerHTML = m.join('');
     /* 場面は解き終わるまで出さない。何の話かを先に知ると先読みの意味が薄れる */
-    $('scene').textContent = (step > 0 || scored) ? (SET.scene || '') : '会話1本・設問3問';
+    $('scene').textContent = (step > 0 || scored) ? (SET.scene || '') : '説明文1本・設問3問';
     renderRail();
   }
 
@@ -334,15 +362,17 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
   /* ================= 設問ステップの進行 =================
      本番と同じ流れ。設問と選択肢は最初から最後まで見えたまま。
-       先読み → 会話（1回だけ）→ 設問の読み上げ＋解答時間 → 見直し
-     本番も問題冊子は手元にあり、会話のあとにナレーターが設問を読み上げる。 */
+       先読み → 前置き＋トーク（1回だけ）→ 設問の読み上げ＋解答時間 → 見直し
+     本番も問題冊子は手元にあり、トークのあとにナレーターが設問を読み上げる。
+     Part 3 と違って話し手は1人なので、聞き分けではなく「何の場面の話か」を
+     前置き（intro）で受け取ってから聞き始める。 */
 
   function prepSec() {
-    var v = T.Settings.get('p3prep');
+    var v = T.Settings.get('p4prep');
     return (typeof v === 'number' && v > 0) ? v : PREP_DEFAULT;
   }
   function ansSec() {
-    var v = T.Settings.get('p3ans');
+    var v = T.Settings.get('p4ans');
     return (typeof v === 'number' && v >= 0) ? v : ANS_DEFAULT;
   }
   function clearTimer() { clearInterval(timer); timer = null; }
@@ -369,15 +399,15 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
   function enterPrep() {
     phase = 'prep'; qi = -1; reading = false;
-    audioRest = 0; curTag = '';
+    audioRest = 0;
     render('top');
     countdown(prepSec(), playConv);
   }
 
-  /* あらかじめ作ってリポジトリに置いた会話音声。無ければ端末の読み上げに落ちる */
+  /* あらかじめ作ってリポジトリに置いたトーク音声。無ければ端末の読み上げに落ちる */
   function audioURL() {
     var a = SET && SET.audio;
-    return a && a.file ? 'data/part3/' + a.file : '';
+    return a && a.file ? 'data/part4/' + a.file : '';
   }
 
   function stopAudio() {
@@ -408,7 +438,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     a.play().catch(function () {
       /* 端末が自動再生を止めた場合。押してもらう */
       var h = stage.querySelector('.status .hint');
-      if (h) h.innerHTML = '<button class="btn btn-sm btn-primary" id="aGo">▶ 会話を再生</button>';
+      if (h) h.innerHTML = '<button class="btn btn-sm btn-primary" id="aGo">▶ トークを再生</button>';
       var b = $('aGo');
       if (b) b.onclick = function () { if (audioEl) audioEl.play(); b.remove(); };
     });
@@ -416,7 +446,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
   function playConv() {
     clearTimer();
-    phase = 'play'; lineIdx = -1; audioRest = 0; curTag = '';
+    phase = 'play'; lineIdx = -1; audioRest = 0;
     setBar(0);
     render('top');
     if (audioURL()) { playFile(); return; }
@@ -431,19 +461,24 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       if (started || phase !== 'play') return;
       started = true;
       if (!T.TTS.english().length) { noVoice(); return; }
-      plan = T.TTS.speakerPlan(SET.speakers);
+      plan = T.TTS.speakerPlan(speakers());
       var ls = lines();
-      (function next(i) {
-        if (phase !== 'play') return;
-        if (i >= ls.length) { readQuestions(); return; }
-        lineIdx = i; markMic();
-        var sp = plan[ls[i].tag] || {};
-        T.TTS.speak(ls[i].en, {
-          rate: T.Settings.get('rate'),
-          voiceURI: sp.voiceURI, pitch: sp.pitch,
-          onend: function () { next(i + 1); }
-        });
-      })(0);
+      function body() {
+        (function next(i) {
+          if (phase !== 'play') return;
+          if (i >= ls.length) { readQuestions(); return; }
+          lineIdx = i; markMic();
+          var sp = plan[tagOf()] || {};
+          T.TTS.speak(ls[i].en, {
+            rate: T.Settings.get('rate'),
+            voiceURI: sp.voiceURI, pitch: sp.pitch,
+            onend: function () { next(i + 1); }
+          });
+        })(0);
+      }
+      /* 用意された音声には前置きが入っている。読み上げに落ちたときも
+         同じ順で聞こえるよう、ここで読んでからトークに入る。 */
+      T.TTS.speak(introText(), { rate: T.Settings.get('rate'), onend: body });
     }
     T.TTS.onReady(begin);
     setTimeout(begin, 2500);
@@ -458,7 +493,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     stage.insertBefore(d, stage.firstChild);
   }
 
-  /* 会話のあと、設問を1問ずつ読み上げてから解答時間を取る */
+  /* トークのあと、設問を1問ずつ読み上げてから解答時間を取る */
   function readQuestions() {
     T.TTS.cancel();
     stopAudio();
@@ -483,12 +518,10 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     })(0);
   }
 
-  /* 端末の読み上げで流すときは、いま誰が話しているかをフッターに出す。
+  /* 端末の読み上げで流すときは、いま何文目かをフッターに出す。
+     話し手は1人なので、Part 3 のような話者の印は要らない。
      用意された音声のときは追えないので、代わりに残り秒が出る。 */
-  function markMic() {
-    curTag = (lines()[lineIdx] || {}).tag || '';
-    renderFoot();
-  }
+  function markMic() { renderFoot(); }
 
   /* ================= 各ステップの画面 ================= */
 
@@ -497,7 +530,11 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   function statusHTML() { return ''; }
 
   function viewQuiz() {
-    return statusHTML() + qs().map(function (q, i) {
+    /* 前置きは設問より上に、小さく置く。本番のナレーションと同じ位置づけ */
+    return statusHTML() +
+      '<div class="card intro"><span class="sec-label">Narrator</span>' +
+      '<p class="intro-en">' + esc(introText()) + '</p></div>' +
+      qs().map(function (q, i) {
       var on = (phase === 'read' && i === qi);
       return '<div class="card qbox' + (on ? ' cur' : '') + '" data-qi="' + i + '">' +
         /* 設問では型（概要・詳細など）を出さない。何を問われているかの
@@ -542,9 +579,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
         ev.map(function (li) {
           var l = lines()[li];
           return '<div class="line evid" data-ev="' + li + '" style="margin-top:10px">' +
-            '<span class="tag">' + esc(l.tag) + '</span>' +
+            '<span class="tag">' + (li + 1) + '</span>' +
             /* 対訳と同じく語をタップできるようにする。
-               聞き取れなかった行こそ、その場で語の意味を引きたい。 */
+               聞き取れなかった文こそ、その場で語の意味を引きたい。 */
             '<span class="body"><span class="e">' + T.markupEnglish(l.en, SET.glossary) + '</span>' +
             '<span class="j">' + esc(l.ja || '') + '</span></span>' +
             '<button class="pl" data-play="' + li + '" title="この行を再生">▶</button></div>';
@@ -559,7 +596,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   function viewScript() {
     var showJa = T.Settings.get('showJa');
     /* 根拠の印は付けない。解説ステップで設問ごとに該当行を引用しているので、
-       対訳では素の会話として読めるほうがよい。 */
+       対訳では素のトークとして読めるほうがよい。 */
     return '<div class="card' + (showJa ? '' : ' hide-ja') + '" id="scriptCard">' +
       '<div class="sec-head"><span class="sec-label">対訳</span>' +
         '<span class="sec-tools">' +
@@ -570,7 +607,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
         '</span></div>' +
       lines().map(function (l, li) {
         return '<div class="line" data-i="' + li + '">' +
-          '<span class="tag">' + esc(l.tag) + '</span>' +
+          '<span class="tag">' + (li + 1) + '</span>' +
           '<span class="body"><span class="e">' + T.markupEnglish(l.en, SET.glossary) + '</span>' +
           '<span class="j">' + esc(l.ja || '') + '</span></span>' +
           '<button class="pl" data-play="' + li + '" title="この行を再生">▶</button></div>';
@@ -581,7 +618,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   function viewVocab() {
     var g = SET.glossary || {};
     var keys = Object.keys(g);
-    if (!keys.length) return '<div class="card"><p class="small muted" style="margin:0">この会話には語注がありません。</p></div>';
+    if (!keys.length) return '<div class="card"><p class="small muted" style="margin:0">このトークには語注がありません。</p></div>';
     var showMean = T.Settings.get('vocabJa') !== false;
     return '<div class="card' + (showMean ? '' : ' terms-only') + '" id="vocabCard">' +
       '<div class="sec-head"><span class="sec-label">Vocabulary</span>' +
@@ -617,7 +654,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     /* 全体を1枚の枠に入れ、中は見出しと本文を続けて並べる。
        項目ごとに枠を切ると読み物として途切れるため。 */
     return '<div class="card point">' +
-      '<div class="sec-label">会話の型</div>' +
+      '<div class="sec-label">トークの型</div>' +
       '<p class="flow">' + esc(p.flow || '') + '</p>' +
       '<p class="small muted" style="margin:6px 0 0">この型を覚えておくと、次に同じ展開が来たときに' +
       '設問の順番まで予測できます。</p>' +
@@ -648,7 +685,10 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   function midLabel() {
     if (step !== 0) return (step + 1) + ' / ' + STEPS.length + '　' + STEPS[step].label;
     if (phase === 'prep') return '先読み　' + left + ' 秒';
-    if (phase === 'play') return '会話 再生中' + (audioRest ? '　' + audioRest + ' 秒' : (curTag ? '　' + curTag : ''));
+    if (phase === 'play') {
+      if (audioRest) return 'トーク 再生中　' + audioRest + ' 秒';
+      return 'トーク 再生中' + (lineIdx >= 0 ? '　' + (lineIdx + 1) + ' / ' + lines().length + ' 文' : '');
+    }
     if (phase === 'read') {
       return '設問 ' + (qi + 1) + ' / ' + qs().length + (reading ? '　読み上げ' : '　解答 ' + left + ' 秒');
     }
@@ -733,7 +773,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       else {
         T.Vocab.add({ term: term, pos: (hit && hit.pos) || '', ja: (hit && hit.ja) || '',
                       gloss: (hit && hit.note) || '', src: SET.id,
-                      srcTitle: 'Part 3 ' + (SET.scene || '') });
+                      srcTitle: 'Part 4 ' + (SET.scene || '') });
         T.toast('語彙帳に追加しました');
       }
       render();
@@ -797,7 +837,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
      対訳に移った瞬間に声が変わることがなくなる。 */
   function lineURL(i) {
     var a = SET && SET.audio;
-    return a && a.lines && a.lines[i] ? 'data/part3/' + a.lines[i] : '';
+    return a && a.lines && a.lines[i] ? 'data/part4/' + a.lines[i] : '';
   }
 
   function stopLineAudio() {
@@ -813,9 +853,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   }
 
   function speakByTTS(i, onend) {
-    var p = T.TTS.speakerPlan(SET.speakers);
+    var p = T.TTS.speakerPlan(speakers());
     var l = lines()[i];
-    var sp = p[l.tag] || {};
+    var sp = p[tagOf()] || {};
     T.TTS.speak(l.en, { rate: T.Settings.get('rate'), voiceURI: sp.voiceURI, pitch: sp.pitch, onend: onend });
   }
 
@@ -961,7 +1001,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
           var m = g || aiData || {};
           T.Vocab.add({ term: term2, pos: m.pos || '', ja: m.ja || '',
                         gloss: (g && g.note) || (aiData && aiData.tip) || '',
-                        src: SET.id, srcTitle: 'Part 3 ' + (SET.scene || '') });
+                        src: SET.id, srcTitle: 'Part 4 ' + (SET.scene || '') });
           T.toast('語彙帳に追加しました');
         } else { T.Vocab.remove(term2); T.toast('語彙帳から外しました'); }
         closePop(); return;
@@ -980,10 +1020,11 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   $('btnPick').addEventListener('click', function () {
     var rows = INDEX.length ? INDEX.map(function (it) {
       var here = SET && it.id === SET.id;
-      var p = T.Log.progress('part3:' + it.id);
+      var p = T.Log.progress('part4:' + it.id);
       return '<p style="margin:0 0 4px"><a href="?id=' + encodeURIComponent(it.id) + '" style="color:inherit;text-decoration:none">' +
         '<span class="chip chip-plain">' + esc((it.date || it.id) + (it.time ? ' ' + it.time : '')) + '</span> ' +
-        (it.speakers ? '<span class="chip">' + esc(it.speakers) + '人</span> ' : '') +
+        (it.talkType && TALK_LABEL[it.talkType]
+          ? '<span class="chip">' + esc(TALK_LABEL[it.talkType]) + '</span> ' : '') +
         (here ? '<b>いま解いている</b>' : (p && p.scored ? '解答済み' : '未着手')) + '</a></p>';
     }).join('') : '<p class="muted small">目次が読めませんでした。</p>';
     T.modal('<h2>セットを選ぶ</h2>' + rows +
@@ -991,51 +1032,51 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       function (bg) { bg.querySelector('#mClose').onclick = function () { bg.remove(); }; });
   });
 
-  /* 全部作ると何回の呼び出しになるか。core.js が古ければ ? と出す */
-  function calls() {
-    try { return T.AI && T.AI.audioCalls ? T.AI.audioCalls(lines()) : '?'; }
-    catch (e) { return '?'; }
+  /* 試聴に渡す形。話し手は1人なので、全文が1回の呼び出しにまとまる */
+  function taggedLines() {
+    var t = tagOf();
+    return lines().map(function (l) { return { tag: t, en: l.en }; });
   }
 
   $('btnCfg').addEventListener('click', function () {
     T.openSettings({
       extraHTML:
-        '<h2>Part 3</h2>' +
-        '<label class="field"><span>設問の先読み <b id="p3v">' + prepSec() + '</b> 秒</span>' +
-          '<input type="range" id="p3prep" min="5" max="30" step="1" value="' + prepSec() + '"></label>' +
-        '<label class="field"><span>設問ごとの間 <b id="p3av">' + (ansSec() || 0) + '</b> 秒</span>' +
-          '<input type="range" id="p3ans" min="0" max="20" step="1" value="' + ansSec() + '"></label>' +
+        '<h2>Part 4</h2>' +
+        '<label class="field"><span>設問の先読み <b id="p4v">' + prepSec() + '</b> 秒</span>' +
+          '<input type="range" id="p4prep" min="5" max="30" step="1" value="' + prepSec() + '"></label>' +
+        '<label class="field"><span>設問ごとの間 <b id="p4av">' + (ansSec() || 0) + '</b> 秒</span>' +
+          '<input type="range" id="p4ans" min="0" max="20" step="1" value="' + ansSec() + '"></label>' +
         '<p class="small muted" style="margin:-4px 0 8px">本番は各設問の読み上げのあとに約8秒の間があります。' +
         '慣れるまで長めにしても構いません。<b>0 にすると3問を続けて読み上げます</b>（速く回したいとき用）。</p>' +
         '<hr class="sep">' +
         '<h2>音声を Gemini で作る（試験中）</h2>' +
         '<p class="small muted" style="margin:-6px 0 8px">端末内蔵の読み上げより自然かどうかを確かめる試聴です。' +
-        '1回の呼び出しで指定できる声は<b>2人まで</b>。3人の会話は2人ずつのかたまりに切って繋ぎます。' +
+        'Part 4 は話し手が1人なので、トーク全体が<b>1回の呼び出し</b>で作れます。' +
         '<b>無料枠は分あたりの回数がごく小さい</b>ので、まず「冒頭だけ」で音の質を確かめてください。' +
         'アクセント（米・英・豪）の指定はできません。</p>' +
         '<label class="field"><span>TTS のモデル</span>' +
           '<input type="text" id="ttsModel" value="' + esc(T.AI.ttsCfg().model) + '"></label>' +
         '<div class="tool-row">' +
           '<button class="btn btn-sm btn-primary" id="ttsHead">冒頭だけ試聴（1回）</button>' +
-          '<button class="btn btn-sm" id="ttsTry">全部作る（' + calls() + '回）</button>' +
+          '<button class="btn btn-sm" id="ttsTry">全文を作る（1回）</button>' +
         '</div>' +
         '<div class="small muted" id="ttsInfo" style="margin-top:8px"></div>' +
         '<div id="ttsOut" style="margin-top:8px"></div>',
       onMount: function (bg) {
-        var r1 = bg.querySelector('#p3prep');
+        var r1 = bg.querySelector('#p4prep');
         r1.oninput = function () {
-          T.Settings.set('p3prep', parseInt(r1.value, 10));
-          bg.querySelector('#p3v').textContent = r1.value;
+          T.Settings.set('p4prep', parseInt(r1.value, 10));
+          bg.querySelector('#p4v').textContent = r1.value;
         };
-        var r2 = bg.querySelector('#p3ans');
+        var r2 = bg.querySelector('#p4ans');
         r2.oninput = function () {
-          T.Settings.set('p3ans', parseInt(r2.value, 10));
-          bg.querySelector('#p3av').textContent = r2.value;
+          T.Settings.set('p4ans', parseInt(r2.value, 10));
+          bg.querySelector('#p4av').textContent = r2.value;
         };
 
         var tm = bg.querySelector('#ttsModel');
         tm.onchange = function () { T.AI.setCfg({ ttsModel: tm.value.trim() }); };
-        /* head = true なら冒頭のかたまり1つだけ。無料枠を使い切らずに音の質だけ見る用 */
+        /* head = true なら冒頭の3文だけ。無料枠を使い切らずに音の質だけ見る用 */
         var run = function (head) {
           var info = bg.querySelector('#ttsInfo'), out = bg.querySelector('#ttsOut');
           if (!T.AI.enabled()) { info.textContent = '先に Gemini の API キーを設定してください。'; return; }
@@ -1043,26 +1084,16 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
           T.AI.setCfg({ ttsModel: tm.value.trim() });
           out.innerHTML = '';
 
-          var ls = lines();
-          if (head) {
-            /* 先頭から、出てくる話者が3人目になる手前まで */
-            var seen = [], cut = ls.length;
-            for (var i = 0; i < ls.length; i++) {
-              if (seen.indexOf(ls[i].tag) < 0) {
-                if (seen.length >= 2) { cut = i; break; }
-                seen.push(ls[i].tag);
-              }
-            }
-            ls = ls.slice(0, cut);
-          }
+          var ls = taggedLines();
+          if (head) ls = ls.slice(0, 3);
 
           var t0 = Date.now();
           info.textContent = '作成中…';
-          T.AI.conversationAudio(ls, SET.speakers, function (done, total) {
+          T.AI.conversationAudio(ls, speakers(), function (done, total) {
             info.textContent = '作成中… ' + done + ' / ' + total + ' 回';
           }).then(function (blob) {
             var sec = ((Date.now() - t0) / 1000).toFixed(1);
-            info.innerHTML = '完了。' + ls.length + '行 ／ <b>' + Math.round(blob.size / 1024) + ' KB</b>（WAV）' +
+            info.innerHTML = '完了。' + ls.length + '文 ／ <b>' + Math.round(blob.size / 1024) + ' KB</b>（WAV）' +
               '／ 作成 ' + sec + ' 秒。<br>MP3 に変換すれば 1/5 ほどになります。';
             var a = document.createElement('audio');
             a.controls = true; a.style.width = '100%';
@@ -1084,7 +1115,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     onPick: function (text, ctx, rect) {
       var g = SET && SET.glossary && SET.glossary[text.toLowerCase()];
       T.phrasePop({ text: text, ctx: ctx, rect: rect, gloss: g,
-        scope: (SET && SET.id) || '', srcTitle: 'Part 3 ' + ((SET && SET.scene) || '') });
+        scope: (SET && SET.id) || '', srcTitle: 'Part 4 ' + ((SET && SET.scene) || '') });
     }
   });
 

@@ -3,6 +3,7 @@ name: 音声を作る
 # data/ に新しい教材が入ったら、読み上げ音声を作って main に足す。
 #   時事英語（data/news/）… 本文を1文ずつ
 #   Part 3（data/part3/） … 会話まるごと ＋ 1行ずつ
+#   Part 4（data/part4/） … 前置き＋トークまるごと ＋ 1文ずつ
 # API キーはリポジトリの Secret（GEMINI_API_KEY）から環境変数で渡すので、
 # コードにも履歴にも残らない。手で動かしたいときは Actions の画面から実行できる。
 
@@ -12,7 +13,9 @@ on:
     paths:
       - 'data/news/*.json'
       - 'data/part3/*.json'
+      - 'data/part4/*.json'
       - 'tools/make-audio.js'
+      - 'tools/make-part4-audio.js'
       - 'tools/make-news-audio.js'
       - 'tools/tts-lib.js'
       - '.github/workflows/part3-audio.yml'
@@ -73,7 +76,13 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node tools/make-audio.js --all ${{ inputs.force && '--force' || '' }}
 
-      # 片方が上限に当たっても、もう片方は作らせる
+      # どれかが上限に当たっても、残りは作らせる
+      - name: Part 4 の音声
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node tools/make-part4-audio.js --all ${{ inputs.force && '--force' || '' }}
+
       - name: 時事英語の音声
         if: always()
         env:

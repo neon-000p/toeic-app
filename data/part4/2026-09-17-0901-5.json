@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-09-17-0901-5",
+  "date": "2026-09-17",
+  "time": "09:01",
+  "createdAt": "2026-09-17T09:01:00+09:00",
+  "sample": false,
+  "scene": "放送｜道路工事による渋滞と迂回の案内",
+  "talkType": "broadcast",
+  "intro": "Questions 1 through 3 refer to the following broadcast.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-US"
+  },
+  "lines": [
+    {
+      "en": "You're listening to the morning traffic report on Radio 9, and it's a slow start on the east side.",
+      "ja": "ラジオ9の朝の交通情報です。東側は出だしから流れが悪くなっています。"
+    },
+    {
+      "en": "Crews began resurfacing the Harbour Bridge overnight, and two of the four lanes are closed until Friday.",
+      "ja": "作業班が夜のうちにハーバー橋の舗装工事を始め、4車線のうち2車線が金曜まで閉鎖されています。"
+    },
+    {
+      "en": "Drivers heading downtown are sitting in traffic for about thirty-five minutes, roughly triple the usual time.",
+      "ja": "都心へ向かう車は35分ほど渋滞にはまっており、普段のおよそ3倍かかっています。"
+    },
+    {
+      "en": "If you can, take the Riverside Tunnel instead, which is running close to normal this morning.",
+      "ja": "可能であればリバーサイド・トンネルをお使いください。今朝はほぼ平常どおりの流れです。"
+    },
+    {
+      "en": "The city has also added extra trains on the blue line, and fares are being waived until the work is finished.",
+      "ja": "市はブルーラインに臨時列車も増発しており、工事が終わるまで運賃は無料になっています。"
+    },
+    {
+      "en": "Parking near the stations filled up quickly yesterday, so give yourself a few extra minutes if you're driving there.",
+      "ja": "駅周辺の駐車場は昨日すぐに満車になりましたので、車で向かう方は少し早めに動いてください。"
+    },
+    {
+      "en": "We'll have another update at half past eight, right after the weather.",
+      "ja": "次の更新は8時半、天気予報のあとにお伝えします。"
+    },
+    {
+      "en": "Until then, this is Carla Vance, and you're tuned to Radio 9.",
+      "ja": "それではまた。カーラ・ヴァンスがお伝えしました。ラジオ9をお聞きです。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the broadcast mainly about?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Delays caused by road work",
+          "ja": "道路工事による遅れ"
+        },
+        {
+          "key": "B",
+          "text": "A change to train schedules",
+          "ja": "列車の時刻の変更"
+        },
+        {
+          "key": "C",
+          "text": "A weather warning for drivers",
+          "ja": "運転者向けの気象警報"
+        },
+        {
+          "key": "D",
+          "text": "The opening of a new bridge",
+          "ja": "新しい橋の開通"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で交通情報だと名乗り、続けて橋の舗装工事と車線閉鎖を挙げている。以降の迂回路や増発も、すべてこの工事への対応。B の列車は対策として触れられるだけ、D は橋が「閉鎖中」であって開通ではない。C の天気は最後に次の番組として名前が出るだけで、内容には入っていない。",
+      "tip": "放送は名乗りの直後に主題が来る。そのあとに出る対策や代替案は、主題そのものではなく枝葉だと切り分ける。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What does the speaker say about the blue line?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is closed until Friday",
+          "ja": "金曜まで運休している"
+        },
+        {
+          "key": "B",
+          "text": "It runs only in the morning",
+          "ja": "朝しか運行していない"
+        },
+        {
+          "key": "C",
+          "text": "It stops near the tunnel",
+          "ja": "トンネルの近くに停車する"
+        },
+        {
+          "key": "D",
+          "text": "It is free to ride for now",
+          "ja": "当面は無料で乗れる"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        4
+      ],
+      "explanation": "fares are being waived until the work is finished が根拠で、選択肢では free to ride に言い換えられている。A の closed until Friday は橋の車線の話を線路に移し替えた誤答。C の tunnel は迂回路として出てくる別の手段。",
+      "tip": "waive は「（料金を）免除する」。fee、fare、charge と結び付く形で繰り返し出るので、free と等しいと分かるようにしておく。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What does the speaker imply about parking near the stations?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It has been made cheaper",
+          "ja": "値下げされた"
+        },
+        {
+          "key": "B",
+          "text": "It is limited to local residents",
+          "ja": "地元住民に限られている"
+        },
+        {
+          "key": "C",
+          "text": "Spaces may be hard to find",
+          "ja": "空きが見つかりにくい"
+        },
+        {
+          "key": "D",
+          "text": "It will close during the work",
+          "ja": "工事中は閉鎖される"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        5
+      ],
+      "explanation": "filled up quickly yesterday という事実と、give yourself a few extra minutes という助言を合わせると、今日も満車になりやすいと示唆している。明言はされていないので推測の設問。A の料金は fares（運賃）の話と混同させる誤答で、駐車料金には触れていない。",
+      "tip": "推測の設問は、事実＋助言の組み合わせが根拠になる。「早めに出てください」と言われたら、その裏にある事情が答えになる。"
+    }
+  ],
+  "glossary": {
+    "resurfacing": {
+      "lemma": "resurface",
+      "pos": "動",
+      "ja": "路面を舗装し直す",
+      "note": "道路工事の定番語"
+    },
+    "sitting in traffic": {
+      "lemma": "sit in traffic",
+      "pos": "熟",
+      "ja": "渋滞にはまっている",
+      "note": "stuck in traffic とも言う"
+    },
+    "heading downtown": {
+      "lemma": "head",
+      "pos": "動",
+      "ja": "（ある方向へ）向かう",
+      "note": "head for / head to の形でも出る"
+    },
+    "close to normal": {
+      "lemma": "close to normal",
+      "pos": "熟",
+      "ja": "ほぼ平常どおり",
+      "note": ""
+    },
+    "being waived": {
+      "lemma": "waive",
+      "pos": "動",
+      "ja": "（料金を）免除する",
+      "note": "fee・fare・charge と結び付く。選択肢では free になる"
+    },
+    "filled up": {
+      "lemma": "fill up",
+      "pos": "熟",
+      "ja": "満車になる、いっぱいになる",
+      "note": ""
+    },
+    "give yourself a few extra minutes": {
+      "lemma": "give oneself extra time",
+      "pos": "熟",
+      "ja": "時間に余裕をみる",
+      "note": "遅れを見込んで早めに動く、の意"
+    },
+    "tuned to": {
+      "lemma": "be tuned to",
+      "pos": "熟",
+      "ja": "（放送に）周波数を合わせている",
+      "note": "放送の締めの定型"
+    },
+    "lanes": {
+      "lemma": "lane",
+      "pos": "名",
+      "ja": "車線",
+      "note": ""
+    },
+    "fares": {
+      "lemma": "fare",
+      "pos": "名",
+      "ja": "運賃",
+      "note": "fee（手数料）と取り違えやすい"
+    }
+  },
+  "point": {
+    "flow": "名乗りと主題 → 工事と車線閉鎖 → 所要時間の増加 → 迂回路の提案 → 公共交通の代替策 → 注意点 → 次回の予告",
+    "items": [
+      {
+        "title": "交通情報は「原因 → 影響 → 代わりの手段」で進む",
+        "body": "放送のトークは、何が起きたか、その結果どれだけ時間がかかるか、代わりに何を使えるか、の順に並ぶ。3問はこの3つの塊から1問ずつ作られることが多いので、塊が変わる合図（instead、also）を聞いた時点で設問が進んだと考えてよい。"
+      },
+      {
+        "title": "代替手段の細部が2問目になる",
+        "body": "迂回路や臨時列車の説明には、無料・増発・所要時間といった条件が必ず添えられる。設問はその条件を問うので、代わりの手段が出てきたら「何が、どう違うのか」を1つだけ覚える。"
+      },
+      {
+        "title": "助言の裏を読ませる設問が入る",
+        "body": "give yourself a few extra minutes のような助言は、理由を言わずに置かれる。なぜその助言が要るのかを考えると推測の設問に答えられる。放送では最後の注意喚起がこの形になりやすい。"
+      }
+    ]
+  }
+}

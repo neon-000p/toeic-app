@@ -6,15 +6,22 @@
 ## 構成
 
 ```
+index.html           ホーム（時事／実践のタブ）
+drills.html          実践対策のパート別一覧
 news.html            時事英語モード（6ステップ）
 vocab.html           語彙帳（間隔反復の復習・持ち出し）
-part3.html           Part 3 トレーナー（1回1セット・5ステップ）
+part3.html           Part 3 トレーナー（会話1本＋3問・5ステップ）
+part4.html           Part 4 トレーナー（説明文1本＋3問・5ステップ）
 core.js              共通コア（設定・語彙帳・学習ログ・読み上げ）
 style.css            共通スタイル（色・部品）
 data/news/index.json 目次（新しい順・最大30件）
 data/news/*.json     1日分の教材
+data/part3/*.json    Part 3 の1セット
+data/part4/*.json    Part 4 の1セット
 SCHEMA.md            教材データの仕様
 skills/news-toeic-english.SKILL.md  ルーティン側のスキル（ステップ5に JSON 出力を追加済み）
+skills/part3.SKILL.md               Part 3 ルーティンの仕様書
+skills/part4.SKILL.md               Part 4 ルーティンの仕様書
 ```
 
 `core.js` と `style.css` は今後 `part3.html` などからも読む。同一オリジンなので
@@ -44,8 +51,19 @@ python -m http.server 4173
 ルーティンからリポジトリへ push できない場合は、スキルが JSON をチャットに出力するので、
 アプリの ⚙ →「教材を取り込む」に貼り付ける。取り込んだ教材は端末の localStorage に残る。
 
-Part 3 以降は `data/part3/` など別ディレクトリ・別ルーティンで管理する。
-片方のルーティンが失敗しても、もう片方に影響しない。
+Part 3 以降は `data/part3/`・`data/part4/` など別ディレクトリ・別ルーティンで管理する。
+どれかのルーティンが失敗しても、他に影響しない。
+
+Part 3（会話問題）と Part 4（説明文問題）は週1回のルーティンが5セットずつ書き出す。
+書き出したあとは、push の前に機械の確認を通す。
+
+```bash
+node tools/check-part3.js --all
+node tools/check-part4.js --all
+```
+
+音声は書かない。`data/part3/` `data/part4/` に JSON が入ると GitHub Actions が
+読み上げ音声を作り、`audio` を足して別コミットで main に入れる。
 
 ## 6ステップの流れ
 
@@ -64,11 +82,26 @@ Part 3 以降は `data/part3/` など別ディレクトリ・別ルーティン�
   再生中の行が光るので、どこを読んでいるか目で追える
 - **語彙**：★ で語彙帳に保存（復習画面は今後追加）。単語と例文に再生ボタン
 
+## Part 4（説明文問題）
+
+Part 3 と同じ5ステップ（設問 → 解説 → 対訳 → 語彙 → Point）で解く。違いは3つ。
+
+- **話し手は1人。** データは `speakers`（配列）ではなく `speaker`（1人）を持ち、
+  `lines` に話者の札が無い。対訳の左には代わりに文番号が出るので、解説で引用された文を
+  対訳の中から探せる
+- **前置きが出る。** 本番でトークの前に読まれる
+  `Questions 1 through 3 refer to the following telephone message.` を設問ステップに出す。
+  場面（`scene`）は解き終わるまで伏せるが、前置きは本番でも必ず聞かされるので伏せない
+- **1問目は「何の話か・誰の話か」。** 本番の Part 4 がその形なので、`tools/check-part4.js`
+  が `gist` か `who` 以外を弾く
+
+音声も1人ぶんなので、トーク全体を1回の呼び出しで作れる（Part 3 は2人ずつのかたまりに
+切る必要がある）。前置きだけナレーターの別の声で作り、0.8秒の間を置いて頭に繋いでいる。
+
 ## まだ無いもの
 
-- ハブ画面（`index.html`）と語彙帳の復習 UI
-- Part 3 トレーナーの移植（`part3.html`）
 - 学習記録の可視化（現在は連続日数のみ）
+- Part 5〜7
 
 ## 語の意味（Gemini）
 
