@@ -964,32 +964,35 @@
       pick = null;
     }
 
-    /* なぞって選んだときは、端末の選択メニュー（翻訳・コピー・共有）が
-       選択のすぐ上か下に出る。ブラウザが描くもので重なり順を指定できないため、
-       そばに置くと必ずどちらかで隠れる。画面の下に固定して逃がす。
-       語をタップしたときは選択メニューが出ないので、その語のそばに出す。 */
-    function place(rect, atBottom) {
+    /* ボタンは、指した語句のそばに出す。離れた場所に出ると、何について
+       聞いているのかが分からなくなるため。
+
+       ただし、なぞって選んだときは端末の選択メニュー（翻訳・コピー・共有）が
+       選択のすぐ上か下に出る。ブラウザが描くもので重なり順を指定できないので、
+       ぶつからない側へ回り込む。どのページも上にヘッダーが貼り付いていて、
+       本文はその下からしか始まらない。つまり選択の上には必ず余裕があり、
+       端末のメニューはほぼ必ず上に出るので、こちらは下に置けばぶつからない。
+       語をタップしたときはメニューが出ないので、読みの流れを遮らない上に置く。 */
+    var GAP = 10;   /* 語句とボタンの間 */
+    var EDGE = 8;   /* 画面の端との間 */
+
+    function place(rect, hasMenu) {
       var vw = document.documentElement.clientWidth;
       var vh = document.documentElement.clientHeight;
-
-      if (atBottom) {
-        var foot = document.querySelector('.app-foot');
-        var lift = (foot ? Math.ceil(foot.getBoundingClientRect().height) : 6) + 10;
-        /* 選んだ語がボタンの位置に重なるときは、反対の端へ寄せる */
-        var nearBtn = rect.bottom > vh - lift - 52 && rect.right > vw / 2;
-        btn.style.position = 'fixed';
-        btn.style.top = '';
-        btn.style.bottom = lift + 'px';
-        btn.style.right = nearBtn ? '' : '14px';
-        btn.style.left = nearBtn ? '14px' : '';
-        return;
-      }
-
       var h = btn.offsetHeight || 36;
-      var top = rect.top - h - 8;
-      if (top < 4) top = Math.min(rect.bottom + 8, vh - h - 4);
-      var left = rect.left + rect.width / 2 - btn.offsetWidth / 2;
-      left = Math.max(8, Math.min(left, vw - btn.offsetWidth - 8));
+      var w = btn.offsetWidth || 96;
+      var above = rect.top - h - GAP;
+      var below = rect.bottom + GAP;
+      var fitsAbove = above >= EDGE;
+      var fitsBelow = below + h <= vh - EDGE;
+      var top;
+
+      if (hasMenu) top = fitsBelow ? below : above;
+      else top = fitsAbove ? above : below;
+
+      top = Math.max(EDGE, Math.min(top, vh - h - EDGE));
+      var left = Math.max(EDGE, Math.min(rect.left + rect.width / 2 - w / 2, vw - w - EDGE));
+
       btn.style.position = 'fixed';
       btn.style.bottom = '';
       btn.style.right = '';
@@ -1015,12 +1018,13 @@
       document.body.appendChild(btn);
     }
 
-    /* text をボタンに載せて出す。押されたときに onPick へ渡すものを覚えておく */
-    function offer(text, ctx, rect, atBottom) {
+    /* text をボタンに載せて出す。押されたときに onPick へ渡すものを覚えておく。
+       hasMenu: なぞって選んだとき（端末の選択メニューが出ている）は true */
+    function offer(text, ctx, rect, hasMenu) {
       ensure();
       pick = { text: text, ctx: ctx, rect: rect };
       btn.querySelector('.sw').textContent = text;
-      place(rect, atBottom);
+      place(rect, hasMenu);
     }
 
     /* なぞって選んだとき */
