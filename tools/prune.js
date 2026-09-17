@@ -42,7 +42,7 @@ function dropItem(dir, it) {
   let size = 0;
   size += rm(path.join(dir, it.file || (it.id + '.json')));
   size += rm(path.join(dir, 'audio', it.id));            /* 文・行ごとの音声 */
-  size += rm(path.join(dir, 'audio', it.id + '.mp3'));   /* 会話まるごと（Part 3） */
+  size += rm(path.join(dir, 'audio', it.id + '.mp3'));   /* まるごと1本（Part 3 の会話・Part 4 のトーク） */
   size += rm(path.join(dir, 'audio', it.id + '.wav'));
   return size;
 }

@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-09-17-0901-3",
+  "date": "2026-09-17",
+  "time": "09:01",
+  "createdAt": "2026-09-17T09:01:00+09:00",
+  "sample": false,
+  "scene": "会議｜経費精算システムの切り替え",
+  "talkType": "meeting",
+  "intro": "Questions 1 through 3 refer to the following excerpt from a meeting.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-AU"
+  },
+  "lines": [
+    {
+      "en": "Before we wrap up, I want to go over the new expense system that finance is rolling out next month.",
+      "ja": "終わる前に、経理部が来月導入する新しい経費システムについて説明しておきます。"
+    },
+    {
+      "en": "From the first of October, paper forms will no longer be accepted, and every claim has to be filed online.",
+      "ja": "10月1日から紙の用紙は受け付けられなくなり、すべての申請をオンラインで出すことになります。"
+    },
+    {
+      "en": "The main reason for the change is that reimbursements currently take almost six weeks to reach your account.",
+      "ja": "変更の主な理由は、現在は精算金が口座に届くまで6週間近くかかっていることです。"
+    },
+    {
+      "en": "With the new system, finance expects that to come down to about ten days.",
+      "ja": "新しいシステムでは、これが10日ほどまで短縮される見込みです。"
+    },
+    {
+      "en": "You will need to photograph each receipt and upload it when you submit the claim, so hold on to the originals.",
+      "ja": "申請時に領収書を1枚ずつ撮影してアップロードする必要があるので、原本は手元に取っておいてください。"
+    },
+    {
+      "en": "I've asked Dana to run two training sessions, one on Tuesday morning and one on Thursday afternoon.",
+      "ja": "デイナに研修を2回開いてもらいます。火曜の午前と木曜の午後です。"
+    },
+    {
+      "en": "Everyone who files expenses has to attend one of them, and each session lasts about forty minutes.",
+      "ja": "経費を申請する人は全員どちらかに出る必要があり、1回あたり40分ほどです。"
+    },
+    {
+      "en": "Please sign up on the shared calendar by the end of this week so we know how many rooms to book.",
+      "ja": "部屋をいくつ押さえるか決めたいので、今週中に共有カレンダーで申し込んでください。"
+    },
+    {
+      "en": "If you're away on both days, come and see me afterwards.",
+      "ja": "両日とも不在の方は、あとで私のところに来てください。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the speaker mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A change to expense reporting",
+          "ja": "経費申請のやり方の変更"
+        },
+        {
+          "key": "B",
+          "text": "A delay in travel payments",
+          "ja": "出張費の支払いの遅れ"
+        },
+        {
+          "key": "C",
+          "text": "A new shared office calendar",
+          "ja": "新しい共有カレンダー"
+        },
+        {
+          "key": "D",
+          "text": "A schedule for staff reviews",
+          "ja": "人事評価の日程"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "1文目で the new expense system と主題を示し、2文目で紙の用紙が廃止されオンライン申請になると具体化している。B の支払いの遅れは変更の「理由」として出てくるだけで主題ではない。C の shared calendar は申し込み先として1度触れられるだけの細部。",
+      "tip": "会議の一部を切り出したトークは、Before we wrap up や I want to go over … の直後に主題が来る。最初の1文を逃すと3問とも根拠を探しにくくなる。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "According to the speaker, what is the main benefit of the new system?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fewer forms to fill in",
+          "ja": "記入する用紙が減ること"
+        },
+        {
+          "key": "B",
+          "text": "Lower printing costs",
+          "ja": "印刷費が下がること"
+        },
+        {
+          "key": "C",
+          "text": "More support from finance",
+          "ja": "経理部の支援が増えること"
+        },
+        {
+          "key": "D",
+          "text": "Faster reimbursements",
+          "ja": "精算が早くなること"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "The main reason for the change is that … の文と、次の come down to about ten days が対になっている。6週間が10日になるのだから、利点は「速さ」。A は紙の廃止から連想できるが、話し手が理由として挙げているのは所要期間だけ。B の印刷費には触れていない。",
+      "tip": "数字が2つ出たら、その差が答えになる設問を疑う。six weeks と ten days のように単位が違う形で並べられることが多い。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are the listeners asked to do this week?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Submit their remaining paper forms",
+          "ja": "残っている紙の用紙を提出する"
+        },
+        {
+          "key": "B",
+          "text": "Sign up for a training session",
+          "ja": "研修に申し込む"
+        },
+        {
+          "key": "C",
+          "text": "Photograph all of their receipts",
+          "ja": "領収書をすべて撮影する"
+        },
+        {
+          "key": "D",
+          "text": "Reserve a meeting room",
+          "ja": "会議室を予約する"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        7
+      ],
+      "explanation": "Please sign up … by the end of this week が今週の依頼。C の撮影は10月以降の申請時の手順であって今週ではない。D は how many rooms to book と話し手側が押さえる話で、聞き手の仕事ではない。時期と主語の両方を確かめると外れない。",
+      "tip": "依頼が複数出るトークでは「いつまでに」で絞る。by the end of this week のような期限が付いた依頼が、設問に選ばれる。"
+    }
+  ],
+  "glossary": {
+    "wrap up": {
+      "lemma": "wrap up",
+      "pos": "熟",
+      "ja": "終える、締めくくる",
+      "note": "会議の終盤を示す合図"
+    },
+    "go over": {
+      "lemma": "go over",
+      "pos": "熟",
+      "ja": "ひととおり説明する、確認する",
+      "note": "review の言い換え"
+    },
+    "rolling out": {
+      "lemma": "roll out",
+      "pos": "熟",
+      "ja": "（新制度を）導入する、展開する",
+      "note": "introduce の言い換え"
+    },
+    "filed online": {
+      "lemma": "file",
+      "pos": "動",
+      "ja": "（申請を）提出する",
+      "note": "多義語。ここは「書類を出す」"
+    },
+    "come down to": {
+      "lemma": "come down to",
+      "pos": "熟",
+      "ja": "（数値が）〜まで下がる",
+      "note": ""
+    },
+    "hold on to": {
+      "lemma": "hold on to",
+      "pos": "熟",
+      "ja": "手元に取っておく、保管する",
+      "note": "keep の言い換え"
+    },
+    "sign up": {
+      "lemma": "sign up",
+      "pos": "熟",
+      "ja": "申し込む、登録する",
+      "note": "register の言い換え"
+    },
+    "the originals": {
+      "lemma": "original",
+      "pos": "名",
+      "ja": "原本",
+      "note": "copy の対"
+    },
+    "reimbursements": {
+      "lemma": "reimbursement",
+      "pos": "名",
+      "ja": "払い戻し、経費の精算",
+      "note": "TOEIC 頻出"
+    },
+    "claim": {
+      "lemma": "claim",
+      "pos": "名",
+      "ja": "請求、申請",
+      "note": "多義語。日本語の「クレーム（苦情）」ではない"
+    }
+  },
+  "point": {
+    "flow": "主題の提示 → 変更の中身 → 変更の理由（現状の数字）→ 改善後の数字 → 新しい手順 → 研修の告知 → 申し込みの依頼と期限",
+    "items": [
+      {
+        "title": "社内説明は「変更・理由・手順・依頼」の順",
+        "body": "会議から切り出したトークは、制度が変わる話がほとんどで、順番はほぼ決まっている。何が変わるか、なぜ変えるか、どうやるか、聞き手は何をするか。設問はこのうち3つを選んで作られるので、4つの塊を数えながら聞くと根拠を探し直さずに済む。"
+      },
+      {
+        "title": "依頼が複数あるときは期限で選ぶ",
+        "body": "このトークには「領収書を撮る」「研修に出る」「カレンダーで申し込む」と依頼が3つ出てくる。設問が問うのは期限の付いたものなので、by the end of this week のような時の表現を聞いた瞬間に、その直前の動詞を覚えておく。"
+      },
+      {
+        "title": "数字の対比はそのまま設問になる",
+        "body": "six weeks → ten days のように、現状と改善後の数字が並べて読まれたら、その差を問う設問が来ると考えてよい。単位が weeks と days で違うため、数だけを覚えると選択肢で取り違える。"
+      }
+    ]
+  }
+}

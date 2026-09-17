@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-09-17-0901-4",
+  "date": "2026-09-17",
+  "time": "09:01",
+  "createdAt": "2026-09-17T09:01:00+09:00",
+  "sample": false,
+  "scene": "式典｜勤続表彰と後任の紹介",
+  "talkType": "speech",
+  "intro": "Questions 1 through 3 refer to the following speech.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-CA"
+  },
+  "lines": [
+    {
+      "en": "Thank you all for staying a few extra minutes at the end of a very long week.",
+      "ja": "長い1週間の終わりに、少しだけお時間をいただき、ありがとうございます。"
+    },
+    {
+      "en": "As most of you know, Priya Anand is retiring at the end of the month after twenty-two years with us.",
+      "ja": "ご存じの方も多いと思いますが、プリヤ・アナンドが22年勤めて、今月末で退職します。"
+    },
+    {
+      "en": "She joined us as a part-time clerk in the shipping office and worked her way up to operations manager.",
+      "ja": "彼女は出荷部門の非常勤事務員として入社し、業務部長まで昇っていきました。"
+    },
+    {
+      "en": "When our main warehouse flooded three years ago, she kept every order moving without a single cancellation.",
+      "ja": "3年前に主力倉庫が浸水したときも、1件の取り消しも出さずにすべての注文を回し続けました。"
+    },
+    {
+      "en": "Ask anyone on her team and they'll tell you she never once took the credit for it.",
+      "ja": "チームの誰に聞いても、彼女が一度も自分の手柄にしなかったと言うでしょう。"
+    },
+    {
+      "en": "Priya has agreed to stay on two days a week through the spring to help train her successor.",
+      "ja": "プリヤは春まで週2日残り、後任の育成を手伝ってくれることになりました。"
+    },
+    {
+      "en": "That successor is Ken Ozawa, who many of you worked with on the packaging project last year.",
+      "ja": "その後任はケン・オザワです。昨年の梱包プロジェクトで一緒に働いた方も多いはずです。"
+    },
+    {
+      "en": "Please join me in raising a glass to Priya, and help me welcome Ken into his new role.",
+      "ja": "プリヤに乾杯し、そしてケンを新しい役職に迎えてください。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the main purpose of the speech?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To introduce a new company policy",
+          "ja": "新しい社内方針を説明するため"
+        },
+        {
+          "key": "B",
+          "text": "To report on a warehouse project",
+          "ja": "倉庫の案件を報告するため"
+        },
+        {
+          "key": "C",
+          "text": "To honor a departing employee",
+          "ja": "退職する社員をたたえるため"
+        },
+        {
+          "key": "D",
+          "text": "To announce a team reorganization",
+          "ja": "組織の再編を知らせるため"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        1
+      ],
+      "explanation": "2文目で is retiring at the end of the month と切り出し、以降は在職中の功績が続く。最後も乾杯で締めるので、目的は退職者をたたえること。B の倉庫は功績の一例として出るだけ。D は後任の紹介を「組織再編」と広げすぎた誤答で、部署の作り替えには触れていない。",
+      "tip": "スピーチの目的は、2文目までに出る「人の名前＋出来事」で決まる。retiring、joining、celebrating などの動詞がその合図になる。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when he says, \"she never once took the credit for it\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "She rarely came into the office",
+          "ja": "ほとんど出社しなかった"
+        },
+        {
+          "key": "B",
+          "text": "She was modest about her work",
+          "ja": "自分の働きを誇らなかった"
+        },
+        {
+          "key": "C",
+          "text": "She was not paid for the extra hours",
+          "ja": "残業代を受け取らなかった"
+        },
+        {
+          "key": "D",
+          "text": "She let another team lead the work",
+          "ja": "別のチームに任せていた"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "直前の文で、浸水のときに注文を止めなかった功績が語られ、その上で「一度も手柄にしなかった」と続く。つまり功績を誇らない人柄をたたえている。C は credit を「報酬」と取り違えさせる誤答。D は kept every order moving と矛盾する。",
+      "tip": "意図を問う設問は、引用文の1つ前の文に答えがある。引用そのものを訳そうとせず、「何の話のあとで言ったか」を押さえる。"
+    },
+    {
+      "id": "q3",
+      "type": "detail",
+      "prompt": "What will Priya do in the spring?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Move to the packaging team",
+          "ja": "梱包チームへ異動する"
+        },
+        {
+          "key": "B",
+          "text": "Open a second warehouse",
+          "ja": "2つ目の倉庫を開く"
+        },
+        {
+          "key": "C",
+          "text": "Return to a full-time role",
+          "ja": "常勤の職に戻る"
+        },
+        {
+          "key": "D",
+          "text": "Work part-time to train Ken",
+          "ja": "週2日勤務でケンを指導する"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        5,
+        6
+      ],
+      "explanation": "stay on two days a week through the spring to help train her successor が根拠で、その successor が次の文で Ken Ozawa だと明かされる。2文をつなげないと答えが出ない形。A の packaging は Ken の経歴、B の warehouse は3年前の出来事で、いずれも時期が違う。",
+      "tip": "人物が代名詞や役割語（her successor）で言い換えられたら、次の文で正体が明かされる。2文をまたいで初めて答えが確定する設問は、Part 4 の終盤に置かれやすい。"
+    }
+  ],
+  "glossary": {
+    "worked her way up": {
+      "lemma": "work one's way up",
+      "pos": "熟",
+      "ja": "下から昇進していく",
+      "note": "経歴を語る定型"
+    },
+    "took the credit for": {
+      "lemma": "take the credit for",
+      "pos": "熟",
+      "ja": "〜を自分の手柄にする",
+      "note": "credit は「功績」。報酬ではない"
+    },
+    "kept every order moving": {
+      "lemma": "keep something moving",
+      "pos": "熟",
+      "ja": "滞らせずに回し続ける",
+      "note": ""
+    },
+    "stay on": {
+      "lemma": "stay on",
+      "pos": "熟",
+      "ja": "（退職後も）残る、留任する",
+      "note": ""
+    },
+    "raising a glass": {
+      "lemma": "raise a glass to",
+      "pos": "熟",
+      "ja": "〜に乾杯する",
+      "note": "式典の締めの定型"
+    },
+    "operations manager": {
+      "lemma": "operations manager",
+      "pos": "名",
+      "ja": "業務部長、運営責任者",
+      "note": ""
+    },
+    "successor": {
+      "lemma": "successor",
+      "pos": "名",
+      "ja": "後任、後継者",
+      "note": "replacement の言い換え"
+    },
+    "cancellation": {
+      "lemma": "cancellation",
+      "pos": "名",
+      "ja": "取り消し、解約",
+      "note": ""
+    }
+  },
+  "point": {
+    "flow": "謝辞 → 誰の何の式か → 経歴 → 功績の具体例 → 人柄 → これからの関わり方 → 後任の紹介 → 乾杯",
+    "items": [
+      {
+        "title": "スピーチは経歴の順にたどる",
+        "body": "表彰や送別のスピーチは、入社 → 昇進 → 代表的な功績 → これから、という順に必ず並ぶ。設問もこの順に作られるので、時を表す語（joined、three years ago、through the spring）を目印に、今どこを話しているかを見失わないようにする。"
+      },
+      {
+        "title": "引用された一言は前の文とセットで聞く",
+        "body": "意図を問う設問の引用文は、単独では意味が決まらない。直前の文が状況を作り、引用文がその評価になっている。聞きながら「この一言は何を受けているか」を一瞬で言えるようにしておくと、選択肢の言い換えに惑わされない。"
+      },
+      {
+        "title": "人は役割語で言い換えられる",
+        "body": "her successor → Ken Ozawa のように、人物は先に役割で出てから名前が来る。名前だけを追っていると、役割語で問われたときに結び付かない。役割と名前が出そろった瞬間を、設問の根拠として覚えておく。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "type": "part4-history",
+  "updatedAt": "2026-09-17T09:01:00+09:00",
+  "items": [
+    {
+      "id": "2026-09-17-0901-5",
+      "date": "2026-09-17",
+      "scene": "放送｜道路工事による渋滞と迂回の案内",
+      "genre": "放送",
+      "talkType": "broadcast",
+      "types": [
+        "gist",
+        "detail",
+        "infer"
+      ],
+      "flow": "状況と代替手段"
+    },
+    {
+      "id": "2026-09-17-0901-4",
+      "date": "2026-09-17",
+      "scene": "式典｜勤続表彰と後任の紹介",
+      "genre": "スピーチ",
+      "talkType": "speech",
+      "types": [
+        "gist",
+        "intent",
+        "detail"
+      ],
+      "flow": "経歴と紹介"
+    },
+    {
+      "id": "2026-09-17-0901-3",
+      "date": "2026-09-17",
+      "scene": "会議｜経費精算システムの切り替え",
+      "genre": "会議の一部",
+      "talkType": "meeting",
+      "types": [
+        "gist",
+        "detail",
+        "next"
+      ],
+      "flow": "変更の説明と依頼"
+    },
+    {
+      "id": "2026-09-17-0901-2",
+      "date": "2026-09-17",
+      "scene": "空港｜搭乗口の変更と手荷物の預け入れ",
+      "genre": "館内アナウンス",
+      "talkType": "announcement",
+      "types": [
+        "who",
+        "detail",
+        "next"
+      ],
+      "flow": "告知と指示"
+    },
+    {
+      "id": "2026-09-17-0901-1",
+      "date": "2026-09-17",
+      "scene": "留守番電話｜納品の遅れと代替案",
+      "genre": "留守番電話",
+      "talkType": "voicemail",
+      "types": [
+        "gist",
+        "detail",
+        "next"
+      ],
+      "flow": "問題と代替案"
+    }
+  ]
+}
