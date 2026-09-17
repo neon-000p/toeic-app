@@ -1,0 +1,438 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-17-1639",
+  "date": "2026-09-17",
+  "time": "16:39",
+  "createdAt": "2026-09-17T16:39:00+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail & Consumer",
+  "sample": false,
+  "title": {
+    "en": "Target to Open Eight New Stores This Fall",
+    "ja": "ターゲット、今秋に新店舗8店を出店へ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Target announced plans to open eight new stores across the United States this fall, with most locations opening on October 11.",
+            "ja": "ターゲットは今秋、全米で新たに8店舗をオープンする計画を発表し、大半は10月11日に開店する。"
+          },
+          {
+            "en": "The new stores will open in six states across the country.",
+            "ja": "新店舗は全米の6つの州に出店する。"
+          },
+          {
+            "en": "These stores are the last of 30 new locations the retailer planned to build this year.",
+            "ja": "これらの店舗は、同社が今年計画していた30店舗の新規出店の最後にあたる。"
+          },
+          {
+            "en": "Every new store will include a Starbucks café inside.",
+            "ja": "新店舗にはすべて、店内にスターバックスのカフェが併設される。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Target said the openings will create more than 2,000 jobs, with starting wages between $15 and $24 an hour plus benefits.",
+            "ja": "ターゲットによると、今回の出店により2000人超の雇用が生まれ、時給は15〜24ドルに福利厚生が加わるという。"
+          },
+          {
+            "en": "Most of the new stores will be larger than 125,000 square feet, matching the company's average store size.",
+            "ja": "新店舗の大半は12万5000平方フィートを超える広さで、同社の平均的な店舗規模に相当する。"
+          },
+          {
+            "en": "The expansion comes as some rivals are closing stores to cut costs.",
+            "ja": "この拡大策は、一部の競合他社がコスト削減のため店舗を閉鎖する中で進められている。"
+          },
+          {
+            "en": "Yet Target keeps investing in physical stores even as online shopping grows.",
+            "ja": "それでもターゲットは、ネット通販が拡大する中でも実店舗への投資を続けている。"
+          },
+          {
+            "en": "The company plans to open more than 300 additional stores by 2035.",
+            "ja": "同社は2035年までにさらに300店舗以上を新設する計画だ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many new stores does Target plan to open this fall, according to the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2 stores",
+          "ja": "2店舗"
+        },
+        {
+          "key": "B",
+          "text": "8 stores",
+          "ja": "8店舗"
+        },
+        {
+          "key": "C",
+          "text": "30 stores",
+          "ja": "30店舗"
+        },
+        {
+          "key": "D",
+          "text": "300 stores",
+          "ja": "300店舗"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B) 8 stores。本文1文目に「Target announced plans to open eight new stores across the United States this fall」と明記されている。(A)の2はどの数字にも当たらない引っかけ、(C)の30は「今年計画していた新規出店数の合計」、(D)の300は「2035年までに追加予定の店舗数」であり、いずれも今回の出店数とは異なる数字を使った誤答である。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "本文に複数の数字が登場する設問では、それぞれの数字が「今回の出店数」なのか「年間の計画数」なのか「長期目標」なのかを区別して読むことが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "contrast",
+      "prompt": "According to the article, how does Target's approach compare with that of some rivals?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Target is closing stores while some rivals are opening new ones.",
+          "ja": "ターゲットが閉店、競合が新規出店"
+        },
+        {
+          "key": "B",
+          "text": "Target is opening new stores while some rivals are closing stores.",
+          "ja": "ターゲットが新規出店、競合が閉店"
+        },
+        {
+          "key": "C",
+          "text": "Target and its rivals are both focusing only on online sales.",
+          "ja": "両社ともネット販売に集中"
+        },
+        {
+          "key": "D",
+          "text": "Target and its rivals are both closing stores to cut costs.",
+          "ja": "両社とも店舗を閉鎖"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B)。第2段落に「The expansion comes as some rivals are closing stores to cut costs. Yet Target keeps investing in physical stores even as online shopping grows.」とあり、ターゲットが出店を拡大する一方で一部の競合他社はコスト削減のため店舗を閉鎖しているという対比が述べられている。(A)は主語と内容が逆、(C)は本文に無い情報、(D)は両社とも閉鎖という誤った内容。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "while, yet, even as など対比を示す接続表現に注目すると、2つの主体の違いを素早く読み取れる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "gloss": "",
+      "example": {
+        "en": "The retailer plans to open several new stores next year.",
+        "ja": "その小売業者は来年、いくつかの新店舗を開く計画だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "expansion",
+      "pos": "名",
+      "ja": "拡大、事業拡大",
+      "gloss": "",
+      "example": {
+        "en": "The company announced a major expansion into Southeast Asia.",
+        "ja": "その会社は東南アジアへの大規模な事業拡大を発表した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "wage",
+      "pos": "名",
+      "ja": "賃金、給料",
+      "gloss": "",
+      "example": {
+        "en": "The minimum wage will rise next January.",
+        "ja": "最低賃金は来年1月に引き上げられる。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "benefit",
+      "pos": "名",
+      "ja": "福利厚生、手当",
+      "gloss": "",
+      "example": {
+        "en": "Full-time staff receive health insurance and other benefits.",
+        "ja": "正社員は健康保険などの福利厚生を受けられる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "rival",
+      "pos": "名",
+      "ja": "競合他社、ライバル",
+      "gloss": "",
+      "example": {
+        "en": "The firm is losing customers to a fast-growing rival.",
+        "ja": "その会社は急成長する競合他社に顧客を奪われている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "invest",
+      "pos": "動",
+      "ja": "投資する",
+      "gloss": "",
+      "example": {
+        "en": "The bank continues to invest heavily in new technology.",
+        "ja": "その銀行は新しい技術に多額の投資を続けている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "additional",
+      "pos": "形",
+      "ja": "追加の",
+      "gloss": "",
+      "example": {
+        "en": "The airline added additional flights during the holiday season.",
+        "ja": "その航空会社は休暇シーズン中に追加の便を増やした。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "location",
+      "pos": "名",
+      "ja": "場所、立地、店舗",
+      "gloss": "",
+      "example": {
+        "en": "The chain chose a busy location near the train station.",
+        "ja": "そのチェーン店は駅の近くの人通りが多い場所を選んだ。"
+      }
+    }
+  ],
+  "glossary": {
+    "target": {
+      "lemma": "Target",
+      "pos": "n",
+      "ja": "ターゲット（小売企業）",
+      "note": ""
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "v",
+      "ja": "発表した",
+      "note": ""
+    },
+    "plans": {
+      "lemma": "plan",
+      "pos": "n・v",
+      "ja": "計画／計画する",
+      "note": ""
+    },
+    "stores": {
+      "lemma": "store",
+      "pos": "n",
+      "ja": "店舗（複数形）",
+      "note": ""
+    },
+    "locations": {
+      "lemma": "location",
+      "pos": "n",
+      "ja": "場所、立地",
+      "note": ""
+    },
+    "opening": {
+      "lemma": "open",
+      "pos": "v",
+      "ja": "開店すること",
+      "note": ""
+    },
+    "retailer": {
+      "lemma": "retailer",
+      "pos": "n",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "planned": {
+      "lemma": "plan",
+      "pos": "v",
+      "ja": "計画した",
+      "note": ""
+    },
+    "build": {
+      "lemma": "build",
+      "pos": "v",
+      "ja": "建設する",
+      "note": ""
+    },
+    "starbucks": {
+      "lemma": "Starbucks",
+      "pos": "n",
+      "ja": "スターバックス（コーヒーチェーン）",
+      "note": ""
+    },
+    "openings": {
+      "lemma": "opening",
+      "pos": "n",
+      "ja": "出店、開店",
+      "note": ""
+    },
+    "starting": {
+      "lemma": "start",
+      "pos": "adj",
+      "ja": "初任の、始まりの",
+      "note": ""
+    },
+    "wages": {
+      "lemma": "wage",
+      "pos": "n",
+      "ja": "賃金（複数形）",
+      "note": ""
+    },
+    "benefits": {
+      "lemma": "benefit",
+      "pos": "n",
+      "ja": "福利厚生（複数形）",
+      "note": ""
+    },
+    "larger": {
+      "lemma": "large",
+      "pos": "adj",
+      "ja": "より大きい",
+      "note": ""
+    },
+    "matching": {
+      "lemma": "match",
+      "pos": "v",
+      "ja": "一致すること",
+      "note": ""
+    },
+    "average": {
+      "lemma": "average",
+      "pos": "adj",
+      "ja": "平均的な",
+      "note": ""
+    },
+    "size": {
+      "lemma": "size",
+      "pos": "n",
+      "ja": "規模、大きさ",
+      "note": ""
+    },
+    "expansion": {
+      "lemma": "expansion",
+      "pos": "n",
+      "ja": "拡大",
+      "note": ""
+    },
+    "rivals": {
+      "lemma": "rival",
+      "pos": "n",
+      "ja": "競合他社（複数形）",
+      "note": ""
+    },
+    "closing": {
+      "lemma": "close",
+      "pos": "v",
+      "ja": "閉鎖すること",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "n",
+      "ja": "コスト、費用",
+      "note": ""
+    },
+    "investing": {
+      "lemma": "invest",
+      "pos": "v",
+      "ja": "投資すること",
+      "note": ""
+    },
+    "physical": {
+      "lemma": "physical",
+      "pos": "adj",
+      "ja": "実店舗の、物理的な",
+      "note": ""
+    },
+    "shopping": {
+      "lemma": "shopping",
+      "pos": "n",
+      "ja": "買い物",
+      "note": ""
+    },
+    "additional": {
+      "lemma": "additional",
+      "pos": "adj",
+      "ja": "追加の",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "譲歩・対比の接続詞句 even as（〜する一方で、〜であっても）",
+    "quote": "Yet Target keeps investing in physical stores even as online shopping grows.",
+    "quoteJa": "それでもターゲットは、ネット通販が拡大する中でも実店舗への投資を続けている。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "\"even as + S + V\" は「〜する一方で」「〜であっても」という譲歩・対比を表す接続詞句である。while や although と似た意味を持つが、even as は2つの出来事が同時に進行していることを強調しながら、その内容が対照的である点を示すニュアンスが強い。ここでは「ネット通販が拡大している」ことと「実店舗への投資を続けている」ことという対照的な2つの動きが同時に起きていることを表している。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "この文は \"Although online shopping is growing, Target keeps investing in physical stores.\" とほぼ同じ意味に書き換えられる。while を使って \"Target keeps investing in physical stores while online shopping grows.\" としても近い意味になる。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6では、while / even as / even though / despite the fact that など「対比・譲歩」を表す接続詞（句）の使い分けを問う設問が頻出する。even as や while の直後には必ず〈主語＋動詞〉の節が続く点に注意したい（despite の場合は名詞・動名詞が続く）。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"The firm raised its sales forecast even as raw material costs continued to climb.\" のように、1文の中で対照的な2つの状況を簡潔に示したいときに便利な表現である。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜこのニュースが重要か",
+      "body": "米国では近年、大型小売チェーンの一部が店舗閉鎖や経営再建を発表する一方、ターゲットのように出店を拡大する企業も存在し、小売業界内での二極化が進んでいる。今回の8店舗出店は、ネット通販が伸び続ける中でも実店舗が消費者との接点として重要であり続けることを示す事例といえる。"
+    },
+    {
+      "heading": "📌 業界全体・競合他社の動向",
+      "body": "米小売業界では、コスト増や需要低迷を理由に店舗網を縮小する企業が相次ぐ一方、ターゲットは大型店を中心に出店を継続し、店内にカフェを併設するなど「体験型」の店舗づくりで来店動機を高めようとしている。アマゾンなどのネット通販大手との競争が激化する中、実店舗ならではの利便性や接客をどう打ち出すかが各社共通の課題になっている。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響・示唆",
+      "body": "日本でも百貨店やスーパーの一部で店舗閉鎖が相次ぐ一方、ドラッグストアやディスカウントストアは出店を続けており、米国と似た二極化が見られる。小売・流通業界で働く読者にとっては、店舗網の拡大・縮小の判断基準（採算性、雇用条件、立地戦略）を学ぶ材料になる。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点からの意義",
+      "body": "新規出店には土地取得や建設費、人件費など多額の初期投資が伴うため、企業がどのタイミングで拡大に転じるかは業績見通しへの自信の表れとも読める。経営者にとっては、賃金上昇や資材コストの高止まりが続く中でも出店投資を継続するかどうかが、今後の収益力を左右する重要な経営判断となる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Target to open 8 stores in October",
+      "publisher": "Grocery Dive",
+      "url": "https://www.grocerydive.com/news/target-opens-eight-stores-fall-2026/830522/",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "Target opening 8 new stores this fall across six states",
+      "publisher": "Fox Business",
+      "url": "https://www.foxbusiness.com/retail/target-opening-8-new-stores-fall-creating-more-2000-jobs",
+      "date": "2026-09-16"
+    }
+  ]
+}
