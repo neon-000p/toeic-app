@@ -68,14 +68,33 @@
       "type": "detail",
       "prompt": "What is the new target range for the Federal Reserve's key interest rate after the September 16 increase?",
       "choices": [
-        { "key": "A", "text": "3.00%-3.25%", "ja": "3.00%~3.25%" },
-        { "key": "B", "text": "3.50%-3.75%", "ja": "3.50%~3.75%" },
-        { "key": "C", "text": "3.75%-4.00%", "ja": "3.75%~4.00%" },
-        { "key": "D", "text": "4.25%-4.50%", "ja": "4.25%~4.50%" }
+        {
+          "key": "A",
+          "text": "3.00%-3.25%",
+          "ja": "3.00%~3.25%"
+        },
+        {
+          "key": "B",
+          "text": "3.50%-3.75%",
+          "ja": "3.50%~3.75%"
+        },
+        {
+          "key": "C",
+          "text": "3.75%-4.00%",
+          "ja": "3.75%~4.00%"
+        },
+        {
+          "key": "D",
+          "text": "4.25%-4.50%",
+          "ja": "4.25%~4.50%"
+        }
       ],
       "answer": "C",
       "explanation": "正解は(C) 3.75%-4.00%。本文1文目に「raised its key interest rate on September 16, lifting the target range to 3.75%-4%」と明記されている。(A)(B)(D)はいずれも本文に登場しない数値で、近い数字に引っ張られないよう注意したい。TOEIC Part7では、本文中の具体的な数値表現を正確に拾えるかが問われる。",
-      "evidence": { "p": 0, "s": 0 },
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
       "tip": "数字を問う設問では、選択肢の数字を先に見てから本文をスキャンすると該当箇所を素早く見つけられる。"
     },
     {
@@ -83,14 +102,33 @@
       "type": "reason",
       "prompt": "Why, according to the article, did the Federal Reserve's committee raise interest rates?",
       "choices": [
-        { "key": "A", "text": "To help the dollar weaken against foreign currencies", "ja": "ドルを意図的に弱めるため" },
-        { "key": "B", "text": "To slow economic growth ahead of elections", "ja": "選挙前に景気を減速させるため" },
-        { "key": "C", "text": "To bring inflation back toward its 2 percent target", "ja": "インフレ率を2%目標に近づけるため" },
-        { "key": "D", "text": "To reduce the federal government's borrowing costs", "ja": "政府の借入コストを減らすため" }
+        {
+          "key": "A",
+          "text": "To help the dollar weaken against foreign currencies",
+          "ja": "ドルを意図的に弱めるため"
+        },
+        {
+          "key": "B",
+          "text": "To slow economic growth ahead of elections",
+          "ja": "選挙前に景気を減速させるため"
+        },
+        {
+          "key": "C",
+          "text": "To bring inflation back toward its 2 percent target",
+          "ja": "インフレ率を2%目標に近づけるため"
+        },
+        {
+          "key": "D",
+          "text": "To reduce the federal government's borrowing costs",
+          "ja": "政府の借入コストを減らすため"
+        }
       ],
       "answer": "C",
       "explanation": "正解は(C)。第2段落1文目に「The committee said inflation remains elevated, and the hike should bring it back toward its 2 percent goal more quickly.」とあり、利上げの狙いはインフレ率を2%の目標に近づけることだと分かる。(A)為替を弱める意図についての記述はない。(B)選挙に関する言及はない。(D)本文で述べられている借入コストは企業・消費者一般の話であり、政府の借入コストを減らす目的とは書かれていない。いずれも本文にない情報を使った誤答である。",
-      "evidence": { "p": 1, "s": 0 },
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
       "tip": "理由・目的を問う設問は、\"because\" や \"in order to\" のような表現がなくても、文脈から目的を読み取る必要がある。設問のキーワードを本文中で探すのが近道。"
     }
   ],
@@ -185,32 +223,162 @@
     }
   ],
   "glossary": {
-    "elevated": { "lemma": "elevated", "pos": "adj", "ja": "高い水準の", "note": "" },
-    "hike": { "lemma": "hike", "pos": "n", "ja": "引き上げ", "note": "" },
-    "signaled": { "lemma": "signal", "pos": "v", "ja": "示唆した", "note": "" },
-    "borrowing": { "lemma": "borrowing", "pos": "n", "ja": "借り入れ", "note": "" },
-    "sharply": { "lemma": "sharply", "pos": "adv", "ja": "急激に", "note": "" },
-    "spending": { "lemma": "spending", "pos": "n", "ja": "支出", "note": "" },
-    "investors": { "lemma": "investor", "pos": "n", "ja": "投資家", "note": "" },
-    "announcement": { "lemma": "announcement", "pos": "n", "ja": "発表", "note": "" },
-    "reserve": { "lemma": "reserve", "pos": "n", "ja": "準備制度", "note": "Federal Reserveで「連邦準備制度(米国の中央銀行)」" },
-    "lifting": { "lemma": "lift", "pos": "v", "ja": "引き上げること", "note": "" },
-    "target": { "lemma": "target", "pos": "n", "ja": "目標、目標の", "note": "" },
-    "range": { "lemma": "range", "pos": "n", "ja": "幅、範囲", "note": "" },
-    "committee": { "lemma": "committee", "pos": "n", "ja": "委員会", "note": "" },
-    "voted": { "lemma": "vote", "pos": "v", "ja": "投票した", "note": "" },
-    "quarter-point": { "lemma": "quarter-point", "pos": "adj", "ja": "0.25ポイント分の", "note": "" },
-    "remains": { "lemma": "remain", "pos": "v", "ja": "〜のままである", "note": "" },
-    "toward": { "lemma": "toward", "pos": "prep", "ja": "〜に向かって", "note": "" },
-    "goal": { "lemma": "goal", "pos": "n", "ja": "目標", "note": "" },
-    "officials": { "lemma": "official", "pos": "n", "ja": "当局者", "note": "" },
-    "fell": { "lemma": "fall", "pos": "v", "ja": "下落した", "note": "" },
-    "prices": { "lemma": "price", "pos": "n", "ja": "価格", "note": "" },
-    "costs": { "lemma": "cost", "pos": "n", "ja": "費用", "note": "" },
-    "companies": { "lemma": "company", "pos": "n", "ja": "企業", "note": "" },
-    "consumers": { "lemma": "consumer", "pos": "n", "ja": "消費者", "note": "" },
-    "abroad": { "lemma": "abroad", "pos": "adv", "ja": "海外で", "note": "" },
-    "meeting": { "lemma": "meeting", "pos": "n", "ja": "会合", "note": "" }
+    "elevated": {
+      "lemma": "elevated",
+      "pos": "adj",
+      "ja": "高い水準の",
+      "note": ""
+    },
+    "hike": {
+      "lemma": "hike",
+      "pos": "n",
+      "ja": "引き上げ",
+      "note": ""
+    },
+    "signaled": {
+      "lemma": "signal",
+      "pos": "v",
+      "ja": "示唆した",
+      "note": ""
+    },
+    "borrowing": {
+      "lemma": "borrowing",
+      "pos": "n",
+      "ja": "借り入れ",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "adv",
+      "ja": "急激に",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "n",
+      "ja": "支出",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "n",
+      "ja": "投資家",
+      "note": ""
+    },
+    "announcement": {
+      "lemma": "announcement",
+      "pos": "n",
+      "ja": "発表",
+      "note": ""
+    },
+    "reserve": {
+      "lemma": "reserve",
+      "pos": "n",
+      "ja": "準備制度",
+      "note": "Federal Reserveで「連邦準備制度(米国の中央銀行)」"
+    },
+    "lifting": {
+      "lemma": "lift",
+      "pos": "v",
+      "ja": "引き上げること",
+      "note": ""
+    },
+    "target": {
+      "lemma": "target",
+      "pos": "n",
+      "ja": "目標、目標の",
+      "note": ""
+    },
+    "range": {
+      "lemma": "range",
+      "pos": "n",
+      "ja": "幅、範囲",
+      "note": ""
+    },
+    "committee": {
+      "lemma": "committee",
+      "pos": "n",
+      "ja": "委員会",
+      "note": ""
+    },
+    "voted": {
+      "lemma": "vote",
+      "pos": "v",
+      "ja": "投票した",
+      "note": ""
+    },
+    "quarter-point": {
+      "lemma": "quarter-point",
+      "pos": "adj",
+      "ja": "0.25ポイント分の",
+      "note": ""
+    },
+    "remains": {
+      "lemma": "remain",
+      "pos": "v",
+      "ja": "〜のままである",
+      "note": ""
+    },
+    "toward": {
+      "lemma": "toward",
+      "pos": "prep",
+      "ja": "〜に向かって",
+      "note": ""
+    },
+    "goal": {
+      "lemma": "goal",
+      "pos": "n",
+      "ja": "目標",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "n",
+      "ja": "当局者",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "v",
+      "ja": "下落した",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "n",
+      "ja": "価格",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "n",
+      "ja": "費用",
+      "note": ""
+    },
+    "companies": {
+      "lemma": "company",
+      "pos": "n",
+      "ja": "企業",
+      "note": ""
+    },
+    "consumers": {
+      "lemma": "consumer",
+      "pos": "n",
+      "ja": "消費者",
+      "note": ""
+    },
+    "abroad": {
+      "lemma": "abroad",
+      "pos": "adv",
+      "ja": "海外で",
+      "note": ""
+    },
+    "meeting": {
+      "lemma": "meeting",
+      "pos": "n",
+      "ja": "会合",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "must be + 形容詞 + that節（confident thatの構文）",
@@ -272,5 +440,23 @@
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a1.htm",
       "date": "2026-09-16"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-18-0540/00.mp3",
+      "audio/2026-09-18-0540/01.mp3",
+      "audio/2026-09-18-0540/02.mp3",
+      "audio/2026-09-18-0540/03.mp3",
+      "audio/2026-09-18-0540/04.mp3",
+      "audio/2026-09-18-0540/05.mp3",
+      "audio/2026-09-18-0540/06.mp3",
+      "audio/2026-09-18-0540/07.mp3",
+      "audio/2026-09-18-0540/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 215541,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-17T20:48:09.668Z",
+    "trimmed": true
+  }
 }
