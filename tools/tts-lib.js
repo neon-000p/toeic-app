@@ -68,6 +68,18 @@ async function tts(text, speechConfig) {
   }
 }
 
+/* 読み上げに渡す前の下ごしらえ。Ms. のような敬称の点を落とす。
+   点を見た合成器はそこを文の終わりと見なし、「Hello, Ms.」で切って、
+   そのあとを次の文として続けてしまう。教材の JSON は直さない（画面には
+   Ms. と出したい）ので、音声を作るときに送る文字列だけを直す。
+   あとに大文字の語が続くときだけ落とすので、文末の St. などは触らない。
+   アプリ側の端末読み上げにも同じ処理がある（core.js の TTS.forSpeech）。 */
+const TITLE = /\b(Mr|Mrs|Ms|Dr|Prof|Rev|Capt|Lt|Sgt|Jr|Sr)\.(?=\s+([A-Z]|and\b|or\b|&))/g;
+const PLACE = /\b(St|Mt)\.(?=\s+[A-Z])/g;
+function speechText(text) {
+  return String(text == null ? '' : text).replace(TITLE, '$1').replace(PLACE, '$1');
+}
+
 /* 1人で読ませる。時事英語の本文や、Part 3 の1行ぶんに使う */
 function oneVoice(voiceName) {
   return { voiceConfig: { prebuiltVoiceConfig: { voiceName: voiceName || 'Kore' } } };
@@ -156,6 +168,6 @@ function writeAudio(dir, base, parts, kbps) {
 
 module.exports = {
   MODEL, RATE, GAP, KEY,
-  sleep, tts, oneVoice, twoVoices,
+  sleep, tts, speechText, oneVoice, twoVoices,
   wav, hasFfmpeg, toMp3, writeAudio, trimSilence
 };

@@ -66,7 +66,7 @@ async function build(file, force) {
     const base = String(i).padStart(2, '0');
     process.stdout.write(`  ${i + 1}/${sents.length} `);
     const pcm = await lib.tts(
-      'Read this sentence clearly, at a steady pace, as a news reader would: ' + sents[i].en,
+      'Read this sentence clearly, at a steady pace, as a news reader would: ' + lib.speechText(sents[i].en),
       lib.oneVoice(VOICE));
     const r = lib.writeAudio(dir, base, [pcm], KBPS);
     lib.trimSilence(path.join(dir, r.name), KBPS);

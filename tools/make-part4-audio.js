@@ -75,7 +75,8 @@ async function lineClips(set, id, voice) {
     const l = set.lines[i];
     const base = String(i).padStart(2, '0');
     process.stdout.write(`  文 ${i + 1}/${set.lines.length} `);
-    const pcm = await tts('Say this line naturally, at a steady pace: ' + l.en, lib.oneVoice(voice));
+    const pcm = await tts('Say this line naturally, at a steady pace: ' + lib.speechText(l.en),
+      lib.oneVoice(voice));
     const r = writeAudio(dir, base, [pcm]);
     lib.trimSilence(path.join(dir, r.name), KBPS);
     out.push(`audio/${id}/${r.name}`);
@@ -129,14 +130,14 @@ async function build(file, force) {
   process.stdout.write('  前置き ');
   const introPcm = await tts(
     'Read this announcement clearly and neutrally, as the narrator of an English listening test: ' +
-    introOf(set), lib.oneVoice(NARRATOR));
+    lib.speechText(introOf(set)), lib.oneVoice(NARRATOR));
   console.log('できました');
 
   process.stdout.write('  トーク ');
   const talkPcm = await tts(
     'Read the following text naturally, at a steady pace suitable for an English listening test, ' +
     (STYLE[set.talkType] || STYLE.talk) + '. Do not add any words of your own.\n\n' +
-    set.lines.map((l) => l.en).join(' '),
+    lib.speechText(set.lines.map((l) => l.en).join(' ')),
     lib.oneVoice(voice));
   console.log('できました');
 

@@ -240,6 +240,17 @@
       return pickDefault();
     }
     function cancel() { if (synth) { try { synth.cancel(); } catch (e) {} } }
+    /* 読み上げに渡す前の下ごしらえ。Ms. のような敬称の点を落とす。
+       点を見た合成器はそこを文の終わりと見なし、「Hello, Ms.」で切って
+       そのあとを次の文として続けてしまう（本物の文末では切らなくなる）。
+       画面の表示は変えない。読み上げに送る文字列だけを直す。
+       あとに大文字の語が続くときだけ落とすので、文末の St. などは触らない。 */
+    var TITLE = /\b(Mr|Mrs|Ms|Dr|Prof|Rev|Capt|Lt|Sgt|Jr|Sr)\.(?=\s+([A-Z]|and\b|or\b|&))/g;
+    var PLACE = /\b(St|Mt)\.(?=\s+[A-Z])/g;
+    function forSpeech(text) {
+      return String(text == null ? '' : text).replace(TITLE, '$1').replace(PLACE, '$1');
+    }
+
     /* speak(text, {rate, voiceURI, pitch, onend, onerror})
        音声一覧がまだ届いていない状態で喋らせると、声が無いまま失敗して
        onend が即座に呼ばれる。連続再生だと全部の行が一瞬で流れてしまうので、
@@ -259,7 +270,7 @@
     function doSpeak(text, opts) {
       opts = opts || {};
       cancel();
-      var u = new SpeechSynthesisUtterance(text);
+      var u = new SpeechSynthesisUtterance(forSpeech(text));
       var v = resolve(opts.voiceURI !== undefined ? opts.voiceURI : Settings.get('voiceURI'));
       if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = 'en-US'; }
       u.rate = opts.rate || 1;
@@ -288,7 +299,7 @@
     return {
       available: !!synth, onReady: onReady, voices: function () { return cache; },
       english: english, ranked: ranked, label: label,
-      speakerPlan: speakerPlan,
+      speakerPlan: speakerPlan, forSpeech: forSpeech,
       pickDefault: pickDefault, speak: speak, cancel: cancel
     };
   })();
@@ -623,13 +634,13 @@
       /* 話者が1人だけのかたまりは multiSpeaker が使えないので単独指定にする */
       if (chunk.tags.length < 2) {
         return ttsCall('Say this naturally, as part of a conversation, at a steady pace: ' +
-          chunk.lines.map(function (l) { return l.en; }).join(' '),
+          TTS.forSpeech(chunk.lines.map(function (l) { return l.en; }).join(' ')),
           { voiceConfig: { prebuiltVoiceConfig: { voiceName: voices[chunk.tags[0]] || 'Kore' } } });
       }
       return ttsCall(
         'Read the following conversation naturally, at a steady pace suitable for an English listening test. ' +
         'Do not add any words of your own.\n\n' +
-        chunk.lines.map(function (l) { return l.tag + ': ' + l.en; }).join('\n'),
+        chunk.lines.map(function (l) { return l.tag + ': ' + TTS.forSpeech(l.en); }).join('\n'),
         {
           multiSpeakerVoiceConfig: {
             speakerVoiceConfigs: chunk.tags.map(function (t) {

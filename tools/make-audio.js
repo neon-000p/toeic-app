@@ -58,7 +58,7 @@ async function lineClips(set, id, voices) {
     const l = set.lines[i];
     const base = String(i).padStart(2, '0');
     process.stdout.write(`  行 ${i + 1}/${set.lines.length} `);
-    const pcm = await tts('Say this line naturally, at a steady pace: ' + l.en,
+    const pcm = await tts('Say this line naturally, at a steady pace: ' + lib.speechText(l.en),
       lib.oneVoice(voices[l.tag]));
     const r = writeAudio(dir, base, [pcm]);
     lib.trimSilence(path.join(dir, r.name), KBPS);
@@ -116,12 +116,12 @@ async function build(file, force) {
     let text, speechConfig;
     if (c.tags.length < 2) {
       text = 'Say this naturally, as part of a conversation, at a steady pace: ' +
-        c.lines.map((l) => l.en).join(' ');
+        lib.speechText(c.lines.map((l) => l.en).join(' '));
       speechConfig = lib.oneVoice(VOICES[c.tags[0]]);
     } else {
       text = 'Read the following conversation naturally, at a steady pace suitable for an English ' +
         'listening test. Do not add any words of your own.\n\n' +
-        c.lines.map((l) => `${l.tag}: ${l.en}`).join('\n');
+        c.lines.map((l) => `${l.tag}: ${lib.speechText(l.en)}`).join('\n');
       speechConfig = lib.twoVoices(c.tags, VOICES);
     }
     process.stdout.write(`  ${i + 1}/${chunks.length} [${c.tags.join(',')}] `);
