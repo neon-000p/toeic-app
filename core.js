@@ -956,7 +956,7 @@
     if (!root || root.dataset.selWatch) return;
     root.dataset.selWatch = '1';
 
-    var btn = null, timer = null, mark = null, pick = null;
+    var btn = null, timer = null, mark = null, pick = null, pressing = false;
 
     function hide() {
       if (mark) { mark.classList.remove('open'); mark = null; }
@@ -1006,10 +1006,19 @@
       btn.className = 'sel-btn';
       btn.type = 'button';
       btn.innerHTML = '<span>意味</span><span class="sw"></span>';
-      /* 押した瞬間に選択が消えないようにする */
+      /* 指で押している間は、選択が消えてもボタンを引っ込めない。
+         触れた時点で端末は選択を解除するので、その知らせ（selectionchange）で
+         消してしまうと、押し切る前にボタンが無くなる。 */
+      btn.addEventListener('pointerdown', function () {
+        pressing = true;
+        setTimeout(function () { pressing = false; }, 1500);   /* 押しそこねたとき用 */
+      });
+      /* touchstart で preventDefault してはいけない。指で触ったときに
+         click が起きなくなり、ボタンがまったく反応しなくなる。
+         マウスのほうは、押した瞬間に選択が消えるのを止めておく。 */
       btn.addEventListener('mousedown', function (e) { e.preventDefault(); });
-      btn.addEventListener('touchstart', function (e) { e.preventDefault(); }, { passive: false });
       btn.addEventListener('click', function () {
+        pressing = false;
         if (!pick) { hide(); return; }
         var got = pick;
         hide();
@@ -1030,8 +1039,8 @@
     /* なぞって選んだとき */
     function fromSelection() {
       var got = selectionText();
-      /* タップで出したボタンは、選択が無いからといって消さない */
-      if (!got) { if (!mark) hide(); return; }
+      /* タップで出したボタンと、いま押されているボタンは消さない */
+      if (!got) { if (!mark && !pressing) hide(); return; }
 
       var n = got.range.commonAncestorContainer;
       if (n.nodeType !== 1) n = n.parentNode;
@@ -1074,7 +1083,7 @@
       clearTimeout(timer);
       timer = setTimeout(fromSelection, 150);
     });
-    window.addEventListener('scroll', hide, true);
+    window.addEventListener('scroll', function () { if (!pressing) hide(); }, true);
   }
 
   /* 選んだ語句の意味をポップで出す。語注にあればそれも使う。
