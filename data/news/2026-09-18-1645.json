@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-18-1645",
+  "date": "2026-09-18",
+  "time": "16:45",
+  "createdAt": "2026-09-18T16:45:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Apple's New iPhones Go on Sale as First Foldable Model Waits Until October",
+    "ja": "新型iPhone発売、初の折りたたみは10月へ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Apple's iPhone 18 Pro and Pro Max went on sale on September 18, after preorders opened September 12.",
+            "ja": "アップルの iPhone 18 Pro と Pro Max が9月18日に発売された。予約注文は9月12日に始まっていた。"
+          },
+          {
+            "en": "The Pro model starts at $1,199, and the Pro Max starts at $1,299 — about the same as last year.",
+            "ja": "Pro モデルは1,199ドルから、Pro Max は1,299ドルからで、価格はほぼ昨年と同水準だ。"
+          },
+          {
+            "en": "The bigger news is the iPhone Duo, Apple's first foldable phone, which will not ship until October 23.",
+            "ja": "より大きな注目点は、アップル初の折りたたみ式スマートフォンである iPhone Duo で、出荷は10月23日まで始まらない。"
+          },
+          {
+            "en": "It starts at $1,999 for the base version and can cost more than $3,000 for the largest one.",
+            "ja": "基本モデルは1,999ドルからで、最大容量モデルは3,000ドルを超える。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The launch matters because it marks Apple's entry into a device category that rivals have sold for years.",
+            "ja": "今回の発売が重要なのは、競合他社が何年も前から手がけてきた製品分野にアップルが参入したことを意味するからだ。"
+          },
+          {
+            "en": "Analysts will watch whether shoppers accept a premium for a new form factor.",
+            "ja": "消費者が新しい形状の端末に割増料金を払うかどうかを、アナリストは注視するとみられる。"
+          },
+          {
+            "en": "Phone prices are already rising because memory costs have jumped this year.",
+            "ja": "メモリー価格の高騰により、スマートフォンの価格はすでに上昇している。"
+          },
+          {
+            "en": "The wide gap between the Pro line's price and the foldable's price suggests Apple sees it as a niche, high-margin product for now.",
+            "ja": "Pro シリーズと折りたたみモデルの価格差が大きいことから、アップルはこの製品を当面、ニッチで利益率の高い製品と位置づけていることがうかがえる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the article, how much does the base version of the iPhone Duo cost?",
+      "choices": [
+        { "key": "A", "text": "$1,199", "ja": "Proの価格" },
+        { "key": "B", "text": "$1,299", "ja": "Pro Maxの価格" },
+        { "key": "C", "text": "$1,999", "ja": "Duo基本モデルの価格" },
+        { "key": "D", "text": "more than $3,000", "ja": "最大容量モデルの価格帯" }
+      ],
+      "answer": "C",
+      "explanation": "正解は(C) $1,999。本文（第1段落4文目）に「It starts at $1,999 for the base version」と明記されている。(A)のPro、(B)のPro Maxはそれぞれ別モデルの価格、(D)は基本モデルではなく最大容量モデルの価格帯であり、いずれも本文の別の数字を使った引っかけである。",
+      "evidence": { "p": 0, "s": 3 },
+      "tip": "本文に複数モデルの価格が並ぶ設問では、それぞれの数字がどのモデルに対応するかを一つずつ照合して読むことが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why do analysts consider the price gap between the Pro line and the iPhone Duo significant?",
+      "choices": [
+        { "key": "A", "text": "It shows Apple plans to stop selling the Pro line.", "ja": "Proの販売終了を示唆" },
+        { "key": "B", "text": "It suggests Apple treats the foldable as a niche, high-margin product.", "ja": "ニッチな高利益率製品との位置づけ" },
+        { "key": "C", "text": "It proves that memory costs have started falling.", "ja": "メモリー価格の下落を示す" },
+        { "key": "D", "text": "It means the Pro Max costs more than the iPhone Duo.", "ja": "Pro MaxがDuoより高いことを示す" }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B)。本文最後の文で「The wide gap ... suggests Apple sees it as a niche, high-margin product for now」と述べられており、価格差の大きさがニッチで利益率の高い製品という位置づけを示唆している。(A)は本文にない情報、(C)は本文と逆の内容（メモリー価格は上昇していると明記）、(D)は数字の大小関係が本文と逆（Duoの方が高い）。",
+      "evidence": { "p": 1, "s": 3 },
+      "tip": "理由を問う設問では、suggests や because など因果関係を示す語の前後を丁寧に読むと根拠を素早く特定できる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "preorder",
+      "pos": "名",
+      "ja": "予約注文",
+      "gloss": "",
+      "example": {
+        "en": "Customers who preorder the phone often receive it before the official release date.",
+        "ja": "その電話を予約注文した顧客は、正式な発売日より前に受け取ることが多い。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "entry",
+      "pos": "名",
+      "ja": "参入",
+      "gloss": "",
+      "example": {
+        "en": "The company's entry into the software market surprised its competitors.",
+        "ja": "その会社のソフトウエア市場への参入は、競合他社を驚かせた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "rival",
+      "pos": "名",
+      "ja": "競合他社、ライバル",
+      "gloss": "",
+      "example": {
+        "en": "Two rivals are competing for the same government contract.",
+        "ja": "2社の競合他社が同じ政府契約をめぐって争っている。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "premium",
+      "pos": "名",
+      "ja": "割増料金",
+      "gloss": "",
+      "example": {
+        "en": "Customers often pay a premium for faster shipping.",
+        "ja": "顧客はより速い配送のために割増料金を払うことが多い。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "jump",
+      "pos": "動",
+      "ja": "急増する、跳ね上がる",
+      "gloss": "",
+      "example": {
+        "en": "Shipping costs jumped after the new tariffs took effect.",
+        "ja": "新しい関税が発効した後、輸送費が急増した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "niche",
+      "pos": "形・名",
+      "ja": "ニッチな、隙間市場（の）",
+      "gloss": "（＝限られた顧客層向けの市場のこと）",
+      "example": {
+        "en": "The firm focuses on a niche market for luxury goods.",
+        "ja": "その会社は高級品の隙間市場に力を入れている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "gap",
+      "pos": "名",
+      "ja": "差、格差",
+      "gloss": "",
+      "example": {
+        "en": "There is a wide gap between the two companies' prices.",
+        "ja": "その2社の価格には大きな差がある。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "foldable",
+      "pos": "形",
+      "ja": "折りたたみ式の",
+      "gloss": "（＝画面を折り曲げられる機種のこと）",
+      "example": {
+        "en": "The company unveiled its first foldable laptop at the trade show.",
+        "ja": "その会社は展示会で初の折りたたみ式ノートパソコンを発表した。"
+      }
+    }
+  ],
+  "glossary": {
+    "preorders": { "lemma": "preorder", "pos": "n", "ja": "予約注文（複数形）", "note": "" },
+    "opened": { "lemma": "open", "pos": "v", "ja": "開始した", "note": "" },
+    "starts": { "lemma": "start", "pos": "v", "ja": "始まる", "note": "" },
+    "bigger": { "lemma": "big", "pos": "adj", "ja": "より大きな", "note": "" },
+    "first": { "lemma": "first", "pos": "adj", "ja": "初めての", "note": "" },
+    "foldable": { "lemma": "foldable", "pos": "adj", "ja": "折りたたみ式の", "note": "" },
+    "ship": { "lemma": "ship", "pos": "v", "ja": "出荷する", "note": "" },
+    "version": { "lemma": "version", "pos": "n", "ja": "型、バージョン", "note": "" },
+    "cost": { "lemma": "cost", "pos": "v", "ja": "費用がかかる", "note": "" },
+    "launch": { "lemma": "launch", "pos": "n", "ja": "発売、開始", "note": "" },
+    "matters": { "lemma": "matter", "pos": "v", "ja": "重要である", "note": "" },
+    "marks": { "lemma": "mark", "pos": "v", "ja": "示す、意味する", "note": "" },
+    "entry": { "lemma": "entry", "pos": "n", "ja": "参入", "note": "" },
+    "device": { "lemma": "device", "pos": "n", "ja": "機器、端末", "note": "" },
+    "category": { "lemma": "category", "pos": "n", "ja": "分野、区分", "note": "" },
+    "rivals": { "lemma": "rival", "pos": "n", "ja": "競合他社（複数形）", "note": "" },
+    "sold": { "lemma": "sell", "pos": "v", "ja": "販売した", "note": "" },
+    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト", "note": "" },
+    "shoppers": { "lemma": "shopper", "pos": "n", "ja": "消費者、買い物客", "note": "" },
+    "accept": { "lemma": "accept", "pos": "v", "ja": "受け入れる", "note": "" },
+    "premium": { "lemma": "premium", "pos": "n", "ja": "割増料金", "note": "" },
+    "factor": { "lemma": "factor", "pos": "n", "ja": "要素", "note": "" },
+    "prices": { "lemma": "price", "pos": "n", "ja": "価格（複数形）", "note": "" },
+    "rising": { "lemma": "rise", "pos": "v", "ja": "上昇している", "note": "" },
+    "jumped": { "lemma": "jump", "pos": "v", "ja": "急増した", "note": "" },
+    "gap": { "lemma": "gap", "pos": "n", "ja": "差、格差", "note": "" },
+    "niche": { "lemma": "niche", "pos": "n・adj", "ja": "ニッチ、隙間市場（の）", "note": "" },
+    "product": { "lemma": "product", "pos": "n", "ja": "製品", "note": "" }
+  },
+  "grammar": {
+    "topic": "not ~ until 構文（〜するまでは…しない、の意味を表す）",
+    "quote": "The bigger news is the iPhone Duo, Apple's first foldable phone, which will not ship until October 23.",
+    "quoteJa": "より大きな注目点は、アップル初の折りたたみ式スマートフォンである iPhone Duo で、出荷は10月23日まで始まらない。",
+    "blocks": [
+      {
+        "heading": "基本の形",
+        "body": "「not + 動詞 + until + 時点」で「〜するまで…しない」という意味を表す。日本語に訳すときは「〜まで…しない」よりも「〜になって初めて…する」と訳すと自然になることが多い。今回の例文も「10月23日になって初めて出荷される」というニュアンスを含む。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "「not ... until X」は「It is not until X that ...」という強調構文に書き換えられる。例：It will not be until October 23 that the iPhone Duo ships. 「only after X」を使って言い換えることもできる：Only after October 23 will the iPhone Duo ship.（この場合は倒置になる点に注意）。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では until と by の使い分けを問う設問が頻出する。until は「その時点まで動作・状態が継続する」ことを表し、by は「その時点までに完了する」ことを表す。not ... until の形も、意味の上で「それまでは起こらない」ことを強調するため、byと混同しないよう注意したい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "契約書や社内通知でもよく使われる表現である。例：The new policy will not take effect until January 1. また：We will not be able to ship your order until the parts arrive."
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 折りたたみスマホとは何か",
+      "body": "折りたたみ式スマートフォン（foldable phone）とは、画面を二つ折りにできる構造を持つ端末のことである。開くとタブレットのような大画面になり、閉じれば通常のスマホサイズに収まる。ヒンジ（蝶番）部分の耐久性や、画面の折り目を目立たなくする技術が製品の完成度を左右するカギとなる。"
+    },
+    {
+      "heading": "📌 業界全体・競合他社の動向",
+      "body": "折りたたみスマホ自体は目新しい製品ではなく、韓国の競合他社などがすでに数年前から折りたたみモデルを販売してきた。今回アップルが1,999ドルという高価格でこの市場に本格参入したことで、折りたたみ市場全体の注目度が高まり、部品や技術の標準化が一段と進む可能性がある。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響・示唆",
+      "body": "折りたたみ端末には、ヒンジの精密部品や薄型ディスプレイ、特殊なカメラモジュールなど、日本の部品メーカーが強みを持つ技術が数多く使われている。アップルの本格参入は、こうした日本企業への部品受注の拡大につながる可能性がある。一方、消費者にとっては端末価格の選択肢がさらに広がり、通常モデルと折りたたみモデルの価格差をどう捉えるかが購入判断のポイントになる。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点からの意義",
+      "body": "投資家にとっては、アップルが折りたたみモデルを普及価格帯ではなく高価格帯に位置づけたことが重要な判断材料になる。台数を追うのではなく利益率を優先する戦略とみられ、他社もこれに追随して高価格・高利益率のモデル展開を強めるかどうかが今後の焦点となる。経営者にとっては、値上げが続く市場環境でも顧客が新しい付加価値にお金を払うかどうかを見極める好例といえる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "iPhone Duo: Pricing, Pre-Orders, and Release Date Announced",
+      "publisher": "MacRumors",
+      "url": "https://www.macrumors.com/2026/09/09/iphone-duo-pricing-pre-orders-release-date/",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "Apple Announces iPhone 18, iPhone Duo Foldable Model Price and Availability",
+      "publisher": "Variety",
+      "url": "https://variety.com/2026/digital/news/apple-iphone-duo-18-foldable-price-availability-1236855996/",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "Here's when you can preorder the iPhone 18 Pro, Pro Max, and foldable iPhone Duo",
+      "publisher": "Dynasage Blog",
+      "url": "https://blog.dynasage.com/2026/09/heres-when-you-can-preorder-iphone-18.html",
+      "date": "2026-09-09"
+    }
+  ]
+}
