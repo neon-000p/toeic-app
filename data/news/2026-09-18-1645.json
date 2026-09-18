@@ -64,14 +64,33 @@
       "type": "detail",
       "prompt": "According to the article, how much does the base version of the iPhone Duo cost?",
       "choices": [
-        { "key": "A", "text": "$1,199", "ja": "Proの価格" },
-        { "key": "B", "text": "$1,299", "ja": "Pro Maxの価格" },
-        { "key": "C", "text": "$1,999", "ja": "Duo基本モデルの価格" },
-        { "key": "D", "text": "more than $3,000", "ja": "最大容量モデルの価格帯" }
+        {
+          "key": "A",
+          "text": "$1,199",
+          "ja": "Proの価格"
+        },
+        {
+          "key": "B",
+          "text": "$1,299",
+          "ja": "Pro Maxの価格"
+        },
+        {
+          "key": "C",
+          "text": "$1,999",
+          "ja": "Duo基本モデルの価格"
+        },
+        {
+          "key": "D",
+          "text": "more than $3,000",
+          "ja": "最大容量モデルの価格帯"
+        }
       ],
       "answer": "C",
       "explanation": "正解は(C) $1,999。本文（第1段落4文目）に「It starts at $1,999 for the base version」と明記されている。(A)のPro、(B)のPro Maxはそれぞれ別モデルの価格、(D)は基本モデルではなく最大容量モデルの価格帯であり、いずれも本文の別の数字を使った引っかけである。",
-      "evidence": { "p": 0, "s": 3 },
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
       "tip": "本文に複数モデルの価格が並ぶ設問では、それぞれの数字がどのモデルに対応するかを一つずつ照合して読むことが重要。"
     },
     {
@@ -79,14 +98,33 @@
       "type": "reason",
       "prompt": "Why do analysts consider the price gap between the Pro line and the iPhone Duo significant?",
       "choices": [
-        { "key": "A", "text": "It shows Apple plans to stop selling the Pro line.", "ja": "Proの販売終了を示唆" },
-        { "key": "B", "text": "It suggests Apple treats the foldable as a niche, high-margin product.", "ja": "ニッチな高利益率製品との位置づけ" },
-        { "key": "C", "text": "It proves that memory costs have started falling.", "ja": "メモリー価格の下落を示す" },
-        { "key": "D", "text": "It means the Pro Max costs more than the iPhone Duo.", "ja": "Pro MaxがDuoより高いことを示す" }
+        {
+          "key": "A",
+          "text": "It shows Apple plans to stop selling the Pro line.",
+          "ja": "Proの販売終了を示唆"
+        },
+        {
+          "key": "B",
+          "text": "It suggests Apple treats the foldable as a niche, high-margin product.",
+          "ja": "ニッチな高利益率製品との位置づけ"
+        },
+        {
+          "key": "C",
+          "text": "It proves that memory costs have started falling.",
+          "ja": "メモリー価格の下落を示す"
+        },
+        {
+          "key": "D",
+          "text": "It means the Pro Max costs more than the iPhone Duo.",
+          "ja": "Pro MaxがDuoより高いことを示す"
+        }
       ],
       "answer": "B",
       "explanation": "正解は(B)。本文最後の文で「The wide gap ... suggests Apple sees it as a niche, high-margin product for now」と述べられており、価格差の大きさがニッチで利益率の高い製品という位置づけを示唆している。(A)は本文にない情報、(C)は本文と逆の内容（メモリー価格は上昇していると明記）、(D)は数字の大小関係が本文と逆（Duoの方が高い）。",
-      "evidence": { "p": 1, "s": 3 },
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
       "tip": "理由を問う設問では、suggests や because など因果関係を示す語の前後を丁寧に読むと根拠を素早く特定できる。"
     }
   ],
@@ -181,34 +219,174 @@
     }
   ],
   "glossary": {
-    "preorders": { "lemma": "preorder", "pos": "n", "ja": "予約注文（複数形）", "note": "" },
-    "opened": { "lemma": "open", "pos": "v", "ja": "開始した", "note": "" },
-    "starts": { "lemma": "start", "pos": "v", "ja": "始まる", "note": "" },
-    "bigger": { "lemma": "big", "pos": "adj", "ja": "より大きな", "note": "" },
-    "first": { "lemma": "first", "pos": "adj", "ja": "初めての", "note": "" },
-    "foldable": { "lemma": "foldable", "pos": "adj", "ja": "折りたたみ式の", "note": "" },
-    "ship": { "lemma": "ship", "pos": "v", "ja": "出荷する", "note": "" },
-    "version": { "lemma": "version", "pos": "n", "ja": "型、バージョン", "note": "" },
-    "cost": { "lemma": "cost", "pos": "v", "ja": "費用がかかる", "note": "" },
-    "launch": { "lemma": "launch", "pos": "n", "ja": "発売、開始", "note": "" },
-    "matters": { "lemma": "matter", "pos": "v", "ja": "重要である", "note": "" },
-    "marks": { "lemma": "mark", "pos": "v", "ja": "示す、意味する", "note": "" },
-    "entry": { "lemma": "entry", "pos": "n", "ja": "参入", "note": "" },
-    "device": { "lemma": "device", "pos": "n", "ja": "機器、端末", "note": "" },
-    "category": { "lemma": "category", "pos": "n", "ja": "分野、区分", "note": "" },
-    "rivals": { "lemma": "rival", "pos": "n", "ja": "競合他社（複数形）", "note": "" },
-    "sold": { "lemma": "sell", "pos": "v", "ja": "販売した", "note": "" },
-    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト", "note": "" },
-    "shoppers": { "lemma": "shopper", "pos": "n", "ja": "消費者、買い物客", "note": "" },
-    "accept": { "lemma": "accept", "pos": "v", "ja": "受け入れる", "note": "" },
-    "premium": { "lemma": "premium", "pos": "n", "ja": "割増料金", "note": "" },
-    "factor": { "lemma": "factor", "pos": "n", "ja": "要素", "note": "" },
-    "prices": { "lemma": "price", "pos": "n", "ja": "価格（複数形）", "note": "" },
-    "rising": { "lemma": "rise", "pos": "v", "ja": "上昇している", "note": "" },
-    "jumped": { "lemma": "jump", "pos": "v", "ja": "急増した", "note": "" },
-    "gap": { "lemma": "gap", "pos": "n", "ja": "差、格差", "note": "" },
-    "niche": { "lemma": "niche", "pos": "n・adj", "ja": "ニッチ、隙間市場（の）", "note": "" },
-    "product": { "lemma": "product", "pos": "n", "ja": "製品", "note": "" }
+    "preorders": {
+      "lemma": "preorder",
+      "pos": "n",
+      "ja": "予約注文（複数形）",
+      "note": ""
+    },
+    "opened": {
+      "lemma": "open",
+      "pos": "v",
+      "ja": "開始した",
+      "note": ""
+    },
+    "starts": {
+      "lemma": "start",
+      "pos": "v",
+      "ja": "始まる",
+      "note": ""
+    },
+    "bigger": {
+      "lemma": "big",
+      "pos": "adj",
+      "ja": "より大きな",
+      "note": ""
+    },
+    "first": {
+      "lemma": "first",
+      "pos": "adj",
+      "ja": "初めての",
+      "note": ""
+    },
+    "foldable": {
+      "lemma": "foldable",
+      "pos": "adj",
+      "ja": "折りたたみ式の",
+      "note": ""
+    },
+    "ship": {
+      "lemma": "ship",
+      "pos": "v",
+      "ja": "出荷する",
+      "note": ""
+    },
+    "version": {
+      "lemma": "version",
+      "pos": "n",
+      "ja": "型、バージョン",
+      "note": ""
+    },
+    "cost": {
+      "lemma": "cost",
+      "pos": "v",
+      "ja": "費用がかかる",
+      "note": ""
+    },
+    "launch": {
+      "lemma": "launch",
+      "pos": "n",
+      "ja": "発売、開始",
+      "note": ""
+    },
+    "matters": {
+      "lemma": "matter",
+      "pos": "v",
+      "ja": "重要である",
+      "note": ""
+    },
+    "marks": {
+      "lemma": "mark",
+      "pos": "v",
+      "ja": "示す、意味する",
+      "note": ""
+    },
+    "entry": {
+      "lemma": "entry",
+      "pos": "n",
+      "ja": "参入",
+      "note": ""
+    },
+    "device": {
+      "lemma": "device",
+      "pos": "n",
+      "ja": "機器、端末",
+      "note": ""
+    },
+    "category": {
+      "lemma": "category",
+      "pos": "n",
+      "ja": "分野、区分",
+      "note": ""
+    },
+    "rivals": {
+      "lemma": "rival",
+      "pos": "n",
+      "ja": "競合他社（複数形）",
+      "note": ""
+    },
+    "sold": {
+      "lemma": "sell",
+      "pos": "v",
+      "ja": "販売した",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "n",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "shoppers": {
+      "lemma": "shopper",
+      "pos": "n",
+      "ja": "消費者、買い物客",
+      "note": ""
+    },
+    "accept": {
+      "lemma": "accept",
+      "pos": "v",
+      "ja": "受け入れる",
+      "note": ""
+    },
+    "premium": {
+      "lemma": "premium",
+      "pos": "n",
+      "ja": "割増料金",
+      "note": ""
+    },
+    "factor": {
+      "lemma": "factor",
+      "pos": "n",
+      "ja": "要素",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "n",
+      "ja": "価格（複数形）",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "v",
+      "ja": "上昇している",
+      "note": ""
+    },
+    "jumped": {
+      "lemma": "jump",
+      "pos": "v",
+      "ja": "急増した",
+      "note": ""
+    },
+    "gap": {
+      "lemma": "gap",
+      "pos": "n",
+      "ja": "差、格差",
+      "note": ""
+    },
+    "niche": {
+      "lemma": "niche",
+      "pos": "n・adj",
+      "ja": "ニッチ、隙間市場（の）",
+      "note": ""
+    },
+    "product": {
+      "lemma": "product",
+      "pos": "n",
+      "ja": "製品",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "not ~ until 構文（〜するまでは…しない、の意味を表す）",
@@ -270,5 +448,22 @@
       "url": "https://blog.dynasage.com/2026/09/heres-when-you-can-preorder-iphone-18.html",
       "date": "2026-09-09"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-18-1645/00.mp3",
+      "audio/2026-09-18-1645/01.mp3",
+      "audio/2026-09-18-1645/02.mp3",
+      "audio/2026-09-18-1645/03.mp3",
+      "audio/2026-09-18-1645/04.mp3",
+      "audio/2026-09-18-1645/05.mp3",
+      "audio/2026-09-18-1645/06.mp3",
+      "audio/2026-09-18-1645/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 239592,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-18T07:48:05.404Z",
+    "trimmed": true
+  }
 }
