@@ -92,13 +92,13 @@ Notion 側の既存ページは残しておいてよい。過去の教材アー�
 GitHub の両方に書いていて、その片方をやめるだけだから。本数の枠を空けたい場合は、
 別のルーティンを止める必要がある。
 
-## Part 3・Part 4・Part 5 の音声（GitHub Actions）
+## Part 3・Part 4 の音声（GitHub Actions）
 
 会話の音声は、あらかじめ作ってリポジトリに置く。再生のたびに作ると待たされるため。
 
 **仕組み**
 
-`data/part3/*.json`・`data/part4/*.json`・`data/part5/*.json` のいずれかが main に入ると `.github/workflows/part3-audio.yml` が動き、`tools/make-audio.js`（Part 3）、`tools/make-part4-audio.js`（Part 4）、`tools/make-part5-audio.js`（Part 5）が Gemini TTS で音声を作る。できた MP3 は `data/part3/audio/<id>.mp3`・`data/part4/audio/<id>.mp3` に置かれ、セットの JSON に `audio` が足されて `[audio]` 付きのコミットで main に入る。ルーティン側は音声のことを何もしなくてよい。
+`data/part3/*.json` または `data/part4/*.json` が main に入ると `.github/workflows/part3-audio.yml` が動き、`tools/make-audio.js`（Part 3）と `tools/make-part4-audio.js`（Part 4）が Gemini TTS で音声を作る。**Part 5 は対象外**（端末の読み上げで鳴らすため）。できた MP3 は `data/part3/audio/<id>.mp3`・`data/part4/audio/<id>.mp3` に置かれ、セットの JSON に `audio` が足されて `[audio]` 付きのコミットで main に入る。ルーティン側は音声のことを何もしなくてよい。
 
 **最初に1回だけ必要な準備**
 
@@ -341,11 +341,8 @@ TOEIC Part 5 の練習セットを5本作る。1セットは10問。
 
 ## 音声について
 
-ルーティンが5セットを push すると、GitHub Actions が自動で音声を作る。**ルーティン側は音声のことを何もしない。**
-
-本番の Part 5 に音声は無いが、正しい形の文を耳に入れられるよう、**時事英語と同じ形**で1問ずつ用意している。読み上げるのは空所を正解で埋めた文。
-
-5セットぶんで Gemini への呼び出しは **50回**（10問 × 5セット）。Part 3・Part 4 と同じ枠を使うので、同じ日に3つとも走らせると150回を超える。無料枠の上限に当たって途中で止まっても、**毎朝 5:00 のスケジュール実行が足りない分だけを拾う**ので、数日のうちには揃う。音声がまだ無いセットは端末の読み上げで鳴るため、その間も学習は止まらない。
+**Part 5 は音声ファイルを作らない。** Actions も動かない（`data/part5/` はワークフローの対象に入れていない）。
+解説ステップの ▶ は端末（Chrome / Edge）の読み上げで鳴らす。声と速さはアプリの ⚙ で選べる。
 
 ## 動作確認
 
@@ -353,5 +350,4 @@ TOEIC Part 5 の練習セットを5本作る。1セットは10問。
 2. `data/part5/` に5本の JSON が増え、`index.json` の件数が5件ぶん増えていることを確認
 3. アプリの [実践] → [Part 5] を開き、新しい番号が並ぶことを確認
 4. どれか1セットを開き、10問を解いて採点まで進めることを確認
-5. 5〜10分後、`data/part5/audio/<id>/` に10本の MP3 が増えることを確認し、
-   解説ステップの ▶ で Gemini の声が鳴ることを確認
+5. 解説ステップの ▶ で読み上げが鳴ることを確認

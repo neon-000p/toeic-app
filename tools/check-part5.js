@@ -43,14 +43,8 @@ function check(file) {
   if (!/^\d{4}-\d{2}-\d{2}-\d{4}(-[1-9])?$/.test(set.id || '') && !/^p5-sample/.test(set.id || '')) {
     say('id が YYYY-MM-DD-HHMM[-N] の形でない: ' + set.id);
   }
-  /* audio は Actions が付ける。実物が無いのに書いてあるときだけ止める
-     （手で書いた、あるいはファイルを消した状態）。 */
-  if (set.audio !== undefined) {
-    const first = (set.audio.lines || [])[0];
-    if (!first || !fs.existsSync(path.join(DIR, first))) {
-      say('audio が書いてあるのに音声ファイルが無い（audio は Actions に任せる）');
-    }
-  }
+  /* Part 5 は音声ファイルを持たない。端末（Chrome / Edge）の読み上げで鳴らす */
+  if (set.audio !== undefined) say('audio がある（Part 5 は端末の読み上げで鳴らす）');
 
   /* ---- 設問 ---- */
   const qs = set.questions || [];

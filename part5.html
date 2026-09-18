@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-18 7e7bd46">
+<meta name="app-build" content="2026-09-18 7e25ee8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Part 5 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -379,8 +379,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
           '<button class="btn btn-sm icon" id="playAll" title="通して再生">▶</button>' +
           '<button class="btn btn-sm icon" id="stopAll" title="停止">■</button>' +
         '</span></div>' +
-        '<p class="small muted" style="margin:0">空所を正解で埋めた文を読み上げます。' +
-        '各問の ▶ で1文だけ鳴らせます。</p></div>';
+        '<p class="small muted" style="margin:0">空所を正解で埋めた文を、端末の読み上げで鳴らします。' +
+        '各問の ▶ で1文だけ。声と速さは ⚙ で選べます。</p></div>';
 
     list.forEach(function (q, i) {
       var mine = ans[q.id], ok = mine === q.answer;
@@ -467,15 +467,11 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   }
 
   /* ================= 読み上げ =================
-     あらかじめ作ってリポジトリに置いた音声を鳴らし、無ければ端末の読み上げに落ちる。
-     時事英語と同じく1問ずつのファイルなので、まるごと1本は持たない。 */
+     端末（Chrome / Edge）の読み上げで鳴らす。音声ファイルは持たない。
+     Part 5 は1文が短く、正しい形を確かめるための読み上げなので、
+     あらかじめ作っておく必要がない。声と速さは ⚙ で選べる。 */
 
-  var clip = null, chain = false, nextClip = null;
-
-  function lineURL(i) {
-    var a = SET && SET.audio;
-    return a && a.lines && a.lines[i] ? 'data/part5/' + a.lines[i] : '';
-  }
+  var chain = false;
 
   function markPlay(i) {
     var els = stage.querySelectorAll('.qsent[data-i]');
@@ -486,53 +482,18 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     }
   }
 
-  function stopClip() {
-    if (!clip) return;
-    try { clip.pause(); } catch (e) {}
-    clip.onended = clip.onerror = null;
-    clip = null;
-  }
   function stopPlay() {
-    chain = false; nextClip = null;
-    T.TTS.cancel(); stopClip(); markPlay(-1);
+    chain = false;
+    T.TTS.cancel();
+    markPlay(-1);
   }
 
-  /* 次の1本を先に読み込んでおく。鳴り終わってから読み始めると間が空く */
-  function preload(i) {
-    var url = lineURL(i);
-    if (!url) { nextClip = null; return; }
-    var a = new Audio();
-    a.preload = 'auto';
-    a.src = url;
-    nextClip = { url: url, el: a };
-  }
-
+  /* 空所を正解で埋めた文を読ませる。正しい形のまま耳に入れるため */
   function speakOne(i, onend) {
     var q = qs()[i];
     if (!q) { if (onend) onend(); return; }
     markPlay(i);
-    var url = lineURL(i);
-    if (!url) {
-      T.TTS.speak(plain(q), { rate: T.Settings.get('rate'), onend: onend });
-      return;
-    }
-    stopClip();
-    var a = (nextClip && nextClip.url === url) ? nextClip.el : new Audio(url);
-    nextClip = null;
-    preload(i + 1);
-    clip = a;
-    a.playbackRate = T.Settings.get('rate') || 1;
-    var fell = false;
-    /* 音声が無い・鳴らせないときは端末の読み上げに戻す。学習を止めないため */
-    var fallback = function () {
-      if (fell) return;
-      fell = true;
-      stopClip();
-      T.TTS.speak(plain(q), { rate: T.Settings.get('rate'), onend: onend });
-    };
-    a.onended = function () { stopClip(); if (onend) onend(); };
-    a.onerror = fallback;
-    a.play().catch(fallback);
+    T.TTS.speak(plain(q), { rate: T.Settings.get('rate'), onend: onend });
   }
 
   function playOne(i) {
@@ -540,7 +501,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     speakOne(i, function () { markPlay(-1); });
   }
 
-  /* 文と文の間。前後の無音を削ってあるので、ここで区切りを作る */
+  /* 文と文の間。続けて鳴らすと切れ目が無くなるので、ここで区切りを作る */
   var GAP = 700;
 
   function playAll() {
