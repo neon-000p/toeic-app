@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-19-0539",
+  "date": "2026-09-19",
+  "time": "05:39",
+  "createdAt": "2026-09-19T05:39:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "U.S. House Passes Russia Sanctions Bill, Sending It to Trump",
+    "ja": "米下院、対ロシア制裁法案を可決 トランプ大統領の署名待ちへ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The U.S. House of Representatives passed a new Russia sanctions bill on Wednesday, sending it to President Trump for his signature.",
+            "ja": "米下院は水曜日、新たなロシア制裁法案を可決し、トランプ大統領の署名に向けて送付した。"
+          },
+          {
+            "en": "It allows the government to add tariffs of up to 100 percent on the top five buyers of Russian oil and gas.",
+            "ja": "この法案により、ロシア産の石油・天然ガスを最も多く購入する上位5カ国に対し、最大100%の関税を課すことが可能になる。"
+          },
+          {
+            "en": "Lawmakers named the bill after Senator Graham, who championed it before he died earlier this year.",
+            "ja": "法案は、今年死去するまでこの取り組みを主導していたグラハム上院議員にちなんで名付けられた。"
+          },
+          {
+            "en": "The House approved it by a wide margin, with support from both major parties.",
+            "ja": "下院は与野党双方の支持を得て、大差でこれを可決した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The bill also allows sanctions on Russian officials, banks, and other financial institutions.",
+            "ja": "法案にはロシアの政府高官や銀行など金融機関への制裁も盛り込まれている。"
+          },
+          {
+            "en": "The goal is to pressure Russia further by making it harder for other countries to keep buying its energy.",
+            "ja": "狙いは、他国がロシア産エネルギーを買い続けにくくすることで、ロシアへの圧力をさらに強めることだ。"
+          },
+          {
+            "en": "The measure already passed the other chamber in August, and officials say the president plans to sign it soon.",
+            "ja": "この法案は8月にすでにもう一方の議院を通過しており、大統領は近く署名する見通しだと関係者は述べている。"
+          },
+          {
+            "en": "Companies that trade with Russia, including energy and shipping firms, will need to watch the new rules closely.",
+            "ja": "エネルギー企業や海運会社などロシアと取引のある企業は、新たな規制を注視する必要がある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the article, what is the maximum tariff the bill allows on the top five buyers of Russian oil and gas?",
+      "choices": [
+        { "key": "A", "text": "25 percent", "ja": "25%" },
+        { "key": "B", "text": "50 percent", "ja": "50%" },
+        { "key": "C", "text": "100 percent", "ja": "100%" },
+        { "key": "D", "text": "500 percent", "ja": "500%" }
+      ],
+      "answer": "C",
+      "explanation": "正解は(C)100%。第1段落2文目に「It allows the government to add tariffs of up to 100 percent on the top five buyers of Russian oil and gas.」と明記されている。(A)(B)は本文に登場しない数字、(D)は本文中に出てこない数字を使った引っかけ選択肢である。",
+      "evidence": { "p": 0, "s": 1 },
+      "tip": "TOEIC Part 7では、本文に出てくる具体的な数字を選択肢と一つずつ照合する練習が有効。似た数字が並ぶ設問ほど、本文の該当箇所を正確に特定することが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why was the bill named after Senator Graham?",
+      "choices": [
+        { "key": "A", "text": "He proposed the idea just last week.", "ja": "先週提案したから" },
+        { "key": "B", "text": "He championed the legislation before he died earlier this year.", "ja": "死去する前に法案を推進していたから" },
+        { "key": "C", "text": "He voted against the bill in the House.", "ja": "下院でこの法案に反対したから" },
+        { "key": "D", "text": "He is the current U.S. president.", "ja": "現在の米大統領だから" }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B)。第1段落3文目に「Lawmakers named the bill after Senator Graham, who championed it before he died earlier this year.」とあり、彼が死去する前からこの法案を推進していたことが命名の理由だと分かる。(A)は本文にない情報、(C)は本文と矛盾する内容（下院はこの法案を可決しており反対はしていない）、(D)はトランプ大統領と取り違えさせる誤答。",
+      "evidence": { "p": 0, "s": 2 },
+      "tip": "理由を問う設問では、who / because など因果関係を示す語の前後に注目すると根拠となる一文を素早く見つけられる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "sanctions",
+      "pos": "名",
+      "ja": "制裁",
+      "gloss": "（＝ある国や人に対して行う経済的な罰のこと）",
+      "example": {
+        "en": "The government announced new sanctions against the country.",
+        "ja": "政府はその国に対する新たな制裁を発表した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "tariffs",
+      "pos": "名",
+      "ja": "関税",
+      "gloss": "（＝輸入品にかける税金のこと）",
+      "example": {
+        "en": "The company faces higher tariffs on goods from abroad.",
+        "ja": "その企業は海外からの商品に対してより高い関税に直面している。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "championed",
+      "pos": "動",
+      "ja": "推進した、擁護した",
+      "gloss": "",
+      "example": {
+        "en": "She championed the new policy for years before it passed.",
+        "ja": "彼女はその政策が可決される何年も前からそれを推進していた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "signature",
+      "pos": "名",
+      "ja": "署名",
+      "gloss": "",
+      "example": {
+        "en": "The contract needs the manager's signature before Friday.",
+        "ja": "その契約書には金曜日までに部長の署名が必要だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "margin",
+      "pos": "名",
+      "ja": "差、余裕",
+      "gloss": "",
+      "example": {
+        "en": "The bill passed by a wide margin in the vote.",
+        "ja": "その法案は採決で大差をつけて可決された。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "institutions",
+      "pos": "名",
+      "ja": "機関、団体",
+      "gloss": "",
+      "example": {
+        "en": "Several banks and other institutions must follow the new rule.",
+        "ja": "いくつかの銀行やその他の機関は新しい規則に従わなければならない。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "measure",
+      "pos": "名",
+      "ja": "措置、法案",
+      "gloss": "",
+      "example": {
+        "en": "The company introduced a new measure to cut costs.",
+        "ja": "その企業はコスト削減のための新たな措置を導入した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "pressure",
+      "pos": "動",
+      "ja": "〜に圧力をかける",
+      "gloss": "",
+      "example": {
+        "en": "Investors pressure companies to report earnings on time.",
+        "ja": "投資家は企業に対して決算を期限通りに報告するよう圧力をかける。"
+      }
+    }
+  ],
+  "glossary": {
+    "representatives": { "lemma": "representative", "pos": "n", "ja": "代表者、議員", "note": "" },
+    "passed": { "lemma": "pass", "pos": "v", "ja": "可決した、通過した", "note": "" },
+    "sending": { "lemma": "send", "pos": "v", "ja": "送ること", "note": "" },
+    "president": { "lemma": "president", "pos": "n", "ja": "大統領", "note": "" },
+    "signature": { "lemma": "signature", "pos": "n", "ja": "署名", "note": "" },
+    "allows": { "lemma": "allow", "pos": "v", "ja": "〜を可能にする", "note": "" },
+    "government": { "lemma": "government", "pos": "n", "ja": "政府", "note": "" },
+    "tariffs": { "lemma": "tariff", "pos": "n", "ja": "関税", "note": "" },
+    "percent": { "lemma": "percent", "pos": "n", "ja": "パーセント", "note": "" },
+    "buyers": { "lemma": "buyer", "pos": "n", "ja": "購入者、買い手", "note": "" },
+    "lawmakers": { "lemma": "lawmaker", "pos": "n", "ja": "議員、立法者", "note": "" },
+    "named": { "lemma": "name", "pos": "v", "ja": "名付けた", "note": "" },
+    "senator": { "lemma": "senator", "pos": "n", "ja": "上院議員", "note": "" },
+    "championed": { "lemma": "champion", "pos": "v", "ja": "推進した", "note": "" },
+    "died": { "lemma": "die", "pos": "v", "ja": "死去した", "note": "" },
+    "approved": { "lemma": "approve", "pos": "v", "ja": "承認した、可決した", "note": "" },
+    "margin": { "lemma": "margin", "pos": "n", "ja": "差、余裕", "note": "" },
+    "support": { "lemma": "support", "pos": "n", "ja": "支持", "note": "" },
+    "parties": { "lemma": "party", "pos": "n", "ja": "政党", "note": "" },
+    "sanctions": { "lemma": "sanction", "pos": "n", "ja": "制裁", "note": "" },
+    "officials": { "lemma": "official", "pos": "n", "ja": "当局者、関係者", "note": "" },
+    "institutions": { "lemma": "institution", "pos": "n", "ja": "機関", "note": "" },
+    "pressure": { "lemma": "pressure", "pos": "n・v", "ja": "圧力（をかける）", "note": "" },
+    "countries": { "lemma": "country", "pos": "n", "ja": "国々", "note": "" },
+    "measure": { "lemma": "measure", "pos": "n", "ja": "措置、法案", "note": "" },
+    "chamber": { "lemma": "chamber", "pos": "n", "ja": "議院", "note": "" },
+    "companies": { "lemma": "company", "pos": "n", "ja": "企業", "note": "" },
+    "shipping": { "lemma": "shipping", "pos": "n", "ja": "海運", "note": "" },
+    "firms": { "lemma": "firm", "pos": "n", "ja": "会社、企業", "note": "" }
+  },
+  "grammar": {
+    "topic": "形式目的語のit（make/find it + 形容詞 + for 人 + to do）",
+    "quote": "The goal is to pressure Russia further by making it harder for other countries to keep buying its energy.",
+    "quoteJa": "狙いは、他国がロシア産エネルギーを買い続けにくくすることで、ロシアへの圧力をさらに強めることだ。",
+    "blocks": [
+      {
+        "heading": "基本の形",
+        "body": "make や find の後に to不定詞句をそのまま目的語として置くと語順が不自然になるため、形式的な目的語として it を置き、本当の内容（真目的語）は to do 以下にまとめて文末に回す。「make it + 形容詞 + for 人 + to do」で「（人）が〜するのを…にする」という意味になる。今回の例文では「他国がロシア産エネルギーを買い続けるのを、より困難にする」というニュアンスを表す。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "to不定詞句をそのまま主語に置いて書き換えると、For other countries to keep buying its energy will become harder. のようになるが、主語が長く不自然なため、実際の英文では it を使う形が好まれる。同様の構文は find（〜だと分かる）や consider（〜とみなす）でもよく使われる：I find it difficult to reach him.（彼に連絡するのは難しいと分かる）。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、make / find の直後に人や物を置いてしまう誤りを選ばせる設問や、it の位置を問う整序・空所補充問題が出やすい。「make + 人 + to do」という誤った形と混同しないよう、it が本当の目的語の代わりであることを意識したい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "社内通知や案内文でも頻出する表現である。例：The new system makes it easier for employees to submit reports online.（新システムにより、社員はオンラインで報告書を提出しやすくなる。）また：The delay made it impossible for the team to meet the deadline.（その遅れにより、チームは締め切りに間に合わせることができなくなった。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜこの法案が重要か",
+      "body": "今回の法案は、ロシアの軍事行動を支える資金源となっているエネルギー輸出に的を絞った制裁である。石油や天然ガスの輸入国に対して間接的に圧力をかける仕組みで、全面的な禁輸措置よりも各国の対応を見ながら段階的に発動できる柔軟性を持つ。"
+    },
+    {
+      "heading": "📌 業界・関係国の動き",
+      "body": "ロシア産原油の最大の買い手は中国で全体の約5割、次いでインドが約4割弱を占めるとされる。これらの国が輸入を続けるかどうかは、原油価格や海運・保険業界の動向にも影響を与える可能性がある。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響・示唆",
+      "body": "日本はすでにロシア産エネルギーへの依存度を大きく下げているが、この制裁が実際に発動されれば世界のエネルギー市場全体が変動し、原油や液化天然ガス（LNG）の調達コストに波及するおそれがある。商社やエネルギー関連企業は、取引先が制裁対象国と関わっていないかを確認する体制を強める必要がある。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点からの意義",
+      "body": "関税や制裁は、対象となる企業だけでなくサプライチェーン全体のコストとリスクを押し上げる。経営者は取引先の分散や契約条件の見直しを検討する材料となり、投資家はエネルギー・海運・防衛関連など関連銘柄の値動きを注視する材料となる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "House passes Russia sanctions bill, overcoming opposition from Democratic leaders",
+      "publisher": "CBS News",
+      "url": "https://www.cbsnews.com/news/house-votes-russia-sanctions-bill/",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "House passes sweeping Russia sanctions bill honoring Lindsey Graham, sends to Trump",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/16/russia-sanctions-bill-lindsey-graham-congress.html",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "House passes Russia sanctions, sending bill named for Lindsey Graham to Trump's desk",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5971289/russia-sanctions-house-vote-lindsey-graham",
+      "date": "2026-09-16"
+    }
+  ]
+}
