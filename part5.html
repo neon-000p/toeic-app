@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-18 b125c07">
+<meta name="app-build" content="2026-09-18 7e7bd46">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Part 5 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -71,6 +71,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 .verdict.ng{background:var(--ng-soft);color:var(--ng)}
 .verdict.na{background:var(--surface-2);color:var(--muted)}
 
+.qsent.play{background:var(--mark-soft);border-radius:6px}
 .qja{font-size:12.5px;color:var(--muted);margin:8px 0 0;line-height:1.7}
 .expl{font-size:14px;margin:8px 0 0;line-height:1.75}
 .tip{background:var(--surface-2);border-radius:8px;padding:10px 12px;font-size:13.5px;line-height:1.75;margin-top:10px}
@@ -317,7 +318,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   });
 
   function go(i) {
-    T.TTS.cancel();
+    stopPlay();
     step = Math.max(0, Math.min(i, STEPS.length - 1));
     maxStep = Math.max(maxStep, step);
     if (step > 0 && !scored) { scored = true; T.Log.touchToday(); }
@@ -371,20 +372,28 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       (n === list.length ? '全問正解' : (list.length - n) + '問 要復習') + '</span>' +
       (sec ? '<span class="sub">所要 ' + mmss(sec) +
         (showAvg ? '　1問 ' + avg + ' 秒' : '') + '</span>' : '') +
-      '</div>';
+      '</div>' +
+      /* 10問を続けて聞ける。正しい形の文をまとめて耳に入れる用 */
+      '<div class="card"><div class="sec-head"><span class="sec-label">読み上げ</span>' +
+        '<span class="sec-tools">' +
+          '<button class="btn btn-sm icon" id="playAll" title="通して再生">▶</button>' +
+          '<button class="btn btn-sm icon" id="stopAll" title="停止">■</button>' +
+        '</span></div>' +
+        '<p class="small muted" style="margin:0">空所を正解で埋めた文を読み上げます。' +
+        '各問の ▶ で1文だけ鳴らせます。</p></div>';
 
     list.forEach(function (q, i) {
       var mine = ans[q.id], ok = mine === q.answer;
-      html += '<div class="card">' +
+      html += '<div class="card" data-qi="' + i + '">' +
         '<div class="qhead">' +
           '<span class="qnum">Q' + (i + 1) +
             (TYPE_LABEL[q.type] ? '　' + TYPE_LABEL[q.type] : '') + '　' +
             (!mine ? '<span class="verdict na">未解答</span>'
                    : '<span class="verdict ' + (ok ? 'ok' : 'ng') + '">' + (ok ? '正解' : '不正解') + '</span>') +
           '</span>' +
-          '<button class="say" data-say="' + esc(plain(q)) + '" title="読み上げる">▶</button>' +
+          '<button class="say" data-play="' + i + '" title="読み上げる">▶</button>' +
         '</div>' +
-        '<p class="qsent">' + sentence(q, true) + '</p>' +
+        '<p class="qsent" data-i="' + i + '">' + sentence(q, true) + '</p>' +
         q.choices.map(function (c) {
           var cls = c.key === q.answer ? ' ok' : (c.key === mine ? ' ng' : '');
           return '<button class="choice' + cls + '" disabled>' +
@@ -457,6 +466,95 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     if (scroll === 'top') window.scrollTo(0, 0);
   }
 
+  /* ================= 読み上げ =================
+     あらかじめ作ってリポジトリに置いた音声を鳴らし、無ければ端末の読み上げに落ちる。
+     時事英語と同じく1問ずつのファイルなので、まるごと1本は持たない。 */
+
+  var clip = null, chain = false, nextClip = null;
+
+  function lineURL(i) {
+    var a = SET && SET.audio;
+    return a && a.lines && a.lines[i] ? 'data/part5/' + a.lines[i] : '';
+  }
+
+  function markPlay(i) {
+    var els = stage.querySelectorAll('.qsent[data-i]');
+    for (var k = 0; k < els.length; k++) els[k].classList.toggle('play', +els[k].dataset.i === i);
+    if (i >= 0) {
+      var c = stage.querySelector('.qsent[data-i="' + i + '"]');
+      if (c && chain) c.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }
+  }
+
+  function stopClip() {
+    if (!clip) return;
+    try { clip.pause(); } catch (e) {}
+    clip.onended = clip.onerror = null;
+    clip = null;
+  }
+  function stopPlay() {
+    chain = false; nextClip = null;
+    T.TTS.cancel(); stopClip(); markPlay(-1);
+  }
+
+  /* 次の1本を先に読み込んでおく。鳴り終わってから読み始めると間が空く */
+  function preload(i) {
+    var url = lineURL(i);
+    if (!url) { nextClip = null; return; }
+    var a = new Audio();
+    a.preload = 'auto';
+    a.src = url;
+    nextClip = { url: url, el: a };
+  }
+
+  function speakOne(i, onend) {
+    var q = qs()[i];
+    if (!q) { if (onend) onend(); return; }
+    markPlay(i);
+    var url = lineURL(i);
+    if (!url) {
+      T.TTS.speak(plain(q), { rate: T.Settings.get('rate'), onend: onend });
+      return;
+    }
+    stopClip();
+    var a = (nextClip && nextClip.url === url) ? nextClip.el : new Audio(url);
+    nextClip = null;
+    preload(i + 1);
+    clip = a;
+    a.playbackRate = T.Settings.get('rate') || 1;
+    var fell = false;
+    /* 音声が無い・鳴らせないときは端末の読み上げに戻す。学習を止めないため */
+    var fallback = function () {
+      if (fell) return;
+      fell = true;
+      stopClip();
+      T.TTS.speak(plain(q), { rate: T.Settings.get('rate'), onend: onend });
+    };
+    a.onended = function () { stopClip(); if (onend) onend(); };
+    a.onerror = fallback;
+    a.play().catch(fallback);
+  }
+
+  function playOne(i) {
+    stopPlay();
+    speakOne(i, function () { markPlay(-1); });
+  }
+
+  /* 文と文の間。前後の無音を削ってあるので、ここで区切りを作る */
+  var GAP = 700;
+
+  function playAll() {
+    stopPlay();
+    chain = true;
+    (function next(i) {
+      if (!chain || i >= qs().length) { chain = false; markPlay(-1); return; }
+      speakOne(i, function () {
+        if (!chain) return;
+        setTimeout(function () { if (chain) next(i + 1); }, GAP);
+      });
+    })(0);
+  }
+
   /* ================= フッター ================= */
 
   function answered() {
@@ -490,7 +588,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   $('btnPrev').addEventListener('click', function () {
     if (step > 0) { go(step - 1); return; }
     stopClock();
-    T.TTS.cancel();
+    stopPlay();
     location.href = 'index.html?tab=drill';
   });
 
@@ -498,7 +596,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
   function finish() {
     stopClock();
-    T.TTS.cancel();
+    stopPlay();
     if (!scored) { scored = true; T.Log.touchToday(); }
     maxStep = STEPS.length - 1;
     done = true;
@@ -524,11 +622,13 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       return;
     }
 
-    var sy = t.closest('[data-say]');
-    if (sy) { T.TTS.speak(sy.dataset.say, { rate: T.Settings.get('rate') }); return; }
+    var pl = t.closest('[data-play]');
+    if (pl) { playOne(+pl.dataset.play); return; }
+    if (t.closest('#playAll')) { playAll(); return; }
+    if (t.closest('#stopAll')) { stopPlay(); return; }
 
     var sw = t.closest('[data-sayw]');
-    if (sw) { T.TTS.speak(sw.dataset.sayw, { rate: 0.85 }); return; }
+    if (sw) { stopPlay(); T.TTS.speak(sw.dataset.sayw, { rate: 0.85 }); return; }
 
     var st = t.closest('.star[data-term]');
     if (st) {
