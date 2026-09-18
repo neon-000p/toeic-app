@@ -64,14 +64,33 @@
       "type": "detail",
       "prompt": "According to the article, what is the maximum tariff the bill allows on the top five buyers of Russian oil and gas?",
       "choices": [
-        { "key": "A", "text": "25 percent", "ja": "25%" },
-        { "key": "B", "text": "50 percent", "ja": "50%" },
-        { "key": "C", "text": "100 percent", "ja": "100%" },
-        { "key": "D", "text": "500 percent", "ja": "500%" }
+        {
+          "key": "A",
+          "text": "25 percent",
+          "ja": "25%"
+        },
+        {
+          "key": "B",
+          "text": "50 percent",
+          "ja": "50%"
+        },
+        {
+          "key": "C",
+          "text": "100 percent",
+          "ja": "100%"
+        },
+        {
+          "key": "D",
+          "text": "500 percent",
+          "ja": "500%"
+        }
       ],
       "answer": "C",
       "explanation": "正解は(C)100%。第1段落2文目に「It allows the government to add tariffs of up to 100 percent on the top five buyers of Russian oil and gas.」と明記されている。(A)(B)は本文に登場しない数字、(D)は本文中に出てこない数字を使った引っかけ選択肢である。",
-      "evidence": { "p": 0, "s": 1 },
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
       "tip": "TOEIC Part 7では、本文に出てくる具体的な数字を選択肢と一つずつ照合する練習が有効。似た数字が並ぶ設問ほど、本文の該当箇所を正確に特定することが重要。"
     },
     {
@@ -79,14 +98,33 @@
       "type": "reason",
       "prompt": "Why was the bill named after Senator Graham?",
       "choices": [
-        { "key": "A", "text": "He proposed the idea just last week.", "ja": "先週提案したから" },
-        { "key": "B", "text": "He championed the legislation before he died earlier this year.", "ja": "死去する前に法案を推進していたから" },
-        { "key": "C", "text": "He voted against the bill in the House.", "ja": "下院でこの法案に反対したから" },
-        { "key": "D", "text": "He is the current U.S. president.", "ja": "現在の米大統領だから" }
+        {
+          "key": "A",
+          "text": "He proposed the idea just last week.",
+          "ja": "先週提案したから"
+        },
+        {
+          "key": "B",
+          "text": "He championed the legislation before he died earlier this year.",
+          "ja": "死去する前に法案を推進していたから"
+        },
+        {
+          "key": "C",
+          "text": "He voted against the bill in the House.",
+          "ja": "下院でこの法案に反対したから"
+        },
+        {
+          "key": "D",
+          "text": "He is the current U.S. president.",
+          "ja": "現在の米大統領だから"
+        }
       ],
       "answer": "B",
       "explanation": "正解は(B)。第1段落3文目に「Lawmakers named the bill after Senator Graham, who championed it before he died earlier this year.」とあり、彼が死去する前からこの法案を推進していたことが命名の理由だと分かる。(A)は本文にない情報、(C)は本文と矛盾する内容（下院はこの法案を可決しており反対はしていない）、(D)はトランプ大統領と取り違えさせる誤答。",
-      "evidence": { "p": 0, "s": 2 },
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
       "tip": "理由を問う設問では、who / because など因果関係を示す語の前後に注目すると根拠となる一文を素早く見つけられる。"
     }
   ],
@@ -181,35 +219,180 @@
     }
   ],
   "glossary": {
-    "representatives": { "lemma": "representative", "pos": "n", "ja": "代表者、議員", "note": "" },
-    "passed": { "lemma": "pass", "pos": "v", "ja": "可決した、通過した", "note": "" },
-    "sending": { "lemma": "send", "pos": "v", "ja": "送ること", "note": "" },
-    "president": { "lemma": "president", "pos": "n", "ja": "大統領", "note": "" },
-    "signature": { "lemma": "signature", "pos": "n", "ja": "署名", "note": "" },
-    "allows": { "lemma": "allow", "pos": "v", "ja": "〜を可能にする", "note": "" },
-    "government": { "lemma": "government", "pos": "n", "ja": "政府", "note": "" },
-    "tariffs": { "lemma": "tariff", "pos": "n", "ja": "関税", "note": "" },
-    "percent": { "lemma": "percent", "pos": "n", "ja": "パーセント", "note": "" },
-    "buyers": { "lemma": "buyer", "pos": "n", "ja": "購入者、買い手", "note": "" },
-    "lawmakers": { "lemma": "lawmaker", "pos": "n", "ja": "議員、立法者", "note": "" },
-    "named": { "lemma": "name", "pos": "v", "ja": "名付けた", "note": "" },
-    "senator": { "lemma": "senator", "pos": "n", "ja": "上院議員", "note": "" },
-    "championed": { "lemma": "champion", "pos": "v", "ja": "推進した", "note": "" },
-    "died": { "lemma": "die", "pos": "v", "ja": "死去した", "note": "" },
-    "approved": { "lemma": "approve", "pos": "v", "ja": "承認した、可決した", "note": "" },
-    "margin": { "lemma": "margin", "pos": "n", "ja": "差、余裕", "note": "" },
-    "support": { "lemma": "support", "pos": "n", "ja": "支持", "note": "" },
-    "parties": { "lemma": "party", "pos": "n", "ja": "政党", "note": "" },
-    "sanctions": { "lemma": "sanction", "pos": "n", "ja": "制裁", "note": "" },
-    "officials": { "lemma": "official", "pos": "n", "ja": "当局者、関係者", "note": "" },
-    "institutions": { "lemma": "institution", "pos": "n", "ja": "機関", "note": "" },
-    "pressure": { "lemma": "pressure", "pos": "n・v", "ja": "圧力（をかける）", "note": "" },
-    "countries": { "lemma": "country", "pos": "n", "ja": "国々", "note": "" },
-    "measure": { "lemma": "measure", "pos": "n", "ja": "措置、法案", "note": "" },
-    "chamber": { "lemma": "chamber", "pos": "n", "ja": "議院", "note": "" },
-    "companies": { "lemma": "company", "pos": "n", "ja": "企業", "note": "" },
-    "shipping": { "lemma": "shipping", "pos": "n", "ja": "海運", "note": "" },
-    "firms": { "lemma": "firm", "pos": "n", "ja": "会社、企業", "note": "" }
+    "representatives": {
+      "lemma": "representative",
+      "pos": "n",
+      "ja": "代表者、議員",
+      "note": ""
+    },
+    "passed": {
+      "lemma": "pass",
+      "pos": "v",
+      "ja": "可決した、通過した",
+      "note": ""
+    },
+    "sending": {
+      "lemma": "send",
+      "pos": "v",
+      "ja": "送ること",
+      "note": ""
+    },
+    "president": {
+      "lemma": "president",
+      "pos": "n",
+      "ja": "大統領",
+      "note": ""
+    },
+    "signature": {
+      "lemma": "signature",
+      "pos": "n",
+      "ja": "署名",
+      "note": ""
+    },
+    "allows": {
+      "lemma": "allow",
+      "pos": "v",
+      "ja": "〜を可能にする",
+      "note": ""
+    },
+    "government": {
+      "lemma": "government",
+      "pos": "n",
+      "ja": "政府",
+      "note": ""
+    },
+    "tariffs": {
+      "lemma": "tariff",
+      "pos": "n",
+      "ja": "関税",
+      "note": ""
+    },
+    "percent": {
+      "lemma": "percent",
+      "pos": "n",
+      "ja": "パーセント",
+      "note": ""
+    },
+    "buyers": {
+      "lemma": "buyer",
+      "pos": "n",
+      "ja": "購入者、買い手",
+      "note": ""
+    },
+    "lawmakers": {
+      "lemma": "lawmaker",
+      "pos": "n",
+      "ja": "議員、立法者",
+      "note": ""
+    },
+    "named": {
+      "lemma": "name",
+      "pos": "v",
+      "ja": "名付けた",
+      "note": ""
+    },
+    "senator": {
+      "lemma": "senator",
+      "pos": "n",
+      "ja": "上院議員",
+      "note": ""
+    },
+    "championed": {
+      "lemma": "champion",
+      "pos": "v",
+      "ja": "推進した",
+      "note": ""
+    },
+    "died": {
+      "lemma": "die",
+      "pos": "v",
+      "ja": "死去した",
+      "note": ""
+    },
+    "approved": {
+      "lemma": "approve",
+      "pos": "v",
+      "ja": "承認した、可決した",
+      "note": ""
+    },
+    "margin": {
+      "lemma": "margin",
+      "pos": "n",
+      "ja": "差、余裕",
+      "note": ""
+    },
+    "support": {
+      "lemma": "support",
+      "pos": "n",
+      "ja": "支持",
+      "note": ""
+    },
+    "parties": {
+      "lemma": "party",
+      "pos": "n",
+      "ja": "政党",
+      "note": ""
+    },
+    "sanctions": {
+      "lemma": "sanction",
+      "pos": "n",
+      "ja": "制裁",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "n",
+      "ja": "当局者、関係者",
+      "note": ""
+    },
+    "institutions": {
+      "lemma": "institution",
+      "pos": "n",
+      "ja": "機関",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "n・v",
+      "ja": "圧力（をかける）",
+      "note": ""
+    },
+    "countries": {
+      "lemma": "country",
+      "pos": "n",
+      "ja": "国々",
+      "note": ""
+    },
+    "measure": {
+      "lemma": "measure",
+      "pos": "n",
+      "ja": "措置、法案",
+      "note": ""
+    },
+    "chamber": {
+      "lemma": "chamber",
+      "pos": "n",
+      "ja": "議院",
+      "note": ""
+    },
+    "companies": {
+      "lemma": "company",
+      "pos": "n",
+      "ja": "企業",
+      "note": ""
+    },
+    "shipping": {
+      "lemma": "shipping",
+      "pos": "n",
+      "ja": "海運",
+      "note": ""
+    },
+    "firms": {
+      "lemma": "firm",
+      "pos": "n",
+      "ja": "会社、企業",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "形式目的語のit（make/find it + 形容詞 + for 人 + to do）",
@@ -271,5 +454,22 @@
       "url": "https://www.npr.org/2026/09/16/nx-s1-5971289/russia-sanctions-house-vote-lindsey-graham",
       "date": "2026-09-16"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-19-0539/00.mp3",
+      "audio/2026-09-19-0539/01.mp3",
+      "audio/2026-09-19-0539/02.mp3",
+      "audio/2026-09-19-0539/03.mp3",
+      "audio/2026-09-19-0539/04.mp3",
+      "audio/2026-09-19-0539/05.mp3",
+      "audio/2026-09-19-0539/06.mp3",
+      "audio/2026-09-19-0539/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 211848,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-18T20:46:35.040Z",
+    "trimmed": true
+  }
 }
