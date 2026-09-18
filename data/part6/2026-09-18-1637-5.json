@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-09-18-1637-5",
+  "date": "2026-09-18",
+  "time": "16:37",
+  "createdAt": "2026-09-18T16:37:00+09:00",
+  "sample": false,
+  "docType": "letter",
+  "scene": "手紙｜応募者への面接案内",
+  "intro": "Questions 1-4 refer to the following letter.",
+  "header": [
+    {
+      "label": "",
+      "text": "3 October"
+    },
+    {
+      "label": "",
+      "text": "Dear Ms. Farrow,"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "Thank you for applying for the position of assistant editor at Halverson Press this month.",
+          "ja": "今月、ハルバーソン・プレスの編集アシスタント職にご応募いただき、ありがとうございます。"
+        },
+        {
+          "en": "We were impressed by your ------- as a copy editor at a monthly magazine.",
+          "ja": "月刊誌の校正担当としてのご経験に感銘を受けました。",
+          "q": 1
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "We would like to invite you to an interview at our office on 14 October.",
+          "ja": "10月14日に当社にて面接を行いたく、ご案内いたします。"
+        },
+        {
+          "en": "The interview ------- about an hour and will include a short editing exercise.",
+          "ja": "面接は1時間ほどで、短い編集の実技が含まれます。",
+          "q": 2
+        },
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 3
+        },
+        {
+          "en": "Printed copies are preferred, but a tablet is also acceptable.",
+          "ja": "紙に印刷したものが望ましいですが、タブレットでも構いません。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Please confirm your attendance ------- replying to this letter before 10 October.",
+          "ja": "10月10日までにこの手紙にご返信いただき、出席の可否をお知らせください。",
+          "q": 4
+        },
+        {
+          "en": "We look forward to meeting you and discussing the role in person.",
+          "ja": "お会いして、直接この職についてお話しできるのを楽しみにしております。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "attention",
+          "ja": "注意"
+        },
+        {
+          "key": "B",
+          "text": "opinion",
+          "ja": "意見"
+        },
+        {
+          "key": "C",
+          "text": "instruction",
+          "ja": "指示"
+        },
+        {
+          "key": "D",
+          "text": "experience",
+          "ja": "経験"
+        }
+      ],
+      "answer": "D",
+      "explanation": "as a copy editor at a monthly magazine と続くので、これまでの職歴を指す experience。A の attention は「注意」で、as 以下の職歴とつながらない。C の instruction は「指示」で、応募者を評価する語にならない。",
+      "tip": "be impressed by your ------- のあとに as ... が続いたら、その人の立場や経歴の話。空所には経歴・技能を表す名詞が入る。"
+    },
+    {
+      "id": "q2",
+      "type": "verb",
+      "choices": [
+        {
+          "key": "A",
+          "text": "lasted",
+          "ja": "続いた"
+        },
+        {
+          "key": "B",
+          "text": "will last",
+          "ja": "続く予定だ"
+        },
+        {
+          "key": "C",
+          "text": "has lasted",
+          "ja": "続いてきた"
+        },
+        {
+          "key": "D",
+          "text": "lasting",
+          "ja": "続いている"
+        }
+      ],
+      "answer": "B",
+      "explanation": "前の文で面接は10月14日と示され、手紙の日付は10月3日。まだ行われていないので未来の形になる。A の過去形と C の現在完了は、すでに起きたことを表すのでこの場面に合わない。空所の文ではなく、前の文と手紙の日付で決まる問題。",
+      "tip": "手紙やメールでは、頭の日付と本文の日付を見比べると時制が決まる。空所の文の中に手がかりが無いときは、必ず文書の日付に戻る。"
+    },
+    {
+      "id": "q3",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Our office has moved to the fourth floor of the Weston Building.",
+          "ja": "当社は現在、ウェストンビル4階に移転しています。"
+        },
+        {
+          "key": "B",
+          "text": "The position was posted on our website at the end of August.",
+          "ja": "この職の募集は8月末に当社サイトに掲載されました。"
+        },
+        {
+          "key": "C",
+          "text": "Please bring two samples of your recent work to the meeting.",
+          "ja": "当日は最近のお仕事の見本を2点お持ちください。"
+        },
+        {
+          "key": "D",
+          "text": "We received more than sixty applications for this position this year.",
+          "ja": "今年はこの職に60件を超える応募がありました。"
+        }
+      ],
+      "answer": "C",
+      "explanation": "後ろの文が「紙に印刷したものが望ましいが、タブレットでも構わない」と続くので、その前に「何かを持参する」話が要る。見本の持参を求める C がつながる。B と D は事実だが、印刷物の話には結び付かない。A の移転は場所の話で、直前の面接時間の説明からも後ろの文からも離れている。",
+      "tip": "一文挿入で後ろの文が「形式の指定」をしていたら、その前に「何を持ってくるか」を述べる文が入る。後ろの文が何について言っているかを先に押さえる。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "choices": [
+        {
+          "key": "A",
+          "text": "by",
+          "ja": "〜することによって"
+        },
+        {
+          "key": "B",
+          "text": "for",
+          "ja": "〜のために"
+        },
+        {
+          "key": "C",
+          "text": "with",
+          "ja": "〜とともに"
+        },
+        {
+          "key": "D",
+          "text": "into",
+          "ja": "〜の中へ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "confirm ------- replying と動名詞が続き、「返信することによって確認する」という手段を表すので by。B の for は目的、C の with は道具や同伴を表し、動作の手段としては使わない。",
+      "tip": "by + 動名詞は「〜することによって」という手段の形。空所の直後が ing 形なら、まず by を候補にする。"
+    }
+  ],
+  "glossary": {
+    "applying for": {
+      "lemma": "apply for",
+      "pos": "熟",
+      "ja": "〜に応募する",
+      "note": "apply to は「〜に申し込む・当てはまる」"
+    },
+    "copy editor": {
+      "lemma": "copy editor",
+      "pos": "名",
+      "ja": "校正担当、原稿整理の編集者",
+      "note": ""
+    },
+    "editing exercise": {
+      "lemma": "exercise",
+      "pos": "名",
+      "ja": "実技、練習課題",
+      "note": "多義語。「運動」の意味もある"
+    },
+    "printed copies": {
+      "lemma": "printed copy",
+      "pos": "名",
+      "ja": "印刷したもの、紙の写し",
+      "note": ""
+    },
+    "look forward to": {
+      "lemma": "look forward to",
+      "pos": "熟",
+      "ja": "〜を楽しみにする",
+      "note": "to のあとは名詞か動名詞"
+    },
+    "in person": {
+      "lemma": "in person",
+      "pos": "熟",
+      "ja": "直接会って",
+      "note": "online の対"
+    },
+    "impressed": {
+      "lemma": "impressed",
+      "pos": "形",
+      "ja": "感銘を受けた",
+      "note": "be impressed by の形で使う"
+    },
+    "acceptable": {
+      "lemma": "acceptable",
+      "pos": "形",
+      "ja": "受け入れられる、差し支えない",
+      "note": ""
+    },
+    "attendance": {
+      "lemma": "attendance",
+      "pos": "名",
+      "ja": "出席",
+      "note": "attend（出席する）の名詞形"
+    }
+  },
+  "point": {
+    "lead": "手紙は頭の日付を先に見てから本文を読む",
+    "items": [
+      {
+        "title": "日付を2つ突き合わせる",
+        "body": "手紙やメールの時制は、頭の日付と本文に出る日付の前後関係で決まる。10月3日の手紙で面接が10月14日なら、面接についての動詞は未来。空所の文の中に手がかりが無いときは、必ず文書の日付に戻る。"
+      },
+      {
+        "title": "後ろの文が形式を指定していたら、前は持ち物",
+        "body": "「紙が望ましいがタブレットでも可」のように形式を指定する文があれば、その前には何を用意するかを述べる文が入る。一文挿入は、後ろの文が何について言っているかを先に押さえてから選ぶ。"
+      },
+      {
+        "title": "by + ing は手段",
+        "body": "空所の直後が動名詞なら by（〜することによって）をまず疑う。for や with は目的や道具を表し、動作の手段としては使わない。前置詞は後ろの形で絞れる。"
+      }
+    ]
+  }
+}

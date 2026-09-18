@@ -13,6 +13,7 @@ vocab.html           語彙帳（間隔反復の復習・持ち出し）
 part3.html           Part 3 トレーナー（会話1本＋3問・5ステップ）
 part4.html           Part 4 トレーナー（説明文1本＋3問・5ステップ）
 part5.html           Part 5 トレーナー（短文穴埋め10問・4ステップ）
+part6.html           Part 6 トレーナー（文書1本＋4問・5ステップ）
 core.js              共通コア（設定・語彙帳・学習ログ・読み上げ）
 style.css            共通スタイル（色・部品）
 data/news/index.json 目次（新しい順・最大30件）
@@ -20,11 +21,13 @@ data/news/*.json     1日分の教材
 data/part3/*.json    Part 3 の1セット
 data/part4/*.json    Part 4 の1セット
 data/part5/*.json    Part 5 の1セット（10問）
+data/part6/*.json    Part 6 の1セット（文書1本＋4問）
 SCHEMA.md            教材データの仕様
 skills/news-toeic-english.SKILL.md  ルーティン側のスキル（ステップ5に JSON 出力を追加済み）
 skills/part3.SKILL.md               Part 3 ルーティンの仕様書
 skills/part4.SKILL.md               Part 4 ルーティンの仕様書
 skills/part5.SKILL.md               Part 5 ルーティンの仕様書
+skills/part6.SKILL.md               Part 6 ルーティンの仕様書
 ```
 
 `core.js` と `style.css` は今後 `part3.html` などからも読む。同一オリジンなので
@@ -64,6 +67,7 @@ Part 3（会話問題）と Part 4（説明文問題）は週1回のルーティ
 node tools/check-part3.js --all
 node tools/check-part4.js --all
 node tools/check-part5.js --all
+node tools/check-part6.js --all
 ```
 
 音声は書かない。`data/part3/` `data/part4/` に JSON が入ると GitHub Actions が
@@ -119,10 +123,25 @@ Part 3 と同じ5ステップ（設問 → 解説 → 対訳 → 語彙 → Poin
   読むのは空所を正解で埋めた文なので、正しい形のまま耳に入る。
   音声ファイルは持たず、端末（Chrome / Edge）の読み上げで鳴らす
 
+## Part 6（長文穴埋め）
+
+文書1本に空所が4つ。そのうち**1問は一文挿入**（文書に合う1文を選ぶ）。本番の1セットと
+同じ単位で、5ステップ（設問 → 解説 → 対訳 → 語彙 → Point）。
+
+- **設問文が無い。** 問題文にあたるのは本文の空所そのもの。本番の紙面と同じく、
+  空所は `(1)` のような番号付きの下線で出て、その下に4問の選択肢が並ぶ。
+  一文挿入の空所だけは、幅いっぱいの下線になる
+- **空所の文だけでは決まらない問題が2問以上入る。** 時制は文書の日付で、指示語は
+  前の文で、接続副詞は前後の向きで決まる。ここが Part 5 との違いで、
+  `tools/check-part6.js` も一文挿入がちょうど1問あることを確かめる
+- **対訳では空所が正解で埋まった形**で読める。文をタップすると語注が出て、
+  ▶ で1文、見出しの ▶ で文書全体を読み上げる（端末の読み上げ）
+- 場面は最初から表示する。文書を全部見せる以上、伏せる意味がないため
+
 ## まだ無いもの
 
 - 学習記録の可視化（現在は連続日数のみ）
-- Part 6〜7
+- Part 7
 
 ## 語の意味（Gemini）
 

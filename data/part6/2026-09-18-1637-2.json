@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-09-18-1637-2",
+  "date": "2026-09-18",
+  "time": "16:37",
+  "createdAt": "2026-09-18T16:37:00+09:00",
+  "sample": false,
+  "docType": "notice",
+  "scene": "掲示｜駐車場の閉鎖と代替の案内",
+  "intro": "Questions 1-4 refer to the following notice.",
+  "header": [
+    {
+      "label": "",
+      "text": "Parking Lot B Closure"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "Parking Lot B will be closed from Monday, 5 October, while the surface is repaved.",
+          "ja": "B駐車場は、路面の再舗装のため10月5日月曜から閉鎖されます。"
+        },
+        {
+          "en": "Drivers who normally park ------- should use Lot D, which is conveniently located behind the main cafeteria.",
+          "ja": "普段そこに駐車している方は、食堂の裏手にあるD駐車場をご利用ください。",
+          "q": 1
+        },
+        {
+          "en": "Lot D has more than eighty spaces and is open from six in the morning.",
+          "ja": "D駐車場は80台以上の区画があり、朝6時から利用できます。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "The work is expected to take about two weeks, ------- on the weather.",
+          "ja": "工事は天候にもよりますが、2週間ほどかかる見込みです。",
+          "q": 2
+        },
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 3
+        },
+        {
+          "en": "A notice will be posted at both entrances on the day it reopens.",
+          "ja": "再開の日には、両方の入口に掲示を出します。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Vehicles left in Lot B ------- Sunday evening will be towed at the owner's expense.",
+          "ja": "日曜の夕方を過ぎてB駐車場に残っている車両は、所有者の負担でレッカー移動します。",
+          "q": 4
+        },
+        {
+          "en": "Questions may be directed to the facilities office at extension 4120.",
+          "ja": "ご不明な点は、内線4120の施設課までお問い合わせください。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "pron",
+      "choices": [
+        {
+          "key": "A",
+          "text": "then",
+          "ja": "そのとき"
+        },
+        {
+          "key": "B",
+          "text": "also",
+          "ja": "〜も"
+        },
+        {
+          "key": "C",
+          "text": "there",
+          "ja": "そこに"
+        },
+        {
+          "key": "D",
+          "text": "once",
+          "ja": "いったん〜すると"
+        }
+      ],
+      "answer": "C",
+      "explanation": "前の文で閉鎖されるのは Lot B だと述べられている。その場所を受けて「そこに駐車している人は」と言うので there。A の then は時、B の also は追加で、場所を受ける働きがない。空所の文だけを見ても決まらず、前の文に戻って初めて決まる。",
+      "tip": "there / then / it / they のような語は、前の文のどこかを指している。空所の文で意味が取れないときは、直前の文にその指し先があると考えて戻る。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "counting",
+          "ja": "数えながら"
+        },
+        {
+          "key": "B",
+          "text": "waiting",
+          "ja": "待ちながら"
+        },
+        {
+          "key": "C",
+          "text": "relying",
+          "ja": "頼りながら"
+        },
+        {
+          "key": "D",
+          "text": "depending",
+          "ja": "次第で"
+        }
+      ],
+      "answer": "D",
+      "explanation": "depending on the weather で「天候次第で」。工期が天候に左右されることを表す決まった形。C の relying は rely on で「頼る」だが、工期の見込みを述べる場面では使わない。A の counting on は「当てにする」で意味が合わない。",
+      "tip": "空所の直後の前置詞（ここでは on）と組む語を思い出す型。depend on / rely on / count on は形が似ているので、意味の違いで決める。"
+    },
+    {
+      "id": "q3",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Employees may also request a permit for the visitor lot near the front gate.",
+          "ja": "従業員は正門近くの来客用駐車場の許可証も申請できます。"
+        },
+        {
+          "key": "B",
+          "text": "Lot B will reopen as soon as the new surface has dried completely.",
+          "ja": "新しい路面が完全に乾き次第、B駐車場は再開します。"
+        },
+        {
+          "key": "C",
+          "text": "The cafeteria will serve breakfast during the renovation of the kitchen.",
+          "ja": "厨房の改装中、食堂では朝食を提供します。"
+        },
+        {
+          "key": "D",
+          "text": "Anyone parking without a permit will be asked to move immediately.",
+          "ja": "許可証なしで駐車した人は、すぐに移動を求められます。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "前の文は工期の見込み、後ろの文は「再開の日に掲示を出す」。再開という話題を初めて出す B が両方をつなぐ。A と D は駐車の規則で、工事の日程という流れから外れる。C は食堂の話で、この掲示の用件と関係がない。",
+      "tip": "一文挿入は、後ろの文にある語（ここでは it reopens）が何を受けているかを見る。その語を初めて出す文が正解になる。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "choices": [
+        {
+          "key": "A",
+          "text": "after",
+          "ja": "〜より後に"
+        },
+        {
+          "key": "B",
+          "text": "among",
+          "ja": "〜の中で"
+        },
+        {
+          "key": "C",
+          "text": "along",
+          "ja": "〜に沿って"
+        },
+        {
+          "key": "D",
+          "text": "within",
+          "ja": "〜以内に"
+        }
+      ],
+      "answer": "A",
+      "explanation": "閉鎖は月曜からなので、その前の日曜夕方を過ぎても残っている車が対象になる。時点を基準に「それより後」を表すのは after。D の within は期間の長さを取る語で、Sunday evening のような時点は取らない。",
+      "tip": "前置詞は後ろに来る語が時点か期間かで絞れる。after / before / by は時点、within / during は幅を取る。"
+    }
+  ],
+  "glossary": {
+    "parking lot": {
+      "lemma": "parking lot",
+      "pos": "名",
+      "ja": "駐車場",
+      "note": "英国では car park"
+    },
+    "conveniently located": {
+      "lemma": "conveniently located",
+      "pos": "熟",
+      "ja": "便利な場所にある",
+      "note": "求人や宿の案内で頻出"
+    },
+    "expected to take": {
+      "lemma": "be expected to take",
+      "pos": "熟",
+      "ja": "〜かかる見込みだ",
+      "note": ""
+    },
+    "owner's expense": {
+      "lemma": "at someone's expense",
+      "pos": "熟",
+      "ja": "〜の負担で",
+      "note": "at company expense なら会社負担"
+    },
+    "directed to": {
+      "lemma": "direct A to B",
+      "pos": "熟",
+      "ja": "A を B に向ける、回す",
+      "note": "問い合わせ先の案内で使う"
+    },
+    "facilities office": {
+      "lemma": "facilities",
+      "pos": "名",
+      "ja": "施設、設備",
+      "note": "facilities office で施設課"
+    },
+    "repaved": {
+      "lemma": "repave",
+      "pos": "動",
+      "ja": "舗装し直す",
+      "note": ""
+    },
+    "towed": {
+      "lemma": "tow",
+      "pos": "動",
+      "ja": "レッカー移動する",
+      "note": ""
+    },
+    "entrances": {
+      "lemma": "entrance",
+      "pos": "名",
+      "ja": "入口",
+      "note": "exit（出口）の対"
+    },
+    "extension": {
+      "lemma": "extension",
+      "pos": "名",
+      "ja": "内線",
+      "note": "多義語。「延長」の意味もある"
+    }
+  },
+  "point": {
+    "lead": "指示語と接続の語は、必ず前の文に戻って決める",
+    "items": [
+      {
+        "title": "there / it / they は前の文を指す",
+        "body": "空所の文だけを読んで意味が取れないときは、指示語が前の文の何かを受けている。Part 6 はこの形で必ず1問作れるので、訳が通らないと感じたら一つ前の文に戻る癖をつける。"
+      },
+      {
+        "title": "一文挿入は後ろの文から逆算する",
+        "body": "空所の次の文に出てくる語（it reopens、this change、そのほか代名詞）は、前の文で初めて出た何かを受けている。その何かを出している選択肢が正解になる。"
+      },
+      {
+        "title": "前置詞は時点か期間かで半分に減らす",
+        "body": "after / before / by は時点を取り、within / during は幅を取る。空所の後ろが曜日や時刻なら前者、three days のような長さなら後者。意味を思い出す前に、この形の条件で候補を削る。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "type": "part6-history",
+  "updatedAt": "2026-09-18T16:37:00+09:00",
+  "items": [
+    {
+      "id": "2026-09-18-1637-5",
+      "date": "2026-09-18",
+      "scene": "手紙｜応募者への面接案内",
+      "docType": "letter",
+      "types": [
+        "vocab",
+        "verb",
+        "sentence",
+        "prep"
+      ]
+    },
+    {
+      "id": "2026-09-18-1637-4",
+      "date": "2026-09-18",
+      "scene": "広告｜オフィス清掃サービス",
+      "docType": "advertisement",
+      "types": [
+        "form",
+        "sentence",
+        "vocab",
+        "comp"
+      ]
+    },
+    {
+      "id": "2026-09-18-1637-3",
+      "date": "2026-09-18",
+      "scene": "記事｜地元のパン店が2号店を開く",
+      "docType": "article",
+      "types": [
+        "verb",
+        "vocab",
+        "sentence",
+        "form"
+      ]
+    },
+    {
+      "id": "2026-09-18-1637-2",
+      "date": "2026-09-18",
+      "scene": "掲示｜駐車場の閉鎖と代替の案内",
+      "docType": "notice",
+      "types": [
+        "pron",
+        "vocab",
+        "sentence",
+        "prep"
+      ]
+    },
+    {
+      "id": "2026-09-18-1637-1",
+      "date": "2026-09-18",
+      "scene": "社内メール｜在庫システムの切り替え",
+      "docType": "email",
+      "types": [
+        "verb",
+        "sentence",
+        "vocab",
+        "conj"
+      ]
+    }
+  ]
+}

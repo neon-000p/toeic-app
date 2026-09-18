@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-09-18-1637-3",
+  "date": "2026-09-18",
+  "time": "16:37",
+  "createdAt": "2026-09-18T16:37:00+09:00",
+  "sample": false,
+  "docType": "article",
+  "scene": "記事｜地元のパン店が2号店を開く",
+  "intro": "Questions 1-4 refer to the following article.",
+  "header": [
+    {
+      "label": "",
+      "text": "Riverside Bakery to Open Second Location"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "Riverside Bakery will open a second shop on Center Street next month, the owners ------- last week.",
+          "ja": "リバーサイド・ベーカリーが来月センター通りに2号店を開くと、経営者が先週発表した。",
+          "q": 1
+        },
+        {
+          "en": "The bakery opened its first shop in 2019 and now employs twenty-two people.",
+          "ja": "同店は2019年に1号店を開き、現在は22人を雇用している。"
+        },
+        {
+          "en": "Demand for its bread has grown steadily since a local hotel began serving it.",
+          "ja": "地元のホテルが提供を始めて以来、同店のパンの需要は着実に伸びている。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "The new shop will be about twice the ------- of the original, with room for a small café.",
+          "ja": "新しい店舗は1号店の約2倍の広さで、小さなカフェを併設できる余裕がある。",
+          "q": 2
+        },
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 3
+        },
+        {
+          "en": "Interviews will be held at the current shop in early November.",
+          "ja": "面接は11月上旬に現在の店舗で行われる。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "The owners credit their ------- to careful planning and a loyal customer base.",
+          "ja": "経営者は、成功の理由を入念な計画と常連客の存在にあるとしている。",
+          "q": 4
+        },
+        {
+          "en": "They expect the Center Street shop to open before the end of the year.",
+          "ja": "センター通りの店舗は年内の開店を見込んでいる。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "verb",
+      "choices": [
+        {
+          "key": "A",
+          "text": "announce",
+          "ja": "発表する"
+        },
+        {
+          "key": "B",
+          "text": "will announce",
+          "ja": "発表する予定だ"
+        },
+        {
+          "key": "C",
+          "text": "announced",
+          "ja": "発表した"
+        },
+        {
+          "key": "D",
+          "text": "announcing",
+          "ja": "発表している"
+        }
+      ],
+      "answer": "C",
+      "explanation": "文末に last week とあるので過去形。開店自体は来月だが、発表は先週の出来事という組み合わせになっている。B の will announce は未来で last week と矛盾する。A の現在形では、記事が伝える出来事の時点を表せない。",
+      "tip": "1つの文に未来（next month）と過去（last week）が混ざることがある。空所の動詞がどちらの出来事かを、その動詞のすぐそばの時の語で決める。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "size",
+          "ja": "広さ、大きさ"
+        },
+        {
+          "key": "B",
+          "text": "weight",
+          "ja": "重さ"
+        },
+        {
+          "key": "C",
+          "text": "price",
+          "ja": "価格"
+        },
+        {
+          "key": "D",
+          "text": "number",
+          "ja": "数"
+        }
+      ],
+      "answer": "A",
+      "explanation": "twice the ------- of the original のあとに with room for a small café と続き、店舗の広さの話だと分かる。C の price では「2倍の価格」となり、カフェの余裕という後半とつながらない。空所の文の後半まで読んで決まる問題。",
+      "tip": "twice the ------- of ... の形では、後ろに続く説明が手がかりになる。広さ・重さ・価格のどれを比べているかは、その文の残りを読めば決まる。"
+    },
+    {
+      "id": "q3",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The bakery has no plans to change its opening hours this year.",
+          "ja": "同店は今年、営業時間を変える予定はない。"
+        },
+        {
+          "key": "B",
+          "text": "Its bread is delivered to three restaurants in the neighbouring town.",
+          "ja": "同店のパンは隣町の3軒のレストランに配達されている。"
+        },
+        {
+          "key": "C",
+          "text": "Rent on Center Street has fallen sharply over the past two years.",
+          "ja": "センター通りの家賃はこの2年で大きく下がっている。"
+        },
+        {
+          "key": "D",
+          "text": "The owners plan to hire eight more staff before the opening.",
+          "ja": "経営者は開店までにさらに8人を雇う計画だ。"
+        }
+      ],
+      "answer": "D",
+      "explanation": "後ろの文が Interviews will be held … と面接の話になっているので、その前に採用の話が要る。人を雇う計画を述べる D がつながる。A と C は事実として成り立つが、面接の話に結び付かない。B は配達先の話で、2号店の段落から外れる。",
+      "tip": "一文挿入では、後ろの文が「その話の続き」になっているかを確かめる。面接・日程・費用といった具体的な話が続くなら、その話題を持ち出す文が正解になる。"
+    },
+    {
+      "id": "q4",
+      "type": "form",
+      "choices": [
+        {
+          "key": "A",
+          "text": "succeed",
+          "ja": "（動）成功する"
+        },
+        {
+          "key": "B",
+          "text": "success",
+          "ja": "（名）成功"
+        },
+        {
+          "key": "C",
+          "text": "successful",
+          "ja": "（形）成功した"
+        },
+        {
+          "key": "D",
+          "text": "successfully",
+          "ja": "（副）うまく"
+        }
+      ],
+      "answer": "B",
+      "explanation": "他動詞 credit の目的語で、their という所有格のあとに来る位置なので名詞。credit A to B で「A を B のおかげとする」。A は動詞、C は形容詞、D は副詞で、いずれも their の後ろには置けない。",
+      "tip": "所有格（their / its / our）の直後は名詞。空所の前が所有格かどうかを見るだけで決まる、Part 6 でも速く解ける型。"
+    }
+  ],
+  "glossary": {
+    "customer base": {
+      "lemma": "customer base",
+      "pos": "名",
+      "ja": "顧客層、常連客",
+      "note": ""
+    },
+    "careful planning": {
+      "lemma": "careful planning",
+      "pos": "名",
+      "ja": "入念な計画",
+      "note": ""
+    },
+    "grown steadily": {
+      "lemma": "grow steadily",
+      "pos": "熟",
+      "ja": "着実に伸びる",
+      "note": "売上や需要の説明で頻出"
+    },
+    "room for": {
+      "lemma": "room for",
+      "pos": "熟",
+      "ja": "〜の余地、余裕",
+      "note": "room は「余地」の意味の不可算名詞"
+    },
+    "began serving": {
+      "lemma": "begin doing",
+      "pos": "熟",
+      "ja": "〜し始める",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": "supply（供給）の対"
+    },
+    "employs": {
+      "lemma": "employ",
+      "pos": "動",
+      "ja": "雇用する",
+      "note": "employee / employer と組で覚える"
+    },
+    "credit": {
+      "lemma": "credit A to B",
+      "pos": "動",
+      "ja": "A を B のおかげとする",
+      "note": "多義語。「信用」「入金」の意味もある"
+    },
+    "interviews": {
+      "lemma": "interview",
+      "pos": "名",
+      "ja": "面接",
+      "note": ""
+    },
+    "current shop": {
+      "lemma": "current",
+      "pos": "形",
+      "ja": "現在の",
+      "note": ""
+    }
+  },
+  "point": {
+    "lead": "1文の中に時の語が2つあるときは、空所の動詞に近いほうを取る",
+    "items": [
+      {
+        "title": "未来と過去が同じ文に混ざる",
+        "body": "記事では「来月開店すると先週発表した」のように、1文に2つの時点が入る。空所の動詞がどちらの出来事かを、その動詞のすぐそばの時の語で決める。文頭の語だけを見て決めると取り違える。"
+      },
+      {
+        "title": "語彙は文の後半まで読んでから決める",
+        "body": "twice the ------- of ... のような形は、空所の前だけでは絞れない。後ろに続く説明（カフェの余裕、重さ、値段）で何を比べているかが決まる。読むのを途中でやめないことが、Part 5 との違いになる。"
+      },
+      {
+        "title": "所有格の直後は名詞",
+        "body": "their / its / our のあとの空所は名詞と決まっている。Part 6 でもこの形はそのまま使えるので、空所の前1語を見るだけで済む問題として先に片づけ、一文挿入に時間を残す。"
+      }
+    ]
+  }
+}

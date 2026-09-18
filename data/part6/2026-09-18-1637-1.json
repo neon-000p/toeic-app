@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-09-18-1637-1",
+  "date": "2026-09-18",
+  "time": "16:37",
+  "createdAt": "2026-09-18T16:37:00+09:00",
+  "sample": false,
+  "docType": "email",
+  "scene": "社内メール｜在庫システムの切り替え",
+  "intro": "Questions 1-4 refer to the following e-mail.",
+  "header": [
+    {
+      "label": "To",
+      "text": "All Warehouse Staff"
+    },
+    {
+      "label": "From",
+      "text": "Dana Whitfield, Operations"
+    },
+    {
+      "label": "Subject",
+      "text": "New inventory system"
+    },
+    {
+      "label": "Date",
+      "text": "12 September"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "Starting on 1 October, the warehouse ------- to a new inventory system called StockLine.",
+          "ja": "10月1日より、倉庫は StockLine という新しい在庫システムに切り替えます。",
+          "q": 1
+        },
+        {
+          "en": "The current system will be shut down at six o'clock on 30 September.",
+          "ja": "現在のシステムは9月30日の6時に停止します。"
+        },
+        {
+          "en": "Please enter any outstanding orders in the current system before that time.",
+          "ja": "未処理の注文は、それまでに現在のシステムへ入力してください。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 2
+        },
+        {
+          "en": "Each session lasts about an hour, and no sign-up is required beforehand.",
+          "ja": "1回あたり1時間ほどで、事前の申し込みは要りません。"
+        },
+        {
+          "en": "If you cannot attend either session, please ------- the guide posted on the intranet.",
+          "ja": "どちらにも出られない場合は、社内サイトに掲載する手引きをご確認ください。",
+          "q": 3
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "The change will not affect how you record damaged goods.",
+          "ja": "今回の変更で、破損品の記録の仕方が変わることはありません。"
+        },
+        {
+          "en": "-------, the steps for receiving shipments will look slightly different on the new screens.",
+          "ja": "ただし、入荷を受け入れる手順は新しい画面では少し見え方が変わります。",
+          "q": 4
+        },
+        {
+          "en": "Thank you for your patience while we make the transition.",
+          "ja": "切り替えの間、ご協力をお願いいたします。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "verb",
+      "choices": [
+        {
+          "key": "A",
+          "text": "switched",
+          "ja": "切り替えた"
+        },
+        {
+          "key": "B",
+          "text": "will switch",
+          "ja": "切り替える予定だ"
+        },
+        {
+          "key": "C",
+          "text": "has switched",
+          "ja": "切り替えてきた"
+        },
+        {
+          "key": "D",
+          "text": "switching",
+          "ja": "切り替えている"
+        }
+      ],
+      "answer": "B",
+      "explanation": "文書の日付は9月12日で、切り替えは10月1日。これから起きることなので未来の形になる。A の過去形と C の現在完了は、すでに終わったことを表すので Starting on 1 October と合わない。空所のある文だけを見ても決まらず、頭の Date を見て初めて決まる問題。",
+      "tip": "Part 6 の時制は、空所の文ではなく文書の日付や他の段落の時を表す語で決まることが多い。動詞の形が並んだら、まず文書全体から時の手がかりを探す。"
+    },
+    {
+      "id": "q2",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Training sessions will be held in the break room on 24 and 25 September.",
+          "ja": "研修は9月24日と25日に休憩室で行います。"
+        },
+        {
+          "key": "B",
+          "text": "The new system was installed last year and has worked well since then.",
+          "ja": "新しいシステムは昨年導入され、それ以来問題なく動いています。"
+        },
+        {
+          "key": "C",
+          "text": "Please return your old identification badge to the front desk by Friday.",
+          "ja": "古い身分証を金曜までに受付へ返却してください。"
+        },
+        {
+          "key": "D",
+          "text": "Our supplier has agreed to lower the price of packing tape this year.",
+          "ja": "供給元が今年の梱包テープの値下げに応じました。"
+        }
+      ],
+      "answer": "A",
+      "explanation": "空所の直後に Each session lasts about an hour とあり、session という語を受ける文が前に必要になる。研修の日程を知らせる A がその役目を果たす。B は新システムがすでに1年動いていることになり、10月に切り替えるという本文と矛盾する。C と D は文書の用件と関係がない。",
+      "tip": "一文挿入は、空所の後ろの文にある語（ここでは session）を手がかりにする。その語を初めて出す文が正解になることが多い。"
+    },
+    {
+      "id": "q3",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "review",
+          "ja": "確認する"
+        },
+        {
+          "key": "B",
+          "text": "release",
+          "ja": "発売する"
+        },
+        {
+          "key": "C",
+          "text": "remind",
+          "ja": "思い出させる"
+        },
+        {
+          "key": "D",
+          "text": "deliver",
+          "ja": "配達する"
+        }
+      ],
+      "answer": "A",
+      "explanation": "研修に出られない人に代わりの方法を示す場面なので、手引きを「確認する」review が入る。C の remind は人を目的語に取る動詞で、the guide を直接は取らない。B の release は「発売する・公開する」で、読み手がする動作ではない。",
+      "tip": "語彙問題でも、空所の後ろが人か物かで動詞を絞れる。remind や inform は人を目的語に取るので、物が続く位置には入らない。"
+    },
+    {
+      "id": "q4",
+      "type": "conj",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Therefore",
+          "ja": "したがって"
+        },
+        {
+          "key": "B",
+          "text": "However",
+          "ja": "しかし"
+        },
+        {
+          "key": "C",
+          "text": "For example",
+          "ja": "例えば"
+        },
+        {
+          "key": "D",
+          "text": "In addition",
+          "ja": "さらに"
+        }
+      ],
+      "answer": "B",
+      "explanation": "前の文は「記録の仕方は変わらない」、空所の文は「受け入れの手順は違って見える」。変わらない点と変わる点を並べているので逆接の However。A の Therefore は因果、D の In addition は同じ向きの追加で、どちらも前後のつながりに合わない。",
+      "tip": "接続副詞は、前の文と空所の文の向きが同じか逆かだけで決まる。訳を当てはめる前に、2つの文が同じことを言っているかを見る。"
+    }
+  ],
+  "glossary": {
+    "inventory system": {
+      "lemma": "inventory system",
+      "pos": "名",
+      "ja": "在庫管理システム",
+      "note": ""
+    },
+    "shut down": {
+      "lemma": "shut down",
+      "pos": "熟",
+      "ja": "停止する、閉鎖する",
+      "note": "機器・システム・店舗に使う"
+    },
+    "outstanding orders": {
+      "lemma": "outstanding",
+      "pos": "形",
+      "ja": "未処理の、未払いの",
+      "note": "「優れた」の意味もある多義語"
+    },
+    "current system": {
+      "lemma": "current",
+      "pos": "形",
+      "ja": "現在の",
+      "note": ""
+    },
+    "beforehand": {
+      "lemma": "beforehand",
+      "pos": "副",
+      "ja": "前もって",
+      "note": "in advance の言い換え"
+    },
+    "intranet": {
+      "lemma": "intranet",
+      "pos": "名",
+      "ja": "社内サイト、社内ネットワーク",
+      "note": ""
+    },
+    "damaged goods": {
+      "lemma": "damaged goods",
+      "pos": "名",
+      "ja": "破損品",
+      "note": ""
+    },
+    "receiving shipments": {
+      "lemma": "receive a shipment",
+      "pos": "熟",
+      "ja": "入荷を受け入れる",
+      "note": ""
+    },
+    "make the transition": {
+      "lemma": "make the transition",
+      "pos": "熟",
+      "ja": "移行する、切り替える",
+      "note": "transition は「移行」"
+    },
+    "sign-up": {
+      "lemma": "sign-up",
+      "pos": "名",
+      "ja": "申し込み、登録",
+      "note": "動詞なら sign up"
+    }
+  },
+  "point": {
+    "lead": "空所の文で決まらなければ、前の文と文書の頭に戻る",
+    "items": [
+      {
+        "title": "時制は文書の日付で決まる",
+        "body": "Part 6 の動詞問題は、空所のある文だけを見ても決まらないことが多い。メールなら頭の Date、掲示なら実施日と、文書のどこかにある日付が基準になる。動詞の形が並んだら、まず文書全体から時の手がかりを探す。"
+      },
+      {
+        "title": "一文挿入は後ろの文が手がかり",
+        "body": "空所の次の文に出てくる語（session、this change、they など）は、前の文で初めて出た何かを受けている。その何かを出している選択肢が正解になる。前だけを読んで決めると、話題は合うが位置が合わない誤答に引っかかる。"
+      },
+      {
+        "title": "接続副詞は2文の向きだけを見る",
+        "body": "however / therefore / in addition は、前の文と空所の文が同じ向きか逆かで決まる。訳を当てはめて考えるより、2つの文が同じことを言っているか、反対のことを言っているかを先に判断するほうが速い。"
+      }
+    ]
+  }
+}

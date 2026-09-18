@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-09-18-1637-4",
+  "date": "2026-09-18",
+  "time": "16:37",
+  "createdAt": "2026-09-18T16:37:00+09:00",
+  "sample": false,
+  "docType": "advertisement",
+  "scene": "広告｜オフィス清掃サービス",
+  "intro": "Questions 1-4 refer to the following advertisement.",
+  "header": [
+    {
+      "label": "",
+      "text": "Bright and Clear Office Cleaning"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "Bright and Clear has been keeping offices spotless in the Kingsley business district for over fifteen years.",
+          "ja": "ブライト・アンド・クリアは、キングズリー商業地区で15年以上にわたりオフィスを清潔に保ってきました。"
+        },
+        {
+          "en": "Our trained crews work after hours, so your daily routine is never -------.",
+          "ja": "訓練を受けた作業班が営業時間後に伺うため、日々の業務が妨げられることはありません。",
+          "q": 1
+        },
+        {
+          "en": "Every cleaner on our staff is insured and carries photo identification at all times.",
+          "ja": "当社の清掃員は全員が保険に加入しており、常に顔写真付きの身分証を携帯しています。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 2
+        },
+        {
+          "en": "Larger offices receive a written ------- within one business day of the first visit.",
+          "ja": "より大きなオフィスには、初回訪問から1営業日以内に書面の見積もりをお出しします。",
+          "q": 3
+        },
+        {
+          "en": "Our supervisors check every site each week and adjust the schedule as needed.",
+          "ja": "責任者が毎週すべての現場を確認し、必要に応じて予定を調整します。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Customers who sign a yearly contract pay ------- than those who book monthly.",
+          "ja": "年間契約のお客さまは、月ごとにご予約の場合より費用が安くなります。",
+          "q": 4
+        },
+        {
+          "en": "Visit brightandclear.example or call 555-0142 to speak with our scheduling team.",
+          "ja": "brightandclear.example をご覧いただくか、555-0142 までお電話ください。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "choices": [
+        {
+          "key": "A",
+          "text": "interrupt",
+          "ja": "（動）妨げる"
+        },
+        {
+          "key": "B",
+          "text": "interrupted",
+          "ja": "（過去分詞）妨げられる"
+        },
+        {
+          "key": "C",
+          "text": "interruption",
+          "ja": "（名）中断"
+        },
+        {
+          "key": "D",
+          "text": "interruptive",
+          "ja": "（形）妨げになる"
+        }
+      ],
+      "answer": "B",
+      "explanation": "主語 your daily routine は妨げられる側で、be 動詞 is と never のあとに来るので受動態の過去分詞。A の原形は is の後ろに置けない。C の名詞では「日課＝中断」となって意味が通らない。",
+      "tip": "is / are のあとの空所は、形容詞か過去分詞。主語が「する側か、される側か」を見て、される側なら過去分詞を選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Our office is closed on public holidays and during the last week of December.",
+          "ja": "当社の事務所は祝日と12月最終週は休みです。"
+        },
+        {
+          "key": "B",
+          "text": "We also sell cleaning supplies to households through our online shop.",
+          "ja": "家庭向けの清掃用品もオンラインショップで販売しています。"
+        },
+        {
+          "key": "C",
+          "text": "Prices start at ninety dollars for a single floor of up to ten rooms.",
+          "ja": "料金は10部屋までの1フロアで90ドルからです。"
+        },
+        {
+          "key": "D",
+          "text": "The district council recently repaved the street in front of our building.",
+          "ja": "区の議会が最近、当社前の通りを舗装し直しました。"
+        }
+      ],
+      "answer": "C",
+      "explanation": "後ろの文が「より大きなオフィスには書面の見積もりを出す」と続くので、その前に基本の料金を示す文が要る。料金の始まりを述べる C がつながる。A と D は広告の用件から外れ、B は家庭向けの別の商売の話で、オフィス清掃の流れを切ってしまう。",
+      "tip": "一文挿入では、後ろの文が「例外」や「大口の場合」を述べていたら、その前に基本の条件を示す文が入ると考える。"
+    },
+    {
+      "id": "q3",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "receipt",
+          "ja": "領収書"
+        },
+        {
+          "key": "B",
+          "text": "quote",
+          "ja": "見積もり"
+        },
+        {
+          "key": "C",
+          "text": "refund",
+          "ja": "返金"
+        },
+        {
+          "key": "D",
+          "text": "invoice",
+          "ja": "請求書"
+        }
+      ],
+      "answer": "B",
+      "explanation": "前の文で基本料金を示し、この文では大きなオフィスの場合を述べているので、先に金額を示す書面、つまり見積もり quote が入る。A の receipt と D の invoice は支払いのあとに出るもので、まだ契約していない段階には合わない。空所の文だけでは決まらず、前の文の料金の話に戻って決まる。",
+      "tip": "領収書・請求書・見積もりは、支払いのどの段階で出る書類かで決まる。前の文が契約前の話なら quote、支払い後なら receipt と切り分ける。"
+    },
+    {
+      "id": "q4",
+      "type": "comp",
+      "choices": [
+        {
+          "key": "A",
+          "text": "less",
+          "ja": "より少なく"
+        },
+        {
+          "key": "B",
+          "text": "least",
+          "ja": "最も少なく"
+        },
+        {
+          "key": "C",
+          "text": "few",
+          "ja": "（数が）少ない"
+        },
+        {
+          "key": "D",
+          "text": "little",
+          "ja": "（量が）少ない"
+        }
+      ],
+      "answer": "A",
+      "explanation": "than があるので比較級の less。pay less than ... で「〜より少なく払う」。B の least は最上級で than とは使わない。C の few は数えられる名詞に付く語で、動詞 pay を修飾できない。",
+      "tip": "than を見つけたら比較級。原級・最上級が混ざった選択肢では、than の有無だけで3つを外せる。"
+    }
+  ],
+  "glossary": {
+    "business district": {
+      "lemma": "business district",
+      "pos": "名",
+      "ja": "商業地区、オフィス街",
+      "note": ""
+    },
+    "after hours": {
+      "lemma": "after hours",
+      "pos": "熟",
+      "ja": "営業時間後に",
+      "note": "during business hours の対"
+    },
+    "daily routine": {
+      "lemma": "daily routine",
+      "pos": "名",
+      "ja": "日々の決まった業務",
+      "note": ""
+    },
+    "at all times": {
+      "lemma": "at all times",
+      "pos": "熟",
+      "ja": "常に",
+      "note": "always の硬い言い方"
+    },
+    "business day": {
+      "lemma": "business day",
+      "pos": "名",
+      "ja": "営業日",
+      "note": "土日祝を含まない"
+    },
+    "adjust the schedule": {
+      "lemma": "adjust",
+      "pos": "動",
+      "ja": "調整する",
+      "note": ""
+    },
+    "yearly contract": {
+      "lemma": "yearly contract",
+      "pos": "名",
+      "ja": "年間契約",
+      "note": ""
+    },
+    "scheduling team": {
+      "lemma": "scheduling",
+      "pos": "名",
+      "ja": "日程の調整",
+      "note": ""
+    },
+    "spotless": {
+      "lemma": "spotless",
+      "pos": "形",
+      "ja": "しみ一つない、清潔な",
+      "note": ""
+    },
+    "insured": {
+      "lemma": "insured",
+      "pos": "形",
+      "ja": "保険に加入した",
+      "note": "insurance（保険）と組で覚える"
+    }
+  },
+  "point": {
+    "lead": "広告は「基本の条件 → 例外 → 連絡先」の順に読む",
+    "items": [
+      {
+        "title": "例外の文の前には基本の条件がある",
+        "body": "Larger offices / For orders over ... のように例外を述べる文が後ろにあれば、その前には必ず基本の条件が置かれる。一文挿入で迷ったら、後ろの文が例外かどうかを見て、対になる基本の文を探す。"
+      },
+      {
+        "title": "書類の名前は支払いの段階で決まる",
+        "body": "quote は契約前の見積もり、invoice は請求、receipt は支払い後の領収書。語の意味だけで選ぶと取り違えるので、前の文がどの段階の話かを確かめてから決める。"
+      },
+      {
+        "title": "than があれば比較級で確定",
+        "body": "選択肢に原級・比較級・最上級が混ざっていたら、空所の後ろに than があるかだけを見る。あれば比較級、the ... of all があれば最上級。意味を読む前に形で決まる、いちばん速い型。"
+      }
+    ]
+  }
+}

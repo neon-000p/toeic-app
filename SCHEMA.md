@@ -20,9 +20,13 @@ data/
     index.json
     history.json
     2026-09-18-1258-1.json
+  part6/
+    index.json
+    history.json
+    2026-09-18-1637-1.json
 ```
 
-`index.json` と個別ファイルは別々のルーティンが更新する（時事英語 / Part 3 / Part 4 / Part 5 は独立運用）。
+`index.json` と個別ファイルは別々のルーティンが更新する（時事英語 / Part 3〜6 は独立運用）。
 ディレクトリが分かれているので、片方のルーティンが失敗してももう片方に影響しない。
 
 ---
@@ -495,3 +499,85 @@ Part 5 の読み上げは、端末（Chrome / Edge）の読み上げに任せる
 ```
 
 `topics` はその回で問うた文法トピック。スキルが次回以降の重複を避けるために読む。アプリはこのファイルを見ない。**消さずに貯め続ける。**
+
+---
+
+## data/part6/&lt;id&gt;.json
+
+Part 6（長文穴埋め）。**1ファイル＝1セット＝文書1本＋空所4つ**。本番の1セットと同じ単位で、4問のうち1問は**一文挿入**。1セット2〜3分。
+
+```json
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-09-18-1637-1",
+  "date": "2026-09-18",
+  "time": "16:37",
+  "sample": false,
+  "docType": "email",
+  "scene": "社内メール｜在庫システムの切り替え",
+  "intro": "Questions 1-4 refer to the following e-mail.",
+  "header": [
+    { "label": "To", "text": "All Warehouse Staff" },
+    { "label": "Subject", "text": "New inventory system" }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        { "en": "Starting on 1 October, the warehouse ------- to a new system.", "ja": "10月1日より、倉庫は新しいシステムに切り替えます。", "q": 1 },
+        { "en": "The current system will be shut down at the end of September.", "ja": "現在のシステムは9月末で停止します。" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "verb",
+      "choices": [ { "key": "A", "text": "switched", "ja": "切り替えた" } ],
+      "answer": "B",
+      "explanation": "日本語解説",
+      "tip": "この型の見分け方"
+    }
+  ],
+  "glossary": { "shut down": { "lemma": "shut down", "pos": "熟", "ja": "停止する", "note": "" } },
+  "point": { "lead": "読み方を1行で", "items": [ { "title": "見出し", "body": "本文" } ] }
+}
+```
+
+### 設計上の要点
+
+**`questions` に `prompt` は無い**
+設問文にあたるのは**本文の空所そのもの**。`paragraphs[].sentences[].q` が「この文の空所は何番の設問か」を指し、アプリは空所を `(1)` のような番号付きの下線にして、その下に4問の選択肢を並べる。本番の紙面と同じ形。
+
+**一文挿入は `en` が空所だけの文**
+`{ "en": "-------", "ja": "", "q": 2 }` のように、1文まるごとが空所になる。アプリはここを幅いっぱいの下線にする。選択肢は4つとも完全な文（8〜18語）で、`ja` はその文の訳。
+
+**`docType` は7種、`intro` はその決まり文句**
+`email` / `memo` / `notice` / `article` / `advertisement` / `letter` / `instructions`。
+`intro` は `Questions 1-4 refer to the following <言い回し>.` の形。食い違うと `tools/check-part6.js` が止める。
+
+**`scene` は伏せない**
+Part 3・Part 4 は場面を伏せるが、Part 6 は読む問題で文書を最初から全部見せるので、伏せる意味がない。アプリは最初から表示する。
+
+**`type` は9種**
+`sentence`（一文挿入）／`form`／`verb`／`verbal`／`prep`／`conj`（接続詞・接続副詞）／`pron`（代名詞・指示語）／`comp`／`vocab`。
+**1セットに `sentence` がちょうど1問**、残り3問は文法1〜2・語彙1〜2。**4問のうち2問以上は、空所のある文だけでは決まらない**ようにする（ここが Part 5 との違い）。
+
+**`audio` は持たない**
+読む問題なので音声ファイルは作らない。対訳ステップでは端末（Chrome / Edge）の読み上げで鳴らす。読み上げるのは**空所を正解で埋めた文**。
+
+### data/part6/index.json
+
+```json
+{ "id": "2026-09-18-1637-1", "no": 1, "date": "2026-09-18", "time": "16:37",
+  "docType": "email", "kind": "メール", "questions": 4, "file": "2026-09-18-1637-1.json" }
+```
+
+### data/part6/history.json
+
+```json
+{ "id": "2026-09-18-1637-1", "date": "2026-09-18", "scene": "社内メール｜在庫システムの切り替え",
+  "docType": "email", "types": ["verb", "sentence", "vocab", "conj"] }
+```
+
+スキルが場面と種類の重複を判定するために読む。アプリはこのファイルを見ない。**消さずに貯め続ける。**
