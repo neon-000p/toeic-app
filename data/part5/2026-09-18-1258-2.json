@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-09-18-1258-2",
+  "date": "2026-09-18",
+  "time": "12:58",
+  "createdAt": "2026-09-18T12:58:00+09:00",
+  "sample": false,
+  "focus": "文法6・語彙4",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "The maintenance team responded to the power failure ------- and restored service within two hours.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "prompt",
+          "ja": "（形）迅速な"
+        },
+        {
+          "key": "B",
+          "text": "promptly",
+          "ja": "（副）迅速に"
+        },
+        {
+          "key": "C",
+          "text": "promptness",
+          "ja": "（名）迅速さ"
+        },
+        {
+          "key": "D",
+          "text": "prompted",
+          "ja": "促した"
+        }
+      ],
+      "answer": "B",
+      "ja": "保守チームは停電に迅速に対応し、2時間以内に復旧させた。",
+      "explanation": "主語・動詞・修飾語がそろった文の後ろで動詞 responded を説明するので副詞。A は形容詞で名詞を修飾する語、C は名詞。D は過去形・過去分詞で、responded と動詞が重なってしまう。",
+      "tip": "文の要素がすでにそろっている位置に入るのは副詞。主語も動詞もそろっていたら、迷わず副詞を選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "prep",
+      "prompt": "The parking garage will remain closed ------- the repaving work, which is expected to take three days.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "while",
+          "ja": "〜する間（接続詞）"
+        },
+        {
+          "key": "B",
+          "text": "among",
+          "ja": "〜の中で"
+        },
+        {
+          "key": "C",
+          "text": "since",
+          "ja": "〜以来"
+        },
+        {
+          "key": "D",
+          "text": "during",
+          "ja": "〜の間"
+        }
+      ],
+      "answer": "D",
+      "ja": "駐車場は、3日ほどかかる見込みの再舗装工事の間、閉鎖されたままとなる。",
+      "explanation": "空所のあとは the repaving work という名詞句なので前置詞が入り、期間を表す during。A の while は接続詞で後ろに文が必要。C の since は「〜以来」で、閉鎖が続く期間を表さない。",
+      "tip": "during と while は訳が同じ「〜の間」でも品詞が違う。後ろが名詞なら during、文なら while。"
+    },
+    {
+      "id": "q3",
+      "type": "vocab",
+      "prompt": "Please ------- the revised floor plan to your reply so that the contractor can review it today.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "attach",
+          "ja": "添付する"
+        },
+        {
+          "key": "B",
+          "text": "remind",
+          "ja": "思い出させる"
+        },
+        {
+          "key": "C",
+          "text": "expand",
+          "ja": "拡大する"
+        },
+        {
+          "key": "D",
+          "text": "reserve",
+          "ja": "予約する"
+        }
+      ],
+      "answer": "A",
+      "ja": "施工業者が今日中に確認できるよう、修正した平面図を返信に添付してください。",
+      "explanation": "to your reply（返信に）と結び付くのは attach。attach A to B の形で「A を B に添付する」。B の remind は人を目的語に取る。C の expand は「広げる」で、書類を送る意味にはならない。",
+      "tip": "空所の後ろの前置詞との相性で決まる語彙問題。attach A to B の形をそのまま覚えておくと即決できる。"
+    },
+    {
+      "id": "q4",
+      "type": "verb",
+      "prompt": "By the time the auditors arrive next week, the accounting team ------- all of the quarterly records.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "reviews",
+          "ja": "確認する"
+        },
+        {
+          "key": "B",
+          "text": "is reviewing",
+          "ja": "確認している"
+        },
+        {
+          "key": "C",
+          "text": "will have reviewed",
+          "ja": "確認し終えているだろう"
+        },
+        {
+          "key": "D",
+          "text": "reviewed",
+          "ja": "確認した"
+        }
+      ],
+      "answer": "C",
+      "ja": "監査人が来週到着するまでに、経理チームは四半期の記録をすべて確認し終えているだろう。",
+      "explanation": "By the time ... arrive は未来のある時点を指し、その時点までに終わっていることを表すので未来完了。D の過去形は next week と合わない。A の現在形は習慣を表し、完了の意味が出ない。",
+      "tip": "By the time で始まる文は、主節が未来なら未来完了、過去なら過去完了。文頭の目印で時制が決まる型。"
+    },
+    {
+      "id": "q5",
+      "type": "vocab",
+      "prompt": "The training session was ------- to two hours because several participants had flights to catch.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "extended",
+          "ja": "延長された"
+        },
+        {
+          "key": "B",
+          "text": "shortened",
+          "ja": "短縮された"
+        },
+        {
+          "key": "C",
+          "text": "canceled",
+          "ja": "中止された"
+        },
+        {
+          "key": "D",
+          "text": "repeated",
+          "ja": "繰り返された"
+        }
+      ],
+      "answer": "B",
+      "ja": "参加者の何人かに乗る便があったため、研修は2時間に短縮された。",
+      "explanation": "便に間に合わせる必要があるので、時間を切り詰める shortened。A の extended は逆の意味で、理由とかみ合わない。C の canceled なら to two hours とは続かない。",
+      "tip": "because のあとが理由になっているので、原因から結果への向きを確かめる。逆の意味の語がそのまま誤答に置かれることが多い。"
+    },
+    {
+      "id": "q6",
+      "type": "form",
+      "prompt": "The finance director gave a ------- explanation of the new reimbursement policy at the staff meeting.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "detailed",
+          "ja": "（形）詳しい"
+        },
+        {
+          "key": "B",
+          "text": "detail",
+          "ja": "（名）詳細"
+        },
+        {
+          "key": "C",
+          "text": "details",
+          "ja": "（名）詳細（複数）"
+        },
+        {
+          "key": "D",
+          "text": "detailing",
+          "ja": "詳しく述べること"
+        }
+      ],
+      "answer": "A",
+      "ja": "財務部長は、職員会議で新しい経費精算規定について詳しい説明を行った。",
+      "explanation": "冠詞 a と名詞 explanation に挟まれた位置なので、名詞を修飾する形容詞。B と C は名詞で、名詞が2つ並ぶ形になり成り立たない。D の detailing は動名詞で、冠詞の直後には置けない。",
+      "tip": "冠詞と名詞に挟まれた空所は形容詞。the ------- of が名詞だったのと対になる形なので、セットで覚える。"
+    },
+    {
+      "id": "q7",
+      "type": "comp",
+      "prompt": "The second proposal was far ------- than the first one, so the board approved it without further discussion.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "reasonable",
+          "ja": "（原級）妥当な"
+        },
+        {
+          "key": "B",
+          "text": "reasonably",
+          "ja": "（副）妥当に"
+        },
+        {
+          "key": "C",
+          "text": "most reasonable",
+          "ja": "（最上級）最も妥当な"
+        },
+        {
+          "key": "D",
+          "text": "more reasonable",
+          "ja": "（比較級）より妥当な"
+        }
+      ],
+      "answer": "D",
+      "ja": "2つ目の提案は最初のものよりはるかに妥当だったため、取締役会は追加の議論なしに承認した。",
+      "explanation": "than があるので比較級。far は比較級を強める語で、much や even と同じ働きをする。C の最上級は than とは使わない。A の原級では than とつながらない。",
+      "tip": "than を見たら比較級。far / much / even / a lot が前にあれば比較級を強めている印なので、さらに確実になる。"
+    },
+    {
+      "id": "q8",
+      "type": "vocab",
+      "prompt": "All laptops issued to employees are ------- to the company's security policy, which is updated twice a year.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "familiar",
+          "ja": "よく知っている"
+        },
+        {
+          "key": "B",
+          "text": "capable",
+          "ja": "能力がある"
+        },
+        {
+          "key": "C",
+          "text": "subject",
+          "ja": "対象となる"
+        },
+        {
+          "key": "D",
+          "text": "similar",
+          "ja": "似ている"
+        }
+      ],
+      "answer": "C",
+      "ja": "従業員に貸与されるノートパソコンはすべて、年2回更新される社内の安全管理規定の対象となる。",
+      "explanation": "be subject to で「〜の対象となる、〜に従う」。規定に縛られることを表す定型。A の familiar は人が主語のときに使う。D の similar だと「規定に似ている」となって意味が通らない。",
+      "tip": "be ------- to の形は、to と結び付く形容詞を思い出す型。subject / similar / familiar はどれも to を取るので、最後は意味で決める。"
+    },
+    {
+      "id": "q9",
+      "type": "conj",
+      "prompt": "------- the new software is installed on every terminal, the help desk will run a short training session.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Once",
+          "ja": "いったん〜すると"
+        },
+        {
+          "key": "B",
+          "text": "Despite",
+          "ja": "〜にもかかわらず"
+        },
+        {
+          "key": "C",
+          "text": "Whether",
+          "ja": "〜かどうか"
+        },
+        {
+          "key": "D",
+          "text": "Instead",
+          "ja": "代わりに"
+        }
+      ],
+      "answer": "A",
+      "ja": "新しいソフトが全端末に導入され次第、ヘルプデスクが短い研修を行う。",
+      "explanation": "空所のあとに文が続き、「導入されたら研修を行う」という時の関係なので Once。B の Despite は前置詞で名詞句しか取れない。D の Instead は副詞で、2つの文をつなげない。",
+      "tip": "時や条件を表す節では、未来のことでも現在形（is installed）で書く。この形が見えたら接続詞が入ると分かる。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "The store manager asked the staff to ------- the shelves before the store opens on Monday morning.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "withdraw",
+          "ja": "引き出す、取り下げる"
+        },
+        {
+          "key": "B",
+          "text": "restock",
+          "ja": "補充する"
+        },
+        {
+          "key": "C",
+          "text": "measure",
+          "ja": "測る"
+        },
+        {
+          "key": "D",
+          "text": "postpone",
+          "ja": "延期する"
+        }
+      ],
+      "answer": "B",
+      "ja": "店長はスタッフに、月曜の開店前に棚を補充するよう頼んだ。",
+      "explanation": "開店前に棚に対して行う作業なので「補充する」。A の withdraw はお金や申し出を引っ込めるときに使う。C の measure は寸法を測る意味で、開店準備の場面に合わない。",
+      "tip": "語彙問題は場面を思い浮かべて選ぶ。店・棚・開店前とくれば、補充や陳列に関する語が来ると見当をつけられる。"
+    }
+  ],
+  "glossary": {
+    "power failure": {
+      "lemma": "power failure",
+      "pos": "名",
+      "ja": "停電",
+      "note": "power outage とも言う"
+    },
+    "repaving work": {
+      "lemma": "repaving work",
+      "pos": "名",
+      "ja": "再舗装工事",
+      "note": ""
+    },
+    "floor plan": {
+      "lemma": "floor plan",
+      "pos": "名",
+      "ja": "平面図、間取り図",
+      "note": ""
+    },
+    "quarterly records": {
+      "lemma": "quarterly",
+      "pos": "形",
+      "ja": "四半期の",
+      "note": "monthly / annual と並べて覚える"
+    },
+    "reimbursement policy": {
+      "lemma": "reimbursement",
+      "pos": "名",
+      "ja": "払い戻し、経費精算",
+      "note": ""
+    },
+    "security policy": {
+      "lemma": "security policy",
+      "pos": "名",
+      "ja": "安全管理規定",
+      "note": ""
+    },
+    "help desk": {
+      "lemma": "help desk",
+      "pos": "名",
+      "ja": "問い合わせ窓口",
+      "note": ""
+    },
+    "auditors": {
+      "lemma": "auditor",
+      "pos": "名",
+      "ja": "監査人",
+      "note": ""
+    },
+    "contractor": {
+      "lemma": "contractor",
+      "pos": "名",
+      "ja": "請負業者、施工業者",
+      "note": ""
+    },
+    "participants": {
+      "lemma": "participant",
+      "pos": "名",
+      "ja": "参加者",
+      "note": "attendee の言い換え"
+    },
+    "shelves": {
+      "lemma": "shelf",
+      "pos": "名",
+      "ja": "棚",
+      "note": "複数形は shelves"
+    }
+  },
+  "point": {
+    "lead": "空所の前後だけで決まる問題を先に抜き、語彙問題に時間を回す",
+    "items": [
+      {
+        "title": "品詞問題は2種類に分かれる",
+        "body": "冠詞と名詞に挟まれていれば形容詞、文の要素がそろっていれば副詞。この2つでほとんどの品詞問題が片づく。空所の前後2語を見るだけなので、10秒かけずに抜けたい。"
+      },
+      {
+        "title": "後ろが文か名詞かで接続詞と前置詞を分ける",
+        "body": "during と while、despite と although のように、訳が同じでも品詞が違う組は必ず出る。意味を考える前に、空所のあとが文か名詞句かを見れば半分は外せる。"
+      },
+      {
+        "title": "語彙問題は形の条件で候補を削ってから意味を考える",
+        "body": "直後の前置詞と結び付くか、目的語を取れるか、主語が受け取る側か与える側か。形の条件で2つに絞ってから意味を比べると、迷う時間が短くなる。"
+      }
+    ]
+  }
+}

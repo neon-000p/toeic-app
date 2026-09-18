@@ -12,16 +12,19 @@ news.html            時事英語モード（6ステップ）
 vocab.html           語彙帳（間隔反復の復習・持ち出し）
 part3.html           Part 3 トレーナー（会話1本＋3問・5ステップ）
 part4.html           Part 4 トレーナー（説明文1本＋3問・5ステップ）
+part5.html           Part 5 トレーナー（短文穴埋め10問・4ステップ）
 core.js              共通コア（設定・語彙帳・学習ログ・読み上げ）
 style.css            共通スタイル（色・部品）
 data/news/index.json 目次（新しい順・最大30件）
 data/news/*.json     1日分の教材
 data/part3/*.json    Part 3 の1セット
 data/part4/*.json    Part 4 の1セット
+data/part5/*.json    Part 5 の1セット（10問）
 SCHEMA.md            教材データの仕様
 skills/news-toeic-english.SKILL.md  ルーティン側のスキル（ステップ5に JSON 出力を追加済み）
 skills/part3.SKILL.md               Part 3 ルーティンの仕様書
 skills/part4.SKILL.md               Part 4 ルーティンの仕様書
+skills/part5.SKILL.md               Part 5 ルーティンの仕様書
 ```
 
 `core.js` と `style.css` は今後 `part3.html` などからも読む。同一オリジンなので
@@ -60,6 +63,7 @@ Part 3（会話問題）と Part 4（説明文問題）は週1回のルーティ
 ```bash
 node tools/check-part3.js --all
 node tools/check-part4.js --all
+node tools/check-part5.js --all
 ```
 
 音声は書かない。`data/part3/` `data/part4/` に JSON が入ると GitHub Actions が
@@ -99,10 +103,23 @@ Part 3 と同じ5ステップ（設問 → 解説 → 対訳 → 語彙 → Poin
 音声も1人ぶんなので、トーク全体を1回の呼び出しで作れる（Part 3 は2人ずつのかたまりに
 切る必要がある）。前置きだけナレーターの別の声で作り、0.8秒の間を置いて頭に繋いでいる。
 
+## Part 5（短文穴埋め）
+
+音声が無く、1問が1文で完結するので、他のパートと単位が違う。**1セット10問**で、4ステップ
+（設問 → 解説 → 語彙 → Point）。
+
+- **10問を続けて解く。** フッターに `3 / 10　0:45 ／ 3:20` と、答えた数・経過・目安が出る。
+  目安は1問20秒（⚙ で10〜40秒に変えられる）。**超えても止まらない**が、赤くなる
+- **空所は下線で出す。** 解説では同じ場所に正解の語を緑で埋めた文が出るので、
+  正しい形のまま文を読み直せる
+- **設問では型を出さない。** 選択肢を見た瞬間に「これは品詞問題だ」と判断するのが
+  このパートの要なので、型（品詞・動詞の形・語彙…）は解説ステップにだけ出す
+- 音声ファイルは作らない。解説の ▶ は端末の読み上げで鳴らす
+
 ## まだ無いもの
 
 - 学習記録の可視化（現在は連続日数のみ）
-- Part 5〜7
+- Part 6〜7
 
 ## 語の意味（Gemini）
 

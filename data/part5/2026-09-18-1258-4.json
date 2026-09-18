@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-09-18-1258-4",
+  "date": "2026-09-18",
+  "time": "12:58",
+  "createdAt": "2026-09-18T12:58:00+09:00",
+  "sample": false,
+  "focus": "文法6・語彙4",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "The marketing team prepared the campaign materials ------- so that the launch could be moved up a week.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "quick",
+          "ja": "（形）素早い"
+        },
+        {
+          "key": "B",
+          "text": "quickness",
+          "ja": "（名）速さ"
+        },
+        {
+          "key": "C",
+          "text": "quicker",
+          "ja": "（比較級）より速い"
+        },
+        {
+          "key": "D",
+          "text": "quickly",
+          "ja": "（副）素早く"
+        }
+      ],
+      "answer": "D",
+      "ja": "マーケティング部が販促物を素早く用意したので、発売を1週間前倒しできた。",
+      "explanation": "主語・動詞・目的語がそろった文の後ろで動詞 prepared を説明するので副詞。A は形容詞で名詞が必要。B は名詞で、materials と並べても意味をなさない。C は比較級だが than が無い。",
+      "tip": "文の要素がそろっている位置に入るのは副詞。比較級が混ざっていても、than が無ければその時点で外せる。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "prompt": "The warranty does not ------- damage caused by dropping the device or exposing it to water.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "cover",
+          "ja": "適用される、補償する"
+        },
+        {
+          "key": "B",
+          "text": "protect",
+          "ja": "守る"
+        },
+        {
+          "key": "C",
+          "text": "prevent",
+          "ja": "防ぐ"
+        },
+        {
+          "key": "D",
+          "text": "insure",
+          "ja": "保険をかける"
+        }
+      ],
+      "answer": "A",
+      "ja": "保証は、落下や水濡れによる損傷には適用されない。",
+      "explanation": "保証が及ぶ範囲を表すのは cover。B の protect は protect A from B の形を取り、damage を直接目的語にはしない。C の prevent は「防ぐ」で、保証の説明にならない。",
+      "tip": "cover は「覆う」以外に「保証が及ぶ・費用をまかなう」の用法があり、TOEIC ではこちらが頻出。多義語は場面ごとの意味で覚える。"
+    },
+    {
+      "id": "q3",
+      "type": "conj",
+      "prompt": "The seminar will be held online ------- in person, since several participants are based overseas.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "instead",
+          "ja": "代わりに"
+        },
+        {
+          "key": "B",
+          "text": "rather than",
+          "ja": "〜ではなく"
+        },
+        {
+          "key": "C",
+          "text": "otherwise",
+          "ja": "さもなければ"
+        },
+        {
+          "key": "D",
+          "text": "as well",
+          "ja": "同様に"
+        }
+      ],
+      "answer": "B",
+      "ja": "参加者の何人かが海外にいるため、セミナーは対面ではなくオンラインで行われる。",
+      "explanation": "online と in person という2つを対比して「〜ではなく」とつなぐので rather than。A の instead は副詞で、単独では2つの語句をつなげない（instead of なら可）。C の otherwise は「さもなければ」で対比にならない。",
+      "tip": "instead と rather than は訳が似ているが、instead は副詞で単独、instead of と rather than は後ろに語句を取る。形で選ぶ。"
+    },
+    {
+      "id": "q4",
+      "type": "form",
+      "prompt": "Employees who commute by train may request ------- for their monthly passes through the online portal.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "reimburse",
+          "ja": "（動）払い戻す"
+        },
+        {
+          "key": "B",
+          "text": "reimbursed",
+          "ja": "（過去分詞）"
+        },
+        {
+          "key": "C",
+          "text": "reimbursement",
+          "ja": "（名）払い戻し"
+        },
+        {
+          "key": "D",
+          "text": "reimbursable",
+          "ja": "（形）払い戻せる"
+        }
+      ],
+      "answer": "C",
+      "ja": "電車で通勤する従業員は、定期代の払い戻しをオンラインの窓口から申請できる。",
+      "explanation": "他動詞 request の目的語になる位置なので名詞。A は動詞で、request と動詞が2つ並んでしまう。B は過去分詞、D は形容詞で、どちらも目的語にはなれない。",
+      "tip": "他動詞の直後は目的語、つまり名詞。空所の前の動詞が他動詞かどうかを見るだけで決まる型。"
+    },
+    {
+      "id": "q5",
+      "type": "verb",
+      "prompt": "The renovation of the lobby ------- last March and is scheduled to be completed by the end of this year.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "began",
+          "ja": "始まった"
+        },
+        {
+          "key": "B",
+          "text": "begins",
+          "ja": "始まる"
+        },
+        {
+          "key": "C",
+          "text": "has begun",
+          "ja": "始まっている"
+        },
+        {
+          "key": "D",
+          "text": "is beginning",
+          "ja": "始まりつつある"
+        }
+      ],
+      "answer": "A",
+      "ja": "ロビーの改装は昨年3月に始まり、今年の末までに終わる予定である。",
+      "explanation": "last March という過去の一点を示す語があるので過去形。C の has begun は現在完了で、過去の時点を表す語とは一緒に使えない。B の現在形は習慣を表す。",
+      "tip": "last / ago / yesterday など過去の一点を指す語があれば、現在完了は選ばない。時を表す語と時制の組み合わせで決まる型。"
+    },
+    {
+      "id": "q6",
+      "type": "vocab",
+      "prompt": "Because of the heavy snow, the delivery may be ------- by one or two days, the carrier warned customers.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "reduced",
+          "ja": "減らされる"
+        },
+        {
+          "key": "B",
+          "text": "repeated",
+          "ja": "繰り返される"
+        },
+        {
+          "key": "C",
+          "text": "removed",
+          "ja": "取り除かれる"
+        },
+        {
+          "key": "D",
+          "text": "delayed",
+          "ja": "遅れる"
+        }
+      ],
+      "answer": "D",
+      "ja": "大雪のため配送が1〜2日遅れる可能性があると、運送業者が顧客に注意を促した。",
+      "explanation": "雪が原因で日数のぶんだけずれるという内容なので delayed。A の reduced は量が減る意味で、配送の遅れにはならない。C の removed は取り除く意味で、日数とは結び付かない。",
+      "tip": "by ＋ 数量は「〜のぶんだけ」という差を表す。空所に入る動詞が、差を伴って使えるものかどうかを確かめる。"
+    },
+    {
+      "id": "q7",
+      "type": "prep",
+      "prompt": "Copies of the signed agreement will be sent to both parties ------- three business days.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "among",
+          "ja": "〜の中で"
+        },
+        {
+          "key": "B",
+          "text": "until",
+          "ja": "〜までずっと"
+        },
+        {
+          "key": "C",
+          "text": "within",
+          "ja": "〜以内に"
+        },
+        {
+          "key": "D",
+          "text": "beyond",
+          "ja": "〜を超えて"
+        }
+      ],
+      "answer": "C",
+      "ja": "署名済みの契約書の写しは、3営業日以内に双方へ送られる。",
+      "explanation": "three business days という期間の長さを取り、「その中で」を表すのは within。B の until は時点を取る語で、期間の長さは取らない。D の beyond は「〜を超えて」で、送付の期限にならない。",
+      "tip": "within は期間の長さ、by は期限の時点、until は継続の終わり。この3つの使い分けは Part 5 の定番。"
+    },
+    {
+      "id": "q8",
+      "type": "vocab",
+      "prompt": "The new filing system allows staff to ------- documents in seconds instead of searching through cabinets.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "assemble",
+          "ja": "組み立てる"
+        },
+        {
+          "key": "B",
+          "text": "retrieve",
+          "ja": "取り出す"
+        },
+        {
+          "key": "C",
+          "text": "observe",
+          "ja": "観察する"
+        },
+        {
+          "key": "D",
+          "text": "estimate",
+          "ja": "見積もる"
+        }
+      ],
+      "answer": "B",
+      "ja": "新しい文書管理システムにより、職員は書棚を探し回らずに数秒で書類を取り出せる。",
+      "explanation": "「棚を探し回る代わりに数秒で」という対比から、取り出す意味の retrieve。A の assemble は部品を組み立てる、C の observe は観察する意味で、書類には結び付かない。",
+      "tip": "instead of の前後は対比になる。後ろに置かれた動作の言い換えか反対かを考えると、空所の語が絞れる。"
+    },
+    {
+      "id": "q9",
+      "type": "verbal",
+      "prompt": "------- in 1994, the company now operates more than forty stores across three countries.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Founding",
+          "ja": "創業して"
+        },
+        {
+          "key": "B",
+          "text": "To found",
+          "ja": "創業するために"
+        },
+        {
+          "key": "C",
+          "text": "Founds",
+          "ja": "創業する"
+        },
+        {
+          "key": "D",
+          "text": "Founded",
+          "ja": "創業された"
+        }
+      ],
+      "answer": "D",
+      "ja": "1994年に創業したその会社は、いまや3か国で40店舗以上を展開している。",
+      "explanation": "主語 the company は「創業される側」なので過去分詞 Founded。A の Founding だと会社が何かを創業したことになり、後ろに目的語が必要になる。B の To found は目的を表し、1994年という時点とかみ合わない。",
+      "tip": "文頭のカンマまでが分詞のかたまりなら、主語との関係を見る。する側なら ing、される側なら過去分詞。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "Applicants should be aware that the position ------- frequent travel to the regional offices.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "applies",
+          "ja": "適用される"
+        },
+        {
+          "key": "B",
+          "text": "involves",
+          "ja": "伴う"
+        },
+        {
+          "key": "C",
+          "text": "attends",
+          "ja": "出席する"
+        },
+        {
+          "key": "D",
+          "text": "relies",
+          "ja": "頼る"
+        }
+      ],
+      "answer": "B",
+      "ja": "その職には地方拠点への頻繁な出張が伴うことを、応募者は承知しておく必要がある。",
+      "explanation": "仕事の中身に含まれることを表すのは involve。A の apply は apply for / apply to の形で使い、目的語を直接は取らない。D の rely も rely on の形が必要。",
+      "tip": "目的語を直接取れる他動詞かどうかで半分に絞れる。apply や rely のように前置詞とセットの動詞は、空所の後ろに前置詞が無ければ外せる。"
+    }
+  ],
+  "glossary": {
+    "moved up": {
+      "lemma": "move up",
+      "pos": "熟",
+      "ja": "（日程を）前倒しする",
+      "note": "push back（後ろへずらす）の対"
+    },
+    "campaign materials": {
+      "lemma": "campaign material",
+      "pos": "名",
+      "ja": "販促物",
+      "note": ""
+    },
+    "in person": {
+      "lemma": "in person",
+      "pos": "熟",
+      "ja": "直接会って、対面で",
+      "note": "online の対として頻出"
+    },
+    "monthly passes": {
+      "lemma": "monthly pass",
+      "pos": "名",
+      "ja": "定期券",
+      "note": ""
+    },
+    "business days": {
+      "lemma": "business day",
+      "pos": "名",
+      "ja": "営業日",
+      "note": "土日祝を含まない"
+    },
+    "filing system": {
+      "lemma": "filing system",
+      "pos": "名",
+      "ja": "文書管理の仕組み",
+      "note": ""
+    },
+    "regional offices": {
+      "lemma": "regional office",
+      "pos": "名",
+      "ja": "地方拠点、支社",
+      "note": ""
+    },
+    "warranty": {
+      "lemma": "warranty",
+      "pos": "名",
+      "ja": "保証、保証書",
+      "note": "guarantee の言い換え"
+    },
+    "carrier": {
+      "lemma": "carrier",
+      "pos": "名",
+      "ja": "運送業者",
+      "note": "多義語。通信会社の意味もある"
+    },
+    "applicants": {
+      "lemma": "applicant",
+      "pos": "名",
+      "ja": "応募者",
+      "note": "application（応募）と組で覚える"
+    },
+    "commute": {
+      "lemma": "commute",
+      "pos": "動",
+      "ja": "通勤する",
+      "note": "名詞なら「通勤」"
+    }
+  },
+  "point": {
+    "lead": "品詞問題は空所の前の語、語彙問題は文全体の向きで決める",
+    "items": [
+      {
+        "title": "他動詞の直後は名詞、完成した文の後ろは副詞",
+        "body": "request ------- のように他動詞が前にあれば名詞、主語も動詞も目的語もそろっていれば副詞。品詞問題はこの2つの型でほとんど片づくので、空所の前だけを見て即断してよい。"
+      },
+      {
+        "title": "時を表す語が時制を決める",
+        "body": "last March があれば過去形、over the past five years があれば現在完了、by the time なら未来完了。動詞の形が並ぶ問題は、文中の時の表現を先に探すと考え込まずに済む。"
+      },
+      {
+        "title": "対比の印を見つけると語彙問題が速くなる",
+        "body": "rather than、instead of、not A but B が出たら、空所の語は相手側の語の反対か言い換えになる。意味をゼロから考えるより、相手の語から逆算するほうが確実で速い。"
+      }
+    ]
+  }
+}

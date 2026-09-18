@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-09-18-1258-3",
+  "date": "2026-09-18",
+  "time": "12:58",
+  "createdAt": "2026-09-18T12:58:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "vocab",
+      "prompt": "The conference room must be ------- at least two days in advance through the online booking system.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "returned",
+          "ja": "返却される"
+        },
+        {
+          "key": "B",
+          "text": "delivered",
+          "ja": "配達される"
+        },
+        {
+          "key": "C",
+          "text": "reserved",
+          "ja": "予約される"
+        },
+        {
+          "key": "D",
+          "text": "repaired",
+          "ja": "修理される"
+        }
+      ],
+      "answer": "C",
+      "ja": "会議室は、オンラインの予約システムで少なくとも2日前までに予約しなければならない。",
+      "explanation": "booking system（予約システム）と in advance（前もって）から、予約する reserved。A の returned は借りたものを返す意味。D の repaired は修理で、2日前という条件とは結び付かない。",
+      "tip": "文中の他の語が答えの言い換えになっていることが多い。booking を見つけたら、同じ意味の語を選択肢から探す。"
+    },
+    {
+      "id": "q2",
+      "type": "form",
+      "prompt": "Attendance at the quarterly safety briefing is ------- for all employees who work in the warehouse.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "necessary",
+          "ja": "（形）必要な"
+        },
+        {
+          "key": "B",
+          "text": "necessity",
+          "ja": "（名）必要性"
+        },
+        {
+          "key": "C",
+          "text": "necessarily",
+          "ja": "（副）必ずしも"
+        },
+        {
+          "key": "D",
+          "text": "necessitate",
+          "ja": "（動）必要とする"
+        }
+      ],
+      "answer": "A",
+      "ja": "四半期ごとの安全説明会への出席は、倉庫で働く全従業員に必要である。",
+      "explanation": "be 動詞のあとで主語の状態を説明する位置なので形容詞。B の necessity は名詞で、「出席＝必要性」となり意味が通らない。C は副詞、D は動詞で、is の直後には置けない。",
+      "tip": "be 動詞の直後に入るのは形容詞か名詞。主語とイコールで結べるかを見て、結べなければ形容詞を選ぶ。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "prompt": "If the shipment ------- delayed again, the client will be offered a full refund for the inconvenience.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "will be",
+          "ja": "〜だろう"
+        },
+        {
+          "key": "B",
+          "text": "has been",
+          "ja": "〜されてきた"
+        },
+        {
+          "key": "C",
+          "text": "were",
+          "ja": "〜だとしたら（仮定）"
+        },
+        {
+          "key": "D",
+          "text": "is",
+          "ja": "〜である"
+        }
+      ],
+      "answer": "D",
+      "ja": "出荷がまた遅れた場合、顧客には迷惑に対して全額返金が提示される。",
+      "explanation": "If が作る条件の節では、未来のことでも現在形で書く。主節が will be offered と未来なので、条件節は is。C の were は現実にありえない仮定に使う形で、ここでは合わない。",
+      "tip": "時と条件を表す節は「未来のことも現在形」。主節に will があって条件節に空所があれば、まず現在形を疑う。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "prompt": "The technician will be at the site ------- eight and eleven o'clock to replace the faulty sensor.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "along",
+          "ja": "〜に沿って"
+        },
+        {
+          "key": "B",
+          "text": "between",
+          "ja": "〜の間に"
+        },
+        {
+          "key": "C",
+          "text": "across",
+          "ja": "〜を横切って"
+        },
+        {
+          "key": "D",
+          "text": "toward",
+          "ja": "〜のほうへ"
+        }
+      ],
+      "answer": "B",
+      "ja": "技術者は、故障したセンサーを交換するため8時から11時の間に現場に来る。",
+      "explanation": "空所のあとに eight and eleven と2つの時刻が and で並ぶので between A and B の形。A の along は道などに沿って、C の across は横切る意味で、時刻の幅は表せない。",
+      "tip": "between は and とセットで出る。空所の少し先に and があるかを見るだけで決まることが多い。"
+    },
+    {
+      "id": "q5",
+      "type": "form",
+      "prompt": "Anyone who parks in the loading zone without a permit will be ------- for any towing costs.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "responsibly",
+          "ja": "（副）責任をもって"
+        },
+        {
+          "key": "B",
+          "text": "responsibility",
+          "ja": "（名）責任"
+        },
+        {
+          "key": "C",
+          "text": "responsible",
+          "ja": "（形）責任がある"
+        },
+        {
+          "key": "D",
+          "text": "respond",
+          "ja": "（動）応じる"
+        }
+      ],
+      "answer": "C",
+      "ja": "許可証なしで荷さばき場に駐車した人は、レッカー費用を負担することになる。",
+      "explanation": "be 動詞のあとで for と結び付き、主語の状態を表すので形容詞 responsible。B の responsibility は名詞で、be responsibility for という形は取らない。A は副詞、D は動詞。",
+      "tip": "be ------- for の形は形容詞が入る枠。responsible / eligible / suitable など、for と結び付く形容詞をまとめて覚えておく。"
+    },
+    {
+      "id": "q6",
+      "type": "vocab",
+      "prompt": "Sales representatives are expected to ------- their monthly reports by the fifth of the following month.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "submit",
+          "ja": "提出する"
+        },
+        {
+          "key": "B",
+          "text": "remain",
+          "ja": "とどまる"
+        },
+        {
+          "key": "C",
+          "text": "arrive",
+          "ja": "到着する"
+        },
+        {
+          "key": "D",
+          "text": "belong",
+          "ja": "属する"
+        }
+      ],
+      "answer": "A",
+      "ja": "営業担当者は、翌月5日までに月次報告書を提出することになっている。",
+      "explanation": "reports を目的語に取り、by（期限）と結び付くのは submit。B の remain、C の arrive、D の belong はいずれも自動詞で、their monthly reports を直接目的語にできない。",
+      "tip": "空所のあとに目的語があるかどうかで自動詞と他動詞を切り分ける。意味を考える前に半分に絞れる。"
+    },
+    {
+      "id": "q7",
+      "type": "pron",
+      "prompt": "The two branches submitted their budget requests separately, but ------- were approved at the same meeting.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "each",
+          "ja": "それぞれ"
+        },
+        {
+          "key": "B",
+          "text": "both",
+          "ja": "どちらも"
+        },
+        {
+          "key": "C",
+          "text": "either",
+          "ja": "どちらか"
+        },
+        {
+          "key": "D",
+          "text": "neither",
+          "ja": "どちらも〜ない"
+        }
+      ],
+      "answer": "B",
+      "ja": "2つの支店は別々に予算申請を出したが、どちらも同じ会議で承認された。",
+      "explanation": "動詞が were と複数形なので、複数扱いの both。A の each と C の either は単数扱いで was を取る。D の neither は「どちらも〜ない」で、approved と矛盾する。",
+      "tip": "代名詞の問題は動詞の形を見る。were なら複数扱いの語、was なら単数扱いの語に絞れる。"
+    },
+    {
+      "id": "q8",
+      "type": "comp",
+      "prompt": "The downtown location attracts ------- customers on weekends than the branch near the airport does.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "many",
+          "ja": "多くの"
+        },
+        {
+          "key": "B",
+          "text": "much",
+          "ja": "（量が）多くの"
+        },
+        {
+          "key": "C",
+          "text": "most",
+          "ja": "最も多くの"
+        },
+        {
+          "key": "D",
+          "text": "more",
+          "ja": "より多くの"
+        }
+      ],
+      "answer": "D",
+      "ja": "中心街の店舗は、空港近くの支店よりも週末の来客が多い。",
+      "explanation": "than があるので比較級の more。C の most は最上級で than とは使わない。B の much は数えられない名詞に使う語で、customers には合わない。",
+      "tip": "than があれば比較級、the ... of all や in the office があれば最上級。目印の語を先に探す。"
+    },
+    {
+      "id": "q9",
+      "type": "vocab",
+      "prompt": "The hotel is ------- located within walking distance of both the convention center and the train station.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "conveniently",
+          "ja": "便利に"
+        },
+        {
+          "key": "B",
+          "text": "previously",
+          "ja": "以前に"
+        },
+        {
+          "key": "C",
+          "text": "rarely",
+          "ja": "めったに〜ない"
+        },
+        {
+          "key": "D",
+          "text": "briefly",
+          "ja": "短く"
+        }
+      ],
+      "answer": "A",
+      "ja": "そのホテルは、会議場と駅の両方から歩いて行ける便利な場所にある。",
+      "explanation": "会議場と駅の両方が徒歩圏という内容なので「便利に」。B の previously は時を表し、位置の説明にならない。C の rarely は頻度を表す語で、located とは結び付かない。",
+      "tip": "副詞が4つ並ぶのは語彙問題。修飾される語（ここでは located）と意味が合うかどうかだけを見る。"
+    },
+    {
+      "id": "q10",
+      "type": "verbal",
+      "prompt": "The maintenance crew spent most of the afternoon ------- the ventilation system on the third floor.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "inspect",
+          "ja": "点検する"
+        },
+        {
+          "key": "B",
+          "text": "to inspect",
+          "ja": "点検するために"
+        },
+        {
+          "key": "C",
+          "text": "inspecting",
+          "ja": "点検して"
+        },
+        {
+          "key": "D",
+          "text": "inspected",
+          "ja": "点検された"
+        }
+      ],
+      "answer": "C",
+      "ja": "保守班は午後の大半を、3階の換気設備の点検に費やした。",
+      "explanation": "spend + 時間 + doing で「〜して時間を過ごす」。B の to inspect はこの形では取らない。D の inspected は過去分詞で、spent と動詞が重なってしまう。",
+      "tip": "spend と waste は時間やお金のあとに ing を続ける決まった形。動詞ごとの型として覚えておくと即決できる。"
+    }
+  ],
+  "glossary": {
+    "in advance": {
+      "lemma": "in advance",
+      "pos": "熟",
+      "ja": "前もって",
+      "note": "two days in advance で「2日前に」"
+    },
+    "booking system": {
+      "lemma": "booking",
+      "pos": "名",
+      "ja": "予約",
+      "note": "reservation の言い換え"
+    },
+    "safety briefing": {
+      "lemma": "briefing",
+      "pos": "名",
+      "ja": "説明会、状況説明",
+      "note": ""
+    },
+    "loading zone": {
+      "lemma": "loading zone",
+      "pos": "名",
+      "ja": "荷さばき場",
+      "note": ""
+    },
+    "towing costs": {
+      "lemma": "tow",
+      "pos": "動",
+      "ja": "レッカー移動する",
+      "note": ""
+    },
+    "walking distance": {
+      "lemma": "within walking distance",
+      "pos": "熟",
+      "ja": "徒歩圏内に",
+      "note": "求人や宿の案内で頻出"
+    },
+    "ventilation system": {
+      "lemma": "ventilation",
+      "pos": "名",
+      "ja": "換気",
+      "note": ""
+    },
+    "faulty": {
+      "lemma": "faulty",
+      "pos": "形",
+      "ja": "故障した、欠陥のある",
+      "note": "defective の言い換え"
+    },
+    "inconvenience": {
+      "lemma": "inconvenience",
+      "pos": "名",
+      "ja": "不便、迷惑",
+      "note": "詫びの定型で頻出"
+    },
+    "permit": {
+      "lemma": "permit",
+      "pos": "名",
+      "ja": "許可証",
+      "note": "動詞なら「許可する」"
+    },
+    "representatives": {
+      "lemma": "representative",
+      "pos": "名",
+      "ja": "担当者、代表者",
+      "note": "sales representative で営業担当"
+    }
+  },
+  "point": {
+    "lead": "目印の語を先に探してから、空所に戻る",
+    "items": [
+      {
+        "title": "than・as・and は空所より先にある",
+        "body": "比較級か原級か、between か among かは、空所ではなくその先にある語で決まる。空所の前だけを見て考え込むより、文の残りをひと通り目で追ってから戻るほうが速い。"
+      },
+      {
+        "title": "時と条件の節は未来でも現在形",
+        "body": "If や When が作る節では、未来のことでも will を使わない。主節に will があり、もう一方の節に空所があれば、まず現在形を選んでよい。ここを知らないと毎回2択で迷う。"
+      },
+      {
+        "title": "自動詞か他動詞かで語彙問題を半分にする",
+        "body": "空所のあとに目的語があれば他動詞、無ければ自動詞。remain / arrive / belong のような自動詞は、目的語が続く位置には入れない。意味を考える前にこの条件で削る。"
+      }
+    ]
+  }
+}

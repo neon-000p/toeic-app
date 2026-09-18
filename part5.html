@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="app-build" content="2026-09-18 b125c07">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Part 5 | TOEIC Daily</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="style.css?v=4591a5f7">
+<style>
+body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
+
+.app-head{position:sticky;top:0;z-index:40;background:var(--surface);border-bottom:1px solid var(--line)}
+.head-row{display:flex;align-items:center;gap:6px;padding:7px 0 0}
+.head-row .grow{flex:1;min-width:0}
+.head-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:11.5px;color:var(--muted)}
+.head-scene{font-size:13.5px;font-weight:700;margin-top:2px;line-height:1.35}
+.rail{display:flex;gap:3px;padding:8px 0 6px}
+.rail button{
+  flex:1;padding:0;border:0;background:transparent;cursor:pointer;
+  display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0;
+}
+.rail .bar{width:100%;height:4px;border-radius:2px;background:var(--line)}
+.rail button.done .bar,.rail button.cur .bar{background:var(--accent)}
+.rail .t{font-size:10px;color:var(--muted);white-space:nowrap;letter-spacing:.02em}
+.rail button.cur .t{color:var(--accent);font-weight:800}
+
+.stage{padding-top:14px}
+
+/* 設問 */
+.qbox{margin-top:12px}
+.qnum{font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--accent);margin-bottom:5px}
+.qsent{font-family:var(--serif);font-size:15.5px;line-height:1.75;margin:0 0 10px}
+/* 空所。下線だけを引き、長さを固定して本番の見た目に寄せる */
+.blank{
+  display:inline-block;min-width:62px;border-bottom:2px solid var(--muted);
+  vertical-align:2px;margin:0 3px;
+}
+.fill{background:var(--ok-soft);color:var(--ok);font-weight:700;border-radius:4px;padding:0 4px}
+.choice{
+  display:flex;gap:10px;width:100%;text-align:left;align-items:flex-start;white-space:normal;
+  padding:10px 12px;margin-top:7px;border:1px solid var(--line-2);border-radius:10px;
+  background:var(--surface-2);color:var(--ink);font:inherit;cursor:pointer;min-height:42px;
+}
+.choice .k{
+  flex:none;width:22px;height:22px;border-radius:50%;background:var(--surface);
+  border:1px solid var(--line-2);font-size:12px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:1px;
+}
+.choice .t{font-family:var(--serif);font-size:15px;line-height:1.5}
+.choice.sel{border-color:var(--accent);background:var(--accent-soft)}
+.choice.sel .k{background:var(--accent);border-color:var(--accent);color:#fff}
+.choice.ok{border-color:var(--ok);background:var(--ok-soft)}
+.choice.ok .k{background:var(--ok);border-color:var(--ok);color:#fff}
+.choice.ng{border-color:var(--ng);background:var(--ng-soft)}
+.choice.ng .k{background:var(--ng);border-color:var(--ng);color:#fff}
+
+/* 結果 */
+.score-bar{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:9px 12px;margin-top:14px;
+}
+.score-bar .lb{font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted)}
+.score-bar .n{font-size:15px;font-weight:800;letter-spacing:-.01em}
+.score-bar .sub{font-size:11.5px;color:var(--muted);font-weight:700}
+.verdict{font-size:12px;font-weight:800;padding:2px 8px;border-radius:999px}
+.verdict.ok{background:var(--ok-soft);color:var(--ok)}
+.verdict.ng{background:var(--ng-soft);color:var(--ng)}
+.verdict.na{background:var(--surface-2);color:var(--muted)}
+
+.qja{font-size:12.5px;color:var(--muted);margin:8px 0 0;line-height:1.7}
+.expl{font-size:14px;margin:8px 0 0;line-height:1.75}
+.tip{background:var(--surface-2);border-radius:8px;padding:10px 12px;font-size:13.5px;line-height:1.75;margin-top:10px}
+.tip b{display:block;font-size:10px;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}
+.say{
+  width:26px;height:26px;padding:0;border-radius:8px;flex:none;
+  border:1px solid var(--line-2);background:var(--surface);
+  color:var(--accent);font-size:10px;line-height:1;cursor:pointer;
+}
+.qhead{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+.qhead .qnum{margin:0;flex:1;min-width:0}
+
+/* 語彙 */
+.vcard{display:flex;gap:11px;padding:14px 0;border-bottom:1px solid var(--line)}
+.vcard:first-child{padding-top:0}
+.vcard:last-child{border-bottom:0;padding-bottom:0}
+.vcard .no{
+  flex:none;width:22px;height:22px;border-radius:6px;background:var(--surface-2);
+  color:var(--muted);font-size:11px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:3px;
+}
+.vcard .body{flex:1;min-width:0}
+.vterm{font-family:var(--serif);font-size:19px;font-weight:700;line-height:1.25}
+.vpos{font-size:11px;font-weight:700;color:var(--muted);margin-left:6px}
+.vja{font-size:14.5px;margin-top:2px}
+.vgloss{font-size:12.5px;color:var(--muted);margin-top:1px}
+.say-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:24px;height:24px;padding:0;border-radius:7px;vertical-align:2px;
+  border:1px solid var(--line-2);background:var(--surface);
+  color:var(--accent);font-size:9px;line-height:1;cursor:pointer;
+}
+.vterm .say-btn{margin:0 6px 0 8px}
+.terms-only .vja,.terms-only .vgloss{display:none}
+.terms-only .vcard.open .vja,.terms-only .vcard.open .vgloss{display:block}
+.terms-only .vcard{cursor:pointer}
+.star{
+  flex:none;width:34px;height:34px;border-radius:9px;border:1px solid var(--line-2);
+  background:var(--surface);color:var(--muted);font-size:15px;cursor:pointer;
+}
+.star.on{background:var(--mark-soft);border-color:var(--mark);color:var(--mark-ink)}
+.sec-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 6px}
+.sec-head .sec-label{margin:0}
+.sec-tools{display:flex;gap:6px;flex:none}
+
+/* Point */
+.point .lead{font-size:14.5px;font-weight:700;line-height:1.7;margin:0}
+.point h3{
+  margin:26px 0 8px;font-size:15px;color:var(--accent-ink);line-height:1.5;
+  padding-top:16px;border-top:1px solid var(--line);
+}
+.point h3:first-of-type{margin-top:18px}
+.point p{margin:0;font-size:14px;line-height:1.8}
+
+.app-foot{
+  position:fixed;left:0;right:0;bottom:0;z-index:40;
+  background:var(--surface);border-top:1px solid var(--line);
+  padding:5px 0 calc(5px + env(safe-area-inset-bottom));
+}
+/* 進み具合。答えた問題の数で伸びる */
+.app-foot .bar{
+  position:absolute;left:0;top:0;height:3px;width:0;
+  background:var(--mark);transition:width .25s linear;
+}
+.foot-row{display:flex;align-items:center;gap:8px}
+.foot-row .mid{flex:1;text-align:center;font-size:11.5px;color:var(--muted);font-weight:700}
+.foot-row .mid.over{color:var(--ng)}
+.foot-row .btn{min-width:80px;min-height:36px;padding:6px 12px;font-size:13.5px}
+</style>
+</head>
+<body>
+
+<header class="app-head">
+  <div class="wrap">
+    <div class="head-row">
+      <div class="grow">
+        <div class="head-meta" id="meta"></div>
+        <div class="head-scene" id="scene">読み込み中…</div>
+      </div>
+      <a class="icon-btn" href="index.html?tab=drill" title="ホーム">⌂</a>
+      <button class="icon-btn" id="btnFinish" title="終えてホームへ">✓</button>
+      <button class="icon-btn" id="btnPick" title="セットを選ぶ">▤</button>
+      <button class="icon-btn" id="btnCfg" title="設定">⚙</button>
+    </div>
+    <div class="rail" id="rail"></div>
+  </div>
+</header>
+
+<main class="wrap stage" id="stage"></main>
+
+<nav class="app-foot">
+  <i class="bar" id="fbar"></i>
+  <div class="wrap foot-row">
+    <button class="btn" id="btnPrev">← Back</button>
+    <div class="mid" id="footMid"></div>
+    <button class="btn btn-primary" id="btnNext">Next →</button>
+  </div>
+</nav>
+
+<script src="core.js?v=deb8b121"></script>
+<script>
+(function () {
+  'use strict';
+  var T = window.TOEIC, esc = T.esc;
+  var $ = function (id) { return document.getElementById(id); };
+  var stage = $('stage');
+
+  /* 1回に1セット（短文穴埋め10問）。音声は無く、読んで答えるだけのパート。
+     本番の目安は1問20秒なので、10問で3分20秒。 */
+  /* ホームに戻ったときにこのタブで開くよう覚えておく */
+  T.Settings.set('hubTab', 'drill');
+
+  var STEPS = [
+    { key: 'quiz',  label: '設問' },
+    { key: 'ans',   label: '解説' },
+    { key: 'vocab', label: '語彙' },
+    { key: 'point', label: 'Point' }
+  ];
+
+  var SET = null, INDEX = [];
+  var step = 0, maxStep = 0;
+  var ans = {}, scored = false, done = false;
+  /* 今回の画面で選んだぶん。設問はこれだけを塗る。
+     前回の選択が入ったままだと、開き直しても解き直しにならないため。 */
+  var fresh = {};
+  var progKey = '';
+
+  var t0 = 0, sec = 0, timer = null;   /* 経過秒。解き終わると止める */
+  var PACE_DEFAULT = 20;               /* 本番の目安は1問20秒 */
+  var TYPE_LABEL = {
+    form: '品詞', verb: '動詞の形', verbal: '準動詞', prep: '前置詞',
+    conj: '接続詞', pron: '代名詞・関係詞', comp: '比較・数量', vocab: '語彙'
+  };
+  var BLANK = /-{4,}/;
+
+  /* ================= 起動 ================= */
+
+  function fetchJSON(url) {
+    return fetch(url, { cache: 'no-store' }).then(function (r) {
+      if (!r.ok) throw new Error(r.status + ' ' + url);
+      return r.json();
+    });
+  }
+
+  function boot() {
+    var want = new URLSearchParams(location.search).get('id');
+    fetchJSON('data/part5/index.json')
+      .then(function (idx) { INDEX = (idx && idx.items) || []; })
+      .catch(function () { INDEX = []; })
+      .then(function () {
+        INDEX.sort(function (a, b) { return (b.id || '').localeCompare(a.id || ''); });
+        var it = INDEX.filter(function (x) { return x.id === want; })[0] || INDEX[0];
+        if (!it) throw new Error('セットが見つかりません');
+        return fetchJSON('data/part5/' + (it.file || (it.id + '.json')));
+      })
+      .then(start)
+      .catch(fail);
+  }
+
+  function fail(e) {
+    $('scene').textContent = '読み込めません';
+    $('rail').innerHTML = '';
+    stage.innerHTML = '<div class="card"><div class="sec-label">読み込めません</div><p>' +
+      esc(e && e.message || e) + '</p>' +
+      '<p class="small muted">Part 5 の教材はまだ作られていないかもしれません。' +
+      'ルーティンが <code>data/part5/</code> に書き出すと、ここに出ます。</p></div>';
+    $('btnNext').disabled = true;
+    $('btnPrev').disabled = true;
+  }
+
+  function start(d) {
+    SET = d;
+    progKey = 'part5:' + (d.id || 'unknown');
+    var p = T.Log.progress(progKey);
+
+    done = !!(p && (p.done || p.maxStep >= STEPS.length - 1));
+    ans = (p && p.answers) || {};
+    scored = !!(p && p.scored);
+    maxStep = (p && p.maxStep) || 0;
+    sec = (p && p.sec) || 0;
+    fresh = {};
+    step = 0;
+    renderHead();
+    render('top');
+    startClock();
+  }
+
+  function qs() { return (SET && SET.questions) || []; }
+  function paceSec() {
+    var v = T.Settings.get('p5pace');
+    return (typeof v === 'number' && v > 0) ? v : PACE_DEFAULT;
+  }
+  function target() { return paceSec() * qs().length; }
+
+  function save() {
+    T.Log.saveProgress(progKey, {
+      answers: ans, scored: scored, maxStep: maxStep, done: done,
+      date: SET.date, scene: SET.focus, sec: sec
+    });
+  }
+
+  /* ================= 時間 ================= */
+
+  function startClock() {
+    stopClock();
+    if (step !== 0 || scored) return;
+    t0 = Date.now() - sec * 1000;
+    timer = setInterval(function () {
+      sec = Math.round((Date.now() - t0) / 1000);
+      paintFoot();
+    }, 1000);
+  }
+  function stopClock() { clearInterval(timer); timer = null; }
+  function mmss(n) {
+    var m = Math.floor(n / 60), s = n % 60;
+    return m + ':' + (s < 10 ? '0' : '') + s;
+  }
+
+  /* ================= ヘッダー ================= */
+
+  function renderHead() {
+    var m = [];
+    if (SET.date) m.push('<span>' + esc(SET.date.replace(/-/g, '/')) + (SET.time ? ' ' + esc(SET.time) : '') + '</span>');
+    m.push('<span class="chip">Part 5</span>');
+    if (SET.focus) m.push('<span class="chip chip-plain">' + esc(SET.focus) + '</span>');
+    if (SET.sample) m.push('<span class="chip chip-mark">サンプル</span>');
+    $('meta').innerHTML = m.join('');
+    /* Part 5 は伏せるものが無い。問題数と目安の時間を出す */
+    $('scene').textContent = qs().length + '問・目安 ' + mmss(target());
+    renderRail();
+  }
+
+  function renderRail() {
+    $('rail').innerHTML = STEPS.map(function (s, i) {
+      var cls = i === step ? 'cur' : (i <= maxStep ? 'done' : '');
+      return '<button data-i="' + i + '" class="' + cls + '">' +
+        '<span class="bar"></span><span class="t">' + esc(s.label) + '</span></button>';
+    }).join('');
+  }
+
+  $('rail').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-i]');
+    if (b) go(+b.dataset.i);
+  });
+
+  function go(i) {
+    T.TTS.cancel();
+    step = Math.max(0, Math.min(i, STEPS.length - 1));
+    maxStep = Math.max(maxStep, step);
+    if (step > 0 && !scored) { scored = true; T.Log.touchToday(); }
+    if (step === 0 && !scored) startClock(); else stopClock();
+    save();
+    renderHead();
+    render('top');
+  }
+
+  /* ================= 各ステップの画面 ================= */
+
+  /* 空所を下線にする。語注のタップを壊さないよう、印を付けたあとに差し替える */
+  function sentence(q, fill) {
+    var html = T.markupEnglish(q.prompt, SET.glossary);
+    if (!fill) return html.replace(BLANK, '<span class="blank"></span>');
+    var hit = (q.choices || []).filter(function (c) { return c.key === q.answer; })[0];
+    var word = hit ? hit.text : '';
+    return html.replace(BLANK, '<span class="fill">' + T.markupEnglish(word, SET.glossary) + '</span>');
+  }
+
+  /* 読み上げに渡す文。空所は正解で埋める */
+  function plain(q) {
+    var hit = (q.choices || []).filter(function (c) { return c.key === q.answer; })[0];
+    return String(q.prompt || '').replace(BLANK, hit ? hit.text : '');
+  }
+
+  function viewQuiz() {
+    return qs().map(function (q, i) {
+      return '<div class="card qbox" data-qi="' + i + '">' +
+        '<div class="qnum">Q' + (i + 1) + '</div>' +
+        '<p class="qsent">' + sentence(q, false) + '</p>' +
+        q.choices.map(function (c) {
+          var sel = fresh[q.id] === c.key;
+          return '<button class="choice' + (sel ? ' sel' : '') + '" data-q="' + esc(q.id) + '" data-k="' + esc(c.key) + '">' +
+            '<span class="k">' + esc(c.key) + '</span><span class="t">' + esc(c.text) + '</span></button>';
+        }).join('') +
+        '</div>';
+    }).join('');
+  }
+
+  function viewAns() {
+    var list = qs();
+    var n = list.filter(function (q) { return ans[q.id] === q.answer; }).length;
+    /* 平均は、ある程度の時間をかけたときだけ出す。
+       開いてすぐ採点したときに「1問 0 秒」と出ても意味が無い。 */
+    var avg = list.length ? Math.round(sec / list.length) : 0;
+    var showAvg = sec >= list.length;
+    var html = '<div class="score-bar"><span class="lb">結果</span>' +
+      '<span class="n">' + n + ' / ' + list.length + '</span>' +
+      '<span class="verdict ' + (n === list.length ? 'ok' : 'ng') + '">' +
+      (n === list.length ? '全問正解' : (list.length - n) + '問 要復習') + '</span>' +
+      (sec ? '<span class="sub">所要 ' + mmss(sec) +
+        (showAvg ? '　1問 ' + avg + ' 秒' : '') + '</span>' : '') +
+      '</div>';
+
+    list.forEach(function (q, i) {
+      var mine = ans[q.id], ok = mine === q.answer;
+      html += '<div class="card">' +
+        '<div class="qhead">' +
+          '<span class="qnum">Q' + (i + 1) +
+            (TYPE_LABEL[q.type] ? '　' + TYPE_LABEL[q.type] : '') + '　' +
+            (!mine ? '<span class="verdict na">未解答</span>'
+                   : '<span class="verdict ' + (ok ? 'ok' : 'ng') + '">' + (ok ? '正解' : '不正解') + '</span>') +
+          '</span>' +
+          '<button class="say" data-say="' + esc(plain(q)) + '" title="読み上げる">▶</button>' +
+        '</div>' +
+        '<p class="qsent">' + sentence(q, true) + '</p>' +
+        q.choices.map(function (c) {
+          var cls = c.key === q.answer ? ' ok' : (c.key === mine ? ' ng' : '');
+          return '<button class="choice' + cls + '" disabled>' +
+            '<span class="k">' + esc(c.key) + '</span>' +
+            '<span class="t">' + esc(c.text) +
+            (c.ja ? '<span class="cja">' + esc(c.ja) + '</span>' : '') +
+            '</span></button>';
+        }).join('') +
+        '<p class="qja">' + esc(q.ja || '') + '</p>' +
+        '<p class="expl">' + esc(q.explanation || '') + '</p>' +
+        (q.tip ? '<div class="tip"><b>この型の見分け方</b>' + esc(q.tip) + '</div>' : '') +
+        '</div>';
+    });
+    return html;
+  }
+
+  function viewVocab() {
+    var g = SET.glossary || {};
+    var keys = Object.keys(g);
+    if (!keys.length) return '<div class="card"><p class="small muted" style="margin:0">このセットには語注がありません。</p></div>';
+    var showMean = T.Settings.get('vocabJa') !== false;
+    return '<div class="card' + (showMean ? '' : ' terms-only') + '" id="vocabCard">' +
+      '<div class="sec-head"><span class="sec-label">Vocabulary</span>' +
+        '<span class="sec-tools"><button class="btn btn-sm icon' + (showMean ? ' on' : '') +
+          '" id="toggleVocabJa" title="' + (showMean ? '英単語だけにする' : '意味を出す') + '">訳</button></span></div>' +
+      keys.map(function (k, i) {
+        var e = g[k], term = e.lemma || k;
+        var on = T.Vocab.has(term);
+        return '<div class="vcard">' +
+          '<span class="no">' + (i + 1) + '</span>' +
+          '<div class="body">' +
+            '<div class="vterm">' + esc(term) +
+              '<button class="say-btn" data-sayw="' + esc(term) + '" title="単語を再生">▶</button>' +
+              (e.pos ? '<span class="vpos">（' + esc(e.pos) + '）</span>' : '') + '</div>' +
+            '<div class="vja">' + esc(e.ja || '') + '</div>' +
+            (e.note ? '<div class="vgloss">' + esc(e.note) + '</div>' : '') +
+          '</div>' +
+          '<button class="star' + (on ? ' on' : '') + '" data-term="' + esc(term) + '" title="語彙帳">' +
+            (on ? '★' : '☆') + '</button></div>';
+      }).join('') +
+      '</div><p class="hint">' +
+      (showMean
+        ? '★ で<a href="vocab.html" style="color:var(--accent)">語彙帳</a>に入り、間隔をあけて復習できます。現在 ' + T.Vocab.count() + ' 語。'
+        : '英単語だけを出しています。意味を思い出してから、カードをタップして答え合わせ。') + '</p>';
+  }
+
+  function viewPoint() {
+    var p = SET.point;
+    if (!p || !(p.items || []).length) {
+      return '<div class="card"><p class="small muted" style="margin:0">' +
+        'このセットには総括がありません。設問ごとの見分け方は解説にあります。</p></div>';
+    }
+    return '<div class="card point">' +
+      '<div class="sec-label">解き方の型</div>' +
+      '<p class="lead">' + esc(p.lead || '') + '</p>' +
+      '<p class="small muted" style="margin:6px 0 0">1問20秒で回すには、読む範囲を先に決めることが要になります。</p>' +
+      p.items.map(function (it) {
+        return '<h3>' + esc(it.title) + '</h3><p>' + esc(it.body) + '</p>';
+      }).join('') +
+      '</div>';
+  }
+
+  function render(scroll) {
+    var k = STEPS[step].key;
+    stage.innerHTML =
+      k === 'quiz' ? viewQuiz() :
+      k === 'ans' ? viewAns() :
+      k === 'vocab' ? viewVocab() : viewPoint();
+    paintFoot();
+    if (scroll === 'top') window.scrollTo(0, 0);
+  }
+
+  /* ================= フッター ================= */
+
+  function answered() {
+    return qs().filter(function (q) { return fresh[q.id]; }).length;
+  }
+
+  function paintFoot() {
+    var prev = $('btnPrev'), next = $('btnNext'), mid = $('footMid'), bar = $('fbar');
+    prev.textContent = step === 0 ? '← Home' : '← Back';
+    next.textContent = step === 0 ? 'Check' : (step === STEPS.length - 1 ? 'Finish' : 'Next →');
+
+    if (step === 0) {
+      var n = answered(), total = qs().length;
+      bar.style.width = (total ? (n / total) * 100 : 0) + '%';
+      mid.textContent = n + ' / ' + total + '　' + mmss(sec) + ' ／ ' + mmss(target());
+      mid.classList.toggle('over', sec > target());
+      return;
+    }
+    bar.style.width = '100%';
+    mid.classList.remove('over');
+    mid.textContent = (step + 1) + ' / ' + STEPS.length + '　' + STEPS[step].label;
+  }
+
+  /* ================= 操作 ================= */
+
+  $('btnNext').addEventListener('click', function () {
+    if (step === STEPS.length - 1) { finish(); return; }
+    go(step + 1);
+  });
+
+  $('btnPrev').addEventListener('click', function () {
+    if (step > 0) { go(step - 1); return; }
+    stopClock();
+    T.TTS.cancel();
+    location.href = 'index.html?tab=drill';
+  });
+
+  $('btnFinish').addEventListener('click', finish);
+
+  function finish() {
+    stopClock();
+    T.TTS.cancel();
+    if (!scored) { scored = true; T.Log.touchToday(); }
+    maxStep = STEPS.length - 1;
+    done = true;
+    save();
+    if (T.flash) T.flash('Done');
+    location.href = 'index.html?tab=drill';
+  }
+
+  stage.addEventListener('click', function (e) {
+    var t = e.target;
+
+    var ch = t.closest('.choice[data-q]');
+    if (ch && !ch.disabled) {
+      ans[ch.dataset.q] = ch.dataset.k;
+      fresh[ch.dataset.q] = ch.dataset.k;
+      save();
+      /* 押した位置を動かさないよう、その設問の中だけ塗り替える */
+      var box = ch.closest('.qbox');
+      Array.prototype.forEach.call(box.querySelectorAll('.choice'), function (b) {
+        b.classList.toggle('sel', b === ch);
+      });
+      paintFoot();
+      return;
+    }
+
+    var sy = t.closest('[data-say]');
+    if (sy) { T.TTS.speak(sy.dataset.say, { rate: T.Settings.get('rate') }); return; }
+
+    var sw = t.closest('[data-sayw]');
+    if (sw) { T.TTS.speak(sw.dataset.sayw, { rate: 0.85 }); return; }
+
+    var st = t.closest('.star[data-term]');
+    if (st) {
+      var term = st.dataset.term;
+      var g = SET.glossary || {};
+      var hit = null;
+      Object.keys(g).forEach(function (k) { if ((g[k].lemma || k) === term) hit = g[k]; });
+      if (T.Vocab.has(term)) { T.Vocab.remove(term); T.toast('語彙帳から外しました'); }
+      else {
+        T.Vocab.add({ term: term, pos: (hit && hit.pos) || '', ja: (hit && hit.ja) || '',
+                      gloss: (hit && hit.note) || '', src: SET.id,
+                      srcTitle: 'Part 5 ' + (SET.focus || '') });
+        T.toast('語彙帳に追加しました');
+      }
+      render();
+      return;
+    }
+
+    if (t.closest('#toggleVocabJa')) {
+      T.Settings.set('vocabJa', T.Settings.get('vocabJa') === false);
+      render();
+      return;
+    }
+
+    var gw = t.closest('.vcard');
+    if (gw && gw.closest('.terms-only')) { gw.classList.toggle('open'); return; }
+  });
+
+  /* ================= セットを選ぶ・設定 ================= */
+
+  $('btnPick').addEventListener('click', function () {
+    var rows = INDEX.length ? INDEX.map(function (it) {
+      var here = SET && it.id === SET.id;
+      var p = T.Log.progress('part5:' + it.id);
+      return '<p style="margin:0 0 4px"><a href="?id=' + encodeURIComponent(it.id) + '" style="color:inherit;text-decoration:none">' +
+        '<span class="chip chip-plain">' + esc((it.date || it.id) + (it.time ? ' ' + it.time : '')) + '</span> ' +
+        (it.kind ? '<span class="chip">' + esc(it.kind) + '</span> ' : '') +
+        (here ? '<b>いま解いている</b>' : (p && p.scored ? '解答済み' : '未着手')) + '</a></p>';
+    }).join('') : '<p class="muted small">目次が読めませんでした。</p>';
+    T.modal('<h2>セットを選ぶ</h2>' + rows +
+      '<div class="tool-row"><button class="btn btn-sm" id="mClose">閉じる</button></div>',
+      function (bg) { bg.querySelector('#mClose').onclick = function () { bg.remove(); }; });
+  });
+
+  $('btnCfg').addEventListener('click', function () {
+    T.openSettings({
+      extraHTML:
+        '<h2>Part 5</h2>' +
+        '<label class="field"><span>1問あたりの目安 <b id="p5v">' + paceSec() + '</b> 秒</span>' +
+          '<input type="range" id="p5pace" min="10" max="40" step="1" value="' + paceSec() + '"></label>' +
+        '<p class="small muted" style="margin:-4px 0 8px">本番は1問20秒で進めると、Part 7 に時間を残せます。' +
+          'フッターに経過時間と目安が出るので、超えたら赤くなります。<b>時間を過ぎても止まりません。</b></p>',
+      onMount: function (bg) {
+        var r = bg.querySelector('#p5pace');
+        r.oninput = function () {
+          T.Settings.set('p5pace', parseInt(r.value, 10));
+          bg.querySelector('#p5v').textContent = r.value;
+          renderHead();
+          paintFoot();
+        };
+      }
+    });
+  });
+
+  /* 文中をなぞって選ぶと「意味」のボタンが出る。熟語はタップでは指せないため */
+  T.watchSelection(stage, {
+    ctx: '.qsent, .choice, .qja, .expl',
+    onPick: function (text, ctx, rect) {
+      var g = SET && SET.glossary && SET.glossary[text.toLowerCase()];
+      T.phrasePop({ text: text, ctx: ctx, rect: rect, gloss: g,
+        scope: (SET && SET.id) || '', srcTitle: 'Part 5 ' + ((SET && SET.focus) || '') });
+    }
+  });
+
+  boot();
+})();
+</script>
+</body>
+</html>

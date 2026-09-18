@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "type": "part5-history",
+  "updatedAt": "2026-09-18T12:58:00+09:00",
+  "items": [
+    {
+      "id": "2026-09-18-1258-5",
+      "date": "2026-09-18",
+      "focus": "文法7・語彙3",
+      "types": [
+        "form",
+        "verb",
+        "prep",
+        "vocab",
+        "comp",
+        "form",
+        "vocab",
+        "conj",
+        "pron",
+        "vocab"
+      ],
+      "topics": [
+        "several と複数名詞",
+        "over the past と現在完了",
+        "数量を取る前置詞",
+        "twice as ... as",
+        "受動態のあとの副詞",
+        "in case と so that",
+        "所有格の代名詞"
+      ]
+    },
+    {
+      "id": "2026-09-18-1258-4",
+      "date": "2026-09-18",
+      "focus": "文法6・語彙4",
+      "types": [
+        "form",
+        "vocab",
+        "conj",
+        "form",
+        "verb",
+        "vocab",
+        "prep",
+        "vocab",
+        "verbal",
+        "vocab"
+      ],
+      "topics": [
+        "完成した文のあとの副詞",
+        "rather than と instead",
+        "他動詞の目的語になる名詞",
+        "過去の一点と過去形",
+        "期間の within",
+        "分詞構文の受動"
+      ]
+    },
+    {
+      "id": "2026-09-18-1258-3",
+      "date": "2026-09-18",
+      "focus": "文法7・語彙3",
+      "types": [
+        "vocab",
+        "form",
+        "verb",
+        "prep",
+        "form",
+        "vocab",
+        "pron",
+        "comp",
+        "vocab",
+        "verbal"
+      ],
+      "topics": [
+        "be 動詞のあとの形容詞",
+        "条件節の現在形",
+        "between A and B",
+        "be responsible for",
+        "both と動詞の一致",
+        "than と比較級",
+        "spend + 時間 + doing"
+      ]
+    },
+    {
+      "id": "2026-09-18-1258-2",
+      "date": "2026-09-18",
+      "focus": "文法6・語彙4",
+      "types": [
+        "form",
+        "prep",
+        "vocab",
+        "verb",
+        "vocab",
+        "form",
+        "comp",
+        "vocab",
+        "conj",
+        "vocab"
+      ],
+      "topics": [
+        "完成した文のあとの副詞",
+        "during と while",
+        "未来完了",
+        "冠詞と名詞に挟まれた形容詞",
+        "比較級を強める far",
+        "時・条件の節と現在形"
+      ]
+    },
+    {
+      "id": "2026-09-18-1258-1",
+      "date": "2026-09-18",
+      "focus": "文法7・語彙3",
+      "types": [
+        "form",
+        "verb",
+        "vocab",
+        "prep",
+        "form",
+        "conj",
+        "vocab",
+        "verbal",
+        "pron",
+        "vocab"
+      ],
+      "topics": [
+        "助動詞のあとの動詞",
+        "受動態と未来",
+        "期限の by",
+        "the と of に挟まれた名詞",
+        "節をつなぐ接続詞",
+        "動名詞を取る動詞",
+        "所有格の関係詞"
+      ]
+    }
+  ]
+}

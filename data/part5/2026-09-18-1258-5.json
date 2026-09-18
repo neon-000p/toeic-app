@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-09-18-1258-5",
+  "date": "2026-09-18",
+  "time": "12:58",
+  "createdAt": "2026-09-18T12:58:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "The consultant offered several ------- for reducing energy use in the older buildings on the campus.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "suggest",
+          "ja": "（動）提案する"
+        },
+        {
+          "key": "B",
+          "text": "suggestions",
+          "ja": "（名）提案（複数）"
+        },
+        {
+          "key": "C",
+          "text": "suggested",
+          "ja": "（過去分詞）"
+        },
+        {
+          "key": "D",
+          "text": "suggestive",
+          "ja": "（形）示唆する"
+        }
+      ],
+      "answer": "B",
+      "ja": "コンサルタントは、敷地内の古い建物の電力使用を減らすための提案をいくつか示した。",
+      "explanation": "several は数えられる名詞の複数形を修飾するので suggestions。A は動詞、C は過去分詞、D は形容詞で、several の後ろには置けない。",
+      "tip": "several / many / a few の直後は数えられる名詞の複数形。数量を表す語は、続く名詞の形まで決めてしまう。"
+    },
+    {
+      "id": "q2",
+      "type": "verb",
+      "prompt": "Over the past five years, the company ------- its warehouse space to keep up with growing online orders.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "doubles",
+          "ja": "倍にする"
+        },
+        {
+          "key": "B",
+          "text": "doubled",
+          "ja": "倍にした"
+        },
+        {
+          "key": "C",
+          "text": "has doubled",
+          "ja": "倍にしてきた"
+        },
+        {
+          "key": "D",
+          "text": "will double",
+          "ja": "倍にするだろう"
+        }
+      ],
+      "answer": "C",
+      "ja": "この5年間で、その会社は増え続けるオンライン注文に対応するため倉庫の面積を倍にした。",
+      "explanation": "Over the past five years は過去から現在までの幅を表すので現在完了。B の過去形は過去の一点を指す語と使う。D の will double は未来で、past と矛盾する。",
+      "tip": "over the past / for the last / since は現在完了の目印。時を表す語句を先に見つけてから選ぶ。"
+    },
+    {
+      "id": "q3",
+      "type": "prep",
+      "prompt": "The samples should be stored ------- ten degrees Celsius until the laboratory completes its analysis.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "below",
+          "ja": "〜より下で"
+        },
+        {
+          "key": "B",
+          "text": "among",
+          "ja": "〜の中で"
+        },
+        {
+          "key": "C",
+          "text": "during",
+          "ja": "〜の間"
+        },
+        {
+          "key": "D",
+          "text": "across",
+          "ja": "〜を横切って"
+        }
+      ],
+      "answer": "A",
+      "ja": "試料は、研究所の分析が終わるまで摂氏10度以下で保管すること。",
+      "explanation": "温度の上下を表すのは below。B の among は3つ以上の中で、C の during は期間、D の across は横切る意味で、いずれも温度には使えない。",
+      "tip": "前置詞は後ろに来る名詞の種類で決まる。時間・場所・数量のどれを取っているかを見れば、意味を思い出せなくても半分は外せる。"
+    },
+    {
+      "id": "q4",
+      "type": "vocab",
+      "prompt": "Customers who join the membership program ------- a ten percent discount on every purchase for one year.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "remind",
+          "ja": "思い出させる"
+        },
+        {
+          "key": "B",
+          "text": "expire",
+          "ja": "期限が切れる"
+        },
+        {
+          "key": "C",
+          "text": "deliver",
+          "ja": "届ける"
+        },
+        {
+          "key": "D",
+          "text": "receive",
+          "ja": "受け取る"
+        }
+      ],
+      "answer": "D",
+      "ja": "会員制度に加入した顧客は、1年間すべての買い物で10パーセントの割引を受けられる。",
+      "explanation": "割引を受ける側なので receive。C の deliver は届ける側の動作で、主語が Customers だと向きが逆になる。B の expire は自動詞で目的語を取れない。",
+      "tip": "主語が受け取る側か与える側かで動詞の向きが決まる。割引・特典・通知はこの取り違えが狙われる。"
+    },
+    {
+      "id": "q5",
+      "type": "comp",
+      "prompt": "The second printer produces documents almost twice ------- fast as the model it replaced last year.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "more",
+          "ja": "より多く"
+        },
+        {
+          "key": "B",
+          "text": "as",
+          "ja": "同じくらい"
+        },
+        {
+          "key": "C",
+          "text": "so",
+          "ja": "それほど"
+        },
+        {
+          "key": "D",
+          "text": "very",
+          "ja": "とても"
+        }
+      ],
+      "answer": "B",
+      "ja": "2台目のプリンターは、昨年まで使っていた機種のほぼ2倍の速さで印刷できる。",
+      "explanation": "後ろに as があるので as ... as の同等比較。twice as fast as で「2倍の速さ」。A の more は than とセットで使う。C の so は so ... that の形で、as とは組まない。",
+      "tip": "空所の少し先に as か than があるかを先に探す。as があれば原級、than があれば比較級と、それだけで決まる。"
+    },
+    {
+      "id": "q6",
+      "type": "form",
+      "prompt": "All applications must be reviewed ------- by two members of the hiring committee.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "independent",
+          "ja": "（形）独立した"
+        },
+        {
+          "key": "B",
+          "text": "independence",
+          "ja": "（名）独立"
+        },
+        {
+          "key": "C",
+          "text": "independents",
+          "ja": "（名）無所属の人"
+        },
+        {
+          "key": "D",
+          "text": "independently",
+          "ja": "（副）別々に"
+        }
+      ],
+      "answer": "D",
+      "ja": "すべての応募書類は、採用委員会の2名が別々に審査しなければならない。",
+      "explanation": "be 動詞＋過去分詞の受動態を修飾する位置なので副詞。A は形容詞、B と C は名詞で、動詞を修飾できない。",
+      "tip": "be 動詞＋過去分詞のあとの空所は副詞が入りやすい。文の形がすでに完成しているかどうかで判断する。"
+    },
+    {
+      "id": "q7",
+      "type": "vocab",
+      "prompt": "The instructions clearly ------- that the machine must be turned off before the filter is removed.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "remind",
+          "ja": "思い出させる"
+        },
+        {
+          "key": "B",
+          "text": "respond",
+          "ja": "応じる"
+        },
+        {
+          "key": "C",
+          "text": "state",
+          "ja": "明記する"
+        },
+        {
+          "key": "D",
+          "text": "consist",
+          "ja": "成る"
+        }
+      ],
+      "answer": "C",
+      "ja": "取扱説明書には、フィルターを外す前に機械の電源を切るようはっきり書かれている。",
+      "explanation": "文書が内容を示すことを表すのは state。A の remind は人を目的語に取り、remind that の形では使わない。D の consist は consist of の形で、that 節を取らない。",
+      "tip": "that 節を目的語に取れる動詞かどうかで絞れる。state / indicate / announce は取れるが、remind / consist は取れない。"
+    },
+    {
+      "id": "q8",
+      "type": "conj",
+      "prompt": "Please keep the receipt ------- you need to exchange the item within the thirty-day return period.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "in case",
+          "ja": "〜する場合に備えて"
+        },
+        {
+          "key": "B",
+          "text": "so that",
+          "ja": "〜するために"
+        },
+        {
+          "key": "C",
+          "text": "even if",
+          "ja": "たとえ〜でも"
+        },
+        {
+          "key": "D",
+          "text": "as though",
+          "ja": "まるで〜のように"
+        }
+      ],
+      "answer": "A",
+      "ja": "30日の返品期間内に商品を交換する場合に備えて、領収書は保管しておいてください。",
+      "explanation": "「必要になった場合に備えて」という意味なので in case。B の so that は目的を表し、その場合は can などの助動詞を伴うのが普通。C の even if は「たとえ〜でも」で、保管する理由にならない。",
+      "tip": "in case は「〜に備えて」、so that は「〜するために」。どちらも後ろに文が来るので、最後は意味の向きで選ぶ。"
+    },
+    {
+      "id": "q9",
+      "type": "pron",
+      "prompt": "The two suppliers offered similar terms, so the purchasing team compared ------- delivery records before deciding.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "them",
+          "ja": "彼らを"
+        },
+        {
+          "key": "B",
+          "text": "their",
+          "ja": "彼らの"
+        },
+        {
+          "key": "C",
+          "text": "theirs",
+          "ja": "彼らのもの"
+        },
+        {
+          "key": "D",
+          "text": "themselves",
+          "ja": "彼ら自身"
+        }
+      ],
+      "answer": "B",
+      "ja": "2社の条件が似ていたため、購買チームは決定の前に両社の納品実績を比べた。",
+      "explanation": "空所のあとに delivery records という名詞が続くので、名詞を修飾する所有格の their。A の them は目的格で名詞を修飾できない。C の theirs は所有代名詞で、単独で使い後ろに名詞を取らない。",
+      "tip": "代名詞は空所のあとを見る。名詞が続けば所有格、何も続かなければ目的格か所有代名詞。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "The organizers decided to ------- the outdoor concert because of the forecast of heavy rain.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "confirm",
+          "ja": "確認する"
+        },
+        {
+          "key": "B",
+          "text": "assemble",
+          "ja": "組み立てる"
+        },
+        {
+          "key": "C",
+          "text": "reschedule",
+          "ja": "日程を変更する"
+        },
+        {
+          "key": "D",
+          "text": "withdraw",
+          "ja": "取り下げる"
+        }
+      ],
+      "answer": "C",
+      "ja": "大雨の予報のため、主催者は屋外コンサートの日程を変更することにした。",
+      "explanation": "雨の予報を受けて日程を組み直すので reschedule。A の confirm は予定をそのまま確かめる意味で、雨の予報とかみ合わない。D の withdraw は出場や申し出を取り下げる語で、主催者が催し自体には使わない。",
+      "tip": "催しと天候の組み合わせは、延期・中止・変更のどれかが答えになりやすい。選択肢からその3つに当たる語を先に探す。"
+    }
+  ],
+  "glossary": {
+    "keep up with": {
+      "lemma": "keep up with",
+      "pos": "熟",
+      "ja": "（変化に）ついていく、追いつく",
+      "note": ""
+    },
+    "degrees celsius": {
+      "lemma": "degrees Celsius",
+      "pos": "名",
+      "ja": "摂氏〜度",
+      "note": "Fahrenheit（華氏）と対"
+    },
+    "membership program": {
+      "lemma": "membership program",
+      "pos": "名",
+      "ja": "会員制度",
+      "note": ""
+    },
+    "hiring committee": {
+      "lemma": "hiring committee",
+      "pos": "名",
+      "ja": "採用委員会",
+      "note": ""
+    },
+    "turned off": {
+      "lemma": "turn off",
+      "pos": "熟",
+      "ja": "（電源を）切る",
+      "note": "turn on の対"
+    },
+    "return period": {
+      "lemma": "return period",
+      "pos": "名",
+      "ja": "返品可能な期間",
+      "note": ""
+    },
+    "delivery records": {
+      "lemma": "delivery record",
+      "pos": "名",
+      "ja": "納品実績",
+      "note": ""
+    },
+    "consultant": {
+      "lemma": "consultant",
+      "pos": "名",
+      "ja": "コンサルタント、顧問",
+      "note": ""
+    },
+    "receipt": {
+      "lemma": "receipt",
+      "pos": "名",
+      "ja": "領収書、受け取り",
+      "note": "発音は「レシート」で p は読まない"
+    },
+    "suppliers": {
+      "lemma": "supplier",
+      "pos": "名",
+      "ja": "供給元、納入業者",
+      "note": "vendor の言い換え"
+    },
+    "organizers": {
+      "lemma": "organizer",
+      "pos": "名",
+      "ja": "主催者",
+      "note": ""
+    }
+  },
+  "point": {
+    "lead": "数量・時・比較の目印を拾えば、文を読み切らずに決まる",
+    "items": [
+      {
+        "title": "数量を表す語は続く名詞の形まで決める",
+        "body": "several / many / a few の後ろは数えられる名詞の複数形、much / a little の後ろは数えられない名詞。空所が名詞の位置にあるとき、前の数量詞を見れば単数か複数かまで絞れる。"
+      },
+      {
+        "title": "時の表現と時制は必ず対で出る",
+        "body": "last March なら過去形、over the past five years なら現在完了、by the time なら未来完了。動詞の形が並ぶ問題では、まず文中の時の表現を探す。見つかればそこで答えが決まる。"
+      },
+      {
+        "title": "as と than は空所より後ろにある",
+        "body": "twice as fast as のような形は、空所の先にある as を見つけて初めて決まる。比較の問題で前だけを見て迷ったら、文の後半に目印が無いかを確かめる。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-09-18-1258-1",
+  "date": "2026-09-18",
+  "time": "12:58",
+  "createdAt": "2026-09-18T12:58:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "All visitors must ------- their badges at the front desk before entering the research laboratory.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "collect",
+          "ja": "受け取る、集める"
+        },
+        {
+          "key": "B",
+          "text": "collection",
+          "ja": "（名）回収、収集"
+        },
+        {
+          "key": "C",
+          "text": "collective",
+          "ja": "（形）集団の"
+        },
+        {
+          "key": "D",
+          "text": "collectively",
+          "ja": "（副）まとめて"
+        }
+      ],
+      "answer": "A",
+      "ja": "来訪者は全員、研究所に入る前に受付でバッジを受け取らなければならない。",
+      "explanation": "must の直後は動詞の原形が入る。空所の後ろに their badges という目的語が続くので、他動詞の collect。B の collection は名詞で助動詞の後ろに置けない。D の collectively は副詞なので目的語を取れない。",
+      "tip": "選択肢が同じ語幹で語尾だけ違えば品詞問題。助動詞の直後は動詞の原形と決まっているので、空所の前1語だけで決まる。"
+    },
+    {
+      "id": "q2",
+      "type": "verb",
+      "prompt": "The updated safety manuals ------- to every department before the inspection next Monday.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "distributed",
+          "ja": "配布した"
+        },
+        {
+          "key": "B",
+          "text": "will be distributed",
+          "ja": "配布される予定だ"
+        },
+        {
+          "key": "C",
+          "text": "are distributing",
+          "ja": "配布している"
+        },
+        {
+          "key": "D",
+          "text": "have distributed",
+          "ja": "配布してきた"
+        }
+      ],
+      "answer": "B",
+      "ja": "更新された安全マニュアルは、来週月曜の点検の前に全部署へ配布される。",
+      "explanation": "主語の manuals は配る側ではなく配られる側なので受動態になる。next Monday が未来を指すので will be distributed。C は能動で「マニュアルが配っている」という意味になってしまう。",
+      "tip": "動詞の形が並んだら、まず主語が「する側か・される側か」を決める。次に時を表す語句で時制を決める。この2段階で必ず1つに絞れる。"
+    },
+    {
+      "id": "q3",
+      "type": "vocab",
+      "prompt": "Because the supplier raised its prices, the factory decided to ------- a cheaper source of packaging material.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "postpone",
+          "ja": "延期する"
+        },
+        {
+          "key": "B",
+          "text": "release",
+          "ja": "発売する、解放する"
+        },
+        {
+          "key": "C",
+          "text": "seek",
+          "ja": "探し求める"
+        },
+        {
+          "key": "D",
+          "text": "attach",
+          "ja": "添付する"
+        }
+      ],
+      "answer": "C",
+      "ja": "供給元が値上げしたため、工場は梱包材のより安い調達先を探すことにした。",
+      "explanation": "「値上げされた → 安い調達先を〜する」という流れなので、探すという意味の seek が入る。A の postpone は source を目的語に取れない。B の release は「発売する」で、調達先には使わない。",
+      "tip": "語彙問題は空所の前後だけでなく、Because や so が作る因果の向きを見る。原因が値上げなら、結果は費用を抑える動きになる。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "prompt": "Please submit the completed expense forms ------- Friday so that payroll can process them this month.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "until",
+          "ja": "〜までずっと"
+        },
+        {
+          "key": "B",
+          "text": "during",
+          "ja": "〜の間"
+        },
+        {
+          "key": "C",
+          "text": "within",
+          "ja": "〜以内に"
+        },
+        {
+          "key": "D",
+          "text": "by",
+          "ja": "〜までに"
+        }
+      ],
+      "answer": "D",
+      "ja": "経理が今月中に処理できるよう、記入済みの経費精算書を金曜までに提出してください。",
+      "explanation": "submit は一回で終わる動作なので、期限を表す by が入る。A の until は「その時までずっと続く」動作に使う。C の within は within three days のように期間の長さを取り、曜日は取れない。",
+      "tip": "by と until の取り違えは頻出。動作が1回で終わるなら by、状態が続くなら until と覚えておく。"
+    },
+    {
+      "id": "q5",
+      "type": "form",
+      "prompt": "The new assembly line has improved the ------- of the packaging process by nearly twenty percent.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "efficiency",
+          "ja": "（名）効率"
+        },
+        {
+          "key": "B",
+          "text": "efficient",
+          "ja": "（形）効率的な"
+        },
+        {
+          "key": "C",
+          "text": "efficiently",
+          "ja": "（副）効率的に"
+        },
+        {
+          "key": "D",
+          "text": "most efficient",
+          "ja": "（形）最も効率的な"
+        }
+      ],
+      "answer": "A",
+      "ja": "新しい組立ラインにより、梱包工程の効率が20パーセント近く向上した。",
+      "explanation": "the と of に挟まれた位置に入るのは名詞なので efficiency。B は形容詞、C は副詞で、どちらも the の直後に単独では置けない。D も後ろに名詞が無いため成り立たない。",
+      "tip": "the と of に挟まれた空所は名詞。空所の前後2語だけで決まる、いちばん速く解ける型。"
+    },
+    {
+      "id": "q6",
+      "type": "conj",
+      "prompt": "------- the renovation was finished ahead of schedule, the cafeteria will reopen earlier than announced.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Despite",
+          "ja": "〜にもかかわらず"
+        },
+        {
+          "key": "B",
+          "text": "However",
+          "ja": "しかしながら"
+        },
+        {
+          "key": "C",
+          "text": "Because",
+          "ja": "〜なので"
+        },
+        {
+          "key": "D",
+          "text": "In case",
+          "ja": "〜の場合に備えて"
+        }
+      ],
+      "answer": "C",
+      "ja": "改装が予定より早く終わったため、食堂は告知より早く再開する。",
+      "explanation": "空所のあとに the renovation was finished という文が続くので、節をつなぐ接続詞が入る。A の Despite は前置詞で名詞句しか取れない。B の However は接続副詞で、2つの文をカンマだけでつなぐことはできない。意味も順接なので Because。",
+      "tip": "接続詞・前置詞・接続副詞が混ざった選択肢は、まず空所のあとが「文か、名詞句か」を見る。文なら接続詞に絞れる。"
+    },
+    {
+      "id": "q7",
+      "type": "vocab",
+      "prompt": "Guests staying more than three nights are ------- for a free upgrade to a room with a harbor view.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "capable",
+          "ja": "能力がある"
+        },
+        {
+          "key": "B",
+          "text": "eligible",
+          "ja": "資格がある"
+        },
+        {
+          "key": "C",
+          "text": "available",
+          "ja": "利用できる、空いている"
+        },
+        {
+          "key": "D",
+          "text": "reasonable",
+          "ja": "妥当な"
+        }
+      ],
+      "answer": "B",
+      "ja": "3泊以上滞在する客は、海の見える部屋への無料アップグレードを受ける資格がある。",
+      "explanation": "be eligible for で「〜の資格がある」。人を主語に取り、for と結び付く。A の capable は be capable of の形で for は取らない。C の available は物や時間が空いていることを表すので、人を主語にすると意味が変わる。",
+      "tip": "語彙問題では空所の直後の前置詞が手がかりになる。for と結び付く形容詞を思い出せば、それだけで2つに絞れる。"
+    },
+    {
+      "id": "q8",
+      "type": "verbal",
+      "prompt": "The committee postponed ------- the final budget until the regional managers submit their forecasts.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "approve",
+          "ja": "承認する"
+        },
+        {
+          "key": "B",
+          "text": "to approve",
+          "ja": "承認すること"
+        },
+        {
+          "key": "C",
+          "text": "approved",
+          "ja": "承認した"
+        },
+        {
+          "key": "D",
+          "text": "approving",
+          "ja": "承認すること"
+        }
+      ],
+      "answer": "D",
+      "ja": "委員会は、各地域の責任者が見通しを出すまで、最終予算の承認を先送りした。",
+      "explanation": "postpone は目的語に動名詞だけを取る動詞なので approving。B の to approve は decide や plan とは違い、postpone では取れない。C は過去分詞で、postponed のあとに動詞が2つ並ぶ形になり成り立たない。",
+      "tip": "動名詞だけを取る動詞（postpone / consider / finish / avoid / suggest）は覚えて解く型。to 不定詞と ing が並んだら、まず動詞との相性を思い出す。"
+    },
+    {
+      "id": "q9",
+      "type": "pron",
+      "prompt": "The vendor ------- proposal arrived last week has agreed to lower the installation fee.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "whose",
+          "ja": "〜の（所有格）"
+        },
+        {
+          "key": "B",
+          "text": "which",
+          "ja": "（主格・目的格）"
+        },
+        {
+          "key": "C",
+          "text": "who",
+          "ja": "（主格・人）"
+        },
+        {
+          "key": "D",
+          "text": "whom",
+          "ja": "（目的格・人）"
+        }
+      ],
+      "answer": "A",
+      "ja": "先週提案書が届いた業者が、設置費用の引き下げに応じた。",
+      "explanation": "空所のあとに proposal という名詞が冠詞なしで続き、そのあとに動詞 arrived がある。名詞を直接従えて「〜の」を表すのは所有格の whose。B の which は後ろに動詞か主語＋動詞が続き、名詞を直接は取れない。",
+      "tip": "関係詞は空所の「あとに何が来るか」で決まる。すぐ名詞なら whose、動詞なら who か which。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "Sales of the compact printer have ------- steadily since the company lowered its price in March.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "arranged",
+          "ja": "手配した"
+        },
+        {
+          "key": "B",
+          "text": "conducted",
+          "ja": "実施した"
+        },
+        {
+          "key": "C",
+          "text": "informed",
+          "ja": "知らせた"
+        },
+        {
+          "key": "D",
+          "text": "risen",
+          "ja": "上がった"
+        }
+      ],
+      "answer": "D",
+      "ja": "小型プリンターの売上は、3月に会社が値下げして以来、着実に伸びている。",
+      "explanation": "値下げ以来 steadily 続いている変化なので「上がる」の risen。A の arrange と B の conduct は目的語を必要とする他動詞で、直後に副詞しかないこの位置には入らない。C の inform も人を目的語に取る。",
+      "tip": "語彙問題でも文法が効く。空所のあとに目的語が無ければ自動詞に絞れるので、それだけで候補が減る。"
+    }
+  ],
+  "glossary": {
+    "front desk": {
+      "lemma": "front desk",
+      "pos": "名",
+      "ja": "受付、フロント",
+      "note": ""
+    },
+    "ahead of schedule": {
+      "lemma": "ahead of schedule",
+      "pos": "熟",
+      "ja": "予定より早く",
+      "note": "behind schedule の対"
+    },
+    "expense forms": {
+      "lemma": "expense form",
+      "pos": "名",
+      "ja": "経費精算書",
+      "note": "expense report とも言う"
+    },
+    "installation fee": {
+      "lemma": "installation fee",
+      "pos": "名",
+      "ja": "設置費用",
+      "note": ""
+    },
+    "assembly line": {
+      "lemma": "assembly line",
+      "pos": "名",
+      "ja": "組立ライン",
+      "note": "production line の言い換え"
+    },
+    "packaging material": {
+      "lemma": "packaging material",
+      "pos": "名",
+      "ja": "梱包材",
+      "note": ""
+    },
+    "a free upgrade": {
+      "lemma": "upgrade",
+      "pos": "名",
+      "ja": "格上げ、上位への変更",
+      "note": "宿泊や座席で頻出"
+    },
+    "inspection": {
+      "lemma": "inspection",
+      "pos": "名",
+      "ja": "点検、検査",
+      "note": ""
+    },
+    "forecasts": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "見通し、予測",
+      "note": "売上や天気の予測に使う"
+    },
+    "vendor": {
+      "lemma": "vendor",
+      "pos": "名",
+      "ja": "納入業者、販売元",
+      "note": "supplier の言い換え"
+    },
+    "renovation": {
+      "lemma": "renovation",
+      "pos": "名",
+      "ja": "改装、改修",
+      "note": ""
+    }
+  },
+  "point": {
+    "lead": "選択肢の見た目で型を決めてから、空所の前後を見る",
+    "items": [
+      {
+        "title": "まず選択肢を縦に見る",
+        "body": "語尾だけが違えば品詞問題、動詞の活用が並べば動詞の形、前置詞や接続詞が並べば結び付きの問題、意味の違う同じ品詞が並べば語彙問題。ここで型を決めてから空所に戻ると、読む範囲が決まる。"
+      },
+      {
+        "title": "前後2語で終わる問題を先に片づける",
+        "body": "助動詞の直後、the と of に挟まれた位置、前置詞の直後は、文全体を読まなくても形が決まる。1問20秒の配分は、こうした問題を10秒で抜けて、語彙問題に時間を回すことで成り立つ。"
+      },
+      {
+        "title": "語彙問題は前置詞と目的語の有無を見る",
+        "body": "be eligible for のように後ろの前置詞で決まるもの、空所のあとに目的語が無く自動詞しか入らないものがある。意味だけで迷ったら、形の条件で候補を削ってから意味を考える。"
+      }
+    ]
+  }
+}
