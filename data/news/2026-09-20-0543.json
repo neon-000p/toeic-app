@@ -68,14 +68,33 @@
       "type": "detail",
       "prompt": "What percentage did Lennar's revenue decline in the third quarter compared to the same period last year?",
       "choices": [
-        { "key": "A", "text": "3 percent", "ja": "3%" },
-        { "key": "B", "text": "6.8 percent", "ja": "6.8%" },
-        { "key": "C", "text": "8.6 percent", "ja": "8.6%" },
-        { "key": "D", "text": "9 percent", "ja": "9%" }
+        {
+          "key": "A",
+          "text": "3 percent",
+          "ja": "3%"
+        },
+        {
+          "key": "B",
+          "text": "6.8 percent",
+          "ja": "6.8%"
+        },
+        {
+          "key": "C",
+          "text": "8.6 percent",
+          "ja": "8.6%"
+        },
+        {
+          "key": "D",
+          "text": "9 percent",
+          "ja": "9%"
+        }
       ],
       "answer": "C",
       "explanation": "正解はC。本文2文目に「同社の売上高は前年同期比8.6%減の80億5000万ドルとなった」と明記されている。(A)の3%は発表後の株価下落率で、売上高とは異なる指標の数字。(D)の9%は新規受注件数の減少率であり、こちらも売上高とは別の数字。(B)の6.8%は本文に登場しない数字。複数の数字が並ぶ記事では、それぞれの数字がどの項目(売上高・株価・受注件数)に対応するかを正確に読み分けることが重要。",
-      "evidence": { "p": 0, "s": 1 },
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
       "tip": "数字を問う設問では、似た数字が並んでいても、その数字が指している項目(売上高なのか、株価なのか、受注件数なのか)まで正確に対応づけて選ぶこと。"
     },
     {
@@ -83,85 +102,277 @@
       "type": "not",
       "prompt": "According to the article, which of the following is NOT mentioned as a reason for the slowdown in home sales?",
       "choices": [
-        { "key": "A", "text": "High mortgage rates", "ja": "住宅ローン金利の高止まり" },
-        { "key": "B", "text": "A growing supply of resale homes", "ja": "中古住宅の供給増加" },
-        { "key": "C", "text": "Rising raw material and labor costs", "ja": "原材料費と人件費の上昇" },
-        { "key": "D", "text": "Reduced housing affordability for buyers", "ja": "住宅購入のしやすさの低下" }
+        {
+          "key": "A",
+          "text": "High mortgage rates",
+          "ja": "住宅ローン金利の高止まり"
+        },
+        {
+          "key": "B",
+          "text": "A growing supply of resale homes",
+          "ja": "中古住宅の供給増加"
+        },
+        {
+          "key": "C",
+          "text": "Rising raw material and labor costs",
+          "ja": "原材料費と人件費の上昇"
+        },
+        {
+          "key": "D",
+          "text": "Reduced housing affordability for buyers",
+          "ja": "住宅購入のしやすさの低下"
+        }
       ],
       "answer": "C",
       "explanation": "正解はC。本文では需要減速の理由として、経営陣が「住宅ローン金利の高止まり」と「中古住宅の供給増加」を挙げ、その結果として「新築住宅の購入がより難しくなっている」と述べている。(A)(B)(D)はいずれも本文に明記されている内容だが、(C)の原材料費や人件費の上昇については本文中に一切言及がなく、これが正解となる。NOT問題では本文にある項目を一つずつ消去していき、最後に残ったものを選ぶ。",
-      "evidence": { "p": 1, "s": 0 },
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
       "tip": "NOT問題は本文に書かれている選択肢を確実に消去する解き方が有効。本文に登場しない話題を選ぶ意識を持つとスピードが上がる。"
     }
   ],
   "vocabulary": [
     {
-      "no": 1, "term": "revenue", "pos": "名", "ja": "収益、売上高",
+      "no": 1,
+      "term": "revenue",
+      "pos": "名",
+      "ja": "収益、売上高",
       "gloss": "",
-      "example": { "en": "The company's revenue increased by 15 percent last quarter.", "ja": "その企業の収益は前四半期に15%増加した。" }
+      "example": {
+        "en": "The company's revenue increased by 15 percent last quarter.",
+        "ja": "その企業の収益は前四半期に15%増加した。"
+      }
     },
     {
-      "no": 2, "term": "forecast", "pos": "名", "ja": "予想、見通し",
+      "no": 2,
+      "term": "forecast",
+      "pos": "名",
+      "ja": "予想、見通し",
       "gloss": "",
-      "example": { "en": "The sales forecast for next year looks promising.", "ja": "来年の売上予想は好調に見える。" }
+      "example": {
+        "en": "The sales forecast for next year looks promising.",
+        "ja": "来年の売上予想は好調に見える。"
+      }
     },
     {
-      "no": 3, "term": "adjusted", "pos": "形", "ja": "調整後の",
+      "no": 3,
+      "term": "adjusted",
+      "pos": "形",
+      "ja": "調整後の",
       "gloss": "",
-      "example": { "en": "The adjusted profit margin was higher than expected.", "ja": "調整後の利益率は予想より高かった。" }
+      "example": {
+        "en": "The adjusted profit margin was higher than expected.",
+        "ja": "調整後の利益率は予想より高かった。"
+      }
     },
     {
-      "no": 4, "term": "blame", "pos": "動", "ja": "〜のせいにする、〜を非難する",
+      "no": 4,
+      "term": "blame",
+      "pos": "動",
+      "ja": "〜のせいにする、〜を非難する",
       "gloss": "",
-      "example": { "en": "The manager blamed the delay on a shortage of parts.", "ja": "マネージャーはその遅れを部品不足のせいにした。" }
+      "example": {
+        "en": "The manager blamed the delay on a shortage of parts.",
+        "ja": "マネージャーはその遅れを部品不足のせいにした。"
+      }
     },
     {
-      "no": 5, "term": "afford", "pos": "動", "ja": "〜する余裕がある",
+      "no": 5,
+      "term": "afford",
+      "pos": "動",
+      "ja": "〜する余裕がある",
       "gloss": "",
-      "example": { "en": "Many small businesses cannot afford the new software.", "ja": "多くの中小企業はその新しいソフトウェアを導入する余裕がない。" }
+      "example": {
+        "en": "Many small businesses cannot afford the new software.",
+        "ja": "多くの中小企業はその新しいソフトウェアを導入する余裕がない。"
+      }
     },
     {
-      "no": 6, "term": "lower", "pos": "動", "ja": "引き下げる、下げる",
+      "no": 6,
+      "term": "lower",
+      "pos": "動",
+      "ja": "引き下げる、下げる",
       "gloss": "",
-      "example": { "en": "The airline lowered its ticket prices to attract more passengers.", "ja": "その航空会社は、より多くの乗客を呼び込むため航空券の価格を引き下げた。" }
+      "example": {
+        "en": "The airline lowered its ticket prices to attract more passengers.",
+        "ja": "その航空会社は、より多くの乗客を呼び込むため航空券の価格を引き下げた。"
+      }
     },
     {
-      "no": 7, "term": "margin", "pos": "名", "ja": "利益率、マージン",
+      "no": 7,
+      "term": "margin",
+      "pos": "名",
+      "ja": "利益率、マージン",
       "gloss": "",
-      "example": { "en": "The retailer's profit margin narrowed due to rising costs.", "ja": "コスト上昇により、その小売業者の利益率は縮小した。" }
+      "example": {
+        "en": "The retailer's profit margin narrowed due to rising costs.",
+        "ja": "コスト上昇により、その小売業者の利益率は縮小した。"
+      }
     },
     {
-      "no": 8, "term": "cautiously", "pos": "副", "ja": "慎重に",
+      "no": 8,
+      "term": "cautiously",
+      "pos": "副",
+      "ja": "慎重に",
       "gloss": "",
-      "example": { "en": "Investors are cautiously optimistic about the market recovery.", "ja": "投資家たちは市場の回復について慎重ながらも楽観的だ。" }
+      "example": {
+        "en": "Investors are cautiously optimistic about the market recovery.",
+        "ja": "投資家たちは市場の回復について慎重ながらも楽観的だ。"
+      }
     }
   ],
   "glossary": {
-    "homebuilders": { "lemma": "homebuilder", "pos": "n", "ja": "住宅建設会社", "note": "" },
-    "disappointing": { "lemma": "disappointing", "pos": "adj", "ja": "期待外れの", "note": "" },
-    "results": { "lemma": "result", "pos": "n", "ja": "結果、業績", "note": "" },
-    "revenue": { "lemma": "revenue", "pos": "n", "ja": "収益、売上高", "note": "" },
-    "earlier": { "lemma": "earlier", "pos": "adv", "ja": "それより前に、以前", "note": "" },
-    "missing": { "lemma": "miss", "pos": "v", "ja": "逃す、下回る", "note": "ここでは「(予想などを)下回る」の意味" },
-    "forecast": { "lemma": "forecast", "pos": "n", "ja": "予想、見通し", "note": "" },
-    "adjusted": { "lemma": "adjusted", "pos": "adj", "ja": "調整後の", "note": "" },
-    "earnings": { "lemma": "earnings", "pos": "n", "ja": "利益、収益", "note": "" },
-    "share": { "lemma": "share", "pos": "n", "ja": "株、1株", "note": "" },
-    "dropped": { "lemma": "drop", "pos": "v", "ja": "落ち込む、下がる", "note": "" },
-    "expected": { "lemma": "expect", "pos": "v", "ja": "予想する、見込む", "note": "" },
-    "orders": { "lemma": "order", "pos": "n", "ja": "受注、注文", "note": "" },
-    "units": { "lemma": "unit", "pos": "n", "ja": "戸、台（単位）", "note": "" },
-    "executives": { "lemma": "executive", "pos": "n", "ja": "経営幹部", "note": "" },
-    "blamed": { "lemma": "blame", "pos": "v", "ja": "〜のせいにする", "note": "" },
-    "mortgage": { "lemma": "mortgage", "pos": "n", "ja": "住宅ローン", "note": "" },
-    "resale": { "lemma": "resale", "pos": "n", "ja": "再販、中古", "note": "" },
-    "slowdown": { "lemma": "slowdown", "pos": "n", "ja": "減速", "note": "" },
-    "conditions": { "lemma": "condition", "pos": "n", "ja": "状況、条件", "note": "" },
-    "afford": { "lemma": "afford", "pos": "v", "ja": "〜する余裕がある", "note": "" },
-    "delivery": { "lemma": "delivery", "pos": "n", "ja": "引き渡し", "note": "" },
-    "lowered": { "lemma": "lower", "pos": "v", "ja": "引き下げる", "note": "" },
-    "margin": { "lemma": "margin", "pos": "n", "ja": "利益率", "note": "" },
-    "cautiously": { "lemma": "cautious", "pos": "adv", "ja": "慎重に", "note": "" }
+    "homebuilders": {
+      "lemma": "homebuilder",
+      "pos": "n",
+      "ja": "住宅建設会社",
+      "note": ""
+    },
+    "disappointing": {
+      "lemma": "disappointing",
+      "pos": "adj",
+      "ja": "期待外れの",
+      "note": ""
+    },
+    "results": {
+      "lemma": "result",
+      "pos": "n",
+      "ja": "結果、業績",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "n",
+      "ja": "収益、売上高",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "earlier",
+      "pos": "adv",
+      "ja": "それより前に、以前",
+      "note": ""
+    },
+    "missing": {
+      "lemma": "miss",
+      "pos": "v",
+      "ja": "逃す、下回る",
+      "note": "ここでは「(予想などを)下回る」の意味"
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "n",
+      "ja": "予想、見通し",
+      "note": ""
+    },
+    "adjusted": {
+      "lemma": "adjusted",
+      "pos": "adj",
+      "ja": "調整後の",
+      "note": ""
+    },
+    "earnings": {
+      "lemma": "earnings",
+      "pos": "n",
+      "ja": "利益、収益",
+      "note": ""
+    },
+    "share": {
+      "lemma": "share",
+      "pos": "n",
+      "ja": "株、1株",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "v",
+      "ja": "落ち込む、下がる",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "v",
+      "ja": "予想する、見込む",
+      "note": ""
+    },
+    "orders": {
+      "lemma": "order",
+      "pos": "n",
+      "ja": "受注、注文",
+      "note": ""
+    },
+    "units": {
+      "lemma": "unit",
+      "pos": "n",
+      "ja": "戸、台（単位）",
+      "note": ""
+    },
+    "executives": {
+      "lemma": "executive",
+      "pos": "n",
+      "ja": "経営幹部",
+      "note": ""
+    },
+    "blamed": {
+      "lemma": "blame",
+      "pos": "v",
+      "ja": "〜のせいにする",
+      "note": ""
+    },
+    "mortgage": {
+      "lemma": "mortgage",
+      "pos": "n",
+      "ja": "住宅ローン",
+      "note": ""
+    },
+    "resale": {
+      "lemma": "resale",
+      "pos": "n",
+      "ja": "再販、中古",
+      "note": ""
+    },
+    "slowdown": {
+      "lemma": "slowdown",
+      "pos": "n",
+      "ja": "減速",
+      "note": ""
+    },
+    "conditions": {
+      "lemma": "condition",
+      "pos": "n",
+      "ja": "状況、条件",
+      "note": ""
+    },
+    "afford": {
+      "lemma": "afford",
+      "pos": "v",
+      "ja": "〜する余裕がある",
+      "note": ""
+    },
+    "delivery": {
+      "lemma": "delivery",
+      "pos": "n",
+      "ja": "引き渡し",
+      "note": ""
+    },
+    "lowered": {
+      "lemma": "lower",
+      "pos": "v",
+      "ja": "引き下げる",
+      "note": ""
+    },
+    "margin": {
+      "lemma": "margin",
+      "pos": "n",
+      "ja": "利益率",
+      "note": ""
+    },
+    "cautiously": {
+      "lemma": "cautious",
+      "pos": "adv",
+      "ja": "慎重に",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "第5文型 make＋O＋C（状態変化の結果を表す用法）",
@@ -217,5 +428,23 @@
       "url": "https://finance.yahoo.com/real-estate/articles/lennar-q3-earnings-miss-estimates-151600309.html",
       "date": "2026-09-17"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-20-0543/00.mp3",
+      "audio/2026-09-20-0543/01.mp3",
+      "audio/2026-09-20-0543/02.mp3",
+      "audio/2026-09-20-0543/03.mp3",
+      "audio/2026-09-20-0543/04.mp3",
+      "audio/2026-09-20-0543/05.mp3",
+      "audio/2026-09-20-0543/06.mp3",
+      "audio/2026-09-20-0543/07.mp3",
+      "audio/2026-09-20-0543/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 279285,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-19T20:46:41.257Z",
+    "trimmed": true
+  }
 }
