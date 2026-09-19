@@ -17,22 +17,55 @@
       {
         "role": "what",
         "sentences": [
-          { "en": "Saudi Arabia has started shipping more crude oil through the Strait of Hormuz.", "ja": "サウジアラビアは、ホルムズ海峡経由での原油輸出を増やし始めた。" },
-          { "en": "The move helps offset a pipeline that a drone attack shut down last week.", "ja": "この措置は、ドローン攻撃で先週停止したパイプラインを補うためのものだ。" },
-          { "en": "Workers now move the oil from tanker to tanker near Oman's Sohar port.", "ja": "作業員は現在、オマーンのソハール港付近でタンカーからタンカーへ原油を積み替えている。" },
-          { "en": "This keeps ships away from the most dangerous waters.", "ja": "これにより、船は最も危険な海域を避けることができる。" },
-          { "en": "Oil prices eased to about $101 a barrel on Thursday.", "ja": "原油価格は木曜日、1バレル約101ドルまで下落した。" },
-          { "en": "The news calmed fears of a severe global shortage.", "ja": "このニュースは、深刻な世界的供給不足への懸念を和らげた。" }
+          {
+            "en": "Saudi Arabia has started shipping more crude oil through the Strait of Hormuz.",
+            "ja": "サウジアラビアは、ホルムズ海峡経由での原油輸出を増やし始めた。"
+          },
+          {
+            "en": "The move helps offset a pipeline that a drone attack shut down last week.",
+            "ja": "この措置は、ドローン攻撃で先週停止したパイプラインを補うためのものだ。"
+          },
+          {
+            "en": "Workers now move the oil from tanker to tanker near Oman's Sohar port.",
+            "ja": "作業員は現在、オマーンのソハール港付近でタンカーからタンカーへ原油を積み替えている。"
+          },
+          {
+            "en": "This keeps ships away from the most dangerous waters.",
+            "ja": "これにより、船は最も危険な海域を避けることができる。"
+          },
+          {
+            "en": "Oil prices eased to about $101 a barrel on Thursday.",
+            "ja": "原油価格は木曜日、1バレル約101ドルまで下落した。"
+          },
+          {
+            "en": "The news calmed fears of a severe global shortage.",
+            "ja": "このニュースは、深刻な世界的供給不足への懸念を和らげた。"
+          }
         ]
       },
       {
         "role": "why",
         "sentences": [
-          { "en": "Saudi officials say they can restore about half of the pipeline's capacity within days.", "ja": "サウジアラビア当局は、数日以内にパイプラインの能力の半分を回復できると述べている。" },
-          { "en": "Full repairs, however, may take up to six weeks to complete.", "ja": "しかし、完全な復旧には最大6週間かかる可能性がある。" },
-          { "en": "The workaround has calmed markets that had feared a much bigger supply shock.", "ja": "この代替輸送により、より深刻な供給ショックを恐れていた市場は落ち着きを取り戻した。" },
-          { "en": "Still, traders remain cautious about further attacks in the region.", "ja": "それでも、トレーダーはこの地域でのさらなる攻撃を警戒している。" },
-          { "en": "Analysts warn that a new strike near the strait could send prices sharply higher again.", "ja": "アナリストらは、海峡付近での新たな攻撃が再び原油価格を急騰させかねないと警告している。" }
+          {
+            "en": "Saudi officials say they can restore about half of the pipeline's capacity within days.",
+            "ja": "サウジアラビア当局は、数日以内にパイプラインの能力の半分を回復できると述べている。"
+          },
+          {
+            "en": "Full repairs, however, may take up to six weeks to complete.",
+            "ja": "しかし、完全な復旧には最大6週間かかる可能性がある。"
+          },
+          {
+            "en": "The workaround has calmed markets that had feared a much bigger supply shock.",
+            "ja": "この代替輸送により、より深刻な供給ショックを恐れていた市場は落ち着きを取り戻した。"
+          },
+          {
+            "en": "Still, traders remain cautious about further attacks in the region.",
+            "ja": "それでも、トレーダーはこの地域でのさらなる攻撃を警戒している。"
+          },
+          {
+            "en": "Analysts warn that a new strike near the strait could send prices sharply higher again.",
+            "ja": "アナリストらは、海峡付近での新たな攻撃が再び原油価格を急騰させかねないと警告している。"
+          }
         ]
       }
     ]
@@ -43,14 +76,33 @@
       "type": "detail",
       "prompt": "What was the approximate price of oil on Thursday, according to the article?",
       "choices": [
-        { "key": "A", "text": "$91 a barrel", "ja": "1バレル91ドル" },
-        { "key": "B", "text": "$101 a barrel", "ja": "1バレル101ドル" },
-        { "key": "C", "text": "$113 a barrel", "ja": "1バレル113ドル" },
-        { "key": "D", "text": "$130 a barrel", "ja": "1バレル130ドル" }
+        {
+          "key": "A",
+          "text": "$91 a barrel",
+          "ja": "1バレル91ドル"
+        },
+        {
+          "key": "B",
+          "text": "$101 a barrel",
+          "ja": "1バレル101ドル"
+        },
+        {
+          "key": "C",
+          "text": "$113 a barrel",
+          "ja": "1バレル113ドル"
+        },
+        {
+          "key": "D",
+          "text": "$130 a barrel",
+          "ja": "1バレル130ドル"
+        }
       ],
       "answer": "B",
       "explanation": "本文の「原油価格は木曜日、1バレル約101ドルまで下落した」という一文に明記されている。(A)91ドルは本文に登場しない数字、(C)113ドルは以前の急騰時の水準に近い紛らわしい数字だが本文の言及ではなく、(D)130ドルも本文に登場しない数値で、いずれも誤り。",
-      "evidence": { "p": 0, "s": 4 },
+      "evidence": {
+        "p": 0,
+        "s": 4
+      },
       "tip": "数字を問う設問では、似た数字が並んでいても本文に明記された数字と単位（ここでは1バレルあたりの価格）まで正確に一致するものだけを選ぶ。"
     },
     {
@@ -58,75 +110,363 @@
       "type": "reason",
       "prompt": "Why are workers transferring oil from tanker to tanker near Oman's Sohar port?",
       "choices": [
-        { "key": "A", "text": "To avoid the most dangerous waters", "ja": "最も危険な海域を避けるため" },
-        { "key": "B", "text": "To increase the price of oil", "ja": "原油価格を引き上げるため" },
-        { "key": "C", "text": "To repair the damaged pipeline", "ja": "損傷したパイプラインを修理するため" },
-        { "key": "D", "text": "To meet new environmental rules", "ja": "新しい環境規制に対応するため" }
+        {
+          "key": "A",
+          "text": "To avoid the most dangerous waters",
+          "ja": "最も危険な海域を避けるため"
+        },
+        {
+          "key": "B",
+          "text": "To increase the price of oil",
+          "ja": "原油価格を引き上げるため"
+        },
+        {
+          "key": "C",
+          "text": "To repair the damaged pipeline",
+          "ja": "損傷したパイプラインを修理するため"
+        },
+        {
+          "key": "D",
+          "text": "To meet new environmental rules",
+          "ja": "新しい環境規制に対応するため"
+        }
       ],
       "answer": "A",
       "explanation": "本文の「これにより、船は最も危険な海域を避けることができる」という一文が積み替えの目的を直接説明している。(B)は本文と逆で、実際には価格は下落したと書かれている。(C)は本文に記載がなく、パイプラインの修理は別の対応として述べられている。(D)は本文に一切登場しない情報であり、いずれも誤り。",
-      "evidence": { "p": 0, "s": 3 },
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
       "tip": "目的・理由を問う設問では、直前直後の文にある因果関係を示す表現（keep A away from、so that など）に着目する。"
     }
   ],
   "vocabulary": [
-    { "no": 1, "term": "crude", "pos": "形", "ja": "原油の、未精製の", "gloss": "", "example": { "en": "The refinery imports crude oil from several countries.", "ja": "その製油所は数か国から原油を輸入している。" } },
-    { "no": 2, "term": "offset", "pos": "動", "ja": "相殺する、埋め合わせる", "gloss": "", "example": { "en": "The company raised prices to offset higher shipping costs.", "ja": "その企業は、輸送コストの上昇を相殺するために価格を引き上げた。" } },
-    { "no": 3, "term": "capacity", "pos": "名", "ja": "能力、生産能力", "gloss": "", "example": { "en": "The factory is now running at full capacity.", "ja": "その工場は現在、フル稼働している。" } },
-    { "no": 4, "term": "restore", "pos": "動", "ja": "回復させる、復旧する", "gloss": "", "example": { "en": "Technicians worked overnight to restore the power supply.", "ja": "技術者たちは電力供給を復旧させるため、夜通し作業した。" } },
-    { "no": 5, "term": "workaround", "pos": "名", "ja": "回避策、代替手段", "gloss": "（＝問題を根本解決せず、当面しのぐための手段のこと）", "example": { "en": "The team found a workaround while the system was down.", "ja": "システムが停止している間、チームは代替手段を見つけた。" } },
-    { "no": 6, "term": "shock", "pos": "名", "ja": "打撃、衝撃", "gloss": "", "example": { "en": "The sudden price hike was a shock to consumers.", "ja": "突然の値上げは消費者にとって衝撃だった。" } },
-    { "no": 7, "term": "cautious", "pos": "形", "ja": "慎重な、用心深い", "gloss": "", "example": { "en": "Investors remain cautious about the market's direction.", "ja": "投資家たちは市場の方向性について慎重な姿勢を崩していない。" } },
-    { "no": 8, "term": "shortage", "pos": "名", "ja": "不足", "gloss": "", "example": { "en": "The region is facing a serious labor shortage.", "ja": "その地域は深刻な人手不足に直面している。" } }
+    {
+      "no": 1,
+      "term": "crude",
+      "pos": "形",
+      "ja": "原油の、未精製の",
+      "gloss": "",
+      "example": {
+        "en": "The refinery imports crude oil from several countries.",
+        "ja": "その製油所は数か国から原油を輸入している。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "offset",
+      "pos": "動",
+      "ja": "相殺する、埋め合わせる",
+      "gloss": "",
+      "example": {
+        "en": "The company raised prices to offset higher shipping costs.",
+        "ja": "その企業は、輸送コストの上昇を相殺するために価格を引き上げた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "capacity",
+      "pos": "名",
+      "ja": "能力、生産能力",
+      "gloss": "",
+      "example": {
+        "en": "The factory is now running at full capacity.",
+        "ja": "その工場は現在、フル稼働している。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "restore",
+      "pos": "動",
+      "ja": "回復させる、復旧する",
+      "gloss": "",
+      "example": {
+        "en": "Technicians worked overnight to restore the power supply.",
+        "ja": "技術者たちは電力供給を復旧させるため、夜通し作業した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "workaround",
+      "pos": "名",
+      "ja": "回避策、代替手段",
+      "gloss": "（＝問題を根本解決せず、当面しのぐための手段のこと）",
+      "example": {
+        "en": "The team found a workaround while the system was down.",
+        "ja": "システムが停止している間、チームは代替手段を見つけた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "shock",
+      "pos": "名",
+      "ja": "打撃、衝撃",
+      "gloss": "",
+      "example": {
+        "en": "The sudden price hike was a shock to consumers.",
+        "ja": "突然の値上げは消費者にとって衝撃だった。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "cautious",
+      "pos": "形",
+      "ja": "慎重な、用心深い",
+      "gloss": "",
+      "example": {
+        "en": "Investors remain cautious about the market's direction.",
+        "ja": "投資家たちは市場の方向性について慎重な姿勢を崩していない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "shortage",
+      "pos": "名",
+      "ja": "不足",
+      "gloss": "",
+      "example": {
+        "en": "The region is facing a serious labor shortage.",
+        "ja": "その地域は深刻な人手不足に直面している。"
+      }
+    }
   ],
   "glossary": {
-    "shipping": { "lemma": "ship", "pos": "v", "ja": "輸送する", "note": "" },
-    "crude": { "lemma": "crude", "pos": "adj", "ja": "原油の", "note": "" },
-    "strait": { "lemma": "strait", "pos": "n", "ja": "海峡", "note": "" },
-    "offset": { "lemma": "offset", "pos": "v", "ja": "相殺する", "note": "" },
-    "pipeline": { "lemma": "pipeline", "pos": "n", "ja": "パイプライン", "note": "" },
-    "drone": { "lemma": "drone", "pos": "n", "ja": "無人機、ドローン", "note": "" },
-    "attack": { "lemma": "attack", "pos": "n", "ja": "攻撃", "note": "" },
-    "shut": { "lemma": "shut", "pos": "v", "ja": "閉鎖する、止める", "note": "shut downで「停止する」の意味" },
-    "tanker": { "lemma": "tanker", "pos": "n", "ja": "タンカー", "note": "" },
-    "eased": { "lemma": "ease", "pos": "v", "ja": "緩和する、和らぐ", "note": "" },
-    "barrel": { "lemma": "barrel", "pos": "n", "ja": "バレル", "note": "原油の取引単位（1バレル≒159リットル）" },
-    "calmed": { "lemma": "calm", "pos": "v", "ja": "落ち着かせる", "note": "" },
-    "fears": { "lemma": "fear", "pos": "n", "ja": "懸念、恐れ", "note": "" },
-    "shortage": { "lemma": "shortage", "pos": "n", "ja": "不足", "note": "" },
-    "officials": { "lemma": "official", "pos": "n", "ja": "当局者、関係者", "note": "" },
-    "restore": { "lemma": "restore", "pos": "v", "ja": "回復させる、復旧する", "note": "" },
-    "capacity": { "lemma": "capacity", "pos": "n", "ja": "能力、生産能力", "note": "" },
-    "repairs": { "lemma": "repair", "pos": "n", "ja": "修理、復旧作業", "note": "" },
-    "workaround": { "lemma": "workaround", "pos": "n", "ja": "回避策、代替手段", "note": "" },
-    "markets": { "lemma": "market", "pos": "n", "ja": "市場", "note": "" },
-    "feared": { "lemma": "fear", "pos": "v", "ja": "恐れる、懸念する", "note": "" },
-    "supply": { "lemma": "supply", "pos": "n", "ja": "供給", "note": "" },
-    "shock": { "lemma": "shock", "pos": "n", "ja": "衝撃、打撃", "note": "" },
-    "traders": { "lemma": "trader", "pos": "n", "ja": "トレーダー、取引業者", "note": "" },
-    "cautious": { "lemma": "cautious", "pos": "adj", "ja": "慎重な", "note": "" },
-    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト、分析担当者", "note": "" },
-    "strike": { "lemma": "strike", "pos": "n", "ja": "攻撃、ストライキ", "note": "ここでは軍事的な攻撃の意味" }
+    "shipping": {
+      "lemma": "ship",
+      "pos": "v",
+      "ja": "輸送する",
+      "note": ""
+    },
+    "crude": {
+      "lemma": "crude",
+      "pos": "adj",
+      "ja": "原油の",
+      "note": ""
+    },
+    "strait": {
+      "lemma": "strait",
+      "pos": "n",
+      "ja": "海峡",
+      "note": ""
+    },
+    "offset": {
+      "lemma": "offset",
+      "pos": "v",
+      "ja": "相殺する",
+      "note": ""
+    },
+    "pipeline": {
+      "lemma": "pipeline",
+      "pos": "n",
+      "ja": "パイプライン",
+      "note": ""
+    },
+    "drone": {
+      "lemma": "drone",
+      "pos": "n",
+      "ja": "無人機、ドローン",
+      "note": ""
+    },
+    "attack": {
+      "lemma": "attack",
+      "pos": "n",
+      "ja": "攻撃",
+      "note": ""
+    },
+    "shut": {
+      "lemma": "shut",
+      "pos": "v",
+      "ja": "閉鎖する、止める",
+      "note": "shut downで「停止する」の意味"
+    },
+    "tanker": {
+      "lemma": "tanker",
+      "pos": "n",
+      "ja": "タンカー",
+      "note": ""
+    },
+    "eased": {
+      "lemma": "ease",
+      "pos": "v",
+      "ja": "緩和する、和らぐ",
+      "note": ""
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "n",
+      "ja": "バレル",
+      "note": "原油の取引単位（1バレル≒159リットル）"
+    },
+    "calmed": {
+      "lemma": "calm",
+      "pos": "v",
+      "ja": "落ち着かせる",
+      "note": ""
+    },
+    "fears": {
+      "lemma": "fear",
+      "pos": "n",
+      "ja": "懸念、恐れ",
+      "note": ""
+    },
+    "shortage": {
+      "lemma": "shortage",
+      "pos": "n",
+      "ja": "不足",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "n",
+      "ja": "当局者、関係者",
+      "note": ""
+    },
+    "restore": {
+      "lemma": "restore",
+      "pos": "v",
+      "ja": "回復させる、復旧する",
+      "note": ""
+    },
+    "capacity": {
+      "lemma": "capacity",
+      "pos": "n",
+      "ja": "能力、生産能力",
+      "note": ""
+    },
+    "repairs": {
+      "lemma": "repair",
+      "pos": "n",
+      "ja": "修理、復旧作業",
+      "note": ""
+    },
+    "workaround": {
+      "lemma": "workaround",
+      "pos": "n",
+      "ja": "回避策、代替手段",
+      "note": ""
+    },
+    "markets": {
+      "lemma": "market",
+      "pos": "n",
+      "ja": "市場",
+      "note": ""
+    },
+    "feared": {
+      "lemma": "fear",
+      "pos": "v",
+      "ja": "恐れる、懸念する",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "n",
+      "ja": "供給",
+      "note": ""
+    },
+    "shock": {
+      "lemma": "shock",
+      "pos": "n",
+      "ja": "衝撃、打撃",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "n",
+      "ja": "トレーダー、取引業者",
+      "note": ""
+    },
+    "cautious": {
+      "lemma": "cautious",
+      "pos": "adj",
+      "ja": "慎重な",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "n",
+      "ja": "アナリスト、分析担当者",
+      "note": ""
+    },
+    "strike": {
+      "lemma": "strike",
+      "pos": "n",
+      "ja": "攻撃、ストライキ",
+      "note": "ここでは軍事的な攻撃の意味"
+    }
   },
   "grammar": {
     "topic": "目的格の関係代名詞that（省略可能な制限用法）",
     "quote": "The move helps offset a pipeline that a drone attack shut down last week.",
     "quoteJa": "この措置は、ドローン攻撃で先週停止したパイプラインを補うためのものだ。",
     "blocks": [
-      { "heading": "構文", "body": "この文のthatは関係代名詞で、先行詞a pipelineを修飾する制限用法の節を導く。元の文はa drone attack shut down it（=a pipeline）であり、itの代わりにthatが節の先頭に出ている。thatは節の中でshut downの目的語（目的格）として働いているため、口語でも書き言葉でも省略できる。" },
-      { "heading": "書き換え例", "body": "a pipeline that a drone attack shut down = a pipeline which a drone attack shut down = a pipeline a drone attack shut down（関係代名詞を省略した形）。主格の関係代名詞（例：a pipeline that was shut down by a drone attack）は省略できない点と対比して覚えるとよい。" },
-      { "heading": "TOEICでの注意点", "body": "Part 5では、関係代名詞の省略によって名詞が2つ連続する形（a pipeline a drone attack）が正しい文として成立する点が狙われやすい。Part 7の長文でも、省略された関係代名詞節を見落とすと主語と修飾語の関係を取り違えるため、名詞の直後に別の主語＋動詞が続く形に慣れておく。" },
-      { "heading": "ビジネス文書での応用", "body": "この構文はメールや報告書でも頻出する。例：The report the committee submitted last week outlined three key risks. / The changes the new policy introduced took effect immediately." }
+      {
+        "heading": "構文",
+        "body": "この文のthatは関係代名詞で、先行詞a pipelineを修飾する制限用法の節を導く。元の文はa drone attack shut down it（=a pipeline）であり、itの代わりにthatが節の先頭に出ている。thatは節の中でshut downの目的語（目的格）として働いているため、口語でも書き言葉でも省略できる。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "a pipeline that a drone attack shut down = a pipeline which a drone attack shut down = a pipeline a drone attack shut down（関係代名詞を省略した形）。主格の関係代名詞（例：a pipeline that was shut down by a drone attack）は省略できない点と対比して覚えるとよい。"
+      },
+      {
+        "heading": "TOEICでの注意点",
+        "body": "Part 5では、関係代名詞の省略によって名詞が2つ連続する形（a pipeline a drone attack）が正しい文として成立する点が狙われやすい。Part 7の長文でも、省略された関係代名詞節を見落とすと主語と修飾語の関係を取り違えるため、名詞の直後に別の主語＋動詞が続く形に慣れておく。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "この構文はメールや報告書でも頻出する。例：The report the committee submitted last week outlined three key risks. / The changes the new policy introduced took effect immediately."
+      }
     ]
   },
   "background": [
-    { "heading": "📌 なぜホルムズ海峡が重要なのか", "body": "ホルムズ海峡は世界の原油輸送量のかなりの部分が通過する狭い海峡で、ここでの混乱は瞬時に世界のエネルギー価格に波及する。今回はこの海峡がほぼ封鎖され、代わりの陸上パイプラインまで攻撃を受けたことで、供給網の脆弱さが改めて浮き彫りになった。" },
-    { "heading": "📌 業界・産油国の動向", "body": "サウジアラビアは輸出ルートの多様化を急いでおり、タンカー間での積み替えという応急策で急場をしのいでいる。他の産油国や石油会社も、同様の混乱に備えて代替輸送ルートや備蓄の確保を見直す動きを強めている。" },
-    { "heading": "📌 日本経済・日本企業への影響", "body": "日本は原油の大部分を中東からの輸入に頼っているため、この地域の供給不安は輸入コストの上昇に直結する。電力会社や運輸業、製造業など燃料コストの影響を強く受ける企業にとっては、原材料費やガソリン価格の上振れリスクとして注視すべき動きだ。" },
-    { "heading": "📌 投資家・経営者の視点", "body": "経営者にとっては、特定の輸送ルートに依存するサプライチェーンの脆弱性を再確認させる出来事であり、調達先や輸送手段の分散が改めて課題となる。投資家にとっても、エネルギー価格の変動リスクをヘッジする商品（先物取引など）への関心が高まる局面と言える。" }
+    {
+      "heading": "📌 なぜホルムズ海峡が重要なのか",
+      "body": "ホルムズ海峡は世界の原油輸送量のかなりの部分が通過する狭い海峡で、ここでの混乱は瞬時に世界のエネルギー価格に波及する。今回はこの海峡がほぼ封鎖され、代わりの陸上パイプラインまで攻撃を受けたことで、供給網の脆弱さが改めて浮き彫りになった。"
+    },
+    {
+      "heading": "📌 業界・産油国の動向",
+      "body": "サウジアラビアは輸出ルートの多様化を急いでおり、タンカー間での積み替えという応急策で急場をしのいでいる。他の産油国や石油会社も、同様の混乱に備えて代替輸送ルートや備蓄の確保を見直す動きを強めている。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響",
+      "body": "日本は原油の大部分を中東からの輸入に頼っているため、この地域の供給不安は輸入コストの上昇に直結する。電力会社や運輸業、製造業など燃料コストの影響を強く受ける企業にとっては、原材料費やガソリン価格の上振れリスクとして注視すべき動きだ。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "経営者にとっては、特定の輸送ルートに依存するサプライチェーンの脆弱性を再確認させる出来事であり、調達先や輸送手段の分散が改めて課題となる。投資家にとっても、エネルギー価格の変動リスクをヘッジする商品（先物取引など）への関心が高まる局面と言える。"
+    }
   ],
   "sources": [
-    { "title": "Oil prices fall as Saudi Arabia reportedly offers more crude via Hormuz after pipeline attack", "publisher": "CNBC", "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html", "date": "2026-09-17" },
-    { "title": "Current price of oil as of September 18, 2026", "publisher": "Fortune", "url": "https://fortune.com/article/price-of-oil-09-18-2026/", "date": "2026-09-18" }
-  ]
+    {
+      "title": "Oil prices fall as Saudi Arabia reportedly offers more crude via Hormuz after pipeline attack",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
+      "date": "2026-09-17"
+    },
+    {
+      "title": "Current price of oil as of September 18, 2026",
+      "publisher": "Fortune",
+      "url": "https://fortune.com/article/price-of-oil-09-18-2026/",
+      "date": "2026-09-18"
+    }
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-19-1643/00.mp3",
+      "audio/2026-09-19-1643/01.mp3",
+      "audio/2026-09-19-1643/02.mp3",
+      "audio/2026-09-19-1643/03.mp3",
+      "audio/2026-09-19-1643/04.mp3",
+      "audio/2026-09-19-1643/05.mp3",
+      "audio/2026-09-19-1643/06.mp3",
+      "audio/2026-09-19-1643/07.mp3",
+      "audio/2026-09-19-1643/08.mp3",
+      "audio/2026-09-19-1643/09.mp3",
+      "audio/2026-09-19-1643/10.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 205071,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-19T07:46:39.150Z",
+    "trimmed": true
+  }
 }
