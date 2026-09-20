@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-21-0543",
+  "date": "2026-09-21",
+  "time": "05:43",
+  "createdAt": "2026-09-21T05:43:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Bank of Japan Raises Rates to 31-Year High",
+    "ja": "日銀、政策金利を31年ぶり高水準に引き上げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "On September 18, the Bank of Japan raised interest rates by a quarter point to 1.25%.",
+            "ja": "9月18日、日本銀行は政策金利を0.25ポイント引き上げて1.25%とした。"
+          },
+          {
+            "en": "That is the highest level since 1995.",
+            "ja": "これは1995年以来の高水準である。"
+          },
+          {
+            "en": "The policy board voted 7 to 2 in favor of the increase.",
+            "ja": "政策委員会は7対2の賛成多数でこの利上げを決定した。"
+          },
+          {
+            "en": "Governor Kazuo Ueda said inflation could rise above the bank's 2% target later this year, partly due to high oil prices from the conflict in Iran.",
+            "ja": "植田和男総裁は、イランを巡る紛争に伴う原油高などを背景に、今年後半にはインフレ率が日銀の目標である2%を上回る可能性があると述べた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The decision pushed up bond yields and weakened the yen slightly.",
+            "ja": "この決定を受けて債券利回りは上昇し、円はやや値を下げた。"
+          },
+          {
+            "en": "The reaction was mild, though, because markets had expected the move.",
+            "ja": "もっとも、利上げは市場に広く予想されていたため、反応は限定的だった。"
+          },
+          {
+            "en": "Japanese stocks rose sharply after the announcement, with a major stock index climbing more than 2 percent.",
+            "ja": "発表後、日本株は大きく上昇し、主要株価指数は2%を超えて上昇した。"
+          },
+          {
+            "en": "Analysts say another rate increase is possible if consumer prices keep climbing, which would raise borrowing costs for households and businesses across the country.",
+            "ja": "アナリストは、消費者物価の上昇が続けば追加利上げの可能性もあるとし、その場合は家計や企業の借入コストが上昇すると指摘している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how many percentage points did the Bank of Japan raise its interest rate on September 18?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.10",
+          "ja": "0.10ポイント"
+        },
+        {
+          "key": "B",
+          "text": "0.25",
+          "ja": "0.25ポイント"
+        },
+        {
+          "key": "C",
+          "text": "0.50",
+          "ja": "0.50ポイント"
+        },
+        {
+          "key": "D",
+          "text": "0.75",
+          "ja": "0.75ポイント"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。本文冒頭で「the Bank of Japan raised interest rates by a quarter point to 1.25%」と明記されている。quarter point(4分の1ポイント)は0.25ポイントを意味する。(A)(C)(D)はいずれも本文に登場しない数値で、事実確認問題では本文にない数字を選ばせる典型的な誤答パターンである。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "数字を問う設問では、本文中の数値表現(a quarter point など)を正確な数字に変換できるかがポイントになる。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to Governor Ueda, why might inflation rise further this year?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Because of increased government spending",
+          "ja": "政府支出の増加のため"
+        },
+        {
+          "key": "B",
+          "text": "Because of high oil prices linked to the conflict in Iran",
+          "ja": "イラン紛争に伴う原油高のため"
+        },
+        {
+          "key": "C",
+          "text": "Because of a weaker yen boosting import costs",
+          "ja": "円安による輸入コスト上昇のため"
+        },
+        {
+          "key": "D",
+          "text": "Because of rising wages across Japan",
+          "ja": "日本全体の賃金上昇のため"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。植田総裁の発言として、「partly due to high oil prices from the conflict in Iran」とインフレ上振れの理由が述べられている。(A)政府支出増、(C)円安による輸入コスト上昇、(D)賃金上昇はいずれも本文に記載がない情報であり、本文にない情報を選ばせる誤答パターン。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "理由・目的を問う設問では、本文中の because of / due to のような因果表現に注目すると根拠を素早く見つけられる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "gloss": "",
+      "example": {
+        "en": "The central bank raised interest rates last month.",
+        "ja": "その中央銀行は先月、金利を引き上げた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "increase",
+      "pos": "名",
+      "ja": "増加、引き上げ",
+      "gloss": "",
+      "example": {
+        "en": "The company announced a 5 percent price increase.",
+        "ja": "その企業は5%の値上げを発表した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "board",
+      "pos": "名",
+      "ja": "委員会、理事会",
+      "gloss": "",
+      "example": {
+        "en": "The board approved the new budget yesterday.",
+        "ja": "理事会は昨日、新しい予算を承認した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "target",
+      "pos": "名",
+      "ja": "目標",
+      "gloss": "",
+      "example": {
+        "en": "The sales team missed its quarterly target.",
+        "ja": "営業チームは四半期の目標を達成できなかった。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "decision",
+      "pos": "名",
+      "ja": "決定",
+      "gloss": "",
+      "example": {
+        "en": "The decision surprised many investors.",
+        "ja": "その決定は多くの投資家を驚かせた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "mild",
+      "pos": "形",
+      "ja": "穏やかな、軽度の",
+      "gloss": "",
+      "example": {
+        "en": "Customer reaction to the price change was mild.",
+        "ja": "価格変更に対する顧客の反応は穏やかだった。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "announcement",
+      "pos": "名",
+      "ja": "発表",
+      "gloss": "",
+      "example": {
+        "en": "Shares rose sharply after the announcement.",
+        "ja": "発表後、株価は急上昇した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "gloss": "",
+      "example": {
+        "en": "Higher rates increase borrowing costs for small businesses.",
+        "ja": "金利上昇は中小企業の借入コストを増加させる。"
+      }
+    }
+  ],
+  "glossary": {
+    "raised": {
+      "lemma": "raise",
+      "pos": "v",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "n",
+      "ja": "金利、率",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "n",
+      "ja": "4分の1",
+      "note": "ここでは0.25ポイントの意味"
+    },
+    "highest": {
+      "lemma": "high",
+      "pos": "adj",
+      "ja": "最高の",
+      "note": ""
+    },
+    "policy": {
+      "lemma": "policy",
+      "pos": "n",
+      "ja": "政策",
+      "note": ""
+    },
+    "board": {
+      "lemma": "board",
+      "pos": "n",
+      "ja": "委員会、理事会",
+      "note": ""
+    },
+    "voted": {
+      "lemma": "vote",
+      "pos": "v",
+      "ja": "投票した",
+      "note": ""
+    },
+    "favor": {
+      "lemma": "favor",
+      "pos": "n",
+      "ja": "賛成、支持",
+      "note": ""
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "n",
+      "ja": "増加、引き上げ",
+      "note": ""
+    },
+    "governor": {
+      "lemma": "governor",
+      "pos": "n",
+      "ja": "総裁、知事",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "n",
+      "ja": "インフレ、物価上昇",
+      "note": ""
+    },
+    "target": {
+      "lemma": "target",
+      "pos": "n",
+      "ja": "目標",
+      "note": ""
+    },
+    "oil": {
+      "lemma": "oil",
+      "pos": "n",
+      "ja": "石油",
+      "note": ""
+    },
+    "conflict": {
+      "lemma": "conflict",
+      "pos": "n",
+      "ja": "紛争、対立",
+      "note": ""
+    },
+    "decision": {
+      "lemma": "decision",
+      "pos": "n",
+      "ja": "決定",
+      "note": ""
+    },
+    "bond": {
+      "lemma": "bond",
+      "pos": "n",
+      "ja": "債券",
+      "note": ""
+    },
+    "yields": {
+      "lemma": "yield",
+      "pos": "n",
+      "ja": "利回り",
+      "note": ""
+    },
+    "weakened": {
+      "lemma": "weaken",
+      "pos": "v",
+      "ja": "弱まった",
+      "note": ""
+    },
+    "yen": {
+      "lemma": "yen",
+      "pos": "n",
+      "ja": "円（通貨）",
+      "note": ""
+    },
+    "reaction": {
+      "lemma": "reaction",
+      "pos": "n",
+      "ja": "反応",
+      "note": ""
+    },
+    "mild": {
+      "lemma": "mild",
+      "pos": "adj",
+      "ja": "穏やかな",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "v",
+      "ja": "予想していた",
+      "note": ""
+    },
+    "stocks": {
+      "lemma": "stock",
+      "pos": "n",
+      "ja": "株式",
+      "note": ""
+    },
+    "announcement": {
+      "lemma": "announcement",
+      "pos": "n",
+      "ja": "発表",
+      "note": ""
+    },
+    "climbing": {
+      "lemma": "climb",
+      "pos": "v",
+      "ja": "上昇している",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "n",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "consumer": {
+      "lemma": "consumer",
+      "pos": "n",
+      "ja": "消費者",
+      "note": ""
+    },
+    "borrowing": {
+      "lemma": "borrow",
+      "pos": "v",
+      "ja": "借り入れる",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "条件を表すif節（If S V(現在形), S could have... のような未来の可能性を表す直説法の条件文）",
+    "quote": "If risks of underlying inflation overshooting 2% materialise, that could have a negative impact on Japan's economy.",
+    "quoteJa": "基調的なインフレが2%を上回るリスクが実際に生じれば、それは日本経済にマイナスの影響を与えかねない。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "if節の動詞が現在形(materialise)、主節の助動詞がcould＋原形動詞という組み合わせで、「もし(将来)〜という事態が実際に起きれば、…という結果になりうる」という、これから起こりうる条件とその帰結を表す直説法の条件文。仮定法ではなく、実現の可能性がある条件を述べる点に注意する。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "If underlying inflation overshoots 2%, it could hurt Japan's economy. のように言い換えられる。過去の事実に反する内容を述べる仮定法過去完了(If S had done, S would have done)とは区別する必要がある。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5ではif節の動詞の時制(現在形か過去形か)を問う空所補充問題が頻出する。「条件節では未来のことでも現在形を使う」という基本ルールをまず確認したうえで、主節の助動詞(could/would/may/mightなど)との組み合わせで意味の強弱を判断させる問題が多い。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "If demand continues to rise, the company could increase production next quarter. のように、社内報告や市場分析のレポートで将来のシナリオと対応策を述べる際によく使われる構文である。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜ日銀は利上げに踏み切ったのか",
+      "body": "日本は長年低金利政策を続けてきたが、原油高などを背景に物価上昇圧力が強まっている。日銀は「物価安定の目標」である2%を大きく超えるインフレを避けるため、段階的に金利を引き上げる方針へと転換した。"
+    },
+    {
+      "heading": "📌 世界の中央銀行との比較",
+      "body": "アメリカの中央銀行も2026年9月にほぼ同時期に利上げを行っており、世界的にインフレ抑制のための金融引き締めが同時進行している。日銀の利上げは国内要因だけでなく、こうした国際的な金融政策の流れとも関係している。"
+    },
+    {
+      "heading": "📌 日本企業・家計への影響",
+      "body": "金利の上昇は、住宅ローンや企業の借入コストの上昇に直結する。特に借入依存度の高い中小企業にとっては資金調達コストの増加が経営を圧迫する可能性がある。一方で、預金金利の上昇は家計の資産運用にとってはプラスに働く面もある。"
+    },
+    {
+      "heading": "📌 投資家・経営者への示唆",
+      "body": "金利上昇局面では、株式市場は業種によって明暗が分かれやすい。銀行株は利ざや拡大の恩恵を受けやすい一方、借入依存度の高い不動産・建設業などは逆風となる。経営者は資金調達計画の見直しや、金利上昇を前提としたコスト管理が今後より重要になる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bank of Japan hikes rates to 31-year high to battle inflation",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/policy/articles/bank-japan-hikes-rates-31-035536907.html",
+      "date": "2026-09-18"
+    },
+    {
+      "title": "BOJ Governor Ueda's comments at news conference",
+      "publisher": "Reuters (via Investing.com)",
+      "url": "https://www.investing.com/news/economy-news/boj-governor-uedas-comments-at-news-conference-4906744",
+      "date": "2026-09-18"
+    }
+  ]
+}
