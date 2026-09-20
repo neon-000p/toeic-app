@@ -6,22 +6,78 @@
   "time": "03:40",
   "scene": "社内調整｜シフト交代の依頼",
   "speakers": [
-    { "tag": "W", "role": "女性", "accent": "en-US" },
-    { "tag": "M", "role": "男性1", "accent": "en-GB" },
-    { "tag": "M2", "role": "男性2", "accent": "en-AU" }
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性1",
+      "accent": "en-GB"
+    },
+    {
+      "tag": "M2",
+      "role": "男性2",
+      "accent": "en-AU"
+    }
   ],
   "lines": [
-    { "tag": "W", "en": "Could one of you cover my shift Thursday afternoon? I have a dental appointment at one.", "ja": "どちらか、木曜日の午後のシフトを代わってもらえますか。1時に歯科の予約があるんです。" },
-    { "tag": "M", "en": "I'm tied up with a call until three, but I could take over after that.", "ja": "電話対応で3時まで手が離せませんが、その後なら代わりに入れます。" },
-    { "tag": "W", "en": "My shift runs one to six, so I still need coverage for two hours.", "ja": "私のシフトは1時から6時までなので、最初の2時間も誰かに頼みたいんです。" },
-    { "tag": "M2", "en": "I overheard that. I'm free until three, so I can fill in for the first stretch myself.", "ja": "それ、聞いていました。私は3時まで空いているので、最初の時間帯を私が代わります。" },
-    { "tag": "W", "en": "Great. So I hand off to you at one, then to him at three?", "ja": "助かります。では1時にあなたへ、3時に彼へ引き継ぐという形でいいですか。" },
-    { "tag": "M2", "en": "Exactly. Just make sure the register count is done before you leave.", "ja": "そうです。ただ、退勤前にレジの金額確認は済ませてくださいね。" },
-    { "tag": "M", "en": "I can hold off on my paperwork until Friday to keep this simple.", "ja": "私の事務作業は金曜まで後回しにできるので、話をシンプルにしておきます。" },
-    { "tag": "W", "en": "Thanks. I'll send you both the updated schedule by day's end.", "ja": "ありがとうございます。更新したシフト表を今日中にお二人にお送りします。" },
-    { "tag": "M2", "en": "Put it in writing so payroll can log the hours correctly.", "ja": "給与処理のために、書面でも残しておいてください。" },
-    { "tag": "W", "en": "Will do. I'll follow up once the new schedule is out.", "ja": "わかりました。新しいシフト表が出たら、その件も確認しておきます。" },
-    { "tag": "M", "en": "Sounds good. Let us know if the appointment runs long.", "ja": "了解です。予約が長引くようなら教えてください。" }
+    {
+      "tag": "W",
+      "en": "Could one of you cover my shift Thursday afternoon? I have a dental appointment at one.",
+      "ja": "どちらか、木曜日の午後のシフトを代わってもらえますか。1時に歯科の予約があるんです。"
+    },
+    {
+      "tag": "M",
+      "en": "I'm tied up with a call until three, but I could take over after that.",
+      "ja": "電話対応で3時まで手が離せませんが、その後なら代わりに入れます。"
+    },
+    {
+      "tag": "W",
+      "en": "My shift runs one to six, so I still need coverage for two hours.",
+      "ja": "私のシフトは1時から6時までなので、最初の2時間も誰かに頼みたいんです。"
+    },
+    {
+      "tag": "M2",
+      "en": "I overheard that. I'm free until three, so I can fill in for the first stretch myself.",
+      "ja": "それ、聞いていました。私は3時まで空いているので、最初の時間帯を私が代わります。"
+    },
+    {
+      "tag": "W",
+      "en": "Great. So I hand off to you at one, then to him at three?",
+      "ja": "助かります。では1時にあなたへ、3時に彼へ引き継ぐという形でいいですか。"
+    },
+    {
+      "tag": "M2",
+      "en": "Exactly. Just make sure the register count is done before you leave.",
+      "ja": "そうです。ただ、退勤前にレジの金額確認は済ませてくださいね。"
+    },
+    {
+      "tag": "M",
+      "en": "I can hold off on my paperwork until Friday to keep this simple.",
+      "ja": "私の事務作業は金曜まで後回しにできるので、話をシンプルにしておきます。"
+    },
+    {
+      "tag": "W",
+      "en": "Thanks. I'll send you both the updated schedule by day's end.",
+      "ja": "ありがとうございます。更新したシフト表を今日中にお二人にお送りします。"
+    },
+    {
+      "tag": "M2",
+      "en": "Put it in writing so payroll can log the hours correctly.",
+      "ja": "給与処理のために、書面でも残しておいてください。"
+    },
+    {
+      "tag": "W",
+      "en": "Will do. I'll follow up once the new schedule is out.",
+      "ja": "わかりました。新しいシフト表が出たら、その件も確認しておきます。"
+    },
+    {
+      "tag": "M",
+      "en": "Sounds good. Let us know if the appointment runs long.",
+      "ja": "了解です。予約が長引くようなら教えてください。"
+    }
   ],
   "questions": [
     {
@@ -29,13 +85,32 @@
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
       "choices": [
-        { "key": "A", "text": "A staffing arrangement for part of a workday", "ja": "勤務時間の一部の人員配置" },
-        { "key": "B", "text": "A visit to a dental clinic", "ja": "歯科医院への通院" },
-        { "key": "C", "text": "A count of register totals", "ja": "レジの金額集計" },
-        { "key": "D", "text": "New paperwork procedures for the team", "ja": "チームの新しい事務手続き" }
+        {
+          "key": "A",
+          "text": "A staffing arrangement for part of a workday",
+          "ja": "勤務時間の一部の人員配置"
+        },
+        {
+          "key": "B",
+          "text": "A visit to a dental clinic",
+          "ja": "歯科医院への通院"
+        },
+        {
+          "key": "C",
+          "text": "A count of register totals",
+          "ja": "レジの金額集計"
+        },
+        {
+          "key": "D",
+          "text": "New paperwork procedures for the team",
+          "ja": "チームの新しい事務手続き"
+        }
       ],
       "answer": "A",
-      "evidence": [0, 2],
+      "evidence": [
+        0,
+        2
+      ],
       "explanation": "女性は冒頭で木曜午後のシフトを代わってもらえないか尋ね、続けて1時から6時までの枠のうち最初の2時間も対応が必要だと説明している。話し合いの中心は、勤務時間の一部を誰が担当するかという人員配置である。歯科の通院はシフトを代わってほしい理由であって、話題そのものではない点に注意する。",
       "tip": "冒頭の依頼とその直後の補足がそのまま話題になる。理由として挙げられる個人的な予定は、話題ではなく背景情報として区別する。"
     },
@@ -44,13 +119,31 @@
       "type": "detail",
       "prompt": "Why is the first man unavailable until three o'clock?",
       "choices": [
-        { "key": "A", "text": "He is reviewing the new schedule", "ja": "新しいシフト表を確認しているから" },
-        { "key": "B", "text": "He is finishing a phone call", "ja": "電話対応を終えているところだから" },
-        { "key": "C", "text": "He is doing his paperwork", "ja": "事務作業をしているから" },
-        { "key": "D", "text": "He is attending a dental appointment", "ja": "歯科の予約に行っているから" }
+        {
+          "key": "A",
+          "text": "He is reviewing the new schedule",
+          "ja": "新しいシフト表を確認しているから"
+        },
+        {
+          "key": "B",
+          "text": "He is finishing a phone call",
+          "ja": "電話対応を終えているところだから"
+        },
+        {
+          "key": "C",
+          "text": "He is doing his paperwork",
+          "ja": "事務作業をしているから"
+        },
+        {
+          "key": "D",
+          "text": "He is attending a dental appointment",
+          "ja": "歯科の予約に行っているから"
+        }
       ],
       "answer": "B",
-      "evidence": [1],
+      "evidence": [
+        1
+      ],
       "explanation": "男性1は I'm tied up with a call until three と述べており、電話対応で手が離せないことが理由である。歯科の予約は女性の用件であり、男性1のものと取り違えないよう注意したい。",
       "tip": "be tied up with の直後に来る名詞が、身動きが取れない具体的な理由になる。誰の予定かを話者ごとに区別して聞く。"
     },
@@ -59,35 +152,134 @@
       "type": "next",
       "prompt": "What will the woman most likely do next?",
       "choices": [
-        { "key": "A", "text": "Complete the register count before leaving", "ja": "退勤前にレジの金額確認を済ませる" },
-        { "key": "B", "text": "Postpone the dental appointment to another day", "ja": "歯科の予約を別の日に延ばす" },
-        { "key": "C", "text": "Email the updated schedule to her colleagues", "ja": "更新したシフト表を同僚にメールする" },
-        { "key": "D", "text": "Finish paperwork with the first man on Friday", "ja": "男性1と一緒に金曜日までに事務作業を終える" }
+        {
+          "key": "A",
+          "text": "Complete the register count before leaving",
+          "ja": "退勤前にレジの金額確認を済ませる"
+        },
+        {
+          "key": "B",
+          "text": "Postpone the dental appointment to another day",
+          "ja": "歯科の予約を別の日に延ばす"
+        },
+        {
+          "key": "C",
+          "text": "Email the updated schedule to her colleagues",
+          "ja": "更新したシフト表を同僚にメールする"
+        },
+        {
+          "key": "D",
+          "text": "Finish paperwork with the first man on Friday",
+          "ja": "男性1と一緒に金曜日までに事務作業を終える"
+        }
       ],
       "answer": "C",
-      "evidence": [7, 8],
+      "evidence": [
+        7,
+        8
+      ],
       "explanation": "女性は I'll send you both the updated schedule by day's end と述べ、その直前に男性2が Put it in writing と念押ししている。したがって次の行動は、更新したシフト表を2人にメールで送ることである。レジの金額確認は女性自身が退勤前にすべき作業として触れられているが、今すぐの行動ではない。",
       "tip": "終盤で「送ります」という発言があれば、それが次の行動になることが多い。直前の相手の念押しとセットで根拠にする。"
     }
   ],
   "glossary": {
-    "tied up": { "lemma": "be tied up", "pos": "熟", "ja": "手が離せない", "note": "with 〜で「〜で手が離せない」" },
-    "hold off on": { "lemma": "hold off on", "pos": "熟", "ja": "〜を後回しにする", "note": "" },
-    "fill in for": { "lemma": "fill in for", "pos": "熟", "ja": "〜の代わりを務める", "note": "" },
-    "hand off": { "lemma": "hand off", "pos": "熟", "ja": "引き継ぐ", "note": "hand off to 〜で「〜に引き継ぐ」" },
-    "in writing": { "lemma": "in writing", "pos": "熟", "ja": "書面で", "note": "" },
-    "day's end": { "lemma": "day's end", "pos": "コロケーション", "ja": "終業時、その日の終わり", "note": "by day's end で「その日のうちに」" },
-    "register count": { "lemma": "register count", "pos": "コロケーション", "ja": "レジの金額確認", "note": "" },
-    "overheard": { "lemma": "overhear", "pos": "v", "ja": "たまたま耳にする", "note": "" },
-    "cover": { "lemma": "cover", "pos": "v", "ja": "（シフトなどを）代わりに務める", "note": "名詞形 coverage も同義で使われる" },
-    "stretch": { "lemma": "stretch", "pos": "n", "ja": "（時間の）一区切り、期間", "note": "the first stretch で「最初の時間帯」" }
+    "tied up": {
+      "lemma": "be tied up",
+      "pos": "熟",
+      "ja": "手が離せない",
+      "note": "with 〜で「〜で手が離せない」"
+    },
+    "hold off on": {
+      "lemma": "hold off on",
+      "pos": "熟",
+      "ja": "〜を後回しにする",
+      "note": ""
+    },
+    "fill in for": {
+      "lemma": "fill in for",
+      "pos": "熟",
+      "ja": "〜の代わりを務める",
+      "note": ""
+    },
+    "hand off": {
+      "lemma": "hand off",
+      "pos": "熟",
+      "ja": "引き継ぐ",
+      "note": "hand off to 〜で「〜に引き継ぐ」"
+    },
+    "in writing": {
+      "lemma": "in writing",
+      "pos": "熟",
+      "ja": "書面で",
+      "note": ""
+    },
+    "day's end": {
+      "lemma": "day's end",
+      "pos": "コロケーション",
+      "ja": "終業時、その日の終わり",
+      "note": "by day's end で「その日のうちに」"
+    },
+    "register count": {
+      "lemma": "register count",
+      "pos": "コロケーション",
+      "ja": "レジの金額確認",
+      "note": ""
+    },
+    "overheard": {
+      "lemma": "overhear",
+      "pos": "v",
+      "ja": "たまたま耳にする",
+      "note": ""
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "v",
+      "ja": "（シフトなどを）代わりに務める",
+      "note": "名詞形 coverage も同義で使われる"
+    },
+    "stretch": {
+      "lemma": "stretch",
+      "pos": "n",
+      "ja": "（時間の）一区切り、期間",
+      "note": "the first stretch で「最初の時間帯」"
+    }
   },
   "point": {
     "flow": "依頼 → 制約の提示 → 妥協案 → 合意 → 分担",
     "items": [
-      { "title": "制約は「空いている時間」で来る", "body": "誰かがすぐには引き受けられない場合、その次に来るのはピンポイントの空き時間の提示である。until three や free until three のような時間の断片をつなぎ合わせると、誰がどの時間帯を担当するかが見えてくる。似た会話では、話者ごとの空き時間をまず書き出してから設問に答えるとよい。" },
-      { "title": "3人会話は誰の発言かを取り違えやすい", "body": "同性の話者が2人いる会話では、歯科の予約や事務作業のように似た話題が複数の人物に割り振られている。detail や next の設問では、その発言が誰のものかを取り違えると正解を逆に選んでしまう。" },
-      { "title": "終盤の指示は次の行動の伏線になる", "body": "管理者やまとめ役が in writing のような形式を求める発言をした直後には、それに応じる next の設問が来やすい。終盤で形式面の指示が出たら、次に問われる行動をそこから予測できる。" }
+      {
+        "title": "制約は「空いている時間」で来る",
+        "body": "誰かがすぐには引き受けられない場合、その次に来るのはピンポイントの空き時間の提示である。until three や free until three のような時間の断片をつなぎ合わせると、誰がどの時間帯を担当するかが見えてくる。似た会話では、話者ごとの空き時間をまず書き出してから設問に答えるとよい。"
+      },
+      {
+        "title": "3人会話は誰の発言かを取り違えやすい",
+        "body": "同性の話者が2人いる会話では、歯科の予約や事務作業のように似た話題が複数の人物に割り振られている。detail や next の設問では、その発言が誰のものかを取り違えると正解を逆に選んでしまう。"
+      },
+      {
+        "title": "終盤の指示は次の行動の伏線になる",
+        "body": "管理者やまとめ役が in writing のような形式を求める発言をした直後には、それに応じる next の設問が来やすい。終盤で形式面の指示が出たら、次に問われる行動をそこから予測できる。"
+      }
     ]
+  },
+  "audio": {
+    "file": "audio/2026-09-21-0340-1.mp3",
+    "sec": 52,
+    "bytes": 247551,
+    "lines": [
+      "audio/2026-09-21-0340-1/00.mp3",
+      "audio/2026-09-21-0340-1/01.mp3",
+      "audio/2026-09-21-0340-1/02.mp3",
+      "audio/2026-09-21-0340-1/03.mp3",
+      "audio/2026-09-21-0340-1/04.mp3",
+      "audio/2026-09-21-0340-1/05.mp3",
+      "audio/2026-09-21-0340-1/06.mp3",
+      "audio/2026-09-21-0340-1/07.mp3",
+      "audio/2026-09-21-0340-1/08.mp3",
+      "audio/2026-09-21-0340-1/09.mp3",
+      "audio/2026-09-21-0340-1/10.mp3"
+    ],
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-20T18:54:17.508Z",
+    "trimmed": true
   }
 }
