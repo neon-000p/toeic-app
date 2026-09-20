@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-09-21-0340-4",
+  "date": "2026-09-21",
+  "time": "03:40",
+  "scene": "採用・研修｜新人研修の日程調整",
+  "speakers": [
+    { "tag": "W", "role": "女性", "accent": "en-US" },
+    { "tag": "M", "role": "男性", "accent": "en-GB" }
+  ],
+  "lines": [
+    { "tag": "W", "en": "I wanted to give you a heads-up. The orientation room is double-booked for next Monday.", "ja": "一言お伝えしておきます。来週月曜日の研修室が二重に予約されています。" },
+    { "tag": "M", "en": "Double-booked? I thought we reserved it three weeks ago for the new hires.", "ja": "二重予約ですか。新入社員のために3週間前に予約したはずですが。" },
+    { "tag": "W", "en": "We did, but another department booked it too, and their reservation went in first.", "ja": "予約はしましたが、別の部署も予約していて、そちらの予約が先に受け付けられていました。" },
+    { "tag": "M", "en": "How many new hires are starting that day?", "ja": "その日、新入社員は何人入社しますか。" },
+    { "tag": "W", "en": "Eight, plus two trainers. We'll need a room that seats at least ten.", "ja": "8人と、講師2人です。少なくとも10人が入る部屋が必要です。" },
+    { "tag": "M", "en": "Let's move the orientation to the main conference room instead.", "ja": "代わりに、オリエンテーションをメインの会議室に移しましょう。" },
+    { "tag": "W", "en": "That room is free all day, but it doesn't have the training laptops set up.", "ja": "その部屋は一日空いていますが、研修用のノートパソコンが用意されていません。" },
+    { "tag": "M", "en": "Ask IT to move the laptops over by Friday morning.", "ja": "金曜日の午前までにノートパソコンを移すよう、ITに頼んでください。" },
+    { "tag": "W", "en": "I'll follow up with IT today and confirm the new room with the new hires by Wednesday.", "ja": "今日中にITへ確認し、水曜日までに新入社員へ新しい部屋を伝えます。" },
+    { "tag": "M", "en": "Good. Let me know if IT can't make the deadline.", "ja": "分かりました。ITが期限に間に合わなければ教えてください。" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What problem does the woman report?",
+      "choices": [
+        { "key": "A", "text": "A training session has been canceled", "ja": "研修が中止された" },
+        { "key": "B", "text": "A meeting room has been booked by two departments", "ja": "会議室が2つの部署に予約されている" },
+        { "key": "C", "text": "Some new hires missed orientation", "ja": "一部の新入社員がオリエンテーションを欠席した" },
+        { "key": "D", "text": "The conference room is being renovated", "ja": "会議室が改装中である" }
+      ],
+      "answer": "B",
+      "evidence": [0],
+      "explanation": "女性は The orientation room is double-booked と報告している。1つの部屋が2つの用途に予約されてしまったことが問題であり、研修の中止や欠席、改装の話は出てこない。",
+      "tip": "冒頭の一言のあとに続く具体的な内容が、そのまま報告された問題になる。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the man imply when he says, \"Let me know if IT can't make the deadline\"?",
+      "choices": [
+        { "key": "A", "text": "He wants to cancel the laptop request", "ja": "ノートパソコンの依頼を取り消したい" },
+        { "key": "B", "text": "He believes IT already missed the deadline", "ja": "ITが既に期限を過ぎたと思っている" },
+        { "key": "C", "text": "He is not fully confident IT will finish on time", "ja": "ITが時間どおりに終えられるか完全には確信していない" },
+        { "key": "D", "text": "He plans to handle the laptop setup himself", "ja": "自分でノートパソコンの設定を行うつもりである" }
+      ],
+      "answer": "C",
+      "evidence": [7, 9],
+      "explanation": "男性は金曜午前までにノートパソコンを移すようITに頼むよう指示したうえで、この条件文を付けている。まだ結果が出ていない依頼に対して備えを求めており、ITが必ず時間どおりに終えるとは確信していないことを示している。依頼の取り消しや、自分で対応する意図ではない。",
+      "tip": "Let me know if ... のような条件文は、話者がまだ安心していないことを示す表現として読む。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the woman most likely do today?",
+      "choices": [
+        { "key": "A", "text": "Reserve the conference room for another meeting", "ja": "会議室を別の会議のために予約する" },
+        { "key": "B", "text": "Email the new hires about the schedule change", "ja": "新入社員に日程変更をメールする" },
+        { "key": "C", "text": "Count how many new hires are starting", "ja": "何人の新入社員が入社するか数える" },
+        { "key": "D", "text": "Contact IT about moving the laptops", "ja": "ノートパソコンの移動についてITに連絡する" }
+      ],
+      "answer": "D",
+      "evidence": [8],
+      "explanation": "女性は I'll follow up with IT today と述べており、今日中に行うのはITへの確認である。新入社員への連絡は水曜日までに行うと述べられており、今日の行動ではない。",
+      "tip": "todayやby Wednesdayのような期限の語を取り違えると、いつの行動かを問う設問を落としやすい。"
+    }
+  ],
+  "glossary": {
+    "a heads-up": { "lemma": "heads-up", "pos": "熟", "ja": "事前の一言、注意喚起", "note": "give someone a heads-up で「一言伝えておく」" },
+    "move": { "lemma": "move", "pos": "v", "ja": "移す、変更する", "note": "予定や会場を「移す」の意味" },
+    "follow up with": { "lemma": "follow up with", "pos": "熟", "ja": "〜に確認・対応する", "note": "" },
+    "set up": { "lemma": "set up", "pos": "熟", "ja": "用意する、設置する", "note": "" },
+    "let me know": { "lemma": "let someone know", "pos": "熟", "ja": "〜に知らせる", "note": "" },
+    "double-booked": { "lemma": "double-book", "pos": "adj", "ja": "予約が重複している", "note": "" },
+    "deadline": { "lemma": "deadline", "pos": "n", "ja": "期限", "note": "" },
+    "went in first": { "lemma": "go in first", "pos": "熟", "ja": "先に受け付けられる", "note": "予約などが「先に処理された」という意味の口語表現" },
+    "at least": { "lemma": "at least", "pos": "熟", "ja": "少なくとも", "note": "" },
+    "confirm": { "lemma": "confirm", "pos": "v", "ja": "確認する、確定させる", "note": "予定を確定させる意味で使われる" }
+  },
+  "point": {
+    "flow": "報告 → 確認の質問 → 判断 → 指示 → 期限",
+    "items": [
+      { "title": "報告のあとは必ず人数か規模の確認が入る", "body": "問題が報告されると、次に来るのは影響範囲を確定するための数の確認である。人数や必要な席数が分かってから、初めて代替案（別室への変更など）が検討される。detail 設問はこの数の確認の行に根拠を置くことが多い。" },
+      { "title": "指示には必ず期限が付く", "body": "判断が決まった直後、誰が何をいつまでにするかという指示が続く。動作と期限がセットで出てきたら、それがそのまま next 設問の根拠になる。" },
+      { "title": "条件文は『まだ確定していない』ことを示す", "body": "Let me know if ... のような条件文は、話者が完全には安心していないことを示す意図表現になりやすい。if 以下の内容を心配事として読み取れると、intent 設問の答えが選びやすくなる。" }
+    ]
+  }
+}

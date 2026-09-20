@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-09-21-0340-3",
+  "date": "2026-09-21",
+  "time": "03:40",
+  "scene": "出張・移動｜航空便の変更",
+  "speakers": [
+    { "tag": "W", "role": "女性", "accent": "en-GB" },
+    { "tag": "M", "role": "男性", "accent": "en-CA" }
+  ],
+  "lines": [
+    { "tag": "W", "en": "The client moved up our meeting to Tuesday morning, so we need to change our flights.", "ja": "顧客が打ち合わせを火曜日の朝に前倒ししたので、航空便を変更する必要があります。" },
+    { "tag": "M", "en": "There's a seven a.m. flight that lands by nine, or a six p.m. flight the night before.", "ja": "午前7時発で9時に着く便か、前日の午後6時発の便があります。" },
+    { "tag": "W", "en": "The morning flight is cheaper, but if it's delayed, we could miss the meeting entirely.", "ja": "朝の便のほうが安いですが、遅延すると打ち合わせに完全に間に合わなくなる可能性があります。" },
+    { "tag": "M", "en": "The evening flight costs about ninety dollars more, but we'd already be there and rested.", "ja": "前日の便は90ドルほど高くなりますが、その分現地で休んでおけます。" },
+    { "tag": "W", "en": "Given how important this client is, I'd rather not risk a delay.", "ja": "この顧客の重要性を考えると、遅延のリスクは避けたいです。" },
+    { "tag": "M", "en": "Agreed. Let's book the evening flight and expense the difference.", "ja": "同意します。前日の便を予約して、差額は経費で処理しましょう。" },
+    { "tag": "W", "en": "I'll also reserve a hotel room for that extra night near the client's office.", "ja": "顧客の事務所の近くに、追加の1泊分のホテルも予約しておきます。" },
+    { "tag": "M", "en": "Good idea. Can you send me the itinerary once it's confirmed?", "ja": "いいですね。確定したら旅程表を送ってもらえますか。" },
+    { "tag": "W", "en": "Sure, I'll forward it along with the hotel confirmation by tomorrow.", "ja": "もちろんです。明日までにホテルの確認書と一緒に転送します。" },
+    { "tag": "M", "en": "Thanks. I'll let the client know we're arriving a day early.", "ja": "ありがとう。1日早く到着することを顧客に伝えておきます。" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly deciding?",
+      "choices": [
+        { "key": "A", "text": "Where to hold a client meeting", "ja": "顧客との打ち合わせをどこで行うか" },
+        { "key": "B", "text": "How to reduce a travel budget", "ja": "出張予算をどう削減するか" },
+        { "key": "C", "text": "Which flight to take for a business trip", "ja": "出張でどの航空便に乗るか" },
+        { "key": "D", "text": "When to submit an itinerary", "ja": "旅程表をいつ提出するか" }
+      ],
+      "answer": "C",
+      "evidence": [0, 1],
+      "explanation": "顧客の打ち合わせが前倒しになったため、女性と男性は航空便の変更が必要だと確認し、続けて朝の便と前日の便という2つの選択肢を比較している。話題は出張のための航空便選びである。予算削減や旅程表の提出は、その決定に付随して後から出る内容にすぎない。",
+      "tip": "『変更する必要がある』という発言のあとに提示される2つの案が、そのまま話し合いの中心になる。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why does the woman prefer the evening flight over the morning one?",
+      "choices": [
+        { "key": "A", "text": "She wants to save on the ticket price", "ja": "航空券代を節約したいから" },
+        { "key": "B", "text": "She prefers a later departure time", "ja": "出発時刻が遅いほうを好むから" },
+        { "key": "C", "text": "She needs extra time to pack for the trip", "ja": "出張の荷造りに時間が必要だから" },
+        { "key": "D", "text": "She does not want to risk missing the meeting", "ja": "遅延で打ち合わせに間に合わなくなるリスクを避けたいから" }
+      ],
+      "answer": "D",
+      "evidence": [4],
+      "explanation": "女性は Given how important this client is, I'd rather not risk a delay と述べている。朝の便が安いことは分かっているが、遅延のリスクよりも顧客の重要性を優先したいという理由である。値段の節約が理由ではない点に注意する。",
+      "tip": "risk a delay のような評価を表す語が出たら、価格差ではなく確実性を優先した理由だと考える。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about the client?",
+      "choices": [
+        { "key": "A", "text": "The client is an important business partner", "ja": "重要な取引先である" },
+        { "key": "B", "text": "The client has canceled the meeting", "ja": "打ち合わせを中止した" },
+        { "key": "C", "text": "The client works in the same building as the hotel", "ja": "ホテルと同じ建物で働いている" },
+        { "key": "D", "text": "The client will pay for the extra hotel night", "ja": "追加の宿泊費を負担する" }
+      ],
+      "answer": "A",
+      "evidence": [4, 9],
+      "explanation": "女性は how important this client is と述べ、男性も1日早く到着することを伝えると言っている。多少の追加コストをかけてでも確実に間に合わせようとする姿勢から、この顧客が重要な取引先であることがうかがえる。打ち合わせの中止や宿泊費の負担については本文に触れられていない。",
+      "tip": "明言されていない関係性は、価格や日程を犠牲にしてでも確実性を取る姿勢から読み取る。"
+    }
+  ],
+  "glossary": {
+    "moved up": { "lemma": "move up", "pos": "熟", "ja": "前倒しにする", "note": "meeting was moved up で「前倒しになった」" },
+    "along with": { "lemma": "along with", "pos": "熟", "ja": "〜と一緒に", "note": "" },
+    "let the client know": { "lemma": "let someone know", "pos": "熟", "ja": "〜に知らせる", "note": "let + 人 + know の形" },
+    "extra night": { "lemma": "extra night", "pos": "コロケーション", "ja": "追加の1泊", "note": "" },
+    "a day early": { "lemma": "a day early", "pos": "コロケーション", "ja": "1日早く", "note": "arrive a day early で「1日早く到着する」" },
+    "itinerary": { "lemma": "itinerary", "pos": "n", "ja": "旅程表", "note": "" },
+    "expense": { "lemma": "expense", "pos": "v", "ja": "経費で処理する", "note": "動詞で「経費として計上する」の意味" },
+    "risk": { "lemma": "risk", "pos": "v", "ja": "〜の危険を冒す", "note": "risk a delay で「遅延のリスクを冒す」" },
+    "rather": { "lemma": "rather", "pos": "adv", "ja": "むしろ", "note": "'d rather (not) do の形で「むしろ〜し(たく)ない」" },
+    "book": { "lemma": "book", "pos": "v", "ja": "予約する", "note": "選択肢では reserve に置き換わることがある" }
+  },
+  "point": {
+    "flow": "依頼 → 2案の提示 → 条件の比較 → 決定と理由 → 次の行動",
+    "items": [
+      { "title": "2案の比較は『価格』と『リスク』の対立で来る", "body": "安い案と確実な案が並んで出てきたら、決定の根拠は多くの場合、価格ではなく相手の重要度やリスクの大きさである。detail 設問では、価格差そのものより『なぜその価格差を受け入れたか』が問われる。" },
+      { "title": "決定の直後に付帯作業が続く", "body": "2案のどちらかに決めた直後、ホテルや資料のような付帯的な手配が話者から追加で出てくる。この付帯手配は next 設問の根拠になりやすいので、決定の直後の1〜2行を必ず押さえる。" },
+      { "title": "infer は数字ではなく態度から読む", "body": "推測問題の根拠は、明示された事実ではなく、話者がどれだけ慎重・積極的かという態度に表れることが多い。risk や important のような評価を表す語に注目すると、明言されていない関係性が見えてくる。" }
+    ]
+  }
+}

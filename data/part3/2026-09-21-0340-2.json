@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-09-21-0340-2",
+  "date": "2026-09-21",
+  "time": "03:40",
+  "scene": "顧客対応｜誤送品の交換対応",
+  "speakers": [
+    { "tag": "M", "role": "男性", "accent": "en-US" },
+    { "tag": "W", "role": "女性", "accent": "en-AU" }
+  ],
+  "lines": [
+    { "tag": "M", "en": "A customer called about order four-one-two. She received twelve blue folders instead of the red ones she ordered.", "ja": "注文番号412番のお客様からお電話がありました。注文した赤ではなく、青のフォルダー12個が届いたそうです。" },
+    { "tag": "W", "en": "Let me look into the packing log... it looks like the warehouse pulled the wrong color by mistake.", "ja": "梱包記録を確認してみます……倉庫が誤って違う色を取り出してしまったようですね。" },
+    { "tag": "M", "en": "She needs the correct folders before her event on Friday. Can we ship a replacement today?", "ja": "金曜日のイベントまでに正しいフォルダーが必要だそうです。今日、代替品を発送できますか。" },
+    { "tag": "W", "en": "We're out of red in that size until the next shipment arrives on Thursday.", "ja": "そのサイズの赤は、次の入荷が届く木曜日まで品切れです。" },
+    { "tag": "M", "en": "That's too late. Is there a similar folder we could offer instead?", "ja": "それでは遅すぎます。代わりに提供できる似たフォルダーはありますか。" },
+    { "tag": "W", "en": "We do have a burgundy version in stock. It's close enough in color for most events.", "ja": "バーガンディ色の在庫はあります。色味としてはほとんどのイベントで十分近いと思います。" },
+    { "tag": "M", "en": "Let's offer that as a substitute and waive the return shipping for the blue ones.", "ja": "それを代替品として提案しましょう。青いフォルダーの返送料は免除してください。" },
+    { "tag": "W", "en": "Good idea. I'll set up a prepaid label so she doesn't pay to send them back.", "ja": "良い案ですね。返送費用がかからないよう、前払いの配送ラベルを用意します。" },
+    { "tag": "M", "en": "I'll call her now and explain the swap before we ship anything.", "ja": "発送する前に、今すぐお客様に電話して交換の内容を説明します。" },
+    { "tag": "W", "en": "Sounds good. I'll have the burgundy folders out the door within the hour.", "ja": "了解です。1時間以内にバーガンディ色のフォルダーを発送します。" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What problem does the man report at the beginning of the call?",
+      "choices": [
+        { "key": "A", "text": "A customer's order arrived late", "ja": "顧客の注文が届くのが遅れた" },
+        { "key": "B", "text": "A customer was charged twice for an order", "ja": "顧客が注文で二重に課金された" },
+        { "key": "C", "text": "A customer wants to cancel an order", "ja": "顧客が注文を取り消したがっている" },
+        { "key": "D", "text": "A customer received the wrong color of an item", "ja": "顧客に違う色の商品が届いた" }
+      ],
+      "answer": "D",
+      "evidence": [0],
+      "explanation": "男性は she received twelve blue folders instead of the red ones she ordered と述べており、注文と違う色の商品が届いたことが問題である。到着が遅れたわけでも、二重課金でもない点を区別する。",
+      "tip": "instead of の前後を比べると、頼んだものと届いたものの違いがそのまま問題の内容になる。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the man mean when he says, \"That's too late\"?",
+      "choices": [
+        { "key": "A", "text": "He believes the shipment date will not meet the customer's deadline", "ja": "その入荷日では顧客の期限に間に合わないと考えている" },
+        { "key": "B", "text": "He wants to cancel the replacement order", "ja": "代替品の注文を取り消したい" },
+        { "key": "C", "text": "He thinks the warehouse made another mistake", "ja": "倉庫がまた別の間違いをしたと思っている" },
+        { "key": "D", "text": "He plans to refund the customer instead", "ja": "代わりに顧客へ返金するつもりである" }
+      ],
+      "answer": "A",
+      "evidence": [2, 3, 4],
+      "explanation": "直前で女性が次の入荷は木曜日と伝えたが、男性は顧客のイベントが金曜日だと分かっている。木曜日の入荷ではイベントに間に合わないため、That's too late と反応している。倉庫の新たな間違いや返金の話ではない。",
+      "tip": "That's too late のような短い反応は、直前に出た2つの日付（締め切りと入荷予定）を比べて初めて意味が分かる。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the man most likely do next?",
+      "choices": [
+        { "key": "A", "text": "Ship the blue folders back to the warehouse", "ja": "青いフォルダーを倉庫へ返送する" },
+        { "key": "B", "text": "Call the customer to explain the substitution", "ja": "お客様に電話して代替品の内容を説明する" },
+        { "key": "C", "text": "Ask the customer for a refund instead", "ja": "代わりに顧客へ返金を提案する" },
+        { "key": "D", "text": "Wait for the next shipment on Thursday", "ja": "木曜日の次の入荷を待つ" }
+      ],
+      "answer": "B",
+      "evidence": [8],
+      "explanation": "男性は I'll call her now and explain the swap before we ship anything と述べている。したがって次に行うのは、顧客への電話で代替品への交換を説明することである。木曜日の入荷を待つという案は、金曜日に間に合わないため既に却下されている。",
+      "tip": "「発送する前に」という条件付きの発言があれば、その前にする行動こそが次の行動である。"
+    }
+  ],
+  "glossary": {
+    "look into": { "lemma": "look into", "pos": "熟", "ja": "調べる", "note": "" },
+    "out of": { "lemma": "out of", "pos": "熟", "ja": "品切れの", "note": "out of red で「赤が品切れ」" },
+    "set up": { "lemma": "set up", "pos": "熟", "ja": "用意する、手配する", "note": "" },
+    "out the door": { "lemma": "out the door", "pos": "熟", "ja": "発送される", "note": "商品が出ていくという比喩表現" },
+    "packing log": { "lemma": "packing log", "pos": "コロケーション", "ja": "梱包記録", "note": "" },
+    "waive": { "lemma": "waive", "pos": "v", "ja": "免除する", "note": "waive the shipping で「配送料を免除する」" },
+    "prepaid": { "lemma": "prepaid", "pos": "adj", "ja": "前払いの", "note": "" },
+    "swap": { "lemma": "swap", "pos": "n", "ja": "交換", "note": "" },
+    "pulled": { "lemma": "pull", "pos": "v", "ja": "（倉庫で商品を）取り出す", "note": "在庫からピッキングする意味" },
+    "substitute": { "lemma": "substitute", "pos": "n", "ja": "代替品", "note": "" }
+  },
+  "point": {
+    "flow": "問題の発生 → 原因 → 代替案 → 制約による却下 → 次の行動",
+    "items": [
+      { "title": "「間に合わない」は日付の比較から生まれる", "body": "代替案の可否は、多くの場合、提示された日付と相手の締め切りを比べて決まる。次の入荷が木曜、顧客の締め切りが金曜のように、2つの日付が別々の行に出てきたら、まず両方を書き出してから判断する。" },
+      { "title": "却下された案の特徴が誤答に使われる", "body": "断られた代替案の特徴（色や納期など）は、そのまま誤答の選択肢に転用されやすい。会話の後半で別の案に決まったと分かった内容を、正解のように見せる選択肢に注意する。" },
+      { "title": "最後の一往復が次の行動を決める", "body": "誰が何をするかは、終盤の『私が〜します』という発言とその直前の合意によって確定する。次の行動を問う設問では、この最後の一往復だけを見ればよい。" }
+    ]
+  }
+}

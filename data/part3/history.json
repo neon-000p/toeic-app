@@ -1,8 +1,53 @@
 {
   "schemaVersion": 1,
   "type": "part3-history",
-  "updatedAt": "2026-09-14T03:39:00+09:00",
+  "updatedAt": "2026-09-21T03:40:00+09:00",
   "items": [
+    {
+      "id": "2026-09-21-0340-5",
+      "date": "2026-09-21",
+      "scene": "製造・在庫｜部品欠品による生産遅延",
+      "genre": "製造・在庫",
+      "speakers": 2,
+      "types": ["detail", "infer", "next"],
+      "flow": "問題と解決"
+    },
+    {
+      "id": "2026-09-21-0340-4",
+      "date": "2026-09-21",
+      "scene": "採用・研修｜新人研修の日程調整",
+      "genre": "採用・研修",
+      "speakers": 2,
+      "types": ["gist", "intent", "next"],
+      "flow": "報告と指示"
+    },
+    {
+      "id": "2026-09-21-0340-3",
+      "date": "2026-09-21",
+      "scene": "出張・移動｜航空便の変更",
+      "genre": "出張・移動",
+      "speakers": 2,
+      "types": ["gist", "detail", "infer"],
+      "flow": "比較と決定"
+    },
+    {
+      "id": "2026-09-21-0340-2",
+      "date": "2026-09-21",
+      "scene": "顧客対応｜誤送品の交換対応",
+      "genre": "顧客対応",
+      "speakers": 2,
+      "types": ["detail", "intent", "next"],
+      "flow": "問題と解決"
+    },
+    {
+      "id": "2026-09-21-0340-1",
+      "date": "2026-09-21",
+      "scene": "社内調整｜シフト交代の依頼",
+      "genre": "社内調整",
+      "speakers": 3,
+      "types": ["gist", "detail", "next"],
+      "flow": "依頼と調整"
+    },
     {
       "id": "2026-09-14-0339-5",
       "date": "2026-09-14",

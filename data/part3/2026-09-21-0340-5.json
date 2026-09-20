@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-09-21-0340-5",
+  "date": "2026-09-21",
+  "time": "03:40",
+  "scene": "製造・在庫｜部品欠品による生産遅延",
+  "speakers": [
+    { "tag": "M", "role": "男性", "accent": "en-AU" },
+    { "tag": "W", "role": "女性", "accent": "en-CA" }
+  ],
+  "lines": [
+    { "tag": "M", "en": "Production is behind schedule. We're short on the circuit boards for line two.", "ja": "生産が予定より遅れています。2号ラインの基板が不足しています。" },
+    { "tag": "W", "en": "I checked with the supplier. They shipped the boards, but customs is holding up the shipment.", "ja": "仕入先に確認しました。基板は発送済みですが、税関が荷物を留めているそうです。" },
+    { "tag": "M", "en": "How long will that delay things?", "ja": "それでどれくらい遅れそうですか。" },
+    { "tag": "W", "en": "They estimated three more days, but it could stretch to five if paperwork is missing.", "ja": "あと3日ほどと見積もっていますが、書類が不足していると5日まで延びる可能性もあります。" },
+    { "tag": "M", "en": "We can't wait five days. Line two needs those boards by Thursday at the latest.", "ja": "5日は待てません。2号ラインは遅くとも木曜日までに基板が必要です。" },
+    { "tag": "W", "en": "There's a backup supplier who can rush twenty boards by Wednesday, but at double the price.", "ja": "水曜日までに基板20枚を急送できる代替の仕入先がありますが、価格は倍額です。" },
+    { "tag": "M", "en": "Let's place a small order with them just to keep line two running until customs clears.", "ja": "税関を通過するまで2号ラインを動かし続けるために、その仕入先に少量だけ注文しましょう。" },
+    { "tag": "W", "en": "I'll place that order today and cancel it if the original shipment clears first.", "ja": "今日その注文を出して、元の荷物が先に通関したら取り消します。" },
+    { "tag": "M", "en": "Good. Let's also ask the supplier to send the paperwork directly to speed up customs.", "ja": "いいですね。通関を早めるために、仕入先に書類を直接送ってもらうよう頼みましょう。" },
+    { "tag": "W", "en": "I'll email them now and copy you on it.", "ja": "今すぐメールして、あなたもCCに入れます。" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "Why is the shipment of circuit boards delayed?",
+      "choices": [
+        { "key": "A", "text": "The shipment is being delayed by a customs review", "ja": "税関での審査によって荷物が遅れている" },
+        { "key": "B", "text": "The supplier has not shipped the boards yet", "ja": "仕入先がまだ基板を発送していない" },
+        { "key": "C", "text": "The backup supplier ran out of stock", "ja": "代替の仕入先の在庫が切れた" },
+        { "key": "D", "text": "The paperwork was sent to the wrong address", "ja": "書類が間違った宛先に送られた" }
+      ],
+      "answer": "A",
+      "evidence": [1],
+      "explanation": "女性は They shipped the boards, but customs is holding up the shipment と説明している。発送自体は済んでおり、税関での留め置きが遅延の原因である。仕入先が未発送だという選択肢は本文と矛盾する。",
+      "tip": "but の後に本当の原因が来る。発送済みかどうかと、なぜ届いていないかを分けて聞く。"
+    },
+    {
+      "id": "q2",
+      "type": "infer",
+      "prompt": "What is suggested about the boards from the backup supplier?",
+      "choices": [
+        { "key": "A", "text": "They are lower quality than the original boards", "ja": "元の基板より品質が低い" },
+        { "key": "B", "text": "They cost more than the original supplier's boards", "ja": "元の仕入先の基板より高くつく" },
+        { "key": "C", "text": "They will not arrive until after Thursday", "ja": "木曜日より後にしか到着しない" },
+        { "key": "D", "text": "They come from the same original supplier", "ja": "元の注文と同じ仕入先から来る" }
+      ],
+      "answer": "B",
+      "evidence": [5],
+      "explanation": "女性は代替の仕入先について rush twenty boards by Wednesday, but at double the price と述べている。水曜までに届く点は元の入荷より早く、価格は倍額であることから、割高だが元の仕入先より高くつくと分かる。品質についての言及はない。",
+      "tip": "at double the price のような価格の描写から、明言されていない特徴（割高、別の仕入先など）を推測する。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the woman most likely do right after this conversation?",
+      "choices": [
+        { "key": "A", "text": "Place a rush order with the backup supplier", "ja": "代替の仕入先に急ぎの注文を出す" },
+        { "key": "B", "text": "Cancel the original shipment", "ja": "元の荷物を取り消す" },
+        { "key": "C", "text": "Email the supplier about sending the paperwork directly", "ja": "書類を直接送ってもらうよう仕入先にメールする" },
+        { "key": "D", "text": "Contact customs directly about the delay", "ja": "遅延について税関に直接連絡する" }
+      ],
+      "answer": "C",
+      "evidence": [8, 9],
+      "explanation": "男性が仕入先に書類を直接送ってもらうよう頼もうと提案したのを受けて、女性は I'll email them now and copy you on it と応じている。したがって直後の行動は、そのメールを送ることである。代替の仕入先への注文は既にこれより前の段階で決めた行動である。",
+      "tip": "提案のすぐ後に I'll ... now という発言があれば、それが直後の行動の答えになる。"
+    }
+  ],
+  "glossary": {
+    "holding up": { "lemma": "hold up", "pos": "熟", "ja": "遅らせる、留める", "note": "customs is holding up the shipment で「税関が荷物を留めている」" },
+    "speed up": { "lemma": "speed up", "pos": "熟", "ja": "早める", "note": "" },
+    "copy you on it": { "lemma": "copy someone on", "pos": "熟", "ja": "〜をCCに入れる", "note": "メールで共有するという口語表現" },
+    "at double the price": { "lemma": "at double the price", "pos": "コロケーション", "ja": "倍額で", "note": "" },
+    "place that order": { "lemma": "place an order", "pos": "コロケーション", "ja": "その注文を出す", "note": "place an order の言い換え表現" },
+    "backup supplier": { "lemma": "backup supplier", "pos": "コロケーション", "ja": "代替の仕入先", "note": "" },
+    "circuit boards": { "lemma": "circuit board", "pos": "n", "ja": "基板、回路基板", "note": "" },
+    "the latest": { "lemma": "at the latest", "pos": "コロケーション", "ja": "遅くとも", "note": "by Thursday at the latest で「遅くとも木曜日までに」" },
+    "clears": { "lemma": "clear", "pos": "v", "ja": "（税関などを）通過する", "note": "customs clears で「税関を通過する」" },
+    "estimated": { "lemma": "estimate", "pos": "v", "ja": "見積もる、推定する", "note": "" }
+  },
+  "point": {
+    "flow": "問題の発生 → 原因の切り分け → 期限との比較 → 次善策の実行 → 分担",
+    "items": [
+      { "title": "『原因』と『いつ解決するか』は別の行で来る", "body": "問題が起きた理由と、それがいつ解決するかという見込みは、別々の発言で語られることが多い。detail 設問はどちらか一方だけを聞いていると答えを取り違えるので、原因の行と見込みの行を両方確認する。" },
+      { "title": "代替案には必ず『代償』が付く", "body": "急ぎの代替策が出るときは、価格や納期の面での代償が同じ発言か直後の発言で示される。infer 設問はこの代償の部分から、明言されていない性質を読み取らせる。" },
+      { "title": "『今すぐ』という発言が次の行動の答え", "body": "保留と分担の場面では、誰かが今すぐ何をするかを短く言い切る発言が終盤に来る。now や today が付いた発言をそのまま next 設問の根拠にする。" }
+    ]
+  }
+}
