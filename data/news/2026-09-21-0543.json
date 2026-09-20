@@ -442,5 +442,22 @@
       "url": "https://www.investing.com/news/economy-news/boj-governor-uedas-comments-at-news-conference-4906744",
       "date": "2026-09-18"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-21-0543/00.mp3",
+      "audio/2026-09-21-0543/01.mp3",
+      "audio/2026-09-21-0543/02.mp3",
+      "audio/2026-09-21-0543/03.mp3",
+      "audio/2026-09-21-0543/04.mp3",
+      "audio/2026-09-21-0543/05.mp3",
+      "audio/2026-09-21-0543/06.mp3",
+      "audio/2026-09-21-0543/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 201960,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-20T20:48:30.835Z",
+    "trimmed": true
+  }
 }
