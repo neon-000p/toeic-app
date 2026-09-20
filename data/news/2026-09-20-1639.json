@@ -68,14 +68,33 @@
       "type": "detail",
       "prompt": "How many additional crewed missions did NASA order from SpaceX in this new agreement?",
       "choices": [
-        { "key": "A", "text": "One", "ja": "1回" },
-        { "key": "B", "text": "Two", "ja": "2回" },
-        { "key": "C", "text": "Three", "ja": "3回" },
-        { "key": "D", "text": "Four", "ja": "4回" }
+        {
+          "key": "A",
+          "text": "One",
+          "ja": "1回"
+        },
+        {
+          "key": "B",
+          "text": "Two",
+          "ja": "2回"
+        },
+        {
+          "key": "C",
+          "text": "Three",
+          "ja": "3回"
+        },
+        {
+          "key": "D",
+          "text": "Four",
+          "ja": "4回"
+        }
       ],
       "answer": "C",
       "explanation": "正解はC。本文冒頭の「NASA has ordered three more crewed flights to the International Space Station from SpaceX.」に、追加発注されたのは3回の有人飛行であると明記されている。A・B・Dはいずれも本文に無い数字であり、混同を誘う典型的な誤答。TOEIC Part 7では本文中に複数の数字（3、$946 million、$5.92 billion、17など）が登場するため、設問がどの数字を問うているかを見極めることが重要。",
-      "evidence": { "p": 0, "s": 0 },
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
       "tip": "複数の数字が出てくる長文では、設問文のキーワード（ここでは『追加でいくつ』）に対応する数字だけを本文から探すこと。"
     },
     {
@@ -83,110 +102,379 @@
       "type": "reason",
       "prompt": "Why does NASA rely on two separate companies to fly astronauts to the space station?",
       "choices": [
-        { "key": "A", "text": "To protect its access to the station if one provider has a problem", "ja": "一方に問題が起きてもアクセスを守るため" },
-        { "key": "B", "text": "To lower the price NASA pays per seat", "ja": "座席あたりの価格を下げるため" },
-        { "key": "C", "text": "To let Boeing catch up on lost profits", "ja": "ボーイングの損失を補うため" },
-        { "key": "D", "text": "To satisfy an international treaty requirement", "ja": "国際条約の要件を満たすため" }
+        {
+          "key": "A",
+          "text": "To protect its access to the station if one provider has a problem",
+          "ja": "一方に問題が起きてもアクセスを守るため"
+        },
+        {
+          "key": "B",
+          "text": "To lower the price NASA pays per seat",
+          "ja": "座席あたりの価格を下げるため"
+        },
+        {
+          "key": "C",
+          "text": "To let Boeing catch up on lost profits",
+          "ja": "ボーイングの損失を補うため"
+        },
+        {
+          "key": "D",
+          "text": "To satisfy an international treaty requirement",
+          "ja": "国際条約の要件を満たすため"
+        }
       ],
       "answer": "A",
       "explanation": "正解はA。本文2段落目の「NASA said flying astronauts with two separate companies protects its access to the station if one provider runs into trouble.」に、2社体制を維持する理由が明記されている。B・C・Dは本文に一切記載がない情報であり、TOEICでよく使われる「本文にない情報」型の誤答である。理由を問う設問では、\"said\" のように発言や説明が明示された一文を探すのが近道になる。",
-      "evidence": { "p": 1, "s": 2 },
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
       "tip": "理由・目的を問う設問は、本文中の \"said\" \"because\" \"in order to\" などの語の直後に根拠があることが多い。"
     }
   ],
   "vocabulary": [
     {
-      "no": 1, "term": "crewed", "pos": "形", "ja": "有人の",
+      "no": 1,
+      "term": "crewed",
+      "pos": "形",
+      "ja": "有人の",
       "gloss": "（＝人が乗っている、という意味）",
-      "example": { "en": "The company plans to launch its first crewed mission next year.", "ja": "その企業は来年、初の有人ミッションを打ち上げる予定だ。" }
+      "example": {
+        "en": "The company plans to launch its first crewed mission next year.",
+        "ja": "その企業は来年、初の有人ミッションを打ち上げる予定だ。"
+      }
     },
     {
-      "no": 2, "term": "agreement", "pos": "名", "ja": "合意、契約",
+      "no": 2,
+      "term": "agreement",
+      "pos": "名",
+      "ja": "合意、契約",
       "gloss": "",
-      "example": { "en": "Both companies signed a new agreement last month.", "ja": "両社は先月、新しい契約に署名した。" }
+      "example": {
+        "en": "Both companies signed a new agreement last month.",
+        "ja": "両社は先月、新しい契約に署名した。"
+      }
     },
     {
-      "no": 3, "term": "extend", "pos": "動", "ja": "延長する",
+      "no": 3,
+      "term": "extend",
+      "pos": "動",
+      "ja": "延長する",
       "gloss": "",
-      "example": { "en": "The client asked to extend the contract by one year.", "ja": "その顧客は契約を1年延長するよう求めた。" }
+      "example": {
+        "en": "The client asked to extend the contract by one year.",
+        "ja": "その顧客は契約を1年延長するよう求めた。"
+      }
     },
     {
-      "no": 4, "term": "dock", "pos": "動", "ja": "係留する、接続する",
+      "no": 4,
+      "term": "dock",
+      "pos": "動",
+      "ja": "係留する、接続する",
       "gloss": "（＝宇宙船などが別の乗り物や施設に接続すること）",
-      "example": { "en": "The ship will dock at the port early tomorrow morning.", "ja": "その船は明朝早くに港に着岸する予定だ。" }
+      "example": {
+        "en": "The ship will dock at the port early tomorrow morning.",
+        "ja": "その船は明朝早くに港に着岸する予定だ。"
+      }
     },
     {
-      "no": 5, "term": "emergency", "pos": "名", "ja": "緊急事態",
+      "no": 5,
+      "term": "emergency",
+      "pos": "名",
+      "ja": "緊急事態",
       "gloss": "",
-      "example": { "en": "The office has a plan in place for any emergency.", "ja": "そのオフィスにはあらゆる緊急事態に備えた計画がある。" }
+      "example": {
+        "en": "The office has a plan in place for any emergency.",
+        "ja": "そのオフィスにはあらゆる緊急事態に備えた計画がある。"
+      }
     },
     {
-      "no": 6, "term": "provider", "pos": "名", "ja": "供給元、提供業者",
+      "no": 6,
+      "term": "provider",
+      "pos": "名",
+      "ja": "供給元、提供業者",
       "gloss": "",
-      "example": { "en": "The firm switched to a new software provider this quarter.", "ja": "その会社は今四半期、新しいソフトウェア提供業者に切り替えた。" }
+      "example": {
+        "en": "The firm switched to a new software provider this quarter.",
+        "ja": "その会社は今四半期、新しいソフトウェア提供業者に切り替えた。"
+      }
     },
     {
-      "no": 7, "term": "launch", "pos": "動", "ja": "打ち上げる、開始する",
+      "no": 7,
+      "term": "launch",
+      "pos": "動",
+      "ja": "打ち上げる、開始する",
       "gloss": "",
-      "example": { "en": "The company will launch its new product next spring.", "ja": "その会社は来春、新製品を発売する予定だ。" }
+      "example": {
+        "en": "The company will launch its new product next spring.",
+        "ja": "その会社は来春、新製品を発売する予定だ。"
+      }
     },
     {
-      "no": 8, "term": "delay", "pos": "名", "ja": "遅れ、遅延",
+      "no": 8,
+      "term": "delay",
+      "pos": "名",
+      "ja": "遅れ、遅延",
       "gloss": "",
-      "example": { "en": "The shipment suffered a delay due to bad weather.", "ja": "その貨物は悪天候により遅延した。" }
+      "example": {
+        "en": "The shipment suffered a delay due to bad weather.",
+        "ja": "その貨物は悪天候により遅延した。"
+      }
     }
   ],
   "glossary": {
-    "ordered": { "lemma": "order", "pos": "v", "ja": "発注した", "note": "" },
-    "flights": { "lemma": "flight", "pos": "n", "ja": "飛行、便", "note": "" },
-    "crewed": { "lemma": "crewed", "pos": "adj", "ja": "有人の", "note": "" },
-    "agreement": { "lemma": "agreement", "pos": "n", "ja": "合意、契約", "note": "" },
-    "worth": { "lemma": "worth", "pos": "adj", "ja": "価値がある", "note": "" },
-    "extends": { "lemma": "extend", "pos": "v", "ja": "延長する", "note": "" },
-    "contract": { "lemma": "contract", "pos": "n", "ja": "契約", "note": "" },
-    "launch": { "lemma": "launch", "pos": "v", "ja": "打ち上げる", "note": "" },
-    "crew": { "lemma": "crew", "pos": "n", "ja": "乗組員", "note": "" },
-    "support": { "lemma": "support", "pos": "v", "ja": "支援する", "note": "" },
-    "station": { "lemma": "station", "pos": "n", "ja": "基地、局", "note": "" },
-    "spacecraft": { "lemma": "spacecraft", "pos": "n", "ja": "宇宙船", "note": "" },
-    "docked": { "lemma": "dock", "pos": "v", "ja": "係留した", "note": "" },
-    "lifeboat": { "lemma": "lifeboat", "pos": "n", "ja": "救命艇", "note": "" },
-    "emergency": { "lemma": "emergency", "pos": "n", "ja": "緊急事態", "note": "" },
-    "raises": { "lemma": "raise", "pos": "v", "ja": "引き上げる", "note": "" },
-    "total": { "lemma": "total", "pos": "adj", "ja": "合計の", "note": "" },
-    "value": { "lemma": "value", "pos": "n", "ja": "価値、総額", "note": "" },
-    "brings": { "lemma": "bring", "pos": "v", "ja": "もたらす", "note": "" },
-    "missions": { "lemma": "mission", "pos": "n", "ja": "任務", "note": "" },
-    "order": { "lemma": "order", "pos": "n", "ja": "発注、注文", "note": "動詞orderedとは別に名詞として本文に登場" },
-    "flying": { "lemma": "fly", "pos": "v", "ja": "飛行させる", "note": "" },
-    "astronauts": { "lemma": "astronaut", "pos": "n", "ja": "宇宙飛行士", "note": "" },
-    "separate": { "lemma": "separate", "pos": "adj", "ja": "別々の", "note": "" },
-    "companies": { "lemma": "company", "pos": "n", "ja": "企業", "note": "" },
-    "protects": { "lemma": "protect", "pos": "v", "ja": "守る", "note": "" },
-    "access": { "lemma": "access", "pos": "n", "ja": "利用権、接続", "note": "" },
-    "trouble": { "lemma": "trouble", "pos": "n", "ja": "問題、困難", "note": "" },
-    "delays": { "lemma": "delay", "pos": "n", "ja": "遅れ", "note": "" },
-    "provider": { "lemma": "provider", "pos": "n", "ja": "供給業者", "note": "" }
+    "ordered": {
+      "lemma": "order",
+      "pos": "v",
+      "ja": "発注した",
+      "note": ""
+    },
+    "flights": {
+      "lemma": "flight",
+      "pos": "n",
+      "ja": "飛行、便",
+      "note": ""
+    },
+    "crewed": {
+      "lemma": "crewed",
+      "pos": "adj",
+      "ja": "有人の",
+      "note": ""
+    },
+    "agreement": {
+      "lemma": "agreement",
+      "pos": "n",
+      "ja": "合意、契約",
+      "note": ""
+    },
+    "worth": {
+      "lemma": "worth",
+      "pos": "adj",
+      "ja": "価値がある",
+      "note": ""
+    },
+    "extends": {
+      "lemma": "extend",
+      "pos": "v",
+      "ja": "延長する",
+      "note": ""
+    },
+    "contract": {
+      "lemma": "contract",
+      "pos": "n",
+      "ja": "契約",
+      "note": ""
+    },
+    "launch": {
+      "lemma": "launch",
+      "pos": "v",
+      "ja": "打ち上げる",
+      "note": ""
+    },
+    "crew": {
+      "lemma": "crew",
+      "pos": "n",
+      "ja": "乗組員",
+      "note": ""
+    },
+    "support": {
+      "lemma": "support",
+      "pos": "v",
+      "ja": "支援する",
+      "note": ""
+    },
+    "station": {
+      "lemma": "station",
+      "pos": "n",
+      "ja": "基地、局",
+      "note": ""
+    },
+    "spacecraft": {
+      "lemma": "spacecraft",
+      "pos": "n",
+      "ja": "宇宙船",
+      "note": ""
+    },
+    "docked": {
+      "lemma": "dock",
+      "pos": "v",
+      "ja": "係留した",
+      "note": ""
+    },
+    "lifeboat": {
+      "lemma": "lifeboat",
+      "pos": "n",
+      "ja": "救命艇",
+      "note": ""
+    },
+    "emergency": {
+      "lemma": "emergency",
+      "pos": "n",
+      "ja": "緊急事態",
+      "note": ""
+    },
+    "raises": {
+      "lemma": "raise",
+      "pos": "v",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "total": {
+      "lemma": "total",
+      "pos": "adj",
+      "ja": "合計の",
+      "note": ""
+    },
+    "value": {
+      "lemma": "value",
+      "pos": "n",
+      "ja": "価値、総額",
+      "note": ""
+    },
+    "brings": {
+      "lemma": "bring",
+      "pos": "v",
+      "ja": "もたらす",
+      "note": ""
+    },
+    "missions": {
+      "lemma": "mission",
+      "pos": "n",
+      "ja": "任務",
+      "note": ""
+    },
+    "order": {
+      "lemma": "order",
+      "pos": "n",
+      "ja": "発注、注文",
+      "note": "動詞orderedとは別に名詞として本文に登場"
+    },
+    "flying": {
+      "lemma": "fly",
+      "pos": "v",
+      "ja": "飛行させる",
+      "note": ""
+    },
+    "astronauts": {
+      "lemma": "astronaut",
+      "pos": "n",
+      "ja": "宇宙飛行士",
+      "note": ""
+    },
+    "separate": {
+      "lemma": "separate",
+      "pos": "adj",
+      "ja": "別々の",
+      "note": ""
+    },
+    "companies": {
+      "lemma": "company",
+      "pos": "n",
+      "ja": "企業",
+      "note": ""
+    },
+    "protects": {
+      "lemma": "protect",
+      "pos": "v",
+      "ja": "守る",
+      "note": ""
+    },
+    "access": {
+      "lemma": "access",
+      "pos": "n",
+      "ja": "利用権、接続",
+      "note": ""
+    },
+    "trouble": {
+      "lemma": "trouble",
+      "pos": "n",
+      "ja": "問題、困難",
+      "note": ""
+    },
+    "delays": {
+      "lemma": "delay",
+      "pos": "n",
+      "ja": "遅れ",
+      "note": ""
+    },
+    "provider": {
+      "lemma": "provider",
+      "pos": "n",
+      "ja": "供給業者",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "動名詞句が主語になる構文（単数扱いでの動詞の一致）",
     "quote": "Flying astronauts with two separate companies protects its access to the station if one provider runs into trouble.",
     "quoteJa": "2社に飛行士の輸送を任せることは、一方の提供業者に問題が生じた場合でも、宇宙ステーションへのアクセスを守ることになる。",
     "blocks": [
-      { "heading": "構文", "body": "文頭の\"Flying astronauts with two separate companies\"は動名詞句で、これ全体が1つの名詞のかたまりとして主語になっている。動名詞句が主語のときは、途中に複数名詞（companies）が挟まっていても、動詞は単数扱い（protects）になる点が重要。" },
-      { "heading": "書き換え例", "body": "\"To fly astronauts with two separate companies protects its access to the station.\"のように、不定詞を主語にしても近い意味になる。ただし動名詞は「一般的な行為・方針」を、不定詞は「これから行う一回的な行為」を表すニュアンスが出やすい。" },
-      { "heading": "TOEICでの注意点", "body": "Part 5の主語・動詞の一致問題では、動名詞句の主語と動詞の間に複数名詞を含む修飾語句（with 〜companiesなど）が挟まると、うっかり動詞を複数形にしてしまう受験者が多い。主語の核が動名詞そのものであることを見抜く練習が有効。" },
-      { "heading": "ビジネス文書での応用", "body": "Working remotely full-time increases flexibility for employees. / Diversifying our supplier base reduces the risk of delays. のように、方針や施策の効果を簡潔に述べる際にこの構文が使いやすい。" }
+      {
+        "heading": "構文",
+        "body": "文頭の\"Flying astronauts with two separate companies\"は動名詞句で、これ全体が1つの名詞のかたまりとして主語になっている。動名詞句が主語のときは、途中に複数名詞（companies）が挟まっていても、動詞は単数扱い（protects）になる点が重要。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "\"To fly astronauts with two separate companies protects its access to the station.\"のように、不定詞を主語にしても近い意味になる。ただし動名詞は「一般的な行為・方針」を、不定詞は「これから行う一回的な行為」を表すニュアンスが出やすい。"
+      },
+      {
+        "heading": "TOEICでの注意点",
+        "body": "Part 5の主語・動詞の一致問題では、動名詞句の主語と動詞の間に複数名詞を含む修飾語句（with 〜companiesなど）が挟まると、うっかり動詞を複数形にしてしまう受験者が多い。主語の核が動名詞そのものであることを見抜く練習が有効。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Working remotely full-time increases flexibility for employees. / Diversifying our supplier base reduces the risk of delays. のように、方針や施策の効果を簡潔に述べる際にこの構文が使いやすい。"
+      }
     ]
   },
   "background": [
-    { "heading": "📌 NASAの「複数社体制」という調達方針", "body": "NASAは国際宇宙ステーションへの有人輸送を、スペースX1社に頼るのではなく、ボーイングも含めた複数の民間企業に委託する方針を取っている。これは、どちらか一方の機体にトラブルが起きても宇宙飛行士の輸送手段を失わないようにするための、いわば「調達の冗長化」戦略である。" },
-    { "heading": "📌 業界全体の動向", "body": "スペースXは有人・無人を問わず打ち上げ実績で業界を圧倒しており、NASAとの契約も積み上がっている。一方でボーイングは自社の有人宇宙船の開発で度重なる遅延を抱えており、事実上スペースXへの依存度が高まっている状態が続いている。今後、他の新興企業が有人輸送に参入できるかも業界の注目点になっている。" },
-    { "heading": "📌 日本経済・日本企業への影響", "body": "日本の宇宙開発は主にJAXAが担っているが、今回のようにNASAが複数の民間企業と長期契約を結んで安定的に有人輸送を確保する姿勢は、日本の宇宙関連企業（部品メーカーや衛星関連企業など）が将来、米国政府調達に部品供給者として参入する際の参考事例になる。また、単一の供給元に依存しない調達戦略は、半導体や部品調達など日本企業の他業種にも共通する教訓である。" },
-    { "heading": "📌 投資家・経営者の視点", "body": "投資家にとって、政府との長期契約は数年先まで見通せる安定収益源として評価されやすい一方、政権交代や予算方針の変化によって契約内容が見直されるリスクも抱える。経営者にとっては、重要な取引先や供給元を1社に集中させず複数確保しておくことが、不測の事態への備えとして参考になる考え方である。" }
+    {
+      "heading": "📌 NASAの「複数社体制」という調達方針",
+      "body": "NASAは国際宇宙ステーションへの有人輸送を、スペースX1社に頼るのではなく、ボーイングも含めた複数の民間企業に委託する方針を取っている。これは、どちらか一方の機体にトラブルが起きても宇宙飛行士の輸送手段を失わないようにするための、いわば「調達の冗長化」戦略である。"
+    },
+    {
+      "heading": "📌 業界全体の動向",
+      "body": "スペースXは有人・無人を問わず打ち上げ実績で業界を圧倒しており、NASAとの契約も積み上がっている。一方でボーイングは自社の有人宇宙船の開発で度重なる遅延を抱えており、事実上スペースXへの依存度が高まっている状態が続いている。今後、他の新興企業が有人輸送に参入できるかも業界の注目点になっている。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響",
+      "body": "日本の宇宙開発は主にJAXAが担っているが、今回のようにNASAが複数の民間企業と長期契約を結んで安定的に有人輸送を確保する姿勢は、日本の宇宙関連企業（部品メーカーや衛星関連企業など）が将来、米国政府調達に部品供給者として参入する際の参考事例になる。また、単一の供給元に依存しない調達戦略は、半導体や部品調達など日本企業の他業種にも共通する教訓である。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "投資家にとって、政府との長期契約は数年先まで見通せる安定収益源として評価されやすい一方、政権交代や予算方針の変化によって契約内容が見直されるリスクも抱える。経営者にとっては、重要な取引先や供給元を1社に集中させず複数確保しておくことが、不測の事態への備えとして参考になる考え方である。"
+    }
   ],
   "sources": [
-    { "title": "NASA Awards SpaceX Three Crew Flights to Space Station", "publisher": "NASA", "url": "https://www.nasa.gov/missions/station/commercial-crew/nasa-awards-spacex-three-crew-flights-to-space-station/", "date": "2026-09-19" },
-    { "title": "NASA Extends SpaceX Crew Contract Through 2030", "publisher": "Benzinga", "url": "https://www.benzinga.com/news/space/26/09/61883816/nasa-extends-spacex-crew-contract-through-2030", "date": "2026-09-19" }
-  ]
+    {
+      "title": "NASA Awards SpaceX Three Crew Flights to Space Station",
+      "publisher": "NASA",
+      "url": "https://www.nasa.gov/missions/station/commercial-crew/nasa-awards-spacex-three-crew-flights-to-space-station/",
+      "date": "2026-09-19"
+    },
+    {
+      "title": "NASA Extends SpaceX Crew Contract Through 2030",
+      "publisher": "Benzinga",
+      "url": "https://www.benzinga.com/news/space/26/09/61883816/nasa-extends-spacex-crew-contract-through-2030",
+      "date": "2026-09-19"
+    }
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-20-1639/00.mp3",
+      "audio/2026-09-20-1639/01.mp3",
+      "audio/2026-09-20-1639/02.mp3",
+      "audio/2026-09-20-1639/03.mp3",
+      "audio/2026-09-20-1639/04.mp3",
+      "audio/2026-09-20-1639/05.mp3",
+      "audio/2026-09-20-1639/06.mp3",
+      "audio/2026-09-20-1639/07.mp3",
+      "audio/2026-09-20-1639/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 216309,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-20T07:47:47.513Z",
+    "trimmed": true
+  }
 }
