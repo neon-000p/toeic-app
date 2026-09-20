@@ -1056,11 +1056,13 @@
     /* 語（または語注の見出しになっているまとまり）をタップしたとき。
        ここでは語義を出さない。ボタンを出すところまで。 */
     root.addEventListener('click', function (e) {
-      var w = e.target.closest ? e.target.closest('.w') : null;
-      if (!w) { hide(); return; }
-      /* なぞって選んでいる最中は、その選択のほうを優先する */
+      /* なぞって選んでいる最中と、選び終えた直後は、その選択のほうを優先する。
+         2語以上をなぞると、離した時点の click は語ではなく行そのものに届く。
+         ここで引っ込めると、選んだ直後にボタンが消えてしまう。 */
       var sel = window.getSelection && window.getSelection();
       if (sel && !sel.isCollapsed) return;
+      var w = e.target.closest ? e.target.closest('.w') : null;
+      if (!w) { hide(); return; }
 
       var same = (mark === w);
       hide();
@@ -1079,11 +1081,35 @@
       hide();
     }, true);
 
-    document.addEventListener('selectionchange', function () {
+    function later(ms) {
       clearTimeout(timer);
-      timer = setTimeout(fromSelection, 150);
-    });
-    window.addEventListener('scroll', function () { if (!pressing) hide(); }, true);
+      timer = setTimeout(fromSelection, ms);
+    }
+
+    document.addEventListener('selectionchange', function () { later(150); });
+
+    /* なぞり終わりをここでも拾う。Edge はマウスを離したあとに selectionchange を
+       出さないことがあり、それだけに任せるとボタンが出ないまま終わる。 */
+    document.addEventListener('mouseup', function () { later(60); });
+    document.addEventListener('touchend', function () { later(60); });
+
+    /* スクロールでは消さずに置き直す。Edge は選択を確定した直後にわずかに
+       スクロールすることがあり、消す作りだと出したそばから消えていた。
+       指した語句が画面の外へ出たときだけ引っ込める。 */
+    function follow() {
+      if (!btn || pressing) return;
+      var rect = null;
+      if (mark) rect = mark.getBoundingClientRect();
+      else {
+        var got = selectionText();
+        if (got) rect = got.range.getBoundingClientRect();
+      }
+      if (!rect || !rect.width) return;
+      if (rect.bottom < 0 || rect.top > document.documentElement.clientHeight) { hide(); return; }
+      if (pick) pick.rect = rect;
+      place(rect, !mark);
+    }
+    window.addEventListener('scroll', follow, true);
   }
 
   /* 選んだ語句の意味をポップで出す。語注にあればそれも使う。
