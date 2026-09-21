@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-22-0540",
+  "date": "2026-09-22",
+  "time": "05:40",
+  "createdAt": "2026-09-22T05:40:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "China Warns It May Skip Trump-Xi Summit Over Taiwan Arms Deal",
+    "ja": "台湾武器供与巡り、中国が米中首脳会談欠席の可能性警告"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "China has warned that President Xi Jinping might skip a planned meeting with President Trump this week.",
+            "ja": "中国は、習近平国家主席が今週予定されているトランプ大統領との会談を欠席する可能性があると警告した。"
+          },
+          {
+            "en": "At the center of the dispute is a $14 billion arms package for Taiwan that lawmakers approved in January.",
+            "ja": "対立の中心にあるのは、1月に米議会が承認した台湾向け140億ドル規模の武器供与だ。"
+          },
+          {
+            "en": "The U.S. president has not yet signed the package into law.",
+            "ja": "米大統領はまだこの法案に署名していない。"
+          },
+          {
+            "en": "A Chinese government spokesman called the deal a red line that could derail the summit.",
+            "ja": "中国政府の報道官は、この取引を首脳会談を頓挫させかねない「レッドライン」と呼んだ。"
+          },
+          {
+            "en": "He is due to host China's leader later this week for talks on trade and technology.",
+            "ja": "トランプ大統領は今週後半、貿易と技術をテーマにした会談で中国の指導者を迎える予定だ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The summit was meant to ease months of trade tension between the two countries.",
+            "ja": "今回の首脳会談は、両国間で数カ月続く貿易摩擦を和らげることを狙いとしていた。"
+          },
+          {
+            "en": "Leaders plan to discuss artificial intelligence, rare earth minerals, and market access for automakers.",
+            "ja": "両首脳は、人工知能やレアアース、自動車メーカーの市場参入について協議する予定だ。"
+          },
+          {
+            "en": "It remains unclear whether the president will sign the arms deal before the meeting.",
+            "ja": "大統領が会談前にこの武器供与に署名するかどうかは、依然として不透明だ。"
+          },
+          {
+            "en": "Some advisers reportedly want him to delay the signature to keep the meeting on track.",
+            "ja": "一部の側近は、会談を予定通り進めるため、署名を先送りするよう大統領に求めていると伝えられている。"
+          },
+          {
+            "en": "Taiwan's government is watching nervously, worried that its own security could become a bargaining chip.",
+            "ja": "台湾政府は、自国の安全保障が交渉材料にされることを懸念し、神経質に事態を見守っている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much is the arms package for Taiwan worth, according to the article?",
+      "choices": [
+        { "key": "A", "text": "$4 billion", "ja": "40億ドル" },
+        { "key": "B", "text": "$14 billion", "ja": "140億ドル" },
+        { "key": "C", "text": "$40 billion", "ja": "400億ドル" },
+        { "key": "D", "text": "$140 billion", "ja": "1400億ドル" }
+      ],
+      "answer": "B",
+      "explanation": "本文第1段落2文目に「140億ドル規模の武器供与」と明記されている。(A)40億ドルは本文に登場しない紛らわしい数字であり誤り。(C)400億ドルと(D)1400億ドルも本文に出てこない桁違いの数字であり、いずれも誤り。",
+      "evidence": { "p": 0, "s": 1 },
+      "tip": "数字を問う設問では、似た数字が選択肢に並んでいても、本文に明記された数字と単位まで正確に一致するものだけを選ぶことが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why is it unclear whether the U.S. president will sign the arms deal before the meeting?",
+      "choices": [
+        { "key": "A", "text": "Because lawmakers rejected the arms package", "ja": "議員がこの武器供与を否決したから" },
+        { "key": "B", "text": "Because Taiwan asked for a different weapons deal", "ja": "台湾が別の武器供与を求めたから" },
+        { "key": "C", "text": "Because some advisers want to keep the summit on track", "ja": "一部の側近が会談を予定通り進めたいと考えているから" },
+        { "key": "D", "text": "Because China's leader canceled the meeting", "ja": "中国の指導者が会談を中止したから" }
+      ],
+      "answer": "C",
+      "explanation": "本文第2段落4文目に「一部の側近は、会談を予定通り進めるため署名を先送りするよう大統領に求めている」とあり、これが理由として明記されている。(A)議員がこの法案を否決したという記述はなく、むしろ本文では1月にすでに承認されたとあるため誤り。(B)台湾が別の武器供与を求めたという情報は本文になく誤り。(D)中国の指導者が会談を中止したという記述はなく、本文はあくまで「欠席する可能性がある」という警告の段階を伝えているため誤り。",
+      "evidence": { "p": 1, "s": 3 },
+      "tip": "理由・目的を問う設問では、本文中の \"to keep A on track\" のような目的を表す表現に着目し、因果関係を正確に読み取ることが解法のポイント。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1, "term": "warn", "pos": "動", "ja": "警告する",
+      "gloss": "",
+      "example": { "en": "The bank warned that interest rates could rise again this year.", "ja": "銀行は今年さらに金利が上昇する可能性があると警告した。" }
+    },
+    {
+      "no": 2, "term": "dispute", "pos": "名", "ja": "対立、紛争",
+      "gloss": "",
+      "example": { "en": "The two companies settled their contract dispute out of court.", "ja": "その2社は契約を巡る争いを法廷外で解決した。" }
+    },
+    {
+      "no": 3, "term": "lawmaker", "pos": "名", "ja": "議員、立法者",
+      "gloss": "",
+      "example": { "en": "Lawmakers are debating a new bill on data privacy.", "ja": "議員たちはデータプライバシーに関する新法案を審議している。" }
+    },
+    {
+      "no": 4, "term": "approve", "pos": "動", "ja": "承認する",
+      "gloss": "",
+      "example": { "en": "The board approved the merger after months of negotiation.", "ja": "取締役会は数カ月に及ぶ交渉の末、合併を承認した。" }
+    },
+    {
+      "no": 5, "term": "derail", "pos": "動", "ja": "頓挫させる、狂わせる",
+      "gloss": "（＝計画や交渉を途中で失敗させること）",
+      "example": { "en": "A single disagreement nearly derailed the entire negotiation.", "ja": "たった一つの意見の相違が、交渉全体を危うく頓挫させるところだった。" }
+    },
+    {
+      "no": 6, "term": "ease", "pos": "動", "ja": "緩和する、和らげる",
+      "gloss": "",
+      "example": { "en": "The company eased customer concerns by offering a full refund.", "ja": "その企業は全額返金を提示し、顧客の不安を和らげた。" }
+    },
+    {
+      "no": 7, "term": "delay", "pos": "動", "ja": "延期する、遅らせる",
+      "gloss": "",
+      "example": { "en": "The airline delayed the flight due to bad weather.", "ja": "その航空会社は悪天候のため、フライトを遅らせた。" }
+    },
+    {
+      "no": 8, "term": "bargaining chip", "pos": "熟", "ja": "交渉材料",
+      "gloss": "（＝交渉を有利に進めるための材料のこと）",
+      "example": { "en": "The company used its patents as a bargaining chip in the talks.", "ja": "その企業は交渉で自社の特許を交渉材料として利用した。" }
+    }
+  ],
+  "glossary": {
+    "warned": { "lemma": "warn", "pos": "v", "ja": "警告した", "note": "" },
+    "skip": { "lemma": "skip", "pos": "v", "ja": "欠席する、飛ばす", "note": "" },
+    "dispute": { "lemma": "dispute", "pos": "n", "ja": "対立、紛争", "note": "" },
+    "package": { "lemma": "package", "pos": "n", "ja": "一括の供与、パッケージ", "note": "" },
+    "lawmakers": { "lemma": "lawmaker", "pos": "n", "ja": "議員", "note": "" },
+    "approved": { "lemma": "approve", "pos": "v", "ja": "承認した", "note": "" },
+    "signed": { "lemma": "sign", "pos": "v", "ja": "署名した", "note": "" },
+    "spokesman": { "lemma": "spokesman", "pos": "n", "ja": "報道官", "note": "" },
+    "deal": { "lemma": "deal", "pos": "n", "ja": "取引", "note": "" },
+    "derail": { "lemma": "derail", "pos": "v", "ja": "頓挫させる", "note": "" },
+    "summit": { "lemma": "summit", "pos": "n", "ja": "首脳会談", "note": "" },
+    "host": { "lemma": "host", "pos": "v", "ja": "主催する、迎える", "note": "" },
+    "leader": { "lemma": "leader", "pos": "n", "ja": "指導者", "note": "" },
+    "talks": { "lemma": "talk", "pos": "n", "ja": "協議", "note": "" },
+    "technology": { "lemma": "technology", "pos": "n", "ja": "技術", "note": "" },
+    "ease": { "lemma": "ease", "pos": "v", "ja": "緩和する", "note": "" },
+    "tension": { "lemma": "tension", "pos": "n", "ja": "緊張", "note": "" },
+    "countries": { "lemma": "country", "pos": "n", "ja": "国々", "note": "" },
+    "discuss": { "lemma": "discuss", "pos": "v", "ja": "協議する", "note": "" },
+    "intelligence": { "lemma": "intelligence", "pos": "n", "ja": "知能", "note": "artificial intelligenceで「人工知能」の意味" },
+    "minerals": { "lemma": "mineral", "pos": "n", "ja": "鉱物", "note": "" },
+    "access": { "lemma": "access", "pos": "n", "ja": "参入、アクセス", "note": "" },
+    "automakers": { "lemma": "automaker", "pos": "n", "ja": "自動車メーカー", "note": "" },
+    "unclear": { "lemma": "unclear", "pos": "adj", "ja": "不明確な", "note": "" },
+    "advisers": { "lemma": "adviser", "pos": "n", "ja": "側近、顧問", "note": "" },
+    "reportedly": { "lemma": "reportedly", "pos": "adv", "ja": "伝えられるところでは", "note": "" },
+    "delay": { "lemma": "delay", "pos": "v", "ja": "延期する", "note": "" },
+    "signature": { "lemma": "signature", "pos": "n", "ja": "署名", "note": "" },
+    "security": { "lemma": "security", "pos": "n", "ja": "安全保障", "note": "" },
+    "bargaining": { "lemma": "bargain", "pos": "adj", "ja": "交渉の", "note": "bargaining chipで「交渉材料」の意味" }
+  },
+  "grammar": {
+    "topic": "It remains unclear whether ~ 構文（形式主語のitを用いた間接疑問文）",
+    "quote": "It remains unclear whether the president will sign the arms deal before the meeting.",
+    "quoteJa": "大統領が会談前にこの武器供与に署名するかどうかは、依然として不透明だ。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "この文は「It is/remains ＋ 形容詞 ＋ whether節」という形式主語構文である。whether以下は「〜かどうか」という意味の名詞節（間接疑問文）で、remains unclear（不透明なままである）の意味上の主語（真主語）として働いている。文頭のItは具体的な内容を持たない形式的な主語で、真主語であるwhether節を後ろに置くために使われている。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "Whether the president will sign the arms deal before the meeting remains unclear. のようにwhether節をそのまま主語にすることもできるが、主語が長くなり文頭が重くなるため、実際の英文ではItで始める形式主語構文の方が好まれる。また、Will the president sign the arms deal?という疑問文を間接疑問文にするとwhether節になる点も合わせて押さえておきたい。"
+      },
+      {
+        "heading": "TOEICでの注意点",
+        "body": "Part 5ではwhetherとifの使い分け（不定詞の前やor notを伴う場合はwhetherが好まれる）が問われやすい。Part 7では \"It is unclear whether ~\" や \"It remains to be seen whether ~\" のような表現が、記事の結論部分や今後の見通しを示す箇所に頻出するため、文章の要旨をつかむ手がかりになる。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "It is still unclear whether the client will renew the contract next month. / Management has not decided whether to relocate the office. のように、社内文書や報告書でも頻繁に使われる構文である。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜ台湾への武器供与が「レッドライン」なのか",
+      "body": "中国は「一つの中国」原則を外交の根幹に据えており、台湾への武器供与を自国の主権・安全保障への直接的な干渉とみなしている。今回の140億ドル規模の供与には防空システムやミサイル関連装備が含まれるとされ、軍事バランスに直結する内容であるため、中国側の反発が特に強い。"
+    },
+    {
+      "heading": "📌 米中関係・周辺国の動向",
+      "body": "今回の首脳会談は、貿易摩擦の緩和や人工知能・レアアースといった分野での協力を模索する場として位置づけられている。一方で、台湾問題は米中間で最も感情的な対立が生じやすいテーマの一つであり、過去にも武器供与のたびに中国が外交的な抗議や軍事的な圧力を強めてきた経緯がある。日本を含む周辺国も、今回の会談の行方を安全保障上の重要な指標として注視している。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響",
+      "body": "台湾海峡の安定は、半導体サプライチェーンをはじめ日本企業にとって極めて重要である。台湾には世界的な半導体受託製造企業が集積しており、米中間の緊張が高まれば、部品調達や生産計画に遅れが生じるリスクがある。日本企業は、台湾有事シナリオを念頭に置いたサプライチェーンの多元化を、これまで以上に検討する必要がある。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "投資家にとって、今回の会談の結果は株式市場や為替相場に短期的な影響を与えうる材料である。会談が不調に終われば地政学リスクプレミアムが意識され、ハイテク株や半導体関連株の変動要因となる可能性がある。経営者にとっても、米中関係の不確実性は中長期の投資判断や拠点戦略を左右する重要な変数であり続けている。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trump's $14 billion \"bargaining chip\", Taiwan arms sale looms over Xi summit: NYT report",
+      "publisher": "The Tribune",
+      "url": "https://www.tribuneindia.com/news/usa-news/trumps-14-billion-bargaining-chip-taiwan-arms-sale-looms-over-xi-summit-nyt-report",
+      "date": "2026-09-21"
+    },
+    {
+      "title": "Trump set for Washington summit with Xi focused on trade, Taiwan and AI",
+      "publisher": "The National",
+      "url": "https://www.thenationalnews.com/news/us/2026/09/21/trump-set-for-washington-summit-with-xi-focused-on-trade-taiwan-and-ai/",
+      "date": "2026-09-21"
+    },
+    {
+      "title": "Xi Jinping Arrives in Washington for Trump Summit",
+      "publisher": "Eastern Herald",
+      "url": "https://easternherald.com/2026/09/21/xi-jinping-trump-summit-washington-trade-taiwan/",
+      "date": "2026-09-21"
+    }
+  ]
+}
