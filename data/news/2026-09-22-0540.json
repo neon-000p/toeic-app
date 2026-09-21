@@ -72,14 +72,33 @@
       "type": "detail",
       "prompt": "How much is the arms package for Taiwan worth, according to the article?",
       "choices": [
-        { "key": "A", "text": "$4 billion", "ja": "40億ドル" },
-        { "key": "B", "text": "$14 billion", "ja": "140億ドル" },
-        { "key": "C", "text": "$40 billion", "ja": "400億ドル" },
-        { "key": "D", "text": "$140 billion", "ja": "1400億ドル" }
+        {
+          "key": "A",
+          "text": "$4 billion",
+          "ja": "40億ドル"
+        },
+        {
+          "key": "B",
+          "text": "$14 billion",
+          "ja": "140億ドル"
+        },
+        {
+          "key": "C",
+          "text": "$40 billion",
+          "ja": "400億ドル"
+        },
+        {
+          "key": "D",
+          "text": "$140 billion",
+          "ja": "1400億ドル"
+        }
       ],
       "answer": "B",
       "explanation": "本文第1段落2文目に「140億ドル規模の武器供与」と明記されている。(A)40億ドルは本文に登場しない紛らわしい数字であり誤り。(C)400億ドルと(D)1400億ドルも本文に出てこない桁違いの数字であり、いずれも誤り。",
-      "evidence": { "p": 0, "s": 1 },
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
       "tip": "数字を問う設問では、似た数字が選択肢に並んでいても、本文に明記された数字と単位まで正確に一致するものだけを選ぶことが重要。"
     },
     {
@@ -87,90 +106,307 @@
       "type": "reason",
       "prompt": "According to the article, why is it unclear whether the U.S. president will sign the arms deal before the meeting?",
       "choices": [
-        { "key": "A", "text": "Because lawmakers rejected the arms package", "ja": "議員がこの武器供与を否決したから" },
-        { "key": "B", "text": "Because Taiwan asked for a different weapons deal", "ja": "台湾が別の武器供与を求めたから" },
-        { "key": "C", "text": "Because some advisers want to keep the summit on track", "ja": "一部の側近が会談を予定通り進めたいと考えているから" },
-        { "key": "D", "text": "Because China's leader canceled the meeting", "ja": "中国の指導者が会談を中止したから" }
+        {
+          "key": "A",
+          "text": "Because lawmakers rejected the arms package",
+          "ja": "議員がこの武器供与を否決したから"
+        },
+        {
+          "key": "B",
+          "text": "Because Taiwan asked for a different weapons deal",
+          "ja": "台湾が別の武器供与を求めたから"
+        },
+        {
+          "key": "C",
+          "text": "Because some advisers want to keep the summit on track",
+          "ja": "一部の側近が会談を予定通り進めたいと考えているから"
+        },
+        {
+          "key": "D",
+          "text": "Because China's leader canceled the meeting",
+          "ja": "中国の指導者が会談を中止したから"
+        }
       ],
       "answer": "C",
       "explanation": "本文第2段落4文目に「一部の側近は、会談を予定通り進めるため署名を先送りするよう大統領に求めている」とあり、これが理由として明記されている。(A)議員がこの法案を否決したという記述はなく、むしろ本文では1月にすでに承認されたとあるため誤り。(B)台湾が別の武器供与を求めたという情報は本文になく誤り。(D)中国の指導者が会談を中止したという記述はなく、本文はあくまで「欠席する可能性がある」という警告の段階を伝えているため誤り。",
-      "evidence": { "p": 1, "s": 3 },
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
       "tip": "理由・目的を問う設問では、本文中の \"to keep A on track\" のような目的を表す表現に着目し、因果関係を正確に読み取ることが解法のポイント。"
     }
   ],
   "vocabulary": [
     {
-      "no": 1, "term": "warn", "pos": "動", "ja": "警告する",
+      "no": 1,
+      "term": "warn",
+      "pos": "動",
+      "ja": "警告する",
       "gloss": "",
-      "example": { "en": "The bank warned that interest rates could rise again this year.", "ja": "銀行は今年さらに金利が上昇する可能性があると警告した。" }
+      "example": {
+        "en": "The bank warned that interest rates could rise again this year.",
+        "ja": "銀行は今年さらに金利が上昇する可能性があると警告した。"
+      }
     },
     {
-      "no": 2, "term": "dispute", "pos": "名", "ja": "対立、紛争",
+      "no": 2,
+      "term": "dispute",
+      "pos": "名",
+      "ja": "対立、紛争",
       "gloss": "",
-      "example": { "en": "The two companies settled their contract dispute out of court.", "ja": "その2社は契約を巡る争いを法廷外で解決した。" }
+      "example": {
+        "en": "The two companies settled their contract dispute out of court.",
+        "ja": "その2社は契約を巡る争いを法廷外で解決した。"
+      }
     },
     {
-      "no": 3, "term": "lawmaker", "pos": "名", "ja": "議員、立法者",
+      "no": 3,
+      "term": "lawmaker",
+      "pos": "名",
+      "ja": "議員、立法者",
       "gloss": "",
-      "example": { "en": "Lawmakers are debating a new bill on data privacy.", "ja": "議員たちはデータプライバシーに関する新法案を審議している。" }
+      "example": {
+        "en": "Lawmakers are debating a new bill on data privacy.",
+        "ja": "議員たちはデータプライバシーに関する新法案を審議している。"
+      }
     },
     {
-      "no": 4, "term": "approve", "pos": "動", "ja": "承認する",
+      "no": 4,
+      "term": "approve",
+      "pos": "動",
+      "ja": "承認する",
       "gloss": "",
-      "example": { "en": "The board approved the merger after months of negotiation.", "ja": "取締役会は数カ月に及ぶ交渉の末、合併を承認した。" }
+      "example": {
+        "en": "The board approved the merger after months of negotiation.",
+        "ja": "取締役会は数カ月に及ぶ交渉の末、合併を承認した。"
+      }
     },
     {
-      "no": 5, "term": "derail", "pos": "動", "ja": "頓挫させる、狂わせる",
+      "no": 5,
+      "term": "derail",
+      "pos": "動",
+      "ja": "頓挫させる、狂わせる",
       "gloss": "（＝計画や交渉を途中で失敗させること）",
-      "example": { "en": "A single disagreement nearly derailed the entire negotiation.", "ja": "たった一つの意見の相違が、交渉全体を危うく頓挫させるところだった。" }
+      "example": {
+        "en": "A single disagreement nearly derailed the entire negotiation.",
+        "ja": "たった一つの意見の相違が、交渉全体を危うく頓挫させるところだった。"
+      }
     },
     {
-      "no": 6, "term": "ease", "pos": "動", "ja": "緩和する、和らげる",
+      "no": 6,
+      "term": "ease",
+      "pos": "動",
+      "ja": "緩和する、和らげる",
       "gloss": "",
-      "example": { "en": "The company eased customer concerns by offering a full refund.", "ja": "その企業は全額返金を提示し、顧客の不安を和らげた。" }
+      "example": {
+        "en": "The company eased customer concerns by offering a full refund.",
+        "ja": "その企業は全額返金を提示し、顧客の不安を和らげた。"
+      }
     },
     {
-      "no": 7, "term": "delay", "pos": "動", "ja": "延期する、遅らせる",
+      "no": 7,
+      "term": "delay",
+      "pos": "動",
+      "ja": "延期する、遅らせる",
       "gloss": "",
-      "example": { "en": "The airline delayed the flight due to bad weather.", "ja": "その航空会社は悪天候のため、フライトを遅らせた。" }
+      "example": {
+        "en": "The airline delayed the flight due to bad weather.",
+        "ja": "その航空会社は悪天候のため、フライトを遅らせた。"
+      }
     },
     {
-      "no": 8, "term": "bargaining chip", "pos": "熟", "ja": "交渉材料",
+      "no": 8,
+      "term": "bargaining chip",
+      "pos": "熟",
+      "ja": "交渉材料",
       "gloss": "（＝交渉を有利に進めるための材料のこと）",
-      "example": { "en": "The company used its patents as a bargaining chip in the talks.", "ja": "その企業は交渉で自社の特許を交渉材料として利用した。" }
+      "example": {
+        "en": "The company used its patents as a bargaining chip in the talks.",
+        "ja": "その企業は交渉で自社の特許を交渉材料として利用した。"
+      }
     }
   ],
   "glossary": {
-    "warned": { "lemma": "warn", "pos": "v", "ja": "警告した", "note": "" },
-    "skip": { "lemma": "skip", "pos": "v", "ja": "欠席する、飛ばす", "note": "" },
-    "dispute": { "lemma": "dispute", "pos": "n", "ja": "対立、紛争", "note": "" },
-    "package": { "lemma": "package", "pos": "n", "ja": "一括の供与、パッケージ", "note": "" },
-    "lawmakers": { "lemma": "lawmaker", "pos": "n", "ja": "議員", "note": "" },
-    "approved": { "lemma": "approve", "pos": "v", "ja": "承認した", "note": "" },
-    "signed": { "lemma": "sign", "pos": "v", "ja": "署名した", "note": "" },
-    "spokesman": { "lemma": "spokesman", "pos": "n", "ja": "報道官", "note": "" },
-    "deal": { "lemma": "deal", "pos": "n", "ja": "取引", "note": "" },
-    "derail": { "lemma": "derail", "pos": "v", "ja": "頓挫させる", "note": "" },
-    "summit": { "lemma": "summit", "pos": "n", "ja": "首脳会談", "note": "" },
-    "host": { "lemma": "host", "pos": "v", "ja": "主催する、迎える", "note": "" },
-    "leader": { "lemma": "leader", "pos": "n", "ja": "指導者", "note": "" },
-    "talks": { "lemma": "talk", "pos": "n", "ja": "協議", "note": "" },
-    "technology": { "lemma": "technology", "pos": "n", "ja": "技術", "note": "" },
-    "ease": { "lemma": "ease", "pos": "v", "ja": "緩和する", "note": "" },
-    "tension": { "lemma": "tension", "pos": "n", "ja": "緊張", "note": "" },
-    "countries": { "lemma": "country", "pos": "n", "ja": "国々", "note": "" },
-    "discuss": { "lemma": "discuss", "pos": "v", "ja": "協議する", "note": "" },
-    "intelligence": { "lemma": "intelligence", "pos": "n", "ja": "知能", "note": "artificial intelligenceで「人工知能」の意味" },
-    "minerals": { "lemma": "mineral", "pos": "n", "ja": "鉱物", "note": "" },
-    "access": { "lemma": "access", "pos": "n", "ja": "参入、アクセス", "note": "" },
-    "automakers": { "lemma": "automaker", "pos": "n", "ja": "自動車メーカー", "note": "" },
-    "unclear": { "lemma": "unclear", "pos": "adj", "ja": "不明確な", "note": "" },
-    "advisers": { "lemma": "adviser", "pos": "n", "ja": "側近、顧問", "note": "" },
-    "reportedly": { "lemma": "reportedly", "pos": "adv", "ja": "伝えられるところでは", "note": "" },
-    "delay": { "lemma": "delay", "pos": "v", "ja": "延期する", "note": "" },
-    "signature": { "lemma": "signature", "pos": "n", "ja": "署名", "note": "" },
-    "security": { "lemma": "security", "pos": "n", "ja": "安全保障", "note": "" },
-    "bargaining": { "lemma": "bargain", "pos": "adj", "ja": "交渉の", "note": "bargaining chipで「交渉材料」の意味" }
+    "warned": {
+      "lemma": "warn",
+      "pos": "v",
+      "ja": "警告した",
+      "note": ""
+    },
+    "skip": {
+      "lemma": "skip",
+      "pos": "v",
+      "ja": "欠席する、飛ばす",
+      "note": ""
+    },
+    "dispute": {
+      "lemma": "dispute",
+      "pos": "n",
+      "ja": "対立、紛争",
+      "note": ""
+    },
+    "package": {
+      "lemma": "package",
+      "pos": "n",
+      "ja": "一括の供与、パッケージ",
+      "note": ""
+    },
+    "lawmakers": {
+      "lemma": "lawmaker",
+      "pos": "n",
+      "ja": "議員",
+      "note": ""
+    },
+    "approved": {
+      "lemma": "approve",
+      "pos": "v",
+      "ja": "承認した",
+      "note": ""
+    },
+    "signed": {
+      "lemma": "sign",
+      "pos": "v",
+      "ja": "署名した",
+      "note": ""
+    },
+    "spokesman": {
+      "lemma": "spokesman",
+      "pos": "n",
+      "ja": "報道官",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "n",
+      "ja": "取引",
+      "note": ""
+    },
+    "derail": {
+      "lemma": "derail",
+      "pos": "v",
+      "ja": "頓挫させる",
+      "note": ""
+    },
+    "summit": {
+      "lemma": "summit",
+      "pos": "n",
+      "ja": "首脳会談",
+      "note": ""
+    },
+    "host": {
+      "lemma": "host",
+      "pos": "v",
+      "ja": "主催する、迎える",
+      "note": ""
+    },
+    "leader": {
+      "lemma": "leader",
+      "pos": "n",
+      "ja": "指導者",
+      "note": ""
+    },
+    "talks": {
+      "lemma": "talk",
+      "pos": "n",
+      "ja": "協議",
+      "note": ""
+    },
+    "technology": {
+      "lemma": "technology",
+      "pos": "n",
+      "ja": "技術",
+      "note": ""
+    },
+    "ease": {
+      "lemma": "ease",
+      "pos": "v",
+      "ja": "緩和する",
+      "note": ""
+    },
+    "tension": {
+      "lemma": "tension",
+      "pos": "n",
+      "ja": "緊張",
+      "note": ""
+    },
+    "countries": {
+      "lemma": "country",
+      "pos": "n",
+      "ja": "国々",
+      "note": ""
+    },
+    "discuss": {
+      "lemma": "discuss",
+      "pos": "v",
+      "ja": "協議する",
+      "note": ""
+    },
+    "intelligence": {
+      "lemma": "intelligence",
+      "pos": "n",
+      "ja": "知能",
+      "note": "artificial intelligenceで「人工知能」の意味"
+    },
+    "minerals": {
+      "lemma": "mineral",
+      "pos": "n",
+      "ja": "鉱物",
+      "note": ""
+    },
+    "access": {
+      "lemma": "access",
+      "pos": "n",
+      "ja": "参入、アクセス",
+      "note": ""
+    },
+    "automakers": {
+      "lemma": "automaker",
+      "pos": "n",
+      "ja": "自動車メーカー",
+      "note": ""
+    },
+    "unclear": {
+      "lemma": "unclear",
+      "pos": "adj",
+      "ja": "不明確な",
+      "note": ""
+    },
+    "advisers": {
+      "lemma": "adviser",
+      "pos": "n",
+      "ja": "側近、顧問",
+      "note": ""
+    },
+    "reportedly": {
+      "lemma": "reportedly",
+      "pos": "adv",
+      "ja": "伝えられるところでは",
+      "note": ""
+    },
+    "delay": {
+      "lemma": "delay",
+      "pos": "v",
+      "ja": "延期する",
+      "note": ""
+    },
+    "signature": {
+      "lemma": "signature",
+      "pos": "n",
+      "ja": "署名",
+      "note": ""
+    },
+    "security": {
+      "lemma": "security",
+      "pos": "n",
+      "ja": "安全保障",
+      "note": ""
+    },
+    "bargaining": {
+      "lemma": "bargain",
+      "pos": "adj",
+      "ja": "交渉の",
+      "note": "bargaining chipで「交渉材料」の意味"
+    }
   },
   "grammar": {
     "topic": "It remains unclear whether ~ 構文（形式主語のitを用いた間接疑問文）",
@@ -232,5 +468,24 @@
       "url": "https://easternherald.com/2026/09/21/xi-jinping-trump-summit-washington-trade-taiwan/",
       "date": "2026-09-21"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-22-0540/00.mp3",
+      "audio/2026-09-22-0540/01.mp3",
+      "audio/2026-09-22-0540/02.mp3",
+      "audio/2026-09-22-0540/03.mp3",
+      "audio/2026-09-22-0540/04.mp3",
+      "audio/2026-09-22-0540/05.mp3",
+      "audio/2026-09-22-0540/06.mp3",
+      "audio/2026-09-22-0540/07.mp3",
+      "audio/2026-09-22-0540/08.mp3",
+      "audio/2026-09-22-0540/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 231330,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-21T20:47:35.591Z",
+    "trimmed": true
+  }
 }
