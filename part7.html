@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="app-build" content="2026-09-21 1ce116e">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Part 5 | TOEIC Daily</title>
+<title>Part 7 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
@@ -29,16 +29,39 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
 .stage{padding-top:14px}
 
+/* 前置き（本番の Directions にあたる1行） */
+.intro{padding:11px 14px}
+.intro .sec-label{margin-bottom:4px}
+.intro-en{margin:0;font-family:var(--serif);font-size:13.5px;line-height:1.55;color:var(--ink-2)}
+
+/* 文書 */
+.doc{padding:16px 14px}
+.dhead{border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:12px}
+.drow{display:flex;gap:8px;font-size:13px;line-height:1.7}
+.drow .dl{flex:none;width:58px;color:var(--muted);font-weight:700}
+.drow .dt{flex:1;min-width:0;font-family:var(--serif)}
+.drow.plain .dt{font-weight:700;font-size:14.5px}
+.dpara{font-family:var(--serif);font-size:15.5px;line-height:1.95;margin:0 0 14px}
+.dpara:last-child{margin-bottom:0}
+/* 文位置挿入の印。本文に [1]〜[4] を差し込む */
+.pos{
+  display:inline-block;margin:0 3px;padding:0 5px;border-radius:5px;
+  background:var(--surface-2);border:1px solid var(--line-2);
+  font-family:var(--sans,inherit);font-size:11px;font-weight:800;color:var(--accent);
+  vertical-align:2px;
+}
+.pos.hit{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+/* 複数文書のときの見出し */
+.docsec{display:flex;align-items:center;gap:8px;margin:0 0 8px}
+.docsec .n{
+  flex:none;padding:2px 9px;border-radius:999px;background:var(--accent-soft);
+  color:var(--accent-ink,var(--accent));font-size:11px;font-weight:800;letter-spacing:.04em;
+}
+.doc+.doc{margin-top:12px}
+
 /* 設問 */
 .qbox{margin-top:12px}
 .qnum{font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--accent);margin-bottom:5px}
-.qsent{font-family:var(--serif);font-size:15.5px;line-height:1.75;margin:0 0 10px}
-/* 空所。下線だけを引き、長さを固定して本番の見た目に寄せる */
-.blank{
-  display:inline-block;min-width:62px;border-bottom:2px solid var(--muted);
-  vertical-align:2px;margin:0 3px;
-}
-.fill{background:var(--ok-soft);color:var(--ok);font-weight:700;border-radius:4px;padding:0 4px}
 .choice{
   display:flex;gap:10px;width:100%;text-align:left;align-items:flex-start;white-space:normal;
   padding:10px 12px;margin-top:7px;border:1px solid var(--line-2);border-radius:10px;
@@ -49,7 +72,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   border:1px solid var(--line-2);font-size:12px;font-weight:800;
   display:flex;align-items:center;justify-content:center;margin-top:1px;
 }
-.choice .t{font-family:var(--serif);font-size:15px;line-height:1.5}
+.choice .t{font-family:var(--serif);font-size:15px;line-height:1.55}
 .choice.sel{border-color:var(--accent);background:var(--accent-soft)}
 .choice.sel .k{background:var(--accent);border-color:var(--accent);color:#fff}
 .choice.ok{border-color:var(--ok);background:var(--ok-soft)}
@@ -70,19 +93,44 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 .verdict.ok{background:var(--ok-soft);color:var(--ok)}
 .verdict.ng{background:var(--ng-soft);color:var(--ng)}
 .verdict.na{background:var(--surface-2);color:var(--muted)}
-
-.qsent.play{background:var(--mark-soft);border-radius:6px}
-.qja{font-size:12.5px;color:var(--muted);margin:8px 0 0;line-height:1.7}
+/* 設問文と、解説に出す根拠の引用 */
+.qprompt{font-family:var(--serif);font-size:15.5px;font-weight:700;line-height:1.6;margin:0 0 10px}
+.evid{font-family:var(--serif);font-size:14.5px;line-height:1.75;margin:0 0 4px;
+  padding-left:10px;box-shadow:inset 3px 0 0 var(--mark)}
+.evid .from{display:block;font-family:var(--sans,inherit);font-size:10.5px;font-weight:800;
+  letter-spacing:.06em;color:var(--muted);margin-bottom:2px}
+/* 文位置挿入で「入れる文」を示す枠 */
+.insbox{background:var(--surface-2);border-radius:8px;padding:10px 12px;margin:0 0 10px}
+.insbox b{display:block;font-size:10px;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}
+.insbox p{margin:0;font-family:var(--serif);font-size:15px;line-height:1.6}
+.chip-cross{background:var(--mark-soft);color:var(--mark-ink);font-size:10.5px;
+  font-weight:800;padding:2px 8px;border-radius:999px}
 .expl{font-size:14px;margin:8px 0 0;line-height:1.75}
 .tip{background:var(--surface-2);border-radius:8px;padding:10px 12px;font-size:13.5px;line-height:1.75;margin-top:10px}
 .tip b{display:block;font-size:10px;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}
-.say{
-  width:26px;height:26px;padding:0;border-radius:8px;flex:none;
+.qhead{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+.qhead .qnum{margin:0;flex:1;min-width:0}
+
+/* 対訳 */
+.line{display:flex;gap:9px;align-items:flex-start;padding:7px 6px;border-radius:8px}
+.line .tag{
+  flex:none;width:22px;height:20px;border-radius:5px;background:var(--surface-2);
+  border:1px solid var(--line);font-size:10px;font-weight:800;color:var(--muted);
+  font-variant-numeric:tabular-nums;
+  display:flex;align-items:center;justify-content:center;margin-top:3px;
+}
+.line .body{flex:1;min-width:0}
+.line .e{display:block;font-family:var(--serif);font-size:15.5px;line-height:1.6}
+.line .j{display:block;font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.6}
+.line .pl{
+  flex:none;align-self:flex-start;margin-top:2px;
+  width:26px;height:26px;padding:0;border-radius:8px;
   border:1px solid var(--line-2);background:var(--surface);
   color:var(--accent);font-size:10px;line-height:1;cursor:pointer;
 }
-.qhead{display:flex;align-items:center;gap:8px;margin-bottom:5px}
-.qhead .qnum{margin:0;flex:1;min-width:0}
+.line.play{background:var(--mark-soft)}
+.hide-ja .line .j{display:none}
+.pbreak{height:10px}
 
 /* 語彙 */
 .vcard{display:flex;gap:11px;padding:14px 0;border-bottom:1px solid var(--line)}
@@ -131,7 +179,6 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   background:var(--surface);border-top:1px solid var(--line);
   padding:5px 0 calc(5px + env(safe-area-inset-bottom));
 }
-/* 進み具合。答えた問題の数で伸びる */
 .app-foot .bar{
   position:absolute;left:0;top:0;height:3px;width:0;
   background:var(--mark);transition:width .25s linear;
@@ -179,33 +226,35 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   var $ = function (id) { return document.getElementById(id); };
   var stage = $('stage');
 
-  /* 1回に1セット（短文穴埋め10問）。音声は無く、読んで答えるだけのパート。
-     本番の目安は1問20秒なので、10問で3分20秒。 */
-  /* ホームに戻ったときにこのタブで開くよう覚えておく */
+  /* 1回に1セット。本番と同じ単位で、単一文書（文書1本＋2〜4問）か
+     複数文書（文書2本＋5問）。複数文書には、両方を見ないと解けない設問が入る。 */
   T.Settings.set('hubTab', 'drill');
 
   var STEPS = [
-    { key: 'quiz',  label: '設問' },
-    { key: 'ans',   label: '解説' },
-    { key: 'vocab', label: '語彙' },
-    { key: 'point', label: 'Point' }
+    { key: 'quiz',   label: '設問' },
+    { key: 'ans',    label: '解説' },
+    { key: 'script', label: '対訳' },
+    { key: 'vocab',  label: '語彙' },
+    { key: 'point',  label: 'Point' }
   ];
 
   var SET = null, INDEX = [];
   var step = 0, maxStep = 0;
   var ans = {}, scored = false, done = false;
-  /* 今回の画面で選んだぶん。設問はこれだけを塗る。
-     前回の選択が入ったままだと、開き直しても解き直しにならないため。 */
   var fresh = {};
   var progKey = '';
 
-  var t0 = 0, sec = 0, timer = null;   /* 経過秒。解き終わると止める */
-  var PACE_DEFAULT = 20;               /* 本番の目安は1問20秒 */
+  var t0 = 0, sec = 0, timer = null;
+  var PACE_DEFAULT = 60;   /* 本番の Part 7 は1問1分ほど */
   var TYPE_LABEL = {
-    form: '品詞', verb: '動詞の形', verbal: '準動詞', prep: '前置詞',
-    conj: '接続詞', pron: '代名詞・関係詞', comp: '比較・数量', vocab: '語彙'
+    gist: '目的・主題', detail: '詳細', notTrue: 'NOT', infer: '推測',
+    synonym: '同義語', insert: '文の位置', intent: '意図'
   };
-  var BLANK = /-{4,}/;
+  var DOC_LABEL = {
+    email: 'メール', memo: '社内連絡', notice: '掲示', article: '記事',
+    advertisement: '広告', letter: '手紙', instructions: '説明書',
+    form: '申込書', schedule: '日程表', chat: 'チャット'
+  };
 
   /* ================= 起動 ================= */
 
@@ -218,14 +267,14 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
   function boot() {
     var want = new URLSearchParams(location.search).get('id');
-    fetchJSON('data/part5/index.json')
+    fetchJSON('data/part7/index.json')
       .then(function (idx) { INDEX = (idx && idx.items) || []; })
       .catch(function () { INDEX = []; })
       .then(function () {
         INDEX.sort(function (a, b) { return (b.id || '').localeCompare(a.id || ''); });
         var it = INDEX.filter(function (x) { return x.id === want; })[0] || INDEX[0];
         if (!it) throw new Error('セットが見つかりません');
-        return fetchJSON('data/part5/' + (it.file || (it.id + '.json')));
+        return fetchJSON('data/part7/' + (it.file || (it.id + '.json')));
       })
       .then(start)
       .catch(fail);
@@ -236,17 +285,16 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     $('rail').innerHTML = '';
     stage.innerHTML = '<div class="card"><div class="sec-label">読み込めません</div><p>' +
       esc(e && e.message || e) + '</p>' +
-      '<p class="small muted">Part 5 の教材はまだ作られていないかもしれません。' +
-      'ルーティンが <code>data/part5/</code> に書き出すと、ここに出ます。</p></div>';
+      '<p class="small muted">Part 7 の教材はまだ作られていないかもしれません。' +
+      'ルーティンが <code>data/part7/</code> に書き出すと、ここに出ます。</p></div>';
     $('btnNext').disabled = true;
     $('btnPrev').disabled = true;
   }
 
   function start(d) {
     SET = d;
-    progKey = 'part5:' + (d.id || 'unknown');
+    progKey = 'part7:' + (d.id || 'unknown');
     var p = T.Log.progress(progKey);
-
     done = !!(p && (p.done || p.maxStep >= STEPS.length - 1));
     ans = (p && p.answers) || {};
     scored = !!(p && p.scored);
@@ -260,8 +308,35 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   }
 
   function qs() { return (SET && SET.questions) || []; }
+  function docs() { return (SET && SET.docs) || []; }
+
+  /* すべての文書の文を上から1列に並べる。対訳と読み上げで使う */
+  function flat() {
+    var out = [];
+    docs().forEach(function (d, di) {
+      (d.paragraphs || []).forEach(function (p, pi) {
+        (p.sentences || []).forEach(function (s, si) {
+          out.push({ s: s, d: di, p: pi, si: si });
+        });
+      });
+    });
+    return out;
+  }
+
+  /* 根拠が指す1文を取り出す */
+  function at(e) {
+    var d = docs()[e.d];
+    var p = d && (d.paragraphs || [])[e.p];
+    return (p && (p.sentences || [])[e.s]) || null;
+  }
+  function docName(di) {
+    var d = docs()[di];
+    if (!d) return '';
+    return d.label || DOC_LABEL[d.docType] || '';
+  }
+
   function paceSec() {
-    var v = T.Settings.get('p5pace');
+    var v = T.Settings.get('p7pace');
     return (typeof v === 'number' && v > 0) ? v : PACE_DEFAULT;
   }
   function target() { return paceSec() * qs().length; }
@@ -269,7 +344,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   function save() {
     T.Log.saveProgress(progKey, {
       answers: ans, scored: scored, maxStep: maxStep, done: done,
-      date: SET.date, scene: SET.focus, sec: sec
+      date: SET.date, scene: SET.scene, sec: sec
     });
   }
 
@@ -295,12 +370,14 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   function renderHead() {
     var m = [];
     if (SET.date) m.push('<span>' + esc(SET.date.replace(/-/g, '/')) + (SET.time ? ' ' + esc(SET.time) : '') + '</span>');
-    m.push('<span class="chip">Part 5</span>');
-    if (SET.focus) m.push('<span class="chip chip-plain">' + esc(SET.focus) + '</span>');
+    m.push('<span class="chip">Part 7</span>');
+    m.push('<span class="chip chip-plain">' +
+      esc(docs().map(function (d) { return DOC_LABEL[d.docType] || ''; }).join('＋')) +
+      '　' + qs().length + '問</span>');
     if (SET.sample) m.push('<span class="chip chip-mark">サンプル</span>');
     $('meta').innerHTML = m.join('');
-    /* Part 5 は伏せるものが無い。問題数と目安の時間を出す */
-    $('scene').textContent = qs().length + '問・目安 ' + mmss(target());
+    /* Part 7 は読む問題なので、場面は最初から出す（伏せても意味がない） */
+    $('scene').textContent = SET.scene || '';
     renderRail();
   }
 
@@ -328,72 +405,96 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     render('top');
   }
 
-  /* ================= 各ステップの画面 ================= */
+  /* ================= 文書の描き方 ================= */
 
-  /* 空所を下線にする。語注のタップを壊さないよう、印を付けたあとに差し替える */
-  function sentence(q, fill) {
-    var html = T.markupEnglish(q.prompt, SET.glossary);
-    if (!fill) return html.replace(BLANK, '<span class="blank"></span>');
-    var hit = (q.choices || []).filter(function (c) { return c.key === q.answer; })[0];
-    var word = hit ? hit.text : '';
-    return html.replace(BLANK, '<span class="fill">' + T.markupEnglish(word, SET.glossary) + '</span>');
+  function headerHTML(d) {
+    var h = d.header || [];
+    if (!h.length) return '';
+    return '<div class="dhead">' + h.map(function (r) {
+      return '<div class="drow' + (r.label ? '' : ' plain') + '">' +
+        (r.label ? '<span class="dl">' + esc(r.label) + '</span>' : '') +
+        '<span class="dt">' + esc(r.text) + '</span></div>';
+    }).join('') + '</div>';
   }
 
-  /* 読み上げに渡す文。空所は正解で埋める */
-  function plain(q) {
-    var hit = (q.choices || []).filter(function (c) { return c.key === q.answer; })[0];
-    return String(q.prompt || '').replace(BLANK, hit ? hit.text : '');
+  /* 文書をそのまま出す。文位置挿入のセットでは [1]〜[4] の印を差し込む。
+     hit を渡すと、その番号だけ色を付ける（解説で正解の位置を示す用）。 */
+  function docHTML(hit) {
+    var many = docs().length > 1;
+    return docs().map(function (d, di) {
+      return '<div class="card doc">' +
+        (many ? '<div class="docsec"><span class="n">文書 ' + (di + 1) + '</span>' +
+          '<span class="sec-label" style="margin:0">' + esc(docName(di)) + '</span></div>' : '') +
+        headerHTML(d) +
+        (d.paragraphs || []).map(function (p) {
+          return '<p class="dpara">' + (p.sentences || []).map(function (s) {
+            var html = T.markupEnglish(s.en, SET.glossary);
+            if (s.pos) {
+              html += ' <span class="pos' + (hit === s.pos ? ' hit' : '') + '">[' + s.pos + ']</span>';
+            }
+            return html;
+          }).join(' ') + '</p>';
+        }).join('') + '</div>';
+    }).join('');
+  }
+
+  function insertBox(q) {
+    if (q.type !== 'insert' || !q.insert) return '';
+    return '<div class="insbox"><b>入れる文</b><p>' + esc(q.insert) + '</p></div>';
   }
 
   function viewQuiz() {
-    return qs().map(function (q, i) {
-      return '<div class="card qbox" data-qi="' + i + '">' +
-        '<div class="qnum">Q' + (i + 1) + '</div>' +
-        '<p class="qsent">' + sentence(q, false) + '</p>' +
-        q.choices.map(function (c) {
-          var sel = fresh[q.id] === c.key;
-          return '<button class="choice' + (sel ? ' sel' : '') + '" data-q="' + esc(q.id) + '" data-k="' + esc(c.key) + '">' +
-            '<span class="k">' + esc(c.key) + '</span><span class="t">' + esc(c.text) + '</span></button>';
-        }).join('') +
-        '</div>';
+    return '<div class="card intro"><span class="sec-label">Directions</span>' +
+      '<p class="intro-en">' + esc(SET.intro || '') + '</p></div>' +
+      docHTML(0) +
+      qs().map(function (q, i) {
+        return '<div class="card qbox" data-qi="' + i + '">' +
+          '<div class="qnum">Q' + (i + 1) + '</div>' +
+          '<p class="qprompt">' + esc(q.prompt) + '</p>' +
+          insertBox(q) +
+          q.choices.map(function (c) {
+            var sel = fresh[q.id] === c.key;
+            return '<button class="choice' + (sel ? ' sel' : '') + '" data-q="' + esc(q.id) + '" data-k="' + esc(c.key) + '">' +
+              '<span class="k">' + esc(c.key) + '</span><span class="t">' + esc(c.text) + '</span></button>';
+          }).join('') +
+          '</div>';
+      }).join('');
+  }
+
+  /* 解説で引用する根拠。どの文書のどこかも添える */
+  function evidenceHTML(q) {
+    var many = docs().length > 1;
+    return (q.evidence || []).map(function (e) {
+      var s = at(e);
+      if (!s) return '';
+      var from = (many ? docName(e.d) + '　' : '') + '第' + (e.p + 1) + '段落 ' + (e.s + 1) + '文目';
+      return '<p class="evid"><span class="from">' + esc(from) + '</span>' +
+        T.markupEnglish(s.en, SET.glossary) + '</p>';
     }).join('');
   }
 
   function viewAns() {
     var list = qs();
     var n = list.filter(function (q) { return ans[q.id] === q.answer; }).length;
-    /* 平均は、ある程度の時間をかけたときだけ出す。
-       開いてすぐ採点したときに「1問 0 秒」と出ても意味が無い。 */
-    var avg = list.length ? Math.round(sec / list.length) : 0;
-    var showAvg = sec >= list.length;
     var html = '<div class="score-bar"><span class="lb">結果</span>' +
       '<span class="n">' + n + ' / ' + list.length + '</span>' +
       '<span class="verdict ' + (n === list.length ? 'ok' : 'ng') + '">' +
       (n === list.length ? '全問正解' : (list.length - n) + '問 要復習') + '</span>' +
-      (sec ? '<span class="sub">所要 ' + mmss(sec) +
-        (showAvg ? '　1問 ' + avg + ' 秒' : '') + '</span>' : '') +
-      '</div>' +
-      /* 10問を続けて聞ける。正しい形の文をまとめて耳に入れる用 */
-      '<div class="card"><div class="sec-head"><span class="sec-label">読み上げ</span>' +
-        '<span class="sec-tools">' +
-          '<button class="btn btn-sm icon" id="playAll" title="通して再生">▶</button>' +
-          '<button class="btn btn-sm icon" id="stopAll" title="停止">■</button>' +
-        '</span></div>' +
-        '<p class="small muted" style="margin:0">空所を正解で埋めた文を、端末の読み上げで鳴らします。' +
-        '各問の ▶ で1文だけ。声と速さは ⚙ で選べます。</p></div>';
+      (sec ? '<span class="sub">所要 ' + mmss(sec) + '</span>' : '') +
+      '</div>';
 
     list.forEach(function (q, i) {
       var mine = ans[q.id], ok = mine === q.answer;
-      html += '<div class="card" data-qi="' + i + '">' +
-        '<div class="qhead">' +
-          '<span class="qnum">Q' + (i + 1) +
-            (TYPE_LABEL[q.type] ? '　' + TYPE_LABEL[q.type] : '') + '　' +
-            (!mine ? '<span class="verdict na">未解答</span>'
-                   : '<span class="verdict ' + (ok ? 'ok' : 'ng') + '">' + (ok ? '正解' : '不正解') + '</span>') +
-          '</span>' +
-          '<button class="say" data-play="' + i + '" title="読み上げる">▶</button>' +
-        '</div>' +
-        '<p class="qsent" data-i="' + i + '">' + sentence(q, true) + '</p>' +
+      html += '<div class="card">' +
+        '<div class="qhead"><span class="qnum">Q' + (i + 1) +
+          (TYPE_LABEL[q.type] ? '　' + TYPE_LABEL[q.type] : '') +
+          (q.cross ? '　<span class="chip-cross">2つの文書</span>' : '') + '　' +
+          (!mine ? '<span class="verdict na">未解答</span>'
+                 : '<span class="verdict ' + (ok ? 'ok' : 'ng') + '">' + (ok ? '正解' : '不正解') + '</span>') +
+        '</span></div>' +
+        '<p class="qprompt">' + esc(q.prompt) + '</p>' +
+        insertBox(q) +
+        evidenceHTML(q) +
         q.choices.map(function (c) {
           var cls = c.key === q.answer ? ' ok' : (c.key === mine ? ' ng' : '');
           return '<button class="choice' + cls + '" disabled>' +
@@ -402,7 +503,6 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
             (c.ja ? '<span class="cja">' + esc(c.ja) + '</span>' : '') +
             '</span></button>';
         }).join('') +
-        '<p class="qja">' + esc(q.ja || '') + '</p>' +
         '<p class="expl">' + esc(q.explanation || '') + '</p>' +
         (q.tip ? '<div class="tip"><b>この型の見分け方</b>' + esc(q.tip) + '</div>' : '') +
         '</div>';
@@ -410,10 +510,38 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     return html;
   }
 
+  function viewScript() {
+    var showJa = T.Settings.get('showJa');
+    var rows = flat();
+    return '<div class="card' + (showJa ? '' : ' hide-ja') + '" id="scriptCard">' +
+      '<div class="sec-head"><span class="sec-label">対訳</span>' +
+        '<span class="sec-tools">' +
+          '<button class="btn btn-sm icon" id="replay" title="通して再生">▶</button>' +
+          '<button class="btn btn-sm icon" id="stopBtn" title="停止">■</button>' +
+          '<button class="btn btn-sm icon' + (showJa ? ' on' : '') + '" id="toggleJa" title="' +
+            (showJa ? '和訳を隠す' : '和訳を出す') + '">訳</button>' +
+        '</span></div>' +
+      rows.map(function (x, i) {
+        var prev = rows[i - 1];
+        var head = (!prev || prev.d !== x.d) && docs().length > 1
+          ? '<div class="docsec" style="margin-top:' + (i ? '14px' : '0') + '">' +
+            '<span class="n">文書 ' + (x.d + 1) + '</span>' +
+            '<span class="sec-label" style="margin:0">' + esc(docName(x.d)) + '</span></div>'
+          : ((prev && prev.p !== x.p) ? '<div class="pbreak"></div>' : '');
+        return head + '<div class="line" data-i="' + i + '">' +
+          '<span class="tag">' + (i + 1) + '</span>' +
+          '<span class="body"><span class="e">' + T.markupEnglish(x.s.en, SET.glossary) + '</span>' +
+          '<span class="j">' + esc(x.s.ja || '') + '</span></span>' +
+          '<button class="pl" data-play="' + i + '" title="この文を再生">▶</button></div>';
+      }).join('') +
+      '</div><p class="hint">文をタップすると語注が出ます。' +
+      '▶ で1文、見出しの ▶ で全体を読み上げます。</p>';
+  }
+
   function viewVocab() {
     var g = SET.glossary || {};
     var keys = Object.keys(g);
-    if (!keys.length) return '<div class="card"><p class="small muted" style="margin:0">このセットには語注がありません。</p></div>';
+    if (!keys.length) return '<div class="card"><p class="small muted" style="margin:0">この文書には語注がありません。</p></div>';
     var showMean = T.Settings.get('vocabJa') !== false;
     return '<div class="card' + (showMean ? '' : ' terms-only') + '" id="vocabCard">' +
       '<div class="sec-head"><span class="sec-label">Vocabulary</span>' +
@@ -447,9 +575,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
         'このセットには総括がありません。設問ごとの見分け方は解説にあります。</p></div>';
     }
     return '<div class="card point">' +
-      '<div class="sec-label">解き方の型</div>' +
+      '<div class="sec-label">読み方の型</div>' +
       '<p class="lead">' + esc(p.lead || '') + '</p>' +
-      '<p class="small muted" style="margin:6px 0 0">1問20秒で回すには、読む範囲を先に決めることが要になります。</p>' +
+      '<p class="small muted" style="margin:6px 0 0">設問の順番は本文の流れとほぼ一致します。</p>' +
       p.items.map(function (it) {
         return '<h3>' + esc(it.title) + '</h3><p>' + esc(it.body) + '</p>';
       }).join('') +
@@ -461,6 +589,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     stage.innerHTML =
       k === 'quiz' ? viewQuiz() :
       k === 'ans' ? viewAns() :
+      k === 'script' ? viewScript() :
       k === 'vocab' ? viewVocab() : viewPoint();
     paintFoot();
     if (scroll === 'top') window.scrollTo(0, 0);
@@ -468,47 +597,36 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
   /* ================= 読み上げ =================
      端末（Chrome / Edge）の読み上げで鳴らす。音声ファイルは持たない。
-     Part 5 は1文が短く、正しい形を確かめるための読み上げなので、
-     あらかじめ作っておく必要がない。声と速さは ⚙ で選べる。 */
+     読ませるのは空所を正解で埋めた文。 */
 
   var chain = false;
 
   function markPlay(i) {
-    var els = stage.querySelectorAll('.qsent[data-i]');
+    var els = stage.querySelectorAll('.line[data-i]');
     for (var k = 0; k < els.length; k++) els[k].classList.toggle('play', +els[k].dataset.i === i);
-    if (i >= 0) {
-      var c = stage.querySelector('.qsent[data-i="' + i + '"]');
-      if (c && chain) c.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    if (i >= 0 && chain) {
+      var c = stage.querySelector('.line[data-i="' + i + '"]');
+      if (c) c.scrollIntoView({ block: 'center', behavior: 'smooth' });
     }
   }
+  function stopPlay() { chain = false; T.TTS.cancel(); markPlay(-1); }
 
-  function stopPlay() {
-    chain = false;
-    T.TTS.cancel();
-    markPlay(-1);
-  }
-
-  /* 空所を正解で埋めた文を読ませる。正しい形のまま耳に入れるため */
   function speakOne(i, onend) {
-    var q = qs()[i];
-    if (!q) { if (onend) onend(); return; }
+    var x = flat()[i];
+    if (!x) { if (onend) onend(); return; }
     markPlay(i);
-    T.TTS.speak(plain(q), { rate: T.Settings.get('rate'), onend: onend });
+    T.TTS.speak(x.s.en, { rate: T.Settings.get('rate'), onend: onend });
   }
-
   function playOne(i) {
     stopPlay();
     speakOne(i, function () { markPlay(-1); });
   }
-
-  /* 文と文の間。続けて鳴らすと切れ目が無くなるので、ここで区切りを作る */
-  var GAP = 700;
-
+  var GAP = 500;
   function playAll() {
     stopPlay();
     chain = true;
     (function next(i) {
-      if (!chain || i >= qs().length) { chain = false; markPlay(-1); return; }
+      if (!chain || i >= flat().length) { chain = false; markPlay(-1); return; }
       speakOne(i, function () {
         if (!chain) return;
         setTimeout(function () { if (chain) next(i + 1); }, GAP);
@@ -574,7 +692,6 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       ans[ch.dataset.q] = ch.dataset.k;
       fresh[ch.dataset.q] = ch.dataset.k;
       save();
-      /* 押した位置を動かさないよう、その設問の中だけ塗り替える */
       var box = ch.closest('.qbox');
       Array.prototype.forEach.call(box.querySelectorAll('.choice'), function (b) {
         b.classList.toggle('sel', b === ch);
@@ -583,10 +700,20 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       return;
     }
 
-    var pl = t.closest('[data-play]');
+    var pl = t.closest('.pl[data-play]');
     if (pl) { playOne(+pl.dataset.play); return; }
-    if (t.closest('#playAll')) { playAll(); return; }
-    if (t.closest('#stopAll')) { stopPlay(); return; }
+    if (t.closest('#replay')) { playAll(); return; }
+    if (t.closest('#stopBtn')) { stopPlay(); return; }
+
+    if (t.closest('#toggleJa')) {
+      var show = !T.Settings.get('showJa');
+      T.Settings.set('showJa', show);
+      var card = $('scriptCard');
+      if (card) card.classList.toggle('hide-ja', !show);
+      var b2 = $('toggleJa');
+      if (b2) { b2.classList.toggle('on', show); b2.title = show ? '和訳を隠す' : '和訳を出す'; }
+      return;
+    }
 
     var sw = t.closest('[data-sayw]');
     if (sw) { stopPlay(); T.TTS.speak(sw.dataset.sayw, { rate: 0.85 }); return; }
@@ -601,7 +728,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       else {
         T.Vocab.add({ term: term, pos: (hit && hit.pos) || '', ja: (hit && hit.ja) || '',
                       gloss: (hit && hit.note) || '', src: SET.id,
-                      srcTitle: 'Part 5 ' + (SET.focus || '') });
+                      srcTitle: 'Part 7 ' + (SET.scene || '') });
         T.toast('語彙帳に追加しました');
       }
       render();
@@ -623,7 +750,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   $('btnPick').addEventListener('click', function () {
     var rows = INDEX.length ? INDEX.map(function (it) {
       var here = SET && it.id === SET.id;
-      var p = T.Log.progress('part5:' + it.id);
+      var p = T.Log.progress('part7:' + it.id);
       return '<p style="margin:0 0 4px"><a href="?id=' + encodeURIComponent(it.id) + '" style="color:inherit;text-decoration:none">' +
         '<span class="chip chip-plain">' + esc((it.date || it.id) + (it.time ? ' ' + it.time : '')) + '</span> ' +
         (it.kind ? '<span class="chip">' + esc(it.kind) + '</span> ' : '') +
@@ -637,30 +764,28 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   $('btnCfg').addEventListener('click', function () {
     T.openSettings({
       extraHTML:
-        '<h2>Part 5</h2>' +
-        '<label class="field"><span>1問あたりの目安 <b id="p5v">' + paceSec() + '</b> 秒</span>' +
-          '<input type="range" id="p5pace" min="10" max="40" step="1" value="' + paceSec() + '"></label>' +
-        '<p class="small muted" style="margin:-4px 0 8px">本番は1問20秒で進めると、Part 7 に時間を残せます。' +
-          'フッターに経過時間と目安が出るので、超えたら赤くなります。<b>時間を過ぎても止まりません。</b></p>',
+        '<h2>Part 7</h2>' +
+        '<label class="field"><span>1問あたりの目安 <b id="p7v">' + paceSec() + '</b> 秒</span>' +
+          '<input type="range" id="p7pace" min="30" max="120" step="10" value="' + paceSec() + '"></label>' +
+        '<p class="small muted" style="margin:-4px 0 8px">本番は1問1分ほど（54問を54分で解く配分）。' +
+          'フッターに経過時間と目安が出て、超えると赤くなります。<b>時間を過ぎても止まりません。</b></p>',
       onMount: function (bg) {
-        var r = bg.querySelector('#p5pace');
+        var r = bg.querySelector('#p7pace');
         r.oninput = function () {
-          T.Settings.set('p5pace', parseInt(r.value, 10));
-          bg.querySelector('#p5v').textContent = r.value;
-          renderHead();
+          T.Settings.set('p7pace', parseInt(r.value, 10));
+          bg.querySelector('#p7v').textContent = r.value;
           paintFoot();
         };
       }
     });
   });
 
-  /* 文中をなぞって選ぶと「意味」のボタンが出る。熟語はタップでは指せないため */
   T.watchSelection(stage, {
-    ctx: '.qsent, .choice, .qja, .expl',
+    ctx: '.dpara, .line, .evid, .qprompt, .choice, .expl',
     onPick: function (text, ctx, rect) {
       var g = SET && SET.glossary && SET.glossary[text.toLowerCase()];
       T.phrasePop({ text: text, ctx: ctx, rect: rect, gloss: g,
-        scope: (SET && SET.id) || '', srcTitle: 'Part 5 ' + ((SET && SET.focus) || '') });
+        scope: (SET && SET.id) || '', srcTitle: 'Part 7 ' + ((SET && SET.scene) || '') });
     }
   });
 

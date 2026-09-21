@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "type": "part7-history",
+  "updatedAt": "2026-09-21T09:57:00+09:00",
+  "items": [
+    {
+      "id": "2026-09-21-0957-5",
+      "date": "2026-09-21",
+      "scene": "広告＋問い合わせ｜保管スペースの契約",
+      "format": "double",
+      "docTypes": [
+        "advertisement",
+        "email"
+      ],
+      "types": [
+        "gist",
+        "detail",
+        "detail",
+        "infer",
+        "notTrue"
+      ]
+    },
+    {
+      "id": "2026-09-21-0957-4",
+      "date": "2026-09-21",
+      "scene": "職員向け講座｜会員価格と日程の確認",
+      "format": "double",
+      "docTypes": [
+        "email",
+        "schedule"
+      ],
+      "types": [
+        "gist",
+        "detail",
+        "infer",
+        "detail",
+        "notTrue"
+      ]
+    },
+    {
+      "id": "2026-09-21-0957-3",
+      "date": "2026-09-21",
+      "scene": "チャット｜出荷の遅れと店舗への対応",
+      "format": "single",
+      "docTypes": [
+        "chat"
+      ],
+      "types": [
+        "gist",
+        "intent",
+        "detail"
+      ]
+    },
+    {
+      "id": "2026-09-21-0957-2",
+      "date": "2026-09-21",
+      "scene": "社内メール｜研修の申し込みと締め切り",
+      "format": "single",
+      "docTypes": [
+        "email"
+      ],
+      "types": [
+        "gist",
+        "detail",
+        "synonym",
+        "infer"
+      ]
+    },
+    {
+      "id": "2026-09-21-0957-1",
+      "date": "2026-09-21",
+      "scene": "記事｜市場の改装と出店者の募集",
+      "format": "single",
+      "docTypes": [
+        "article"
+      ],
+      "types": [
+        "gist",
+        "detail",
+        "insert"
+      ]
+    }
+  ]
+}

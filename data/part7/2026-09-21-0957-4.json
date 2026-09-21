@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-09-21-0957-4",
+  "date": "2026-09-21",
+  "time": "09:57",
+  "createdAt": "2026-09-21T09:57:00+09:00",
+  "sample": false,
+  "format": "double",
+  "scene": "職員向け講座｜会員価格と日程の確認",
+  "intro": "Questions 1-5 refer to the following e-mail and schedule.",
+  "docs": [
+    {
+      "docType": "email",
+      "label": "メール",
+      "header": [
+        {
+          "label": "To",
+          "text": "Staff Association Members"
+        },
+        {
+          "label": "From",
+          "text": "Priya Raman, Staff Association"
+        },
+        {
+          "label": "Subject",
+          "text": "Autumn evening classes"
+        },
+        {
+          "label": "Date",
+          "text": "18 September"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "The autumn evening classes open for booking on Monday.",
+              "ja": "秋の夜間講座は月曜から申し込みを受け付けます。"
+            },
+            {
+              "en": "Members of the staff association pay the reduced rate shown in the second column of the schedule below.",
+              "ja": "職員会の会員は、下の日程表の2つ目の金額（会員価格）でご参加いただけます。"
+            },
+            {
+              "en": "Everyone else pays the standard rate.",
+              "ja": "それ以外の方は通常価格となります。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Because the writing class filled up quickly last year, book early if you want that one.",
+              "ja": "文章講座は昨年すぐ定員に達したので、希望される方は早めにお申し込みください。"
+            },
+            {
+              "en": "Classes are held in Room 210 and last ninety minutes.",
+              "ja": "講座は210号室で行い、1回90分です。"
+            },
+            {
+              "en": "Bring your own laptop to the spreadsheet class.",
+              "ja": "表計算の講座には、ご自分のノートパソコンをお持ちください。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Places are limited to twenty people per class, and bookings close two days before each date.",
+              "ja": "各講座の定員は20名で、申し込みは開催日の2日前に締め切ります。"
+            },
+            {
+              "en": "To book, reply to this message with the class name and your staff number.",
+              "ja": "申し込みは、講座名と職員番号を書いてこのメールに返信してください。"
+            },
+            {
+              "en": "Refunds are available up to twenty-four hours before the class begins.",
+              "ja": "返金は開始24時間前まで受け付けます。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "docType": "schedule",
+      "label": "日程表",
+      "header": [
+        {
+          "label": "",
+          "text": "Autumn Evening Classes — standard rate / member rate"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Tuesday 6 October, Spreadsheet Basics, 6:00 P.M., forty dollars standard and twenty-five dollars for members.",
+              "ja": "10月6日（火）表計算の基礎 午後6時 通常40ドル／会員25ドル。"
+            },
+            {
+              "en": "Wednesday 7 October, Business Writing, 6:00 P.M., fifty dollars standard and thirty dollars for members.",
+              "ja": "10月7日（水）ビジネス文章 午後6時 通常50ドル／会員30ドル。"
+            },
+            {
+              "en": "Thursday 8 October, Presentation Skills, 6:00 P.M., forty-five dollars standard and twenty-eight dollars for members.",
+              "ja": "10月8日（木）プレゼンの技術 午後6時 通常45ドル／会員28ドル。"
+            },
+            {
+              "en": "Friday 9 October, Time Management, 6:00 P.M., thirty-five dollars standard and twenty dollars for members.",
+              "ja": "10月9日（金）時間の使い方 午後6時 通常35ドル／会員20ドル。"
+            },
+            {
+              "en": "All classes are taught by staff from the training team.",
+              "ja": "いずれの講座も研修チームの職員が担当します。"
+            },
+            {
+              "en": "Register at the association desk on the ground floor.",
+              "ja": "申し込みは1階の職員会窓口でも受け付けます。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the purpose of the e-mail?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To report the results of a class survey",
+          "ja": "講座の調査結果を報告すること"
+        },
+        {
+          "key": "B",
+          "text": "To announce that classes can be booked",
+          "ja": "講座の申し込み開始を知らせること"
+        },
+        {
+          "key": "C",
+          "text": "To ask members to teach a class",
+          "ja": "会員に講師を依頼すること"
+        },
+        {
+          "key": "D",
+          "text": "To explain a change in membership fees",
+          "ja": "会費の変更を説明すること"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "第1文で「月曜から申し込みを受け付ける」と述べ、以降は価格・定員・申し込み方法が続く。全体が申し込みの案内になっている。D の会費は、会員価格の話から連想させる誤答で、会費そのものには触れていない。",
+      "tip": "複数文書でも、目的を問う設問は1つ目の文書の第1文で決まる。2つ目の文書を読む前に答えられる。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What is true about members of the staff association?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They pay less than other participants",
+          "ja": "他の参加者より安く参加できる"
+        },
+        {
+          "key": "B",
+          "text": "They may bring a guest to each class",
+          "ja": "毎回1名を同伴できる"
+        },
+        {
+          "key": "C",
+          "text": "They must register two weeks early",
+          "ja": "2週間前までに申し込む必要がある"
+        },
+        {
+          "key": "D",
+          "text": "They receive a printed handbook",
+          "ja": "冊子を受け取れる"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "メールの第2文に「会員は日程表の2つ目の金額で参加できる」とあり、第3文で「それ以外は通常価格」と続く。会員のほうが安いと分かる。C の2週間前は、申し込みの締め切り（2日前）と取り違えさせる誤答。",
+      "tip": "2つの文書をつなぐ条件（会員価格・割引・特典）は、1つ目の文書に書かれていることが多い。読みながら印を付けておくと、あとの設問で戻らずに済む。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about the writing class?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is taught by an outside instructor",
+          "ja": "外部の講師が教えている"
+        },
+        {
+          "key": "B",
+          "text": "It lasts longer than the other classes",
+          "ja": "他の講座より長い"
+        },
+        {
+          "key": "C",
+          "text": "It is likely to fill up quickly",
+          "ja": "すぐ定員に達しそうだ"
+        },
+        {
+          "key": "D",
+          "text": "It has been moved to a larger room",
+          "ja": "広い部屋に移された"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "「昨年すぐ定員に達したので、希望者は早めに申し込むように」とあることから、今年も早く埋まると示唆されている。A は日程表に「研修チームの職員が担当」とあり矛盾する。B の長さは全講座90分で同じ。",
+      "tip": "示唆を問う設問は、理由を述べた部分（Because …）に根拠があることが多い。書かれている事実から一歩だけ進んだ選択肢を選ぶ。"
+    },
+    {
+      "id": "q4",
+      "type": "detail",
+      "prompt": "How much will a member pay for the class on 8 October?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Twenty dollars",
+          "ja": "20ドル"
+        },
+        {
+          "key": "B",
+          "text": "Twenty-five dollars",
+          "ja": "25ドル"
+        },
+        {
+          "key": "C",
+          "text": "Twenty-eight dollars",
+          "ja": "28ドル"
+        },
+        {
+          "key": "D",
+          "text": "Forty-five dollars",
+          "ja": "45ドル"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 1,
+          "p": 0,
+          "s": 2
+        },
+        {
+          "d": 0,
+          "p": 0,
+          "s": 1
+        }
+      ],
+      "cross": true,
+      "explanation": "日程表の10月8日はプレゼンの技術で、通常45ドル・会員28ドル。メールに「会員は2つ目の金額で参加できる」とあるので、会員が払うのは28ドル。D の45ドルは通常価格で、メールを読まないとこちらを選んでしまう。",
+      "tip": "複数文書の設問は、片方の表だけでは答えが決まらないように作られている。金額や日付を聞かれたら、もう一方の文書に条件が書かれていないかを必ず確かめる。"
+    },
+    {
+      "id": "q5",
+      "type": "notTrue",
+      "prompt": "What is NOT indicated about the classes?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They are held in Room 210",
+          "ja": "210号室で行われる"
+        },
+        {
+          "key": "B",
+          "text": "They last ninety minutes",
+          "ja": "1回90分である"
+        },
+        {
+          "key": "C",
+          "text": "Booking opens on Monday",
+          "ja": "月曜に申し込みが始まる"
+        },
+        {
+          "key": "D",
+          "text": "They will be repeated in the spring",
+          "ja": "春にも開かれる"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        },
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "210号室と90分は第2段落に、申し込みの開始が月曜であることは第1文に書かれている。春の開催には、どちらの文書も触れていない。",
+      "tip": "NOT 問題は、書かれている3つを本文で消してから残りを選ぶ。1つ目の選択肢から順に本文で探すほうが、消去法として速い。"
+    }
+  ],
+  "glossary": {
+    "staff association": {
+      "lemma": "staff association",
+      "pos": "名",
+      "ja": "職員会、職員互助会",
+      "note": ""
+    },
+    "reduced rate": {
+      "lemma": "reduced rate",
+      "pos": "名",
+      "ja": "割引価格",
+      "note": "standard rate（通常価格）の対"
+    },
+    "filled up": {
+      "lemma": "fill up",
+      "pos": "熟",
+      "ja": "いっぱいになる、定員に達する",
+      "note": ""
+    },
+    "are limited to": {
+      "lemma": "be limited to",
+      "pos": "熟",
+      "ja": "〜に限られる",
+      "note": "定員や対象を示す"
+    },
+    "ground floor": {
+      "lemma": "ground floor",
+      "pos": "名",
+      "ja": "1階",
+      "note": "米国では first floor"
+    },
+    "up to": {
+      "lemma": "up to",
+      "pos": "熟",
+      "ja": "〜まで",
+      "note": "時間・数量の上限を示す"
+    },
+    "refunds": {
+      "lemma": "refund",
+      "pos": "名",
+      "ja": "返金",
+      "note": "動詞なら「返金する」"
+    },
+    "booking": {
+      "lemma": "booking",
+      "pos": "名",
+      "ja": "予約、申し込み",
+      "note": "reservation の言い換え"
+    },
+    "spreadsheet": {
+      "lemma": "spreadsheet",
+      "pos": "名",
+      "ja": "表計算（ソフト）",
+      "note": ""
+    },
+    "standard rate": {
+      "lemma": "standard rate",
+      "pos": "名",
+      "ja": "通常価格",
+      "note": ""
+    }
+  },
+  "point": {
+    "lead": "1つ目の文書で「条件」を押さえ、2つ目で「数字」を拾う",
+    "items": [
+      {
+        "title": "つなぐ条件は1つ目の文書にある",
+        "body": "会員価格・割引・特典といった条件は、たいてい1つ目の文書に書かれ、具体的な数字は2つ目の表に載る。1つ目を読む段階で条件に印を付けておくと、あとで戻って読み直さずに済む。"
+      },
+      {
+        "title": "表だけで答えが出る設問は少ない",
+        "body": "複数文書のセットでは、5問のうち1〜2問が両方を見ないと解けない形になる。金額や日付を問われたら、表の数字をそのまま選ぶ前に、もう一方の文書に条件が無いかを確かめる。"
+      },
+      {
+        "title": "NOT 問題は3つを消してから決める",
+        "body": "書かれているものを本文で1つずつ消していき、最後に残ったものを選ぶ。最初から「書かれていないもの」を探すと本文全体を読み直すことになり、時間が足りなくなる。"
+      }
+    ]
+  }
+}

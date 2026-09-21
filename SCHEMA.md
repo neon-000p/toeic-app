@@ -24,9 +24,13 @@ data/
     index.json
     history.json
     2026-09-18-1637-1.json
+  part7/
+    index.json
+    history.json
+    2026-09-21-0957-1.json
 ```
 
-`index.json` と個別ファイルは別々のルーティンが更新する（時事英語 / Part 3〜6 は独立運用）。
+`index.json` と個別ファイルは別々のルーティンが更新する（時事英語 / Part 3〜7 は独立運用）。
 ディレクトリが分かれているので、片方のルーティンが失敗してももう片方に影響しない。
 
 ---
@@ -581,3 +585,85 @@ Part 3・Part 4 は場面を伏せるが、Part 6 は読む問題で文書を最
 ```
 
 スキルが場面と種類の重複を判定するために読む。アプリはこのファイルを見ない。**消さずに貯め続ける。**
+
+---
+
+## data/part7/&lt;id&gt;.json
+
+Part 7（読解）。**1ファイル＝1セット**。本番と同じ単位で、単一文書（文書1本＋2〜4問）か複数文書（文書2本＋5問）。
+
+```json
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-09-21-0957-4",
+  "date": "2026-09-21",
+  "time": "09:57",
+  "sample": false,
+  "format": "double",
+  "scene": "職員向け講座｜会員価格と日程の確認",
+  "intro": "Questions 1-5 refer to the following e-mail and schedule.",
+  "docs": [
+    {
+      "docType": "email",
+      "label": "メール",
+      "header": [ { "label": "To", "text": "Staff Association Members" } ],
+      "paragraphs": [
+        { "sentences": [ { "en": "...", "ja": "...", "pos": 1 } ] }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q4",
+      "type": "detail",
+      "prompt": "How much will a member pay for the class on 8 October?",
+      "choices": [ { "key": "A", "text": "Twenty dollars", "ja": "20ドル" } ],
+      "answer": "C",
+      "evidence": [ { "d": 1, "p": 0, "s": 2 }, { "d": 0, "p": 0, "s": 1 } ],
+      "cross": true,
+      "explanation": "日本語解説",
+      "tip": "この型の解き方"
+    }
+  ],
+  "glossary": { "reduced rate": { "lemma": "reduced rate", "pos": "名", "ja": "割引価格", "note": "" } },
+  "point": { "lead": "読み方を1行で", "items": [ { "title": "見出し", "body": "本文" } ] }
+}
+```
+
+### 設計上の要点
+
+**`format` は `single` か `double`**
+`single` は文書1本・設問2〜4問、`double` は文書2本・設問5問。`double` には**両方の文書を見ないと解けない設問**（`cross: true`）を1問以上入れる。アプリは解説でその設問に「2つの文書」の印を出す。
+
+**`docs[]` は文書の配列**
+`docType` は10種（`email` / `memo` / `notice` / `article` / `advertisement` / `letter` / `instructions` / `form` / `schedule` / `chat`）。複数文書のときは `label`（「メール」「日程表」）が画面の見出しになる。`intro` は設問数と文書の並びに合わせる（`Questions 1-5 refer to the following e-mail and schedule.`）。
+
+**`evidence` は文書・段落・文の三つ組**
+`{ "d": 1, "p": 0, "s": 2 }` は「2つ目の文書の1段落目・3文目」。すべて0始まり。解説ではこの文をそのまま引用し、どの文書のどこかも添える。`cross: true` の設問は `d` の違う項目を2つ以上持つ。
+
+**`type` は7種**
+`gist`（目的・主題）／`detail`（詳細）／`notTrue`（NOT）／`infer`（推測）／`synonym`（同義語）／`insert`（文の位置）／`intent`（意図）。
+`insert` は `single` のセットにだけ、最大1問。入れる文を `insert` に持ち、**本文の文に `pos`（1〜4）**を置く。アプリは `pos` を `[1]` のような印にして本文に差し込む。
+`intent` は `chat` の文書があるときだけ使う。
+
+**`audio` は持たない**
+読む問題なので音声ファイルは作らない。対訳ステップでは端末（Chrome / Edge）の読み上げで鳴らす。
+
+### data/part7/index.json
+
+```json
+{ "id": "2026-09-21-0957-4", "no": 4, "date": "2026-09-21", "time": "09:57",
+  "format": "double", "kind": "メール＋日程表", "questions": 5, "file": "2026-09-21-0957-4.json" }
+```
+
+`kind` は文書の種類の日本語を `＋` でつないだもの。一覧の見出しになる。
+
+### data/part7/history.json
+
+```json
+{ "id": "2026-09-21-0957-4", "date": "2026-09-21", "scene": "職員向け講座｜会員価格と日程の確認",
+  "format": "double", "docTypes": ["email", "schedule"], "types": ["gist", "detail", "infer", "detail", "notTrue"] }
+```
+
+スキルが場面と文書の組み合わせの重複を判定するために読む。アプリはこのファイルを見ない。**消さずに貯め続ける。**

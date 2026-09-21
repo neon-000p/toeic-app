@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-09-21-0957-1",
+  "date": "2026-09-21",
+  "time": "09:57",
+  "createdAt": "2026-09-21T09:57:00+09:00",
+  "sample": false,
+  "format": "single",
+  "scene": "記事｜市場の改装と出店者の募集",
+  "intro": "Questions 1-3 refer to the following article.",
+  "docs": [
+    {
+      "docType": "article",
+      "label": "記事",
+      "header": [
+        {
+          "label": "",
+          "text": "Harbour Market to Reopen in March"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "The Harbour Market will reopen on 3 March after a six-month renovation.",
+              "ja": "ハーバー・マーケットは6か月の改装を経て、3月3日に再開する。"
+            },
+            {
+              "en": "The roof has been replaced and twelve new stalls have been added along the east wall.",
+              "ja": "屋根が葺き替えられ、東側の壁沿いに12の新しい売り場が加わった。",
+              "pos": 1
+            },
+            {
+              "en": "The city spent nine hundred thousand dollars on the work, which began last September.",
+              "ja": "市は昨年9月に始まったこの工事に90万ドルを投じた。",
+              "pos": 2
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Market manager Iris Calloway said applications for the new stalls open on 20 January.",
+              "ja": "市場の責任者アイリス・キャロウェイによると、新しい売り場の申し込みは1月20日に始まる。",
+              "pos": 3
+            },
+            {
+              "en": "Applications must include a business licence and a description of the goods to be sold.",
+              "ja": "申し込みには営業許可証と、販売する商品の説明を添える必要がある。",
+              "pos": 4
+            },
+            {
+              "en": "The city expects more than sixty applications for the twelve spaces.",
+              "ja": "市は12の区画に対して60件を超える申し込みを見込んでいる。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Stalls will be leased for one year at a rate of four hundred dollars a month.",
+              "ja": "売り場は月400ドルで1年間貸し出される。"
+            },
+            {
+              "en": "Information sessions for interested vendors will be held at city hall on 12 and 13 January.",
+              "ja": "出店を検討している業者向けの説明会が、1月12日と13日に市役所で開かれる。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the purpose of the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To announce the reopening of a market",
+          "ja": "市場の再開を知らせること"
+        },
+        {
+          "key": "B",
+          "text": "To describe a change in city taxes",
+          "ja": "市税の変更を説明すること"
+        },
+        {
+          "key": "C",
+          "text": "To review a newly opened restaurant",
+          "ja": "新しく開いた飲食店を批評すること"
+        },
+        {
+          "key": "D",
+          "text": "To report the closing of a business",
+          "ja": "ある事業の閉鎖を報じること"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "冒頭の1文で「3月3日に再開する」と述べ、以降は工事の中身と出店の募集が続く。記事全体が再開の知らせになっている。D の閉鎖は改装前の休業から連想させる誤答だが、本文は一貫して再開の話をしている。",
+      "tip": "目的を問う設問は、記事なら第1文、メールなら件名と第1文で決まる。残りを読む前に答えを決めてよい。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "How much did the city spend on the renovation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Four hundred dollars",
+          "ja": "400ドル"
+        },
+        {
+          "key": "B",
+          "text": "Nine hundred thousand dollars",
+          "ja": "90万ドル"
+        },
+        {
+          "key": "C",
+          "text": "Twelve thousand dollars",
+          "ja": "1万2千ドル"
+        },
+        {
+          "key": "D",
+          "text": "Sixty thousand dollars",
+          "ja": "6万ドル"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "第1段落の最後に The city spent nine hundred thousand dollars on the work とある。A の400ドルは売り場の月額、C の12と D の60は売り場の数と申し込みの見込み数で、いずれも本文の別の数字を使った誤答。",
+      "tip": "数字を問う設問では、本文に出るすべての数字が誤答に使われる。金額・個数・日付のどれを聞かれているかを設問文で確かめてから本文に戻る。"
+    },
+    {
+      "id": "q3",
+      "type": "insert",
+      "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "insert": "Vendors who sold at the market before the renovation will be given first choice.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "[1]",
+          "ja": "1の位置"
+        },
+        {
+          "key": "B",
+          "text": "[2]",
+          "ja": "2の位置"
+        },
+        {
+          "key": "C",
+          "text": "[3]",
+          "ja": "3の位置"
+        },
+        {
+          "key": "D",
+          "text": "[4]",
+          "ja": "4の位置"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "入れる文は「改装前に出店していた業者が優先される」という申し込みの条件。申し込みの開始を述べた文の直後、つまり [3] に入ると、次の「申し込みに必要な書類」へ自然につながる。[1] と [2] は工事の中身の話で、出店者の優先順位とは結び付かない。",
+      "tip": "文位置挿入は、入れる文の話題が前後のどちらとつながるかで決める。申し込み・条件・書類のように話題が続いている場所を探す。"
+    }
+  ],
+  "glossary": {
+    "six-month renovation": {
+      "lemma": "renovation",
+      "pos": "名",
+      "ja": "改装、改修",
+      "note": "six-month のようにハイフンでつなぐと形容詞になる"
+    },
+    "business licence": {
+      "lemma": "business licence",
+      "pos": "名",
+      "ja": "営業許可証",
+      "note": "米国式の綴りは license"
+    },
+    "information sessions": {
+      "lemma": "information session",
+      "pos": "名",
+      "ja": "説明会",
+      "note": ""
+    },
+    "interested vendors": {
+      "lemma": "interested",
+      "pos": "形",
+      "ja": "関心のある",
+      "note": "be interested in の形でも出る"
+    },
+    "city hall": {
+      "lemma": "city hall",
+      "pos": "名",
+      "ja": "市役所",
+      "note": ""
+    },
+    "a rate of": {
+      "lemma": "at a rate of",
+      "pos": "熟",
+      "ja": "〜の料金で、〜の割合で",
+      "note": ""
+    },
+    "stalls": {
+      "lemma": "stall",
+      "pos": "名",
+      "ja": "売り場、屋台",
+      "note": "市場や催事で使う"
+    },
+    "vendors": {
+      "lemma": "vendor",
+      "pos": "名",
+      "ja": "出店者、販売業者",
+      "note": "supplier の言い換えにもなる"
+    },
+    "applications": {
+      "lemma": "application",
+      "pos": "名",
+      "ja": "申し込み、応募",
+      "note": "apply（申し込む）の名詞形"
+    },
+    "leased": {
+      "lemma": "lease",
+      "pos": "動",
+      "ja": "貸し出す、賃借する",
+      "note": "rent より長い期間に使う"
+    }
+  },
+  "point": {
+    "lead": "設問を1つ読んでから本文に戻る。全部読んでから設問を見ない",
+    "items": [
+      {
+        "title": "目的は最初の1文で決まる",
+        "body": "記事は第1文、メールは件名と第1文に用件が置かれる。目的を問う設問はそこだけで答えが出るので、本文を読み切る前に片づけてよい。残りの時間を細部の設問に回せる。"
+      },
+      {
+        "title": "数字の誤答は本文から作られる",
+        "body": "金額・個数・日付を問う設問では、本文に出る他の数字がそのまま誤答になる。設問文が何の数字を聞いているかを押さえてから本文に戻ると、似た数字に引っかからない。"
+      },
+      {
+        "title": "文位置挿入は話題のつながりで決める",
+        "body": "入れる文が何について言っているかを見て、同じ話題が続いている場所を探す。前の文とだけつながる位置は誤答で、前と後ろの両方につながる位置が正解になる。"
+      }
+    ]
+  }
+}

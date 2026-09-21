@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-09-21-0957-2",
+  "date": "2026-09-21",
+  "time": "09:57",
+  "createdAt": "2026-09-21T09:57:00+09:00",
+  "sample": false,
+  "format": "single",
+  "scene": "社内メール｜研修の申し込みと締め切り",
+  "intro": "Questions 1-4 refer to the following e-mail.",
+  "docs": [
+    {
+      "docType": "email",
+      "label": "メール",
+      "header": [
+        {
+          "label": "To",
+          "text": "All Reporting Staff"
+        },
+        {
+          "label": "From",
+          "text": "Training Team"
+        },
+        {
+          "label": "Subject",
+          "text": "October software workshops"
+        },
+        {
+          "label": "Date",
+          "text": "15 September"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "The training team will run four workshops on the new reporting software during the last two weeks of October.",
+              "ja": "研修チームは10月の後半2週間に、新しい報告用ソフトの講習を4回実施します。"
+            },
+            {
+              "en": "Each workshop lasts two hours and is limited to sixteen people per session.",
+              "ja": "1回の講習は2時間で、定員は16名です。"
+            },
+            {
+              "en": "Staff who prepare or review monthly reports should attend at least one session.",
+              "ja": "月次報告を作成または確認する職員は、少なくとも1回は出席してください。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "To register, fill in the form on the staff portal and choose a date.",
+              "ja": "申し込みは、社内ポータルの申込書に記入して日付を選んでください。"
+            },
+            {
+              "en": "Registration closes at noon on 25 September, and late requests cannot be accommodated.",
+              "ja": "申し込みは9月25日正午に締め切り、それ以降のご希望には応じられません。"
+            },
+            {
+              "en": "If a session fills up, you will be placed on a waiting list automatically.",
+              "ja": "定員に達した回では、自動的に補欠名簿に登録されます。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "The workshops replace the drop-in help desk that ran in the spring.",
+              "ja": "この講習は、春に開いていた随時受付の相談窓口に代わるものです。"
+            },
+            {
+              "en": "Please direct any questions to the training team rather than to your supervisor.",
+              "ja": "ご質問は上長ではなく研修チームにお寄せください。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "Why was the e-mail sent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To report the results of a survey",
+          "ja": "調査の結果を報告するため"
+        },
+        {
+          "key": "B",
+          "text": "To explain how to sign up for training",
+          "ja": "研修の申し込み方法を伝えるため"
+        },
+        {
+          "key": "C",
+          "text": "To introduce a new member of staff",
+          "ja": "新しい職員を紹介するため"
+        },
+        {
+          "key": "D",
+          "text": "To change the date of a monthly report",
+          "ja": "月次報告の期日を変えるため"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "件名が October software workshops で、第1文で講習の実施を知らせ、第2段落で申し込みの手順と締め切りを説明している。全体が申し込みの案内になっている。D の monthly reports は出席すべき人を示すために触れられるだけで、期日の変更には触れていない。",
+      "tip": "メールの目的は件名と第1文で決まる。本文の途中に出る別の話題は、目的ではなく条件や補足であることが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "When does registration close?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "On 15 September",
+          "ja": "9月15日"
+        },
+        {
+          "key": "B",
+          "text": "At the end of October",
+          "ja": "10月末"
+        },
+        {
+          "key": "C",
+          "text": "Two hours before each session",
+          "ja": "各回の2時間前"
+        },
+        {
+          "key": "D",
+          "text": "At noon on 25 September",
+          "ja": "9月25日の正午"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第2段落に Registration closes at noon on 25 September とある。A の9月15日はメールの日付、C の2時間は講習の長さで、どちらも本文の別の数字を使った誤答。",
+      "tip": "日付を問う設問では、メールの頭の日付と本文の日付を混同しないようにする。設問が「締め切り」を聞いているなら close / deadline / by の近くを見る。"
+    },
+    {
+      "id": "q3",
+      "type": "synonym",
+      "prompt": "The word \"accommodated\" in paragraph 2, line 2, is closest in meaning to",
+      "choices": [
+        {
+          "key": "A",
+          "text": "accepted",
+          "ja": "受け入れられる"
+        },
+        {
+          "key": "B",
+          "text": "housed",
+          "ja": "宿泊させる"
+        },
+        {
+          "key": "C",
+          "text": "adjusted",
+          "ja": "調整される"
+        },
+        {
+          "key": "D",
+          "text": "delivered",
+          "ja": "届けられる"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "late requests cannot be accommodated は「締め切り後の希望には応じられない」という意味。ここでの accommodate は「受け入れる」。B の「宿泊させる」は accommodate の別の意味だが、requests を目的語に取るこの文脈では合わない。",
+      "tip": "同義語の設問は、辞書の代表的な意味ではなく、その文での意味を選ぶ。空所の語を選択肢で置き換えて読み直すと決まる。"
+    },
+    {
+      "id": "q4",
+      "type": "infer",
+      "prompt": "What is suggested about the help desk?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It will open again in October",
+          "ja": "10月にまた開く"
+        },
+        {
+          "key": "B",
+          "text": "It was run by supervisors",
+          "ja": "上長が運営していた"
+        },
+        {
+          "key": "C",
+          "text": "It is no longer available",
+          "ja": "もう利用できない"
+        },
+        {
+          "key": "D",
+          "text": "It was limited to sixteen people",
+          "ja": "16名までに限られていた"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 2,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "The workshops replace the drop-in help desk that ran in the spring とあり、講習が窓口に「取って代わる」ので、窓口はもう無いと分かる。A は replace と矛盾する。D の16名は講習の定員で、窓口の話ではない。",
+      "tip": "replace / instead of / no longer は、片方が無くなったことを示す合図。示唆を問う設問は、こうした語の周りに根拠がある。"
+    }
+  ],
+  "glossary": {
+    "staff portal": {
+      "lemma": "portal",
+      "pos": "名",
+      "ja": "（社内の）窓口サイト",
+      "note": ""
+    },
+    "fill in": {
+      "lemma": "fill in",
+      "pos": "熟",
+      "ja": "（書類に）記入する",
+      "note": "米国では fill out"
+    },
+    "waiting list": {
+      "lemma": "waiting list",
+      "pos": "名",
+      "ja": "補欠名簿、順番待ちの名簿",
+      "note": ""
+    },
+    "fills up": {
+      "lemma": "fill up",
+      "pos": "熟",
+      "ja": "いっぱいになる",
+      "note": ""
+    },
+    "help desk": {
+      "lemma": "help desk",
+      "pos": "名",
+      "ja": "相談窓口",
+      "note": ""
+    },
+    "drop-in": {
+      "lemma": "drop-in",
+      "pos": "形",
+      "ja": "予約不要の、随時受付の",
+      "note": "drop in（立ち寄る）から"
+    },
+    "direct any questions to": {
+      "lemma": "direct A to B",
+      "pos": "熟",
+      "ja": "A を B に向ける、回す",
+      "note": "問い合わせ先の案内で使う"
+    },
+    "accommodated": {
+      "lemma": "accommodate",
+      "pos": "動",
+      "ja": "応じる、受け入れる",
+      "note": "「宿泊させる」の意味もある多義語"
+    },
+    "supervisor": {
+      "lemma": "supervisor",
+      "pos": "名",
+      "ja": "上長、監督者",
+      "note": ""
+    },
+    "registration": {
+      "lemma": "registration",
+      "pos": "名",
+      "ja": "申し込み、登録",
+      "note": "register（申し込む）の名詞形"
+    }
+  },
+  "point": {
+    "lead": "設問の順番は本文の流れとほぼ一致する。上から順に探す",
+    "items": [
+      {
+        "title": "1問目は上、最後の設問は下にある",
+        "body": "Part 7 の設問は本文の流れに沿って並ぶ。2問目の根拠が第2段落にあれば、3問目は第2段落より後ろを探せばよい。戻って読み直す回数が減るぶん、1問あたりの時間が縮む。"
+      },
+      {
+        "title": "同義語はその文での意味で選ぶ",
+        "body": "accommodate のような多義語は、辞書の代表的な意味が誤答に置かれる。選択肢をその文に入れて読み直し、意味が通るかどうかで決めるのがいちばん速い。"
+      },
+      {
+        "title": "replace は「前のものが無くなった」の合図",
+        "body": "replace / instead of / no longer / discontinued は、片方が終わったことを示す。示唆を問う設問はこうした語の周りに根拠があるので、見つけたら印を付けておく。"
+      }
+    ]
+  }
+}

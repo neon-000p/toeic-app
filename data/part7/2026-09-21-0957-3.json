@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-09-21-0957-3",
+  "date": "2026-09-21",
+  "time": "09:57",
+  "createdAt": "2026-09-21T09:57:00+09:00",
+  "sample": false,
+  "format": "single",
+  "scene": "チャット｜出荷の遅れと店舗への対応",
+  "intro": "Questions 1-3 refer to the following text-message chain.",
+  "docs": [
+    {
+      "docType": "chat",
+      "label": "チャット",
+      "header": [
+        {
+          "label": "",
+          "text": "Dara Yun and Kenji Ito"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Dara Yun (10:38 A.M.): Has the shipment for the Bell Street store left the depot yet?",
+              "ja": "ダラ・ユン（午前10時38分）：ベル通り店向けの荷物は、もう倉庫を出ましたか。"
+            },
+            {
+              "en": "Kenji Ito (10:41 A.M.): Not yet, because the driver is still waiting for two pallets from the packing line.",
+              "ja": "ケンジ・イトウ（午前10時41分）：まだです。梱包ラインから2パレット分が出てくるのを運転手が待っています。"
+            },
+            {
+              "en": "Dara Yun (10:43 A.M.): The store manager says she needs the stock on the shelves before the sale starts at four.",
+              "ja": "ダラ・ユン（午前10時43分）：店長は、4時のセール開始までに商品を棚に並べたいと言っています。"
+            },
+            {
+              "en": "Kenji Ito (10:47 A.M.): That's cutting it close, but the run usually takes ninety minutes.",
+              "ja": "ケンジ・イトウ（午前10時47分）：ぎりぎりですね。とはいえ、輸送は普段90分ほどです。"
+            },
+            {
+              "en": "Dara Yun (10:48 A.M.): Can you send the pallets that are ready and follow up with the rest tomorrow?",
+              "ja": "ダラ・ユン（午前10時48分）：用意できているパレットだけ先に送り、残りは明日回しにできますか。"
+            },
+            {
+              "en": "Kenji Ito (10:52 A.M.): I'll ask the driver to load what we have and leave by eleven.",
+              "ja": "ケンジ・イトウ（午前10時52分）：手元にある分を積んで、11時までに出発するよう運転手に伝えます。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Dara Yun (10:54 A.M.): Thanks, I'll let the store know to expect a partial delivery.",
+              "ja": "ダラ・ユン（午前10時54分）：ありがとうございます。店舗には一部納品になると伝えておきます。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the writers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A delivery that has not left yet",
+          "ja": "まだ出発していない配送"
+        },
+        {
+          "key": "B",
+          "text": "A change to a store's opening hours",
+          "ja": "店舗の営業時間の変更"
+        },
+        {
+          "key": "C",
+          "text": "The hiring of an additional driver",
+          "ja": "運転手の増員"
+        },
+        {
+          "key": "D",
+          "text": "A complaint from a regular customer",
+          "ja": "常連客からの苦情"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "最初のやり取りで「荷物はもう倉庫を出たか」「まだです」と確認しており、以降も出発の時刻と届く見込みの話が続く。C の運転手は登場するが増員の話はしていない。",
+      "tip": "チャットの主題は最初の1往復で決まる。誰が何を尋ね、相手がどう答えたかだけを押さえれば、残りは細部の確認になる。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "At 10:47 A.M., what does Mr. Ito most likely mean when he writes, \"That's cutting it close\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "He thinks the price is too low",
+          "ja": "価格が安すぎると考えている"
+        },
+        {
+          "key": "B",
+          "text": "He wants to shorten the route",
+          "ja": "経路を短くしたいと思っている"
+        },
+        {
+          "key": "C",
+          "text": "He has already left the depot",
+          "ja": "すでに倉庫を出発している"
+        },
+        {
+          "key": "D",
+          "text": "He is concerned about the time",
+          "ja": "時間が足りるか気にしている"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 2
+        },
+        {
+          "d": 0,
+          "p": 0,
+          "s": 3
+        }
+      ],
+      "cross": false,
+      "explanation": "直前でダラが「4時のセール前に棚に並べたい」と述べ、それを受けてイトウが「ぎりぎりだ」と返し、輸送に90分かかると続けている。時間の余裕が少ないという意味になる。A の価格や B の経路は、この場面で話題になっていない。",
+      "tip": "意図を問う設問は、引用の1つ前の発言が根拠になる。引用そのものを訳すのではなく、何を受けての一言かを見る。"
+    },
+    {
+      "id": "q3",
+      "type": "detail",
+      "prompt": "What does Mr. Ito agree to do?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cancel the delivery for today",
+          "ja": "今日の配送を取りやめる"
+        },
+        {
+          "key": "B",
+          "text": "Send the pallets that are ready",
+          "ja": "用意できている分だけ送る"
+        },
+        {
+          "key": "C",
+          "text": "Visit the Bell Street store himself",
+          "ja": "自分でベル通り店へ行く"
+        },
+        {
+          "key": "D",
+          "text": "Move the sale to a later date",
+          "ja": "セールを後日に延期する"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 5
+        }
+      ],
+      "cross": false,
+      "explanation": "10時52分の発言で「手元にある分を積んで11時までに出発するよう運転手に伝える」と応じている。これは直前のダラの提案を受け入れたもの。D のセールの延期は、どちらの発言にも出てこない。",
+      "tip": "「何をすることに同意したか」を問う設問は、やり取りの最後のほうにある。I'll … の形の発言を探すと早い。"
+    }
+  ],
+  "glossary": {
+    "packing line": {
+      "lemma": "packing line",
+      "pos": "名",
+      "ja": "梱包ライン",
+      "note": "production line と組で覚える"
+    },
+    "cutting it close": {
+      "lemma": "cut it close",
+      "pos": "熟",
+      "ja": "ぎりぎりである",
+      "note": "時間や余裕が少ないときに使う"
+    },
+    "follow up with": {
+      "lemma": "follow up with",
+      "pos": "熟",
+      "ja": "あとから対応する、追って連絡する",
+      "note": ""
+    },
+    "partial delivery": {
+      "lemma": "partial delivery",
+      "pos": "名",
+      "ja": "一部納品",
+      "note": ""
+    },
+    "on the shelves": {
+      "lemma": "on the shelves",
+      "pos": "熟",
+      "ja": "棚に並んで、店頭に出て",
+      "note": ""
+    },
+    "depot": {
+      "lemma": "depot",
+      "pos": "名",
+      "ja": "倉庫、配送拠点",
+      "note": ""
+    },
+    "pallets": {
+      "lemma": "pallet",
+      "pos": "名",
+      "ja": "パレット（荷物を載せる台）",
+      "note": ""
+    },
+    "shipment": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷、積荷",
+      "note": ""
+    },
+    "stock": {
+      "lemma": "stock",
+      "pos": "名",
+      "ja": "在庫、商品",
+      "note": "多義語。「株式」の意味もある"
+    }
+  },
+  "point": {
+    "lead": "チャットは1往復ごとに「誰が何を頼み、相手がどう答えたか」を追う",
+    "items": [
+      {
+        "title": "主題は最初の1往復で決まる",
+        "body": "チャット形式の文書は、最初の質問と最初の返事で何の話かが確定する。残りは細部と結論なので、主題を問う設問はそこだけ読んで片づけ、時間を意図の設問に回す。"
+      },
+      {
+        "title": "意図の設問は引用の1つ前を読む",
+        "body": "That's cutting it close のような一言は、単独では意味が決まらない。直前の発言が状況を作り、引用がその評価になっている。引用を訳そうとせず、何を受けての発言かを見る。"
+      },
+      {
+        "title": "結論は I'll … の形で出る",
+        "body": "やり取りの終盤には、どちらかが I'll ask …、I'll let … と引き受ける発言が来る。「誰が何をすることになったか」を問う設問は、ここを探せば一度で見つかる。"
+      }
+    ]
+  }
+}

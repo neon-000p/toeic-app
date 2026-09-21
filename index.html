@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-20 f74440c">
+<meta name="app-build" content="2026-09-21 1ce116e">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -125,7 +125,7 @@ a.row .w{color:var(--accent)}
   var newsAll = false;   /* 時事英語の一覧を全部出すか */
 
   /* パート番号 → そのパートの教材。増えたらここに読み込む */
-  var drills = { '3': [], '4': [], '5': [], '6': [] };
+  var drills = { '3': [], '4': [], '5': [], '6': [], '7': [] };
 
   function progressOf(id) { return T.Log.progress('news:' + id); }
 
@@ -191,7 +191,7 @@ a.row .w{color:var(--accent)}
     { n: '4', name: '説明文', note: 'アナウンス・留守電・スピーチ', ready: true },
     { n: '5', name: '短文穴埋め', note: '文法と語彙・1セット10問', ready: true },
     { n: '6', name: '長文穴埋め', note: '文脈に合う語と一文挿入・1セット4問', ready: true },
-    { n: '7', name: '読解', note: '単一文書・複数文書', ready: false }
+    { n: '7', name: '読解', note: '単一文書・複数文書', ready: true }
   ];
 
   function drillStatus(part, id) {
@@ -327,13 +327,15 @@ a.row .w{color:var(--accent)}
     loadIndex('data/part3/index.json'),
     loadIndex('data/part4/index.json'),
     loadIndex('data/part5/index.json'),
-    loadIndex('data/part6/index.json')
+    loadIndex('data/part6/index.json'),
+    loadIndex('data/part7/index.json')
   ]).then(function (r) {
     items = r[0];
     drills['3'] = T.numberSets(r[1]);
     drills['4'] = T.numberSets(r[2]);
     drills['5'] = T.numberSets(r[3]);
     drills['6'] = T.numberSets(r[4]);
+    drills['7'] = T.numberSets(r[5]);
     render();
   });
 

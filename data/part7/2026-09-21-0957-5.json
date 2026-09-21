@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-09-21-0957-5",
+  "date": "2026-09-21",
+  "time": "09:57",
+  "createdAt": "2026-09-21T09:57:00+09:00",
+  "sample": false,
+  "format": "double",
+  "scene": "広告＋問い合わせ｜保管スペースの契約",
+  "intro": "Questions 1-5 refer to the following advertisement and e-mail.",
+  "docs": [
+    {
+      "docType": "advertisement",
+      "label": "広告",
+      "header": [
+        {
+          "label": "",
+          "text": "Pinewood Storage — Space for Every Business"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Pinewood Storage has units from fifty to four hundred square feet near the north motorway.",
+              "ja": "パインウッド・ストレージでは、北の幹線道路近くに50〜400平方フィートの区画をご用意しています。"
+            },
+            {
+              "en": "All units are heated, and the site is open from six in the morning until ten at night.",
+              "ja": "全区画に暖房があり、施設は朝6時から夜10時まで開いています。"
+            },
+            {
+              "en": "Units larger than two hundred square feet include the free use of loading equipment.",
+              "ja": "200平方フィートを超える区画では、荷役機材を無料でご利用いただけます。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Monthly rates start at ninety dollars, and customers who pay for a year receive one month free.",
+              "ja": "月額は90ドルからで、1年分を前払いのお客さまには1か月分を無料でお付けします。"
+            },
+            {
+              "en": "A refundable deposit of one hundred dollars is required when the contract is signed.",
+              "ja": "契約時に、返金可能な100ドルの保証金をお預かりします。"
+            },
+            {
+              "en": "Call 555-0188 or visit our office on Pinewood Lane to arrange a tour.",
+              "ja": "見学のご予約は555-0188、またはパインウッド通りの事務所までご連絡ください。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "docType": "email",
+      "label": "メール",
+      "header": [
+        {
+          "label": "To",
+          "text": "Pinewood Storage"
+        },
+        {
+          "label": "From",
+          "text": "Naomi Okafor, Little Bridge Crafts"
+        },
+        {
+          "label": "Subject",
+          "text": "Unit for November"
+        },
+        {
+          "label": "Date",
+          "text": "12 October"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "I visited your office last week and would like to rent a unit of two hundred and fifty square feet.",
+              "ja": "先週お伺いしました。250平方フィートの区画を借りたいと考えています。"
+            },
+            {
+              "en": "Our shop is moving in November, so we need the space from the first of that month.",
+              "ja": "店舗が11月に移転するため、11月1日からその場所が必要です。"
+            },
+            {
+              "en": "Our current unit at another site is too small for the new stock we carry.",
+              "ja": "別の施設にある今の区画は、新しく扱う商品には手狭です。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Could you confirm that the deposit can be paid by bank transfer?",
+              "ja": "保証金は銀行振込で支払えるか、ご確認いただけますか。"
+            },
+            {
+              "en": "We would also like to pay for the full year to take advantage of the offer you mentioned.",
+              "ja": "ご案内いただいた特典を利用したいので、1年分をまとめて支払うつもりです。"
+            },
+            {
+              "en": "Please send the contract to this address, and I will return it by Friday.",
+              "ja": "契約書をこのアドレスにお送りいただければ、金曜までに返送します。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is being advertised?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Space for storing goods",
+          "ja": "荷物を保管する場所"
+        },
+        {
+          "key": "B",
+          "text": "A delivery service for shops",
+          "ja": "店舗向けの配送サービス"
+        },
+        {
+          "key": "C",
+          "text": "Office space in a new building",
+          "ja": "新築ビルの事務所"
+        },
+        {
+          "key": "D",
+          "text": "Equipment for moving furniture",
+          "ja": "家具を運ぶ機材"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "広告の第1文で「50〜400平方フィートの区画を用意している」と述べ、以降も料金と保証金の話が続く。D の機材は200平方フィートを超える区画の特典として出るだけで、それ自体を売っているのではない。",
+      "tip": "広告の主題は見出しと第1文で決まる。特典やおまけを主題と取り違えないよう、何にお金を払うのかを見る。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What will Ms. Okafor receive with her unit?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A discount on the deposit",
+          "ja": "保証金の割引"
+        },
+        {
+          "key": "B",
+          "text": "The free use of loading equipment",
+          "ja": "荷役機材の無料利用"
+        },
+        {
+          "key": "C",
+          "text": "Delivery of her stock to the site",
+          "ja": "商品の搬入"
+        },
+        {
+          "key": "D",
+          "text": "A longer opening time at the site",
+          "ja": "施設の延長利用"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 2
+        },
+        {
+          "d": 1,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": true,
+      "explanation": "広告に「200平方フィートを超える区画は荷役機材が無料」とあり、メールでオカフォーさんは250平方フィートの区画を希望している。2つを合わせて初めて決まる。A の保証金は100ドルと決まっており、割引には触れていない。",
+      "tip": "広告に「〜を超える場合」という条件があれば、もう一方の文書に当てはまる数字が書かれていないかを探す。複数文書はこの形の設問がほぼ必ず入る。"
+    },
+    {
+      "id": "q3",
+      "type": "detail",
+      "prompt": "What is required when the contract is signed?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A bank reference",
+          "ja": "銀行の照会状"
+        },
+        {
+          "key": "B",
+          "text": "A year of payments in advance",
+          "ja": "1年分の前払い"
+        },
+        {
+          "key": "C",
+          "text": "A refundable deposit",
+          "ja": "返金可能な保証金"
+        },
+        {
+          "key": "D",
+          "text": "A tour of the site",
+          "ja": "施設の見学"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "広告の第2段落に「契約時に返金可能な100ドルの保証金を預かる」とある。B の1年分の前払いは1か月無料になる条件であって、契約に必須ではない。D の見学は希望者向けの案内。",
+      "tip": "required / must / need の近くに答えがある。条件と義務は別物なので、「〜すれば得をする」と「〜しなければならない」を読み分ける。"
+    },
+    {
+      "id": "q4",
+      "type": "infer",
+      "prompt": "What is suggested about Little Bridge Crafts?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It has closed its shop permanently",
+          "ja": "店舗を完全に閉めた"
+        },
+        {
+          "key": "B",
+          "text": "It shares a unit with another business",
+          "ja": "他社と区画を共有している"
+        },
+        {
+          "key": "C",
+          "text": "It has been a customer for many years",
+          "ja": "長年の顧客である"
+        },
+        {
+          "key": "D",
+          "text": "It has more goods than it used to",
+          "ja": "以前より扱う商品が増えている"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 1,
+          "p": 0,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "「今の区画は新しく扱う商品には手狭だ」とあることから、扱う量が増えたと示唆される。A は11月に移転するとあるだけで、閉店したとは書かれていない。C は先週初めて事務所を訪れた様子で、長年の顧客とは読めない。",
+      "tip": "too small / no longer enough のような表現は、状況が変わったことを示す。示唆を問う設問は、こうした比較の表現を探すと根拠が見つかる。"
+    },
+    {
+      "id": "q5",
+      "type": "notTrue",
+      "prompt": "What is NOT stated about Pinewood Storage?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The units are heated",
+          "ja": "区画に暖房がある"
+        },
+        {
+          "key": "B",
+          "text": "The site closes at ten at night",
+          "ja": "施設は夜10時に閉まる"
+        },
+        {
+          "key": "C",
+          "text": "Tours can be arranged by telephone",
+          "ja": "電話で見学を予約できる"
+        },
+        {
+          "key": "D",
+          "text": "Insurance is included in the monthly rate",
+          "ja": "月額に保険が含まれる"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 1
+        },
+        {
+          "d": 0,
+          "p": 1,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "暖房と夜10時までの営業は第1段落に、電話での見学の予約は第2段落の最後に書かれている。保険については、広告にもメールにも記述がない。",
+      "tip": "NOT 問題の選択肢は、たいてい本文の順に並んでいる。上から順に本文で消していくと、探し直しが減る。"
+    }
+  ],
+  "glossary": {
+    "square feet": {
+      "lemma": "square foot",
+      "pos": "名",
+      "ja": "平方フィート",
+      "note": "面積の単位。複数形は feet"
+    },
+    "loading equipment": {
+      "lemma": "loading equipment",
+      "pos": "名",
+      "ja": "荷役機材",
+      "note": "load（積み込む）から"
+    },
+    "monthly rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "料金、率",
+      "note": "多義語。「速度」「割合」の意味もある"
+    },
+    "refundable deposit": {
+      "lemma": "refundable deposit",
+      "pos": "名",
+      "ja": "返金可能な保証金",
+      "note": "deposit は「手付金・預け金」"
+    },
+    "arrange a tour": {
+      "lemma": "arrange",
+      "pos": "動",
+      "ja": "手配する、段取りをつける",
+      "note": ""
+    },
+    "bank transfer": {
+      "lemma": "bank transfer",
+      "pos": "名",
+      "ja": "銀行振込",
+      "note": ""
+    },
+    "take advantage of": {
+      "lemma": "take advantage of",
+      "pos": "熟",
+      "ja": "（機会を）利用する",
+      "note": "悪用の意味になる場合もある"
+    },
+    "stock we carry": {
+      "lemma": "carry",
+      "pos": "動",
+      "ja": "（商品を）扱う",
+      "note": "多義語。店が品を置く意味"
+    },
+    "motorway": {
+      "lemma": "motorway",
+      "pos": "名",
+      "ja": "幹線道路、高速道路",
+      "note": "米国では highway / freeway"
+    },
+    "contract": {
+      "lemma": "contract",
+      "pos": "名",
+      "ja": "契約、契約書",
+      "note": ""
+    }
+  },
+  "point": {
+    "lead": "広告の条件文（〜を超える場合）と、メールの数字を突き合わせる",
+    "items": [
+      {
+        "title": "条件文に印を付けてから2つ目へ進む",
+        "body": "広告や案内には「200平方フィートを超える区画は」「1年分を払えば」のような条件が必ず入る。ここが複数文書の設問の作りどころなので、1つ目を読む段階で条件を拾っておく。"
+      },
+      {
+        "title": "義務と特典を読み分ける",
+        "body": "required / must は必ずやること、receive / include は満たせば得られること。設問が「契約時に必要なもの」を聞いているのに特典を選ぶ、という取り違えが起きやすい。"
+      },
+      {
+        "title": "NOT 問題の選択肢は本文の順に並ぶ",
+        "body": "4つの選択肢は、たいてい本文に出てくる順に並んでいる。上から順に本文で消していけば、探し直しが減って1問あたりの時間が縮む。"
+      }
+    ]
+  }
+}

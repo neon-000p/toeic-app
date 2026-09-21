@@ -14,6 +14,7 @@ part3.html           Part 3 トレーナー（会話1本＋3問・5ステップ�
 part4.html           Part 4 トレーナー（説明文1本＋3問・5ステップ）
 part5.html           Part 5 トレーナー（短文穴埋め10問・4ステップ）
 part6.html           Part 6 トレーナー（文書1本＋4問・5ステップ）
+part7.html           Part 7 トレーナー（読解・5ステップ）
 core.js              共通コア（設定・語彙帳・学習ログ・読み上げ）
 style.css            共通スタイル（色・部品）
 data/news/index.json 目次（新しい順・最大30件）
@@ -22,12 +23,14 @@ data/part3/*.json    Part 3 の1セット
 data/part4/*.json    Part 4 の1セット
 data/part5/*.json    Part 5 の1セット（10問）
 data/part6/*.json    Part 6 の1セット（文書1本＋4問）
+data/part7/*.json    Part 7 の1セット（単一文書または複数文書）
 SCHEMA.md            教材データの仕様
 skills/news-toeic-english.SKILL.md  ルーティン側のスキル（ステップ5に JSON 出力を追加済み）
 skills/part3.SKILL.md               Part 3 ルーティンの仕様書
 skills/part4.SKILL.md               Part 4 ルーティンの仕様書
 skills/part5.SKILL.md               Part 5 ルーティンの仕様書
 skills/part6.SKILL.md               Part 6 ルーティンの仕様書
+skills/part7.SKILL.md               Part 7 ルーティンの仕様書
 ```
 
 `core.js` と `style.css` は今後 `part3.html` などからも読む。同一オリジンなので
@@ -68,6 +71,7 @@ node tools/check-part3.js --all
 node tools/check-part4.js --all
 node tools/check-part5.js --all
 node tools/check-part6.js --all
+node tools/check-part7.js --all
 ```
 
 音声は書かない。`data/part3/` `data/part4/` に JSON が入ると GitHub Actions が
@@ -138,10 +142,23 @@ Part 3 と同じ5ステップ（設問 → 解説 → 対訳 → 語彙 → Poin
   ▶ で1文、見出しの ▶ で文書全体を読み上げる（端末の読み上げ）
 - 場面は最初から表示する。文書を全部見せる以上、伏せる意味がないため
 
+## Part 7（読解）
+
+本番と同じ単位で1セット。**単一文書**（文書1本＋2〜4問）と**複数文書**（文書2本＋5問）の
+両方があり、5ステップ（設問 → 解説 → 対訳 → 語彙 → Point）。
+
+- **複数文書には「両方を見ないと解けない設問」が入る。** 片方に条件（会員価格・割引）、
+  もう片方に数字（日程表の金額）が書かれていて、突き合わせて初めて答えが出る。
+  解説ではその設問に「2つの文書」の印が付く
+- **解説に根拠の引用が出る。** 「メール　第1段落 2文目」のように、どの文書のどこかも
+  添えるので、外したときに本文のどこを見落としたかが分かる
+- **文位置挿入**（`insert`）のセットでは、本文に `[1]`〜`[4]` の印が入り、入れる文が
+  枠で示される。**意図を問う設問**（`intent`）はチャット形式の文書で使う
+- 対訳は文書ごとに見出しが付き、▶ で1文、見出しの ▶ で全体を読み上げる（端末の読み上げ）
+
 ## まだ無いもの
 
 - 学習記録の可視化（現在は連続日数のみ）
-- Part 7
 
 ## 語の意味（Gemini）
 
