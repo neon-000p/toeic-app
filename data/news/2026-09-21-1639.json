@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-21-1639",
+  "date": "2026-09-21",
+  "time": "16:39",
+  "createdAt": "2026-09-21T16:39:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Samsung Reclaims the Top Spot in Global Smartphone Shipments",
+    "ja": "サムスン、スマホ出荷で世界首位に返り咲き"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "While the global smartphone market shrank 7% in the first half of 2026, Samsung Electronics reported a 9% rise in shipments.",
+            "ja": "2026年上半期、世界のスマートフォン市場全体が7%縮小する中、サムスン電子は出荷台数が9%増加したと発表した。"
+          },
+          {
+            "en": "The gain, reported by Counterpoint Research, pushed Samsung back into first place worldwide.",
+            "ja": "この増加により、調査会社カウンターポイント・リサーチの集計でサムスンは世界首位に返り咲いた。"
+          },
+          {
+            "en": "Samsung held a 22% share of shipments, just ahead of Apple's 21% share.",
+            "ja": "サムスンの出荷台数シェアは22%で、アップルの21%をわずかに上回った。"
+          },
+          {
+            "en": "The two companies have rarely been this close in recent years.",
+            "ja": "両社がこれほど僅差になるのは近年珍しいことだ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The tight race reflects a sharp jump in memory chip prices this year, which raised the cost of building phones for every maker.",
+            "ja": "この僅差の背景には、今年のメモリー半導体価格の急騰があり、どのメーカーにとってもスマートフォンの製造コストを押し上げている。"
+          },
+          {
+            "en": "Samsung makes many of its own memory chips, so it could manage costs better than rivals that must buy them on the open market.",
+            "ja": "サムスンは自社でメモリー半導体を多く製造しているため、市場で調達しなければならない競合他社よりもコストを抑えやすかった。"
+          },
+          {
+            "en": "Apple still earns far more profit per phone, since iPhones sell at higher average prices than Samsung's devices.",
+            "ja": "それでもアップルは1台当たりの利益ではサムスンを大きく上回る。iPhoneの平均販売価格がサムスン製品より高いためだ。"
+          },
+          {
+            "en": "Smaller brands such as Xiaomi have struggled more, as thinner margins leave them less room to absorb rising component costs.",
+            "ja": "シャオミのような小規模ブランドはより苦戦している。利益率が薄く、部品コストの上昇を吸収する余地が少ないためだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How large was Samsung's share of global smartphone shipments in the first half of 2026?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "18%",
+          "ja": "18%"
+        },
+        {
+          "key": "B",
+          "text": "20%",
+          "ja": "20%"
+        },
+        {
+          "key": "C",
+          "text": "21%",
+          "ja": "21%"
+        },
+        {
+          "key": "D",
+          "text": "22%",
+          "ja": "22%"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解はD(22%)。本文3文目に「Samsung held a 22% share of shipments, just ahead of Apple's 21% share.」とあり、サムスンのシェアは22%と明記されている。(C)の21%は本文に登場する数字だが、それはアップルのシェアであり、サムスンの数字と取り違えさせる典型的な引っかけ。(A)(B)は本文に登場しない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "似た数字が複数登場する設問では、それぞれの数字がどの主語(企業)に対応するかを本文で正確に確認することが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why could Samsung manage rising costs better than some rivals?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It sells phones only in South Korea",
+          "ja": "韓国内でのみ販売しているため"
+        },
+        {
+          "key": "B",
+          "text": "It makes many of its own memory chips",
+          "ja": "自社でメモリー半導体を多く製造しているため"
+        },
+        {
+          "key": "C",
+          "text": "It stopped selling budget models",
+          "ja": "低価格帯モデルの販売をやめたため"
+        },
+        {
+          "key": "D",
+          "text": "It merged with a chip maker",
+          "ja": "半導体メーカーと合併したため"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。本文5文目「Samsung makes many of its own memory chips, so it could manage costs better than rivals that must buy them on the open market.」が根拠。(A)韓国内限定での販売、(C)低価格帯モデルの取りやめ、(D)半導体メーカーとの合併は、いずれも本文に記載のない情報であり、本文にない情報を選ばせる誤答パターン。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由を問う設問では、so / because / since のような因果関係を示す語の前後に根拠が来ることが多いので、そこに注目するとよい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "shrink",
+      "pos": "動",
+      "ja": "縮小する",
+      "gloss": "",
+      "example": {
+        "en": "Sales shrank sharply during the recession.",
+        "ja": "不況の間、売上は大きく縮小した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "rival",
+      "pos": "名",
+      "ja": "競合相手、ライバル",
+      "gloss": "",
+      "example": {
+        "en": "The company outperformed its biggest rival last quarter.",
+        "ja": "その企業は前四半期、最大の競合相手を上回る業績を上げた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "margin",
+      "pos": "名",
+      "ja": "利益率、マージン",
+      "gloss": "",
+      "example": {
+        "en": "Thin margins make it hard to absorb rising costs.",
+        "ja": "利益率が薄いと、コスト上昇を吸収するのが難しくなる。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "absorb",
+      "pos": "動",
+      "ja": "吸収する、（コストなどを）負担する",
+      "gloss": "",
+      "example": {
+        "en": "The firm decided to absorb the extra shipping cost itself.",
+        "ja": "その企業は追加の配送費用を自社で負担することにした。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "component",
+      "pos": "名",
+      "ja": "部品、構成要素",
+      "gloss": "",
+      "example": {
+        "en": "Rising component prices squeezed the factory's profit.",
+        "ja": "部品価格の上昇が工場の利益を圧迫した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "reflect",
+      "pos": "動",
+      "ja": "反映する",
+      "gloss": "",
+      "example": {
+        "en": "The price increase reflects higher raw material costs.",
+        "ja": "値上げは原材料費の上昇を反映したものだ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "gloss": "",
+      "example": {
+        "en": "The company reported strong profit despite a tough market.",
+        "ja": "厳しい市場環境にもかかわらず、その企業は好調な利益を計上した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "gain",
+      "pos": "名",
+      "ja": "増加、伸び",
+      "gloss": "",
+      "example": {
+        "en": "The company's gain in market share surprised analysts.",
+        "ja": "その企業の市場シェアの増加はアナリストを驚かせた。"
+      }
+    }
+  ],
+  "glossary": {
+    "shrank": {
+      "lemma": "shrink",
+      "pos": "v",
+      "ja": "縮小した",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "n",
+      "ja": "出荷、出荷台数",
+      "note": ""
+    },
+    "gain": {
+      "lemma": "gain",
+      "pos": "n",
+      "ja": "増加、伸び",
+      "note": ""
+    },
+    "worldwide": {
+      "lemma": "worldwide",
+      "pos": "adv",
+      "ja": "世界的に",
+      "note": ""
+    },
+    "share": {
+      "lemma": "share",
+      "pos": "n",
+      "ja": "シェア、占有率",
+      "note": ""
+    },
+    "ahead": {
+      "lemma": "ahead",
+      "pos": "adv",
+      "ja": "先んじて、上回って",
+      "note": "ahead of で「〜より先に」"
+    },
+    "rarely": {
+      "lemma": "rarely",
+      "pos": "adv",
+      "ja": "めったに〜ない",
+      "note": ""
+    },
+    "tight": {
+      "lemma": "tight",
+      "pos": "adj",
+      "ja": "僅差の、拮抗した",
+      "note": ""
+    },
+    "race": {
+      "lemma": "race",
+      "pos": "n",
+      "ja": "競争、レース",
+      "note": ""
+    },
+    "reflects": {
+      "lemma": "reflect",
+      "pos": "v",
+      "ja": "反映している",
+      "note": ""
+    },
+    "sharp": {
+      "lemma": "sharp",
+      "pos": "adj",
+      "ja": "急激な",
+      "note": ""
+    },
+    "jump": {
+      "lemma": "jump",
+      "pos": "n",
+      "ja": "急上昇、急騰",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "v",
+      "ja": "押し上げた",
+      "note": ""
+    },
+    "maker": {
+      "lemma": "maker",
+      "pos": "n",
+      "ja": "メーカー、製造業者",
+      "note": ""
+    },
+    "manage": {
+      "lemma": "manage",
+      "pos": "v",
+      "ja": "何とかやりくりする、管理する",
+      "note": ""
+    },
+    "rivals": {
+      "lemma": "rival",
+      "pos": "n",
+      "ja": "競合他社",
+      "note": ""
+    },
+    "earns": {
+      "lemma": "earn",
+      "pos": "v",
+      "ja": "稼ぐ、得る",
+      "note": ""
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "n",
+      "ja": "利益",
+      "note": ""
+    },
+    "average": {
+      "lemma": "average",
+      "pos": "adj",
+      "ja": "平均の",
+      "note": ""
+    },
+    "devices": {
+      "lemma": "device",
+      "pos": "n",
+      "ja": "端末、機器",
+      "note": ""
+    },
+    "brands": {
+      "lemma": "brand",
+      "pos": "n",
+      "ja": "ブランド、銘柄",
+      "note": ""
+    },
+    "struggled": {
+      "lemma": "struggle",
+      "pos": "v",
+      "ja": "苦戦した",
+      "note": ""
+    },
+    "thinner": {
+      "lemma": "thin",
+      "pos": "adj",
+      "ja": "薄い（比較級）",
+      "note": ""
+    },
+    "margins": {
+      "lemma": "margin",
+      "pos": "n",
+      "ja": "利益率",
+      "note": ""
+    },
+    "absorb": {
+      "lemma": "absorb",
+      "pos": "v",
+      "ja": "吸収する、負担する",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "v",
+      "ja": "上昇している",
+      "note": ""
+    },
+    "component": {
+      "lemma": "component",
+      "pos": "n",
+      "ja": "部品",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "n",
+      "ja": "コスト、費用",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "譲歩・対照を表す接続詞 while（〜する一方で）",
+    "quote": "While the global smartphone market shrank 7% in the first half of 2026, Samsung Electronics reported a 9% rise in shipments.",
+    "quoteJa": "2026年上半期、世界のスマートフォン市場全体が7%縮小する中、サムスン電子は出荷台数が9%増加したと発表した。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "while は「〜している間」という時間の意味だけでなく、ここでは「〜する一方で」「〜であるのに対して」という対照・譲歩を表す接続詞として使われている。While S1 V1, S2 V2. という形で、前半の「市場全体は縮小した」という事実と、後半の「サムスンは増加した」という対照的な事実を1文でつなぎ、対比を際立たせている。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "同じ内容は Although the global smartphone market shrank 7%, Samsung Electronics reported a 9% rise in shipments. のように although に置き換えても意味はほぼ同じである。ただし while は時と対照の両方に使えるのに対し、although は対照・譲歩専用という違いがある。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6では while と during、although と despite の使い分けを問う空所補充が頻出する。while / although の後ろには〈主語＋動詞〉の節が続き、during / despite の後ろには名詞（句）が続く点を必ず確認する。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "While demand for our budget models declined, sales of our premium line increased steadily. のように、部門別・製品別の対照的な実績を1文でまとめる際によく使われる構文である。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 メモリー半導体価格高騰の仕組み",
+      "body": "スマートフォンにはDRAMやNAND型フラッシュメモリーと呼ばれる半導体部品が使われている。これらはデータセンター向けのAI需要急増によって世界的に品薄となり、2026年に入って価格が大きく上昇した。スマートフォン1台あたりの製造コストに占めるメモリーの比率が高まったことで、メーカー各社は値上げか利益率の圧縮のどちらかを迫られている。"
+    },
+    {
+      "heading": "📌 業界全体・競合の動向",
+      "body": "サムスンは自社グループ内に半導体工場を持つため、値上がりしたメモリーを外部から調達する必要が少なく、価格上昇の影響を比較的抑えられた。一方、シャオミやオッポなど自社で半導体を作らない中国勢は、原価上昇をそのまま製品価格に転嫁せざるを得ず、値上げによる販売減少に直面しやすい。"
+    },
+    {
+      "heading": "📌 日本企業・日本人ビジネスパーソンへの示唆",
+      "body": "日本の電機・部品メーカーにとっても、メモリー価格の高騰は他人事ではない。データセンターやPC向け部品を供給する日本企業には追い風となる一方、スマートフォンや家電を国内外で販売する企業にとっては仕入れコストの上昇要因になる。調達部門や営業部門では、取引先との価格交渉や在庫戦略を見直す動きが今後強まるとみられる。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "投資家にとっては、出荷台数のシェアだけでなく「利益率をどれだけ守れているか」を見る必要がある。サムスンは首位を奪還したものの、アップルは台数で劣っても1台あたりの利益では依然として優位に立つ。経営者にとっては、原材料費が急騰する局面でも自社で川上工程を持つことがリスクヘッジになるという教訓が読み取れる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Samsung Outpaces Apple to Secure the Top Spot in H1 2026 Despite Market Downturn",
+      "publisher": "AndroidHeadlines",
+      "url": "https://www.androidheadlines.com/2026/09/samsung-reclaims-global-smartphone-market-lead-h1-2026.html",
+      "date": "2026-09-18"
+    },
+    {
+      "title": "Samsung topped the global smartphone market in H1 2026, and it wasn't even close",
+      "publisher": "IntoMobile",
+      "url": "https://www.intomobile.com/2026/09/18/samsung-topped-the-global-smartphone-market-in-h1-2026-and-it-wasnt-even-close/",
+      "date": "2026-09-18"
+    }
+  ]
+}
