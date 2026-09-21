@@ -442,5 +442,22 @@
       "url": "https://www.intomobile.com/2026/09/18/samsung-topped-the-global-smartphone-market-in-h1-2026-and-it-wasnt-even-close/",
       "date": "2026-09-18"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-21-1639/00.mp3",
+      "audio/2026-09-21-1639/01.mp3",
+      "audio/2026-09-21-1639/02.mp3",
+      "audio/2026-09-21-1639/03.mp3",
+      "audio/2026-09-21-1639/04.mp3",
+      "audio/2026-09-21-1639/05.mp3",
+      "audio/2026-09-21-1639/06.mp3",
+      "audio/2026-09-21-1639/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 237864,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-21T07:46:06.342Z",
+    "trimmed": true
+  }
 }
