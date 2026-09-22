@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-23-0553",
+  "date": "2026-09-23",
+  "time": "05:53",
+  "createdAt": "2026-09-23T05:53:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "Novo Nordisk's Job Cuts Balloon to 13,000, Far More Than Planned",
+    "ja": "ノボノルディスク、人員削減13,000人に拡大"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Novo Nordisk, a Danish drugmaker, has cut 13,000 jobs over the past year.",
+            "ja": "デンマークの製薬会社ノボノルディスクは、この1年で13,000人分の雇用を削減した。"
+          },
+          {
+            "en": "That is far more than the 9,000 cuts it first announced in 2025.",
+            "ja": "これは、2025年に最初に発表した9,000人という数字を大きく上回る。"
+          },
+          {
+            "en": "The company shared the new total this week, saying it now employs about 66,000 people worldwide.",
+            "ja": "同社は今週この最新の数字を明らかにし、現在の従業員数は世界で約66,000人になったと述べた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The job cuts have already saved the company more than 10 billion Danish kroner.",
+            "ja": "この人員削減により、同社はすでに100億デンマーク・クローネ以上のコストを削減した。"
+          },
+          {
+            "en": "Novo Nordisk plans to reinvest that money in new medicines through 2030.",
+            "ja": "ノボノルディスクは、そのお金を2030年までに新薬の開発に再投資する計画だ。"
+          },
+          {
+            "en": "Investors were unimpressed, and the stock fell about 8% after the announcement.",
+            "ja": "投資家の反応は芳しくなく、発表後に株価は約8%下落した。"
+          },
+          {
+            "en": "They are worried about a key patent expiring in 2032 and growing competition in the weight-loss drug market.",
+            "ja": "投資家は、2032年に主要な特許が切れることや、肥満治療薬市場での競争激化を懸念している。"
+          },
+          {
+            "en": "The bigger-than-expected cuts show how much cost pressure drugmakers face even while sales are growing.",
+            "ja": "予想を上回る人員削減は、売上が伸びていても製薬会社がどれほどのコスト圧力に直面しているかを物語っている。"
+          },
+          {
+            "en": "Analysts say the company is racing to protect profits before cheaper rivals enter the market.",
+            "ja": "アナリストによれば、同社は安価な競合薬が市場に参入する前に、利益を守ろうと急いでいるという。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many jobs has Novo Nordisk cut over the past year, according to the company?",
+      "choices": [
+        { "key": "A", "text": "9,000", "ja": "9,000人" },
+        { "key": "B", "text": "13,000", "ja": "13,000人" },
+        { "key": "C", "text": "66,000", "ja": "66,000人" },
+        { "key": "D", "text": "10 billion", "ja": "100億" }
+      ],
+      "answer": "B",
+      "explanation": "本文第1段落1文目に「13,000人分の雇用を削減した」と明記されている。(A)9,000は2025年に最初に発表した際の予定数であり、今回の実績値とは異なるため誤り。(C)66,000は削減後の現在の全従業員数であり、削減された人数ではないため誤り。(D)100億(デンマーク・クローネ)は削減によって浮いた金額であり、人数ではないため誤り。",
+      "evidence": { "p": 0, "s": 0 },
+      "tip": "本文に複数の数字が登場する問題では、それぞれの数字が「今回の実績」「以前の予定」「別の指標」のどれを表しているかを区別して読むことが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did Novo Nordisk's stock fall after the announcement, according to the article?",
+      "choices": [
+        { "key": "A", "text": "Because sales unexpectedly dropped this quarter", "ja": "今四半期の売上が予想外に落ち込んだから" },
+        { "key": "B", "text": "Because of worries about a key patent and rising competition", "ja": "主要特許と競争激化への懸念のため" },
+        { "key": "C", "text": "Because the company missed its profit target", "ja": "会社が利益目標を達成できなかったから" },
+        { "key": "D", "text": "Because it announced a new chief executive", "ja": "新しい最高経営責任者を発表したから" }
+      ],
+      "answer": "B",
+      "explanation": "本文第2段落4文目に「投資家は、2032年に主要な特許が切れることや、肥満治療薬市場での競争激化を懸念している」とあり、これが株価下落の理由として明記されている。(A)売上が落ち込んだという記述は本文になく、むしろ売上は伸びているとあるため誤り。(C)利益目標未達についての記述は本文になく誤り。(D)新しい経営トップの発表についての記述も本文になく誤り。",
+      "evidence": { "p": 1, "s": 3 },
+      "tip": "理由を問う設問は \"because\" のような単語だけを探すのではなく、\"They are worried about ~\" のように感情や反応の原因を述べる文脈全体を丁寧に追うことが解法のポイント。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "drugmaker",
+      "pos": "名",
+      "ja": "製薬会社",
+      "gloss": "",
+      "example": {
+        "en": "The drugmaker announced a new pricing plan for its products.",
+        "ja": "その製薬会社は自社製品の新しい価格プランを発表した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "cut",
+      "pos": "名・動",
+      "ja": "削減（する）",
+      "gloss": "",
+      "example": {
+        "en": "The company announced another round of job cuts last month.",
+        "ja": "その会社は先月、追加の人員削減を発表した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "reinvest",
+      "pos": "動",
+      "ja": "再投資する",
+      "gloss": "",
+      "example": {
+        "en": "The firm plans to reinvest its profits in new equipment.",
+        "ja": "その企業は利益を新しい設備に再投資する計画だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "patent",
+      "pos": "名",
+      "ja": "特許",
+      "gloss": "",
+      "example": {
+        "en": "The firm holds several patents on its manufacturing process.",
+        "ja": "その企業は製造工程に関する複数の特許を保有している。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "competition",
+      "pos": "名",
+      "ja": "競争",
+      "gloss": "",
+      "example": {
+        "en": "Competition in the smartphone market has grown fiercer this year.",
+        "ja": "スマートフォン市場での競争は今年さらに激化した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "gloss": "",
+      "example": {
+        "en": "Rising costs put pressure on the company's profit margins.",
+        "ja": "コスト上昇が同社の利益率を圧迫した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "gloss": "",
+      "example": {
+        "en": "The retailer's profits rose 5% despite weaker sales.",
+        "ja": "その小売業者の利益は、売上が弱かったにもかかわらず5%増加した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "rival",
+      "pos": "名",
+      "ja": "競合相手",
+      "gloss": "",
+      "example": {
+        "en": "The airline cut fares to compete with its rivals.",
+        "ja": "その航空会社は競合他社に対抗するため運賃を引き下げた。"
+      }
+    }
+  ],
+  "glossary": {
+    "drugmaker": { "lemma": "drugmaker", "pos": "n", "ja": "製薬会社", "note": "" },
+    "cut": { "lemma": "cut", "pos": "v", "ja": "削減した", "note": "" },
+    "cuts": { "lemma": "cut", "pos": "n", "ja": "削減(件数)", "note": "" },
+    "announced": { "lemma": "announce", "pos": "v", "ja": "発表した", "note": "" },
+    "employs": { "lemma": "employ", "pos": "v", "ja": "雇用する", "note": "" },
+    "worldwide": { "lemma": "worldwide", "pos": "adv", "ja": "世界中で", "note": "" },
+    "saved": { "lemma": "save", "pos": "v", "ja": "節約した", "note": "" },
+    "reinvest": { "lemma": "reinvest", "pos": "v", "ja": "再投資する", "note": "" },
+    "medicines": { "lemma": "medicine", "pos": "n", "ja": "医薬品", "note": "" },
+    "investors": { "lemma": "investor", "pos": "n", "ja": "投資家", "note": "" },
+    "unimpressed": { "lemma": "unimpressed", "pos": "adj", "ja": "感心しない", "note": "" },
+    "stock": { "lemma": "stock", "pos": "n", "ja": "株価", "note": "" },
+    "fell": { "lemma": "fall", "pos": "v", "ja": "下落した", "note": "" },
+    "announcement": { "lemma": "announcement", "pos": "n", "ja": "発表", "note": "" },
+    "worried": { "lemma": "worried", "pos": "adj", "ja": "心配している", "note": "" },
+    "patent": { "lemma": "patent", "pos": "n", "ja": "特許", "note": "" },
+    "expiring": { "lemma": "expire", "pos": "v", "ja": "失効する", "note": "" },
+    "competition": { "lemma": "competition", "pos": "n", "ja": "競争", "note": "" },
+    "drugmakers": { "lemma": "drugmaker", "pos": "n", "ja": "製薬会社(複数)", "note": "" },
+    "pressure": { "lemma": "pressure", "pos": "n", "ja": "圧力", "note": "" },
+    "sales": { "lemma": "sale", "pos": "n", "ja": "売上", "note": "" },
+    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト", "note": "" },
+    "racing": { "lemma": "race", "pos": "v", "ja": "急いでいる", "note": "" },
+    "protect": { "lemma": "protect", "pos": "v", "ja": "守る", "note": "" },
+    "profits": { "lemma": "profit", "pos": "n", "ja": "利益", "note": "" },
+    "cheaper": { "lemma": "cheap", "pos": "adj", "ja": "より安い", "note": "" },
+    "rivals": { "lemma": "rival", "pos": "n", "ja": "競合相手", "note": "" },
+    "enter": { "lemma": "enter", "pos": "v", "ja": "参入する", "note": "" }
+  },
+  "grammar": {
+    "topic": "比較級を強調する副詞 far（比較級の強調用法）",
+    "quote": "That is far more than the 9,000 cuts it first announced in 2025.",
+    "quoteJa": "これは、2025年に最初に発表した9,000人という数字を大きく上回る。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "far more than は、比較級 more than を副詞 far で強調した形。比較級を「はるかに」「ずっと」と強めたいとき、比較級の直前に far / much / a lot / even などの副詞を置く。veryは比較級を直接修飾できない点に注意が必要（\"very more\" は誤り）。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "強調の強さを変えることもできる。\"That is much more than the 9,000 cuts.\"（かなり多い）、\"That is a lot more than the 9,000 cuts.\"（やや口語的）、\"That is slightly more than the 9,000 cuts.\"（わずかに多い、弱い強調）のように、副詞を変えることでニュアンスを調整できる。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、比較級の直前の空所に far / much / even / a lot などの強調副詞を選ばせる語彙問題が頻出する。veryやsoを誤って選ばせる紛らわしい選択肢がよく出題されるため、比較級を修飾できる副詞の種類を正確に覚えておく必要がある。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"Sales this quarter were far higher than expected.\"（今四半期の売上は予想をはるかに上回った）や \"The new plant's output is much greater than last year's.\"（新工場の生産量は昨年をはるかに上回る）のように、業績報告や比較分析の文書で頻繁に使われる表現である。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜ人員削減が想定より膨らんだのか",
+      "body": "ノボノルディスクは肥満治療薬・糖尿病治療薬で急成長してきた企業だが、主力薬の特許が2032年に切れることを見据え、開発体制やコスト構造の見直しを迫られている。当初9,000人としていた削減計画が結果的に13,000人まで膨らんだのは、想定以上に組織のスリム化が必要だったことを示している。"
+    },
+    {
+      "heading": "📌 業界・競合の動向",
+      "body": "肥満治療薬市場では、米国の製薬大手が同種の薬で存在感を強めており、価格競争や新薬開発競争が激しくなっている。特許切れ後は安価な後発薬が参入しやすくなるため、各社は今のうちに次の柱となる新薬を育てておく必要に迫られている。"
+    },
+    {
+      "heading": "📌 日本企業・日本人ビジネスパーソンへの示唆",
+      "body": "日本でも製薬業界を中心に、特許切れ（パテントクリフ）を見据えた事業再編は珍しくない。海外本社の大規模な人員削減は、日本法人の組織体制や採用計画にも波及することがあるため、グローバル企業で働く場合はこうした決定の背景を英語ニュースで追う習慣が役立つ。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "人員削減という「コスト削減策」を発表しても、株価が上昇するとは限らない。今回のように、将来の収益源への不安が勝れば株価は下落する。経営者にとっては、コスト削減の実行力だけでなく、削減後の成長戦略を投資家にどれだけ具体的に説得できるかが問われる局面といえる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Novo cuts 13,000 jobs in a year",
+      "publisher": "The Irish Times",
+      "url": "https://www.irishtimes.com/business/2026/09/21/novo-cuts-13000-jobs-in-a-year/",
+      "date": "2026-09-21"
+    },
+    {
+      "title": "Job cuts at Denmark's Novo much larger than first expected",
+      "publisher": "The Local Denmark",
+      "url": "https://www.thelocal.dk/20260921/job-cuts-at-denmarks-novo-much-larger-than-first-expected",
+      "date": "2026-09-21"
+    },
+    {
+      "title": "Novo cuts workforce by 13,000, outlines $23 bn growth plan amid GLP-1 battle",
+      "publisher": "HRKatha",
+      "url": "https://www.hrkatha.com/news/novo-cuts-workforce-by-13000-outlines-23-bn-growth-plan-amid-glp-1-battle/",
+      "date": "2026-09-21"
+    }
+  ]
+}
