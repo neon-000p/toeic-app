@@ -68,14 +68,33 @@
       "type": "detail",
       "prompt": "How many jobs has Novo Nordisk cut over the past year, according to the company?",
       "choices": [
-        { "key": "A", "text": "9,000", "ja": "9,000人" },
-        { "key": "B", "text": "13,000", "ja": "13,000人" },
-        { "key": "C", "text": "66,000", "ja": "66,000人" },
-        { "key": "D", "text": "10 billion", "ja": "100億" }
+        {
+          "key": "A",
+          "text": "9,000",
+          "ja": "9,000人"
+        },
+        {
+          "key": "B",
+          "text": "13,000",
+          "ja": "13,000人"
+        },
+        {
+          "key": "C",
+          "text": "66,000",
+          "ja": "66,000人"
+        },
+        {
+          "key": "D",
+          "text": "10 billion",
+          "ja": "100億"
+        }
       ],
       "answer": "B",
       "explanation": "本文第1段落1文目に「13,000人分の雇用を削減した」と明記されている。(A)9,000は2025年に最初に発表した際の予定数であり、今回の実績値とは異なるため誤り。(C)66,000は削減後の現在の全従業員数であり、削減された人数ではないため誤り。(D)100億(デンマーク・クローネ)は削減によって浮いた金額であり、人数ではないため誤り。",
-      "evidence": { "p": 0, "s": 0 },
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
       "tip": "本文に複数の数字が登場する問題では、それぞれの数字が「今回の実績」「以前の予定」「別の指標」のどれを表しているかを区別して読むことが重要。"
     },
     {
@@ -83,14 +102,33 @@
       "type": "reason",
       "prompt": "Why did Novo Nordisk's stock fall after the announcement, according to the article?",
       "choices": [
-        { "key": "A", "text": "Because sales unexpectedly dropped this quarter", "ja": "今四半期の売上が予想外に落ち込んだから" },
-        { "key": "B", "text": "Because of worries about a key patent and rising competition", "ja": "主要特許と競争激化への懸念のため" },
-        { "key": "C", "text": "Because the company missed its profit target", "ja": "会社が利益目標を達成できなかったから" },
-        { "key": "D", "text": "Because it announced a new chief executive", "ja": "新しい最高経営責任者を発表したから" }
+        {
+          "key": "A",
+          "text": "Because sales unexpectedly dropped this quarter",
+          "ja": "今四半期の売上が予想外に落ち込んだから"
+        },
+        {
+          "key": "B",
+          "text": "Because of worries about a key patent and rising competition",
+          "ja": "主要特許と競争激化への懸念のため"
+        },
+        {
+          "key": "C",
+          "text": "Because the company missed its profit target",
+          "ja": "会社が利益目標を達成できなかったから"
+        },
+        {
+          "key": "D",
+          "text": "Because it announced a new chief executive",
+          "ja": "新しい最高経営責任者を発表したから"
+        }
       ],
       "answer": "B",
       "explanation": "本文第2段落4文目に「投資家は、2032年に主要な特許が切れることや、肥満治療薬市場での競争激化を懸念している」とあり、これが株価下落の理由として明記されている。(A)売上が落ち込んだという記述は本文になく、むしろ売上は伸びているとあるため誤り。(C)利益目標未達についての記述は本文になく誤り。(D)新しい経営トップの発表についての記述も本文になく誤り。",
-      "evidence": { "p": 1, "s": 3 },
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
       "tip": "理由を問う設問は \"because\" のような単語だけを探すのではなく、\"They are worried about ~\" のように感情や反応の原因を述べる文脈全体を丁寧に追うことが解法のポイント。"
     }
   ],
@@ -185,34 +223,174 @@
     }
   ],
   "glossary": {
-    "drugmaker": { "lemma": "drugmaker", "pos": "n", "ja": "製薬会社", "note": "" },
-    "cut": { "lemma": "cut", "pos": "v", "ja": "削減した", "note": "" },
-    "cuts": { "lemma": "cut", "pos": "n", "ja": "削減(件数)", "note": "" },
-    "announced": { "lemma": "announce", "pos": "v", "ja": "発表した", "note": "" },
-    "employs": { "lemma": "employ", "pos": "v", "ja": "雇用する", "note": "" },
-    "worldwide": { "lemma": "worldwide", "pos": "adv", "ja": "世界中で", "note": "" },
-    "saved": { "lemma": "save", "pos": "v", "ja": "節約した", "note": "" },
-    "reinvest": { "lemma": "reinvest", "pos": "v", "ja": "再投資する", "note": "" },
-    "medicines": { "lemma": "medicine", "pos": "n", "ja": "医薬品", "note": "" },
-    "investors": { "lemma": "investor", "pos": "n", "ja": "投資家", "note": "" },
-    "unimpressed": { "lemma": "unimpressed", "pos": "adj", "ja": "感心しない", "note": "" },
-    "stock": { "lemma": "stock", "pos": "n", "ja": "株価", "note": "" },
-    "fell": { "lemma": "fall", "pos": "v", "ja": "下落した", "note": "" },
-    "announcement": { "lemma": "announcement", "pos": "n", "ja": "発表", "note": "" },
-    "worried": { "lemma": "worried", "pos": "adj", "ja": "心配している", "note": "" },
-    "patent": { "lemma": "patent", "pos": "n", "ja": "特許", "note": "" },
-    "expiring": { "lemma": "expire", "pos": "v", "ja": "失効する", "note": "" },
-    "competition": { "lemma": "competition", "pos": "n", "ja": "競争", "note": "" },
-    "drugmakers": { "lemma": "drugmaker", "pos": "n", "ja": "製薬会社(複数)", "note": "" },
-    "pressure": { "lemma": "pressure", "pos": "n", "ja": "圧力", "note": "" },
-    "sales": { "lemma": "sale", "pos": "n", "ja": "売上", "note": "" },
-    "analysts": { "lemma": "analyst", "pos": "n", "ja": "アナリスト", "note": "" },
-    "racing": { "lemma": "race", "pos": "v", "ja": "急いでいる", "note": "" },
-    "protect": { "lemma": "protect", "pos": "v", "ja": "守る", "note": "" },
-    "profits": { "lemma": "profit", "pos": "n", "ja": "利益", "note": "" },
-    "cheaper": { "lemma": "cheap", "pos": "adj", "ja": "より安い", "note": "" },
-    "rivals": { "lemma": "rival", "pos": "n", "ja": "競合相手", "note": "" },
-    "enter": { "lemma": "enter", "pos": "v", "ja": "参入する", "note": "" }
+    "drugmaker": {
+      "lemma": "drugmaker",
+      "pos": "n",
+      "ja": "製薬会社",
+      "note": ""
+    },
+    "cut": {
+      "lemma": "cut",
+      "pos": "v",
+      "ja": "削減した",
+      "note": ""
+    },
+    "cuts": {
+      "lemma": "cut",
+      "pos": "n",
+      "ja": "削減(件数)",
+      "note": ""
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "v",
+      "ja": "発表した",
+      "note": ""
+    },
+    "employs": {
+      "lemma": "employ",
+      "pos": "v",
+      "ja": "雇用する",
+      "note": ""
+    },
+    "worldwide": {
+      "lemma": "worldwide",
+      "pos": "adv",
+      "ja": "世界中で",
+      "note": ""
+    },
+    "saved": {
+      "lemma": "save",
+      "pos": "v",
+      "ja": "節約した",
+      "note": ""
+    },
+    "reinvest": {
+      "lemma": "reinvest",
+      "pos": "v",
+      "ja": "再投資する",
+      "note": ""
+    },
+    "medicines": {
+      "lemma": "medicine",
+      "pos": "n",
+      "ja": "医薬品",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "n",
+      "ja": "投資家",
+      "note": ""
+    },
+    "unimpressed": {
+      "lemma": "unimpressed",
+      "pos": "adj",
+      "ja": "感心しない",
+      "note": ""
+    },
+    "stock": {
+      "lemma": "stock",
+      "pos": "n",
+      "ja": "株価",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "v",
+      "ja": "下落した",
+      "note": ""
+    },
+    "announcement": {
+      "lemma": "announcement",
+      "pos": "n",
+      "ja": "発表",
+      "note": ""
+    },
+    "worried": {
+      "lemma": "worried",
+      "pos": "adj",
+      "ja": "心配している",
+      "note": ""
+    },
+    "patent": {
+      "lemma": "patent",
+      "pos": "n",
+      "ja": "特許",
+      "note": ""
+    },
+    "expiring": {
+      "lemma": "expire",
+      "pos": "v",
+      "ja": "失効する",
+      "note": ""
+    },
+    "competition": {
+      "lemma": "competition",
+      "pos": "n",
+      "ja": "競争",
+      "note": ""
+    },
+    "drugmakers": {
+      "lemma": "drugmaker",
+      "pos": "n",
+      "ja": "製薬会社(複数)",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "n",
+      "ja": "圧力",
+      "note": ""
+    },
+    "sales": {
+      "lemma": "sale",
+      "pos": "n",
+      "ja": "売上",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "n",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "racing": {
+      "lemma": "race",
+      "pos": "v",
+      "ja": "急いでいる",
+      "note": ""
+    },
+    "protect": {
+      "lemma": "protect",
+      "pos": "v",
+      "ja": "守る",
+      "note": ""
+    },
+    "profits": {
+      "lemma": "profit",
+      "pos": "n",
+      "ja": "利益",
+      "note": ""
+    },
+    "cheaper": {
+      "lemma": "cheap",
+      "pos": "adj",
+      "ja": "より安い",
+      "note": ""
+    },
+    "rivals": {
+      "lemma": "rival",
+      "pos": "n",
+      "ja": "競合相手",
+      "note": ""
+    },
+    "enter": {
+      "lemma": "enter",
+      "pos": "v",
+      "ja": "参入する",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "比較級を強調する副詞 far（比較級の強調用法）",
@@ -274,5 +452,23 @@
       "url": "https://www.hrkatha.com/news/novo-cuts-workforce-by-13000-outlines-23-bn-growth-plan-amid-glp-1-battle/",
       "date": "2026-09-21"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-23-0553/00.mp3",
+      "audio/2026-09-23-0553/01.mp3",
+      "audio/2026-09-23-0553/02.mp3",
+      "audio/2026-09-23-0553/03.mp3",
+      "audio/2026-09-23-0553/04.mp3",
+      "audio/2026-09-23-0553/05.mp3",
+      "audio/2026-09-23-0553/06.mp3",
+      "audio/2026-09-23-0553/07.mp3",
+      "audio/2026-09-23-0553/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 214293,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-22T20:56:48.112Z",
+    "trimmed": true
+  }
 }
