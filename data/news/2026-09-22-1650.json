@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-22-1650",
+  "date": "2026-09-22",
+  "time": "16:50",
+  "createdAt": "2026-09-22T16:50:00+09:00",
+  "genre": "医療",
+  "genreEn": "Healthcare",
+  "sample": false,
+  "title": {
+    "en": "South Korea Cuts Health Insurance Prices for 80 Widely Used Drugs",
+    "ja": "韓国、医薬品80品目の保険薬価を引き下げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "South Korea's National Health Insurance Service has lowered the prices of 80 common medicines.",
+            "ja": "韓国の国民健康保険公団は、一般的な医薬品80品目の価格を引き下げた。"
+          },
+          {
+            "en": "The change took effect on September 1.",
+            "ja": "この変更は9月1日から施行された。"
+          },
+          {
+            "en": "On average, the prices fell by 4.6 percent, saving the government about 33.9 billion won a year.",
+            "ja": "平均して薬価は4.6%下落し、政府は年間約339億ウォンを削減できる見込みだ。"
+          },
+          {
+            "en": "The cuts came under a rule called a price-volume agreement.",
+            "ja": "今回の引き下げは「価格・数量連動制」と呼ばれる制度に基づくものだ。"
+          },
+          {
+            "en": "Under this rule, a drug's price drops automatically when insurance claims for it rise sharply.",
+            "ja": "この制度のもとでは、ある薬剤への保険請求が急増すると、その薬の価格が自動的に下がる。"
+          },
+          {
+            "en": "Demand for these medicines had grown quickly this year.",
+            "ja": "これらの医薬品の需要は今年に入って急速に伸びていた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "One drug affected is Remsima, a biologic medicine made by Celltrion for autoimmune diseases.",
+            "ja": "今回値下げの対象となった薬剤の一つが、セルトリオンが製造する自己免疫疾患用のバイオ医薬品「レムシマ」だ。"
+          },
+          {
+            "en": "Its price also dropped under the new rule.",
+            "ja": "レムシマの価格も、この新制度のもとで引き下げられた。"
+          },
+          {
+            "en": "Medicines for high blood pressure and high cholesterol made up 43.2 percent of this year's price cuts.",
+            "ja": "高血圧・高脂血症治療薬は、今年の薬価引き下げ全体の43.2%を占めた。"
+          },
+          {
+            "en": "Experts say this reflects an aging population and more chronic illness.",
+            "ja": "専門家は、これは高齢化の進行と慢性疾患の増加を反映していると指摘する。"
+          },
+          {
+            "en": "Lower prices help the health insurance system control costs.",
+            "ja": "薬価の引き下げは、健康保険制度の財政負担を抑えるのに役立つ。"
+          },
+          {
+            "en": "However, drugmakers may see smaller profits from their best-selling products.",
+            "ja": "一方で、製薬企業にとっては主力製品の利益が縮小する可能性もある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did the average price of the 80 medicines fall?",
+      "choices": [
+        { "key": "A", "text": "2.6 percent", "ja": "2.6%" },
+        { "key": "B", "text": "3.6 percent", "ja": "3.6%" },
+        { "key": "C", "text": "4.6 percent", "ja": "4.6%" },
+        { "key": "D", "text": "5.6 percent", "ja": "5.6%" }
+      ],
+      "answer": "C",
+      "explanation": "本文(1)の第3文に「On average, the prices fell by 4.6 percent」と明記されている。(A)2.6%、(B)3.6%、(D)5.6%はいずれも本文に登場しない数字で、正しい数字の桁や語感を似せた紛らわしい選択肢。TOEIC Part 7では、本文中の数値をそのまま覚えるのではなく、設問が問う対象(下落率か、節約額か)を正確に区別することが重要。",
+      "evidence": { "p": 0, "s": 2 },
+      "tip": "数字が複数登場する文章では、それぞれの数字が「何の数値か」をメモしながら読むと、似た数字の選択肢に惑わされにくい。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why does a drug's price drop automatically under the price-volume agreement?",
+      "choices": [
+        { "key": "A", "text": "Because a court orders the price cut", "ja": "裁判所が値下げを命じるから" },
+        { "key": "B", "text": "Because the drug's patent has expired", "ja": "薬の特許が切れるから" },
+        { "key": "C", "text": "Because insurance claims for the drug rise sharply", "ja": "その薬への保険請求が急増するから" },
+        { "key": "D", "text": "Because the manufacturer asks for a lower price", "ja": "メーカーが値下げを要請するから" }
+      ],
+      "answer": "C",
+      "explanation": "本文(1)の第5文に「a drug's price drops automatically when insurance claims for it rise sharply」とあり、価格・数量連動制は保険請求(claims)が急増した薬の価格を自動的に引き下げる仕組みであることが分かる。(A)裁判所の命令、(B)特許切れ、(D)メーカーからの要請はいずれも本文に記載がなく誤り。",
+      "evidence": { "p": 0, "s": 4 },
+      "tip": "理由を問う設問では、本文中の when や under this rule など因果関係を示す語句の直後に根拠があることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1, "term": "lower", "pos": "動", "ja": "下げる、引き下げる",
+      "gloss": "",
+      "example": { "en": "The company decided to lower its prices to compete with rivals.", "ja": "その企業はライバル社に対抗するため価格を引き下げることにした。" }
+    },
+    {
+      "no": 2, "term": "take effect", "pos": "熟", "ja": "効力を生じる、施行される",
+      "gloss": "",
+      "example": { "en": "The new policy will take effect next month.", "ja": "新しい方針は来月から施行される。" }
+    },
+    {
+      "no": 3, "term": "on average", "pos": "熟", "ja": "平均して",
+      "gloss": "",
+      "example": { "en": "On average, sales rose by 10 percent this quarter.", "ja": "今四半期、売上は平均して10%伸びた。" }
+    },
+    {
+      "no": 4, "term": "save", "pos": "動", "ja": "節約する、削減する",
+      "gloss": "",
+      "example": { "en": "The new system helped the firm save on shipping costs.", "ja": "新しいシステムのおかげで、その会社は配送コストを削減できた。" }
+    },
+    {
+      "no": 5, "term": "claim", "pos": "名", "ja": "（保険の）請求",
+      "gloss": "",
+      "example": { "en": "Customers must submit a claim within 30 days.", "ja": "顧客は30日以内に請求を提出しなければならない。" }
+    },
+    {
+      "no": 6, "term": "automatically", "pos": "副", "ja": "自動的に",
+      "gloss": "",
+      "example": { "en": "The invoice is generated automatically once the order ships.", "ja": "注文品が発送されると、請求書が自動的に発行される。" }
+    },
+    {
+      "no": 7, "term": "reflect", "pos": "動", "ja": "反映する",
+      "gloss": "",
+      "example": { "en": "The report reflects the company's strong performance this year.", "ja": "その報告書は、今年の会社の好調な業績を反映している。" }
+    },
+    {
+      "no": 8, "term": "biologic", "pos": "形・名", "ja": "生物学的製剤（の）",
+      "gloss": "（＝生物由来の成分から作られる薬のこと）",
+      "example": { "en": "The biologic drug is more expensive to produce than a regular pill.", "ja": "そのバイオ医薬品は、通常の錠剤よりも製造コストが高い。" }
+    }
+  ],
+  "glossary": {
+    "lowered": { "lemma": "lower", "pos": "v", "ja": "引き下げた", "note": "" },
+    "prices": { "lemma": "price", "pos": "n", "ja": "価格", "note": "" },
+    "medicines": { "lemma": "medicine", "pos": "n", "ja": "医薬品", "note": "" },
+    "effect": { "lemma": "effect", "pos": "n", "ja": "効力、施行", "note": "take effectで「施行される」の意味" },
+    "average": { "lemma": "average", "pos": "n", "ja": "平均", "note": "" },
+    "fell": { "lemma": "fall", "pos": "v", "ja": "下落した", "note": "" },
+    "percent": { "lemma": "percent", "pos": "n", "ja": "パーセント", "note": "" },
+    "saving": { "lemma": "save", "pos": "v", "ja": "節約する（こと）", "note": "" },
+    "billion": { "lemma": "billion", "pos": "n", "ja": "10億", "note": "" },
+    "cuts": { "lemma": "cut", "pos": "n", "ja": "引き下げ、削減", "note": "" },
+    "rule": { "lemma": "rule", "pos": "n", "ja": "規則、制度", "note": "" },
+    "agreement": { "lemma": "agreement", "pos": "n", "ja": "協定、合意", "note": "" },
+    "drops": { "lemma": "drop", "pos": "v", "ja": "下がる", "note": "" },
+    "automatically": { "lemma": "automatically", "pos": "adv", "ja": "自動的に", "note": "" },
+    "claims": { "lemma": "claim", "pos": "n", "ja": "請求", "note": "" },
+    "rise": { "lemma": "rise", "pos": "v", "ja": "上昇する", "note": "" },
+    "sharply": { "lemma": "sharply", "pos": "adv", "ja": "急激に", "note": "" },
+    "demand": { "lemma": "demand", "pos": "n", "ja": "需要", "note": "" },
+    "grown": { "lemma": "grow", "pos": "v", "ja": "増加した", "note": "" },
+    "affected": { "lemma": "affect", "pos": "v", "ja": "影響を受けた", "note": "" },
+    "biologic": { "lemma": "biologic", "pos": "n", "ja": "生物学的製剤", "note": "" },
+    "autoimmune": { "lemma": "autoimmune", "pos": "adj", "ja": "自己免疫の", "note": "" },
+    "cholesterol": { "lemma": "cholesterol", "pos": "n", "ja": "コレステロール", "note": "" },
+    "reflects": { "lemma": "reflect", "pos": "v", "ja": "反映する", "note": "" },
+    "aging": { "lemma": "aging", "pos": "n", "ja": "高齢化", "note": "" },
+    "chronic": { "lemma": "chronic", "pos": "adj", "ja": "慢性の", "note": "" },
+    "drugmakers": { "lemma": "drugmaker", "pos": "n", "ja": "製薬会社", "note": "" },
+    "profits": { "lemma": "profit", "pos": "n", "ja": "利益", "note": "" }
+  },
+  "grammar": {
+    "topic": "時・条件を表す接続詞 when（〜すると、〜する時に）",
+    "quote": "Under this rule, a drug's price drops automatically when insurance claims for it rise sharply.",
+    "quoteJa": "この制度のもとでは、ある薬剤への保険請求が急増すると、その薬の価格が自動的に下がる。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "when は「〜する時に」という時を表す接続詞だが、この文のように現在形＋現在形の組み合わせで一般的な決まりごとを述べると、「〜すると必ず…する」という条件に近い意味になる。ここでは、保険請求が急増するという出来事と、価格が自動的に下がるという結果を結び付けて、制度の仕組みそのものを説明している。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "同じ内容は If insurance claims for a drug rise sharply, its price drops automatically. のように if を使っても表せる。when は「起こることが前提の出来事」、if は「起こるかどうか分からない出来事」に使うのが基本的な使い分けだが、この文のような一般法則の説明では両方とも使え、意味の差はほとんどない。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、when の後ろに続く節の動詞の形（時制の一致）を問う空所補充問題が頻出する。特に、主節が現在形で一般的な事実を表す文では、when節も現在形になる点に注意したい。Part 7では、この文のように制度や契約のルールを説明する一文の中で使われ、「何が起きると、何が起こるのか」という因果関係を正確に読み取れるかが問われる。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "契約書や社内規定でも同様の構文がよく使われる。例：Employees will receive a bonus when the company's annual profit exceeds its target.（会社の年間利益が目標を上回ると、社員はボーナスを受け取る。）このように when は、ビジネス文書で「条件を満たすと自動的に何かが起こる」というルールを説明する際によく使われる。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 制度の仕組み：「価格・数量連動制」とは",
+      "body": "韓国の「価格・数量連動制（Type C）」は、ある医薬品への保険請求（保険が支払った金額や件数）が想定より大きく伸びた場合に、その薬の価格を自動的に引き下げる仕組みだ。需要が急増した薬ほど保険財政への負担も大きくなるため、あらかじめ決めたルールに沿って価格を調整することで、国の医療保険制度の支出を抑える狙いがある。今回は81品目が対象となり、うち80品目で実際に価格が引き下げられた。"
+    },
+    {
+      "heading": "📌 業界・競合動向",
+      "body": "対象には、セルトリオンのレムシマのような自己免疫疾患治療用のバイオ医薬品や、高血圧・高脂血症治療薬が多く含まれる。特に生活習慣病の治療薬は今年の値下げ対象全体の43.2%を占めており、患者数の多い薬ほど値下げの対象になりやすい構図が浮かび上がる。韓国ではこうした薬価引き下げに加え、今年に入ってジェネリック医薬品の価格制度そのものも見直されており、製薬・バイオ業界全体にとって薬価をめぐる規制環境が厳しくなっている。"
+    },
+    {
+      "heading": "📌 日本企業・日本経済への示唆",
+      "body": "日本でも高齢化に伴う医療費の増加が長年の課題であり、薬価は原則として2年に一度、近年はさらに頻繁に見直される仕組みが導入されている。韓国のように「需要が急増した薬を自動的に値下げする」制度は、日本の薬価改定のあり方を考える上でも参考になる。日本の製薬会社やジェネリック医薬品・バイオシミラーを手がける企業にとっても、海外市場でこうした薬価抑制策が広がっていることは、将来の売上計画を立てる上で無視できない要素だ。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "薬価の引き下げは、患者や保険財政にとってはプラスだが、製薬企業にとっては主力製品の売上・利益率が下がる要因になる。投資家は、ある企業の売上に占める「値下げ対象になりやすい薬」の比率を見て、将来の収益への影響を見積もる必要がある。経営者の視点では、値下げの影響を受けにくい新薬の開発や、複数の国・製品に事業を分散させることが、こうした薬価規制リスクへの備えとして重要になる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Korea Cuts Prices of 80 Drugs, Saving 33.9 Billion Won",
+      "publisher": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/technology/2026/09/18/korea-cuts-prices-of-80-drugs-saving-339-billion-won",
+      "date": "2026-09-18"
+    },
+    {
+      "title": "NHIS Reduces Prices for 80 Drug Items to Cut Healthcare Costs",
+      "publisher": "Archynewsy",
+      "url": "https://www.archynewsy.com/nhis-reduces-prices-for-80-drug-items-to-cut-healthcare-costs/",
+      "date": "2026-09-18"
+    }
+  ]
+}
