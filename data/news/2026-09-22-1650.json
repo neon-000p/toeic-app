@@ -80,14 +80,33 @@
       "type": "detail",
       "prompt": "By how much did the average price of the 80 medicines fall?",
       "choices": [
-        { "key": "A", "text": "2.6 percent", "ja": "2.6%" },
-        { "key": "B", "text": "3.6 percent", "ja": "3.6%" },
-        { "key": "C", "text": "4.6 percent", "ja": "4.6%" },
-        { "key": "D", "text": "5.6 percent", "ja": "5.6%" }
+        {
+          "key": "A",
+          "text": "2.6 percent",
+          "ja": "2.6%"
+        },
+        {
+          "key": "B",
+          "text": "3.6 percent",
+          "ja": "3.6%"
+        },
+        {
+          "key": "C",
+          "text": "4.6 percent",
+          "ja": "4.6%"
+        },
+        {
+          "key": "D",
+          "text": "5.6 percent",
+          "ja": "5.6%"
+        }
       ],
       "answer": "C",
       "explanation": "本文(1)の第3文に「On average, the prices fell by 4.6 percent」と明記されている。(A)2.6%、(B)3.6%、(D)5.6%はいずれも本文に登場しない数字で、正しい数字の桁や語感を似せた紛らわしい選択肢。TOEIC Part 7では、本文中の数値をそのまま覚えるのではなく、設問が問う対象(下落率か、節約額か)を正確に区別することが重要。",
-      "evidence": { "p": 0, "s": 2 },
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
       "tip": "数字が複数登場する文章では、それぞれの数字が「何の数値か」をメモしながら読むと、似た数字の選択肢に惑わされにくい。"
     },
     {
@@ -95,88 +114,295 @@
       "type": "reason",
       "prompt": "According to the article, why does a drug's price drop automatically under the price-volume agreement?",
       "choices": [
-        { "key": "A", "text": "Because a court orders the price cut", "ja": "裁判所が値下げを命じるから" },
-        { "key": "B", "text": "Because the drug's patent has expired", "ja": "薬の特許が切れるから" },
-        { "key": "C", "text": "Because insurance claims for the drug rise sharply", "ja": "その薬への保険請求が急増するから" },
-        { "key": "D", "text": "Because the manufacturer asks for a lower price", "ja": "メーカーが値下げを要請するから" }
+        {
+          "key": "A",
+          "text": "Because a court orders the price cut",
+          "ja": "裁判所が値下げを命じるから"
+        },
+        {
+          "key": "B",
+          "text": "Because the drug's patent has expired",
+          "ja": "薬の特許が切れるから"
+        },
+        {
+          "key": "C",
+          "text": "Because insurance claims for the drug rise sharply",
+          "ja": "その薬への保険請求が急増するから"
+        },
+        {
+          "key": "D",
+          "text": "Because the manufacturer asks for a lower price",
+          "ja": "メーカーが値下げを要請するから"
+        }
       ],
       "answer": "C",
       "explanation": "本文(1)の第5文に「a drug's price drops automatically when insurance claims for it rise sharply」とあり、価格・数量連動制は保険請求(claims)が急増した薬の価格を自動的に引き下げる仕組みであることが分かる。(A)裁判所の命令、(B)特許切れ、(D)メーカーからの要請はいずれも本文に記載がなく誤り。",
-      "evidence": { "p": 0, "s": 4 },
+      "evidence": {
+        "p": 0,
+        "s": 4
+      },
       "tip": "理由を問う設問では、本文中の when や under this rule など因果関係を示す語句の直後に根拠があることが多い。"
     }
   ],
   "vocabulary": [
     {
-      "no": 1, "term": "lower", "pos": "動", "ja": "下げる、引き下げる",
+      "no": 1,
+      "term": "lower",
+      "pos": "動",
+      "ja": "下げる、引き下げる",
       "gloss": "",
-      "example": { "en": "The company decided to lower its prices to compete with rivals.", "ja": "その企業はライバル社に対抗するため価格を引き下げることにした。" }
+      "example": {
+        "en": "The company decided to lower its prices to compete with rivals.",
+        "ja": "その企業はライバル社に対抗するため価格を引き下げることにした。"
+      }
     },
     {
-      "no": 2, "term": "take effect", "pos": "熟", "ja": "効力を生じる、施行される",
+      "no": 2,
+      "term": "take effect",
+      "pos": "熟",
+      "ja": "効力を生じる、施行される",
       "gloss": "",
-      "example": { "en": "The new policy will take effect next month.", "ja": "新しい方針は来月から施行される。" }
+      "example": {
+        "en": "The new policy will take effect next month.",
+        "ja": "新しい方針は来月から施行される。"
+      }
     },
     {
-      "no": 3, "term": "on average", "pos": "熟", "ja": "平均して",
+      "no": 3,
+      "term": "on average",
+      "pos": "熟",
+      "ja": "平均して",
       "gloss": "",
-      "example": { "en": "On average, sales rose by 10 percent this quarter.", "ja": "今四半期、売上は平均して10%伸びた。" }
+      "example": {
+        "en": "On average, sales rose by 10 percent this quarter.",
+        "ja": "今四半期、売上は平均して10%伸びた。"
+      }
     },
     {
-      "no": 4, "term": "save", "pos": "動", "ja": "節約する、削減する",
+      "no": 4,
+      "term": "save",
+      "pos": "動",
+      "ja": "節約する、削減する",
       "gloss": "",
-      "example": { "en": "The new system helped the firm save on shipping costs.", "ja": "新しいシステムのおかげで、その会社は配送コストを削減できた。" }
+      "example": {
+        "en": "The new system helped the firm save on shipping costs.",
+        "ja": "新しいシステムのおかげで、その会社は配送コストを削減できた。"
+      }
     },
     {
-      "no": 5, "term": "claim", "pos": "名", "ja": "（保険の）請求",
+      "no": 5,
+      "term": "claim",
+      "pos": "名",
+      "ja": "（保険の）請求",
       "gloss": "",
-      "example": { "en": "Customers must submit a claim within 30 days.", "ja": "顧客は30日以内に請求を提出しなければならない。" }
+      "example": {
+        "en": "Customers must submit a claim within 30 days.",
+        "ja": "顧客は30日以内に請求を提出しなければならない。"
+      }
     },
     {
-      "no": 6, "term": "automatically", "pos": "副", "ja": "自動的に",
+      "no": 6,
+      "term": "automatically",
+      "pos": "副",
+      "ja": "自動的に",
       "gloss": "",
-      "example": { "en": "The invoice is generated automatically once the order ships.", "ja": "注文品が発送されると、請求書が自動的に発行される。" }
+      "example": {
+        "en": "The invoice is generated automatically once the order ships.",
+        "ja": "注文品が発送されると、請求書が自動的に発行される。"
+      }
     },
     {
-      "no": 7, "term": "reflect", "pos": "動", "ja": "反映する",
+      "no": 7,
+      "term": "reflect",
+      "pos": "動",
+      "ja": "反映する",
       "gloss": "",
-      "example": { "en": "The report reflects the company's strong performance this year.", "ja": "その報告書は、今年の会社の好調な業績を反映している。" }
+      "example": {
+        "en": "The report reflects the company's strong performance this year.",
+        "ja": "その報告書は、今年の会社の好調な業績を反映している。"
+      }
     },
     {
-      "no": 8, "term": "biologic", "pos": "形・名", "ja": "生物学的製剤（の）",
+      "no": 8,
+      "term": "biologic",
+      "pos": "形・名",
+      "ja": "生物学的製剤（の）",
       "gloss": "（＝生物由来の成分から作られる薬のこと）",
-      "example": { "en": "The biologic drug is more expensive to produce than a regular pill.", "ja": "そのバイオ医薬品は、通常の錠剤よりも製造コストが高い。" }
+      "example": {
+        "en": "The biologic drug is more expensive to produce than a regular pill.",
+        "ja": "そのバイオ医薬品は、通常の錠剤よりも製造コストが高い。"
+      }
     }
   ],
   "glossary": {
-    "lowered": { "lemma": "lower", "pos": "v", "ja": "引き下げた", "note": "" },
-    "prices": { "lemma": "price", "pos": "n", "ja": "価格", "note": "" },
-    "medicines": { "lemma": "medicine", "pos": "n", "ja": "医薬品", "note": "" },
-    "effect": { "lemma": "effect", "pos": "n", "ja": "効力、施行", "note": "take effectで「施行される」の意味" },
-    "average": { "lemma": "average", "pos": "n", "ja": "平均", "note": "" },
-    "fell": { "lemma": "fall", "pos": "v", "ja": "下落した", "note": "" },
-    "percent": { "lemma": "percent", "pos": "n", "ja": "パーセント", "note": "" },
-    "saving": { "lemma": "save", "pos": "v", "ja": "節約する（こと）", "note": "" },
-    "billion": { "lemma": "billion", "pos": "n", "ja": "10億", "note": "" },
-    "cuts": { "lemma": "cut", "pos": "n", "ja": "引き下げ、削減", "note": "" },
-    "rule": { "lemma": "rule", "pos": "n", "ja": "規則、制度", "note": "" },
-    "agreement": { "lemma": "agreement", "pos": "n", "ja": "協定、合意", "note": "" },
-    "drops": { "lemma": "drop", "pos": "v", "ja": "下がる", "note": "" },
-    "automatically": { "lemma": "automatically", "pos": "adv", "ja": "自動的に", "note": "" },
-    "claims": { "lemma": "claim", "pos": "n", "ja": "請求", "note": "" },
-    "rise": { "lemma": "rise", "pos": "v", "ja": "上昇する", "note": "" },
-    "sharply": { "lemma": "sharply", "pos": "adv", "ja": "急激に", "note": "" },
-    "demand": { "lemma": "demand", "pos": "n", "ja": "需要", "note": "" },
-    "grown": { "lemma": "grow", "pos": "v", "ja": "増加した", "note": "" },
-    "affected": { "lemma": "affect", "pos": "v", "ja": "影響を受けた", "note": "" },
-    "biologic": { "lemma": "biologic", "pos": "n", "ja": "生物学的製剤", "note": "" },
-    "autoimmune": { "lemma": "autoimmune", "pos": "adj", "ja": "自己免疫の", "note": "" },
-    "cholesterol": { "lemma": "cholesterol", "pos": "n", "ja": "コレステロール", "note": "" },
-    "reflects": { "lemma": "reflect", "pos": "v", "ja": "反映する", "note": "" },
-    "aging": { "lemma": "aging", "pos": "n", "ja": "高齢化", "note": "" },
-    "chronic": { "lemma": "chronic", "pos": "adj", "ja": "慢性の", "note": "" },
-    "drugmakers": { "lemma": "drugmaker", "pos": "n", "ja": "製薬会社", "note": "" },
-    "profits": { "lemma": "profit", "pos": "n", "ja": "利益", "note": "" }
+    "lowered": {
+      "lemma": "lower",
+      "pos": "v",
+      "ja": "引き下げた",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "n",
+      "ja": "価格",
+      "note": ""
+    },
+    "medicines": {
+      "lemma": "medicine",
+      "pos": "n",
+      "ja": "医薬品",
+      "note": ""
+    },
+    "effect": {
+      "lemma": "effect",
+      "pos": "n",
+      "ja": "効力、施行",
+      "note": "take effectで「施行される」の意味"
+    },
+    "average": {
+      "lemma": "average",
+      "pos": "n",
+      "ja": "平均",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "v",
+      "ja": "下落した",
+      "note": ""
+    },
+    "percent": {
+      "lemma": "percent",
+      "pos": "n",
+      "ja": "パーセント",
+      "note": ""
+    },
+    "saving": {
+      "lemma": "save",
+      "pos": "v",
+      "ja": "節約する（こと）",
+      "note": ""
+    },
+    "billion": {
+      "lemma": "billion",
+      "pos": "n",
+      "ja": "10億",
+      "note": ""
+    },
+    "cuts": {
+      "lemma": "cut",
+      "pos": "n",
+      "ja": "引き下げ、削減",
+      "note": ""
+    },
+    "rule": {
+      "lemma": "rule",
+      "pos": "n",
+      "ja": "規則、制度",
+      "note": ""
+    },
+    "agreement": {
+      "lemma": "agreement",
+      "pos": "n",
+      "ja": "協定、合意",
+      "note": ""
+    },
+    "drops": {
+      "lemma": "drop",
+      "pos": "v",
+      "ja": "下がる",
+      "note": ""
+    },
+    "automatically": {
+      "lemma": "automatically",
+      "pos": "adv",
+      "ja": "自動的に",
+      "note": ""
+    },
+    "claims": {
+      "lemma": "claim",
+      "pos": "n",
+      "ja": "請求",
+      "note": ""
+    },
+    "rise": {
+      "lemma": "rise",
+      "pos": "v",
+      "ja": "上昇する",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "adv",
+      "ja": "急激に",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "n",
+      "ja": "需要",
+      "note": ""
+    },
+    "grown": {
+      "lemma": "grow",
+      "pos": "v",
+      "ja": "増加した",
+      "note": ""
+    },
+    "affected": {
+      "lemma": "affect",
+      "pos": "v",
+      "ja": "影響を受けた",
+      "note": ""
+    },
+    "biologic": {
+      "lemma": "biologic",
+      "pos": "n",
+      "ja": "生物学的製剤",
+      "note": ""
+    },
+    "autoimmune": {
+      "lemma": "autoimmune",
+      "pos": "adj",
+      "ja": "自己免疫の",
+      "note": ""
+    },
+    "cholesterol": {
+      "lemma": "cholesterol",
+      "pos": "n",
+      "ja": "コレステロール",
+      "note": ""
+    },
+    "reflects": {
+      "lemma": "reflect",
+      "pos": "v",
+      "ja": "反映する",
+      "note": ""
+    },
+    "aging": {
+      "lemma": "aging",
+      "pos": "n",
+      "ja": "高齢化",
+      "note": ""
+    },
+    "chronic": {
+      "lemma": "chronic",
+      "pos": "adj",
+      "ja": "慢性の",
+      "note": ""
+    },
+    "drugmakers": {
+      "lemma": "drugmaker",
+      "pos": "n",
+      "ja": "製薬会社",
+      "note": ""
+    },
+    "profits": {
+      "lemma": "profit",
+      "pos": "n",
+      "ja": "利益",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "時・条件を表す接続詞 when（〜すると、〜する時に）",
@@ -232,5 +458,26 @@
       "url": "https://www.archynewsy.com/nhis-reduces-prices-for-80-drug-items-to-cut-healthcare-costs/",
       "date": "2026-09-18"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-22-1650/00.mp3",
+      "audio/2026-09-22-1650/01.mp3",
+      "audio/2026-09-22-1650/02.mp3",
+      "audio/2026-09-22-1650/03.mp3",
+      "audio/2026-09-22-1650/04.mp3",
+      "audio/2026-09-22-1650/05.mp3",
+      "audio/2026-09-22-1650/06.mp3",
+      "audio/2026-09-22-1650/07.mp3",
+      "audio/2026-09-22-1650/08.mp3",
+      "audio/2026-09-22-1650/09.mp3",
+      "audio/2026-09-22-1650/10.mp3",
+      "audio/2026-09-22-1650/11.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 255996,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-22T07:58:08.643Z",
+    "trimmed": true
+  }
 }
