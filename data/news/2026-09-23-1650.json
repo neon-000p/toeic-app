@@ -8,25 +8,52 @@
   "genre": "物流",
   "genreEn": "Logistics",
   "sample": false,
-  "title": { "en": "Trans-Pacific Freight Rates Surge as Carriers Cut Sailings", "ja": "太平洋航路の運賃急騰、船会社が減便" },
+  "title": {
+    "en": "Trans-Pacific Freight Rates Surge as Carriers Cut Sailings",
+    "ja": "太平洋航路の運賃急騰、船会社が減便"
+  },
   "summary": {
     "paragraphs": [
       {
         "role": "what",
         "sentences": [
-          { "en": "Ocean freight rates between Asia and the United States have jumped sharply this month.", "ja": "アジアと米国を結ぶ海上輸送運賃が今月、急騰している。" },
-          { "en": "Spot rates to the U.S. East Coast hit $11,259 per container on September 17, near a multi-year high.", "ja": "9月17日には米国東海岸向けのスポット運賃がコンテナ1本あたり1万1259ドルに達し、過去数年で最高水準に迫った。" },
-          { "en": "Maersk and MSC have canceled dozens of trans-Pacific sailings ahead of two Chinese holidays this month.", "ja": "マースクとMSCの2社は、今月後半に控える中国の2つの祝日を前に、太平洋航路の便を数十便欠航させている。" },
-          { "en": "The cancellations, known as blank sailings, cut available space just as exporters rush to ship goods before the break.", "ja": "ブランクセーリングと呼ばれるこの欠航により、輸出業者が休暇前に駆け込みで出荷しようとする中、積載スペースが不足している。" }
+          {
+            "en": "Ocean freight rates between Asia and the United States have jumped sharply this month.",
+            "ja": "アジアと米国を結ぶ海上輸送運賃が今月、急騰している。"
+          },
+          {
+            "en": "Spot rates to the U.S. East Coast hit $11,259 per container on September 17, near a multi-year high.",
+            "ja": "9月17日には米国東海岸向けのスポット運賃がコンテナ1本あたり1万1259ドルに達し、過去数年で最高水準に迫った。"
+          },
+          {
+            "en": "Maersk and MSC have canceled dozens of trans-Pacific sailings ahead of two Chinese holidays this month.",
+            "ja": "マースクとMSCの2社は、今月後半に控える中国の2つの祝日を前に、太平洋航路の便を数十便欠航させている。"
+          },
+          {
+            "en": "The cancellations, known as blank sailings, cut available space just as exporters rush to ship goods before the break.",
+            "ja": "ブランクセーリングと呼ばれるこの欠航により、輸出業者が休暇前に駆け込みで出荷しようとする中、積載スペースが不足している。"
+          }
         ]
       },
       {
         "role": "why",
         "sentences": [
-          { "en": "Carriers cancel sailings to keep ships full and to support freight rates, but the tactic worsens port congestion.", "ja": "船会社は船を満載にして運賃を維持するために欠航させるが、この手法は港の混雑も悪化させる。" },
-          { "en": "Trackers say carriers have blanked 18% to 25% of trans-Pacific capacity for late September and early October.", "ja": "業界の調査機関によると、各社は太平洋航路の輸送能力の18〜25%を9月下旬から10月上旬にかけて削減しているという。" },
-          { "en": "China's Mid-Autumn Festival and National Day holiday leave only a few working days in between, squeezing shipments into a narrow window.", "ja": "中国の中秋節と国慶節の間には稼働日がわずかしかなく、工場からの出荷が狭い期間に集中している。" },
-          { "en": "For U.S. importers stocking shelves before year-end, the squeeze means higher costs and tighter deadlines.", "ja": "年末商戦に向けて商品を仕入れる米国の輸入業者にとって、このひっ迫はコスト増と納期の逼迫を意味する。" }
+          {
+            "en": "Carriers cancel sailings to keep ships full and to support freight rates, but the tactic worsens port congestion.",
+            "ja": "船会社は船を満載にして運賃を維持するために欠航させるが、この手法は港の混雑も悪化させる。"
+          },
+          {
+            "en": "Trackers say carriers have blanked 18% to 25% of trans-Pacific capacity for late September and early October.",
+            "ja": "業界の調査機関によると、各社は太平洋航路の輸送能力の18〜25%を9月下旬から10月上旬にかけて削減しているという。"
+          },
+          {
+            "en": "China's Mid-Autumn Festival and National Day holiday leave only a few working days in between, squeezing shipments into a narrow window.",
+            "ja": "中国の中秋節と国慶節の間には稼働日がわずかしかなく、工場からの出荷が狭い期間に集中している。"
+          },
+          {
+            "en": "For U.S. importers stocking shelves before year-end, the squeeze means higher costs and tighter deadlines.",
+            "ja": "年末商戦に向けて商品を仕入れる米国の輸入業者にとって、このひっ迫はコスト増と納期の逼迫を意味する。"
+          }
         ]
       }
     ]
@@ -37,14 +64,33 @@
       "type": "detail",
       "prompt": "According to the article, how much did spot freight rates to the U.S. East Coast reach on September 17?",
       "choices": [
-        { "key": "A", "text": "$8,400 per container", "ja": "コンテナ1本あたり8,400ドル" },
-        { "key": "B", "text": "$9,750 per container", "ja": "コンテナ1本あたり9,750ドル" },
-        { "key": "C", "text": "$11,259 per container", "ja": "コンテナ1本あたり11,259ドル" },
-        { "key": "D", "text": "$13,900 per container", "ja": "コンテナ1本あたり13,900ドル" }
+        {
+          "key": "A",
+          "text": "$8,400 per container",
+          "ja": "コンテナ1本あたり8,400ドル"
+        },
+        {
+          "key": "B",
+          "text": "$9,750 per container",
+          "ja": "コンテナ1本あたり9,750ドル"
+        },
+        {
+          "key": "C",
+          "text": "$11,259 per container",
+          "ja": "コンテナ1本あたり11,259ドル"
+        },
+        {
+          "key": "D",
+          "text": "$13,900 per container",
+          "ja": "コンテナ1本あたり13,900ドル"
+        }
       ],
       "answer": "C",
       "explanation": "本文第1段落2文目に「Spot rates to the U.S. East Coast hit $11,259 per container on September 17」と明記されている。(A)(B)(D) はいずれも本文に登場しない数字で、紛らわしい近い金額を並べた引っかけ選択肢。",
-      "evidence": { "p": 0, "s": 1 },
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
       "tip": "TOEIC Part 7 の数字問題では、金額そのものだけでなく単位（per container など）まで本文と正確に照合することが重要。"
     },
     {
@@ -52,75 +98,333 @@
       "type": "reason",
       "prompt": "According to the article, why do carriers cancel sailings, known as blank sailings?",
       "choices": [
-        { "key": "A", "text": "To increase crew safety during the holidays", "ja": "休暇中の乗組員の安全性を高めるため" },
-        { "key": "B", "text": "To keep ships full and support freight rates", "ja": "船を満載にして運賃を維持するため" },
-        { "key": "C", "text": "To comply with a new port regulation", "ja": "新しい港湾規制を順守するため" },
-        { "key": "D", "text": "To reduce fuel consumption during Golden Week", "ja": "国慶節中の燃料消費を減らすため" }
+        {
+          "key": "A",
+          "text": "To increase crew safety during the holidays",
+          "ja": "休暇中の乗組員の安全性を高めるため"
+        },
+        {
+          "key": "B",
+          "text": "To keep ships full and support freight rates",
+          "ja": "船を満載にして運賃を維持するため"
+        },
+        {
+          "key": "C",
+          "text": "To comply with a new port regulation",
+          "ja": "新しい港湾規制を順守するため"
+        },
+        {
+          "key": "D",
+          "text": "To reduce fuel consumption during Golden Week",
+          "ja": "国慶節中の燃料消費を減らすため"
+        }
       ],
       "answer": "B",
       "explanation": "本文第2段落1文目に「Carriers cancel sailings to keep ships full and to support freight rates」と目的がはっきり書かれている。(A)(C)(D) は本文に一切記載のない理由で、もっともらしく見えるが根拠がない。",
-      "evidence": { "p": 1, "s": 0 },
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
       "tip": "理由・目的を問う問題では、本文中の to 不定詞句（〜するために）に注目すると解答の根拠が見つけやすい。"
     }
   ],
   "vocabulary": [
-    { "no": 1, "term": "freight", "pos": "名", "ja": "貨物、海上輸送", "gloss": "（＝船や飛行機で運ぶ荷物のこと）", "example": { "en": "Rising freight costs have squeezed the company's profit margins this quarter.", "ja": "運送費の上昇により、その会社の今四半期の利益率は圧迫されている。" } },
-    { "no": 2, "term": "capacity", "pos": "名", "ja": "能力、許容量", "gloss": "", "example": { "en": "The factory is operating at full capacity to meet the holiday demand.", "ja": "その工場は休暇需要に応えるためフル稼働している。" } },
-    { "no": 3, "term": "congestion", "pos": "名", "ja": "混雑", "gloss": "（＝人やモノが集中して動きが滞ること）", "example": { "en": "Traffic congestion around the port has delayed several deliveries this week.", "ja": "港周辺の渋滞により、今週は複数の配送が遅れている。" } },
-    { "no": 4, "term": "cancellation", "pos": "名", "ja": "取り消し、キャンセル", "gloss": "", "example": { "en": "The airline announced the cancellation of several flights due to the storm.", "ja": "その航空会社は嵐のため複数便の欠航を発表した。" } },
-    { "no": 5, "term": "exporter", "pos": "名", "ja": "輸出業者", "gloss": "", "example": { "en": "Exporters are rushing to ship goods before the new tariffs take effect.", "ja": "輸出業者は新しい関税が発効する前に商品を出荷しようと急いでいる。" } },
-    { "no": 6, "term": "importer", "pos": "名", "ja": "輸入業者", "gloss": "", "example": { "en": "Importers are stocking up on inventory ahead of the holiday shopping season.", "ja": "輸入業者たちは休暇商戦に向けて在庫を積み増している。" } },
-    { "no": 7, "term": "squeeze", "pos": "名", "ja": "ひっ迫、圧迫", "gloss": "", "example": { "en": "The rising cost of materials has put a squeeze on the company's margins.", "ja": "原材料費の上昇が、その会社の利益率を圧迫している。" } },
-    { "no": 8, "term": "tactic", "pos": "名", "ja": "戦術、手法", "gloss": "", "example": { "en": "Cutting prices is a common tactic retailers use to boost sales before the holidays.", "ja": "値下げは、小売業者が休暇前に売上を伸ばすためによく使う手法だ。" } }
+    {
+      "no": 1,
+      "term": "freight",
+      "pos": "名",
+      "ja": "貨物、海上輸送",
+      "gloss": "（＝船や飛行機で運ぶ荷物のこと）",
+      "example": {
+        "en": "Rising freight costs have squeezed the company's profit margins this quarter.",
+        "ja": "運送費の上昇により、その会社の今四半期の利益率は圧迫されている。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "capacity",
+      "pos": "名",
+      "ja": "能力、許容量",
+      "gloss": "",
+      "example": {
+        "en": "The factory is operating at full capacity to meet the holiday demand.",
+        "ja": "その工場は休暇需要に応えるためフル稼働している。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "congestion",
+      "pos": "名",
+      "ja": "混雑",
+      "gloss": "（＝人やモノが集中して動きが滞ること）",
+      "example": {
+        "en": "Traffic congestion around the port has delayed several deliveries this week.",
+        "ja": "港周辺の渋滞により、今週は複数の配送が遅れている。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "cancellation",
+      "pos": "名",
+      "ja": "取り消し、キャンセル",
+      "gloss": "",
+      "example": {
+        "en": "The airline announced the cancellation of several flights due to the storm.",
+        "ja": "その航空会社は嵐のため複数便の欠航を発表した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "exporter",
+      "pos": "名",
+      "ja": "輸出業者",
+      "gloss": "",
+      "example": {
+        "en": "Exporters are rushing to ship goods before the new tariffs take effect.",
+        "ja": "輸出業者は新しい関税が発効する前に商品を出荷しようと急いでいる。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "importer",
+      "pos": "名",
+      "ja": "輸入業者",
+      "gloss": "",
+      "example": {
+        "en": "Importers are stocking up on inventory ahead of the holiday shopping season.",
+        "ja": "輸入業者たちは休暇商戦に向けて在庫を積み増している。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "squeeze",
+      "pos": "名",
+      "ja": "ひっ迫、圧迫",
+      "gloss": "",
+      "example": {
+        "en": "The rising cost of materials has put a squeeze on the company's margins.",
+        "ja": "原材料費の上昇が、その会社の利益率を圧迫している。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "tactic",
+      "pos": "名",
+      "ja": "戦術、手法",
+      "gloss": "",
+      "example": {
+        "en": "Cutting prices is a common tactic retailers use to boost sales before the holidays.",
+        "ja": "値下げは、小売業者が休暇前に売上を伸ばすためによく使う手法だ。"
+      }
+    }
   ],
   "glossary": {
-    "freight": { "lemma": "freight", "ja": "貨物、海上輸送", "note": "" },
-    "rates": { "lemma": "rate", "ja": "運賃、料金", "note": "" },
-    "jumped": { "lemma": "jump", "ja": "急騰した", "note": "" },
-    "spot": { "lemma": "spot", "ja": "スポットの、即時の", "note": "spot rateで「随時契約の運賃」" },
-    "container": { "lemma": "container", "ja": "コンテナ", "note": "" },
-    "multi-year": { "lemma": "multi-year", "ja": "数年ぶりの", "note": "" },
-    "canceled": { "lemma": "cancel", "ja": "取り消した、欠航させた", "note": "" },
-    "sailings": { "lemma": "sailing", "ja": "（船の）就航、便", "note": "" },
-    "ahead": { "lemma": "ahead", "ja": "〜を前に", "note": "ahead of ~で「〜に先立って」" },
-    "holidays": { "lemma": "holiday", "ja": "祝日、休暇", "note": "" },
-    "cancellations": { "lemma": "cancellation", "ja": "取り消し、欠航", "note": "" },
-    "known": { "lemma": "know", "ja": "知られている", "note": "known as ~で「〜と呼ばれる」" },
-    "blank": { "lemma": "blank", "ja": "空白の、欠航の", "note": "blank sailingで「欠航便」" },
-    "cut": { "lemma": "cut", "ja": "削減する", "note": "" },
-    "available": { "lemma": "available", "ja": "利用可能な", "note": "" },
-    "exporters": { "lemma": "exporter", "ja": "輸出業者", "note": "" },
-    "carriers": { "lemma": "carrier", "ja": "運送業者、船会社", "note": "" },
-    "tactic": { "lemma": "tactic", "ja": "戦術、手法", "note": "" },
-    "worsens": { "lemma": "worsen", "ja": "悪化させる", "note": "" },
-    "congestion": { "lemma": "congestion", "ja": "混雑", "note": "" },
-    "capacity": { "lemma": "capacity", "ja": "輸送能力、積載量", "note": "" },
-    "squeezing": { "lemma": "squeeze", "ja": "圧迫する", "note": "" },
-    "shipments": { "lemma": "shipment", "ja": "出荷、積み荷", "note": "" },
-    "importers": { "lemma": "importer", "ja": "輸入業者", "note": "" },
-    "stocking": { "lemma": "stock", "ja": "仕入れる、在庫を補充する", "note": "" },
-    "squeeze": { "lemma": "squeeze", "ja": "ひっ迫、圧迫", "note": "" },
-    "deadlines": { "lemma": "deadline", "ja": "納期、締め切り", "note": "" }
+    "freight": {
+      "lemma": "freight",
+      "ja": "貨物、海上輸送",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "ja": "運賃、料金",
+      "note": ""
+    },
+    "jumped": {
+      "lemma": "jump",
+      "ja": "急騰した",
+      "note": ""
+    },
+    "spot": {
+      "lemma": "spot",
+      "ja": "スポットの、即時の",
+      "note": "spot rateで「随時契約の運賃」"
+    },
+    "container": {
+      "lemma": "container",
+      "ja": "コンテナ",
+      "note": ""
+    },
+    "multi-year": {
+      "lemma": "multi-year",
+      "ja": "数年ぶりの",
+      "note": ""
+    },
+    "canceled": {
+      "lemma": "cancel",
+      "ja": "取り消した、欠航させた",
+      "note": ""
+    },
+    "sailings": {
+      "lemma": "sailing",
+      "ja": "（船の）就航、便",
+      "note": ""
+    },
+    "ahead": {
+      "lemma": "ahead",
+      "ja": "〜を前に",
+      "note": "ahead of ~で「〜に先立って」"
+    },
+    "holidays": {
+      "lemma": "holiday",
+      "ja": "祝日、休暇",
+      "note": ""
+    },
+    "cancellations": {
+      "lemma": "cancellation",
+      "ja": "取り消し、欠航",
+      "note": ""
+    },
+    "known": {
+      "lemma": "know",
+      "ja": "知られている",
+      "note": "known as ~で「〜と呼ばれる」"
+    },
+    "blank": {
+      "lemma": "blank",
+      "ja": "空白の、欠航の",
+      "note": "blank sailingで「欠航便」"
+    },
+    "cut": {
+      "lemma": "cut",
+      "ja": "削減する",
+      "note": ""
+    },
+    "available": {
+      "lemma": "available",
+      "ja": "利用可能な",
+      "note": ""
+    },
+    "exporters": {
+      "lemma": "exporter",
+      "ja": "輸出業者",
+      "note": ""
+    },
+    "carriers": {
+      "lemma": "carrier",
+      "ja": "運送業者、船会社",
+      "note": ""
+    },
+    "tactic": {
+      "lemma": "tactic",
+      "ja": "戦術、手法",
+      "note": ""
+    },
+    "worsens": {
+      "lemma": "worsen",
+      "ja": "悪化させる",
+      "note": ""
+    },
+    "congestion": {
+      "lemma": "congestion",
+      "ja": "混雑",
+      "note": ""
+    },
+    "capacity": {
+      "lemma": "capacity",
+      "ja": "輸送能力、積載量",
+      "note": ""
+    },
+    "squeezing": {
+      "lemma": "squeeze",
+      "ja": "圧迫する",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "ja": "出荷、積み荷",
+      "note": ""
+    },
+    "importers": {
+      "lemma": "importer",
+      "ja": "輸入業者",
+      "note": ""
+    },
+    "stocking": {
+      "lemma": "stock",
+      "ja": "仕入れる、在庫を補充する",
+      "note": ""
+    },
+    "squeeze": {
+      "lemma": "squeeze",
+      "ja": "ひっ迫、圧迫",
+      "note": ""
+    },
+    "deadlines": {
+      "lemma": "deadline",
+      "ja": "納期、締め切り",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "過去分詞の非制限用法（, known as ~）",
     "quote": "The cancellations, known as blank sailings, cut available space just as exporters rush to ship goods before the break.",
     "quoteJa": "ブランクセーリングと呼ばれるこの欠航により、輸出業者が休暇前に駆け込みで出荷しようとする中、積載スペースが不足している。",
     "blocks": [
-      { "heading": "構文", "body": "文中の\"known as blank sailings\"は、直前の名詞\"The cancellations\"を補足説明する過去分詞句です。コンマで挟むことで「非制限用法」になり、\"which are known as blank sailings\"という関係代名詞節を短く言い換えた形になっています。このように過去分詞（句）をコンマで挟んで名詞の後ろに置くと、「〜と呼ばれる」「〜された」という補足情報を、関係代名詞を使わずに簡潔に加えることができます。" },
-      { "heading": "書き換え例", "body": "非制限用法の関係代名詞を使うと次のように書き換えられます。\"The cancellations, which are known as blank sailings, cut available space.\" 過去分詞句は、この\"which are\"が省略された形と考えると理解しやすくなります。同様の例として\"The product, called the X100, sold well.\"（＝X100と呼ばれるその製品はよく売れた）のような文もよく登場します。" },
-      { "heading": "TOEICでの出題傾向", "body": "Part 5では、空所の前がコンマ＋名詞のとき、現在分詞（-ing）と過去分詞（-ed/p.p.）のどちらを選ぶかを問う問題が頻出です。名詞が「〜する」側なら現在分詞、「〜される」側なら過去分詞を選びます。今回の\"cancellations\"は「〜と呼ばれる」という受け身の意味なので、過去分詞knownが正解になります。Part 7では、この構文が補足情報を追加する役割を果たすため、文の主旨を素早くつかむには\"known as ~\"以降を一旦読み飛ばして骨格をつかむ読み方も有効です。" },
-      { "heading": "ビジネス文書での応用", "body": "ビジネス文書でも頻繁に使われます。例：\"The new policy, effective next month, applies to all employees.\"（来月から発効するその新方針は、全従業員に適用される）\"The system, updated last week, now supports mobile devices.\"（先週更新されたそのシステムは、現在モバイル端末に対応している）" }
+      {
+        "heading": "構文",
+        "body": "文中の\"known as blank sailings\"は、直前の名詞\"The cancellations\"を補足説明する過去分詞句です。コンマで挟むことで「非制限用法」になり、\"which are known as blank sailings\"という関係代名詞節を短く言い換えた形になっています。このように過去分詞（句）をコンマで挟んで名詞の後ろに置くと、「〜と呼ばれる」「〜された」という補足情報を、関係代名詞を使わずに簡潔に加えることができます。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "非制限用法の関係代名詞を使うと次のように書き換えられます。\"The cancellations, which are known as blank sailings, cut available space.\" 過去分詞句は、この\"which are\"が省略された形と考えると理解しやすくなります。同様の例として\"The product, called the X100, sold well.\"（＝X100と呼ばれるその製品はよく売れた）のような文もよく登場します。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、空所の前がコンマ＋名詞のとき、現在分詞（-ing）と過去分詞（-ed/p.p.）のどちらを選ぶかを問う問題が頻出です。名詞が「〜する」側なら現在分詞、「〜される」側なら過去分詞を選びます。今回の\"cancellations\"は「〜と呼ばれる」という受け身の意味なので、過去分詞knownが正解になります。Part 7では、この構文が補足情報を追加する役割を果たすため、文の主旨を素早くつかむには\"known as ~\"以降を一旦読み飛ばして骨格をつかむ読み方も有効です。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "ビジネス文書でも頻繁に使われます。例：\"The new policy, effective next month, applies to all employees.\"（来月から発効するその新方針は、全従業員に適用される）\"The system, updated last week, now supports mobile devices.\"（先週更新されたそのシステムは、現在モバイル端末に対応している）"
+      }
     ]
   },
   "background": [
-    { "heading": "📌 ブランクセーリングとは何か", "body": "「ブランクセーリング」とは、定期的に運航している船の一部の便を、あらかじめ予告した上で欠航させることを指す。船会社は、荷物が少ない時期に無理に満載していない船を走らせるより、便数を減らして1隻あたりの積載率を高めた方が運賃を維持しやすいと考えている。今回は中国の連休前で荷動きが一時的に落ち着くタイミングに合わせて実施されている。" },
-    { "heading": "📌 業界全体・競合他社の動向", "body": "マースクやMSCだけでなく、太平洋航路を運航する主要船会社の多くが同様の欠航に踏み切っている。中秋節（9月25〜27日）と国慶節（10月1〜7日）が近接する今年は、休暇前に工場が生産・出荷を前倒しする「駆け込み輸送」が起きやすく、船会社は限られた船腹（船の積載スペース）を求める荷主の需要を追い風に、運賃を高値で維持しようとしている。" },
-    { "heading": "📌 日本経済・日本企業への影響", "body": "日本企業の多くも中国で生産した部材や製品を北米向けに輸出しており、今回の運賃上昇や便数減少は無関係ではない。特に年末商戦向けに米国向け出荷を計画しているメーカーや商社にとっては、スペース確保の遅れが納期遅延や追加コストにつながりかねない。国内から中国経由で米国に輸出する企業も、船腹逼迫の影響を受ける可能性がある。" },
-    { "heading": "📌 投資家・経営者の視点", "body": "海運会社にとって運賃上昇は増収要因となるため、マースクやMSCのような船会社の業績には追い風となり得る。一方、輸入コストが上がる小売業や製造業にとっては利益率の圧迫要因であり、経営者は在庫の前倒し確保や複数の輸送手段の併用といった対策を検討する必要がある。投資家は、運賃の動きを海運株だけでなく荷主側企業の業績見通しを読む材料としても注視している。" }
+    {
+      "heading": "📌 ブランクセーリングとは何か",
+      "body": "「ブランクセーリング」とは、定期的に運航している船の一部の便を、あらかじめ予告した上で欠航させることを指す。船会社は、荷物が少ない時期に無理に満載していない船を走らせるより、便数を減らして1隻あたりの積載率を高めた方が運賃を維持しやすいと考えている。今回は中国の連休前で荷動きが一時的に落ち着くタイミングに合わせて実施されている。"
+    },
+    {
+      "heading": "📌 業界全体・競合他社の動向",
+      "body": "マースクやMSCだけでなく、太平洋航路を運航する主要船会社の多くが同様の欠航に踏み切っている。中秋節（9月25〜27日）と国慶節（10月1〜7日）が近接する今年は、休暇前に工場が生産・出荷を前倒しする「駆け込み輸送」が起きやすく、船会社は限られた船腹（船の積載スペース）を求める荷主の需要を追い風に、運賃を高値で維持しようとしている。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響",
+      "body": "日本企業の多くも中国で生産した部材や製品を北米向けに輸出しており、今回の運賃上昇や便数減少は無関係ではない。特に年末商戦向けに米国向け出荷を計画しているメーカーや商社にとっては、スペース確保の遅れが納期遅延や追加コストにつながりかねない。国内から中国経由で米国に輸出する企業も、船腹逼迫の影響を受ける可能性がある。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "海運会社にとって運賃上昇は増収要因となるため、マースクやMSCのような船会社の業績には追い風となり得る。一方、輸入コストが上がる小売業や製造業にとっては利益率の圧迫要因であり、経営者は在庫の前倒し確保や複数の輸送手段の併用といった対策を検討する必要がある。投資家は、運賃の動きを海運株だけでなく荷主側企業の業績見通しを読む材料としても注視している。"
+    }
   ],
   "sources": [
-    { "title": "Trans-Pacific spot rates reach new highs on resilient demand, port congestion", "publisher": "FreightWaves", "url": "https://www.freightwaves.com/news/trans-pacific-spot-rates-reach-new-highs-on-resilient-demand-port-congestion", "date": "2026-09-18" },
-    { "title": "Maersk and MSC Announce Six Transpacific Golden Week Blank Sailings", "publisher": "Tradlinx", "url": "https://blogs.tradlinx.com/maersk-and-msc-announce-six-transpacific-golden-week-blank-sailings/", "date": "2026-09-22" }
-  ]
+    {
+      "title": "Trans-Pacific spot rates reach new highs on resilient demand, port congestion",
+      "publisher": "FreightWaves",
+      "url": "https://www.freightwaves.com/news/trans-pacific-spot-rates-reach-new-highs-on-resilient-demand-port-congestion",
+      "date": "2026-09-18"
+    },
+    {
+      "title": "Maersk and MSC Announce Six Transpacific Golden Week Blank Sailings",
+      "publisher": "Tradlinx",
+      "url": "https://blogs.tradlinx.com/maersk-and-msc-announce-six-transpacific-golden-week-blank-sailings/",
+      "date": "2026-09-22"
+    }
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-23-1650/00.mp3",
+      "audio/2026-09-23-1650/01.mp3",
+      "audio/2026-09-23-1650/02.mp3",
+      "audio/2026-09-23-1650/03.mp3",
+      "audio/2026-09-23-1650/04.mp3",
+      "audio/2026-09-23-1650/05.mp3",
+      "audio/2026-09-23-1650/06.mp3",
+      "audio/2026-09-23-1650/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 253416,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-23T07:57:04.392Z",
+    "trimmed": true
+  }
 }
