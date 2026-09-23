@@ -68,14 +68,33 @@
       "type": "detail",
       "prompt": "What was the yield on the 10-year Treasury note on Wednesday, according to the article?",
       "choices": [
-        { "key": "A", "text": "3.75%", "ja": "3.75%" },
-        { "key": "B", "text": "4.00%", "ja": "4.00%" },
-        { "key": "C", "text": "5.135%", "ja": "5.135%" },
-        { "key": "D", "text": "5.50%", "ja": "5.50%" }
+        {
+          "key": "A",
+          "text": "3.75%",
+          "ja": "3.75%"
+        },
+        {
+          "key": "B",
+          "text": "4.00%",
+          "ja": "4.00%"
+        },
+        {
+          "key": "C",
+          "text": "5.135%",
+          "ja": "5.135%"
+        },
+        {
+          "key": "D",
+          "text": "5.50%",
+          "ja": "5.50%"
+        }
       ],
       "answer": "C",
       "explanation": "本文第1段落3文目に「The yield on the 10-year Treasury note ... rose to 5.135%, the highest level since 2007」と明記されている。(A)3.75%や(B)4.00%はFRBの政策金利水準に近い紛らわしい数字、(D)5.50%は本文に登場しない数字を使った引っかけ選択肢。",
-      "evidence": { "p": 0, "s": 2 },
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
       "tip": "TOEIC Part 7の数字問題では、似た数字が並ぶ選択肢の中から本文の数字・単位と完全に一致するものを選ぶことが重要。"
     },
     {
@@ -83,14 +102,33 @@
       "type": "not",
       "prompt": "Which of the following is NOT mentioned in the article as a reason for the jump in Treasury yields?",
       "choices": [
-        { "key": "A", "text": "Stronger-than-expected economic data", "ja": "予想を上回る経済指標" },
-        { "key": "B", "text": "Hawkish comments from a Federal Reserve official", "ja": "FRB当局者のタカ派的な発言" },
-        { "key": "C", "text": "Rising oil prices", "ja": "原油価格の上昇" },
-        { "key": "D", "text": "A cut in corporate tax rates", "ja": "法人税率の引き下げ" }
+        {
+          "key": "A",
+          "text": "Stronger-than-expected economic data",
+          "ja": "予想を上回る経済指標"
+        },
+        {
+          "key": "B",
+          "text": "Hawkish comments from a Federal Reserve official",
+          "ja": "FRB当局者のタカ派的な発言"
+        },
+        {
+          "key": "C",
+          "text": "Rising oil prices",
+          "ja": "原油価格の上昇"
+        },
+        {
+          "key": "D",
+          "text": "A cut in corporate tax rates",
+          "ja": "法人税率の引き下げ"
+        }
       ],
       "answer": "D",
       "explanation": "本文第2段落1文目に「The jump followed three factors: stronger-than-expected economic data, hawkish comments from a Federal Reserve official, and rising oil prices」と、急上昇の3つの要因が明記されている。(A)(B)(C)はすべて本文に書かれている理由だが、(D)の法人税減税については本文に一切記載がない。",
-      "evidence": { "p": 1, "s": 0 },
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
       "tip": "NOT問題では、選択肢を一つずつ本文と照合し、本文に書かれていないものを消去法で見つけるのがポイント。"
     }
   ],
@@ -185,36 +223,156 @@
     }
   ],
   "glossary": {
-    "yields": { "lemma": "yield", "ja": "利回り", "note": "" },
-    "jumped": { "lemma": "jump", "ja": "急上昇した", "note": "" },
-    "highest": { "lemma": "high", "ja": "最高の、最も高い", "note": "" },
-    "decades": { "lemma": "decade", "ja": "数十年", "note": "" },
-    "sharply": { "lemma": "sharply", "ja": "急激に", "note": "" },
-    "benchmark": { "lemma": "benchmark", "ja": "基準、指標", "note": "" },
-    "borrowing": { "lemma": "borrow", "ja": "借り入れ", "note": "" },
-    "costs": { "lemma": "cost", "ja": "費用、コスト", "note": "" },
-    "rose": { "lemma": "rise", "ja": "上昇した", "note": "" },
-    "dropped": { "lemma": "drop", "ja": "下落した", "note": "" },
-    "indexes": { "lemma": "index", "ja": "指数", "note": "" },
-    "declined": { "lemma": "decline", "ja": "下落した", "note": "" },
-    "followed": { "lemma": "follow", "ja": "続いて起きた", "note": "" },
-    "factors": { "lemma": "factor", "ja": "要因", "note": "" },
-    "hawkish": { "lemma": "hawkish", "ja": "タカ派的な", "note": "" },
-    "comments": { "lemma": "comment", "ja": "発言、コメント", "note": "" },
-    "official": { "lemma": "official", "ja": "当局者", "note": "" },
-    "rising": { "lemma": "rise", "ja": "上昇している", "note": "" },
-    "increases": { "lemma": "increase", "ja": "引き上げ、増加", "note": "" },
-    "needed": { "lemma": "need", "ja": "必要とされた", "note": "" },
-    "inflation": { "lemma": "inflation", "ja": "インフレ、物価上昇", "note": "" },
-    "remains": { "lemma": "remain", "ja": "〜のままである", "note": "" },
-    "central": { "lemma": "central", "ja": "中央の", "note": "central bankで「中央銀行」" },
-    "target": { "lemma": "target", "ja": "目標", "note": "" },
-    "trying": { "lemma": "try", "ja": "試みている", "note": "" },
-    "traders": { "lemma": "trader", "ja": "取引業者、トレーダー", "note": "" },
-    "raise": { "lemma": "raise", "ja": "引き上げる", "note": "" },
-    "warn": { "lemma": "warn", "ja": "警告する", "note": "" },
-    "further": { "lemma": "further", "ja": "さらなる", "note": "" },
-    "reach": { "lemma": "reach", "ja": "到達する", "note": "" }
+    "yields": {
+      "lemma": "yield",
+      "ja": "利回り",
+      "note": ""
+    },
+    "jumped": {
+      "lemma": "jump",
+      "ja": "急上昇した",
+      "note": ""
+    },
+    "highest": {
+      "lemma": "high",
+      "ja": "最高の、最も高い",
+      "note": ""
+    },
+    "decades": {
+      "lemma": "decade",
+      "ja": "数十年",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "ja": "急激に",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "ja": "基準、指標",
+      "note": ""
+    },
+    "borrowing": {
+      "lemma": "borrow",
+      "ja": "借り入れ",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "ja": "費用、コスト",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "ja": "下落した",
+      "note": ""
+    },
+    "indexes": {
+      "lemma": "index",
+      "ja": "指数",
+      "note": ""
+    },
+    "declined": {
+      "lemma": "decline",
+      "ja": "下落した",
+      "note": ""
+    },
+    "followed": {
+      "lemma": "follow",
+      "ja": "続いて起きた",
+      "note": ""
+    },
+    "factors": {
+      "lemma": "factor",
+      "ja": "要因",
+      "note": ""
+    },
+    "hawkish": {
+      "lemma": "hawkish",
+      "ja": "タカ派的な",
+      "note": ""
+    },
+    "comments": {
+      "lemma": "comment",
+      "ja": "発言、コメント",
+      "note": ""
+    },
+    "official": {
+      "lemma": "official",
+      "ja": "当局者",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "ja": "上昇している",
+      "note": ""
+    },
+    "increases": {
+      "lemma": "increase",
+      "ja": "引き上げ、増加",
+      "note": ""
+    },
+    "needed": {
+      "lemma": "need",
+      "ja": "必要とされた",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "ja": "インフレ、物価上昇",
+      "note": ""
+    },
+    "remains": {
+      "lemma": "remain",
+      "ja": "〜のままである",
+      "note": ""
+    },
+    "central": {
+      "lemma": "central",
+      "ja": "中央の",
+      "note": "central bankで「中央銀行」"
+    },
+    "target": {
+      "lemma": "target",
+      "ja": "目標",
+      "note": ""
+    },
+    "trying": {
+      "lemma": "try",
+      "ja": "試みている",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "ja": "取引業者、トレーダー",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "warn": {
+      "lemma": "warn",
+      "ja": "警告する",
+      "note": ""
+    },
+    "further": {
+      "lemma": "further",
+      "ja": "さらなる",
+      "note": ""
+    },
+    "reach": {
+      "lemma": "reach",
+      "ja": "到達する",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "expect＋O＋to不定詞構文（動詞＋目的語＋to不定詞で「Oが〜すると予想する」を表す）",
@@ -276,5 +434,23 @@
       "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-23-2026",
       "date": "2026-09-23"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-24-0549/00.mp3",
+      "audio/2026-09-24-0549/01.mp3",
+      "audio/2026-09-24-0549/02.mp3",
+      "audio/2026-09-24-0549/03.mp3",
+      "audio/2026-09-24-0549/04.mp3",
+      "audio/2026-09-24-0549/05.mp3",
+      "audio/2026-09-24-0549/06.mp3",
+      "audio/2026-09-24-0549/07.mp3",
+      "audio/2026-09-24-0549/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 226005,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-23T20:56:47.063Z",
+    "trimmed": true
+  }
 }
