@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-24-0549",
+  "date": "2026-09-24",
+  "time": "05:49",
+  "createdAt": "2026-09-24T05:49:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Treasury Yields Hit 19-Year High, Rattling Wall Street",
+    "ja": "米国債利回りが19年ぶり高水準、株式市場動揺"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. Treasury yields jumped to their highest level in nearly two decades on Wednesday.",
+            "ja": "水曜日、米国債の利回りが約20年ぶりの高水準に急上昇した。"
+          },
+          {
+            "en": "Stock prices fell sharply in response.",
+            "ja": "これを受けて株価は急落した。"
+          },
+          {
+            "en": "The yield on the 10-year Treasury note, a key benchmark for borrowing costs, rose to 5.135%, the highest level since 2007.",
+            "ja": "借入コストの重要な指標である米国10年国債の利回りは5.135%まで上昇し、2007年以来の高水準となった。"
+          },
+          {
+            "en": "The Dow Jones Industrial Average dropped more than 350 points, and other indexes also declined.",
+            "ja": "ダウ工業株30種平均は350ポイント以上下落し、他の主要株価指数も値を下げた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The jump followed three factors: stronger-than-expected economic data, hawkish comments from a Federal Reserve official, and rising oil prices.",
+            "ja": "この急上昇の背景には、予想を上回る経済指標、米連邦準備制度（FRB）当局者のタカ派的な発言、そして原油価格の上昇という3つの要因があった。"
+          },
+          {
+            "en": "Governor Michael Barr said further interest rate increases would likely be needed.",
+            "ja": "マイケル・バー理事は、さらなる利上げがおそらく必要になるとの見方を示した。"
+          },
+          {
+            "en": "Inflation remains above the central bank's 2% target, a level the Fed has been trying to reach for years.",
+            "ja": "インフレ率は中央銀行が掲げる2%の目標を依然として上回っており、FRBは長年この水準の達成を目指してきた。"
+          },
+          {
+            "en": "Traders now expect the Fed to raise rates again in October.",
+            "ja": "トレーダーたちは現在、FRBが10月に再び利上げを行うと予想している。"
+          },
+          {
+            "en": "Analysts warn that high borrowing costs could continue for months.",
+            "ja": "アナリストらは、高い借入コストが今後数カ月続く可能性があると警告している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What was the yield on the 10-year Treasury note on Wednesday, according to the article?",
+      "choices": [
+        { "key": "A", "text": "3.75%", "ja": "3.75%" },
+        { "key": "B", "text": "4.00%", "ja": "4.00%" },
+        { "key": "C", "text": "5.135%", "ja": "5.135%" },
+        { "key": "D", "text": "5.50%", "ja": "5.50%" }
+      ],
+      "answer": "C",
+      "explanation": "本文第1段落3文目に「The yield on the 10-year Treasury note ... rose to 5.135%, the highest level since 2007」と明記されている。(A)3.75%や(B)4.00%はFRBの政策金利水準に近い紛らわしい数字、(D)5.50%は本文に登場しない数字を使った引っかけ選択肢。",
+      "evidence": { "p": 0, "s": 2 },
+      "tip": "TOEIC Part 7の数字問題では、似た数字が並ぶ選択肢の中から本文の数字・単位と完全に一致するものを選ぶことが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT mentioned in the article as a reason for the jump in Treasury yields?",
+      "choices": [
+        { "key": "A", "text": "Stronger-than-expected economic data", "ja": "予想を上回る経済指標" },
+        { "key": "B", "text": "Hawkish comments from a Federal Reserve official", "ja": "FRB当局者のタカ派的な発言" },
+        { "key": "C", "text": "Rising oil prices", "ja": "原油価格の上昇" },
+        { "key": "D", "text": "A cut in corporate tax rates", "ja": "法人税率の引き下げ" }
+      ],
+      "answer": "D",
+      "explanation": "本文第2段落1文目に「The jump followed three factors: stronger-than-expected economic data, hawkish comments from a Federal Reserve official, and rising oil prices」と、急上昇の3つの要因が明記されている。(A)(B)(C)はすべて本文に書かれている理由だが、(D)の法人税減税については本文に一切記載がない。",
+      "evidence": { "p": 1, "s": 0 },
+      "tip": "NOT問題では、選択肢を一つずつ本文と照合し、本文に書かれていないものを消去法で見つけるのがポイント。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "基準、指標",
+      "gloss": "",
+      "example": {
+        "en": "Government bond yields are often used as a benchmark for corporate borrowing costs.",
+        "ja": "国債の利回りは、しばしば企業の借入コストの基準として使われる。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "gloss": "",
+      "example": {
+        "en": "Rising interest rates increase the cost of borrowing for companies and households alike.",
+        "ja": "金利の上昇は、企業にとっても家計にとっても借り入れのコストを増加させる。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "target",
+      "pos": "名",
+      "ja": "目標",
+      "gloss": "",
+      "example": {
+        "en": "The company set a sales target of $2 million for the next quarter.",
+        "ja": "その会社は来四半期の売上目標を200万ドルに設定した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "hawkish",
+      "pos": "形",
+      "ja": "タカ派的な",
+      "gloss": "（＝利上げなど金融引き締めに前向きな）",
+      "example": {
+        "en": "Hawkish comments from central bank officials often push stock prices lower.",
+        "ja": "中央銀行当局者のタカ派的な発言は、しばしば株価を押し下げる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "warn",
+      "pos": "動",
+      "ja": "警告する",
+      "gloss": "",
+      "example": {
+        "en": "Analysts warn that the company's profit margin could shrink next quarter.",
+        "ja": "アナリストらは、その会社の利益率が来四半期に縮小する可能性があると警告している。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "decline",
+      "pos": "動",
+      "ja": "下落する、減少する",
+      "gloss": "",
+      "example": {
+        "en": "Sales at the retailer declined for the third straight month.",
+        "ja": "その小売業者の売上は3カ月連続で減少した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "further",
+      "pos": "形・副",
+      "ja": "さらなる",
+      "gloss": "",
+      "example": {
+        "en": "The board decided that further investment was necessary to expand the factory.",
+        "ja": "取締役会は、工場拡張にはさらなる投資が必要だと判断した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "raise",
+      "pos": "動",
+      "ja": "（金利などを）引き上げる",
+      "gloss": "",
+      "example": {
+        "en": "The central bank is expected to raise interest rates again next month.",
+        "ja": "中央銀行は来月、再び利上げを行うと見られている。"
+      }
+    }
+  ],
+  "glossary": {
+    "yields": { "lemma": "yield", "ja": "利回り", "note": "" },
+    "jumped": { "lemma": "jump", "ja": "急上昇した", "note": "" },
+    "highest": { "lemma": "high", "ja": "最高の、最も高い", "note": "" },
+    "decades": { "lemma": "decade", "ja": "数十年", "note": "" },
+    "sharply": { "lemma": "sharply", "ja": "急激に", "note": "" },
+    "benchmark": { "lemma": "benchmark", "ja": "基準、指標", "note": "" },
+    "borrowing": { "lemma": "borrow", "ja": "借り入れ", "note": "" },
+    "costs": { "lemma": "cost", "ja": "費用、コスト", "note": "" },
+    "rose": { "lemma": "rise", "ja": "上昇した", "note": "" },
+    "dropped": { "lemma": "drop", "ja": "下落した", "note": "" },
+    "indexes": { "lemma": "index", "ja": "指数", "note": "" },
+    "declined": { "lemma": "decline", "ja": "下落した", "note": "" },
+    "followed": { "lemma": "follow", "ja": "続いて起きた", "note": "" },
+    "factors": { "lemma": "factor", "ja": "要因", "note": "" },
+    "hawkish": { "lemma": "hawkish", "ja": "タカ派的な", "note": "" },
+    "comments": { "lemma": "comment", "ja": "発言、コメント", "note": "" },
+    "official": { "lemma": "official", "ja": "当局者", "note": "" },
+    "rising": { "lemma": "rise", "ja": "上昇している", "note": "" },
+    "increases": { "lemma": "increase", "ja": "引き上げ、増加", "note": "" },
+    "needed": { "lemma": "need", "ja": "必要とされた", "note": "" },
+    "inflation": { "lemma": "inflation", "ja": "インフレ、物価上昇", "note": "" },
+    "remains": { "lemma": "remain", "ja": "〜のままである", "note": "" },
+    "central": { "lemma": "central", "ja": "中央の", "note": "central bankで「中央銀行」" },
+    "target": { "lemma": "target", "ja": "目標", "note": "" },
+    "trying": { "lemma": "try", "ja": "試みている", "note": "" },
+    "traders": { "lemma": "trader", "ja": "取引業者、トレーダー", "note": "" },
+    "raise": { "lemma": "raise", "ja": "引き上げる", "note": "" },
+    "warn": { "lemma": "warn", "ja": "警告する", "note": "" },
+    "further": { "lemma": "further", "ja": "さらなる", "note": "" },
+    "reach": { "lemma": "reach", "ja": "到達する", "note": "" }
+  },
+  "grammar": {
+    "topic": "expect＋O＋to不定詞構文（動詞＋目的語＋to不定詞で「Oが〜すると予想する」を表す）",
+    "quote": "Traders now expect the Fed to raise rates again in October.",
+    "quoteJa": "トレーダーたちは現在、FRBが10月に再び利上げを行うと予想している。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "\"expect the Fed to raise rates\" は〈expect＋O（the Fed）＋to不定詞〉の形で、「Oが〜すると予想する」という意味を表します。O（the Fed）はto raise以下の意味上の主語になっており、この文型はwant / ask / allow / enable / requireなど「相手に何かをすることを望む・許す・求める」意味を持つ動詞でよく使われます。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "that節を使うと\"Traders now expect that the Fed will raise rates again in October.\"と書き換えられます。O＋to不定詞の形の方が簡潔で、ビジネス英語では好んで使われます。同様の例として\"The company asked employees to work from home.\"（＝会社は社員に在宅勤務するよう求めた）などがあります。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、空所の前に\"expect / want / ask / allow\"などの動詞があるとき、目的語の直後はto不定詞になるか、that節になるかを問う問題が頻出です。この形を取る動詞のグループを覚えておくと、動詞を見ただけで後ろの形を予測できます。Part 7でも、「誰が何をすると予想・要求されているか」を素早くつかむ手がかりになります。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"We expect the vendor to deliver the shipment by Friday.\"（納入業者には金曜までに出荷してもらうことを期待している）\"The manager asked the team to submit the report by noon.\"（マネージャーはチームに正午までに報告書を提出するよう求めた）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜ国債利回りの上昇が重要なのか",
+      "body": "米国債は「安全資産」の代表であり、その利回り（＝投資家が受け取る年間の収益率）は、住宅ローンや社債などあらゆる借入コストの土台になる。利回りが上がるのは国債の価格が下がることを意味し、投資家がより高いリターンを求めて債券を売っている状態を示す。今回のように短期間で急上昇すると、企業や個人の資金調達コストが一気に重くなり、株式市場では将来の利益を織り込んで買われている銘柄ほど売られやすくなる。"
+    },
+    {
+      "heading": "📌 業界全体・市場の動向",
+      "body": "FRB（米連邦準備制度理事会）は今月すでに一度利上げを実施したばかりで、今回はさらなる追加利上げの観測が強まった格好だ。市場参加者の間では10月の会合で再び利上げが行われる確率が急上昇しており、「利上げ局面は終盤」と見ていた投資家の見方を修正させる材料となった。原油価格の上昇も重なり、インフレ再燃への警戒感が金利市場・株式市場の両方に波及している。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響",
+      "body": "米国金利の上昇は日米の金利差拡大を通じて円安要因となりやすく、輸入コストの上昇を通じて国内の物価にも影響しうる。一方、海外で資金調達を行う日本企業にとってはドル建ての借入コストが上昇することを意味し、設備投資計画の見直しを迫られる可能性がある。日本銀行の金融政策運営にも、米国の金利動向は常に意識される材料となる。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "投資家にとっては、株式と債券のどちらに資金を振り向けるかを見直す局面であり、金利上昇局面では相対的に債券の魅力が増す。経営者にとっては、借入コストの上昇が新規投資や設備投資の採算ラインを引き上げるため、プロジェクトの実行タイミングを慎重に見極める必要がある。固定金利での資金調達や為替ヘッジなどの対応を検討する企業も増えている。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "10-year Treasury yield rockets to 19-year high. Here's what's driving the spike",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/23/treasury-yields-oil-inflation-fed.html",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "Dow falls 350 points as 10 year Treasury yields hit 5.1%",
+      "publisher": "Invezz",
+      "url": "https://invezz.com/news/2026/09/23/dow-falls-350-points-as-10-year-treasury-yields-hit-5-1/",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "Stock Market Today (Sept. 23, 2026): Nasdaq, Russell 2000 sink as 5-year Treasury hits 5% for first time since 2007",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-23-2026",
+      "date": "2026-09-23"
+    }
+  ]
+}
