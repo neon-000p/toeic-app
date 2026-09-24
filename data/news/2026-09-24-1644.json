@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-24-1644",
+  "date": "2026-09-24",
+  "time": "16:44",
+  "createdAt": "2026-09-24T16:44:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Microsoft Takes Down AI Phishing Service EvilTokens",
+    "ja": "マイクロソフト、AI悪用のフィッシングサービスを摘発"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Microsoft said this week that it had shut down EvilTokens, an online service that used artificial intelligence to help criminals steal people's passwords.",
+            "ja": "マイクロソフトは今週、人々のパスワードを盗む手助けをする目的でAI（人工知能）を使っていたオンラインサービス「EvilTokens」を停止させたと発表した。"
+          },
+          {
+            "en": "A U.S. court let the company seize about 50 websites and more than 150 web addresses linked to the service.",
+            "ja": "米国の裁判所は同社に対し、このサービスに関連する約50のウェブサイトと150以上のドメインを差し押さえることを認めた。"
+          },
+          {
+            "en": "The company said EvilTokens had broken into over 12,000 email accounts since it began in February.",
+            "ja": "同社によると、EvilTokensは2月に活動を始めて以降、1万2000件を超えるメールアカウントに不正侵入していたという。"
+          },
+          {
+            "en": "Those accounts belonged to more than 10,000 companies worldwide.",
+            "ja": "それらのアカウントは、世界中の1万社を超える企業のものだった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The service charged a $1,500 sign-up fee and $500 a month, and criminals found it through a messaging app.",
+            "ja": "このサービスは登録時に1,500ドル、月額500ドルを請求しており、犯罪者たちはメッセージアプリを通じてこれを見つけていた。"
+          },
+          {
+            "en": "Coinbase, a cryptocurrency exchange, traced about $1.1 million in payments the operators collected in digital currency.",
+            "ja": "暗号資産取引所のコインベースは、運営者らが暗号資産で受け取った約110万ドルの支払いを追跡した。"
+          },
+          {
+            "en": "Police arrested two men connected to the service earlier this month.",
+            "ja": "警察は今月上旬、このサービスに関与した男2人を逮捕した。"
+          },
+          {
+            "en": "Microsoft said the case shows how criminals now use AI at almost every stage of an attack, from finding targets to writing convincing messages.",
+            "ja": "マイクロソフトは今回の事件について、標的の選定から説得力のある文面の作成まで、攻撃のほぼすべての段階で犯罪者がAIを使うようになっている実態を示していると述べた。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much did EvilTokens charge new users to sign up?",
+      "choices": [
+        { "key": "A", "text": "$500", "ja": "500ドル" },
+        { "key": "B", "text": "$1,000", "ja": "1,000ドル" },
+        { "key": "C", "text": "$1,500", "ja": "1,500ドル" },
+        { "key": "D", "text": "$12,000", "ja": "12,000ドル" }
+      ],
+      "answer": "C",
+      "explanation": "本文第2段落1文目に「The service charged a $1,500 sign-up fee and $500 a month」とあり、登録時の料金は1,500ドルである。(A)500ドルは月額料金と混同させる数字、(B)1,000ドルは本文に登場しない数字、(D)12,000ドルは侵害されたメールアカウント数（12,000件）と混同させる引っかけ選択肢。",
+      "evidence": { "p": 1, "s": 0 },
+      "tip": "TOEIC Part 7の数字問題では、似た数字が複数登場する場合、それぞれがどの項目（登録料・月額料金・件数など）を指しているかを正確に区別することが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "According to the article, which of the following is NOT true?",
+      "choices": [
+        { "key": "A", "text": "A U.S. court allowed Microsoft to seize websites tied to the service.", "ja": "米国の裁判所がマイクロソフトによるウェブサイトの差し押さえを認めた。" },
+        { "key": "B", "text": "EvilTokens had broken into more than 12,000 email accounts.", "ja": "EvilTokensは1万2000件を超えるメールアカウントに侵入していた。" },
+        { "key": "C", "text": "Coinbase traced about $1.1 million in payments linked to the service.", "ja": "コインベースが同サービスに関連する約110万ドルの支払いを追跡した。" },
+        { "key": "D", "text": "Microsoft paid EvilTokens' operators to shut down the service.", "ja": "マイクロソフトはEvilTokensの運営者に対し、サービス停止の対価を支払った。" }
+      ],
+      "answer": "D",
+      "explanation": "本文全体を通じて、マイクロソフトはEvilTokensを摘発・停止させた側であり、金銭を支払った事実は一切記載されていない。(A)は第1段落2文目、(B)は第1段落3文目、(C)は第2段落2文目にそれぞれ明記された事実であり、いずれも本文と一致する。したがって本文に無い、かつ事実と矛盾する(D)が正解となる。",
+      "evidence": { "p": 0, "s": 0 },
+      "tip": "NOT問題では、選択肢を1つずつ本文と照合し、本文に書かれていない、または本文の内容と矛盾するものを消去法で見つけるのが基本。"
+    }
+  ],
+  "vocabulary": [
+    { "no": 1, "term": "seize", "pos": "動", "ja": "差し押さえる", "gloss": "",
+      "example": { "en": "Customs officers can seize goods that violate import rules.", "ja": "税関職員は、輸入規則に違反する商品を差し押さえることができる。" } },
+    { "no": 2, "term": "trace", "pos": "動", "ja": "追跡する、跡をたどる", "gloss": "",
+      "example": { "en": "The accounting team traced the missing invoice back to a data error.", "ja": "経理チームは、行方不明になった請求書をたどり、データ入力ミスが原因だと突き止めた。" } },
+    { "no": 3, "term": "arrest", "pos": "動", "ja": "逮捕する", "gloss": "",
+      "example": { "en": "Police arrested the suspect after a three-month investigation.", "ja": "警察は3か月に及ぶ捜査の末、容疑者を逮捕した。" } },
+    { "no": 4, "term": "charge", "pos": "動", "ja": "請求する", "gloss": "",
+      "example": { "en": "The gym charges a monthly fee of $50.", "ja": "そのジムは月額50ドルの料金を請求している。" } },
+    { "no": 5, "term": "exchange", "pos": "名", "ja": "取引所", "gloss": "",
+      "example": { "en": "She works at a foreign currency exchange near the airport.", "ja": "彼女は空港近くの外貨両替所で働いている。" } },
+    { "no": 6, "term": "convincing", "pos": "形", "ja": "説得力のある", "gloss": "",
+      "example": { "en": "He gave a convincing presentation to the board of directors.", "ja": "彼は取締役会で説得力のあるプレゼンテーションを行った。" } },
+    { "no": 7, "term": "operator", "pos": "名", "ja": "運営者、事業者", "gloss": "",
+      "example": { "en": "The company is a major operator of shopping malls in the region.", "ja": "その会社はこの地域で大手のショッピングモール運営会社だ。" } },
+    { "no": 8, "term": "belong to", "pos": "熟", "ja": "〜に属する、〜のものである", "gloss": "",
+      "example": { "en": "This parking space belongs to the marketing department.", "ja": "この駐車スペースはマーケティング部のものだ。" } }
+  ],
+  "glossary": {
+    "shut": { "lemma": "shut", "ja": "閉鎖する", "note": "shut downで「停止させる」" },
+    "online": { "lemma": "online", "ja": "オンラインの", "note": "" },
+    "artificial": { "lemma": "artificial", "ja": "人工の", "note": "artificial intelligenceで「人工知能」" },
+    "intelligence": { "lemma": "intelligence", "ja": "知能", "note": "" },
+    "criminals": { "lemma": "criminal", "ja": "犯罪者", "note": "" },
+    "steal": { "lemma": "steal", "ja": "盗む", "note": "" },
+    "passwords": { "lemma": "password", "ja": "パスワード", "note": "" },
+    "court": { "lemma": "court", "ja": "裁判所", "note": "" },
+    "let": { "lemma": "let", "ja": "〜させる、許可する", "note": "let＋O＋原形動詞の形をとる使役動詞" },
+    "seize": { "lemma": "seize", "ja": "差し押さえる", "note": "" },
+    "websites": { "lemma": "website", "ja": "ウェブサイト", "note": "" },
+    "addresses": { "lemma": "address", "ja": "アドレス", "note": "ここではウェブのドメインのこと" },
+    "linked": { "lemma": "link", "ja": "関連付けられた", "note": "" },
+    "broken": { "lemma": "break", "ja": "侵入した", "note": "break intoで「不正侵入する」" },
+    "accounts": { "lemma": "account", "ja": "アカウント", "note": "" },
+    "belonged": { "lemma": "belong", "ja": "〜に属していた", "note": "" },
+    "worldwide": { "lemma": "worldwide", "ja": "世界中の", "note": "" },
+    "charged": { "lemma": "charge", "ja": "請求した", "note": "" },
+    "fee": { "lemma": "fee", "ja": "料金", "note": "" },
+    "messaging": { "lemma": "messaging", "ja": "メッセージのやり取り", "note": "messaging appで「メッセージアプリ」" },
+    "cryptocurrency": { "lemma": "cryptocurrency", "ja": "暗号資産", "note": "" },
+    "exchange": { "lemma": "exchange", "ja": "取引所", "note": "" },
+    "traced": { "lemma": "trace", "ja": "追跡した", "note": "" },
+    "payments": { "lemma": "payment", "ja": "支払い", "note": "" },
+    "operators": { "lemma": "operator", "ja": "運営者", "note": "" },
+    "arrested": { "lemma": "arrest", "ja": "逮捕した", "note": "" },
+    "convincing": { "lemma": "convincing", "ja": "説得力のある", "note": "" }
+  },
+  "grammar": {
+    "topic": "使役動詞 let＋O＋原形動詞（〜させる、〜することを許可する）",
+    "quote": "A U.S. court let the company seize about 50 websites and more than 150 web addresses linked to the service.",
+    "quoteJa": "米国の裁判所は同社に対し、このサービスに関連する約50のウェブサイトと150以上のドメインを差し押さえることを認めた。",
+    "blocks": [
+      { "heading": "構文", "body": "\"let the company seize\" は〈let＋O（the company）＋原形動詞(seize)〉の形で、「Oに〜させる、Oが〜するのを許す」という意味を表す使役動詞構文です。let の後ろの動詞は to を伴わない原形（原形不定詞）になる点が、allow などの動詞と異なります。" },
+      { "heading": "書き換え例", "body": "to不定詞を使うと \"A U.S. court allowed the company to seize about 50 websites.\" とほぼ同じ意味で書き換えられます。let は「許可・容認」のニュアンスが強く、make（強制的に〜させる）、have（〜してもらう）とあわせて使役動詞3兄弟として整理して覚えると区別しやすくなります。" },
+      { "heading": "TOEICでの出題傾向", "body": "Part 5では、make / have / let の直後の動詞の形（原形か、to不定詞か、過去分詞か）を問う語法問題が頻出です。let の後ろに to を置いてしまう誤りは典型的な誤答選択肢として出題されるため、「let＋O＋原形」の形をセットで覚えておくことが重要です。" },
+      { "heading": "ビジネス文書での応用", "body": "\"Please let us know if you need any further information.\"（さらに情報が必要な場合はお知らせください）、\"The new system lets employees submit expense reports online.\"（新しいシステムにより、社員はオンラインで経費報告書を提出できるようになる）のように、許可・可能を表す表現としてビジネス文書でも頻繁に使われます。" }
+    ]
+  },
+  "background": [
+    { "heading": "📌 EvilTokensとは何か", "body": "EvilTokensは、他人のメールアカウントに不正侵入するための一連の作業（標的選び、メール文面の作成、盗んだ情報の分析など）を、月額料金を払えば誰でも利用できるようにした「犯罪支援サービス」だった。近年のAI技術を悪用し、本物そっくりのログイン画面や説得力のある偽メールを自動で作れるようにしていた点が特徴で、専門知識のない人物でも攻撃者になれてしまう点が問題視されている。" },
+    { "heading": "📌 業界全体・セキュリティ業界の動向", "body": "近年は、マイクロソフトのような大手テック企業が、暗号資産取引所のコインベースや警察などの複数機関と連携し、犯罪サービスをまとめて摘発する「合同摘発」が増えている。AIを使ったサイバー攻撃はコストが安く再現性が高いため、被害の規模が急速に拡大しやすく、各企業は自社サービスだけでなく業界全体での連携対応を迫られている。" },
+    { "heading": "📌 日本経済・日本企業への影響", "body": "日本企業の多くもマイクロソフトのクラウドサービスを業務の基盤として利用しており、同様のフィッシングサービスの標的になり得る。特にパスワードだけに頼った認証は突破されやすいため、多要素認証（MFA）の導入や、取引先を装った不審なメールを見分ける社員研修の重要性が改めて浮き彫りになった事例と言える。" },
+    { "heading": "📌 投資家・経営者の視点", "body": "サイバーセキュリティ関連の投資は、単なるコストではなく事業継続やブランド価値を守るための経営課題として位置づけられるようになっている。取引先の情報が漏えいすれば自社の信用にも直結するため、経営者にはセキュリティ対策の状況を取引先や投資家に説明できる体制づくりが求められている。" }
+  ],
+  "sources": [
+    { "title": "Microsoft Takes Down EvilTokens Device-Code Phishing Service Tied to 12,000 Inbox Compromises", "publisher": "The Hacker News", "url": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html", "date": "2026-09-23" },
+    { "title": "Microsoft, UK Police Dismantle EvilTokens AI Phishing Ring", "publisher": "TechNadu", "url": "https://www.technadu.com/microsoft-and-uk-police-dismantle-ai-powered-eviltokens-phishing-service/638544/", "date": "2026-09-23" }
+  ]
+}
