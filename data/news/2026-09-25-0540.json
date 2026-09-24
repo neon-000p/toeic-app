@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-25-0540",
+  "date": "2026-09-25",
+  "time": "05:40",
+  "createdAt": "2026-09-25T05:40:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "Trump and Xi Meet at White House, Extend Trade Truce",
+    "ja": "トランプ・習近平会談、米中の関税「休戦」を2カ月延長"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. President Donald Trump hosted China's Xi Jinping this week for their first face-to-face meeting in nearly a year.",
+            "ja": "米国のドナルド・トランプ大統領は今週、中国の習近平国家主席を迎え、両首脳にとって約1年ぶりとなる対面での会談を行った。"
+          },
+          {
+            "en": "The visit began with a formal welcome and ended with a state dinner.",
+            "ja": "会談は正式な歓迎行事で始まり、公式晩さん会で締めくくられた。"
+          },
+          {
+            "en": "One day earlier, senior officials from both countries had already agreed to extend their trade truce by two months.",
+            "ja": "その前日には、両国の高官がすでに貿易における「休戦」を2カ月延長することで合意していた。"
+          },
+          {
+            "en": "The extension put off a fresh round of higher tariffs that had been due to take effect this month.",
+            "ja": "この延長により、今月発効する予定だった追加関税の引き上げは先送りされた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The two leaders also discussed a plan to lower matching tariffs on goods worth more than $30 billion.",
+            "ja": "両首脳はまた、300億ドルを超える品目を対象に、互いの関税を引き下げる案についても話し合った。"
+          },
+          {
+            "en": "However, serious disagreements remain over Taiwan and artificial intelligence.",
+            "ja": "しかし、台湾問題や人工知能（AI）を巡っては、依然として深刻な意見の対立が残っている。"
+          },
+          {
+            "en": "New 12.5% tariffs on dozens of trading partners also took effect earlier this year, adding fresh strain to the relationship.",
+            "ja": "今年に入ってからは、数十カ国の貿易相手国に対する12.5%の新たな関税もすでに発効しており、両国関係に新たな緊張を加えている。"
+          },
+          {
+            "en": "Analysts say the summit eased tension for now but solved little, so markets are watching closely for what happens once the truce ends.",
+            "ja": "アナリストらは、今回の会談は緊張を一時的に和らげたものの、根本的な解決には至らなかったとみており、市場は休戦終了後の展開を注視している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How long was the U.S.-China trade truce extended, according to the article?",
+      "choices": [
+        { "key": "A", "text": "One month", "ja": "1カ月" },
+        { "key": "B", "text": "Two months", "ja": "2カ月" },
+        { "key": "C", "text": "Three months", "ja": "3カ月" },
+        { "key": "D", "text": "Six months", "ja": "6カ月" }
+      ],
+      "answer": "B",
+      "explanation": "本文1段落目（what）3文目に「senior officials from both countries had already agreed to extend their trade truce by two months」とあり、休戦期間は「2カ月」延長されたと明記されている。(A)の1カ月、(C)の3カ月、(D)の6カ月はいずれも本文に登場しない数字を使った紛らわしい選択肢。",
+      "evidence": { "p": 0, "s": 2 },
+      "tip": "TOEIC Part 7の数字問題では、選択肢の単位（月・日・年など）まで本文の記述と完全に一致するかを確認することが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "According to the article, which of the following is NOT mentioned as a topic of disagreement or discussion between the U.S. and China?",
+      "choices": [
+        { "key": "A", "text": "Taiwan", "ja": "台湾問題" },
+        { "key": "B", "text": "Artificial intelligence", "ja": "人工知能" },
+        { "key": "C", "text": "A tariff-cutting plan worth over $30 billion", "ja": "300億ドル超の関税引き下げ案" },
+        { "key": "D", "text": "Climate change policy", "ja": "気候変動政策" }
+      ],
+      "answer": "D",
+      "explanation": "本文2段落目（why）に、両首脳が話し合った内容として(C)の関税引き下げ案（1文目）、意見が対立する話題として(A)台湾問題と(B)人工知能（2文目）がそれぞれ明記されている。一方、(D)の気候変動政策については本文のどこにも記載がない。",
+      "evidence": { "p": 1, "s": 1 },
+      "tip": "NOT問題では、選択肢を一つずつ本文と照合し、本文に書かれていないものだけを消去法で見つけるのが基本の解き方。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "host",
+      "pos": "動",
+      "ja": "主催する、（客を）迎える",
+      "gloss": "",
+      "example": {
+        "en": "The company will host an important client visit next week.",
+        "ja": "その会社は来週、重要な取引先の訪問を主催する予定だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "face-to-face",
+      "pos": "形",
+      "ja": "直接顔を合わせての",
+      "gloss": "",
+      "example": {
+        "en": "The two managers finally had a face-to-face meeting to resolve the dispute.",
+        "ja": "2人のマネージャーはついに、対立を解決するため直接顔を合わせて話し合った。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "extend",
+      "pos": "動",
+      "ja": "延長する",
+      "gloss": "",
+      "example": {
+        "en": "The two companies agreed to extend their contract by six months.",
+        "ja": "両社は契約を6カ月延長することで合意した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "truce",
+      "pos": "名",
+      "ja": "休戦、停戦合意",
+      "gloss": "（＝争いを一時的に止める合意のこと）",
+      "example": {
+        "en": "The two firms reached a temporary truce in their long-running price war.",
+        "ja": "両社は長期化する価格競争において、一時的な休戦に至った。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "disagreement",
+      "pos": "名",
+      "ja": "意見の相違、不一致",
+      "gloss": "",
+      "example": {
+        "en": "There was a serious disagreement between the two departments over the budget.",
+        "ja": "予算を巡り、2つの部署の間で深刻な意見の相違があった。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "take effect",
+      "pos": "熟",
+      "ja": "発効する",
+      "gloss": "",
+      "example": {
+        "en": "The new import tax will take effect at the beginning of next month.",
+        "ja": "新しい輸入税は来月初めに発効する。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "strain",
+      "pos": "名",
+      "ja": "緊張、負担",
+      "gloss": "",
+      "example": {
+        "en": "The delay put extra strain on the relationship between the two suppliers.",
+        "ja": "その遅れは、2社のサプライヤーの関係に余計な緊張をもたらした。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "ease",
+      "pos": "動",
+      "ja": "（緊張などを）和らげる",
+      "gloss": "",
+      "example": {
+        "en": "The manager tried to ease the tension after the difficult negotiation.",
+        "ja": "難航した交渉の後、マネージャーは緊張を和らげようとした。"
+      }
+    }
+  ],
+  "glossary": {
+    "hosted": { "lemma": "host", "ja": "主催した、迎えた", "note": "" },
+    "face-to-face": { "lemma": "face-to-face", "ja": "直接顔を合わせた", "note": "" },
+    "meeting": { "lemma": "meeting", "ja": "会談、会議", "note": "" },
+    "visit": { "lemma": "visit", "ja": "訪問", "note": "" },
+    "welcome": { "lemma": "welcome", "ja": "歓迎", "note": "" },
+    "dinner": { "lemma": "dinner", "ja": "晩さん会、夕食会", "note": "" },
+    "officials": { "lemma": "official", "ja": "当局者、高官", "note": "" },
+    "agreed": { "lemma": "agree", "ja": "合意した", "note": "" },
+    "extend": { "lemma": "extend", "ja": "延長する", "note": "" },
+    "truce": { "lemma": "truce", "ja": "休戦、停戦", "note": "" },
+    "months": { "lemma": "month", "ja": "カ月", "note": "" },
+    "extension": { "lemma": "extension", "ja": "延長", "note": "" },
+    "put off": { "lemma": "put off", "ja": "延期する、先送りにする", "note": "句動詞" },
+    "fresh": { "lemma": "fresh", "ja": "新たな", "note": "" },
+    "round": { "lemma": "round", "ja": "（交渉の）一連、ラウンド", "note": "" },
+    "higher": { "lemma": "high", "ja": "より高い", "note": "" },
+    "tariffs": { "lemma": "tariff", "ja": "関税", "note": "" },
+    "due": { "lemma": "due", "ja": "〜する予定で", "note": "" },
+    "take effect": { "lemma": "take effect", "ja": "発効する", "note": "熟語" },
+    "leaders": { "lemma": "leader", "ja": "首脳、指導者", "note": "" },
+    "discussed": { "lemma": "discuss", "ja": "話し合った", "note": "" },
+    "plan": { "lemma": "plan", "ja": "計画、案", "note": "" },
+    "lower": { "lemma": "low", "ja": "引き下げる", "note": "" },
+    "matching": { "lemma": "match", "ja": "同等の、対応する", "note": "" },
+    "goods": { "lemma": "goods", "ja": "商品、物品", "note": "" },
+    "disagreements": { "lemma": "disagreement", "ja": "意見の相違", "note": "" },
+    "strain": { "lemma": "strain", "ja": "緊張、負担", "note": "" },
+    "eased": { "lemma": "ease", "ja": "和らげた", "note": "" }
+  },
+  "grammar": {
+    "topic": "be due to do の過去完了形（had been due to do）＝「〜する予定だったが実現しなかった」という未達成の予定を表す表現",
+    "quote": "The extension put off a fresh round of higher tariffs that had been due to take effect this month.",
+    "quoteJa": "この延長により、今月発効する予定だった追加関税の引き上げは先送りされた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "\"be due to do\" は「〜する予定である」という、確定した予定・スケジュールを表す表現です。ここでは過去完了形の \"had been due to take effect\" が使われており、「（休戦の合意が成立した）その時点よりも前から発効する予定になっていた」という、過去のある時点を基準にした「予定されていたが実現しなかったこと」を表しています。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "同じ内容は \"The tariffs were scheduled to take effect this month, but the extension postponed them.\" のように、be scheduled to do や postpone を使って書き換えることもできます。単純な過去形 \"were due to take effect\" にすると「予定だった（実現したかどうかには触れない）」というニュアンスになりますが、過去完了形にすることで、合意が結ばれた時点よりも前からの予定だったという時間の前後関係がはっきりします。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6では、be due to / be scheduled to / be expected to のような〈be動詞＋形容詞・過去分詞＋to不定詞〉の形が頻出です。過去完了形と組み合わさると、文中の2つの出来事のどちらが先に起きたかを問う設問（過去形か過去完了形かを選ばせる問題）につながりやすいので、他に過去の出来事を示す表現がないか探すことがポイントになります。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"The shipment had been due to arrive on Monday, but the delay pushed it back to Friday.\"（出荷は月曜到着予定だったが、遅延により金曜にずれ込んだ）のように、当初の予定と実際の結果を対比させたいときによく使われる表現です。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜこの首脳会談が重要なのか",
+      "body": "米中は世界の2大経済大国であり、両国の関税政策や規制姿勢は世界中のサプライチェーンや株式市場に直接影響する。「トレード・トゥルース（trade truce）」とは、双方が新たな関税引き上げなどの対抗措置を一時的に停止する合意のことで、企業が投資計画や在庫戦略を立てるうえでの目先の安心材料になる。ただし今回の延長は2カ月間という短期間にとどまり、根本的な対立が解消されたわけではない点に注意が必要である。"
+    },
+    {
+      "heading": "📌 業界全体・競合関係の動向",
+      "body": "半導体やAI関連の輸出規制、レアアース（希少金属）の供給を巡る駆け引きは、米中双方のハイテク企業の競争力に直結する。今回のように大枠での合意と個別分野での対立が併存する状況は、企業にとって「短期的な安定」と「中長期的な不確実性」が同時に存在することを意味し、生産拠点や調達先を分散させる「チャイナ・プラスワン」戦略を進める企業が増えている。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響",
+      "body": "日本企業の多くは米国・中国の双方に生産拠点や販売網を持っており、米中間の関税や規制の変化はサプライチェーンの見直しを迫る要因になる。今回の関税引き下げ案の対象に自動車部品や電子部品が含まれれば、日本企業の取引先である現地サプライヤーの動向にも波及しうる。日本政府にとっても、米中どちらか一方に偏らない通商戦略の重要性が一段と増している。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "投資家にとっては、今回の休戦延長が「関税リスクの先送り」に過ぎないという見方が重要で、2カ月後に交渉が再び難航すれば市場が動揺する可能性がある。経営者にとっては、目先の関税率の変化だけでなく、AIや先端技術分野での規制強化がいつ・どの範囲に及ぶかを継続的に注視し、複数のシナリオを想定した事業計画を立てておくことが求められる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trump-Xi summit: Leaders meet at White House amid tensions over Taiwan, trade and AI",
+      "publisher": "NBC News",
+      "url": "https://www.nbcnews.com/world/asia/trump-xi-summit-meet-white-house-tensions-taiwan-trade-ai-rcna598073",
+      "date": "2026-09-24"
+    },
+    {
+      "title": "'Hostile, but hooked': What's behind the US-China trade truce extension?",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news-analysis/2026/9/24/hostile-but-hooked-whats-behind-the-us-china-trade-truce-extension",
+      "date": "2026-09-24"
+    },
+    {
+      "title": "Trump, Xi seek trade stability and deals, but AI, tariffs and Iran loom large. What to watch",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/21/trump-xi-china-summit-trade-tariffs.html",
+      "date": "2026-09-21"
+    }
+  ]
+}
