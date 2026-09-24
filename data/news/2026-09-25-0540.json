@@ -64,14 +64,33 @@
       "type": "detail",
       "prompt": "How long was the U.S.-China trade truce extended, according to the article?",
       "choices": [
-        { "key": "A", "text": "One month", "ja": "1カ月" },
-        { "key": "B", "text": "Two months", "ja": "2カ月" },
-        { "key": "C", "text": "Three months", "ja": "3カ月" },
-        { "key": "D", "text": "Six months", "ja": "6カ月" }
+        {
+          "key": "A",
+          "text": "One month",
+          "ja": "1カ月"
+        },
+        {
+          "key": "B",
+          "text": "Two months",
+          "ja": "2カ月"
+        },
+        {
+          "key": "C",
+          "text": "Three months",
+          "ja": "3カ月"
+        },
+        {
+          "key": "D",
+          "text": "Six months",
+          "ja": "6カ月"
+        }
       ],
       "answer": "B",
       "explanation": "本文1段落目（what）3文目に「senior officials from both countries had already agreed to extend their trade truce by two months」とあり、休戦期間は「2カ月」延長されたと明記されている。(A)の1カ月、(C)の3カ月、(D)の6カ月はいずれも本文に登場しない数字を使った紛らわしい選択肢。",
-      "evidence": { "p": 0, "s": 2 },
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
       "tip": "TOEIC Part 7の数字問題では、選択肢の単位（月・日・年など）まで本文の記述と完全に一致するかを確認することが重要。"
     },
     {
@@ -79,14 +98,33 @@
       "type": "not",
       "prompt": "According to the article, which of the following is NOT mentioned as a topic of disagreement or discussion between the U.S. and China?",
       "choices": [
-        { "key": "A", "text": "Taiwan", "ja": "台湾問題" },
-        { "key": "B", "text": "Artificial intelligence", "ja": "人工知能" },
-        { "key": "C", "text": "A tariff-cutting plan worth over $30 billion", "ja": "300億ドル超の関税引き下げ案" },
-        { "key": "D", "text": "Climate change policy", "ja": "気候変動政策" }
+        {
+          "key": "A",
+          "text": "Taiwan",
+          "ja": "台湾問題"
+        },
+        {
+          "key": "B",
+          "text": "Artificial intelligence",
+          "ja": "人工知能"
+        },
+        {
+          "key": "C",
+          "text": "A tariff-cutting plan worth over $30 billion",
+          "ja": "300億ドル超の関税引き下げ案"
+        },
+        {
+          "key": "D",
+          "text": "Climate change policy",
+          "ja": "気候変動政策"
+        }
       ],
       "answer": "D",
       "explanation": "本文2段落目（why）に、両首脳が話し合った内容として(C)の関税引き下げ案（1文目）、意見が対立する話題として(A)台湾問題と(B)人工知能（2文目）がそれぞれ明記されている。一方、(D)の気候変動政策については本文のどこにも記載がない。",
-      "evidence": { "p": 1, "s": 1 },
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
       "tip": "NOT問題では、選択肢を一つずつ本文と照合し、本文に書かれていないものだけを消去法で見つけるのが基本の解き方。"
     }
   ],
@@ -181,34 +219,146 @@
     }
   ],
   "glossary": {
-    "hosted": { "lemma": "host", "ja": "主催した、迎えた", "note": "" },
-    "face-to-face": { "lemma": "face-to-face", "ja": "直接顔を合わせた", "note": "" },
-    "meeting": { "lemma": "meeting", "ja": "会談、会議", "note": "" },
-    "visit": { "lemma": "visit", "ja": "訪問", "note": "" },
-    "welcome": { "lemma": "welcome", "ja": "歓迎", "note": "" },
-    "dinner": { "lemma": "dinner", "ja": "晩さん会、夕食会", "note": "" },
-    "officials": { "lemma": "official", "ja": "当局者、高官", "note": "" },
-    "agreed": { "lemma": "agree", "ja": "合意した", "note": "" },
-    "extend": { "lemma": "extend", "ja": "延長する", "note": "" },
-    "truce": { "lemma": "truce", "ja": "休戦、停戦", "note": "" },
-    "months": { "lemma": "month", "ja": "カ月", "note": "" },
-    "extension": { "lemma": "extension", "ja": "延長", "note": "" },
-    "put off": { "lemma": "put off", "ja": "延期する、先送りにする", "note": "句動詞" },
-    "fresh": { "lemma": "fresh", "ja": "新たな", "note": "" },
-    "round": { "lemma": "round", "ja": "（交渉の）一連、ラウンド", "note": "" },
-    "higher": { "lemma": "high", "ja": "より高い", "note": "" },
-    "tariffs": { "lemma": "tariff", "ja": "関税", "note": "" },
-    "due": { "lemma": "due", "ja": "〜する予定で", "note": "" },
-    "take effect": { "lemma": "take effect", "ja": "発効する", "note": "熟語" },
-    "leaders": { "lemma": "leader", "ja": "首脳、指導者", "note": "" },
-    "discussed": { "lemma": "discuss", "ja": "話し合った", "note": "" },
-    "plan": { "lemma": "plan", "ja": "計画、案", "note": "" },
-    "lower": { "lemma": "low", "ja": "引き下げる", "note": "" },
-    "matching": { "lemma": "match", "ja": "同等の、対応する", "note": "" },
-    "goods": { "lemma": "goods", "ja": "商品、物品", "note": "" },
-    "disagreements": { "lemma": "disagreement", "ja": "意見の相違", "note": "" },
-    "strain": { "lemma": "strain", "ja": "緊張、負担", "note": "" },
-    "eased": { "lemma": "ease", "ja": "和らげた", "note": "" }
+    "hosted": {
+      "lemma": "host",
+      "ja": "主催した、迎えた",
+      "note": ""
+    },
+    "face-to-face": {
+      "lemma": "face-to-face",
+      "ja": "直接顔を合わせた",
+      "note": ""
+    },
+    "meeting": {
+      "lemma": "meeting",
+      "ja": "会談、会議",
+      "note": ""
+    },
+    "visit": {
+      "lemma": "visit",
+      "ja": "訪問",
+      "note": ""
+    },
+    "welcome": {
+      "lemma": "welcome",
+      "ja": "歓迎",
+      "note": ""
+    },
+    "dinner": {
+      "lemma": "dinner",
+      "ja": "晩さん会、夕食会",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "ja": "当局者、高官",
+      "note": ""
+    },
+    "agreed": {
+      "lemma": "agree",
+      "ja": "合意した",
+      "note": ""
+    },
+    "extend": {
+      "lemma": "extend",
+      "ja": "延長する",
+      "note": ""
+    },
+    "truce": {
+      "lemma": "truce",
+      "ja": "休戦、停戦",
+      "note": ""
+    },
+    "months": {
+      "lemma": "month",
+      "ja": "カ月",
+      "note": ""
+    },
+    "extension": {
+      "lemma": "extension",
+      "ja": "延長",
+      "note": ""
+    },
+    "put off": {
+      "lemma": "put off",
+      "ja": "延期する、先送りにする",
+      "note": "句動詞"
+    },
+    "fresh": {
+      "lemma": "fresh",
+      "ja": "新たな",
+      "note": ""
+    },
+    "round": {
+      "lemma": "round",
+      "ja": "（交渉の）一連、ラウンド",
+      "note": ""
+    },
+    "higher": {
+      "lemma": "high",
+      "ja": "より高い",
+      "note": ""
+    },
+    "tariffs": {
+      "lemma": "tariff",
+      "ja": "関税",
+      "note": ""
+    },
+    "due": {
+      "lemma": "due",
+      "ja": "〜する予定で",
+      "note": ""
+    },
+    "take effect": {
+      "lemma": "take effect",
+      "ja": "発効する",
+      "note": "熟語"
+    },
+    "leaders": {
+      "lemma": "leader",
+      "ja": "首脳、指導者",
+      "note": ""
+    },
+    "discussed": {
+      "lemma": "discuss",
+      "ja": "話し合った",
+      "note": ""
+    },
+    "plan": {
+      "lemma": "plan",
+      "ja": "計画、案",
+      "note": ""
+    },
+    "lower": {
+      "lemma": "low",
+      "ja": "引き下げる",
+      "note": ""
+    },
+    "matching": {
+      "lemma": "match",
+      "ja": "同等の、対応する",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "ja": "商品、物品",
+      "note": ""
+    },
+    "disagreements": {
+      "lemma": "disagreement",
+      "ja": "意見の相違",
+      "note": ""
+    },
+    "strain": {
+      "lemma": "strain",
+      "ja": "緊張、負担",
+      "note": ""
+    },
+    "eased": {
+      "lemma": "ease",
+      "ja": "和らげた",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "be due to do の過去完了形（had been due to do）＝「〜する予定だったが実現しなかった」という未達成の予定を表す表現",
@@ -270,5 +420,22 @@
       "url": "https://www.cnbc.com/2026/09/21/trump-xi-china-summit-trade-tariffs.html",
       "date": "2026-09-21"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-25-0540/00.mp3",
+      "audio/2026-09-25-0540/01.mp3",
+      "audio/2026-09-25-0540/02.mp3",
+      "audio/2026-09-25-0540/03.mp3",
+      "audio/2026-09-25-0540/04.mp3",
+      "audio/2026-09-25-0540/05.mp3",
+      "audio/2026-09-25-0540/06.mp3",
+      "audio/2026-09-25-0540/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 222792,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-24T20:47:58.693Z",
+    "trimmed": true
+  }
 }
