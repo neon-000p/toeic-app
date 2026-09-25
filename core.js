@@ -64,6 +64,27 @@
     return out.join('・');
   }
 
+  /* ---------- 語注の例文 ----------
+     時事の語彙は教材に例文を持つが、Part 3〜7 の語注には無い。
+     そこで本文のうち、その語が出てくる最初の文を例文にする。
+     keys は語注のキー（本文の表層形）と原形。先に書いたほうを優先する。
+     sents は [{ en, ja }]。語の区切りで照合し、部分一致（rate と rater など）は拾わない。 */
+  function exampleFor(keys, sents) {
+    function norm(s) { return String(s || '').replace(/[‘’]/g, "'"); }
+    var list = (sents || []).filter(function (s) { return s && s.en; });
+    for (var i = 0; i < keys.length; i++) {
+      var k = norm(keys[i]).trim();
+      if (!k) continue;
+      var re = new RegExp('(^|[^A-Za-z\'-])' +
+        k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+') +
+        '(?![A-Za-z])', 'i');
+      for (var j = 0; j < list.length; j++) {
+        if (re.test(norm(list[j].en))) return { en: list[j].en, ja: list[j].ja || '' };
+      }
+    }
+    return null;
+  }
+
   /* ---------- 語彙帳 ---------- */
   /* 1件 = { term, pos, ja, gloss, example, src, srcTitle, addedAt, box }
      box は将来の間隔反復用（0=未学習）。いまは記録だけしておく。 */
@@ -1256,7 +1277,7 @@
 
   global.TOEIC = {
     read: read, write: write,
-    Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS, AI: AI, posJa: posJa,
+    Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS, AI: AI, posJa: posJa, exampleFor: exampleFor,
     modal: modal, openSettings: openSettings,
     flash: flash, takeFlash: takeFlash, numberSets: numberSets, build: build,
     watchSelection: watchSelection, phrasePop: phrasePop,
