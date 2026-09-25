@@ -193,6 +193,7 @@ Part 3 の会話は**必ず「動きのある型」**になっている。次の
 - **8〜12語**。会話に実在する語・熟語だけ。
 - キーは**本文の表層形を小文字化したもの**（`booked`、`put together` など。原形に直さない）。
 - 値は `{ "lemma": 原形, "pos": 品詞, "ja": 訳, "note": 補足 }`。`note` は不要なら空文字。
+- `pos` は時事の語彙と同じ「名／動／形／副／前／接／熟」。複数品詞は「名・動」、熟語・句動詞・コロケーションは「熟」。`n` / `v` などの英語略号は使わない。
 
 **何を入れるか。** ここはアプリの「語彙」ステップにそのまま並ぶ。内容語を機械的に
 拾うと `afternoon` `desk` `price` `finish` のような語ばかりになり、600点台の学習者に
@@ -300,7 +301,7 @@ push したら `git branch --show-current` が `main` であることと、`git 
   ],
   "glossary": {
     "put together": { "lemma": "put together", "pos": "熟", "ja": "まとめる、作成する", "note": "prepare の言い換え" },
-    "booked": { "lemma": "book", "pos": "v", "ja": "予約する", "note": "選択肢では reserve に置き換わる" }
+    "booked": { "lemma": "book", "pos": "動", "ja": "予約する", "note": "選択肢では reserve に置き換わる" }
   },
   "point": {
     "flow": "...",

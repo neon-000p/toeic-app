@@ -2,13 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-21 1ce116e">
+<meta name="app-build" content="2026-09-25 73ef6ec">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>語彙帳 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=4591a5f7">
+<link rel="stylesheet" href="style.css?v=ae98e9f4">
 <style>
 body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 
@@ -100,7 +100,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 
 <main class="wrap" id="main"></main>
 
-<script src="core.js?v=a18cc9e0"></script>
+<script src="core.js?v=3c00c254"></script>
 <script>
 (function () {
   'use strict';
@@ -184,7 +184,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
       '<div class="card card-wrap flash">' +
         '<div>' +
           '<div class="term">' + esc(e.term) + '</div>' +
-          (e.pos ? '<div class="pos">（' + esc(e.pos) + '）</div>' : '') +
+          (e.pos ? '<div class="pos">（' + esc(T.posJa(e.pos)) + '）</div>' : '') +
         '</div>' +
         (shown
           ? '<div class="reveal">' +
@@ -268,7 +268,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
               var ex = e.example || null;
               return '<div class="vrow">' +
                 '<div class="body">' +
-                  '<div class="t">' + esc(e.term) + (e.pos ? '<span class="pos">（' + esc(e.pos) + '）</span>' : '') + '</div>' +
+                  '<div class="t">' + esc(e.term) + (e.pos ? '<span class="pos">（' + esc(T.posJa(e.pos)) + '）</span>' : '') + '</div>' +
                   '<div class="j">' + esc(e.ja || '') + '</div>' +
                   (e.gloss ? '<div class="g">' + esc(e.gloss) + '</div>' : '') +
                   (ex && ex.en ? '<div class="ex">' + esc(ex.en) +

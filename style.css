@@ -184,6 +184,7 @@ hr.sep{border:0;border-top:1px solid var(--line);margin:16px 0}
 }
 .pop .term{font-family:var(--serif);font-size:15.5px;font-weight:700;line-height:1.25}
 .pop .lemma{font-size:11.5px;color:var(--muted);margin-left:6px;font-family:var(--serif)}
+.pop .term .vpos{font-family:var(--sans);font-size:11px;font-weight:700;color:var(--muted);margin-left:6px}
 .pop .ja{margin-top:2px;font-size:13.5px}
 .pop .note{margin-top:3px;font-size:11.5px;color:var(--muted)}
 .pop .row{display:flex;gap:6px;margin-top:8px}
@@ -197,7 +198,6 @@ hr.sep{border:0;border-top:1px solid var(--line);margin:16px 0}
 
 .pop{max-width:min(360px,calc(100vw - 24px))}
 .pop-ai-b{margin-top:2px}
-.pop-ai-ja{font-size:13.5px}
 .pop-ai-u{font-size:12px;color:var(--ink-2);margin-top:3px;line-height:1.55}
 .pop-hint{margin-top:9px;padding-top:8px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted)}
 
