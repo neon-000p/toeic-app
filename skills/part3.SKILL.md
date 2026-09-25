@@ -192,8 +192,12 @@ Part 3 の会話は**必ず「動きのある型」**になっている。次の
 
 - **8〜12語**。会話に実在する語・熟語だけ。
 - キーは**本文の表層形を小文字化したもの**（`booked`、`put together` など。原形に直さない）。
-- 値は `{ "lemma": 原形, "pos": 品詞, "ja": 訳, "note": 補足 }`。`note` は不要なら空文字。
+- 値は `{ "lemma": 原形, "pos": 品詞, "ja": 訳, "note": 補足, "example": { "en": 例文, "ja": 例文の訳 } }`。`note` は不要なら空文字。
 - `pos` は時事の語彙と同じ「名／動／形／副／前／接／熟」。複数品詞は「名・動」、熟語・句動詞・コロケーションは「熟」。`n` / `v` などの英語略号は使わない。
+- **各語に例文を1つ付ける**（時事の語彙と同じ）。`"example": { "en": 英語例文, "ja": その訳 }`。
+  - **本文の文をそのまま使わない**。同じ語を、TOEIC のビジネス・日常の別の場面に置いた短い1文（8〜15語程度）を新たに作る。本文はアプリの対訳で読めるので、例文は「別の場面でも同じ意味で使える」ことを見せるためのもの。
+  - 見出しの語（原形でも活用形でもよい）を必ず含め、`ja` の意味で使う。多義語は `ja` に書いた意味の例文にする。
+  - `ja` は例文の自然な和訳。
 
 **何を入れるか。** ここはアプリの「語彙」ステップにそのまま並ぶ。内容語を機械的に
 拾うと `afternoon` `desk` `price` `finish` のような語ばかりになり、600点台の学習者に
@@ -300,8 +304,10 @@ push したら `git branch --show-current` が `main` であることと、`git 
     }
   ],
   "glossary": {
-    "put together": { "lemma": "put together", "pos": "熟", "ja": "まとめる、作成する", "note": "prepare の言い換え" },
-    "booked": { "lemma": "book", "pos": "動", "ja": "予約する", "note": "選択肢では reserve に置き換わる" }
+    "put together": { "lemma": "put together", "pos": "熟", "ja": "まとめる、作成する", "note": "prepare の言い換え",
+                      "example": { "en": "Could you put together a short report on last month's sales?", "ja": "先月の売上について短い報告書をまとめてもらえますか。" } },
+    "booked": { "lemma": "book", "pos": "動", "ja": "予約する", "note": "選択肢では reserve に置き換わる",
+                "example": { "en": "I've booked a table for six at the hotel restaurant.", "ja": "ホテルのレストランに6人分の席を予約しました。" } }
   },
   "point": {
     "flow": "...",
@@ -370,6 +376,7 @@ node tools/check-part3.js --all
 - すべての `evidence` が `lines` の実在する添字（0 以上 `lines.length - 1` 以下）
 - 設問の並びが会話の流れと一致している
 - `glossary` が8〜12語で、全キーが会話本文に実在する小文字表層形である
+- `glossary` の全語に `example`（`en` と `ja`）があり、どれも本文の文をそのまま写していない
 - `glossary` の半分以上が2語以上のまとまり（句動詞・熟語・コロケーション・言い換え）である
 - `glossary` に、高校初級までの単語を基本の意味のまま入れた項目が無い
 - `point.items` が2〜3項目で、設問1問に閉じた話になっていない

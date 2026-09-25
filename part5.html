@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-25 73ef6ec">
+<meta name="app-build" content="2026-09-25 b72d803">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Part 5 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -105,8 +105,15 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   color:var(--accent);font-size:9px;line-height:1;cursor:pointer;
 }
 .vterm .say-btn{margin:0 6px 0 8px}
-.terms-only .vja,.terms-only .vgloss{display:none}
-.terms-only .vcard.open .vja,.terms-only .vcard.open .vgloss{display:block}
+.vex{
+  font-family:var(--serif);font-size:14px;line-height:1.7;color:var(--ink-2);
+  border-left:2px solid var(--line-2);padding-left:10px;margin-top:8px;
+  position:relative;padding-right:32px;
+}
+.vex .j{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:2px}
+.vex .say-btn{position:absolute;right:0;top:3px}
+.terms-only .vja,.terms-only .vgloss,.terms-only .vex{display:none}
+.terms-only .vcard.open .vja,.terms-only .vcard.open .vgloss,.terms-only .vcard.open .vex{display:block}
 .terms-only .vcard{cursor:pointer}
 .star{
   flex:none;width:34px;height:34px;border-radius:9px;border:1px solid var(--line-2);
@@ -171,7 +178,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   </div>
 </nav>
 
-<script src="core.js?v=3c00c254"></script>
+<script src="core.js?v=ad17cef0"></script>
 <script>
 (function () {
   'use strict';
@@ -410,6 +417,17 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     return html;
   }
 
+  /* 語彙の例文に使う本文の文。空所は正解で埋めた形にする */
+  function vocabSents() {
+    return qs().map(function (q) { return { en: plain(q), ja: q.ja || '' }; });
+  }
+
+  /* 語注の例文。教材が example を持っていればそれ、無ければ本文でその語が出てくる文 */
+  function vocabExample(k, e) {
+    if (e && e.example && e.example.en) return e.example;
+    return T.exampleFor([k, e && e.lemma], vocabSents());
+  }
+
   function viewVocab() {
     var g = SET.glossary || {};
     var keys = Object.keys(g);
@@ -422,6 +440,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       keys.map(function (k, i) {
         var e = g[k], term = e.lemma || k;
         var on = T.Vocab.has(term);
+        var ex = vocabExample(k, e);
         return '<div class="vcard">' +
           '<span class="no">' + (i + 1) + '</span>' +
           '<div class="body">' +
@@ -430,6 +449,9 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
               (e.pos ? '<span class="vpos">（' + esc(T.posJa(e.pos)) + '）</span>' : '') + '</div>' +
             '<div class="vja">' + esc(e.ja || '') + '</div>' +
             (e.note ? '<div class="vgloss">' + esc(e.note) + '</div>' : '') +
+            (ex ? '<div class="vex">' + esc(ex.en) +
+              '<button class="say-btn" data-sayw="' + esc(ex.en) + '" title="例文を再生">▶</button>' +
+              (ex.ja ? '<div class="j">' + esc(ex.ja) + '</div>' : '') + '</div>' : '') +
           '</div>' +
           '<button class="star' + (on ? ' on' : '') + '" data-term="' + esc(term) + '" title="語彙帳">' +
             (on ? '★' : '☆') + '</button></div>';
@@ -595,12 +617,13 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     if (st) {
       var term = st.dataset.term;
       var g = SET.glossary || {};
-      var hit = null;
-      Object.keys(g).forEach(function (k) { if ((g[k].lemma || k) === term) hit = g[k]; });
+      var hit = null, hitKey = '';
+      Object.keys(g).forEach(function (k) { if (!hit && (g[k].lemma || k) === term) { hit = g[k]; hitKey = k; } });
       if (T.Vocab.has(term)) { T.Vocab.remove(term); T.toast('語彙帳から外しました'); }
       else {
         T.Vocab.add({ term: term, pos: (hit && hit.pos) || '', ja: (hit && hit.ja) || '',
-                      gloss: (hit && hit.note) || '', src: SET.id,
+                      gloss: (hit && hit.note) || '', example: hit ? vocabExample(hitKey, hit) : null,
+                      src: SET.id,
                       srcTitle: 'Part 5 ' + (SET.focus || '') });
         T.toast('語彙帳に追加しました');
       }

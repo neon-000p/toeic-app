@@ -139,6 +139,11 @@ Questions 1-5 refer to the following e-mail and schedule.
 ## ステップ4：語注と Point
 
 - `glossary` は**8〜12語**、キーは本文の表層形を小文字化したもの。**半分以上は2語以上のまとまり**。高校初級までの単語を基本の意味のまま入れない。
+- 値は `{ "lemma": 原形, "pos": 品詞, "ja": 訳, "note": 補足, "example": { "en": 例文, "ja": 例文の訳 } }`。`pos` は「名／動／形／副／前／接／熟」。
+- **各語に例文を1つ付ける**（時事の語彙と同じ）。`"example": { "en": 英語例文, "ja": その訳 }`。
+  - **本文の文をそのまま使わない**。同じ語を、TOEIC のビジネス・日常の別の場面に置いた短い1文（8〜15語程度）を新たに作る。本文はアプリの対訳で読めるので、例文は「別の場面でも同じ意味で使える」ことを見せるためのもの。
+  - 見出しの語（原形でも活用形でもよい）を必ず含め、`ja` の意味で使う。多義語は `ja` に書いた意味の例文にする。
+  - `ja` は例文の自然な和訳。
 - `point` は `lead`（1行）と `items` 2〜3項目。**セット全体を貫く読み方**を書く。
   「設問を1つ読んでから本文に戻る」「複数文書は、2つ目を読む前に1つ目で分かったことを1行でまとめる」のように、内容から離れても使える形にする。
 
@@ -199,7 +204,8 @@ Questions 1-5 refer to the following e-mail and schedule.
       "tip": "この型の解き方"
     }
   ],
-  "glossary": { "stall": { "lemma": "stall", "pos": "名", "ja": "売り場、屋台", "note": "" } },
+  "glossary": { "stall": { "lemma": "stall", "pos": "名", "ja": "売り場、屋台", "note": "",
+                           "example": { "en": "The farmers' market has more than forty stalls.", "ja": "その朝市には40を超える売り場がある。" } } },
   "point": { "lead": "...", "items": [ { "title": "...", "body": "..." } ] }
 }
 ```
@@ -255,6 +261,7 @@ node tools/check-part7.js --all
 - `intent` は `chat` の文書があるときだけ
 - 正解に同じ文字が3問以上無い
 - `glossary` が8〜12語で全キーが本文に実在し、半分以上が2語以上のまとまり
+- `glossary` の全語に `example`（`en` と `ja`）があり、どれも本文の文をそのまま写していない
 - `point.lead` があり、`point.items` が2〜3項目
 - `audio` を書いていない
 - `index.json` と `history.json` の先頭に今回の項目を追記した
