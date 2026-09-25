@@ -154,6 +154,8 @@ function check(file) {
   const GLOSS_RULE_FROM = '2026-09-15';
   const madeOn = (/^(\d{4}-\d{2}-\d{2})/.exec(set.id || '') || [])[1] || '';
   const gl = set.glossary || {};
+  const EXAMPLE_RULE_FROM = '2026-09-26';
+  const exampleRequired = ((/^(\d{4}-\d{2}-\d{2})/.exec(set.id || '') || [])[1] || '') >= EXAMPLE_RULE_FROM;
   const gkeys = Object.keys(gl);
   /* 熟語・句動詞・コロケーション。キーか原形に空白が入っているもの */
   const gPhrases = gkeys.filter((k) => /\s/.test(k) || /\s/.test((gl[k] || {}).lemma || ''));
@@ -172,6 +174,16 @@ function check(file) {
     if (!v.pos) say(`glossary[${k}] に pos が無い`);
     if (!v.ja) say(`glossary[${k}] に ja が無い`);
     if (v.note === undefined) say(`glossary[${k}] に note が無い（不要なら空文字）`);
+    /* 例文は 2026-09-26 から。時事の語彙と同じく、本文とは別に作った短い例文と和訳。
+       それより前のセットは本文の文をアプリが例文に回すので、ここでは見ない。 */
+    if (exampleRequired) {
+      const ex = v.example || {};
+      if (!ex.en) say(`glossary[${k}] に example.en（例文）が無い`);
+      if (!ex.ja) say(`glossary[${k}] に example.ja（例文の訳）が無い`);
+      if (ex.en && text.indexOf(String(ex.en).trim().toLowerCase().replace(/[.!?]+$/, '')) >= 0) {
+        say(`glossary[${k}] の例文が本文の文そのまま（本文とは別の例文にする）`);
+      }
+    }
   });
 
   /* ---- Point ---- */

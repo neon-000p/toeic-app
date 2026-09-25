@@ -114,8 +114,12 @@ All visitors must ------- their badges at the front desk before entering the lab
 
 - **8〜12語**。10問の文に実在する語・熟語だけ。
 - キーは**本文の表層形を小文字化したもの**（`submitted`、`in charge of` など。原形に直さない）。
-- 値は `{ "lemma": 原形, "pos": 品詞, "ja": 訳, "note": 補足 }`。`note` は不要なら空文字。
+- 値は `{ "lemma": 原形, "pos": 品詞, "ja": 訳, "note": 補足, "example": { "en": 例文, "ja": 例文の訳 } }`。`note` は不要なら空文字。
 - `pos` は時事の語彙と同じ「名／動／形／副／前／接／熟」。複数品詞は「名・動」、熟語・句動詞・コロケーションは「熟」。`n` / `v` などの英語略号は使わない。
+- **各語に例文を1つ付ける**（時事の語彙と同じ）。`"example": { "en": 英語例文, "ja": その訳 }`。
+  - **本文の文をそのまま使わない**。同じ語を、TOEIC のビジネス・日常の別の場面に置いた短い1文（8〜15語程度）を新たに作る。本文はアプリの対訳で読めるので、例文は「別の場面でも同じ意味で使える」ことを見せるためのもの。
+  - 見出しの語（原形でも活用形でもよい）を必ず含め、`ja` の意味で使う。多義語は `ja` に書いた意味の例文にする。
+  - `ja` は例文の自然な和訳。
 - **半分以上は2語以上のまとまりにする**（`in charge of`、`prior to`、`no later than`、`be subject to`）。Part 5 は語彙問題でこの形が問われる。
 - 高校初級までの単語を基本の意味のまま入れない。**覚えて初めて点が動く語だけ**を選ぶ。
 
@@ -191,7 +195,8 @@ git push origin main
     }
   ],
   "glossary": {
-    "prior to": { "lemma": "prior to", "pos": "熟", "ja": "〜より前に", "note": "before の硬い言い方" }
+    "prior to": { "lemma": "prior to", "pos": "熟", "ja": "〜より前に", "note": "before の硬い言い方",
+                  "example": { "en": "Please check in at the front desk prior to the meeting.", "ja": "会議の前に受付で手続きをしてください。" } }
   },
   "point": {
     "lead": "...",
@@ -254,6 +259,7 @@ node tools/check-part5.js --all
 - 10問の正解が A・B・C・D それぞれ2問以上
 - `focus` が「文法N・語彙M」の形で、実際の配分と一致している
 - `glossary` が8〜12語で、全キーが本文に実在する小文字表層形である
+- `glossary` の全語に `example`（`en` と `ja`）があり、どれも本文の文をそのまま写していない
 - `glossary` の半分以上が2語以上のまとまり
 - `point.lead` があり、`point.items` が2〜3項目
 - `audio` を書いていない
