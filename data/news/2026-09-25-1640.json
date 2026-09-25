@@ -8,25 +8,52 @@
   "genre": "小売・消費",
   "genreEn": "Retail & Consumer",
   "sample": false,
-  "title": { "en": "Aldi Cuts Prices on Nearly a Third of Its Everyday Items", "ja": "アルディ、日常品の約3分の1を値下げ" },
+  "title": {
+    "en": "Aldi Cuts Prices on Nearly a Third of Its Everyday Items",
+    "ja": "アルディ、日常品の約3分の1を値下げ"
+  },
   "summary": {
     "paragraphs": [
       {
         "role": "what",
         "sentences": [
-          { "en": "Aldi, the discount grocery chain, cut prices on nearly one-third of its everyday in-store items this week.", "ja": "ディスカウント食料品チェーンのアルディは今週、店舗で扱う日常商品の約3分の1について値下げを行った。" },
-          { "en": "The lower prices took effect on September 23 and will remain in place through at least November 3 at stores nationwide.", "ja": "値下げは9月23日から全米の店舗で適用されており、少なくとも11月3日まで続く見通しだ。" },
-          { "en": "Aldi expects the change to save shoppers about $86 million in total.", "ja": "アルディは今回の値下げにより、消費者が合計で約8600万ドルを節約できると見込んでいる。" }
+          {
+            "en": "Aldi, the discount grocery chain, cut prices on nearly one-third of its everyday in-store items this week.",
+            "ja": "ディスカウント食料品チェーンのアルディは今週、店舗で扱う日常商品の約3分の1について値下げを行った。"
+          },
+          {
+            "en": "The lower prices took effect on September 23 and will remain in place through at least November 3 at stores nationwide.",
+            "ja": "値下げは9月23日から全米の店舗で適用されており、少なくとも11月3日まで続く見通しだ。"
+          },
+          {
+            "en": "Aldi expects the change to save shoppers about $86 million in total.",
+            "ja": "アルディは今回の値下げにより、消費者が合計で約8600万ドルを節約できると見込んでいる。"
+          }
         ]
       },
       {
         "role": "why",
         "sentences": [
-          { "en": "Fresh fruits and vegetables, such as apples, pears, and squash, along with chicken, make up many of the biggest cuts.", "ja": "値下げ幅が特に大きいのは、りんごや洋梨、かぼちゃなどの生鮮野菜・果物、そして鶏肉である。" },
-          { "en": "Honeycrisp apples now cost $1.99 a pound, a 35 percent drop from last year.", "ja": "ハニークリスプ種のりんごは1ポンド1.99ドルとなり、昨年から35%の値下げとなった。" },
-          { "en": "Kirkwood chicken breast, Aldi's store brand, fell to the same price, its lowest level since 2022.", "ja": "アルディの自社ブランド「カークウッド」の鶏むね肉も同じ価格まで下がり、2022年以来の安値となった。" },
-          { "en": "Grocery prices have stayed high this year, so many shoppers now compare prices across different stores.", "ja": "今年は食料品価格が高止まりしており、多くの消費者が複数の店舗で価格を比較するようになっている。" },
-          { "en": "Aldi hopes the cuts will draw more budget-conscious customers before the busy holiday season.", "ja": "アルディは、書き入れ時となる年末商戦を前に、節約志向の強い顧客をより多く取り込みたい考えだ。" }
+          {
+            "en": "Fresh fruits and vegetables, such as apples, pears, and squash, along with chicken, make up many of the biggest cuts.",
+            "ja": "値下げ幅が特に大きいのは、りんごや洋梨、かぼちゃなどの生鮮野菜・果物、そして鶏肉である。"
+          },
+          {
+            "en": "Honeycrisp apples now cost $1.99 a pound, a 35 percent drop from last year.",
+            "ja": "ハニークリスプ種のりんごは1ポンド1.99ドルとなり、昨年から35%の値下げとなった。"
+          },
+          {
+            "en": "Kirkwood chicken breast, Aldi's store brand, fell to the same price, its lowest level since 2022.",
+            "ja": "アルディの自社ブランド「カークウッド」の鶏むね肉も同じ価格まで下がり、2022年以来の安値となった。"
+          },
+          {
+            "en": "Grocery prices have stayed high this year, so many shoppers now compare prices across different stores.",
+            "ja": "今年は食料品価格が高止まりしており、多くの消費者が複数の店舗で価格を比較するようになっている。"
+          },
+          {
+            "en": "Aldi hopes the cuts will draw more budget-conscious customers before the busy holiday season.",
+            "ja": "アルディは、書き入れ時となる年末商戦を前に、節約志向の強い顧客をより多く取り込みたい考えだ。"
+          }
         ]
       }
     ]
@@ -37,14 +64,33 @@
       "type": "detail",
       "prompt": "About how much money in total does Aldi expect its new price cuts to save shoppers, according to the article?",
       "choices": [
-        { "key": "A", "text": "About $35 million", "ja": "約3500万ドル" },
-        { "key": "B", "text": "About $86 million", "ja": "約8600万ドル" },
-        { "key": "C", "text": "About $100 million", "ja": "約1億ドル" },
-        { "key": "D", "text": "About $150 million", "ja": "約1億5000万ドル" }
+        {
+          "key": "A",
+          "text": "About $35 million",
+          "ja": "約3500万ドル"
+        },
+        {
+          "key": "B",
+          "text": "About $86 million",
+          "ja": "約8600万ドル"
+        },
+        {
+          "key": "C",
+          "text": "About $100 million",
+          "ja": "約1億ドル"
+        },
+        {
+          "key": "D",
+          "text": "About $150 million",
+          "ja": "約1億5000万ドル"
+        }
       ],
       "answer": "B",
       "explanation": "正解は(B) About $86 million。本文第1段落3文目に「Aldi expects the change to save shoppers about $86 million in total.」と明記されている。(A)の35は本文に出てくる別の数字（りんごの値下げ率35%）を流用した引っかけ選択肢。(C)と(D)はいずれも本文に登場しない数字である。",
-      "evidence": { "p": 0, "s": 2 },
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
       "tip": "記事に複数の数字が登場する場合、それぞれが「総額」「割引率」「価格」のどれを表すのかを区別しながら読むことが、数字を問う設問を速く正確に解くコツである。"
     },
     {
@@ -52,110 +98,378 @@
       "type": "not",
       "prompt": "Which of the following is NOT mentioned in the article as an item with a lower price?",
       "choices": [
-        { "key": "A", "text": "Apples", "ja": "りんご" },
-        { "key": "B", "text": "Pears", "ja": "洋梨" },
-        { "key": "C", "text": "Squash", "ja": "かぼちゃ" },
-        { "key": "D", "text": "Frozen pizza", "ja": "冷凍ピザ" }
+        {
+          "key": "A",
+          "text": "Apples",
+          "ja": "りんご"
+        },
+        {
+          "key": "B",
+          "text": "Pears",
+          "ja": "洋梨"
+        },
+        {
+          "key": "C",
+          "text": "Squash",
+          "ja": "かぼちゃ"
+        },
+        {
+          "key": "D",
+          "text": "Frozen pizza",
+          "ja": "冷凍ピザ"
+        }
       ],
       "answer": "D",
       "explanation": "正解は(D) Frozen pizza。本文第2段落1文目に「Fresh fruits and vegetables, such as apples, pears, and squash, along with chicken, make up many of the biggest cuts.」とあり、値下げ品目としてりんご・洋梨・かぼちゃ・鶏肉が挙げられているが、冷凍ピザについては本文に一切登場しない。(A)〜(C)はいずれも本文に明記された品目であるため、NOT問題の正解にはならない。",
-      "evidence": { "p": 1, "s": 0 },
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
       "tip": "NOT問題では、選択肢を1つずつ本文と照合し、本文に書かれていないもの・本文と矛盾するものを消去法で探す。複数の項目が並ぶ列挙文はNOT問題の根拠になりやすいので、リスト形式の文には特に注意して読む。"
     }
   ],
   "vocabulary": [
     {
-      "no": 1, "term": "discount", "pos": "形", "ja": "割引の、安売りの",
+      "no": 1,
+      "term": "discount",
+      "pos": "形",
+      "ja": "割引の、安売りの",
       "gloss": "",
-      "example": { "en": "The discount airline attracted many budget travelers this year.", "ja": "その格安航空会社は今年、多くの節約志向の旅行者を引き付けた。" }
+      "example": {
+        "en": "The discount airline attracted many budget travelers this year.",
+        "ja": "その格安航空会社は今年、多くの節約志向の旅行者を引き付けた。"
+      }
     },
     {
-      "no": 2, "term": "remain", "pos": "動", "ja": "〜のままである、とどまる",
+      "no": 2,
+      "term": "remain",
+      "pos": "動",
+      "ja": "〜のままである、とどまる",
       "gloss": "",
-      "example": { "en": "The office will remain closed until the renovation is finished.", "ja": "その事務所は改装が終わるまで閉鎖されたままとなる。" }
+      "example": {
+        "en": "The office will remain closed until the renovation is finished.",
+        "ja": "その事務所は改装が終わるまで閉鎖されたままとなる。"
+      }
     },
     {
-      "no": 3, "term": "nationwide", "pos": "副", "ja": "全国的に、全国で",
+      "no": 3,
+      "term": "nationwide",
+      "pos": "副",
+      "ja": "全国的に、全国で",
       "gloss": "",
-      "example": { "en": "The company plans to launch the product nationwide next spring.", "ja": "その会社は来春、全国でその製品を発売する計画だ。" }
+      "example": {
+        "en": "The company plans to launch the product nationwide next spring.",
+        "ja": "その会社は来春、全国でその製品を発売する計画だ。"
+      }
     },
     {
-      "no": 4, "term": "drop", "pos": "名", "ja": "下落、減少",
+      "no": 4,
+      "term": "drop",
+      "pos": "名",
+      "ja": "下落、減少",
       "gloss": "",
-      "example": { "en": "The report showed a sharp drop in quarterly profits.", "ja": "その報告書は四半期利益の急激な下落を示した。" }
+      "example": {
+        "en": "The report showed a sharp drop in quarterly profits.",
+        "ja": "その報告書は四半期利益の急激な下落を示した。"
+      }
     },
     {
-      "no": 5, "term": "brand", "pos": "名", "ja": "ブランド、銘柄",
+      "no": 5,
+      "term": "brand",
+      "pos": "名",
+      "ja": "ブランド、銘柄",
       "gloss": "",
-      "example": { "en": "The company launched a new brand aimed at younger customers.", "ja": "その会社は若い顧客層を狙った新しいブランドを立ち上げた。" }
+      "example": {
+        "en": "The company launched a new brand aimed at younger customers.",
+        "ja": "その会社は若い顧客層を狙った新しいブランドを立ち上げた。"
+      }
     },
     {
-      "no": 6, "term": "budget-conscious", "pos": "形", "ja": "節約志向の、予算を気にする",
+      "no": 6,
+      "term": "budget-conscious",
+      "pos": "形",
+      "ja": "節約志向の、予算を気にする",
       "gloss": "",
-      "example": { "en": "Budget-conscious shoppers often compare prices before making a purchase.", "ja": "節約志向の買い物客は購入前に価格を比較することが多い。" }
+      "example": {
+        "en": "Budget-conscious shoppers often compare prices before making a purchase.",
+        "ja": "節約志向の買い物客は購入前に価格を比較することが多い。"
+      }
     },
     {
-      "no": 7, "term": "compare", "pos": "動", "ja": "比較する",
+      "no": 7,
+      "term": "compare",
+      "pos": "動",
+      "ja": "比較する",
       "gloss": "",
-      "example": { "en": "Customers should compare prices from several suppliers before signing a contract.", "ja": "顧客は契約を結ぶ前に複数の仕入れ先の価格を比較すべきだ。" }
+      "example": {
+        "en": "Customers should compare prices from several suppliers before signing a contract.",
+        "ja": "顧客は契約を結ぶ前に複数の仕入れ先の価格を比較すべきだ。"
+      }
     },
     {
-      "no": 8, "term": "stay", "pos": "動", "ja": "とどまる、〜のままである",
+      "no": 8,
+      "term": "stay",
+      "pos": "動",
+      "ja": "とどまる、〜のままである",
       "gloss": "",
-      "example": { "en": "Interest rates are expected to stay high for the rest of the year.", "ja": "金利は年内残りの期間、高いままにとどまると見られている。" }
+      "example": {
+        "en": "Interest rates are expected to stay high for the rest of the year.",
+        "ja": "金利は年内残りの期間、高いままにとどまると見られている。"
+      }
     }
   ],
   "glossary": {
-    "aldi": { "lemma": "Aldi", "pos": "名", "ja": "アルディ（ディスカウント食料品チェーン）", "note": "" },
-    "discount": { "lemma": "discount", "pos": "形", "ja": "割引の", "note": "" },
-    "grocery": { "lemma": "grocery", "pos": "名", "ja": "食料品(の)", "note": "" },
-    "chain": { "lemma": "chain", "pos": "名", "ja": "チェーン店", "note": "" },
-    "cut": { "lemma": "cut", "pos": "動・名", "ja": "値下げする／値下げ", "note": "" },
-    "prices": { "lemma": "price", "pos": "名", "ja": "価格（複数形）", "note": "" },
-    "nearly": { "lemma": "nearly", "pos": "副", "ja": "ほぼ", "note": "" },
-    "everyday": { "lemma": "everyday", "pos": "形", "ja": "日常の", "note": "" },
-    "items": { "lemma": "item", "pos": "名", "ja": "品目、商品（複数形）", "note": "" },
-    "lower": { "lemma": "low", "pos": "形", "ja": "より低い", "note": "" },
-    "effect": { "lemma": "effect", "pos": "名", "ja": "効力、影響", "note": "take effect で「発効する」という熟語になる" },
-    "remain": { "lemma": "remain", "pos": "動", "ja": "〜のままである", "note": "" },
-    "nationwide": { "lemma": "nationwide", "pos": "副", "ja": "全国的に", "note": "" },
-    "expects": { "lemma": "expect", "pos": "動", "ja": "見込む、予想する", "note": "" },
-    "shoppers": { "lemma": "shopper", "pos": "名", "ja": "買い物客（複数形）", "note": "" },
-    "million": { "lemma": "million", "pos": "名", "ja": "100万", "note": "" },
-    "fruits": { "lemma": "fruit", "pos": "名", "ja": "果物（複数形）", "note": "" },
-    "vegetables": { "lemma": "vegetable", "pos": "名", "ja": "野菜（複数形）", "note": "" },
-    "cuts": { "lemma": "cut", "pos": "名", "ja": "値下げ（複数形）", "note": "" },
-    "cost": { "lemma": "cost", "pos": "動", "ja": "（値段が）〜である", "note": "" },
-    "pound": { "lemma": "pound", "pos": "名", "ja": "ポンド（重量単位）", "note": "" },
-    "percent": { "lemma": "percent", "pos": "名", "ja": "パーセント", "note": "" },
-    "drop": { "lemma": "drop", "pos": "名", "ja": "下落", "note": "" },
-    "brand": { "lemma": "brand", "pos": "名", "ja": "ブランド", "note": "" },
-    "lowest": { "lemma": "low", "pos": "形", "ja": "最も低い（最上級）", "note": "" },
-    "stayed": { "lemma": "stay", "pos": "動", "ja": "とどまった、〜のままだった", "note": "" },
-    "compare": { "lemma": "compare", "pos": "動", "ja": "比較する", "note": "" },
-    "budget-conscious": { "lemma": "budget-conscious", "pos": "形", "ja": "節約志向の", "note": "" },
-    "customers": { "lemma": "customer", "pos": "名", "ja": "顧客（複数形）", "note": "" },
-    "season": { "lemma": "season", "pos": "名", "ja": "季節、シーズン", "note": "" }
+    "aldi": {
+      "lemma": "Aldi",
+      "pos": "名",
+      "ja": "アルディ（ディスカウント食料品チェーン）",
+      "note": ""
+    },
+    "discount": {
+      "lemma": "discount",
+      "pos": "形",
+      "ja": "割引の",
+      "note": ""
+    },
+    "grocery": {
+      "lemma": "grocery",
+      "pos": "名",
+      "ja": "食料品(の)",
+      "note": ""
+    },
+    "chain": {
+      "lemma": "chain",
+      "pos": "名",
+      "ja": "チェーン店",
+      "note": ""
+    },
+    "cut": {
+      "lemma": "cut",
+      "pos": "動・名",
+      "ja": "値下げする／値下げ",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "名",
+      "ja": "価格（複数形）",
+      "note": ""
+    },
+    "nearly": {
+      "lemma": "nearly",
+      "pos": "副",
+      "ja": "ほぼ",
+      "note": ""
+    },
+    "everyday": {
+      "lemma": "everyday",
+      "pos": "形",
+      "ja": "日常の",
+      "note": ""
+    },
+    "items": {
+      "lemma": "item",
+      "pos": "名",
+      "ja": "品目、商品（複数形）",
+      "note": ""
+    },
+    "lower": {
+      "lemma": "low",
+      "pos": "形",
+      "ja": "より低い",
+      "note": ""
+    },
+    "effect": {
+      "lemma": "effect",
+      "pos": "名",
+      "ja": "効力、影響",
+      "note": "take effect で「発効する」という熟語になる"
+    },
+    "remain": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "〜のままである",
+      "note": ""
+    },
+    "nationwide": {
+      "lemma": "nationwide",
+      "pos": "副",
+      "ja": "全国的に",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込む、予想する",
+      "note": ""
+    },
+    "shoppers": {
+      "lemma": "shopper",
+      "pos": "名",
+      "ja": "買い物客（複数形）",
+      "note": ""
+    },
+    "million": {
+      "lemma": "million",
+      "pos": "名",
+      "ja": "100万",
+      "note": ""
+    },
+    "fruits": {
+      "lemma": "fruit",
+      "pos": "名",
+      "ja": "果物（複数形）",
+      "note": ""
+    },
+    "vegetables": {
+      "lemma": "vegetable",
+      "pos": "名",
+      "ja": "野菜（複数形）",
+      "note": ""
+    },
+    "cuts": {
+      "lemma": "cut",
+      "pos": "名",
+      "ja": "値下げ（複数形）",
+      "note": ""
+    },
+    "cost": {
+      "lemma": "cost",
+      "pos": "動",
+      "ja": "（値段が）〜である",
+      "note": ""
+    },
+    "pound": {
+      "lemma": "pound",
+      "pos": "名",
+      "ja": "ポンド（重量単位）",
+      "note": ""
+    },
+    "percent": {
+      "lemma": "percent",
+      "pos": "名",
+      "ja": "パーセント",
+      "note": ""
+    },
+    "drop": {
+      "lemma": "drop",
+      "pos": "名",
+      "ja": "下落",
+      "note": ""
+    },
+    "brand": {
+      "lemma": "brand",
+      "pos": "名",
+      "ja": "ブランド",
+      "note": ""
+    },
+    "lowest": {
+      "lemma": "low",
+      "pos": "形",
+      "ja": "最も低い（最上級）",
+      "note": ""
+    },
+    "stayed": {
+      "lemma": "stay",
+      "pos": "動",
+      "ja": "とどまった、〜のままだった",
+      "note": ""
+    },
+    "compare": {
+      "lemma": "compare",
+      "pos": "動",
+      "ja": "比較する",
+      "note": ""
+    },
+    "budget-conscious": {
+      "lemma": "budget-conscious",
+      "pos": "形",
+      "ja": "節約志向の",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客（複数形）",
+      "note": ""
+    },
+    "season": {
+      "lemma": "season",
+      "pos": "名",
+      "ja": "季節、シーズン",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "最上級＋since＋年（「〜年以来もっとも…」を表す表現）",
     "quote": "Kirkwood chicken breast, Aldi's store brand, fell to the same price, its lowest level since 2022.",
     "quoteJa": "アルディの自社ブランド「カークウッド」の鶏むね肉も同じ価格まで下がり、2022年以来の安値となった。",
     "blocks": [
-      { "heading": "構文", "body": "\"its lowest level since 2022\" は「所有格・冠詞＋最上級＋since＋年」の形で、「〜年以来もっとも低い（高い）水準」を表すビジネス英語の定番表現である。since の後ろには過去のある時点（年や出来事）を置き、その時点からずっと今が最も〜であることを示す。price、level、record といった名詞とセットでニュース記事に頻出する。" },
-      { "heading": "書き換え・比較", "body": "この部分は \"This is the lowest price the product has had since 2022.\" や \"Prices have not been this low since 2022.\" とほぼ同じ意味に書き換えられる。反対に「最も高い水準」と言いたいときは、highest に置き換えて \"its highest level since 2020\" のようにすればよい。" },
-      { "heading": "TOEICでの出題傾向", "body": "Part 5では、最上級の直前に置く冠詞・所有格（the／its／their）の選択や、since の後ろに続く語（年号か、過去の出来事を表す節か）を問う設問が出やすい。since の後ろに具体的な年号がある場合、主節は現在完了形ではなく過去形または現在形になる点にも注意したい。" },
-      { "heading": "ビジネス文書での応用", "body": "\"Sales reached their highest level since the company was founded.\" のように、業績や指標が過去のどの時点と比べて記録的であるかを1文で簡潔に示したいときによく使われる表現である。" }
+      {
+        "heading": "構文",
+        "body": "\"its lowest level since 2022\" は「所有格・冠詞＋最上級＋since＋年」の形で、「〜年以来もっとも低い（高い）水準」を表すビジネス英語の定番表現である。since の後ろには過去のある時点（年や出来事）を置き、その時点からずっと今が最も〜であることを示す。price、level、record といった名詞とセットでニュース記事に頻出する。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "この部分は \"This is the lowest price the product has had since 2022.\" や \"Prices have not been this low since 2022.\" とほぼ同じ意味に書き換えられる。反対に「最も高い水準」と言いたいときは、highest に置き換えて \"its highest level since 2020\" のようにすればよい。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、最上級の直前に置く冠詞・所有格（the／its／their）の選択や、since の後ろに続く語（年号か、過去の出来事を表す節か）を問う設問が出やすい。since の後ろに具体的な年号がある場合、主節は現在完了形ではなく過去形または現在形になる点にも注意したい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"Sales reached their highest level since the company was founded.\" のように、業績や指標が過去のどの時点と比べて記録的であるかを1文で簡潔に示したいときによく使われる表現である。"
+      }
     ]
   },
   "background": [
-    { "heading": "📌 なぜこのニュースが重要か", "body": "米国では2026年に入っても食料品のインフレが続いており、消費者の生活実感は依然として厳しい。そうした中でディスカウント食料品チェーン大手の一角であるアルディが、生鮮食品を中心に踏み込んだ値下げに踏み切ったことは、値下げ競争が業界全体に広がる可能性を示す動きとして注目される。" },
-    { "heading": "📌 業界全体・競合他社の動向", "body": "米国の大手スーパーマーケットチェーンの間では、値ごろ感を打ち出して節約志向の消費者を取り込もうとする動きが広がっている。大手各社も自社ブランド商品の拡充や一部商品の価格据え置きを進めており、アルディの今回の値下げも、こうした「価格競争」の一環と位置づけられる。" },
-    { "heading": "📌 日本経済・日本企業への影響・示唆", "body": "日本でも食品原材料やエネルギーコストの上昇を背景に値上げが相次いできたが、一部の食品・小売企業は仕入れコストの落ち着きを受けて、季節商品を中心に値下げや実質値下げ（増量セールなど）に動く例が出ている。米国の値下げ競争の動向は、日本の小売・食品業界が今後の価格戦略を考えるうえでも参考になる。" },
-    { "heading": "📌 投資家・経営者の視点からの意義", "body": "小売企業にとって値下げは短期的には利益率を圧迫する要因となるが、来店客数の増加や顧客の囲い込みにつながれば、中長期的な売上拡大に結びつく可能性がある。経営者にとっては、値下げによる粗利益率の低下と、客数増加によるコスト吸収効果とのバランスをどう見極めるかが重要な経営判断となる。" }
+    {
+      "heading": "📌 なぜこのニュースが重要か",
+      "body": "米国では2026年に入っても食料品のインフレが続いており、消費者の生活実感は依然として厳しい。そうした中でディスカウント食料品チェーン大手の一角であるアルディが、生鮮食品を中心に踏み込んだ値下げに踏み切ったことは、値下げ競争が業界全体に広がる可能性を示す動きとして注目される。"
+    },
+    {
+      "heading": "📌 業界全体・競合他社の動向",
+      "body": "米国の大手スーパーマーケットチェーンの間では、値ごろ感を打ち出して節約志向の消費者を取り込もうとする動きが広がっている。大手各社も自社ブランド商品の拡充や一部商品の価格据え置きを進めており、アルディの今回の値下げも、こうした「価格競争」の一環と位置づけられる。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響・示唆",
+      "body": "日本でも食品原材料やエネルギーコストの上昇を背景に値上げが相次いできたが、一部の食品・小売企業は仕入れコストの落ち着きを受けて、季節商品を中心に値下げや実質値下げ（増量セールなど）に動く例が出ている。米国の値下げ競争の動向は、日本の小売・食品業界が今後の価格戦略を考えるうえでも参考になる。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点からの意義",
+      "body": "小売企業にとって値下げは短期的には利益率を圧迫する要因となるが、来店客数の増加や顧客の囲い込みにつながれば、中長期的な売上拡大に結びつく可能性がある。経営者にとっては、値下げによる粗利益率の低下と、客数増加によるコスト吸収効果とのバランスをどう見極めるかが重要な経営判断となる。"
+    }
   ],
   "sources": [
-    { "title": "Aldi cuts prices to save shoppers $86M", "publisher": "Supermarket News", "url": "https://www.supermarketnews.com/company-news/aldi-cuts-prices-to-save-shoppers-86m", "date": "2026-09-23" },
-    { "title": "Aldi Cuts Prices On Nearly A Third Of Fresh Assortment", "publisher": "The Shelby Report", "url": "https://theshelbyreport.com/2026/09/23/aldi-cuts-prices-on-nearly-a-third-of-fresh-assortment/", "date": "2026-09-23" }
-  ]
+    {
+      "title": "Aldi cuts prices to save shoppers $86M",
+      "publisher": "Supermarket News",
+      "url": "https://www.supermarketnews.com/company-news/aldi-cuts-prices-to-save-shoppers-86m",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "Aldi Cuts Prices On Nearly A Third Of Fresh Assortment",
+      "publisher": "The Shelby Report",
+      "url": "https://theshelbyreport.com/2026/09/23/aldi-cuts-prices-on-nearly-a-third-of-fresh-assortment/",
+      "date": "2026-09-23"
+    }
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-25-1640/00.mp3",
+      "audio/2026-09-25-1640/01.mp3",
+      "audio/2026-09-25-1640/02.mp3",
+      "audio/2026-09-25-1640/03.mp3",
+      "audio/2026-09-25-1640/04.mp3",
+      "audio/2026-09-25-1640/05.mp3",
+      "audio/2026-09-25-1640/06.mp3",
+      "audio/2026-09-25-1640/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 223752,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-25T07:46:45.572Z",
+    "trimmed": true
+  }
 }
