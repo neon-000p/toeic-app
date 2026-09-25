@@ -132,7 +132,7 @@ data/
   ],
 
   "glossary": {
-    "inventories": { "lemma": "inventory", "pos": "n", "ja": "在庫", "note": "" }
+    "inventories": { "lemma": "inventory", "pos": "名", "ja": "在庫", "note": "" }
   },
 
   "grammar": {
@@ -164,6 +164,9 @@ Markdown 版は段落まるごとの訳だが、JSON は **文単位で英日を
 
 **`vocabulary` と `glossary` は役割が違う**
 `vocabulary` は「覚える8語」（例文・品詞つき、語彙帳の対象）。`glossary` は「詰まらないための語注」（タップで出るだけ）。8語は両方に入ってよい。
+
+**`pos`（品詞）の書き方はどの教材でも同じ**
+`vocabulary` も `glossary` も「名／動／形／副／前／接／熟」の1字で書き、複数品詞は「名・動」。熟語・句動詞・コロケーションは「熟」。アプリは語彙ステップ・選択したときの意味・語彙帳のどれでも「（名）」の形で見出しの後ろに出す。以前の `n` / `v` / `adj` や「コロケーション」で書かれた教材も、表示のときに `TOEIC.posJa()` でこの形に直す。
 
 **`type` と `schemaVersion`**
 将来 Part 4〜7 を足すとき、`type` で描画を分岐する。スキーマを壊す変更をしたときだけ `schemaVersion` を上げ、アプリは古い版も読めるようにする。
@@ -235,7 +238,7 @@ Part 3（会話問題）。**1ファイル＝1セット＝1回分**。会話1本
     }
   ],
   "audio": { "file": "audio/2026-09-13-0530.mp3", "sec": 42.3, "lines": ["audio/2026-09-13-0530/00.mp3"] },
-  "glossary": { "commute": { "lemma": "commute", "pos": "n", "ja": "通勤", "note": "" } },
+  "glossary": { "commute": { "lemma": "commute", "pos": "名", "ja": "通勤", "note": "" } },
   "point": { "flow": "会話の展開を1行で", "items": [ { "title": "見出し", "body": "本文" } ] }
 }
 ```

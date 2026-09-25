@@ -2,13 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-21 1ce116e">
+<meta name="app-build" content="2026-09-25 73ef6ec">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>時事英語 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=4591a5f7">
+<link rel="stylesheet" href="style.css?v=ae98e9f4">
 <style>
 body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
@@ -662,7 +662,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=a18cc9e0"></script>
+<script src="core.js?v=3c00c254"></script>
 <script>
 (function () {
   'use strict';
@@ -1140,7 +1140,7 @@ details.src[open]>summary::before{content:"▾ ";}
           '<div class="body">' +
             '<div class="vterm">' + esc(v.term) +
               '<button class="say-btn" data-say="' + esc(v.term) + '" title="単語を再生">▶</button>' +
-              '<span class="vpos">（' + esc(v.pos) + '）</span></div>' +
+              (v.pos ? '<span class="vpos">（' + esc(T.posJa(v.pos)) + '）</span>' : '') + '</div>' +
             '<div class="vja">' + esc(v.ja) + '</div>' +
             (v.gloss ? '<div class="vgloss">' + esc(v.gloss) + '</div>' : '') +
             (v.example ? '<div class="vex">' + esc(v.example.en) +

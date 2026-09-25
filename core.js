@@ -36,6 +36,34 @@
     set: function (k, v) { var s = Settings.all(); s[k] = v; write('settings', s); }
   };
 
+  /* ---------- 品詞の表記 ----------
+     時事の語彙ステップと同じ「名／動／形／副／熟」にそろえる。
+     語注（glossary）には n / v / adj や「コロケーション」で書かれたものも
+     残っているので、表示と語彙帳への登録の前にここを通す。
+     複数品詞は「名・動」。知らない書き方はそのまま返す。 */
+  var POS_JA = {
+    n: '名', noun: '名', '名詞': '名',
+    v: '動', verb: '動', '動詞': '動',
+    adj: '形', a: '形', adjective: '形', '形容詞': '形',
+    adv: '副', adverb: '副', '副詞': '副',
+    prep: '前', preposition: '前', '前置詞': '前',
+    conj: '接', conjunction: '接', '接続詞': '接',
+    pron: '代', pronoun: '代', '代名詞': '代',
+    phr: '熟', phrase: '熟', idiom: '熟', phrasal: '熟',
+    '熟語': '熟', '句': '熟', 'コロケーション': '熟', collocation: '熟'
+  };
+  function posJa(pos) {
+    var s = String(pos || '').trim();
+    if (!s) return '';
+    var seen = {}, out = [];
+    s.split(/\s*[・\/／,、]\s*/).forEach(function (p) {
+      var k = p.replace(/\.$/, '');
+      var j = POS_JA[k.toLowerCase()] || POS_JA[k] || k;
+      if (j && !seen[j]) { seen[j] = 1; out.push(j); }
+    });
+    return out.join('・');
+  }
+
   /* ---------- 語彙帳 ---------- */
   /* 1件 = { term, pos, ja, gloss, example, src, srcTitle, addedAt, box }
      box は将来の間隔反復用（0=未学習）。いまは記録だけしておく。 */
@@ -51,7 +79,7 @@
       if (!k) return false;
       if (list.some(function (e) { return Vocab.key(e.term) === k; })) return false;
       list.push({
-        term: entry.term, pos: entry.pos || '', ja: entry.ja || '',
+        term: entry.term, pos: posJa(entry.pos), ja: entry.ja || '',
         gloss: entry.gloss || '', example: entry.example || null,
         src: entry.src || '', srcTitle: entry.srcTitle || '',
         addedAt: new Date().toISOString(), box: 0
@@ -83,7 +111,7 @@
         if (have[k]) return;
         have[k] = 1; added++;
         list.push({
-          term: e.term, pos: e.pos || '', ja: e.ja || '', gloss: e.gloss || '',
+          term: e.term, pos: posJa(e.pos), ja: e.ja || '', gloss: e.gloss || '',
           example: e.example || null, src: e.src || '', srcTitle: e.srcTitle || '',
           addedAt: e.addedAt || new Date().toISOString(),
           box: e.box || 0, due: e.due || '', reviewedAt: e.reviewedAt || ''
@@ -1124,12 +1152,18 @@
     pop.className = 'pop';
     pop.dataset.word = text;
 
+    /* 時事の語彙ステップと同じ並び。見出しの後ろに（品詞）、次の行に訳、その下に補足 */
+    function posHTML(pos) {
+      var p = posJa(pos);
+      return p ? '（' + esc(p) + '）' : '';
+    }
     var glossHTML = g
-      ? '<div class="ja">' + (g.pos ? '<span class="muted small">(' + esc(g.pos) + ') </span>' : '') + esc(g.ja) + '</div>' +
+      ? '<div class="ja">' + esc(g.ja) + '</div>' +
         (g.note ? '<div class="note">' + esc(g.note) + '</div>' : '')
       : '<div class="note">この語句の語注はありません。</div>';
 
-    pop.innerHTML = '<div class="term">' + esc(text) + '</div>' +
+    pop.innerHTML = '<div class="term">' + esc(text) +
+        '<span class="vpos">' + (ok ? '' : posHTML(g && g.pos)) + '</span></div>' +
       (ok ? '<div class="pop-ai-b muted small">照会中…</div>'
           : glossHTML + '<div class="pop-hint">⚙ で Gemini のキーを設定すると、この文での使われ方も出ます。</div>') +
       '<div class="row">' +
@@ -1152,14 +1186,15 @@
         if (!b) return;
         b.className = 'pop-ai-b';
         b.innerHTML =
-          (res.ja ? '<div class="pop-ai-ja">' + (res.pos ? '<span class="muted small">(' + esc(res.pos) + ') </span>' : '') +
-            esc(res.ja) + '</div>' : '') +
+          (res.ja ? '<div class="ja">' + esc(res.ja) + '</div>' : '') +
           (res.tip ? '<div class="pop-ai-u">' + esc(res.tip) + '</div>' : '');
+        pop.querySelector('.term .vpos').innerHTML = posHTML(res.pos);
         pop.dataset.ja = res.ja || '';
         pop.dataset.pos = res.pos || '';
         pop.dataset.tip = res.tip || '';
       }).catch(function (e) {
         var b = pop.querySelector('.pop-ai-b');
+        pop.querySelector('.term .vpos').innerHTML = posHTML(g && g.pos);
         if (b) b.outerHTML = glossHTML +
           '<div class="pop-hint">' + esc((e && e.message) || '取得できませんでした') + '</div>';
       });
@@ -1181,7 +1216,7 @@
         var term = add.dataset.add;
         if (Vocab.has(term)) { Vocab.remove(term); toast('語彙帳から外しました'); }
         else {
-          Vocab.add({ term: term, pos: pop.dataset.pos || '', ja: pop.dataset.ja || (g && g.ja) || '',
+          Vocab.add({ term: term, pos: pop.dataset.pos || (g && g.pos) || '', ja: pop.dataset.ja || (g && g.ja) || '',
                       gloss: pop.dataset.tip || (g && g.note) || '',
                       src: opts.scope || '', srcTitle: opts.srcTitle || '' });
           toast('語彙帳に追加しました');
@@ -1221,7 +1256,7 @@
 
   global.TOEIC = {
     read: read, write: write,
-    Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS, AI: AI,
+    Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS, AI: AI, posJa: posJa,
     modal: modal, openSettings: openSettings,
     flash: flash, takeFlash: takeFlash, numberSets: numberSets, build: build,
     watchSelection: watchSelection, phrasePop: phrasePop,

@@ -115,6 +115,7 @@ All visitors must ------- their badges at the front desk before entering the lab
 - **8〜12語**。10問の文に実在する語・熟語だけ。
 - キーは**本文の表層形を小文字化したもの**（`submitted`、`in charge of` など。原形に直さない）。
 - 値は `{ "lemma": 原形, "pos": 品詞, "ja": 訳, "note": 補足 }`。`note` は不要なら空文字。
+- `pos` は時事の語彙と同じ「名／動／形／副／前／接／熟」。複数品詞は「名・動」、熟語・句動詞・コロケーションは「熟」。`n` / `v` などの英語略号は使わない。
 - **半分以上は2語以上のまとまりにする**（`in charge of`、`prior to`、`no later than`、`be subject to`）。Part 5 は語彙問題でこの形が問われる。
 - 高校初級までの単語を基本の意味のまま入れない。**覚えて初めて点が動く語だけ**を選ぶ。
 

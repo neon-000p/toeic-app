@@ -2,13 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-21 1ce116e">
+<meta name="app-build" content="2026-09-25 73ef6ec">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Part 3 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=4591a5f7">
+<link rel="stylesheet" href="style.css?v=ae98e9f4">
 <style>
 body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
@@ -191,7 +191,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   </div>
 </nav>
 
-<script src="core.js?v=a18cc9e0"></script>
+<script src="core.js?v=3c00c254"></script>
 <script>
 (function () {
   'use strict';
@@ -595,7 +595,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
           '<div class="body">' +
             '<div class="vterm">' + esc(term) +
               '<button class="say-btn" data-sayw="' + esc(term) + '" title="単語を再生">▶</button>' +
-              (e.pos ? '<span class="vpos">（' + esc(e.pos) + '）</span>' : '') + '</div>' +
+              (e.pos ? '<span class="vpos">（' + esc(T.posJa(e.pos)) + '）</span>' : '') + '</div>' +
             '<div class="vja">' + esc(e.ja || '') + '</div>' +
             (e.note ? '<div class="vgloss">' + esc(e.note) + '</div>' : '') +
           '</div>' +
