@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-26-0543",
+  "date": "2026-09-26",
+  "time": "05:43",
+  "createdAt": "2026-09-26T05:43:00+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "TC Energy Pipeline Leak Halts Gas Supply in West Virginia",
+    "ja": "TCエナジー、パイプライン漏えいでガス供給停止"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "TC Energy declared force majeure on its Mountaineer XPress natural gas pipeline in West Virginia this week.",
+            "ja": "TCエナジーは今週、米ウェストバージニア州の天然ガスパイプライン「マウンテニアXプレス」でフォースマジュール（不可抗力）を宣言した。"
+          },
+          {
+            "en": "Workers found a leak at a regulator station on Thursday, forcing an immediate shutdown of that pipeline segment.",
+            "ja": "木曜日に作業員が調整所で漏えいを発見し、当該区間は即座に停止に追い込まれた。"
+          },
+          {
+            "en": "The company cut the segment's capacity to zero starting Friday and has yet to give a timeline for repairs.",
+            "ja": "同社は金曜日から当該区間の輸送能力をゼロに引き下げ、復旧の見通しはまだ示していない。"
+          },
+          {
+            "en": "The pipeline normally carries about 2.7 billion cubic feet of gas per day, making it one of the region's largest supply routes.",
+            "ja": "このパイプラインは通常、1日あたり約27億立方フィートのガスを運んでおり、地域最大級の供給ルートの一つとなっている。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The shutdown removes roughly 1.8 billion cubic feet of daily supply from an already tight market.",
+            "ja": "今回の停止により、すでにひっ迫していた市場から1日あたり約18億立方フィートの供給が失われることになる。"
+          },
+          {
+            "en": "Natural gas futures jumped more than 12 percent this week, as traders worried that the outage could tighten heating supplies before winter.",
+            "ja": "天然ガス先物価格は今週12%超急騰したが、これは冬を前に暖房用燃料の供給が逼迫するのではないかとトレーダーが懸念したためだ。"
+          },
+          {
+            "en": "Analysts say prices could stay volatile until TC Energy restores full service.",
+            "ja": "アナリストは、TCエナジーが全面復旧するまで価格の不安定な状態が続くとみている。"
+          },
+          {
+            "en": "The incident highlights how a single pipeline problem can quickly disrupt energy markets across an entire region.",
+            "ja": "今回の一件は、たった1本のパイプラインのトラブルが地域全体のエネルギー市場を瞬く間に混乱させうることを示している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much daily supply of natural gas has the pipeline shutdown removed from the market?",
+      "choices": [
+        { "key": "A", "text": "About 1.8 billion cubic feet", "ja": "約18億立方フィート" },
+        { "key": "B", "text": "About 2.7 billion cubic feet", "ja": "約27億立方フィート" },
+        { "key": "C", "text": "About 12 percent", "ja": "約12%" },
+        { "key": "D", "text": "About 90 billion cubic feet", "ja": "約900億立方フィート" }
+      ],
+      "answer": "A",
+      "explanation": "正解は(A)。本文第2段落1文目に「The shutdown removes roughly 1.8 billion cubic feet of daily supply」とあり、約18億立方フィートの供給が失われたと明記されている。(B)の27億立方フィートはパイプラインの通常時の総輸送能力を示す数字であり、今回失われた供給量ではない。(C)の12%は天然ガス先物価格の上昇率であって、供給量の数字ではない。(D)の900億立方フィートは本文に登場しない数字である。",
+      "evidence": { "p": 1, "s": 0 },
+      "tip": "TOEIC Part 7では、同じ文書内に複数の数字が登場する場合、それぞれの数字が「何を」表しているのかを正確に対応づけることが重要である。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did natural gas futures rise sharply this week, according to the article?",
+      "choices": [
+        { "key": "A", "text": "Traders worried that the pipeline outage would tighten heating supplies before winter.", "ja": "パイプラインの供給停止が冬前の暖房用燃料の逼迫を招くと懸念したから" },
+        { "key": "B", "text": "TC Energy announced a plan to expand the pipeline.", "ja": "TCエナジーがパイプラインの拡張計画を発表したから" },
+        { "key": "C", "text": "Winter arrived earlier than expected this year.", "ja": "今年は冬の到来が例年より早かったから" },
+        { "key": "D", "text": "A foreign buyer suddenly increased its purchase orders.", "ja": "海外の買い手が突然、発注量を増やしたから" }
+      ],
+      "answer": "A",
+      "explanation": "正解は(A)。本文第2段落2文目に「as traders worried that the outage could tighten heating supplies before winter」とあり、パイプラインの供給停止が冬前の暖房用燃料の逼迫につながることへの懸念が、先物価格急騰の理由として明記されている。(B)拡張計画についての記述は本文にない。(C)冬の到来時期についての記述もない。(D)海外の買い手についての記述もなく、いずれも本文にない情報を使った誤答選択肢である。",
+      "evidence": { "p": 1, "s": 1 },
+      "tip": "理由を問う設問では、becauseやasなど因果関係を示す語の直後に根拠となる情報が来ることが多いので、その部分を重点的に確認する。"
+    }
+  ],
+  "vocabulary": [
+    { "no": 1, "term": "declare", "pos": "動", "ja": "宣言する、表明する", "gloss": "",
+      "example": { "en": "The firm declared bankruptcy after months of heavy losses.", "ja": "その企業は数カ月にわたる大幅な損失の末、破産を宣言した。" } },
+    { "no": 2, "term": "leak", "pos": "名", "ja": "漏えい、流出", "gloss": "",
+      "example": { "en": "A gas leak forced the plant to shut down for repairs.", "ja": "ガス漏れにより、その工場は修理のため操業を停止せざるを得なかった。" } },
+    { "no": 3, "term": "shutdown", "pos": "名", "ja": "（操業などの）停止", "gloss": "",
+      "example": { "en": "The factory shutdown lasted almost a week.", "ja": "その工場の操業停止はほぼ1週間続いた。" } },
+    { "no": 4, "term": "segment", "pos": "名", "ja": "区間、部門", "gloss": "",
+      "example": { "en": "The company's cloud segment grew faster than its other businesses.", "ja": "同社のクラウド部門は、他の事業よりも速いペースで成長した。" } },
+    { "no": 5, "term": "capacity", "pos": "名", "ja": "（生産・輸送の）能力、容量", "gloss": "",
+      "example": { "en": "The factory is now running at full capacity.", "ja": "その工場は現在、フル稼働している。" } },
+    { "no": 6, "term": "timeline", "pos": "名", "ja": "予定、スケジュール", "gloss": "",
+      "example": { "en": "Management has not set a timeline for reopening the store.", "ja": "経営陣は店舗再開の予定をまだ示していない。" } },
+    { "no": 7, "term": "tight", "pos": "形", "ja": "逼迫した、厳しい", "gloss": "",
+      "example": { "en": "Supplies remain tight ahead of the holiday season.", "ja": "休暇シーズンを前に、供給は依然として逼迫している。" } },
+    { "no": 8, "term": "volatile", "pos": "形", "ja": "変動の激しい、不安定な", "gloss": "",
+      "example": { "en": "Oil prices have been highly volatile this year.", "ja": "今年、原油価格は非常に不安定な値動きを見せている。" } }
+  ],
+  "glossary": {
+    "declared": { "lemma": "declare", "pos": "動", "ja": "宣言した", "note": "" },
+    "majeure": { "lemma": "force majeure", "pos": "名", "ja": "不可抗力", "note": "force majeure で「不可抗力」という契約・法律用語になる" },
+    "pipeline": { "lemma": "pipeline", "pos": "名", "ja": "パイプライン、導管", "note": "" },
+    "leak": { "lemma": "leak", "pos": "名", "ja": "漏えい", "note": "" },
+    "forcing": { "lemma": "force", "pos": "動", "ja": "余儀なくさせる", "note": "" },
+    "shutdown": { "lemma": "shutdown", "pos": "名", "ja": "停止", "note": "" },
+    "segment": { "lemma": "segment", "pos": "名", "ja": "区間", "note": "" },
+    "capacity": { "lemma": "capacity", "pos": "名", "ja": "能力、容量", "note": "" },
+    "yet": { "lemma": "yet", "pos": "副", "ja": "まだ（〜ない）", "note": "has yet to do で「まだ〜していない」という熟語になる" },
+    "timeline": { "lemma": "timeline", "pos": "名", "ja": "予定、スケジュール", "note": "" },
+    "repairs": { "lemma": "repair", "pos": "名", "ja": "修理（複数形）", "note": "" },
+    "carries": { "lemma": "carry", "pos": "動", "ja": "運ぶ", "note": "" },
+    "largest": { "lemma": "large", "pos": "形", "ja": "最大の（最上級）", "note": "" },
+    "supply": { "lemma": "supply", "pos": "名", "ja": "供給", "note": "" },
+    "routes": { "lemma": "route", "pos": "名", "ja": "経路（複数形）", "note": "" },
+    "tight": { "lemma": "tight", "pos": "形", "ja": "逼迫した", "note": "" },
+    "market": { "lemma": "market", "pos": "名", "ja": "市場", "note": "" },
+    "futures": { "lemma": "future", "pos": "名", "ja": "先物（複数形）", "note": "" },
+    "jumped": { "lemma": "jump", "pos": "動", "ja": "急騰した", "note": "" },
+    "traders": { "lemma": "trader", "pos": "名", "ja": "トレーダー、取引業者（複数形）", "note": "" },
+    "worried": { "lemma": "worry", "pos": "動", "ja": "懸念した", "note": "" },
+    "outage": { "lemma": "outage", "pos": "名", "ja": "（供給の）停止", "note": "" },
+    "tighten": { "lemma": "tighten", "pos": "動", "ja": "逼迫させる、引き締める", "note": "" },
+    "heating": { "lemma": "heating", "pos": "名", "ja": "暖房", "note": "" },
+    "analysts": { "lemma": "analyst", "pos": "名", "ja": "アナリスト（複数形）", "note": "" },
+    "volatile": { "lemma": "volatile", "pos": "形", "ja": "変動の激しい", "note": "" },
+    "restores": { "lemma": "restore", "pos": "動", "ja": "復旧させる", "note": "" },
+    "incident": { "lemma": "incident", "pos": "名", "ja": "事案、出来事", "note": "" },
+    "disrupt": { "lemma": "disrupt", "pos": "動", "ja": "混乱させる", "note": "" }
+  },
+  "grammar": {
+    "topic": "have yet to do（まだ〜していない、の意味を表す表現）",
+    "quote": "The company cut the segment's capacity to zero starting Friday and has yet to give a timeline for repairs.",
+    "quoteJa": "同社は金曜日から当該区間の輸送能力をゼロに引き下げ、復旧の見通しはまだ示していない。",
+    "blocks": [
+      { "heading": "構文", "body": "\"has yet to do\" は「（現時点で）まだ〜していない」という意味を表す現在完了形の表現。not yet done と近い意味だが、has yet to do の方がややフォーマルで、ニュース記事やビジネス文書で好んで使われる。yet の直後には必ず to 不定詞（原形）が続く。" },
+      { "heading": "書き換え・比較", "body": "\"The company has yet to give a timeline for repairs.\" は \"The company has not given a timeline for repairs yet.\" とほぼ同じ意味になる。イギリス英語では \"The company is yet to give a timeline for repairs.\" のように be動詞を使う形もよく使われる。" },
+      { "heading": "TOEICでの出題傾向", "body": "Part 5では、\"yet\" の位置（has yet to do／has not done yet）を問う語彙・語順問題として出やすい。\"yet to\" の直後には必ず原形（to不定詞）が来る点に注意する。Part 7では、進捗報告や決算資料の中で「まだ完了していない項目」を説明する際によく登場する。" },
+      { "heading": "ビジネス文書での応用", "body": "\"The vendor has yet to confirm the shipping date.\" や \"We have yet to receive a reply from the client.\" のように、まだ届いていない返答や、まだ確定していない予定を丁寧に伝えたいときによく使われる。" }
+    ]
+  },
+  "background": [
+    { "heading": "📌 用語のかみ砕き", "body": "「フォースマジュール（force majeure、不可抗力）」とは、天災や事故など当事者に責任のない事情によって契約上の義務を果たせなくなった場合に用いられる契約・法律用語で、企業が「今回の不履行は自社の責任ではない」と主張する際の根拠になる。" },
+    { "heading": "📌 業界・競合の動向", "body": "米国では近年、老朽化した天然ガスパイプラインでの漏えいや設備トラブルが相次いでおり、供給網の脆弱性がたびたび指摘されている。同業他社も、冬場の需要期を前に設備点検や増強投資を強化する動きを見せている。" },
+    { "heading": "📌 日本経済・日本企業への影響・示唆", "body": "日本は液化天然ガス（LNG）の調達の一部を米国からの輸入に頼っており、米国内のパイプライン価格が上昇すると、日本向けLNGの調達コストにも波及しうる。電力・ガス会社や天然ガスを原料とする化学メーカーにとっては、原料調達コストの変動要因として注視すべき動きだ。" },
+    { "heading": "📌 投資家・経営者の視点からの意義", "body": "パイプライン1本のトラブルが市場全体の価格を動かした今回の事例は、エネルギー供給網における「点」の障害が「面」のコスト上昇に直結するリスクを示している。経営者にとっては供給元の分散、投資家にとってはエネルギー関連銘柄のボラティリティ要因として意識すべき材料といえる。" }
+  ],
+  "sources": [
+    { "title": "TC Energy (TRP) Declares Force Majeure Owing to Pipeline Issue", "publisher": "Yahoo Finance / Zacks", "url": "https://finance.yahoo.com/news/tc-energy-trp-declares-force-125000124.html", "date": "2026-09-24" },
+    { "title": "NatGas Spikes As Major West Virginia Pipeline Declares Force Majeure", "publisher": "Energy News Beat", "url": "https://energynewsbeat.co/electrical-generation/natgas-spikes-as-major-west-virginia-pipeline-declares-force-majeure/", "date": "2026-09-24" }
+  ]
+}
