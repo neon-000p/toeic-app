@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
   "note": "ジャンルと文法トピックの重複判定だけに使う履歴。教材本体（index.json）とは別管理で、古いものも消さない。items は新しい順。2026-09-12 以前は Notion 見出しページ『時事英語TOEIC教材』から移設したもの。",
-  "updatedAt": "2026-09-26T05:43:00+09:00",
+  "updatedAt": "2026-09-26T16:42:00+09:00",
   "items": [
+    { "date": "2026-09-26", "seq": 2, "genre": "企業決算",     "grammar": "譲歩を表す接続詞 even though（〜にもかかわらず、〜だけれども）" },
     { "date": "2026-09-26", "seq": 1, "genre": "エネルギー",   "grammar": "have yet to do（まだ〜していない、の意味を表す表現）" },
     { "date": "2026-09-25", "seq": 2, "genre": "小売・消費",   "grammar": "最上級＋since＋年（「〜年以来もっとも…」を表す表現）" },
     { "date": "2026-09-25", "seq": 1, "genre": "地政学",       "grammar": "be due to do の過去完了形（had been due to do＝〜する予定だったが実現しなかったことを表す表現）" },

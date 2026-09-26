@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-26-1642",
+  "date": "2026-09-26",
+  "time": "16:42",
+  "createdAt": "2026-09-26T16:42:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "Olive Garden's Parent Reports Weaker Profit",
+    "ja": "オリーブガーデン親会社が増収減益、株価急落"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Darden Restaurants, the parent company of Olive Garden and LongHorn Steakhouse, reported its first-quarter results on Thursday.",
+            "ja": "オリーブガーデンやロングホーン・ステーキハウスを展開するダーデン・レストランツは、木曜日に第1四半期の決算を発表した。"
+          },
+          {
+            "en": "Sales rose 5.1% to $3.2 billion, but net income fell to $233.4 million from $257.8 million a year earlier.",
+            "ja": "売上高は5.1%増の32億ドルとなったが、純利益は前年同期の2億5780万ドルから2億3340万ドルへ減少した。"
+          },
+          {
+            "en": "Investors had expected stronger profit, and the company's shares dropped more than 6% after the announcement.",
+            "ja": "投資家はより高い利益を期待していたため、発表後に同社の株価は6%以上下落した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "LongHorn Steakhouse was the strongest performer, with sales at existing restaurants up 6.2%, while Olive Garden grew only 1.1%.",
+            "ja": "ロングホーン・ステーキハウスは既存店売上高が6.2%増と最も好調で、一方でオリーブガーデンの伸びは1.1%にとどまった。"
+          },
+          {
+            "en": "Even though profit missed expectations, the company reaffirmed its full-year outlook, projecting sales of up to $13.75 billion.",
+            "ja": "利益は市場予想に届かなかったものの、同社は通期の業績見通しを維持し、売上高は最大137.5億ドルになると見込んでいる。"
+          },
+          {
+            "en": "Executives said rising labor and food costs were the main reason margins narrowed.",
+            "ja": "経営陣は、人件費と食材費の上昇が利益率悪化の主な要因だと説明した。"
+          },
+          {
+            "en": "Still, they expect demand to stay solid for the rest of the year.",
+            "ja": "それでも、残りの期間も需要は堅調に続くと見ている。"
+          },
+          {
+            "en": "The company also repurchased about 1.1 million of its own shares during the quarter, worth roughly $222 million.",
+            "ja": "同社はまた、四半期中に自社株を約110万株、金額にして約2億2200万ドル買い戻した。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What was Darden Restaurants' net income in the first quarter?",
+      "choices": [
+        { "key": "A", "text": "$197.8 million", "ja": "1億9780万ドル" },
+        { "key": "B", "text": "$233.4 million", "ja": "2億3340万ドル" },
+        { "key": "C", "text": "$257.8 million", "ja": "2億5780万ドル" },
+        { "key": "D", "text": "$322 million", "ja": "3億2200万ドル" }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B)。本文第1段落2文目に「net income fell to $233.4 million from $257.8 million a year earlier」とあり、今四半期の純利益は2億3340万ドルであると明記されている。(C)の2億5780万ドルは前年同期の純利益であり、今回の数字と取り違えないよう注意が必要。(A)は本文にない架空の数字、(D)は自社株買いの金額（約2億2200万ドル）に近い数字を作った紛らわしい選択肢である。",
+      "evidence": { "p": 0, "s": 1 },
+      "tip": "TOEIC Part 7では、1文の中に「今回の数値」と「比較対象（前年など）の数値」が並ぶことが多い。fromの前後どちらが「今回」の数字かを丁寧に確認することが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did Darden Restaurants' shares drop after the earnings announcement?",
+      "choices": [
+        { "key": "A", "text": "Because sales fell for the quarter.", "ja": "四半期の売上高が減少したから" },
+        { "key": "B", "text": "Because profit missed investor expectations.", "ja": "利益が投資家の予想に届かなかったから" },
+        { "key": "C", "text": "Because the company cut its full-year outlook.", "ja": "同社が通期見通しを下方修正したから" },
+        { "key": "D", "text": "Because LongHorn Steakhouse closed several restaurants.", "ja": "ロングホーン・ステーキハウスが複数店舗を閉鎖したから" }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B)。本文第1段落3文目に「Investors had expected stronger profit, and the company's shares dropped more than 6% after the announcement」とあり、株価下落の理由は利益が投資家の予想に届かなかったことだと分かる。(A)は誤り。本文では売上高は5.1%増と明記されており減少していない。(C)も誤り。本文では通期見通しは「reaffirmed（維持された）」とあり、下方修正されたとは書かれていない。(D)店舗閉鎖についての記述は本文にない。",
+      "evidence": { "p": 0, "s": 2 },
+      "tip": "理由を問う設問では、andやbecauseなど因果関係を示す語の前後を重点的に確認し、原因と結果を取り違えないようにする。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "performer",
+      "pos": "名",
+      "ja": "（成果を出す）企業・部門",
+      "gloss": "",
+      "example": {
+        "en": "Among all the brands, the online division was the top performer.",
+        "ja": "すべてのブランドの中で、オンライン部門が最も好調だった。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "expectations",
+      "pos": "名",
+      "ja": "予想、期待",
+      "gloss": "",
+      "example": {
+        "en": "The new product exceeded expectations in its first month of sales.",
+        "ja": "その新製品は発売初月から予想を上回る売れ行きとなった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "reaffirmed",
+      "pos": "動",
+      "ja": "再確認した、変わらないと表明した",
+      "gloss": "",
+      "example": {
+        "en": "The CEO reaffirmed the company's plan to expand overseas next year.",
+        "ja": "CEOは来年の海外展開計画に変更がないことを改めて表明した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "outlook",
+      "pos": "名",
+      "ja": "（業績の）見通し、展望",
+      "gloss": "",
+      "example": {
+        "en": "Analysts raised their outlook for the retail sector this quarter.",
+        "ja": "アナリストは今四半期、小売業界の見通しを上方修正した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "narrowed",
+      "pos": "動",
+      "ja": "縮まった、狭くなった",
+      "gloss": "",
+      "example": {
+        "en": "The gap between the two companies' market share began to narrow.",
+        "ja": "両社の市場シェアの差が縮まり始めた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "solid",
+      "pos": "形",
+      "ja": "堅調な、しっかりした",
+      "gloss": "",
+      "example": {
+        "en": "The company reported solid growth in its overseas markets.",
+        "ja": "同社は海外市場での堅調な成長を報告した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "repurchased",
+      "pos": "動",
+      "ja": "（自社株などを）買い戻した",
+      "gloss": "",
+      "example": {
+        "en": "The firm plans to repurchase $500 million worth of its own stock.",
+        "ja": "同社は自社株を5億ドル相当買い戻す計画だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "announcement",
+      "pos": "名",
+      "ja": "発表、公表",
+      "gloss": "",
+      "example": {
+        "en": "Shares rose sharply following the merger announcement.",
+        "ja": "合併発表を受けて株価は急伸した。"
+      }
+    }
+  ],
+  "glossary": {
+    "parent": { "lemma": "parent", "pos": "名", "ja": "親会社", "note": "parent company で「親会社」" },
+    "reported": { "lemma": "report", "pos": "動", "ja": "報告した、発表した", "note": "" },
+    "rose": { "lemma": "rise", "pos": "動", "ja": "上昇した、増加した", "note": "" },
+    "income": { "lemma": "income", "pos": "名", "ja": "収入、利益", "note": "" },
+    "fell": { "lemma": "fall", "pos": "動", "ja": "下落した、減少した", "note": "" },
+    "investors": { "lemma": "investor", "pos": "名", "ja": "投資家", "note": "" },
+    "expected": { "lemma": "expect", "pos": "動", "ja": "予想した、期待した", "note": "" },
+    "profit": { "lemma": "profit", "pos": "名", "ja": "利益", "note": "" },
+    "shares": { "lemma": "share", "pos": "名", "ja": "株式", "note": "" },
+    "dropped": { "lemma": "drop", "pos": "動", "ja": "下落した", "note": "" },
+    "announcement": { "lemma": "announcement", "pos": "名", "ja": "発表", "note": "" },
+    "performer": { "lemma": "performer", "pos": "名", "ja": "好調な部門・企業", "note": "" },
+    "existing": { "lemma": "existing", "pos": "形", "ja": "既存の", "note": "" },
+    "grew": { "lemma": "grow", "pos": "動", "ja": "成長した、増加した", "note": "" },
+    "missed": { "lemma": "miss", "pos": "動", "ja": "（目標などに）届かなかった", "note": "" },
+    "expectations": { "lemma": "expectation", "pos": "名", "ja": "予想、期待", "note": "" },
+    "reaffirmed": { "lemma": "reaffirm", "pos": "動", "ja": "再確認した、維持を表明した", "note": "" },
+    "outlook": { "lemma": "outlook", "pos": "名", "ja": "業績見通し", "note": "" },
+    "projecting": { "lemma": "project", "pos": "動", "ja": "見込む、予測する", "note": "" },
+    "executives": { "lemma": "executive", "pos": "名", "ja": "経営幹部", "note": "" },
+    "rising": { "lemma": "rise", "pos": "形", "ja": "上昇している", "note": "" },
+    "labor": { "lemma": "labor", "pos": "名", "ja": "労働、人件費", "note": "labor costs で「人件費」" },
+    "costs": { "lemma": "cost", "pos": "名", "ja": "コスト、費用", "note": "" },
+    "margins": { "lemma": "margin", "pos": "名", "ja": "利益率", "note": "" },
+    "narrowed": { "lemma": "narrow", "pos": "動", "ja": "縮まった", "note": "" },
+    "demand": { "lemma": "demand", "pos": "名", "ja": "需要", "note": "" },
+    "solid": { "lemma": "solid", "pos": "形", "ja": "堅調な", "note": "" },
+    "repurchased": { "lemma": "repurchase", "pos": "動", "ja": "自社株を買い戻した", "note": "" }
+  },
+  "grammar": {
+    "topic": "譲歩を表す接続詞 even though（〜にもかかわらず、〜だけれども）",
+    "quote": "Even though profit missed expectations, the company reaffirmed its full-year outlook, projecting sales of up to $13.75 billion.",
+    "quoteJa": "利益は市場予想に届かなかったものの、同社は通期の業績見通しを維持し、売上高は最大137.5億ドルになると見込んでいる。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "\"even though + S + V\" は「〜にもかかわらず」「〜だけれども」という意外性のある逆接・対比を表す従属接続詞。although とほぼ同じ意味だが、even を伴うことで対比をやや強調するニュアンスがある。後ろには必ず〈主語＋動詞〉を含む文（節）が続く。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "\"Even though profit missed expectations, the company reaffirmed its outlook.\" は、名詞句を使って \"Despite the profit miss, the company reaffirmed its outlook.\" のように書き換えられる。even though／although の後ろには〈主語＋動詞〉、despite／in spite of の後ろには名詞（句）が来る点が違いである。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、空所の直後が〈主語＋動詞〉なら even though／although（接続詞）、名詞（句）だけなら despite／in spite of（前置詞）を選ぶ判別問題が頻出する。Part 6・7では、好調と不調が同時に語られる決算記事などで、逆接の流れを正しく読み取れるかを問う文脈でよく使われる。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"Even though sales declined last month, we remain confident in our long-term strategy.\" や \"Even though the shipment was delayed, the client did not cancel the order.\" のように、悪い結果を認めつつも前向きな姿勢や実害の小ささを伝えたい場面で使われる。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 「既存店売上高」という指標のかみ砕き",
+      "body": "既存店売上高（same-restaurant sales）とは、新規に開店した店舗を除き、一定期間以上営業している既存店だけの売上の伸びを示す指標である。新規出店による増収と、既存店1店あたりの実力による増収を分けて見られるため、外食企業の実力を測る最も重視される数字の一つになっている。"
+    },
+    {
+      "heading": "📌 なぜ増収でも減益・株価下落となったのか",
+      "body": "売上高が伸びても、人件費や食材費といったコストの上昇が利益を圧迫すれば、純利益は減少しうる。アナリストや投資家はあらかじめ「今回はこの程度の利益が出るはず」という予想（expectations）を立てており、実際の結果がそれに届かなければ、通期見通し自体が変わらなくても株は売られやすい。"
+      },
+    {
+      "heading": "📌 外食産業全体・競合の動向",
+      "body": "米国の外食大手各社は、原材料費や人件費の上昇に対応するため、メニュー価格の調整や、注文端末の導入による省人化投資を進めている。今回のように、好調なブランドと伸びが鈍いブランドが同じ企業内で混在する「まだら模様」の決算は、外食業界に共通して見られる傾向である。"
+    },
+    {
+      "heading": "📌 日本のビジネスパーソン・投資家への示唆",
+      "body": "日本の外食企業も人件費・原材料費の上昇という同じ課題を抱えており、米国大手の決算は日本の外食株を見る際の先行指標として参考にされることが多い。「増収減益」という決算パターンや、実際の結果と市場予想との差で株価が動く仕組みは、日本企業の決算シーズンを読む際にも役立つ視点である。経営者にとっては、価格戦略とコスト管理のバランスが今後も重要な経営課題であることを示している。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Darden Restaurants Reports Fiscal 2027 First Quarter Results; Declares Quarterly Dividend; and Reaffirms Fiscal 2027 Outlook",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/darden-restaurants-reports-fiscal-2027-first-quarter-results-declares-quarterly-dividend-and-reaffirms-fiscal-2027-outlook-302888250.html",
+      "date": "2026-09-24"
+    },
+    {
+      "title": "Darden Restaurants (DRI) Q1 2027 earnings",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/24/darden-restaurants-dri-q1-2027-earnings.html",
+      "date": "2026-09-24"
+    },
+    {
+      "title": "Darden Restaurants Falls 6% on Razor-Thin Q1 2027 Miss",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/cards/darden-restaurants-q1-2027-earnings-dri-01m39k6zxm6emtv6cfbs9a7qr0",
+      "date": "2026-09-24"
+    }
+  ]
+}
