@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-09-27-0401",
+  "date": "2026-09-27",
+  "time": "04:01",
+  "createdAt": "2026-09-27T04:01:00+09:00",
+  "sample": false,
+  "format": "single",
+  "scene": "掲示｜駐車場の舗装工事のお知らせ",
+  "intro": "Questions 1-3 refer to the following notice.",
+  "docs": [
+    {
+      "docType": "notice",
+      "label": "掲示",
+      "header": [ { "label": "", "text": "Parking Lot Resurfacing Notice" } ],
+      "paragraphs": [
+        {
+          "sentences": [
+            { "en": "The parking lot behind Bellview Tower will be resurfaced from Monday, October 5, through Wednesday, October 7.", "ja": "ベルビュー・タワー裏の駐車場は、10月5日（月）から10月7日（水）にかけて舗装し直されます。" },
+            { "en": "During this time, the lot will be closed to all vehicles, including those with reserved spaces.", "ja": "その間、予約済みのスペースを含め、すべての車両に対して駐車場が閉鎖されます。" },
+            { "en": "Tenants are asked to use the temporary lot on Grant Street, two blocks north of the building.", "ja": "入居者の皆様は、建物から北へ2ブロックのグラント・ストリートにある臨時駐車場をご利用ください。" }
+          ]
+        },
+        {
+          "sentences": [
+            { "en": "Shuttle service will run every fifteen minutes between the temporary lot and the building's main entrance from seven in the morning to seven in the evening.", "ja": "臨時駐車場と建物正面入口の間を、午前7時から午後7時まで15分おきにシャトルサービスが運行します。" },
+            { "en": "Reserved spaces will resume as normal starting Thursday, October 8, once the new surface has fully cured.", "ja": "新しい舗装が完全に硬化した後、10月8日(木)より予約スペースは通常通り再開されます。" },
+            { "en": "Tenants who use the temporary lot will not be charged the usual daily parking fee during the closure.", "ja": "閉鎖期間中に臨時駐車場を利用する入居者は、通常の1日分の駐車料金を請求されません。" }
+          ]
+        },
+        {
+          "sentences": [
+            { "en": "Anyone with an accessible parking permit should contact the building office in advance to arrange alternative accessible parking near the entrance.", "ja": "障がい者用駐車許可証をお持ちの方は、入口付近での代替の駐車手配について、事前に管理事務所へご連絡ください。" },
+            { "en": "Questions about the schedule can be directed to the building office at extension 204.", "ja": "日程についてのご質問は、内線204の管理事務所までお問い合わせください。" }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the purpose of the notice?",
+      "choices": [
+        { "key": "A", "text": "To advertise a new parking permit fee", "ja": "新しい駐車許可料金を宣伝すること" },
+        { "key": "B", "text": "To announce a temporary closure of a parking lot", "ja": "駐車場の一時閉鎖を知らせること" },
+        { "key": "C", "text": "To announce a change in office hours", "ja": "営業時間の変更を知らせること" },
+        { "key": "D", "text": "To request feedback on a construction project", "ja": "工事についての意見を求めること" }
+      ],
+      "answer": "B",
+      "evidence": [ { "d": 0, "p": 0, "s": 0 }, { "d": 0, "p": 0, "s": 1 } ],
+      "cross": false,
+      "explanation": "通知の冒頭で「駐車場が10月5日から7日まで舗装工事のため閉鎖される」と述べているため、目的は駐車場の一時閉鎖を知らせること(B)である。許可料金の宣伝(A)や営業時間の変更(C)、工事への意見募集(D)への言及は無い。",
+      "tip": "掲示・通知のgist設問は、最初の1〜2文にある「何が・いつ・なぜ」から目的を判断する。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Where should tenants park during the closure?",
+      "choices": [
+        { "key": "A", "text": "In the visitor lot behind the building", "ja": "建物裏の来客用駐車場に" },
+        { "key": "B", "text": "On the street in front of the building", "ja": "建物前の路上に" },
+        { "key": "C", "text": "In a nearby parking garage", "ja": "近くの立体駐車場に" },
+        { "key": "D", "text": "In the temporary lot on Grant Street", "ja": "グラント・ストリートの臨時駐車場に" }
+      ],
+      "answer": "D",
+      "evidence": [ { "d": 0, "p": 0, "s": 2 } ],
+      "cross": false,
+      "explanation": "本文は「グラント・ストリートにある臨時駐車場を利用するように」と案内しているため、正解はD。来客用駐車場(A)や建物前の路上(B)、近くの立体駐車場(C)への言及は無い。",
+      "tip": "detail設問は、指示・依頼を表す文（ask / should）を優先して探す。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about tenants who use the temporary lot during the closure?",
+      "choices": [
+        { "key": "A", "text": "They will not be charged the usual parking fee", "ja": "通常の駐車料金を請求されない" },
+        { "key": "B", "text": "They must reserve a space in advance", "ja": "事前にスペースを予約しなければならない" },
+        { "key": "C", "text": "They will receive a discount next month", "ja": "来月割引を受けられる" },
+        { "key": "D", "text": "They cannot use the shuttle service", "ja": "シャトルサービスを利用できない" }
+      ],
+      "answer": "A",
+      "evidence": [ { "d": 0, "p": 1, "s": 2 } ],
+      "cross": false,
+      "explanation": "本文は「臨時駐車場を利用する入居者は、閉鎖期間中、通常の駐車料金を請求されない」と述べているため、正解はA。予約の必要性(B)や来月の割引(C)、シャトル利用不可(D)は本文に無い。",
+      "tip": "infer設問は、本文の1文をそのまま言い換えた選択肢を選ぶ。新しい情報を持ち込む選択肢は誤答になりやすい。"
+    }
+  ],
+  "glossary": {
+    "resurfaced": { "lemma": "resurface", "pos": "動", "ja": "舗装し直す", "note": "",
+                     "example": { "en": "The tennis courts will be resurfaced over the summer break.", "ja": "テニスコートは夏休みの間に舗装し直される。" } },
+    "temporary lot": { "lemma": "temporary lot", "pos": "名", "ja": "臨時駐車場", "note": "",
+                        "example": { "en": "Visitors were directed to a temporary lot while the garage was being repaired.", "ja": "駐車場の修理中、来場者は臨時駐車場に案内された。" } },
+    "shuttle service": { "lemma": "shuttle service", "pos": "名", "ja": "シャトルサービス", "note": "",
+                          "example": { "en": "The hotel offers a free shuttle service to the airport every hour.", "ja": "そのホテルは1時間おきに空港までの無料シャトルサービスを提供している。" } },
+    "resume as normal": { "lemma": "resume as normal", "pos": "熟", "ja": "通常通り再開する", "note": "",
+                           "example": { "en": "Deliveries will resume as normal once the road repairs are finished.", "ja": "道路の修理が終わればいつも通り配送が再開する。" } },
+    "has fully cured": { "lemma": "cure", "pos": "熟", "ja": "完全に硬化した", "note": "cure=硬化する",
+                          "example": { "en": "The concrete needs a full week before it has fully cured.", "ja": "そのコンクリートは完全に硬化するまで1週間かかる。" } },
+    "accessible parking permit": { "lemma": "accessible parking permit", "pos": "名", "ja": "障がい者用駐車許可証", "note": "",
+                                    "example": { "en": "Drivers with an accessible parking permit may park closer to the entrance.", "ja": "障がい者用駐車許可証を持つ運転者は入口に近い場所に駐車できる。" } },
+    "in advance": { "lemma": "in advance", "pos": "熟", "ja": "事前に", "note": "",
+                     "example": { "en": "Please book your seat in advance for the workshop.", "ja": "研修の席は事前に予約してください。" } },
+    "daily parking fee": { "lemma": "daily parking fee", "pos": "名", "ja": "1日分の駐車料金", "note": "",
+                            "example": { "en": "The daily parking fee is waived for guests who dine at the restaurant.", "ja": "そのレストランで食事をする来客は1日分の駐車料金が免除される。" } },
+    "building office": { "lemma": "building office", "pos": "名", "ja": "管理事務所", "note": "",
+                          "example": { "en": "Lost keys should be reported to the building office right away.", "ja": "鍵を失くした場合は直ちに管理事務所に届けるべきである。" } }
+  },
+  "point": {
+    "lead": "設問を1つ読んでから本文に戻る",
+    "items": [
+      { "title": "gistは冒頭の「何が・いつ・なぜ」で決まる", "body": "通知や掲示のgist設問は、最初の1〜2文にある出来事とその理由から目的を判断する。後半の詳細は根拠にしない。" },
+      { "title": "指示・依頼の文がdetailの根拠になる", "body": "ask / should / must のような指示・依頼を表す表現を含む文は、detail設問の根拠になりやすいので優先して探す。" },
+      { "title": "inferは本文の言い換えを選ぶ", "body": "infer設問の正解は本文の1文を別の言い方にしたものである。本文に無い新しい情報を持ち込む選択肢は消す。" }
+    ]
+  }
+}
