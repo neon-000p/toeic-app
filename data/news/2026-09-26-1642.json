@@ -64,14 +64,33 @@
       "type": "detail",
       "prompt": "What was Darden Restaurants' net income in the first quarter?",
       "choices": [
-        { "key": "A", "text": "$197.8 million", "ja": "1億9780万ドル" },
-        { "key": "B", "text": "$233.4 million", "ja": "2億3340万ドル" },
-        { "key": "C", "text": "$257.8 million", "ja": "2億5780万ドル" },
-        { "key": "D", "text": "$322 million", "ja": "3億2200万ドル" }
+        {
+          "key": "A",
+          "text": "$197.8 million",
+          "ja": "1億9780万ドル"
+        },
+        {
+          "key": "B",
+          "text": "$233.4 million",
+          "ja": "2億3340万ドル"
+        },
+        {
+          "key": "C",
+          "text": "$257.8 million",
+          "ja": "2億5780万ドル"
+        },
+        {
+          "key": "D",
+          "text": "$322 million",
+          "ja": "3億2200万ドル"
+        }
       ],
       "answer": "B",
       "explanation": "正解は(B)。本文第1段落2文目に「net income fell to $233.4 million from $257.8 million a year earlier」とあり、今四半期の純利益は2億3340万ドルであると明記されている。(C)の2億5780万ドルは前年同期の純利益であり、今回の数字と取り違えないよう注意が必要。(A)は本文にない架空の数字、(D)は自社株買いの金額（約2億2200万ドル）に近い数字を作った紛らわしい選択肢である。",
-      "evidence": { "p": 0, "s": 1 },
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
       "tip": "TOEIC Part 7では、1文の中に「今回の数値」と「比較対象（前年など）の数値」が並ぶことが多い。fromの前後どちらが「今回」の数字かを丁寧に確認することが重要。"
     },
     {
@@ -79,14 +98,33 @@
       "type": "reason",
       "prompt": "Why did Darden Restaurants' shares drop after the earnings announcement?",
       "choices": [
-        { "key": "A", "text": "Because sales fell for the quarter.", "ja": "四半期の売上高が減少したから" },
-        { "key": "B", "text": "Because profit missed investor expectations.", "ja": "利益が投資家の予想に届かなかったから" },
-        { "key": "C", "text": "Because the company cut its full-year outlook.", "ja": "同社が通期見通しを下方修正したから" },
-        { "key": "D", "text": "Because LongHorn Steakhouse closed several restaurants.", "ja": "ロングホーン・ステーキハウスが複数店舗を閉鎖したから" }
+        {
+          "key": "A",
+          "text": "Because sales fell for the quarter.",
+          "ja": "四半期の売上高が減少したから"
+        },
+        {
+          "key": "B",
+          "text": "Because profit missed investor expectations.",
+          "ja": "利益が投資家の予想に届かなかったから"
+        },
+        {
+          "key": "C",
+          "text": "Because the company cut its full-year outlook.",
+          "ja": "同社が通期見通しを下方修正したから"
+        },
+        {
+          "key": "D",
+          "text": "Because LongHorn Steakhouse closed several restaurants.",
+          "ja": "ロングホーン・ステーキハウスが複数店舗を閉鎖したから"
+        }
       ],
       "answer": "B",
       "explanation": "正解は(B)。本文第1段落3文目に「Investors had expected stronger profit, and the company's shares dropped more than 6% after the announcement」とあり、株価下落の理由は利益が投資家の予想に届かなかったことだと分かる。(A)は誤り。本文では売上高は5.1%増と明記されており減少していない。(C)も誤り。本文では通期見通しは「reaffirmed（維持された）」とあり、下方修正されたとは書かれていない。(D)店舗閉鎖についての記述は本文にない。",
-      "evidence": { "p": 0, "s": 2 },
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
       "tip": "理由を問う設問では、andやbecauseなど因果関係を示す語の前後を重点的に確認し、原因と結果を取り違えないようにする。"
     }
   ],
@@ -181,34 +219,174 @@
     }
   ],
   "glossary": {
-    "parent": { "lemma": "parent", "pos": "名", "ja": "親会社", "note": "parent company で「親会社」" },
-    "reported": { "lemma": "report", "pos": "動", "ja": "報告した、発表した", "note": "" },
-    "rose": { "lemma": "rise", "pos": "動", "ja": "上昇した、増加した", "note": "" },
-    "income": { "lemma": "income", "pos": "名", "ja": "収入、利益", "note": "" },
-    "fell": { "lemma": "fall", "pos": "動", "ja": "下落した、減少した", "note": "" },
-    "investors": { "lemma": "investor", "pos": "名", "ja": "投資家", "note": "" },
-    "expected": { "lemma": "expect", "pos": "動", "ja": "予想した、期待した", "note": "" },
-    "profit": { "lemma": "profit", "pos": "名", "ja": "利益", "note": "" },
-    "shares": { "lemma": "share", "pos": "名", "ja": "株式", "note": "" },
-    "dropped": { "lemma": "drop", "pos": "動", "ja": "下落した", "note": "" },
-    "announcement": { "lemma": "announcement", "pos": "名", "ja": "発表", "note": "" },
-    "performer": { "lemma": "performer", "pos": "名", "ja": "好調な部門・企業", "note": "" },
-    "existing": { "lemma": "existing", "pos": "形", "ja": "既存の", "note": "" },
-    "grew": { "lemma": "grow", "pos": "動", "ja": "成長した、増加した", "note": "" },
-    "missed": { "lemma": "miss", "pos": "動", "ja": "（目標などに）届かなかった", "note": "" },
-    "expectations": { "lemma": "expectation", "pos": "名", "ja": "予想、期待", "note": "" },
-    "reaffirmed": { "lemma": "reaffirm", "pos": "動", "ja": "再確認した、維持を表明した", "note": "" },
-    "outlook": { "lemma": "outlook", "pos": "名", "ja": "業績見通し", "note": "" },
-    "projecting": { "lemma": "project", "pos": "動", "ja": "見込む、予測する", "note": "" },
-    "executives": { "lemma": "executive", "pos": "名", "ja": "経営幹部", "note": "" },
-    "rising": { "lemma": "rise", "pos": "形", "ja": "上昇している", "note": "" },
-    "labor": { "lemma": "labor", "pos": "名", "ja": "労働、人件費", "note": "labor costs で「人件費」" },
-    "costs": { "lemma": "cost", "pos": "名", "ja": "コスト、費用", "note": "" },
-    "margins": { "lemma": "margin", "pos": "名", "ja": "利益率", "note": "" },
-    "narrowed": { "lemma": "narrow", "pos": "動", "ja": "縮まった", "note": "" },
-    "demand": { "lemma": "demand", "pos": "名", "ja": "需要", "note": "" },
-    "solid": { "lemma": "solid", "pos": "形", "ja": "堅調な", "note": "" },
-    "repurchased": { "lemma": "repurchase", "pos": "動", "ja": "自社株を買い戻した", "note": "" }
+    "parent": {
+      "lemma": "parent",
+      "pos": "名",
+      "ja": "親会社",
+      "note": "parent company で「親会社」"
+    },
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "報告した、発表した",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した、増加した",
+      "note": ""
+    },
+    "income": {
+      "lemma": "income",
+      "pos": "名",
+      "ja": "収入、利益",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した、減少した",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した、期待した",
+      "note": ""
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "announcement": {
+      "lemma": "announcement",
+      "pos": "名",
+      "ja": "発表",
+      "note": ""
+    },
+    "performer": {
+      "lemma": "performer",
+      "pos": "名",
+      "ja": "好調な部門・企業",
+      "note": ""
+    },
+    "existing": {
+      "lemma": "existing",
+      "pos": "形",
+      "ja": "既存の",
+      "note": ""
+    },
+    "grew": {
+      "lemma": "grow",
+      "pos": "動",
+      "ja": "成長した、増加した",
+      "note": ""
+    },
+    "missed": {
+      "lemma": "miss",
+      "pos": "動",
+      "ja": "（目標などに）届かなかった",
+      "note": ""
+    },
+    "expectations": {
+      "lemma": "expectation",
+      "pos": "名",
+      "ja": "予想、期待",
+      "note": ""
+    },
+    "reaffirmed": {
+      "lemma": "reaffirm",
+      "pos": "動",
+      "ja": "再確認した、維持を表明した",
+      "note": ""
+    },
+    "outlook": {
+      "lemma": "outlook",
+      "pos": "名",
+      "ja": "業績見通し",
+      "note": ""
+    },
+    "projecting": {
+      "lemma": "project",
+      "pos": "動",
+      "ja": "見込む、予測する",
+      "note": ""
+    },
+    "executives": {
+      "lemma": "executive",
+      "pos": "名",
+      "ja": "経営幹部",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "形",
+      "ja": "上昇している",
+      "note": ""
+    },
+    "labor": {
+      "lemma": "labor",
+      "pos": "名",
+      "ja": "労働、人件費",
+      "note": "labor costs で「人件費」"
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "コスト、費用",
+      "note": ""
+    },
+    "margins": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": ""
+    },
+    "narrowed": {
+      "lemma": "narrow",
+      "pos": "動",
+      "ja": "縮まった",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "solid": {
+      "lemma": "solid",
+      "pos": "形",
+      "ja": "堅調な",
+      "note": ""
+    },
+    "repurchased": {
+      "lemma": "repurchase",
+      "pos": "動",
+      "ja": "自社株を買い戻した",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "譲歩を表す接続詞 even though（〜にもかかわらず、〜だけれども）",
@@ -241,7 +419,7 @@
     {
       "heading": "📌 なぜ増収でも減益・株価下落となったのか",
       "body": "売上高が伸びても、人件費や食材費といったコストの上昇が利益を圧迫すれば、純利益は減少しうる。アナリストや投資家はあらかじめ「今回はこの程度の利益が出るはず」という予想（expectations）を立てており、実際の結果がそれに届かなければ、通期見通し自体が変わらなくても株は売られやすい。"
-      },
+    },
     {
       "heading": "📌 外食産業全体・競合の動向",
       "body": "米国の外食大手各社は、原材料費や人件費の上昇に対応するため、メニュー価格の調整や、注文端末の導入による省人化投資を進めている。今回のように、好調なブランドと伸びが鈍いブランドが同じ企業内で混在する「まだら模様」の決算は、外食業界に共通して見られる傾向である。"
@@ -270,5 +448,22 @@
       "url": "https://247wallst.com/cards/darden-restaurants-q1-2027-earnings-dri-01m39k6zxm6emtv6cfbs9a7qr0",
       "date": "2026-09-24"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-26-1642/00.mp3",
+      "audio/2026-09-26-1642/01.mp3",
+      "audio/2026-09-26-1642/02.mp3",
+      "audio/2026-09-26-1642/03.mp3",
+      "audio/2026-09-26-1642/04.mp3",
+      "audio/2026-09-26-1642/05.mp3",
+      "audio/2026-09-26-1642/06.mp3",
+      "audio/2026-09-26-1642/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 270024,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-26T07:46:54.488Z",
+    "trimmed": true
+  }
 }
