@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-27-0542",
+  "date": "2026-09-27",
+  "time": "05:42",
+  "createdAt": "2026-09-27T05:42:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Wall Street Rallies as Treasury Yields Hit Multi-Year High",
+    "ja": "米国株、国債利回り高騰の中でも反発"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. stocks rallied on Friday.",
+            "ja": "米国株は金曜日に上昇した。"
+          },
+          {
+            "en": "The Dow Jones Industrial Average climbed 478 points, or 0.93%, to close at 51,828.62, ending a three-week losing streak.",
+            "ja": "ダウ工業株30種平均は478ポイント（0.93%）上昇して51,828.62ドルで引け、3週連続の下落に歯止めをかけた。"
+          },
+          {
+            "en": "The S&P 500 rose 0.51%, and the Nasdaq Composite gained 0.5%.",
+            "ja": "S&P500種株価指数は0.51%、ナスダック総合指数は0.5%それぞれ上昇した。"
+          },
+          {
+            "en": "Hopes for a breakthrough in the Middle East pushed oil prices lower, lifting investor sentiment across the market.",
+            "ja": "中東情勢をめぐる外交的進展への期待から原油価格が下落し、市場全体の投資家心理を押し上げた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Investors have been worried about rising bond yields for weeks.",
+            "ja": "投資家たちは、ここ数週間、国債利回りの上昇を懸念してきた。"
+          },
+          {
+            "en": "The yield on the 10-year Treasury note climbed to 5.18% on Friday, its highest level since the 2008 financial crisis, largely due to persistent inflation.",
+            "ja": "米10年国債の利回りは金曜日に5.18%まで上昇し、根強いインフレを背景に2008年の金融危機以来の高水準となった。"
+          },
+          {
+            "en": "Falling oil prices offered some relief and helped stocks bounce back from earlier losses.",
+            "ja": "原油価格の下落が多少の安心材料となり、株式相場はそれまでの下落分を取り戻した。"
+          },
+          {
+            "en": "Still, many analysts warn that borrowing costs for companies and households could keep rising if bond yields stay this high in the coming months.",
+            "ja": "それでも多くのアナリストは、この高水準の利回りが続けば、今後数カ月で企業や家計の借り入れコストが一段と上昇しかねないと警告している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What was the Dow Jones Industrial Average's percentage gain on Friday?",
+      "choices": [
+        { "key": "A", "text": "0.51%", "ja": "0.51%" },
+        { "key": "B", "text": "0.5%", "ja": "0.5%" },
+        { "key": "C", "text": "0.93%", "ja": "0.93%" },
+        { "key": "D", "text": "5.18%", "ja": "5.18%" }
+      ],
+      "answer": "C",
+      "explanation": "正解は(C)。本文第1段落2文目に「The Dow Jones Industrial Average climbed 478 points, or 0.93%」とあり、ダウ平均の上昇率は0.93%と明記されている。(A)0.51%はS&P500の上昇率、(B)0.5%はナスダック総合指数の上昇率であり、いずれも本文中の別の指数の数字を使った引っかけ選択肢。(D)5.18%は米10年国債利回りの水準であり、株価指数の上昇率ではない。",
+      "evidence": { "p": 0, "s": 1 },
+      "tip": "TOEIC Part 7では、同じ文書内に似た形式の数字（%表示）が複数登場する場合、それぞれの数字がどの項目を指すのかを本文中で正確に対応づけて読む必要がある。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why did stocks rally on Friday?",
+      "choices": [
+        { "key": "A", "text": "The Federal Reserve announced an interest rate cut.", "ja": "FRBが利下げを発表したから" },
+        { "key": "B", "text": "Hopes for a breakthrough in the Middle East pushed oil prices lower.", "ja": "中東情勢での進展への期待が原油価格を押し下げたから" },
+        { "key": "C", "text": "A major technology company reported record profits.", "ja": "大手テクノロジー企業が過去最高益を発表したから" },
+        { "key": "D", "text": "The 10-year Treasury yield fell sharply.", "ja": "米10年国債利回りが急落したから" }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B)。本文第1段落最終文に「Hopes for a breakthrough in the Middle East pushed oil prices lower, lifting investor sentiment」とあり、中東情勢での外交的進展への期待が原油安と株高につながったと明記されている。(A)利下げについての記述は本文になく、むしろ第2段落では利回りが「上昇」したと述べられている。(C)大手テクノロジー企業の決算についての記述はない。(D)は本文と正反対で、実際には利回りは「上昇」して2008年の金融危機以来の高水準になったと書かれている。",
+      "evidence": { "p": 0, "s": 3 },
+      "tip": "理由を問う設問と、本文の内容と逆方向の数値・出来事を選択肢に混ぜる「逆方向のひっかけ」の両方に注意し、本文の因果関係を示す語句の直後を確認する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "rally",
+      "pos": "動",
+      "ja": "（相場が）反発する、上昇する",
+      "gloss": "",
+      "example": { "en": "The tech sector rallied after the company announced strong quarterly sales.", "ja": "その企業が好調な四半期売上を発表した後、テクノロジー業界の株は反発した。" }
+    },
+    {
+      "no": 2,
+      "term": "climb",
+      "pos": "動",
+      "ja": "（数値・価格などが）上昇する",
+      "gloss": "",
+      "example": { "en": "Shares in the retailer climbed 5% after the announcement.", "ja": "その小売企業の株価は発表後に5%上昇した。" }
+    },
+    {
+      "no": 3,
+      "term": "losing streak",
+      "pos": "熟",
+      "ja": "連続した下落、連敗",
+      "gloss": "",
+      "example": { "en": "The airline ended its losing streak with a profitable third quarter.", "ja": "その航空会社は黒字の第3四半期で連続不振に終止符を打った。" }
+    },
+    {
+      "no": 4,
+      "term": "sentiment",
+      "pos": "名",
+      "ja": "（市場・消費者の）心理、感情",
+      "gloss": "",
+      "example": { "en": "Consumer sentiment improved after prices began to fall.", "ja": "物価の下落が始まると、消費者心理は改善した。" }
+    },
+    {
+      "no": 5,
+      "term": "persistent",
+      "pos": "形",
+      "ja": "根強い、しつこい",
+      "gloss": "",
+      "example": { "en": "Persistent supply shortages have kept prices high all year.", "ja": "根強い供給不足により、1年を通じて価格は高止まりしている。" }
+    },
+    {
+      "no": 6,
+      "term": "relief",
+      "pos": "名",
+      "ja": "安心、緩和",
+      "gloss": "",
+      "example": { "en": "The tax cut brought some relief to small business owners.", "ja": "その減税は中小企業の経営者にいくらかの安心をもたらした。" }
+    },
+    {
+      "no": 7,
+      "term": "bounce back",
+      "pos": "熟",
+      "ja": "立ち直る、回復する",
+      "gloss": "",
+      "example": { "en": "Sales are expected to bounce back once the new store opens.", "ja": "新店舗が開店すれば、売上は回復すると見込まれている。" }
+    },
+    {
+      "no": 8,
+      "term": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "gloss": "（＝投資した金額に対して得られる年間の利益の割合のこと）",
+      "example": { "en": "Bond yields rose sharply after the rate hike.", "ja": "利上げの後、債券の利回りは急上昇した。" }
+    }
+  ],
+  "glossary": {
+    "rallied": { "lemma": "rally", "pos": "動", "ja": "反発した", "note": "" },
+    "climbed": { "lemma": "climb", "pos": "動", "ja": "上昇した", "note": "" },
+    "streak": { "lemma": "losing streak", "pos": "熟", "ja": "連続の下落", "note": "losing streak で「連続した不振」を表す" },
+    "rose": { "lemma": "rise", "pos": "動", "ja": "上昇した", "note": "" },
+    "gained": { "lemma": "gain", "pos": "動", "ja": "上昇した、得た", "note": "" },
+    "hopes": { "lemma": "hope", "pos": "名", "ja": "期待（複数形）", "note": "" },
+    "breakthrough": { "lemma": "breakthrough", "pos": "名", "ja": "打開、進展", "note": "" },
+    "pushed": { "lemma": "push", "pos": "動", "ja": "押し下げた", "note": "" },
+    "lifting": { "lemma": "lift", "pos": "動", "ja": "押し上げる（現在分詞）", "note": "" },
+    "sentiment": { "lemma": "sentiment", "pos": "名", "ja": "心理、感情", "note": "" },
+    "worried": { "lemma": "worry", "pos": "動", "ja": "懸念した", "note": "" },
+    "rising": { "lemma": "rise", "pos": "動", "ja": "上昇する（現在分詞）", "note": "" },
+    "bond": { "lemma": "bond", "pos": "名", "ja": "債券", "note": "" },
+    "yields": { "lemma": "yield", "pos": "名", "ja": "利回り（複数形）", "note": "" },
+    "yield": { "lemma": "yield", "pos": "名", "ja": "利回り", "note": "" },
+    "highest": { "lemma": "high", "pos": "形", "ja": "最も高い（最上級）", "note": "" },
+    "crisis": { "lemma": "crisis", "pos": "名", "ja": "危機", "note": "" },
+    "largely": { "lemma": "largely", "pos": "副", "ja": "主に、大部分は", "note": "" },
+    "persistent": { "lemma": "persistent", "pos": "形", "ja": "根強い", "note": "" },
+    "inflation": { "lemma": "inflation", "pos": "名", "ja": "インフレ、物価上昇", "note": "" },
+    "offered": { "lemma": "offer", "pos": "動", "ja": "提供した、もたらした", "note": "" },
+    "relief": { "lemma": "relief", "pos": "名", "ja": "安心、緩和", "note": "" },
+    "bounce": { "lemma": "bounce back", "pos": "熟", "ja": "立ち直る（back とセットで使う）", "note": "" },
+    "losses": { "lemma": "loss", "pos": "名", "ja": "損失（複数形）", "note": "" },
+    "analysts": { "lemma": "analyst", "pos": "名", "ja": "アナリスト（複数形）", "note": "" },
+    "warn": { "lemma": "warn", "pos": "動", "ja": "警告する", "note": "" },
+    "borrowing": { "lemma": "borrow", "pos": "動", "ja": "借り入れ（動名詞）", "note": "" }
+  },
+  "grammar": {
+    "topic": "keep + 現在分詞（〜し続ける）",
+    "quote": "Still, many analysts warn that borrowing costs for companies and households could keep rising if bond yields stay this high in the coming months.",
+    "quoteJa": "それでも多くのアナリストは、この高水準の利回りが続けば、今後数カ月で企業や家計の借り入れコストが一段と上昇しかねないと警告している。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "\"keep + 現在分詞（doing）\" は「〜し続ける」という継続の意味を表す。keep は目的語に動名詞（doing）だけを取り、to不定詞は続けない点が continue（continue to do／doing どちらも可）との違い。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "\"could keep rising\" は \"could continue to rise\" や \"could continue rising\" とほぼ同じ意味に書き換えられる。また文末の \"if bond yields stay this high\" は「もし〜のままなら」という条件を表し、if節の中では未来のことでも現在形を使う点にも注意する。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5の動詞語法問題で、keep／continue／stopなど「継続・中止」を表す動詞の後に来る形（doing か to do か）を問う出題が頻出。keep to do という形は原則存在しない点を押さえておくと消去法で正解しやすい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"We will keep monitoring the market until conditions stabilize.\"（状況が安定するまで市場を監視し続けます）や \"Please keep updating the report on a weekly basis.\"（レポートを毎週更新し続けてください）のように、業務の継続的な対応を伝える際によく使われる。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 利回りが上がるとなぜ株安要因になるのか",
+      "body": "利回り（yield）とは、国債などの債券に投資した際に得られる年間の利益の割合のこと。利回りが上がるのは債券の価格が下がっているサインであり、「株よりも安全な国債で高い利回りを得られるなら、株を売って国債を買おう」という投資家心理が働きやすくなる。そのため利回りの急上昇は株式市場にとって逆風になりやすい。"
+    },
+    {
+      "heading": "📌 世界の金融市場の動き",
+      "body": "2026年に入り、主要国では根強いインフレを背景に中央銀行が利上げに動く場面が続いており、世界的に「金利のある世界」への移行が進んでいる。中央銀行が政策金利を引き上げると国債の利回りも上昇しやすく、株式市場への逆風となりやすい。原油価格の動向が株式・債券市場双方に影響を与える構図も、当面続くとみられる。"
+    },
+    {
+      "heading": "📌 日本企業・日本人ビジネスパーソンへの影響",
+      "body": "米国債利回りの上昇は、日米の金利差を通じて為替レートにも波及しやすい。輸出企業にとって円安は追い風になる一方、原材料や燃料を輸入に頼る企業にとってはコスト増につながる。米国株に投資する日本の個人投資家にとっても、金利上昇局面での値動きの荒さは資産運用上の重要な検討材料となる。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点からの意義",
+      "body": "借入コストの上昇が見込まれる局面では、企業は新規の設備投資や借入を慎重に検討する必要が出てくる。投資家にとっても、株式と債券のどちらに資金を配分するかという判断がこれまで以上に重要になる。原油価格や地政学的な出来事が市場心理を大きく左右する場面が増えており、短期的なニュースにも目を配る必要がある。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stock market today: Dow, S&P 500, Nasdaq notch weekly wins as market shrugs off bond sell-off, oil prices ease",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-25-dow-sp-500-nasdaq-081738529.html",
+      "date": "2026-09-25"
+    },
+    {
+      "title": "Stock Market Today (Sept. 25, 2026): S&P 500 and Nasdaq end the week higher as fresh tech optimism lifts market",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-25-2026",
+      "date": "2026-09-25"
+    },
+    {
+      "title": "Stock market news for Sept. 25, 2026",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html",
+      "date": "2026-09-25"
+    }
+  ]
+}
