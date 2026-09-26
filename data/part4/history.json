@@ -1,8 +1,26 @@
 {
   "schemaVersion": 1,
   "type": "part4-history",
-  "updatedAt": "2026-09-17T09:01:00+09:00",
+  "updatedAt": "2026-09-27T04:01:00+09:00",
   "items": [
+    {
+      "id": "2026-09-27-0401-2",
+      "date": "2026-09-27",
+      "scene": "広告｜オフィス清掃サービスの月額プラン",
+      "genre": "広告",
+      "talkType": "ad",
+      "types": ["who", "infer", "detail"],
+      "flow": "告知と指示"
+    },
+    {
+      "id": "2026-09-27-0401-1",
+      "date": "2026-09-27",
+      "scene": "会議｜在宅勤務申請手順の変更",
+      "genre": "会議の一部",
+      "talkType": "meeting",
+      "types": ["gist", "intent", "next"],
+      "flow": "変更の説明と依頼"
+    },
     {
       "id": "2026-09-17-0901-5",
       "date": "2026-09-17",

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-09-27-0401-2",
+  "date": "2026-09-27",
+  "time": "04:01",
+  "createdAt": "2026-09-27T04:01:00+09:00",
+  "sample": false,
+  "scene": "広告｜オフィス清掃サービスの月額プラン",
+  "talkType": "ad",
+  "intro": "Questions 1 through 3 refer to the following advertisement.",
+  "speaker": { "tag": "W", "role": "女性", "accent": "en-GB" },
+  "lines": [
+    { "en": "Is your office starting to look a little untidy by the end of the week?", "ja": "週末になるとオフィスが少し乱れてきていませんか。" },
+    { "en": "Harbor Clean Services now offers a flexible monthly plan for small offices.", "ja": "ハーバー・クリーン・サービスは、小規模オフィス向けに柔軟な月額プランをご用意しています。" },
+    { "en": "Our team comes in twice a week, in the early morning before your staff arrives.", "ja": "スタッフの皆様が出社される前の早朝に、週2回チームが訪問します。" },
+    { "en": "Right now, we're offering the first month at half price for any office signing up before the end of this month.", "ja": "今月中にお申し込みいただいたオフィスは、初月を半額でご利用いただけます。" },
+    { "en": "Sign up online, and one of our coordinators will call you back within two business days to set a schedule.", "ja": "オンラインでお申し込みいただくと、担当者が2営業日以内にお電話し、日程を決めます。" },
+    { "en": "We only use cleaning products that are safe for shared workspaces.", "ja": "共有スペースでも安全に使える洗剤のみを使用しています。" },
+    { "en": "Mention this ad when you sign up, and we'll also throw in a free carpet cleaning.", "ja": "お申し込みの際にこの広告についてお伝えいただくと、カーペットクリーニングを無料で追加いたします。" },
+    { "en": "Visit our website today to get started.", "ja": "本日ぜひウェブサイトをご覧ください。" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely is the advertisement intended for?",
+      "choices": [
+        { "key": "A", "text": "Homeowners looking for a repair service", "ja": "修理サービスを探している住宅所有者" },
+        { "key": "B", "text": "Job seekers looking for cleaning work", "ja": "清掃の仕事を探している求職者" },
+        { "key": "C", "text": "Landlords looking for new tenants", "ja": "新しい入居者を探している家主" },
+        { "key": "D", "text": "Office managers looking for a cleaning service", "ja": "清掃サービスを探しているオフィス管理者" }
+      ],
+      "answer": "D",
+      "evidence": [0, 1],
+      "explanation": "広告は「オフィスが乱れていないか」という問いかけから始まり、小規模オフィス向けの清掃プランを紹介しているため、対象は清掃サービスを探すオフィス管理者(D)である。住宅の修理(A)や清掃の求人(B)、入居者探し(C)への言及は無い。",
+      "tip": "広告の1問目は、冒頭の問いかけと、直後に紹介される商品・サービスから対象読者を判断する。"
+    },
+    {
+      "id": "q2",
+      "type": "infer",
+      "prompt": "What is suggested about the cleaning products?",
+      "choices": [
+        { "key": "A", "text": "They are safe to use around employees", "ja": "従業員の周りで使っても安全である" },
+        { "key": "B", "text": "They are more expensive than competitors'", "ja": "競合よりも高価である" },
+        { "key": "C", "text": "They must be ordered in advance", "ja": "事前に注文しなければならない" },
+        { "key": "D", "text": "They are tested by an outside lab", "ja": "外部の研究機関で検査されている" }
+      ],
+      "answer": "A",
+      "evidence": [5],
+      "explanation": "話し手は\"We only use cleaning products that are safe for shared workspaces.\"と述べているため、清掃用品は従業員の周りで使っても安全であること(A)が示唆されている。価格の比較(B)や事前注文(C)、外部機関の検査(D)への言及は無い。",
+      "tip": "infer設問は、本文の1文をそのまま言い換えた選択肢を選ぶ。新しい情報を持ち込む選択肢は誤答になりやすい。"
+    },
+    {
+      "id": "q3",
+      "type": "detail",
+      "prompt": "What will customers receive if they mention the ad?",
+      "choices": [
+        { "key": "A", "text": "A discount on the monthly plan", "ja": "月額プランの割引" },
+        { "key": "B", "text": "An extra visit each week", "ja": "週1回追加の訪問" },
+        { "key": "C", "text": "A free carpet cleaning", "ja": "無料のカーペットクリーニング" },
+        { "key": "D", "text": "A free trial for one week", "ja": "1週間の無料体験" }
+      ],
+      "answer": "C",
+      "evidence": [6],
+      "explanation": "話し手は\"Mention this ad when you sign up, and we'll also throw in a free carpet cleaning.\"と述べているため、正解はカーペットクリーニングの無料提供(C)である。月額プランの割引(A)や週の訪問回数の増加(B)は本文に無い。",
+      "tip": "detail設問は、条件(mention this ad)とその結果(free carpet cleaning)のセットを本文で確認する。"
+    }
+  ],
+  "glossary": {
+    "sign up": { "lemma": "sign up", "pos": "熟", "ja": "申し込む、登録する", "note": "",
+                 "example": { "en": "You can sign up for the newsletter on our homepage.", "ja": "ホームページでニュースレターに登録できる。" } },
+    "call you back": { "lemma": "call back", "pos": "熟", "ja": "電話をかけ直す", "note": "",
+                        "example": { "en": "A representative will call you back within the hour.", "ja": "担当者が1時間以内に電話をかけ直す。" } },
+    "throw in": { "lemma": "throw in", "pos": "熟", "ja": "（特典として）無料でつける", "note": "",
+                  "example": { "en": "The store threw in a free gift with every purchase.", "ja": "その店は購入ごとに無料の景品をつけた。" } },
+    "half price": { "lemma": "half price", "pos": "名", "ja": "半額", "note": "",
+                     "example": { "en": "Tickets are sold at half price before nine in the morning.", "ja": "午前9時前はチケットが半額で販売される。" } },
+    "business days": { "lemma": "business day", "pos": "名", "ja": "営業日", "note": "",
+                        "example": { "en": "Standard delivery takes three to five business days.", "ja": "通常配送には3〜5営業日かかる。" } },
+    "shared workspaces": { "lemma": "shared workspace", "pos": "名", "ja": "共有スペース", "note": "",
+                            "example": { "en": "The building has several shared workspaces on the ground floor.", "ja": "その建物の1階にはいくつかの共有スペースがある。" } },
+    "untidy": { "lemma": "untidy", "pos": "形", "ja": "乱れている、片付いていない", "note": "",
+                "example": { "en": "The stockroom looked untidy after the busy holiday season.", "ja": "繁忙期の休暇シーズン後、倉庫は乱れて見えた。" } },
+    "coordinators": { "lemma": "coordinator", "pos": "名", "ja": "担当者、コーディネーター", "note": "",
+                       "example": { "en": "Our event coordinators will contact you to confirm the details.", "ja": "イベント担当者が詳細確認のためご連絡します。" } }
+  },
+  "point": {
+    "flow": "問いかけによる導入 → サービスの紹介 → 特典の提示 → 申し込み方法 → 追加の特典",
+    "items": [
+      { "title": "広告の1問目は対象読者", "body": "冒頭の問いかけとその直後に紹介される商品・サービスから、誰に向けた広告かを判断する。" },
+      { "title": "特典は条件とセットで読む", "body": "「〜をすれば・言えば」という条件と、その結果の特典(割引・無料サービス)は必ずセットで出てくるので、両方を根拠に確認する。" },
+      { "title": "行動を促す文は終盤に集まる", "body": "sign upやvisitのような行動を促す表現は広告の後半に集まりやすく、detail・next設問の根拠になりやすい。" }
+    ]
+  }
+}

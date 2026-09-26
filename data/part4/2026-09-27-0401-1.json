@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-09-27-0401-1",
+  "date": "2026-09-27",
+  "time": "04:01",
+  "createdAt": "2026-09-27T04:01:00+09:00",
+  "sample": false,
+  "scene": "会議｜在宅勤務申請手順の変更",
+  "talkType": "meeting",
+  "intro": "Questions 1 through 3 refer to the following excerpt from a meeting.",
+  "speaker": { "tag": "M", "role": "男性", "accent": "en-US" },
+  "lines": [
+    { "en": "Thanks for joining today's meeting. I want to update everyone on our work-from-home policy.", "ja": "本日のミーティングにご参加いただきありがとうございます。在宅勤務制度について皆さんにお知らせがあります。" },
+    { "en": "Starting next month, employees will need to submit requests through the new online form instead of e-mail.", "ja": "来月から、申請はメールではなく新しいオンラインフォームを通じて提出していただきます。" },
+    { "en": "Right now, about forty percent of requests get delayed because managers can't find the e-mail in time.", "ja": "現在、申請の約40パーセントは、上司がメールを期限内に見つけられず遅れが出ています。" },
+    { "en": "The new system will send an automatic reminder to managers within one business day.", "ja": "新システムでは、上司に1営業日以内に自動でリマインダーが送られます。" },
+    { "en": "It will also let you check the status of your request at any time.", "ja": "また、申請の状況をいつでも確認できるようになります。" },
+    { "en": "I know switching systems can be a hassle, but this should cut down on the back-and-forth we've been dealing with.", "ja": "システムの切り替えは手間だと分かっていますが、これまでのやり取りの往復を減らせるはずです。" },
+    { "en": "Please submit any requests for next month by the twentieth so managers have time to review them.", "ja": "来月分の申請は20日までに提出してください。上司が確認する時間を確保するためです。" },
+    { "en": "If you run into any trouble logging in, reach out to the IT desk directly.", "ja": "ログインで問題があれば、直接IT窓口にご連絡ください。" },
+    { "en": "I'll send the link to the new form right after this meeting.", "ja": "このミーティングの後すぐに、新しいフォームのリンクを送ります。" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the speaker mainly discussing?",
+      "choices": [
+        { "key": "A", "text": "A change to a request process", "ja": "申請手順の変更" },
+        { "key": "B", "text": "A delay in employee paychecks", "ja": "社員の給与の遅れ" },
+        { "key": "C", "text": "A new office location", "ja": "新しいオフィスの場所" },
+        { "key": "D", "text": "A cancellation of a meeting", "ja": "会議の中止" }
+      ],
+      "answer": "A",
+      "evidence": [0, 1],
+      "explanation": "話し手は在宅勤務の申請手順が新しいオンラインフォームに変わることを説明しているため、正解はA。給与の遅れ(B)やオフィス移転(C)、会議の中止(D)への言及は無い。",
+      "tip": "冒頭2〜3文に「変更点」が出てきたら、gistはその変更そのものに絞る。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when he says, \"this should cut down on the back-and-forth we've been dealing with\"?",
+      "choices": [
+        { "key": "A", "text": "The new system will increase the number of e-mails", "ja": "新システムでメールの数が増える" },
+        { "key": "B", "text": "The old system will continue for now", "ja": "旧システムがしばらく続く" },
+        { "key": "C", "text": "The new system will reduce delays in communication", "ja": "新システムで連絡の遅れが減る" },
+        { "key": "D", "text": "The new system will replace the IT desk", "ja": "新システムがIT窓口の代わりになる" }
+      ],
+      "answer": "C",
+      "evidence": [4, 5],
+      "explanation": "直前の文でシステム切り替えを「手間」と認めつつ、その後で「やり取りの往復を減らせる」と述べているため、新システムが連絡の遅れを減らすという意図(C)が正解。メールが増える(A)とは述べておらず、旧システムの継続(B)やIT窓口の代替(D)も本文に無い。",
+      "tip": "intent設問は、引用文の直前にある譲歩(「手間だとは分かっているが」)を読み、その後に続く利点を根拠にする。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are employees asked to do by the twentieth?",
+      "choices": [
+        { "key": "A", "text": "Contact the IT desk directly", "ja": "直接IT窓口に連絡する" },
+        { "key": "B", "text": "Submit their requests for next month", "ja": "来月分の申請を提出する" },
+        { "key": "C", "text": "Review their managers' schedules", "ja": "上司のスケジュールを確認する" },
+        { "key": "D", "text": "Attend a follow-up meeting", "ja": "後続の会議に出席する" }
+      ],
+      "answer": "B",
+      "evidence": [6],
+      "explanation": "話し手は\"submit any requests for next month by the twentieth\"と述べているため、20日までに来月分の申請を提出すること(B)が正解。IT窓口への連絡(A)はトラブル時のみの案内であり、必須の依頼ではない。",
+      "tip": "依頼設問は「〜してください」「〜までに」という表現を含む文を優先して探す。"
+    }
+  ],
+  "glossary": {
+    "cut down on": { "lemma": "cut down on", "pos": "熟", "ja": "減らす", "note": "",
+                      "example": { "en": "The new schedule should cut down on unnecessary overtime.", "ja": "新しいスケジュールは不必要な残業を減らすはずだ。" } },
+    "back-and-forth": { "lemma": "back-and-forth", "pos": "名", "ja": "やり取りの往復", "note": "",
+                         "example": { "en": "There was a lot of back-and-forth before the contract was signed.", "ja": "契約が結ばれるまでに何度もやり取りの往復があった。" } },
+    "run into": { "lemma": "run into", "pos": "熟", "ja": "（問題などに）遭遇する", "note": "",
+                  "example": { "en": "Call the help desk if you run into any errors.", "ja": "エラーに遭遇したらヘルプデスクに電話してください。" } },
+    "reach out to": { "lemma": "reach out to", "pos": "熟", "ja": "〜に連絡する", "note": "",
+                       "example": { "en": "Please reach out to the HR team with any questions.", "ja": "質問があれば人事チームに連絡してください。" } },
+    "logging in": { "lemma": "log in", "pos": "熟", "ja": "ログインすること", "note": "",
+                     "example": { "en": "Some employees had trouble logging in after the update.", "ja": "更新後、一部の社員はログインに問題があった。" } },
+    "within one business day": { "lemma": "within one business day", "pos": "熟", "ja": "1営業日以内に", "note": "",
+                                  "example": { "en": "The refund will be processed within one business day.", "ja": "返金は1営業日以内に処理される。" } },
+    "it desk": { "lemma": "IT desk", "pos": "名", "ja": "IT窓口", "note": "",
+                 "example": { "en": "New employees can contact the IT desk for a password reset.", "ja": "新入社員はパスワードの再設定についてIT窓口に問い合わせられる。" } },
+    "work-from-home": { "lemma": "work-from-home", "pos": "形", "ja": "在宅勤務の", "note": "",
+                         "example": { "en": "The company recently updated its work-from-home guidelines.", "ja": "会社は最近、在宅勤務の指針を更新した。" } }
+  },
+  "point": {
+    "flow": "主題の提示 → 変更の中身 → 理由(現状の数字) → 新しい手順 → 依頼と期限",
+    "items": [
+      { "title": "数字の対比が理由の根拠", "body": "「今は〜%が遅れている」のように現状の数字が出たら、その後の新しい仕組みが理由として結び付く。detail・intent設問はこの対比部分を根拠にする。" },
+      { "title": "譲歩の後の利点が要点", "body": "「手間だとは思うが」のような譲歩表現の直後には、変更の利点が続く。intent設問はこの利点を正解にする。" },
+      { "title": "依頼は日付と結び付けて聞く", "body": "「〜日までに」という期限表現を含む文が、聞き手への依頼の根拠になることが多い。" }
+    ]
+  }
+}
