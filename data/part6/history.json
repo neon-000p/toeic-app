@@ -1,8 +1,15 @@
 {
   "schemaVersion": 1,
   "type": "part6-history",
-  "updatedAt": "2026-09-18T16:37:00+09:00",
+  "updatedAt": "2026-09-27T04:01:00+09:00",
   "items": [
+    {
+      "id": "2026-09-27-0401",
+      "date": "2026-09-27",
+      "scene": "社内メモ｜会議室予約ルールの変更",
+      "docType": "memo",
+      "types": ["verb", "sentence", "conj", "vocab"]
+    },
     {
       "id": "2026-09-18-1637-5",
       "date": "2026-09-18",

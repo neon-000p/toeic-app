@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-09-27-0401",
+  "date": "2026-09-27",
+  "time": "04:01",
+  "createdAt": "2026-09-27T04:01:00+09:00",
+  "sample": false,
+  "docType": "memo",
+  "scene": "社内メモ｜会議室予約ルールの変更",
+  "intro": "Questions 1-4 refer to the following memo.",
+  "header": [
+    { "label": "To", "text": "All Staff" },
+    { "label": "From", "text": "Facilities Office" },
+    { "label": "Subject", "text": "Updated Meeting Room Booking Policy" },
+    { "label": "Date", "text": "September 27" }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        { "en": "Starting next month, all third-floor meeting rooms will be ------- through the new online booking system instead of the paper sign-up sheet.", "ja": "来月から、3階の会議室はすべて、紙の予約表ではなく新しいオンライン予約システムを通じて予約されるようになります。", "q": 1 },
+        { "en": "The paper sign-up sheets have caused confusion, since employees sometimes booked the same room for the same time by mistake.", "ja": "紙の予約表は混乱を招いてきました。社員が誤って同じ時間に同じ会議室を予約してしまうことがあったためです。" },
+        { "en": "The new system will show real-time availability for every room in the building.", "ja": "新しいシステムでは、建物内すべての会議室の空き状況をリアルタイムで確認できます。" }
+      ]
+    },
+    {
+      "sentences": [
+        { "en": "-------", "ja": "", "q": 2 },
+        { "en": "Reservations can be made up to two weeks in advance, and each booking is limited to two hours.", "ja": "予約は2週間先まで可能で、1回の予約は2時間までとなります。" },
+        { "en": "Short meetings of thirty minutes or less may still be booked on the same day.", "ja": "30分以下の短い会議は、当日でも予約が可能です。" },
+        { "en": "-------, the display outside each room may take a few minutes to update after a new booking.", "ja": "しかしながら、各会議室前の表示が新しい予約の後に更新されるまで数分かかることがあります。", "q": 3 }
+      ]
+    },
+    {
+      "sentences": [
+        { "en": "Staff members who repeatedly ------- their reservations without canceling in advance may lose booking privileges for one month.", "ja": "予約を事前に取り消さずに無断で利用しないことを繰り返す社員は、1か月間予約権限を失う可能性があります。", "q": 4 },
+        { "en": "Please direct any questions about the new policy to the Facilities Office.", "ja": "新しい制度についてのご質問は、施設管理オフィスまでお問い合わせください。" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "verb",
+      "choices": [
+        { "key": "A", "text": "book", "ja": "（動詞原形）予約する" },
+        { "key": "B", "text": "booking", "ja": "（動名詞・現在分詞）予約すること" },
+        { "key": "C", "text": "to book", "ja": "（to不定詞）予約するために" },
+        { "key": "D", "text": "booked", "ja": "（過去分詞）予約された" }
+      ],
+      "answer": "D",
+      "explanation": "空所の直前がwill beであり、受動態の文になるため過去分詞のbooked(D)が正解。動詞原形のbook(A)や動名詞・現在分詞のbooking(B)、to不定詞のto book(C)はbe動詞の直後の受動態の形にならない。",
+      "tip": "will be の直後に空所があれば、受動態を作る過去分詞を選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "sentence",
+      "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "insert": "Staff will need to log in with their employee ID to view the calendar.",
+      "choices": [
+        { "key": "A", "text": "The vendor will replace the third-floor projectors next Monday.", "ja": "ベンダーは来週月曜日に3階のプロジェクターを交換する。" },
+        { "key": "B", "text": "The system was first introduced at the downtown office two years ago.", "ja": "このシステムは2年前に都心オフィスで初めて導入された。" },
+        { "key": "C", "text": "Staff will need to log in with their employee ID to view the calendar.", "ja": "社員はカレンダーを見るために社員IDでログインする必要がある。" },
+        { "key": "D", "text": "Employees who lose their badge should contact security immediately.", "ja": "社員証を失くした社員は直ちに警備に連絡すること。" }
+      ],
+      "answer": "C",
+      "explanation": "直前の文で「建物内すべての会議室の空き状況をリアルタイムで確認できる」と述べ、直後で「予約は2週間先まで可能」と続くため、その間には「カレンダーを見るためにログインが必要」という一文(C)が最も自然につながる。プロジェクターの交換(A)やシステム導入時期(B)、社員証の紛失(D)は文書のどこにも出てこない話題である。",
+      "tip": "一文挿入は、前の文と後ろの文の両方に意味がつながるかを確認する。話題が変わる選択肢は消す。"
+    },
+    {
+      "id": "q3",
+      "type": "conj",
+      "choices": [
+        { "key": "A", "text": "Therefore", "ja": "（接続副詞）そのため" },
+        { "key": "B", "text": "However", "ja": "（接続副詞）しかしながら" },
+        { "key": "C", "text": "In addition", "ja": "（接続副詞）さらに" },
+        { "key": "D", "text": "For example", "ja": "（接続副詞）例えば" }
+      ],
+      "answer": "B",
+      "explanation": "直前の文で「30分以下の短い会議は当日でも予約できる」という肯定的な内容があり、空所の後では「表示の更新に数分かかることがある」という注意事項が続くため、逆接のHowever(B)が正解。Therefore(結果、A)やIn addition(追加、C)、For example(例示、D)は文意に合わない。",
+      "tip": "接続副詞問題は、空所の前後の文の関係（逆接・追加・因果・例示）を必ず確認する。空所の文だけでは決まらない。"
+    },
+    {
+      "id": "q4",
+      "type": "vocab",
+      "choices": [
+        { "key": "A", "text": "miss", "ja": "無断で利用しない、来ない" },
+        { "key": "B", "text": "extend", "ja": "延長する" },
+        { "key": "C", "text": "renew", "ja": "更新する" },
+        { "key": "D", "text": "decline", "ja": "断る" }
+      ],
+      "answer": "A",
+      "explanation": "文脈は「予約を事前に取り消さずに〜すると、予約権限を失う可能性がある」であり、無断で利用しないことを意味するmiss(A)が正解。extend(延長する、B)やrenew(更新する、C)、decline(断る、D)はこの文脈に合わない。",
+      "tip": "語彙問題は、後半の「権限を失う」という結果と自然につながる語を選ぶ。"
+    }
+  ],
+  "glossary": {
+    "sign-up sheet": { "lemma": "sign-up sheet", "pos": "名", "ja": "予約表、申込用紙", "note": "",
+                        "example": { "en": "The gym still uses a paper sign-up sheet for the tennis courts.", "ja": "そのジムはテニスコートの予約に今も紙の申込用紙を使っている。" } },
+    "real-time availability": { "lemma": "real-time availability", "pos": "名", "ja": "リアルタイムの空き状況", "note": "",
+                                 "example": { "en": "The app shows real-time availability for every rental car at the lot.", "ja": "そのアプリは駐車場にあるすべてのレンタカーのリアルタイムの空き状況を表示する。" } },
+    "in advance": { "lemma": "in advance", "pos": "熟", "ja": "事前に", "note": "",
+                     "example": { "en": "Please confirm your seat in advance if you plan to attend the dinner.", "ja": "夕食会に参加予定の場合は事前に席をご確認ください。" } },
+    "booking privileges": { "lemma": "booking privileges", "pos": "名", "ja": "予約権限", "note": "",
+                             "example": { "en": "Members who cancel late may temporarily lose their booking privileges.", "ja": "遅れて取り消した会員は、一時的に予約権限を失うことがある。" } },
+    "facilities office": { "lemma": "facilities office", "pos": "名", "ja": "施設管理オフィス", "note": "",
+                            "example": { "en": "Any repair requests should be sent to the facilities office directly.", "ja": "修理の依頼は直接施設管理オフィスに送るべきである。" } },
+    "instead of": { "lemma": "instead of", "pos": "熟", "ja": "〜の代わりに", "note": "",
+                     "example": { "en": "We switched to digital tickets instead of printed ones this year.", "ja": "今年は紙の券の代わりに電子チケットに切り替えた。" } },
+    "up to": { "lemma": "up to", "pos": "熟", "ja": "最大〜まで", "note": "",
+               "example": { "en": "The plan allows up to four guests per reservation.", "ja": "そのプランは1回の予約につき最大4名まで利用できる。" } },
+    "limited to": { "lemma": "limited to", "pos": "熟", "ja": "〜に制限される", "note": "",
+                     "example": { "en": "Parking near the entrance is limited to visitors with a permit.", "ja": "入口付近の駐車は許可証を持つ来訪者に制限される。" } },
+    "same day": { "lemma": "same day", "pos": "名", "ja": "当日", "note": "",
+                   "example": { "en": "Orders placed before noon are usually shipped the same day.", "ja": "正午前に注文された品物は通常当日に発送される。" } }
+  },
+  "point": {
+    "lead": "空所の文で決まらなければ、前の文に戻る",
+    "items": [
+      { "title": "受動態はbe+過去分詞の形で判断", "body": "will be の直後に空所があれば、受動態を作る過去分詞を選ぶ。動詞原形やto不定詞、動名詞と混同しない。" },
+      { "title": "一文挿入は前後両方につながるものを選ぶ", "body": "直前の文の話題と直後の文の話題の両方に自然に橋渡しできる1文を選ぶ。どちらか一方にしか合わない選択肢や、新しい話題を持ち込む選択肢は消す。" },
+      { "title": "接続副詞は前後の関係で決まる", "body": "空所のある文だけを読んでも接続副詞は決まらない。前の文の内容が肯定的か否定的かを確認し、逆接・追加・因果・例示のどれが続くかを判断する。" }
+    ]
+  }
+}
