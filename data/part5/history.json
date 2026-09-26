@@ -1,8 +1,15 @@
 {
   "schemaVersion": 1,
   "type": "part5-history",
-  "updatedAt": "2026-09-18T12:58:00+09:00",
+  "updatedAt": "2026-09-27T04:01:00+09:00",
   "items": [
+    {
+      "id": "2026-09-27-0401",
+      "date": "2026-09-27",
+      "focus": "文法7・語彙3",
+      "types": ["form", "vocab", "verb", "prep", "vocab", "form", "conj", "verbal", "vocab", "pron"],
+      "topics": ["形容詞の後の名詞（目的語）", "each ofの単数一致", "betweenとamongの区別", "名詞の前の形容詞", "譲歩の接続詞", "前置詞の後の動名詞", "所有格の関係代名詞（whose）"]
+    },
     {
       "id": "2026-09-18-1258-5",
       "date": "2026-09-18",

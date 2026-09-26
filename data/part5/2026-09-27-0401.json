@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-09-27-0401",
+  "date": "2026-09-27",
+  "time": "04:01",
+  "createdAt": "2026-09-27T04:01:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "Before the marketing team can launch the campaign, they must receive formal ------- from the finance department.",
+      "choices": [
+        { "key": "A", "text": "approval", "ja": "（名）承認" },
+        { "key": "B", "text": "approve", "ja": "（動）承認する" },
+        { "key": "C", "text": "approving", "ja": "（形）承認している" },
+        { "key": "D", "text": "approvingly", "ja": "（副）承認するように" }
+      ],
+      "answer": "A",
+      "ja": "マーケティングチームがキャンペーンを開始する前に、財務部門から正式な承認を受けなければならない。",
+      "explanation": "空所の前に formal という形容詞があり、後ろに「from the finance department」と続く他動詞receiveの目的語になる名詞が必要なため、名詞のapproval(A)が正解。動詞のapprove(B)や現在分詞approving(C)、副詞approvingly(D)は目的語の位置に入らない。",
+      "tip": "形容詞の直後に空所があり、その空所が動詞の目的語になっていれば名詞形を選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "prompt": "Please ------- the signed invoice to this e-mail before the shipment leaves the warehouse tomorrow morning.",
+      "choices": [
+        { "key": "A", "text": "expand", "ja": "拡大する" },
+        { "key": "B", "text": "attach", "ja": "添付する" },
+        { "key": "C", "text": "remind", "ja": "念を押す、思い出させる" },
+        { "key": "D", "text": "submit", "ja": "提出する" }
+      ],
+      "answer": "B",
+      "ja": "出荷が明日の朝に倉庫を出る前に、署名済みの請求書をこのメールに添付してください。",
+      "explanation": "「請求書をこのメールに〜する」という文脈から、添付するを意味するattach(B)が正解。expand(拡大する、A)やremind(念を押す、C)は意味が合わず、submit(提出する、D)はto this e-mailという言い方と結びつかない。",
+      "tip": "語彙問題は4択が同じ品詞・同程度の難度で並ぶ。文意に最も自然に合う1語を選び、文法的に入るかどうかでは選ばない。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "prompt": "Each of the regional branches ------- required to submit its inventory report by the fifteenth of every month.",
+      "choices": [
+        { "key": "A", "text": "are", "ja": "（現在・複数）である" },
+        { "key": "B", "text": "were", "ja": "（過去）であった" },
+        { "key": "C", "text": "is", "ja": "（現在・単数）である" },
+        { "key": "D", "text": "being", "ja": "（進行・分詞）" }
+      ],
+      "answer": "C",
+      "ja": "各地域の支店は、毎月15日までに在庫報告書を提出することが求められている。",
+      "explanation": "主語は\"Each of the regional branches\"であり、eachは単数扱いなので動詞はis(C)。are(A)やwere(B)は複数または過去なので一致しない。being(D)は進行形を作る語で、単純な現在の状態を示す文には合わない。",
+      "tip": "each of + 複数名詞は主語として単数扱いになる。動詞の形を選ぶときは、eachやevery が付いた主語を必ず確認する。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "prompt": "The new security badges must be distributed ------- all staff members before the building's access system is upgraded next week.",
+      "choices": [
+        { "key": "A", "text": "between", "ja": "（前）〜の間で（2つ）" },
+        { "key": "B", "text": "despite", "ja": "（前）〜にもかかわらず" },
+        { "key": "C", "text": "besides", "ja": "（前）〜に加えて" },
+        { "key": "D", "text": "among", "ja": "（前）〜の間で（3つ以上）" }
+      ],
+      "answer": "D",
+      "ja": "建物の入退室システムが来週更新される前に、新しいセキュリティバッジをスタッフ全員に配布しなければならない。",
+      "explanation": "対象が\"all staff members\"のように3人以上のグループなので、2者間を表すbetween(A)ではなくamong(D)が正解。despite(逆接、B)やbesides(追加、C)は文意に合わない。",
+      "tip": "前置詞問題は対象の数（2つか3つ以上か）を確認してbetweenとamongを区別する。"
+    },
+    {
+      "id": "q5",
+      "type": "vocab",
+      "prompt": "The hiring committee will ------- three finalists for the regional manager position by the end of this week.",
+      "choices": [
+        { "key": "A", "text": "shortlist", "ja": "候補に選ぶ" },
+        { "key": "B", "text": "expand", "ja": "拡大する" },
+        { "key": "C", "text": "renew", "ja": "更新する" },
+        { "key": "D", "text": "decline", "ja": "断る" }
+      ],
+      "answer": "A",
+      "ja": "採用委員会は今週末までに、地域マネージャー職の最終候補者3名を選ぶ予定である。",
+      "explanation": "「最終候補者3名を〜する」という文脈から、shortlist(候補に選ぶ、A)が正解。expand(拡大する、B)やrenew(更新する、C)、decline(断る、D)は候補者を選ぶという意味にならない。",
+      "tip": "語彙問題は文の主語・目的語との組み合わせで意味が通る1語を選ぶ。"
+    },
+    {
+      "id": "q6",
+      "type": "form",
+      "prompt": "The accounting department switched to the new software because it produces more ------- results than the previous system.",
+      "choices": [
+        { "key": "A", "text": "reliably", "ja": "（副）信頼できるように" },
+        { "key": "B", "text": "reliable", "ja": "（形）信頼できる" },
+        { "key": "C", "text": "reliability", "ja": "（名）信頼性" },
+        { "key": "D", "text": "rely", "ja": "（動）信頼する" }
+      ],
+      "answer": "B",
+      "ja": "経理部門は、新しいソフトウェアが以前のシステムよりも信頼できる結果を出すため、切り替えた。",
+      "explanation": "空所の直後にresultsという名詞があり、その名詞を修飾する形容詞が必要なため、reliable(B)が正解。副詞のreliably(A)や名詞のreliability(C)、動詞rely(D)は名詞の前に置けない。",
+      "tip": "空所の直後が名詞であれば、形容詞形を選ぶ。名詞・動詞・副詞の語尾と混同しないよう選択肢を並べて確認する。"
+    },
+    {
+      "id": "q7",
+      "type": "conj",
+      "prompt": "------- the product launch event was moved indoors due to rain, attendance was still higher than expected.",
+      "choices": [
+        { "key": "A", "text": "Because", "ja": "（接）〜なので" },
+        { "key": "B", "text": "So that", "ja": "（接）〜するために" },
+        { "key": "C", "text": "Although", "ja": "（接）〜だけれども" },
+        { "key": "D", "text": "Unless", "ja": "（接）〜でなければ" }
+      ],
+      "answer": "C",
+      "ja": "雨のため製品発売イベントは屋内に変更されたが、来場者数はそれでも予想を上回った。",
+      "explanation": "前半で「雨で屋内に変更された」というマイナス要因があり、後半で「それでも来場者数は予想を上回った」という対比が来ているため、譲歩を表すAlthough(C)が正解。Because(理由、A)やSo that(目的、B)、Unless(条件、D)は文意に合わない。",
+      "tip": "接続詞問題は前半と後半の関係（逆接・理由・目的・条件）を必ず確認してから選ぶ。"
+    },
+    {
+      "id": "q8",
+      "type": "verbal",
+      "prompt": "Employees are required to complete the safety training before ------- any equipment in the new warehouse.",
+      "choices": [
+        { "key": "A", "text": "operate", "ja": "（動詞原形）操作する" },
+        { "key": "B", "text": "operated", "ja": "（過去形）操作した" },
+        { "key": "C", "text": "to operate", "ja": "（to不定詞）操作するために" },
+        { "key": "D", "text": "operating", "ja": "（動名詞）操作すること" }
+      ],
+      "answer": "D",
+      "ja": "従業員は、新しい倉庫でいずれの設備も操作する前に、安全研修を完了することが求められている。",
+      "explanation": "空所の直前が前置詞beforeであり、前置詞の後には動名詞が続くため、operating(D)が正解。動詞原形のoperate(A)や過去形operated(B)、to不定詞のto operate(C)は前置詞の直後には置けない。",
+      "tip": "前置詞の直後に空所があれば動名詞を選ぶ。to不定詞や動詞原形と混同しないよう選択肢の形を確認する。"
+    },
+    {
+      "id": "q9",
+      "type": "vocab",
+      "prompt": "The facilities team will ------- the elevator for routine maintenance from nine to eleven on Monday morning.",
+      "choices": [
+        { "key": "A", "text": "close", "ja": "閉鎖する" },
+        { "key": "B", "text": "relocate", "ja": "移設する" },
+        { "key": "C", "text": "announce", "ja": "発表する" },
+        { "key": "D", "text": "renew", "ja": "更新する" }
+      ],
+      "answer": "A",
+      "ja": "施設チームは月曜日の午前9時から11時まで、定期メンテナンスのためエレベーターを閉鎖する。",
+      "explanation": "「定期メンテナンスのため〜する」という文脈から、close(閉鎖する、A)が正解。relocate(移設する、B)やannounce(発表する、C)、renew(更新する、D)はメンテナンスの内容として不自然である。",
+      "tip": "語彙問題は、目的語(elevator)とfor以下の目的(routine maintenance)の両方に合う語を選ぶ。"
+    },
+    {
+      "id": "q10",
+      "type": "pron",
+      "prompt": "The consultant ------- report identified several billing errors will present her findings at Thursday's meeting.",
+      "choices": [
+        { "key": "A", "text": "who", "ja": "（関係代名詞・主格、人）" },
+        { "key": "B", "text": "whom", "ja": "（関係代名詞・目的格、人）" },
+        { "key": "C", "text": "which", "ja": "（関係代名詞、もの）" },
+        { "key": "D", "text": "whose", "ja": "（関係代名詞・所有格）" }
+      ],
+      "answer": "D",
+      "ja": "報告書でいくつかの請求の誤りを指摘したコンサルタントが、木曜日の会議で調査結果を発表する。",
+      "explanation": "空所の後にreportという名詞が続き、「そのコンサルタントの報告書」という所有関係を表すため、所有格の関係代名詞whose(D)が正解。who(主格、A)やwhom(目的格、B)は名詞を直接修飾できず、which(C)は人を指せない。",
+      "tip": "関係代名詞の直後が名詞であれば、所有格のwhoseを検討する。"
+    }
+  ],
+  "glossary": {
+    "finance department": { "lemma": "finance department", "pos": "名", "ja": "財務部門", "note": "",
+                             "example": { "en": "The finance department reviews all expense reports at the end of each month.", "ja": "財務部門は月末にすべての経費報告書を確認する。" } },
+    "due to": { "lemma": "due to", "pos": "熟", "ja": "〜のために（原因）", "note": "",
+                "example": { "en": "The flight was delayed due to a mechanical issue.", "ja": "その航空便は機械の不具合のため遅れた。" } },
+    "routine maintenance": { "lemma": "routine maintenance", "pos": "名", "ja": "定期メンテナンス", "note": "",
+                              "example": { "en": "The printer is out of service for routine maintenance this afternoon.", "ja": "そのプリンターは本日午後、定期メンテナンスのため使用できない。" } },
+    "billing errors": { "lemma": "billing error", "pos": "名", "ja": "請求の誤り", "note": "",
+                         "example": { "en": "Customers were refunded after several billing errors were discovered.", "ja": "いくつかの請求の誤りが発覚した後、顧客に返金された。" } },
+    "regional manager": { "lemma": "regional manager", "pos": "名", "ja": "地域マネージャー", "note": "",
+                           "example": { "en": "The regional manager oversees five branches across the state.", "ja": "その地域マネージャーは州内の5つの支店を統括している。" } },
+    "inventory report": { "lemma": "inventory report", "pos": "名", "ja": "在庫報告書", "note": "",
+                           "example": { "en": "The warehouse staff submits an inventory report every Friday.", "ja": "倉庫スタッフは毎週金曜日に在庫報告書を提出する。" } },
+    "access system": { "lemma": "access system", "pos": "名", "ja": "入退室システム", "note": "",
+                        "example": { "en": "The building's access system was upgraded to use key cards.", "ja": "その建物の入退室システムはカードキー方式に更新された。" } },
+    "hiring committee": { "lemma": "hiring committee", "pos": "名", "ja": "採用委員会", "note": "",
+                           "example": { "en": "The hiring committee reviewed dozens of applications this week.", "ja": "採用委員会は今週、数十件の応募書類を確認した。" } },
+    "findings": { "lemma": "finding", "pos": "名", "ja": "調査結果", "note": "",
+                  "example": { "en": "The auditor presented her findings to the board on Tuesday.", "ja": "監査担当者は火曜日に取締役会へ調査結果を報告した。" } }
+  },
+  "point": {
+    "lead": "選択肢の見た目で型を決めてから、空所の前後を見る",
+    "items": [
+      { "title": "品詞問題は空所の前後の語で判断", "body": "空所の直前に形容詞、直後に名詞があるかを確認し、選択肢が同じ語幹で語尾だけ違えば品詞問題と分かる。名詞・動詞・形容詞・副詞のどれが要るかを先に決める。" },
+      { "title": "eachやeveryが付く主語は単数扱い", "body": "each of the... や every のような語が主語に付くと、動詞は単数形になる。主語の見た目の複数形に惑わされない。" },
+      { "title": "接続詞は前後の関係で選ぶ", "body": "前半と後半が逆接・理由・目的・条件のどの関係かを確認してから、although・because・so that・unlessを選ぶ。" }
+    ]
+  }
+}
