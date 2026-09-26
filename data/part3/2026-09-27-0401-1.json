@@ -6,20 +6,68 @@
   "time": "04:01",
   "scene": "顧客対応｜納品数量の相違とクレーム対応",
   "speakers": [
-    { "tag": "W", "role": "女性", "accent": "en-US" },
-    { "tag": "M", "role": "男性", "accent": "en-GB" }
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-GB"
+    }
   ],
   "lines": [
-    { "tag": "W", "en": "Hi, this is Laura. We just received this morning's order, but only forty-five of the sixty boxes showed up.", "ja": "もしもし、ローラです。今朝到着した注文なのですが、60箱のうち45箱しか届いていません。" },
-    { "tag": "M", "en": "I'm sorry about that. Let me pull up your account and check the shipment.", "ja": "申し訳ございません。アカウントを確認して、配送状況を確認させてください。" },
-    { "tag": "M", "en": "It looks like the rest got held up at the warehouse over a packing error.", "ja": "残りは梱包ミスのせいで倉庫で止まっているようです。" },
-    { "tag": "W", "en": "That's an issue. We're running tight on supplies before this weekend's event.", "ja": "それは困ります。今週末のイベント前で、在庫に余裕がありません。" },
-    { "tag": "M", "en": "I can have the remaining fifteen boxes shipped out today by express courier.", "ja": "残りの15箱は本日、速達の宅配業者で発送できます。" },
-    { "tag": "M", "en": "They should arrive tomorrow afternoon, well before Saturday's event.", "ja": "明日の午後には届く予定で、土曜日のイベントには十分間に合います。" },
-    { "tag": "W", "en": "That works, but could you also waive the shipping fee for the error?", "ja": "それなら大丈夫ですが、こちらのミスなので配送料も免除していただけますか。" },
-    { "tag": "M", "en": "Sure, I'll waive the fee and send written confirmation by email.", "ja": "もちろんです。配送料を免除し、書面での確認メールをお送りします。" },
-    { "tag": "W", "en": "Thanks. Could you follow up with me once the courier picks up the boxes?", "ja": "ありがとうございます。宅配業者が箱を引き取ったら、改めてご連絡いただけますか。" },
-    { "tag": "M", "en": "I'll call you back within the hour, right after pickup.", "ja": "引き取り後すぐに、1時間以内にお電話します。" }
+    {
+      "tag": "W",
+      "en": "Hi, this is Laura. We just received this morning's order, but only forty-five of the sixty boxes showed up.",
+      "ja": "もしもし、ローラです。今朝到着した注文なのですが、60箱のうち45箱しか届いていません。"
+    },
+    {
+      "tag": "M",
+      "en": "I'm sorry about that. Let me pull up your account and check the shipment.",
+      "ja": "申し訳ございません。アカウントを確認して、配送状況を確認させてください。"
+    },
+    {
+      "tag": "M",
+      "en": "It looks like the rest got held up at the warehouse over a packing error.",
+      "ja": "残りは梱包ミスのせいで倉庫で止まっているようです。"
+    },
+    {
+      "tag": "W",
+      "en": "That's an issue. We're running tight on supplies before this weekend's event.",
+      "ja": "それは困ります。今週末のイベント前で、在庫に余裕がありません。"
+    },
+    {
+      "tag": "M",
+      "en": "I can have the remaining fifteen boxes shipped out today by express courier.",
+      "ja": "残りの15箱は本日、速達の宅配業者で発送できます。"
+    },
+    {
+      "tag": "M",
+      "en": "They should arrive tomorrow afternoon, well before Saturday's event.",
+      "ja": "明日の午後には届く予定で、土曜日のイベントには十分間に合います。"
+    },
+    {
+      "tag": "W",
+      "en": "That works, but could you also waive the shipping fee for the error?",
+      "ja": "それなら大丈夫ですが、こちらのミスなので配送料も免除していただけますか。"
+    },
+    {
+      "tag": "M",
+      "en": "Sure, I'll waive the fee and send written confirmation by email.",
+      "ja": "もちろんです。配送料を免除し、書面での確認メールをお送りします。"
+    },
+    {
+      "tag": "W",
+      "en": "Thanks. Could you follow up with me once the courier picks up the boxes?",
+      "ja": "ありがとうございます。宅配業者が箱を引き取ったら、改めてご連絡いただけますか。"
+    },
+    {
+      "tag": "M",
+      "en": "I'll call you back within the hour, right after pickup.",
+      "ja": "引き取り後すぐに、1時間以内にお電話します。"
+    }
   ],
   "questions": [
     {
@@ -27,13 +75,32 @@
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
       "choices": [
-        { "key": "A", "text": "A shortage in a recent delivery", "ja": "配送物が注文より少なかったこと" },
-        { "key": "B", "text": "The cancellation of a weekend event", "ja": "週末のイベントの中止" },
-        { "key": "C", "text": "A change to a delivery address", "ja": "配送先の変更" },
-        { "key": "D", "text": "A disagreement over an invoice amount", "ja": "請求金額についての意見の相違" }
+        {
+          "key": "A",
+          "text": "A shortage in a recent delivery",
+          "ja": "配送物が注文より少なかったこと"
+        },
+        {
+          "key": "B",
+          "text": "The cancellation of a weekend event",
+          "ja": "週末のイベントの中止"
+        },
+        {
+          "key": "C",
+          "text": "A change to a delivery address",
+          "ja": "配送先の変更"
+        },
+        {
+          "key": "D",
+          "text": "A disagreement over an invoice amount",
+          "ja": "請求金額についての意見の相違"
+        }
       ],
       "answer": "A",
-      "evidence": [0, 2],
+      "evidence": [
+        0,
+        2
+      ],
       "explanation": "冒頭でLauraが「注文60箱のうち45箱しか届いていない」と伝え、男性が原因を確認しようとしているため、話題は配送不足である。イベントの中止(B)や配送先の変更(C)への言及はなく、請求書についての対立(D)も本文に無い。",
       "tip": "数字のズレ(注文数と到着数)が最初に出てきたら、gistは配送不足・不良に絞れる。"
     },
@@ -42,13 +109,31 @@
       "type": "detail",
       "prompt": "How many boxes will be sent out today?",
       "choices": [
-        { "key": "A", "text": "Forty-five more boxes", "ja": "あと45箱" },
-        { "key": "B", "text": "Fifteen more boxes", "ja": "あと15箱" },
-        { "key": "C", "text": "Sixty more boxes", "ja": "あと60箱" },
-        { "key": "D", "text": "Forty more boxes", "ja": "あと40箱" }
+        {
+          "key": "A",
+          "text": "Forty-five more boxes",
+          "ja": "あと45箱"
+        },
+        {
+          "key": "B",
+          "text": "Fifteen more boxes",
+          "ja": "あと15箱"
+        },
+        {
+          "key": "C",
+          "text": "Sixty more boxes",
+          "ja": "あと60箱"
+        },
+        {
+          "key": "D",
+          "text": "Forty more boxes",
+          "ja": "あと40箱"
+        }
       ],
       "answer": "B",
-      "evidence": [4],
+      "evidence": [
+        4
+      ],
       "explanation": "男性は\"I can have the remaining fifteen boxes shipped out today\"と述べているため、本日発送するのは残りの15箱(B)である。45(A)は今回届いた数、60(C)は元の注文数、40(D)は本文に無い数字なので誤り。",
       "tip": "数字が複数出る設問では、どの数字が「今回の行動」を指すかを本文で確認する。"
     },
@@ -57,45 +142,173 @@
       "type": "next",
       "prompt": "What will the man probably do after the courier picks up the boxes?",
       "choices": [
-        { "key": "A", "text": "Waive the shipping fee again", "ja": "配送料を再度免除する" },
-        { "key": "B", "text": "Ship a new order", "ja": "新しい注文を発送する" },
-        { "key": "C", "text": "Call the woman back", "ja": "女性に電話をかけ直す" },
-        { "key": "D", "text": "Cancel the appointment", "ja": "予約を取り消す" }
+        {
+          "key": "A",
+          "text": "Waive the shipping fee again",
+          "ja": "配送料を再度免除する"
+        },
+        {
+          "key": "B",
+          "text": "Ship a new order",
+          "ja": "新しい注文を発送する"
+        },
+        {
+          "key": "C",
+          "text": "Call the woman back",
+          "ja": "女性に電話をかけ直す"
+        },
+        {
+          "key": "D",
+          "text": "Cancel the appointment",
+          "ja": "予約を取り消す"
+        }
       ],
       "answer": "C",
-      "evidence": [8, 9],
+      "evidence": [
+        8,
+        9
+      ],
       "explanation": "女性が「引き取ったら連絡してほしい」と頼み、男性が最後に「1時間以内に電話する」と答えているため、次の行動は女性に電話をかけ直すこと(C)である。feeの再免除(A)は既に約束済みで、新規注文の発送(B)や予約の取消(D)は本文に無い。",
       "tip": "next設問は会話の最後の発言に根拠があることが多い。最後の1〜2行を重点的に見る。"
     }
   ],
   "glossary": {
-    "pull up": { "lemma": "pull up", "pos": "熟", "ja": "呼び出す、表示する", "note": "account や data を確認する際の表現",
-                 "example": { "en": "Could you pull up the customer's order history?", "ja": "その顧客の注文履歴を表示していただけますか。" } },
-    "held up": { "lemma": "hold up", "pos": "熟", "ja": "遅れる、留め置かれる", "note": "delay の言い換え",
-                 "example": { "en": "Our shipment was held up at customs for two days.", "ja": "私たちの荷物は税関で2日間止められた。" } },
-    "packing error": { "lemma": "packing error", "pos": "名", "ja": "梱包ミス", "note": "",
-                        "example": { "en": "The wrong labels were the result of a packing error.", "ja": "ラベルの誤りは梱包ミスによるものだった。" } },
-    "waive": { "lemma": "waive", "pos": "動", "ja": "免除する", "note": "fee や条件を取り下げる際に使う",
-               "example": { "en": "The bank agreed to waive the late fee this time.", "ja": "銀行は今回、延滞料を免除することに同意した。" } },
-    "follow up with": { "lemma": "follow up with", "pos": "熟", "ja": "〜に後で連絡する", "note": "",
-                         "example": { "en": "I'll follow up with you once the report is ready.", "ja": "報告書ができたら改めてご連絡します。" } },
-    "within the hour": { "lemma": "within the hour", "pos": "熟", "ja": "1時間以内に", "note": "",
-                          "example": { "en": "The technician promised to arrive within the hour.", "ja": "技術者は1時間以内に到着すると約束した。" } },
-    "shipped out": { "lemma": "ship out", "pos": "熟", "ja": "発送される", "note": "",
-                      "example": { "en": "The replacement parts will be shipped out tomorrow morning.", "ja": "交換部品は明日の朝発送される。" } },
-    "tight on supplies": { "lemma": "tight on supplies", "pos": "熟", "ja": "在庫に余裕がない", "note": "",
-                            "example": { "en": "The restaurant is tight on supplies before the holiday weekend.", "ja": "その店は連休前で在庫に余裕がない。" } },
-    "written confirmation": { "lemma": "written confirmation", "pos": "名", "ja": "書面での確認", "note": "",
-                               "example": { "en": "Please send written confirmation of the new schedule.", "ja": "新しい日程について書面での確認を送ってください。" } },
-    "showed up": { "lemma": "show up", "pos": "熟", "ja": "現れる、届く", "note": "arrive の言い換え",
-                   "example": { "en": "Only half of the invited guests showed up at the party.", "ja": "招待客の半数しか会場に現れなかった。" } }
+    "pull up": {
+      "lemma": "pull up",
+      "pos": "熟",
+      "ja": "呼び出す、表示する",
+      "note": "account や data を確認する際の表現",
+      "example": {
+        "en": "Could you pull up the customer's order history?",
+        "ja": "その顧客の注文履歴を表示していただけますか。"
+      }
+    },
+    "held up": {
+      "lemma": "hold up",
+      "pos": "熟",
+      "ja": "遅れる、留め置かれる",
+      "note": "delay の言い換え",
+      "example": {
+        "en": "Our shipment was held up at customs for two days.",
+        "ja": "私たちの荷物は税関で2日間止められた。"
+      }
+    },
+    "packing error": {
+      "lemma": "packing error",
+      "pos": "名",
+      "ja": "梱包ミス",
+      "note": "",
+      "example": {
+        "en": "The wrong labels were the result of a packing error.",
+        "ja": "ラベルの誤りは梱包ミスによるものだった。"
+      }
+    },
+    "waive": {
+      "lemma": "waive",
+      "pos": "動",
+      "ja": "免除する",
+      "note": "fee や条件を取り下げる際に使う",
+      "example": {
+        "en": "The bank agreed to waive the late fee this time.",
+        "ja": "銀行は今回、延滞料を免除することに同意した。"
+      }
+    },
+    "follow up with": {
+      "lemma": "follow up with",
+      "pos": "熟",
+      "ja": "〜に後で連絡する",
+      "note": "",
+      "example": {
+        "en": "I'll follow up with you once the report is ready.",
+        "ja": "報告書ができたら改めてご連絡します。"
+      }
+    },
+    "within the hour": {
+      "lemma": "within the hour",
+      "pos": "熟",
+      "ja": "1時間以内に",
+      "note": "",
+      "example": {
+        "en": "The technician promised to arrive within the hour.",
+        "ja": "技術者は1時間以内に到着すると約束した。"
+      }
+    },
+    "shipped out": {
+      "lemma": "ship out",
+      "pos": "熟",
+      "ja": "発送される",
+      "note": "",
+      "example": {
+        "en": "The replacement parts will be shipped out tomorrow morning.",
+        "ja": "交換部品は明日の朝発送される。"
+      }
+    },
+    "tight on supplies": {
+      "lemma": "tight on supplies",
+      "pos": "熟",
+      "ja": "在庫に余裕がない",
+      "note": "",
+      "example": {
+        "en": "The restaurant is tight on supplies before the holiday weekend.",
+        "ja": "その店は連休前で在庫に余裕がない。"
+      }
+    },
+    "written confirmation": {
+      "lemma": "written confirmation",
+      "pos": "名",
+      "ja": "書面での確認",
+      "note": "",
+      "example": {
+        "en": "Please send written confirmation of the new schedule.",
+        "ja": "新しい日程について書面での確認を送ってください。"
+      }
+    },
+    "showed up": {
+      "lemma": "show up",
+      "pos": "熟",
+      "ja": "現れる、届く",
+      "note": "arrive の言い換え",
+      "example": {
+        "en": "Only half of the invited guests showed up at the party.",
+        "ja": "招待客の半数しか会場に現れなかった。"
+      }
+    }
   },
   "point": {
     "flow": "問題の発生 → 原因の説明 → 代替案の提示 → 条件交渉 → 次の連絡の分担",
     "items": [
-      { "title": "数量のズレはgistの合図", "body": "会話の冒頭で数字の不一致(注文数と到着数)が出たら、gistは「配送不足・不良」に絞れる。" },
-      { "title": "feeやポリシーの交渉は最後に来る", "body": "問題と代替案が済んだ後に、料金免除など追加の交渉が入ることが多い。detail設問はこの交渉部分に置かれやすい。" },
-      { "title": "next設問は最後の2行を見る", "body": "「次に何をするか」は会話の締めの発言に根拠があるため、最後の発言者の行動を優先して確認する。" }
+      {
+        "title": "数量のズレはgistの合図",
+        "body": "会話の冒頭で数字の不一致(注文数と到着数)が出たら、gistは「配送不足・不良」に絞れる。"
+      },
+      {
+        "title": "feeやポリシーの交渉は最後に来る",
+        "body": "問題と代替案が済んだ後に、料金免除など追加の交渉が入ることが多い。detail設問はこの交渉部分に置かれやすい。"
+      },
+      {
+        "title": "next設問は最後の2行を見る",
+        "body": "「次に何をするか」は会話の締めの発言に根拠があるため、最後の発言者の行動を優先して確認する。"
+      }
     ]
+  },
+  "audio": {
+    "file": "audio/2026-09-27-0401-1.mp3",
+    "sec": 47.1,
+    "bytes": 251490,
+    "lines": [
+      "audio/2026-09-27-0401-1/00.mp3",
+      "audio/2026-09-27-0401-1/01.mp3",
+      "audio/2026-09-27-0401-1/02.mp3",
+      "audio/2026-09-27-0401-1/03.mp3",
+      "audio/2026-09-27-0401-1/04.mp3",
+      "audio/2026-09-27-0401-1/05.mp3",
+      "audio/2026-09-27-0401-1/06.mp3",
+      "audio/2026-09-27-0401-1/07.mp3",
+      "audio/2026-09-27-0401-1/08.mp3",
+      "audio/2026-09-27-0401-1/09.mp3"
+    ],
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-26T19:11:52.633Z",
+    "trimmed": true
   }
 }

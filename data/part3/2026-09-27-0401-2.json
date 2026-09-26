@@ -6,20 +6,68 @@
   "time": "04:01",
   "scene": "店舗・サービス｜配送日の変更依頼",
   "speakers": [
-    { "tag": "M", "role": "男性", "accent": "en-AU" },
-    { "tag": "W", "role": "女性", "accent": "en-CA" }
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-AU"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-CA"
+    }
   ],
   "lines": [
-    { "tag": "M", "en": "Hi, I'd like to move my sofa delivery from Thursday to this Saturday if that's possible.", "ja": "もしもし、ソファの配達を木曜日から今週の土曜日に変更したいのですが、可能でしょうか。" },
-    { "tag": "W", "en": "Let me check the schedule. Saturdays are usually fully booked, but let me see what we have.", "ja": "スケジュールを確認します。土曜日は通常ほぼ埋まっていますが、確認してみます。" },
-    { "tag": "W", "en": "It looks like we only have a slot in the early morning, around eight o'clock.", "ja": "早朝の8時頃であれば1件だけ空きがあるようです。" },
-    { "tag": "M", "en": "Eight works for me, but could someone call ahead about thirty minutes before arriving?", "ja": "8時で大丈夫です。ただ、到着の30分前に電話をいただけますか。" },
-    { "tag": "W", "en": "That's something we can set up. I'll add a note asking the driver to call ahead.", "ja": "それは対応できます。ドライバーに事前連絡するようメモを追加しておきます。" },
-    { "tag": "M", "en": "Great. Also, could you confirm whether the delivery team can carry the sofa to the third floor?", "ja": "よかったです。配送チームが3階までソファを運べるかも確認していただけますか。" },
-    { "tag": "W", "en": "I'll check with the warehouse team and get back to you by this afternoon.", "ja": "倉庫チームに確認して、今日の午後までにご連絡します。" },
-    { "tag": "M", "en": "Sounds good. I'll go ahead and clear out space in the living room before Saturday.", "ja": "わかりました。土曜日までにリビングのスペースを空けておきます。" },
-    { "tag": "W", "en": "Perfect. I'll handle the scheduling change, and you can take care of the room.", "ja": "では、スケジュール変更はこちらで、お部屋の準備はそちらでお願いします。" },
-    { "tag": "W", "en": "I'll send a confirmation text once everything is finalized.", "ja": "手配が完了したら確認のメッセージをお送りします。" }
+    {
+      "tag": "M",
+      "en": "Hi, I'd like to move my sofa delivery from Thursday to this Saturday if that's possible.",
+      "ja": "もしもし、ソファの配達を木曜日から今週の土曜日に変更したいのですが、可能でしょうか。"
+    },
+    {
+      "tag": "W",
+      "en": "Let me check the schedule. Saturdays are usually fully booked, but let me see what we have.",
+      "ja": "スケジュールを確認します。土曜日は通常ほぼ埋まっていますが、確認してみます。"
+    },
+    {
+      "tag": "W",
+      "en": "It looks like we only have a slot in the early morning, around eight o'clock.",
+      "ja": "早朝の8時頃であれば1件だけ空きがあるようです。"
+    },
+    {
+      "tag": "M",
+      "en": "Eight works for me, but could someone call ahead about thirty minutes before arriving?",
+      "ja": "8時で大丈夫です。ただ、到着の30分前に電話をいただけますか。"
+    },
+    {
+      "tag": "W",
+      "en": "That's something we can set up. I'll add a note asking the driver to call ahead.",
+      "ja": "それは対応できます。ドライバーに事前連絡するようメモを追加しておきます。"
+    },
+    {
+      "tag": "M",
+      "en": "Great. Also, could you confirm whether the delivery team can carry the sofa to the third floor?",
+      "ja": "よかったです。配送チームが3階までソファを運べるかも確認していただけますか。"
+    },
+    {
+      "tag": "W",
+      "en": "I'll check with the warehouse team and get back to you by this afternoon.",
+      "ja": "倉庫チームに確認して、今日の午後までにご連絡します。"
+    },
+    {
+      "tag": "M",
+      "en": "Sounds good. I'll go ahead and clear out space in the living room before Saturday.",
+      "ja": "わかりました。土曜日までにリビングのスペースを空けておきます。"
+    },
+    {
+      "tag": "W",
+      "en": "Perfect. I'll handle the scheduling change, and you can take care of the room.",
+      "ja": "では、スケジュール変更はこちらで、お部屋の準備はそちらでお願いします。"
+    },
+    {
+      "tag": "W",
+      "en": "I'll send a confirmation text once everything is finalized.",
+      "ja": "手配が完了したら確認のメッセージをお送りします。"
+    }
   ],
   "questions": [
     {
@@ -27,13 +75,31 @@
       "type": "detail",
       "prompt": "What time is the delivery slot on Saturday?",
       "choices": [
-        { "key": "A", "text": "Eight in the evening", "ja": "夜8時" },
-        { "key": "B", "text": "Ten in the morning", "ja": "朝10時" },
-        { "key": "C", "text": "Around noon on Saturday", "ja": "土曜日の正午頃" },
-        { "key": "D", "text": "Eight in the morning", "ja": "朝8時" }
+        {
+          "key": "A",
+          "text": "Eight in the evening",
+          "ja": "夜8時"
+        },
+        {
+          "key": "B",
+          "text": "Ten in the morning",
+          "ja": "朝10時"
+        },
+        {
+          "key": "C",
+          "text": "Around noon on Saturday",
+          "ja": "土曜日の正午頃"
+        },
+        {
+          "key": "D",
+          "text": "Eight in the morning",
+          "ja": "朝8時"
+        }
       ],
       "answer": "D",
-      "evidence": [2],
+      "evidence": [
+        2
+      ],
       "explanation": "女性が\"a slot in the early morning, around eight o'clock\"と述べているため、朝8時(D)が正解。夜8時(A)は数字の入れ替え、正午(C)は本文に無い。",
       "tip": "時間帯を問う設問は、午前/午後を表す語(morning/evening)を聞き落とさないようにする。"
     },
@@ -42,13 +108,32 @@
       "type": "intent",
       "prompt": "What does the woman mean when she says, \"That's something we can set up\"?",
       "choices": [
-        { "key": "A", "text": "She will change the delivery day again", "ja": "配送日をさらに変更する" },
-        { "key": "B", "text": "She will have the driver call ahead", "ja": "ドライバーから事前に電話させる" },
-        { "key": "C", "text": "She cannot guarantee the time slot", "ja": "時間帯を保証できない" },
-        { "key": "D", "text": "She will remove the note from the file", "ja": "ファイルのメモを削除する" }
+        {
+          "key": "A",
+          "text": "She will change the delivery day again",
+          "ja": "配送日をさらに変更する"
+        },
+        {
+          "key": "B",
+          "text": "She will have the driver call ahead",
+          "ja": "ドライバーから事前に電話させる"
+        },
+        {
+          "key": "C",
+          "text": "She cannot guarantee the time slot",
+          "ja": "時間帯を保証できない"
+        },
+        {
+          "key": "D",
+          "text": "She will remove the note from the file",
+          "ja": "ファイルのメモを削除する"
+        }
       ],
       "answer": "B",
-      "evidence": [3, 4],
+      "evidence": [
+        3,
+        4
+      ],
       "explanation": "直前で男性が「到着30分前に電話してほしい」と頼んでおり、女性は\"set up\"でそれを手配できるという意味で答えている。その後「ドライバーに事前連絡するようメモを追加する」と続くことからもBが根拠。",
       "tip": "intent設問は引用文の直前の発言を必ず確認する。"
     },
@@ -57,43 +142,162 @@
       "type": "next",
       "prompt": "What will the man most likely do before Saturday?",
       "choices": [
-        { "key": "A", "text": "Clear space in the living room", "ja": "リビングのスペースを空ける" },
-        { "key": "B", "text": "Call the warehouse team", "ja": "倉庫チームに電話する" },
-        { "key": "C", "text": "Send a confirmation text", "ja": "確認のメッセージを送る" },
-        { "key": "D", "text": "Change the delivery slot again", "ja": "配送時間を再度変更する" }
+        {
+          "key": "A",
+          "text": "Clear space in the living room",
+          "ja": "リビングのスペースを空ける"
+        },
+        {
+          "key": "B",
+          "text": "Call the warehouse team",
+          "ja": "倉庫チームに電話する"
+        },
+        {
+          "key": "C",
+          "text": "Send a confirmation text",
+          "ja": "確認のメッセージを送る"
+        },
+        {
+          "key": "D",
+          "text": "Change the delivery slot again",
+          "ja": "配送時間を再度変更する"
+        }
       ],
       "answer": "A",
-      "evidence": [7],
+      "evidence": [
+        7
+      ],
       "explanation": "男性は\"I'll go ahead and clear out space in the living room before Saturday.\"と述べているため、正解はA。倉庫への確認(B)や確認メッセージの送信(C)は女性の役割である。",
       "tip": "分担の会話では「誰が何をするか」を発言者ごとに整理して聞く。"
     }
   ],
   "glossary": {
-    "call ahead": { "lemma": "call ahead", "pos": "熟", "ja": "事前に電話する", "note": "",
-                     "example": { "en": "Please call ahead if you're running more than ten minutes late.", "ja": "10分以上遅れる場合は事前に電話してください。" } },
-    "set up": { "lemma": "set up", "pos": "熟", "ja": "手配する、準備する", "note": "",
-                "example": { "en": "We can set up a temporary desk for the new intern.", "ja": "新しい実習生のために仮の机を用意できます。" } },
-    "get back to": { "lemma": "get back to", "pos": "熟", "ja": "〜に後で返事をする", "note": "",
-                      "example": { "en": "I'll get back to you once I've checked the inventory.", "ja": "在庫を確認したら折り返しご連絡します。" } },
-    "go ahead and": { "lemma": "go ahead and", "pos": "熟", "ja": "遠慮なく〜する", "note": "",
-                       "example": { "en": "I'll go ahead and book the meeting room for Friday.", "ja": "遠慮なく金曜日の会議室を予約しておきます。" } },
-    "clear out": { "lemma": "clear out", "pos": "熟", "ja": "空ける、片付ける", "note": "",
-                    "example": { "en": "We need to clear out the storage room before the audit.", "ja": "監査の前に倉庫を片付ける必要があります。" } },
-    "take care of": { "lemma": "take care of", "pos": "熟", "ja": "対応する、担当する", "note": "",
-                       "example": { "en": "I'll take care of the paperwork while you handle the calls.", "ja": "電話対応をお願いする間、私が書類を対応します。" } },
-    "fully booked": { "lemma": "fully booked", "pos": "熟", "ja": "予約が満杯", "note": "",
-                       "example": { "en": "The restaurant is fully booked for the holiday weekend.", "ja": "そのレストランは連休で予約が満杯だ。" } },
-    "confirmation text": { "lemma": "confirmation text", "pos": "名", "ja": "確認のメッセージ", "note": "",
-                            "example": { "en": "You'll receive a confirmation text once the order ships.", "ja": "注文が発送されたら確認のメッセージが届きます。" } },
-    "warehouse team": { "lemma": "warehouse team", "pos": "名", "ja": "倉庫チーム", "note": "",
-                         "example": { "en": "The warehouse team will confirm the delivery capacity by noon.", "ja": "倉庫チームが正午までに配送可能量を確認します。" } }
+    "call ahead": {
+      "lemma": "call ahead",
+      "pos": "熟",
+      "ja": "事前に電話する",
+      "note": "",
+      "example": {
+        "en": "Please call ahead if you're running more than ten minutes late.",
+        "ja": "10分以上遅れる場合は事前に電話してください。"
+      }
+    },
+    "set up": {
+      "lemma": "set up",
+      "pos": "熟",
+      "ja": "手配する、準備する",
+      "note": "",
+      "example": {
+        "en": "We can set up a temporary desk for the new intern.",
+        "ja": "新しい実習生のために仮の机を用意できます。"
+      }
+    },
+    "get back to": {
+      "lemma": "get back to",
+      "pos": "熟",
+      "ja": "〜に後で返事をする",
+      "note": "",
+      "example": {
+        "en": "I'll get back to you once I've checked the inventory.",
+        "ja": "在庫を確認したら折り返しご連絡します。"
+      }
+    },
+    "go ahead and": {
+      "lemma": "go ahead and",
+      "pos": "熟",
+      "ja": "遠慮なく〜する",
+      "note": "",
+      "example": {
+        "en": "I'll go ahead and book the meeting room for Friday.",
+        "ja": "遠慮なく金曜日の会議室を予約しておきます。"
+      }
+    },
+    "clear out": {
+      "lemma": "clear out",
+      "pos": "熟",
+      "ja": "空ける、片付ける",
+      "note": "",
+      "example": {
+        "en": "We need to clear out the storage room before the audit.",
+        "ja": "監査の前に倉庫を片付ける必要があります。"
+      }
+    },
+    "take care of": {
+      "lemma": "take care of",
+      "pos": "熟",
+      "ja": "対応する、担当する",
+      "note": "",
+      "example": {
+        "en": "I'll take care of the paperwork while you handle the calls.",
+        "ja": "電話対応をお願いする間、私が書類を対応します。"
+      }
+    },
+    "fully booked": {
+      "lemma": "fully booked",
+      "pos": "熟",
+      "ja": "予約が満杯",
+      "note": "",
+      "example": {
+        "en": "The restaurant is fully booked for the holiday weekend.",
+        "ja": "そのレストランは連休で予約が満杯だ。"
+      }
+    },
+    "confirmation text": {
+      "lemma": "confirmation text",
+      "pos": "名",
+      "ja": "確認のメッセージ",
+      "note": "",
+      "example": {
+        "en": "You'll receive a confirmation text once the order ships.",
+        "ja": "注文が発送されたら確認のメッセージが届きます。"
+      }
+    },
+    "warehouse team": {
+      "lemma": "warehouse team",
+      "pos": "名",
+      "ja": "倉庫チーム",
+      "note": "",
+      "example": {
+        "en": "The warehouse team will confirm the delivery capacity by noon.",
+        "ja": "倉庫チームが正午までに配送可能量を確認します。"
+      }
+    }
   },
   "point": {
     "flow": "依頼 → 制約(満席)の提示 → 妥協案(早朝枠)の提示 → 追加確認への合意 → 作業の分担",
     "items": [
-      { "title": "「依頼と調整」は妥協案の直後に条件が付く", "body": "妥協案が出た後、依頼者がさらに条件(電話連絡など)を付け加えることが多い。detail設問はこの条件部分に置かれる。" },
-      { "title": "intentは直前の依頼を受けた返答", "body": "「対応できます」のような相づちは、直前の依頼内容を受けているため、意図設問は必ず前の発言とセットで読む。" },
-      { "title": "分担の会話は発言者ごとに整理する", "body": "誰が何を担当するかが最後にまとまるので、次に何をする(next)設問は担当が決まった発言に根拠がある。" }
+      {
+        "title": "「依頼と調整」は妥協案の直後に条件が付く",
+        "body": "妥協案が出た後、依頼者がさらに条件(電話連絡など)を付け加えることが多い。detail設問はこの条件部分に置かれる。"
+      },
+      {
+        "title": "intentは直前の依頼を受けた返答",
+        "body": "「対応できます」のような相づちは、直前の依頼内容を受けているため、意図設問は必ず前の発言とセットで読む。"
+      },
+      {
+        "title": "分担の会話は発言者ごとに整理する",
+        "body": "誰が何を担当するかが最後にまとまるので、次に何をする(next)設問は担当が決まった発言に根拠がある。"
+      }
     ]
+  },
+  "audio": {
+    "file": "audio/2026-09-27-0401-2.mp3",
+    "sec": 51.3,
+    "bytes": 271362,
+    "lines": [
+      "audio/2026-09-27-0401-2/00.mp3",
+      "audio/2026-09-27-0401-2/01.mp3",
+      "audio/2026-09-27-0401-2/02.mp3",
+      "audio/2026-09-27-0401-2/03.mp3",
+      "audio/2026-09-27-0401-2/04.mp3",
+      "audio/2026-09-27-0401-2/05.mp3",
+      "audio/2026-09-27-0401-2/06.mp3",
+      "audio/2026-09-27-0401-2/07.mp3",
+      "audio/2026-09-27-0401-2/08.mp3",
+      "audio/2026-09-27-0401-2/09.mp3"
+    ],
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-26T19:13:04.596Z",
+    "trimmed": true
   }
 }
