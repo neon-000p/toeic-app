@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-27-1639",
+  "date": "2026-09-27",
+  "time": "16:39",
+  "createdAt": "2026-09-27T16:39:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Memory Chip Prices Squeeze Budget Smartphones",
+    "ja": "メモリー価格高騰、格安スマホを直撃"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Surging memory chip prices are on track to force smartphone makers to raise prices or cancel budget models, according to Counterpoint Research.",
+            "ja": "調査会社Counterpoint Researchによると、メモリーチップ価格の急騰により、スマートフォンメーカーは値上げか低価格モデルの打ち切りを迫られつつある。"
+          },
+          {
+            "en": "The research firm forecasts that global shipments of phones priced under $200 will fall about 40 percent by 2030, erasing 230 million in annual sales.",
+            "ja": "同社の予測によれば、200ドル未満のスマートフォンの世界出荷台数は2030年までに約40%減少し、年間2億3000万台分の販売が失われる見込みだという。"
+          },
+          {
+            "en": "Rising AI infrastructure demand is driving up prices for memory chips, which store data on a device.",
+            "ja": "AIインフラ需要の高まりが、機器内でデータを保存するメモリーチップの価格を押し上げている。"
+          },
+          {
+            "en": "Memory makes up about half the cost of parts in a budget phone.",
+            "ja": "メモリーは、低価格スマートフォンの部品コストの約半分を占める。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The effect is already visible.",
+            "ja": "その影響はすでに表れている。"
+          },
+          {
+            "en": "One new Xiaomi budget phone was priced 40 percent higher than the model it replaced, despite nearly the same features.",
+            "ja": "シャオミの新しい低価格スマートフォンの一機種は、ほぼ同じ仕様にもかかわらず、前モデルより40%高い価格で発売された。"
+          },
+          {
+            "en": "The smartphone brand CMF canceled a planned budget phone entirely.",
+            "ja": "低価格ブランドのCMFは、計画していたスマートフォンを完全に発売中止にした。"
+          },
+          {
+            "en": "It said higher memory prices would force it to raise the price so much that the phone would no longer be worth it.",
+            "ja": "同社は、メモリー価格の上昇により値上げを迫られ、その結果その端末はもはやお買い得とは言えなくなると説明した。"
+          },
+          {
+            "en": "Analysts expect budget and mid-range phones to feel the squeeze hardest for years to come.",
+            "ja": "アナリストは、この圧迫が今後数年にわたり低価格帯・中価格帯のスマートフォンに最も大きな打撃を与えると予想している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to Counterpoint Research, by about what percentage are global shipments of phones priced under $200 expected to fall by 2030?",
+      "choices": [
+        { "key": "A", "text": "15 percent", "ja": "15%" },
+        { "key": "B", "text": "25 percent", "ja": "25%" },
+        { "key": "C", "text": "40 percent", "ja": "40%" },
+        { "key": "D", "text": "60 percent", "ja": "60%" }
+      ],
+      "answer": "C",
+      "explanation": "正解は(C)。本文第1段落2文目に「global shipments of phones priced under $200 will fall about 40 percent by 2030」と明記されている。(A)15%、(B)25%、(D)60%はいずれも本文に登場しない数字で、本文の40%を書き換えた引っかけ選択肢。",
+      "evidence": { "p": 0, "s": 1 },
+      "tip": "数字を問う問題では、本文中に実際に書かれている数字をそのまま探し、似た形の別の数字の選択肢に惑わされないようにする。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did the smartphone brand CMF cancel a planned budget phone?",
+      "choices": [
+        { "key": "A", "text": "It could not meet a shipping deadline.", "ja": "出荷期限に間に合わなかったから" },
+        { "key": "B", "text": "Rising memory chip prices would have forced a price increase that erased its value.", "ja": "メモリー価格の上昇が値上げを強い、その価値を失わせるから" },
+        { "key": "C", "text": "The company decided to exit the budget market entirely.", "ja": "低価格帯市場から完全に撤退することにしたから" },
+        { "key": "D", "text": "A rival launched a similar phone first.", "ja": "競合他社が同様の端末を先に発売したから" }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B)。本文第2段落4文目に「higher memory prices would force it to raise the price so much that the phone would no longer be worth it」とあり、メモリー価格の上昇による値上げが製品の価値を失わせるためと明記されている。(A)出荷期限についての記述は本文にない。(C)「予算帯から完全撤退」ではなく、あくまで一機種の中止であり本文と異なる。(D)競合の動きについての記述は本文にない。",
+      "evidence": { "p": 1, "s": 3 },
+      "tip": "理由・目的を問う問題では、本文中の因果関係を示す語句（force、so ~ that など）の前後を正確にたどり、原因と結果を取り違えないようにする。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "surge",
+      "pos": "動",
+      "ja": "急騰する、急増する",
+      "gloss": "",
+      "example": {
+        "en": "Demand for the new laptop model surged after the price cut.",
+        "ja": "値下げ後、その新型ノートパソコンの需要は急増した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "forecast",
+      "pos": "動・名",
+      "ja": "予測する、予測",
+      "gloss": "",
+      "example": {
+        "en": "Analysts forecast steady growth in the software market next year.",
+        "ja": "アナリストは来年のソフトウエア市場の堅調な成長を予測している。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "shipment",
+      "pos": "名",
+      "ja": "出荷、出荷台数",
+      "gloss": "",
+      "example": {
+        "en": "The company increased shipments to meet holiday demand.",
+        "ja": "その企業は年末商戦の需要に応えるため出荷を増やした。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "erase",
+      "pos": "動",
+      "ja": "消し去る、無くす",
+      "gloss": "",
+      "example": {
+        "en": "A single bad quarter can erase years of profit.",
+        "ja": "たった一つの不振な四半期が、何年分もの利益を消し去ることがある。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "infrastructure",
+      "pos": "名",
+      "ja": "インフラ、基盤設備",
+      "gloss": "",
+      "example": {
+        "en": "The firm invested heavily in cloud infrastructure last year.",
+        "ja": "その企業は昨年、クラウドインフラに多額の投資をした。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "replace",
+      "pos": "動",
+      "ja": "取って代わる、後継となる",
+      "gloss": "",
+      "example": {
+        "en": "The new model will replace the older version by spring.",
+        "ja": "その新モデルは春までに旧バージョンに取って代わる予定だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "entirely",
+      "pos": "副",
+      "ja": "完全に、まったく",
+      "gloss": "",
+      "example": {
+        "en": "The factory shut down entirely due to a parts shortage.",
+        "ja": "その工場は部品不足のため完全に操業を停止した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "squeeze",
+      "pos": "名",
+      "ja": "圧迫、締め付け",
+      "gloss": "",
+      "example": {
+        "en": "Rising costs put a squeeze on the company's profit margins.",
+        "ja": "コストの上昇が同社の利益率を圧迫した。"
+      }
+    }
+  ],
+  "glossary": {
+    "surging": { "lemma": "surge", "pos": "動", "ja": "急騰している", "note": "" },
+    "chip": { "lemma": "chip", "pos": "名", "ja": "チップ、半導体", "note": "" },
+    "force": { "lemma": "force", "pos": "動", "ja": "強いる、余儀なくさせる", "note": "" },
+    "makers": { "lemma": "maker", "pos": "名", "ja": "メーカー（複数形）", "note": "" },
+    "cancel": { "lemma": "cancel", "pos": "動", "ja": "中止する", "note": "" },
+    "budget": { "lemma": "budget", "pos": "形", "ja": "低価格の、格安の", "note": "" },
+    "forecasts": { "lemma": "forecast", "pos": "動", "ja": "予測する", "note": "" },
+    "global": { "lemma": "global", "pos": "形", "ja": "世界的な", "note": "" },
+    "shipments": { "lemma": "shipment", "pos": "名", "ja": "出荷、出荷台数（複数形）", "note": "" },
+    "priced": { "lemma": "price", "pos": "動", "ja": "価格が設定される", "note": "" },
+    "erasing": { "lemma": "erase", "pos": "動", "ja": "消し去る（現在分詞）", "note": "" },
+    "annual": { "lemma": "annual", "pos": "形", "ja": "年間の", "note": "" },
+    "sales": { "lemma": "sale", "pos": "名", "ja": "販売、売上（複数形）", "note": "" },
+    "rising": { "lemma": "rise", "pos": "動", "ja": "上昇している（現在分詞）", "note": "" },
+    "infrastructure": { "lemma": "infrastructure", "pos": "名", "ja": "インフラ、基盤設備", "note": "" },
+    "demand": { "lemma": "demand", "pos": "名", "ja": "需要", "note": "" },
+    "driving": { "lemma": "drive", "pos": "動", "ja": "押し上げる（現在分詞）", "note": "driving up で「（価格などを）押し上げる」" },
+    "device": { "lemma": "device", "pos": "名", "ja": "機器、デバイス", "note": "" },
+    "cost": { "lemma": "cost", "pos": "名", "ja": "費用、コスト", "note": "" },
+    "parts": { "lemma": "part", "pos": "名", "ja": "部品（複数形）", "note": "" },
+    "effect": { "lemma": "effect", "pos": "名", "ja": "影響、効果", "note": "" },
+    "visible": { "lemma": "visible", "pos": "形", "ja": "目に見える、明らかな", "note": "" },
+    "replaced": { "lemma": "replace", "pos": "動", "ja": "取って代わった", "note": "" },
+    "despite": { "lemma": "despite", "pos": "前", "ja": "〜にもかかわらず", "note": "" },
+    "features": { "lemma": "feature", "pos": "名", "ja": "機能、特徴（複数形）", "note": "" },
+    "brand": { "lemma": "brand", "pos": "名", "ja": "ブランド", "note": "" },
+    "canceled": { "lemma": "cancel", "pos": "動", "ja": "中止した", "note": "" },
+    "planned": { "lemma": "plan", "pos": "動", "ja": "計画された", "note": "" },
+    "entirely": { "lemma": "entirely", "pos": "副", "ja": "完全に", "note": "" },
+    "squeeze": { "lemma": "squeeze", "pos": "名", "ja": "圧迫、締め付け", "note": "" }
+  },
+  "grammar": {
+    "topic": "force + O + to do（〜に…することを強いる、余儀なくさせる）",
+    "quote": "It said higher memory prices would force it to raise the price so much that the phone would no longer be worth it.",
+    "quoteJa": "同社は、メモリー価格の上昇により値上げを迫られ、その結果その端末はもはやお買い得とは言えなくなると説明した。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "\"force + O + to do\" は「（人やものに）〜することを強いる、しかたなく〜させる」という意味を表す。force の後ろは目的語＋to不定詞の形をとる点がポイント。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "force O to do は compel O to do（よりかたい表現）にほぼ書き換えられる。同じくto不定詞を伴う動詞に allow／enable／require（例：The rules require employees to wear ID badges.）があり、これらは原形不定詞をとる make／let／have＋O＋原形動詞（例：The news made investors worry.）とは形が異なる点に注意する。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5の動詞語法問題では、動詞の直後が原形動詞かto不定詞かで正誤が決まる出題が頻出。force／compel／enable／allow／requireはto不定詞、make／let／haveは原形動詞、という区別を押さえておくと消去法で解きやすい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"The budget cuts forced the department to postpone the project.\"（予算削減により部門はプロジェクトの延期を余儀なくされた）や \"Increased competition forced the firm to lower its prices.\"（競争激化により同社は値下げを迫られた）のように、業務上の困難な決断を説明する際によく使われる。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜAIがスマホの部品を値上げさせるのか",
+      "body": "データセンター向けのAIチップやサーバー用メモリーの需要が急増し、DRAM・NANDと呼ばれる記憶チップの生産能力の多くがAI向けに振り向けられている。その結果、スマートフォン向けメモリーの供給が細り、価格が急騰している。メモリーは記憶を保存する部品で、低価格スマートフォンでは部品コストの半分近くを占めるため、価格上昇の影響を特に受けやすい。"
+    },
+    {
+      "heading": "📌 業界・競合他社の動向",
+      "body": "Xiaomiや、Nothingの低価格ブランドであるCMFだけでなく、低価格帯を手がける各社が同様の判断を迫られている。値上げをすれば低価格帯としての魅力を失い、価格を据え置けば利益が消えるというジレンマに陥っており、今後は仕様を落として価格を据え置く「値下げならぬ質下げ」モデルが増える可能性もある。"
+    },
+    {
+      "heading": "📌 日本企業・日本人ビジネスパーソンへの影響",
+      "body": "日本国内でも格安スマートフォンやSIMフリー端末を扱う通信会社・メーカーは同様のコスト上昇に直面しており、来年以降の新モデルの価格改定や低価格帯ラインナップの縮小につながる可能性がある。企業の調達・購買担当者にとっても、部品調達コストの変動リスクを契約条件にどう織り込むかが課題になる。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点からの意義",
+      "body": "メモリー価格の上昇は、半導体メーカーには利益増加の追い風となる一方、スマートフォンメーカーには利益圧迫要因となる。経営者にとっては、サプライチェーン全体でどこに価格交渉力があるかを見極め、代替調達先の確保や製品ラインの見直しを迫られる局面といえる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Memory price surge threatens 230 million budget phone sales",
+      "publisher": "TechBriefly",
+      "url": "https://techbriefly.com/2026/09/25/memory-price-surge-threatens-230-million-budget-phone-sales/",
+      "date": "2026-09-25"
+    },
+    {
+      "title": "Budget Smartphone Shipments Could Fall 40% By 2030",
+      "publisher": "Dataconomy",
+      "url": "https://dataconomy.com/2026/09/25/budget-smartphone-shipments-could-fall-40-percent-by-2030/",
+      "date": "2026-09-25"
+    }
+  ]
+}
