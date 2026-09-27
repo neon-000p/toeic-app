@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-28-0539",
+  "date": "2026-09-28",
+  "time": "05:39",
+  "createdAt": "2026-09-28T05:39:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "Greenland Rare-Earth Project Set to Double in Size",
+    "ja": "グリーンランドのレアアース鉱区、面積倍増へ申請"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The United States, Denmark, and Greenland signed a security agreement this month, giving the U.S. a say over foreign investment on the Arctic island.",
+            "ja": "米国・デンマーク・グリーンランドの3者は今月、安全保障協定に署名し、このアークティック（北極圏）の島への海外投資について米国が発言権を持つことになった。"
+          },
+          {
+            "en": "Under the deal, rival powers cannot invest in Greenland's mining sector without U.S. approval.",
+            "ja": "この協定により、対立関係にある国はグリーンランドの鉱業分野に投資する際、米国の承認を得る必要がある。"
+          },
+          {
+            "en": "Days later, a mining company called Greenland Mines applied to more than double the size of its rare-earth project in the region.",
+            "ja": "その数日後、グリーンランド・マインズという鉱業会社が、同地域で手がけるレアアース鉱区の面積を2倍以上に拡大する申請を行った。"
+          },
+          {
+            "en": "If approved, the site would grow from about 192 to 454 square kilometers.",
+            "ja": "承認されれば、鉱区の面積は約192平方キロメートルから454平方キロメートルへと拡大する見込みだ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The project targets rare-earth minerals used in electric vehicle motors, wind turbines, and defense equipment.",
+            "ja": "この鉱区が狙うのは、電気自動車のモーターや風力タービン、防衛関連機器に使われるレアアース（希少金属）である。"
+          },
+          {
+            "en": "Most of the global supply currently comes from a single country, and the new agreement aims to reduce that reliance.",
+            "ja": "現在、世界の供給の大半は特定の一国に集中しており、今回の新協定はその依存度を下げることを狙いとしている。"
+          },
+          {
+            "en": "The company's president said the plan is about building the project \"at district scale.\"",
+            "ja": "同社の社長は、この計画について「鉱区一帯をまとめた規模で開発することが狙いだ」と述べた。"
+          },
+          {
+            "en": "Analysts say the move reflects a broader race among allied nations to secure critical mineral supply chains outside that country's control.",
+            "ja": "アナリストらは、今回の動きは同盟国どうしが、その一国の支配下にない重要鉱物のサプライチェーンを確保しようとする、より広範な競争を映し出していると指摘する。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the article, how large would Greenland Mines' rare-earth project become if the expansion is approved?",
+      "choices": [
+        { "key": "A", "text": "About 92 square kilometers", "ja": "約92平方キロメートル" },
+        { "key": "B", "text": "About 192 square kilometers", "ja": "約192平方キロメートル" },
+        { "key": "C", "text": "About 454 square kilometers", "ja": "約454平方キロメートル" },
+        { "key": "D", "text": "About 900 square kilometers", "ja": "約900平方キロメートル" }
+      ],
+      "answer": "C",
+      "explanation": "本文1段落目4文目「If approved, the site would grow from about 192 to 454 square kilometers.」に、拡大が承認された場合の面積が「454平方キロメートル」になると明記されている。(B)の192平方キロメートルは拡大「前」の面積であり、拡大後の数字と混同させる紛らわしい選択肢。(A)・(D)は本文に登場しない数字を使ったダミー。",
+      "evidence": { "p": 0, "s": 3 },
+      "tip": "本文に「拡大前」「拡大後」のように対になる数字が出てきたら、設問が問うているのはどちらの時点の数字かを必ず確認することが重要。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why does the new security agreement matter for rare-earth minerals?",
+      "choices": [
+        { "key": "A", "text": "It will lower the price of electric vehicles", "ja": "電気自動車の価格を下げるため" },
+        { "key": "B", "text": "It aims to reduce reliance on a single country's supply", "ja": "特定の一国への依存を減らすため" },
+        { "key": "C", "text": "It creates new mining jobs in Denmark", "ja": "デンマークで新たな鉱業の雇用を生むため" },
+        { "key": "D", "text": "It cancels the rare-earth project entirely", "ja": "レアアース鉱区計画を中止するため" }
+      ],
+      "answer": "B",
+      "explanation": "本文2段落目2文目「Most of the global supply currently comes from a single country, and the new agreement aims to reduce that reliance.」に、今回の協定の狙いが「特定の一国への依存を減らすこと」だと明記されている。(A)・(C)・(D)はいずれも本文に記載のない内容。",
+      "evidence": { "p": 1, "s": 1 },
+      "tip": "目的・理由を問う設問では、\"aims to\"（〜を目指す）のような目的を表す表現の直後に根拠が来ることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1, "term": "agreement", "pos": "名", "ja": "合意、協定",
+      "gloss": "",
+      "example": { "en": "The two companies reached a new agreement on pricing terms.", "ja": "両社は価格条件について新たな合意に達した。" }
+    },
+    {
+      "no": 2, "term": "investment", "pos": "名", "ja": "投資",
+      "gloss": "",
+      "example": { "en": "The firm plans to increase its investment in renewable energy.", "ja": "その企業は再生可能エネルギーへの投資を拡大する計画だ。" }
+    },
+    {
+      "no": 3, "term": "approval", "pos": "名", "ja": "承認",
+      "gloss": "",
+      "example": { "en": "The proposal is still waiting for approval from senior management.", "ja": "その提案はまだ経営陣の承認を待っている状態だ。" }
+    },
+    {
+      "no": 4, "term": "critical", "pos": "形", "ja": "重要な",
+      "gloss": "",
+      "example": { "en": "The negotiation reached a critical point before both sides finally agreed.", "ja": "交渉は、双方がついに合意に達する前に重要な局面を迎えた。" }
+    },
+    {
+      "no": 5, "term": "reliance", "pos": "名", "ja": "依存",
+      "gloss": "",
+      "example": { "en": "The company is reducing its reliance on a single supplier.", "ja": "その会社は特定の1社への依存を減らそうとしている。" }
+    },
+    {
+      "no": 6, "term": "secure", "pos": "動", "ja": "確保する",
+      "gloss": "",
+      "example": { "en": "The team worked hard to secure a new client contract.", "ja": "チームは新規顧客との契約を確保しようと懸命に努力した。" }
+    },
+    {
+      "no": 7, "term": "reflect", "pos": "動", "ja": "反映する",
+      "gloss": "",
+      "example": { "en": "The updated report reflects the latest sales figures.", "ja": "更新された報告書には最新の売上数値が反映されている。" }
+    },
+    {
+      "no": 8, "term": "broad", "pos": "形", "ja": "幅広い",
+      "gloss": "",
+      "example": { "en": "The manager takes a broad view of the market before deciding.", "ja": "そのマネージャーは決断する前に市場を幅広い視点で見る。" }
+    }
+  ],
+  "glossary": {
+    "signed": { "lemma": "sign", "pos": "動", "ja": "署名した", "note": "" },
+    "security": { "lemma": "security", "pos": "名", "ja": "安全保障", "note": "" },
+    "agreement": { "lemma": "agreement", "pos": "名", "ja": "協定、合意", "note": "" },
+    "foreign": { "lemma": "foreign", "pos": "形", "ja": "海外の、外国の", "note": "" },
+    "investment": { "lemma": "investment", "pos": "名", "ja": "投資", "note": "" },
+    "rival": { "lemma": "rival", "pos": "形", "ja": "対立する、競合の", "note": "" },
+    "invest": { "lemma": "invest", "pos": "動", "ja": "投資する", "note": "" },
+    "mining": { "lemma": "mining", "pos": "名", "ja": "鉱業", "note": "" },
+    "sector": { "lemma": "sector", "pos": "名", "ja": "分野、業界", "note": "" },
+    "approval": { "lemma": "approval", "pos": "名", "ja": "承認", "note": "" },
+    "applied": { "lemma": "apply", "pos": "動", "ja": "申請した", "note": "" },
+    "double": { "lemma": "double", "pos": "動", "ja": "倍にする", "note": "" },
+    "project": { "lemma": "project", "pos": "名", "ja": "事業、計画", "note": "" },
+    "region": { "lemma": "region", "pos": "名", "ja": "地域", "note": "" },
+    "approved": { "lemma": "approve", "pos": "動", "ja": "承認される", "note": "" },
+    "grow": { "lemma": "grow", "pos": "動", "ja": "拡大する、成長する", "note": "" },
+    "targets": { "lemma": "target", "pos": "動", "ja": "対象とする", "note": "" },
+    "minerals": { "lemma": "mineral", "pos": "名", "ja": "鉱物", "note": "" },
+    "equipment": { "lemma": "equipment", "pos": "名", "ja": "設備、機器", "note": "" },
+    "global": { "lemma": "global", "pos": "形", "ja": "世界的な", "note": "" },
+    "supply": { "lemma": "supply", "pos": "名", "ja": "供給", "note": "" },
+    "reliance": { "lemma": "reliance", "pos": "名", "ja": "依存", "note": "" },
+    "president": { "lemma": "president", "pos": "名", "ja": "社長、代表", "note": "" },
+    "reflects": { "lemma": "reflect", "pos": "動", "ja": "反映する", "note": "" },
+    "broader": { "lemma": "broad", "pos": "形", "ja": "より広範な", "note": "" },
+    "secure": { "lemma": "secure", "pos": "動", "ja": "確保する", "note": "" },
+    "critical": { "lemma": "critical", "pos": "形", "ja": "重要な", "note": "" }
+  },
+  "grammar": {
+    "topic": "分詞構文による条件節の省略（If (it is) approved, ~ ＝主語とbe動詞を省略した「もし〜されれば」を表す表現）",
+    "quote": "If approved, the site would grow from about 192 to 454 square kilometers.",
+    "quoteJa": "承認されれば、鉱区の面積は約192平方キロメートルから454平方キロメートルへと拡大する見込みだ。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "\"If approved\" は \"If it is approved\" の \"it is\" が省略された形です。if節の主語（ここでは鉱区拡大の申請＝it）が主節の内容と重なる場合、be動詞と主語をまとめて省略し、過去分詞だけを残す形がニュース英語やビジネス文書で好まれます。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "省略しない形にすると \"If it is approved, the site would grow...\" となります。また \"If the expansion is approved, the site would grow...\" のように主語を明示して書き換えることもできます。同じ発想で \"Once approved,\"（承認されればすぐに）や \"When approved,\"（承認された際には）といった表現も使われます。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6では、\"If + 過去分詞\"、\"If + 形容詞\" のような主語・be動詞省略の条件節が穴埋め問題や語順整序問題で狙われやすいです。文頭のコンマの位置や、後続の主節の主語と時制の対応を手がかりに、省略されている主語・be動詞を補って読む練習が有効です。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "\"If confirmed, the shipment will arrive by Friday.\"（確認され次第、荷物は金曜までに到着する）や \"If accepted, the offer will remain valid for 30 days.\"（承諾されれば、この提案は30日間有効である）のように、社内通知や契約書でよく使われる表現です。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜこの動きが重要なのか",
+      "body": "レアアース（希少金属）は、電気自動車のモーターや風力発電のタービン、防衛関連機器など、幅広い先端産業に欠かせない原材料である。ところが現在、その精製・供給の大半を中国1カ国が握っており、各国はこの一極集中への依存をリスクと捉えるようになっている。今回の米国・デンマーク・グリーンランドの安全保障協定は、同盟国の領土内でレアアースの採掘・供給網を確保しようとする動きの一例であり、資源をめぐる大国間の駆け引きが具体的な鉱区開発プロジェクトにまで及んでいることを示している。"
+    },
+    {
+      "heading": "📌 業界全体・競合他社の動向",
+      "body": "中国以外の国を拠点とする複数のレアアース企業が、各国政府の支援を受けて増産・新規開発を進めている。北極圏に位置するグリーンランドはこれまで開発が進んでいなかった資源フロンティアであり、今回の安全保障協定によって投資の障壁が下がったことで、同様の鉱区開発案件が今後も相次ぐ可能性がある。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響",
+      "body": "日本もレアアースの多くを輸入に頼っており、2010年に中国からの輸出が事実上停止した際には、自動車部品や電子部品の生産に大きな混乱が生じた経緯がある。今回のような「中国以外」の供給網構築の動きは、同様の調達リスク分散を進めたい日本の自動車メーカーや商社にとっても追い風であり、グリーンランドを含む同盟国の鉱区への出資・技術協力の機会が広がる可能性がある。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "投資家にとっては、同盟国の政府が後押しする重要鉱物プロジェクトの関連銘柄は、政策の後押しを受けやすいテーマとして注目に値する。一方で、北極圏という立地は輸送コストや開発期間の長さといった実務上のハードルも大きく、承認手続きの進捗や資金調達の状況を継続的に確認する必要がある。経営者にとっては、原材料の調達先を複数の同盟国に分散させる「フレンドショアリング」の動きを踏まえた調達戦略の見直しが、中長期的な課題として浮上している。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Greenland Mines Applauds Formal Signing of U.S.-Denmark-Greenland Security Agreement at United Nations",
+      "publisher": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/09/22/3366716/0/en/greenland-mines-applauds-formal-signing-of-u-s-denmark-greenland-security-agreement-at-united-nations.html",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "Greenland Security Pact Reshapes the Race for Rare Earth Supply",
+      "publisher": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/09/23/3366774/0/en/greenland-security-pact-reshapes-the-race-for-rare-earth-supply.html",
+      "date": "2026-09-23"
+    }
+  ]
+}
