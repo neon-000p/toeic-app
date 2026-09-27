@@ -64,14 +64,33 @@
       "type": "detail",
       "prompt": "According to the article, how large would Greenland Mines' rare-earth project become if the expansion is approved?",
       "choices": [
-        { "key": "A", "text": "About 92 square kilometers", "ja": "約92平方キロメートル" },
-        { "key": "B", "text": "About 192 square kilometers", "ja": "約192平方キロメートル" },
-        { "key": "C", "text": "About 454 square kilometers", "ja": "約454平方キロメートル" },
-        { "key": "D", "text": "About 900 square kilometers", "ja": "約900平方キロメートル" }
+        {
+          "key": "A",
+          "text": "About 92 square kilometers",
+          "ja": "約92平方キロメートル"
+        },
+        {
+          "key": "B",
+          "text": "About 192 square kilometers",
+          "ja": "約192平方キロメートル"
+        },
+        {
+          "key": "C",
+          "text": "About 454 square kilometers",
+          "ja": "約454平方キロメートル"
+        },
+        {
+          "key": "D",
+          "text": "About 900 square kilometers",
+          "ja": "約900平方キロメートル"
+        }
       ],
       "answer": "C",
       "explanation": "本文1段落目4文目「If approved, the site would grow from about 192 to 454 square kilometers.」に、拡大が承認された場合の面積が「454平方キロメートル」になると明記されている。(B)の192平方キロメートルは拡大「前」の面積であり、拡大後の数字と混同させる紛らわしい選択肢。(A)・(D)は本文に登場しない数字を使ったダミー。",
-      "evidence": { "p": 0, "s": 3 },
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
       "tip": "本文に「拡大前」「拡大後」のように対になる数字が出てきたら、設問が問うているのはどちらの時点の数字かを必ず確認することが重要。"
     },
     {
@@ -79,87 +98,289 @@
       "type": "reason",
       "prompt": "According to the article, why does the new security agreement matter for rare-earth minerals?",
       "choices": [
-        { "key": "A", "text": "It will lower the price of electric vehicles", "ja": "電気自動車の価格を下げるため" },
-        { "key": "B", "text": "It aims to reduce reliance on a single country's supply", "ja": "特定の一国への依存を減らすため" },
-        { "key": "C", "text": "It creates new mining jobs in Denmark", "ja": "デンマークで新たな鉱業の雇用を生むため" },
-        { "key": "D", "text": "It cancels the rare-earth project entirely", "ja": "レアアース鉱区計画を中止するため" }
+        {
+          "key": "A",
+          "text": "It will lower the price of electric vehicles",
+          "ja": "電気自動車の価格を下げるため"
+        },
+        {
+          "key": "B",
+          "text": "It aims to reduce reliance on a single country's supply",
+          "ja": "特定の一国への依存を減らすため"
+        },
+        {
+          "key": "C",
+          "text": "It creates new mining jobs in Denmark",
+          "ja": "デンマークで新たな鉱業の雇用を生むため"
+        },
+        {
+          "key": "D",
+          "text": "It cancels the rare-earth project entirely",
+          "ja": "レアアース鉱区計画を中止するため"
+        }
       ],
       "answer": "B",
       "explanation": "本文2段落目2文目「Most of the global supply currently comes from a single country, and the new agreement aims to reduce that reliance.」に、今回の協定の狙いが「特定の一国への依存を減らすこと」だと明記されている。(A)・(C)・(D)はいずれも本文に記載のない内容。",
-      "evidence": { "p": 1, "s": 1 },
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
       "tip": "目的・理由を問う設問では、\"aims to\"（〜を目指す）のような目的を表す表現の直後に根拠が来ることが多い。"
     }
   ],
   "vocabulary": [
     {
-      "no": 1, "term": "agreement", "pos": "名", "ja": "合意、協定",
+      "no": 1,
+      "term": "agreement",
+      "pos": "名",
+      "ja": "合意、協定",
       "gloss": "",
-      "example": { "en": "The two companies reached a new agreement on pricing terms.", "ja": "両社は価格条件について新たな合意に達した。" }
+      "example": {
+        "en": "The two companies reached a new agreement on pricing terms.",
+        "ja": "両社は価格条件について新たな合意に達した。"
+      }
     },
     {
-      "no": 2, "term": "investment", "pos": "名", "ja": "投資",
+      "no": 2,
+      "term": "investment",
+      "pos": "名",
+      "ja": "投資",
       "gloss": "",
-      "example": { "en": "The firm plans to increase its investment in renewable energy.", "ja": "その企業は再生可能エネルギーへの投資を拡大する計画だ。" }
+      "example": {
+        "en": "The firm plans to increase its investment in renewable energy.",
+        "ja": "その企業は再生可能エネルギーへの投資を拡大する計画だ。"
+      }
     },
     {
-      "no": 3, "term": "approval", "pos": "名", "ja": "承認",
+      "no": 3,
+      "term": "approval",
+      "pos": "名",
+      "ja": "承認",
       "gloss": "",
-      "example": { "en": "The proposal is still waiting for approval from senior management.", "ja": "その提案はまだ経営陣の承認を待っている状態だ。" }
+      "example": {
+        "en": "The proposal is still waiting for approval from senior management.",
+        "ja": "その提案はまだ経営陣の承認を待っている状態だ。"
+      }
     },
     {
-      "no": 4, "term": "critical", "pos": "形", "ja": "重要な",
+      "no": 4,
+      "term": "critical",
+      "pos": "形",
+      "ja": "重要な",
       "gloss": "",
-      "example": { "en": "The negotiation reached a critical point before both sides finally agreed.", "ja": "交渉は、双方がついに合意に達する前に重要な局面を迎えた。" }
+      "example": {
+        "en": "The negotiation reached a critical point before both sides finally agreed.",
+        "ja": "交渉は、双方がついに合意に達する前に重要な局面を迎えた。"
+      }
     },
     {
-      "no": 5, "term": "reliance", "pos": "名", "ja": "依存",
+      "no": 5,
+      "term": "reliance",
+      "pos": "名",
+      "ja": "依存",
       "gloss": "",
-      "example": { "en": "The company is reducing its reliance on a single supplier.", "ja": "その会社は特定の1社への依存を減らそうとしている。" }
+      "example": {
+        "en": "The company is reducing its reliance on a single supplier.",
+        "ja": "その会社は特定の1社への依存を減らそうとしている。"
+      }
     },
     {
-      "no": 6, "term": "secure", "pos": "動", "ja": "確保する",
+      "no": 6,
+      "term": "secure",
+      "pos": "動",
+      "ja": "確保する",
       "gloss": "",
-      "example": { "en": "The team worked hard to secure a new client contract.", "ja": "チームは新規顧客との契約を確保しようと懸命に努力した。" }
+      "example": {
+        "en": "The team worked hard to secure a new client contract.",
+        "ja": "チームは新規顧客との契約を確保しようと懸命に努力した。"
+      }
     },
     {
-      "no": 7, "term": "reflect", "pos": "動", "ja": "反映する",
+      "no": 7,
+      "term": "reflect",
+      "pos": "動",
+      "ja": "反映する",
       "gloss": "",
-      "example": { "en": "The updated report reflects the latest sales figures.", "ja": "更新された報告書には最新の売上数値が反映されている。" }
+      "example": {
+        "en": "The updated report reflects the latest sales figures.",
+        "ja": "更新された報告書には最新の売上数値が反映されている。"
+      }
     },
     {
-      "no": 8, "term": "broad", "pos": "形", "ja": "幅広い",
+      "no": 8,
+      "term": "broad",
+      "pos": "形",
+      "ja": "幅広い",
       "gloss": "",
-      "example": { "en": "The manager takes a broad view of the market before deciding.", "ja": "そのマネージャーは決断する前に市場を幅広い視点で見る。" }
+      "example": {
+        "en": "The manager takes a broad view of the market before deciding.",
+        "ja": "そのマネージャーは決断する前に市場を幅広い視点で見る。"
+      }
     }
   ],
   "glossary": {
-    "signed": { "lemma": "sign", "pos": "動", "ja": "署名した", "note": "" },
-    "security": { "lemma": "security", "pos": "名", "ja": "安全保障", "note": "" },
-    "agreement": { "lemma": "agreement", "pos": "名", "ja": "協定、合意", "note": "" },
-    "foreign": { "lemma": "foreign", "pos": "形", "ja": "海外の、外国の", "note": "" },
-    "investment": { "lemma": "investment", "pos": "名", "ja": "投資", "note": "" },
-    "rival": { "lemma": "rival", "pos": "形", "ja": "対立する、競合の", "note": "" },
-    "invest": { "lemma": "invest", "pos": "動", "ja": "投資する", "note": "" },
-    "mining": { "lemma": "mining", "pos": "名", "ja": "鉱業", "note": "" },
-    "sector": { "lemma": "sector", "pos": "名", "ja": "分野、業界", "note": "" },
-    "approval": { "lemma": "approval", "pos": "名", "ja": "承認", "note": "" },
-    "applied": { "lemma": "apply", "pos": "動", "ja": "申請した", "note": "" },
-    "double": { "lemma": "double", "pos": "動", "ja": "倍にする", "note": "" },
-    "project": { "lemma": "project", "pos": "名", "ja": "事業、計画", "note": "" },
-    "region": { "lemma": "region", "pos": "名", "ja": "地域", "note": "" },
-    "approved": { "lemma": "approve", "pos": "動", "ja": "承認される", "note": "" },
-    "grow": { "lemma": "grow", "pos": "動", "ja": "拡大する、成長する", "note": "" },
-    "targets": { "lemma": "target", "pos": "動", "ja": "対象とする", "note": "" },
-    "minerals": { "lemma": "mineral", "pos": "名", "ja": "鉱物", "note": "" },
-    "equipment": { "lemma": "equipment", "pos": "名", "ja": "設備、機器", "note": "" },
-    "global": { "lemma": "global", "pos": "形", "ja": "世界的な", "note": "" },
-    "supply": { "lemma": "supply", "pos": "名", "ja": "供給", "note": "" },
-    "reliance": { "lemma": "reliance", "pos": "名", "ja": "依存", "note": "" },
-    "president": { "lemma": "president", "pos": "名", "ja": "社長、代表", "note": "" },
-    "reflects": { "lemma": "reflect", "pos": "動", "ja": "反映する", "note": "" },
-    "broader": { "lemma": "broad", "pos": "形", "ja": "より広範な", "note": "" },
-    "secure": { "lemma": "secure", "pos": "動", "ja": "確保する", "note": "" },
-    "critical": { "lemma": "critical", "pos": "形", "ja": "重要な", "note": "" }
+    "signed": {
+      "lemma": "sign",
+      "pos": "動",
+      "ja": "署名した",
+      "note": ""
+    },
+    "security": {
+      "lemma": "security",
+      "pos": "名",
+      "ja": "安全保障",
+      "note": ""
+    },
+    "agreement": {
+      "lemma": "agreement",
+      "pos": "名",
+      "ja": "協定、合意",
+      "note": ""
+    },
+    "foreign": {
+      "lemma": "foreign",
+      "pos": "形",
+      "ja": "海外の、外国の",
+      "note": ""
+    },
+    "investment": {
+      "lemma": "investment",
+      "pos": "名",
+      "ja": "投資",
+      "note": ""
+    },
+    "rival": {
+      "lemma": "rival",
+      "pos": "形",
+      "ja": "対立する、競合の",
+      "note": ""
+    },
+    "invest": {
+      "lemma": "invest",
+      "pos": "動",
+      "ja": "投資する",
+      "note": ""
+    },
+    "mining": {
+      "lemma": "mining",
+      "pos": "名",
+      "ja": "鉱業",
+      "note": ""
+    },
+    "sector": {
+      "lemma": "sector",
+      "pos": "名",
+      "ja": "分野、業界",
+      "note": ""
+    },
+    "approval": {
+      "lemma": "approval",
+      "pos": "名",
+      "ja": "承認",
+      "note": ""
+    },
+    "applied": {
+      "lemma": "apply",
+      "pos": "動",
+      "ja": "申請した",
+      "note": ""
+    },
+    "double": {
+      "lemma": "double",
+      "pos": "動",
+      "ja": "倍にする",
+      "note": ""
+    },
+    "project": {
+      "lemma": "project",
+      "pos": "名",
+      "ja": "事業、計画",
+      "note": ""
+    },
+    "region": {
+      "lemma": "region",
+      "pos": "名",
+      "ja": "地域",
+      "note": ""
+    },
+    "approved": {
+      "lemma": "approve",
+      "pos": "動",
+      "ja": "承認される",
+      "note": ""
+    },
+    "grow": {
+      "lemma": "grow",
+      "pos": "動",
+      "ja": "拡大する、成長する",
+      "note": ""
+    },
+    "targets": {
+      "lemma": "target",
+      "pos": "動",
+      "ja": "対象とする",
+      "note": ""
+    },
+    "minerals": {
+      "lemma": "mineral",
+      "pos": "名",
+      "ja": "鉱物",
+      "note": ""
+    },
+    "equipment": {
+      "lemma": "equipment",
+      "pos": "名",
+      "ja": "設備、機器",
+      "note": ""
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界的な",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "reliance": {
+      "lemma": "reliance",
+      "pos": "名",
+      "ja": "依存",
+      "note": ""
+    },
+    "president": {
+      "lemma": "president",
+      "pos": "名",
+      "ja": "社長、代表",
+      "note": ""
+    },
+    "reflects": {
+      "lemma": "reflect",
+      "pos": "動",
+      "ja": "反映する",
+      "note": ""
+    },
+    "broader": {
+      "lemma": "broad",
+      "pos": "形",
+      "ja": "より広範な",
+      "note": ""
+    },
+    "secure": {
+      "lemma": "secure",
+      "pos": "動",
+      "ja": "確保する",
+      "note": ""
+    },
+    "critical": {
+      "lemma": "critical",
+      "pos": "形",
+      "ja": "重要な",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "分詞構文による条件節の省略（If (it is) approved, ~ ＝主語とbe動詞を省略した「もし〜されれば」を表す表現）",
@@ -215,5 +436,22 @@
       "url": "https://www.globenewswire.com/news-release/2026/09/23/3366774/0/en/greenland-security-pact-reshapes-the-race-for-rare-earth-supply.html",
       "date": "2026-09-23"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-28-0539/00.mp3",
+      "audio/2026-09-28-0539/01.mp3",
+      "audio/2026-09-28-0539/02.mp3",
+      "audio/2026-09-28-0539/03.mp3",
+      "audio/2026-09-28-0539/04.mp3",
+      "audio/2026-09-28-0539/05.mp3",
+      "audio/2026-09-28-0539/06.mp3",
+      "audio/2026-09-28-0539/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 239784,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-27T20:47:37.718Z",
+    "trimmed": true
+  }
 }
