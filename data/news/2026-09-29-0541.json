@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-29-0541",
+  "date": "2026-09-29",
+  "time": "05:41",
+  "createdAt": "2026-09-29T05:41:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment",
+  "sample": false,
+  "title": {
+    "en": "San Francisco Unions Approve Early Pay Deal",
+    "ja": "サンフランシスコ市の組合、賃上げの早期合意を承認"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "San Francisco's two largest city worker unions, including SEIU 1021, have approved an early contract extension.",
+            "ja": "サンフランシスコ市の職員組合のうち最大規模の2つが、SEIU 1021を含め、契約の早期延長を承認した。"
+          },
+          {
+            "en": "The deal was offered to about 24,000 city employees, and the two unions represent about 17,000 of them.",
+            "ja": "この案は約2万4000人の市職員に示され、2つの組合はそのうち約1万7000人を代表している。"
+          },
+          {
+            "en": "Under the deal, workers will receive a 12 percent raise between 2027 and 2031.",
+            "ja": "この合意により、職員は2027年から2031年にかけて12%の昇給を受ける。"
+          },
+          {
+            "en": "The city also promised not to lay off workers before June 30, 2029.",
+            "ja": "市は、2029年6月30日までは職員を解雇しないことも約束した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The mayor, Daniel Lurie, made the offer early, before a large budget gap arrives.",
+            "ja": "市長のダニエル・ルーリー氏は、大きな財政の穴が生じる前に、早めにこの案を提示した。"
+          },
+          {
+            "en": "The city expects a deficit of about $450 million in the 2029 fiscal year.",
+            "ja": "市は2029会計年度に約4億5000万ドルの赤字を見込んでいる。"
+          },
+          {
+            "en": "Union leaders said the guarantee of job security was important because of uncertainty over federal funding.",
+            "ja": "組合幹部は、連邦資金をめぐる不透明感があるため、雇用の保証が重要だと述べた。"
+          },
+          {
+            "en": "However, a group of about 2,400 city nurses rejected the offer.",
+            "ja": "しかし、約2400人の市の看護師のグループはこの案を拒否した。"
+          },
+          {
+            "en": "They said the layoff promise does not go far enough, and they also want better staffing and safety.",
+            "ja": "彼らは、解雇をしないという約束では不十分であり、人員配置と安全性の改善も求めていると述べた。"
+          },
+          {
+            "en": "Their decision could make the next negotiation difficult for the city.",
+            "ja": "彼らの決定は、市にとって次の交渉を難しくする可能性がある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "Until when did the city promise not to lay off workers?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "June 30, 2027",
+          "ja": "2027年6月30日"
+        },
+        {
+          "key": "B",
+          "text": "December 31, 2028",
+          "ja": "2028年12月31日"
+        },
+        {
+          "key": "C",
+          "text": "June 30, 2029",
+          "ja": "2029年6月30日"
+        },
+        {
+          "key": "D",
+          "text": "December 31, 2031",
+          "ja": "2031年12月31日"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本文に “The city also promised not to lay off workers before June 30, 2029.” とあるため、正解は (C)。(A) と (B) は本文にない日付。(D) の2031年は、12%の昇給が続く期間（2027年〜2031年）の終わりであり、解雇をしない期限ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "日付を問う設問は、選択肢の日付が本文の別の数字（ここでは2031年）を使ったひっかけになりやすい。何の期限・期間なのかまで確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did the nurses reject the offer?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They wanted a longer contract.",
+          "ja": "もっと長い契約を望んだ。"
+        },
+        {
+          "key": "B",
+          "text": "They felt the layoff promise was not enough.",
+          "ja": "解雇しない約束では不十分だと感じた。"
+        },
+        {
+          "key": "C",
+          "text": "They opposed the mayor's budget plan.",
+          "ja": "市長の予算案に反対した。"
+        },
+        {
+          "key": "D",
+          "text": "They do not work for the city.",
+          "ja": "市に雇われていない。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本文に “They said the layoff promise does not go far enough” とあり、正解は (B)。(A) 契約期間の長さについて本文に述べられていない。(C) 予算案への反対は本文にない。(D) 看護師は “city nurses” とあり、市の職員なので逆の内容。",
+      "evidence": {
+        "p": 1,
+        "s": 4
+      },
+      "tip": "理由を問う設問では、said / because / not enough など理由や不満を表す表現の近くに答えがある。“not go far enough” は「不十分である」という意味の重要表現。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "extension",
+      "pos": "名",
+      "ja": "延長、延期",
+      "gloss": "",
+      "example": {
+        "en": "The company signed a two-year extension of the lease.",
+        "ja": "その会社は賃貸契約の2年間の延長に署名した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "raise",
+      "pos": "名",
+      "ja": "昇給",
+      "gloss": "（＝給料が上がること）",
+      "example": {
+        "en": "She received a raise after her first year.",
+        "ja": "彼女は入社1年後に昇給を受けた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "layoff",
+      "pos": "名",
+      "ja": "解雇、一時解雇",
+      "gloss": "（＝会社の都合で社員をやめさせること）",
+      "example": {
+        "en": "The layoff affected only the sales department.",
+        "ja": "その解雇は営業部門にだけ影響した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "guarantee",
+      "pos": "名",
+      "ja": "保証",
+      "gloss": "",
+      "example": {
+        "en": "The store offers a one-year guarantee on all products.",
+        "ja": "その店はすべての商品に1年間の保証を付けている。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "deficit",
+      "pos": "名",
+      "ja": "赤字、不足",
+      "gloss": "（＝収入より支出が多いこと）",
+      "example": {
+        "en": "The department reported a deficit for the third year in a row.",
+        "ja": "その部署は3年連続で赤字を報告した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "uncertainty",
+      "pos": "名",
+      "ja": "不確実性、不透明感",
+      "gloss": "",
+      "example": {
+        "en": "Uncertainty about demand made the firm delay its plans.",
+        "ja": "需要の不透明感のため、その会社は計画を遅らせた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "staffing",
+      "pos": "名",
+      "ja": "人員配置、人員確保",
+      "gloss": "",
+      "example": {
+        "en": "The manager is worried about staffing during the holiday season.",
+        "ja": "マネージャーは、休暇シーズンの人員配置を心配している。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "negotiation",
+      "pos": "名",
+      "ja": "交渉",
+      "gloss": "",
+      "example": {
+        "en": "The negotiation between the two firms lasted three days.",
+        "ja": "2社の交渉は3日間続いた。"
+      }
+    }
+  ],
+  "glossary": {
+    "unions": {
+      "lemma": "union",
+      "pos": "名",
+      "ja": "労働組合",
+      "note": ""
+    },
+    "including": {
+      "lemma": "include",
+      "pos": "前",
+      "ja": "〜を含めて",
+      "note": ""
+    },
+    "approved": {
+      "lemma": "approve",
+      "pos": "動",
+      "ja": "承認した",
+      "note": ""
+    },
+    "early": {
+      "lemma": "early",
+      "pos": "形",
+      "ja": "早期の、早い",
+      "note": ""
+    },
+    "contract": {
+      "lemma": "contract",
+      "pos": "名",
+      "ja": "契約",
+      "note": ""
+    },
+    "offered": {
+      "lemma": "offer",
+      "pos": "動",
+      "ja": "提示された",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    },
+    "represent": {
+      "lemma": "represent",
+      "pos": "動",
+      "ja": "代表する",
+      "note": ""
+    },
+    "receive": {
+      "lemma": "receive",
+      "pos": "動",
+      "ja": "受け取る",
+      "note": ""
+    },
+    "promised": {
+      "lemma": "promise",
+      "pos": "動",
+      "ja": "約束した",
+      "note": ""
+    },
+    "lay": {
+      "lemma": "lay off",
+      "pos": "熟",
+      "ja": "解雇する",
+      "note": "lay off で「解雇する」"
+    },
+    "mayor": {
+      "lemma": "mayor",
+      "pos": "名",
+      "ja": "市長",
+      "note": ""
+    },
+    "budget": {
+      "lemma": "budget",
+      "pos": "名",
+      "ja": "予算",
+      "note": ""
+    },
+    "gap": {
+      "lemma": "gap",
+      "pos": "名",
+      "ja": "差、穴",
+      "note": ""
+    },
+    "fiscal": {
+      "lemma": "fiscal",
+      "pos": "形",
+      "ja": "会計の、財政の",
+      "note": ""
+    },
+    "federal": {
+      "lemma": "federal",
+      "pos": "形",
+      "ja": "連邦の",
+      "note": ""
+    },
+    "funding": {
+      "lemma": "funding",
+      "pos": "名",
+      "ja": "資金",
+      "note": ""
+    },
+    "nurses": {
+      "lemma": "nurse",
+      "pos": "名",
+      "ja": "看護師",
+      "note": ""
+    },
+    "rejected": {
+      "lemma": "reject",
+      "pos": "動",
+      "ja": "拒否した",
+      "note": ""
+    },
+    "decision": {
+      "lemma": "decision",
+      "pos": "名",
+      "ja": "決定",
+      "note": ""
+    },
+    "safety": {
+      "lemma": "safety",
+      "pos": "名",
+      "ja": "安全",
+      "note": ""
+    },
+    "difficult": {
+      "lemma": "difficult",
+      "pos": "形",
+      "ja": "難しい",
+      "note": ""
+    },
+    "extension": {
+      "lemma": "extension",
+      "pos": "名",
+      "ja": "延長、延期",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "名",
+      "ja": "昇給",
+      "note": ""
+    },
+    "layoff": {
+      "lemma": "layoff",
+      "pos": "名",
+      "ja": "解雇、一時解雇",
+      "note": ""
+    },
+    "guarantee": {
+      "lemma": "guarantee",
+      "pos": "名",
+      "ja": "保証",
+      "note": ""
+    },
+    "deficit": {
+      "lemma": "deficit",
+      "pos": "名",
+      "ja": "赤字、不足",
+      "note": ""
+    },
+    "uncertainty": {
+      "lemma": "uncertainty",
+      "pos": "名",
+      "ja": "不確実性、不透明感",
+      "note": ""
+    },
+    "staffing": {
+      "lemma": "staffing",
+      "pos": "名",
+      "ja": "人員配置、人員確保",
+      "note": ""
+    },
+    "negotiation": {
+      "lemma": "negotiation",
+      "pos": "名",
+      "ja": "交渉",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "受動態（be＋過去分詞）で行為者を示さずに事実を伝える表現",
+    "quote": "The deal was offered to about 24,000 city employees, and the two unions represent about 17,000 of them.",
+    "quoteJa": "この案は約2万4000人の市職員に示され、2つの組合はそのうち約1万7000人を代表している。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "was offered は「be動詞＋過去分詞」の受動態。能動態なら The mayor offered the deal to about 24,000 city employees.（市長が案を示した）となる。誰が行ったかより「何が行われたか」が大切なとき、または行為者が分かりきっているときに受動態が使われる。ニュースや社内通知で、事実を客観的に伝える文体としてよく登場する。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "能動態：The company offered the deal to its staff. → 受動態：The deal was offered to its staff. 目的語が主語に来て、行為者（by the company）は省略される。offer のように目的語を2つ取る動詞では、The staff were offered the deal. のように人を主語にした受動態も作れる。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、空所の前後の主語と動詞の関係から「能動か受動か」を選ぶ問題が頻出する。主語が人・物のどちらか、直後に目的語があるかを確認する。目的語がなければ受動態、あるならたいてい能動態。Part 7 では、通知文の「The meeting has been rescheduled.」のように受動態が多いため、読み慣れておくとよい。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The new policy will be announced next Monday.（新しい方針は来週月曜に発表される。）／ All invoices must be submitted by the end of the month.（すべての請求書は月末までに提出されなければならない。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 このニュースの基本",
+      "body": "サンフランシスコ市の職員組合のうち最大規模の2つ（SEIU 1021と技術職・専門職の組合）が、市との契約の早期延長を承認した。約2万4000人の市職員に提示された案で、この2組合は合計約1万7000人を代表する。内容は2027年から2031年にかけて12%の昇給と、2029年6月30日までの解雇なしの約束。契約の期限はまだ先だったが、市長が早めに提示した点が異例だった。"
+    },
+    {
+      "heading": "📌 用語のかみ砕き",
+      "body": "「契約延長（contract extension）」は、今ある労働協約が切れる前に、期間や条件を新しく決め直すこと。「レイオフ（layoff）」は、業績不振や予算の都合で会社・自治体が職員をやめさせること。今回の「解雇なしの約束」は、組合側にとって大きな安心材料になる。"
+    },
+    {
+      "heading": "📌 背景と各者の立場",
+      "body": "市は2029会計年度に約4億5000万ドルの赤字を見込んでいる。市長にとっては、赤字が大きくなる前に労使関係を安定させ、ストなどの混乱を避けたいという狙いがある。組合幹部は、連邦資金をめぐる不透明感のなかで雇用が守られることを重視して賛成した。一方、約2400人の看護師の交渉単位は、人員配置や安全性の改善、解雇の保証の範囲に不満があるとして拒否し、対立の火種が残った。"
+    },
+    {
+      "heading": "📌 日本への示唆",
+      "body": "日本でも春闘での賃上げや、人手不足のなかでの雇用維持が大きな課題になっている。「賃上げと引き換えに雇用を守る」という今回の形は、日本企業の労使交渉でも参考になる。また、公共部門の赤字と人件費のバランスは、日本の自治体にとっても共通の問題。投資家や経営者にとっては、人件費が長期にわたり固定される一方で、将来の財政が悪化するリスクも同時に抱える点が注目される。英語では、TOEICの求人や人事の文書によく出る語（raise, staffing, negotiation）をまとめて学べる題材でもある。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SF's two biggest labor unions take Lurie's contract deal — but not city nurses",
+      "publisher": "The San Francisco Standard",
+      "url": "https://sfstandard.com/2026/09/25/lurie-sf-labor-union-deal-ratify-nurses-reject/",
+      "date": "2026-09-25"
+    },
+    {
+      "title": "Lurie Strikes Early Union Deal With SF City Workers",
+      "publisher": "Hoodline",
+      "url": "https://hoodline.com/2026/09/lurie-locks-in-12-raises-no-layoff-pledge-for-24-000-sf-workers/",
+      "date": "2026-09"
+    }
+  ]
+}
