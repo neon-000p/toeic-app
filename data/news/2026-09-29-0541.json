@@ -462,5 +462,24 @@
       "url": "https://hoodline.com/2026/09/lurie-locks-in-12-raises-no-layoff-pledge-for-24-000-sf-workers/",
       "date": "2026-09"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-29-0541/00.mp3",
+      "audio/2026-09-29-0541/01.mp3",
+      "audio/2026-09-29-0541/02.mp3",
+      "audio/2026-09-29-0541/03.mp3",
+      "audio/2026-09-29-0541/04.mp3",
+      "audio/2026-09-29-0541/05.mp3",
+      "audio/2026-09-29-0541/06.mp3",
+      "audio/2026-09-29-0541/07.mp3",
+      "audio/2026-09-29-0541/08.mp3",
+      "audio/2026-09-29-0541/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 261666,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-28T20:43:42.694Z",
+    "trimmed": true
+  }
 }
