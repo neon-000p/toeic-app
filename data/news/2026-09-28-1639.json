@@ -60,14 +60,33 @@
       "type": "detail",
       "prompt": "About what share of the votes cast at the shareholder meeting supported the deal?",
       "choices": [
-        { "key": "A", "text": "54 percent", "ja": "54パーセント" },
-        { "key": "B", "text": "81 percent", "ja": "81パーセント" },
-        { "key": "C", "text": "99.6 percent", "ja": "99.6パーセント" },
-        { "key": "D", "text": "100 percent", "ja": "100パーセント" }
+        {
+          "key": "A",
+          "text": "54 percent",
+          "ja": "54パーセント"
+        },
+        {
+          "key": "B",
+          "text": "81 percent",
+          "ja": "81パーセント"
+        },
+        {
+          "key": "C",
+          "text": "99.6 percent",
+          "ja": "99.6パーセント"
+        },
+        {
+          "key": "D",
+          "text": "100 percent",
+          "ja": "100パーセント"
+        }
       ],
       "answer": "C",
       "explanation": "本文に「Nearly all of the votes cast, about 99.6 percent, supported the merger.」と明記されている。(A) 54は取引の1株あたりの名目価値（$54 per share）の数字を流用した引っかけ。(B) 81は本文には登場しない数字で、「本文にない情報」のパターン。(D) 100は「ほぼ全て（nearly all）」を「全会一致」と誤読した場合の引っかけ。",
-      "evidence": { "p": 0, "s": 1 },
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
       "tip": "TOEIC Part 7では about／nearly などの概数表現とセットで、正確な数字を本文から拾う練習が重要。"
     },
     {
@@ -75,85 +94,277 @@
       "type": "reason",
       "prompt": "Why did Rocket Lab raise close to $2 billion in new stock this month?",
       "choices": [
-        { "key": "A", "text": "To fund a new rocket factory", "ja": "新しいロケット工場の資金のため" },
-        { "key": "B", "text": "To help cover the cash portion of the Iridium deal", "ja": "現金支払い分を賄うため" },
-        { "key": "C", "text": "To pay down existing debt", "ja": "既存の債務を返済するため" },
-        { "key": "D", "text": "To buy back its own shares", "ja": "自社株買いのため" }
+        {
+          "key": "A",
+          "text": "To fund a new rocket factory",
+          "ja": "新しいロケット工場の資金のため"
+        },
+        {
+          "key": "B",
+          "text": "To help cover the cash portion of the Iridium deal",
+          "ja": "現金支払い分を賄うため"
+        },
+        {
+          "key": "C",
+          "text": "To pay down existing debt",
+          "ja": "既存の債務を返済するため"
+        },
+        {
+          "key": "D",
+          "text": "To buy back its own shares",
+          "ja": "自社株買いのため"
+        }
       ],
       "answer": "B",
       "explanation": "本文の「Rocket Lab raised close to $2 billion in new stock this month to help cover the cash payment.」が根拠。目的を表す to 不定詞（to help cover）が理由を示している。(A) 新工場、(C) 債務返済はいずれも本文に記述がない。(D) 自社株買いは本文の趣旨（資金を調達する側）と逆であり誤り。",
-      "evidence": { "p": 1, "s": 1 },
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
       "tip": "TOEIC Part 7では、to不定詞が目的を表す箇所に注目すると「なぜその行動を取ったか」を問う設問に素早く対応できる。"
     }
   ],
   "vocabulary": [
     {
-      "no": 1, "term": "hurdle", "pos": "名", "ja": "障害、難関",
+      "no": 1,
+      "term": "hurdle",
+      "pos": "名",
+      "ja": "障害、難関",
       "gloss": "",
-      "example": { "en": "The new regulation created another hurdle for small businesses.", "ja": "新しい規制は中小企業にとってまた一つの障害となった。" }
+      "example": {
+        "en": "The new regulation created another hurdle for small businesses.",
+        "ja": "新しい規制は中小企業にとってまた一つの障害となった。"
+      }
     },
     {
-      "no": 2, "term": "merger", "pos": "名", "ja": "合併",
+      "no": 2,
+      "term": "merger",
+      "pos": "名",
+      "ja": "合併",
       "gloss": "",
-      "example": { "en": "The merger between the two banks was approved last month.", "ja": "その2つの銀行の合併は先月承認された。" }
+      "example": {
+        "en": "The merger between the two banks was approved last month.",
+        "ja": "その2つの銀行の合併は先月承認された。"
+      }
     },
     {
-      "no": 3, "term": "regulatory", "pos": "形", "ja": "規制の、当局の",
+      "no": 3,
+      "term": "regulatory",
+      "pos": "形",
+      "ja": "規制の、当局の",
       "gloss": "",
-      "example": { "en": "The company must obtain regulatory approval before launching the product.", "ja": "その会社は製品発売前に規制当局の承認を得る必要がある。" }
+      "example": {
+        "en": "The company must obtain regulatory approval before launching the product.",
+        "ja": "その会社は製品発売前に規制当局の承認を得る必要がある。"
+      }
     },
     {
-      "no": 4, "term": "approval", "pos": "名", "ja": "承認",
+      "no": 4,
+      "term": "approval",
+      "pos": "名",
+      "ja": "承認",
       "gloss": "",
-      "example": { "en": "The board gave its approval for the new budget.", "ja": "取締役会は新しい予算を承認した。" }
+      "example": {
+        "en": "The board gave its approval for the new budget.",
+        "ja": "取締役会は新しい予算を承認した。"
+      }
     },
     {
-      "no": 5, "term": "raised", "pos": "動", "ja": "（資金を）調達した",
+      "no": 5,
+      "term": "raised",
+      "pos": "動",
+      "ja": "（資金を）調達した",
       "gloss": "",
-      "example": { "en": "The startup raised $10 million from investors.", "ja": "そのスタートアップは投資家から1000万ドルを調達した。" }
+      "example": {
+        "en": "The startup raised $10 million from investors.",
+        "ja": "そのスタートアップは投資家から1000万ドルを調達した。"
+      }
     },
     {
-      "no": 6, "term": "cover", "pos": "動", "ja": "（費用を）賄う",
+      "no": 6,
+      "term": "cover",
+      "pos": "動",
+      "ja": "（費用を）賄う",
       "gloss": "",
-      "example": { "en": "The grant will cover most of the project's costs.", "ja": "その助成金はプロジェクト費用の大半を賄う。" }
+      "example": {
+        "en": "The grant will cover most of the project's costs.",
+        "ja": "その助成金はプロジェクト費用の大半を賄う。"
+      }
     },
     {
-      "no": 7, "term": "combine", "pos": "動", "ja": "統合する、結合させる",
+      "no": 7,
+      "term": "combine",
+      "pos": "動",
+      "ja": "統合する、結合させる",
       "gloss": "",
-      "example": { "en": "The two departments will combine their operations next year.", "ja": "その2つの部署は来年業務を統合する。" }
+      "example": {
+        "en": "The two departments will combine their operations next year.",
+        "ja": "その2つの部署は来年業務を統合する。"
+      }
     },
     {
-      "no": 8, "term": "integrated", "pos": "形", "ja": "統合された",
+      "no": 8,
+      "term": "integrated",
+      "pos": "形",
+      "ja": "統合された",
       "gloss": "",
-      "example": { "en": "The company offers a fully integrated software platform.", "ja": "その会社は完全統合型のソフトウェアプラットフォームを提供している。" }
+      "example": {
+        "en": "The company offers a fully integrated software platform.",
+        "ja": "その会社は完全統合型のソフトウェアプラットフォームを提供している。"
+      }
     }
   ],
   "glossary": {
-    "shareholders": { "lemma": "shareholder", "pos": "名", "ja": "株主", "note": "" },
-    "approved": { "lemma": "approve", "pos": "動", "ja": "承認した", "note": "" },
-    "plan": { "lemma": "plan", "pos": "名", "ja": "計画", "note": "" },
-    "satellite": { "lemma": "satellite", "pos": "名", "ja": "衛星", "note": "" },
-    "hurdle": { "lemma": "hurdle", "pos": "名", "ja": "障害", "note": "" },
-    "deal": { "lemma": "deal", "pos": "名", "ja": "取引", "note": "" },
-    "cast": { "lemma": "cast", "pos": "動", "ja": "（票を）投じた", "note": "" },
-    "supported": { "lemma": "support", "pos": "動", "ja": "支持した", "note": "" },
-    "merger": { "lemma": "merger", "pos": "名", "ja": "合併", "note": "" },
-    "agreement": { "lemma": "agreement", "pos": "名", "ja": "合意", "note": "" },
-    "announced": { "lemma": "announce", "pos": "動", "ja": "発表された", "note": "" },
-    "combine": { "lemma": "combine", "pos": "動", "ja": "組み合わせる", "note": "" },
-    "rockets": { "lemma": "rocket", "pos": "名", "ja": "ロケット", "note": "" },
-    "satellites": { "lemma": "satellite", "pos": "名", "ja": "衛星（複数）", "note": "" },
-    "communications": { "lemma": "communication", "pos": "名", "ja": "通信", "note": "" },
-    "network": { "lemma": "network", "pos": "名", "ja": "網、ネットワーク", "note": "" },
-    "receive": { "lemma": "receive", "pos": "動", "ja": "受け取る", "note": "" },
-    "worth": { "lemma": "worth", "pos": "形", "ja": "〜の価値がある", "note": "" },
-    "notional": { "lemma": "notional", "pos": "形", "ja": "名目上の", "note": "" },
-    "raised": { "lemma": "raise", "pos": "動", "ja": "調達した", "note": "" },
-    "cover": { "lemma": "cover", "pos": "動", "ja": "賄う", "note": "" },
-    "payment": { "lemma": "payment", "pos": "名", "ja": "支払い", "note": "" },
-    "regulatory": { "lemma": "regulatory", "pos": "形", "ja": "規制の、当局の", "note": "" },
-    "approval": { "lemma": "approval", "pos": "名", "ja": "承認", "note": "" },
-    "integrated": { "lemma": "integrate", "pos": "形", "ja": "統合された", "note": "" }
+    "shareholders": {
+      "lemma": "shareholder",
+      "pos": "名",
+      "ja": "株主",
+      "note": ""
+    },
+    "approved": {
+      "lemma": "approve",
+      "pos": "動",
+      "ja": "承認した",
+      "note": ""
+    },
+    "plan": {
+      "lemma": "plan",
+      "pos": "名",
+      "ja": "計画",
+      "note": ""
+    },
+    "satellite": {
+      "lemma": "satellite",
+      "pos": "名",
+      "ja": "衛星",
+      "note": ""
+    },
+    "hurdle": {
+      "lemma": "hurdle",
+      "pos": "名",
+      "ja": "障害",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "取引",
+      "note": ""
+    },
+    "cast": {
+      "lemma": "cast",
+      "pos": "動",
+      "ja": "（票を）投じた",
+      "note": ""
+    },
+    "supported": {
+      "lemma": "support",
+      "pos": "動",
+      "ja": "支持した",
+      "note": ""
+    },
+    "merger": {
+      "lemma": "merger",
+      "pos": "名",
+      "ja": "合併",
+      "note": ""
+    },
+    "agreement": {
+      "lemma": "agreement",
+      "pos": "名",
+      "ja": "合意",
+      "note": ""
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "発表された",
+      "note": ""
+    },
+    "combine": {
+      "lemma": "combine",
+      "pos": "動",
+      "ja": "組み合わせる",
+      "note": ""
+    },
+    "rockets": {
+      "lemma": "rocket",
+      "pos": "名",
+      "ja": "ロケット",
+      "note": ""
+    },
+    "satellites": {
+      "lemma": "satellite",
+      "pos": "名",
+      "ja": "衛星（複数）",
+      "note": ""
+    },
+    "communications": {
+      "lemma": "communication",
+      "pos": "名",
+      "ja": "通信",
+      "note": ""
+    },
+    "network": {
+      "lemma": "network",
+      "pos": "名",
+      "ja": "網、ネットワーク",
+      "note": ""
+    },
+    "receive": {
+      "lemma": "receive",
+      "pos": "動",
+      "ja": "受け取る",
+      "note": ""
+    },
+    "worth": {
+      "lemma": "worth",
+      "pos": "形",
+      "ja": "〜の価値がある",
+      "note": ""
+    },
+    "notional": {
+      "lemma": "notional",
+      "pos": "形",
+      "ja": "名目上の",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "調達した",
+      "note": ""
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "賄う",
+      "note": ""
+    },
+    "payment": {
+      "lemma": "payment",
+      "pos": "名",
+      "ja": "支払い",
+      "note": ""
+    },
+    "regulatory": {
+      "lemma": "regulatory",
+      "pos": "形",
+      "ja": "規制の、当局の",
+      "note": ""
+    },
+    "approval": {
+      "lemma": "approval",
+      "pos": "名",
+      "ja": "承認",
+      "note": ""
+    },
+    "integrated": {
+      "lemma": "integrate",
+      "pos": "形",
+      "ja": "統合された",
+      "note": ""
+    }
   },
   "grammar": {
     "topic": "不定詞の副詞的用法（目的を表す to do）",
@@ -209,5 +420,21 @@
       "url": "https://www.fool.com/investing/2026/09/26/major-milestone-passed-in-iridium-rocket-lab-tie-up/",
       "date": "2026-09-26"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-28-1639/00.mp3",
+      "audio/2026-09-28-1639/01.mp3",
+      "audio/2026-09-28-1639/02.mp3",
+      "audio/2026-09-28-1639/03.mp3",
+      "audio/2026-09-28-1639/04.mp3",
+      "audio/2026-09-28-1639/05.mp3",
+      "audio/2026-09-28-1639/06.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 223131,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-28T07:45:53.439Z",
+    "trimmed": true
+  }
 }
