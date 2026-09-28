@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-28-1639",
+  "date": "2026-09-28",
+  "time": "16:39",
+  "createdAt": "2026-09-28T16:39:00+09:00",
+  "genre": "宇宙",
+  "genreEn": "Space",
+  "sample": false,
+  "title": {
+    "en": "Iridium Shareholders Approve Rocket Lab's $8 Billion Buyout",
+    "ja": "衛星大手アイリジウム、ロケットラボ買収を株主承認"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Iridium's shareholders have approved Rocket Lab's plan to buy the satellite company, clearing the last big hurdle for the $8 billion deal.",
+            "ja": "アイリジウムの株主は、ロケットラボによる同社の買収案を承認し、80億ドル規模の取引にとって最後の大きな関門をクリアした。"
+          },
+          {
+            "en": "Nearly all of the votes cast, about 99.6 percent, supported the merger.",
+            "ja": "投じられた票のほぼ全て、約99.6パーセントが今回の合併に賛成した。"
+          },
+          {
+            "en": "The agreement, first announced in June, will combine Rocket Lab's rockets and satellites with Iridium's global communications network.",
+            "ja": "6月に最初に発表されたこの合意は、ロケットラボのロケットと衛星を、アイリジウムの世界的な通信ネットワークと組み合わせるものだ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Under the deal, Iridium shareholders will receive cash plus Rocket Lab stock worth a notional $54 per share.",
+            "ja": "この取引により、アイリジウムの株主は現金に加え、名目1株54ドル相当のロケットラボ株を受け取ることになる。"
+          },
+          {
+            "en": "Rocket Lab raised close to $2 billion in new stock this month to help cover the cash payment.",
+            "ja": "ロケットラボは今月、現金支払い分を賄う目的で、新株発行によって約20億ドル近くを調達した。"
+          },
+          {
+            "en": "The companies still need regulatory approval before the deal can close, which they expect by the middle of 2027.",
+            "ja": "両社はなお、取引を完了させるために規制当局の承認を必要としており、2027年半ばまでの完了を見込んでいる。"
+          },
+          {
+            "en": "Together, the combined company would become a fully integrated space business, building rockets, satellites, and the networks that connect them.",
+            "ja": "統合後の企業は、ロケットと衛星、そしてそれらをつなぐネットワークまでを手がける、完全統合型の宇宙関連企業となる見込みだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "About what share of the votes cast at the shareholder meeting supported the deal?",
+      "choices": [
+        { "key": "A", "text": "54 percent", "ja": "54パーセント" },
+        { "key": "B", "text": "81 percent", "ja": "81パーセント" },
+        { "key": "C", "text": "99.6 percent", "ja": "99.6パーセント" },
+        { "key": "D", "text": "100 percent", "ja": "100パーセント" }
+      ],
+      "answer": "C",
+      "explanation": "本文に「Nearly all of the votes cast, about 99.6 percent, supported the merger.」と明記されている。(A) 54は取引の1株あたりの名目価値（$54 per share）の数字を流用した引っかけ。(B) 81は本文には登場しない数字で、「本文にない情報」のパターン。(D) 100は「ほぼ全て（nearly all）」を「全会一致」と誤読した場合の引っかけ。",
+      "evidence": { "p": 0, "s": 1 },
+      "tip": "TOEIC Part 7では about／nearly などの概数表現とセットで、正確な数字を本文から拾う練習が重要。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did Rocket Lab raise close to $2 billion in new stock this month?",
+      "choices": [
+        { "key": "A", "text": "To fund a new rocket factory", "ja": "新しいロケット工場の資金のため" },
+        { "key": "B", "text": "To help cover the cash portion of the Iridium deal", "ja": "現金支払い分を賄うため" },
+        { "key": "C", "text": "To pay down existing debt", "ja": "既存の債務を返済するため" },
+        { "key": "D", "text": "To buy back its own shares", "ja": "自社株買いのため" }
+      ],
+      "answer": "B",
+      "explanation": "本文の「Rocket Lab raised close to $2 billion in new stock this month to help cover the cash payment.」が根拠。目的を表す to 不定詞（to help cover）が理由を示している。(A) 新工場、(C) 債務返済はいずれも本文に記述がない。(D) 自社株買いは本文の趣旨（資金を調達する側）と逆であり誤り。",
+      "evidence": { "p": 1, "s": 1 },
+      "tip": "TOEIC Part 7では、to不定詞が目的を表す箇所に注目すると「なぜその行動を取ったか」を問う設問に素早く対応できる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1, "term": "hurdle", "pos": "名", "ja": "障害、難関",
+      "gloss": "",
+      "example": { "en": "The new regulation created another hurdle for small businesses.", "ja": "新しい規制は中小企業にとってまた一つの障害となった。" }
+    },
+    {
+      "no": 2, "term": "merger", "pos": "名", "ja": "合併",
+      "gloss": "",
+      "example": { "en": "The merger between the two banks was approved last month.", "ja": "その2つの銀行の合併は先月承認された。" }
+    },
+    {
+      "no": 3, "term": "regulatory", "pos": "形", "ja": "規制の、当局の",
+      "gloss": "",
+      "example": { "en": "The company must obtain regulatory approval before launching the product.", "ja": "その会社は製品発売前に規制当局の承認を得る必要がある。" }
+    },
+    {
+      "no": 4, "term": "approval", "pos": "名", "ja": "承認",
+      "gloss": "",
+      "example": { "en": "The board gave its approval for the new budget.", "ja": "取締役会は新しい予算を承認した。" }
+    },
+    {
+      "no": 5, "term": "raised", "pos": "動", "ja": "（資金を）調達した",
+      "gloss": "",
+      "example": { "en": "The startup raised $10 million from investors.", "ja": "そのスタートアップは投資家から1000万ドルを調達した。" }
+    },
+    {
+      "no": 6, "term": "cover", "pos": "動", "ja": "（費用を）賄う",
+      "gloss": "",
+      "example": { "en": "The grant will cover most of the project's costs.", "ja": "その助成金はプロジェクト費用の大半を賄う。" }
+    },
+    {
+      "no": 7, "term": "combine", "pos": "動", "ja": "統合する、結合させる",
+      "gloss": "",
+      "example": { "en": "The two departments will combine their operations next year.", "ja": "その2つの部署は来年業務を統合する。" }
+    },
+    {
+      "no": 8, "term": "integrated", "pos": "形", "ja": "統合された",
+      "gloss": "",
+      "example": { "en": "The company offers a fully integrated software platform.", "ja": "その会社は完全統合型のソフトウェアプラットフォームを提供している。" }
+    }
+  ],
+  "glossary": {
+    "shareholders": { "lemma": "shareholder", "pos": "名", "ja": "株主", "note": "" },
+    "approved": { "lemma": "approve", "pos": "動", "ja": "承認した", "note": "" },
+    "plan": { "lemma": "plan", "pos": "名", "ja": "計画", "note": "" },
+    "satellite": { "lemma": "satellite", "pos": "名", "ja": "衛星", "note": "" },
+    "hurdle": { "lemma": "hurdle", "pos": "名", "ja": "障害", "note": "" },
+    "deal": { "lemma": "deal", "pos": "名", "ja": "取引", "note": "" },
+    "cast": { "lemma": "cast", "pos": "動", "ja": "（票を）投じた", "note": "" },
+    "supported": { "lemma": "support", "pos": "動", "ja": "支持した", "note": "" },
+    "merger": { "lemma": "merger", "pos": "名", "ja": "合併", "note": "" },
+    "agreement": { "lemma": "agreement", "pos": "名", "ja": "合意", "note": "" },
+    "announced": { "lemma": "announce", "pos": "動", "ja": "発表された", "note": "" },
+    "combine": { "lemma": "combine", "pos": "動", "ja": "組み合わせる", "note": "" },
+    "rockets": { "lemma": "rocket", "pos": "名", "ja": "ロケット", "note": "" },
+    "satellites": { "lemma": "satellite", "pos": "名", "ja": "衛星（複数）", "note": "" },
+    "communications": { "lemma": "communication", "pos": "名", "ja": "通信", "note": "" },
+    "network": { "lemma": "network", "pos": "名", "ja": "網、ネットワーク", "note": "" },
+    "receive": { "lemma": "receive", "pos": "動", "ja": "受け取る", "note": "" },
+    "worth": { "lemma": "worth", "pos": "形", "ja": "〜の価値がある", "note": "" },
+    "notional": { "lemma": "notional", "pos": "形", "ja": "名目上の", "note": "" },
+    "raised": { "lemma": "raise", "pos": "動", "ja": "調達した", "note": "" },
+    "cover": { "lemma": "cover", "pos": "動", "ja": "賄う", "note": "" },
+    "payment": { "lemma": "payment", "pos": "名", "ja": "支払い", "note": "" },
+    "regulatory": { "lemma": "regulatory", "pos": "形", "ja": "規制の、当局の", "note": "" },
+    "approval": { "lemma": "approval", "pos": "名", "ja": "承認", "note": "" },
+    "integrated": { "lemma": "integrate", "pos": "形", "ja": "統合された", "note": "" }
+  },
+  "grammar": {
+    "topic": "不定詞の副詞的用法（目的を表す to do）",
+    "quote": "Rocket Lab raised close to $2 billion in new stock this month to help cover the cash payment.",
+    "quoteJa": "ロケットラボは今月、現金支払い分を賄う目的で、新株発行によって約20億ドル近くを調達した。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "この文の to help cover は「〜を賄うために」という目的を表す副詞的用法の不定詞。動詞 raised（調達した）という行動の目的を後ろから説明している。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "... in order to help cover the cash payment. や ... so as to help cover the cash payment. としても同じ意味になるが、in order to／so as to はよりフォーマルな響きを持つ。目的の to 不定詞は To help cover the cash payment, Rocket Lab raised new stock. のように文頭に置くこともできる。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では「なぜその行動を取ったか」を選ぶ空所補充問題として、Part 6では文挿入問題で「目的の説明」が入る位置を判断する手がかりとして頻出する。動詞の直後の to 不定詞が「〜するための」（名詞修飾）なのか「〜するために」（目的）なのかを文脈で見分ける練習が得点につながる。"
+      },
+      {
+        "heading": "ビジネス文書での応用例",
+        "body": "We hired two more engineers to help meet the project deadline. / The company cut prices to help boost sales in a slow quarter."
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 このニュースの基本",
+      "body": "ロケットラボ（打ち上げロケットや人工衛星を製造する宇宙企業）が、衛星通信大手のアイリジウムを買収する計画について、アイリジウムの株主が正式に賛成票を投じた。取引総額は約80億ドル、1株あたりの名目価値は54ドル（現金27ドル＋ロケットラボ株式）で、2027年半ばの完了を見込んでいる。"
+    },
+    {
+      "heading": "📌 業界・競合の動き",
+      "body": "宇宙業界では、打ち上げ・衛星製造・通信サービスをまとめて手がける「垂直統合」を目指す再編が相次いでいる。背景には、打ち上げ市場で圧倒的なシェアを持つ大手企業に対抗するため、規模とサービスの幅を一気に広げる必要があるという事情がある。通信・IT業界でも見られる「川上から川下までを1社で押さえる」動きが、宇宙分野にも広がってきた形だ。"
+    },
+    {
+      "heading": "📌 日本への影響",
+      "body": "アイリジウムの衛星通信は、船舶や航空機、山間部・洋上など地上回線が届かない場所での通信に使われており、日本の海運会社や商社、防災関係者にとってもなじみ深いサービスである。買収後もサービスが安定的に続くかは注目点であり、また日本の部品メーカーや商社にとっては、統合後の巨大宇宙企業のサプライチェーンに食い込む商機にもなり得る。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "今回の取引は、現金と株式を組み合わせ、株価変動リスクを抑える「カラー（変動幅の上限・下限）」付きの交換比率を採用している点が特徴である。また、ロケットラボは大型の借入れに頼らず、市場で新株を発行する形（ATM増資）で現金原資を調達しており、資金調達の手法としても経営者・投資家双方にとって参考になる事例と言える。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Iridium Stockholders Approve Acquisition by Rocket Lab",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/iridium-stockholders-approve-acquisition-by-rocket-lab-302889586.html",
+      "date": "2026-09-24"
+    },
+    {
+      "title": "Major Milestone Passed In Iridium/Rocket Lab Tie Up",
+      "publisher": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/26/major-milestone-passed-in-iridium-rocket-lab-tie-up/",
+      "date": "2026-09-26"
+    }
+  ]
+}
