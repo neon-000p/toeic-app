@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-09-30-0412-1",
+  "date": "2026-09-30",
+  "time": "04:12",
+  "scene": "社内調整｜会議室の予約変更",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性1",
+      "accent": "en-GB"
+    },
+    {
+      "tag": "M2",
+      "role": "男性2",
+      "accent": "en-AU"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "I need to move my client presentation out of Room A. Twenty people confirmed, but it seats twelve.",
+      "ja": "クライアント向けの発表をA会議室から移したいんです。20人が出席確定なのに、あの部屋は12人しか入りません。"
+    },
+    {
+      "tag": "M",
+      "en": "Room C seats twenty-five, but its projector is being repaired until Wednesday.",
+      "ja": "4階のC会議室は25人入りますが、プロジェクターが水曜まで修理中です。"
+    },
+    {
+      "tag": "M2",
+      "en": "I handle facilities. The technician says he'll wrap it up by Wednesday noon.",
+      "ja": "私は設備担当ですが、技術者は水曜の正午までに終わらせると言っていました。"
+    },
+    {
+      "tag": "W",
+      "en": "That's cutting it close. The presentation is Thursday at nine.",
+      "ja": "ぎりぎりですね。発表は木曜の9時なので、当日の朝に不具合が見つかるのは避けたいです。"
+    },
+    {
+      "tag": "M",
+      "en": "The ground-floor hall holds forty, but the sales team has it for training until ten Thursday.",
+      "ja": "もう1つの候補は1階のホールです。40人入りますが、木曜は10時まで営業チームが研修で使います。"
+    },
+    {
+      "tag": "W",
+      "en": "Then the hall won't work. My client arrives at a quarter to nine, so I'll take Room C.",
+      "ja": "それならホールは無理ですね。クライアントは9時15分前に到着しますから。C会議室にします。"
+    },
+    {
+      "tag": "M2",
+      "en": "I'll have the technician test the projector Wednesday afternoon and let you know.",
+      "ja": "それなら、水曜の午後に技術者へプロジェクターを試験させて、すぐお知らせします。"
+    },
+    {
+      "tag": "W",
+      "en": "Perfect. Could you also arrange the chairs in rows?",
+      "ja": "助かります。椅子もテーブル囲みではなく、列に並べてもらえますか。"
+    },
+    {
+      "tag": "M2",
+      "en": "Sure. I'll put in a request with the cleaning crew to set the room up by eight.",
+      "ja": "問題ありません。清掃スタッフに、8時までに部屋を整えるよう依頼を出しておきます。"
+    },
+    {
+      "tag": "M",
+      "en": "I'll take my name off the tentative hold so you can reserve it.",
+      "ja": "C会議室の仮押さえから私の名前を外しておきますので、あなたの名前で予約してください。"
+    },
+    {
+      "tag": "W",
+      "en": "Thanks, both. I'll send the new location to all attendees today.",
+      "ja": "お二人ともありがとうございます。新しい場所は今日中に出席者全員へ送ります。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Repairing a broken projector",
+          "ja": "壊れたプロジェクターの修理"
+        },
+        {
+          "key": "B",
+          "text": "Finding a suitable room for a presentation",
+          "ja": "発表に適した部屋の確保"
+        },
+        {
+          "key": "C",
+          "text": "Rescheduling a sales training session",
+          "ja": "営業研修の日程変更"
+        },
+        {
+          "key": "D",
+          "text": "Hiring a cleaning crew",
+          "ja": "清掃スタッフの手配"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "女性は冒頭で発表をA会議室から移したいと述べ、収容人数の問題を説明している。続く2人もC会議室やホールを候補に挙げており、全体の話題は発表に合う部屋探しである。プロジェクターの修理は候補の条件の1つにすぎない。",
+      "tip": "冒頭の依頼「何を・どこから動かしたいか」が話題になる。途中で出る修理や研修は、候補を比べる材料として区別する。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why does the woman rule out the ground-floor hall?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It cannot seat twenty people",
+          "ja": "20人を収容できない"
+        },
+        {
+          "key": "B",
+          "text": "Its screen does not work",
+          "ja": "スクリーンが使えない"
+        },
+        {
+          "key": "C",
+          "text": "Its projector is being repaired",
+          "ja": "プロジェクターが修理中だ"
+        },
+        {
+          "key": "D",
+          "text": "It is occupied when her client arrives",
+          "ja": "クライアント到着時に使用中だ"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        4,
+        5
+      ],
+      "explanation": "男性1が、ホールは木曜の10時まで営業チームの研修で使われると述べ、女性が「クライアントは9時15分前に来る」と答えて断っている。40人入る点は問題ではない。プロジェクターの修理はC会議室の話で、ホールの理由ではない。",
+      "tip": "2人の発言をつなげて解く設問。片方が「いつまで使えないか」、もう片方が「いつ必要か」を言うので、時刻を対にして聞く。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What does the woman say she will do today?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Notify the attendees of the new location",
+          "ja": "出席者に新しい場所を知らせる"
+        },
+        {
+          "key": "B",
+          "text": "Test the projector in Room C",
+          "ja": "C会議室のプロジェクターを試験する"
+        },
+        {
+          "key": "C",
+          "text": "Contact the cleaning crew",
+          "ja": "清掃スタッフに連絡する"
+        },
+        {
+          "key": "D",
+          "text": "Cancel a hold on the hall",
+          "ja": "ホールの仮押さえを取り消す"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        10
+      ],
+      "explanation": "女性は最後に I'll send the new location to all the attendees today と述べている。プロジェクターの試験は男性2、清掃の依頼も男性2、仮押さえの取り消しは男性1の行動なので、誰の行動かを取り違えないこと。",
+      "tip": "終盤の I'll ... today は本人の行動。他の話者が引き受けた作業を選択肢で見たら、誰の発言かを確かめる。"
+    }
+  ],
+  "glossary": {
+    "wrap it up": {
+      "lemma": "wrap up",
+      "pos": "熟",
+      "ja": "終える、仕上げる",
+      "note": "finish の言い換え",
+      "example": {
+        "en": "We hope to wrap up the audit before the end of the month.",
+        "ja": "月末までに監査を終えたいと考えています。"
+      }
+    },
+    "cutting it close": {
+      "lemma": "cut it close",
+      "pos": "熟",
+      "ja": "ぎりぎりである",
+      "note": "時間や余裕がほとんどない状態",
+      "example": {
+        "en": "Arriving at the gate ten minutes before boarding is cutting it close.",
+        "ja": "搭乗の10分前に搭乗口へ着くのはぎりぎりです。"
+      }
+    },
+    "put in a request": {
+      "lemma": "put in a request",
+      "pos": "熟",
+      "ja": "依頼を出す",
+      "note": "submit a request の言い換え",
+      "example": {
+        "en": "Please put in a request with the IT desk for a new laptop.",
+        "ja": "新しいノートパソコンはITデスクに依頼を出してください。"
+      }
+    },
+    "set the room up": {
+      "lemma": "set up",
+      "pos": "熟",
+      "ja": "準備する、設営する",
+      "note": "arrange と近い意味",
+      "example": {
+        "en": "The staff will set up the banquet hall before the guests arrive.",
+        "ja": "スタッフは客の到着前に宴会場を設営します。"
+      }
+    },
+    "tentative hold": {
+      "lemma": "tentative hold",
+      "pos": "熟",
+      "ja": "仮押さえ",
+      "note": "tentative は「仮の」。確定前の予約",
+      "example": {
+        "en": "The hotel placed a tentative hold on ten rooms until Friday.",
+        "ja": "ホテルは金曜まで10室を仮押さえした。"
+      }
+    },
+    "confirmed": {
+      "lemma": "confirm",
+      "pos": "動",
+      "ja": "確定する",
+      "note": "選択肢では attending などに置き換わる",
+      "example": {
+        "en": "Ten guests have confirmed that they will attend the dinner.",
+        "ja": "10人の招待客が夕食会への出席を確定させました。"
+      }
+    },
+    "seats": {
+      "lemma": "seat",
+      "pos": "動",
+      "ja": "～人分の席がある",
+      "note": "収容できるという意味の動詞用法",
+      "example": {
+        "en": "The conference hall seats up to three hundred people.",
+        "ja": "そのカンファレンスホールは最大300人が座れます。"
+      }
+    },
+    "facilities": {
+      "lemma": "facilities",
+      "pos": "名",
+      "ja": "施設、設備",
+      "note": "facilities department は設備管理の部署",
+      "example": {
+        "en": "The facilities team inspects the fire alarms every spring.",
+        "ja": "設備担当のチームは毎春、火災報知器を点検します。"
+      }
+    },
+    "technician": {
+      "lemma": "technician",
+      "pos": "名",
+      "ja": "技術者",
+      "note": "repair の担い手",
+      "example": {
+        "en": "A technician will visit the office to service the copier.",
+        "ja": "技術者がコピー機の点検のため事務所を訪れます。"
+      }
+    }
+  },
+  "point": {
+    "flow": "依頼（部屋を移したい）→ 候補2案の提示 → 条件の比較 → 時刻の制約で1案を却下 → 決定と分担",
+    "items": [
+      {
+        "title": "候補が2つ出たら、却下の条件を探す",
+        "body": "2案が並んだら「どの条件で1つが落ちるか」を聞く。今回は収容人数・修理・使用時間が候補ごとに違い、最後の1つだけが残った。"
+      },
+      {
+        "title": "3人会話は別の話者の発言を突き合わせる",
+        "body": "1人が『いつまで使えない』、別の人が『いつ必要』と言う形で設問が作られる。話者ごとに時刻や数字をメモしながら聞く。"
+      },
+      {
+        "title": "最後の1〜2行は各自の担当を確認する",
+        "body": "締めでは誰が何をするかが分かれて語られる。次の行動の設問は、質問された人の発言だけを拾う。"
+      }
+    ]
+  }
+}

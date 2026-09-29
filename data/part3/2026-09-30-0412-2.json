@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-09-30-0412-2",
+  "date": "2026-09-30",
+  "time": "04:12",
+  "scene": "設備トラブル｜コピー機の故障と修理手配",
+  "speakers": [
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-CA"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-GB"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "M",
+      "en": "The copier on the third floor jammed again this morning. That's the third time this month.",
+      "ja": "3階のコピー機が今朝また紙詰まりを起こしました。今月3回目です。"
+    },
+    {
+      "tag": "W",
+      "en": "I'll call the service company. Is the machine still under warranty?",
+      "ja": "保守会社に電話します。その機械はまだ保証期間中ですか。"
+    },
+    {
+      "tag": "M",
+      "en": "The warranty ran out in August, so a visit will cost about two hundred dollars.",
+      "ja": "保証は8月で切れたので、来てもらうと約200ドルかかります。"
+    },
+    {
+      "tag": "W",
+      "en": "That's steep. A new machine costs eight hundred, and this one keeps breaking down.",
+      "ja": "高いですね。新品は800ドルですし、これは故障ばかりしています。"
+    },
+    {
+      "tag": "M",
+      "en": "True, but the budget for equipment doesn't reopen until next quarter.",
+      "ja": "確かに。ただ、備品予算は来四半期まで使えません。"
+    },
+    {
+      "tag": "W",
+      "en": "Then let's have it repaired for now. Could you print the urgent contracts on the second floor until then?",
+      "ja": "それなら当面は修理してもらいましょう。それまで、急ぎの契約書は2階で印刷してもらえますか。"
+    },
+    {
+      "tag": "M",
+      "en": "Sure. I'll also let the team know so nobody waits in line at the broken one.",
+      "ja": "もちろんです。壊れた機械の前で誰も待たないよう、チームにも知らせておきます。"
+    },
+    {
+      "tag": "W",
+      "en": "Good idea. I'll ask the technician to come by Wednesday and go over the whole machine.",
+      "ja": "いい考えですね。水曜に技術者に来てもらい、機械全体を点検してもらうよう頼みます。"
+    },
+    {
+      "tag": "M",
+      "en": "And if he says it can't be fixed?",
+      "ja": "もし直せないと言われたらどうしますか。"
+    },
+    {
+      "tag": "W",
+      "en": "Then I'll put together a purchase request and send it to finance.",
+      "ja": "その場合は購入申請書をまとめて、経理へ送ります。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "Why does the woman say the repair cost is steep?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The warranty covers only labor",
+          "ja": "保証は作業費しか対象にしない"
+        },
+        {
+          "key": "B",
+          "text": "A new machine costs less",
+          "ja": "新品のほうが安い"
+        },
+        {
+          "key": "C",
+          "text": "The machine keeps breaking down",
+          "ja": "機械が故障を繰り返している"
+        },
+        {
+          "key": "D",
+          "text": "The technician charges by the hour",
+          "ja": "技術者は時間制で請求する"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "男性が保証切れで約200ドルかかると述べ、女性は That's steep と反応したうえで、新品は800ドルなのにこの機械は故障ばかりだと続けている。つまり高額に感じる理由は、費用に見合うほど直せていない点にある。新品が安いとは言っていない。",
+      "tip": "感想の一言（That's steep）の後ろに理由が続く。感想そのものより、その直後の文を根拠にする。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the man mean when he says, \"the budget for equipment doesn't reopen until next quarter\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "He wants to postpone the repair",
+          "ja": "修理を先延ばししたい"
+        },
+        {
+          "key": "B",
+          "text": "He thinks a new machine is unnecessary",
+          "ja": "新品は不要だと考えている"
+        },
+        {
+          "key": "C",
+          "text": "He cannot buy a new machine right away",
+          "ja": "すぐには新品を買えない"
+        },
+        {
+          "key": "D",
+          "text": "He plans to ask for a larger budget",
+          "ja": "予算の増額を求めるつもりだ"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "女性が新品は800ドルだと言ったのに対し、男性は True, but と受けてこの発言をしている。買い替えに賛成しつつも、予算が使えるのは来四半期からなので今は買えない、という意図である。修理を遅らせたいわけではなく、女性も直ちに修理を選んでいる。",
+      "tip": "But の前後で立場が反転する。引用文の直前の発言に一度同意してから、制約を述べているかを確認する。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the man most likely do next?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Call the service company",
+          "ja": "保守会社に電話する"
+        },
+        {
+          "key": "B",
+          "text": "Send a purchase request to finance",
+          "ja": "経理に購入申請を送る"
+        },
+        {
+          "key": "C",
+          "text": "Take the copier to the second floor",
+          "ja": "コピー機を2階へ運ぶ"
+        },
+        {
+          "key": "D",
+          "text": "Tell his team to use another printer",
+          "ja": "チームに別の印刷機を使うよう伝える"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        6
+      ],
+      "explanation": "女性は2階で急ぎの契約書を印刷するよう頼み、男性は Sure と応じてチームにも知らせると言っている。したがって次にすることはチームへの周知である。保守会社への電話と購入申請は女性の行動である。",
+      "tip": "誰に何を頼まれ、誰が引き受けたかを追う。依頼の直後の Sure の後に続く内容が、その人の次の行動になる。"
+    }
+  ],
+  "glossary": {
+    "jammed": {
+      "lemma": "jam",
+      "pos": "動",
+      "ja": "詰まる",
+      "note": "paper jam は紙詰まり",
+      "example": {
+        "en": "The printer jammed just before the meeting started.",
+        "ja": "会議が始まる直前にプリンターが紙詰まりを起こした。"
+      }
+    },
+    "ran out": {
+      "lemma": "run out",
+      "pos": "熟",
+      "ja": "切れる、なくなる",
+      "note": "期限や在庫が尽きること。expire の言い換え",
+      "example": {
+        "en": "Our supply of toner will run out by the end of this week.",
+        "ja": "トナーの在庫は今週末までになくなります。"
+      }
+    },
+    "under warranty": {
+      "lemma": "under warranty",
+      "pos": "熟",
+      "ja": "保証期間中の",
+      "note": "in warranty とも言う",
+      "example": {
+        "en": "Repairs are free while the product is still under warranty.",
+        "ja": "製品が保証期間中であれば、修理は無料です。"
+      }
+    },
+    "that's steep": {
+      "lemma": "steep",
+      "pos": "形",
+      "ja": "（値段が）高い",
+      "note": "本来は「急な」。価格が高いという口語",
+      "example": {
+        "en": "The hotel's rates were a bit steep for our budget.",
+        "ja": "そのホテルの料金は予算に対してやや高かった。"
+      }
+    },
+    "breaking down": {
+      "lemma": "break down",
+      "pos": "熟",
+      "ja": "故障する",
+      "note": "選択肢では malfunction などに置き換わる",
+      "example": {
+        "en": "If the elevator breaks down, please use the stairs.",
+        "ja": "エレベーターが故障したら、階段を使ってください。"
+      }
+    },
+    "doesn't reopen": {
+      "lemma": "reopen",
+      "pos": "動",
+      "ja": "再開する",
+      "note": "budget が再び使えるようになる",
+      "example": {
+        "en": "The museum will reopen after the renovation is complete.",
+        "ja": "博物館は改装が終われば再開する予定です。"
+      }
+    },
+    "for now": {
+      "lemma": "for now",
+      "pos": "熟",
+      "ja": "当面は、とりあえず",
+      "note": "temporarily の言い換え",
+      "example": {
+        "en": "Let's keep the old schedule for now and revise it later.",
+        "ja": "当面は古い日程のままにして、後で見直しましょう。"
+      }
+    },
+    "waits in line": {
+      "lemma": "wait in line",
+      "pos": "熟",
+      "ja": "列に並んで待つ",
+      "note": "queue の言い換え",
+      "example": {
+        "en": "Customers had to wait in line for nearly an hour.",
+        "ja": "客は1時間近く列に並んで待たねばならなかった。"
+      }
+    },
+    "go over": {
+      "lemma": "go over",
+      "pos": "熟",
+      "ja": "点検する、見直す",
+      "note": "check、examine の言い換え",
+      "example": {
+        "en": "Please go over the contract carefully before you sign it.",
+        "ja": "署名する前に契約書をよく見直してください。"
+      }
+    },
+    "put together": {
+      "lemma": "put together",
+      "pos": "熟",
+      "ja": "まとめる、作成する",
+      "note": "prepare の言い換え",
+      "example": {
+        "en": "She put together a proposal for the new branch.",
+        "ja": "彼女は新支店の企画書をまとめた。"
+      }
+    },
+    "purchase request": {
+      "lemma": "purchase request",
+      "pos": "熟",
+      "ja": "購入申請書",
+      "note": "経理・総務への社内手続き",
+      "example": {
+        "en": "Every purchase request needs a manager's signature.",
+        "ja": "購入申請書にはすべて上司の署名が必要です。"
+      }
+    },
+    "warranty": {
+      "lemma": "warranty",
+      "pos": "名",
+      "ja": "保証",
+      "note": "guarantee と近い",
+      "example": {
+        "en": "The laptop comes with a two-year warranty.",
+        "ja": "そのノートパソコンには2年間の保証が付いている。"
+      }
+    }
+  },
+  "point": {
+    "flow": "問題の発生 → 保証と費用の確認 → 予算による買い替えの見送り → 修理と当面の代替 → 不調時の次の手",
+    "items": [
+      {
+        "title": "問題型の会話は「費用→制約→代替」の順に進む",
+        "body": "問題が出ると、次に費用、その次に予算などの制約、最後に代替案が来る。聞く前にこの順を頭に置くと、設問の順序も予想できる。"
+      },
+      {
+        "title": "But の前後で立場が入れ替わる",
+        "body": "Yes, but ... の形は、前半で同意し後半で制約や本音を述べる。意図を問う設問は But の後ろが本題で、前半は前提にすぎない。"
+      },
+      {
+        "title": "依頼を受けた人が次の行動を担う",
+        "body": "『Could you ...?』に Sure と返した人が、次の行動の主語になる。依頼した側の行動と混ざる選択肢に注意する。"
+      }
+    ]
+  }
+}
