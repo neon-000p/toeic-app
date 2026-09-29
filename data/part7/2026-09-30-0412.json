@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-09-30-0412",
+  "date": "2026-09-30",
+  "time": "04:12",
+  "createdAt": "2026-09-30T04:12:00+09:00",
+  "sample": false,
+  "format": "single",
+  "scene": "手紙｜サービス契約の更新と料金改定の案内",
+  "intro": "Questions 1-4 refer to the following letter.",
+  "docs": [
+    {
+      "docType": "letter",
+      "label": "手紙",
+      "header": [
+        {
+          "label": "",
+          "text": "12 October"
+        },
+        {
+          "label": "",
+          "text": "Ms. Naomi Bell, Bell Design Studio, 48 Ferry Lane"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Thank you for choosing Sunrise Beverage Supply to provide coffee and tea for your office over the past two years.",
+              "ja": "この2年間、オフィスのコーヒーと紅茶の供給にサンライズ飲料サプライをお選びいただき、ありがとうございます。"
+            },
+            {
+              "en": "Your current service agreement is due to expire on 30 November.",
+              "ja": "現在のサービス契約は11月30日に期限を迎えます。",
+              "pos": 1
+            },
+            {
+              "en": "We are writing to let you know about some changes that will take effect when you renew.",
+              "ja": "更新される際に始まるいくつかの変更についてお知らせするため、この手紙を書いています。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Beginning on 1 December, the monthly fee for the Standard Plan will rise from $180 to $195 because of higher shipping costs.",
+              "ja": "12月1日から、スタンダードプランの月額料金は、配送費の上昇により180ドルから195ドルに上がります。",
+              "pos": 2
+            },
+            {
+              "en": "However, customers who renew before 15 November will keep the current rate for another twelve months.",
+              "ja": "ただし、11月15日より前に更新されたお客様は、さらに12か月間は現在の料金のままです。",
+              "pos": 3
+            },
+            {
+              "en": "Deliveries will also move from Tuesday to Thursday mornings so that our drivers can reach more customers on each route.",
+              "ja": "また、ドライバーが1つの配送ルートでより多くのお客様を回れるよう、配達は火曜から木曜の午前に移ります。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "To renew, simply sign the enclosed form and return it in the prepaid envelope.",
+              "ja": "更新するには、同封の用紙に署名し、料金前納の封筒で返送してください。",
+              "pos": 4
+            },
+            {
+              "en": "If you would like to switch to the Premium Plan, which includes fresh milk and snacks, please call our customer team.",
+              "ja": "新鮮な牛乳とお菓子が含まれるプレミアムプランへの変更をご希望の場合は、カスタマーチームまでお電話ください。"
+            },
+            {
+              "en": "We look forward to serving you for another year.",
+              "ja": "今後も1年間、お客様のお役に立てることを楽しみにしております。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the purpose of the letter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To explain the terms for renewing a contract",
+          "ja": "契約を更新する際の条件を説明すること"
+        },
+        {
+          "key": "B",
+          "text": "To introduce a new product line",
+          "ja": "新しい商品ラインを紹介すること"
+        },
+        {
+          "key": "C",
+          "text": "To apologize for a delivery error",
+          "ja": "配達の誤りをわびること"
+        },
+        {
+          "key": "D",
+          "text": "To request feedback about a service",
+          "ja": "サービスへの意見を求めること"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 1
+        },
+        {
+          "d": 0,
+          "p": 0,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "第1段落で、現在のサービス契約が11月30日に期限を迎えること、更新の際に始まる変更を知らせるために書いていることが述べられている。したがって目的は、契約更新の条件の説明である。第3段落のプレミアムプランは補足の案内で、新商品の紹介が目的ではない。",
+      "tip": "手紙の目的は冒頭の1〜2文に出る。We are writing to ... の直後が用件になる。"
+    },
+    {
+      "id": "q2",
+      "type": "insert",
+      "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "insert": "This is the first increase since we began providing the service in 2021.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "[1]",
+          "ja": "1の位置"
+        },
+        {
+          "key": "B",
+          "text": "[2]",
+          "ja": "2の位置"
+        },
+        {
+          "key": "C",
+          "text": "[3]",
+          "ja": "3の位置"
+        },
+        {
+          "key": "D",
+          "text": "[4]",
+          "ja": "4の位置"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 0
+        },
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "挿入する文の This は、直前に値上げの話があることを示す。[2] の前の文で月額料金が上がると述べられ、後ろの文は However で「早く更新すれば料金は据え置き」と続く。値上げを受け、逆接の However につながる [2] が最も自然である。[1] は契約の期限の話で、This が指すものがない。",
+      "tip": "挿入文の This / That / Such は、直前の文の内容を指す。指す先になる文を探し、後ろの文とのつながりも確認する。"
+    },
+    {
+      "id": "q3",
+      "type": "detail",
+      "prompt": "According to the letter, what is an advantage of renewing before 15 November?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fresh milk will be delivered free of charge",
+          "ja": "新鮮な牛乳が無料で届く"
+        },
+        {
+          "key": "B",
+          "text": "The delivery day will stay on Tuesday",
+          "ja": "配達日が火曜のままになる"
+        },
+        {
+          "key": "C",
+          "text": "The agreement will be extended for two years",
+          "ja": "契約が2年間延長される"
+        },
+        {
+          "key": "D",
+          "text": "The monthly price will not change for a year",
+          "ja": "月額料金が1年間変わらない"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第2段落に、11月15日より前に更新した客は keep the current rate for another twelve months とある。これは「1年間は料金が変わらない」という言い換えである。配達日の変更は全顧客に適用され、更新時期とは関係がない。牛乳はプレミアムプランの内容である。",
+      "tip": "日付や条件が設問に出たら、その語（before 15 November）を本文で探す。正解は本文の語を言い換えている。"
+    },
+    {
+      "id": "q4",
+      "type": "infer",
+      "prompt": "What is implied about the Standard Plan?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It will be discontinued in December",
+          "ja": "12月に終了する"
+        },
+        {
+          "key": "B",
+          "text": "It costs $195 for early renewals",
+          "ja": "早期更新でも195ドルかかる"
+        },
+        {
+          "key": "C",
+          "text": "It does not include fresh milk or snacks",
+          "ja": "牛乳やお菓子は含まれない"
+        },
+        {
+          "key": "D",
+          "text": "It cannot be renewed by mail",
+          "ja": "郵送では更新できない"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 2,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第3段落で、プレミアムプランには fresh milk and snacks が含まれると述べている。そのため、スタンダードプランにはそれらが含まれないと推測できる。195ドルは12月1日以降の通常料金で、早期に更新すれば現行の180ドルが続く。郵送での更新は第3段落で認められている。",
+      "tip": "推測問題は、本文の比較や対比（Premium Plan の内容）から、書かれていない側を考える。数字は誰に適用されるかを確かめる。"
+    }
+  ],
+  "glossary": {
+    "service agreement": {
+      "lemma": "service agreement",
+      "pos": "熟",
+      "ja": "サービス契約",
+      "note": "contract の言い換え",
+      "example": {
+        "en": "Please read the service agreement carefully before signing.",
+        "ja": "署名する前にサービス契約書をよくお読みください。"
+      }
+    },
+    "due to expire": {
+      "lemma": "be due to expire",
+      "pos": "熟",
+      "ja": "期限を迎える予定である",
+      "note": "本文の expire は「期限切れになる」",
+      "example": {
+        "en": "Our warranty is due to expire at the end of June.",
+        "ja": "当社の保証は6月末で期限を迎えます。"
+      }
+    },
+    "take effect": {
+      "lemma": "take effect",
+      "pos": "熟",
+      "ja": "実施される、効力が生じる",
+      "note": "",
+      "example": {
+        "en": "The new dress code will take effect on Monday.",
+        "ja": "新しい服装規定は月曜日から実施されます。"
+      }
+    },
+    "monthly fee": {
+      "lemma": "monthly fee",
+      "pos": "熟",
+      "ja": "月額料金",
+      "note": "",
+      "example": {
+        "en": "The monthly fee includes maintenance and technical support.",
+        "ja": "月額料金には保守と技術サポートが含まれます。"
+      }
+    },
+    "keep the current rate": {
+      "lemma": "keep the current rate",
+      "pos": "熟",
+      "ja": "現行の料金を維持する",
+      "note": "rate は「料金・料率」",
+      "example": {
+        "en": "Members who join now will keep the current rate for a year.",
+        "ja": "今入会する会員は、1年間現行の料金が続きます。"
+      }
+    },
+    "shipping costs": {
+      "lemma": "shipping costs",
+      "pos": "熟",
+      "ja": "配送費",
+      "note": "",
+      "example": {
+        "en": "Higher shipping costs forced the shop to raise its prices.",
+        "ja": "配送費の上昇により、その店は値上げに踏み切った。"
+      }
+    },
+    "enclosed": {
+      "lemma": "enclosed",
+      "pos": "形",
+      "ja": "同封の",
+      "note": "enclose（同封する）の過去分詞",
+      "example": {
+        "en": "Please complete the enclosed survey and mail it back.",
+        "ja": "同封のアンケートに記入して返送してください。"
+      }
+    },
+    "prepaid envelope": {
+      "lemma": "prepaid envelope",
+      "pos": "熟",
+      "ja": "料金前納の封筒",
+      "note": "返信用に切手代が済んでいる封筒",
+      "example": {
+        "en": "A prepaid envelope is included for your reply.",
+        "ja": "ご返信用に、料金前納の封筒を同封しています。"
+      }
+    },
+    "switch to": {
+      "lemma": "switch to",
+      "pos": "熟",
+      "ja": "〜に切り替える",
+      "note": "change to と近い意味",
+      "example": {
+        "en": "We plan to switch to a cheaper supplier next quarter.",
+        "ja": "当社は来四半期に、より安い納入業者へ切り替える予定です。"
+      }
+    },
+    "look forward to": {
+      "lemma": "look forward to",
+      "pos": "熟",
+      "ja": "〜を楽しみにする",
+      "note": "後ろは名詞か動名詞",
+      "example": {
+        "en": "We look forward to hearing from you soon.",
+        "ja": "近いうちにご連絡をいただけることを楽しみにしております。"
+      }
+    }
+  },
+  "point": {
+    "lead": "設問を先に読み、根拠になる位置を本文から探す",
+    "items": [
+      {
+        "title": "手紙の目的は冒頭で決まる",
+        "body": "用件は1〜2文で述べられる。We are writing to ... を探して目的問題を先に片づけ、残りの設問は本文の順に進める。"
+      },
+      {
+        "title": "挿入文は代名詞と接続語を手がかりにする",
+        "body": "This や However を含む文は、前後の文とのつながりが強い。指す先になる文を見つけ、次の文の接続語と矛盾しない位置を選ぶ。"
+      },
+      {
+        "title": "条件つきの数字は誰に当てはまるかを確認する",
+        "body": "値上げ後の料金と据え置きの料金のように、数字が2つ出たら、どの条件の人に適用されるかを本文で確かめる。誤答は数字と対象を入れ替えて作られる。"
+      }
+    ]
+  }
+}

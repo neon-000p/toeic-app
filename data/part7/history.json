@@ -1,15 +1,36 @@
 {
   "schemaVersion": 1,
   "type": "part7-history",
-  "updatedAt": "2026-09-27T04:01:00+09:00",
+  "updatedAt": "2026-09-30T04:50:00+09:00",
   "items": [
+    {
+      "id": "2026-09-30-0412",
+      "date": "2026-09-30",
+      "scene": "手紙｜サービス契約の更新と料金改定の案内",
+      "format": "single",
+      "docTypes": [
+        "letter"
+      ],
+      "types": [
+        "gist",
+        "insert",
+        "detail",
+        "infer"
+      ]
+    },
     {
       "id": "2026-09-27-0401",
       "date": "2026-09-27",
       "scene": "掲示｜駐車場の舗装工事のお知らせ",
       "format": "single",
-      "docTypes": ["notice"],
-      "types": ["gist", "detail", "infer"]
+      "docTypes": [
+        "notice"
+      ],
+      "types": [
+        "gist",
+        "detail",
+        "infer"
+      ]
     },
     {
       "id": "2026-09-21-0957-5",
