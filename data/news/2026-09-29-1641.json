@@ -442,5 +442,22 @@
       "url": "https://gcaptain.com/ports-giant-dp-world-redraws-hormuz-logistics-with-truck-bet/",
       "date": "2026-09-28"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-29-1641/00.mp3",
+      "audio/2026-09-29-1641/01.mp3",
+      "audio/2026-09-29-1641/02.mp3",
+      "audio/2026-09-29-1641/03.mp3",
+      "audio/2026-09-29-1641/04.mp3",
+      "audio/2026-09-29-1641/05.mp3",
+      "audio/2026-09-29-1641/06.mp3",
+      "audio/2026-09-29-1641/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 199272,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-29T07:43:07.754Z",
+    "trimmed": true
+  }
 }
