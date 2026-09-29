@@ -1,14 +1,31 @@
 {
   "schemaVersion": 1,
   "type": "part6-history",
-  "updatedAt": "2026-09-27T04:01:00+09:00",
+  "updatedAt": "2026-09-30T04:40:00+09:00",
   "items": [
+    {
+      "id": "2026-09-30-0412",
+      "date": "2026-09-30",
+      "scene": "説明書｜複合機のセキュア印刷カードの登録",
+      "docType": "instructions",
+      "types": [
+        "verb",
+        "conj",
+        "sentence",
+        "vocab"
+      ]
+    },
     {
       "id": "2026-09-27-0401",
       "date": "2026-09-27",
       "scene": "社内メモ｜会議室予約ルールの変更",
       "docType": "memo",
-      "types": ["verb", "sentence", "conj", "vocab"]
+      "types": [
+        "verb",
+        "sentence",
+        "conj",
+        "vocab"
+      ]
     },
     {
       "id": "2026-09-18-1637-5",

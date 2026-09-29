@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-09-30-0412",
+  "date": "2026-09-30",
+  "time": "04:12",
+  "createdAt": "2026-09-30T04:12:00+09:00",
+  "sample": false,
+  "docType": "instructions",
+  "scene": "説明書｜複合機のセキュア印刷カードの登録",
+  "intro": "Questions 1-4 refer to the following instructions.",
+  "header": [
+    {
+      "label": "",
+      "text": "Using Secure Print at Corbin Office Park"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "To use the secure printing feature, you must first register your employee card at any printer in the building.",
+          "ja": "セキュア印刷機能を使うには、まず建物内のどのプリンターでも構いませんので、社員カードを登録する必要があります。"
+        },
+        {
+          "en": "Hold the card against the reader on the side panel until the screen ------- your name.",
+          "ja": "画面にあなたの名前が表示されるまで、カードを側面パネルのリーダーにかざしてください。",
+          "q": 1
+        },
+        {
+          "en": "The registration takes only a few seconds and needs to be done just once.",
+          "ja": "登録は数秒で終わり、1回行えば十分です。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "After that, send any document to the printer as usual from your computer.",
+          "ja": "その後は、いつものようにパソコンから書類をプリンターへ送信してください。"
+        },
+        {
+          "en": "------- the pages will not come out until you touch your card to the reader again.",
+          "ja": "ただし、もう一度カードをリーダーにかざすまで、用紙は出てきません。",
+          "q": 2
+        },
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 3
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "If a job is not released within twelve hours, it will be deleted automatically.",
+          "ja": "12時間以内に印刷を実行しなかった場合、そのジョブは自動的に削除されます。"
+        },
+        {
+          "en": "A replacement card is available from the security desk, and it must be ------- before you can print with it.",
+          "ja": "交換用カードは警備窓口で受け取れます。印刷に使う前に、そのカードを登録しなければなりません。",
+          "q": 4
+        },
+        {
+          "en": "Questions about the system can be sent to the IT help desk at extension 2210.",
+          "ja": "このシステムについてのご質問は、内線2210のITヘルプデスクへお寄せください。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "verb",
+      "choices": [
+        {
+          "key": "A",
+          "text": "display",
+          "ja": "表示する"
+        },
+        {
+          "key": "B",
+          "text": "displays",
+          "ja": "表示する（三単現）"
+        },
+        {
+          "key": "C",
+          "text": "displayed",
+          "ja": "表示した"
+        },
+        {
+          "key": "D",
+          "text": "displaying",
+          "ja": "表示している"
+        }
+      ],
+      "answer": "B",
+      "explanation": "until の節は時を表すので、未来のことでも現在形で書く。主語の the screen は三人称単数なので、三単現の displays が正解。原形の display は主語と一致せず、displayed は過去の話になる。",
+      "tip": "動詞の形は主語と時を確かめる。until / when / if の節は、指示文では現在形になる。"
+    },
+    {
+      "id": "q2",
+      "type": "conj",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Therefore",
+          "ja": "したがって"
+        },
+        {
+          "key": "B",
+          "text": "In addition",
+          "ja": "さらに"
+        },
+        {
+          "key": "C",
+          "text": "For example",
+          "ja": "たとえば"
+        },
+        {
+          "key": "D",
+          "text": "However",
+          "ja": "ただし"
+        }
+      ],
+      "answer": "D",
+      "explanation": "前の文は「いつものように書類を送信する」で、カードは要らないという流れ。空所の文は「カードをかざすまで用紙は出ない」と条件を加えるので、逆接の However が正解。Therefore は結果を導く語で、前の文から結果として続かない。空所の文だけでは決まらず、前の文と対比して初めて決まる。",
+      "tip": "接続副詞は、前の文と空所の文の関係（逆接・追加・因果）を先に決める。空所の文だけで選ばず、直前の文に戻る。"
+    },
+    {
+      "id": "q3",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "This extra step prevents confidential pages from being collected by the wrong person.",
+          "ja": "この一手間により、機密書類が別の人に持ち去られるのを防げます。"
+        },
+        {
+          "key": "B",
+          "text": "Please tap your card again if the reader does not respond the first time.",
+          "ja": "リーダーが最初に反応しないときは、もう一度カードをかざしてください。"
+        },
+        {
+          "key": "C",
+          "text": "Employees who lose their cards should contact the security desk on the first floor.",
+          "ja": "カードを紛失した従業員は、1階の警備窓口に連絡してください。"
+        },
+        {
+          "key": "D",
+          "text": "The new printers also allow you to scan pages directly to your e-mail.",
+          "ja": "新しいプリンターでは、書類をメールへ直接スキャンすることもできます。"
+        }
+      ],
+      "answer": "A",
+      "explanation": "前の文は「もう一度カードをかざすまで用紙が出ない」という手順で、後ろの文は「12時間以内に実行しないとジョブが削除される」という話。A の This extra step が前の手順を受け、その目的（機密保持）を述べることで両方につながる。B は登録の話で位置が合わない。C は紛失の話で、文書に出ていない前提を先に持ち込む。D は文書の目的とずれる。",
+      "tip": "一文挿入は、前の文の内容を this や that で受け、後ろの文の話題へつなぐものを選ぶ。話題が合うだけの文は、位置が合わない。"
+    },
+    {
+      "id": "q4",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "repaired",
+          "ja": "修理された"
+        },
+        {
+          "key": "B",
+          "text": "removed",
+          "ja": "取り除かれた"
+        },
+        {
+          "key": "C",
+          "text": "registered",
+          "ja": "登録された"
+        },
+        {
+          "key": "D",
+          "text": "reserved",
+          "ja": "予約された"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落で、社員カードは使う前に register する必要があると説明している。交換カードも同じ手順が要るので、registered が正解。reserved は予約の意味で、カードには使わない。第1段落の語を言い換えず繰り返す形なので、前に戻れば決まる。",
+      "tip": "語彙問題でも、文書の別の場所で使われた語が答えになることがある。空所の文で決まらなければ、前の段落に戻る。"
+    }
+  ],
+  "glossary": {
+    "secure printing": {
+      "lemma": "secure printing",
+      "pos": "熟",
+      "ja": "セキュア印刷",
+      "note": "本人がカードをかざすまで印刷しない方式",
+      "example": {
+        "en": "Secure printing keeps confidential contracts from lying in the output tray.",
+        "ja": "セキュア印刷は、機密の契約書が排出トレイに放置されるのを防ぐ。"
+      }
+    },
+    "registration": {
+      "lemma": "registration",
+      "pos": "名",
+      "ja": "登録",
+      "note": "register の名詞形",
+      "example": {
+        "en": "Online registration for the seminar closes on Friday.",
+        "ja": "セミナーのオンライン登録は金曜に締め切られる。"
+      }
+    },
+    "as usual": {
+      "lemma": "as usual",
+      "pos": "熟",
+      "ja": "いつものように",
+      "note": "",
+      "example": {
+        "en": "The meeting will start at nine, as usual.",
+        "ja": "会議はいつものように9時に始まります。"
+      }
+    },
+    "come out": {
+      "lemma": "come out",
+      "pos": "熟",
+      "ja": "（印刷物などが）出てくる",
+      "note": "本文では用紙が排出される意味",
+      "example": {
+        "en": "The printed forms come out on the left side of the machine.",
+        "ja": "印刷された用紙は機械の左側から出てきます。"
+      }
+    },
+    "released": {
+      "lemma": "release",
+      "pos": "動",
+      "ja": "（印刷などを）実行する、解放する",
+      "note": "本文では印刷ジョブを実行に移す意味",
+      "example": {
+        "en": "Your order will be released for shipping once payment is confirmed.",
+        "ja": "支払いが確認されると、注文は出荷の手配に回されます。"
+      }
+    },
+    "deleted automatically": {
+      "lemma": "delete automatically",
+      "pos": "熟",
+      "ja": "自動的に削除される",
+      "note": "",
+      "example": {
+        "en": "Old files are deleted automatically after ninety days.",
+        "ja": "古いファイルは90日後に自動的に削除されます。"
+      }
+    },
+    "replacement card": {
+      "lemma": "replacement card",
+      "pos": "熟",
+      "ja": "交換用カード",
+      "note": "紛失・破損時に再発行するカード",
+      "example": {
+        "en": "Please apply for a replacement card at the front desk.",
+        "ja": "交換用カードは受付で申請してください。"
+      }
+    },
+    "security desk": {
+      "lemma": "security desk",
+      "pos": "熟",
+      "ja": "警備窓口",
+      "note": "建物の入口などにある窓口",
+      "example": {
+        "en": "Lost items are kept at the security desk for one week.",
+        "ja": "落とし物は警備窓口で1週間保管されます。"
+      }
+    },
+    "help desk": {
+      "lemma": "help desk",
+      "pos": "熟",
+      "ja": "ヘルプデスク",
+      "note": "社内システムなどの問い合わせ窓口",
+      "example": {
+        "en": "Please contact the help desk if you cannot log in.",
+        "ja": "ログインできない場合はヘルプデスクへ連絡してください。"
+      }
+    },
+    "extension": {
+      "lemma": "extension",
+      "pos": "名",
+      "ja": "内線番号",
+      "note": "本文では電話の内線の意味。期限の延長にも使う",
+      "example": {
+        "en": "You can reach the sales team at extension 305.",
+        "ja": "営業チームには内線305でつながります。"
+      }
+    }
+  },
+  "point": {
+    "lead": "空所の文で決まらないときは、前の文や前の段落に戻る",
+    "items": [
+      {
+        "title": "接続副詞は前の文との関係で決める",
+        "body": "逆接・追加・因果のどれかを、直前の文と空所の文を比べて先に決める。指示文の「いつも通り」のあとに条件が来れば逆接、というように流れで判断する。"
+      },
+      {
+        "title": "一文挿入は前後の両方につながるものを選ぶ",
+        "body": "前の文を this や that で受け、後ろの文の話題へ橋渡しする文が正解になる。話題が合うだけの選択肢は、位置が合わないものとして消す。"
+      },
+      {
+        "title": "語彙問題も文書の別の場所に手がかりがある",
+        "body": "第1段落で使われた語が、後ろで言い換えなしに繰り返されることがある。空所の文で決まらなければ、前の段落の同じ場面を探す。"
+      }
+    ]
+  }
+}
