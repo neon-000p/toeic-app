@@ -1,14 +1,59 @@
 {
   "schemaVersion": 1,
   "type": "part5-history",
-  "updatedAt": "2026-09-27T04:01:00+09:00",
+  "updatedAt": "2026-09-30T04:30:00+09:00",
   "items": [
+    {
+      "id": "2026-09-30-0412",
+      "date": "2026-09-30",
+      "focus": "文法7・語彙3",
+      "types": [
+        "form",
+        "vocab",
+        "verb",
+        "prep",
+        "form",
+        "conj",
+        "vocab",
+        "verbal",
+        "comp",
+        "vocab"
+      ],
+      "topics": [
+        "所有格のあとの名詞",
+        "last week と過去の受動態",
+        "since と現在完了",
+        "be 動詞と過去分詞の間の副詞",
+        "条件を表す as long as",
+        "be required to 不定詞",
+        "最上級 the least"
+      ]
+    },
     {
       "id": "2026-09-27-0401",
       "date": "2026-09-27",
       "focus": "文法7・語彙3",
-      "types": ["form", "vocab", "verb", "prep", "vocab", "form", "conj", "verbal", "vocab", "pron"],
-      "topics": ["形容詞の後の名詞（目的語）", "each ofの単数一致", "betweenとamongの区別", "名詞の前の形容詞", "譲歩の接続詞", "前置詞の後の動名詞", "所有格の関係代名詞（whose）"]
+      "types": [
+        "form",
+        "vocab",
+        "verb",
+        "prep",
+        "vocab",
+        "form",
+        "conj",
+        "verbal",
+        "vocab",
+        "pron"
+      ],
+      "topics": [
+        "形容詞の後の名詞（目的語）",
+        "each ofの単数一致",
+        "betweenとamongの区別",
+        "名詞の前の形容詞",
+        "譲歩の接続詞",
+        "前置詞の後の動名詞",
+        "所有格の関係代名詞（whose）"
+      ]
     },
     {
       "id": "2026-09-18-1258-5",

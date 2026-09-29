@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-09-30-0412",
+  "date": "2026-09-30",
+  "time": "04:12",
+  "createdAt": "2026-09-30T04:12:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "Ms. Okada's ------- to the marketing team has been greatly appreciated by everyone in the department this quarter.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "contribute",
+          "ja": "（動）貢献する"
+        },
+        {
+          "key": "B",
+          "text": "contribution",
+          "ja": "（名）貢献"
+        },
+        {
+          "key": "C",
+          "text": "contributive",
+          "ja": "（形）貢献する"
+        },
+        {
+          "key": "D",
+          "text": "contributively",
+          "ja": "（副）貢献して"
+        }
+      ],
+      "answer": "B",
+      "ja": "岡田さんのマーケティングチームへの貢献は、今四半期、部署の全員から大いに感謝されている。",
+      "explanation": "空所は所有格 Ms. Okada's の直後にあり、後ろに to the marketing team が続く。所有格のあとには名詞が入り、文の主語になるので、名詞の contribution が正解。動詞 contribute は所有格のあとに置けず、形容詞・副詞も主語にならない。",
+      "tip": "選択肢が同じ語幹で語尾だけ違えば品詞問題。所有格（〜's, their）の直後は名詞が入る。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "prompt": "Candidates must ------- two letters of recommendation with their application, which is due no later than the first of March.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "enclose",
+          "ja": "同封する"
+        },
+        {
+          "key": "B",
+          "text": "ensure",
+          "ja": "確実にする"
+        },
+        {
+          "key": "C",
+          "text": "endure",
+          "ja": "耐える"
+        },
+        {
+          "key": "D",
+          "text": "engage",
+          "ja": "従事させる"
+        }
+      ],
+      "answer": "A",
+      "ja": "応募者は、3月1日までに提出期限を迎える申込書に、推薦状2通を同封しなければならない。",
+      "explanation": "「推薦状を申込書に添える」という意味になるのは enclose。ensure は「〜を確実にする」で、目的語に letters を取ると意味が通らない。engage は人を雇う、関わらせるという意味で、書類には使わない。",
+      "tip": "語彙問題は、目的語と前置詞（with their application）から動作を絞る。書類を付ける動作は enclose / attach / include。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "prompt": "The new scanners ------- to all branch offices last week, so staff can now digitize their paper records.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "delivered",
+          "ja": "届けた"
+        },
+        {
+          "key": "B",
+          "text": "will deliver",
+          "ja": "届けるだろう"
+        },
+        {
+          "key": "C",
+          "text": "were delivered",
+          "ja": "届けられた"
+        },
+        {
+          "key": "D",
+          "text": "have delivered",
+          "ja": "届けてきた"
+        }
+      ],
+      "answer": "C",
+      "ja": "新しいスキャナーは先週すべての支店に届けられたので、職員は今では紙の記録をデジタル化できる。",
+      "explanation": "last week は過去の一点を示すので、未来形の will deliver と現在完了の have delivered は合わない。また主語 scanners は「届けられる」側なので、受動態の were delivered が正解。delivered は能動態で、目的語が無いため成り立たない。",
+      "tip": "動詞の形は、時を表す語句（last week）と、主語が「する側かされる側か」の両方で決める。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "prompt": "Mr. Chen has worked at Harborview Design ------- 2015 and currently leads the team in charge of client accounts.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "for",
+          "ja": "〜の間"
+        },
+        {
+          "key": "B",
+          "text": "during",
+          "ja": "〜の間に"
+        },
+        {
+          "key": "C",
+          "text": "from",
+          "ja": "〜から"
+        },
+        {
+          "key": "D",
+          "text": "since",
+          "ja": "〜以来"
+        }
+      ],
+      "answer": "D",
+      "ja": "チェンさんは2015年からハーバービュー・デザインで働き、現在は顧客アカウントを担当するチームを率いている。",
+      "explanation": "has worked という現在完了に、2015 という過去の起点が続くので、起点を示す since が正解。for は for ten years のように期間の長さが続く。from は現在完了の継続と合わず、from 2015 to 2020 のように終点とセットで使う。",
+      "tip": "現在完了の後ろに年や月が来たら since、期間の長さが来たら for。数字が『点』か『長さ』かを見る。"
+    },
+    {
+      "id": "q5",
+      "type": "form",
+      "prompt": "The revised budget was ------- approved by the finance committee at its regular meeting on Monday morning.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "unanimous",
+          "ja": "（形）全員一致の"
+        },
+        {
+          "key": "B",
+          "text": "unanimously",
+          "ja": "（副）全員一致で"
+        },
+        {
+          "key": "C",
+          "text": "unanimity",
+          "ja": "（名）全員一致"
+        },
+        {
+          "key": "D",
+          "text": "unanimousness",
+          "ja": "（名）全会一致であること"
+        }
+      ],
+      "answer": "B",
+      "ja": "修正された予算は、月曜朝の定例会議で財務委員会により全員一致で承認された。",
+      "explanation": "was と過去分詞 approved の間に置けるのは、動詞を修飾する副詞である。したがって副詞の unanimously が正解。形容詞 unanimous は名詞を修飾するもので、受動態の間には入らない。",
+      "tip": "be 動詞と過去分詞の間の空所は副詞。選択肢に -ly の語があれば、まず候補にする。"
+    },
+    {
+      "id": "q6",
+      "type": "conj",
+      "prompt": "The store will refund your purchase ------- you return the item within thirty days and bring the original receipt.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "as long as",
+          "ja": "〜しさえすれば"
+        },
+        {
+          "key": "B",
+          "text": "even though",
+          "ja": "〜だけれども"
+        },
+        {
+          "key": "C",
+          "text": "in case of",
+          "ja": "〜の場合には"
+        },
+        {
+          "key": "D",
+          "text": "because of",
+          "ja": "〜のために"
+        }
+      ],
+      "answer": "A",
+      "ja": "30日以内に商品を返品し、レシートの原本を持参しさえすれば、店は購入代金を返金する。",
+      "explanation": "空所の後ろに you return と主語と動詞の節が続くので、接続詞が必要。返金の条件を述べる文なので、as long as が意味に合う。in case of と because of は前置詞なので節を取れない。even though は譲歩で、意味が逆になる。",
+      "tip": "空所の後ろが節なら接続詞、名詞だけなら前置詞。そのうえで、条件・譲歩・理由のどれかを文意で決める。"
+    },
+    {
+      "id": "q7",
+      "type": "vocab",
+      "prompt": "The service agreement will ------- automatically for another year unless either party gives written notice at least thirty days in advance.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "resume",
+          "ja": "再開する"
+        },
+        {
+          "key": "B",
+          "text": "recall",
+          "ja": "呼び戻す"
+        },
+        {
+          "key": "C",
+          "text": "renew",
+          "ja": "更新される"
+        },
+        {
+          "key": "D",
+          "text": "revoke",
+          "ja": "取り消す"
+        }
+      ],
+      "answer": "C",
+      "ja": "どちらか一方が少なくとも30日前までに書面で通知しない限り、サービス契約はさらに1年間自動的に更新される。",
+      "explanation": "契約が unless ... notice がない限り「自動的に続く」という流れなので、renew（更新される）が正解。resume は中断後に再開する意味で契約には合わない。revoke は取り消す意味で、文の流れと逆になる。",
+      "tip": "契約書の文では、unless の後ろの条件が空所の動詞の向きを決める。何もしなければ続く動詞は renew。"
+    },
+    {
+      "id": "q8",
+      "type": "verbal",
+      "prompt": "Employees are required ------- their identification badges at all times while inside the research facility.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "wear",
+          "ja": "着用する"
+        },
+        {
+          "key": "B",
+          "text": "wearing",
+          "ja": "着用すること"
+        },
+        {
+          "key": "C",
+          "text": "worn",
+          "ja": "着用された"
+        },
+        {
+          "key": "D",
+          "text": "to wear",
+          "ja": "着用すること"
+        }
+      ],
+      "answer": "D",
+      "ja": "従業員は、研究施設の中にいる間は常に身分証明バッジを着用しなければならない。",
+      "explanation": "be required to ... の形で、require は「人に〜することを求める」を表す。受動態の are required の後ろには to 不定詞が続くので、to wear が正解。wear の原形や wearing は、この位置に置けない。",
+      "tip": "require / allow / expect などの受動態の後ろは to 不定詞が定型。選択肢に to があれば、まず動詞の型を疑う。"
+    },
+    {
+      "id": "q9",
+      "type": "comp",
+      "prompt": "Of the three proposals, the one submitted by Delta Print is the ------- expensive and can be delivered within two weeks.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "least",
+          "ja": "最も〜でない"
+        },
+        {
+          "key": "B",
+          "text": "less",
+          "ja": "より〜でない"
+        },
+        {
+          "key": "C",
+          "text": "little",
+          "ja": "ほとんどない"
+        },
+        {
+          "key": "D",
+          "text": "fewer",
+          "ja": "より少ない"
+        }
+      ],
+      "answer": "A",
+      "ja": "3つの提案のうち、デルタ印刷が提出したものが最も費用が安く、2週間以内に納品できる。",
+      "explanation": "Of the three proposals と3つ以上の中で比べ、空所の前に the があるので最上級が必要。したがって the least expensive が正解。less は2つの比較で使い、the の後ろには置きにくい。little や fewer は形容詞 expensive を修飾できない。",
+      "tip": "Of the three（3つ以上の中で）と the が出たら最上級。比べる対象の数を確認する。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "The hotel will ------- a late fee if payment is not received by the due date shown on the invoice.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "propose",
+          "ja": "提案する"
+        },
+        {
+          "key": "B",
+          "text": "expose",
+          "ja": "さらす"
+        },
+        {
+          "key": "C",
+          "text": "impose",
+          "ja": "課す"
+        },
+        {
+          "key": "D",
+          "text": "oppose",
+          "ja": "反対する"
+        }
+      ],
+      "answer": "C",
+      "ja": "請求書に記載された支払期日までに入金がない場合、ホテルは延滞料を課す。",
+      "explanation": "a late fee（延滞料）を目的語に取り、「課す」の意味になるのは impose。propose は提案する、oppose は反対する、expose はさらすで、いずれも料金を目的語にすると意味が通らない。",
+      "tip": "語尾が似た4語（-pose）が並ぶ問題は、目的語との相性で決める。fee や penalty と組むのは impose。"
+    }
+  ],
+  "glossary": {
+    "letters of recommendation": {
+      "lemma": "letter of recommendation",
+      "pos": "熟",
+      "ja": "推薦状",
+      "note": "応募書類の定番",
+      "example": {
+        "en": "Please ask your former manager to write a letter of recommendation.",
+        "ja": "前の上司に推薦状を書いてもらってください。"
+      }
+    },
+    "no later than": {
+      "lemma": "no later than",
+      "pos": "熟",
+      "ja": "遅くとも〜までに",
+      "note": "by の硬い言い方。期限を示す",
+      "example": {
+        "en": "Please reply no later than Friday afternoon.",
+        "ja": "遅くとも金曜の午後までにご返信ください。"
+      }
+    },
+    "branch offices": {
+      "lemma": "branch office",
+      "pos": "熟",
+      "ja": "支店、支社",
+      "note": "head office（本社）の対義語",
+      "example": {
+        "en": "We plan to open two new branch offices in the coming year.",
+        "ja": "来年に新しい支店を2つ開く予定です。"
+      }
+    },
+    "in charge of": {
+      "lemma": "in charge of",
+      "pos": "熟",
+      "ja": "〜を担当して",
+      "note": "responsible for の言い換え",
+      "example": {
+        "en": "Ms. Reyes is in charge of the summer promotion.",
+        "ja": "レイエスさんが夏の販促を担当しています。"
+      }
+    },
+    "revised budget": {
+      "lemma": "revised budget",
+      "pos": "熟",
+      "ja": "修正予算",
+      "note": "revise は「見直して改める」",
+      "example": {
+        "en": "The revised budget includes funds for a new server.",
+        "ja": "修正予算には新しいサーバーの費用が含まれている。"
+      }
+    },
+    "original receipt": {
+      "lemma": "original receipt",
+      "pos": "熟",
+      "ja": "レシートの原本",
+      "note": "コピーではなく本物",
+      "example": {
+        "en": "Returns require the original receipt and the product packaging.",
+        "ja": "返品にはレシートの原本と製品の包装が必要です。"
+      }
+    },
+    "written notice": {
+      "lemma": "written notice",
+      "pos": "熟",
+      "ja": "書面による通知",
+      "note": "契約解除や変更の定型",
+      "example": {
+        "en": "The tenant must give written notice before moving out.",
+        "ja": "入居者は退去前に書面で通知しなければならない。"
+      }
+    },
+    "in advance": {
+      "lemma": "in advance",
+      "pos": "熟",
+      "ja": "前もって",
+      "note": "beforehand の言い換え",
+      "example": {
+        "en": "Tickets should be reserved in advance during peak season.",
+        "ja": "繁忙期にはチケットを事前に予約してください。"
+      }
+    },
+    "at all times": {
+      "lemma": "at all times",
+      "pos": "熟",
+      "ja": "常に",
+      "note": "always の言い換え",
+      "example": {
+        "en": "Visitors must be accompanied by a staff member at all times.",
+        "ja": "来訪者は常に職員が同行しなければならない。"
+      }
+    },
+    "due date": {
+      "lemma": "due date",
+      "pos": "熟",
+      "ja": "期日、支払期限",
+      "note": "invoice や課題の期限",
+      "example": {
+        "en": "Please pay the invoice before the due date to avoid a fee.",
+        "ja": "手数料を避けるため、期日前に請求書を支払ってください。"
+      }
+    },
+    "late fee": {
+      "lemma": "late fee",
+      "pos": "熟",
+      "ja": "延滞料",
+      "note": "支払いが遅れたときの追加料金",
+      "example": {
+        "en": "A late fee applies to all overdue library books.",
+        "ja": "貸出期限を過ぎた本にはすべて延滞料がかかります。"
+      }
+    },
+    "digitize": {
+      "lemma": "digitize",
+      "pos": "動",
+      "ja": "デジタル化する",
+      "note": "電子データにすること",
+      "example": {
+        "en": "The archive team will digitize old photographs this year.",
+        "ja": "資料室のチームは今年、古い写真をデジタル化します。"
+      }
+    }
+  },
+  "point": {
+    "lead": "選択肢の見た目で型を決め、次に空所の前後の語で答えを絞る",
+    "items": [
+      {
+        "title": "同じ語幹の4択は品詞問題。空所の位置で品詞が決まる",
+        "body": "所有格のあとは名詞、be 動詞と過去分詞の間は副詞のように、空所の直前直後の語が品詞を決める。意味を考える前に、位置だけで消去する。"
+      },
+      {
+        "title": "時を表す語句は動詞の形を決める",
+        "body": "last week は過去、has worked の後ろの年は since というように、時の語句が時制と前置詞を決める。主語が動作を受けるなら受動態も併せて確認する。"
+      },
+      {
+        "title": "語彙は目的語と文の流れで絞る",
+        "body": "enclose・renew・impose のように、目的語（letters / agreement / fee）とよく組む動詞が正解になる。語形が似た4語は、意味の違いを目的語との相性で見分ける。"
+      }
+    ]
+  }
+}
