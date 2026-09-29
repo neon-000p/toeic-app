@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-29-1641",
+  "date": "2026-09-29",
+  "time": "16:41",
+  "createdAt": "2026-09-29T16:41:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "DP World Turns to Trucks as Jebel Ali Trade Collapses",
+    "ja": "DPワールド、港の低迷でトラック輸送を拡大"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "DP World, a large port operator, said cargo at its Jebel Ali port has fallen about 90% since the Strait of Hormuz closed.",
+            "ja": "大手港湾運営会社のDPワールドは、ホルムズ海峡が封鎖されて以来、ジェベルアリ港の貨物取扱量が約90%減ったと述べた。"
+          },
+          {
+            "en": "The drop is costing the company an estimated $90 million in profit every month.",
+            "ja": "この落ち込みにより、同社は毎月約9,000万ドルの利益を失っていると推定される。"
+          },
+          {
+            "en": "To keep goods moving, it is sending more cargo by road and rail instead of by sea.",
+            "ja": "物の流れを保つため、同社は海上ではなく陸路と鉄道で運ぶ貨物を増やしている。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Trucks now carry goods from Europe to the Gulf by land, about 50 trucks a week.",
+            "ja": "現在、トラックが欧州から湾岸地域まで陸路で商品を運んでおり、その数は週に約50台だ。"
+          },
+          {
+            "en": "The company also wants to grow its truck fleet from 700 to 1,000 vehicles.",
+            "ja": "同社はまた、保有するトラックを700台から1,000台に増やしたい考えだ。"
+          },
+          {
+            "en": "These trucks would link the region to ports outside the Gulf, where ships can still operate.",
+            "ja": "これらのトラックは、船がまだ運航できる湾外の港と地域を結ぶことになる。"
+          },
+          {
+            "en": "DP World also plans to invest more in ports and trucking networks.",
+            "ja": "DPワールドは、港湾とトラック輸送網への投資もさらに増やす計画だ。"
+          },
+          {
+            "en": "The plan shows how one blocked route can force shippers to rethink their supply chains.",
+            "ja": "この計画は、1本のルートが塞がれるだけで荷主がサプライチェーンの見直しを迫られることを示している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much profit is DP World estimated to lose each month?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$9 million",
+          "ja": "900万ドル"
+        },
+        {
+          "key": "B",
+          "text": "$19 million",
+          "ja": "1,900万ドル"
+        },
+        {
+          "key": "C",
+          "text": "$90 million",
+          "ja": "9,000万ドル"
+        },
+        {
+          "key": "D",
+          "text": "$900 million",
+          "ja": "9億ドル"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落の2文目に「an estimated $90 million in profit every month」とあり、月あたりの推定損失は9,000万ドルと明記されている。(A) と (B) は桁や数字を変えた引っかけ。(D) は本文の $90 million を10倍にした誤りで、金額の桁を見落とすと選んでしまう。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "金額問題は数字の桁・単位（million / billion）まで照合する。選択肢は本文の数字を少し変えたものが並ぶので、該当文を見つけたら数字を一字ずつ確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why does DP World want more trucks?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To sell them to its customers",
+          "ja": "顧客に売るため"
+        },
+        {
+          "key": "B",
+          "text": "To carry goods to ports outside the Gulf",
+          "ja": "湾外の港へ運ぶため"
+        },
+        {
+          "key": "C",
+          "text": "To replace its ships at sea",
+          "ja": "海上の船の代わりにするため"
+        },
+        {
+          "key": "D",
+          "text": "To end its service from Europe",
+          "ja": "欧州発の輸送をやめるため"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落の3文目「These trucks would link the region to ports outside the Gulf」が根拠で、トラックは湾外の港と地域を結ぶ役割を持つ。(A) 販売する話は本文にない。(C) 船を置き換えるのではなく、船が使える湾外の港へ貨物をつなぐ補完的な手段。(D) 欧州からの陸路輸送は現在も行われており、むしろ拡大する方向。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "Why 問題は「目的」を表す表現（to do / so that / because）の近くに答えがある。指示語（These trucks）の前の文と合わせて読むと、目的が特定しやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "operator",
+      "pos": "名",
+      "ja": "運営会社、事業者",
+      "gloss": "",
+      "example": {
+        "en": "The port operator signed a new contract with the city.",
+        "ja": "その港湾運営会社は市と新たな契約を結んだ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "cargo",
+      "pos": "名",
+      "ja": "貨物、積み荷",
+      "gloss": "（＝船・鉄道・トラックなどで運ばれる荷物のこと）",
+      "example": {
+        "en": "The cargo was checked at customs before delivery.",
+        "ja": "貨物は配送前に税関で検査された。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "estimated",
+      "pos": "形",
+      "ja": "推定の、見積もりの",
+      "gloss": "",
+      "example": {
+        "en": "The estimated cost of the project is two million dollars.",
+        "ja": "そのプロジェクトの推定費用は200万ドルだ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "instead of",
+      "pos": "熟",
+      "ja": "〜の代わりに",
+      "gloss": "",
+      "example": {
+        "en": "We shipped the order by air instead of by sea.",
+        "ja": "私たちは注文品を船便ではなく航空便で送った。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "fleet",
+      "pos": "名",
+      "ja": "保有車両（船・機）の全体、車両群",
+      "gloss": "（＝会社が持つ車や船をまとめた呼び方）",
+      "example": {
+        "en": "The company added ten vans to its delivery fleet.",
+        "ja": "同社は配送用車両に10台のバンを追加した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "invest",
+      "pos": "動",
+      "ja": "投資する",
+      "gloss": "",
+      "example": {
+        "en": "We plan to invest in a new warehouse next year.",
+        "ja": "当社は来年、新しい倉庫に投資する予定だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "shippers",
+      "pos": "名",
+      "ja": "荷主、発送業者",
+      "gloss": "",
+      "example": {
+        "en": "Shippers are asking carriers for lower freight rates.",
+        "ja": "荷主は運送会社に運賃の引き下げを求めている。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "link",
+      "pos": "動",
+      "ja": "結ぶ、つなぐ",
+      "gloss": "",
+      "example": {
+        "en": "The new road will link the factory to the port.",
+        "ja": "新しい道路は工場と港を結ぶ。"
+      }
+    }
+  ],
+  "glossary": {
+    "operator": {
+      "lemma": "operator",
+      "pos": "名",
+      "ja": "運営会社",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "fallen": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": "fall の過去分詞。has fallen で現在完了"
+    },
+    "strait": {
+      "lemma": "strait",
+      "pos": "名",
+      "ja": "海峡",
+      "note": ""
+    },
+    "closed": {
+      "lemma": "close",
+      "pos": "動",
+      "ja": "閉鎖された",
+      "note": ""
+    },
+    "costing": {
+      "lemma": "cost",
+      "pos": "動",
+      "ja": "（損失を）もたらす",
+      "note": "cost の -ing 形"
+    },
+    "estimated": {
+      "lemma": "estimated",
+      "pos": "形",
+      "ja": "推定の",
+      "note": ""
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "商品、物品",
+      "note": "常に複数形"
+    },
+    "instead": {
+      "lemma": "instead",
+      "pos": "副",
+      "ja": "代わりに",
+      "note": "instead of で「〜の代わりに」"
+    },
+    "road": {
+      "lemma": "road",
+      "pos": "名",
+      "ja": "道路、陸路",
+      "note": ""
+    },
+    "rail": {
+      "lemma": "rail",
+      "pos": "名",
+      "ja": "鉄道",
+      "note": ""
+    },
+    "carry": {
+      "lemma": "carry",
+      "pos": "動",
+      "ja": "運ぶ",
+      "note": ""
+    },
+    "trucks": {
+      "lemma": "truck",
+      "pos": "名",
+      "ja": "トラック",
+      "note": ""
+    },
+    "grow": {
+      "lemma": "grow",
+      "pos": "動",
+      "ja": "増やす、拡大する",
+      "note": ""
+    },
+    "fleet": {
+      "lemma": "fleet",
+      "pos": "名",
+      "ja": "保有車両群",
+      "note": ""
+    },
+    "vehicles": {
+      "lemma": "vehicle",
+      "pos": "名",
+      "ja": "車両",
+      "note": ""
+    },
+    "link": {
+      "lemma": "link",
+      "pos": "動",
+      "ja": "結ぶ",
+      "note": ""
+    },
+    "ports": {
+      "lemma": "port",
+      "pos": "名",
+      "ja": "港",
+      "note": ""
+    },
+    "operate": {
+      "lemma": "operate",
+      "pos": "動",
+      "ja": "運航する、稼働する",
+      "note": ""
+    },
+    "invest": {
+      "lemma": "invest",
+      "pos": "動",
+      "ja": "投資する",
+      "note": ""
+    },
+    "networks": {
+      "lemma": "network",
+      "pos": "名",
+      "ja": "ネットワーク、網",
+      "note": ""
+    },
+    "trucking": {
+      "lemma": "trucking",
+      "pos": "名",
+      "ja": "トラック輸送",
+      "note": ""
+    },
+    "blocked": {
+      "lemma": "block",
+      "pos": "動",
+      "ja": "塞がれた",
+      "note": ""
+    },
+    "route": {
+      "lemma": "route",
+      "pos": "名",
+      "ja": "ルート、経路",
+      "note": ""
+    },
+    "force": {
+      "lemma": "force",
+      "pos": "動",
+      "ja": "余儀なくさせる",
+      "note": "force A to do で「Aに〜させる」"
+    },
+    "shippers": {
+      "lemma": "shipper",
+      "pos": "名",
+      "ja": "荷主",
+      "note": ""
+    },
+    "rethink": {
+      "lemma": "rethink",
+      "pos": "動",
+      "ja": "見直す",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "現在完了形＋since（〜以来ずっと…している）",
+    "quote": "DP World, a large port operator, said cargo at its Jebel Ali port has fallen about 90% since the Strait of Hormuz closed.",
+    "quoteJa": "大手港湾運営会社のDPワールドは、ホルムズ海峡が封鎖されて以来、ジェベルアリ港の貨物取扱量が約90%減ったと述べた。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "has fallen は「現在完了形（have / has＋過去分詞）」で、過去に起きた変化が今も続いている・影響が残っていることを表します。since は「〜以来」の意味で、後ろに過去の一時点（ここでは the Strait of Hormuz closed）を置きます。「封鎖された時点から今まで、90%減り続けた結果が今の状態」というニュアンスです。since の後ろは過去形（closed）にするのが基本で、主節は現在完了形になります。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "① Cargo fell about 90% last March.（過去形：いつ起きたかだけを述べる）／② Cargo has fallen about 90% since March.（現在完了形：3月から今までの変化と現状を述べる）。②は「今もその状態が続いている」点が①と違います。since の代わりに for を使うと期間を表せます（例：for six months）。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 では、since や for が空所の近くにあると現在完了形（have / has＋過去分詞）を選ばせる問題が頻出です。「yesterday / last year / ago」など明確な過去の一点を示す語がある文には現在完了形は使えません（過去形を選ぶ）。Part 7 では、変化が「今も続いているか」を読み取る設問にも関わります。"
+      },
+      {
+        "heading": "ビジネス文書での応用例",
+        "body": "Our sales have increased by 15% since we launched the new website.（新サイトの開始以来、売上は15%伸びています）／The warehouse has been closed since the flood.（その倉庫は洪水以来閉鎖されています）。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きているのか：ホルムズ海峡の閉鎖と湾岸物流",
+      "body": "ホルムズ海峡は、ペルシャ湾の内側にある港と世界の海を結ぶ、ほぼ唯一の海上の出入り口です。ここが使えなくなると、湾内の港には船が入れなくなります。DPワールド（本社ドバイ）が運営するジェベルアリ港は中東最大級のコンテナ港ですが、記事によると取扱量は約9割減り、同社は月に約9,000万ドルの利益を失っていると推定されています。"
+    },
+    {
+      "heading": "📌 専門用語のやさしい解説：ランドブリッジと代替ルート",
+      "body": "「ランドブリッジ（land bridge）」とは、海の代わりに陸上（トラックや鉄道）で貨物をつなぐ道のことです。船が入れない湾内の代わりに、湾外にあるフジャイラ（UAE）、サラーラ（オマーン）、ジェッダ（サウジ）などの港まで陸路で運び、そこから船に積み替えます。DPワールドはトラックを700台から1,000台に増やし、欧州から湾岸への陸路輸送も始めています。"
+    },
+    {
+      "heading": "📌 業界全体の動き：荷主は「1本の航路に頼らない」方向へ",
+      "body": "海上輸送は1つの海峡や運河が止まるだけで、運賃の上昇・輸送日数の増加・遅延が連鎖します。荷主（shippers）は、輸送ルートを複数持つ、在庫を厚めに持つ、自社で車両を確保するといった対策を進めています。港湾会社や船会社も、陸上輸送やバイパス港への投資を増やしており、「船だけでなく陸も持つ」総合的な物流会社が強くなる流れです。"
+    },
+    {
+      "heading": "📌 日本企業・ビジネスパーソンへの示唆",
+      "body": "日本は原油の大半を中東に頼っており、ホルムズ海峡の状況はエネルギー調達に直結します。また、中東向けに自動車・機械・部品などを輸出する日本企業にとっては、輸送日数やコストの増加、納期の遅れが実務上の課題になります。輸送手段の切り替えに伴う書類・保険・通関の変更も増えるため、調達・物流担当者は代替ルートと納期の見直しを早めに進めておくことが重要です。投資家にとっては、物流各社の収益が地政学リスクに左右されやすい点に注意が必要です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "IA Insights: The Shippers News Brief [September 28, 2026]",
+      "publisher": "Intelligent Audit",
+      "url": "https://www.intelligentaudit.com/blog/ia-insights-september-28-2026",
+      "date": "2026-09-29"
+    },
+    {
+      "title": "Ports Giant DP World Redraws Hormuz Logistics With Truck Bet",
+      "publisher": "gCaptain",
+      "url": "https://gcaptain.com/ports-giant-dp-world-redraws-hormuz-logistics-with-truck-bet/",
+      "date": "2026-09-28"
+    }
+  ]
+}
