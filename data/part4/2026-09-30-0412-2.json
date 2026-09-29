@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-09-30-0412-2",
+  "date": "2026-09-30",
+  "time": "04:12",
+  "createdAt": "2026-09-30T04:12:00+09:00",
+  "sample": false,
+  "scene": "案内｜製造工場の見学ツアー",
+  "talkType": "tour",
+  "intro": "Questions 1 through 3 refer to the following tour information.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-AU"
+  },
+  "lines": [
+    {
+      "en": "Welcome to the Eastport Assembly Plant, and thank you all for coming out this morning.",
+      "ja": "イーストポート組立工場へようこそ。今朝はお集まりいただきありがとうございます。"
+    },
+    {
+      "en": "I know many of you are here to see how our parts are made before placing next year's orders.",
+      "ja": "皆さんの多くは、来年の発注を出す前に、当社の部品がどう作られるかをご覧になりに来られたと伺っています。"
+    },
+    {
+      "en": "The tour will take about ninety minutes and covers three areas: cutting, assembly, and the quality lab.",
+      "ja": "見学は約90分で、切断、組立、品質検査室の3か所を回ります。"
+    },
+    {
+      "en": "Please stay behind the yellow line, and keep your safety glasses on until we leave each area.",
+      "ja": "黄色い線の内側にいてください。各エリアを出るまで保護メガネは着けたままにしてください。"
+    },
+    {
+      "en": "The assembly line is running at half speed this morning while a new conveyor is being installed.",
+      "ja": "今朝は新しいコンベヤーの設置中のため、組立ラインは半分の速度で動いています。"
+    },
+    {
+      "en": "So don't be surprised if it looks a little quieter than usual.",
+      "ja": "そのため、いつもより少し静かに見えても驚かないでください。"
+    },
+    {
+      "en": "That said, you'll still get a good look at how each part is checked before it ships.",
+      "ja": "とはいえ、各部品が出荷前にどう検査されるかは、しっかりご覧いただけます。"
+    },
+    {
+      "en": "Photography is not allowed on the floor, but you may take pictures in the lobby.",
+      "ja": "作業場での撮影は禁止ですが、ロビーでは写真を撮っていただけます。"
+    },
+    {
+      "en": "Please save your questions for the session at the end.",
+      "ja": "ご質問は最後の質疑の時間までお取っておきください。"
+    },
+    {
+      "en": "Now, let's get started, so please follow me to the cutting area.",
+      "ja": "それでは始めましょう。切断エリアへ私についてきてください。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely are the listeners?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Factory employees",
+          "ja": "工場の従業員"
+        },
+        {
+          "key": "B",
+          "text": "New trainees",
+          "ja": "新しい研修生"
+        },
+        {
+          "key": "C",
+          "text": "Equipment repair staff",
+          "ja": "機器の修理担当者"
+        },
+        {
+          "key": "D",
+          "text": "Potential customers",
+          "ja": "見込みの顧客"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "話し手は、聞き手の多くが来年の発注を出す前に部品の作り方を見に来たと述べている。発注を検討する立場なので、見込みの顧客である。従業員や研修生なら、工場の見学に来た理由は説明されない。",
+      "tip": "Welcome to ... のあとに、聞き手が来た理由が語られる。placing orders のような行為から、立場を職業名や関係に言い換えて選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when he says, \"don't be surprised if it looks a little quieter than usual\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Production is running below its normal pace",
+          "ja": "生産がふだんより遅い速度で動いている"
+        },
+        {
+          "key": "B",
+          "text": "The tour will be shorter than planned",
+          "ja": "見学は予定より短くなる"
+        },
+        {
+          "key": "C",
+          "text": "Visitors should wear ear protection",
+          "ja": "見学者は耳の保護具を着けるべきだ"
+        },
+        {
+          "key": "D",
+          "text": "A machine has been shut down for cleaning",
+          "ja": "機械が清掃のため停止している"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        4,
+        5
+      ],
+      "explanation": "直前の文で、新しいコンベヤーの設置中なので組立ラインが半分の速度で動いていると説明している。静かに見えるのはそのためで、生産がふだんより遅いという意図である。見学時間の短縮は述べられていない。",
+      "tip": "引用文の意図は直前の文で決まる。So で始まる文は前の文の結果なので、原因の文とセットで読む。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are the listeners asked to do?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Leave their bags in the lobby",
+          "ja": "荷物をロビーに置く"
+        },
+        {
+          "key": "B",
+          "text": "Take pictures on the floor",
+          "ja": "作業場で写真を撮る"
+        },
+        {
+          "key": "C",
+          "text": "Hold their questions until later",
+          "ja": "質問を後まで待つ"
+        },
+        {
+          "key": "D",
+          "text": "Sign a safety form",
+          "ja": "安全の書類に署名する"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        8
+      ],
+      "explanation": "Please save your questions for the session at the end と依頼している。save your questions は「後まで取っておく」という意味で、選択肢では hold ... until later に言い換わる。写真は作業場では禁止で、ロビーだけ許可されている。",
+      "tip": "Please で始まる文が依頼になる。禁止と許可が対で出るときは、許可される場所を取り違えない。"
+    }
+  ],
+  "glossary": {
+    "coming out": {
+      "lemma": "come out",
+      "pos": "熟",
+      "ja": "足を運ぶ、出向く",
+      "note": "集まってくれたことへの謝辞で使う",
+      "example": {
+        "en": "Thank you for coming out in such bad weather.",
+        "ja": "悪天候の中、足を運んでいただきありがとうございます。"
+      }
+    },
+    "placing": {
+      "lemma": "place",
+      "pos": "動",
+      "ja": "（注文を）出す",
+      "note": "place an order で「発注する」",
+      "example": {
+        "en": "We are placing a large order for office chairs today.",
+        "ja": "本日、オフィスチェアを大量に発注します。"
+      }
+    },
+    "covers": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "含む、扱う",
+      "note": "本文では「見学が回る範囲」の意味",
+      "example": {
+        "en": "The training session covers safety rules and first aid.",
+        "ja": "その研修は安全規則と応急処置を扱います。"
+      }
+    },
+    "stay behind": {
+      "lemma": "stay behind",
+      "pos": "熟",
+      "ja": "（線などの）内側にとどまる",
+      "note": "注意事項の定型",
+      "example": {
+        "en": "Please stay behind the barrier until the train stops.",
+        "ja": "電車が止まるまで柵の内側にいてください。"
+      }
+    },
+    "safety glasses": {
+      "lemma": "safety glasses",
+      "pos": "熟",
+      "ja": "保護メガネ",
+      "note": "作業場の装備",
+      "example": {
+        "en": "All workers must wear safety glasses in the lab.",
+        "ja": "作業員は全員、実験室で保護メガネを着用してください。"
+      }
+    },
+    "running at half speed": {
+      "lemma": "run at half speed",
+      "pos": "熟",
+      "ja": "半分の速度で動く",
+      "note": "選択肢では below its normal pace に置き換わる",
+      "example": {
+        "en": "The machine is running at half speed during repairs.",
+        "ja": "その機械は修理中、半分の速度で動いています。"
+      }
+    },
+    "conveyor": {
+      "lemma": "conveyor",
+      "pos": "名",
+      "ja": "コンベヤー",
+      "note": "ベルトで物を運ぶ装置",
+      "example": {
+        "en": "Boxes move along the conveyor to the packing area.",
+        "ja": "箱はコンベヤーで梱包エリアへ運ばれます。"
+      }
+    },
+    "that said": {
+      "lemma": "that said",
+      "pos": "熟",
+      "ja": "とはいえ",
+      "note": "直前の内容に反する補足を導く",
+      "example": {
+        "en": "That said, we can still meet the deadline.",
+        "ja": "とはいえ、締め切りには間に合わせられます。"
+      }
+    },
+    "get a good look at": {
+      "lemma": "get a good look at",
+      "pos": "熟",
+      "ja": "じっくり見る",
+      "note": "見学や視察の案内で頻出",
+      "example": {
+        "en": "Visitors can get a good look at the new prototype.",
+        "ja": "来場者は新しい試作品をじっくり見られます。"
+      }
+    },
+    "save your questions": {
+      "lemma": "save your questions",
+      "pos": "熟",
+      "ja": "質問を取っておく",
+      "note": "選択肢では hold their questions に置き換わる",
+      "example": {
+        "en": "Please save your questions until the presentation ends.",
+        "ja": "質問は発表が終わるまでお待ちください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "歓迎と来場の目的 → 所要時間と回る場所 → 安全の注意 → 今日の特別な状況 → 補足 → 撮影の規則 → 質問の依頼 → 出発",
+    "items": [
+      {
+        "title": "案内は「誰が・何を・どんな決まりで」の順で進む",
+        "body": "冒頭で聞き手の立場、次に内容と所要時間、そのあとに規則や注意が来る。1問目は立場か目的、3問目は依頼や禁止の言い換えから出やすい。"
+      },
+      {
+        "title": "So の文は直前の文の結果として読む",
+        "body": "意図を問う引用が So や That said で始まるときは、直前の文が原因や前提になる。引用だけ見ずに、前の1文を必ず根拠に含める。"
+      },
+      {
+        "title": "禁止と許可が対で出たら場所や時を確かめる",
+        "body": "「ここでは不可、あちらでは可」の形は、選択肢で場所を入れ替えて引っかける。許可される側を聞き取って選ぶ。"
+      }
+    ]
+  }
+}

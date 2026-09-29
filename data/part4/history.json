@@ -1,15 +1,45 @@
 {
   "schemaVersion": 1,
   "type": "part4-history",
-  "updatedAt": "2026-09-27T04:01:00+09:00",
+  "updatedAt": "2026-09-30T04:20:00+09:00",
   "items": [
+    {
+      "id": "2026-09-30-0412-2",
+      "date": "2026-09-30",
+      "scene": "案内｜製造工場の見学ツアー",
+      "genre": "見学の案内",
+      "talkType": "tour",
+      "types": [
+        "who",
+        "intent",
+        "next"
+      ],
+      "flow": "告知と指示"
+    },
+    {
+      "id": "2026-09-30-0412-1",
+      "date": "2026-09-30",
+      "scene": "留守番電話｜面接日程の変更",
+      "genre": "留守番電話",
+      "talkType": "voicemail",
+      "types": [
+        "gist",
+        "detail",
+        "infer"
+      ],
+      "flow": "問題と代替案"
+    },
     {
       "id": "2026-09-27-0401-2",
       "date": "2026-09-27",
       "scene": "広告｜オフィス清掃サービスの月額プラン",
       "genre": "広告",
       "talkType": "ad",
-      "types": ["who", "infer", "detail"],
+      "types": [
+        "who",
+        "infer",
+        "detail"
+      ],
       "flow": "告知と指示"
     },
     {
@@ -18,7 +48,11 @@
       "scene": "会議｜在宅勤務申請手順の変更",
       "genre": "会議の一部",
       "talkType": "meeting",
-      "types": ["gist", "intent", "next"],
+      "types": [
+        "gist",
+        "intent",
+        "next"
+      ],
       "flow": "変更の説明と依頼"
     },
     {

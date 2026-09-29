@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-09-30-0412-1",
+  "date": "2026-09-30",
+  "time": "04:12",
+  "createdAt": "2026-09-30T04:12:00+09:00",
+  "sample": false,
+  "scene": "留守番電話｜面接日程の変更",
+  "talkType": "voicemail",
+  "intro": "Questions 1 through 3 refer to the following telephone message.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-GB"
+  },
+  "lines": [
+    {
+      "en": "Hello, Mr. Alvarez, this is Karen Holt from the human resources department at Larkfield Supply, returning your call about your interview.",
+      "ja": "こんにちは、アルバレスさん。ラークフィールド・サプライ人事部のカレン・ホルトです。面接についてのお電話の折り返しです。"
+    },
+    {
+      "en": "I understand you asked to reschedule because of a conflict with your current job.",
+      "ja": "現在のお仕事と予定が重なるため、日程の変更をご希望と伺いました。"
+    },
+    {
+      "en": "Unfortunately, the hiring manager is fully booked on Wednesday, but she does have an opening on Thursday at two.",
+      "ja": "あいにく採用担当の部長は水曜は予定が埋まっていますが、木曜の2時なら空きがあります。"
+    },
+    {
+      "en": "The interview would last about forty-five minutes, and you'll meet with two members of the sales team.",
+      "ja": "面接は約45分で、営業チームの2名とお会いいただきます。"
+    },
+    {
+      "en": "If you're still interested, please call me back before five today so I can lock in the time.",
+      "ja": "まだご希望でしたら、時間を確定させるため、本日5時までにお電話をください。"
+    },
+    {
+      "en": "Otherwise, we'll have to hold off on scheduling until the following week, since the manager is traveling.",
+      "ja": "そうでなければ、部長が出張に出るため、日程調整は翌週まで見送らざるをえません。"
+    },
+    {
+      "en": "Also, please bring a printed copy of your résumé and a photo ID to the front desk.",
+      "ja": "また、印刷した履歴書と写真付きの身分証を受付にお持ちください。"
+    },
+    {
+      "en": "Thank you, and have a good afternoon.",
+      "ja": "ありがとうございました。どうぞよい午後を。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "Why is the speaker calling?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To offer the listener a job",
+          "ja": "聞き手に仕事を提示するため"
+        },
+        {
+          "key": "B",
+          "text": "To arrange a different interview time",
+          "ja": "別の面接時間を調整するため"
+        },
+        {
+          "key": "C",
+          "text": "To ask for a printed résumé",
+          "ja": "印刷した履歴書を頼むため"
+        },
+        {
+          "key": "D",
+          "text": "To cancel a training session",
+          "ja": "研修を取りやめるため"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "話し手は冒頭で面接についての電話の折り返しだと述べ、次の文で asked to reschedule と日程変更の話だと示している。したがって目的は別の面接時間の調整である。履歴書は最後に持参を頼むだけで、電話の主目的ではない。",
+      "tip": "名乗りの直後に用件が来る。留守電は最初の2文で目的をつかみ、後半の依頼事項は別の設問の材料として区別する。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why is Wednesday not possible for the interview?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The listener has a conflict at work",
+          "ja": "聞き手の仕事と予定が重なる"
+        },
+        {
+          "key": "B",
+          "text": "The sales team is traveling",
+          "ja": "営業チームが出張中だ"
+        },
+        {
+          "key": "C",
+          "text": "The hiring manager has no free time",
+          "ja": "採用担当者に空きがない"
+        },
+        {
+          "key": "D",
+          "text": "The interview would take too long",
+          "ja": "面接が長くかかりすぎる"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        2
+      ],
+      "explanation": "hiring manager is fully booked on Wednesday とあり、採用担当者の予定が埋まっている。聞き手の仕事との重なりは、そもそも日程変更を求めた理由であり、水曜が不可な理由ではない。出張するのは部長で、それは翌週の話である。",
+      "tip": "fully booked は「予約でいっぱい」の意味で、選択肢では has no free time などに言い換わる。誰の予定かを主語で確かめる。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What will most likely happen if the listener does not call back by five?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The interview may be postponed to next week",
+          "ja": "面接が翌週に延期されるかもしれない"
+        },
+        {
+          "key": "B",
+          "text": "The interview may be moved to Wednesday",
+          "ja": "面接が水曜に移されるかもしれない"
+        },
+        {
+          "key": "C",
+          "text": "The interview may be shortened",
+          "ja": "面接が短縮されるかもしれない"
+        },
+        {
+          "key": "D",
+          "text": "The sales team may cancel the meeting",
+          "ja": "営業チームが面談を取りやめるかもしれない"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        4,
+        5
+      ],
+      "explanation": "5時までに折り返せば時間を確定できるが、Otherwise（そうでなければ）は hold off on scheduling until the following week、つまり翌週まで調整を見送ると述べている。したがって延期の可能性が高い。水曜は予定が埋まっているので不可である。",
+      "tip": "Otherwise の後ろが、依頼に応じなかった場合の結果になる。話されていない結果を推測させる設問は、この一文を根拠にする。"
+    }
+  ],
+  "glossary": {
+    "returning your call": {
+      "lemma": "return a call",
+      "pos": "熟",
+      "ja": "折り返し電話をする",
+      "note": "留守電の定番の切り出し",
+      "example": {
+        "en": "I'm returning your call about the delivery date.",
+        "ja": "納品日の件で折り返しお電話しています。"
+      }
+    },
+    "reschedule": {
+      "lemma": "reschedule",
+      "pos": "動",
+      "ja": "日程を変更する",
+      "note": "postpone（延期）と違い、時期を移すだけの場合も含む",
+      "example": {
+        "en": "Could we reschedule the meeting for early next week?",
+        "ja": "会議を来週初めに変更できますか。"
+      }
+    },
+    "conflict": {
+      "lemma": "conflict",
+      "pos": "名",
+      "ja": "予定の重なり、支障",
+      "note": "本文では「先約との重なり」の意味",
+      "example": {
+        "en": "I have a conflict on Friday and can't attend the seminar.",
+        "ja": "金曜は先約があり、セミナーに出席できません。"
+      }
+    },
+    "fully booked": {
+      "lemma": "fully booked",
+      "pos": "熟",
+      "ja": "予約や予定が埋まっている",
+      "note": "選択肢では has no free time に置き換わる",
+      "example": {
+        "en": "The hotel is fully booked during the conference week.",
+        "ja": "そのホテルは会議の週は満室です。"
+      }
+    },
+    "an opening": {
+      "lemma": "opening",
+      "pos": "名",
+      "ja": "空き",
+      "note": "本文では空き時間の意味。求人の欠員にも使う",
+      "example": {
+        "en": "We have an opening for a designer in the spring.",
+        "ja": "春にデザイナーの欠員があります。"
+      }
+    },
+    "lock in": {
+      "lemma": "lock in",
+      "pos": "熟",
+      "ja": "確定させる",
+      "note": "決まった内容を動かさない",
+      "example": {
+        "en": "Please lock in the price before the rates go up.",
+        "ja": "料金が上がる前に価格を確定させてください。"
+      }
+    },
+    "call me back": {
+      "lemma": "call back",
+      "pos": "熟",
+      "ja": "折り返し電話する",
+      "note": "return my call と同じ意味",
+      "example": {
+        "en": "Please call me back as soon as you receive this message.",
+        "ja": "このメッセージを受け取り次第、折り返しお電話ください。"
+      }
+    },
+    "hold off on": {
+      "lemma": "hold off on",
+      "pos": "熟",
+      "ja": "見送る、先延ばしにする",
+      "note": "postpone の言い換え",
+      "example": {
+        "en": "Let's hold off on ordering until the budget is approved.",
+        "ja": "予算が承認されるまで発注は見送りましょう。"
+      }
+    },
+    "hiring manager": {
+      "lemma": "hiring manager",
+      "pos": "熟",
+      "ja": "採用担当者",
+      "note": "応募者を決める部署の責任者",
+      "example": {
+        "en": "The hiring manager will review all applications this week.",
+        "ja": "採用担当者が今週、すべての応募書類を確認します。"
+      }
+    }
+  },
+  "point": {
+    "flow": "名乗りと用件 → 日程変更の経緯 → 新しい候補日 → 依頼と期限 → 期限を過ぎた場合 → 補足の持ち物",
+    "items": [
+      {
+        "title": "留守電は「名乗り・用件・依頼」の3点で聞く",
+        "body": "最初の2文で誰が何の用かをつかみ、真ん中で選択肢や条件、終盤で聞き手への依頼と期限を聞く。1問目は前半、3問目は終盤から出やすい。"
+      },
+      {
+        "title": "Otherwise の後ろは依頼に従わなかった結果",
+        "body": "依頼のあとに Otherwise や If not が来たら、その結果が推測問題の根拠になる。話されていない結末は、この一文を言い換えて選ぶ。"
+      },
+      {
+        "title": "予定が埋まっている相手を主語で確かめる",
+        "body": "聞き手の都合、担当者の都合、他部署の都合が混ざるときは、動作や状態の主語を必ず確認する。選択肢は別の人の事情で作られる。"
+      }
+    ]
+  }
+}
