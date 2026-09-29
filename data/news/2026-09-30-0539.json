@@ -1,0 +1,452 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-30-0539",
+  "date": "2026-09-30",
+  "time": "05:39",
+  "createdAt": "2026-09-30T05:39:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Australia Raises Interest Rate to 4.6%, a 15-Year High",
+    "ja": "豪中銀、約15年ぶり高水準の4.6%へ利上げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Australia's central bank raised its main interest rate on Tuesday to fight rising prices.",
+            "ja": "オーストラリアの中央銀行は、物価上昇に対抗するため、火曜日に主要な政策金利を引き上げた。"
+          },
+          {
+            "en": "The Reserve Bank of Australia lifted the cash rate from 4.35% to 4.6%, the highest level in about 15 years.",
+            "ja": "オーストラリア準備銀行は、政策金利（キャッシュレート）を4.35%から4.6%へ引き上げた。約15年ぶりの高水準である。"
+          },
+          {
+            "en": "It was the fourth increase this year, and all nine board members voted for it.",
+            "ja": "今年4回目の利上げで、理事会の9人全員が賛成した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Officials said higher energy prices and strong household spending are keeping inflation too high.",
+            "ja": "当局者は、エネルギー価格の上昇と家計支出の堅調さが、インフレ率を高止まりさせていると述べた。"
+          },
+          {
+            "en": "Governor Michele Bullock said the decision was not taken lightly, but a recession is not the bank's main forecast.",
+            "ja": "ミシェル・ブロック総裁は、この決定は軽い気持ちで下したものではないが、景気後退は同行の中心的な見通しではないと述べた。"
+          },
+          {
+            "en": "The rise adds about A$121 to monthly payments on a typical home loan.",
+            "ja": "この引き上げにより、一般的な住宅ローンの月々の返済額は約121豪ドル増える。"
+          },
+          {
+            "en": "The bank also warned that it may raise rates again if inflation does not slow.",
+            "ja": "同行はまた、インフレが鈍化しなければ再び利上げする可能性があると警告した。"
+          },
+          {
+            "en": "Analysts say many families may now have to cut back on other spending, such as dining out.",
+            "ja": "アナリストは、多くの家庭が外食など他の支出を切り詰めざるを得なくなる可能性があると指摘する。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What is the new cash rate set by the Reserve Bank of Australia?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4.35%",
+          "ja": "4.35%"
+        },
+        {
+          "key": "B",
+          "text": "4.6%",
+          "ja": "4.6%"
+        },
+        {
+          "key": "C",
+          "text": "15%",
+          "ja": "15%"
+        },
+        {
+          "key": "D",
+          "text": "121%",
+          "ja": "121%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本文の第1段落2文目に「lifted the cash rate from 4.35% to 4.6%」とあり、新しい政策金利は4.6%です。(A) 4.35%は引き上げ前の金利、(C) 15は「約15年ぶりの高水準」の年数、(D) 121は月々の返済増加額（A$121）で、いずれも本文の別の数字を使った引っかけです。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字問題は「from A to B」の to 側が新しい値。変化前後の数字が並ぶ文では、どちらを問われているかを設問文で確認しましょう。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT mentioned as a reason for high inflation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Higher energy prices",
+          "ja": "エネルギー価格の上昇"
+        },
+        {
+          "key": "B",
+          "text": "Strong household spending",
+          "ja": "堅調な家計支出"
+        },
+        {
+          "key": "C",
+          "text": "A weaker national currency",
+          "ja": "自国通貨の下落"
+        },
+        {
+          "key": "D",
+          "text": "None of the above",
+          "ja": "上記のいずれでもない"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落1文目に、インフレが高止まりする理由として「higher energy prices」(A) と「strong household spending」(B) が挙げられています。通貨安については本文のどこにも書かれていないので、(C) が正解です。(D)「いずれでもない」は、Cが本文に無い以上成り立ちません。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "NOT問題は、本文で確認できた選択肢を1つずつ消していく方法が確実です。本文にない情報が正解になります。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "inflation",
+      "pos": "名",
+      "ja": "インフレ、物価上昇",
+      "gloss": "",
+      "example": {
+        "en": "Inflation made everyday goods more expensive last year.",
+        "ja": "昨年はインフレで日用品の価格が上がった。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "household",
+      "pos": "名・形",
+      "ja": "家計、世帯",
+      "gloss": "",
+      "example": {
+        "en": "Household spending rose for the third month in a row.",
+        "ja": "家計支出は3か月連続で増加した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "forecast",
+      "pos": "名",
+      "ja": "予測、見通し",
+      "gloss": "",
+      "example": {
+        "en": "The company's sales forecast for next year is positive.",
+        "ja": "来年の会社の売上予測は明るい。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "typical",
+      "pos": "形",
+      "ja": "典型的な、一般的な",
+      "gloss": "",
+      "example": {
+        "en": "A typical meeting at our office lasts about an hour.",
+        "ja": "当社での一般的な会議は約1時間かかる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "warn",
+      "pos": "動",
+      "ja": "警告する",
+      "gloss": "",
+      "example": {
+        "en": "The manager warned that the deadline may be moved.",
+        "ja": "部長は締め切りが動く可能性があると警告した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "cut back on",
+      "pos": "熟",
+      "ja": "〜を減らす、切り詰める",
+      "gloss": "",
+      "example": {
+        "en": "We need to cut back on travel costs this year.",
+        "ja": "今年は出張費を削減する必要がある。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "payment",
+      "pos": "名",
+      "ja": "支払い、返済額",
+      "gloss": "",
+      "example": {
+        "en": "The monthly payment is due on the first of each month.",
+        "ja": "毎月の支払いは月初が期限だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "board",
+      "pos": "名",
+      "ja": "理事会、取締役会",
+      "gloss": "",
+      "example": {
+        "en": "The board approved the new budget on Monday.",
+        "ja": "理事会は月曜日に新予算を承認した。"
+      }
+    }
+  ],
+  "glossary": {
+    "central": {
+      "lemma": "central",
+      "pos": "形",
+      "ja": "中央の",
+      "note": "central bank＝中央銀行"
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "利子、金利",
+      "note": "interest rate＝金利"
+    },
+    "fight": {
+      "lemma": "fight",
+      "pos": "動",
+      "ja": "闘う、対抗する",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "形",
+      "ja": "上昇する",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "名",
+      "ja": "物価、価格",
+      "note": ""
+    },
+    "cash": {
+      "lemma": "cash",
+      "pos": "名",
+      "ja": "現金",
+      "note": "cash rate＝政策金利（豪州）"
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "上昇、引き上げ",
+      "note": ""
+    },
+    "board": {
+      "lemma": "board",
+      "pos": "名",
+      "ja": "理事会",
+      "note": ""
+    },
+    "voted": {
+      "lemma": "vote",
+      "pos": "動",
+      "ja": "投票した、賛成した",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "energy": {
+      "lemma": "energy",
+      "pos": "名",
+      "ja": "エネルギー",
+      "note": ""
+    },
+    "household": {
+      "lemma": "household",
+      "pos": "名",
+      "ja": "家計、世帯",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "keeping": {
+      "lemma": "keep",
+      "pos": "動",
+      "ja": "保つ、〜させ続ける",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "インフレ",
+      "note": ""
+    },
+    "governor": {
+      "lemma": "governor",
+      "pos": "名",
+      "ja": "総裁",
+      "note": ""
+    },
+    "lightly": {
+      "lemma": "lightly",
+      "pos": "副",
+      "ja": "軽く、軽率に",
+      "note": "not ... lightly＝慎重に"
+    },
+    "recession": {
+      "lemma": "recession",
+      "pos": "名",
+      "ja": "景気後退",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予測、見通し",
+      "note": ""
+    },
+    "monthly": {
+      "lemma": "monthly",
+      "pos": "形",
+      "ja": "毎月の",
+      "note": ""
+    },
+    "payments": {
+      "lemma": "payment",
+      "pos": "名",
+      "ja": "支払い、返済額",
+      "note": ""
+    },
+    "typical": {
+      "lemma": "typical",
+      "pos": "形",
+      "ja": "一般的な",
+      "note": ""
+    },
+    "loan": {
+      "lemma": "loan",
+      "pos": "名",
+      "ja": "ローン、貸付",
+      "note": ""
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告した",
+      "note": ""
+    },
+    "slow": {
+      "lemma": "slow",
+      "pos": "動",
+      "ja": "鈍化する",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "cut": {
+      "lemma": "cut",
+      "pos": "動",
+      "ja": "削る",
+      "note": "cut back on＝〜を減らす"
+    }
+  },
+  "grammar": {
+    "topic": "無生物主語構文（物・出来事が主語になり「〜が…をもたらす」を表す表現）",
+    "quote": "The rise adds about A$121 to monthly payments on a typical home loan.",
+    "quoteJa": "この引き上げにより、一般的な住宅ローンの月々の返済額は約121豪ドル増える。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "The rise（利上げ）という「物・出来事」が主語になり、adds A to B（BにAを加える）と続く形です。英語では、人ではなく出来事を主語にして「原因→結果」を簡潔に述べる無生物主語構文がよく使われます。日本語に訳すときは「この引き上げにより〜」「この引き上げのせいで〜」のように、原因を表す副詞句として訳すと自然になります。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "① The rise adds about A$121 to monthly payments.（無生物主語：簡潔）／② Borrowers will pay about A$121 more each month because the rate has risen.（人が主語：説明的）。①は②と同じ内容を短く言えるのが利点です。同じ型の動詞には cost（〜に…を失わせる）、bring（もたらす）、allow / enable（可能にする）、make（〜にさせる）などがあります。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6では、主語に事柄が来る文で動詞の形（三単現の s など）を問う問題や、adds A to B のような「動詞＋目的語＋前置詞」の前置詞選択が出ます。Part 7では、新聞記事風の文で「何が原因で何が起きたのか」を無生物主語から読み取る力が問われます。add A to B の to を in や for と混同しないよう注意しましょう。"
+      },
+      {
+        "heading": "ビジネスでの応用例",
+        "body": "The new system saves us about ten hours a week.（新システムのおかげで週に約10時間節約できる。）／The delay costs the company thousands of dollars a day.（遅れにより、会社は1日に数千ドルの損失を被っている。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか：豪中銀が今年4回目の利上げ",
+      "body": "オーストラリア準備銀行（RBA）は9月29日、政策金利（キャッシュレート）を4.35%から4.6%へ0.25ポイント引き上げました。2011年後半以来、約15年ぶりの高い水準です。今年はこれで4回目の利上げで、累計の引き上げ幅は1.0ポイントに達しました。理事会9人の全員一致での決定で、今後も必要なら追加利上げを行う余地を残しています。"
+    },
+    {
+      "heading": "📌 なぜ利上げするのか：インフレの高止まり",
+      "body": "中央銀行は物価が上がりすぎると、金利を上げてお金を借りにくくし、消費や投資を冷やすことで物価上昇を抑えます。RBAは、エネルギー価格の上昇と堅調な国内需要がインフレを押し上げていると説明しました。一方で、金利が上がると家計の負担は増えます。今回の利上げで、一般的な住宅ローンの返済額は月に約121豪ドル増える計算です。"
+    },
+    {
+      "heading": "📌 世界の中央銀行の動き",
+      "body": "エネルギー価格の高騰によるインフレは豪州だけの問題ではありません。米国では連邦準備制度（FRB）が9月16日に約3年ぶりの利上げを決め、政策金利を3.75〜4.00%にしました。日本銀行も9月に0.25ポイント引き上げて1.25%とし、1995年以来の高い水準になっています。主要国が「利上げの局面」に入っていることがわかります。"
+    },
+    {
+      "heading": "📌 日本と投資家への示唆",
+      "body": "日本企業にとっては、豪州は石炭・LNG・鉄鉱石など資源の主要な調達先です。豪州の金利が上がると豪ドルが買われやすく、円建ての輸入コストが上がる可能性があります。また、豪州で事業や住宅・不動産投資を行う企業や個人には、借入コストの上昇が重くのしかかります。投資家にとっては、各国の金利差の変化が為替相場を動かすため、今後の追加利上げの発言（フォワードガイダンス）が注目点になります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "RBA hikes rates to 15-year high amid rising energy costs",
+      "publisher": "SBS News",
+      "url": "https://www.sbs.com.au/news/live-blog/rba-september-2026-interest-rates-decision-live/k8b1jlim2",
+      "date": "2026-09-29"
+    },
+    {
+      "title": "RBA lifts interest rates to highest level in 15 years",
+      "publisher": "ABC News",
+      "url": "https://www.abc.net.au/news/2026-09-29/rba-lifts-rates-highest-level-in-15-years-september-2026/107206640",
+      "date": "2026-09-29"
+    },
+    {
+      "title": "RBA raises official cash rate to 4.60% in fourth increase of 2026",
+      "publisher": "CommBank Newsroom",
+      "url": "https://www.commbank.com.au/articles/newsroom/2026/09/rba-official-cash-rate-decision-september-2026.html",
+      "date": "2026-09-29"
+    }
+  ]
+}
