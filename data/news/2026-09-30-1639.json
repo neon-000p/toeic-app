@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-09-30-1639",
+  "date": "2026-09-30",
+  "time": "16:39",
+  "createdAt": "2026-09-30T16:39:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "iPhone 18 Pro Sells Well in China Despite Higher Prices",
+    "ja": "iPhone 18 Pro、値上げでも中国で好調"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Apple's new iPhone 18 Pro series sold about 1.3 million units in China during its first week on sale.",
+            "ja": "アップルの新型「iPhone 18 Pro」シリーズは、発売から最初の1週間で中国で約130万台を販売した。"
+          },
+          {
+            "en": "That is about 15% higher than in the same week last year, according to RD Observation, a research firm.",
+            "ja": "調査会社のRDオブザベーションによると、これは前年の同じ週より約15%多い。"
+          },
+          {
+            "en": "The company raised the starting price by 1,000 yuan, to 9,999 yuan.",
+            "ja": "同社は開始価格を1,000元引き上げ、9,999元とした。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The result surprised many analysts because weekly smartphone sales in China have fallen by double digits since July.",
+            "ja": "中国のスマートフォンの週間販売は7月以降、2桁の減少が続いており、この結果は多くのアナリストを驚かせた。"
+          },
+          {
+            "en": "Consumers are spending less, and the cost of memory chips, which store data, has increased.",
+            "ja": "消費者は支出を控えており、データを保存するメモリーチップのコストも上昇している。"
+          },
+          {
+            "en": "Many phone makers have raised prices to protect their profit margins, but several rival launches this month disappointed buyers.",
+            "ja": "多くのスマホメーカーは利益率を守るために値上げしたが、今月の競合各社の新製品は買い手を失望させた。"
+          },
+          {
+            "en": "Apple's strong start suggests that loyal customers will still pay more for premium products.",
+            "ja": "アップルの好調な滑り出しは、忠実な顧客が高級品にはより多く払い続けることを示唆している。"
+          },
+          {
+            "en": "However, the figures are market estimates, not official numbers from the company.",
+            "ja": "ただし、この数字は市場の推計であり、同社が公表した公式の数字ではない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many iPhone 18 Pro units were sold in China during the first week?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 1.0 million",
+          "ja": "約100万台"
+        },
+        {
+          "key": "B",
+          "text": "About 1.3 million",
+          "ja": "約130万台"
+        },
+        {
+          "key": "C",
+          "text": "About 1.5 million",
+          "ja": "約150万台"
+        },
+        {
+          "key": "D",
+          "text": "About 15 million",
+          "ja": "約1,500万台"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落1文目に「sold about 1.3 million units in China during its first week」とあり、正解はB。Aは1.0 million、Cは1.5 millionで本文にない数字。Dの15 millionは、2文目にある「15%」を台数と取り違えさせる引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "数字を問う問題は、選択肢の数字と本文の数字を1つずつ照合する。別の箇所にある数字（ここでは15%）が選択肢に混ぜられていることが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT mentioned as a reason for the weak smartphone market in China?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Consumers are spending less.",
+          "ja": "消費者が支出を控えている"
+        },
+        {
+          "key": "B",
+          "text": "Memory chips have become more expensive.",
+          "ja": "メモリーチップの値上がり"
+        },
+        {
+          "key": "C",
+          "text": "Rival phone launches were disappointing.",
+          "ja": "競合の新製品が期待外れ"
+        },
+        {
+          "key": "D",
+          "text": "There is a shortage of factory workers.",
+          "ja": "工場労働者の不足"
+        }
+      ],
+      "answer": "D",
+      "explanation": "第2段落で、消費者の支出減少（A）、メモリーチップのコスト上昇（B）、競合各社の新製品が買い手を失望させたこと（C）が挙げられている。工場労働者の不足（D）は本文のどこにも書かれていないので、NOT問題の正解はD。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "NOT問題は「本文にある3つ」を先に消し、残った1つを選ぶ。選択肢を本文の該当箇所に1つずつ印を付けながら確認すると速い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "according to",
+      "pos": "熟",
+      "ja": "〜によると",
+      "gloss": "",
+      "example": {
+        "en": "According to the report, sales rose in March.",
+        "ja": "報告書によると、3月は売上が伸びた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "raise",
+      "pos": "動",
+      "ja": "〜を引き上げる",
+      "gloss": "",
+      "example": {
+        "en": "The store will raise its prices next month.",
+        "ja": "その店は来月、価格を引き上げる予定だ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "profit margin",
+      "pos": "名",
+      "ja": "利益率",
+      "gloss": "（＝売上のうち、利益として残る割合のこと）",
+      "example": {
+        "en": "Lower costs helped improve our profit margin.",
+        "ja": "コストの低下が利益率の改善につながった。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "premium",
+      "pos": "形",
+      "ja": "高級な、割増の",
+      "gloss": "",
+      "example": {
+        "en": "The airline offers a premium seat for a higher fee.",
+        "ja": "その航空会社は、追加料金でプレミアム席を提供している。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "estimate",
+      "pos": "名",
+      "ja": "推計、見積もり",
+      "gloss": "",
+      "example": {
+        "en": "The final estimate will be sent to you by Friday.",
+        "ja": "最終の見積もりは金曜日までにお送りします。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "official",
+      "pos": "形",
+      "ja": "公式の、正式な",
+      "gloss": "",
+      "example": {
+        "en": "Please wait for the official announcement.",
+        "ja": "正式な発表をお待ちください。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "protect",
+      "pos": "動",
+      "ja": "〜を守る",
+      "gloss": "",
+      "example": {
+        "en": "We must protect customer information.",
+        "ja": "私たちは顧客情報を守らなければならない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "disappoint",
+      "pos": "動",
+      "ja": "〜を失望させる",
+      "gloss": "",
+      "example": {
+        "en": "The late delivery disappointed several customers.",
+        "ja": "配送の遅れは数人の顧客を失望させた。"
+      }
+    }
+  ],
+  "glossary": {
+    "series": {
+      "lemma": "series",
+      "pos": "名",
+      "ja": "シリーズ",
+      "note": ""
+    },
+    "units": {
+      "lemma": "unit",
+      "pos": "名",
+      "ja": "台数、単位",
+      "note": ""
+    },
+    "according": {
+      "lemma": "according to",
+      "pos": "熟",
+      "ja": "〜によると",
+      "note": ""
+    },
+    "research": {
+      "lemma": "research",
+      "pos": "名",
+      "ja": "調査",
+      "note": ""
+    },
+    "firm": {
+      "lemma": "firm",
+      "pos": "名",
+      "ja": "会社",
+      "note": ""
+    },
+    "company": {
+      "lemma": "company",
+      "pos": "名",
+      "ja": "会社",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "starting": {
+      "lemma": "starting",
+      "pos": "形",
+      "ja": "開始の",
+      "note": ""
+    },
+    "surprised": {
+      "lemma": "surprise",
+      "pos": "動",
+      "ja": "驚かせた",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "weekly": {
+      "lemma": "weekly",
+      "pos": "形",
+      "ja": "毎週の",
+      "note": ""
+    },
+    "fallen": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "digits": {
+      "lemma": "digit",
+      "pos": "名",
+      "ja": "桁",
+      "note": ""
+    },
+    "consumers": {
+      "lemma": "consumer",
+      "pos": "名",
+      "ja": "消費者",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spend",
+      "pos": "動",
+      "ja": "支出する",
+      "note": ""
+    },
+    "memory": {
+      "lemma": "memory",
+      "pos": "名",
+      "ja": "メモリー",
+      "note": ""
+    },
+    "chips": {
+      "lemma": "chip",
+      "pos": "名",
+      "ja": "チップ",
+      "note": ""
+    },
+    "store": {
+      "lemma": "store",
+      "pos": "動",
+      "ja": "保存する",
+      "note": ""
+    },
+    "increased": {
+      "lemma": "increase",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "makers": {
+      "lemma": "maker",
+      "pos": "名",
+      "ja": "メーカー",
+      "note": ""
+    },
+    "protect": {
+      "lemma": "protect",
+      "pos": "動",
+      "ja": "守る",
+      "note": ""
+    },
+    "margins": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": "profit margin（利益率）の形で使われることが多い"
+    },
+    "rival": {
+      "lemma": "rival",
+      "pos": "形",
+      "ja": "競合の",
+      "note": ""
+    },
+    "launches": {
+      "lemma": "launch",
+      "pos": "名",
+      "ja": "新製品の発売",
+      "note": ""
+    },
+    "disappointed": {
+      "lemma": "disappoint",
+      "pos": "動",
+      "ja": "失望させた",
+      "note": ""
+    },
+    "loyal": {
+      "lemma": "loyal",
+      "pos": "形",
+      "ja": "忠実な",
+      "note": ""
+    },
+    "premium": {
+      "lemma": "premium",
+      "pos": "形",
+      "ja": "高級な",
+      "note": ""
+    },
+    "suggests": {
+      "lemma": "suggest",
+      "pos": "動",
+      "ja": "示唆する",
+      "note": "「提案する」ではなく「示唆する」の意味"
+    },
+    "estimates": {
+      "lemma": "estimate",
+      "pos": "名",
+      "ja": "推計",
+      "note": ""
+    },
+    "official": {
+      "lemma": "official",
+      "pos": "形",
+      "ja": "公式の",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "suggest + that節（〜ということを示唆する）",
+    "quote": "Apple's strong start suggests that loyal customers will still pay more for premium products.",
+    "quoteJa": "アップルの好調な滑り出しは、忠実な顧客が高級品にはより多く払い続けることを示唆している。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "suggest は「that＋主語＋動詞」を続けて「〜ということを示唆する（〜だと示している）」を表します。ここでは主語が物・出来事（Apple's strong start）で、that 節の中身（顧客が払い続けること）が「そこから読み取れる結論」です。that は省略できます。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "「示唆する」の意味では that 節の動詞は事実どおりの形（will pay など）になります。一方「提案する」の意味では、that 節の動詞は原形（または should＋原形）です。例：He suggested that we (should) review the plan.（計画を見直すよう提案した）。意味の違いは that 節の動詞の形と文脈で判断します。"
+      },
+      {
+        "heading": "TOEICでの傾向",
+        "body": "Part 5 では suggest の後の動詞の形（原形かどうか）が問われます。また Part 7 では、data suggest that ... や the results suggest that ... の形で、根拠となる数字から導かれる結論を述べる文がよく出ます。suggest の後に動名詞（suggest doing）が来る形も押さえましょう。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "The survey suggests that customers prefer online ordering.（調査は、顧客がオンライン注文を好むことを示唆している。）／ I suggest that we hold the meeting on Monday.（会議を月曜日に開くことを提案します。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① 何が起きたのか：値上げしても売れたiPhone",
+      "body": "アップルは9月発売の「iPhone 18 Pro」シリーズで、中国での開始価格を1,000元（約2万円）引き上げました。それでも発売最初の1週間の販売は約130万台と、市場推計で前年の同じ時期を約15%上回りました（Counterpointは12%増と推計）。RD Observationやアナリストによる推計であり、アップル自身が公表した数字ではない点には注意が必要です。"
+    },
+    {
+      "heading": "📌 ② 背景：メモリー価格の上昇とスマホ市場の低迷",
+      "body": "今年はAI向けの需要拡大などでメモリーチップの価格が上がり、スマホの部品コストが上昇しています。各社はコストを価格に転嫁して値上げしましたが、中国の週間スマホ販売は7月以降、前年比で2桁減が続いています。今月発売された中国メーカーの主力機種も、値上げの影響で出足が鈍いと伝えられています。"
+    },
+    {
+      "heading": "📌 ③ 競合との比較：ブランド力の差",
+      "body": "同じように値上げをしても、売れ行きには差が出ました。アップルは高価格帯のブランド力が強く、値上げ後も買う忠実な顧客層を持っています。これは「価格が上がっても需要が落ちにくい」状態で、経済学でいう価格弾力性が低いことを示唆します。一方、中国メーカーはブランドや機能で価格の上昇分を説明しきれなかったと考えられます。"
+    },
+    {
+      "heading": "📌 ④ 日本・投資家への示唆",
+      "body": "日本でも円安やメモリー高の影響でスマホの値上げが続いており、消費者は買い替えを先延ばしする傾向があります。日本の部品・素材メーカーにとって、アップルの販売動向は業績を左右する重要な指標です。投資家にとっては、中国市場での回復が続くかが今後の焦点で、次の四半期決算での中国売上高や粗利益率（利益の残る割合）に注目です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "iPhone 18 Pro reportedly nears 1.3 million China sales in first week",
+      "publisher": "TechNode",
+      "url": "https://technode.com/2026/09/28/iphone-18-pro-reportedly-nears-1-3-million-china-sales-in-first-week/",
+      "date": "2026-09-28"
+    },
+    {
+      "title": "iPhone 18 Pro sells 1.3 million units in China in its first week",
+      "publisher": "IntoMobile",
+      "url": "https://www.intomobile.com/2026/09/28/iphone-18-pro-sells-1-3-million-units-in-china-in-its-first-week/",
+      "date": "2026-09-28"
+    }
+  ]
+}
