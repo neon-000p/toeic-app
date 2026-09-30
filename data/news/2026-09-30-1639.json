@@ -454,5 +454,22 @@
       "url": "https://www.intomobile.com/2026/09/28/iphone-18-pro-sells-1-3-million-units-in-china-in-its-first-week/",
       "date": "2026-09-28"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-30-1639/00.mp3",
+      "audio/2026-09-30-1639/01.mp3",
+      "audio/2026-09-30-1639/02.mp3",
+      "audio/2026-09-30-1639/03.mp3",
+      "audio/2026-09-30-1639/04.mp3",
+      "audio/2026-09-30-1639/05.mp3",
+      "audio/2026-09-30-1639/06.mp3",
+      "audio/2026-09-30-1639/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 223080,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-30T08:58:06.561Z",
+    "trimmed": true
+  }
 }

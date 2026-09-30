@@ -448,5 +448,22 @@
       "url": "https://www.commbank.com.au/articles/newsroom/2026/09/rba-official-cash-rate-decision-september-2026.html",
       "date": "2026-09-29"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-09-30-0539/00.mp3",
+      "audio/2026-09-30-0539/01.mp3",
+      "audio/2026-09-30-0539/02.mp3",
+      "audio/2026-09-30-0539/03.mp3",
+      "audio/2026-09-30-0539/04.mp3",
+      "audio/2026-09-30-0539/05.mp3",
+      "audio/2026-09-30-0539/06.mp3",
+      "audio/2026-09-30-0539/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 208200,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-09-30T08:57:26.484Z",
+    "trimmed": true
+  }
 }
