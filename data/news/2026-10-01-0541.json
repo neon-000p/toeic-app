@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-01-0541",
+  "date": "2026-10-01",
+  "time": "05:41",
+  "createdAt": "2026-10-01T05:41:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "US and China Name $30 Billion in Goods for Tariff Cuts",
+    "ja": "米中、関税引き下げ候補の300億ドル相当を公表"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The United States and China have each named about $30 billion worth of goods that could face lower tariffs.",
+            "ja": "米国と中国はそれぞれ、関税が下がる可能性のある約300億ドル相当の品目を指定した。"
+          },
+          {
+            "en": "The lists were released on September 27, after a summit between the two presidents.",
+            "ja": "リストは、両国首脳による会談を受けて9月27日に公表された。"
+          },
+          {
+            "en": "The US list includes toys and electrical goods.",
+            "ja": "米国側のリストにはおもちゃや電気製品が含まれる。"
+          },
+          {
+            "en": "China's list covers corn, wheat, coal, and medical devices.",
+            "ja": "中国側のリストはトウモロコシ、小麦、石炭、医療機器などを対象とする。"
+          },
+          {
+            "en": "However, neither side has said when the new rates will start.",
+            "ja": "ただし、新しい税率がいつ始まるのかは、どちらの側も明らかにしていない。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "A new panel called the Board of Trade picked the goods, which both sides see as non-sensitive.",
+            "ja": "「貿易委員会」という新たな組織が品目を選び、双方ともそれらを機微性の低いものと見ている。"
+          },
+          {
+            "en": "Jamieson Greer, the US trade representative, said the items could benefit from lower tariffs in the future.",
+            "ja": "米通商代表のジェイミソン・グリア氏は、これらの品目は将来、関税引き下げの恩恵を受けられる可能性があると述べた。"
+          },
+          {
+            "en": "The move matters because it shows that both governments want to keep their trade truce alive.",
+            "ja": "この動きが重要なのは、両政府が貿易休戦を維持したいと考えていることを示すからだ。"
+          },
+          {
+            "en": "Still, many older tariffs remain in place, so companies must wait for details before changing their plans.",
+            "ja": "それでも従来の関税の多くは残っており、企業は計画を変更する前に詳細を待たなければならない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much trade did each side name for possible tariff cuts?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About $3 billion",
+          "ja": "約30億ドル"
+        },
+        {
+          "key": "B",
+          "text": "About $30 billion",
+          "ja": "約300億ドル"
+        },
+        {
+          "key": "C",
+          "text": "About $60 billion",
+          "ja": "約600億ドル"
+        },
+        {
+          "key": "D",
+          "text": "About $300 billion",
+          "ja": "約3000億ドル"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。第1段落の1文目に「each named about $30 billion worth of goods」とあり、各国が約300億ドル相当を指定したことが分かる。Cの$60 billionは両国の合計額で、設問の「each side（各国）」とは合わない（本文にも合計額の記載はない）。AとDは本文にない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "設問の each / total などの範囲を示す語に注意する。本文の数字が『各』か『合計』かを確認すれば、合計額のひっかけを避けられる。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT stated in the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The lists came out after a summit.",
+          "ja": "首脳会談の後に公表"
+        },
+        {
+          "key": "B",
+          "text": "China's list includes medical devices.",
+          "ja": "中国側に医療機器が含まれる"
+        },
+        {
+          "key": "C",
+          "text": "The new rates will start next month.",
+          "ja": "新税率は来月始まる"
+        },
+        {
+          "key": "D",
+          "text": "The Board of Trade picked the goods.",
+          "ja": "貿易委員会が品目を選んだ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解はC。第1段落の最終文に「neither side has said when the new rates will start」とあり、開始時期は未発表。『来月』という情報は本文にない。Aは2文目、Bは4文目、Dは第2段落1文目に明記されている。",
+      "evidence": {
+        "p": 0,
+        "s": 4
+      },
+      "tip": "NOT問題は、A・B・Dのように本文と一致する選択肢を順に消していく。残った1つが『本文にない情報』または『本文と逆の内容』になる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "gloss": "（＝輸入品にかかる税金のこと）",
+      "example": {
+        "en": "The company asked the government to lower the tariff on imported parts.",
+        "ja": "その会社は輸入部品にかかる関税の引き下げを政府に求めた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "panel",
+      "pos": "名",
+      "ja": "委員会、専門家グループ",
+      "gloss": "",
+      "example": {
+        "en": "A panel of experts will review the proposal next week.",
+        "ja": "専門家の委員会が来週その提案を検討する。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "representative",
+      "pos": "名",
+      "ja": "代表者、担当者",
+      "gloss": "",
+      "example": {
+        "en": "A sales representative will visit our office on Monday.",
+        "ja": "営業担当者が月曜日に当社のオフィスを訪れる。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "benefit from",
+      "pos": "熟",
+      "ja": "〜から利益を得る",
+      "gloss": "",
+      "example": {
+        "en": "Small businesses can benefit from the new tax rules.",
+        "ja": "中小企業は新しい税制から恩恵を受けられる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "cover",
+      "pos": "動",
+      "ja": "〜を対象とする、含む",
+      "gloss": "",
+      "example": {
+        "en": "The warranty covers repairs for up to two years.",
+        "ja": "この保証は最長2年間の修理を対象とする。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "remain",
+      "pos": "動",
+      "ja": "〜のままである、残る",
+      "gloss": "",
+      "example": {
+        "en": "Prices remain high despite the company's efforts.",
+        "ja": "会社の努力にもかかわらず、価格は高いままだ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "truce",
+      "pos": "名",
+      "ja": "休戦、一時的な停戦合意",
+      "gloss": "（＝争いを一時的に止める約束のこと）",
+      "example": {
+        "en": "The two firms agreed to a truce in their price war.",
+        "ja": "両社は価格競争の休戦に合意した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "details",
+      "pos": "名",
+      "ja": "詳細",
+      "gloss": "",
+      "example": {
+        "en": "Please send me the details of the contract by Friday.",
+        "ja": "金曜日までに契約の詳細を送ってください。"
+      }
+    }
+  ],
+  "glossary": {
+    "named": {
+      "lemma": "name",
+      "pos": "動",
+      "ja": "〜を指名する",
+      "note": ""
+    },
+    "worth": {
+      "lemma": "worth",
+      "pos": "形",
+      "ja": "〜の価値がある",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "商品、品物",
+      "note": ""
+    },
+    "tariffs": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "released": {
+      "lemma": "release",
+      "pos": "動",
+      "ja": "公表する",
+      "note": ""
+    },
+    "summit": {
+      "lemma": "summit",
+      "pos": "名",
+      "ja": "首脳会談",
+      "note": ""
+    },
+    "includes": {
+      "lemma": "include",
+      "pos": "動",
+      "ja": "〜を含む",
+      "note": ""
+    },
+    "electrical": {
+      "lemma": "electrical",
+      "pos": "形",
+      "ja": "電気の",
+      "note": ""
+    },
+    "covers": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "〜を対象とする",
+      "note": ""
+    },
+    "corn": {
+      "lemma": "corn",
+      "pos": "名",
+      "ja": "トウモロコシ",
+      "note": ""
+    },
+    "wheat": {
+      "lemma": "wheat",
+      "pos": "名",
+      "ja": "小麦",
+      "note": ""
+    },
+    "coal": {
+      "lemma": "coal",
+      "pos": "名",
+      "ja": "石炭",
+      "note": ""
+    },
+    "devices": {
+      "lemma": "device",
+      "pos": "名",
+      "ja": "機器",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "税率、率",
+      "note": ""
+    },
+    "panel": {
+      "lemma": "panel",
+      "pos": "名",
+      "ja": "委員会",
+      "note": ""
+    },
+    "picked": {
+      "lemma": "pick",
+      "pos": "動",
+      "ja": "選ぶ",
+      "note": ""
+    },
+    "non-sensitive": {
+      "lemma": "non-sensitive",
+      "pos": "形",
+      "ja": "機微性の低い",
+      "note": ""
+    },
+    "representative": {
+      "lemma": "representative",
+      "pos": "名",
+      "ja": "代表者",
+      "note": ""
+    },
+    "benefit": {
+      "lemma": "benefit",
+      "pos": "動",
+      "ja": "利益を得る",
+      "note": ""
+    },
+    "truce": {
+      "lemma": "truce",
+      "pos": "名",
+      "ja": "休戦",
+      "note": ""
+    },
+    "alive": {
+      "lemma": "alive",
+      "pos": "形",
+      "ja": "存続して",
+      "note": ""
+    },
+    "remain": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "残る",
+      "note": ""
+    },
+    "details": {
+      "lemma": "detail",
+      "pos": "名",
+      "ja": "詳細",
+      "note": ""
+    },
+    "plans": {
+      "lemma": "plan",
+      "pos": "名",
+      "ja": "計画",
+      "note": ""
+    },
+    "however": {
+      "lemma": "however",
+      "pos": "副",
+      "ja": "しかしながら",
+      "note": ""
+    },
+    "neither": {
+      "lemma": "neither",
+      "pos": "形",
+      "ja": "どちらも〜ない",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "関係代名詞の非制限用法（, which … で補足説明を加える）",
+    "quote": "A new panel called the Board of Trade picked the goods, which both sides see as non-sensitive.",
+    "quoteJa": "「貿易委員会」という新たな組織が品目を選び、双方ともそれらを機微性の低いものと見ている。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "「, which both sides see as non-sensitive」は関係代名詞 which の非制限用法（継続用法）です。カンマの前の先行詞（the goods）について、追加情報を後ろから補足します。カンマがあるため、『どの品目か』を絞り込むのではなく、『ちなみにそれらは〜と見られている』という補足として読みます。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "制限用法：The goods which both sides see as non-sensitive were picked.（双方が機微性が低いとみなす品目『だけ』が選ばれた）／非制限用法：The panel picked the goods, which both sides see as non-sensitive.（委員会は品目を選んだ。それらは双方が機微性が低いとみなすものだ）。非制限用法は2文に分けても意味が通ります：The panel picked the goods. Both sides see them as non-sensitive."
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6 では、カンマの後ろに入る関係代名詞の選択問題が出ます。非制限用法では that は使えず、which（物）／who（人）を選ぶのが鉄則です。また which は直前の名詞だけでなく、前の文全体を受けることもあります（例：Sales rose, which pleased investors.）。Part 7 では補足情報として読み流せるため、設問の根拠は主節側にあることが多いです。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "① We will open a new office in Osaka, which will create 50 jobs.（大阪に新オフィスを開設し、それにより50人の雇用が生まれます。）② The report, which was sent yesterday, includes the latest figures.（昨日送付した報告書には最新の数字が含まれています。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ニュースの骨子：『休戦』の延長と小さな一歩",
+      "body": "米中は今年、貿易をめぐる対立を一時的に和らげる『休戦』状態にあり、首脳会談で数か月の延長が確認されました。今回の『30-for-30』は、両国が約300億ドルずつ、合計約600億ドル相当の品目を『関税を下げてもよい候補』として示したものです。ただし発表時点で適用開始日は示されておらず、実際に税率が下がったわけではありません。"
+    },
+    {
+      "heading": "📌 専門用語のやさしい解説",
+      "body": "『機微性の低い（non-sensitive）』とは、安全保障や国内産業の保護の観点で争点になりにくい品目のこと。おもちゃや農産物などが典型で、先に下げやすい分野から着手する形です。『貿易委員会（Board of Trade）』は、米中が5月の首脳会談で設けた協議の場で、米側は財務長官と通商代表、中国側は副首相が担います。"
+    },
+    {
+      "heading": "📌 業界・他国への波及",
+      "body": "中国が関税を下げる対象には、トウモロコシ・小麦・冷凍肉・木材など米国産の農産物や資源が並びます。米国産が有利になれば、他国の輸出業者が競り負ける可能性があり、欧州やブラジルなども動向を注視しています。一方、米国側の対象は消費財中心で、輸入企業にとってはコスト低下の期待材料です。"
+    },
+    {
+      "heading": "📌 日本企業・ビジネスパーソンへの示唆",
+      "body": "日本にとっては、米中の関税が下がれば中国向け・米国向けの部材輸出や現地生産の採算が改善する期待がある一方、農産物や資源で米国産にシェアを奪われるリスクもあります。投資家にとっては『対立緩和の持続性』が焦点で、適用時期や対象拡大の発表が相場材料になります。実務では、サプライチェーンの関税負担を試算し、詳細発表に備えることが重要です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "US and China agree to cut tariffs on $60 billion worth of goods, from coal to toys",
+      "publisher": "CNN",
+      "url": "https://www.cnn.com/2026/09/28/business/us-china-tariff-cuts-60-billion-intl",
+      "date": "2026-09-28"
+    },
+    {
+      "title": "U.S. and China to Cut Tariffs on $60 Billion of Goods",
+      "publisher": "TIME",
+      "url": "https://time.com/article/2026/09/29/us-china-reciprocal-tariffs-cut-trade-goods-60-billion/",
+      "date": "2026-09-29"
+    },
+    {
+      "title": "U.S.-China Board of Trade “30-for-30” Identifies Products Recommended for Reduced Tariffs",
+      "publisher": "Thompson Hine SmartTrade",
+      "url": "https://www.thompsonhinesmartrade.com/2026/09/u-s-china-board-of-trade-30-for-30-identifies-products-recommended-for-reduced-tariffs/",
+      "date": "2026-09-28"
+    }
+  ]
+}
