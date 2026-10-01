@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-01-1641",
+  "date": "2026-10-01",
+  "time": "16:41",
+  "createdAt": "2026-10-01T16:41:12+09:00",
+  "genre": "医療",
+  "genreEn": "Healthcare",
+  "sample": false,
+  "title": {
+    "en": "US Tariffs on Brand-Name Drugs Now Reach Smaller Drugmakers",
+    "ja": "米の薬品関税、中堅・中小メーカーにも拡大"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "A new US tariff on imported brand-name drugs took effect on September 29.",
+            "ja": "輸入ブランド薬に対する米国の新たな関税が、9月29日に発効した。"
+          },
+          {
+            "en": "The tariff now applies to mid-size and smaller drugmakers, not only the largest ones.",
+            "ja": "この関税は現在、最大手だけでなく中堅・中小の製薬会社にも適用される。"
+          },
+          {
+            "en": "Firms with an approved plan to build drugs in the US pay a 20% rate.",
+            "ja": "米国内で薬を製造する計画が承認された企業は、20％の税率を支払う。"
+          },
+          {
+            "en": "That rate will rise to 100% in 2030.",
+            "ja": "その税率は2030年に100％へ上がる。"
+          },
+          {
+            "en": "Imports from the EU and Japan face a lower rate of 15%.",
+            "ja": "EUや日本からの輸入品には、より低い15％の税率が課される。"
+          },
+          {
+            "en": "Generic drugs are not covered by the tariff.",
+            "ja": "ジェネリック医薬品はこの関税の対象外である。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The change matters because many smaller firms have less cash than big drugmakers.",
+            "ja": "この変更が重要なのは、多くの中小企業が大手製薬会社より手元資金が少ないからだ。"
+          },
+          {
+            "en": "Industry groups warn that higher import costs could reduce spending on research.",
+            "ja": "業界団体は、輸入コストの上昇が研究への支出を減らしかねないと警告している。"
+          },
+          {
+            "en": "Companies can lower their bill as long as they invest in US factories.",
+            "ja": "企業は、米国内の工場に投資する限り、負担額を下げることができる。"
+          },
+          {
+            "en": "Some rare-disease treatments are also exempt if they meet certain conditions.",
+            "ja": "一部の希少疾患向け治療薬も、一定の条件を満たせば免除される。"
+          },
+          {
+            "en": "Analysts say the biggest firms have already secured relief, so investors reacted calmly.",
+            "ja": "アナリストによれば、最大手はすでに救済措置を確保しており、投資家は冷静に反応した。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What will the 20% rate rise to in 2030?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "50%",
+          "ja": "50％"
+        },
+        {
+          "key": "B",
+          "text": "80%",
+          "ja": "80％"
+        },
+        {
+          "key": "C",
+          "text": "100%",
+          "ja": "100％"
+        },
+        {
+          "key": "D",
+          "text": "120%",
+          "ja": "120％"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本文第1段落の4文目に「That rate will rise to 100% in 2030.」とあり、20％の税率は2030年に100％へ上がる。したがって C が正解。A の50％、B の80％、D の120％は本文のどこにも出てこない数字で、「本文にない情報」を使った引っかけ選択肢である。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "数字を問う設問は、選択肢の数字を本文と照合するだけで解ける。That などの指示語が指す内容（ここでは the 20% rate）を前の文でたどることがポイント。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why do industry groups warn about the tariff?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Imports of drugs will be banned.",
+          "ja": "薬の輸入が禁止される"
+        },
+        {
+          "key": "B",
+          "text": "Higher costs could reduce research spending.",
+          "ja": "高コストが研究費を減らしうる"
+        },
+        {
+          "key": "C",
+          "text": "Generic drugs will become more expensive.",
+          "ja": "ジェネリックが値上がりする"
+        },
+        {
+          "key": "D",
+          "text": "Factories in the US will close.",
+          "ja": "米国の工場が閉鎖される"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落の2文目に「Industry groups warn that higher import costs could reduce spending on research.」とあり、輸入コストの上昇が研究への支出を減らしかねないという懸念が理由。B が正解。A の輸入禁止は本文になく、関税は税率の話である。C は「ジェネリックは関税の対象外」と本文にあるため逆の内容。D の工場閉鎖も本文にない情報で、むしろ米国内工場への投資は税負担を下げる手段として書かれている。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由を問う設問は、warn that / because / so などの因果を示す語の直後に答えがある。選択肢が本文と逆の内容になっていないかも確認する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "gloss": "",
+      "example": {
+        "en": "The tariff on imported steel raised our costs.",
+        "ja": "輸入鉄鋼にかかる関税が、当社のコストを押し上げた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "imports",
+      "pos": "名",
+      "ja": "輸入品",
+      "gloss": "",
+      "example": {
+        "en": "Imports from Asia arrive at the port every week.",
+        "ja": "アジアからの輸入品は毎週その港に到着する。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "exempt",
+      "pos": "形",
+      "ja": "免除された",
+      "gloss": "（＝ルールや税の対象から外されること）",
+      "example": {
+        "en": "Small orders are exempt from the shipping fee.",
+        "ja": "少額の注文は送料が免除される。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "approved",
+      "pos": "形",
+      "ja": "承認された",
+      "gloss": "",
+      "example": {
+        "en": "The manager gave us an approved budget for the project.",
+        "ja": "部長は私たちに、そのプロジェクトの承認済み予算を与えた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "warn",
+      "pos": "動",
+      "ja": "警告する",
+      "gloss": "",
+      "example": {
+        "en": "Experts warn that prices may rise next year.",
+        "ja": "専門家は、来年は価格が上がるかもしれないと警告している。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "invest",
+      "pos": "動",
+      "ja": "投資する",
+      "gloss": "",
+      "example": {
+        "en": "The firm plans to invest in a new warehouse.",
+        "ja": "その会社は新しい倉庫に投資する計画だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "secured",
+      "pos": "動",
+      "ja": "確保した",
+      "gloss": "",
+      "example": {
+        "en": "We secured a contract with a major retailer.",
+        "ja": "当社は大手小売業者との契約を確保した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "generic",
+      "pos": "形",
+      "ja": "ジェネリックの",
+      "gloss": "（＝特許が切れた薬と同じ成分で作られた安価な薬のこと）",
+      "example": {
+        "en": "Many patients choose generic drugs to save money.",
+        "ja": "多くの患者は節約のためにジェネリック医薬品を選ぶ。"
+      }
+    }
+  ],
+  "glossary": {
+    "tariff": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "imported": {
+      "lemma": "import",
+      "pos": "動",
+      "ja": "輸入された",
+      "note": ""
+    },
+    "effect": {
+      "lemma": "effect",
+      "pos": "名",
+      "ja": "効力・発効",
+      "note": ""
+    },
+    "applies": {
+      "lemma": "apply",
+      "pos": "動",
+      "ja": "適用される",
+      "note": ""
+    },
+    "drugmakers": {
+      "lemma": "drugmaker",
+      "pos": "名",
+      "ja": "製薬会社",
+      "note": ""
+    },
+    "firms": {
+      "lemma": "firm",
+      "pos": "名",
+      "ja": "企業",
+      "note": ""
+    },
+    "approved": {
+      "lemma": "approve",
+      "pos": "動",
+      "ja": "承認された",
+      "note": ""
+    },
+    "rate": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "税率・割合",
+      "note": ""
+    },
+    "imports": {
+      "lemma": "import",
+      "pos": "名",
+      "ja": "輸入品",
+      "note": ""
+    },
+    "face": {
+      "lemma": "face",
+      "pos": "動",
+      "ja": "直面する・課される",
+      "note": "face a rate で「税率を課される」"
+    },
+    "generic": {
+      "lemma": "generic",
+      "pos": "形",
+      "ja": "ジェネリックの",
+      "note": ""
+    },
+    "covered": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "対象に含める",
+      "note": "be covered by 〜 で「〜の対象になる」"
+    },
+    "industry": {
+      "lemma": "industry",
+      "pos": "名",
+      "ja": "業界",
+      "note": ""
+    },
+    "warn": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告する",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "reduce": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "research": {
+      "lemma": "research",
+      "pos": "名",
+      "ja": "研究",
+      "note": ""
+    },
+    "bill": {
+      "lemma": "bill",
+      "pos": "名",
+      "ja": "請求額・負担",
+      "note": ""
+    },
+    "invest": {
+      "lemma": "invest",
+      "pos": "動",
+      "ja": "投資する",
+      "note": ""
+    },
+    "exempt": {
+      "lemma": "exempt",
+      "pos": "形",
+      "ja": "免除された",
+      "note": ""
+    },
+    "conditions": {
+      "lemma": "condition",
+      "pos": "名",
+      "ja": "条件",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "secured": {
+      "lemma": "secure",
+      "pos": "動",
+      "ja": "確保した",
+      "note": ""
+    },
+    "relief": {
+      "lemma": "relief",
+      "pos": "名",
+      "ja": "救済・軽減",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "reacted": {
+      "lemma": "react",
+      "pos": "動",
+      "ja": "反応した",
+      "note": ""
+    },
+    "calmly": {
+      "lemma": "calmly",
+      "pos": "副",
+      "ja": "冷静に",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "as long as（〜する限り・条件を表す接続詞句）",
+    "quote": "Companies can lower their bill as long as they invest in US factories.",
+    "quoteJa": "企業は、米国内の工場に投資する限り、負担額を下げることができる。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "as long as は「〜する限り」「〜でありさえすれば」という意味の接続詞句で、条件を表します。as long as の後ろには S＋V が続き、時や条件を表す副詞節なので、未来のことでも現在形を使います（例：as long as they invest。will invest とはしない）。本文では「米国内の工場に投資するという条件を満たす限り、負担額を下げられる」と読みます。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "as long as は if に「〜でさえあれば」という限定のニュアンスを加えた表現で、provided (that) / so long as とほぼ同じ意味です。Companies can lower their bill if they invest in US factories. でも意味は通じますが、as long as のほうが「それが唯一の条件」という響きになります。なお、期間を表す as long as（例：as long as ten years＝10年も）や、as far as（〜に関する限り）とは区別しましょう。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 や Part 6 の接続詞を選ぶ問題で、選択肢に as long as / even if / unless / whereas などが並びます。「〜である限り」＝条件の限定なら as long as、「たとえ〜でも」なら even if、「〜しない限り」なら unless と、文脈で判断します。Part 7 では、契約・返金・保証条件を述べる文でよく登場します。"
+      },
+      {
+        "heading": "ビジネス文書での応用例",
+        "body": "You may return the product within 30 days as long as it is unused.（未使用である限り、30日以内なら返品できます。）／ The discount applies as long as you place your order by Friday.（金曜までにご注文いただく限り、割引が適用されます。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きているのか：関税の「第2段階」",
+      "body": "米国は安全保障を理由に、輸入される特許薬（ブランド薬）とその主要原料に関税を課しています。7月末に始まった第1段階は大手が中心でしたが、9月29日から始まった第2段階で、中堅・中小の製薬会社にも対象が広がりました。税率は、米国内での製造計画が承認された企業は20％（2030年4月に100％へ）、EU・日本・韓国・スイスなど協定のある地域からの輸入は15％とされています。ジェネリック医薬品とバイオシミラー（後続品）は対象外です。"
+    },
+    {
+      "heading": "📌 2. 専門用語をかみ砕く：オンショアリングと適用除外",
+      "body": "「オンショアリング（onshoring）」は、海外にある工場を自国内に移すこと、または自国内に新たに建てることです。この関税では、米国内で生産する計画を示せば税率が低くなる仕組みで、事実上「米国に工場を作れば税が軽くなる」というインセンティブになっています。また、希少疾患向け治療薬（オーファン薬）や細胞・遺伝子治療などは、条件を満たせば0％になる適用除外のルールも示されています。"
+    },
+    {
+      "heading": "📌 3. 業界の動向：大手は先行して対応、中堅・中小は負担増",
+      "body": "大手製薬会社は、米国での投資表明や薬価引き下げ（メディケイドなど）と引き換えに、すでに関税の軽減を取り付けています。そのため株式市場の反応は限定的でした。一方、中堅・中小は手元資金が限られ、関税コストが研究開発費を圧迫するおそれがあると業界団体は警告しています。新薬開発の遅れや、米国市場向けの価格引き上げにつながる可能性があります。"
+    },
+    {
+      "heading": "📌 4. 日本への影響と投資家・経営者の視点",
+      "body": "日本は15％の枠に入っており、米国向けに医薬品や原料を輸出する日本企業にとっては、他の地域より有利な条件が確保された形です。ただし、米国での現地生産や提携を求める圧力は今後強まる可能性があり、製薬・医療機器・素材メーカーは、生産拠点の見直しや米国企業との協業を検討する必要があります。投資家にとっては、大手は「対応済み」、中堅・中小は「資金力と米国製造計画の有無」が選別の基準になりそうです。TOEIC でも tariff / exempt / import といった貿易・コスト関連の語は頻出なので、ぜひ押さえておきましょう。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pharma tariffs reach smaller drugmakers as industry warns of R&D pressure",
+      "publisher": "Drug Discovery Trends",
+      "url": "https://www.drugdiscoverytrends.com/pharma-tariffs-reach-smaller-drugmakers-as-industry-warns-of-rd-pressure/",
+      "date": "2026-09-30"
+    },
+    {
+      "title": "US details rules for 0% specialty pharmaceutical tariff exemptions",
+      "publisher": "Fierce Pharma",
+      "url": "https://www.fiercepharma.com/pharma/us-details-rules-0-specialty-pharmaceutical-tariff-exemptions",
+      "date": "2026-09-29"
+    },
+    {
+      "title": "Big Pharma Got Its Tariff Exemption. The Biotech ETF Barely Blinked",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/09/30/big-pharma-got-its-tariff-exemption-the-biotech-etf-barely-blinked/",
+      "date": "2026-09-30"
+    }
+  ]
+}
