@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-02-0539",
+  "date": "2026-10-02",
+  "time": "05:39",
+  "createdAt": "2026-10-02T05:39:24+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail & Consumer",
+  "sample": false,
+  "title": {
+    "en": "Walmart, Amazon and Target Plan Overlapping October Sales",
+    "ja": "米小売3社、10月に重なるセールを計画"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Three of the largest retailers will hold major sales in early October.",
+            "ja": "大手小売3社が、10月上旬に大規模なセールを実施する。"
+          },
+          {
+            "en": "Walmart will run its Deal Days from October 5 to 11.",
+            "ja": "ウォルマートは「ディール・デイズ」を10月5日から11日まで開催する。"
+          },
+          {
+            "en": "Amazon will hold its Prime Big Deal Days on October 6 and 7.",
+            "ja": "アマゾンは「プライム・ビッグ・ディール・デイズ」を10月6日と7日に開く。"
+          },
+          {
+            "en": "Target has picked the same two days for its Circle Week.",
+            "ja": "ターゲットも「サークル・ウィーク」に同じ2日間を選んだ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The timing matters because all three sales overlap on October 6 and 7.",
+            "ja": "3社のセールが10月6日と7日に重なるため、この時期設定は重要である。"
+          },
+          {
+            "en": "Walmart is the only one that has deals on October 5 and again from October 8 to 11.",
+            "ja": "10月5日と、10月8日から11日にもセールがあるのはウォルマートだけだ。"
+          },
+          {
+            "en": "Prices are still high, so many shoppers are looking for a discount.",
+            "ja": "物価が依然として高いため、多くの買い物客は割引を探している。"
+          },
+          {
+            "en": "The retailers compete for customers who watch their budgets closely.",
+            "ja": "各社は、家計を慎重に管理する顧客を奪い合っている。"
+          },
+          {
+            "en": "Each offer also gives people an early chance to buy holiday gifts.",
+            "ja": "各セールは、人々にホリデーギフトを早めに買う機会も与える。"
+          },
+          {
+            "en": "Shoppers can compare prices before they decide where to spend.",
+            "ja": "買い物客は、どこでお金を使うか決める前に価格を比べられる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "When will Walmart's Deal Days take place?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "October 1 to 7",
+          "ja": "10月1日〜7日"
+        },
+        {
+          "key": "B",
+          "text": "October 5 to 11",
+          "ja": "10月5日〜11日"
+        },
+        {
+          "key": "C",
+          "text": "October 6 and 7",
+          "ja": "10月6日と7日"
+        },
+        {
+          "key": "D",
+          "text": "October 8 to 14",
+          "ja": "10月8日〜14日"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本文2文目に「Walmart will run its Deal Days from October 5 to 11」とあり、正解はB。Cの October 6 and 7 は Amazon と Target のセール日程で、別の会社の数字を混ぜた引っかけ。AとDは本文に出てこない日付。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う設問は、本文で該当する企業名を先に探す。複数社の日程が並ぶ文章では、会社ごとの数字の取り違えが定番の誤答になる。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the summary, why does the timing matter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Walmart's sale lasts only two days.",
+          "ja": "ウォルマートのセールは2日だけ。"
+        },
+        {
+          "key": "B",
+          "text": "All three sales run at the same time on two days.",
+          "ja": "3社のセールが2日間重なる。"
+        },
+        {
+          "key": "C",
+          "text": "Target has no sale in October.",
+          "ja": "ターゲットは10月にセールがない。"
+        },
+        {
+          "key": "D",
+          "text": "Amazon's sale lasts a full week.",
+          "ja": "アマゾンのセールは丸1週間。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "5文目「The timing matters because all three sales overlap on October 6 and 7.」が根拠。because の後ろに理由が書かれている。Aは Walmart が7日間（5〜11日）開催するので逆。Cは Target も Circle Week を開くので誤り。Dは Amazon の開催は2日間のみ。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "「なぜ」を問う設問は because / so / since の直後に答えがある。設問文の matter を手がかりに該当文を探す。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "retailer",
+      "pos": "名",
+      "ja": "小売業者、小売企業",
+      "gloss": "",
+      "example": {
+        "en": "Each retailer opens its sale at midnight.",
+        "ja": "各小売企業は、深夜にセールを始める。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "run",
+      "pos": "動",
+      "ja": "（催しなどを）実施する、運営する",
+      "gloss": "（＝セールやイベントを開催するという意味）",
+      "example": {
+        "en": "The store will run a sale next week.",
+        "ja": "その店は来週セールを実施する。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "timing",
+      "pos": "名",
+      "ja": "時期、タイミング",
+      "gloss": "",
+      "example": {
+        "en": "The timing of the launch surprised many investors.",
+        "ja": "発売の時期は多くの投資家を驚かせた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "overlap",
+      "pos": "動",
+      "ja": "重なる、一部が重複する",
+      "gloss": "",
+      "example": {
+        "en": "The two meetings overlap, so I cannot attend both.",
+        "ja": "2つの会議が重なっているので、両方には出られない。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "offer",
+      "pos": "名",
+      "ja": "提案、特売、申し出",
+      "gloss": "",
+      "example": {
+        "en": "The company made an offer to the new employee.",
+        "ja": "会社はその新入社員に条件を提示した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "discount",
+      "pos": "名",
+      "ja": "割引",
+      "gloss": "",
+      "example": {
+        "en": "Members receive a 10% discount on all items.",
+        "ja": "会員は全商品が10％割引になる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "compete",
+      "pos": "動",
+      "ja": "競争する、競い合う",
+      "gloss": "",
+      "example": {
+        "en": "Many firms compete for the same customers.",
+        "ja": "多くの企業が同じ顧客を奪い合っている。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "budget",
+      "pos": "名",
+      "ja": "予算、家計",
+      "gloss": "",
+      "example": {
+        "en": "We must finish the project within the budget.",
+        "ja": "私たちは予算内にプロジェクトを終えなければならない。"
+      }
+    }
+  ],
+  "glossary": {
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "largest": {
+      "lemma": "large",
+      "pos": "形",
+      "ja": "最大の",
+      "note": "large の最上級"
+    },
+    "major": {
+      "lemma": "major",
+      "pos": "形",
+      "ja": "大規模な、主要な",
+      "note": ""
+    },
+    "hold": {
+      "lemma": "hold",
+      "pos": "動",
+      "ja": "開催する",
+      "note": "sale や meeting を「開く」"
+    },
+    "run": {
+      "lemma": "run",
+      "pos": "動",
+      "ja": "実施する",
+      "note": "ここでは「運営する」の意味"
+    },
+    "picked": {
+      "lemma": "pick",
+      "pos": "動",
+      "ja": "選んだ",
+      "note": "過去形"
+    },
+    "timing": {
+      "lemma": "timing",
+      "pos": "名",
+      "ja": "時期、タイミング",
+      "note": ""
+    },
+    "matters": {
+      "lemma": "matter",
+      "pos": "動",
+      "ja": "重要である",
+      "note": "三単現"
+    },
+    "overlap": {
+      "lemma": "overlap",
+      "pos": "動",
+      "ja": "重なる",
+      "note": ""
+    },
+    "deals": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "お買い得品、取引",
+      "note": ""
+    },
+    "again": {
+      "lemma": "again",
+      "pos": "副",
+      "ja": "再び",
+      "note": ""
+    },
+    "still": {
+      "lemma": "still",
+      "pos": "副",
+      "ja": "依然として",
+      "note": ""
+    },
+    "shoppers": {
+      "lemma": "shopper",
+      "pos": "名",
+      "ja": "買い物客",
+      "note": ""
+    },
+    "looking": {
+      "lemma": "look",
+      "pos": "動",
+      "ja": "探している",
+      "note": "look for ～ で「～を探す」"
+    },
+    "discount": {
+      "lemma": "discount",
+      "pos": "名",
+      "ja": "割引",
+      "note": ""
+    },
+    "compete": {
+      "lemma": "compete",
+      "pos": "動",
+      "ja": "競争する",
+      "note": "compete for ～ で「～を奪い合う」"
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "budgets": {
+      "lemma": "budget",
+      "pos": "名",
+      "ja": "予算、家計",
+      "note": ""
+    },
+    "closely": {
+      "lemma": "closely",
+      "pos": "副",
+      "ja": "注意深く、慎重に",
+      "note": ""
+    },
+    "offer": {
+      "lemma": "offer",
+      "pos": "名",
+      "ja": "特売、提案",
+      "note": ""
+    },
+    "chance": {
+      "lemma": "chance",
+      "pos": "名",
+      "ja": "機会",
+      "note": ""
+    },
+    "holiday": {
+      "lemma": "holiday",
+      "pos": "名",
+      "ja": "休暇、祝祭日",
+      "note": "ここでは年末商戦の時期を指す"
+    },
+    "gifts": {
+      "lemma": "gift",
+      "pos": "名",
+      "ja": "贈り物",
+      "note": ""
+    },
+    "compare": {
+      "lemma": "compare",
+      "pos": "動",
+      "ja": "比べる",
+      "note": ""
+    },
+    "decide": {
+      "lemma": "decide",
+      "pos": "動",
+      "ja": "決める",
+      "note": ""
+    },
+    "spend": {
+      "lemma": "spend",
+      "pos": "動",
+      "ja": "（お金を）使う",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "the only ＋ 関係代名詞 that（先行詞が only で限定されるとき that を使う）",
+    "quote": "Walmart is the only one that has deals on October 5 and again from October 8 to 11.",
+    "quoteJa": "10月5日と、10月8日から11日にもセールがあるのはウォルマートだけだ。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "the only one that has ～ は「～を持つ唯一のもの」という意味です。one は company（会社）を受け、that 以下が one を説明しています。先行詞に the only / the first / the last / 最上級 / all / every などが付くときは、関係代名詞に who や which より that を使うのが普通です。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "Walmart is the only one that has deals on October 5. ＝ No other retailer has deals on October 5 except Walmart. ＝ Only Walmart has deals on October 5. 3つとも同じ内容ですが、that を使う形は「唯一」の情報を後ろから補う点が特徴です。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、空所に who / which / that のどれが入るかを問う形で出ます。先行詞が the only ～ のときは that が正解になる場合が多く、また that の後ろの動詞は先行詞に合わせて単数・複数を変えます（the only one that has）。Part 7 では「唯一の～」「初めての～」という語が、本文と設問の言い換えの手がかりになります。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "This is the only branch that offers weekend delivery.（ここは週末配達を行っている唯一の支店です。）／ She was the first employee that joined the new team.（彼女は新チームに加わった最初の社員でした。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 「10月のプライムデー」とは",
+      "body": "Amazon が年に2回ほど開く会員向けの大型セールのうち、秋に行うものが Prime Big Deal Days です。もとは夏の Prime Day に続く企画ですが、年末商戦の前に買い物を前倒ししてもらう狙いがあります。Prime Big Deal Days は Amazon の有料会員向けのセールとして知られています。"
+    },
+    {
+      "heading": "📌 2. 競合他社の動き",
+      "body": "Walmart と Target は、Amazon のセールに合わせて自社のセールをぶつける戦略を続けています。今回は Target が Amazon と同じ2日間、Walmart は前後を含む1週間に広げています。Walmart はセールの前後の日にも開催することで、Amazon が開いていない日にも客を集める形です。"
+    },
+    {
+      "heading": "📌 3. 日本企業・日本人への影響",
+      "body": "日本でも Amazon の「プライム感謝祭」などのセールが定着しており、同じ流れが見られます。日本の小売・メーカーにとっては、米国の年末商戦の前倒しは出荷や在庫計画に影響します。米国向けに商品を輸出する企業は、10〜12月の需要を早めに見込んで物流を手配する必要があります。"
+    },
+    {
+      "heading": "📌 4. 投資家・経営者の視点",
+      "body": "物価が高い中でも、消費者は割引を探して買い物をしています。小売企業にとってセールは、売上を確保する手段であると同時に、利益率を削るリスクもあります。投資家は、各社がセール期間中にどれだけ売上を伸ばし、利益率を保てるかを、10月以降の決算で確認することになります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon confirmed October Prime Day 2026 dates and it's less than a week away",
+      "publisher": "NBC News",
+      "url": "https://www.nbcnews.com/select/shopping/october-prime-day-dates-2026-rcna597737",
+      "date": ""
+    },
+    {
+      "title": "Walmart, Target and Amazon Announce October Deal Days",
+      "publisher": "WFXB",
+      "url": "https://www.wfxb.com/2026/09/17/walmart-target-and-amazon-announce-october-deal-days/",
+      "date": "2026-09-17"
+    }
+  ]
+}
