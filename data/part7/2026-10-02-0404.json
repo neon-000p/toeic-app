@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-10-02-0404",
+  "date": "2026-10-02",
+  "time": "04:04",
+  "createdAt": "2026-10-02T04:04:00+09:00",
+  "sample": false,
+  "format": "double",
+  "scene": "メール＋申込書｜通勤用の駐輪場の利用申請",
+  "intro": "Questions 1-5 refer to the following e-mail and form.",
+  "docs": [
+    {
+      "docType": "email",
+      "label": "メール",
+      "header": [
+        {
+          "label": "To",
+          "text": "All Staff"
+        },
+        {
+          "label": "From",
+          "text": "Priya Raman, Facilities Office"
+        },
+        {
+          "label": "Subject",
+          "text": "Bicycle parking"
+        },
+        {
+          "label": "Date",
+          "text": "4 March"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Beginning on 1 April, Larkfield Textiles will offer secure bicycle parking in the basement of the main building.",
+              "ja": "4月1日から、ラークフィールド・テキスタイルズは本館の地下で安全な駐輪場を提供します。"
+            },
+            {
+              "en": "Staff may choose between an open rack, which costs six dollars a month, and a covered locker, which costs fifteen dollars a month.",
+              "ja": "職員は、月6ドルの屋根なしラックと、月15ドルの屋根付きロッカーから選べます。"
+            },
+            {
+              "en": "Both options are paid through payroll deduction.",
+              "ja": "どちらも給与天引きで支払います。"
+            },
+            {
+              "en": "The basement has room for sixty bicycles and is monitored by security cameras around the clock.",
+              "ja": "地下には60台分の場所があり、防犯カメラが24時間監視しています。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Employees who sign up for a full year will receive a twenty percent discount on the monthly fee.",
+              "ja": "1年間の契約を申し込む従業員には、月額料金が20パーセント割引になります。"
+            },
+            {
+              "en": "Applications must be returned to my office no later than 22 March.",
+              "ja": "申込書は、遅くとも3月22日までに私の事務所へ返送してください。"
+            },
+            {
+              "en": "Spaces are limited, so they will be assigned in the order in which forms are received.",
+              "ja": "場所には限りがあるため、申込書を受け取った順に割り当てます。"
+            },
+            {
+              "en": "Please contact me if you have any questions about the new service or the application process.",
+              "ja": "新しいサービスや申込みの手順についてご質問があれば、私までご連絡ください。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "docType": "form",
+      "label": "申込書",
+      "header": [
+        {
+          "label": "",
+          "text": "Larkfield Textiles — Bicycle Parking Application"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Applicant: Hugo Lindqvist, Quality Control Department",
+              "ja": "申込者：ヒューゴ・リンドクヴィスト、品質管理部"
+            },
+            {
+              "en": "Employee number: 40718",
+              "ja": "従業員番号：40718"
+            },
+            {
+              "en": "Date submitted: 18 March",
+              "ja": "提出日：3月18日"
+            },
+            {
+              "en": "Option requested: Covered locker",
+              "ja": "希望する区分：屋根付きロッカー"
+            },
+            {
+              "en": "Bicycle type: Standard, without an electric motor",
+              "ja": "自転車の種類：標準型（電動モーターなし）"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Length of agreement: 12 months, starting 1 April",
+              "ja": "契約期間：4月1日から12か月"
+            },
+            {
+              "en": "Payment method: Payroll deduction",
+              "ja": "支払方法：給与天引き"
+            },
+            {
+              "en": "I understand that my locker number will be sent to me by e-mail before the start date.",
+              "ja": "開始日の前に、ロッカー番号がメールで届くことを了解しました。"
+            },
+            {
+              "en": "I agree to follow the parking rules that are posted at the entrance to the basement.",
+              "ja": "地下の入口に掲示された駐輪の規則に従うことに同意します。"
+            },
+            {
+              "en": "Signature: H. Lindqvist",
+              "ja": "署名：H. リンドクヴィスト"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the purpose of the e-mail?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To announce a new bicycle parking service",
+          "ja": "新しい駐輪場サービスを知らせること"
+        },
+        {
+          "key": "B",
+          "text": "To ask staff to travel by public transport",
+          "ja": "公共交通機関での通勤を求めること"
+        },
+        {
+          "key": "C",
+          "text": "To explain a change in building hours",
+          "ja": "建物の利用時間の変更を説明すること"
+        },
+        {
+          "key": "D",
+          "text": "To invite staff to a cycling event",
+          "ja": "自転車の催しに職員を招くこと"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "メールの第1文で「4月1日から本館の地下で安全な駐輪場を提供する」と述べ、以降は料金・割引・申込方法の案内が続く。B と D は通勤や自転車という話題語だけを使った誤答で、依頼や招待はどこにも書かれていない。",
+      "tip": "目的を問う設問は、メールの第1文と件名で決まる。後ろの細かい条件に引きずられず、冒頭で何を知らせているかを見る。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "By when must applications be returned?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4 March",
+          "ja": "3月4日"
+        },
+        {
+          "key": "B",
+          "text": "22 March",
+          "ja": "3月22日"
+        },
+        {
+          "key": "C",
+          "text": "18 March",
+          "ja": "3月18日"
+        },
+        {
+          "key": "D",
+          "text": "1 April",
+          "ja": "4月1日"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第2段落に「遅くとも3月22日までに返送する」とある。3月4日はメールの日付、4月1日は駐輪場の開始日、3月18日は申込書の提出日で、締め切りではない。",
+      "tip": "日付が複数並ぶ設問では、no later than や by など期限を表す語のすぐ近くを探す。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about Mr. Lindqvist's application?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It requests a place in the open rack.",
+          "ja": "屋根なしラックの場所を申し込んでいる。"
+        },
+        {
+          "key": "B",
+          "text": "It was sent in before the deadline.",
+          "ja": "期限の前に提出された。"
+        },
+        {
+          "key": "C",
+          "text": "It will start on 22 March.",
+          "ja": "3月22日に始まる。"
+        },
+        {
+          "key": "D",
+          "text": "It was submitted to the Quality Control Department.",
+          "ja": "品質管理部に提出された。"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        },
+        {
+          "d": 1,
+          "p": 0,
+          "s": 2
+        }
+      ],
+      "cross": true,
+      "explanation": "申込書の提出日は3月18日で、メールに書かれた返送期限は3月22日。両方を比べると、期限の前に出したと分かる。A は屋根付きロッカーの申込みと食い違い、D の品質管理部は申込者の所属であって提出先ではない。",
+      "tip": "示唆を問う設問で日付が出てきたら、もう一方の文書にある期限や開始日と並べて前後関係を確かめる。"
+    },
+    {
+      "id": "q4",
+      "type": "detail",
+      "prompt": "How much will Mr. Lindqvist pay each month?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$4.80",
+          "ja": "4.80ドル"
+        },
+        {
+          "key": "B",
+          "text": "$6.00",
+          "ja": "6.00ドル"
+        },
+        {
+          "key": "C",
+          "text": "$12.00",
+          "ja": "12.00ドル"
+        },
+        {
+          "key": "D",
+          "text": "$15.00",
+          "ja": "15.00ドル"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 1
+        },
+        {
+          "d": 0,
+          "p": 1,
+          "s": 0
+        },
+        {
+          "d": 1,
+          "p": 0,
+          "s": 3
+        },
+        {
+          "d": 1,
+          "p": 1,
+          "s": 0
+        }
+      ],
+      "cross": true,
+      "explanation": "申込書で、リンドクヴィストさんは屋根付きロッカー（月15ドル）を12か月で申し込んでいる。メールには1年間の契約で20パーセント割引とあるので、15ドルの80パーセントで12ドルになる。A は屋根なしラックの6ドルに割引を当てた場合の誤答。",
+      "tip": "片方に料金と割引の条件、もう片方に申込内容があるときは、両方を合わせて計算する。条件を満たすかどうかを先に確かめる。"
+    },
+    {
+      "id": "q5",
+      "type": "notTrue",
+      "prompt": "What is NOT mentioned about the bicycle parking?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is located in the basement.",
+          "ja": "地下にある。"
+        },
+        {
+          "key": "B",
+          "text": "Fees are paid by payroll deduction.",
+          "ja": "料金は給与天引きで払う。"
+        },
+        {
+          "key": "C",
+          "text": "Spaces go to applicants in the order of receipt.",
+          "ja": "場所は受付順に割り当てられる。"
+        },
+        {
+          "key": "D",
+          "text": "Repairs are provided free of charge.",
+          "ja": "修理が無料で行われる。"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        },
+        {
+          "d": 0,
+          "p": 0,
+          "s": 2
+        },
+        {
+          "d": 0,
+          "p": 1,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "地下にあることは第1段落の第1文、給与天引きは同じ段落の最後の文、受付順の割り当ては第2段落の最後の文に書かれている。修理については、メールにも申込書にも記述がない。",
+      "tip": "NOT 問題は、選択肢3つを本文で見つけて消し、残ったものを選ぶ。選択肢は本文の順に並ぶことが多い。"
+    }
+  ],
+  "glossary": {
+    "no later than": {
+      "lemma": "no later than",
+      "pos": "熟",
+      "ja": "遅くとも〜までに",
+      "note": "",
+      "example": {
+        "en": "Please confirm your attendance no later than Wednesday noon.",
+        "ja": "遅くとも水曜日の正午までに出欠をご連絡ください。"
+      }
+    },
+    "payroll deduction": {
+      "lemma": "payroll deduction",
+      "pos": "名",
+      "ja": "給与天引き",
+      "note": "",
+      "example": {
+        "en": "The membership fee is collected by payroll deduction each month.",
+        "ja": "会費は毎月、給与天引きで徴収される。"
+      }
+    },
+    "sign up for": {
+      "lemma": "sign up for",
+      "pos": "熟",
+      "ja": "〜に申し込む",
+      "note": "",
+      "example": {
+        "en": "Many employees signed up for the language course this spring.",
+        "ja": "今年の春、多くの従業員が語学講座に申し込んだ。"
+      }
+    },
+    "covered locker": {
+      "lemma": "covered locker",
+      "pos": "名",
+      "ja": "屋根付きロッカー",
+      "note": "",
+      "example": {
+        "en": "Bicycles kept in a covered locker stay dry in the rain.",
+        "ja": "屋根付きロッカーに置いた自転車は、雨でも濡れない。"
+      }
+    },
+    "in the order": {
+      "lemma": "in the order",
+      "pos": "熟",
+      "ja": "〜の順に",
+      "note": "",
+      "example": {
+        "en": "Customers will be served in the order they arrived.",
+        "ja": "お客様は到着した順に対応いたします。"
+      }
+    },
+    "be assigned": {
+      "lemma": "assign",
+      "pos": "動",
+      "ja": "割り当てる",
+      "note": "",
+      "example": {
+        "en": "New employees are assigned a desk on their first day.",
+        "ja": "新入社員は初日に机を割り当てられる。"
+      }
+    },
+    "length of agreement": {
+      "lemma": "length of agreement",
+      "pos": "名",
+      "ja": "契約期間",
+      "note": "",
+      "example": {
+        "en": "The length of agreement can be extended by one year.",
+        "ja": "契約期間は1年延長できる。"
+      }
+    },
+    "secure": {
+      "lemma": "secure",
+      "pos": "形",
+      "ja": "安全な、安心できる",
+      "note": "動詞では「確保する」の意味もある",
+      "example": {
+        "en": "Store your passport in a secure place during the trip.",
+        "ja": "旅行中はパスポートを安全な場所に保管してください。"
+      }
+    },
+    "discount": {
+      "lemma": "discount",
+      "pos": "名",
+      "ja": "割引",
+      "note": "",
+      "example": {
+        "en": "Students receive a discount on all weekday tickets.",
+        "ja": "学生は平日のチケットがすべて割引になる。"
+      }
+    },
+    "limited": {
+      "lemma": "limited",
+      "pos": "形",
+      "ja": "限られた",
+      "note": "",
+      "example": {
+        "en": "Seating is limited, so please register early.",
+        "ja": "席数に限りがありますので、お早めにお申し込みください。"
+      }
+    }
+  },
+  "point": {
+    "lead": "2通目を読む前に、1通目の条件を一行でまとめておく",
+    "items": [
+      {
+        "title": "条件と数字を拾ってから2つ目へ進む",
+        "body": "1つ目のメールには「1年なら20パーセント割引」「3月22日が期限」のような条件が入る。ここを頭に置いて2つ目の申込書を読めば、どの数字を組み合わせるかが見える。"
+      },
+      {
+        "title": "複数文書の設問は、両方の根拠をそろえる",
+        "body": "料金や日付の設問は、片方の文書だけでは答えが出ないように作られている。選んだ答えの根拠が2つの文書に1つずつあるかを確かめると、誤答の A を選ぶミスが減る。"
+      },
+      {
+        "title": "NOT 問題は3つを消してから選ぶ",
+        "body": "選択肢を1つずつ本文で探して消し、見つからなかったものが答えになる。本文の順に選択肢が並んでいることが多いので、上から順に確認すると探し直しが少ない。"
+      }
+    ]
+  }
+}

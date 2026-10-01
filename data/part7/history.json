@@ -1,8 +1,25 @@
 {
   "schemaVersion": 1,
   "type": "part7-history",
-  "updatedAt": "2026-09-30T04:50:00+09:00",
+  "updatedAt": "2026-10-02T04:09:25+09:00",
   "items": [
+    {
+      "id": "2026-10-02-0404",
+      "date": "2026-10-02",
+      "scene": "メール＋申込書｜通勤用の駐輪場の利用申請",
+      "format": "double",
+      "docTypes": [
+        "email",
+        "form"
+      ],
+      "types": [
+        "gist",
+        "detail",
+        "infer",
+        "detail",
+        "notTrue"
+      ]
+    },
     {
       "id": "2026-09-30-0412",
       "date": "2026-09-30",
