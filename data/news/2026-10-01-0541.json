@@ -440,5 +440,23 @@
       "url": "https://www.thompsonhinesmartrade.com/2026/09/u-s-china-board-of-trade-30-for-30-identifies-products-recommended-for-reduced-tariffs/",
       "date": "2026-09-28"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-01-0541/00.mp3",
+      "audio/2026-10-01-0541/01.mp3",
+      "audio/2026-10-01-0541/02.mp3",
+      "audio/2026-10-01-0541/03.mp3",
+      "audio/2026-10-01-0541/04.mp3",
+      "audio/2026-10-01-0541/05.mp3",
+      "audio/2026-10-01-0541/06.mp3",
+      "audio/2026-10-01-0541/07.mp3",
+      "audio/2026-10-01-0541/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 207285,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-01T07:42:36.116Z",
+    "trimmed": true
+  }
 }

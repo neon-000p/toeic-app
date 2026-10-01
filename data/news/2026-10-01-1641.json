@@ -460,5 +460,25 @@
       "url": "https://247wallst.com/investing/2026/09/30/big-pharma-got-its-tariff-exemption-the-biotech-etf-barely-blinked/",
       "date": "2026-09-30"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-01-1641/00.mp3",
+      "audio/2026-10-01-1641/01.mp3",
+      "audio/2026-10-01-1641/02.mp3",
+      "audio/2026-10-01-1641/03.mp3",
+      "audio/2026-10-01-1641/04.mp3",
+      "audio/2026-10-01-1641/05.mp3",
+      "audio/2026-10-01-1641/06.mp3",
+      "audio/2026-10-01-1641/07.mp3",
+      "audio/2026-10-01-1641/08.mp3",
+      "audio/2026-10-01-1641/09.mp3",
+      "audio/2026-10-01-1641/10.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 223311,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-01T07:43:36.708Z",
+    "trimmed": true
+  }
 }
