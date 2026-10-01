@@ -438,5 +438,24 @@
       "url": "https://www.wfxb.com/2026/09/17/walmart-target-and-amazon-announce-october-deal-days/",
       "date": "2026-09-17"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-02-0539/00.mp3",
+      "audio/2026-10-02-0539/01.mp3",
+      "audio/2026-10-02-0539/02.mp3",
+      "audio/2026-10-02-0539/03.mp3",
+      "audio/2026-10-02-0539/04.mp3",
+      "audio/2026-10-02-0539/05.mp3",
+      "audio/2026-10-02-0539/06.mp3",
+      "audio/2026-10-02-0539/07.mp3",
+      "audio/2026-10-02-0539/08.mp3",
+      "audio/2026-10-02-0539/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 188514,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-01T20:46:30.884Z",
+    "trimmed": true
+  }
 }
