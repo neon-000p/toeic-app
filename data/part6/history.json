@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
   "type": "part6-history",
-  "updatedAt": "2026-09-30T04:40:00+09:00",
+  "updatedAt": "2026-10-02T04:08:31+09:00",
   "items": [
+    {
+      "id": "2026-10-02-0404",
+      "date": "2026-10-02",
+      "scene": "取引先メール｜会議用ケータリングの注文変更",
+      "docType": "email",
+      "types": [
+        "verb",
+        "vocab",
+        "conj",
+        "sentence"
+      ]
+    },
     {
       "id": "2026-09-30-0412",
       "date": "2026-09-30",

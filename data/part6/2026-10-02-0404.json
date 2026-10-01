@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-10-02-0404",
+  "date": "2026-10-02",
+  "time": "04:04",
+  "createdAt": "2026-10-02T04:04:00+09:00",
+  "sample": false,
+  "docType": "email",
+  "scene": "取引先メール｜会議用ケータリングの注文変更",
+  "intro": "Questions 1-4 refer to the following e-mail.",
+  "header": [
+    {
+      "label": "To",
+      "text": "Marcus Doyle, Brightwell Catering"
+    },
+    {
+      "label": "From",
+      "text": "Elena Voss, Halden Logistics"
+    },
+    {
+      "label": "Subject",
+      "text": "Change to catering order for 14 November"
+    },
+    {
+      "label": "Date",
+      "text": "3 November"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "I am writing about the catering order we placed with you for our regional sales conference on 14 November.",
+          "ja": "11月14日の地域営業会議のためにご注文したケータリングの件で、ご連絡しています。"
+        },
+        {
+          "en": "When we first contacted you, we expected sixty guests, but the number of confirmed attendees has since ------- to eighty-five.",
+          "ja": "最初にご連絡した時点では60名を見込んでいましたが、出席が確定した人数はその後85名に増えています。",
+          "q": 1
+        },
+        {
+          "en": "We would therefore like to ------- our order to cover lunch for twenty-five additional guests.",
+          "ja": "つきましては、追加の25名分の昼食も含められるよう、注文を拡大したいと考えています。",
+          "q": 2
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "I understand that a change of this size may require extra preparation time.",
+          "ja": "この規模の変更には、追加の準備時間が必要になるかもしれないと承知しています。"
+        },
+        {
+          "en": "Please let me know by Thursday whether the extra food can be prepared in time.",
+          "ja": "追加分の料理が間に合うよう用意できるかどうか、木曜日までにお知らせください。"
+        },
+        {
+          "en": "------- we will need to arrange a separate lunch for the extra guests.",
+          "ja": "それが難しい場合は、追加のお客様のために別の昼食を手配する必要があります。",
+          "q": 3
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "As before, the meal will be served in the main hall at 12:30 p.m.",
+          "ja": "前回と同じく、食事は午後12時30分に大ホールで提供されます。"
+        },
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 4
+        },
+        {
+          "en": "Once I have approved the figures, we will transfer the additional deposit on the same day.",
+          "ja": "金額を私が承認しましたら、同じ日に追加の保証金をお振込みします。"
+        },
+        {
+          "en": "I look forward to hearing from you about the new arrangements.",
+          "ja": "新しい手配についてのご連絡をお待ちしています。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "verb",
+      "choices": [
+        {
+          "key": "A",
+          "text": "rise",
+          "ja": "増える（原形）"
+        },
+        {
+          "key": "B",
+          "text": "rose",
+          "ja": "増えた（過去形）"
+        },
+        {
+          "key": "C",
+          "text": "risen",
+          "ja": "増えた（過去分詞）"
+        },
+        {
+          "key": "D",
+          "text": "rising",
+          "ja": "増えている（現在分詞）"
+        }
+      ],
+      "answer": "C",
+      "explanation": "空所の前に has since があり、現在完了の has ＋ 過去分詞の形になるので risen が正解。rose は過去形で has のあとには置けない。直前の文脈も「最初は60名、その後85名に増えた」と、過去から今までの変化を述べている。",
+      "tip": "has / have のあとに入る動詞は過去分詞。rise - rose - risen のような不規則変化は、活用表で覚えておく。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "expand",
+          "ja": "拡大する"
+        },
+        {
+          "key": "B",
+          "text": "confirm",
+          "ja": "確認する"
+        },
+        {
+          "key": "C",
+          "text": "withdraw",
+          "ja": "取り下げる"
+        },
+        {
+          "key": "D",
+          "text": "separate",
+          "ja": "分ける"
+        }
+      ],
+      "answer": "A",
+      "explanation": "直前の文で出席者が60名から85名に増えたと述べ、空所のあとは「追加の25名分も含める」とある。注文の範囲を広げる意味の expand が合う。confirm は確認するだけで追加の意味を持たない。withdraw は取り下げる意味で逆になる。",
+      "tip": "語彙問題は、前の文で述べられた変化の方向（増えた・減った）を確かめてから、動詞の意味を選ぶ。"
+    },
+    {
+      "id": "q3",
+      "type": "conj",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Therefore",
+          "ja": "したがって"
+        },
+        {
+          "key": "B",
+          "text": "Otherwise",
+          "ja": "そうでなければ"
+        },
+        {
+          "key": "C",
+          "text": "Meanwhile",
+          "ja": "その間に"
+        },
+        {
+          "key": "D",
+          "text": "Similarly",
+          "ja": "同様に"
+        }
+      ],
+      "answer": "B",
+      "explanation": "直前の文は「追加分の料理が間に合うよう用意できるかどうか知らせてほしい」という依頼。空所の文は「間に合わない場合は別の昼食を手配する」で、前の文の「もしできなければ」を受ける。そのため Otherwise が正解。Therefore は前の文が理由になっていないため合わない。",
+      "tip": "接続副詞は空所の文だけでは選べない。前の文を一言でまとめ、「できなければ」「だから」「しかし」のどの関係かを決める。"
+    },
+    {
+      "id": "q4",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The conference will be held in the main hall for the third consecutive year.",
+          "ja": "会議は3年連続で大ホールで開催される。"
+        },
+        {
+          "key": "B",
+          "text": "We were pleased with the sandwiches your staff prepared at last year's event.",
+          "ja": "昨年の催しで御社のスタッフが用意したサンドイッチに満足した。"
+        },
+        {
+          "key": "C",
+          "text": "The deposit for the original order was transferred to your account last month.",
+          "ja": "当初の注文の保証金は先月、御社の口座に振り込まれた。"
+        },
+        {
+          "key": "D",
+          "text": "Please send the revised quotation to me by e-mail before the end of this week.",
+          "ja": "改訂した見積書を、今週中にメールで私へお送りください。"
+        }
+      ],
+      "answer": "D",
+      "explanation": "後ろの文に「金額を承認したら追加の保証金を振り込む」とあるので、その前には承認すべき金額、つまり改訂した見積書を求める文が入る。前の文は食事の時間と場所の案内で、そこから新しい依頼に移る流れになる。A は前の文の繰り返しで、B は目的とずれ、C は時系列が合わない。",
+      "tip": "一文挿入は、前の文と後ろの文の両方につながるものを選ぶ。後ろの文の the figures のような既出扱いの語が、何を受けているかを手がかりにする。"
+    }
+  ],
+  "glossary": {
+    "catering order": {
+      "lemma": "catering order",
+      "pos": "名",
+      "ja": "ケータリングの注文",
+      "note": "",
+      "example": {
+        "en": "We placed a catering order for the staff party next Friday.",
+        "ja": "来週金曜日の社内パーティーのために、ケータリングを注文した。"
+      }
+    },
+    "regional sales conference": {
+      "lemma": "regional sales conference",
+      "pos": "名",
+      "ja": "地域営業会議",
+      "note": "",
+      "example": {
+        "en": "Managers from five countries joined the regional sales conference.",
+        "ja": "5か国の責任者が地域営業会議に参加した。"
+      }
+    },
+    "the number of": {
+      "lemma": "the number of",
+      "pos": "熟",
+      "ja": "〜の数",
+      "note": "単数扱い",
+      "example": {
+        "en": "The number of new members rose sharply in April.",
+        "ja": "4月に新規会員の数が急増した。"
+      }
+    },
+    "attendees": {
+      "lemma": "attendee",
+      "pos": "名",
+      "ja": "出席者",
+      "note": "",
+      "example": {
+        "en": "All attendees will receive a name badge at the door.",
+        "ja": "出席者全員が入口で名札を受け取る。"
+      }
+    },
+    "in time": {
+      "lemma": "in time",
+      "pos": "熟",
+      "ja": "間に合って",
+      "note": "on time（時間どおりに）との違いに注意",
+      "example": {
+        "en": "We arrived in time to catch the morning flight.",
+        "ja": "私たちは朝の便に間に合うように到着した。"
+      }
+    },
+    "extra preparation time": {
+      "lemma": "preparation time",
+      "pos": "名",
+      "ja": "準備時間",
+      "note": "",
+      "example": {
+        "en": "The recipe needs two hours of preparation time.",
+        "ja": "そのレシピは準備に2時間かかる。"
+      }
+    },
+    "as before": {
+      "lemma": "as before",
+      "pos": "熟",
+      "ja": "以前と同じように",
+      "note": "",
+      "example": {
+        "en": "The meeting will start at nine, as before.",
+        "ja": "会議は以前と同じく9時に始まる。"
+      }
+    },
+    "transfer": {
+      "lemma": "transfer",
+      "pos": "動",
+      "ja": "振り込む、移す",
+      "note": "「異動させる」の意味もある",
+      "example": {
+        "en": "Please transfer the payment to the account below.",
+        "ja": "下記の口座へ代金を振り込んでください。"
+      }
+    },
+    "deposit": {
+      "lemma": "deposit",
+      "pos": "名",
+      "ja": "保証金、手付金",
+      "note": "",
+      "example": {
+        "en": "A deposit of fifty dollars is required to book the room.",
+        "ja": "部屋の予約には50ドルの手付金が必要です。"
+      }
+    },
+    "look forward to hearing from": {
+      "lemma": "look forward to hearing from",
+      "pos": "熟",
+      "ja": "〜からの連絡を楽しみに待つ",
+      "note": "to のあとは動名詞",
+      "example": {
+        "en": "We look forward to hearing from you soon.",
+        "ja": "近いうちにご連絡をいただけるのを楽しみにしています。"
+      }
+    },
+    "additional": {
+      "lemma": "additional",
+      "pos": "形",
+      "ja": "追加の",
+      "note": "",
+      "example": {
+        "en": "Additional seating is available on the second floor.",
+        "ja": "2階に追加の座席があります。"
+      }
+    }
+  },
+  "point": {
+    "lead": "空所の文で決まらないときは、前の文を一言でまとめてから選ぶ",
+    "items": [
+      {
+        "title": "接続副詞は前の文との関係で決まる",
+        "body": "Otherwise・Therefore・However は、空所の文だけを読んでも選べない。前の文を「依頼」「理由」「問題」のように一言でまとめ、そこから見て「できなければ」「だから」「しかし」のどれが続くかを考える。"
+      },
+      {
+        "title": "一文挿入は前後の両方につなぐ",
+        "body": "誤答は、話題は合うが位置が違うもの、まだ出ていない前提を持ち込むもの、目的とずれるものの3種類。後ろの文の the figures のような、既に出た情報を受ける語を見つけて、それに対応する文を探す。"
+      },
+      {
+        "title": "語彙は前の文の変化の方向に合わせる",
+        "body": "人数が増えた、日程が早まったなど、前の文で変化が語られていれば、空所の動詞はその方向と一致する。expand と withdraw のように逆向きの語が並んでいれば、方向だけで半分に絞れる。"
+      }
+    ]
+  }
+}
