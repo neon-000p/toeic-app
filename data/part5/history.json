@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part5-history",
-  "updatedAt": "2026-09-30T04:30:00+09:00",
+  "updatedAt": "2026-10-02T04:07:41+09:00",
   "items": [
+    {
+      "id": "2026-10-02-0404",
+      "date": "2026-10-02",
+      "focus": "文法7・語彙3",
+      "types": [
+        "form",
+        "vocab",
+        "verb",
+        "prep",
+        "form",
+        "vocab",
+        "conj",
+        "verb",
+        "pron",
+        "vocab"
+      ],
+      "topics": [
+        "形容詞を修飾する副詞",
+        "remain のあとの形容詞",
+        "the number of の単数一致",
+        "過去完了（by the time）",
+        "除外の前置詞 except",
+        "否定の条件 unless",
+        "再帰代名詞の強調用法"
+      ]
+    },
     {
       "id": "2026-09-30-0412",
       "date": "2026-09-30",

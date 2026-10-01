@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-10-02-0404",
+  "date": "2026-10-02",
+  "time": "04:04",
+  "createdAt": "2026-10-02T04:04:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "The revised delivery schedule is ------- different from the one we received in March.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "significant",
+          "ja": "（形）重要な"
+        },
+        {
+          "key": "B",
+          "text": "significantly",
+          "ja": "（副）かなり、大幅に"
+        },
+        {
+          "key": "C",
+          "text": "significance",
+          "ja": "（名）重要性"
+        },
+        {
+          "key": "D",
+          "text": "signify",
+          "ja": "（動）意味する"
+        }
+      ],
+      "answer": "B",
+      "ja": "改訂された配送予定は、3月に受け取ったものとは大幅に異なっている。",
+      "explanation": "空所は be 動詞 is のあと、形容詞 different の直前にある。形容詞を修飾できるのは副詞なので significantly が正解。形容詞の significant を入れると「重要な違った」となり、形容詞が2つ並んでしまう。",
+      "tip": "選択肢が同じ語幹で語尾だけ違えば品詞問題。空所の直後が形容詞なら、それを修飾する副詞を選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "prompt": "All finance staff must ------- their expense reports to the accounting office by the fifth of each month.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "permit",
+          "ja": "許可する"
+        },
+        {
+          "key": "B",
+          "text": "admit",
+          "ja": "認める"
+        },
+        {
+          "key": "C",
+          "text": "commit",
+          "ja": "約束する、犯す"
+        },
+        {
+          "key": "D",
+          "text": "submit",
+          "ja": "提出する"
+        }
+      ],
+      "answer": "D",
+      "ja": "経理担当の職員は全員、毎月5日までに経費報告書を経理課へ提出しなければならない。",
+      "explanation": "報告書を目的語に取り、to the accounting office へ向けて出す意味になるのは submit。語尾が -mit で終わる4語が並ぶが、admit は「認める」、permit は「許可する」、commit は「約束する」で、書類を提出する意味にはならない。",
+      "tip": "形のよく似た語が並ぶ語彙問題は、目的語との相性で決める。reports を to で相手に出すなら submit。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "prompt": "The number of customers using the mobile app ------- steadily throughout this year.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "have increased",
+          "ja": "増えた（複数主語）"
+        },
+        {
+          "key": "B",
+          "text": "increase",
+          "ja": "増える（原形）"
+        },
+        {
+          "key": "C",
+          "text": "has increased",
+          "ja": "増えた（三単現）"
+        },
+        {
+          "key": "D",
+          "text": "are increasing",
+          "ja": "増えている（複数主語）"
+        }
+      ],
+      "answer": "C",
+      "ja": "今年は一年を通じて、モバイルアプリを使う顧客の数が着実に増えている。",
+      "explanation": "主語の中心は The number of ... の number で、単数扱いになる。現在完了の has increased が正解。直前の customers に引きずられて have increased を選ぶのが典型的な誤り。",
+      "tip": "the number of は単数、a number of は複数。主語の頭の語を確かめてから動詞を選ぶ。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "prompt": "Our customer service center is open every day ------- Sundays and national holidays, from nine to six.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "except",
+          "ja": "〜を除いて"
+        },
+        {
+          "key": "B",
+          "text": "among",
+          "ja": "〜の間で"
+        },
+        {
+          "key": "C",
+          "text": "along",
+          "ja": "〜に沿って"
+        },
+        {
+          "key": "D",
+          "text": "toward",
+          "ja": "〜に向かって"
+        }
+      ],
+      "answer": "A",
+      "ja": "当社のカスタマーサービスセンターは、日曜日と祝日を除く毎日、9時から6時まで営業している。",
+      "explanation": "「毎日営業している」のに Sundays and national holidays が続くので、「〜を除いて」の except が文意に合う。among は3つ以上の中の位置、along は線に沿う意味で、日付の名詞とは組まない。",
+      "tip": "前置詞だけが並ぶ問題は、空所の後ろの名詞との意味関係で決める。「毎日」のあとの曜日は除外を考える。"
+    },
+    {
+      "id": "q5",
+      "type": "form",
+      "prompt": "Prices for all office supplies will remain ------- until the end of the fiscal year.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "stability",
+          "ja": "（名）安定"
+        },
+        {
+          "key": "B",
+          "text": "stabilize",
+          "ja": "（動）安定させる"
+        },
+        {
+          "key": "C",
+          "text": "stable",
+          "ja": "（形）安定した"
+        },
+        {
+          "key": "D",
+          "text": "stably",
+          "ja": "（副）安定して"
+        }
+      ],
+      "answer": "C",
+      "ja": "すべての事務用品の価格は、会計年度末まで安定したままである。",
+      "explanation": "remain は「〜のままである」という意味で、あとに補語の形容詞を取る。形容詞の stable が正解。副詞の stably でも意味は近く見えるが、remain は状態を述べる動詞なので副詞は補語にならない。",
+      "tip": "remain / become / seem のあとは形容詞（補語）。副詞と迷ったら、主語の状態を言っているかを見る。"
+    },
+    {
+      "id": "q6",
+      "type": "vocab",
+      "prompt": "The hotel offers ------- Wi-Fi access to all registered guests throughout their stay.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "alternative",
+          "ja": "代わりの"
+        },
+        {
+          "key": "B",
+          "text": "spacious",
+          "ja": "広々とした"
+        },
+        {
+          "key": "C",
+          "text": "complimentary",
+          "ja": "無料の"
+        },
+        {
+          "key": "D",
+          "text": "eventual",
+          "ja": "最終的な"
+        }
+      ],
+      "answer": "C",
+      "ja": "そのホテルは、宿泊期間中、登録済みの全宿泊客に無料のWi-Fiを提供している。",
+      "explanation": "Wi-Fi access を修飾して「無料の」となる complimentary が正解。spacious は部屋など空間に使う語で、通信サービスには合わない。alternative は代案、eventual は結果としての意味。",
+      "tip": "「無料の」は free だけでなく complimentary も頻出。ホテルや航空会社の文で見たら特典と考える。"
+    },
+    {
+      "id": "q7",
+      "type": "conj",
+      "prompt": "The outdoor seminar will be held as planned ------- the weather forecast changes dramatically.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "although",
+          "ja": "〜だけれども"
+        },
+        {
+          "key": "B",
+          "text": "unless",
+          "ja": "〜でない限り"
+        },
+        {
+          "key": "C",
+          "text": "whereas",
+          "ja": "〜である一方"
+        },
+        {
+          "key": "D",
+          "text": "because",
+          "ja": "〜なので"
+        }
+      ],
+      "answer": "B",
+      "ja": "天気予報が大きく変わらない限り、屋外セミナーは予定どおり開催される。",
+      "explanation": "「予定どおり開催する」＋「天気が大きく変われば別」という関係なので、否定の条件を表す unless が正解。although と whereas は対比、because は理由で、どれも「変わらない限り」の意味にならない。",
+      "tip": "接続詞が並ぶときは、前後の節の関係（条件・理由・対比）を言葉にしてから選ぶ。「〜でない限り」は unless。"
+    },
+    {
+      "id": "q8",
+      "type": "verb",
+      "prompt": "By the time the inspector arrived, the staff ------- all of the safety documents.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "has prepared",
+          "ja": "準備した（現在完了）"
+        },
+        {
+          "key": "B",
+          "text": "will prepare",
+          "ja": "準備するだろう"
+        },
+        {
+          "key": "C",
+          "text": "is preparing",
+          "ja": "準備している"
+        },
+        {
+          "key": "D",
+          "text": "had prepared",
+          "ja": "（それまでに）準備し終えていた"
+        }
+      ],
+      "answer": "D",
+      "ja": "検査官が到着したときには、スタッフは安全関連の書類をすべて準備し終えていた。",
+      "explanation": "By the time のあとが過去形 arrived なので、それより前に終わっていた出来事は過去完了で表す。had prepared が正解。has prepared は現在との関係を表す形で、過去の基準時とは合わない。",
+      "tip": "by the time ＋ 過去形の節があれば、主節は過去完了（had ＋ 過去分詞）になりやすい。"
+    },
+    {
+      "id": "q9",
+      "type": "pron",
+      "prompt": "Ms. Park designed the entire filing system -------, so she knows exactly where every document is stored.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "herself",
+          "ja": "彼女自身で"
+        },
+        {
+          "key": "B",
+          "text": "she",
+          "ja": "彼女は"
+        },
+        {
+          "key": "C",
+          "text": "her",
+          "ja": "彼女を、彼女の"
+        },
+        {
+          "key": "D",
+          "text": "hers",
+          "ja": "彼女のもの"
+        }
+      ],
+      "answer": "A",
+      "ja": "パクさんは書類整理システム全体を自分で設計したので、どの書類がどこにあるかを正確に把握している。",
+      "explanation": "主語と同じ人物が動作の主体であることを強調するため、文末に再帰代名詞 herself を置く。「自分自身で」の意味。she は主語と重なり、her は目的語を作れず、hers は名詞扱いで文が成り立たない。",
+      "tip": "再帰代名詞は「自分で」の意味で文末や主語の直後に置ける。文が完成していて代名詞が余る形なら再帰を疑う。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "Only employees with at least one year of service are ------- for the training grant.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "capable",
+          "ja": "能力がある"
+        },
+        {
+          "key": "B",
+          "text": "eligible",
+          "ja": "資格がある"
+        },
+        {
+          "key": "C",
+          "text": "probable",
+          "ja": "ありそうな"
+        },
+        {
+          "key": "D",
+          "text": "durable",
+          "ja": "耐久性のある"
+        }
+      ],
+      "answer": "B",
+      "ja": "勤続1年以上の従業員だけが、研修補助金の対象となる。",
+      "explanation": "be eligible for で「〜の資格がある、対象となる」を表す。capable は of とともに「〜できる」、probable は可能性、durable は物の丈夫さを言う語で、for と組んで補助金の対象を示すことはできない。",
+      "tip": "be eligible for / be responsible for のように、形容詞と前置詞の組み合わせは語彙問題でそのまま問われる。"
+    }
+  ],
+  "glossary": {
+    "as planned": {
+      "lemma": "as planned",
+      "pos": "熟",
+      "ja": "予定どおりに",
+      "note": "",
+      "example": {
+        "en": "The renovation was completed as planned, before the end of June.",
+        "ja": "改装工事は予定どおり、6月末までに完了した。"
+      }
+    },
+    "the number of": {
+      "lemma": "the number of",
+      "pos": "熟",
+      "ja": "〜の数",
+      "note": "単数扱い。a number of は「多くの」で複数扱い",
+      "example": {
+        "en": "The number of visitors to the museum doubled last summer.",
+        "ja": "昨年の夏、その博物館の来館者数は2倍になった。"
+      }
+    },
+    "by the time": {
+      "lemma": "by the time",
+      "pos": "熟",
+      "ja": "〜するときまでに",
+      "note": "",
+      "example": {
+        "en": "By the time we reached the station, the last train had left.",
+        "ja": "私たちが駅に着くまでに、最終電車は出てしまっていた。"
+      }
+    },
+    "training grant": {
+      "lemma": "training grant",
+      "pos": "名",
+      "ja": "研修補助金",
+      "note": "",
+      "example": {
+        "en": "The training grant covers course fees and travel costs.",
+        "ja": "研修補助金は受講料と交通費をまかなう。"
+      }
+    },
+    "expense reports": {
+      "lemma": "expense report",
+      "pos": "名",
+      "ja": "経費報告書",
+      "note": "",
+      "example": {
+        "en": "Please attach every receipt to your expense report before sending it.",
+        "ja": "送付する前に、すべての領収書を経費報告書に添付してください。"
+      }
+    },
+    "fiscal year": {
+      "lemma": "fiscal year",
+      "pos": "名",
+      "ja": "会計年度",
+      "note": "",
+      "example": {
+        "en": "Our fiscal year begins in April and ends in March.",
+        "ja": "当社の会計年度は4月に始まり3月に終わる。"
+      }
+    },
+    "customer service center": {
+      "lemma": "customer service center",
+      "pos": "名",
+      "ja": "カスタマーサービスセンター",
+      "note": "",
+      "example": {
+        "en": "The customer service center will answer questions about your order.",
+        "ja": "カスタマーサービスセンターがご注文に関するご質問にお答えします。"
+      }
+    },
+    "filing system": {
+      "lemma": "filing system",
+      "pos": "名",
+      "ja": "書類整理システム",
+      "note": "",
+      "example": {
+        "en": "A clear filing system saves time when auditors visit the office.",
+        "ja": "分かりやすい書類整理システムがあれば、監査担当者が来たときに時間を節約できる。"
+      }
+    },
+    "registered guests": {
+      "lemma": "registered guest",
+      "pos": "名",
+      "ja": "登録済みの宿泊客",
+      "note": "",
+      "example": {
+        "en": "Only registered guests may use the rooftop pool.",
+        "ja": "登録済みの宿泊客だけが屋上プールを利用できる。"
+      }
+    },
+    "accounting office": {
+      "lemma": "accounting office",
+      "pos": "名",
+      "ja": "経理課",
+      "note": "",
+      "example": {
+        "en": "Please bring the signed form to the accounting office on the second floor.",
+        "ja": "署名済みの書類を2階の経理課へお持ちください。"
+      }
+    }
+  },
+  "point": {
+    "lead": "選択肢の見た目で型を決めてから、空所の前後の語で絞る",
+    "items": [
+      {
+        "title": "形が似た選択肢は、品詞か語形の問題",
+        "body": "同じ語幹で語尾だけ違えば品詞問題、活用だけが並べば動詞の形の問題。空所の直前直後の語（be 動詞・形容詞・助動詞など）で入る品詞が決まるので、意味を考える前に位置で消去する。"
+      },
+      {
+        "title": "主語の頭と時の目印を先に拾う",
+        "body": "the number of は単数、by the time ＋ 過去形なら過去完了というように、動詞の形は主語の頭の語と時を表す語句で決まる。長い主語では、直前の複数名詞に引きずられないよう主語の核を確認する。"
+      },
+      {
+        "title": "語彙は組み合わせで決める",
+        "body": "submit ＋ 書類、be eligible for、complimentary ＋ サービスのように、相性のよい相手の語を見つける。意味が近く見える選択肢が並んでも、目的語や前置詞との組み合わせで1つに絞れる。"
+      }
+    ]
+  }
+}
