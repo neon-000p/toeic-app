@@ -2,13 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-10-02 6d62741">
+<meta name="app-build" content="2026-10-03 88abc21">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>語彙帳 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=019e9528">
+<link rel="stylesheet" href="style.css?v=4de5a7f4">
 <style>
 body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 
@@ -100,7 +100,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 
 <main class="wrap" id="main"></main>
 
-<script src="core.js?v=3a9107ce"></script>
+<script src="core.js?v=f6efa16f"></script>
 <script>
 (function () {
   'use strict';
@@ -291,24 +291,43 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
     main.innerHTML = renderStats() +
       '<div class="card">' +
         '<div class="sec-label">書き出し</div>' +
-        '<p class="small muted" style="margin:0 0 8px">⚙ から Google でログインしていれば、語彙帳は自動で' +
-        'ほかの端末と同期されます。ログインしないで別の端末へ移すときは、下の内容をコピーして、' +
-        '向こうの「読み込み」に貼ってください。</p>' +
+        '<p class="small muted" style="margin:0 0 8px">⚙ から Google でログインしていれば、学習記録は自動で' +
+        'ほかの端末と同期されます。ログインしないで別の端末や新しいアドレスへ移すときは、ここで' +
+        '語彙帳・教材ごとの進み具合・学習した日・設定・取り込んだ教材を<b>まとめて</b>書き出し、' +
+        '向こうの「読み込み」に渡してください。Gemini の API キーは含めないので、向こうで入れ直してください。</p>' +
         '<textarea id="out" readonly style="width:100%;min-height:140px;font-family:ui-monospace,monospace;' +
         'font-size:11px;padding:10px;border-radius:8px;border:1px solid var(--line-2);' +
         'background:var(--surface-2);color:var(--ink)"></textarea>' +
-        '<div class="tool-row"><button class="btn btn-sm btn-primary" id="copy">コピー</button></div>' +
+        '<div class="tool-row"><button class="btn btn-sm btn-primary" id="copy">コピー</button>' +
+          '<button class="btn btn-sm" id="save">ファイルに保存</button></div>' +
       '</div>' +
       '<div class="card">' +
         '<div class="sec-label">読み込み</div>' +
-        '<p class="small muted" style="margin:0 0 8px">貼り付けて取り込みます。' +
-        '<b>すでにある語はそのまま</b>で、無い語だけが足されます。復習の進み具合は上書きしません。</p>' +
+        '<p class="small muted" style="margin:0 0 8px">貼り付けるか、保存したファイルを選んで取り込みます。' +
+        '<b>この端末にある記録は消えません</b>。無い語・無い日だけが足され、教材の進み具合は新しいほうが残ります。' +
+        '以前の語彙帳だけの書き出しもそのまま読めます。</p>' +
         '<textarea id="in" placeholder="ここに貼り付け" style="width:100%;min-height:120px;' +
         'font-family:ui-monospace,monospace;font-size:11px;padding:10px;border-radius:8px;' +
         'border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink)"></textarea>' +
-        '<div class="tool-row"><button class="btn btn-sm" id="imp">取り込む</button></div>' +
+        '<div class="tool-row"><button class="btn btn-sm" id="imp">取り込む</button>' +
+          '<button class="btn btn-sm" id="open">ファイルを選ぶ</button>' +
+          '<input type="file" id="file" accept=".json,application/json" hidden></div>' +
       '</div>';
-    document.getElementById('out').value = JSON.stringify(T.Vocab.all());
+    document.getElementById('out').value = JSON.stringify(T.Backup.dump());
+  }
+
+  function restoreText(v) {
+    var obj;
+    try { obj = JSON.parse(v); } catch (e) { T.toast('読み取れません'); return; }
+    var r;
+    try { r = T.Backup.restore(obj); } catch (e) { T.toast(e.message || '取り込めません'); return; }
+    var parts = [];
+    if (r.vocab) parts.push('語 ' + r.vocab);
+    if (r.progress) parts.push('進み具合 ' + r.progress);
+    if (r.days) parts.push('学習日 ' + r.days);
+    if (r.other) parts.push('その他 ' + r.other);
+    T.toast(parts.length ? '取り込みました（' + parts.join('・') + '）' : '新しい記録はありませんでした');
+    render();
   }
 
   /* ---------- 操作 ---------- */
@@ -373,17 +392,32 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
       return;
     }
 
+    if (t.id === 'save') {
+      var blob = new Blob([document.getElementById('out').value], { type: 'application/json' });
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'toeic-backup-' + T.Log.todayKey() + '.json';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+      return;
+    }
+
+    if (t.id === 'open') { document.getElementById('file').click(); return; }
+
     if (t.id === 'imp') {
       var v = document.getElementById('in').value.trim();
       if (!v) { T.toast('貼り付けてください'); return; }
-      var arr;
-      try { arr = JSON.parse(v); } catch (e) { T.toast('読み取れません'); return; }
-      if (!Array.isArray(arr)) { T.toast('語彙帳の形式ではありません'); return; }
-      var n = T.Vocab.merge(arr);
-      T.toast(n ? n + ' 語を取り込みました' : '新しい語はありませんでした');
-      render();
+      restoreText(v);
       return;
     }
+  });
+
+  main.addEventListener('change', function (ev) {
+    if (ev.target.id !== 'file' || !ev.target.files[0]) return;
+    var fr = new FileReader();
+    fr.onload = function () { restoreText(String(fr.result || '')); };
+    fr.onerror = function () { T.toast('ファイルを読めません'); };
+    fr.readAsText(ev.target.files[0]);
   });
 
   main.addEventListener('input', function (ev) {

@@ -644,6 +644,86 @@
     };
   })();
 
+  /* ---------- まとめて書き出し・読み込み ----------
+     ログインしない人が端末やアドレスを移るとき用。localStorage はアドレスごとに
+     別なので、toeic.* を丸ごと運ぶ。キーを列挙して拾うので、保存先が増えても漏れない。
+     次の2つは外す。
+       gemini の key … 書き出した文字列はメモやチャットに貼られやすく、キーが漏れる
+       sync.*        … 同期の控え（ログイン中のアカウントや版）。別の端末に持ち込むと
+                        同期が済んでいると誤解して、記録を送らなくなる */
+  var BACKUP_APP = 'toeic-daily';
+  function backupSkip(k) { return k.indexOf('sync.') === 0; }
+  var Backup = {
+    dump: function () {
+      var data = {};
+      try {
+        for (var i = 0; i < localStorage.length; i++) {
+          var full = localStorage.key(i);
+          if (!full || full.indexOf(NS) !== 0) continue;
+          var k = full.slice(NS.length);
+          if (backupSkip(k)) continue;
+          var v = read(k, undefined);
+          if (v === undefined) continue;
+          if (k === 'gemini' && v && typeof v === 'object') {
+            var g = {};
+            for (var p in v) if (p !== 'key') g[p] = v[p];
+            v = g;
+          }
+          if (k === 'vocab') v = Vocab.all();     // 墓標は運ばない
+          data[k] = v;
+        }
+      } catch (e) {}
+      return { app: BACKUP_APP, v: 1, exportedAt: new Date().toISOString(), data: data };
+    },
+    /* 取り込みは足し合わせ。この端末にあるものは消さない。
+       語は無いものだけ足し、進み具合は教材ごとに新しいほう（同期と同じ決め方）、
+       学習日は両方を合わせる。それ以外（設定・取り込んだ教材・キャッシュ）は無い項目だけ足す。
+       以前の語彙帳だけの書き出し（配列）もそのまま受け付ける。 */
+    restore: function (obj) {
+      if (Array.isArray(obj)) obj = { app: BACKUP_APP, data: { vocab: obj } };
+      if (!obj || obj.app !== BACKUP_APP || !obj.data || typeof obj.data !== 'object') {
+        throw new Error('このアプリの書き出しではありません');
+      }
+      var d = obj.data, res = { vocab: 0, progress: 0, days: 0, other: 0 };
+      var own = function (o, k) { return Object.prototype.hasOwnProperty.call(o, k); };
+
+      if (d.vocab) res.vocab = Vocab.merge(d.vocab);
+
+      if (d.progress && typeof d.progress === 'object' && !Array.isArray(d.progress)) {
+        var before = read('progress', {}) || {};
+        var after = Merge.progress(before, d.progress);
+        Object.keys(after).forEach(function (k) {
+          if (JSON.stringify(after[k]) !== JSON.stringify(before[k])) res.progress++;
+        });
+        if (res.progress) write('progress', after);
+      }
+
+      if (Array.isArray(d.days)) {
+        var had = Merge.days(read('days', []), []);
+        var days = Merge.days(had, d.days);
+        res.days = Math.max(0, days.length - had.length);
+        if (res.days) write('days', days);
+      }
+
+      Object.keys(d).forEach(function (k) {
+        if (k === 'vocab' || k === 'progress' || k === 'days' || backupSkip(k)) return;
+        var inc = d[k], cur = read(k, undefined);
+        if (k === 'gemini' && inc && typeof inc === 'object') delete inc.key;
+        if (cur === undefined) { write(k, inc); res.other++; return; }
+        /* 設定・取り込んだ教材・キャッシュなど。無い項目だけ足す */
+        if (cur && inc && typeof cur === 'object' && typeof inc === 'object' &&
+            !Array.isArray(cur) && !Array.isArray(inc)) {
+          var added = false;
+          Object.keys(inc).forEach(function (ik) {
+            if (!own(cur, ik)) { cur[ik] = inc[ik]; added = true; }
+          });
+          if (added) { write(k, cur); res.other++; }
+        }
+      });
+      return res;
+    }
+  };
+
   /* ---------- 読み上げ ---------- */
   var TTS = (function () {
     var ready = false, cache = [], waiting = [];
@@ -1793,7 +1873,7 @@
 
   global.TOEIC = {
     read: read, write: write,
-    Settings: Settings, Vocab: Vocab, Log: Log, TTS: TTS, AI: AI, posJa: posJa, exampleFor: exampleFor,
+    Settings: Settings, Vocab: Vocab, Log: Log, Backup: Backup, TTS: TTS, AI: AI, posJa: posJa, exampleFor: exampleFor,
     modal: modal, openSettings: openSettings,
     flash: flash, takeFlash: takeFlash, numberSets: numberSets, build: build,
     watchSelection: watchSelection, phrasePop: phrasePop,
