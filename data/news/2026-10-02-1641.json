@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-02-1641",
+  "date": "2026-10-02",
+  "time": "16:41",
+  "createdAt": "2026-10-02T16:41:00+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Singapore Cuts Household Power Rates by 10.4%",
+    "ja": "シンガポール、家庭用電気料金を10.4%引き下げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Singapore will cut household electricity prices from October 1.",
+            "ja": "シンガポールは10月1日から家庭用の電気料金を引き下げる。"
+          },
+          {
+            "en": "The power company SP Group said the tariff will fall by 10.4% to 28.59 cents per kilowatt-hour.",
+            "ja": "電力会社SPグループは、料金が10.4%下がり、1キロワット時あたり28.59セントになると述べた。"
+          },
+          {
+            "en": "The previous rate, 31.91 cents, was a record high.",
+            "ja": "従来の料金は31.91セントで、過去最高だった。"
+          },
+          {
+            "en": "A typical family in a four-room flat will pay about 13 Singapore dollars less each month.",
+            "ja": "4部屋タイプの住戸に住む標準的な家庭は、毎月およそ13シンガポールドル安くなる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The lower price reflects cheaper natural gas between July and mid-September.",
+            "ja": "この値下げは、7月から9月中旬にかけて天然ガスが安くなったことを反映している。"
+          },
+          {
+            "en": "The company bases the fuel part of the tariff on gas prices from the early weeks of the previous quarter.",
+            "ja": "同社は、料金のうち燃料費の部分を、前の四半期の初めの数週間のガス価格に基づいて決めている。"
+          },
+          {
+            "en": "However, global fuel prices have risen since September because of tensions in the Middle East.",
+            "ja": "しかし、中東の緊張を受けて、世界の燃料価格は9月以降上昇している。"
+          },
+          {
+            "en": "Because costs are reflected with a delay, the tariff could rise in the next quarter if higher fuel prices persist.",
+            "ja": "コストの反映には時差があるため、燃料高が続けば、次の四半期には料金が上がる可能性がある。"
+          },
+          {
+            "en": "Households may therefore see their bills go up again in January.",
+            "ja": "そのため、1月には家庭の請求額が再び上がるかもしれない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much will the household electricity tariff fall?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 3.3%",
+          "ja": "約3.3%"
+        },
+        {
+          "key": "B",
+          "text": "10.4%",
+          "ja": "10.4%"
+        },
+        {
+          "key": "C",
+          "text": "About 13%",
+          "ja": "約13%"
+        },
+        {
+          "key": "D",
+          "text": "28.59%",
+          "ja": "28.59%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落の2文目に「the tariff will fall by 10.4%」とある。Aの3.32はセントで表した値下げ幅（1kWhあたり）、Cの13は月額で安くなるシンガポールドルの額、Dの28.59は新料金（セント）であり、いずれも本文の別の数字を使った引っかけ。数字問題は、単位（%・セント・ドル）まで確認するのがコツ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字問題は選択肢の単位を見比べ、本文の「何を表す数字か」と照合する。同じ本文に複数の数字が出る場合は特に注意。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why could the tariff rise in the next quarter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Gas prices were low in July.",
+          "ja": "7月にガスが安かった"
+        },
+        {
+          "key": "B",
+          "text": "Households will use less power.",
+          "ja": "家庭の電力使用が減る"
+        },
+        {
+          "key": "C",
+          "text": "Recent fuel price increases will be reflected later.",
+          "ja": "最近の燃料高が後で反映される"
+        },
+        {
+          "key": "D",
+          "text": "SP Group will end its record rate.",
+          "ja": "記録的な料金を終える"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落の3〜4文目で、9月以降に燃料価格が上がっており、その影響は時差をもって料金に反映されるため、燃料高が続けば次の四半期に上がる可能性があると述べている。Aは今回の値下げの理由であり、値上げの理由ではない。BとDは本文に書かれていない情報。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "「なぜ」を問う問題は、because / since / due to の直後に理由が来る。この問題では Because costs are reflected with a delay が根拠。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "tariff",
+      "pos": "名",
+      "ja": "料金、運賃表",
+      "gloss": "（＝公共サービスなどの公的な料金体系のこと）",
+      "example": {
+        "en": "The new tariff for shipping will start next month.",
+        "ja": "新しい配送料金は来月から始まる。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "reflect",
+      "pos": "動",
+      "ja": "反映する、映し出す",
+      "gloss": "",
+      "example": {
+        "en": "The report reflects the opinions of all staff members.",
+        "ja": "その報告書は全社員の意見を反映している。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "persist",
+      "pos": "動",
+      "ja": "持続する、続く",
+      "gloss": "",
+      "example": {
+        "en": "If the delay persists, please contact our office.",
+        "ja": "遅れが続く場合は、当社までご連絡ください。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "previous",
+      "pos": "形",
+      "ja": "前の、以前の",
+      "gloss": "",
+      "example": {
+        "en": "Sales rose compared with the previous quarter.",
+        "ja": "売上は前の四半期より増えた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "typical",
+      "pos": "形",
+      "ja": "典型的な、標準的な",
+      "gloss": "",
+      "example": {
+        "en": "A typical meeting lasts about one hour.",
+        "ja": "典型的な会議は約1時間かかる。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "delay",
+      "pos": "名・動",
+      "ja": "遅れ、遅らせる",
+      "gloss": "",
+      "example": {
+        "en": "The shipment arrived with a two-day delay.",
+        "ja": "その荷物は2日遅れで到着した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "tension",
+      "pos": "名",
+      "ja": "緊張、対立",
+      "gloss": "",
+      "example": {
+        "en": "Trade tension can raise the cost of imports.",
+        "ja": "貿易上の緊張は輸入コストを押し上げることがある。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "base",
+      "pos": "動",
+      "ja": "基づかせる、拠点を置く",
+      "gloss": "（base A on B で「AをBに基づかせる」）",
+      "example": {
+        "en": "We base our prices on market conditions.",
+        "ja": "当社は価格を市場の状況に基づいて決めている。"
+      }
+    }
+  ],
+  "glossary": {
+    "cut": {
+      "lemma": "cut",
+      "pos": "動",
+      "ja": "引き下げる",
+      "note": ""
+    },
+    "household": {
+      "lemma": "household",
+      "pos": "名",
+      "ja": "家庭、世帯",
+      "note": ""
+    },
+    "electricity": {
+      "lemma": "electricity",
+      "pos": "名",
+      "ja": "電気",
+      "note": ""
+    },
+    "tariff": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "料金",
+      "note": ""
+    },
+    "fall": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下がる",
+      "note": ""
+    },
+    "kilowatt-hour": {
+      "lemma": "kilowatt-hour",
+      "pos": "名",
+      "ja": "キロワット時",
+      "note": ""
+    },
+    "previous": {
+      "lemma": "previous",
+      "pos": "形",
+      "ja": "前の",
+      "note": ""
+    },
+    "rate": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "料金、率",
+      "note": ""
+    },
+    "record": {
+      "lemma": "record",
+      "pos": "形",
+      "ja": "過去最高の",
+      "note": ""
+    },
+    "typical": {
+      "lemma": "typical",
+      "pos": "形",
+      "ja": "標準的な",
+      "note": ""
+    },
+    "flat": {
+      "lemma": "flat",
+      "pos": "名",
+      "ja": "集合住宅の一戸",
+      "note": ""
+    },
+    "reflects": {
+      "lemma": "reflect",
+      "pos": "動",
+      "ja": "反映する",
+      "note": ""
+    },
+    "cheaper": {
+      "lemma": "cheap",
+      "pos": "形",
+      "ja": "より安い",
+      "note": ""
+    },
+    "natural": {
+      "lemma": "natural",
+      "pos": "形",
+      "ja": "天然の",
+      "note": ""
+    },
+    "bases": {
+      "lemma": "base",
+      "pos": "動",
+      "ja": "基づかせる",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": ""
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界の",
+      "note": ""
+    },
+    "risen": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇する",
+      "note": ""
+    },
+    "tensions": {
+      "lemma": "tension",
+      "pos": "名",
+      "ja": "緊張",
+      "note": ""
+    },
+    "reflected": {
+      "lemma": "reflect",
+      "pos": "動",
+      "ja": "反映する",
+      "note": ""
+    },
+    "delay": {
+      "lemma": "delay",
+      "pos": "名",
+      "ja": "遅れ",
+      "note": ""
+    },
+    "persist": {
+      "lemma": "persist",
+      "pos": "動",
+      "ja": "続く",
+      "note": ""
+    },
+    "bills": {
+      "lemma": "bill",
+      "pos": "名",
+      "ja": "請求書",
+      "note": ""
+    },
+    "therefore": {
+      "lemma": "therefore",
+      "pos": "副",
+      "ja": "そのため",
+      "note": ""
+    },
+    "however": {
+      "lemma": "however",
+      "pos": "副",
+      "ja": "しかし",
+      "note": ""
+    },
+    "mid-september": {
+      "lemma": "mid-September",
+      "pos": "名",
+      "ja": "9月中旬",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "pay": {
+      "lemma": "pay",
+      "pos": "動",
+      "ja": "支払う",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "前置詞の使い分け：fall by（差）／to（到達点）／from（起点）",
+    "quote": "The power company SP Group said the tariff will fall by 10.4% to 28.59 cents per kilowatt-hour.",
+    "quoteJa": "電力会社SPグループは、料金が10.4%下がり、1キロワット時あたり28.59セントになると述べた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "数値の変化を表すとき、前置詞が「何を示すか」を決めます。fall by 10.4% は「10.4%という変化の幅（差）」、to 28.59 cents は「変化したあとの水準（到達点）」を表します。同じ文脈で from 31.91 cents と書けば「変化する前の水準（起点）」を示せます。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "The tariff will fall by 10.4%.（下げ幅だけ）／ The tariff will fall to 28.59 cents.（新しい水準だけ）／ The tariff will fall from 31.91 cents to 28.59 cents.（起点→到達点）。by は『差』、to は『着地』、from は『出発点』と覚えると混同しません。"
+      },
+      {
+        "heading": "TOEIC対策",
+        "body": "Part 5 の前置詞問題で、increase / decrease / rise / fall の後ろに by・to・from のどれが入るかがよく問われます。『20%増えた』なら by 20%、『50ドルに増えた』なら to $50、と空所の後ろが差か水準かを見て判断します。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "Our revenue rose by 5% to $2 million, from $1.9 million last year.（売上は前年の190万ドルから5%増の200万ドルになった。）／ Prices will drop by 10% next month.（価格は来月10%下がる。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 電気料金はなぜ「時差」で動くのか",
+      "body": "シンガポールは電力の多くを天然ガスでつくっており、電気料金は四半期ごとに見直されます。燃料費の部分は、直前の四半期のはじめ約2か月半のガス価格をもとに決まるため、市場価格の動きが数か月遅れて家計に届きます。今回の値下げは7月〜9月中旬の安いガス価格の反映で、9月以降の燃料高は来年1月からの料金に響く可能性があります。"
+    },
+    {
+      "heading": "📌 中東情勢と世界のエネルギー価格",
+      "body": "中東の緊張は、原油や天然ガスの供給不安につながりやすく、燃料価格を押し上げます。世界の原油は1バレル90ドル台で推移しているとの報道もあり、エネルギーを輸入に頼る国ほど電気料金や物価の上昇圧力を受けます。"
+    },
+    {
+      "heading": "📌 日本・日本企業への示唆",
+      "body": "日本も燃料を輸入に頼るため、燃料価格は「燃料費調整制度」を通じて数か月遅れで電気料金に反映されます。製造業や小売業では、電力コストの見通しが利益計画に直結するため、為替と燃料価格の両方を見た調達・契約の見直しが重要です。出張や駐在でシンガポールを訪れるビジネスパーソンにとっても、現地のコスト動向は押さえておきたい情報です。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "電力会社にとっては、燃料費を料金に転嫁できる制度があれば収益は安定しやすくなります。一方で、需要家（企業）は料金改定の時期を見越して長期契約や省エネ投資を検討できます。燃料高が再燃すれば、再び値上げ局面に入るリスクも意識する必要があります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Singapore electricity tariff to fall 10.4% on lower energy costs",
+      "publisher": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/singapore-electricity-tariff-to-fall-104-on-lower-energy-costs-93CH-4924084",
+      "date": "2026-09-30"
+    },
+    {
+      "title": "Singapore power rates to fall from record after fuel price drop",
+      "publisher": "The Edge Singapore",
+      "url": "https://www.theedgesingapore.com/news/singapore-economy/singapore-power-rates-fall-record-after-fuel-price-drop",
+      "date": "2026-09-30"
+    }
+  ]
+}
