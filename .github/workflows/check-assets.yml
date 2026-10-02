@@ -1,0 +1,34 @@
+name: アセットの版と CSP を確かめる
+
+# 画面まわりを変えたのに tools/bump-assets.js を走らせ忘れると、
+# ページ内スクリプトのハッシュが CSP と合わず、そのページが動かなくなる。
+# push と PR のたびに確かめ、ずれていれば赤くする（書き換えはしない）。
+
+on:
+  push:
+    paths:
+      - '*.html'
+      - 'core.js'
+      - 'style.css'
+      - 'tools/bump-assets.js'
+      - '.github/workflows/check-assets.yml'
+  pull_request:
+    paths:
+      - '*.html'
+      - 'core.js'
+      - 'style.css'
+      - 'tools/bump-assets.js'
+      - '.github/workflows/check-assets.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node tools/bump-assets.js --check

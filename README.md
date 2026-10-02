@@ -265,7 +265,7 @@ API キーを Google Cloud 側で HTTP リファラ制限するときは、`neon
 node tools/bump-assets.js
 ```
 
-やることは2つ。
+やることは3つ。
 
 1. HTML 内の `core.js?v=...` / `style.css?v=...` を内容ハッシュで書き換える。
    GitHub Pages はアセットを10分ほどキャッシュするため、これを忘れると
@@ -276,3 +276,47 @@ node tools/bump-assets.js
    端末で見ている画面が新しいものかどうかを確かめられる。数字が変わらない
    ときは、まだ古いものが配信されている（Pages の反映待ちか、ブラウザの
    キャッシュ。ホームを再読み込みすれば HTML は取り直される）。
+3. 各ページの CSP（`<meta http-equiv="Content-Security-Policy">`）を作り直す。
+   ページ内の `<script>` は中身のハッシュで許可しているので、**これを忘れると
+   そのページのスクリプトが丸ごと止まる**（ローカルで開けばすぐ分かる）。
+   push と PR では `node tools/bump-assets.js --check` が Actions で走り、
+   走らせ忘れがあれば赤くなる。外の配信元を増やすときは `cspFor()` に足す。
+
+## セキュリティ
+
+公開を前提にした守り。画面には出ない部分なので、変えるときはここも合わせる。
+
+**アプリ側（コードで済んでいるもの）**
+
+- 教材・語彙帳・Gemini の返事など、外から来た文字列は `esc()` を通してから HTML にする。
+  教材はニュースを元に AI が書くので、記事に紛れた文言が HTML として効かないようにする
+- 出典のリンクは `http(s)://` で始まるものだけ出す（`javascript:` を踏ませない）
+- CSP（各ページの `<meta>`）で、スクリプトは自分のファイル・ページ内のハッシュ一致分・
+  Firebase の SDK だけ、通信は Google の決まった API だけに絞る。HTML が紛れ込んでも
+  スクリプトは動かず、API キーを外へ送れない
+- Firebase の SDK は SRI（中身のハッシュ）で照合して読む。版を上げたら `core.js` の
+  `FB_SRI` も差し替える（取り方はコメントにある）
+- 書き出し（語彙帳 →「持ち出し」）には Gemini の API キーを含めない
+- Cloudflare Pages に移したら `_headers` が効き、他サイトの枠に埋め込まれない
+  （クリックジャッキング対策）などのヘッダーが付く
+
+**コンソール側（手で設定するもの）**
+
+- **Firebase の API キーに「API の制限」を掛ける。** `core.js` の `apiKey` は公開される値で、
+  リファラ制限はブラウザ以外からなら偽れる。Google Cloud コンソール → 認証情報 →
+  そのキー →「API の制限」で、Identity Toolkit API・Token Service API・
+  Cloud Firestore API だけを許可する。とくに **Gemini（Generative Language API）を
+  同じプロジェクトで有効にしているなら必須**。制限が無いと、誰でもこの公開キーで
+  Gemini を呼べ、料金や無料枠がこちら持ちになる
+- できれば Firebase と Gemini は別のプロジェクトにする
+- Firestore のルールが「はじめの設定」の内容のまま公開されているか、ときどき確かめる
+- 利用者が増えたら **App Check**（reCAPTCHA）を入れる。入れないと、ログインさえすれば
+  アプリを通さずに Firestore を叩けるので、無料枠を食い尽くされうる
+- Blaze に切り替えるなら予算アラートを必ず設定する
+
+**ドメインを移すとき**
+
+- Firebase Authentication の承認済みドメインに新しいドメインを足す（無いとログインできない）
+- Firebase と Gemini のキーのリファラ制限に新しいドメインを足す
+- 設定画面と README の `neon-000p.github.io` の記述を直す
+- ログインしていない人には、語彙帳の「持ち出し」で記録を運んでもらう

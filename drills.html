@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-10-03 88abc21">
+<meta name="app-build" content="2026-10-03 1909834">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-5f/Lhbe5KpPkZT+71d9qRSQhNdFWweABIyYPyoSb8X8=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://toeic-daily-7cea5.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>実践対策 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -59,7 +60,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 
 <main class="wrap" id="main"></main>
 
-<script src="core.js?v=f6efa16f"></script>
+<script src="core.js?v=faf777b2"></script>
 <script>
 (function () {
   'use strict';
@@ -136,7 +137,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
       items.map(function (it) {
         var s = statusOf(it.id);
         return '<a href="' + P.page + '?id=' + encodeURIComponent(it.id) + '">' +
-          '<span class="no">#' + it.no + '</span>' +
+          '<span class="no">#' + esc(it.no) + '</span>' +
           '<span class="t">' + esc(label(it)) +
             '<span class="d">' + esc((it.date || '').replace(/-/g, '/')) +
             (it.time ? ' ' + esc(it.time) : '') + '</span></span>' +

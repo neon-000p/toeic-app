@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-10-03 88abc21">
+<meta name="app-build" content="2026-10-03 1909834">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-iH3bSNcJU99froGvpOrbXedQGsx1XB9hKC17aMOBRS4=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://toeic-daily-7cea5.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Part 7 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -225,7 +226,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   </div>
 </nav>
 
-<script src="core.js?v=f6efa16f"></script>
+<script src="core.js?v=faf777b2"></script>
 <script>
 (function () {
   'use strict';
@@ -439,7 +440,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
           return '<p class="dpara">' + (p.sentences || []).map(function (s) {
             var html = T.markupEnglish(s.en, SET.glossary);
             if (s.pos) {
-              html += ' <span class="pos' + (hit === s.pos ? ' hit' : '') + '">[' + s.pos + ']</span>';
+              html += ' <span class="pos' + (hit === s.pos ? ' hit' : '') + '">[' + esc(s.pos) + ']</span>';
             }
             return html;
           }).join(' ') + '</p>';

@@ -1,0 +1,10 @@
+# Cloudflare Pages が読む応答ヘッダーの設定（GitHub Pages では使われない）。
+# CSP の本体は各ページの <meta> にある（tools/bump-assets.js が作る）。
+# <meta> では効かない frame-ancestors などだけをここで足す。
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Content-Security-Policy: frame-ancestors 'none'
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin-allow-popups

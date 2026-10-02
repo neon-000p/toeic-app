@@ -248,6 +248,13 @@
     appId: '1:227084784386:web:2674b140fa4b4cec51e81b'
   };
   var FB_SDK = 'https://www.gstatic.com/firebasejs/12.19.0/';
+  /* 外から読むスクリプトは中身のハッシュで照合する（SRI）。配信元が書き換えられても
+     実行されない。版を上げたら、新しいファイルのハッシュに差し替える。
+       curl -s <URL> | openssl dgst -sha384 -binary | openssl base64 -A */
+  var FB_SRI = {
+    'firebase-app-compat.js': 'sha384-aUtWR1iCiOCHS8pn1nKNXMZm3I/eDrV63IXWXgE+mHHqJfYTWYV+jGk0sCXz57+U',
+    'firebase-auth-compat.js': 'sha384-ZRqyA8Xkw0A6FmVya9A0Werzt9yjKKAp2TCzqVJjHK1O3oyb0z9jMxpkWPVoFtUm'
+  };
   var DEVICE_ONLY = ['voiceURI'];
 
   /* 突き合わせ。どちらの端末で行っても同じ結果になるよう、並びも決めて返す */
@@ -367,10 +374,13 @@
     }
 
     /* ---- SDK（認証だけ） ---- */
-    function loadScript(src) {
+    function loadScript(name) {
+      var src = FB_SDK + name;
       return new Promise(function (ok, ng) {
         var s = document.createElement('script');
         s.src = src;
+        s.integrity = FB_SRI[name];
+        s.crossOrigin = 'anonymous';
         s.onload = ok;
         s.onerror = function () { ng(new Error('読み込めません: ' + src)); };
         document.head.appendChild(s);
@@ -378,8 +388,8 @@
     }
     function loadSdk() {
       if (!sdk) {
-        sdk = loadScript(FB_SDK + 'firebase-app-compat.js')
-          .then(function () { return loadScript(FB_SDK + 'firebase-auth-compat.js'); })
+        sdk = loadScript('firebase-app-compat.js')
+          .then(function () { return loadScript('firebase-auth-compat.js'); })
           .then(function () {
             var fb = global.firebase;
             if (!fb.apps.length) fb.initializeApp(FIREBASE);

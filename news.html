@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-10-03 88abc21">
+<meta name="app-build" content="2026-10-03 1909834">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-J6fuYcRJTzXDeNZnETRHn26hiWlt76RAS5ZUIzGXH/U=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://toeic-daily-7cea5.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>時事英語 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -662,7 +663,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=f6efa16f"></script>
+<script src="core.js?v=faf777b2"></script>
 <script>
 (function () {
   'use strict';
@@ -1176,7 +1177,8 @@ details.src[open]>summary::before{content:"▾ ";}
   }
 
   function viewBg() {
-    var src = (DATA.sources || []).filter(function (s) { return s.url; });
+    /* 出典の URL は教材データ由来。javascript: などを踏ませないよう http(s) だけ通す */
+    var src = (DATA.sources || []).filter(function (s) { return /^https?:\/\//i.test(String(s.url || '')); });
     var blocks = DATA.background || [];
     var can = hasAI();
     var en = can && T.Settings.get('bgEn') === true;
