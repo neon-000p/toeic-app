@@ -29,6 +29,7 @@ function makeServer() {
     });
     if (opt.headers.Authorization !== 'Bearer tok-' + p.split('/')[1]) return reply(403, { error: { message: 'denied' } });
     log.push(opt.method + ' ' + p);
+    if (api.hook) api.hook(opt.method, p);   // 通信の途中で何かを起こしたいテスト用
     if (opt.method === 'GET') {
       const d = docs[p];
       if (!d) return reply(404, {});
@@ -43,19 +44,21 @@ function makeServer() {
       if (ut && (!d || d.updateTime !== ut)) return reply(400, { error: { message: 'FAILED_PRECONDITION' } });
       const body = JSON.parse(opt.body);
       docs[p] = { raw: body.fields.v.stringValue, at: Number(body.fields.at.integerValue), updateTime: 't' + (++clock) };
-      return reply(200, {});
+      return reply(200, { updateTime: docs[p].updateTime });
     }
     return reply(400, {});
   }
-  return { docs, fetch, failNext, log, get: (uid, key) => {
+  const api = { docs, fetch, failNext, log, hook: null, get: (uid, key) => {
     const d = docs['users/' + uid + '/data/' + key];
     return d && JSON.parse(d.raw);
   } };
+  return api;
 }
 
 /* ---- 端末1台ぶん ---- */
+/* opts.store に前の端末の store を渡すと、同じ端末でページを開き直したことになる */
 function makeDevice(server, opts) {
-  const store = {};
+  const store = opts.store || {};
   const listeners = {};
   const toasts = [];
   const localStorage = {
@@ -250,7 +253,49 @@ async function settle(dev) {
   assert.strictEqual(reopened, 0, '解いている途中は開き直さない');
   console.log('ok 9 開いた直後だけ別の端末の続きから開き直す');
 
-  /* 10. ログアウトしても手元の記録は消えず、同期も止まる */
+  /* 10. 記録を変えたときは、読まずに送る */
+  let n0 = server.log.length;
+  A.T.Log.saveProgress('news:fast', { done: true });
+  await tick(3100); await settle(A);
+  assert.deepStrictEqual(server.log.slice(n0), ['PATCH users/u1/data/progress']);
+  assert(server.get(UID, 'progress')['news:fast']);
+  console.log('ok 10 記録を変えたときは読まずに送る');
+
+  /* 11. ページを移っても1分以内なら読み直さない。1分たてば読み直す */
+  n0 = server.log.length;
+  const A2 = makeDevice(server, { uid: UID, signedIn: true, store: A.store });
+  await settle(A2);
+  assert.deepStrictEqual(server.log.slice(n0), [], '1分以内の開き直しでは読まない');
+  A.store['toeic.sync.full'] = JSON.stringify(Date.now() - 61000);
+  const A3 = makeDevice(server, { uid: UID, signedIn: true, store: A.store });
+  await settle(A3);
+  assert.strictEqual(server.log.slice(n0).filter(l => l.startsWith('GET')).length, 4, '1分たてば読み直す');
+  console.log('ok 11 1分以内のページ移動では読み直さない');
+
+  /* 12. 読まずに送ろうとして、別の端末が先に書いていたら、読んで合わせる */
+  B.T.Log.saveProgress('news:b1', { done: true });
+  await B.T.Sync.run(); await settle(B);
+  A.T.Log.saveProgress('news:a1', { done: true });
+  await tick(3100); await settle(A);
+  assert(server.get(UID, 'progress')['news:a1'] && server.get(UID, 'progress')['news:b1']);
+  assert(A.T.Log.progress('news:b1'), 'A に B の分も入る');
+  console.log('ok 12 先に別の端末が書いていたら、読んで合わせる');
+
+  /* 13. 同期の途中で手元が書き換わったら、版を覚えない。
+     覚えてしまうと、次に読まずに送ったとき B の記録を上書きで消してしまう */
+  B.T.Log.saveProgress('news:b2', { done: true });
+  await B.T.Sync.run(); await settle(B);
+  server.hook = (method, p) => {
+    if (method === 'GET' && /progress$/.test(p)) { server.hook = null; A.T.Log.saveProgress('news:race', { step: 1 }); }
+  };
+  await A.T.Sync.run(); await settle(A);
+  await tick(3100); await settle(A);
+  const p13 = server.get(UID, 'progress');
+  assert(p13['news:race'] && p13['news:b2'], '途中で書いた分も B の分も残る: ' + Object.keys(p13).join(','));
+  assert(A.T.Log.progress('news:b2'));
+  console.log('ok 13 同期の途中で書き換わっても、別の端末の記録を消さない');
+
+  /* 14. ログアウトしても手元の記録は消えず、同期も止まる */
   const n = A.T.Vocab.count();
   await A.T.Sync.signOut(); await tick();
   assert.strictEqual(A.T.Sync.status().account, null);
@@ -259,7 +304,7 @@ async function settle(dev) {
   A.T.Vocab.add({ term: 'offline-only', ja: '' });
   await tick(3100);
   assert.strictEqual(server.log.length, writes, 'ログアウト中は送らない');
-  console.log('ok 10 ログアウトしても手元の記録は残る');
+  console.log('ok 14 ログアウトしても手元の記録は残る');
 
   console.log('\nすべて通りました');
   process.exit(0);

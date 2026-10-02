@@ -180,8 +180,13 @@ API キーはこれまでどおり端末ごとに入れる。
 - 置き場所は Firebase（Firestore）の `users/{uid}/data/{キー}`。中身は JSON の文字列
 - 認証だけ Firebase の SDK を読み、読み書きは Firestore の REST で行う
   （Firestore の SDK は 500KB を超え、毎ページ読むには重いため）
-- ページを開いたとき・アプリに戻ってきたとき（30秒に1回まで）に全部を合わせる。
-  記録したあとは3秒待ってから送る。つながらないときは印を残し、次に送る
+- ページを開いたとき・アプリに戻ってきたときに全部を読んで合わせる。ただし**1分に1回まで**。
+  ページを移るたびに4件ずつ読むと、無料枠（読み込み1日5万回）を利用者全員で分け合うには
+  多すぎるため
+- 記録したあとは3秒待ってから、変わったキーだけを**読まずに**送る。前回の同期のあと
+  誰も書いていなければ（サーバーの版が同じなら）書く、という条件付きなので、
+  別の端末が先に書いていたら断られ、そのときだけ読んで合わせる
+- つながらないときは印を残し、次に送る
 - 書き込みは「読んだときから誰も書いていなければ」の条件付き。2台が同時に書いても、
   読み直して合わせるので片方が消えない
 - 教材を開いた直後に別の端末の続きが届いたら、その続きから開き直す
@@ -199,22 +204,35 @@ API キーはこれまでどおり端末ごとに入れる。
 3. **Authentication** → ログイン方法で **Google** を有効にする。
    設定 → **承認済みドメイン** に `neon-000p.github.io` を足す
 4. **Firestore Database** を作る（本番環境モード、場所は `asia-northeast1` など）。
-   **ルール**に次を貼って公開する
+   **ルール**に次を貼って公開する。本人の記録は本人だけが読み書きでき、置けるのは
+   アプリが使う4種類・決まった形・1件 800KB 未満だけ（他人が巨大なデータを置けないように）
 
    ```
    rules_version = '2';
    service cloud.firestore {
      match /databases/{database}/documents {
        match /users/{uid}/data/{key} {
-         allow read, write: if request.auth != null && request.auth.uid == uid;
+         function isOwner() {
+           return request.auth != null && request.auth.uid == uid;
+         }
+         allow read, delete: if isOwner();
+         allow create, update: if isOwner()
+           && key in ['settings', 'vocab', 'progress', 'days']
+           && request.resource.data.keys().hasOnly(['v', 'at'])
+           && request.resource.data.v is string
+           && request.resource.data.v.size() < 800000
+           && request.resource.data.at is int;
        }
      }
    }
    ```
 
-   自分のアカウントだけに絞りたいときは、条件に
-   `&& request.auth.token.email == '自分のアドレス'` を足す
+   同期するキーを増やすときは、`core.js` の `SYNC_KEYS` とこのルールの両方を直す
 5. `node tools/bump-assets.js` を実行してコミット・push する
+
+無料プラン（Spark）の上限は利用者全員の合計で、目安は読み込み1日5万回・書き込み1日2万回。
+上限に達しても同期が翌日まで止まるだけで、アプリは端末内の記録で動き続け、請求も来ない。
+利用者が増えたら Blaze（従量課金・無料枠つき・予算アラートを設定できる）に切り替える。
 
 API キーを Google Cloud 側で HTTP リファラ制限するときは、`neon-000p.github.io/*` に加えて
 `<projectId>.firebaseapp.com/*` も許可しておく（ログイン画面がそこから API を呼ぶため）。

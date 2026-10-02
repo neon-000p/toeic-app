@@ -6,7 +6,8 @@
   'use strict';
 
   var NS = 'toeic.';
-  /* 端末間で同期するキー（下の「端末間の同期」を参照）。API キーやキャッシュは入れない */
+  /* 端末間で同期するキー（下の「端末間の同期」を参照）。API キーやキャッシュは入れない。
+     増やすときは Firestore のルール（README）の key の一覧も直す */
   var SYNC_KEYS = ['settings', 'vocab', 'progress', 'days'];
 
   /* ---------- localStorage（失敗しても落ちない） ---------- */
@@ -235,6 +236,8 @@
        Firestore の SDK は 500KB を超え、毎ページ読むには重いため。
        書き込みは「読んだ時点から変わっていなければ」の条件付きにし、
        2台が同時に書いても片方の記録が消えないようにしている。
+     - 全部を読み直すのは1分に1回まで。それ以外は変わったキーだけを、読まずに
+       条件付きで送る（無料枠の読み込み回数を利用者全員で分け合うため）。
 
      FIREBASE に値を入れるまでは同期の欄に「未設定」と出るだけで、何もしない。
      値は公開されてよいもの（守りは Firestore のルールで行う）。手順は README。 */
@@ -303,8 +306,12 @@
   var Sync = (function () {
     var API = 'https://firestore.googleapis.com/v1/';
     var sdk = null, user = null;
-    var timer = 0, running = null, again = false, againFull = false, lastFull = 0;
+    var timer = 0, running = null, again = false, againFull = false;
     var state = { phase: 'off', msg: '' };
+    /* 全部を読み直すのは、前回から1分以上たったときだけ。
+       ページを移るたびに4件ずつ読むと、無料枠（読み込み1日5万回）を
+       利用者全員で分け合うには多すぎるため。 */
+    var FULL_GAP = 60 * 1000;
     var saves = 0, follow = null;
 
     function available() {
@@ -325,6 +332,22 @@
         phase: state.phase, msg: state.msg, last: read('sync.last', 0)
       };
     }
+    function lastFull() { return read('sync.full', 0) || 0; }
+    /* サーバー上の各キーの版（updateTime）。前回の同期のあと誰も書いていなければ、
+       読まずに「この版のままなら書く」という条件付きで送れる。
+       ほかのアカウントの版を使わないよう uid と一緒に持つ */
+    function revGet(key) {
+      var r = read('sync.rev', null);
+      return r && user && r.uid === user.uid ? (r.t || {})[key] || '' : '';
+    }
+    function revSet(key, t) {
+      if (!user) return;
+      var r = read('sync.rev', null);
+      if (!r || r.uid !== user.uid) r = { uid: user.uid, t: {} };
+      if (t) r.t[key] = t; else delete r.t[key];
+      write('sync.rev', r);
+    }
+
     function markDirty(key) {
       var d = read('sync.dirty', {}) || {};
       d[key] = 1;
@@ -366,7 +389,7 @@
                 var was = user;
                 user = u;
                 if (u) write('sync.user', { uid: u.uid, email: u.email || '', name: u.displayName || '' });
-                else { forget('sync.user'); forget('sync.dirty'); }
+                else { forget('sync.user'); forget('sync.dirty'); forget('sync.rev'); forget('sync.full'); }
                 setState(u ? 'idle' : 'off');
                 if (first) { first = false; ok(fb); }
                 else if (u && !was) run(true);     // ログインした直後。両方の記録を合わせる
@@ -440,7 +463,30 @@
       try { return localStorage.getItem(NS + key); } catch (e) { return null; }
     }
 
-    /* 1つのキーを合わせる。結果は 'same' / 'changed'（手元が変わった）/ 'retry' */
+    /* 手元を送るだけ（読まない）。前回の同期のあとサーバーを誰も書いていなければ、
+       手元はサーバーの中身をすでに含んでいるので、合わせ直す必要がない。
+       誰かが書いていれば条件が合わずに断られるので、そのときは読んで合わせる */
+    function pushOnly(key, token) {
+      var rev = revGet(key), local;
+      if (!rev) return syncKey(key, token);
+      try { local = JSON.parse(rawLocal(key)); } catch (e) { local = undefined; }
+      if (local == null) return syncKey(key, token);
+      var shared, at;
+      if (key === 'settings') {
+        shared = Merge.shared(local);
+        at = (read('sync.at', {}) || {}).settings || 0;
+      } else {
+        shared = Merge[key](local, undefined);
+        at = Date.now();
+      }
+      return putDoc(key, token, JSON.stringify(shared), at, { exists: true, updateTime: rev })
+        .then(function (j) { revSet(key, j && j.updateTime); return 'same'; }, function (e) {
+          if (e.status === 400 || e.status === 409 || e.status === 404) return syncKey(key, token);
+          throw e;
+        });
+    }
+
+    /* 1つのキーを読んで合わせる。結果は 'same' / 'changed'（手元が変わった）/ 'retry' */
     function syncKey(key, token, tries) {
       var before = rawLocal(key), local;
       try { local = before == null ? undefined : JSON.parse(before); } catch (e) { local = undefined; }
@@ -460,14 +506,19 @@
           mine = Merge[key](local, undefined);
         }
         var raw = JSON.stringify(shared);
-        var push = (!rem.exists || raw !== rem.raw) ? putDoc(key, token, raw, at, rem) : Promise.resolve();
-        return push.then(function () {
-          /* 送っている間に手元が書き換わっていたら、手元はそのままにして次の回で合わせる */
-          if (rawLocal(key) !== before) return 'retry';
+        var push = (!rem.exists || raw !== rem.raw)
+          ? putDoc(key, token, raw, at, rem)
+          : Promise.resolve({ updateTime: rem.updateTime });
+        return push.then(function (j) {
+          /* 送っている間に手元が書き換わっていたら、手元はそのままにして次の回で合わせる。
+             このとき手元はサーバーの中身を含んでいないので、版は覚えない
+             （覚えると、次に読まずに送ったとき別の端末の記録を上書きしてしまう） */
+          if (rawLocal(key) !== before) { revSet(key, ''); return 'retry'; }
           var next = JSON.stringify(merged);
           if (next !== before) {
-            try { localStorage.setItem(NS + key, next); } catch (e) { return 'same'; }
+            try { localStorage.setItem(NS + key, next); } catch (e) { revSet(key, ''); return 'same'; }
           }
+          revSet(key, j && j.updateTime);
           return JSON.stringify(shared) !== JSON.stringify(mine) ? 'changed' : 'same';
         }, function (e) {
           /* 400 / 409 は「読んだあとに別の端末が書いた」。読み直してやり直す */
@@ -488,13 +539,12 @@
       if (!keys.length) return Promise.resolve();
       keys.forEach(function (k) { delete dirty[k]; });
       write('sync.dirty', dirty);
-      if (full) lastFull = Date.now();
       clearTimeout(timer);
       setState('busy');
 
       running = user.getIdToken().then(function (token) {
         return Promise.all(keys.map(function (k) {
-          return syncKey(k, token).then(
+          return (full ? syncKey(k, token) : pushOnly(k, token)).then(
             function (r) { return { key: k, r: r }; },
             function (e) { markDirty(k); return { key: k, err: e }; });
         }));
@@ -507,6 +557,7 @@
         });
         if (err) throw err;
         write('sync.last', Date.now());
+        if (full) write('sync.full', Date.now());
         setState('idle');
         if (changed.length) after(changed);
       }).catch(fail).then(function () {
@@ -529,7 +580,7 @@
       if (!account()) return;
       if (user) { run(false); return; }
       setState('busy');
-      loadSdk().then(function () { if (user) run(true); }).catch(fail);
+      loadSdk().then(function () { if (user) run(Date.now() - lastFull() > FULL_GAP); }).catch(fail);
     }
 
     /* 他の端末の記録が入ったとき。ページは toeic:synced を受けて描き直せる */
@@ -557,7 +608,7 @@
       document.addEventListener('visibilitychange', function () {
         if (!user) return;
         if (document.visibilityState === 'hidden') run(false);
-        else if (Date.now() - lastFull > 30000) run(true);
+        else if (Date.now() - lastFull() > FULL_GAP) run(true);
       });
       global.addEventListener('online', resume);
       resume();
