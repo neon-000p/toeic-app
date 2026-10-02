@@ -238,15 +238,12 @@
 
      FIREBASE に値を入れるまでは同期の欄に「未設定」と出るだけで、何もしない。
      値は公開されてよいもの（守りは Firestore のルールで行う）。手順は README。 */
-  var FIREBASE = null;
-  /* 例:
   var FIREBASE = {
-    apiKey: 'AIza…',
-    authDomain: 'xxxx.firebaseapp.com',
-    projectId: 'xxxx',
-    appId: '1:…:web:…'
+    apiKey: 'AIzaSyBTSQB2bwjcVfz-l5UFnmkpRWGQFnDuBqs',
+    authDomain: 'toeic-daily-7cea5.firebaseapp.com',
+    projectId: 'toeic-daily-7cea5',
+    appId: '1:227084784386:web:2674b140fa4b4cec51e81b'
   };
-  */
   var FB_SDK = 'https://www.gstatic.com/firebasejs/12.19.0/';
   var DEVICE_ONLY = ['voiceURI'];
 

@@ -11,7 +11,7 @@ const vm = require('vm');
 const assert = require('assert');
 
 const SRC = fs.readFileSync(path.join(__dirname, '..', 'core.js'), 'utf8')
-  .replace('var FIREBASE = null;',
+  .replace(/var FIREBASE = (null|\{[^}]*\});/,
     "var FIREBASE = { apiKey: 'k', authDomain: 'x.firebaseapp.com', projectId: 'proj', appId: 'a' };");
 assert(/projectId: 'proj'/.test(SRC), 'FIREBASE の差し替えに失敗');
 
