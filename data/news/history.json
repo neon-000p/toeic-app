@@ -1,79 +1,445 @@
 {
   "schemaVersion": 1,
   "note": "ジャンルと文法トピックの重複判定だけに使う履歴。教材本体（index.json）とは別管理で、古いものも消さない。items は新しい順。2026-09-12 以前は Notion 見出しページ『時事英語TOEIC教材』から移設したもの。",
-  "updatedAt": "2026-10-02T16:41:00+09:00",
+  "updatedAt": "2026-10-03T05:45:00+09:00",
   "items": [
-    { "date": "2026-10-02", "seq": 2, "genre": "エネルギー", "grammar": "前置詞の使い分け：fall by（差）／to（到達点）／from（起点）" },
-    { "date": "2026-10-02", "seq": 1, "genre": "小売・消費", "grammar": "the only ＋ 関係代名詞 that（先行詞が only で限定されるとき that を使う）" },
-    { "date": "2026-10-01", "seq": 2, "genre": "医療",         "grammar": "as long as（〜する限り・条件を表す接続詞句）" },
-    { "date": "2026-10-01", "seq": 1, "genre": "地政学", "grammar": "関係代名詞の非制限用法（, which … で補足説明を加える）" },
-    { "date": "2026-09-30", "seq": 2, "genre": "テクノロジー", "grammar": "suggest + that節（〜ということを示唆する）" },
-    { "date": "2026-09-30", "seq": 1, "genre": "金融",         "grammar": "無生物主語構文（物・出来事が主語になり「〜が…をもたらす」を表す表現）" },
-    { "date": "2026-09-29", "seq": 2, "genre": "物流",         "grammar": "現在完了形＋since（〜以来ずっと…している）" },
-    { "date": "2026-09-29", "seq": 1, "genre": "雇用・人事",   "grammar": "受動態（be＋過去分詞）で行為者を示さずに事実を伝える表現" },
-    { "date": "2026-09-28", "seq": 2, "genre": "宇宙",         "grammar": "不定詞の副詞的用法（目的を表す to do）" },
-    { "date": "2026-09-28", "seq": 1, "genre": "地政学",       "grammar": "分詞構文による条件節の省略（If (it is) approved, ~）" },
-    { "date": "2026-09-27", "seq": 2, "genre": "テクノロジー", "grammar": "force + O + to do（〜に…することを強いる、余儀なくさせる）" },
-    { "date": "2026-09-27", "seq": 1, "genre": "金融",         "grammar": "keep + 現在分詞（〜し続ける）" },
-    { "date": "2026-09-26", "seq": 2, "genre": "企業決算",     "grammar": "譲歩を表す接続詞 even though（〜にもかかわらず、〜だけれども）" },
-    { "date": "2026-09-26", "seq": 1, "genre": "エネルギー",   "grammar": "have yet to do（まだ〜していない、の意味を表す表現）" },
-    { "date": "2026-09-25", "seq": 2, "genre": "小売・消費",   "grammar": "最上級＋since＋年（「〜年以来もっとも…」を表す表現）" },
-    { "date": "2026-09-25", "seq": 1, "genre": "地政学",       "grammar": "be due to do の過去完了形（had been due to do＝〜する予定だったが実現しなかったことを表す表現）" },
-    { "date": "2026-09-24", "seq": 2, "genre": "テクノロジー", "grammar": "使役動詞 let＋O＋原形動詞（〜させる、〜することを許可する）" },
-    { "date": "2026-09-24", "seq": 1, "genre": "金融",         "grammar": "expect＋O＋to不定詞構文（動詞＋目的語＋to不定詞で「Oが〜すると予想する」を表す）" },
-    { "date": "2026-09-23", "seq": 2, "genre": "物流",         "grammar": "過去分詞の非制限用法（, known as ~）" },
-    { "date": "2026-09-23", "seq": 1, "genre": "雇用・人事",   "grammar": "比較級を強調する副詞 far（比較級の強調用法）" },
-    { "date": "2026-09-22", "seq": 2, "genre": "医療",         "grammar": "時・条件を表す接続詞 when（〜すると、〜する時に）" },
-    { "date": "2026-09-22", "seq": 1, "genre": "地政学",       "grammar": "It remains unclear whether ~ 構文（形式主語のitを用いた間接疑問文）" },
-    { "date": "2026-09-21", "seq": 2, "genre": "テクノロジー", "grammar": "譲歩・対照を表す接続詞 while（〜する一方で）" },
-    { "date": "2026-09-21", "seq": 1, "genre": "金融",         "grammar": "条件を表すif節（If S V(現在形), S could have... のような未来の可能性を表す直説法の条件文）" },
-    { "date": "2026-09-20", "seq": 2, "genre": "宇宙",         "grammar": "動名詞句が主語になる構文（単数扱いでの動詞の一致）" },
-    { "date": "2026-09-20", "seq": 1, "genre": "企業決算",     "grammar": "第5文型 make＋O＋C（状態変化の結果を表す用法）" },
-    { "date": "2026-09-19", "seq": 2, "genre": "エネルギー",   "grammar": "目的格の関係代名詞that（省略可能な制限用法）" },
-    { "date": "2026-09-19", "seq": 1, "genre": "地政学",       "grammar": "形式目的語のit（make/find it + 形容詞 + for 人 + to do）" },
-    { "date": "2026-09-18", "seq": 2, "genre": "テクノロジー", "grammar": "not ~ until 構文（〜するまでは…しない、の意味を表す）" },
-    { "date": "2026-09-18", "seq": 1, "genre": "金融",         "grammar": "must be + 形容詞 + that節（confident thatの構文）" },
-    { "date": "2026-09-17", "seq": 2, "genre": "小売・消費",   "grammar": "譲歩・対比の接続詞句 even as（〜する一方で、〜であっても）" },
-    { "date": "2026-09-17", "seq": 1, "genre": "物流",         "grammar": "接続詞句 now that（〜した今となっては、〜なので）" },
-    { "date": "2026-09-16", "seq": 2, "genre": "雇用・人事",   "grammar": "接続詞 once（いったん〜すると／〜し次第、の意味を表す従属接続詞）" },
-    { "date": "2026-09-16", "seq": 1, "genre": "地政学",       "grammar": "形容詞 effective ＋ 日付（後置修飾で「〜から発効」を表す用法）" },
-    { "date": "2026-09-15", "seq": 2, "genre": "テクノロジー", "grammar": "過去完了形の受動態（had been＋過去分詞）" },
-    { "date": "2026-09-15", "seq": 1, "genre": "金融",         "grammar": "同格のコンマ（名詞の直後に説明を加える用法）" },
-    { "date": "2026-09-14", "seq": 2, "genre": "医療",         "grammar": "help＋O＋原形動詞（toのない不定詞）" },
-    { "date": "2026-09-14", "seq": 1, "genre": "宇宙",         "grammar": "結果を表す分詞構文（, raising 〜）" },
-    { "date": "2026-09-13", "seq": 2, "genre": "企業決算",     "grammar": "現在分詞 meaning 〜（言い換え・補足説明を加える分詞用法）" },
-    { "date": "2026-09-13", "seq": 1, "genre": "地政学",       "grammar": "第5文型 leave＋O＋C（結果を表すSVOC構文）" },
-    { "date": "2026-09-12", "seq": 3, "genre": "テクノロジー", "grammar": "非制限用法の関係代名詞（コンマ＋which）" },
-    { "date": "2026-09-12", "seq": 2, "genre": "金融",         "grammar": "keep + 現在分詞（〜し続ける）" },
-    { "date": "2026-09-12", "seq": 1, "genre": "エネルギー",   "grammar": "allow＋O＋to do" },
-    { "date": "2026-09-11", "seq": 2, "genre": "小売・消費",   "grammar": "副詞節での〈主語＋be動詞〉の省略" },
-    { "date": "2026-09-11", "seq": 1, "genre": "物流",         "grammar": "前置詞＋関係代名詞 during which" },
-    { "date": "2026-09-10", "seq": 3, "genre": "地政学",       "grammar": "must と may の使い分け" },
-    { "date": "2026-09-10", "seq": 2, "genre": "テクノロジー", "grammar": "現在完了進行形" },
-    { "date": "2026-09-10", "seq": 1, "genre": "金融",         "grammar": "助動詞＋受動態" },
-    { "date": "2026-09-09", "seq": 2, "genre": "雇用・人事",   "grammar": "複合関係副詞 wherever" },
-    { "date": "2026-09-09", "seq": 1, "genre": "医療",         "grammar": "無生物主語構文" },
-    { "date": "2026-09-08", "seq": 2, "genre": "宇宙",         "grammar": "過去分詞の後置修飾" },
-    { "date": "2026-09-08", "seq": 1, "genre": "地政学",       "grammar": "付帯状況の with" },
-    { "date": "2026-09-07", "seq": 2, "genre": "テクノロジー", "grammar": "倍数表現" },
-    { "date": "2026-09-07", "seq": 1, "genre": "金融",         "grammar": "比較級＋than expected" },
-    { "date": "2026-09-06", "seq": 2, "genre": "企業決算",     "grammar": "despite と although" },
-    { "date": "2026-09-06", "seq": 1, "genre": "エネルギー",   "grammar": "変化幅を表す前置詞 by" },
-    { "date": "2026-09-05", "seq": 2, "genre": "小売・消費",   "grammar": "not only A but also B" },
-    { "date": "2026-09-05", "seq": 1, "genre": "地政学",       "grammar": "仮定を含む would" },
-    { "date": "2026-09-04", "seq": 2, "genre": "テクノロジー", "grammar": "前置詞 pending" },
-    { "date": "2026-09-04", "seq": 1, "genre": "金融",         "grammar": "部分否定 not all" },
-    { "date": "2026-09-03", "seq": 2, "genre": "物流",         "grammar": "分詞構文" },
-    { "date": "2026-09-03", "seq": 1, "genre": "雇用・人事",   "grammar": "仮定法過去完了" },
-    { "date": "2026-09-02", "seq": 2, "genre": "医療",         "grammar": "同格のコンマ" },
-    { "date": "2026-09-02", "seq": 1, "genre": "地政学",       "grammar": "間接疑問文" },
-    { "date": "2026-09-01", "seq": 2, "genre": "テクノロジー", "grammar": "可算・不可算名詞と数量表現" },
-    { "date": "2026-09-01", "seq": 1, "genre": "金融",         "grammar": "概数表現 about／more than" },
-    { "date": "2026-08-31", "seq": 2, "genre": "宇宙",         "grammar": "only then＋倒置" },
-    { "date": "2026-08-31", "seq": 1, "genre": "企業決算",     "grammar": "much of＋名詞と動詞の一致" },
-    { "date": "2026-08-30", "seq": 2, "genre": "エネルギー",   "grammar": "強調構文 It is 〜 that" },
-    { "date": "2026-08-30", "seq": 1, "genre": "地政学",       "grammar": "序数＋最上級" },
-    { "date": "2026-08-29", "seq": 2, "genre": "テクノロジー", "grammar": "接続詞 that の名詞節" },
-    { "date": "2026-08-29", "seq": 1, "genre": "金融",         "grammar": "接続副詞 otherwise" }
+    {
+      "date": "2026-10-03",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "most of the ＋ 名詞（〜の大部分）"
+    },
+    {
+      "date": "2026-10-02",
+      "seq": 2,
+      "genre": "エネルギー",
+      "grammar": "前置詞の使い分け：fall by（差）／to（到達点）／from（起点）"
+    },
+    {
+      "date": "2026-10-02",
+      "seq": 1,
+      "genre": "小売・消費",
+      "grammar": "the only ＋ 関係代名詞 that（先行詞が only で限定されるとき that を使う）"
+    },
+    {
+      "date": "2026-10-01",
+      "seq": 2,
+      "genre": "医療",
+      "grammar": "as long as（〜する限り・条件を表す接続詞句）"
+    },
+    {
+      "date": "2026-10-01",
+      "seq": 1,
+      "genre": "地政学",
+      "grammar": "関係代名詞の非制限用法（, which … で補足説明を加える）"
+    },
+    {
+      "date": "2026-09-30",
+      "seq": 2,
+      "genre": "テクノロジー",
+      "grammar": "suggest + that節（〜ということを示唆する）"
+    },
+    {
+      "date": "2026-09-30",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "無生物主語構文（物・出来事が主語になり「〜が…をもたらす」を表す表現）"
+    },
+    {
+      "date": "2026-09-29",
+      "seq": 2,
+      "genre": "物流",
+      "grammar": "現在完了形＋since（〜以来ずっと…している）"
+    },
+    {
+      "date": "2026-09-29",
+      "seq": 1,
+      "genre": "雇用・人事",
+      "grammar": "受動態（be＋過去分詞）で行為者を示さずに事実を伝える表現"
+    },
+    {
+      "date": "2026-09-28",
+      "seq": 2,
+      "genre": "宇宙",
+      "grammar": "不定詞の副詞的用法（目的を表す to do）"
+    },
+    {
+      "date": "2026-09-28",
+      "seq": 1,
+      "genre": "地政学",
+      "grammar": "分詞構文による条件節の省略（If (it is) approved, ~）"
+    },
+    {
+      "date": "2026-09-27",
+      "seq": 2,
+      "genre": "テクノロジー",
+      "grammar": "force + O + to do（〜に…することを強いる、余儀なくさせる）"
+    },
+    {
+      "date": "2026-09-27",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "keep + 現在分詞（〜し続ける）"
+    },
+    {
+      "date": "2026-09-26",
+      "seq": 2,
+      "genre": "企業決算",
+      "grammar": "譲歩を表す接続詞 even though（〜にもかかわらず、〜だけれども）"
+    },
+    {
+      "date": "2026-09-26",
+      "seq": 1,
+      "genre": "エネルギー",
+      "grammar": "have yet to do（まだ〜していない、の意味を表す表現）"
+    },
+    {
+      "date": "2026-09-25",
+      "seq": 2,
+      "genre": "小売・消費",
+      "grammar": "最上級＋since＋年（「〜年以来もっとも…」を表す表現）"
+    },
+    {
+      "date": "2026-09-25",
+      "seq": 1,
+      "genre": "地政学",
+      "grammar": "be due to do の過去完了形（had been due to do＝〜する予定だったが実現しなかったことを表す表現）"
+    },
+    {
+      "date": "2026-09-24",
+      "seq": 2,
+      "genre": "テクノロジー",
+      "grammar": "使役動詞 let＋O＋原形動詞（〜させる、〜することを許可する）"
+    },
+    {
+      "date": "2026-09-24",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "expect＋O＋to不定詞構文（動詞＋目的語＋to不定詞で「Oが〜すると予想する」を表す）"
+    },
+    {
+      "date": "2026-09-23",
+      "seq": 2,
+      "genre": "物流",
+      "grammar": "過去分詞の非制限用法（, known as ~）"
+    },
+    {
+      "date": "2026-09-23",
+      "seq": 1,
+      "genre": "雇用・人事",
+      "grammar": "比較級を強調する副詞 far（比較級の強調用法）"
+    },
+    {
+      "date": "2026-09-22",
+      "seq": 2,
+      "genre": "医療",
+      "grammar": "時・条件を表す接続詞 when（〜すると、〜する時に）"
+    },
+    {
+      "date": "2026-09-22",
+      "seq": 1,
+      "genre": "地政学",
+      "grammar": "It remains unclear whether ~ 構文（形式主語のitを用いた間接疑問文）"
+    },
+    {
+      "date": "2026-09-21",
+      "seq": 2,
+      "genre": "テクノロジー",
+      "grammar": "譲歩・対照を表す接続詞 while（〜する一方で）"
+    },
+    {
+      "date": "2026-09-21",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "条件を表すif節（If S V(現在形), S could have... のような未来の可能性を表す直説法の条件文）"
+    },
+    {
+      "date": "2026-09-20",
+      "seq": 2,
+      "genre": "宇宙",
+      "grammar": "動名詞句が主語になる構文（単数扱いでの動詞の一致）"
+    },
+    {
+      "date": "2026-09-20",
+      "seq": 1,
+      "genre": "企業決算",
+      "grammar": "第5文型 make＋O＋C（状態変化の結果を表す用法）"
+    },
+    {
+      "date": "2026-09-19",
+      "seq": 2,
+      "genre": "エネルギー",
+      "grammar": "目的格の関係代名詞that（省略可能な制限用法）"
+    },
+    {
+      "date": "2026-09-19",
+      "seq": 1,
+      "genre": "地政学",
+      "grammar": "形式目的語のit（make/find it + 形容詞 + for 人 + to do）"
+    },
+    {
+      "date": "2026-09-18",
+      "seq": 2,
+      "genre": "テクノロジー",
+      "grammar": "not ~ until 構文（〜するまでは…しない、の意味を表す）"
+    },
+    {
+      "date": "2026-09-18",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "must be + 形容詞 + that節（confident thatの構文）"
+    },
+    {
+      "date": "2026-09-17",
+      "seq": 2,
+      "genre": "小売・消費",
+      "grammar": "譲歩・対比の接続詞句 even as（〜する一方で、〜であっても）"
+    },
+    {
+      "date": "2026-09-17",
+      "seq": 1,
+      "genre": "物流",
+      "grammar": "接続詞句 now that（〜した今となっては、〜なので）"
+    },
+    {
+      "date": "2026-09-16",
+      "seq": 2,
+      "genre": "雇用・人事",
+      "grammar": "接続詞 once（いったん〜すると／〜し次第、の意味を表す従属接続詞）"
+    },
+    {
+      "date": "2026-09-16",
+      "seq": 1,
+      "genre": "地政学",
+      "grammar": "形容詞 effective ＋ 日付（後置修飾で「〜から発効」を表す用法）"
+    },
+    {
+      "date": "2026-09-15",
+      "seq": 2,
+      "genre": "テクノロジー",
+      "grammar": "過去完了形の受動態（had been＋過去分詞）"
+    },
+    {
+      "date": "2026-09-15",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "同格のコンマ（名詞の直後に説明を加える用法）"
+    },
+    {
+      "date": "2026-09-14",
+      "seq": 2,
+      "genre": "医療",
+      "grammar": "help＋O＋原形動詞（toのない不定詞）"
+    },
+    {
+      "date": "2026-09-14",
+      "seq": 1,
+      "genre": "宇宙",
+      "grammar": "結果を表す分詞構文（, raising 〜）"
+    },
+    {
+      "date": "2026-09-13",
+      "seq": 2,
+      "genre": "企業決算",
+      "grammar": "現在分詞 meaning 〜（言い換え・補足説明を加える分詞用法）"
+    },
+    {
+      "date": "2026-09-13",
+      "seq": 1,
+      "genre": "地政学",
+      "grammar": "第5文型 leave＋O＋C（結果を表すSVOC構文）"
+    },
+    {
+      "date": "2026-09-12",
+      "seq": 3,
+      "genre": "テクノロジー",
+      "grammar": "非制限用法の関係代名詞（コンマ＋which）"
+    },
+    {
+      "date": "2026-09-12",
+      "seq": 2,
+      "genre": "金融",
+      "grammar": "keep + 現在分詞（〜し続ける）"
+    },
+    {
+      "date": "2026-09-12",
+      "seq": 1,
+      "genre": "エネルギー",
+      "grammar": "allow＋O＋to do"
+    },
+    {
+      "date": "2026-09-11",
+      "seq": 2,
+      "genre": "小売・消費",
+      "grammar": "副詞節での〈主語＋be動詞〉の省略"
+    },
+    {
+      "date": "2026-09-11",
+      "seq": 1,
+      "genre": "物流",
+      "grammar": "前置詞＋関係代名詞 during which"
+    },
+    {
+      "date": "2026-09-10",
+      "seq": 3,
+      "genre": "地政学",
+      "grammar": "must と may の使い分け"
+    },
+    {
+      "date": "2026-09-10",
+      "seq": 2,
+      "genre": "テクノロジー",
+      "grammar": "現在完了進行形"
+    },
+    {
+      "date": "2026-09-10",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "助動詞＋受動態"
+    },
+    {
+      "date": "2026-09-09",
+      "seq": 2,
+      "genre": "雇用・人事",
+      "grammar": "複合関係副詞 wherever"
+    },
+    {
+      "date": "2026-09-09",
+      "seq": 1,
+      "genre": "医療",
+      "grammar": "無生物主語構文"
+    },
+    {
+      "date": "2026-09-08",
+      "seq": 2,
+      "genre": "宇宙",
+      "grammar": "過去分詞の後置修飾"
+    },
+    {
+      "date": "2026-09-08",
+      "seq": 1,
+      "genre": "地政学",
+      "grammar": "付帯状況の with"
+    },
+    {
+      "date": "2026-09-07",
+      "seq": 2,
+      "genre": "テクノロジー",
+      "grammar": "倍数表現"
+    },
+    {
+      "date": "2026-09-07",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "比較級＋than expected"
+    },
+    {
+      "date": "2026-09-06",
+      "seq": 2,
+      "genre": "企業決算",
+      "grammar": "despite と although"
+    },
+    {
+      "date": "2026-09-06",
+      "seq": 1,
+      "genre": "エネルギー",
+      "grammar": "変化幅を表す前置詞 by"
+    },
+    {
+      "date": "2026-09-05",
+      "seq": 2,
+      "genre": "小売・消費",
+      "grammar": "not only A but also B"
+    },
+    {
+      "date": "2026-09-05",
+      "seq": 1,
+      "genre": "地政学",
+      "grammar": "仮定を含む would"
+    },
+    {
+      "date": "2026-09-04",
+      "seq": 2,
+      "genre": "テクノロジー",
+      "grammar": "前置詞 pending"
+    },
+    {
+      "date": "2026-09-04",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "部分否定 not all"
+    },
+    {
+      "date": "2026-09-03",
+      "seq": 2,
+      "genre": "物流",
+      "grammar": "分詞構文"
+    },
+    {
+      "date": "2026-09-03",
+      "seq": 1,
+      "genre": "雇用・人事",
+      "grammar": "仮定法過去完了"
+    },
+    {
+      "date": "2026-09-02",
+      "seq": 2,
+      "genre": "医療",
+      "grammar": "同格のコンマ"
+    },
+    {
+      "date": "2026-09-02",
+      "seq": 1,
+      "genre": "地政学",
+      "grammar": "間接疑問文"
+    },
+    {
+      "date": "2026-09-01",
+      "seq": 2,
+      "genre": "テクノロジー",
+      "grammar": "可算・不可算名詞と数量表現"
+    },
+    {
+      "date": "2026-09-01",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "概数表現 about／more than"
+    },
+    {
+      "date": "2026-08-31",
+      "seq": 2,
+      "genre": "宇宙",
+      "grammar": "only then＋倒置"
+    },
+    {
+      "date": "2026-08-31",
+      "seq": 1,
+      "genre": "企業決算",
+      "grammar": "much of＋名詞と動詞の一致"
+    },
+    {
+      "date": "2026-08-30",
+      "seq": 2,
+      "genre": "エネルギー",
+      "grammar": "強調構文 It is 〜 that"
+    },
+    {
+      "date": "2026-08-30",
+      "seq": 1,
+      "genre": "地政学",
+      "grammar": "序数＋最上級"
+    },
+    {
+      "date": "2026-08-29",
+      "seq": 2,
+      "genre": "テクノロジー",
+      "grammar": "接続詞 that の名詞節"
+    },
+    {
+      "date": "2026-08-29",
+      "seq": 1,
+      "genre": "金融",
+      "grammar": "接続副詞 otherwise"
+    }
   ]
 }

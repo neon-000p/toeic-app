@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-03-0539",
+  "date": "2026-10-03",
+  "time": "05:39",
+  "createdAt": "2026-10-03T05:39:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "U.S. Hiring Stalls as Fed Rate Hold Looks Likely",
+    "ja": "米雇用が急減速、FRBは据え置き観測"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. employers added only 29,000 jobs in September, far below the 84,000 that economists expected.",
+            "ja": "米国の雇用主が9月に増やした雇用はわずか2万9,000人で、エコノミストの予想した8万4,000人を大きく下回った。"
+          },
+          {
+            "en": "The unemployment rate rose to 4.2%, up from 4.1% in August, a sign that the job market is losing strength.",
+            "ja": "失業率は8月の4.1%から上昇して4.2%となり、労働市場が勢いを失いつつあることを示した。"
+          },
+          {
+            "en": "The government also revised its earlier figures downward, so July and August together had 60,000 fewer jobs than first reported.",
+            "ja": "政府は過去の数字も下方修正し、7月と8月を合わせた雇用は当初の発表より6万人少なくなった。"
+          },
+          {
+            "en": "Wage growth slowed to its lowest annual pace since May 2021.",
+            "ja": "賃金の伸びは鈍化し、2021年5月以来の年間最低ペースとなった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The weak data lowers the chance that the Federal Reserve will change interest rates soon.",
+            "ja": "この弱いデータは、米連邦準備制度が近く金利を変更する可能性を下げている。"
+          },
+          {
+            "en": "Traders now think the central bank will most likely keep rates unchanged at its meeting later this month.",
+            "ja": "トレーダーは現在、中央銀行が今月後半の会合で金利を据え置く可能性が最も高いと見ている。"
+          },
+          {
+            "en": "Most of the new jobs came from health care, construction and manufacturing.",
+            "ja": "新規雇用の大半は、医療、建設、製造業から生まれた。"
+          },
+          {
+            "en": "Because slower hiring can reduce household spending, investors will watch upcoming data closely.",
+            "ja": "採用の鈍化は家計支出を減らしうるため、投資家は今後のデータを注意深く見守るだろう。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many jobs did U.S. employers add in September?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "84,000",
+          "ja": "8万4,000人"
+        },
+        {
+          "key": "B",
+          "text": "60,000",
+          "ja": "6万人"
+        },
+        {
+          "key": "C",
+          "text": "29,000",
+          "ja": "2万9,000人"
+        },
+        {
+          "key": "D",
+          "text": "133,000",
+          "ja": "13万3,000人"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落1文目に「only 29,000 jobs」とあるので正解は C。A の84,000はエコノミストの予想値、B の60,000は7〜8月の下方修正幅で、いずれも本文に出てくる別の数字を使った引っかけ。D は本文にない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "数字問題は、本文中の複数の数字（実績・予想・修正幅）が何を指すかを区別して読む。『予想値』と『実績値』の取り違えが典型的な誤答。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT stated in the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The unemployment rate rose to 4.2%.",
+          "ja": "失業率は4.2%に上昇した。"
+        },
+        {
+          "key": "B",
+          "text": "Wage growth was the lowest since May 2021.",
+          "ja": "賃金の伸びは2021年5月以来の低さだった。"
+        },
+        {
+          "key": "C",
+          "text": "Health care was one of the sources of new jobs.",
+          "ja": "医療は新規雇用の源の一つだった。"
+        },
+        {
+          "key": "D",
+          "text": "The central bank already changed rates this month.",
+          "ja": "中央銀行は今月すでに金利を変更した。"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A は第1段落2文目、B は同4文目、C は第2段落3文目に書かれている。D は、中央銀行の会合が「later this month（今月後半）」とあり、まだ開かれていないので本文と合わず、これが正解（本文にない内容）。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "NOT問題は、A〜C を本文と1つずつ照合し、確認できなかった選択肢を選ぶ。later this month のような時を表す語句が引っかけに使われやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "employers",
+      "pos": "名",
+      "ja": "雇用主、雇う側",
+      "gloss": "",
+      "example": {
+        "en": "Employers plan to hire more staff next spring.",
+        "ja": "雇用主は来春にもっと人を採用する予定だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "unemployment",
+      "pos": "名",
+      "ja": "失業、失業率",
+      "gloss": "",
+      "example": {
+        "en": "Unemployment fell for the third month in a row.",
+        "ja": "失業率は3か月連続で低下した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "revised",
+      "pos": "動",
+      "ja": "修正した（revise の過去形）",
+      "gloss": "",
+      "example": {
+        "en": "The company revised its sales forecast downward.",
+        "ja": "その会社は売上予想を下方修正した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "wage",
+      "pos": "名",
+      "ja": "賃金",
+      "gloss": "",
+      "example": {
+        "en": "The union asked for a higher wage.",
+        "ja": "組合はより高い賃金を求めた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "pace",
+      "pos": "名",
+      "ja": "ペース、速度",
+      "gloss": "",
+      "example": {
+        "en": "Sales grew at a steady pace.",
+        "ja": "売上は安定したペースで伸びた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "unchanged",
+      "pos": "形",
+      "ja": "変わらない",
+      "gloss": "",
+      "example": {
+        "en": "The price will remain unchanged until June.",
+        "ja": "価格は6月まで変わらない。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "traders",
+      "pos": "名",
+      "ja": "トレーダー、取引業者",
+      "gloss": "（＝株や為替を売り買いする人のこと）",
+      "example": {
+        "en": "Traders reacted quickly to the news.",
+        "ja": "トレーダーはそのニュースにすぐ反応した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "spending",
+      "pos": "名",
+      "ja": "支出、消費",
+      "gloss": "",
+      "example": {
+        "en": "Household spending rose slightly last month.",
+        "ja": "家計支出は先月わずかに増えた。"
+      }
+    }
+  ],
+  "glossary": {
+    "employers": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主",
+      "note": ""
+    },
+    "added": {
+      "lemma": "add",
+      "pos": "動",
+      "ja": "増やした",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "経済学者",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "unemployment": {
+      "lemma": "unemployment",
+      "pos": "名",
+      "ja": "失業",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "government": {
+      "lemma": "government",
+      "pos": "名",
+      "ja": "政府",
+      "note": ""
+    },
+    "revised": {
+      "lemma": "revise",
+      "pos": "動",
+      "ja": "修正した",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "early",
+      "pos": "形",
+      "ja": "以前の",
+      "note": ""
+    },
+    "figures": {
+      "lemma": "figure",
+      "pos": "名",
+      "ja": "数値",
+      "note": ""
+    },
+    "downward": {
+      "lemma": "downward",
+      "pos": "副",
+      "ja": "下方に",
+      "note": ""
+    },
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "報告した",
+      "note": ""
+    },
+    "wage": {
+      "lemma": "wage",
+      "pos": "名",
+      "ja": "賃金",
+      "note": ""
+    },
+    "slowed": {
+      "lemma": "slow",
+      "pos": "動",
+      "ja": "鈍化した",
+      "note": ""
+    },
+    "annual": {
+      "lemma": "annual",
+      "pos": "形",
+      "ja": "年間の",
+      "note": ""
+    },
+    "pace": {
+      "lemma": "pace",
+      "pos": "名",
+      "ja": "ペース",
+      "note": ""
+    },
+    "lowest": {
+      "lemma": "low",
+      "pos": "形",
+      "ja": "最も低い",
+      "note": ""
+    },
+    "chance": {
+      "lemma": "chance",
+      "pos": "名",
+      "ja": "可能性",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー",
+      "note": ""
+    },
+    "unchanged": {
+      "lemma": "unchanged",
+      "pos": "形",
+      "ja": "変わらない",
+      "note": ""
+    },
+    "meeting": {
+      "lemma": "meeting",
+      "pos": "名",
+      "ja": "会合",
+      "note": ""
+    },
+    "manufacturing": {
+      "lemma": "manufacturing",
+      "pos": "名",
+      "ja": "製造業",
+      "note": ""
+    },
+    "construction": {
+      "lemma": "construction",
+      "pos": "名",
+      "ja": "建設",
+      "note": ""
+    },
+    "hiring": {
+      "lemma": "hiring",
+      "pos": "名",
+      "ja": "採用",
+      "note": ""
+    },
+    "reduce": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "household": {
+      "lemma": "household",
+      "pos": "名",
+      "ja": "家計",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "upcoming": {
+      "lemma": "upcoming",
+      "pos": "形",
+      "ja": "今後の",
+      "note": ""
+    },
+    "closely": {
+      "lemma": "closely",
+      "pos": "副",
+      "ja": "注意深く",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "most of the ＋ 名詞（〜の大部分）",
+    "quote": "Most of the new jobs came from health care, construction and manufacturing.",
+    "quoteJa": "新規雇用の大半は、医療、建設、製造業から生まれた。",
+    "blocks": [
+      {
+        "heading": "構文：most of the ＋ 名詞",
+        "body": "most of は「〜の大部分」を表し、後ろに the / 所有格 / 代名詞 を伴う特定の名詞が来ます（most of the jobs）。the などが無い場合は most をそのまま形容詞として使います（most jobs ＝ 一般に「たいていの仕事」）。"
+      },
+      {
+        "heading": "動詞の一致",
+        "body": "most of の後ろの名詞に動詞を合わせます。Most of the new jobs come…（複数）／Most of the money is…（不可算は単数）。主語は most ではなく of の後ろの名詞、と覚えると迷いません。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では most of / most / almost all of の使い分け、また all of the / some of the など同型表現との識別が問われます。『Most of ___ employees』のように空所前後に the や所有格が必要かを確認しましょう。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "Most of our revenue comes from overseas customers.（売上の大半は海外顧客から来ている）／Most of the staff will work from home on Friday.（スタッフの大半は金曜に在宅勤務する）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 雇用統計とは何か",
+      "body": "米労働省が毎月第1金曜に発表する、非農業部門雇用者数・失業率・賃金などの統計です。景気の体温計と呼ばれ、世界の株式・為替・債券市場が最も注目する指標の一つです。今回は予想8万4,000人に対し2万9,000人と大幅に下振れし、過去2か月分も合計6万人下方修正されました。"
+    },
+    {
+      "heading": "📌 FRBはなぜ雇用を見るのか",
+      "body": "FRB（米連邦準備制度理事会）は『物価の安定』と『雇用の最大化』という2つの使命を負っています。雇用が弱ければ利下げ圧力が強まり、物価が高止まりなら利上げ圧力が強まります。今回は雇用鈍化で、市場は10月の会合で据え置きの確率が高いと見ています（CMEのツールで約77%）。"
+    },
+    {
+      "heading": "📌 他国・他の産業の動き",
+      "body": "インドでは10月5〜7日の金融政策会合で利上げが予想されるなど、中央銀行の動きは国ごとに分かれています。米国では雇用の伸びが医療・建設・製造業に偏っており、業種間の格差が見えます。"
+    },
+    {
+      "heading": "📌 日本・投資家への示唆",
+      "body": "米金利が高止まりすれば為替は円安方向に働きやすく、輸出企業には追い風、輸入コストには逆風です。米景気の減速は日本の対米輸出や株価にも影響します。投資家は次回の統計とFRBの会合（10月28日）を見て、景気後退の懸念と金融政策の方向を見極める局面です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Labor market faltered in September as jobs increased by just 29,000, unemployment rate rose to 4.2%",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html",
+      "date": "2026-10-02"
+    },
+    {
+      "title": "US economy added 29,000 jobs in September, a slower pace than expected",
+      "publisher": "Fox Business",
+      "url": "https://www.foxbusiness.com/economy/us-jobs-report-september-2026",
+      "date": "2026-10-02"
+    }
+  ]
+}
