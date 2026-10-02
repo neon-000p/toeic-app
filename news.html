@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-25 b72d803">
+<meta name="app-build" content="2026-10-02 5318fe1">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>時事英語 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -662,7 +662,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=ad17cef0"></script>
+<script src="core.js?v=17b271c2"></script>
 <script>
 (function () {
   'use strict';
@@ -751,6 +751,8 @@ details.src[open]>summary::before{content:"▾ ";}
     bgEn = null; bgBusy = false;
     progKey = 'news:' + (d.id || d.date || 'unknown');
     var p = T.Log.progress(progKey);
+    /* 開いた直後に別の端末の進み具合が届いたら、その続きから開き直す */
+    T.Sync.follow(progKey, function () { start(d); });
     /* 前回の答えは残しておく。解説で「前回どれを選んだか」を見るため。
        ただし設問では出さない（fresh を参照）。 */
     state = {
@@ -1526,9 +1528,7 @@ details.src[open]>summary::before{content:"▾ ";}
           fr.readAsText(f);
         };
         bg.querySelector('#cfgReset').onclick = function () {
-          var all = T.read('progress', {});
-          delete all[progKey];
-          T.write('progress', all);
+          T.Log.clearProgress(progKey);
           state = { answers: {}, graded: false, maxStep: 0, done: false };
           step = 0;
           resetQuizTimer();

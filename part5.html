@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-25 b72d803">
+<meta name="app-build" content="2026-10-02 5318fe1">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Part 5 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -178,7 +178,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   </div>
 </nav>
 
-<script src="core.js?v=ad17cef0"></script>
+<script src="core.js?v=17b271c2"></script>
 <script>
 (function () {
   'use strict';
@@ -253,6 +253,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     SET = d;
     progKey = 'part5:' + (d.id || 'unknown');
     var p = T.Log.progress(progKey);
+    /* 開いた直後に別の端末の進み具合が届いたら、その続きから開き直す */
+    T.Sync.follow(progKey, function () { start(d); });
 
     done = !!(p && (p.done || p.maxStep >= STEPS.length - 1));
     ans = (p && p.answers) || {};

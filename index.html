@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-25 b72d803">
+<meta name="app-build" content="2026-10-02 5318fe1">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -100,7 +100,7 @@ a.row .w{color:var(--accent)}
   <div class="ver" id="ver"></div>
 </div>
 
-<script src="core.js?v=ad17cef0"></script>
+<script src="core.js?v=17b271c2"></script>
 <script>
 (function () {
   'use strict';
@@ -286,6 +286,13 @@ a.row .w{color:var(--accent)}
       recentDrills().filter(function (r) { return drillStatus(r.part, r.it.id) === '済'; }).length;
     document.getElementById('stDone').textContent = done;
   }
+
+  /* 別の端末の記録が届いたら、数字と一覧を描き直す */
+  window.addEventListener('toeic:synced', function () {
+    document.getElementById('stStreak').textContent = T.Log.streak();
+    document.getElementById('stVocab').textContent = T.Vocab.count();
+    render();
+  });
 
   main.addEventListener('click', function (e) {
     if (!e.target.closest('#newsAll')) return;
