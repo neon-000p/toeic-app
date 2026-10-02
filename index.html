@@ -2,13 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-10-02 308f65a">
+<meta name="app-build" content="2026-10-02 6d62741">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=ae98e9f4">
+<link rel="stylesheet" href="style.css?v=019e9528">
 <style>
 body{padding-bottom:24px}
 .hub-head{padding:22px 0 12px}
@@ -80,6 +80,7 @@ a.row .w{color:var(--accent)}
         <h1>TOEIC Daily</h1>
         <div class="sub">時事英語と実践対策</div>
       </div>
+      <button class="sync-pill" id="syncPill" hidden></button>
       <button class="icon-btn" id="btnCfg" title="設定">⚙</button>
     </div>
     <div class="stats">
@@ -100,7 +101,7 @@ a.row .w{color:var(--accent)}
   <div class="ver" id="ver"></div>
 </div>
 
-<script src="core.js?v=684cffc6"></script>
+<script src="core.js?v=3a9107ce"></script>
 <script>
 (function () {
   'use strict';
@@ -116,6 +117,7 @@ a.row .w{color:var(--accent)}
     : (T.Settings.get('hubTab') === 'drill' ? 'drill' : 'news');
 
   document.getElementById('btnCfg').addEventListener('click', function () { T.openSettings(); });
+  T.Sync.badge(document.getElementById('syncPill'));
 
   document.getElementById('ver').textContent = 'ver ' + T.build();
 

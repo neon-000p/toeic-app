@@ -614,8 +614,31 @@
       resume();
     }
 
+    /* ログイン状態の小さな表示。ホームの歯車の隣に置き、押すと設定を開く。
+       同期が使えない環境（未設定・ファイル直開き）では出さない */
+    function badge(el) {
+      var LABEL = {
+        busy: ['sync', '同期中…'], idle: ['on', 'ログイン中'],
+        offline: ['warn', 'オフライン'], error: ['bad', '同期エラー']
+      };
+      function draw() {
+        var st = status();
+        if (!st.configured || !st.available) { el.hidden = true; return; }
+        el.hidden = false;
+        var l = !st.account ? ['off', '未ログイン'] : LABEL[st.phase] || LABEL.idle;
+        el.className = 'sync-pill ' + l[0];
+        el.innerHTML = '<span class="dot"></span>' + l[1];
+        el.title = st.account
+          ? (st.account.email || st.account.name || '') + (st.msg ? '\n' + st.msg : '')
+          : 'Google でログインすると、ほかの端末と記録を共有できます';
+      }
+      draw();
+      global.addEventListener('toeic:syncstate', draw);
+      el.addEventListener('click', function () { openSettings(); });
+    }
+
     return {
-      touch: touch, init: init, run: function () { return run(true); },
+      touch: touch, init: init, run: function () { return run(true); }, badge: badge,
       signIn: signIn, signOut: signOut, status: status, follow: followProgress,
       _merge: Merge
     };
