@@ -15,7 +15,7 @@ part4.html           Part 4 トレーナー（説明文1本＋3問・5ステッ�
 part5.html           Part 5 トレーナー（短文穴埋め10問・4ステップ）
 part6.html           Part 6 トレーナー（文書1本＋4問・5ステップ）
 part7.html           Part 7 トレーナー（読解・5ステップ）
-core.js              共通コア（設定・語彙帳・学習ログ・読み上げ）
+core.js              共通コア（設定・語彙帳・学習ログ・読み上げ・端末間の同期）
 style.css            共通スタイル（色・部品）
 data/news/index.json 目次（新しい順・最大30件）
 data/news/*.json     1日分の教材
@@ -85,7 +85,7 @@ Part 5 は音声ファイルを持たない（端末の読み上げで鳴らす�
 - **設問**：画面が広いとき（980px 以上）は左に本文・右に設問の見開きになり、
   本文はスクロールしても左に貼り付く。狭いときは本文が上、設問が下の1列。
   2問とも答えると「採点する」が出る。
-  答えずに先へ進むこともできる（別端末での復習用。学習記録は localStorage なので端末をまたがない）。
+  答えずに先へ進むこともできる（別端末での復習用。学習記録は localStorage に入り、ログインしていれば端末をまたいで同期される）。
   本文の語をタップすると「意味」のボタンが出て、押すと語注が出る（`glossary`）。
   `put together` のような2語以上の見出しは、その範囲がひとかたまりとして反応する
 - **解説**：根拠文をハイライトし、その場で再生できる。未解答の設問は「未解答」と表示
@@ -159,6 +159,83 @@ Part 3 と同じ5ステップ（設問 → 解説 → 対訳 → 語彙 → Poin
 ## まだ無いもの
 
 - 学習記録の可視化（現在は連続日数のみ）
+
+## 端末間の同期（Google ログイン）
+
+⚙ の「端末間の同期」から Google でログインすると、スマホと PC で同じ記録を使える。
+ログインしなければ今までどおり、その端末の localStorage だけで動く。
+
+| 同期するもの | 合わせ方 |
+|---|---|
+| 学習の進み具合（`progress`） | 教材ごとに新しいほう。「記録を消す」も届く |
+| 学習した日（`days`） | 両方を足し合わせる（連続日数がそろう） |
+| 語彙帳と復習の段階（`vocab`） | 語ごとに新しいほう。消した語は戻ってこない |
+| 設定（`settings`） | 最後に変えた端末のもの。ただし**読み上げの声は端末ごと** |
+
+**同期しないもの**：Gemini の API キー・Gemini のキャッシュ・手で取り込んだ時事教材（`news.packs`）。
+API キーはこれまでどおり端末ごとに入れる。
+
+しくみ：
+
+- 置き場所は Firebase（Firestore）の `users/{uid}/data/{キー}`。中身は JSON の文字列
+- 認証だけ Firebase の SDK を読み、読み書きは Firestore の REST で行う
+  （Firestore の SDK は 500KB を超え、毎ページ読むには重いため）
+- ページを開いたとき・アプリに戻ってきたときに全部を読んで合わせる。ただし**1分に1回まで**。
+  ページを移るたびに4件ずつ読むと、無料枠（読み込み1日5万回）を利用者全員で分け合うには
+  多すぎるため
+- 記録したあとは3秒待ってから、変わったキーだけを**読まずに**送る。前回の同期のあと
+  誰も書いていなければ（サーバーの版が同じなら）書く、という条件付きなので、
+  別の端末が先に書いていたら断られ、そのときだけ読んで合わせる
+- つながらないときは印を残し、次に送る
+- 書き込みは「読んだときから誰も書いていなければ」の条件付き。2台が同時に書いても、
+  読み直して合わせるので片方が消えない
+- 教材を開いた直後に別の端末の続きが届いたら、その続きから開き直す
+  （自分で1つでも記録したあとは開き直さない）
+- ホーム・一覧・語彙帳は、記録が届くと描き直す
+- 動作の確認は `node tools/test-sync.js`（2台の端末と偽の Firestore で確かめる）
+
+### はじめの設定（1回だけ）
+
+1. [Firebase コンソール](https://console.firebase.google.com/) でプロジェクトを作る
+   （Gemini で使っている Google Cloud のプロジェクトを選んでもよい。アナリティクスは不要）
+2. プロジェクトに**ウェブアプリ**（`</>`）を追加し、表示された設定のうち
+   `apiKey` `authDomain` `projectId` `appId` を `core.js` の `FIREBASE` に入れる。
+   これらは公開されてよい値で、守りは下のルールで行う（Hosting は不要）
+3. **Authentication** → ログイン方法で **Google** を有効にする。
+   設定 → **承認済みドメイン** に `neon-000p.github.io` を足す
+4. **Firestore Database** を作る（本番環境モード、場所は `asia-northeast1` など）。
+   **ルール**に次を貼って公開する。本人の記録は本人だけが読み書きでき、置けるのは
+   アプリが使う4種類・決まった形・1件 800KB 未満だけ（他人が巨大なデータを置けないように）
+
+   ```
+   rules_version = '2';
+   service cloud.firestore {
+     match /databases/{database}/documents {
+       match /users/{uid}/data/{key} {
+         function isOwner() {
+           return request.auth != null && request.auth.uid == uid;
+         }
+         allow read, delete: if isOwner();
+         allow create, update: if isOwner()
+           && key in ['settings', 'vocab', 'progress', 'days']
+           && request.resource.data.keys().hasOnly(['v', 'at'])
+           && request.resource.data.v is string
+           && request.resource.data.v.size() < 800000
+           && request.resource.data.at is int;
+       }
+     }
+   }
+   ```
+
+   同期するキーを増やすときは、`core.js` の `SYNC_KEYS` とこのルールの両方を直す
+5. `node tools/bump-assets.js` を実行してコミット・push する
+
+無料プラン（Spark）の上限は利用者全員の合計で、目安は読み込み1日5万回・書き込み1日2万回。
+上限に達しても同期が翌日まで止まるだけで、アプリは端末内の記録で動き続け、請求も来ない。
+利用者が増えたら Blaze（従量課金・無料枠つき・予算アラートを設定できる）に切り替える。
+
+API キーを Google Cloud 側で HTTP リファラ制限するときは、`neon-000p.github.io/*` に加えて
+`<projectId>.firebaseapp.com/*` も許可しておく（ログイン画面がそこから API を呼ぶため）。
 
 ## 語の意味（Gemini）
 

@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-25 b72d803">
+<meta name="app-build" content="2026-10-02 308f65a">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>実践対策 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -59,7 +59,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 
 <main class="wrap" id="main"></main>
 
-<script src="core.js?v=ad17cef0"></script>
+<script src="core.js?v=684cffc6"></script>
 <script>
 (function () {
   'use strict';
@@ -153,6 +153,8 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
     .then(function (idx) {
       var items = T.numberSets((idx && idx.items) || []);
       render(items);
+      /* 別の端末の記録が届いたら「済」の印を描き直す */
+      window.addEventListener('toeic:synced', function () { render(items); });
     })
     .catch(function () { render([]); });
 })();

@@ -6,6 +6,9 @@
   'use strict';
 
   var NS = 'toeic.';
+  /* 端末間で同期するキー（下の「端末間の同期」を参照）。API キーやキャッシュは入れない。
+     増やすときは Firestore のルール（README）の key の一覧も直す */
+  var SYNC_KEYS = ['settings', 'vocab', 'progress', 'days'];
 
   /* ---------- localStorage（失敗しても落ちない） ---------- */
   function read(key, fallback) {
@@ -15,8 +18,11 @@
     } catch (e) { return fallback; }
   }
   function write(key, value) {
-    try { localStorage.setItem(NS + key, JSON.stringify(value)); return true; }
+    try { localStorage.setItem(NS + key, JSON.stringify(value)); }
     catch (e) { return false; }
+    /* 端末間で同期するキーなら、送る印を付ける（Sync は下で定義） */
+    if (SYNC_KEYS.indexOf(key) !== -1) Sync.touch(key);
+    return true;
   }
 
   /* ---------- 設定 ---------- */
@@ -86,37 +92,54 @@
   }
 
   /* ---------- 語彙帳 ---------- */
-  /* 1件 = { term, pos, ja, gloss, example, src, srcTitle, addedAt, box }
-     box は将来の間隔反復用（0=未学習）。いまは記録だけしておく。 */
+  /* 1件 = { term, pos, ja, gloss, example, src, srcTitle, addedAt, updatedAt, box }
+     box は間隔反復の段階（0=未学習）。
+     消した語は配列から抜かず { term, deleted: true, updatedAt } を残す（墓標）。
+     抜いてしまうと、別の端末と同期したときに消した語が戻ってくるため。
+     all() などの外向きの窓口は墓標を見せない。 */
+  function nowIso() { return new Date().toISOString(); }
   var Vocab = {
-    all: function () { var v = read('vocab', []); return Array.isArray(v) ? v : []; },
+    /* 墓標を含む生の配列。同期と内部の書き換えだけが使う */
+    raw: function () { var v = read('vocab', []); return Array.isArray(v) ? v : []; },
+    all: function () { return Vocab.raw().filter(function (e) { return e && !e.deleted; }); },
     key: function (term) { return String(term || '').trim().toLowerCase(); },
     has: function (term) {
       var k = Vocab.key(term);
       return Vocab.all().some(function (e) { return Vocab.key(e.term) === k; });
     },
     add: function (entry) {
-      var list = Vocab.all(), k = Vocab.key(entry.term);
+      var k = Vocab.key(entry.term);
       if (!k) return false;
-      if (list.some(function (e) { return Vocab.key(e.term) === k; })) return false;
+      if (Vocab.has(entry.term)) return false;
+      var t = nowIso();
+      var list = Vocab.raw().filter(function (e) { return Vocab.key(e.term) !== k; });  // 墓標は置き換える
       list.push({
         term: entry.term, pos: posJa(entry.pos), ja: entry.ja || '',
         gloss: entry.gloss || '', example: entry.example || null,
         src: entry.src || '', srcTitle: entry.srcTitle || '',
-        addedAt: new Date().toISOString(), box: 0
+        addedAt: t, updatedAt: t, box: 0
       });
       write('vocab', list);
       return true;
     },
     remove: function (term) {
-      var k = Vocab.key(term);
-      write('vocab', Vocab.all().filter(function (e) { return Vocab.key(e.term) !== k; }));
+      var k = Vocab.key(term), t = nowIso(), hit = false;
+      var list = Vocab.raw().map(function (e) {
+        if (Vocab.key(e.term) !== k || e.deleted) return e;
+        hit = true;
+        return { term: e.term, deleted: true, addedAt: e.addedAt || '', updatedAt: t };
+      });
+      if (hit) write('vocab', list);
     },
     /* 1件を部分更新する。復習結果（box と次回の期日）を書き戻すのに使う */
     update: function (term, patch) {
-      var k = Vocab.key(term), list = Vocab.all(), hit = false;
+      var k = Vocab.key(term), list = Vocab.raw(), hit = false;
       list.forEach(function (e) {
-        if (Vocab.key(e.term) === k) { for (var p in patch) e[p] = patch[p]; hit = true; }
+        if (Vocab.key(e.term) === k && !e.deleted) {
+          for (var p in patch) e[p] = patch[p];
+          e.updatedAt = nowIso();
+          hit = true;
+        }
       });
       if (hit) write('vocab', list);
       return hit;
@@ -124,20 +147,26 @@
     /* 読み込み（他端末からの取り込み）。同じ語は既存を残す */
     merge: function (incoming) {
       if (!Array.isArray(incoming)) return 0;
-      var list = Vocab.all(), have = {}, added = 0;
-      list.forEach(function (e) { have[Vocab.key(e.term)] = 1; });
+      var have = {}, added = 0;
+      var list = Vocab.raw().filter(function (e) {
+        if (e.deleted) return false;    // 消した語は貼り付けで戻せるよう、墓標を外す
+        have[Vocab.key(e.term)] = 1;
+        return true;
+      });
+      var tombs = Vocab.raw().filter(function (e) { return e.deleted; });
       incoming.forEach(function (e) {
-        if (!e || !e.term) return;
+        if (!e || !e.term || e.deleted) return;
         var k = Vocab.key(e.term);
         if (have[k]) return;
         have[k] = 1; added++;
         list.push({
           term: e.term, pos: posJa(e.pos), ja: e.ja || '', gloss: e.gloss || '',
           example: e.example || null, src: e.src || '', srcTitle: e.srcTitle || '',
-          addedAt: e.addedAt || new Date().toISOString(),
+          addedAt: e.addedAt || nowIso(), updatedAt: nowIso(),
           box: e.box || 0, due: e.due || '', reviewedAt: e.reviewedAt || ''
         });
       });
+      tombs.forEach(function (e) { if (!have[Vocab.key(e.term)]) list.push(e); });
       write('vocab', list);
       return added;
     },
@@ -153,15 +182,25 @@
   var Log = {
     todayKey: todayKey,
     /* 教材ごとの進捗 key 例 "news:2026-09-12" */
-    progress: function (key) { return read('progress', {})[key] || null; },
+    progress: function (key) {
+      var p = read('progress', {})[key];
+      return p && !p.deleted ? p : null;
+    },
     saveProgress: function (key, patch) {
       var all = read('progress', {});
-      var cur = all[key] || {};
+      var cur = all[key] && !all[key].deleted ? all[key] : {};
       for (var k in patch) cur[k] = patch[k];
       cur.updatedAt = new Date().toISOString();
       all[key] = cur;
       write('progress', all);
       return cur;
+    },
+    /* 教材の記録を消す。語彙帳と同じく、同期で戻らないよう墓標を残す */
+    clearProgress: function (key) {
+      var all = read('progress', {});
+      if (!all[key]) return;
+      all[key] = { deleted: true, updatedAt: new Date().toISOString() };
+      write('progress', all);
     },
     /* 学習した日を記録し、連続日数を返す */
     touchToday: function () {
@@ -180,6 +219,407 @@
       return n;
     }
   };
+
+  /* ---------- 端末間の同期（Firebase） ----------
+     Google でログインすると、学習記録（settings / vocab / progress / days）を
+     Firestore の users/{uid}/data/{キー} に置き、端末をまたいで共有する。
+     ログインしなければ今までどおり、この端末の localStorage だけで動く。
+
+     - Gemini の API キーやキャッシュは同期しない（SYNC_KEYS に入れていない）
+     - 設定のうち voiceURI は端末ごとに声の一覧が違うので、その端末の値を残す
+     - 全体の上書きはしない。キーごとに中身を突き合わせて合わせる
+         progress … 教材ごとに updatedAt の新しいほう
+         vocab    … 語ごとに updatedAt の新しいほう（消した語は墓標で勝つ）
+         days     … 両方を足し合わせる
+         settings … 最後に変えた端末のもの
+     - 認証だけ Firebase の SDK（compat 版）を使い、読み書きは Firestore の REST で行う。
+       Firestore の SDK は 500KB を超え、毎ページ読むには重いため。
+       書き込みは「読んだ時点から変わっていなければ」の条件付きにし、
+       2台が同時に書いても片方の記録が消えないようにしている。
+     - 全部を読み直すのは1分に1回まで。それ以外は変わったキーだけを、読まずに
+       条件付きで送る（無料枠の読み込み回数を利用者全員で分け合うため）。
+
+     FIREBASE に値を入れるまでは同期の欄に「未設定」と出るだけで、何もしない。
+     値は公開されてよいもの（守りは Firestore のルールで行う）。手順は README。 */
+  var FIREBASE = {
+    apiKey: 'AIzaSyBTSQB2bwjcVfz-l5UFnmkpRWGQFnDuBqs',
+    authDomain: 'toeic-daily-7cea5.firebaseapp.com',
+    projectId: 'toeic-daily-7cea5',
+    appId: '1:227084784386:web:2674b140fa4b4cec51e81b'
+  };
+  var FB_SDK = 'https://www.gstatic.com/firebasejs/12.19.0/';
+  var DEVICE_ONLY = ['voiceURI'];
+
+  /* 突き合わせ。どちらの端末で行っても同じ結果になるよう、並びも決めて返す */
+  var Merge = (function () {
+    function stamp(e) { return (e && (e.updatedAt || e.reviewedAt || e.addedAt)) || ''; }
+    function pick(a, b) {
+      var sa = stamp(a), sb = stamp(b);
+      if (sa !== sb) return sa > sb ? a : b;
+      return JSON.stringify(a) >= JSON.stringify(b) ? a : b;   // 同時刻なら中身の大小で決める
+    }
+    function obj(x) { return x && typeof x === 'object' && !Array.isArray(x) ? x : {}; }
+    function arr(x) { return Array.isArray(x) ? x : []; }
+    function shared(s) {
+      var out = {};
+      Object.keys(obj(s)).sort().forEach(function (k) { if (DEVICE_ONLY.indexOf(k) === -1) out[k] = s[k]; });
+      return out;
+    }
+    return {
+      progress: function (l, r) {
+        l = obj(l); r = obj(r);
+        var out = {}, keys = {};
+        Object.keys(l).concat(Object.keys(r)).forEach(function (k) { keys[k] = 1; });
+        Object.keys(keys).sort().forEach(function (k) {
+          out[k] = !(k in r) ? l[k] : !(k in l) ? r[k] : pick(l[k], r[k]);
+        });
+        return out;
+      },
+      days: function (l, r) {
+        var set = {};
+        arr(l).concat(arr(r)).forEach(function (d) { if (typeof d === 'string') set[d] = 1; });
+        return Object.keys(set).sort().slice(-400);
+      },
+      vocab: function (l, r) {
+        var by = {};
+        arr(l).concat(arr(r)).forEach(function (e) {
+          if (!e || !e.term) return;
+          var k = Vocab.key(e.term);
+          by[k] = by[k] ? pick(by[k], e) : e;
+        });
+        return Object.keys(by).map(function (k) { return by[k]; }).sort(function (a, b) {
+          var x = String(a.addedAt || ''), y = String(b.addedAt || '');
+          if (x !== y) return x < y ? -1 : 1;
+          var ka = Vocab.key(a.term), kb = Vocab.key(b.term);
+          return ka < kb ? -1 : ka > kb ? 1 : 0;
+        });
+      },
+      /* 設定は丸ごと新しいほう（lAt / rAt は最後に変えた時刻）。
+         返すのは端末ごとの項目を除いた部分 */
+      settings: function (l, r, lAt, rAt, rExists) {
+        return shared(!rExists || lAt > rAt ? l : r);
+      },
+      shared: shared
+    };
+  })();
+
+  var Sync = (function () {
+    var API = 'https://firestore.googleapis.com/v1/';
+    var sdk = null, user = null;
+    var timer = 0, running = null, again = false, againFull = false;
+    var state = { phase: 'off', msg: '' };
+    /* 全部を読み直すのは、前回から1分以上たったときだけ。
+       ページを移るたびに4件ずつ読むと、無料枠（読み込み1日5万回）を
+       利用者全員で分け合うには多すぎるため。 */
+    var FULL_GAP = 60 * 1000;
+    var saves = 0, follow = null;
+
+    function available() {
+      return !!FIREBASE && typeof location !== 'undefined' && /^https?:$/.test(location.protocol);
+    }
+    function account() { return read('sync.user', null); }
+    function forget(key) { try { localStorage.removeItem(NS + key); } catch (e) {} }
+    function emit(name, detail) {
+      try { global.dispatchEvent(new CustomEvent(name, { detail: detail })); } catch (e) {}
+    }
+    function setState(phase, msg) {
+      state.phase = phase; state.msg = msg || '';
+      emit('toeic:syncstate', status());
+    }
+    function status() {
+      return {
+        configured: !!FIREBASE, available: available(), account: account(),
+        phase: state.phase, msg: state.msg, last: read('sync.last', 0)
+      };
+    }
+    function lastFull() { return read('sync.full', 0) || 0; }
+    /* サーバー上の各キーの版（updateTime）。前回の同期のあと誰も書いていなければ、
+       読まずに「この版のままなら書く」という条件付きで送れる。
+       ほかのアカウントの版を使わないよう uid と一緒に持つ */
+    function revGet(key) {
+      var r = read('sync.rev', null);
+      return r && user && r.uid === user.uid ? (r.t || {})[key] || '' : '';
+    }
+    function revSet(key, t) {
+      if (!user) return;
+      var r = read('sync.rev', null);
+      if (!r || r.uid !== user.uid) r = { uid: user.uid, t: {} };
+      if (t) r.t[key] = t; else delete r.t[key];
+      write('sync.rev', r);
+    }
+
+    function markDirty(key) {
+      var d = read('sync.dirty', {}) || {};
+      d[key] = 1;
+      write('sync.dirty', d);
+    }
+
+    /* write() から呼ばれる。最後に変えた時刻を残し、少し待ってから送る */
+    function touch(key) {
+      var at = read('sync.at', {}) || {};
+      at[key] = Date.now();
+      write('sync.at', at);
+      if (key === 'progress') saves++;
+      if (!account()) return;
+      markDirty(key);
+      clearTimeout(timer);
+      timer = setTimeout(function () { run(false); }, 3000);
+    }
+
+    /* ---- SDK（認証だけ） ---- */
+    function loadScript(src) {
+      return new Promise(function (ok, ng) {
+        var s = document.createElement('script');
+        s.src = src;
+        s.onload = ok;
+        s.onerror = function () { ng(new Error('読み込めません: ' + src)); };
+        document.head.appendChild(s);
+      });
+    }
+    function loadSdk() {
+      if (!sdk) {
+        sdk = loadScript(FB_SDK + 'firebase-app-compat.js')
+          .then(function () { return loadScript(FB_SDK + 'firebase-auth-compat.js'); })
+          .then(function () {
+            var fb = global.firebase;
+            if (!fb.apps.length) fb.initializeApp(FIREBASE);
+            return new Promise(function (ok) {
+              var first = true;
+              fb.auth().onAuthStateChanged(function (u) {
+                var was = user;
+                user = u;
+                if (u) write('sync.user', { uid: u.uid, email: u.email || '', name: u.displayName || '' });
+                else { forget('sync.user'); forget('sync.dirty'); forget('sync.rev'); forget('sync.full'); }
+                setState(u ? 'idle' : 'off');
+                if (first) { first = false; ok(fb); }
+                else if (u && !was) run(true);     // ログインした直後。両方の記録を合わせる
+              });
+            });
+          });
+        sdk.catch(function () { sdk = null; });
+      }
+      return sdk;
+    }
+
+    function signIn() {
+      if (!available()) return Promise.reject(new Error(FIREBASE ? 'このページでは使えません' : '未設定です'));
+      return loadSdk().then(function (fb) {
+        var p = new fb.auth.GoogleAuthProvider();
+        p.setCustomParameters({ prompt: 'select_account' });
+        return fb.auth().signInWithPopup(p).catch(function (e) {
+          /* ポップアップが開けない環境だけ、ページ移動式に切り替える */
+          if (e && (e.code === 'auth/popup-blocked' || e.code === 'auth/operation-not-supported-in-environment')) {
+            return fb.auth().signInWithRedirect(p);
+          }
+          throw e;
+        });
+      });
+    }
+    /* ログアウトしても、この端末の記録は消さない */
+    function signOut() {
+      return loadSdk().then(function (fb) { return fb.auth().signOut(); });
+    }
+
+    /* ---- Firestore（REST） ---- */
+    function docUrl(key) {
+      return API + 'projects/' + encodeURIComponent(FIREBASE.projectId) +
+        '/databases/(default)/documents/users/' + encodeURIComponent(user.uid) +
+        '/data/' + encodeURIComponent(key);
+    }
+    function api(method, url, token, body) {
+      return fetch(url, {
+        method: method,
+        headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' },
+        body: body ? JSON.stringify(body) : undefined
+      }).then(function (r) {
+        if (r.status === 404 && method === 'GET') return null;
+        return r.json().catch(function () { return {}; }).then(function (j) {
+          if (!r.ok) {
+            var e = new Error((j && j.error && j.error.message) || ('HTTP ' + r.status));
+            e.status = r.status;
+            throw e;
+          }
+          return j;
+        });
+      });
+    }
+    function getDoc(key, token) {
+      return api('GET', docUrl(key), token).then(function (j) {
+        if (!j) return { exists: false, raw: '', value: undefined, at: 0, updateTime: '' };
+        var f = j.fields || {}, raw = (f.v && f.v.stringValue) || '', value;
+        try { value = raw ? JSON.parse(raw) : undefined; } catch (e) { value = undefined; }
+        return { exists: true, raw: raw, value: value, at: Number((f.at && f.at.integerValue) || 0), updateTime: j.updateTime || '' };
+      });
+    }
+    function putDoc(key, token, raw, at, prev) {
+      var cond = prev.exists
+        ? 'currentDocument.updateTime=' + encodeURIComponent(prev.updateTime)
+        : 'currentDocument.exists=false';
+      return api('PATCH', docUrl(key) + '?' + cond, token,
+        { fields: { v: { stringValue: raw }, at: { integerValue: String(at) } } });
+    }
+
+    function rawLocal(key) {
+      try { return localStorage.getItem(NS + key); } catch (e) { return null; }
+    }
+
+    /* 手元を送るだけ（読まない）。前回の同期のあとサーバーを誰も書いていなければ、
+       手元はサーバーの中身をすでに含んでいるので、合わせ直す必要がない。
+       誰かが書いていれば条件が合わずに断られるので、そのときは読んで合わせる */
+    function pushOnly(key, token) {
+      var rev = revGet(key), local;
+      if (!rev) return syncKey(key, token);
+      try { local = JSON.parse(rawLocal(key)); } catch (e) { local = undefined; }
+      if (local == null) return syncKey(key, token);
+      var shared, at;
+      if (key === 'settings') {
+        shared = Merge.shared(local);
+        at = (read('sync.at', {}) || {}).settings || 0;
+      } else {
+        shared = Merge[key](local, undefined);
+        at = Date.now();
+      }
+      return putDoc(key, token, JSON.stringify(shared), at, { exists: true, updateTime: rev })
+        .then(function (j) { revSet(key, j && j.updateTime); return 'same'; }, function (e) {
+          if (e.status === 400 || e.status === 409 || e.status === 404) return syncKey(key, token);
+          throw e;
+        });
+    }
+
+    /* 1つのキーを読んで合わせる。結果は 'same' / 'changed'（手元が変わった）/ 'retry' */
+    function syncKey(key, token, tries) {
+      var before = rawLocal(key), local;
+      try { local = before == null ? undefined : JSON.parse(before); } catch (e) { local = undefined; }
+      return getDoc(key, token).then(function (rem) {
+        var shared, merged, at, mine;
+        if (key === 'settings') {
+          var lAt = (read('sync.at', {}) || {}).settings || 0;
+          shared = Merge.settings(local, rem.value, lAt, rem.at, rem.exists);
+          merged = {};
+          for (var k in shared) merged[k] = shared[k];
+          DEVICE_ONLY.forEach(function (k) { if (local && local[k] !== undefined) merged[k] = local[k]; });
+          at = rem.exists && lAt <= rem.at ? rem.at : lAt;
+          mine = Merge.shared(local);
+        } else {
+          shared = merged = Merge[key](local, rem.value);
+          at = Date.now();
+          mine = Merge[key](local, undefined);
+        }
+        var raw = JSON.stringify(shared);
+        var push = (!rem.exists || raw !== rem.raw)
+          ? putDoc(key, token, raw, at, rem)
+          : Promise.resolve({ updateTime: rem.updateTime });
+        return push.then(function (j) {
+          /* 送っている間に手元が書き換わっていたら、手元はそのままにして次の回で合わせる。
+             このとき手元はサーバーの中身を含んでいないので、版は覚えない
+             （覚えると、次に読まずに送ったとき別の端末の記録を上書きしてしまう） */
+          if (rawLocal(key) !== before) { revSet(key, ''); return 'retry'; }
+          var next = JSON.stringify(merged);
+          if (next !== before) {
+            try { localStorage.setItem(NS + key, next); } catch (e) { revSet(key, ''); return 'same'; }
+          }
+          revSet(key, j && j.updateTime);
+          return JSON.stringify(shared) !== JSON.stringify(mine) ? 'changed' : 'same';
+        }, function (e) {
+          /* 400 / 409 は「読んだあとに別の端末が書いた」。読み直してやり直す */
+          if ((e.status === 400 || e.status === 409) && (tries || 0) < 3) return syncKey(key, token, (tries || 0) + 1);
+          throw e;
+        });
+      });
+    }
+
+    function run(full) {
+      if (!user || !available()) return Promise.resolve();
+      if (running) {
+        again = true; againFull = againFull || full;
+        return running;
+      }
+      var dirty = read('sync.dirty', {}) || {};
+      var keys = full ? SYNC_KEYS.slice() : SYNC_KEYS.filter(function (k) { return dirty[k]; });
+      if (!keys.length) return Promise.resolve();
+      keys.forEach(function (k) { delete dirty[k]; });
+      write('sync.dirty', dirty);
+      clearTimeout(timer);
+      setState('busy');
+
+      running = user.getIdToken().then(function (token) {
+        return Promise.all(keys.map(function (k) {
+          return (full ? syncKey(k, token) : pushOnly(k, token)).then(
+            function (r) { return { key: k, r: r }; },
+            function (e) { markDirty(k); return { key: k, err: e }; });
+        }));
+      }).then(function (rs) {
+        var changed = [], err = null;
+        rs.forEach(function (x) {
+          if (x.err) err = err || x.err;
+          else if (x.r === 'changed') changed.push(x.key);
+          else if (x.r === 'retry') { markDirty(x.key); again = true; }
+        });
+        if (err) throw err;
+        write('sync.last', Date.now());
+        if (full) write('sync.full', Date.now());
+        setState('idle');
+        if (changed.length) after(changed);
+      }).catch(fail).then(function () {
+        running = null;
+        if (again) { var f = againFull; again = againFull = false; return run(f); }
+      });
+      return running;
+    }
+
+    function fail(e) {
+      var off = (typeof navigator !== 'undefined' && navigator.onLine === false) ||
+        e instanceof TypeError || (e && e.code === 'auth/network-request-failed');
+      setState(off ? 'offline' : 'error',
+        off ? 'つながっていません。つながったら送ります' : (e && e.message) || String(e));
+    }
+
+    /* ログイン済みの端末で、SDK を読んで全部を合わせる。
+       オフラインで開いて SDK を読めなかったときは、つながったときにやり直す */
+    function resume() {
+      if (!account()) return;
+      if (user) { run(false); return; }
+      setState('busy');
+      loadSdk().then(function () { if (user) run(Date.now() - lastFull() > FULL_GAP); }).catch(fail);
+    }
+
+    /* 他の端末の記録が入ったとき。ページは toeic:synced を受けて描き直せる */
+    function after(changed) {
+      emit('toeic:synced', { changed: changed });
+      if (follow && changed.indexOf('progress') !== -1 && saves === follow.saves &&
+          JSON.stringify(Log.progress(follow.key)) !== follow.snap) {
+        var cb = follow.cb;
+        follow = null;
+        toast('別の端末の続きから開きます');
+        cb();
+        return;
+      }
+      toast('別の端末の記録を取り込みました');
+    }
+
+    /* 教材ページが呼ぶ。開いた直後（まだ何も記録していない間）に
+       別の端末の進み具合が届いたら、cb で開き直してもらう */
+    function followProgress(key, cb) {
+      follow = { key: key, cb: cb, saves: saves, snap: JSON.stringify(Log.progress(key)) };
+    }
+
+    function init() {
+      if (!available()) { setState(FIREBASE ? 'na' : 'off'); return; }
+      document.addEventListener('visibilitychange', function () {
+        if (!user) return;
+        if (document.visibilityState === 'hidden') run(false);
+        else if (Date.now() - lastFull() > FULL_GAP) run(true);
+      });
+      global.addEventListener('online', resume);
+      resume();
+    }
+
+    return {
+      touch: touch, init: init, run: function () { return run(true); },
+      signIn: signIn, signOut: signOut, status: status, follow: followProgress,
+      _merge: Merge
+    };
+  })();
 
   /* ---------- 読み上げ ---------- */
   var TTS = (function () {
@@ -795,8 +1235,13 @@
         '<button class="btn btn-sm" id="gClear">キーを消す</button></div>' +
       '<div class="small muted" id="gInfo" style="margin-top:8px"></div>';
 
+    var syncHTML =
+      '<hr class="sep">' +
+      '<h2>端末間の同期</h2>' +
+      '<div id="syncBox"></div>';
+
     return modal(
-      voiceHTML + aiHTML +
+      voiceHTML + syncHTML + aiHTML +
       (opts.extraHTML ? '<hr class="sep">' + opts.extraHTML : '') +
       '<hr class="sep">' +
       '<div class="tool-row">' + (opts.extraButtons || '') +
@@ -875,6 +1320,54 @@
         bg.querySelector('#gClear').onclick = function () {
           AI.setCfg({ key: '' }); gKey.value = ''; gInfo.textContent = 'キーを消しました。';
         };
+
+        /* --- 同期 --- */
+        var syncBox = bg.querySelector('#syncBox');
+        function drawSync() {
+          if (!bg.isConnected) { global.removeEventListener('toeic:syncstate', drawSync); return; }
+          var st = Sync.status(), html;
+          if (!st.configured) {
+            html = '<p class="small muted" style="margin:-6px 0 0">まだ使えません。README の「端末間の同期」の手順で ' +
+              'Firebase の設定値を <code>core.js</code> に入れると、Google でログインできるようになります。</p>';
+          } else if (!st.available) {
+            html = '<p class="small muted" style="margin:-6px 0 0">ファイルを直接開いているときは使えません' +
+              '（GitHub Pages 上で使えます）。</p>';
+          } else if (!st.account) {
+            html = '<p class="small muted" style="margin:-6px 0 10px">Google でログインすると、学習記録・語彙帳・設定を' +
+              'ほかの端末と共有します。Gemini の API キーは共有しません（端末ごとに入力）。</p>' +
+              '<div class="tool-row"><button class="btn btn-sm btn-primary" id="syncIn">Google でログイン</button></div>';
+          } else {
+            var line = st.phase === 'busy' ? '同期中…'
+              : st.phase === 'error' ? '同期できません: ' + esc(st.msg)
+              : st.phase === 'offline' ? esc(st.msg)
+              : st.last ? '最終同期 ' + esc(new Date(st.last).toLocaleString('ja-JP',
+                  { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }))
+              : 'まだ同期していません';
+            html = '<p class="small" style="margin:-6px 0 4px">ログイン中: <b>' + esc(st.account.email || st.account.name) + '</b></p>' +
+              '<p class="small muted" style="margin:0 0 10px">' + line + '</p>' +
+              '<div class="tool-row"><button class="btn btn-sm" id="syncNow">今すぐ同期</button>' +
+                '<button class="btn btn-sm" id="syncOut">ログアウト</button></div>' +
+              '<p class="small muted" style="margin:8px 0 0">ログアウトしても、この端末の記録は消えません。</p>';
+          }
+          syncBox.innerHTML = html;
+        }
+        drawSync();
+        global.addEventListener('toeic:syncstate', drawSync);
+        syncBox.addEventListener('click', function (e) {
+          var id = e.target.id;
+          if (id === 'syncIn') {
+            e.target.disabled = true;
+            Sync.signIn().catch(function (err) {
+              e.target.disabled = false;
+              if (err && (err.code === 'auth/popup-closed-by-user' || err.code === 'auth/cancelled-popup-request')) return;
+              toast('ログインできません: ' + ((err && (err.code || err.message)) || err), 3000);
+            });
+          } else if (id === 'syncNow') {
+            Sync.run();
+          } else if (id === 'syncOut') {
+            Sync.signOut().then(function () { toast('ログアウトしました'); });
+          }
+        });
 
         if (opts.onMount) opts.onMount(bg);
         bg.querySelector('#cfgClose').onclick = function () { bg.remove(); };
@@ -1281,6 +1774,9 @@
     modal: modal, openSettings: openSettings,
     flash: flash, takeFlash: takeFlash, numberSets: numberSets, build: build,
     watchSelection: watchSelection, phrasePop: phrasePop,
-    esc: esc, splitWords: splitWords, markupEnglish: markupEnglish, toast: toast
+    esc: esc, splitWords: splitWords, markupEnglish: markupEnglish, toast: toast,
+    Sync: Sync
   };
+
+  Sync.init();
 })(window);

@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-09-25 b72d803">
+<meta name="app-build" content="2026-10-02 308f65a">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>語彙帳 | TOEIC Daily</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -100,7 +100,7 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 
 <main class="wrap" id="main"></main>
 
-<script src="core.js?v=ad17cef0"></script>
+<script src="core.js?v=684cffc6"></script>
 <script>
 (function () {
   'use strict';
@@ -291,8 +291,9 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
     main.innerHTML = renderStats() +
       '<div class="card">' +
         '<div class="sec-label">書き出し</div>' +
-        '<p class="small muted" style="margin:0 0 8px">学習記録はこの端末にしか残りません。' +
-        '別の端末で続けるには、下の内容をコピーして、向こうの「読み込み」に貼ってください。</p>' +
+        '<p class="small muted" style="margin:0 0 8px">⚙ から Google でログインしていれば、語彙帳は自動で' +
+        'ほかの端末と同期されます。ログインしないで別の端末へ移すときは、下の内容をコピーして、' +
+        '向こうの「読み込み」に貼ってください。</p>' +
         '<textarea id="out" readonly style="width:100%;min-height:140px;font-family:ui-monospace,monospace;' +
         'font-size:11px;padding:10px;border-radius:8px;border:1px solid var(--line-2);' +
         'background:var(--surface-2);color:var(--ink)"></textarea>' +
@@ -393,6 +394,12 @@ body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
       var q = document.getElementById('q');
       if (q) { q.focus(); q.setSelectionRange(pos, pos); }
     }
+  });
+
+  /* 別の端末の記録が届いたら描き直す。復習の途中と、貼り付け欄があるときは触らない */
+  window.addEventListener('toeic:synced', function () {
+    if (queue.length || tab === 'data') return;
+    render();
   });
 
   render();
