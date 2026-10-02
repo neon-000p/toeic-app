@@ -452,5 +452,23 @@
       "url": "https://www.theedgesingapore.com/news/singapore-economy/singapore-power-rates-fall-record-after-fuel-price-drop",
       "date": "2026-09-30"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-02-1641/00.mp3",
+      "audio/2026-10-02-1641/01.mp3",
+      "audio/2026-10-02-1641/02.mp3",
+      "audio/2026-10-02-1641/03.mp3",
+      "audio/2026-10-02-1641/04.mp3",
+      "audio/2026-10-02-1641/05.mp3",
+      "audio/2026-10-02-1641/06.mp3",
+      "audio/2026-10-02-1641/07.mp3",
+      "audio/2026-10-02-1641/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 214389,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-02T07:43:12.504Z",
+    "trimmed": true
+  }
 }
