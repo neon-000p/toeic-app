@@ -454,5 +454,22 @@
       "url": "https://www.foxbusiness.com/economy/us-jobs-report-september-2026",
       "date": "2026-10-02"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-03-0539/00.mp3",
+      "audio/2026-10-03-0539/01.mp3",
+      "audio/2026-10-03-0539/02.mp3",
+      "audio/2026-10-03-0539/03.mp3",
+      "audio/2026-10-03-0539/04.mp3",
+      "audio/2026-10-03-0539/05.mp3",
+      "audio/2026-10-03-0539/06.mp3",
+      "audio/2026-10-03-0539/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 221064,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-02T20:42:27.486Z",
+    "trimmed": true
+  }
 }
