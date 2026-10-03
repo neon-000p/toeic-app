@@ -456,5 +456,24 @@
       "url": "https://247wallst.com/investing/2026/10/02/seagate-tumbles-10-western-digital-drops-7-as-toshiba-moves-to-double-hard-disk-output/",
       "date": "2026-10-02"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-03-1639/00.mp3",
+      "audio/2026-10-03-1639/01.mp3",
+      "audio/2026-10-03-1639/02.mp3",
+      "audio/2026-10-03-1639/03.mp3",
+      "audio/2026-10-03-1639/04.mp3",
+      "audio/2026-10-03-1639/05.mp3",
+      "audio/2026-10-03-1639/06.mp3",
+      "audio/2026-10-03-1639/07.mp3",
+      "audio/2026-10-03-1639/08.mp3",
+      "audio/2026-10-03-1639/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 219714,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-03T07:42:41.357Z",
+    "trimmed": true
+  }
 }
