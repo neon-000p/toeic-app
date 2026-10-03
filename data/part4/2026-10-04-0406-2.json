@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-04-0406-2",
+  "date": "2026-10-04",
+  "time": "04:06",
+  "createdAt": "2026-10-04T04:06:00+09:00",
+  "sample": false,
+  "scene": "研修｜ハンディスキャナーの操作手順",
+  "talkType": "instructions",
+  "intro": "Questions 1 through 3 refer to the following instructions.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-CA"
+  },
+  "lines": [
+    {
+      "en": "Good morning, everyone, and welcome to today's training on the new handheld scanners in the warehouse.",
+      "ja": "皆さんおはようございます。倉庫の新しいハンディスキャナーの、本日の研修へようこそ。"
+    },
+    {
+      "en": "I'll walk you through the check-in process first, and then you'll have time to practice on your own.",
+      "ja": "まず入庫の手順を順に説明し、そのあとで各自が練習する時間を取ります。"
+    },
+    {
+      "en": "To begin, press and hold the green button for three seconds until the screen lights up.",
+      "ja": "最初に、画面が点灯するまで緑のボタンを3秒間押し続けてください。"
+    },
+    {
+      "en": "Next, scan the barcode on the shipping label, and the system will fill in the order number automatically.",
+      "ja": "次に出荷ラベルのバーコードを読み取ると、システムが注文番号を自動で入力します。"
+    },
+    {
+      "en": "If the barcode is damaged, don't worry, because you can enter the number by hand instead.",
+      "ja": "バーコードが傷んでいても心配はいりません。代わりに番号を手入力できます。"
+    },
+    {
+      "en": "Once every box on the pallet is scanned, tap \"Submit\" to send the list to the main office.",
+      "ja": "パレットの全箱を読み取ったら、「送信」を押して一覧を本社へ送ります。"
+    },
+    {
+      "en": "Please don't skip that last step, or the inventory won't be updated until tomorrow.",
+      "ja": "この最後の手順を飛ばさないでください。在庫の更新が明日まで反映されなくなります。"
+    },
+    {
+      "en": "You'll find a printed guide at each station, and I'll be around to answer questions.",
+      "ja": "各作業台に印刷した手引きがあり、私も質問に答えるため近くにいます。"
+    },
+    {
+      "en": "Before we break for lunch, I'd like everyone to complete one practice shipment and show it to me.",
+      "ja": "昼休みに入る前に、全員に練習用の出荷を1件完了して、私に見せてもらいます。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the purpose of the talk?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To announce a warehouse schedule",
+          "ja": "倉庫の予定を知らせる"
+        },
+        {
+          "key": "B",
+          "text": "To explain how to use new equipment",
+          "ja": "新しい機器の使い方を説明する"
+        },
+        {
+          "key": "C",
+          "text": "To introduce new employees",
+          "ja": "新入社員を紹介する"
+        },
+        {
+          "key": "D",
+          "text": "To report an inventory shortage",
+          "ja": "在庫不足を報告する"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で new handheld scanners の研修だと述べ、次の文で check-in process を順に説明すると予告している。目的は新しい機器の使い方の説明である。inventory は最後の手順の理由に出るだけである。",
+      "tip": "研修やinstructionsでは、冒頭2文で何の手順かが分かる。後半に出る語は目的ではなく理由であることが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when she says, \"don't worry\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The scanners are very cheap",
+          "ja": "スキャナーはとても安い"
+        },
+        {
+          "key": "B",
+          "text": "The training will end soon",
+          "ja": "研修はまもなく終わる"
+        },
+        {
+          "key": "C",
+          "text": "A damaged label must be replaced",
+          "ja": "傷んだラベルは交換が必要だ"
+        },
+        {
+          "key": "D",
+          "text": "Workers have another way to enter data",
+          "ja": "データを入力する別の方法がある"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "バーコードが傷んでいても don't worry と言い、その理由として you can enter the number by hand を挙げている。つまり別の入力方法があるという意味である。ラベルの交換は話に出ていない。",
+      "tip": "引用文の直後の because が意図の答えになる。ここでは「手入力できる」が安心の理由である。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are the listeners asked to do before lunch?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Complete a practice shipment",
+          "ja": "練習用の出荷を完了する"
+        },
+        {
+          "key": "B",
+          "text": "Print a user guide",
+          "ja": "手引きを印刷する"
+        },
+        {
+          "key": "C",
+          "text": "Submit a final inventory list",
+          "ja": "最終の在庫一覧を提出する"
+        },
+        {
+          "key": "D",
+          "text": "Return the scanners",
+          "ja": "スキャナーを返却する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        8
+      ],
+      "explanation": "最後の文で Before we break for lunch, I'd like everyone to complete one practice shipment と依頼している。手引きはすでに作業台にあり、一覧の送信は手順の説明で、今すぐ求められた行動ではない。",
+      "tip": "Before ... で始まる最後の依頼を聞く。break for lunch を言い換えた設問文の時の指定に注意する。"
+    }
+  ],
+  "glossary": {
+    "walk you through": {
+      "lemma": "walk through",
+      "pos": "熟",
+      "ja": "順を追って説明する",
+      "note": "explain step by step の言い換え",
+      "example": {
+        "en": "Let me walk you through the new expense report form.",
+        "ja": "新しい経費報告書の様式を順に説明します。"
+      }
+    },
+    "lights up": {
+      "lemma": "light up",
+      "pos": "熟",
+      "ja": "点灯する",
+      "note": "",
+      "example": {
+        "en": "The panel lights up when the device is connected.",
+        "ja": "機器が接続されるとパネルが点灯します。"
+      }
+    },
+    "fill in": {
+      "lemma": "fill in",
+      "pos": "熟",
+      "ja": "（自動的に）入力する、記入する",
+      "note": "本文ではシステムが自動入力する意味",
+      "example": {
+        "en": "Please fill in the form and return it to the front desk.",
+        "ja": "用紙に記入して受付に返してください。"
+      }
+    },
+    "by hand": {
+      "lemma": "by hand",
+      "pos": "熟",
+      "ja": "手作業で、手入力で",
+      "note": "automatically の反対",
+      "example": {
+        "en": "The invoices were sorted by hand before the system was installed.",
+        "ja": "システム導入前は請求書を手作業で仕分けていた。"
+      }
+    },
+    "break for lunch": {
+      "lemma": "break for lunch",
+      "pos": "熟",
+      "ja": "昼休みに入る",
+      "note": "",
+      "example": {
+        "en": "We will break for lunch at noon and resume at one.",
+        "ja": "正午に昼休みに入り、1時に再開します。"
+      }
+    },
+    "be around": {
+      "lemma": "be around",
+      "pos": "熟",
+      "ja": "近くにいる",
+      "note": "available の言い換え",
+      "example": {
+        "en": "I will be around all afternoon if you need any help.",
+        "ja": "助けが要るなら午後はずっと近くにいます。"
+      }
+    },
+    "pallet": {
+      "lemma": "pallet",
+      "pos": "名",
+      "ja": "パレット（荷役台）",
+      "note": "",
+      "example": {
+        "en": "Each pallet holds about forty boxes of printer paper.",
+        "ja": "パレット1枚に約40箱のコピー用紙が載る。"
+      }
+    },
+    "shipping label": {
+      "lemma": "shipping label",
+      "pos": "熟",
+      "ja": "出荷ラベル",
+      "note": "",
+      "example": {
+        "en": "Attach the shipping label to the top of the package.",
+        "ja": "出荷ラベルを荷物の上面に貼ってください。"
+      }
+    },
+    "inventory": {
+      "lemma": "inventory",
+      "pos": "名",
+      "ja": "在庫",
+      "note": "",
+      "example": {
+        "en": "The store counts its inventory at the end of every month.",
+        "ja": "その店は毎月末に在庫を数える。"
+      }
+    }
+  },
+  "point": {
+    "flow": "歓迎と主題 → 全体の流れの予告 → 手順1 → 手順2 → 例外への対処 → 最後の手順と理由 → 補足 → 聞き手への依頼",
+    "items": [
+      {
+        "title": "手順の説明は順序語に印を付ける",
+        "body": "To begin、Next、Once、Before のような語が手順の切れ目になる。設問は「次に何をするか」を順序語の直後から作る。"
+      },
+      {
+        "title": "例外は「ただし」と代替手段で語られる",
+        "body": "If ... don't worry のような例外の文には、必ず代わりの方法が続く。意図を問う設問は、その代替手段が答えになる。"
+      },
+      {
+        "title": "最後の依頼は時の指定を聞く",
+        "body": "Before や by のあとに、いつまでに何をするかが来る。選択肢は手順の説明に出た行動で作られるので、依頼かどうかを確かめる。"
+      }
+    ]
+  }
+}

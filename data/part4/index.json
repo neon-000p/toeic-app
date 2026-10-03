@@ -1,8 +1,28 @@
 {
   "schemaVersion": 1,
   "type": "part4",
-  "updatedAt": "2026-09-30T04:20:00+09:00",
+  "updatedAt": "2026-10-04T04:20:00+09:00",
   "items": [
+    {
+      "id": "2026-10-04-0406-1",
+      "date": "2026-10-04",
+      "time": "04:06",
+      "talkType": "announcement",
+      "kind": "アナウンス",
+      "questions": 3,
+      "file": "2026-10-04-0406-1.json",
+      "no": 10
+    },
+    {
+      "id": "2026-10-04-0406-2",
+      "date": "2026-10-04",
+      "time": "04:06",
+      "talkType": "instructions",
+      "kind": "指示",
+      "questions": 3,
+      "file": "2026-10-04-0406-2.json",
+      "no": 11
+    },
     {
       "id": "2026-09-30-0412-2",
       "date": "2026-09-30",

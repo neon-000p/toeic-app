@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-04-0406-1",
+  "date": "2026-10-04",
+  "time": "04:06",
+  "createdAt": "2026-10-04T04:06:00+09:00",
+  "sample": false,
+  "scene": "館内放送｜エレベーター点検に伴う停止と代替手段",
+  "talkType": "announcement",
+  "intro": "Questions 1 through 3 refer to the following announcement.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-AU"
+  },
+  "lines": [
+    {
+      "en": "Attention, all employees in the Harbor Tower, this is the building management office with an important announcement about this Saturday.",
+      "ja": "ハーバータワーの全従業員の皆さまにお知らせします。こちらは建物の管理事務所で、今週土曜日についての重要なお知らせです。"
+    },
+    {
+      "en": "The main elevators will be shut down from seven a.m. until noon so that technicians can replace the control system.",
+      "ja": "技術者が制御装置を交換するため、メインエレベーターは午前7時から正午まで停止します。"
+    },
+    {
+      "en": "During that time, the two service elevators at the rear will remain in operation, but they can carry only eight people at once.",
+      "ja": "その間、裏手の2基の業務用エレベーターは稼働しますが、一度に乗れるのは8人までです。"
+    },
+    {
+      "en": "Because of this, we expect long lines in the lobby, so please plan to come in earlier than usual.",
+      "ja": "このためロビーに長い列ができると見込まれますので、いつもより早めの出社を予定してください。"
+    },
+    {
+      "en": "If you need to move large equipment, please let the security desk know by Thursday so that we can set aside a service elevator for you.",
+      "ja": "大きな機器を運ぶ必要がある方は、業務用エレベーターを確保できるよう、木曜までに警備デスクへお知らせください。"
+    },
+    {
+      "en": "Normal service is scheduled to resume on Monday morning.",
+      "ja": "通常の運行は月曜の朝に再開する予定です。"
+    },
+    {
+      "en": "Thank you for bearing with us while this maintenance work is completed.",
+      "ja": "この保守作業が完了するまで、どうかご辛抱くださいますようお願いします。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely is the speaker?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A security guard",
+          "ja": "警備員"
+        },
+        {
+          "key": "B",
+          "text": "A repair technician",
+          "ja": "修理の技術者"
+        },
+        {
+          "key": "C",
+          "text": "A building manager",
+          "ja": "建物の管理者"
+        },
+        {
+          "key": "D",
+          "text": "A delivery driver",
+          "ja": "配送の運転手"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0
+      ],
+      "explanation": "話し手は冒頭で this is the building management office と名乗っている。technicians は作業をする人として別に出てくるだけで、話し手ではない。",
+      "tip": "冒頭の名乗りが who の根拠になる。本文に出る職業名は、話し手とは別の人のことが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What does the speaker say about the service elevators?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They can hold only a few people",
+          "ja": "少人数しか乗れない"
+        },
+        {
+          "key": "B",
+          "text": "They will be closed for repairs",
+          "ja": "修理で止まる"
+        },
+        {
+          "key": "C",
+          "text": "They are located in the lobby",
+          "ja": "ロビーにある"
+        },
+        {
+          "key": "D",
+          "text": "They run only after noon",
+          "ja": "正午以降のみ動く"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        2
+      ],
+      "explanation": "The two service elevators ... can carry only eight people at once とあり、乗れる人数が限られている。停止するのはメインエレベーターで、業務用は remain in operation と動いている。",
+      "tip": "service elevators の主語を聞き取る。止まるのはどちらで、動くのはどちらかを取り違えない。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What does the speaker imply about Saturday morning?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Parking will be unavailable",
+          "ja": "駐車場が使えなくなる"
+        },
+        {
+          "key": "B",
+          "text": "Visitors will not be allowed in",
+          "ja": "来訪者は入れない"
+        },
+        {
+          "key": "C",
+          "text": "Work will begin at noon",
+          "ja": "作業は正午に始まる"
+        },
+        {
+          "key": "D",
+          "text": "The lobby may become crowded",
+          "ja": "ロビーが混雑するかもしれない"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "エレベーターが8人乗りの2基だけになるため we expect long lines in the lobby と述べている。つまりロビーが混み合うことを示唆している。noon は作業の終了時刻で、開始時刻ではない。",
+      "tip": "原因（台数の減少）と結果（列ができる）をつなげて推測する。時刻は始まりか終わりかを確認する。"
+    }
+  ],
+  "glossary": {
+    "shut down": {
+      "lemma": "shut down",
+      "pos": "熟",
+      "ja": "停止する、運転を止める",
+      "note": "stop operating の言い換え",
+      "example": {
+        "en": "The factory will shut down for two days during the inspection.",
+        "ja": "工場は点検のため2日間操業を止めます。"
+      }
+    },
+    "remain in operation": {
+      "lemma": "remain in operation",
+      "pos": "熟",
+      "ja": "稼働し続ける",
+      "note": "keep running の言い換え",
+      "example": {
+        "en": "Only one of the three machines will remain in operation today.",
+        "ja": "今日は3台のうち1台だけが稼働し続けます。"
+      }
+    },
+    "come in": {
+      "lemma": "come in",
+      "pos": "熟",
+      "ja": "出社する、入ってくる",
+      "note": "本文では職場へ来る意味",
+      "example": {
+        "en": "Please come in at nine for the staff orientation.",
+        "ja": "スタッフ研修のため9時に出社してください。"
+      }
+    },
+    "set aside": {
+      "lemma": "set aside",
+      "pos": "熟",
+      "ja": "確保しておく、取っておく",
+      "note": "reserve の言い換え",
+      "example": {
+        "en": "We have set aside two rooms for the visiting team.",
+        "ja": "来訪チームのために2部屋を確保してあります。"
+      }
+    },
+    "at once": {
+      "lemma": "at once",
+      "pos": "熟",
+      "ja": "一度に、同時に",
+      "note": "本文では「同時に」。「すぐに」の意味もある",
+      "example": {
+        "en": "Only four guests can enter the studio at once.",
+        "ja": "スタジオには一度に4人しか入れません。"
+      }
+    },
+    "bearing with us": {
+      "lemma": "bear with",
+      "pos": "熟",
+      "ja": "辛抱して待つ",
+      "note": "お詫びとお願いの定型",
+      "example": {
+        "en": "Thank you for bearing with us during the system upgrade.",
+        "ja": "システム更新の間、ご辛抱いただきありがとうございます。"
+      }
+    },
+    "resume": {
+      "lemma": "resume",
+      "pos": "動",
+      "ja": "再開する",
+      "note": "restart の言い換え",
+      "example": {
+        "en": "Normal operations will resume once the power is restored.",
+        "ja": "電力が復旧すれば通常業務は再開されます。"
+      }
+    },
+    "maintenance": {
+      "lemma": "maintenance",
+      "pos": "名",
+      "ja": "保守、点検",
+      "note": "",
+      "example": {
+        "en": "Regular maintenance keeps the equipment running smoothly.",
+        "ja": "定期的な保守で設備は円滑に動き続けます。"
+      }
+    },
+    "technicians": {
+      "lemma": "technician",
+      "pos": "名",
+      "ja": "技術者",
+      "note": "",
+      "example": {
+        "en": "Two technicians were sent to repair the printer.",
+        "ja": "プリンターの修理に技術者2名が派遣された。"
+      }
+    }
+  },
+  "point": {
+    "flow": "呼びかけと名乗り → 停止の内容と時間 → 代わりの手段と制限 → 影響の予告 → 聞き手への依頼 → 再開時期",
+    "items": [
+      {
+        "title": "館内放送は「何が・いつ・代わりに何が」を聞く",
+        "body": "停止や変更の放送は、止まるもの、時間帯、代替手段の3点で組み立てられる。数字が出たら何の数字かを一言で言えるようにしておく。"
+      },
+      {
+        "title": "推測問題は原因と結果を2文でつなぐ",
+        "body": "直接言われない結果は、前後の2文を足して導く。台数や人数の制限が出たら、混雑や遅れを疑う。"
+      },
+      {
+        "title": "依頼は期限とセットで出る",
+        "body": "by Thursday のような期限の前には、聞き手への依頼がある。誰が誰に何をするかを押さえる。"
+      }
+    ]
+  }
+}
