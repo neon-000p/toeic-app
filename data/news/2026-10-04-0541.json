@@ -452,5 +452,23 @@
       "url": "https://qz.com/trump-section-301-forced-labor-tariffs-trade-court-challenge-093026",
       "date": "2026-09-30"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-04-0541/00.mp3",
+      "audio/2026-10-04-0541/01.mp3",
+      "audio/2026-10-04-0541/02.mp3",
+      "audio/2026-10-04-0541/03.mp3",
+      "audio/2026-10-04-0541/04.mp3",
+      "audio/2026-10-04-0541/05.mp3",
+      "audio/2026-10-04-0541/06.mp3",
+      "audio/2026-10-04-0541/07.mp3",
+      "audio/2026-10-04-0541/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 210837,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-03T20:42:19.791Z",
+    "trimmed": true
+  }
 }
