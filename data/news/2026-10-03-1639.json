@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-03-1639",
+  "date": "2026-10-03",
+  "time": "16:39",
+  "createdAt": "2026-10-03T16:39:34+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Toshiba Plans to Double Its Hard Drive Output",
+    "ja": "東芝、HDD生産を2倍へ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Toshiba plans to double its hard disk drive production by fiscal 2027.",
+            "ja": "東芝は、2027年度までにハードディスクドライブの生産量を2倍にする計画だ。"
+          },
+          {
+            "en": "It will spend about 60 billion yen, or $380 million, to expand its factory in the Philippines.",
+            "ja": "フィリピンの工場を拡張するため、約600億円（3億8,000万ドル）を投じる。"
+          },
+          {
+            "en": "Investors reacted quickly on Friday.",
+            "ja": "投資家は金曜日、すばやく反応した。"
+          },
+          {
+            "en": "Shares of Seagate fell by as much as 16%, and Western Digital dropped about 10%.",
+            "ja": "シーゲイトの株価は最大16%下落し、ウエスタンデジタルも約10%下げた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Hard disks are used in data centers to store the huge amounts of data that artificial intelligence needs.",
+            "ja": "ハードディスクは、データセンターで、AIが必要とする膨大なデータを保存するために使われている。"
+          },
+          {
+            "en": "Demand has grown so fast that supply has been tight for the past year.",
+            "ja": "需要があまりに急速に伸びたため、この1年間は供給が逼迫している。"
+          },
+          {
+            "en": "Until now, Seagate and Western Digital have enjoyed rising earnings because of this shortage.",
+            "ja": "これまで、シーゲイトとウエスタンデジタルは、この品不足のおかげで増益を享受してきた。"
+          },
+          {
+            "en": "Toshiba currently holds just over 10% of the market, measured by storage capacity.",
+            "ja": "東芝は現在、記憶容量ベースで市場の10%強を占めている。"
+          },
+          {
+            "en": "It hopes to raise that share to 30% in the medium term.",
+            "ja": "同社は中期的にそのシェアを30%に引き上げたい考えだ。"
+          },
+          {
+            "en": "Investors now worry that more competition could lower prices and profits.",
+            "ja": "投資家は今、競争の激化で価格や利益が下がるのではないかと懸念している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much does Toshiba plan to spend to expand its factory?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 6 billion yen",
+          "ja": "約60億円"
+        },
+        {
+          "key": "B",
+          "text": "About 60 billion yen",
+          "ja": "約600億円"
+        },
+        {
+          "key": "C",
+          "text": "About 380 billion yen",
+          "ja": "約3,800億円"
+        },
+        {
+          "key": "D",
+          "text": "About 30 billion yen",
+          "ja": "約300億円"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。第1段落2文目に「It will spend about 60 billion yen, or $380 million」とある。A・Dは本文にない金額。Cは「$380 million（3億8,000万ドル）」の数字を円の金額にすり替えた引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "金額問題は単位（yen / dollars、million / billion）まで確認する。別の数字や単位を混ぜた選択肢が定番の引っかけ。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why are investors worried about the news?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Toshiba will raise its prices.",
+          "ja": "東芝が値上げする。"
+        },
+        {
+          "key": "B",
+          "text": "Toshiba's market share will fall to 10%.",
+          "ja": "東芝のシェアが10%に落ちる。"
+        },
+        {
+          "key": "C",
+          "text": "More competition could lower prices and profits.",
+          "ja": "競争激化で価格と利益が下がりうる。"
+        },
+        {
+          "key": "D",
+          "text": "Demand for hard disks has started to drop.",
+          "ja": "HDD需要が減り始めた。"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解はC。第2段落の最終文に「more competition could lower prices and profits」とある。Aは本文にない情報。Bは10%が東芝の現在のシェアで、目標は30%なので誤り。Dは第2段落2文目で需要は急増しているとあり、逆の内容。",
+      "evidence": {
+        "p": 1,
+        "s": 5
+      },
+      "tip": "「理由」を問う問題は worry / because / so that など理由・懸念を示す語の近くに根拠がある。本文と逆の内容の選択肢を消去する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "expand",
+      "pos": "動",
+      "ja": "拡張する、拡大する",
+      "gloss": "",
+      "example": {
+        "en": "The firm plans to expand its office in Osaka next year.",
+        "ja": "その会社は来年、大阪のオフィスを拡張する予定だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "capacity",
+      "pos": "名",
+      "ja": "生産能力、容量",
+      "gloss": "（＝最大でどれだけ作れる・入るかということ）",
+      "example": {
+        "en": "The factory is running at full capacity.",
+        "ja": "その工場はフル稼働で操業している。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "fiscal",
+      "pos": "形",
+      "ja": "会計の、財政上の",
+      "gloss": "（＝fiscal year は会計年度のこと）",
+      "example": {
+        "en": "Our fiscal year begins in April.",
+        "ja": "当社の会計年度は4月に始まる。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "shortage",
+      "pos": "名",
+      "ja": "不足",
+      "gloss": "",
+      "example": {
+        "en": "A parts shortage delayed the delivery.",
+        "ja": "部品不足で納品が遅れた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "competition",
+      "pos": "名",
+      "ja": "競争、競合",
+      "gloss": "",
+      "example": {
+        "en": "Competition among retailers has become intense.",
+        "ja": "小売業者間の競争が激しくなっている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "gloss": "",
+      "example": {
+        "en": "We cannot guarantee a steady supply of this item.",
+        "ja": "この商品の安定供給は保証できない。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "medium term",
+      "pos": "熟",
+      "ja": "中期",
+      "gloss": "（＝数か月〜数年先のこと）",
+      "example": {
+        "en": "The company aims to cut costs in the medium term.",
+        "ja": "同社は中期的なコスト削減を目指している。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "tight",
+      "pos": "形",
+      "ja": "逼迫した、余裕のない",
+      "gloss": "（＝足りなくてぎりぎりの状態）",
+      "example": {
+        "en": "Supply remains tight because of the strike.",
+        "ja": "ストライキのため供給は逼迫したままだ。"
+      }
+    }
+  ],
+  "glossary": {
+    "double": {
+      "lemma": "double",
+      "pos": "動",
+      "ja": "2倍にする",
+      "note": ""
+    },
+    "production": {
+      "lemma": "production",
+      "pos": "名",
+      "ja": "生産",
+      "note": ""
+    },
+    "fiscal": {
+      "lemma": "fiscal",
+      "pos": "形",
+      "ja": "会計の",
+      "note": ""
+    },
+    "expand": {
+      "lemma": "expand",
+      "pos": "動",
+      "ja": "拡張する",
+      "note": ""
+    },
+    "factory": {
+      "lemma": "factory",
+      "pos": "名",
+      "ja": "工場",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "reacted": {
+      "lemma": "react",
+      "pos": "動",
+      "ja": "反応する",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式",
+      "note": "株式。share は「市場シェア」の意味もある"
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": "fall by ～% で下落幅を表す"
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下がった",
+      "note": ""
+    },
+    "store": {
+      "lemma": "store",
+      "pos": "動",
+      "ja": "保存する",
+      "note": ""
+    },
+    "huge": {
+      "lemma": "huge",
+      "pos": "形",
+      "ja": "巨大な",
+      "note": ""
+    },
+    "amounts": {
+      "lemma": "amount",
+      "pos": "名",
+      "ja": "量",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "tight": {
+      "lemma": "tight",
+      "pos": "形",
+      "ja": "逼迫した",
+      "note": ""
+    },
+    "enjoyed": {
+      "lemma": "enjoy",
+      "pos": "動",
+      "ja": "享受した",
+      "note": ""
+    },
+    "earnings": {
+      "lemma": "earnings",
+      "pos": "名",
+      "ja": "収益、利益",
+      "note": "複数形で「収益・利益」"
+    },
+    "shortage": {
+      "lemma": "shortage",
+      "pos": "名",
+      "ja": "不足",
+      "note": ""
+    },
+    "currently": {
+      "lemma": "currently",
+      "pos": "副",
+      "ja": "現在",
+      "note": ""
+    },
+    "holds": {
+      "lemma": "hold",
+      "pos": "動",
+      "ja": "保有する",
+      "note": ""
+    },
+    "measured": {
+      "lemma": "measure",
+      "pos": "動",
+      "ja": "測る",
+      "note": "measured by ～ で「～で測ると」"
+    },
+    "capacity": {
+      "lemma": "capacity",
+      "pos": "名",
+      "ja": "容量、能力",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "medium": {
+      "lemma": "medium",
+      "pos": "形",
+      "ja": "中間の",
+      "note": ""
+    },
+    "competition": {
+      "lemma": "competition",
+      "pos": "名",
+      "ja": "競争",
+      "note": ""
+    },
+    "profits": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "worry": {
+      "lemma": "worry",
+      "pos": "動",
+      "ja": "心配する",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "so ～ that … 構文（結果を表す「とても～なので…」）",
+    "quote": "Demand has grown so fast that supply has been tight for the past year.",
+    "quoteJa": "需要があまりに急速に伸びたため、この1年間は供給が逼迫している。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "「so ＋ 形容詞／副詞 ＋ that ＋ S V」は「とても～なので…だ」と、原因（程度）と結果をセットで述べる構文です。この文では so fast（とても速く）が原因、that 以下の supply has been tight（供給が逼迫している）が結果です。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "・Demand has grown so fast that supply has been tight.（so ～ that）\n・Demand has grown fast enough to make supply tight.（enough to）\n・Demand has grown too fast for supply to keep up.（too ～ to の発想）\nまた、名詞を修飾する場合は such ＋ (a/an) ＋ 形容詞 ＋ 名詞 ＋ that … になります（例：It was such a fast increase that …）。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では so と such の使い分け（形容詞・副詞だけなら so、名詞を含むなら such）や、that を選ぶ空所補充がよく出ます。so の後ろに名詞が直接続く形は不可、という点に注意。Part 7 では結果の内容を問う設問の根拠になります。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "・Orders came in so quickly that we had to hire extra staff.（注文が急増したため、追加で人を雇う必要があった）\n・The software was so easy to use that every employee adopted it within a week.（そのソフトはとても使いやすく、1週間で全社員が導入した）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ハードディスクはAIの「倉庫」",
+      "body": "生成AIの学習や利用には、膨大な量の画像・文章・動画データが必要です。このデータを安く大量にためておく装置として、データセンターでは今もハードディスクドライブ（HDD）が広く使われています。高速だが高価なSSD（半導体メモリ）に対し、HDDは「速度は劣るが容量あたりの価格が安い」のが強みで、AI向けの需要が急増したことで品不足が起きました。"
+    },
+    {
+      "heading": "📌 3社が分け合う市場と、今回の動き",
+      "body": "HDD市場は主に米国のシーゲイト、ウエスタンデジタル、そして東芝の3社が占める寡占状態です。需要増で先行2社は業績・株価とも大きく伸びてきましたが、日本経済新聞系のメディアが東芝の生産能力2倍計画を報じると、「供給が増えれば価格が下がり、利益が減るかもしれない」との見方から両社の株価は急落しました。東芝は記憶容量ベースで市場の10%強にとどまり、中期的に30%を目指しています。"
+    },
+    {
+      "heading": "📌 日本経済・日本人ビジネスパーソンへの示唆",
+      "body": "約600億円という投資額は、日本の製造業がAI関連の需要を取り込む動きの一例です。投資先がフィリピンの工場であることも、アジア全体で生産網を組む日本企業の姿を示しています。HDD本体だけでなく、部品・素材メーカーや物流・電力といった周辺産業にも波及する可能性があり、「AIブームは半導体だけの話ではない」ことを知る良い材料です。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "設備投資は、需要が強いときに増やすほど、完成する頃に供給過剰になるリスクがあります（いわゆるシクリカル＝景気循環型産業の宿命）。今回の株価反応は、市場が「需要の伸び」だけでなく「供給が増えるタイミング」を重視していることを示します。経営者にとっては、能力増強の時期と規模を需要予測とどう合わせるかが問われる事例です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Western Digital, Seagate Shares Fall on Nikkei Report of Toshiba Boosting Hard-Drive Production",
+      "publisher": "MarketScreener",
+      "url": "https://www.marketscreener.com/news/western-digital-seagate-shares-fall-on-nikkei-report-of-toshiba-boosting-hard-drive-production-ce785ddbd989f224",
+      "date": "2026-10-02"
+    },
+    {
+      "title": "Toshiba Wants to Double HDD Supply — Western Digital, Seagate Investors Don't Like It",
+      "publisher": "Benzinga",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62132305/toshiba-wants-to-double-hdd-supply-western-digital-seagate-investors-dont-like-it",
+      "date": "2026-10-02"
+    },
+    {
+      "title": "Seagate Tumbles 10%, Western Digital Drops 7% as Toshiba Moves to Double Hard Disk Output",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/02/seagate-tumbles-10-western-digital-drops-7-as-toshiba-moves-to-double-hard-disk-output/",
+      "date": "2026-10-02"
+    }
+  ]
+}
