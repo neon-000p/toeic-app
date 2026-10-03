@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-04-0541",
+  "date": "2026-10-04",
+  "time": "05:41",
+  "createdAt": "2026-10-04T05:41:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "Trade Court Questions Trump's Global Tariffs",
+    "ja": "貿易裁判所、トランプ関税に厳しい質問"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "A three-judge panel at the U.S. Court of International Trade held a hearing on September 30.",
+            "ja": "米国際貿易裁判所の3人の判事団が、9月30日に審理を開いた。"
+          },
+          {
+            "en": "Small businesses and several states say the president's new tariffs go beyond the law.",
+            "ja": "中小企業と複数の州は、大統領の新たな関税は法の範囲を超えていると主張している。"
+          },
+          {
+            "en": "The tariffs impose a rate of 10% or 12.5% on goods from 86 countries.",
+            "ja": "この関税は、86カ国からの輸入品に10%または12.5%の税率を課している。"
+          },
+          {
+            "en": "Together, these goods make up 99.4% of all U.S. imports.",
+            "ja": "これらの品目を合わせると、米国の全輸入の99.4%を占める。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The government says the tariffs respond to countries that fail to stop forced labor.",
+            "ja": "政府は、この関税は強制労働を止められない国々への対応だと説明している。"
+          },
+          {
+            "en": "The challengers argue that this reason is only a cover for restoring earlier tariffs, which the Supreme Court struck down in February.",
+            "ja": "訴えた側は、この理由は、2月に最高裁が無効とした以前の関税を復活させるための口実にすぎないと主張している。"
+          },
+          {
+            "en": "The judges asked a government lawyer whether the administration had ignored the rules set by Congress.",
+            "ja": "判事たちは政府側の弁護士に、政権が議会の定めたルールを無視したのではないかと尋ねた。"
+          },
+          {
+            "en": "One judge said the evidence lacked depth.",
+            "ja": "ある判事は、証拠には深みが欠けていると述べた。"
+          },
+          {
+            "en": "The court has not issued a ruling yet, but a decision is expected in the coming weeks.",
+            "ja": "裁判所はまだ判決を出していないが、今後数週間で判断が出る見通しだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What share of U.S. imports do the tariffs cover?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10%",
+          "ja": "10%"
+        },
+        {
+          "key": "B",
+          "text": "12.5%",
+          "ja": "12.5%"
+        },
+        {
+          "key": "C",
+          "text": "86%",
+          "ja": "86%"
+        },
+        {
+          "key": "D",
+          "text": "99.4%",
+          "ja": "99.4%"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は (D)。本文4文目に「these goods make up 99.4% of all U.S. imports」とあり、関税の対象が輸入全体の99.4%だと分かる。(A) 10% と (B) 12.5% は関税の税率であって、輸入に占める割合ではない。(C) 86 は対象国の数で、%ではない。数字問題では、数字そのものより「何の数字か」を確認するのが鉄則。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "同じ文書に複数の数字が出る問題では、設問が聞く対象（割合・税率・国数）を先に確認し、数字の前後の語句と照合する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "What do the challengers say about the forced-labor reason?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is only a cover for bringing back earlier tariffs.",
+          "ja": "以前の関税を戻す口実にすぎない"
+        },
+        {
+          "key": "B",
+          "text": "It was approved by the Supreme Court in February.",
+          "ja": "2月に最高裁が承認した"
+        },
+        {
+          "key": "C",
+          "text": "It applies only to small businesses.",
+          "ja": "中小企業だけに当てはまる"
+        },
+        {
+          "key": "D",
+          "text": "It was written by Congress last week.",
+          "ja": "先週、議会が作成した"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正解は (A)。本文6文目で、訴えた側は強制労働という理由を「a cover for restoring earlier tariffs」にすぎないと主張している。restoring は選択肢で bringing back に言い換えられている。(B) 最高裁は2月に以前の関税を無効にしたのであり、この理由を承認していない。(C) 中小企業は訴えた側であって、理由の適用対象ではない。(D) 議会の話は判事の質問に出るだけで、理由を作成したとは書かれていない。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "正解は本文の語句を言い換えて出ることが多い。restoring → bringing back のような同義表現に注意する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "panel",
+      "pos": "名",
+      "ja": "委員団、判事団",
+      "gloss": "",
+      "example": {
+        "en": "The panel will review the proposal on Monday.",
+        "ja": "委員団は月曜日にその提案を審査する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "impose",
+      "pos": "動",
+      "ja": "（税・規則を）課す",
+      "gloss": "",
+      "example": {
+        "en": "The government decided to impose a new fee on imports.",
+        "ja": "政府は輸入品に新しい手数料を課すことを決めた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "respond to",
+      "pos": "熟",
+      "ja": "〜に対応する",
+      "gloss": "",
+      "example": {
+        "en": "We must respond to customer requests quickly.",
+        "ja": "私たちは顧客の要望に素早く対応しなければならない。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "restoring",
+      "pos": "動",
+      "ja": "〜を元に戻すこと",
+      "gloss": "（restore の -ing 形）",
+      "example": {
+        "en": "The team is restoring the old schedule.",
+        "ja": "チームは元のスケジュールに戻している。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "struck down",
+      "pos": "熟",
+      "ja": "（法律などを）無効にした",
+      "gloss": "（＝裁判所が「ルール違反」と判断してなくしたこと）",
+      "example": {
+        "en": "The court struck down the new rule last year.",
+        "ja": "裁判所は昨年、その新しい規則を無効にした。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "evidence",
+      "pos": "名",
+      "ja": "証拠、根拠",
+      "gloss": "",
+      "example": {
+        "en": "The report gives clear evidence of rising costs.",
+        "ja": "その報告書はコスト上昇の明確な証拠を示している。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "ruling",
+      "pos": "名",
+      "ja": "判決、裁定",
+      "gloss": "",
+      "example": {
+        "en": "The ruling will affect many small companies.",
+        "ja": "その判決は多くの小企業に影響する。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "lacked",
+      "pos": "動",
+      "ja": "〜が欠けていた",
+      "gloss": "",
+      "example": {
+        "en": "The plan lacked a clear budget.",
+        "ja": "その計画には明確な予算が欠けていた。"
+      }
+    }
+  ],
+  "glossary": {
+    "panel": {
+      "lemma": "panel",
+      "pos": "名",
+      "ja": "判事団",
+      "note": ""
+    },
+    "hearing": {
+      "lemma": "hearing",
+      "pos": "名",
+      "ja": "審理",
+      "note": "法廷で意見を聞く手続き"
+    },
+    "businesses": {
+      "lemma": "business",
+      "pos": "名",
+      "ja": "企業",
+      "note": ""
+    },
+    "states": {
+      "lemma": "state",
+      "pos": "名",
+      "ja": "州",
+      "note": "ここでは米国の州"
+    },
+    "beyond": {
+      "lemma": "beyond",
+      "pos": "前",
+      "ja": "〜を超えて",
+      "note": ""
+    },
+    "tariffs": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "impose": {
+      "lemma": "impose",
+      "pos": "動",
+      "ja": "課す",
+      "note": ""
+    },
+    "rate": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "税率、率",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "good",
+      "pos": "名",
+      "ja": "品物、商品",
+      "note": "複数形 goods は「商品」"
+    },
+    "imports": {
+      "lemma": "import",
+      "pos": "名",
+      "ja": "輸入（品）",
+      "note": ""
+    },
+    "respond": {
+      "lemma": "respond",
+      "pos": "動",
+      "ja": "対応する",
+      "note": "respond to ～"
+    },
+    "fail": {
+      "lemma": "fail",
+      "pos": "動",
+      "ja": "〜できない、怠る",
+      "note": "fail to do"
+    },
+    "forced": {
+      "lemma": "forced",
+      "pos": "形",
+      "ja": "強制された",
+      "note": ""
+    },
+    "labor": {
+      "lemma": "labor",
+      "pos": "名",
+      "ja": "労働",
+      "note": ""
+    },
+    "challengers": {
+      "lemma": "challenger",
+      "pos": "名",
+      "ja": "異議を唱える側",
+      "note": ""
+    },
+    "argue": {
+      "lemma": "argue",
+      "pos": "動",
+      "ja": "主張する",
+      "note": ""
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "名",
+      "ja": "口実、隠れみの",
+      "note": "ここでは名詞"
+    },
+    "restoring": {
+      "lemma": "restore",
+      "pos": "動",
+      "ja": "復活させる",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "early",
+      "pos": "形",
+      "ja": "以前の",
+      "note": "earlyの比較級"
+    },
+    "struck": {
+      "lemma": "strike",
+      "pos": "動",
+      "ja": "打つ",
+      "note": "struck down で「無効にする」"
+    },
+    "whether": {
+      "lemma": "whether",
+      "pos": "接",
+      "ja": "〜かどうか",
+      "note": ""
+    },
+    "administration": {
+      "lemma": "administration",
+      "pos": "名",
+      "ja": "政権",
+      "note": ""
+    },
+    "ignored": {
+      "lemma": "ignore",
+      "pos": "動",
+      "ja": "無視する",
+      "note": ""
+    },
+    "evidence": {
+      "lemma": "evidence",
+      "pos": "名",
+      "ja": "証拠",
+      "note": ""
+    },
+    "lacked": {
+      "lemma": "lack",
+      "pos": "動",
+      "ja": "〜が欠ける",
+      "note": ""
+    },
+    "depth": {
+      "lemma": "depth",
+      "pos": "名",
+      "ja": "深さ、深み",
+      "note": ""
+    },
+    "ruling": {
+      "lemma": "ruling",
+      "pos": "名",
+      "ja": "判決",
+      "note": ""
+    },
+    "decision": {
+      "lemma": "decision",
+      "pos": "名",
+      "ja": "決定、判断",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込む",
+      "note": "be expected to / that"
+    }
+  },
+  "grammar": {
+    "topic": "whether節を使った間接疑問文（〜かどうか）",
+    "quote": "The judges asked a government lawyer whether the administration had ignored the rules set by Congress.",
+    "quoteJa": "判事たちは政府側の弁護士に、政権が議会の定めたルールを無視したのではないかと尋ねた。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "asked A whether ~ は、「A に〜かどうかを尋ねる」という間接疑問文（名詞節）。Yes/No で答えられる質問を文の中に組み込むときは whether（または if）を使い、語順は疑問文ではなく「主語＋動詞」の平常文の順に戻す。ここでは whether 以下が asked の目的語（尋ねた内容）になっている。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "直接疑問文：Had the administration ignored the rules? → 間接疑問文：…asked whether the administration had ignored the rules.（Had が前に出る倒置をやめ、the administration had の順に戻る）。whether の代わりに if も使えるが、前置詞の直後（about whether）や whether or not の形では whether を使う。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では whether / if / that の選択、Part 7 では「〜かどうか」を表す表現の読み取りが問われる。特に be unsure whether、decide whether、ask whether、the question of whether といった定型が頻出。that は「事実」、whether は「どちらか分からないこと」を導く、と区別して覚えておく。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "We are still checking whether the shipment has arrived.（出荷品が届いたかどうか、まだ確認中です。）／ Please let us know whether you can attend the meeting.（会議に出席できるかどうか、お知らせください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ①何が争われているのか（専門用語のやさしい説明）",
+      "body": "関税とは、輸入品にかかる税金のこと。今回争点になっているのは、米国の通商法301条に基づく関税。301条は、他国の不公正な貿易慣行に対して米国が対抗措置を取れるようにする法律で、本来は「国ごとに問題を調べ、認定したうえで」使うことが想定されている。政府は「強制労働を取り締まらない国への対応」と説明するが、訴えた側は「理由は建前で、実際は以前の関税を復活させるための手段だ」と見ている。"
+    },
+    {
+      "heading": "📌 ②経緯と業界全体の動き",
+      "body": "報道によれば、以前の世界規模の関税は2月に最高裁によって無効とされた。その後、政府は別の法律を根拠に、10%または12.5%の関税を86カ国に広げ、輸入全体の99.4%をカバーする形にした。訴えているのは中小企業と民主党が主導する州。判事団は、政府が議会の定めた枠組みを守ったのかを厳しく質問した。判決は今後数週間で出る見通しで、結果次第では、関税を払った輸入業者が返還を求める動きにもつながりうる。"
+    },
+    {
+      "heading": "📌 ③日本・日本企業への影響",
+      "body": "日本から米国へ輸出している企業にとっても、他人事ではない。関税率が変われば、米国での販売価格や利益率に直接響く。判決が出るまでは「関税は続くかもしれないし、なくなるかもしれない」という不確実性が残るため、価格改定や在庫の積み増しをどう判断するかが課題になる。ビジネスパーソンにとっては、tariff、ruling、impose などの英語ニュースの頻出語を押さえておく良い機会でもある。"
+    },
+    {
+      "heading": "📌 ④投資家・経営者の視点",
+      "body": "投資家にとっての焦点は、関税が続くのか、縮小されるのかという「政策の方向性」。関税が下がれば輸入に頼る小売や製造業のコスト負担は軽くなる一方、続けば物価や企業収益への圧力になる。経営者は、判決の前後で複数のシナリオ（関税継続／縮小／返還）を想定し、調達先の分散や価格設定を柔軟に見直しておく必要がある。法的な判断が経営計画を左右する典型例といえる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trump's latest global tariffs face trade court challenge",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/30/trump-tariffs-trade-lawsuit.html",
+      "date": "2026-09-30"
+    },
+    {
+      "title": "Trump's Section 301 forced-labor tariffs are being challenged in trade court again",
+      "publisher": "Quartz",
+      "url": "https://qz.com/trump-section-301-forced-labor-tariffs-trade-court-challenge-093026",
+      "date": "2026-09-30"
+    }
+  ]
+}
