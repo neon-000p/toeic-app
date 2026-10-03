@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-04-0406-1",
+  "date": "2026-10-04",
+  "time": "04:06",
+  "scene": "請求・経理｜請求書の金額の誤り",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-GB"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "I'm looking at the invoice from Brightway Printing, and the total is off. It says $2,400, but our purchase order was for $1,800.",
+      "ja": "ブライトウェイ印刷からの請求書を見ているのですが、合計が合いません。2,400ドルとありますが、うちの発注書は1,800ドルでした。"
+    },
+    {
+      "tag": "M",
+      "en": "Let me check. We ordered five hundred brochures, and the quote included free delivery.",
+      "ja": "確認します。パンフレットを500部注文して、見積りには配送無料が含まれていたと記憶しています。"
+    },
+    {
+      "tag": "W",
+      "en": "The invoice adds a $600 charge for rush shipping, though. Did anyone request that?",
+      "ja": "でも請求書には、特急配送として600ドルが加算されています。誰か頼みましたか。"
+    },
+    {
+      "tag": "M",
+      "en": "No, but the first batch was held up in production, so I'm guessing they sped it up on their own.",
+      "ja": "いいえ。ただ最初の分が製造で遅れたので、先方が勝手に急いだのだと思います。"
+    },
+    {
+      "tag": "W",
+      "en": "I can't pay the full amount without approval. Payment is due Friday.",
+      "ja": "承認なしに全額は払えません。支払期日は金曜です。"
+    },
+    {
+      "tag": "M",
+      "en": "Then please hold off on it. I'll call their billing office this afternoon and ask them to reissue the invoice.",
+      "ja": "では支払いは待ってください。今日の午後に先方の請求窓口へ電話して、請求書を再発行するよう頼みます。"
+    },
+    {
+      "tag": "W",
+      "en": "Good. Could you get the corrected one in writing for the file?",
+      "ja": "お願いします。ファイル用に、訂正版を書面でもらえますか。"
+    },
+    {
+      "tag": "M",
+      "en": "Of course. I'll have them email it to both of us by tomorrow morning.",
+      "ja": "もちろんです。明日の朝までに、私たち2人宛てにメールで送ってもらいます。"
+    },
+    {
+      "tag": "W",
+      "en": "Great. I'll ask finance to push the due date back a few days in the meantime.",
+      "ja": "助かります。その間、経理部に支払期日を数日延ばすよう頼んでおきます。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A late payment reminder",
+          "ja": "支払いの督促状"
+        },
+        {
+          "key": "B",
+          "text": "A mistake on an invoice",
+          "ja": "請求書の誤り"
+        },
+        {
+          "key": "C",
+          "text": "A change in delivery date",
+          "ja": "配送日の変更"
+        },
+        {
+          "key": "D",
+          "text": "A new printing order",
+          "ja": "新しい印刷の注文"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "女性は冒頭で the total is off と述べ、金額が発注書と合わないことを指摘している。続く会話もその原因と対処に終始しており、話題は請求書の誤りである。支払期日は話に出るが、督促状の話ではない。",
+      "tip": "冒頭の依頼や指摘で話題が決まる。数字が食い違うと言い出したら、その後の会話は誤りの原因探しだと見当をつける。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why does the man think the vendor added a charge?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To cover a price increase on paper",
+          "ja": "紙代の値上げを補うため"
+        },
+        {
+          "key": "B",
+          "text": "To replace a damaged shipment",
+          "ja": "破損した荷物の代わりのため"
+        },
+        {
+          "key": "C",
+          "text": "To correct a quantity mistake",
+          "ja": "数量の誤りを直すため"
+        },
+        {
+          "key": "D",
+          "text": "To speed up a delayed order",
+          "ja": "遅れた注文を急がせるため"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "女性が rush shipping の600ドルを挙げ、男性は the first batch was held up in production なので先方が急いだのだろうと推測している。つまり遅れた注文を早めるための料金である。数量の話は最初の確認で出るだけで、追加料金の理由ではない。",
+      "tip": "追加料金の理由は「だから」の前後にある。held up を delayed と言い換えた選択肢を探す。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the man do this afternoon?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Contact the vendor's billing department",
+          "ja": "業者の請求部門に連絡する"
+        },
+        {
+          "key": "B",
+          "text": "Approve the full payment",
+          "ja": "全額の支払いを承認する"
+        },
+        {
+          "key": "C",
+          "text": "File a corrected invoice",
+          "ja": "訂正版の請求書を保管する"
+        },
+        {
+          "key": "D",
+          "text": "Extend the payment deadline",
+          "ja": "支払期限を延長する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        5
+      ],
+      "explanation": "男性は I'll call their billing office this afternoon と述べている。訂正版を求める保管は女性側の話で、期日の延長も女性が経理に頼む行動であり、全額の支払いは待つと決めている。",
+      "tip": "this afternoon と時を限定した発言に印を付ける。選択肢の行動が誰のものかを確かめる。"
+    }
+  ],
+  "glossary": {
+    "is off": {
+      "lemma": "be off",
+      "pos": "熟",
+      "ja": "合っていない、ずれている",
+      "note": "金額や数字が間違っているときに使う",
+      "example": {
+        "en": "The count on the shelf is off by about ten units.",
+        "ja": "棚の数量は約10個ずれています。"
+      }
+    },
+    "held up": {
+      "lemma": "hold up",
+      "pos": "熟",
+      "ja": "遅れる、滞る",
+      "note": "選択肢では delayed に置き換わる",
+      "example": {
+        "en": "Our order was held up at customs for three days.",
+        "ja": "注文品は税関で3日間止められた。"
+      }
+    },
+    "hold off on": {
+      "lemma": "hold off on",
+      "pos": "熟",
+      "ja": "見送る、先延ばしにする",
+      "note": "postpone の言い換え",
+      "example": {
+        "en": "Let's hold off on ordering until the budget is approved.",
+        "ja": "予算が承認されるまで発注は見送りましょう。"
+      }
+    },
+    "reissue": {
+      "lemma": "reissue",
+      "pos": "動",
+      "ja": "再発行する",
+      "note": "",
+      "example": {
+        "en": "The bank will reissue your card within five business days.",
+        "ja": "銀行は5営業日以内にカードを再発行します。"
+      }
+    },
+    "in writing": {
+      "lemma": "in writing",
+      "pos": "熟",
+      "ja": "書面で",
+      "note": "口頭に対する語。契約や確認で頻出",
+      "example": {
+        "en": "Please confirm the change in writing before Friday.",
+        "ja": "金曜までに変更を書面で確認してください。"
+      }
+    },
+    "push the due date back": {
+      "lemma": "push back",
+      "pos": "熟",
+      "ja": "期日を後ろへ延ばす",
+      "note": "extend the deadline の言い換え",
+      "example": {
+        "en": "The client asked us to push the launch date back a week.",
+        "ja": "顧客は発売日を1週間延ばすよう求めた。"
+      }
+    },
+    "rush shipping": {
+      "lemma": "rush shipping",
+      "pos": "熟",
+      "ja": "特急配送",
+      "note": "追加料金になることが多い",
+      "example": {
+        "en": "Rush shipping is available for an extra fee at checkout.",
+        "ja": "特急配送は会計時に追加料金で利用できます。"
+      }
+    },
+    "purchase order": {
+      "lemma": "purchase order",
+      "pos": "熟",
+      "ja": "発注書",
+      "note": "invoice（請求書）と対で覚える",
+      "example": {
+        "en": "We cannot ship the goods until we receive a purchase order.",
+        "ja": "発注書を受け取るまで商品は出荷できません。"
+      }
+    },
+    "invoice": {
+      "lemma": "invoice",
+      "pos": "名",
+      "ja": "請求書",
+      "note": "",
+      "example": {
+        "en": "The invoice must be paid within thirty days of receipt.",
+        "ja": "請求書は受領後30日以内に支払う必要があります。"
+      }
+    },
+    "billing office": {
+      "lemma": "billing office",
+      "pos": "熟",
+      "ja": "請求担当の部署",
+      "note": "accounts receivable に近い",
+      "example": {
+        "en": "Please contact the billing office if the amount looks wrong.",
+        "ja": "金額が違うようなら請求担当部署へご連絡ください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "問題の指摘（金額の相違）→ 原因の確認 → 支払いの保留 → 先方への連絡 → 期日の調整",
+    "items": [
+      {
+        "title": "金額の食い違いは「元の数字」と「増えた分」を拾う",
+        "body": "請求や精算の会話では、本来の金額・実際の金額・差額の3つが出る。数字が出るたびに何の金額かをメモすると、原因を問う設問に答えられる。"
+      },
+      {
+        "title": "原因は推測の形で語られる",
+        "body": "I'm guessing や it looks like のあとが理由の根拠になる。確定した事実ではなくても、正解選択肢はそこを言い換えて作られる。"
+      },
+      {
+        "title": "締めの数行は人ごとの担当を分けて聞く",
+        "body": "最後に「私は〜する」「経理に頼む」と担当が分かれる。次の行動の設問は、誰の発言かを確かめてから選ぶ。"
+      }
+    ]
+  }
+}

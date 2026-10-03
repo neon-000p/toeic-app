@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-04-0406-2",
+  "date": "2026-10-04",
+  "time": "04:06",
+  "scene": "広報・販促｜展示会パンフレットの仕上げ",
+  "speakers": [
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-AU"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-CA"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "M",
+      "en": "Hi Dana, the trade show is in nine days, and the printer needs our brochure files by Monday.",
+      "ja": "やあダナ、展示会まであと9日で、印刷会社は月曜までにパンフレットのデータを必要としています。"
+    },
+    {
+      "tag": "W",
+      "en": "I know. I'm still waiting on the product photos from the engineering team. They promised them by Thursday.",
+      "ja": "承知しています。まだ技術部からの製品写真を待っているところで、木曜までにとのことでした。"
+    },
+    {
+      "tag": "M",
+      "en": "That's cutting it close. Could you put together a draft with the old photos and swap them in later?",
+      "ja": "ぎりぎりですね。古い写真で下書きを作っておいて、後で差し替えられませんか。"
+    },
+    {
+      "tag": "W",
+      "en": "I can, but the layout changes with the new pictures, so it would mean doing everything twice.",
+      "ja": "できますが、新しい写真でレイアウトが変わるので、全部2回やることになります。"
+    },
+    {
+      "tag": "M",
+      "en": "What if we cut the brochure from twelve pages to eight? Fewer photos means less rework.",
+      "ja": "パンフレットを12ページから8ページに減らすのはどうでしょう。写真が減れば手直しも減ります。"
+    },
+    {
+      "tag": "W",
+      "en": "That could work. I'd have to drop the customer stories section, though.",
+      "ja": "それならいけそうです。ただ、お客様の声のコーナーは削ることになりますが。"
+    },
+    {
+      "tag": "M",
+      "en": "Let's move those onto our website and add a QR code at the back instead.",
+      "ja": "それはウェブサイトに移して、代わりに裏表紙にQRコードを入れましょう。"
+    },
+    {
+      "tag": "W",
+      "en": "Good idea. I'll start on the eight-page version today and send it to you for a look on Friday.",
+      "ja": "いい案ですね。今日から8ページ版に着手して、金曜に確認用にお送りします。"
+    },
+    {
+      "tag": "M",
+      "en": "Perfect. I'll let the printer know that our schedule might shift a little.",
+      "ja": "完璧です。印刷会社には、こちらの予定が少しずれるかもしれないと伝えておきます。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What is the woman waiting for?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A quote from the printer",
+          "ja": "印刷会社の見積り"
+        },
+        {
+          "key": "B",
+          "text": "Approval of a layout",
+          "ja": "レイアウトの承認"
+        },
+        {
+          "key": "C",
+          "text": "Photos from another team",
+          "ja": "他部署からの写真"
+        },
+        {
+          "key": "D",
+          "text": "A website update",
+          "ja": "ウェブサイトの更新"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        1
+      ],
+      "explanation": "女性は I'm still waiting on the product photos from the engineering team と述べている。印刷会社が必要とするのはデータそのもので、見積りを待っているわけではない。",
+      "tip": "waiting on の直後に待っている対象が来る。from のあとの部署名まで聞き取る。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the woman mean when she says, \"it would mean doing everything twice\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The brochure should be printed twice",
+          "ja": "パンフレットを2回印刷すべきだ"
+        },
+        {
+          "key": "B",
+          "text": "A temporary draft would create extra work",
+          "ja": "仮の下書きでは作業が増える"
+        },
+        {
+          "key": "C",
+          "text": "The photos need to be taken again",
+          "ja": "写真を撮り直す必要がある"
+        },
+        {
+          "key": "D",
+          "text": "The website must be redesigned",
+          "ja": "ウェブサイトを作り直す必要がある"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "男性が古い写真で下書きを作るよう提案し、女性は新しい写真でレイアウトが変わるので全部2回やることになると断っている。仮の下書きは後で作り直しになるという意味である。写真の撮り直しは話に出ていない。",
+      "tip": "引用文の直前の提案が何かを確かめる。「but」で始まる理由が、その発言の意図を決める。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What does the man say he will do?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Review the brochure himself",
+          "ja": "自分でパンフレットを見直す"
+        },
+        {
+          "key": "B",
+          "text": "Post customer stories online",
+          "ja": "お客様の声をネットに載せる"
+        },
+        {
+          "key": "C",
+          "text": "Order new photographs",
+          "ja": "新しい写真を注文する"
+        },
+        {
+          "key": "D",
+          "text": "Inform the printer of a possible delay",
+          "ja": "遅れの可能性を印刷会社に伝える"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        8
+      ],
+      "explanation": "男性は最後に I'll let the printer know that our schedule might shift と述べている。確認は男性が金曜に受け取る側だが、今から行う行動ではない。ウェブサイトへの移行は提案であり、本人の行動として語られていない。",
+      "tip": "最後の I'll で始まる発言が本人の行動。let ... know を inform に言い換えた選択肢を選ぶ。"
+    }
+  ],
+  "glossary": {
+    "put together": {
+      "lemma": "put together",
+      "pos": "熟",
+      "ja": "まとめる、作成する",
+      "note": "prepare の言い換え",
+      "example": {
+        "en": "Could you put together a short report on last month's sales?",
+        "ja": "先月の売上について短い報告書をまとめてもらえますか。"
+      }
+    },
+    "swap them in": {
+      "lemma": "swap in",
+      "pos": "熟",
+      "ja": "差し替える",
+      "note": "replace の言い換え",
+      "example": {
+        "en": "We can swap in a different image if the first one is too dark.",
+        "ja": "最初の画像が暗すぎるなら別の画像に差し替えられます。"
+      }
+    },
+    "waiting on": {
+      "lemma": "wait on",
+      "pos": "熟",
+      "ja": "～を待っている",
+      "note": "wait for と同じ意味で、仕事の進行待ちによく使う",
+      "example": {
+        "en": "We are still waiting on approval from the legal department.",
+        "ja": "法務部の承認をまだ待っています。"
+      }
+    },
+    "cutting it close": {
+      "lemma": "cut it close",
+      "pos": "熟",
+      "ja": "ぎりぎりである",
+      "note": "時間に余裕がない状態",
+      "example": {
+        "en": "Arriving at the gate ten minutes before boarding is cutting it close.",
+        "ja": "搭乗の10分前に搭乗口へ着くのはぎりぎりです。"
+      }
+    },
+    "trade show": {
+      "lemma": "trade show",
+      "pos": "熟",
+      "ja": "展示会",
+      "note": "exhibition の言い換え",
+      "example": {
+        "en": "Our company will have a booth at the trade show in May.",
+        "ja": "当社は5月の展示会にブースを出します。"
+      }
+    },
+    "rework": {
+      "lemma": "rework",
+      "pos": "名",
+      "ja": "手直し、やり直し",
+      "note": "動詞でも使う",
+      "example": {
+        "en": "Poor planning led to a lot of rework for the design team.",
+        "ja": "計画の甘さで、デザインチームは多くの手直しを強いられた。"
+      }
+    },
+    "layout": {
+      "lemma": "layout",
+      "pos": "名",
+      "ja": "レイアウト、配置",
+      "note": "",
+      "example": {
+        "en": "The new layout makes the catalog easier to read.",
+        "ja": "新しいレイアウトでカタログが読みやすくなった。"
+      }
+    },
+    "drop": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "（予定から）外す、削る",
+      "note": "本文では「内容から削る」の意味",
+      "example": {
+        "en": "We decided to drop the second workshop due to low interest.",
+        "ja": "関心が低いため、2回目のワークショップは外すことにした。"
+      }
+    },
+    "shift": {
+      "lemma": "shift",
+      "pos": "動",
+      "ja": "ずれる、変わる",
+      "note": "本文では予定がずれる意味",
+      "example": {
+        "en": "The meeting time may shift if the client arrives late.",
+        "ja": "顧客の到着が遅れれば会議時間がずれるかもしれません。"
+      }
+    },
+    "for a look": {
+      "lemma": "for a look",
+      "pos": "熟",
+      "ja": "確認のために",
+      "note": "review の言い換え",
+      "example": {
+        "en": "Please send the contract over for a look before noon.",
+        "ja": "正午までに確認のため契約書を送ってください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "依頼（期限の提示）→ 制約の提示（写真待ち）→ 案の検討 → 妥協案（ページ削減）→ 合意と分担",
+    "items": [
+      {
+        "title": "制約が出たら、それを避ける案が続く",
+        "body": "「待っている」「間に合わない」といった制約の直後に、代替案が必ず出る。制約の中身を先に押さえると、案の可否の理由も聞き取れる。"
+      },
+      {
+        "title": "but や though の前後で賛否が分かれる",
+        "body": "賛成の返事に but や though が続いたら、条件や懸念が本題になる。設問はその条件を言い換えて作られる。"
+      },
+      {
+        "title": "最後に出る「私が伝える」は本人の担当",
+        "body": "締めの一言は、その話者自身の行動。次の行動の設問では、提案された事柄と本人が引き受けた事柄を区別する。"
+      }
+    ]
+  }
+}
