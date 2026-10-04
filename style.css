@@ -110,6 +110,11 @@ body{
 .btn:disabled{opacity:.42;cursor:default}
 .btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
 .btn-primary:disabled{background:var(--line-2);border-color:var(--line-2);color:var(--surface)}
+/* 取り消せない操作（アカウントの削除）。赤は控えめにし、押せないときは薄くする */
+.btn-danger{background:var(--ng-soft);border-color:transparent;color:var(--ng)}
+.btn-danger:disabled{opacity:.5}
+.check{display:flex;align-items:center;gap:8px;font-size:13.5px;cursor:pointer}
+.check input{width:17px;height:17px;flex:none;accent-color:var(--ng)}
 .btn-ghost{background:transparent;border-color:transparent;color:var(--accent);padding:8px 10px;font-weight:600}
 .btn-sm{min-height:34px;padding:5px 11px;font-size:13px;border-radius:8px}
 

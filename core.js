@@ -320,6 +320,7 @@
        利用者全員で分け合うには多すぎるため。 */
     var FULL_GAP = 60 * 1000;
     var saves = 0, follow = null;
+    var deleting = false;   // アカウントを消している間は送らない（消したそばから作り直さないため）
 
     function available() {
       return !!FIREBASE && typeof location !== 'undefined' && /^https?:$/.test(location.protocol);
@@ -428,6 +429,37 @@
     /* ログアウトしても、この端末の記録は消さない */
     function signOut() {
       return loadSdk().then(function (fb) { return fb.auth().signOut(); });
+    }
+
+    /* アカウントを消す。本人確認のためにもう一度 Google でログインしてもらい、
+       サーバーの記録（SYNC_KEYS）→ Google アカウントの登録 の順に消す。
+       途中で止まっても、この端末の記録は残っているので、次の同期で送り直されるだけで済む。
+       opts.clearLocal が真なら、この端末の記録（SYNC_KEYS）も消す。API キーは残す */
+    function deleteAccount(opts) {
+      opts = opts || {};
+      var u;
+      function done() { deleting = false; }
+      return loadSdk().then(function (fb) {
+        u = fb.auth().currentUser;
+        if (!u) throw new Error('ログインしていません');
+        var p = new fb.auth.GoogleAuthProvider();
+        p.setCustomParameters({ prompt: 'select_account', login_hint: u.email || '' });
+        return u.reauthenticateWithPopup(p);
+      }).then(function () {
+        deleting = true;
+        clearTimeout(timer);
+        return running;   // 送っている途中なら、終わるのを待ってから消す
+      }).then(function () {
+        return u.getIdToken(true);
+      }).then(function (token) {
+        return Promise.all(SYNC_KEYS.map(function (k) { return api('DELETE', docUrl(k), token); }));
+      }).then(function () {
+        return u.delete();
+      }).then(function () {
+        ['sync.user', 'sync.dirty', 'sync.rev', 'sync.full', 'sync.last', 'sync.at'].forEach(forget);
+        if (opts.clearLocal) SYNC_KEYS.forEach(forget);
+        done();
+      }, function (e) { done(); throw e; });
     }
 
     /* ---- Firestore（REST） ---- */
@@ -539,7 +571,7 @@
     }
 
     function run(full) {
-      if (!user || !available()) return Promise.resolve();
+      if (!user || !available() || deleting) return Promise.resolve();
       if (running) {
         again = true; againFull = againFull || full;
         return running;
@@ -677,7 +709,7 @@
 
     return {
       touch: touch, init: init, run: function () { return run(true); }, badge: badge, dot: dot, look: look,
-      signIn: signIn, signOut: signOut, status: status, follow: followProgress,
+      signIn: signIn, signOut: signOut, deleteAccount: deleteAccount, status: status, follow: followProgress,
       _merge: Merge
     };
   })();
@@ -1386,6 +1418,7 @@
     return modal(
       syncHTML + voiceHTML + aiHTML +
       (opts.extraHTML ? '<hr class="sep">' + opts.extraHTML : '') +
+      '<div id="accBox"></div>' +
       '<hr class="sep">' +
       '<div class="tool-row">' + (opts.extraButtons || '') +
         '<button class="btn btn-sm" id="cfgClose">閉じる</button></div>',
@@ -1497,6 +1530,13 @@
               '<p class="small muted" style="margin:8px 0 0">ログアウトしても、この端末の記録は消えません。</p>';
           }
           syncBox.innerHTML = html;
+          /* 取り消せない操作なので、よく押すボタンから離して設定の一番下に置く */
+          bg.querySelector('#accBox').innerHTML = st.configured && st.available && st.account
+            ? '<hr class="sep"><h2>アカウント</h2>' +
+              '<p class="small muted" style="margin:-6px 0 10px">Google アカウントの登録と、サーバーに保存した' +
+                '学習記録・語彙帳・設定を削除します。元に戻せません。</p>' +
+              '<div class="tool-row"><button class="btn btn-sm btn-danger" id="accDel">アカウントを削除</button></div>'
+            : '';
         }
         drawSync();
         global.addEventListener('toeic:syncstate', drawSync);
@@ -1515,6 +1555,41 @@
             Sync.signOut().then(function () { toast('ログアウトしました'); });
           }
         });
+        bg.querySelector('#accBox').addEventListener('click', function (e) {
+          if (e.target.id === 'accDel') confirmDelete();
+        });
+        function confirmDelete() {
+          var acc = Sync.status().account || {};
+          modal('<h2>アカウントを削除</h2>' +
+            '<p style="margin:0 0 10px"><b>' + esc(acc.email || acc.name || '') + '</b> の登録と、' +
+              'サーバーに保存した学習記録・語彙帳・設定を削除します。<b>元に戻せません。</b></p>' +
+            '<p class="small muted" style="margin:0 0 10px">本人の確認のため、もう一度 Google でログインしてもらいます。' +
+              'ほかの端末にある記録はその端末に残ります（そこで再びログインすると、新しいアカウントとして送られます）。</p>' +
+            '<label class="check"><input type="checkbox" id="accLocal"> この端末の記録も消す（API キーは残ります）</label>' +
+            '<div class="tool-row" style="margin-top:14px"><button class="btn btn-sm" id="accNo">やめる</button>' +
+              '<button class="btn btn-sm btn-danger" id="accYes">削除する</button></div>',
+            function (c) {
+              c.querySelector('#accNo').onclick = function () { c.remove(); };
+              var yes = c.querySelector('#accYes');
+              yes.onclick = function () {
+                var clearLocal = c.querySelector('#accLocal').checked;
+                yes.disabled = true;
+                Sync.deleteAccount({ clearLocal: clearLocal }).then(function () {
+                  c.remove();
+                  toast('アカウントを削除しました', 2500);
+                  /* 手元の記録を消したときは、画面を新しい状態で描き直す */
+                  if (clearLocal) setTimeout(function () { location.reload(); }, 1200);
+                }, function (err) {
+                  yes.disabled = false;
+                  var code = err && err.code;
+                  if (code === 'auth/popup-closed-by-user' || code === 'auth/cancelled-popup-request') return;
+                  toast(code === 'auth/user-mismatch'
+                    ? 'ログイン中のアカウント（' + (acc.email || '') + '）を選んでください'
+                    : '削除できませんでした: ' + ((err && (code || err.message)) || err), 4000);
+                });
+              };
+            });
+        }
 
         if (opts.onMount) opts.onMount(bg);
         bg.querySelector('#cfgClose').onclick = function () { bg.remove(); };

@@ -175,6 +175,11 @@ Part 3 と同じ5ステップ（設問 → 解説 → 対訳 → 語彙 → Poin
 **同期しないもの**：Gemini の API キー・Gemini のキャッシュ・手で取り込んだ時事教材（`news.packs`）。
 API キーはこれまでどおり端末ごとに入れる。
 
+**アカウントの削除**：⚙ の一番下「アカウント」から、利用者が自分で消せる。
+もう一度 Google でログインして本人を確かめてから、Firestore の4件 → Firebase の登録の順に消す
+（ルールの `allow delete: if isOwner()` で足りる）。この端末の記録は既定で残し、選べば消す。
+ほかの端末の記録はその端末に残る。動作は `node tools/test-sync.js` の 15〜18 で確かめている。
+
 しくみ：
 
 - 置き場所は Firebase（Firestore）の `users/{uid}/data/{キー}`。中身は JSON の文字列
