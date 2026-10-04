@@ -1,6 +1,6 @@
 {
-  "name": "TOEIC Daily",
-  "short_name": "TOEIC Daily",
+  "name": "AkariEN",
+  "short_name": "AkariEN",
   "description": "時事英語と実践対策",
   "start_url": "./index.html",
   "display": "standalone",
