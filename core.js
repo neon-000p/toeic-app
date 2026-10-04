@@ -42,6 +42,29 @@
     set: function (k, v) { var s = Settings.all(); s[k] = v; write('settings', s); }
   };
 
+  /* ---------- 配色と明るさ ----------
+     settings に入れるので、ログインしていればほかの端末でも同じ見た目になる。
+     各ページの <head> にも同じ処理の短い版があり、描く前に当てている（ちらつかないように）。
+     配色を足すときは、style.css の色・ここ・<head> の短い版（正規表現）の3か所を直す。 */
+  var PALETTES = [
+    { id: 'teal', name: '青緑', light: '#0f766e', dark: '#43b3a6' },
+    { id: 'indigo', name: '藍', light: '#2d5bb5', dark: '#7ea6f2' },
+    { id: 'violet', name: '藤', light: '#6a4bbf', dark: '#ad98f2' },
+    { id: 'sepia', name: '生成り', light: '#8b5a2b', dark: '#d9a46c' },
+    { id: 'graphite', name: '墨', light: '#34393f', dark: '#d6d9de' }
+  ];
+  var MODES = [{ id: 'auto', name: '自動' }, { id: 'light', name: 'ライト' }, { id: 'dark', name: 'ダーク' }];
+  var Theme = {
+    palettes: PALETTES, modes: MODES,
+    apply: function () {
+      if (typeof document === 'undefined' || !document.documentElement) return;
+      var d = document.documentElement, p = Settings.get('palette'), m = Settings.get('mode');
+      var known = PALETTES.some(function (x) { return x.id === p; });
+      if (known && p !== 'teal') d.setAttribute('data-palette', p); else d.removeAttribute('data-palette');
+      if (m === 'light' || m === 'dark') d.setAttribute('data-theme', m); else d.removeAttribute('data-theme');
+    }
+  };
+
   /* ---------- 品詞の表記 ----------
      時事の語彙ステップと同じ「名／動／形／副／熟」にそろえる。
      語注（glossary）には n / v / adj や「コロケーション」で書かれたものも
@@ -1415,14 +1438,46 @@
       '<h2>端末間の同期</h2>' +
       '<div id="syncBox"></div>';
 
+    var curPal = Settings.get('palette') || 'teal', curMode = Settings.get('mode') || 'auto';
+    var viewHTML =
+      '<hr class="sep">' +
+      '<h2>表示</h2>' +
+      '<div class="field"><span>配色</span></div>' +
+      '<div class="pal-grid" id="cfgPal">' + PALETTES.map(function (p) {
+        return '<button class="pal" data-p="' + p.id + '" aria-pressed="' + (p.id === curPal) + '">' +
+          '<span class="sw" style="background:linear-gradient(135deg,' + p.light + ' 50%,' + p.dark + ' 50%)"></span>' +
+          esc(p.name) + '</button>';
+      }).join('') + '</div>' +
+      '<div class="field"><span>明るさ</span></div>' +
+      '<div class="seg" id="cfgMode">' + MODES.map(function (m) {
+        return '<button data-m="' + m.id + '" aria-pressed="' + (m.id === curMode) + '">' + m.name + '</button>';
+      }).join('') + '</div>' +
+      '<p class="small muted" style="margin:-4px 0 0">「自動」は端末の設定（ダークモード）に合わせます。</p>';
+
     return modal(
-      syncHTML + voiceHTML + aiHTML +
+      syncHTML + viewHTML + voiceHTML + aiHTML +
       (opts.extraHTML ? '<hr class="sep">' + opts.extraHTML : '') +
       '<div id="accBox"></div>' +
       '<hr class="sep">' +
       '<div class="tool-row">' + (opts.extraButtons || '') +
         '<button class="btn btn-sm" id="cfgClose">閉じる</button></div>',
       function (bg) {
+        /* --- 表示（押したらすぐ当てる） --- */
+        function pick(boxId, attr, key) {
+          var box = bg.querySelector(boxId);
+          box.addEventListener('click', function (e) {
+            var b = e.target.closest('button');
+            if (!b || !box.contains(b)) return;
+            Settings.set(key, b.getAttribute(attr));
+            Theme.apply();
+            Array.prototype.forEach.call(box.querySelectorAll('button'), function (x) {
+              x.setAttribute('aria-pressed', String(x === b));
+            });
+          });
+        }
+        pick('#cfgPal', 'data-p', 'palette');
+        pick('#cfgMode', 'data-m', 'mode');
+
         /* --- 音声 --- */
         var sel = bg.querySelector('#cfgVoice');
         TTS.onReady(function () {
@@ -1997,8 +2052,13 @@
     flash: flash, takeFlash: takeFlash, numberSets: numberSets, build: build,
     watchSelection: watchSelection, phrasePop: phrasePop,
     esc: esc, splitWords: splitWords, markupEnglish: markupEnglish, toast: toast,
-    Sync: Sync
+    Sync: Sync, Theme: Theme
   };
 
+  Theme.apply();
+  /* ほかの端末で配色を変えたら、届いたときに当て直す */
+  global.addEventListener('toeic:synced', function (e) {
+    if (e && e.detail && (e.detail.changed || []).indexOf('settings') !== -1) Theme.apply();
+  });
   Sync.init();
 })(window);
