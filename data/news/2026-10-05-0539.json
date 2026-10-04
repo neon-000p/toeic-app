@@ -456,5 +456,24 @@
       "url": "https://www.benzinga.com/markets/economic-data/26/10/62131064/september-jobs-report-nonfarm-payrolls-unemployment-wages",
       "date": "2026-10-02"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-05-0539/00.mp3",
+      "audio/2026-10-05-0539/01.mp3",
+      "audio/2026-10-05-0539/02.mp3",
+      "audio/2026-10-05-0539/03.mp3",
+      "audio/2026-10-05-0539/04.mp3",
+      "audio/2026-10-05-0539/05.mp3",
+      "audio/2026-10-05-0539/06.mp3",
+      "audio/2026-10-05-0539/07.mp3",
+      "audio/2026-10-05-0539/08.mp3",
+      "audio/2026-10-05-0539/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 210978,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-04T20:42:20.426Z",
+    "trimmed": true
+  }
 }
