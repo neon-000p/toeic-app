@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-04-1639",
+  "date": "2026-10-04",
+  "time": "16:39",
+  "createdAt": "2026-10-04T16:39:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "Nike Sales Fall and Outlook Disappoints",
+    "ja": "ナイキ減収、見通しも投資家の失望誘う"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Nike reported weak results for its latest quarter on October 1.",
+            "ja": "ナイキは10月1日、直近四半期の業績が振るわなかったと発表した。"
+          },
+          {
+            "en": "Sales fell 4% from a year earlier to $11.2 billion, which was lower than analysts had expected.",
+            "ja": "売上高は前年同期比4%減の112億ドルで、アナリストの予想を下回った。"
+          },
+          {
+            "en": "Sales in China dropped by more than 20%.",
+            "ja": "中国での売上高は20%超減少した。"
+          },
+          {
+            "en": "The company also said it expects total sales to fall by a high single-digit percentage this fiscal year.",
+            "ja": "同社はまた、今年度の総売上高が一桁台後半の割合で減少する見通しだとも述べた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Nike is trying to rebuild its business by clearing old products with discounts and cutting costs.",
+            "ja": "ナイキは、旧型商品を値引きで売り切り、コストを削減することで、事業の立て直しを図っている。"
+          },
+          {
+            "en": "However, these changes take time, and higher tariffs on imported goods are making the situation harder.",
+            "ja": "しかし、こうした取り組みには時間がかかり、輸入品にかかる関税の引き上げが状況をさらに難しくしている。"
+          },
+          {
+            "en": "Gross margin, or the share of sales left after product costs, improved to 42.8%.",
+            "ja": "売上総利益率、つまり製品コストを引いた後に売上に残る割合は、42.8%に改善した。"
+          },
+          {
+            "en": "Lower warehouse and shipping costs helped.",
+            "ja": "倉庫費用と配送費用の低下が寄与した。"
+          },
+          {
+            "en": "Profit per share was better than forecast, but investors focused on the weak outlook, sending the shares down about 8%.",
+            "ja": "1株当たり利益は予想より良かったが、投資家は弱い業績見通しに注目し、株価は約8%下落した。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did Nike's sales fall from a year earlier?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2%",
+          "ja": "2%"
+        },
+        {
+          "key": "B",
+          "text": "4%",
+          "ja": "4%"
+        },
+        {
+          "key": "C",
+          "text": "8%",
+          "ja": "8%"
+        },
+        {
+          "key": "D",
+          "text": "20%",
+          "ja": "20%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。第1段落2文目に「Sales fell 4% from a year earlier to $11.2 billion」とあり、全体の売上高は前年同期比4%減。Aは本文に登場しない数字。Cの8%は株価の下落率（第2段落最終文）で、売上の話ではない。Dの20%は中国での売上減少（more than 20%）で、全体の数字ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字問題は、選択肢の数字が本文のどの対象（全体・地域・株価）を指すかを必ず確認する。別の対象の数字が引っかけとして並べられる。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did Nike's shares fall even though profit per share was better than forecast?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Profit per share was lower than expected.",
+          "ja": "1株利益が予想より低かった"
+        },
+        {
+          "key": "B",
+          "text": "Investors were worried about the weak sales outlook.",
+          "ja": "投資家が弱い売上見通しを懸念した"
+        },
+        {
+          "key": "C",
+          "text": "The company raised the prices of old products.",
+          "ja": "旧型商品を値上げした"
+        },
+        {
+          "key": "D",
+          "text": "The company stopped selling goods in China.",
+          "ja": "中国での販売を停止した"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。第2段落最終文に「investors focused on the weak outlook, sending the shares down about 8%」とあり、弱い業績見通しが株価下落の理由。Aは本文と逆（better than forecast）。Cは本文にない情報で、旧型商品は値引きで売り切ろうとしている。Dも本文にない情報で、中国は売上が減ったとあるだけ。",
+      "evidence": {
+        "p": 1,
+        "s": 4
+      },
+      "tip": "理由を問う問題は、but や however の後ろに答えが置かれることが多い。「良い点、but 悪い点」の構造に注目する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "fiscal",
+      "pos": "形",
+      "ja": "会計年度の、財政上の",
+      "gloss": "（＝企業が決算をまとめる1年間についての）",
+      "example": {
+        "en": "The fiscal year of our company ends in March.",
+        "ja": "当社の会計年度は3月に終わる。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "outlook",
+      "pos": "名",
+      "ja": "見通し、予測",
+      "gloss": "",
+      "example": {
+        "en": "The company lowered its sales outlook for next year.",
+        "ja": "その会社は来年の売上見通しを引き下げた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "forecast",
+      "pos": "名・動",
+      "ja": "予測（する）",
+      "gloss": "",
+      "example": {
+        "en": "Sales were higher than the forecast.",
+        "ja": "売上は予測を上回った。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "rebuild",
+      "pos": "動",
+      "ja": "立て直す、再建する",
+      "gloss": "",
+      "example": {
+        "en": "We need to rebuild trust with our customers.",
+        "ja": "私たちは顧客との信頼を立て直す必要がある。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "margin",
+      "pos": "名",
+      "ja": "利益率、利ざや",
+      "gloss": "（＝売上のうち利益として残る割合のこと）",
+      "example": {
+        "en": "The profit margin improved after the price change.",
+        "ja": "価格変更の後、利益率が改善した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "imported",
+      "pos": "形",
+      "ja": "輸入された",
+      "gloss": "",
+      "example": {
+        "en": "Imported goods must pass through customs.",
+        "ja": "輸入品は税関を通らなければならない。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "tariffs",
+      "pos": "名",
+      "ja": "関税",
+      "gloss": "（＝輸入品にかかる税金のこと）",
+      "example": {
+        "en": "Higher tariffs raised the cost of parts.",
+        "ja": "関税の引き上げで部品のコストが上がった。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "discounts",
+      "pos": "名",
+      "ja": "値引き、割引",
+      "gloss": "",
+      "example": {
+        "en": "The store offers discounts to regular customers.",
+        "ja": "その店は常連客に割引を提供している。"
+      }
+    }
+  ],
+  "glossary": {
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "報告した、発表した",
+      "note": ""
+    },
+    "weak": {
+      "lemma": "weak",
+      "pos": "形",
+      "ja": "弱い、振るわない",
+      "note": ""
+    },
+    "results": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "結果、業績",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": ""
+    },
+    "sales": {
+      "lemma": "sale",
+      "pos": "名",
+      "ja": "売上（高）",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "early",
+      "pos": "形",
+      "ja": "以前の",
+      "note": ""
+    },
+    "lower": {
+      "lemma": "low",
+      "pos": "形",
+      "ja": "より低い",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "減少した",
+      "note": ""
+    },
+    "percentage": {
+      "lemma": "percentage",
+      "pos": "名",
+      "ja": "割合",
+      "note": ""
+    },
+    "fiscal": {
+      "lemma": "fiscal",
+      "pos": "形",
+      "ja": "会計年度の",
+      "note": ""
+    },
+    "rebuild": {
+      "lemma": "rebuild",
+      "pos": "動",
+      "ja": "立て直す",
+      "note": ""
+    },
+    "clearing": {
+      "lemma": "clear",
+      "pos": "動",
+      "ja": "売り切る、処分する",
+      "note": "clear old stock＝在庫を一掃する"
+    },
+    "discounts": {
+      "lemma": "discount",
+      "pos": "名",
+      "ja": "値引き",
+      "note": ""
+    },
+    "cutting": {
+      "lemma": "cut",
+      "pos": "動",
+      "ja": "削減する",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "tariffs": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "imported": {
+      "lemma": "import",
+      "pos": "形",
+      "ja": "輸入された",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "商品",
+      "note": ""
+    },
+    "margin": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": "gross margin＝売上総利益率"
+    },
+    "improved": {
+      "lemma": "improve",
+      "pos": "動",
+      "ja": "改善した",
+      "note": ""
+    },
+    "warehouse": {
+      "lemma": "warehouse",
+      "pos": "名",
+      "ja": "倉庫",
+      "note": ""
+    },
+    "shipping": {
+      "lemma": "shipping",
+      "pos": "名",
+      "ja": "配送、出荷",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予測",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "outlook": {
+      "lemma": "outlook",
+      "pos": "名",
+      "ja": "見通し",
+      "note": ""
+    },
+    "sending": {
+      "lemma": "send",
+      "pos": "動",
+      "ja": "〜の状態にする（送る）",
+      "note": "send A down＝Aを下落させる"
+    }
+  },
+  "grammar": {
+    "topic": "分詞構文（, -ing で結果・付帯状況を表す）",
+    "quote": "Profit per share was better than forecast, but investors focused on the weak outlook, sending the shares down about 8%.",
+    "quoteJa": "1株当たり利益は予想より良かったが、投資家は弱い業績見通しに注目し、株価は約8%下落した。",
+    "blocks": [
+      {
+        "heading": "構文：, sending the shares down …",
+        "body": "文の後ろに「, sending ...」とカンマ＋現在分詞（-ing）を置くと、前の内容の「結果」や「付帯状況」を補足できます。ここでは「投資家が弱い見通しに注目した。その結果、株価が約8%下がった」という流れを1文で表しています。分詞の意味上の主語は、主節の主語（investors）ではなく、主節全体の内容（investors focused on the weak outlook という出来事）である点に注意してください。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "分詞構文は接続詞を使った文に言い換えられます。\n・Investors focused on the weak outlook, sending the shares down about 8%.\n・＝ Investors focused on the weak outlook, and this sent the shares down about 8%.\n・＝ Investors focused on the weak outlook, so the shares went down about 8%.\nカンマ＋-ing は「and＋主語＋動詞」を短くした形と考えると理解しやすくなります。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、空所に -ing、-ed、to do、原形のどれを入れるかを問う形で出ます。「, -ing」は結果・付帯状況、「-ing を文頭に置く形」は理由・時を表す、という使い分けを押さえましょう。主節の主語と分詞の関係が「〜している」なら -ing、「〜される」なら -ed（過去分詞）を選びます。Part 7 の記事でも、結果を簡潔に添える表現として頻出です。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "・The company cut its prices, helping it attract more customers.（同社は価格を下げ、その結果より多くの顧客を引きつけた。）\n・The factory closed for repairs, causing delays in shipments.（工場が修理のため閉鎖され、出荷の遅れを招いた。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ナイキの現状：「立て直しの途中」",
+      "body": "ナイキは近年、販売の伸び悩みから、エリオット・ヒルCEOの下で事業の立て直しを進めています。今回の決算（2026年6〜8月期＝2027会計年度の第1四半期）では売上が前年同期比4%減の約112億ドルとなり、市場予想を下回りました。一方で1株利益は予想を上回り、利益面では一定の改善も見られます。「売上は弱いが利益率は改善」という二面性が今回のポイントです。"
+    },
+    {
+      "heading": "📌 用語の解説：売上総利益率と会計年度",
+      "body": "売上総利益率（gross margin）は、売上から商品の原価を引いた利益が売上に占める割合です。今回は42.8%と、倉庫費用や物流費の低下を背景に前年より約0.6ポイント改善しました。また、ナイキの会計年度は6月から翌年5月までで、今回は2027年度の最初の四半期にあたります。日本企業の多くが4〜3月の年度であるのと同様に、会計年度は暦年とずれることがある点は、決算ニュースを読む際の基本です。"
+    },
+    {
+      "heading": "📌 業界動向：中国と値引き競争",
+      "body": "ナイキは中国での売上が20%超減少しており、同国の消費者の嗜好の変化や現地ブランドの台頭が背景にあると指摘されています。また、旧型商品を値引きで売り切る動きは、アディダスやプーマなど競合各社にも共通する課題です。値引きは在庫を減らす一方、ブランド価値や利益率を損なうリスクもあり、各社はそのバランスに苦心しています。"
+    },
+    {
+      "heading": "📌 日本への影響と投資家の視点",
+      "body": "日本ではミズノやアシックスなどのスポーツ用品メーカーが同じ市場で競合しており、ナイキの値引きや中国市場の動向は、日本企業の業績や株価にも波及し得ます。投資家にとっては、今回のように「足元の利益」より「先行きの見通し」が株価を左右することを示す好例です。決算では、実績の数字だけでなく、会社が示す見通し（ガイダンス）と市場予想とのギャップに注目することが重要です。また、関税の影響で輸入コストが上がる局面では、製造を海外に頼る企業ほど利益が圧迫されやすい点も、経営者の視点で押さえておきたいところです。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nike Q1 FY2027 earnings: revenue misses, full-year outlook cut",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nike-q1-fy2027-earnings-revenue-210111038.html",
+      "date": "2026-10-01"
+    },
+    {
+      "title": "NIKE, Inc. Reports Fiscal 2027 First Quarter Results",
+      "publisher": "NIKE Investor Relations",
+      "url": "https://investors.nike.com/investors/news-events-and-reports/investor-news/investor-news-details/2026/NIKE-Inc--Reports-Fiscal-2027-First-Quarter-Results/default.aspx",
+      "date": "2026-10-01"
+    },
+    {
+      "title": "Nike Earnings: Q1 FY27 Sales Fall 4%, China Drops 26%",
+      "publisher": "Vanderbilt Report",
+      "url": "https://vanderbiltreport.com/nike-q1-fiscal-2027-earnings/",
+      "date": "2026-10-01"
+    }
+  ]
+}
