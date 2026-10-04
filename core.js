@@ -48,8 +48,9 @@
      配色を足すときは、style.css の色・ここ・<head> の短い版（正規表現）の3か所を直す。 */
   var PALETTES = [
     { id: 'teal', name: '青緑', light: '#0f766e', dark: '#43b3a6' },
-    { id: 'indigo', name: '藍', light: '#2d5bb5', dark: '#7ea6f2' },
-    { id: 'violet', name: '藤', light: '#6a4bbf', dark: '#ad98f2' },
+    { id: 'indigo', name: '藍', light: '#2d5bb5', dark: '#5f8fe0' },
+    /* id の violet は以前の名残（藤）。保存済みの設定を生かすため変えない */
+    { id: 'violet', name: '撫子', light: '#ad3b7c', dark: '#d673ab' },
     { id: 'sepia', name: '生成り', light: '#8b5a2b', dark: '#d9a46c' },
     { id: 'graphite', name: '墨', light: '#34393f', dark: '#d6d9de' }
   ];
