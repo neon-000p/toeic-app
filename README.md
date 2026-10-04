@@ -1,13 +1,13 @@
 # AkariEN
 
-時事英語と実践対策（Part 3〜7）を1つにまとめる自作アプリ。GitHub Pages に置いて Android Chrome から使う。
+時事英語（News）と TOEIC 対策（Part 3〜7）を1つにまとめる自作アプリ。GitHub Pages に置いて Android Chrome から使う。
 ビルド不要・npm 不要。静的ファイルをそのまま置けば動く。
 
 ## 構成
 
 ```
 index.html           ホーム（時事／実践のタブ）
-drills.html          実践対策のパート別一覧
+drills.html          TOEIC 対策のパート別一覧
 news.html            時事英語モード（6ステップ）
 vocab.html           語彙帳（間隔反復の復習・持ち出し）
 part3.html           Part 3 トレーナー（会話1本＋3問・5ステップ）
