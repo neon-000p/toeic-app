@@ -1,7 +1,7 @@
 {
   "name": "AkariEN",
   "short_name": "AkariEN",
-  "description": "時事英語と実践対策",
+  "description": "ニュース英語と TOEIC 対策",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0d1418",

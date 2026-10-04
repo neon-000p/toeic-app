@@ -140,6 +140,26 @@ a.icon-btn{font-size:17px}
 @keyframes sync-blink{50%{opacity:.25}}
 @media (prefers-reduced-motion:reduce){.sync-pill.sync .dot{animation:none}}
 
+/* 教材ページの歯車。小さな丸い札にして、中に色の点を並べる（色の意味は .sync-pill と同じ） */
+.icon-btn.cfg-sync{width:auto;padding:0 6px;gap:3px;border-radius:999px}
+.cfg-sync .dot{width:7px;height:7px;border-radius:50%;background:var(--muted);flex:none}
+.cfg-sync .dot[hidden]{display:none}
+.cfg-sync.on{background:var(--ok-soft);border-color:transparent;color:var(--ok)}
+.cfg-sync.on .dot{background:var(--ok)}
+.cfg-sync.sync .dot{background:var(--accent);animation:sync-blink 1s ease-in-out infinite}
+.cfg-sync.warn{background:var(--mark-soft);border-color:transparent;color:var(--mark-ink)}
+.cfg-sync.warn .dot{background:var(--mark)}
+.cfg-sync.bad{background:var(--ng-soft);border-color:transparent;color:var(--ng)}
+.cfg-sync.bad .dot{background:var(--ng)}
+.cfg-sync.off .dot{background:transparent;border:1.5px solid var(--muted);width:6px;height:6px}
+@media (prefers-reduced-motion:reduce){.cfg-sync.sync .dot{animation:none}}
+
+/* 「教材を選ぶ」「セットを選ぶ」の日時。題名より目立たせない */
+.pick-when{
+  display:inline-block;min-width:5.8em;margin-right:4px;font-size:12px;font-weight:400;
+  color:var(--muted);font-variant-numeric:tabular-nums;
+}
+
 .choice .cja{display:block;font-family:var(--sans);font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.5}
 
 .chip{
