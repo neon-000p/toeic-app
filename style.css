@@ -137,6 +137,8 @@ a.icon-btn{font-size:17px}
 .sync-pill.bad .dot{background:var(--ng)}
 .sync-pill.off{color:var(--muted)}
 .sync-pill.off .dot{background:transparent;border:1.5px solid var(--muted);width:7px;height:7px}
+/* 設定の「端末間の同期」に添える小さな札。色は同じで、押せる見た目にはしない */
+.sync-pill.sync-mini{height:auto;padding:3px 9px;font-size:11.5px;cursor:default;vertical-align:1px;margin-right:4px}
 @keyframes sync-blink{50%{opacity:.25}}
 @media (prefers-reduced-motion:reduce){.sync-pill.sync .dot{animation:none}}
 

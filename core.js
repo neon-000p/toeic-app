@@ -676,7 +676,7 @@
     }
 
     return {
-      touch: touch, init: init, run: function () { return run(true); }, badge: badge, dot: dot,
+      touch: touch, init: init, run: function () { return run(true); }, badge: badge, dot: dot, look: look,
       signIn: signIn, signOut: signOut, status: status, follow: followProgress,
       _merge: Merge
     };
@@ -1469,6 +1469,9 @@
         function drawSync() {
           if (!bg.isConnected) { global.removeEventListener('toeic:syncstate', drawSync); return; }
           var st = Sync.status(), html;
+          /* ホームと同じ色の小さな札で、いまの状態を添える */
+          var l = Sync.look();
+          var pill = l ? '<span class="sync-pill sync-mini ' + l[0] + '"><span class="dot"></span>' + l[1] + '</span> ' : '';
           if (!st.configured) {
             html = '<p class="small muted" style="margin:-6px 0 0">まだ使えません。README の「端末間の同期」の手順で ' +
               'Firebase の設定値を <code>core.js</code> に入れると、Google でログインできるようになります。</p>';
@@ -1476,7 +1479,8 @@
             html = '<p class="small muted" style="margin:-6px 0 0">ファイルを直接開いているときは使えません' +
               '（GitHub Pages 上で使えます）。</p>';
           } else if (!st.account) {
-            html = '<p class="small muted" style="margin:-6px 0 10px">Google でログインすると、学習記録・語彙帳・設定を' +
+            html = '<p style="margin:-6px 0 8px">' + pill + '</p>' +
+              '<p class="small muted" style="margin:0 0 10px">Google でログインすると、学習記録・語彙帳・設定を' +
               'ほかの端末と共有します。Gemini の API キーは共有しません（端末ごとに入力）。</p>' +
               '<div class="tool-row"><button class="btn btn-sm btn-primary" id="syncIn">Google でログイン</button></div>';
           } else {
@@ -1486,7 +1490,7 @@
               : st.last ? '最終同期 ' + esc(new Date(st.last).toLocaleString('ja-JP',
                   { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }))
               : 'まだ同期していません';
-            html = '<p class="small" style="margin:-6px 0 4px">ログイン中: <b>' + esc(st.account.email || st.account.name) + '</b></p>' +
+            html = '<p class="small" style="margin:-6px 0 4px">' + pill + '<b>' + esc(st.account.email || st.account.name) + '</b></p>' +
               '<p class="small muted" style="margin:0 0 10px">' + line + '</p>' +
               '<div class="tool-row"><button class="btn btn-sm" id="syncNow">今すぐ同期</button>' +
                 '<button class="btn btn-sm" id="syncOut">ログアウト</button></div>' +
