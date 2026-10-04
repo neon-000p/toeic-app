@@ -104,79 +104,79 @@
 }
 @media (prefers-color-scheme:dark){
   :root[data-palette="indigo"]:not([data-theme="light"]){
-    --bg:#0d1220;
-    --surface:#151c2c;
-    --surface-2:#1b2436;
-    --ink:#e5eaf5;
-    --ink-2:#b7c2d9;
-    --muted:#8a96ad;
-    --line:#263049;
-    --line-2:#34405c;
-    --accent:#7ea6f2;
-    --accent-soft:#1a2747;
-    --accent-ink:#b5cbf8;
-    --on-accent:#0b1a3a;
+    --bg:#0e1219;
+    --surface:#161c26;
+    --surface-2:#1d2431;
+    --ink:#e8ecf3;
+    --ink-2:#c3cbd9;
+    --muted:#9aa4b6;
+    --line:#29313f;
+    --line-2:#394354;
+    --accent:#5f8fe0;
+    --accent-soft:#1c2a45;
+    --accent-ink:#b3c8f2;
+    --on-accent:#0a1630;
   }
 }
 :root[data-palette="indigo"][data-theme="dark"]{
-  --bg:#0d1220;
-  --surface:#151c2c;
-  --surface-2:#1b2436;
-  --ink:#e5eaf5;
-  --ink-2:#b7c2d9;
-  --muted:#8a96ad;
-  --line:#263049;
-  --line-2:#34405c;
-  --accent:#7ea6f2;
-  --accent-soft:#1a2747;
-  --accent-ink:#b5cbf8;
-  --on-accent:#0b1a3a;
+  --bg:#0e1219;
+  --surface:#161c26;
+  --surface-2:#1d2431;
+  --ink:#e8ecf3;
+  --ink-2:#c3cbd9;
+  --muted:#9aa4b6;
+  --line:#29313f;
+  --line-2:#394354;
+  --accent:#5f8fe0;
+  --accent-soft:#1c2a45;
+  --accent-ink:#b3c8f2;
+  --on-accent:#0a1630;
 }
 
-/* 藤 */
+/* 撫子 */
 :root[data-palette="violet"]{
-  --bg:#f2f0f7;
+  --bg:#f7f0f3;
   --surface:#ffffff;
-  --surface-2:#f8f6fb;
-  --ink:#221c33;
-  --ink-2:#4a4163;
-  --muted:#7b7290;
-  --line:#e2ddeb;
-  --line-2:#cfc7dd;
-  --accent:#6a4bbf;
-  --accent-soft:#ece6fa;
-  --accent-ink:#4d3391;
+  --surface-2:#fbf6f8;
+  --ink:#2a1b24;
+  --ink-2:#55404c;
+  --muted:#806b77;
+  --line:#eadde3;
+  --line-2:#dbc8d1;
+  --accent:#ad3b7c;
+  --accent-soft:#f8e3ee;
+  --accent-ink:#86285d;
   --on-accent:#ffffff;
 }
 @media (prefers-color-scheme:dark){
   :root[data-palette="violet"]:not([data-theme="light"]){
-    --bg:#120f1b;
-    --surface:#1b1726;
-    --surface-2:#231e31;
-    --ink:#ece8f5;
-    --ink-2:#c6bedb;
-    --muted:#978daf;
-    --line:#2e2840;
-    --line-2:#3d3553;
-    --accent:#ad98f2;
-    --accent-soft:#2a2145;
-    --accent-ink:#d2c6fa;
-    --on-accent:#1d1240;
+    --bg:#141115;
+    --surface:#1d181e;
+    --surface-2:#251f27;
+    --ink:#f1eaf0;
+    --ink-2:#d6c8d3;
+    --muted:#a898a6;
+    --line:#332b35;
+    --line-2:#443a47;
+    --accent:#d673ab;
+    --accent-soft:#3a1d2f;
+    --accent-ink:#f2bcda;
+    --on-accent:#2a0a1c;
   }
 }
 :root[data-palette="violet"][data-theme="dark"]{
-  --bg:#120f1b;
-  --surface:#1b1726;
-  --surface-2:#231e31;
-  --ink:#ece8f5;
-  --ink-2:#c6bedb;
-  --muted:#978daf;
-  --line:#2e2840;
-  --line-2:#3d3553;
-  --accent:#ad98f2;
-  --accent-soft:#2a2145;
-  --accent-ink:#d2c6fa;
-  --on-accent:#1d1240;
+  --bg:#141115;
+  --surface:#1d181e;
+  --surface-2:#251f27;
+  --ink:#f1eaf0;
+  --ink-2:#d6c8d3;
+  --muted:#a898a6;
+  --line:#332b35;
+  --line-2:#443a47;
+  --accent:#d673ab;
+  --accent-soft:#3a1d2f;
+  --accent-ink:#f2bcda;
+  --on-accent:#2a0a1c;
 }
 
 /* 生成り */
