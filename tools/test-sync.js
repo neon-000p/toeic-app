@@ -46,6 +46,11 @@ function makeServer() {
       docs[p] = { raw: body.fields.v.stringValue, at: Number(body.fields.at.integerValue), updateTime: 't' + (++clock) };
       return reply(200, { updateTime: docs[p].updateTime });
     }
+    if (opt.method === 'DELETE') {
+      if (api.failDelete) return reply(500, { error: { message: 'boom' } });
+      delete docs[p];
+      return reply(200, {});
+    }
     return reply(400, {});
   }
   const api = { docs, fetch, failNext, log, hook: null, get: (uid, key) => {
@@ -70,9 +75,15 @@ function makeDevice(server, opts) {
   if (opts.signedIn) store['toeic.sync.user'] = JSON.stringify({ uid: opts.uid, email: 'me@example.com' });
 
   let authCb = null;
-  const fbUser = { uid: opts.uid, email: 'me@example.com', getIdToken: () => Promise.resolve('tok-' + opts.uid) };
+  const fbUser = {
+    uid: opts.uid, email: 'me@example.com', getIdToken: () => Promise.resolve('tok-' + opts.uid),
+    reauthenticateWithPopup: () => (dev.reauth ? Promise.reject(dev.reauth) : Promise.resolve()),
+    delete() { dev.deleted = true; current = null; setTimeout(() => authCb(null), 0); return Promise.resolve(); }
+  };
+  const dev = { reauth: null, deleted: false };
   let current = opts.signedIn ? fbUser : null;
   const auth = {
+    get currentUser() { return current; },
     onAuthStateChanged(cb) { authCb = cb; setTimeout(() => cb(current), 0); },
     signInWithPopup() { current = fbUser; setTimeout(() => authCb(current), 0); return Promise.resolve(); },
     signOut() { current = null; setTimeout(() => authCb(null), 0); return Promise.resolve(); }
@@ -111,7 +122,7 @@ function makeDevice(server, opts) {
   win.window = win;
   vm.createContext(win);
   vm.runInContext(SRC.replace('})(window);', '})(this);'), win);
-  return { T: win.TOEIC, store, toasts, win, raw: k => JSON.parse(store['toeic.' + k] || 'null') };
+  return Object.assign(dev, { T: win.TOEIC, store, toasts, win, raw: k => JSON.parse(store['toeic.' + k] || 'null') });
 }
 
 const tick = (ms) => new Promise(r => setTimeout(r, ms || 20));
@@ -305,6 +316,52 @@ async function settle(dev) {
   await tick(3100);
   assert.strictEqual(server.log.length, writes, 'ログアウト中は送らない');
   console.log('ok 14 ログアウトしても手元の記録は残る');
+
+  /* 15. 本人確認をやめたら何も消さない */
+  const C = makeDevice(server, { uid: UID, signedIn: true });
+  await settle(C);
+  C.reauth = Object.assign(new Error('closed'), { code: 'auth/popup-closed-by-user' });
+  await assert.rejects(C.T.Sync.deleteAccount(), e => e.code === 'auth/popup-closed-by-user');
+  assert(server.get(UID, 'vocab'), 'サーバーの記録は残る');
+  assert(!C.deleted && C.T.Sync.status().account, 'アカウントも残る');
+  C.reauth = null;
+  console.log('ok 15 本人確認をやめたら何も消さない');
+
+  /* 16. サーバーの記録を消せなかったら、登録は消さない（やり直せる） */
+  server.failDelete = true;
+  await assert.rejects(C.T.Sync.deleteAccount());
+  assert(!C.deleted, '登録は残る');
+  server.failDelete = false;
+  C.T.Vocab.add({ term: 'after-fail', ja: '' });
+  await tick(3100); await settle(C);
+  assert(server.get(UID, 'vocab').some(e => e.term === 'after-fail'), '失敗のあとは同期が元どおり動く');
+  console.log('ok 16 途中で失敗したら登録を残し、同期も元に戻る');
+
+  /* 17. 削除すると、サーバーの記録と登録が消え、手元は残る。消したあとは送らない */
+  const keep = C.T.Vocab.count();
+  await C.T.Sync.deleteAccount(); await tick();
+  assert(C.deleted, '登録が消える');
+  assert(!Object.keys(server.docs).some(p => p.startsWith('users/' + UID + '/')), 'サーバーの記録が消える: ' + Object.keys(server.docs));
+  assert.strictEqual(C.T.Sync.status().account, null);
+  assert.strictEqual(C.T.Vocab.count(), keep, '既定では手元の記録は残す');
+  assert(!C.store['toeic.sync.rev'] && !C.store['toeic.sync.dirty'], '同期の印は消す');
+  const w17 = server.log.length;
+  C.T.Vocab.add({ term: 'after-delete', ja: '' });
+  await tick(3100);
+  assert.strictEqual(server.log.length, w17, '消したあとは送らない');
+  console.log('ok 17 削除でサーバーの記録と登録が消え、手元は残る');
+
+  /* 18. 「この端末の記録も消す」なら手元も消える。API キーは残す */
+  const D = makeDevice(server, { uid: 'u2', signedIn: true,
+    data: { vocab: [{ term: 'x', addedAt: '2026-09-01T00:00:00.000Z' }], days: ['2026-09-01'], gemini: { key: 'K', model: 'm' } } });
+  await settle(D);
+  assert(server.get('u2', 'vocab'));
+  await D.T.Sync.deleteAccount({ clearLocal: true }); await tick();
+  assert(!Object.keys(server.docs).some(p => p.startsWith('users/u2/')));
+  assert.strictEqual(D.raw('vocab'), null);
+  assert.strictEqual(D.raw('days'), null);
+  assert.strictEqual(D.raw('gemini').key, 'K', 'API キーは残す');
+  console.log('ok 18 この端末の記録も消せる（API キーは残す）');
 
   console.log('\nすべて通りました');
   process.exit(0);
