@@ -2,14 +2,14 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-10-04 d580683">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Eie68+D1qvBTApCIhBqcr1x6CnYz96JC283dj32NRDM=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://toeic-daily-7cea5.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="app-build" content="2026-10-04 1166501">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-eq1x+KekQupobPoKgPz9QLwoxWDlHO2ofnDemPV1er8=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://toeic-daily-7cea5.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>News | AkariEN</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=6d1ab101">
+<link rel="stylesheet" href="style.css?v=ebf7c7d7">
 <style>
 body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 
@@ -663,7 +663,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=7a46492a"></script>
+<script src="core.js?v=8dc59f54"></script>
 <script>
 (function () {
   'use strict';
@@ -1115,7 +1115,7 @@ details.src[open]>summary::before{content:"▾ ";}
           '<button class="btn btn-sm icon" id="stopAll" title="停止">■</button>' +
           '<button class="btn btn-sm icon' + (showJa ? ' on' : '') + '" id="toggleJa" title="' +
             (showJa ? '和訳を隠す' : '和訳を出す') + '">訳</button>' +
-          '<button class="btn btn-sm icon" id="copyAll" title="英文をすべてコピー">📋</button>' +
+          '<button class="btn btn-sm icon" id="copyAll" title="英文をすべてコピー" aria-label="英文をすべてコピー"><svg class="ico" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg></button>' +
         '</span></div>' +
       lineRows('sum') +
       '<hr class="sep">' +
@@ -1487,7 +1487,7 @@ details.src[open]>summary::before{content:"▾ ";}
     var rows = INDEX.length ? INDEX.map(function (it) {
       var cur = DATA && it.id === DATA.id;
       return '<p style="margin:0 0 4px"><a href="?id=' + encodeURIComponent(it.id) + '" style="color:inherit;text-decoration:none">' +
-        '<span class="chip chip-plain">' + esc((it.date || it.id) + (it.time ? ' ' + it.time : '')) + '</span> ' +
+        '<span class="pick-when">' + esc(String(it.date || it.id).replace(/^\d{4}-(\d\d)-(\d\d)$/, '$1/$2') + (it.time ? ' ' + it.time : '')) + '</span>' +
         (it.genre ? '<span class="chip">' + esc(it.genre) + '</span> ' : '') +
         (cur ? '<b>' : '') + esc(it.title || it.id) + (cur ? '</b>' : '') +
         (it.local ? ' <span class="muted small">（取り込み）</span>' : '') + '</a></p>';

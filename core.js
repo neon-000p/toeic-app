@@ -656,18 +656,20 @@
       el.addEventListener('click', function () { openSettings(); });
     }
 
-    /* 教材ページ用の小さな表示。歯車の右上に色の点だけを付ける（色はホームと同じ）。
-       見出しの横に言葉を並べる幅は無いので、詳しくは歯車を押して設定で見る */
+    /* 教材ページ用の小さな表示。歯車のボタンを小さな丸い札にして、中に色の点を並べる。
+       形と色はホームの「● ログイン中」と同じ。見出しの横に言葉を並べる幅は無いので点だけにし、
+       詳しくは歯車を押して設定で見る */
     function dot(btn) {
       var d = document.createElement('span');
+      d.className = 'dot';
       d.setAttribute('aria-hidden', 'true');
-      btn.appendChild(d);
+      btn.insertBefore(d, btn.firstChild);
       var base = btn.getAttribute('title') || '設定';
       watch(function () {
         var l = look();
-        if (!l) { d.className = 'sync-dot'; d.hidden = true; btn.title = base; return; }
+        if (!l) { btn.className = 'icon-btn'; d.hidden = true; btn.title = base; return; }
         d.hidden = false;
-        d.className = 'sync-dot ' + l[0];
+        btn.className = 'icon-btn cfg-sync ' + l[0];
         btn.title = base + '（' + l[1] + '）';
         btn.setAttribute('aria-label', btn.title);
       });
