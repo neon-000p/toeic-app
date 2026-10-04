@@ -626,29 +626,55 @@
 
     /* ログイン状態の小さな表示。ホームの歯車の隣に置き、押すと設定を開く。
        同期が使えない環境（未設定・ファイル直開き）では出さない */
-    function badge(el) {
-      var LABEL = {
-        busy: ['sync', '同期中…'], idle: ['on', 'ログイン中'],
-        offline: ['warn', 'オフライン'], error: ['bad', '同期エラー']
-      };
-      function draw() {
-        var st = status();
-        if (!st.configured || !st.available) { el.hidden = true; return; }
-        el.hidden = false;
-        var l = !st.account ? ['off', '未ログイン'] : LABEL[st.phase] || LABEL.idle;
-        el.className = 'sync-pill ' + l[0];
-        el.innerHTML = '<span class="dot"></span>' + l[1];
-        el.title = st.account
-          ? (st.account.email || st.account.name || '') + (st.msg ? '\n' + st.msg : '')
-          : 'Google でログインすると、ほかの端末と記録を共有できます';
-      }
+    var LOOK = {
+      busy: ['sync', '同期中…'], idle: ['on', 'ログイン中'],
+      offline: ['warn', 'オフライン'], error: ['bad', '同期エラー']
+    };
+    /* いまの状態を [色の種類, 短い言葉, 詳しい説明] で返す。表示しない環境では null */
+    function look() {
+      var st = status();
+      if (!st.configured || !st.available) return null;
+      var l = !st.account ? ['off', '未ログイン'] : LOOK[st.phase] || LOOK.idle;
+      return [l[0], l[1], st.account
+        ? (st.account.email || st.account.name || '') + (st.msg ? '\n' + st.msg : '')
+        : 'Google でログインすると、ほかの端末と記録を共有できます'];
+    }
+    function watch(draw) {
       draw();
       global.addEventListener('toeic:syncstate', draw);
+    }
+
+    function badge(el) {
+      watch(function () {
+        var l = look();
+        if (!l) { el.hidden = true; return; }
+        el.hidden = false;
+        el.className = 'sync-pill ' + l[0];
+        el.innerHTML = '<span class="dot"></span>' + l[1];
+        el.title = l[2];
+      });
       el.addEventListener('click', function () { openSettings(); });
     }
 
+    /* 教材ページ用の小さな表示。歯車の右上に色の点だけを付ける（色はホームと同じ）。
+       見出しの横に言葉を並べる幅は無いので、詳しくは歯車を押して設定で見る */
+    function dot(btn) {
+      var d = document.createElement('span');
+      d.setAttribute('aria-hidden', 'true');
+      btn.appendChild(d);
+      var base = btn.getAttribute('title') || '設定';
+      watch(function () {
+        var l = look();
+        if (!l) { d.className = 'sync-dot'; d.hidden = true; btn.title = base; return; }
+        d.hidden = false;
+        d.className = 'sync-dot ' + l[0];
+        btn.title = base + '（' + l[1] + '）';
+        btn.setAttribute('aria-label', btn.title);
+      });
+    }
+
     return {
-      touch: touch, init: init, run: function () { return run(true); }, badge: badge,
+      touch: touch, init: init, run: function () { return run(true); }, badge: badge, dot: dot,
       signIn: signIn, signOut: signOut, status: status, follow: followProgress,
       _merge: Merge
     };

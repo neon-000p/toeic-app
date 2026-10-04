@@ -140,6 +140,20 @@ a.icon-btn{font-size:17px}
 @keyframes sync-blink{50%{opacity:.25}}
 @media (prefers-reduced-motion:reduce){.sync-pill.sync .dot{animation:none}}
 
+/* 教材ページの歯車の右上に付ける点。色の意味は .sync-pill と同じ */
+#btnCfg{position:relative}
+.sync-dot{
+  position:absolute;top:-3px;right:-3px;width:10px;height:10px;border-radius:50%;
+  background:var(--muted);box-shadow:0 0 0 2px var(--surface);pointer-events:none;
+}
+.sync-dot[hidden]{display:none}
+.sync-dot.on{background:var(--ok)}
+.sync-dot.sync{background:var(--accent);animation:sync-blink 1s ease-in-out infinite}
+.sync-dot.warn{background:var(--mark)}
+.sync-dot.bad{background:var(--ng)}
+.sync-dot.off{background:var(--surface);border:2px solid var(--muted)}
+@media (prefers-reduced-motion:reduce){.sync-dot.sync{animation:none}}
+
 .choice .cja{display:block;font-family:var(--sans);font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.5}
 
 .chip{
