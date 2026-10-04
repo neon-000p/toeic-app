@@ -45,10 +45,13 @@
   /* ---------- 配色と明るさ ----------
      settings に入れるので、ログインしていればほかの端末でも同じ見た目になる。
      各ページの <head> にも同じ処理の短い版があり、描く前に当てている（ちらつかないように）。
-     配色を足すときは、style.css の色・ここ・<head> の短い版（正規表現）の3か所を直す。 */
+     配色を足すときは、style.css の色・ここ・<head> の短い版（正規表現）の3か所を直す。
+     既定は藍。まだ選んでいない人（palette が空）は藍で表示する。style.css の :root の色は
+     青緑のままなので、青緑だけは data-palette を付けない。既定を変えるときは <head> の短い版も直す。 */
+  var DEFAULT_PALETTE = 'indigo';
   var PALETTES = [
-    { id: 'teal', name: '青緑', light: '#0f766e', dark: '#43b3a6' },
     { id: 'indigo', name: '藍', light: '#2d5bb5', dark: '#5f8fe0' },
+    { id: 'teal', name: '青緑', light: '#0f766e', dark: '#43b3a6' },
     /* id の violet は以前の名残（藤）。保存済みの設定を生かすため変えない */
     { id: 'violet', name: '撫子', light: '#ad3b7c', dark: '#d673ab' },
     { id: 'sepia', name: '生成り', light: '#8b5a2b', dark: '#d9a46c' },
@@ -56,12 +59,12 @@
   ];
   var MODES = [{ id: 'auto', name: '自動' }, { id: 'light', name: 'ライト' }, { id: 'dark', name: 'ダーク' }];
   var Theme = {
-    palettes: PALETTES, modes: MODES,
+    palettes: PALETTES, modes: MODES, defaultPalette: DEFAULT_PALETTE,
     apply: function () {
       if (typeof document === 'undefined' || !document.documentElement) return;
       var d = document.documentElement, p = Settings.get('palette'), m = Settings.get('mode');
-      var known = PALETTES.some(function (x) { return x.id === p; });
-      if (known && p !== 'teal') d.setAttribute('data-palette', p); else d.removeAttribute('data-palette');
+      if (!PALETTES.some(function (x) { return x.id === p; })) p = DEFAULT_PALETTE;
+      if (p !== 'teal') d.setAttribute('data-palette', p); else d.removeAttribute('data-palette');
       if (m === 'light' || m === 'dark') d.setAttribute('data-theme', m); else d.removeAttribute('data-theme');
     }
   };
@@ -1439,7 +1442,7 @@
       '<h2>端末間の同期</h2>' +
       '<div id="syncBox"></div>';
 
-    var curPal = Settings.get('palette') || 'teal', curMode = Settings.get('mode') || 'auto';
+    var curPal = PALETTES.some(function (x) { return x.id === Settings.get('palette'); }) ? Settings.get('palette') : DEFAULT_PALETTE, curMode = Settings.get('mode') || 'auto';
     var viewHTML =
       '<hr class="sep">' +
       '<h2>表示</h2>' +
