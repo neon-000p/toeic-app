@@ -7,7 +7,7 @@ description: 最新の時事ニュースをWeb検索で自動取得し、TOEIC 5
 
 最新の時事ニュースをWeb検索で取得し、TOEIC 500〜600点（CEFR A2〜B1）レベルの日本人ビジネスパーソン向け英語学習教材を7セクション形式で作成する。
 
-Notion への保存まで行う場合は、本スキルで本文を作成したのち `news-toeic-english-notion` スキルの手順へ進む。
+教材はアプリのリポジトリ（ステップ5）にだけ書き出す。Notion には保存しない（`news-toeic-english-notion` スキルは使わない）。
 
 ---
 
