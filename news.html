@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-10-04 5e8cc5a">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-eq1x+KekQupobPoKgPz9QLwoxWDlHO2ofnDemPV1er8=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://toeic-daily-7cea5.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="app-build" content="2026-10-04 2c7f427">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-YiYK8IlhpOw9sAMdyLe+V8s70yT3iSpHZqodWEhS+mI=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://toeic-daily-7cea5.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>News | AkariEN</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -663,7 +663,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=46b113e4"></script>
+<script src="core.js?v=63393bf4"></script>
 <script>
 (function () {
   'use strict';
@@ -681,7 +681,7 @@ details.src[open]>summary::before{content:"▾ ";}
     { key: 'bg',    label: '背景' }
   ];
 
-  var DATA = null, INDEX = [], PACKS = {};
+  var DATA = null, INDEX = [];
   var step = 0, state = { answers: {}, graded: false, maxStep: 0, done: false };
   /* 今回の画面で選んだぶん。設問はこれだけを塗る */
   var fresh = {};
@@ -705,7 +705,6 @@ details.src[open]>summary::before{content:"▾ ";}
   }
 
   function boot() {
-    PACKS = T.read('news.packs', {}) || {};
     var want = new URLSearchParams(location.search).get('id');
 
     fetchJSON('data/news/index.json').then(function (idx) {
@@ -713,12 +712,6 @@ details.src[open]>summary::before{content:"▾ ";}
     }).catch(function () {
       INDEX = [];
     }).then(function () {
-      Object.keys(PACKS).forEach(function (id) {
-        if (!INDEX.some(function (it) { return it.id === id; })) {
-          var p = PACKS[id];
-          INDEX.push({ id: id, date: p.date || id, time: p.time || '', genre: p.genre || '', title: (p.title && p.title.ja) || id, local: true });
-        }
-      });
       INDEX.sort(function (a, b) { return (b.id || '').localeCompare(a.id || ''); });
       var id = want || (INDEX[0] && INDEX[0].id) || null;
       return load(id);
@@ -733,7 +726,6 @@ details.src[open]>summary::before{content:"▾ ";}
   }
 
   function load(id) {
-    if (id && PACKS[id]) return start(PACKS[id]);
     var item = INDEX.filter(function (it) { return it.id === id; })[0];
     if (!item) {
       var s = embeddedSample();
@@ -771,7 +763,7 @@ details.src[open]>summary::before{content:"▾ ";}
 
   function fail(e) {
     stage.innerHTML = '<div class="card"><div class="sec-label">読み込めません</div><p>' +
-      esc(e && e.message || e) + '</p><p class="small muted">⚙ から JSON を貼り付けて取り込むこともできます。</p></div>';
+      esc(e && e.message || e) + '</p></div>';
   }
 
   function save() {
@@ -1490,7 +1482,7 @@ details.src[open]>summary::before{content:"▾ ";}
         '<span class="pick-when">' + esc(String(it.date || it.id).replace(/^\d{4}-(\d\d)-(\d\d)$/, '$1/$2') + (it.time ? ' ' + it.time : '')) + '</span>' +
         (it.genre ? '<span class="chip">' + esc(it.genre) + '</span> ' : '') +
         (cur ? '<b>' : '') + esc(it.title || it.id) + (cur ? '</b>' : '') +
-        (it.local ? ' <span class="muted small">（取り込み）</span>' : '') + '</a></p>';
+        '</a></p>';
     }).join('') : '<p class="muted small">目次が読めませんでした。ローカルのファイルを直接開いた場合は読めません（内蔵サンプルで動作します）。</p>';
     modal('<h2>教材を選ぶ</h2>' + rows +
       '<div class="tool-row"><button class="btn btn-sm" id="mClose">閉じる</button></div>',
@@ -1506,14 +1498,7 @@ details.src[open]>summary::before{content:"▾ ";}
         '<p class="small muted" style="margin:-6px 0 8px">設問を開いている間だけ計ります。' +
         '0 にすると計りません。時間が来ても先へは進まず、目安として出るだけです。</p>' +
         '<label class="field"><span>時間　<b id="qsv">' + quizSec() + '</b> 秒</span>' +
-          '<input type="range" id="qsec" min="0" max="300" step="15" value="' + quizSec() + '"></label>' +
-        '<hr class="sep">' +
-        '<h2>教材を取り込む</h2>' +
-        '<p class="small muted" style="margin:-6px 0 8px">ルーティンが出力した JSON を貼り付けるか、ファイルを選びます。' +
-        '取り込んだ教材はこの端末に保存されます。</p>' +
-        '<textarea id="impText" placeholder="ここに JSON を貼り付け"></textarea>' +
-        '<div class="tool-row"><button class="btn btn-sm btn-primary" id="impGo">取り込む</button>' +
-          '<input type="file" id="impFile" accept=".json,application/json" class="small"></div>',
+          '<input type="range" id="qsec" min="0" max="300" step="15" value="' + quizSec() + '"></label>',
       extraButtons: '<button class="btn btn-sm" id="cfgReset">この教材の記録を消す</button>',
       onMount: function (bg) {
         var r = bg.querySelector('#qsec');
@@ -1521,14 +1506,6 @@ details.src[open]>summary::before{content:"▾ ";}
           T.Settings.set('newsSec', parseInt(r.value, 10));
           bg.querySelector('#qsv').textContent = r.value;
           syncQuizTimer();
-        };
-        bg.querySelector('#impGo').onclick = function () { doImport(bg.querySelector('#impText').value, bg); };
-        bg.querySelector('#impFile').onchange = function (e) {
-          var f = e.target.files && e.target.files[0];
-          if (!f) return;
-          var fr = new FileReader();
-          fr.onload = function () { doImport(String(fr.result), bg); };
-          fr.readAsText(f);
         };
         bg.querySelector('#cfgReset').onclick = function () {
           T.Log.clearProgress(progKey);
@@ -1543,31 +1520,6 @@ details.src[open]>summary::before{content:"▾ ";}
       }
     });
   });
-
-  function doImport(text, bg) {
-    var d;
-    try { d = JSON.parse(text); }
-    catch (e) { T.toast('JSON として読めません'); return; }
-    var bad = validate(d);
-    if (bad) { T.toast(bad); return; }
-    PACKS[d.id] = d;
-    if (!T.write('news.packs', PACKS)) { T.toast('保存できませんでした（容量）'); return; }
-    bg.remove();
-    location.search = '?id=' + encodeURIComponent(d.id);
-  }
-
-  function validate(d) {
-    if (!d || d.type !== 'news') return 'type が news ではありません';
-    if (!d.id) return 'id がありません';
-    if (!d.summary || !Array.isArray(d.summary.paragraphs) || !d.summary.paragraphs.length) return 'summary がありません';
-    if (!Array.isArray(d.questions) || !d.questions.length) return 'questions がありません';
-    for (var i = 0; i < d.questions.length; i++) {
-      var q = d.questions[i];
-      if (!Array.isArray(q.choices) || !q.choices.length) return 'Q' + (i + 1) + ' の選択肢がありません';
-      if (!q.choices.some(function (c) { return c.key === q.answer; })) return 'Q' + (i + 1) + ' の answer が選択肢と一致しません';
-    }
-    return null;
-  }
 
   /* 文中をなぞって選ぶと「意味」のボタンが出る。熟語はタップでは指せないため */
   T.watchSelection(stage, {

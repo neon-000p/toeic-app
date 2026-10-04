@@ -747,7 +747,7 @@
     },
     /* 取り込みは足し合わせ。この端末にあるものは消さない。
        語は無いものだけ足し、進み具合は教材ごとに新しいほう（同期と同じ決め方）、
-       学習日は両方を合わせる。それ以外（設定・取り込んだ教材・キャッシュ）は無い項目だけ足す。
+       学習日は両方を合わせる。それ以外（設定・キャッシュなど）は無い項目だけ足す。
        以前の語彙帳だけの書き出し（配列）もそのまま受け付ける。 */
     restore: function (obj) {
       if (Array.isArray(obj)) obj = { app: BACKUP_APP, data: { vocab: obj } };
@@ -780,7 +780,7 @@
         var inc = d[k], cur = read(k, undefined);
         if (k === 'gemini' && inc && typeof inc === 'object') delete inc.key;
         if (cur === undefined) { write(k, inc); res.other++; return; }
-        /* 設定・取り込んだ教材・キャッシュなど。無い項目だけ足す */
+        /* 設定・キャッシュなど。無い項目だけ足す */
         if (cur && inc && typeof cur === 'object' && typeof inc === 'object' &&
             !Array.isArray(cur) && !Array.isArray(inc)) {
           var added = false;
