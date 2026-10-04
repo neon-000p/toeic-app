@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-05-0539",
+  "date": "2026-10-05",
+  "time": "05:39",
+  "createdAt": "2026-10-05T05:39:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment",
+  "sample": false,
+  "title": {
+    "en": "U.S. Hiring Slows Sharply in September",
+    "ja": "米雇用、9月は大幅に鈍化"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The U.S. Labor Department said employers added only 29,000 jobs in September.",
+            "ja": "米労働省は、9月に雇用主が増やした雇用はわずか2万9,000人だったと発表した。"
+          },
+          {
+            "en": "Economists had expected about 90,000 new jobs.",
+            "ja": "エコノミストは約9万人の増加を見込んでいた。"
+          },
+          {
+            "en": "The unemployment rate rose to 4.2 percent from 4.1 percent in August.",
+            "ja": "失業率は8月の4.1％から4.2％に上昇した。"
+          },
+          {
+            "en": "Finance companies alone cut 16,000 positions.",
+            "ja": "金融業界だけで1万6,000の職が削減された。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Analysts describe the market as one with low hiring and few layoffs.",
+            "ja": "アナリストは、この労働市場を「採用も少なく、解雇も少ない」状態だと表現している。"
+          },
+          {
+            "en": "Companies are not firing many workers, but they are also slow to recruit new ones.",
+            "ja": "企業は多くの従業員を解雇してはいないが、新たな人材の採用にも消極的だ。"
+          },
+          {
+            "en": "As a result, people who lose a job may need months to find another.",
+            "ja": "その結果、職を失った人が次の仕事を見つけるまでに数か月かかることもある。"
+          },
+          {
+            "en": "Wage growth also cooled, with average hourly pay up just 3 percent from a year earlier.",
+            "ja": "賃金の伸びも鈍化し、平均時給は前年同月比でわずか3％の上昇にとどまった。"
+          },
+          {
+            "en": "Investors now expect the Federal Reserve to keep interest rates unchanged later this month.",
+            "ja": "投資家は現在、米連邦準備制度理事会が今月後半に金利を据え置くと見ている。"
+          },
+          {
+            "en": "Many businesses are waiting for clearer demand before they expand their workforce.",
+            "ja": "多くの企業は、人員を増やす前に、より明確な需要が見えるのを待っている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many jobs did employers add in September?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "9,000",
+          "ja": "9,000人"
+        },
+        {
+          "key": "B",
+          "text": "29,000",
+          "ja": "2万9,000人"
+        },
+        {
+          "key": "C",
+          "text": "90,000",
+          "ja": "9万人"
+        },
+        {
+          "key": "D",
+          "text": "16,000",
+          "ja": "1万6,000人"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落の1文目に「employers added only 29,000 jobs in September」とある。Aは本文にない数字。Cの90,000は「エコノミストの予想」であり実際の数字ではない。Dの16,000は金融業界が削減した職の数で、増えた雇用ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "数字問題は選択肢に本文の別の数字が混ぜてある。その数字が「何の数字か」（実績・予想・削減数）まで確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why may people who lose a job need months to find another?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Companies are firing many workers.",
+          "ja": "企業が多くの人を解雇している"
+        },
+        {
+          "key": "B",
+          "text": "Companies are slow to recruit new workers.",
+          "ja": "企業は採用に消極的だ"
+        },
+        {
+          "key": "C",
+          "text": "Wages have risen sharply.",
+          "ja": "賃金が急上昇した"
+        },
+        {
+          "key": "D",
+          "text": "Interest rates have been raised.",
+          "ja": "金利が引き上げられた"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落2文目に「Companies are not firing many workers, but they are also slow to recruit new ones.」とあり、採用が遅いことが理由。Aは本文と逆（多くは解雇していない）。Cは賃金の伸びは鈍化したと書かれている。Dは金利は据え置き見通しで、引き上げの記述はない。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由問題は「As a result」の直前に原因があることが多い。本文と逆の内容の選択肢は典型的な引っかけ。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "employers",
+      "pos": "名",
+      "ja": "雇用主、雇い主",
+      "gloss": "",
+      "example": {
+        "en": "Employers must provide a safe workplace.",
+        "ja": "雇用主は安全な職場を提供しなければならない。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "positions",
+      "pos": "名",
+      "ja": "職、ポスト",
+      "gloss": "",
+      "example": {
+        "en": "The firm has three open positions in its sales team.",
+        "ja": "その会社は営業チームに3つの欠員ポストがある。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "recruit",
+      "pos": "動",
+      "ja": "採用する、募集する",
+      "gloss": "",
+      "example": {
+        "en": "We plan to recruit ten engineers this year.",
+        "ja": "当社は今年10人のエンジニアを採用する予定だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for our new product is growing fast.",
+        "ja": "当社の新製品への需要は急速に伸びている。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "wage",
+      "pos": "名",
+      "ja": "賃金、時給",
+      "gloss": "（＝働いた時間に応じて支払われるお金のこと）",
+      "example": {
+        "en": "The union asked for a higher wage.",
+        "ja": "組合はより高い賃金を求めた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "workforce",
+      "pos": "名",
+      "ja": "従業員全体、労働力",
+      "gloss": "（＝その会社や国で働く人たち全員のこと）",
+      "example": {
+        "en": "The company has a workforce of 500 people.",
+        "ja": "その会社の従業員は500人だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "expand",
+      "pos": "動",
+      "ja": "拡大する、増やす",
+      "gloss": "",
+      "example": {
+        "en": "The retailer plans to expand its business overseas.",
+        "ja": "その小売業者は海外へ事業を拡大する計画だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "unchanged",
+      "pos": "形",
+      "ja": "変わらない、据え置きの",
+      "gloss": "",
+      "example": {
+        "en": "The price remained unchanged for two years.",
+        "ja": "その価格は2年間据え置かれた。"
+      }
+    }
+  ],
+  "glossary": {
+    "employers": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主",
+      "note": ""
+    },
+    "added": {
+      "lemma": "add",
+      "pos": "動",
+      "ja": "加えた",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "経済学者",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "unemployment": {
+      "lemma": "unemployment",
+      "pos": "名",
+      "ja": "失業",
+      "note": ""
+    },
+    "rate": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "率",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "finance": {
+      "lemma": "finance",
+      "pos": "名",
+      "ja": "金融",
+      "note": ""
+    },
+    "alone": {
+      "lemma": "alone",
+      "pos": "副",
+      "ja": "〜だけで",
+      "note": ""
+    },
+    "cut": {
+      "lemma": "cut",
+      "pos": "動",
+      "ja": "削減した",
+      "note": ""
+    },
+    "positions": {
+      "lemma": "position",
+      "pos": "名",
+      "ja": "職、ポスト",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "describe": {
+      "lemma": "describe",
+      "pos": "動",
+      "ja": "表現する",
+      "note": ""
+    },
+    "hiring": {
+      "lemma": "hiring",
+      "pos": "名",
+      "ja": "採用",
+      "note": ""
+    },
+    "layoffs": {
+      "lemma": "layoff",
+      "pos": "名",
+      "ja": "一時解雇",
+      "note": ""
+    },
+    "firing": {
+      "lemma": "fire",
+      "pos": "動",
+      "ja": "解雇する",
+      "note": ""
+    },
+    "recruit": {
+      "lemma": "recruit",
+      "pos": "動",
+      "ja": "採用する",
+      "note": ""
+    },
+    "result": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "結果",
+      "note": ""
+    },
+    "lose": {
+      "lemma": "lose",
+      "pos": "動",
+      "ja": "失う",
+      "note": ""
+    },
+    "wage": {
+      "lemma": "wage",
+      "pos": "名",
+      "ja": "賃金",
+      "note": ""
+    },
+    "cooled": {
+      "lemma": "cool",
+      "pos": "動",
+      "ja": "冷え込んだ",
+      "note": ""
+    },
+    "average": {
+      "lemma": "average",
+      "pos": "形",
+      "ja": "平均の",
+      "note": ""
+    },
+    "hourly": {
+      "lemma": "hourly",
+      "pos": "形",
+      "ja": "1時間あたりの",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "利子、金利",
+      "note": ""
+    },
+    "unchanged": {
+      "lemma": "unchanged",
+      "pos": "形",
+      "ja": "据え置きの",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "expand": {
+      "lemma": "expand",
+      "pos": "動",
+      "ja": "拡大する",
+      "note": ""
+    },
+    "workforce": {
+      "lemma": "workforce",
+      "pos": "名",
+      "ja": "従業員全体",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "不定代名詞 one / ones（前に出た名詞の繰り返しを避ける）",
+    "quote": "Companies are not firing many workers, but they are also slow to recruit new ones.",
+    "quoteJa": "企業は多くの従業員を解雇してはいないが、新たな人材の採用にも消極的だ。",
+    "blocks": [
+      {
+        "heading": "構文：ones は workers の言い換え",
+        "body": "この文の new ones は new workers のこと。同じ名詞 workers を繰り返さないために、複数形の ones で受けている。単数なら one。「前に出た名詞と同じ種類の、不特定のもの」を指す。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Companies are slow to recruit new workers. ＝ Companies are slow to recruit new ones.　特定のものを指すときは one(s) ではなく it / them を使う。例：I like the plan, so I will approve it.（その案を承認する＝同じ案そのもの）。"
+      },
+      {
+        "heading": "TOEICでの注意点",
+        "body": "Part 5・7で one / ones が何を指すか問われる。直前の名詞を探し、数（単数・複数）が合うかを確認する。ones の前には new や used などの形容詞がつくことが多い。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "Our old printers are slow, so we will buy new ones.（古いプリンターは遅いので、新しいものを買う。）／ This offer is better than the previous one.（この提案は前回のものより良い。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 雇用統計とは",
+      "body": "米労働省が毎月発表する雇用統計は、景気を測る代表的な指標。非農業部門の雇用者数（nonfarm payrolls）は、農業以外で働く人が前月比でどれだけ増えたかを示す。今回の増加は2万9,000人で、予想の約9万人を大きく下回った。"
+    },
+    {
+      "heading": "📌「低採用・低解雇」の市場",
+      "body": "現在の米労働市場は、解雇は少ないが採用も少ない状態。仕事を持つ人は比較的安定している一方、失業中の人は次の職を見つけにくい。金融など高賃金のホワイトカラー職が減り、医療・サービス職に採用が集中する傾向が指摘されている。"
+    },
+    {
+      "heading": "📌 金融市場・投資家の視点",
+      "body": "雇用の鈍化と賃金の伸びの低下は、インフレ圧力の弱まりも意味する。そのため市場は、米連邦準備制度理事会（FRB）が今月の会合で金利を据え置くとの見方を強めている。弱い指標でも金利据え置き観測から株式市場が好感する場面がある点は押さえておきたい。"
+    },
+    {
+      "heading": "📌 日本・日本企業への示唆",
+      "body": "米国は日本の最大級の輸出先であり、米雇用の減速は個人消費と輸入需要の鈍化を通じて日本企業の業績に影響し得る。また、米金利の動向は日米金利差を通じて円相場に影響する。出張や駐在でも使える workforce、recruit、demand などの語は、日本の人事ニュースでも頻出する。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Labor market faltered in September as jobs increased by just 29,000, unemployment rate rose to 4.2%",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html",
+      "date": "2026-10-02"
+    },
+    {
+      "title": "September Jobs Report: Economy Adds 29K Vs. 90K Expected",
+      "publisher": "Benzinga",
+      "url": "https://www.benzinga.com/markets/economic-data/26/10/62131064/september-jobs-report-nonfarm-payrolls-unemployment-wages",
+      "date": "2026-10-02"
+    }
+  ]
+}
