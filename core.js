@@ -1354,8 +1354,9 @@
     var s = Settings.all();
 
     var voiceHTML =
-      '<h2>設定</h2>' +
-      '<label class="field"><span>読み上げの音声</span>' +
+      '<hr class="sep">' +
+      '<h2>読み上げ</h2>' +
+      '<label class="field"><span>音声</span>' +
         '<select id="cfgVoice"><option value="">自動で選ぶ</option></select></label>' +
       '<div class="small muted" id="cfgVoiceInfo" style="margin:-6px 0 12px"></div>' +
       '<label class="field"><span>速度 <b id="cfgRateV">' + Number(s.rate).toFixed(2) + '</b></span>' +
@@ -1376,13 +1377,14 @@
         '<button class="btn btn-sm" id="gClear">キーを消す</button></div>' +
       '<div class="small muted" id="gInfo" style="margin-top:8px"></div>';
 
+    /* ログイン状態をいちばん先に確かめられるよう、同期を先頭に置く。
+       各節に見出しがあるので、全体の「設定」という見出しは置かない */
     var syncHTML =
-      '<hr class="sep">' +
       '<h2>端末間の同期</h2>' +
       '<div id="syncBox"></div>';
 
     return modal(
-      voiceHTML + syncHTML + aiHTML +
+      syncHTML + voiceHTML + aiHTML +
       (opts.extraHTML ? '<hr class="sep">' + opts.extraHTML : '') +
       '<hr class="sep">' +
       '<div class="tool-row">' + (opts.extraButtons || '') +
