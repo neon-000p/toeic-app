@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-05-1639",
+  "date": "2026-10-05",
+  "time": "16:39",
+  "createdAt": "2026-10-05T16:39:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "Container Shipping Rates Peak but Stay High",
+    "ja": "コンテナ運賃、頭打ちも高止まり"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Container shipping rates remain very high, even though they have stopped rising.",
+            "ja": "コンテナ運賃は上昇が止まったものの、依然として非常に高い水準にある。"
+          },
+          {
+            "en": "Drewry said its global container index fell 1% last week to $4,434 per 40-foot container.",
+            "ja": "ドリューリーによると、世界のコンテナ指数は先週1%下落し、40フィートコンテナ1本あたり4,434ドルとなった。"
+          },
+          {
+            "en": "The cost of sending a container from Shanghai to Los Angeles stayed flat at $7,835.",
+            "ja": "上海からロサンゼルスへコンテナを送る費用は7,835ドルで横ばいだった。"
+          },
+          {
+            "en": "Rates for the US East Coast rose 1% to $10,428.",
+            "ja": "米国東海岸向けの運賃は1%上昇し、10,428ドルとなった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Analysts say demand is not strong, so rates have probably peaked.",
+            "ja": "アナリストは需要が強くないため、運賃はおそらく頭打ちになったと見ている。"
+          },
+          {
+            "en": "However, they do not expect a sharp fall.",
+            "ja": "しかし、急落するとは予想していない。"
+          },
+          {
+            "en": "Spot rates to the US are still more than four times higher than before the shipping crisis that began in February.",
+            "ja": "米国向けのスポット運賃は、2月に始まった海運危機の前と比べ、今も4倍以上高い。"
+          },
+          {
+            "en": "Port congestion in Asia may also last into 2027, which would limit available ships and keep costs high.",
+            "ja": "アジアの港湾混雑は2027年まで続く可能性もあり、そうなれば利用できる船が限られ、コストは高止まりする。"
+          },
+          {
+            "en": "Carriers are also cancelling some voyages to keep capacity tight.",
+            "ja": "船会社は輸送能力を絞るため、一部の航海も取りやめている。"
+          },
+          {
+            "en": "Importers should therefore expect elevated freight costs for the rest of the year.",
+            "ja": "したがって、輸入企業は今年いっぱい、高水準の運賃を覚悟すべきだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What was the global container index per 40-foot container?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$3,434",
+          "ja": "3,434ドル"
+        },
+        {
+          "key": "B",
+          "text": "$4,434",
+          "ja": "4,434ドル"
+        },
+        {
+          "key": "C",
+          "text": "$7,835",
+          "ja": "7,835ドル"
+        },
+        {
+          "key": "D",
+          "text": "$10,428",
+          "ja": "10,428ドル"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落の2文目に「世界のコンテナ指数は1%下落し、40フィートコンテナ1本あたり4,434ドル」とある。(C) 7,835ドルは上海〜ロサンゼルス間の運賃、(D) 10,428ドルは米国東海岸向けの運賃で、別の数字を使った引っかけ。(A) は本文にない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "Part 7では同じ段落に複数の数字が並ぶ。設問が問う対象（global index か特定航路か）を先に確認してから数字を拾う。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which is NOT mentioned as a reason rates may stay high?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Port congestion in Asia may continue.",
+          "ja": "アジアの港湾混雑が続く"
+        },
+        {
+          "key": "B",
+          "text": "Carriers are cancelling some voyages.",
+          "ja": "船会社が一部航海を中止"
+        },
+        {
+          "key": "C",
+          "text": "Demand is growing strongly.",
+          "ja": "需要が力強く伸びている"
+        },
+        {
+          "key": "D",
+          "text": "Rates are far above pre-crisis levels.",
+          "ja": "運賃が危機前を大きく上回る"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本文は「需要は強くない（demand is not strong）」と述べており、(C) は本文と逆の内容なので正解。(A) は港湾混雑が2027年まで続く可能性、(B) は船会社の欠航による輸送能力の調整、(D) は危機前の4倍以上という記述にそれぞれ対応しており、すべて言及されている。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "NOT問題は選択肢を1つずつ本文と照合し、「本文に書かれているもの」を消去していく。逆の内容の選択肢が正解になりやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "freight",
+      "pos": "名",
+      "ja": "貨物、運賃",
+      "gloss": "（＝船やトラックで運ぶ荷物、またはその運送料のこと）",
+      "example": {
+        "en": "The freight will arrive at the warehouse on Friday.",
+        "ja": "その貨物は金曜に倉庫へ到着する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "carrier",
+      "pos": "名",
+      "ja": "運送会社、船会社",
+      "gloss": "（＝荷物を運ぶ会社のこと）",
+      "example": {
+        "en": "We chose a carrier that offers faster delivery.",
+        "ja": "私たちはより早く届けてくれる運送会社を選んだ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "capacity",
+      "pos": "名",
+      "ja": "能力、収容量",
+      "gloss": "",
+      "example": {
+        "en": "The factory is running at full capacity.",
+        "ja": "その工場はフル稼働している。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "congestion",
+      "pos": "名",
+      "ja": "混雑、渋滞",
+      "gloss": "",
+      "example": {
+        "en": "Traffic congestion delayed the delivery by two hours.",
+        "ja": "交通渋滞で配達が2時間遅れた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "importer",
+      "pos": "名",
+      "ja": "輸入業者",
+      "gloss": "",
+      "example": {
+        "en": "The importer asked for a discount on large orders.",
+        "ja": "その輸入業者は大口注文の値引きを求めた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "elevated",
+      "pos": "形",
+      "ja": "高められた、高い水準の",
+      "gloss": "",
+      "example": {
+        "en": "Elevated costs have reduced our profit margin.",
+        "ja": "高止まりするコストが利益率を押し下げた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "crisis",
+      "pos": "名",
+      "ja": "危機",
+      "gloss": "",
+      "example": {
+        "en": "The company survived the financial crisis.",
+        "ja": "その会社は金融危機を乗り切った。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "peak",
+      "pos": "動",
+      "ja": "ピークに達する",
+      "gloss": "",
+      "example": {
+        "en": "Sales usually peak in December.",
+        "ja": "売上は通常12月にピークを迎える。"
+      }
+    }
+  ],
+  "glossary": {
+    "shipping": {
+      "lemma": "shipping",
+      "pos": "名",
+      "ja": "海運、輸送",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "運賃、料金",
+      "note": ""
+    },
+    "remain": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "〜のままである",
+      "note": ""
+    },
+    "stopped": {
+      "lemma": "stop",
+      "pos": "動",
+      "ja": "止まる",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇する",
+      "note": ""
+    },
+    "container": {
+      "lemma": "container",
+      "pos": "名",
+      "ja": "コンテナ",
+      "note": ""
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界的な",
+      "note": ""
+    },
+    "index": {
+      "lemma": "index",
+      "pos": "名",
+      "ja": "指数",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "cost": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "flat": {
+      "lemma": "flat",
+      "pos": "形",
+      "ja": "横ばいの",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "peaked": {
+      "lemma": "peak",
+      "pos": "動",
+      "ja": "ピークに達した",
+      "note": ""
+    },
+    "probably": {
+      "lemma": "probably",
+      "pos": "副",
+      "ja": "おそらく",
+      "note": ""
+    },
+    "sharp": {
+      "lemma": "sharp",
+      "pos": "形",
+      "ja": "急激な",
+      "note": ""
+    },
+    "spot": {
+      "lemma": "spot",
+      "pos": "形",
+      "ja": "スポット（随時契約）の",
+      "note": "spot rate＝随時契約の運賃"
+    },
+    "crisis": {
+      "lemma": "crisis",
+      "pos": "名",
+      "ja": "危機",
+      "note": ""
+    },
+    "congestion": {
+      "lemma": "congestion",
+      "pos": "名",
+      "ja": "混雑",
+      "note": ""
+    },
+    "limit": {
+      "lemma": "limit",
+      "pos": "動",
+      "ja": "制限する",
+      "note": ""
+    },
+    "available": {
+      "lemma": "available",
+      "pos": "形",
+      "ja": "利用可能な",
+      "note": ""
+    },
+    "carriers": {
+      "lemma": "carrier",
+      "pos": "名",
+      "ja": "船会社",
+      "note": ""
+    },
+    "cancelling": {
+      "lemma": "cancel",
+      "pos": "動",
+      "ja": "取り消す",
+      "note": ""
+    },
+    "voyages": {
+      "lemma": "voyage",
+      "pos": "名",
+      "ja": "航海",
+      "note": ""
+    },
+    "capacity": {
+      "lemma": "capacity",
+      "pos": "名",
+      "ja": "輸送能力",
+      "note": ""
+    },
+    "tight": {
+      "lemma": "tight",
+      "pos": "形",
+      "ja": "逼迫した",
+      "note": ""
+    },
+    "importers": {
+      "lemma": "importer",
+      "pos": "名",
+      "ja": "輸入業者",
+      "note": ""
+    },
+    "elevated": {
+      "lemma": "elevated",
+      "pos": "形",
+      "ja": "高水準の",
+      "note": ""
+    },
+    "freight": {
+      "lemma": "freight",
+      "pos": "名",
+      "ja": "運賃、貨物",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "倍数表現（X times higher than ...）",
+    "quote": "Spot rates to the US are still more than four times higher than before the shipping crisis that began in February.",
+    "quoteJa": "米国向けのスポット運賃は、2月に始まった海運危機の前と比べ、今も4倍以上高い。",
+    "blocks": [
+      {
+        "heading": "構文：倍数＋比較級＋than",
+        "body": "「A is four times higher than B」は「AはBの4倍高い」という倍数表現です。倍数（two times / three times / four times）を比較級の前に置き、than で比較対象を続けます。本文は more than ～（～以上）が付いて「4倍超」の意味になっています。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Rates are more than four times as high as before.（as ～ as 型）とほぼ同じ意味です。倍数表現には「倍数＋as 原級 as」「倍数＋比較級＋than」の2型があり、どちらも倍数が先頭側に来ます。なお2倍は twice、半分は half を使い、twice as high as の形が一般的です。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では空所に as / than のどちらが入るかを問う問題（three times as large ( ) last year）が出ます。as ～ as 型なら as、比較級型なら than、と対応を確認しましょう。Part 7 では「2倍に増えた」「半分に減った」などの数字の読み取りに関わります。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "Our shipping costs are twice as high as last year's. （当社の輸送費は昨年の2倍だ。）／ The new warehouse is three times larger than the old one. （新倉庫は旧倉庫の3倍の広さだ。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 運賃の見方：スポット運賃とは",
+      "body": "コンテナ運賃には、長期契約で決める「契約運賃」と、その時々の需給で決まる「スポット運賃」があります。スポット運賃は相場の変化にすばやく反応するため、荷主にとっては市況の温度計です。ドリューリーの世界コンテナ指数は、主要航路のスポット運賃を平均した代表的な指標です。"
+    },
+    {
+      "heading": "📌 なぜ運賃は下がりにくいのか",
+      "body": "本文では需要は弱いのに運賃が高止まりしています。理由は供給側の調整です。船会社は一部の航海を休止（ブランク・セーリング）して船腹を絞り、運賃を維持しようとします。さらにアジアの港湾混雑で船の回転が悪くなり、実質的に使える船が減っています。"
+    },
+    {
+      "heading": "📌 業界全体の動き",
+      "body": "2月に始まった中東の海運危機で、船が迂回や遅延を強いられ、米国向けの運賃は危機前の4倍超に跳ね上がりました。ピークは過ぎたとの見方が出ていますが、荷主は今年いっぱい高い運賃を覚悟する必要があるというのが業界の大方の見方です。"
+    },
+    {
+      "heading": "📌 日本・日本企業への影響",
+      "body": "資源や部品、消費財の多くを海上輸送に頼る日本企業にとって、運賃高止まりは仕入れコストの上昇につながります。特に米国向けに輸出する製造業や、アジアから部品を調達する企業は、価格転嫁や調達先の分散、在庫水準の見直しを迫られます。投資家の視点では、海運会社の業績には追い風、荷主企業の利益率には逆風という二面性に注意が必要です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "World Container Index – 1 October 2026",
+      "publisher": "DCN",
+      "url": "https://thedcn.com.au/news/world-container-index-1-october-2026",
+      "date": "2026-10-01"
+    },
+    {
+      "title": "Container congestion in Asia seen to persist into '27, freight rates soar",
+      "publisher": "BusinessMirror",
+      "url": "https://businessmirror.com.ph/2026/10/02/container-congestion-in-asia-seen-to-persist-into-27-freight-rates-soar",
+      "date": "2026-10-02"
+    }
+  ]
+}
