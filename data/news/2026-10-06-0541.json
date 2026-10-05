@@ -452,5 +452,23 @@
       "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
       "date": "2026-09-16"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-06-0541/00.mp3",
+      "audio/2026-10-06-0541/01.mp3",
+      "audio/2026-10-06-0541/02.mp3",
+      "audio/2026-10-06-0541/03.mp3",
+      "audio/2026-10-06-0541/04.mp3",
+      "audio/2026-10-06-0541/05.mp3",
+      "audio/2026-10-06-0541/06.mp3",
+      "audio/2026-10-06-0541/07.mp3",
+      "audio/2026-10-06-0541/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 236277,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-05T20:43:36.656Z",
+    "trimmed": true
+  }
 }
