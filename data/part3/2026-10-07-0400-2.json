@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-07-0400-2",
+  "date": "2026-10-07",
+  "time": "04:00",
+  "scene": "オフィス移転｜引っ越し日程と荷造りの遅れ",
+  "speakers": [
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-CA"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-GB"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "M",
+      "en": "I just spoke with the moving company about our relocation to the Parkview building.",
+      "ja": "引っ越し業者と、パークビューのビルへの移転について話したところです。"
+    },
+    {
+      "tag": "W",
+      "en": "Great. Did they confirm the date? I told the staff we'd be in by the end of the month.",
+      "ja": "よかった。日程は確定しましたか。月末までには入居すると社員に伝えてあります。"
+    },
+    {
+      "tag": "M",
+      "en": "They can move us on the twenty-eighth, which is a Saturday, but all boxes must be labeled by Thursday.",
+      "ja": "28日の土曜に運んでもらえますが、木曜までにすべての箱にラベルを付ける必要があります。"
+    },
+    {
+      "tag": "W",
+      "en": "That's tight. Some departments are still tied up with quarter-end reports.",
+      "ja": "厳しいですね。まだ四半期末の報告書で手一杯の部署があります。"
+    },
+    {
+      "tag": "M",
+      "en": "I know. The sales team has packed only about half of its desks so far.",
+      "ja": "わかっています。営業チームは、これまでに机の半分ほどしか荷造りしていません。"
+    },
+    {
+      "tag": "W",
+      "en": "Then please send a reminder to every department head today and ask them to wrap up packing by Wednesday.",
+      "ja": "では今日、全部署の責任者にリマインダーを送って、水曜までに荷造りを終えるよう頼んでください。"
+    },
+    {
+      "tag": "M",
+      "en": "Will do. Should I also tell people to take home anything valuable?",
+      "ja": "わかりました。貴重品は持ち帰るようにも伝えましょうか。"
+    },
+    {
+      "tag": "W",
+      "en": "Yes, and let them know the phones will be offline from Friday afternoon, so urgent calls should go to their mobiles.",
+      "ja": "ええ。それと、金曜の午後から電話が使えなくなるので、急ぎの電話は携帯にかけるよう知らせてください。"
+    },
+    {
+      "tag": "M",
+      "en": "Understood. I'll include that in the message.",
+      "ja": "了解です。その内容も連絡文に入れます。"
+    },
+    {
+      "tag": "W",
+      "en": "Thanks. I'll walk through the new floor plan with the facilities manager tomorrow.",
+      "ja": "ありがとう。私は明日、施設担当者と新しいフロアの配置図を確認して回ります。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hiring a moving company",
+          "ja": "引っ越し業者の手配"
+        },
+        {
+          "key": "B",
+          "text": "Cleaning a vacant building",
+          "ja": "空きビルの清掃"
+        },
+        {
+          "key": "C",
+          "text": "Preparing to relocate an office",
+          "ja": "オフィス移転の準備"
+        },
+        {
+          "key": "D",
+          "text": "Setting up new phone lines",
+          "ja": "新しい電話回線の設置"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "男性は冒頭で relocation to the Parkview building について業者と話したと報告し、女性も月末の入居に触れている。会話は移転の準備全般である。業者の話は出るが、すでに話がついた段階で、手配が話題ではない。",
+      "tip": "relocation は move の言い換え。最初の2行で話題を押さえ、後に出る業者や電話の話題は部分と見る。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What problem do the speakers mention?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The new building is not ready",
+          "ja": "新しいビルの準備ができていない"
+        },
+        {
+          "key": "B",
+          "text": "Some staff have not finished packing",
+          "ja": "荷造りが終わっていない社員がいる"
+        },
+        {
+          "key": "C",
+          "text": "The moving company is unavailable",
+          "ja": "引っ越し業者が空いていない"
+        },
+        {
+          "key": "D",
+          "text": "The boxes have not arrived",
+          "ja": "箱がまだ届いていない"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "女性は部署が quarter-end reports で tied up だと述べ、男性は営業チームが半分ほどしか荷造りを終えていないと続ける。つまり荷造りの遅れが問題である。業者は28日に動けると言っており、利用できないわけではない。",
+      "tip": "問題の指摘は That's tight のような反応の語から始まる。その直後の2行が根拠になる。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What does the woman imply about the office phones?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They will be moved on Friday",
+          "ja": "金曜に移設される"
+        },
+        {
+          "key": "B",
+          "text": "They will be replaced with mobiles",
+          "ja": "携帯電話に置き換えられる"
+        },
+        {
+          "key": "C",
+          "text": "They will be forwarded to the front desk",
+          "ja": "受付に転送される"
+        },
+        {
+          "key": "D",
+          "text": "They will not work for a while",
+          "ja": "しばらく使えなくなる"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        7
+      ],
+      "explanation": "the phones will be offline from Friday afternoon とあり、移転の間は固定電話が使えなくなる。そのため急ぎの電話は携帯へと案内している。携帯に置き換えるとは言っておらず、あくまで代わりに使うよう勧めただけである。",
+      "tip": "offline のような語は、選択肢では not work に言い換えられる。so のあとの対策から、前の状況を逆算する。"
+    }
+  ],
+  "glossary": {
+    "relocation": {
+      "lemma": "relocation",
+      "pos": "名",
+      "ja": "移転、配置転換",
+      "note": "move の言い換え",
+      "example": {
+        "en": "The relocation to the new site will take two weeks.",
+        "ja": "新拠点への移転には2週間かかる。"
+      }
+    },
+    "labeled": {
+      "lemma": "label",
+      "pos": "動",
+      "ja": "ラベルを付ける",
+      "note": "",
+      "example": {
+        "en": "All samples must be labeled before they are shipped.",
+        "ja": "すべての見本は出荷前にラベルを付ける必要があります。"
+      }
+    },
+    "tied up": {
+      "lemma": "tie up",
+      "pos": "熟",
+      "ja": "手がふさがっている、忙しい",
+      "note": "busy の言い換え",
+      "example": {
+        "en": "The manager is tied up in meetings until noon.",
+        "ja": "部長は正午まで会議で手が離せません。"
+      }
+    },
+    "quarter-end reports": {
+      "lemma": "quarter-end report",
+      "pos": "熟",
+      "ja": "四半期末の報告書",
+      "note": "",
+      "example": {
+        "en": "The finance team is preparing the quarter-end reports.",
+        "ja": "経理チームは四半期末の報告書を準備している。"
+      }
+    },
+    "department head": {
+      "lemma": "department head",
+      "pos": "熟",
+      "ja": "部署の責任者",
+      "note": "manager に近い",
+      "example": {
+        "en": "Each department head must approve overtime in advance.",
+        "ja": "各部署の責任者は事前に残業を承認する必要があります。"
+      }
+    },
+    "reminder": {
+      "lemma": "reminder",
+      "pos": "名",
+      "ja": "念押しの連絡、リマインダー",
+      "note": "",
+      "example": {
+        "en": "I sent a reminder about the deadline to all staff.",
+        "ja": "私は締め切りについて全社員に念押しを送りました。"
+      }
+    },
+    "wrap up": {
+      "lemma": "wrap up",
+      "pos": "熟",
+      "ja": "終える、仕上げる",
+      "note": "finish の言い換え",
+      "example": {
+        "en": "Let's wrap up the survey by the end of the week.",
+        "ja": "調査は週末までに終わらせましょう。"
+      }
+    },
+    "offline": {
+      "lemma": "offline",
+      "pos": "形",
+      "ja": "使えない、接続が切れた",
+      "note": "本文では電話が通じない状態",
+      "example": {
+        "en": "The server will be offline for maintenance tonight.",
+        "ja": "サーバーは今夜、保守のため使えなくなります。"
+      }
+    },
+    "urgent": {
+      "lemma": "urgent",
+      "pos": "形",
+      "ja": "急ぎの、緊急の",
+      "note": "",
+      "example": {
+        "en": "Please forward any urgent requests to my assistant.",
+        "ja": "急ぎの依頼は私のアシスタントに回してください。"
+      }
+    },
+    "walk through": {
+      "lemma": "walk through",
+      "pos": "熟",
+      "ja": "順に確認して回る、手順を説明する",
+      "note": "go over に近い",
+      "example": {
+        "en": "The engineer will walk through the plans with the client.",
+        "ja": "技術者は顧客と一緒に図面を順に確認します。"
+      }
+    },
+    "floor plan": {
+      "lemma": "floor plan",
+      "pos": "熟",
+      "ja": "フロアの配置図、間取り図",
+      "note": "layout と同義",
+      "example": {
+        "en": "The floor plan shows where each team will sit.",
+        "ja": "配置図には各チームの席が示されている。"
+      }
+    }
+  },
+  "point": {
+    "flow": "報告（業者との確認）→ 制約の提示（ラベルの期限）→ 問題の発見（荷造りの遅れ）→ 指示（連絡と期限）→ 追加の注意と分担",
+    "items": [
+      {
+        "title": "報告で始まる会話は問題の指摘を待つ",
+        "body": "報告のあとに That's tight や I'm afraid のような反応が出たら、そこが本題。問題を問う設問の根拠は、その直後の2行にある。"
+      },
+      {
+        "title": "指示の会話は「誰に・何を・いつまで」を3点で拾う",
+        "body": "全部署に連絡する、水曜までに終える、というように宛先と期限が組になって出る。日付が複数出るときは、何の期限かを対にして聞く。"
+      },
+      {
+        "title": "推測問題は言い換えの先を読む",
+        "body": "offline のような語を、選択肢では「使えない」と言い換える。直接の言葉ではなく、前後の対策から状況を戻して考える。"
+      }
+    ]
+  }
+}

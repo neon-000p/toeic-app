@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-07-0400-1",
+  "date": "2026-10-07",
+  "time": "04:00",
+  "scene": "イベント運営｜会場とケータリングの決定",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-AU"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "I've narrowed down the venue for the client dinner to two options, the Lakeside Hall and the Grand Terrace.",
+      "ja": "顧客向けディナーの会場を、レイクサイドホールとグランドテラスの2つに絞り込みました。"
+    },
+    {
+      "tag": "M",
+      "en": "How do they compare? We're expecting about eighty guests, so capacity matters.",
+      "ja": "比べるとどうですか。招待客は約80人を見込んでいるので、収容人数が大事です。"
+    },
+    {
+      "tag": "W",
+      "en": "The Lakeside Hall seats ninety and costs $2,600, but catering is not included.",
+      "ja": "レイクサイドホールは90席で2,600ドルですが、料理は含まれていません。"
+    },
+    {
+      "tag": "M",
+      "en": "And the Grand Terrace?",
+      "ja": "グランドテラスはどうですか。"
+    },
+    {
+      "tag": "W",
+      "en": "It holds only seventy-five, although its $3,800 fee covers food and drinks.",
+      "ja": "75人しか入りませんが、3,800ドルの料金には飲食が含まれています。"
+    },
+    {
+      "tag": "M",
+      "en": "Seventy-five won't work if everyone shows up. I'd rather go with the Lakeside Hall and bring in our own caterer.",
+      "ja": "全員が来たら75人では足りません。レイクサイドホールにして、自前でケータリング業者を入れたいです。"
+    },
+    {
+      "tag": "W",
+      "en": "A caterer would run about nine hundred dollars, so we'd still come in under the Grand Terrace's price.",
+      "ja": "業者は900ドルほどかかりますが、それでもグランドテラスの料金は下回ります。"
+    },
+    {
+      "tag": "M",
+      "en": "Right. Could you make a tentative booking before the hall fills up? I'll call the caterer today.",
+      "ja": "そうですね。ホールが埋まる前に仮予約を入れてもらえますか。私は今日、業者に電話します。"
+    },
+    {
+      "tag": "W",
+      "en": "Will do. Please send me their menu by Wednesday so I can sign off on it.",
+      "ja": "わかりました。私が承認できるよう、水曜までに先方のメニューを送ってください。"
+    },
+    {
+      "tag": "M",
+      "en": "I'll have it to you first thing tomorrow.",
+      "ja": "明日の朝一番にお送りします。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hiring a catering company",
+          "ja": "ケータリング業者の採用"
+        },
+        {
+          "key": "B",
+          "text": "Choosing a location for an event",
+          "ja": "イベントの開催場所の選定"
+        },
+        {
+          "key": "C",
+          "text": "Inviting guests to a dinner",
+          "ja": "ディナーへの招待"
+        },
+        {
+          "key": "D",
+          "text": "Reducing an event budget",
+          "ja": "イベント予算の削減"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0
+      ],
+      "explanation": "女性は冒頭で、顧客向けディナーの venue を2つに絞ったと述べ、以降は2会場の比較が続く。つまり話題はイベントの場所選びである。業者の話は出るが、会場を決めたうえでの付随事項にすぎない。",
+      "tip": "冒頭1文で話題が決まる。venue は location の言い換えで、本文に出る caterer の話に引きずられない。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why does the man rule out the Grand Terrace?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Its fee is too high",
+          "ja": "料金が高すぎる"
+        },
+        {
+          "key": "B",
+          "text": "It does not serve food",
+          "ja": "料理を出さない"
+        },
+        {
+          "key": "C",
+          "text": "It is far from the office",
+          "ja": "会社から遠い"
+        },
+        {
+          "key": "D",
+          "text": "It cannot seat enough people",
+          "ja": "十分な人数が入れない"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        1,
+        4,
+        5
+      ],
+      "explanation": "男性は約80人の招待客を見込んでおり（2行目）、グランドテラスは75人までだと聞いて Seventy-five won't work と退けている。料金は確かに高いが、男性が理由に挙げたのは人数である。",
+      "tip": "理由は「でも」「だから」の直前直後にある。数字が2か所に出たら、80と75のように突き合わせる。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What does the woman ask the man to do?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Share a food list for her review",
+          "ja": "彼女の確認用に料理の一覧を渡す"
+        },
+        {
+          "key": "B",
+          "text": "Confirm the guest count",
+          "ja": "招待客数を確定する"
+        },
+        {
+          "key": "C",
+          "text": "Reserve the Lakeside Hall",
+          "ja": "レイクサイドホールを予約する"
+        },
+        {
+          "key": "D",
+          "text": "Call the Grand Terrace",
+          "ja": "グランドテラスに電話する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        8
+      ],
+      "explanation": "女性は send me their menu by Wednesday so I can sign off on it と頼んでいる。メニューを送り、承認を受ける形である。ホールの仮予約を頼んだのは男性のほうで、依頼の向きが逆になっている選択肢に注意する。",
+      "tip": "依頼は「誰が誰に」を確かめる。tentative booking は男性が女性に頼んだ内容で、女性の依頼ではない。"
+    }
+  ],
+  "glossary": {
+    "narrowed down": {
+      "lemma": "narrow down",
+      "pos": "熟",
+      "ja": "絞り込む",
+      "note": "reduce の言い換えに近い",
+      "example": {
+        "en": "We narrowed down the candidates to three finalists.",
+        "ja": "候補を最終の3人に絞り込んだ。"
+      }
+    },
+    "capacity": {
+      "lemma": "capacity",
+      "pos": "名",
+      "ja": "収容人数、定員",
+      "note": "seats や holds が同じ内容を表す",
+      "example": {
+        "en": "The meeting room has a capacity of twelve people.",
+        "ja": "その会議室の定員は12人です。"
+      }
+    },
+    "covers": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "（費用を）含む、まかなう",
+      "note": "be included の言い換え",
+      "example": {
+        "en": "The fee covers lunch and all course materials.",
+        "ja": "料金には昼食と全教材が含まれます。"
+      }
+    },
+    "shows up": {
+      "lemma": "show up",
+      "pos": "熟",
+      "ja": "現れる、来る",
+      "note": "come の言い換え",
+      "example": {
+        "en": "If nobody shows up, we will cancel the session.",
+        "ja": "誰も来なければ、その回は中止します。"
+      }
+    },
+    "go with": {
+      "lemma": "go with",
+      "pos": "熟",
+      "ja": "〜に決める、〜を選ぶ",
+      "note": "choose の言い換え",
+      "example": {
+        "en": "We decided to go with the cheaper supplier.",
+        "ja": "私たちは安いほうの仕入先に決めました。"
+      }
+    },
+    "bring in": {
+      "lemma": "bring in",
+      "pos": "熟",
+      "ja": "（人・業者を）呼ぶ、雇う",
+      "note": "hire に近い",
+      "example": {
+        "en": "The company brought in a consultant to improve sales.",
+        "ja": "会社は売上改善のためコンサルタントを招いた。"
+      }
+    },
+    "caterer": {
+      "lemma": "caterer",
+      "pos": "名",
+      "ja": "ケータリング業者",
+      "note": "catering（仕出し）とセットで覚える",
+      "example": {
+        "en": "The caterer will deliver the food at noon.",
+        "ja": "業者は正午に料理を届けます。"
+      }
+    },
+    "come in under": {
+      "lemma": "come in under",
+      "pos": "熟",
+      "ja": "〜を下回る、〜以内に収まる",
+      "note": "予算や見積りの比較で使う",
+      "example": {
+        "en": "The final cost came in under our original budget.",
+        "ja": "最終費用は当初の予算を下回った。"
+      }
+    },
+    "tentative booking": {
+      "lemma": "tentative booking",
+      "pos": "熟",
+      "ja": "仮予約",
+      "note": "tentative は「暫定的な」",
+      "example": {
+        "en": "I made a tentative booking for the conference room.",
+        "ja": "私は会議室を仮予約しました。"
+      }
+    },
+    "sign off on": {
+      "lemma": "sign off on",
+      "pos": "熟",
+      "ja": "承認する",
+      "note": "approve の言い換え",
+      "example": {
+        "en": "The manager must sign off on every expense report.",
+        "ja": "部長はすべての経費報告書を承認する必要があります。"
+      }
+    },
+    "first thing": {
+      "lemma": "first thing",
+      "pos": "熟",
+      "ja": "真っ先に、朝一番に",
+      "note": "first thing tomorrow で「明日の朝一番」",
+      "example": {
+        "en": "I'll call the supplier first thing on Monday.",
+        "ja": "月曜の朝一番に仕入先へ電話します。"
+      }
+    }
+  },
+  "point": {
+    "flow": "2案の提示 → 条件の比較（人数と料金）→ 一方を却下 → 決定と追加手配 → 役割分担と期限",
+    "items": [
+      {
+        "title": "2案が出たら比べる軸を先に拾う",
+        "body": "比較の会話では、人数・料金・含まれるものの3軸が順に出る。数字が出るたびに、どちらの案のどの軸かを頭の中で表にしておくと、理由を問う設問に答えられる。"
+      },
+      {
+        "title": "決め手になった理由は却下の言葉に出る",
+        "body": "won't work や I'd rather のあとに決め手が置かれる。有利な案の長所よりも、却下された案の弱点を聞く。"
+      },
+      {
+        "title": "締めの数行で担当と期限を仕分ける",
+        "body": "仮予約は一方、メニューの送付は他方というように、依頼と引き受けが交互に出る。次の行動の設問は、誰が誰に頼んだかで選ぶ。"
+      }
+    ]
+  }
+}
