@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-10-05 4d15d88">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EQZky+k1gQh6QMJGIRzx/w8aKR/sToE7dS39Y4ZJdsc=' 'sha256-YiYK8IlhpOw9sAMdyLe+V8s70yT3iSpHZqodWEhS+mI=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://toeic-daily-7cea5.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="app-build" content="2026-10-06 c0369f3">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EQZky+k1gQh6QMJGIRzx/w8aKR/sToE7dS39Y4ZJdsc=' 'sha256-0ROKJxmY49r3aMndgxMGuXV2WX+1Ol2KsdlnA7vAhrA=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://toeic-daily-7cea5.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>News | AkariEN</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -665,7 +665,7 @@ details.src[open]>summary::before{content:"▾ ";}
   "sources": []
 }
 </script>
-<script src="core.js?v=06e377cf"></script>
+<script src="core.js?v=71f3236e"></script>
 <script>
 (function () {
   'use strict';
@@ -1226,8 +1226,6 @@ details.src[open]>summary::before{content:"▾ ";}
     }
   }
 
-  var sentAudio = null;
-
   /* 先に作ってリポジトリに置いた文ごとの音声。
      並びは flatSummary と同じなので、data-i がそのまま添字になる。 */
   function sentURL(i) {
@@ -1235,28 +1233,10 @@ details.src[open]>summary::before{content:"▾ ";}
     return a && a.lines && a.lines[i] ? 'data/news/' + a.lines[i] : '';
   }
 
-  function stopSentAudio() {
-    if (!sentAudio) return;
-    try { sentAudio.pause(); } catch (e) {}
-    sentAudio.onended = sentAudio.onerror = null;
-    sentAudio = null;
-  }
-
   /* 用意された音声があればそれを、無ければ端末の読み上げを使う。
-     音声待ちの教材でも読めなくならないようにするため。 */
-  /* 次の1文を先に読み込んでおく。鳴り終わってから読み始めると、
-     その待ち時間ぶん文と文の間が空いてしまう。 */
-  var nextClip = null;
-
-  function preload(i) {
-    var url = sentURL(i);
-    if (!url) { nextClip = null; return; }
-    var a = new Audio();
-    a.preload = 'auto';
-    a.src = url;
-    nextClip = { url: url, el: a };
-  }
-
+     音声待ちの教材でも読めなくならないようにするため。
+     録音済みの音声は core.js の Clip（1つのプレーヤー）で鳴らす。画面を消しても続きやすく、
+     次の1文も先に取り寄せておくので、文と文の間が延びない。 */
   function saySent(i, onend) {
     var ss = linesFor();
     if (!ss[i]) { if (onend) onend(); return; }
@@ -1266,23 +1246,12 @@ details.src[open]>summary::before{content:"▾ ";}
       T.TTS.speak(ss[i].en, { rate: T.Settings.get('rate'), onend: onend });
       return;
     }
-
-    stopSentAudio();
-    var a = (nextClip && nextClip.url === url) ? nextClip.el : new Audio(url);
-    nextClip = null;
-    preload(i + 1);
-    sentAudio = a;
-    a.playbackRate = T.Settings.get('rate') || 1;
-    var fell = false;
-    var fallback = function () {
-      if (fell) return;
-      fell = true;
-      stopSentAudio();
-      T.TTS.speak(ss[i].en, { rate: T.Settings.get('rate'), onend: onend });
-    };
-    a.onended = function () { stopSentAudio(); if (onend) onend(); };
-    a.onerror = fallback;
-    a.play().catch(fallback);
+    T.Clip.preload(sentURL(i + 1));
+    T.Clip.play(url, {
+      rate: T.Settings.get('rate') || 1,
+      onend: onend,
+      onerror: function () { T.TTS.speak(ss[i].en, { rate: T.Settings.get('rate'), onend: onend }); }
+    });
   }
 
   function playOne(src, i) {
@@ -1293,23 +1262,31 @@ details.src[open]>summary::before{content:"▾ ";}
   }
 
   /* 文と文の間。音声からは前後の無音を削ってあるので、
-     続けて鳴らすと切れ目が無くなる。息継ぎのぶんだけここで空ける。 */
+     続けて鳴らすと切れ目が無くなる。息継ぎのぶんだけ空ける。
+     タイマーではなく無音の音声で空けるので、画面を消していても長さが変わらない。 */
   var SENT_GAP = 450;
 
-  function playAll(src) {
-    var ss = linesFor(src);
+  /* from の文から最後まで通して鳴らす。ロック画面の「前／次」で1文ずつ移れる */
+  function playAll(src, from) {
+    var ss = linesFor(src), cur = from || 0;
     playing = 'all';
+    function jump(d) { var to = Math.max(0, Math.min(ss.length - 1, cur + d)); stopPlay(); playAll(src, to); }
+    T.Clip.session({
+      title: (DATA.title && (DATA.title.en || DATA.title.ja)) || 'News', album: 'News',
+      onPrev: function () { jump(-1); }, onNext: function () { jump(1); }, onStop: stopPlay
+    });
     (function next(i) {
-      if (playing !== 'all' || i >= ss.length) { playing = null; markPlay(null, -1); return; }
+      cur = i;
+      if (playing !== 'all' || i >= ss.length) { playing = null; markPlay(null, -1); T.Clip.stop(); return; }
       markPlay(src, i);
       saySent(i, function () {
         if (playing !== 'all') return;
-        setTimeout(function () { if (playing === 'all') next(i + 1); }, SENT_GAP);
+        T.Clip.gap(SENT_GAP, function () { if (playing === 'all') next(i + 1); });
       });
-    })(0);
+    })(cur);
   }
 
-  function stopPlay() { T.TTS.cancel(); stopSentAudio(); nextClip = null; playing = null; markPlay(null, -1); }
+  function stopPlay() { T.TTS.cancel(); T.Clip.stop(); playing = null; markPlay(null, -1); }
 
   /* 自動コピーが拒否される端末向けの受け皿。選択済みで出すので、
      長押しやキー操作でそのままコピーできる。 */
