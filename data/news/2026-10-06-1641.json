@@ -454,5 +454,22 @@
       "url": "https://en.sedaily.com/international/2026/10/02/10-year-treasury-yield-hits-24-year-high-as-fed-bets-swing",
       "date": "2026-10-02"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-06-1641/00.mp3",
+      "audio/2026-10-06-1641/01.mp3",
+      "audio/2026-10-06-1641/02.mp3",
+      "audio/2026-10-06-1641/03.mp3",
+      "audio/2026-10-06-1641/04.mp3",
+      "audio/2026-10-06-1641/05.mp3",
+      "audio/2026-10-06-1641/06.mp3",
+      "audio/2026-10-06-1641/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 222600,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-06T07:42:45.887Z",
+    "trimmed": true
+  }
 }
