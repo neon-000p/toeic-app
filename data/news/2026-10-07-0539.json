@@ -445,5 +445,23 @@
       "url": "https://the-gadgeteer.com/2026/09/24/googlebook-laptops-acer-dell-asus-hp-lenovo/",
       "date": "2026-09-24"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-07-0539/00.mp3",
+      "audio/2026-10-07-0539/01.mp3",
+      "audio/2026-10-07-0539/02.mp3",
+      "audio/2026-10-07-0539/03.mp3",
+      "audio/2026-10-07-0539/04.mp3",
+      "audio/2026-10-07-0539/05.mp3",
+      "audio/2026-10-07-0539/06.mp3",
+      "audio/2026-10-07-0539/07.mp3",
+      "audio/2026-10-07-0539/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 213237,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-06T20:42:50.386Z",
+    "trimmed": true
+  }
 }
