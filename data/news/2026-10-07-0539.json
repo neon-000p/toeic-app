@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-07-0539",
+  "date": "2026-10-07",
+  "time": "05:39",
+  "createdAt": "2026-10-07T05:39:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Google Launches Googlebook Laptops in Seven Countries",
+    "ja": "グーグル、新型PC「Googlebook」発売"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Google began selling its new Googlebook laptops in the United States on October 4.",
+            "ja": "グーグルは10月4日、新型ノートパソコン「Googlebook」の米国での販売を開始した。"
+          },
+          {
+            "en": "The next day, sales started in six more countries, including some in Europe.",
+            "ja": "翌日には、欧州を含むさらに6か国で販売が始まった。"
+          },
+          {
+            "en": "Five computer makers are offering models, including Acer and Dell.",
+            "ja": "エイサーやデルを含むパソコンメーカー5社が製品を販売する。"
+          },
+          {
+            "en": "Prices start at $899 for the Acer model, and the Dell model costs $999.",
+            "ja": "価格はエイサー製が899ドルから、デル製は999ドルだ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Googlebook runs on a new operating system, which is the main software that controls a computer.",
+            "ja": "Googlebookは新しいオペレーティングシステム（コンピューターを制御する基本のソフト）で動く。"
+          },
+          {
+            "en": "It lets people open their phone apps directly on the laptop and includes built-in AI tools.",
+            "ja": "スマホのアプリをノートパソコン上で直接開くことができ、AIツールも標準で備わっている。"
+          },
+          {
+            "en": "Google hopes the laptops will attract customers who already use its phone software.",
+            "ja": "グーグルは、すでに同社のスマホ用ソフトを使っている顧客を引きつけたい考えだ。"
+          },
+          {
+            "en": "However, the prices are higher than those of many basic laptops, so cost could limit demand.",
+            "ja": "ただし、価格は多くの普及機より高く、コストが需要を制限しかねない。"
+          },
+          {
+            "en": "The company must also prove that the devices are useful for everyday office work.",
+            "ja": "同社はまた、この端末が日常の事務作業に役立つことを証明する必要がある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What is the lowest starting price mentioned for a Googlebook?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$649",
+          "ja": "649ドル"
+        },
+        {
+          "key": "B",
+          "text": "$899",
+          "ja": "899ドル"
+        },
+        {
+          "key": "C",
+          "text": "$999",
+          "ja": "999ドル"
+        },
+        {
+          "key": "D",
+          "text": "$1,299",
+          "ja": "1,299ドル"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。第1段落4文目に「Prices start at $899 for the Acer model」とあり、最も安い開始価格は899ドル。Cの999ドルはデル製の価格で、最安ではない。AとDは本文にない金額。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "「最安」「最高」を問う問題は、本文に複数の価格が出てくる。start at（〜から）などの表現と、どの製品の価格かを対応させて選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why does Google hope the Googlebook will sell well?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is cheaper than most basic laptops.",
+          "ja": "普及機の多くより安い"
+        },
+        {
+          "key": "B",
+          "text": "It is sold only in the United States.",
+          "ja": "米国でのみ販売される"
+        },
+        {
+          "key": "C",
+          "text": "It may appeal to people who already use its phone software.",
+          "ja": "同社のスマホ用ソフトの利用者に受けそう"
+        },
+        {
+          "key": "D",
+          "text": "It was made by only one computer maker.",
+          "ja": "1社だけが製造した"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解はC。第2段落3文目に「attract customers who already use its phone software」とある。Aは4文目で「価格は普及機より高い」とあり逆の内容。Bは第1段落で複数の国で販売と述べられており誤り。Dは第1段落3文目で5社が製品を出すとあり誤り。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "理由を問う問題は「hope」「because」「so」など意図・因果を示す語の周辺に根拠がある。選択肢は本文と逆の内容に注意。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "offer",
+      "pos": "動",
+      "ja": "提供する、販売する",
+      "gloss": "",
+      "example": {
+        "en": "The company will offer a free trial for 30 days.",
+        "ja": "同社は30日間の無料試用を提供する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "attract",
+      "pos": "動",
+      "ja": "引きつける、呼び込む",
+      "gloss": "",
+      "example": {
+        "en": "The new store aims to attract young customers.",
+        "ja": "その新店舗は若い顧客を呼び込むことを狙っている。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "prove",
+      "pos": "動",
+      "ja": "証明する、示す",
+      "gloss": "",
+      "example": {
+        "en": "The team must prove that the plan will save money.",
+        "ja": "チームはその計画がコスト削減になることを証明しなければならない。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for the product grew quickly last year.",
+        "ja": "その製品への需要は昨年急速に伸びた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "limit",
+      "pos": "動",
+      "ja": "制限する、抑える",
+      "gloss": "",
+      "example": {
+        "en": "High costs may limit our ability to expand.",
+        "ja": "高いコストが事業拡大の妨げになるかもしれない。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "directly",
+      "pos": "副",
+      "ja": "直接に",
+      "gloss": "",
+      "example": {
+        "en": "Please send the report directly to the manager.",
+        "ja": "報告書はマネージャーに直接送ってください。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "include",
+      "pos": "動",
+      "ja": "含む、備えている",
+      "gloss": "",
+      "example": {
+        "en": "The price does not include shipping fees.",
+        "ja": "価格には送料は含まれていない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "operating system",
+      "pos": "熟",
+      "ja": "オペレーティングシステム（OS）",
+      "gloss": "（＝パソコンやスマホを動かす基本のソフトのこと）",
+      "example": {
+        "en": "The new operating system makes the device faster.",
+        "ja": "新しいOSのおかげでその端末は速くなる。"
+      }
+    }
+  ],
+  "glossary": {
+    "selling": {
+      "lemma": "sell",
+      "pos": "動",
+      "ja": "販売する",
+      "note": ""
+    },
+    "sales": {
+      "lemma": "sale",
+      "pos": "名",
+      "ja": "販売、売上",
+      "note": ""
+    },
+    "started": {
+      "lemma": "start",
+      "pos": "動",
+      "ja": "始まった",
+      "note": ""
+    },
+    "including": {
+      "lemma": "include",
+      "pos": "前",
+      "ja": "〜を含めて",
+      "note": ""
+    },
+    "offering": {
+      "lemma": "offer",
+      "pos": "動",
+      "ja": "提供する",
+      "note": ""
+    },
+    "models": {
+      "lemma": "model",
+      "pos": "名",
+      "ja": "機種、型",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "名",
+      "ja": "価格",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "動",
+      "ja": "費用がかかる",
+      "note": ""
+    },
+    "runs": {
+      "lemma": "run",
+      "pos": "動",
+      "ja": "作動する",
+      "note": ""
+    },
+    "operating": {
+      "lemma": "operating system",
+      "pos": "熟",
+      "ja": "OS（の一部）",
+      "note": "operating systemで「OS」"
+    },
+    "controls": {
+      "lemma": "control",
+      "pos": "動",
+      "ja": "制御する",
+      "note": ""
+    },
+    "directly": {
+      "lemma": "directly",
+      "pos": "副",
+      "ja": "直接に",
+      "note": ""
+    },
+    "includes": {
+      "lemma": "include",
+      "pos": "動",
+      "ja": "含む",
+      "note": ""
+    },
+    "built-in": {
+      "lemma": "built-in",
+      "pos": "形",
+      "ja": "内蔵の、標準の",
+      "note": ""
+    },
+    "hopes": {
+      "lemma": "hope",
+      "pos": "動",
+      "ja": "期待する",
+      "note": ""
+    },
+    "attract": {
+      "lemma": "attract",
+      "pos": "動",
+      "ja": "引きつける",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "already": {
+      "lemma": "already",
+      "pos": "副",
+      "ja": "すでに",
+      "note": ""
+    },
+    "higher": {
+      "lemma": "high",
+      "pos": "形",
+      "ja": "より高い",
+      "note": ""
+    },
+    "basic": {
+      "lemma": "basic",
+      "pos": "形",
+      "ja": "基本的な",
+      "note": ""
+    },
+    "limit": {
+      "lemma": "limit",
+      "pos": "動",
+      "ja": "制限する",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "prove": {
+      "lemma": "prove",
+      "pos": "動",
+      "ja": "証明する",
+      "note": ""
+    },
+    "devices": {
+      "lemma": "device",
+      "pos": "名",
+      "ja": "端末、機器",
+      "note": ""
+    },
+    "useful": {
+      "lemma": "useful",
+      "pos": "形",
+      "ja": "役に立つ",
+      "note": ""
+    },
+    "everyday": {
+      "lemma": "everyday",
+      "pos": "形",
+      "ja": "日常の",
+      "note": ""
+    },
+    "however": {
+      "lemma": "however",
+      "pos": "副",
+      "ja": "しかしながら",
+      "note": ""
+    },
+    "software": {
+      "lemma": "software",
+      "pos": "名",
+      "ja": "ソフト",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "使役動詞 let（let＋O＋原形）",
+    "quote": "It lets people open their phone apps directly on the laptop and includes built-in AI tools.",
+    "quoteJa": "スマホのアプリをノートパソコン上で直接開くことができ、AIツールも標準で備わっている。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "let は「（Oが）〜するのを許す・可能にする」という使役動詞で、let＋O＋動詞の原形（to なし）の形をとります。ここでは lets people open ... が「人々が〜を開けるようにする」の意味です。主語（It＝Googlebook）が「許可・可能にする側」で、人が実際に行う動作は原形で表します。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "It allows people to open their phone apps. や It enables people to open ... と言い換えられます。allow / enable は to 不定詞、let は原形と形が異なる点が重要です。make（強制）や have（依頼）も原形を取りますが、let は「許可」の意味合いが強く、機能やサービスが「〜できるようにする」と述べるときによく使われます。"
+      },
+      {
+        "heading": "TOEICでの注意点",
+        "body": "Part 5 では、空所に to open が入るか open が入るかを問う形で出題されます。let の後ろは原形、allow・enable・permit の後ろは to 不定詞、と動詞ごとにセットで覚えておきましょう。受動態では let は使えず be allowed to ... を使う点も頻出です。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "Our new app lets employees check their schedules from anywhere.（新しいアプリで、従業員はどこからでも予定を確認できます。）／ The system lets customers track their orders in real time.（そのシステムでは、顧客が注文状況をリアルタイムで追跡できます。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 Googlebookとは何か",
+      "body": "Googlebook はグーグルが発表した、Android 系のソフトを土台にした新しいノートパソコンの規格です。これまでの Chromebook（ブラウザ中心の低価格ノート）と違い、スマホ向けアプリをそのまま使えるうえ、AI機能が標準で入っているのが特徴です。デル、レノボ、エイサー、エイスース、HPの5社が機種を出し、家電量販店などでも販売されます。「OS（オペレーティングシステム）」とはパソコンやスマホを動かす土台のソフトのことで、これを握る企業が周辺のアプリやサービスの主導権を持ちやすくなります。"
+    },
+    {
+      "heading": "📌 業界の競争環境",
+      "body": "パソコン市場では、マイクロソフトの Windows とアップルの Mac が長く二強でした。グーグルは教育向けの Chromebook で存在感を高めてきましたが、価格帯が899ドル以上の「上位機」に本格参入するのは新しい挑戦です。AIを載せたパソコンを各社が競って出す中、スマホとパソコンをつなぐ体験で差をつけようとしています。一方で、メモリー価格の上昇で端末価格が上がっており、消費者が高い機種を買うかが焦点です。"
+    },
+    {
+      "heading": "📌 日本への影響・示唆",
+      "body": "日本では、スマホは iPhone と Android が拮抗し、会社のパソコンは Windows が主流です。Android スマホを個人で使うビジネスパーソンが、仕事でも同じアプリを使える環境は、リモートワークや出張の多い人には利点になり得ます。ただし企業が導入するには、セキュリティ管理や既存の業務システムとの相性の確認が必要で、すぐに広がるとは限りません。日本の部品メーカーや販売店にとっては、新しい端末カテゴリーが需要を生む可能性があります。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "投資家にとっての注目点は、グーグルがハードの売り上げで稼ぐのではなく、AIサービスや広告・サブスクリプションの入口を増やす狙いがあるかどうかです。経営者の視点では、端末を選ぶ際に「価格」「使えるアプリ」「サポート体制」の3点を比べることが大切です。発売直後の売れ行きや、各社の価格改定、在庫の動きは今後の業績を占う材料になります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Googlebook is finally official with 5 flagship Android-powered laptops starting at $899",
+      "publisher": "Android Authority",
+      "url": "https://www.androidauthority.com/google-googlebook-laptops-launch-features-models-price-specs-availability-3713215/"
+    },
+    {
+      "title": "5 Googlebooks Announced for the New Android-Powered Laptop Era",
+      "publisher": "The Gadgeteer",
+      "url": "https://the-gadgeteer.com/2026/09/24/googlebook-laptops-acer-dell-asus-hp-lenovo/",
+      "date": "2026-09-24"
+    }
+  ]
+}
