@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part4-history",
-  "updatedAt": "2026-10-04T04:20:00+09:00",
+  "updatedAt": "2026-10-07T04:00:00+09:00",
   "items": [
+    {
+      "id": "2026-10-07-0400-2",
+      "date": "2026-10-07",
+      "scene": "広告｜倉庫スタッフの求人",
+      "genre": "広告",
+      "talkType": "ad",
+      "types": [
+        "who",
+        "intent",
+        "infer"
+      ],
+      "flow": "告知と指示"
+    },
+    {
+      "id": "2026-10-07-0400-1",
+      "date": "2026-10-07",
+      "scene": "留守番電話｜見積書の金額訂正と確認の依頼",
+      "genre": "留守番電話",
+      "talkType": "voicemail",
+      "types": [
+        "gist",
+        "detail",
+        "next"
+      ],
+      "flow": "変更の説明と依頼"
+    },
     {
       "id": "2026-10-04-0406-1",
       "date": "2026-10-04",

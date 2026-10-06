@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-07-0400-1",
+  "date": "2026-10-07",
+  "time": "04:00",
+  "createdAt": "2026-10-07T04:00:00+09:00",
+  "sample": false,
+  "scene": "留守番電話｜見積書の金額訂正と確認の依頼",
+  "talkType": "voicemail",
+  "intro": "Questions 1 through 3 refer to the following telephone message.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-GB"
+  },
+  "lines": [
+    {
+      "en": "Hello, Mr. Alvarez, this is Helen Brooks from Northfield Office Supply, returning your call about the quote for your new desks.",
+      "ja": "アルバレスさま、ノースフィールド事務用品のヘレン・ブルックスです。新しい机の見積りについてのお電話の折り返しです。"
+    },
+    {
+      "en": "I'm afraid the price I gave you last week was wrong.",
+      "ja": "申し訳ありませんが、先週お伝えした価格が誤っておりました。"
+    },
+    {
+      "en": "I accidentally left out the delivery charge, so the total comes to $4,650 rather than $4,200.",
+      "ja": "うっかり配送料を入れ忘れており、合計は4,200ドルではなく4,650ドルになります。"
+    },
+    {
+      "en": "To make up for the mistake, I'd like to waive the $250 assembly fee, which would bring down the total to $4,400.",
+      "ja": "お詫びとして、250ドルの組み立て費用を免除させていただきたく、そうすると合計は4,400ドルになります。"
+    },
+    {
+      "en": "The desks are in stock, and we can deliver them as early as next Tuesday.",
+      "ja": "机は在庫があり、早ければ来週の火曜にお届けできます。"
+    },
+    {
+      "en": "If you'd like to go ahead, please call me back before five o'clock today so that I can hold your delivery slot.",
+      "ja": "進めてよろしければ、配送枠を確保できるよう、本日5時までに折り返しお電話ください。"
+    },
+    {
+      "en": "Otherwise, the next opening won't be until the following week.",
+      "ja": "そうでない場合、次の空きは翌週以降になります。"
+    },
+    {
+      "en": "You can reach me at extension 214, and thank you for your patience.",
+      "ja": "内線214番までご連絡ください。お待ちいただきありがとうございます。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "Why is the speaker calling?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To confirm a delivery date",
+          "ja": "配送日を確認するため"
+        },
+        {
+          "key": "B",
+          "text": "To cancel an order",
+          "ja": "注文を取り消すため"
+        },
+        {
+          "key": "C",
+          "text": "To correct a price estimate",
+          "ja": "見積り金額を訂正するため"
+        },
+        {
+          "key": "D",
+          "text": "To request payment for desks",
+          "ja": "机の代金を請求するため"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "冒頭で quote への折り返しと名乗り、続けて the price I gave you last week was wrong と述べている。目的は見積り金額の訂正である。配送日は後半で触れるだけで、確認のための電話ではない。",
+      "tip": "留守電の用件は、名乗りの直後から3文以内に出る。I'm afraid や I'm sorry のあとに本題がある。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What does the speaker offer to do?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Remove an installation charge",
+          "ja": "組み立て費用をなくす"
+        },
+        {
+          "key": "B",
+          "text": "Extend a warranty period",
+          "ja": "保証期間を延ばす"
+        },
+        {
+          "key": "C",
+          "text": "Ship the items for free",
+          "ja": "商品を無料で発送する"
+        },
+        {
+          "key": "D",
+          "text": "Refund a deposit",
+          "ja": "手付金を返金する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        3
+      ],
+      "explanation": "I'd like to waive the $250 assembly fee と申し出ており、waive は「免除する」、assembly は「組み立て」で、選択肢はその言い換えである。無料にするのは組み立て費用で、配送ではない。配送料は入れ忘れて追加になったほうである。",
+      "tip": "waive は free や remove に言い換えられる。何の費用かを assembly と delivery で取り違えない。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What does the speaker ask the listener to do by five o'clock?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Visit the store",
+          "ja": "店に来る"
+        },
+        {
+          "key": "B",
+          "text": "Contact her to proceed",
+          "ja": "進めるなら彼女に連絡する"
+        },
+        {
+          "key": "C",
+          "text": "Send back a signed quote",
+          "ja": "署名した見積書を返送する"
+        },
+        {
+          "key": "D",
+          "text": "Choose a delivery day",
+          "ja": "配送日を選ぶ"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        5
+      ],
+      "explanation": "go ahead なら call me back before five o'clock today と依頼している。つまり進める場合に電話で知らせることが求められる。配送日はこちらから Tuesday と提示されており、聞き手が選ぶ形ではない。",
+      "tip": "依頼の文は If で始まることが多い。期限の時刻が出たら、その直前の動詞を聞く。"
+    }
+  ],
+  "glossary": {
+    "returning your call": {
+      "lemma": "return a call",
+      "pos": "熟",
+      "ja": "折り返し電話する",
+      "note": "留守電の冒頭の定型",
+      "example": {
+        "en": "I'm returning your call about the schedule change.",
+        "ja": "日程変更についてのお電話の折り返しです。"
+      }
+    },
+    "left out": {
+      "lemma": "leave out",
+      "pos": "熟",
+      "ja": "入れ忘れる、省く",
+      "note": "omit の言い換え",
+      "example": {
+        "en": "The report left out last month's sales figures.",
+        "ja": "報告書には先月の売上数字が抜けていた。"
+      }
+    },
+    "comes to": {
+      "lemma": "come to",
+      "pos": "熟",
+      "ja": "合計で〜になる",
+      "note": "amount to に近い",
+      "example": {
+        "en": "The bill comes to $85 including tax.",
+        "ja": "請求額は税込みで85ドルになります。"
+      }
+    },
+    "make up for": {
+      "lemma": "make up for",
+      "pos": "熟",
+      "ja": "埋め合わせる、償う",
+      "note": "お詫びの文脈で使う",
+      "example": {
+        "en": "We will offer a discount to make up for the delay.",
+        "ja": "遅れの埋め合わせとして割引を提供します。"
+      }
+    },
+    "waive": {
+      "lemma": "waive",
+      "pos": "動",
+      "ja": "免除する",
+      "note": "選択肢では remove や free に言い換わる",
+      "example": {
+        "en": "The bank agreed to waive the late payment fee.",
+        "ja": "銀行は遅延手数料を免除することに同意した。"
+      }
+    },
+    "bring down": {
+      "lemma": "bring down",
+      "pos": "熟",
+      "ja": "下げる、減らす",
+      "note": "reduce の言い換え",
+      "example": {
+        "en": "Using a local supplier should bring down our costs.",
+        "ja": "地元の仕入先を使えば費用は下がるはずです。"
+      }
+    },
+    "in stock": {
+      "lemma": "in stock",
+      "pos": "熟",
+      "ja": "在庫がある",
+      "note": "反意は out of stock",
+      "example": {
+        "en": "The blue model is no longer in stock.",
+        "ja": "青いモデルはもう在庫がありません。"
+      }
+    },
+    "go ahead": {
+      "lemma": "go ahead",
+      "pos": "熟",
+      "ja": "（計画などを）進める",
+      "note": "proceed の言い換え",
+      "example": {
+        "en": "We would like to go ahead with the new design.",
+        "ja": "私たちは新しいデザインで進めたいです。"
+      }
+    },
+    "call me back": {
+      "lemma": "call back",
+      "pos": "熟",
+      "ja": "折り返し電話する",
+      "note": "",
+      "example": {
+        "en": "Please call me back when you receive this message.",
+        "ja": "このメッセージを受け取ったら折り返してください。"
+      }
+    },
+    "hold": {
+      "lemma": "hold",
+      "pos": "動",
+      "ja": "確保しておく",
+      "note": "reserve の言い換え",
+      "example": {
+        "en": "I can hold the table until seven o'clock.",
+        "ja": "7時までその席を確保しておけます。"
+      }
+    },
+    "extension": {
+      "lemma": "extension",
+      "pos": "名",
+      "ja": "内線番号",
+      "note": "",
+      "example": {
+        "en": "Please dial extension 305 to reach the accounting office.",
+        "ja": "経理部へは内線305番におかけください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "名乗りと折り返しの用件 → 誤りの説明 → 訂正後の金額 → お詫びの提案 → 納期 → 依頼と期限 → 連絡先",
+    "items": [
+      {
+        "title": "留守電は名乗り・用件・依頼の3点で聞く",
+        "body": "最初の数文で誰が何の件で電話してきたかが決まり、終盤で期限つきの依頼が出る。3問は多くがこの順に並ぶ。"
+      },
+      {
+        "title": "金額の訂正は「前の数字」「後の数字」「差の理由」を対で聞く",
+        "body": "4,200と4,650のように2つの数字が出たら、どちらが誤りでどちらが正しいかを確かめる。その差の理由が設問になりやすい。"
+      },
+      {
+        "title": "依頼の期限と条件を、If のかたまりで押さえる",
+        "body": "If you'd like to... のあとに依頼が置かれ、so that のあとにその理由が続く。何をいつまでにするかを、条件とセットで拾う。"
+      }
+    ]
+  }
+}

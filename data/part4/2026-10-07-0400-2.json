@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-07-0400-2",
+  "date": "2026-10-07",
+  "time": "04:00",
+  "createdAt": "2026-10-07T04:00:00+09:00",
+  "sample": false,
+  "scene": "広告｜倉庫スタッフの求人",
+  "talkType": "ad",
+  "intro": "Questions 1 through 3 refer to the following advertisement.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-US"
+  },
+  "lines": [
+    {
+      "en": "Are you looking for steady work close to home? Harborline Logistics is hiring warehouse staff at its new distribution center on Mill Road.",
+      "ja": "自宅の近くで安定した仕事をお探しですか。ハーボライン物流は、ミル通りの新しい配送センターで倉庫スタッフを募集しています。"
+    },
+    {
+      "en": "We offer a starting wage of $19 an hour, which rises to $22 after six months.",
+      "ja": "初任給は時給19ドルで、6か月後には22ドルに上がります。"
+    },
+    {
+      "en": "Full-time employees receive paid training in their first week, so no previous experience is required.",
+      "ja": "正社員は初週に有給の研修を受けられるので、経験は不要です。"
+    },
+    {
+      "en": "Shifts run from six a.m. to two p.m., leaving your afternoons free for family or school.",
+      "ja": "勤務は午前6時から午後2時までで、午後は家族や学校のために空けておけます。"
+    },
+    {
+      "en": "We also provide free parking and a shuttle bus from Central Station.",
+      "ja": "無料の駐車場と、セントラル駅からのシャトルバスもあります。"
+    },
+    {
+      "en": "But don't wait, because these positions are filling up fast.",
+      "ja": "ただし待たないでください。これらの職はすぐに埋まりつつあります。"
+    },
+    {
+      "en": "To apply, visit our Web site and fill out the short form by Friday, and we will contact you within two days.",
+      "ja": "応募するには、金曜までにウェブサイトで短い用紙に記入してください。2日以内にご連絡します。"
+    },
+    {
+      "en": "Come and join the Harborline team today!",
+      "ja": "今日、ハーボラインのチームに加わりましょう。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who is the advertisement most likely intended for?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Current warehouse employees",
+          "ja": "現在の倉庫の従業員"
+        },
+        {
+          "key": "B",
+          "text": "Delivery truck drivers",
+          "ja": "配送トラックの運転手"
+        },
+        {
+          "key": "C",
+          "text": "Local business owners",
+          "ja": "地元の事業主"
+        },
+        {
+          "key": "D",
+          "text": "People seeking work",
+          "ja": "仕事を探している人"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        0
+      ],
+      "explanation": "冒頭の Are you looking for steady work? が聞き手への呼びかけで、続けて倉庫スタッフを募集していると述べる。つまり仕事を探す人に向けた広告である。運転手や事業主は本文に出ていない。",
+      "tip": "広告の聞き手は、冒頭の呼びかけの質問で分かる。求人なら、求職者を指す言い換えを選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when he says, \"these positions are filling up fast\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "More staff will be needed next year",
+          "ja": "来年さらに人手が必要になる"
+        },
+        {
+          "key": "B",
+          "text": "Applicants should apply soon",
+          "ja": "応募者は早く申し込むべきだ"
+        },
+        {
+          "key": "C",
+          "text": "The job is difficult to learn",
+          "ja": "この仕事は習得が難しい"
+        },
+        {
+          "key": "D",
+          "text": "The company is expanding abroad",
+          "ja": "会社は海外に拡大している"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        4,
+        5
+      ],
+      "explanation": "直前で特典を並べたあと、But don't wait と続け、その理由として職がすぐ埋まると述べている。言いたいのは、早く応募するよう促すことである。人手が増えるという話は本文にない。",
+      "tip": "引用文の直前の But don't wait が意図の手がかり。数の話ではなく、聞き手に何をさせたいかを考える。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is implied about the application process?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Decisions are made quickly",
+          "ja": "選考が早く行われる"
+        },
+        {
+          "key": "B",
+          "text": "An interview is not needed",
+          "ja": "面接は不要である"
+        },
+        {
+          "key": "C",
+          "text": "Applicants must visit in person",
+          "ja": "応募者は直接訪問する必要がある"
+        },
+        {
+          "key": "D",
+          "text": "Only experienced people can apply",
+          "ja": "経験者だけが応募できる"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        6
+      ],
+      "explanation": "fill out the short form by Friday に続き we will contact you within two days とあり、応募から連絡までが短い。そこから選考が素早く進むと推測できる。経験者に限らないことは no previous experience is required で述べられている。",
+      "tip": "within two days のような期間は、速い・遅いという評価に言い換えられる。応募方法の文は終盤に置かれる。"
+    }
+  ],
+  "glossary": {
+    "steady work": {
+      "lemma": "steady work",
+      "pos": "熟",
+      "ja": "安定した仕事",
+      "note": "stable job の言い換え",
+      "example": {
+        "en": "He wants steady work with a regular schedule.",
+        "ja": "彼は決まった勤務時間で安定した仕事を望んでいる。"
+      }
+    },
+    "distribution center": {
+      "lemma": "distribution center",
+      "pos": "熟",
+      "ja": "配送センター",
+      "note": "logistics に関わる定番語",
+      "example": {
+        "en": "The new distribution center opens in March.",
+        "ja": "新しい配送センターは3月に開設します。"
+      }
+    },
+    "starting wage": {
+      "lemma": "starting wage",
+      "pos": "熟",
+      "ja": "初任給、時給の初期額",
+      "note": "",
+      "example": {
+        "en": "The starting wage for this position is $17 an hour.",
+        "ja": "この職の初任給は時給17ドルです。"
+      }
+    },
+    "rises to": {
+      "lemma": "rise to",
+      "pos": "熟",
+      "ja": "〜に上がる",
+      "note": "",
+      "example": {
+        "en": "Sales are expected to rise to two million dollars.",
+        "ja": "売上は200万ドルに上ると見込まれている。"
+      }
+    },
+    "paid training": {
+      "lemma": "paid training",
+      "pos": "熟",
+      "ja": "有給の研修",
+      "note": "",
+      "example": {
+        "en": "Every new hire gets two days of paid training.",
+        "ja": "新入社員は全員、2日間の有給研修を受けます。"
+      }
+    },
+    "previous experience": {
+      "lemma": "previous experience",
+      "pos": "熟",
+      "ja": "これまでの経験、実務経験",
+      "note": "experience required の形で頻出",
+      "example": {
+        "en": "Previous experience in sales is an advantage.",
+        "ja": "営業の実務経験があると有利です。"
+      }
+    },
+    "shuttle bus": {
+      "lemma": "shuttle bus",
+      "pos": "熟",
+      "ja": "シャトルバス",
+      "note": "",
+      "example": {
+        "en": "A free shuttle bus runs between the hotel and the airport.",
+        "ja": "ホテルと空港の間を無料のシャトルバスが運行しています。"
+      }
+    },
+    "positions": {
+      "lemma": "position",
+      "pos": "名",
+      "ja": "職、募集の職種",
+      "note": "本文では job opening の意味",
+      "example": {
+        "en": "We have several open positions in the marketing team.",
+        "ja": "マーケティング部門には複数の空きポジションがあります。"
+      }
+    },
+    "filling up": {
+      "lemma": "fill up",
+      "pos": "熟",
+      "ja": "埋まる、いっぱいになる",
+      "note": "選択肢では be taken や go quickly に言い換わる",
+      "example": {
+        "en": "The seminar is filling up, so register early.",
+        "ja": "セミナーは席が埋まりつつあるので、早めに登録してください。"
+      }
+    },
+    "fill out": {
+      "lemma": "fill out",
+      "pos": "熟",
+      "ja": "記入する",
+      "note": "complete の言い換え",
+      "example": {
+        "en": "Please fill out the form and return it to the desk.",
+        "ja": "用紙に記入して受付に返してください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "呼びかけと募集の主題 → 条件（賃金の上昇）→ 経験不問の研修 → 勤務時間 → 特典 → 急がせる一言 → 応募方法と期限",
+    "items": [
+      {
+        "title": "広告は冒頭の呼びかけで聞き手を決める",
+        "body": "Are you looking for ...? の質問は、誰に向けた広告かを示す。who の設問は、この1文を言い換えた選択肢が正解になる。"
+      },
+      {
+        "title": "But や So のあとの一言が意図問題の核になる",
+        "body": "条件を並べたあとの But don't wait は、聞き手の行動を促す合図。引用された文は、その直前の流れとセットで意味を取る。"
+      },
+      {
+        "title": "時刻や数字は「早い・遅い・多い」に言い換えて聞く",
+        "body": "6 a.m. to 2 p.m. は「朝早く始まる」と言い換えられる。数字の羅列は、その意味まで一度考えてから選択肢に当たる。"
+      }
+    ]
+  }
+}
