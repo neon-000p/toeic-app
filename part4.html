@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-10-05 4d15d88">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EQZky+k1gQh6QMJGIRzx/w8aKR/sToE7dS39Y4ZJdsc=' 'sha256-yK07jmAdiTcci3/YWrB8vM9RkCtTsFBbUFjpEj5x9tg=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://toeic-daily-7cea5.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="app-build" content="2026-10-06 c0369f3">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EQZky+k1gQh6QMJGIRzx/w8aKR/sToE7dS39Y4ZJdsc=' 'sha256-bPFGMbZfDSz2WLdv+ttS7cnPlGQ1Xquh9kSYrcgp/WI=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://toeic-daily-7cea5.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Part 4 | AkariEN</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -209,7 +209,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
   </div>
 </nav>
 
-<script src="core.js?v=06e377cf"></script>
+<script src="core.js?v=71f3236e"></script>
 <script>
 (function () {
   'use strict';
@@ -388,7 +388,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     return (typeof v === 'number' && v >= 0) ? v : ANS_DEFAULT;
   }
   function clearTimer() { clearInterval(timer); timer = null; }
-  function stopAll() { clearTimer(); phase = 'answer'; T.TTS.cancel(); stopAudio(); stopLineAudio(); markLine(-1); }
+  function stopAll() { clearTimer(); phase = 'answer'; T.TTS.cancel(); stopAudio(); T.Clip.stop(); markLine(-1); }
 
   /* 残り秒。画面は作り直さず、数字とバーだけ書き換える */
   function countdown(sec, onDone) {
@@ -700,7 +700,7 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     if (k === 'quiz' && phase === 'play') markMic();
     renderFoot();
     /* 先読みの残りが他の画面に持ち越されないようにする */
-    if (!lineAudio && !audioEl) setBar(0);
+    if (!T.Clip.busy() && !audioEl) setBar(0);
     /* 設問の読み上げ中は動かさない。本番は紙の問題用紙なので、
        勝手に画面が動くと目で追っている場所を見失う。
        いまどの設問かは枠の色で分かる。 */
@@ -847,8 +847,6 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
       if (c) c.scrollIntoView({ block: 'center', behavior: 'smooth' });
     }
   }
-  var lineAudio = null;
-
   /* 先に作っておいた1行ぶんの音声。会話本体と同じ声なので、
      対訳に移った瞬間に声が変わることがなくなる。 */
   function lineURL(i) {
@@ -856,15 +854,8 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     return a && a.lines && a.lines[i] ? 'data/part4/' + a.lines[i] : '';
   }
 
-  function stopLineAudio() {
-    if (!lineAudio) return;
-    try { lineAudio.pause(); } catch (e) {}
-    lineAudio.onended = lineAudio.onerror = lineAudio.ontimeupdate = null;
-    lineAudio = null;
-  }
-
   function stopPlay() {
-    chain = false; T.TTS.cancel(); stopLineAudio(); nextClip = null;
+    chain = false; T.TTS.cancel(); T.Clip.stop();
     setBar(0); markLine(-1);
   }
 
@@ -875,51 +866,28 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     T.TTS.speak(l.en, { rate: T.Settings.get('rate'), voiceURI: sp.voiceURI, pitch: sp.pitch, onend: onend });
   }
 
-  /* 次の1本を先に読み込んでおく。鳴り終わってから読み始めると、
-     その待ち時間ぶん文と文の間が空いてしまう。 */
-  var nextClip = null;
-
-  function preload(i) {
-    var url = lineURL(i);
-    if (!url) { nextClip = null; return; }
-    var a = new Audio();
-    a.preload = 'auto';
-    a.src = url;
-    nextClip = { url: url, el: a };
-  }
-
+  /* 1行を鳴らす。録音済みの音声は core.js の Clip（1つのプレーヤー）で鳴らす。
+     画面を消しても続きやすく、次の1行も先に取り寄せておくので行と行の間が延びない。 */
   function speakLine(i, onend) {
     markLine(i);
     var url = lineURL(i);
     if (!url) { speakByTTS(i, onend); return; }
 
-    stopLineAudio();
-    var a = (nextClip && nextClip.url === url) ? nextClip.el : new Audio(url);
-    nextClip = null;
-    preload(i + 1);
-    lineAudio = a;
-    a.playbackRate = T.Settings.get('rate') || 1;
-
-    /* フッターのバーを再生の進み具合にする。
-       続けて鳴らしているときは会話全体、1行だけならその行の中での位置。 */
-    a.ontimeupdate = function () {
-      var d = a.duration || 0;
-      if (!d) return;
-      var frac = a.currentTime / d;
-      var total = lines().length || 1;
-      setBar(chain ? ((i + frac) / total) * 100 : frac * 100);
-    };
-    var fell = false;
-    /* 音声が無い・鳴らせないときは端末の読み上げに戻す。学習を止めないため */
-    var fallback = function () {
-      if (fell) return;
-      fell = true;
-      stopLineAudio();
-      speakByTTS(i, onend);
-    };
-    a.onended = function () { stopLineAudio(); if (onend) onend(); };
-    a.onerror = fallback;
-    a.play().catch(fallback);
+    T.Clip.preload(lineURL(i + 1));
+    T.Clip.play(url, {
+      rate: T.Settings.get('rate') || 1,
+      /* フッターのバーを再生の進み具合にする。
+         続けて鳴らしているときは会話全体、1行だけならその行の中での位置。 */
+      ontime: function (t, d) {
+        if (!d) return;
+        var frac = t / d;
+        var total = lines().length || 1;
+        setBar(chain ? ((i + frac) / total) * 100 : frac * 100);
+      },
+      onend: onend,
+      /* 音声が無い・鳴らせないときは端末の読み上げに戻す。学習を止めないため */
+      onerror: function () { speakByTTS(i, onend); }
+    });
   }
   function playLine(i) {
     if (!lines()[i]) return;
@@ -927,18 +895,27 @@ body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
     speakLine(i, function () { setBar(0); markLine(-1); });
   }
   /* 行と行の間。音声からは前後の無音を削ってあるので、続けて鳴らすと
-     切れ目が無くなる。話者が代わる間としてここで空ける。 */
+     切れ目が無くなる。話者が代わる間としてここで空ける。
+     タイマーではなく無音の音声で空けるので、画面を消していても長さが変わらない。 */
   var LINE_GAP = 450;
 
-  function replayAll() {
+  /* from の行から最後まで通して鳴らす。ロック画面の「前／次」で1行ずつ移れる */
+  function replayAll(from) {
     stopPlay(); chain = true;
+    var cur = from || 0;
+    function jump(d) { replayAll(Math.max(0, Math.min(lines().length - 1, cur + d))); }
+    T.Clip.session({
+      title: 'Part 4 対訳', album: 'TOEIC',
+      onPrev: function () { jump(-1); }, onNext: function () { jump(1); }, onStop: stopPlay
+    });
     (function next(i) {
-      if (!chain || i >= lines().length) { chain = false; setBar(0); markLine(-1); return; }
+      cur = i;
+      if (!chain || i >= lines().length) { chain = false; setBar(0); markLine(-1); T.Clip.stop(); return; }
       speakLine(i, function () {
         if (!chain) return;
-        setTimeout(function () { if (chain) next(i + 1); }, LINE_GAP);
+        T.Clip.gap(LINE_GAP, function () { if (chain) next(i + 1); });
       });
-    })(0);
+    })(cur);
   }
 
   /* ================= セットを選ぶ・設定 ================= */

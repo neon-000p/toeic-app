@@ -993,6 +993,142 @@
     };
   })();
 
+  /* ---------- 録音済みの音声を1つのプレーヤーで続けて鳴らす ----------
+     文ごとの音声を通して鳴らすとき、1本ごとに別の <audio> を作り、文と文の間を
+     setTimeout で数えると、スマホで画面を消した間に止まったり間が延びたりする
+     （隠れたページのタイマーはブラウザが後回しにするため）。
+     ここでは1つの <audio> に次々と差し替え、文と文の間も「無音の音声」として鳴らす。
+     再生が途切れないので、ブラウザは音楽を再生中のページとして扱い続け、
+     間の長さもタイマーではなく音声の長さで決まる。
+     次の1本は先に取り寄せてメモリに置き、差し替えのときに待たないようにする。
+     あわせてロック画面・通知に、再生／一時停止・前後の文のボタンを出す（Media Session）。 */
+  var Clip = (function () {
+    var el = null, token = 0, silent = {}, blobs = [];
+    /* 文と文の間には、無音そのものの長さに加えて、差し替え2回（文→無音→文）と
+       鳴り終わりの知らせの遅れが乗る。この上乗せは端末ごとに違うので、
+       「文が鳴り終わってから次の文が鳴り始めるまで」を毎回測り、無音をそのぶん短くして
+       聞こえる間を決めた長さにそろえる */
+    var extra = 100, pending = null, silentNow = false, halted = false;
+    function now() { return typeof performance !== 'undefined' ? performance.now() : Date.now(); }
+    var hasSession = typeof navigator !== 'undefined' && 'mediaSession' in navigator;
+
+    function player() {
+      if (!el) {
+        el = new Audio();
+        el.preload = 'auto';
+        el.addEventListener('play', function () { halted = false; state('playing'); });
+        el.addEventListener('playing', function () {
+          if (!pending || silentNow) return;
+          var over = now() - pending.at - pending.len;
+          pending = null;
+          if (over >= 0 && over < 1000) extra = extra * 0.7 + over * 0.3;
+        });
+        /* stop() で止めたときは「一時停止中」ではなく、何も鳴らしていない状態にする */
+        el.addEventListener('pause', function () { if (!el.ended && !halted) state('paused'); });
+      }
+      return el;
+    }
+    function state(v) { if (hasSession) try { navigator.mediaSession.playbackState = v; } catch (e) {} }
+
+    /* ms ぶんの無音（16bit PCM の WAV）。作ったものは使い回す */
+    function silence(ms) {
+      if (silent[ms]) return silent[ms];
+      var rate = 8000, n = Math.round(rate * ms / 1000), buf = new ArrayBuffer(44 + n * 2), v = new DataView(buf);
+      function str(o, t) { for (var i = 0; i < t.length; i++) v.setUint8(o + i, t.charCodeAt(i)); }
+      str(0, 'RIFF'); v.setUint32(4, 36 + n * 2, true); str(8, 'WAVE'); str(12, 'fmt ');
+      v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+      v.setUint32(24, rate, true); v.setUint32(28, rate * 2, true); v.setUint16(32, 2, true); v.setUint16(34, 16, true);
+      str(36, 'data'); v.setUint32(40, n * 2, true);   // 中身は 0 のまま＝無音
+      return (silent[ms] = URL.createObjectURL(new Blob([buf], { type: 'audio/wav' })));
+    }
+
+    /* 取り寄せ済みなら、その blob の URL を返す */
+    function local(url) {
+      for (var i = 0; i < blobs.length; i++) if (blobs[i].url === url && blobs[i].obj) return blobs[i].obj;
+      return url;
+    }
+    /* 次に鳴らす1本を先に取り寄せる。失敗しても、鳴らすときに URL から読むだけ */
+    function preload(url) {
+      if (!url || typeof fetch === 'undefined') return;
+      if (blobs.some(function (b) { return b.url === url; })) return;
+      var rec = { url: url, obj: '' };
+      blobs.push(rec);
+      /* 鳴らし終えたものから捨てる。いま鳴っている1本と次の1本が残れば足りる */
+      while (blobs.length > 4) { var old = blobs.shift(); if (old.obj) URL.revokeObjectURL(old.obj); }
+      fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.blob(); })
+        .then(function (b) { if (blobs.indexOf(rec) !== -1) rec.obj = URL.createObjectURL(b); })
+        .catch(function () {});
+    }
+
+    /* 1本鳴らす。opts: rate / onend / onerror / ontime(現在, 長さ)
+       差し替えや stop のあとに古い1本の知らせが届いても無視する（token で見分ける） */
+    function start(src, opts) {
+      opts = opts || {};
+      var a = player(), my = ++token;
+      a.onended = a.onerror = a.ontimeupdate = null;
+      silentNow = !!opts.silent;
+      a.src = src;
+      /* src を替えると playbackRate は defaultPlaybackRate に戻るので、両方そろえる */
+      a.defaultPlaybackRate = a.playbackRate = opts.rate || 1;
+      if (opts.ontime) a.ontimeupdate = function () { if (my === token) opts.ontime(a.currentTime, a.duration || 0); };
+      a.onended = function () { if (my !== token) return; a.ontimeupdate = null; if (opts.onend) opts.onend(); };
+      var failed = false;
+      var fail = function (e) {
+        if (my !== token || failed) return;
+        failed = true;
+        a.onended = a.ontimeupdate = null;
+        if (opts.onerror) opts.onerror(e);
+      };
+      a.onerror = function () { fail(a.error); };
+      var p = a.play();
+      if (p && p.catch) p.catch(function (e) { if (!e || e.name !== 'AbortError') fail(e); });
+      return my;
+    }
+
+    function play(url, opts) { return start(local(url), opts); }
+    /* 文と文の間。速度の設定に関わらず ms のまま空ける。鳴らせなければタイマーで代わりに待つ。
+       無音の長さは、測った上乗せぶんを引いて 5ms 刻みにする（作る無音の種類を増やさないため） */
+    function gap(ms, cb) {
+      var done = false;
+      var go = function () { if (!done) { done = true; cb(); } };
+      var len = Math.max(40, Math.round((ms - extra) / 5) * 5);
+      pending = { at: now(), len: len };
+      start(silence(len), { rate: 1, silent: true, onend: go, onerror: function () { pending = null; setTimeout(go, ms); } });
+    }
+    function stop() {
+      token++;
+      pending = null;
+      halted = true;
+      if (!el) return;
+      el.onended = el.onerror = el.ontimeupdate = null;
+      try { el.pause(); } catch (e) {}
+      state('none');
+    }
+
+    /* ロック画面・通知の表示と操作。o: title / album / onPrev / onNext / onStop */
+    function set(name, fn) { try { navigator.mediaSession.setActionHandler(name, fn || null); } catch (e) {} }
+    function session(o) {
+      if (!hasSession) return;
+      o = o || {};
+      try {
+        navigator.mediaSession.metadata = new MediaMetadata({
+          title: o.title || '', artist: 'AkariEN', album: o.album || '',
+          artwork: [{ src: 'icon-192.png', sizes: '192x192', type: 'image/png' }]
+        });
+      } catch (e) {}
+      set('play', function () { if (el) el.play().catch(function () {}); });
+      set('pause', function () { if (el) el.pause(); });
+      set('previoustrack', o.onPrev);
+      set('nexttrack', o.onNext);
+      set('stop', o.onStop);
+    }
+
+    /* いま鳴らしている途中か（一時停止中は含まない） */
+    function busy() { return !!el && !el.paused && !el.ended; }
+
+    return { play: play, gap: gap, stop: stop, preload: preload, session: session, busy: busy };
+  })();
+
   /* ---------- Gemini（語の文脈的な意味） ----------
      API キーはこの端末の localStorage にだけ置く。リポジトリは公開なので
      キーを同梱することはできない。Google Cloud 側で HTTP リファラを
@@ -2056,7 +2192,7 @@
     flash: flash, takeFlash: takeFlash, numberSets: numberSets, build: build,
     watchSelection: watchSelection, phrasePop: phrasePop,
     esc: esc, splitWords: splitWords, markupEnglish: markupEnglish, toast: toast,
-    Sync: Sync, Theme: Theme
+    Sync: Sync, Theme: Theme, Clip: Clip
   };
 
   Theme.apply();
