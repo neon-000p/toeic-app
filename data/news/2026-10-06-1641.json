@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-06-1641",
+  "date": "2026-10-06",
+  "time": "16:41",
+  "createdAt": "2026-10-06T16:41:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "U.S. Bond Yields Hit a 24-Year High",
+    "ja": "米長期金利、24年ぶり高水準"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The yield on the 10-year U.S. Treasury note rose above 5.3% this week, its highest level in about 24 years.",
+            "ja": "10年物米国債の利回りが今週5.3%を超え、約24年ぶりの高水準となった。"
+          },
+          {
+            "en": "A bond yield is the return investors earn, and it rises when bond prices fall.",
+            "ja": "債券利回りとは投資家が得る収益のことで、債券価格が下がると上昇する。"
+          },
+          {
+            "en": "The 30-year yield also climbed, reaching about 5.7%, a similar multi-year high.",
+            "ja": "30年物利回りも上昇し、約5.7%と同様の数年来の高水準に達した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Investors worry that high energy prices will push inflation up again.",
+            "ja": "投資家は、エネルギー価格の高止まりが再びインフレを押し上げることを懸念している。"
+          },
+          {
+            "en": "A weak jobs report last week lowered the chance of another Federal Reserve rate hike this month, from about 70% to around 20%.",
+            "ja": "先週の弱い雇用統計を受け、今月の追加利上げの確率は約70%から20%前後に低下した。"
+          },
+          {
+            "en": "Even so, long-term yields stayed high because investors still expect inflation to remain stubborn.",
+            "ja": "それでも、投資家はインフレがなお根強いと見ているため、長期金利は高止まりした。"
+          },
+          {
+            "en": "The rise matters because it raises borrowing costs for companies and home buyers.",
+            "ja": "この上昇は、企業や住宅購入者の借り入れコストを押し上げるため重要だ。"
+          },
+          {
+            "en": "It also supports the dollar, which has kept the Japanese yen weak at around 157 to 158 per dollar.",
+            "ja": "また、ドルを支え、円は1ドル=157〜158円前後の円安が続いている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How high did the 10-year Treasury yield rise this week?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Above 3.5%",
+          "ja": "3.5%超"
+        },
+        {
+          "key": "B",
+          "text": "Above 5.3%",
+          "ja": "5.3%超"
+        },
+        {
+          "key": "C",
+          "text": "About 5.7%",
+          "ja": "約5.7%"
+        },
+        {
+          "key": "D",
+          "text": "About 7.0%",
+          "ja": "約7.0%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落の第1文に「10年物の利回りが5.3%を超えた（rose above 5.3%）」と明記されている。(C) の約5.7%は30年物の利回りの数字で、10年物ではない（別の数字を使った引っかけ）。(A)・(D) は本文に出てこない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "同じ文章に似た数字が複数出るときは、「何の数字か」（10年物か30年物か）を主語とセットで確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why does the rise in yields matter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It raises borrowing costs for companies and home buyers.",
+          "ja": "企業と住宅購入者の借入費用が上がる"
+        },
+        {
+          "key": "B",
+          "text": "It lowers the price of energy.",
+          "ja": "エネルギー価格が下がる"
+        },
+        {
+          "key": "C",
+          "text": "It makes the Japanese yen stronger.",
+          "ja": "円高になる"
+        },
+        {
+          "key": "D",
+          "text": "It ends the chance of a Fed rate hike.",
+          "ja": "利上げの可能性が消える"
+        }
+      ],
+      "answer": "A",
+      "explanation": "第2段落の第4文に「企業や住宅購入者の借り入れコストを押し上げるため重要」とある。(B) エネルギー価格は上昇の懸念材料として登場しており逆。(C) 利回り上昇はドルを支え、円安が続いているので逆。(D) 利上げの確率は約20%に下がっただけで、なくなったとは書かれていない。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "「why ... matter」型は because / matters because の直後に答えがある。選択肢の逆の内容（円高・価格下落）に注意。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "gloss": "（＝債券を持つ人が受け取る収益の割合のこと）",
+      "example": {
+        "en": "The yield on this bond is higher than last year's.",
+        "ja": "この債券の利回りは昨年より高い。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "inflation",
+      "pos": "名",
+      "ja": "インフレ、物価上昇",
+      "gloss": "",
+      "example": {
+        "en": "Inflation made food and rent more expensive.",
+        "ja": "インフレで食費や家賃が高くなった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "stubborn",
+      "pos": "形",
+      "ja": "頑固な、なかなか収まらない",
+      "gloss": "",
+      "example": {
+        "en": "The delay in shipping proved stubborn.",
+        "ja": "出荷の遅れはなかなか解消しなかった。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "borrowing costs",
+      "pos": "熟",
+      "ja": "借り入れコスト",
+      "gloss": "",
+      "example": {
+        "en": "Higher borrowing costs may slow our expansion plan.",
+        "ja": "借り入れコストの上昇で拡大計画が遅れるかもしれない。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "climb",
+      "pos": "動",
+      "ja": "上昇する",
+      "gloss": "",
+      "example": {
+        "en": "Sales continued to climb during the holiday season.",
+        "ja": "年末商戦の間、売上は上昇を続けた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "rate hike",
+      "pos": "熟",
+      "ja": "利上げ",
+      "gloss": "（＝中央銀行が政策金利を引き上げること）",
+      "example": {
+        "en": "The bank announced a rate hike on Wednesday.",
+        "ja": "銀行は水曜日に利上げを発表した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "lower",
+      "pos": "動",
+      "ja": "下げる、低下させる",
+      "gloss": "",
+      "example": {
+        "en": "We plan to lower our prices next month.",
+        "ja": "来月、価格を引き下げる予定だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "support",
+      "pos": "動",
+      "ja": "支える、後押しする",
+      "gloss": "",
+      "example": {
+        "en": "Strong demand will support the company's profits.",
+        "ja": "旺盛な需要が同社の利益を支えるだろう。"
+      }
+    }
+  ],
+  "glossary": {
+    "yield": {
+      "lemma": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "note": ""
+    },
+    "note": {
+      "lemma": "note",
+      "pos": "名",
+      "ja": "債券（国債）",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "highest": {
+      "lemma": "high",
+      "pos": "形",
+      "ja": "最高の",
+      "note": ""
+    },
+    "bond": {
+      "lemma": "bond",
+      "pos": "名",
+      "ja": "債券",
+      "note": ""
+    },
+    "return": {
+      "lemma": "return",
+      "pos": "名",
+      "ja": "収益、リターン",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "earn": {
+      "lemma": "earn",
+      "pos": "動",
+      "ja": "稼ぐ、得る",
+      "note": ""
+    },
+    "rises": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇する",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "名",
+      "ja": "価格",
+      "note": ""
+    },
+    "fall": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下がる",
+      "note": ""
+    },
+    "climbed": {
+      "lemma": "climb",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "reaching": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "達する",
+      "note": ""
+    },
+    "similar": {
+      "lemma": "similar",
+      "pos": "形",
+      "ja": "似た、同様の",
+      "note": ""
+    },
+    "multi-year": {
+      "lemma": "multi-year",
+      "pos": "形",
+      "ja": "数年来の",
+      "note": ""
+    },
+    "worry": {
+      "lemma": "worry",
+      "pos": "動",
+      "ja": "懸念する",
+      "note": ""
+    },
+    "energy": {
+      "lemma": "energy",
+      "pos": "名",
+      "ja": "エネルギー",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "インフレ",
+      "note": ""
+    },
+    "weak": {
+      "lemma": "weak",
+      "pos": "形",
+      "ja": "弱い",
+      "note": ""
+    },
+    "jobs": {
+      "lemma": "job",
+      "pos": "名",
+      "ja": "雇用",
+      "note": ""
+    },
+    "lowered": {
+      "lemma": "lower",
+      "pos": "動",
+      "ja": "低下させた",
+      "note": ""
+    },
+    "chance": {
+      "lemma": "chance",
+      "pos": "名",
+      "ja": "可能性",
+      "note": ""
+    },
+    "hike": {
+      "lemma": "hike",
+      "pos": "名",
+      "ja": "引き上げ",
+      "note": ""
+    },
+    "stayed": {
+      "lemma": "stay",
+      "pos": "動",
+      "ja": "〜のままだった",
+      "note": ""
+    },
+    "long-term": {
+      "lemma": "long-term",
+      "pos": "形",
+      "ja": "長期の",
+      "note": ""
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "stubborn": {
+      "lemma": "stubborn",
+      "pos": "形",
+      "ja": "根強い",
+      "note": ""
+    },
+    "borrowing": {
+      "lemma": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "supports": {
+      "lemma": "support",
+      "pos": "動",
+      "ja": "支える",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "stay / remain＋形容詞（状態が続くことを表す SVC）と because 節",
+    "quote": "Even so, long-term yields stayed high because investors still expect inflation to remain stubborn.",
+    "quoteJa": "それでも、投資家はインフレがなお根強いと見ているため、長期金利は高止まりした。",
+    "blocks": [
+      {
+        "heading": "構文の解説",
+        "body": "stay や remain は「〜のままである」という意味で、後ろに形容詞を置く SVC の文型を作ります。yields stayed high は「利回りが高いままだった」、inflation to remain stubborn は「インフレが根強いままであること」です。be 動詞が「状態」を表すのに対し、stay / remain は「その状態が続いている」点を強調します。because 以下は理由を表す節で、「なぜ高止まりしたか」を説明しています。文頭の Even so は「そうであっても」という譲歩の副詞句で、前文の内容（利上げ観測の低下）に反する結果をつなぎます。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "yields stayed high ＝ yields remained high ＝ yields were still high。ただし become high（高くなる）は「変化」を表すので意味が違います。keep ＋ O ＋ C（Oを〜のままにしておく）は他動詞の形で、The news kept yields high.（そのニュースが利回りを高いままにした）となります。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では、空所に形容詞か副詞かを選ばせる問題が頻出です。stay / remain / become / seem などの後ろは副詞ではなく形容詞（The prices remained stable. が正、stably は誤り）。Part 7 では remain の「変わらない」ニュアンスを読み取る設問も出ます。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "Our sales remained flat because demand stayed weak.（需要が弱いままだったので売上は横ばいだった。）／ Please stay calm and follow the instructions.（落ち着いて指示に従ってください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 国債利回りとは何か：なぜ「24年ぶり」が大ニュースなのか",
+      "body": "国債の利回りは、国にお金を貸す投資家が受け取る金利のようなものです。国債の価格が下がると、同じ金額の利息に対する割合が高くなるため利回りは上がります。米10年債利回りは、住宅ローンや企業の借り入れ金利の目安となる「世界の金利の基準」です。それが5.3%を超えたのは約24年ぶりで、低金利が当たり前だった2010年代とは別世界の水準です。"
+    },
+    {
+      "heading": "📌 背景：エネルギー高と利上げ観測のせめぎ合い",
+      "body": "エネルギー価格の上昇が物価を押し上げるとの懸念から、市場では追加利上げが意識されてきました。直近の雇用統計が弱く、今月の利上げ確率は約7割から2割前後に低下しましたが、長期金利は下がりませんでした。足元の景気指標は底堅く、投資家が「物価は簡単には収まらない」と見ているためです。短期金利（政策金利）と長期金利は必ずしも同じ動きをしないことがわかります。"
+    },
+    {
+      "heading": "📌 日本への影響：円安の長期化と企業の資金調達",
+      "body": "米金利が高いと、ドルで運用するほうが有利になりドルが買われやすく、円は1ドル=157〜158円前後の円安が続きます。円安は輸出企業の収益を押し上げる一方、輸入コスト（エネルギー・食品）を押し上げ、家計や中小企業の負担になります。日本政府も為替の急な変動には米国と連携して対応する姿勢を示しています。また、米金利上昇は日本の長期金利にも波及しやすく、企業の借り入れコストや住宅ローン金利の上昇圧力になります。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "投資家にとっては、債券価格の下落（利回り上昇）が株式の割高感を意識させ、株価の変動を大きくする要因になります。一方で、高い利回りは債券投資の魅力が戻ったことも意味します。経営者は、変動金利の借入や設備投資計画の資金コストを見直し、為替のシナリオを複数持っておくことが重要です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "US Treasury yields scale multi-year highs as inflation fears return",
+      "publisher": "FXStreet",
+      "url": "https://www.fxstreet.com/news/us-treasury-yields-scale-multi-year-highs-as-inflation-fears-return-202610052231",
+      "date": "2026-10-05"
+    },
+    {
+      "title": "10-Year Treasury Yield Hits 24-Year High as Fed Bets Swing",
+      "publisher": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/international/2026/10/02/10-year-treasury-yield-hits-24-year-high-as-fed-bets-swing",
+      "date": "2026-10-02"
+    }
+  ]
+}
