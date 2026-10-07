@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-07-1641",
+  "date": "2026-10-07",
+  "time": "16:41",
+  "createdAt": "2026-10-07T16:41:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "U.S. Opens New Phase of Tariff Refunds",
+    "ja": "米国、関税還付の新段階を開始"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "On October 6, U.S. Customs and Border Protection opened a new phase of its tariff refund system.",
+            "ja": "10月6日、米税関・国境警備局は関税還付システムの新たな段階を開始した。"
+          },
+          {
+            "en": "The phase covers older shipments whose duty amounts were finalized long ago.",
+            "ja": "この段階は、関税額がずっと前に確定した古い貨物を対象とする。"
+          },
+          {
+            "en": "In other words, it reaches entries that Customs can no longer reopen by itself.",
+            "ja": "つまり、税関が自ら再開できなくなった申告分にまで及ぶ。"
+          },
+          {
+            "en": "Only importers holding a court order may apply.",
+            "ja": "申請できるのは裁判所の命令を持つ輸入業者だけだ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The refunds follow a February ruling by the Supreme Court, which found the emergency tariffs unlawful.",
+            "ja": "この還付は、非常事態関税を違法とした2月の最高裁判決を受けたものだ。"
+          },
+          {
+            "en": "Customs estimates it collected about $166 billion under those tariffs.",
+            "ja": "税関は、それらの関税で約1,660億ドルを徴収したと推計している。"
+          },
+          {
+            "en": "It has already processed more than $134 billion in refunds.",
+            "ja": "すでに1,340億ドル超の還付を処理済みだ。"
+          },
+          {
+            "en": "For many companies, these duties had been a heavy cost for about a year.",
+            "ja": "多くの企業にとって、この関税は約1年間重い負担だった。"
+          },
+          {
+            "en": "Many firms may use the money to pay suppliers or lower prices.",
+            "ja": "多くの企業は、その資金を仕入先への支払いや値下げに回すかもしれない。"
+          },
+          {
+            "en": "Importers without a court order are not covered by this phase.",
+            "ja": "裁判所の命令がない輸入業者は、この段階の対象外だ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much has Customs already processed in refunds?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "More than $166 billion",
+          "ja": "1,660億ドル超"
+        },
+        {
+          "key": "B",
+          "text": "About $122 billion",
+          "ja": "約1,220億ドル"
+        },
+        {
+          "key": "C",
+          "text": "More than $134 billion",
+          "ja": "1,340億ドル超"
+        },
+        {
+          "key": "D",
+          "text": "About $30 billion",
+          "ja": "約300億ドル"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落の3文目に「more than $134 billion in refunds」とある。Aの$166 billionは税関が徴収したと推計する総額、Bの$122 billionと Dの$30 billionは本文に出てこない数字。数字問題では、似た数字が何を指すのか（徴収総額か処理済みか）を区別するのが引っかけ対策になる。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "数字が複数ある問題は、設問の動詞（collected / processed）と数字の対応を本文で確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT stated about the new phase?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It began on October 6.",
+          "ja": "10月6日に始まった"
+        },
+        {
+          "key": "B",
+          "text": "It covers older shipments.",
+          "ja": "古い貨物が対象"
+        },
+        {
+          "key": "C",
+          "text": "Applicants need a court order.",
+          "ja": "裁判所の命令が必要"
+        },
+        {
+          "key": "D",
+          "text": "It is open to every importer.",
+          "ja": "全輸入業者が対象"
+        }
+      ],
+      "answer": "D",
+      "explanation": "第1段落の最終文に「Only importers holding a court order may apply」とあり、全輸入業者が対象ではない。Aは1文目、Bは2文目、Cは4文目に明記されている。NOT問題は、各選択肢を本文と1つずつ照合し、本文と食い違う1つを選ぶ。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "NOT問題は「本文に書いてある3つ」を先に消去し、残りを選ぶ。only / every などの限定語に注意。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "refund",
+      "pos": "名・動",
+      "ja": "払い戻し、還付",
+      "gloss": "",
+      "example": {
+        "en": "The store gave me a full refund.",
+        "ja": "その店は全額を払い戻してくれた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "shipments",
+      "pos": "名",
+      "ja": "出荷、貨物",
+      "gloss": "",
+      "example": {
+        "en": "Two shipments arrived at the warehouse today.",
+        "ja": "今日、倉庫に2件の貨物が到着した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "estimates",
+      "pos": "動",
+      "ja": "見積もる、推計する",
+      "gloss": "",
+      "example": {
+        "en": "The finance team estimates that sales will rise by 5%.",
+        "ja": "財務チームは売上が5%伸びると見積もっている。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "unlawful",
+      "pos": "形",
+      "ja": "違法の",
+      "gloss": "",
+      "example": {
+        "en": "It is unlawful to sell products without a license.",
+        "ja": "免許なしで商品を売るのは違法だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "processed",
+      "pos": "動",
+      "ja": "処理した",
+      "gloss": "",
+      "example": {
+        "en": "The bank processed my request within two days.",
+        "ja": "銀行は2日以内に私の依頼を処理した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "suppliers",
+      "pos": "名",
+      "ja": "仕入先、供給業者",
+      "gloss": "",
+      "example": {
+        "en": "We are looking for new suppliers in Asia.",
+        "ja": "私たちはアジアで新しい仕入先を探している。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "apply",
+      "pos": "動",
+      "ja": "申請する、応募する",
+      "gloss": "",
+      "example": {
+        "en": "You can apply for the job online.",
+        "ja": "その仕事にはオンラインで応募できる。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "ruling",
+      "pos": "名",
+      "ja": "判決、裁定",
+      "gloss": "",
+      "example": {
+        "en": "The court's ruling surprised many companies.",
+        "ja": "裁判所の判決は多くの企業を驚かせた。"
+      }
+    }
+  ],
+  "glossary": {
+    "opened": {
+      "lemma": "open",
+      "pos": "動",
+      "ja": "開始した",
+      "note": ""
+    },
+    "phase": {
+      "lemma": "phase",
+      "pos": "名",
+      "ja": "段階",
+      "note": ""
+    },
+    "tariff": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "tariffs": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "refund": {
+      "lemma": "refund",
+      "pos": "名",
+      "ja": "還付",
+      "note": ""
+    },
+    "refunds": {
+      "lemma": "refund",
+      "pos": "名",
+      "ja": "還付",
+      "note": ""
+    },
+    "system": {
+      "lemma": "system",
+      "pos": "名",
+      "ja": "制度",
+      "note": ""
+    },
+    "covers": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "対象とする",
+      "note": ""
+    },
+    "older": {
+      "lemma": "old",
+      "pos": "形",
+      "ja": "より古い",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "duty": {
+      "lemma": "duty",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "amounts": {
+      "lemma": "amount",
+      "pos": "名",
+      "ja": "金額",
+      "note": ""
+    },
+    "finalized": {
+      "lemma": "finalize",
+      "pos": "動",
+      "ja": "確定した",
+      "note": ""
+    },
+    "entries": {
+      "lemma": "entry",
+      "pos": "名",
+      "ja": "通関申告",
+      "note": ""
+    },
+    "reopen": {
+      "lemma": "reopen",
+      "pos": "動",
+      "ja": "再開する",
+      "note": ""
+    },
+    "court": {
+      "lemma": "court",
+      "pos": "名",
+      "ja": "裁判所",
+      "note": ""
+    },
+    "order": {
+      "lemma": "order",
+      "pos": "名",
+      "ja": "命令",
+      "note": ""
+    },
+    "apply": {
+      "lemma": "apply",
+      "pos": "動",
+      "ja": "申請する",
+      "note": ""
+    },
+    "ruling": {
+      "lemma": "ruling",
+      "pos": "名",
+      "ja": "判決",
+      "note": ""
+    },
+    "emergency": {
+      "lemma": "emergency",
+      "pos": "形",
+      "ja": "非常事態の",
+      "note": ""
+    },
+    "unlawful": {
+      "lemma": "unlawful",
+      "pos": "形",
+      "ja": "違法の",
+      "note": ""
+    },
+    "estimates": {
+      "lemma": "estimate",
+      "pos": "動",
+      "ja": "推計する",
+      "note": ""
+    },
+    "collected": {
+      "lemma": "collect",
+      "pos": "動",
+      "ja": "徴収した",
+      "note": ""
+    },
+    "processed": {
+      "lemma": "process",
+      "pos": "動",
+      "ja": "処理した",
+      "note": ""
+    },
+    "suppliers": {
+      "lemma": "supplier",
+      "pos": "名",
+      "ja": "仕入先",
+      "note": ""
+    },
+    "lower": {
+      "lemma": "lower",
+      "pos": "動",
+      "ja": "下げる",
+      "note": ""
+    },
+    "importers": {
+      "lemma": "importer",
+      "pos": "名",
+      "ja": "輸入業者",
+      "note": ""
+    },
+    "duties": {
+      "lemma": "duty",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "heavy": {
+      "lemma": "heavy",
+      "pos": "形",
+      "ja": "重い",
+      "note": ""
+    },
+    "covered": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "対象とした",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "所有格の関係代名詞 whose（whose＋名詞）",
+    "quote": "The phase covers older shipments whose duty amounts were finalized long ago.",
+    "quoteJa": "この段階は、関税額がずっと前に確定した古い貨物を対象とする。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "whose は「先行詞の持ち物・一部」を表す所有格の関係代名詞で、直後に名詞を伴う（whose＋名詞＋動詞）。この文では shipments を先行詞として「その貨物の関税額（whose duty amounts）」が主語になっている。"
+      },
+      {
+        "heading": "書き換え",
+        "body": "The phase covers older shipments. The duty amounts of the shipments were finalized long ago. を1文にまとめたもの。whose は the ... of the shipments の部分を引き受けている。"
+      },
+      {
+        "heading": "TOEICでの傾向",
+        "body": "Part 5 では空所に who / which / whose のどれを入れるか問われる。空所の直後が名詞なら whose、直後が動詞なら who / which が基本。人にも物にも使える点も押さえたい。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "We are looking for a supplier whose prices are lower than ours.（当社より価格が低い仕入先を探している。）／ The client whose order was delayed asked for a refund.（注文が遅れた顧客が返金を求めた。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか",
+      "body": "米国では、IEEPA（国際緊急経済権限法）に基づく関税を最高裁が違法と判断し、税関が払い戻しの仕組みを段階的に開いている。今回の第3段階は、課税額がすでに最終確定した古い通関分で、裁判所の命令を持つ輸入業者に限って申請できる。"
+    },
+    {
+      "heading": "📌 規模感と専門用語",
+      "body": "税関の推計では、この関税で約1,660億ドルが徴収され、1,340億ドル超の還付が処理済みとされる。「確定済み（finally liquidated）」とは、税関が税額の計算を最終的に締めた状態のことで、通常は後から自分では見直せない。"
+    },
+    {
+      "heading": "📌 業界・企業への波及",
+      "body": "還付金は、輸入に頼る小売・製造業にとって資金繰りの改善材料になる。仕入先への支払いや価格の引き下げに回る企業もあれば、手続きの難しさから申請が遅れる企業も出るだろう。段階ごとに対象が違うため、自社がどの段階に当たるかの確認が欠かせない。"
+    },
+    {
+      "heading": "📌 日本への示唆",
+      "body": "米国向けに輸出する日本企業は、関税を負担した側が輸入業者か自社かを契約書で確認し、還付金の配分を取引先と整理しておく必要がある。投資家にとっては、還付が米小売・物流企業の利益を押し上げうる点が注目材料になる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "IEEPA tariff refund CAPE phase 3: finally liquidated entries",
+      "publisher": "Sovereign Magazine",
+      "url": "https://sovereignmagazine.com/article/ieepa-tariff-refund-cape-phase-3-finally-liquidated-entries",
+      "date": "2026-10-06"
+    }
+  ]
+}
