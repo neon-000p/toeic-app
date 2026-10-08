@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-10-09-0415",
+  "date": "2026-10-09",
+  "time": "04:15",
+  "createdAt": "2026-10-09T04:15:00+09:00",
+  "sample": false,
+  "format": "single",
+  "scene": "社内メモ｜物流センターの棚卸し日程の変更",
+  "intro": "Questions 1-4 refer to the following memo.",
+  "docs": [
+    {
+      "docType": "memo",
+      "label": "社内メモ",
+      "header": [
+        {
+          "label": "To",
+          "text": "All Riverside Distribution Center Staff"
+        },
+        {
+          "label": "From",
+          "text": "Keiko Ito, Operations"
+        },
+        {
+          "label": "Subject",
+          "text": "Change to annual inventory count"
+        },
+        {
+          "label": "Date",
+          "text": "26 October"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Our annual inventory count will take place at the Riverside Distribution Center on Saturday, 14 November.",
+              "ja": "年次の棚卸しは、11月14日土曜にリバーサイド物流センターで行われます。"
+            },
+            {
+              "en": "The count was originally planned for 7 November, but it has been moved because a large delivery is arriving that week.",
+              "ja": "棚卸しは当初11月7日の予定でしたが、その週に大量の納品があるため変更されました。",
+              "pos": 1
+            },
+            {
+              "en": "All staff in the receiving, packing, and shipping teams are required to take part.",
+              "ja": "入荷、梱包、出荷の各チームの全職員が参加することになっています。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Work will begin at 6:00 a.m. and is expected to finish by 2:00 p.m.",
+              "ja": "作業は午前6時に始まり、午後2時までに終わる見込みです。",
+              "pos": 2
+            },
+            {
+              "en": "Employees who work the full shift will receive overtime pay, a free lunch, and an additional day off.",
+              "ja": "全時間を勤務した職員には、残業手当、無料の昼食、追加の休日が支給されます。"
+            },
+            {
+              "en": "Please sign up for one of the three counting teams with your supervisor no later than Friday, 6 November.",
+              "ja": "3つの棚卸しチームのいずれかに、遅くとも11月6日金曜までに上司を通じて申し込んでください。",
+              "pos": 3
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Because of the count, no outgoing orders will be processed on that day.",
+              "ja": "棚卸しのため、当日は出荷する注文は処理されません。"
+            },
+            {
+              "en": "Customers have already been informed, and urgent shipments will be sent out on Friday afternoon instead.",
+              "ja": "顧客にはすでに連絡済みで、急ぎの荷物は代わりに金曜の午後に発送されます。",
+              "pos": 4
+            },
+            {
+              "en": "Please direct any questions to Ms. Ito in Operations at extension 305.",
+              "ja": "ご質問は、内線305の運営部のイトウまでお寄せください。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "Why was the date of the inventory count changed?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Too few employees were available.",
+          "ja": "人手が足りなかったため"
+        },
+        {
+          "key": "B",
+          "text": "A large delivery will arrive that week.",
+          "ja": "その週に大量の納品があるため"
+        },
+        {
+          "key": "C",
+          "text": "The warehouse will be under repair.",
+          "ja": "倉庫が修理中になるため"
+        },
+        {
+          "key": "D",
+          "text": "Customers asked for a later date.",
+          "ja": "顧客が遅い日程を求めたため"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第1段落の2文目に「当初は11月7日の予定だったが、その週に大量の納品があるため移した」とある。A・C・D は本文に理由として書かれていない。",
+      "tip": "理由を問う設問は because / due to / since の近くに根拠がある。その語を探して読む。"
+    },
+    {
+      "id": "q2",
+      "type": "notTrue",
+      "prompt": "What is NOT mentioned as a benefit for employees who work the full shift?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A transportation allowance",
+          "ja": "交通費の補助"
+        },
+        {
+          "key": "B",
+          "text": "Overtime pay",
+          "ja": "残業手当"
+        },
+        {
+          "key": "C",
+          "text": "A free lunch",
+          "ja": "無料の昼食"
+        },
+        {
+          "key": "D",
+          "text": "An additional day off",
+          "ja": "追加の休日"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第2段落の2文目に、全時間勤務した職員には残業手当、無料の昼食、追加の休日が出るとある。交通費の補助は書かれていないので A が正解。",
+      "tip": "NOT 問題は、選択肢を1つずつ本文で確認して消し、残ったものを選ぶ。"
+    },
+    {
+      "id": "q3",
+      "type": "insert",
+      "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "insert": "Anyone unable to take part must let a supervisor know by the same deadline.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "[1]",
+          "ja": "1の位置"
+        },
+        {
+          "key": "B",
+          "text": "[2]",
+          "ja": "2の位置"
+        },
+        {
+          "key": "C",
+          "text": "[3]",
+          "ja": "3の位置"
+        },
+        {
+          "key": "D",
+          "text": "[4]",
+          "ja": "4の位置"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "挿入文の the same deadline は、すでに期限が出た直後に置く。[3] の前の文に no later than Friday, 6 November という期限があるので、[3] が自然である。[2] や [4] の前には期限の話がなく、the same が指す先がない。",
+      "tip": "挿入文の the same / this / those などは、直前に指す先があるかを確かめる。"
+    },
+    {
+      "id": "q4",
+      "type": "infer",
+      "prompt": "What is suggested about the Riverside Distribution Center?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It usually ships orders on Saturdays.",
+          "ja": "通常は土曜日にも注文を出荷している"
+        },
+        {
+          "key": "B",
+          "text": "It will close permanently in November.",
+          "ja": "11月に完全に閉鎖される"
+        },
+        {
+          "key": "C",
+          "text": "It has fewer than three teams.",
+          "ja": "チームが3つ未満である"
+        },
+        {
+          "key": "D",
+          "text": "It handles only urgent shipments.",
+          "ja": "急ぎの荷物しか扱わない"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 2,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "第3段落に「当日（土曜）は出荷する注文を処理しない」とある。わざわざそう述べるのは、通常は土曜も出荷しているからだと推測できる。B・C・D は本文から読み取れない。",
+      "tip": "示唆の設問は、本文が例外として述べていることから、普段の状態を逆に読み取る。"
+    }
+  ],
+  "glossary": {
+    "take place": {
+      "lemma": "take place",
+      "pos": "熟",
+      "ja": "行われる、開催される",
+      "note": "",
+      "example": {
+        "en": "The product demonstration will take place in Room 3.",
+        "ja": "製品の実演は3号室で行われる。"
+      }
+    },
+    "inventory count": {
+      "lemma": "inventory count",
+      "pos": "熟",
+      "ja": "棚卸し",
+      "note": "",
+      "example": {
+        "en": "The inventory count revealed several missing items.",
+        "ja": "棚卸しの結果、いくつかの品が足りないことが分かった。"
+      }
+    },
+    "are required to": {
+      "lemma": "be required to",
+      "pos": "熟",
+      "ja": "〜することになっている",
+      "note": "be required to ＋動詞",
+      "example": {
+        "en": "Visitors are required to sign in at the entrance.",
+        "ja": "来訪者は入口で記帳することになっている。"
+      }
+    },
+    "full shift": {
+      "lemma": "full shift",
+      "pos": "熟",
+      "ja": "全時間の勤務",
+      "note": "",
+      "example": {
+        "en": "Drivers who complete a full shift receive a bonus.",
+        "ja": "全時間勤務したドライバーには手当が出る。"
+      }
+    },
+    "overtime pay": {
+      "lemma": "overtime pay",
+      "pos": "熟",
+      "ja": "残業手当",
+      "note": "",
+      "example": {
+        "en": "Overtime pay is calculated at one and a half times the hourly rate.",
+        "ja": "残業手当は時給の1.5倍で計算される。"
+      }
+    },
+    "sign up for": {
+      "lemma": "sign up for",
+      "pos": "熟",
+      "ja": "〜に申し込む",
+      "note": "",
+      "example": {
+        "en": "Employees may sign up for the language course online.",
+        "ja": "従業員は語学講座にオンラインで申し込める。"
+      }
+    },
+    "no later than": {
+      "lemma": "no later than",
+      "pos": "熟",
+      "ja": "遅くとも〜までに",
+      "note": "",
+      "example": {
+        "en": "Please reply no later than the end of this week.",
+        "ja": "遅くとも今週末までにご返信ください。"
+      }
+    },
+    "outgoing orders": {
+      "lemma": "outgoing orders",
+      "pos": "熟",
+      "ja": "出荷する注文",
+      "note": "",
+      "example": {
+        "en": "Outgoing orders are packed in the east section.",
+        "ja": "出荷する注文は東区画で梱包される。"
+      }
+    },
+    "urgent shipments": {
+      "lemma": "urgent shipments",
+      "pos": "熟",
+      "ja": "急ぎの荷物",
+      "note": "",
+      "example": {
+        "en": "Urgent shipments are handled before regular ones.",
+        "ja": "急ぎの荷物は通常の荷物より先に扱われる。"
+      }
+    },
+    "direct": {
+      "lemma": "direct",
+      "pos": "動",
+      "ja": "向ける、宛てる",
+      "note": "direct A to B",
+      "example": {
+        "en": "Please direct all complaints to the service desk.",
+        "ja": "苦情はすべてサービスデスクに回してください。"
+      }
+    }
+  },
+  "point": {
+    "lead": "設問を1つ読んでから本文に戻り、根拠の1文を特定する",
+    "items": [
+      {
+        "title": "設問の順番は本文の流れと合う",
+        "body": "detail や infer は前から順に根拠が進む。次の設問は直前の根拠より後ろを探す。"
+      },
+      {
+        "title": "NOT 問題は消去する",
+        "body": "3つが本文にあることを確認して消し、残った1つを選ぶ。1文に並んでいることが多い。"
+      },
+      {
+        "title": "挿入文は指示語を手がかりに",
+        "body": "the same / this / those などの語が受ける先を探し、その直後の位置を選ぶ。"
+      }
+    ]
+  }
+}
