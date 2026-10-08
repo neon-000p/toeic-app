@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-10-09-0415",
+  "date": "2026-10-09",
+  "time": "04:15",
+  "createdAt": "2026-10-09T04:15:00+09:00",
+  "sample": false,
+  "docType": "notice",
+  "scene": "館内のお知らせ｜エレベーターの年次点検",
+  "intro": "Questions 1-4 refer to the following notice.",
+  "header": [
+    {
+      "label": "",
+      "text": "Elevator Maintenance Notice"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "Elevator 2 in the east wing will be out of service from Monday, 19 October, through Friday, 23 October, for its annual safety check.",
+          "ja": "東棟のエレベーター2号機は、年次安全点検のため、10月19日月曜から23日金曜まで運休します。"
+        },
+        {
+          "en": "Maintenance crews ------- the cables, brakes, and control panel during that period.",
+          "ja": "保守作業員は、その期間中にケーブル、ブレーキ、制御盤を点検します。",
+          "q": 1
+        },
+        {
+          "en": "All work is scheduled to be completed before the weekend.",
+          "ja": "作業はすべて週末までに完了する予定です。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Elevator 1 near the main entrance will remain in operation throughout the week.",
+          "ja": "正面玄関近くのエレベーター1号機は、期間中ずっと稼働します。"
+        },
+        {
+          "en": "-------, it is likely to be crowded between 8:00 and 9:00 a.m.",
+          "ja": "ただし、午前8時から9時の間は混雑する可能性があります。",
+          "q": 2
+        },
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 3
+        },
+        {
+          "en": "Anyone who is unable to do so should ask the front desk for priority access.",
+          "ja": "それが難しい方は、受付に申し出れば優先的に利用できます。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Normal service will resume on Monday, 26 October.",
+          "ja": "通常運行は10月26日月曜に再開します。"
+        },
+        {
+          "en": "We apologize for any ------- this may cause and thank you for your patience.",
+          "ja": "ご不便をおかけすることをお詫びし、ご理解に感謝いたします。",
+          "q": 4
+        },
+        {
+          "en": "Questions should be directed to the Facilities Office at extension 214.",
+          "ja": "ご質問は内線214の施設課までお寄せください。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "verb",
+      "choices": [
+        {
+          "key": "A",
+          "text": "inspected",
+          "ja": "点検した"
+        },
+        {
+          "key": "B",
+          "text": "will inspect",
+          "ja": "点検する予定だ"
+        },
+        {
+          "key": "C",
+          "text": "have inspected",
+          "ja": "点検してきた"
+        },
+        {
+          "key": "D",
+          "text": "had inspected",
+          "ja": "点検していた"
+        }
+      ],
+      "answer": "B",
+      "explanation": "冒頭の文に「10月19日月曜から23日金曜まで」とあり、点検はこれから行われる。したがって未来を表す will inspect。inspected や had inspected は過去の出来事になり、日付と合わない。",
+      "tip": "時制の問題は空所の文だけで決めない。文書の冒頭にある日付（これから／すでに過ぎた）を先に見る。"
+    },
+    {
+      "id": "q2",
+      "type": "conj",
+      "choices": [
+        {
+          "key": "A",
+          "text": "However",
+          "ja": "しかしながら"
+        },
+        {
+          "key": "B",
+          "text": "Therefore",
+          "ja": "したがって"
+        },
+        {
+          "key": "C",
+          "text": "Likewise",
+          "ja": "同様に"
+        },
+        {
+          "key": "D",
+          "text": "Otherwise",
+          "ja": "さもなければ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "前の文は「1号機は稼働し続ける」、空所のあとは「混雑しそう」。良い話から懸念への転換なので逆接の However。Therefore は因果で、稼働と混雑は原因と結果の関係ではない。",
+      "tip": "接続副詞は前の文との関係を見る。良い情報のあとに困りごとが来れば逆接、同じ方向なら追加。"
+    },
+    {
+      "id": "q3",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The east wing will also be repainted over the weekend of 24 October.",
+          "ja": "東棟は10月24日の週末に塗り直されます。"
+        },
+        {
+          "key": "B",
+          "text": "Maintenance crews will begin work at 7:00 a.m. each day.",
+          "ja": "保守作業員は毎日午前7時に作業を始めます。"
+        },
+        {
+          "key": "C",
+          "text": "Elevator 2 was installed in the building more than twenty years ago.",
+          "ja": "2号機は20年以上前にこの建物に設置されました。"
+        },
+        {
+          "key": "D",
+          "text": "Employees on the second and third floors are asked to take the stairs during these hours.",
+          "ja": "2階と3階の従業員は、この時間帯は階段を使うようお願いします。"
+        }
+      ],
+      "answer": "D",
+      "explanation": "前の文は午前8時から9時に混雑するという話で、D の these hours がその時間帯を受ける。後ろの Anyone who is unable to do so の do so も、D の「階段を使う」を受けている。A・B・C は混雑や階段の話につながらない。",
+      "tip": "一文挿入は、前の文の内容を受ける語（these hours）と、後ろの文が受ける語（do so）の両方を探す。"
+    },
+    {
+      "id": "q4",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "invitation",
+          "ja": "招待"
+        },
+        {
+          "key": "B",
+          "text": "instruction",
+          "ja": "指示"
+        },
+        {
+          "key": "C",
+          "text": "inconvenience",
+          "ja": "不便"
+        },
+        {
+          "key": "D",
+          "text": "inspection",
+          "ja": "点検"
+        }
+      ],
+      "answer": "C",
+      "explanation": "We apologize for any ------- this may cause は「ご迷惑をおかけすることをお詫びします」という定型で、運休による不便を指す inconvenience が入る。inspection は点検そのものであり、「cause する」対象にならない。",
+      "tip": "apologize for any ○ は inconvenience / delay / trouble など、迷惑を表す名詞が入る決まった形。"
+    }
+  ],
+  "glossary": {
+    "out of service": {
+      "lemma": "out of service",
+      "pos": "熟",
+      "ja": "運休して、使用停止で",
+      "note": "",
+      "example": {
+        "en": "The vending machine on the first floor is out of service today.",
+        "ja": "1階の自動販売機は今日は使用できない。"
+      }
+    },
+    "control panel": {
+      "lemma": "control panel",
+      "pos": "熟",
+      "ja": "制御盤、操作盤",
+      "note": "",
+      "example": {
+        "en": "Only trained staff may touch the control panel of the machine.",
+        "ja": "訓練を受けた職員だけがその機械の制御盤に触れてよい。"
+      }
+    },
+    "scheduled to be completed": {
+      "lemma": "schedule",
+      "pos": "熟",
+      "ja": "完了する予定の",
+      "note": "be scheduled to 〜 は「〜する予定だ」",
+      "example": {
+        "en": "The new wing is scheduled to be completed by next spring.",
+        "ja": "新しい棟は来春までに完成する予定だ。"
+      }
+    },
+    "in operation": {
+      "lemma": "in operation",
+      "pos": "熟",
+      "ja": "稼働して",
+      "note": "",
+      "example": {
+        "en": "The new assembly line has been in operation since March.",
+        "ja": "新しい組立ラインは3月から稼働している。"
+      }
+    },
+    "throughout the week": {
+      "lemma": "throughout the week",
+      "pos": "熟",
+      "ja": "1週間を通して",
+      "note": "",
+      "example": {
+        "en": "Prices will stay the same throughout the week.",
+        "ja": "価格は1週間を通して変わらない。"
+      }
+    },
+    "unable to": {
+      "lemma": "unable to",
+      "pos": "熟",
+      "ja": "〜できない",
+      "note": "be unable to ＋動詞",
+      "example": {
+        "en": "Several members were unable to attend the annual meeting.",
+        "ja": "何人かの会員は年次総会に出席できなかった。"
+      }
+    },
+    "front desk": {
+      "lemma": "front desk",
+      "pos": "熟",
+      "ja": "受付",
+      "note": "",
+      "example": {
+        "en": "Please leave your key at the front desk when you check out.",
+        "ja": "チェックアウト時は鍵を受付に預けてください。"
+      }
+    },
+    "priority access": {
+      "lemma": "priority access",
+      "pos": "熟",
+      "ja": "優先的な利用",
+      "note": "",
+      "example": {
+        "en": "Members receive priority access to the conference rooms.",
+        "ja": "会員は会議室を優先的に利用できる。"
+      }
+    },
+    "normal service": {
+      "lemma": "normal service",
+      "pos": "熟",
+      "ja": "通常運行、通常のサービス",
+      "note": "",
+      "example": {
+        "en": "Normal service on the Blue Line will resume this evening.",
+        "ja": "ブルーラインの通常運行は今晩再開する。"
+      }
+    },
+    "directed to": {
+      "lemma": "direct",
+      "pos": "熟",
+      "ja": "〜に向けられる",
+      "note": "direct A to B で「AをBに向ける」",
+      "example": {
+        "en": "All inquiries should be directed to the sales department.",
+        "ja": "問い合わせはすべて営業部に回してください。"
+      }
+    },
+    "patience": {
+      "lemma": "patience",
+      "pos": "名",
+      "ja": "辛抱、我慢",
+      "note": "thank you for your patience は定型",
+      "example": {
+        "en": "We appreciate your patience while the system is being updated.",
+        "ja": "システム更新中のご辛抱に感謝します。"
+      }
+    }
+  },
+  "point": {
+    "lead": "空所の文だけで決まらないときは、前後の文と冒頭の日付に戻る",
+    "items": [
+      {
+        "title": "時制は文書全体の日付で決める",
+        "body": "will / was のどちらかを、空所の文だけで選ばない。冒頭にある日付がこれからか過ぎたかを先に確認する。"
+      },
+      {
+        "title": "接続副詞は直前の文との関係を見る",
+        "body": "良い情報のあとに懸念が来れば逆接（However）。前後の文をそれぞれ1語で要約すると関係がはっきりする。"
+      },
+      {
+        "title": "一文挿入は前後の両方につながるものを選ぶ",
+        "body": "these hours や do so のように、前後の文が受けている語を探す。話題が合うだけの文は誤答。"
+      }
+    ]
+  }
+}

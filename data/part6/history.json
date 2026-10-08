@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
   "type": "part6-history",
-  "updatedAt": "2026-10-02T04:08:31+09:00",
+  "updatedAt": "2026-10-09T04:17:25+09:00",
   "items": [
+    {
+      "id": "2026-10-09-0415",
+      "date": "2026-10-09",
+      "scene": "館内のお知らせ｜エレベーターの年次点検",
+      "docType": "notice",
+      "types": [
+        "verb",
+        "conj",
+        "sentence",
+        "vocab"
+      ]
+    },
     {
       "id": "2026-10-02-0404",
       "date": "2026-10-02",
