@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-08-1210",
+  "date": "2026-10-08",
+  "time": "12:10",
+  "createdAt": "2026-10-08T12:10:00+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Google Signs Nuclear Power Deal With Constellation",
+    "ja": "グーグル、原発改修で20年の電力契約"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "On October 6, Google signed a 20-year power deal with Constellation Energy, the largest nuclear plant operator in the U.S.",
+            "ja": "10月6日、グーグルは米国最大の原子力発電事業者であるコンステレーション・エナジーと、20年間の電力契約を結んだ。"
+          },
+          {
+            "en": "Under the agreement, Constellation will upgrade 11 of its existing reactors in three states.",
+            "ja": "この契約に基づき、コンステレーションは3つの州にある既存の原子炉11基を改修する。"
+          },
+          {
+            "en": "The upgrades, which make old reactors produce more power, will add 890 megawatts of new capacity to the grid.",
+            "ja": "古い原子炉の発電量を増やすこの改修によって、送電網に89万キロワットの新たな発電能力が加わる。"
+          },
+          {
+            "en": "The first extra power could reach the grid as soon as 2028.",
+            "ja": "追加分の電力は、早ければ2028年に送電網へ届く見込みだ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Constellation plans to invest more than $4.3 billion in the work.",
+            "ja": "コンステレーションは、この工事に43億ドル超を投資する計画だ。"
+          },
+          {
+            "en": "Google's long-term payments will help the company cover this cost.",
+            "ja": "グーグルによる長期の支払いが、同社がこの費用をまかなう助けとなる。"
+          },
+          {
+            "en": "The two firms also signed a separate 15-year contract for 2,700 megawatts from current plants.",
+            "ja": "両社はこれとは別に、既存の発電所から270万キロワットを調達する15年契約も結んだ。"
+          },
+          {
+            "en": "Tech companies need huge amounts of electricity for data centers that run AI services.",
+            "ja": "IT企業は、AIサービスを動かすデータセンター向けに膨大な電力を必要としている。"
+          },
+          {
+            "en": "Building a new nuclear plant takes many years, so upgrading existing ones is a faster option.",
+            "ja": "原子力発電所の新設には長い年月がかかるため、既存の発電所の改修はより速い選択肢となる。"
+          },
+          {
+            "en": "Just last week, Constellation signed a similar deal with Amazon.",
+            "ja": "コンステレーションはつい先週も、アマゾンと同様の契約を結んだばかりだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much new capacity will the reactor upgrades add to the grid?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2,700 megawatts",
+          "ja": "270万キロワット"
+        },
+        {
+          "key": "B",
+          "text": "890 megawatts",
+          "ja": "89万キロワット"
+        },
+        {
+          "key": "C",
+          "text": "4.3 gigawatts",
+          "ja": "430万キロワット"
+        },
+        {
+          "key": "D",
+          "text": "1,100 megawatts",
+          "ja": "110万キロワット"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落の3文目に「will add 890 megawatts of new capacity to the grid」とある。Aの2,700 megawattsは既存の発電所から調達する別の15年契約の量で、改修による新規分ではない。Cは投資額の$4.3 billionの数字を単位だけ変えた引っかけ、Dは本文に出てこない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字問題は、設問のキーワード（upgrades / new capacity）が本文のどの数字と結びついているかを確認する。似た単位の数字が2つ以上あれば、何を指す数字かを必ず区別する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why is upgrading existing nuclear plants attractive?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is required by the government.",
+          "ja": "政府が義務づけている"
+        },
+        {
+          "key": "B",
+          "text": "It needs no investment at all.",
+          "ja": "投資がまったく不要"
+        },
+        {
+          "key": "C",
+          "text": "It is faster than building a new plant.",
+          "ja": "新設より速い"
+        },
+        {
+          "key": "D",
+          "text": "It reduces the need for data centers.",
+          "ja": "データセンターの必要が減る"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落の5文目に「Building a new nuclear plant takes many years, so upgrading existing ones is a faster option」とあり、新設より速いことが理由として書かれている。Aの政府の義務は本文にない情報。Bは「43億ドル超を投資する」という本文と逆の内容。Dは、IT企業がデータセンター向けに膨大な電力を必要としているという本文と合わない。",
+      "evidence": {
+        "p": 1,
+        "s": 4
+      },
+      "tip": "理由を問う設問では、本文の so / because / since などの接続語の前後を探すと根拠が見つかりやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "agreement",
+      "pos": "名",
+      "ja": "契約、合意",
+      "gloss": "",
+      "example": {
+        "en": "The two companies reached an agreement on prices.",
+        "ja": "両社は価格について合意に達した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "existing",
+      "pos": "形",
+      "ja": "既存の、現在ある",
+      "gloss": "",
+      "example": {
+        "en": "We will train existing staff instead of hiring new people.",
+        "ja": "新しい人を雇う代わりに既存の社員を研修する。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "reactors",
+      "pos": "名",
+      "ja": "原子炉",
+      "gloss": "（＝原子力発電所で熱を生み出す中心の装置のこと）",
+      "example": {
+        "en": "The power company checks its reactors every year.",
+        "ja": "その電力会社は毎年原子炉を点検している。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "capacity",
+      "pos": "名",
+      "ja": "能力、容量",
+      "gloss": "",
+      "example": {
+        "en": "The new warehouse has twice the capacity of the old one.",
+        "ja": "新しい倉庫は古い倉庫の2倍の容量がある。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "invest",
+      "pos": "動",
+      "ja": "投資する",
+      "gloss": "",
+      "example": {
+        "en": "The company will invest $2 million in new equipment.",
+        "ja": "その会社は新しい設備に200万ドルを投資する。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "cover",
+      "pos": "動",
+      "ja": "（費用を）まかなう",
+      "gloss": "",
+      "example": {
+        "en": "The budget does not cover travel expenses.",
+        "ja": "その予算では出張費はまかなえない。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "separate",
+      "pos": "形",
+      "ja": "別の、個別の",
+      "gloss": "",
+      "example": {
+        "en": "Please send the invoice in a separate e-mail.",
+        "ja": "請求書は別のメールで送ってください。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "option",
+      "pos": "名",
+      "ja": "選択肢",
+      "gloss": "",
+      "example": {
+        "en": "Working from home is an option for all employees.",
+        "ja": "在宅勤務は全社員が選べる選択肢だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "signed": {
+      "lemma": "sign",
+      "pos": "動",
+      "ja": "署名した、結んだ",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "取引、契約",
+      "note": ""
+    },
+    "nuclear": {
+      "lemma": "nuclear",
+      "pos": "形",
+      "ja": "原子力の",
+      "note": ""
+    },
+    "operator": {
+      "lemma": "operator",
+      "pos": "名",
+      "ja": "運営会社、事業者",
+      "note": ""
+    },
+    "agreement": {
+      "lemma": "agreement",
+      "pos": "名",
+      "ja": "契約、合意",
+      "note": "under the agreement で「契約に基づき」"
+    },
+    "upgrade": {
+      "lemma": "upgrade",
+      "pos": "動",
+      "ja": "改修する、性能を上げる",
+      "note": ""
+    },
+    "upgrades": {
+      "lemma": "upgrade",
+      "pos": "名",
+      "ja": "改修、性能向上",
+      "note": ""
+    },
+    "existing": {
+      "lemma": "existing",
+      "pos": "形",
+      "ja": "既存の",
+      "note": ""
+    },
+    "reactors": {
+      "lemma": "reactor",
+      "pos": "名",
+      "ja": "原子炉",
+      "note": ""
+    },
+    "produce": {
+      "lemma": "produce",
+      "pos": "動",
+      "ja": "生み出す、生産する",
+      "note": ""
+    },
+    "megawatts": {
+      "lemma": "megawatt",
+      "pos": "名",
+      "ja": "メガワット",
+      "note": "1メガワット＝1,000キロワット"
+    },
+    "capacity": {
+      "lemma": "capacity",
+      "pos": "名",
+      "ja": "能力、容量",
+      "note": "発電の文脈では「発電能力」"
+    },
+    "grid": {
+      "lemma": "grid",
+      "pos": "名",
+      "ja": "送電網",
+      "note": ""
+    },
+    "extra": {
+      "lemma": "extra",
+      "pos": "形",
+      "ja": "追加の",
+      "note": ""
+    },
+    "reach": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "届く、到達する",
+      "note": ""
+    },
+    "invest": {
+      "lemma": "invest",
+      "pos": "動",
+      "ja": "投資する",
+      "note": "invest A in B で「BにAを投資する」"
+    },
+    "long-term": {
+      "lemma": "long-term",
+      "pos": "形",
+      "ja": "長期の",
+      "note": ""
+    },
+    "payments": {
+      "lemma": "payment",
+      "pos": "名",
+      "ja": "支払い",
+      "note": ""
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "まかなう",
+      "note": "cover the cost で「費用をまかなう」"
+    },
+    "separate": {
+      "lemma": "separate",
+      "pos": "形",
+      "ja": "別の、個別の",
+      "note": ""
+    },
+    "contract": {
+      "lemma": "contract",
+      "pos": "名",
+      "ja": "契約",
+      "note": ""
+    },
+    "current": {
+      "lemma": "current",
+      "pos": "形",
+      "ja": "現在の、既存の",
+      "note": ""
+    },
+    "huge": {
+      "lemma": "huge",
+      "pos": "形",
+      "ja": "膨大な",
+      "note": ""
+    },
+    "amounts": {
+      "lemma": "amount",
+      "pos": "名",
+      "ja": "量",
+      "note": ""
+    },
+    "electricity": {
+      "lemma": "electricity",
+      "pos": "名",
+      "ja": "電力",
+      "note": ""
+    },
+    "option": {
+      "lemma": "option",
+      "pos": "名",
+      "ja": "選択肢",
+      "note": ""
+    },
+    "similar": {
+      "lemma": "similar",
+      "pos": "形",
+      "ja": "同様の",
+      "note": ""
+    },
+    "firms": {
+      "lemma": "firm",
+      "pos": "名",
+      "ja": "会社",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "help＋O＋原形（Oが〜するのを助ける）",
+    "quote": "Google's long-term payments will help the company cover this cost.",
+    "quoteJa": "グーグルによる長期の支払いが、同社がこの費用をまかなう助けとなる。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "help は「help＋目的語（O）＋動詞の原形」の形で「Oが〜するのを助ける」を表す。この文では the company が O、cover this cost が「助けられて行う動作」。主語が人ではなく payments（支払い）という物である点も特徴で、「支払いのおかげで会社は費用をまかなえる」という因果関係を簡潔に表している。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "help の後ろは to 不定詞でもよく、help the company to cover this cost も正しい。ただしビジネス英語・TOEIC では原形の形がより一般的。また、help を使わずに書くと Thanks to Google's long-term payments, the company can cover this cost.（グーグルの長期の支払いのおかげで、同社はこの費用をまかなえる）となる。"
+      },
+      {
+        "heading": "TOEICでの傾向",
+        "body": "Part 5 では help＋O の後の空所に入る動詞の形を問う問題がよく出る。正解は原形（cover）または to 不定詞（to cover）で、-ing 形（covering）や過去形（covered）は誤り。同じ形をとる let / make（使役動詞）と違い、help だけは to 不定詞も使える点が狙われる。O を省いた help cover the cost（費用をまかなうのに役立つ）の形も押さえたい。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The new software will help our team finish reports faster.（新しいソフトのおかげで、チームは報告書を早く仕上げられる。）／ Could you help me prepare the slides for tomorrow's meeting?（明日の会議用のスライドの準備を手伝ってもらえますか。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか：「改修で発電量を増やす」契約",
+      "body": "グーグルは、米国最大の原子力発電事業者コンステレーション・エナジーと20年間の電力購入契約（PPA＝発電事業者から長期・固定条件で電気を買う契約）を結んだ。コンステレーションは既存の原子炉11基を改修し、出力を引き上げる。これを「アップレート（uprate）」と呼び、原子炉を新しく建てずに、設備の更新や調整で1基あたりの発電量を増やす手法のことだ。新規分は合計89万キロワットで、早ければ2028年から送電網に届く。さらに既存の発電所から270万キロワットを買う15年契約も別に結び、合わせて約360万キロワット規模の大型契約となった。"
+    },
+    {
+      "heading": "📌 なぜ今：AI向けデータセンターの電力不足",
+      "body": "生成AIの普及で、大量のサーバーを動かすデータセンターの電力需要が急増している。IT大手は「24時間止まらず、CO2を出さない電源」を求めており、天候に左右される太陽光や風力だけでは足りない。原子力はこの条件を満たすが、新設には10年以上かかることも多い。そこで、すでにある原子炉の出力を上げる、止まった原子炉を再稼働させるといった「早く確保できる電源」の奪い合いになっている。グーグルの長期の支払い約束は、電力会社にとって数十億ドル規模の投資を回収できる保証になる。"
+    },
+    {
+      "heading": "📌 業界・競合の動き",
+      "body": "コンステレーションは先週アマゾンとも同様の契約を結んでおり、これまでにマイクロソフト（停止中の原子炉の再稼働）やメタ（既存原発の電力の長期購入）とも20年契約を結んでいる。IT大手4社がそろって原子力に長期の資金を投じる構図だ。発表を受けて同社の株価は大きく上昇し、電力株全体に「AI関連銘柄」としての注目が集まっている。一方で、電力需要の急増が一般家庭の電気料金を押し上げるのではないかという懸念も根強い。"
+    },
+    {
+      "heading": "📌 日本への示唆",
+      "body": "日本でもデータセンターの新設が相次ぎ、電力の確保が立地を決める最大の条件になりつつある。既存原発の再稼働や出力向上、IT企業と電力会社の長期契約は、日本でも検討が進むテーマだ。投資家にとっては、電力会社・送配電設備・原発関連の部品や保守を手がける日本企業に追い風となりうる。ビジネスパーソンとしては、「AIの成長＝電力の争奪戦」という構図を押さえておくと、エネルギーやITのニュースを一段深く読めるようになる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google and Constellation Announce Landmark Agreement to Bring 890 MW of New Nuclear Capacity to PJM Grid as Part of Long-Term Power Deal",
+      "publisher": "Constellation Energy",
+      "url": "https://www.constellationenergy.com/news/2026/10/google-and-constellation-announce-landmark-agreement-to-bring-890-mw-of-new-nuclear-capacity-to-pjm-grid.html",
+      "date": "2026-10-06"
+    },
+    {
+      "title": "Google enters massive 3.6-GW power deal with Constellation Energy",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/06/google-enters-massive-3point6-gw-power-deal-with-constellation-energy-.html",
+      "date": "2026-10-06"
+    },
+    {
+      "title": "Google backs 'existing nuclear plants' as data centres strain US energy grid",
+      "publisher": "The National",
+      "url": "https://www.thenationalnews.com/future/2026/10/06/google-constellation-energy-nuclear-ppa/",
+      "date": "2026-10-06"
+    }
+  ]
+}
