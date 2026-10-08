@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part5-history",
-  "updatedAt": "2026-10-02T04:07:41+09:00",
+  "updatedAt": "2026-10-09T04:16:19+09:00",
   "items": [
+    {
+      "id": "2026-10-09-0415",
+      "date": "2026-10-09",
+      "focus": "文法7・語彙3",
+      "types": [
+        "form",
+        "form",
+        "verb",
+        "vocab",
+        "verbal",
+        "prep",
+        "vocab",
+        "pron",
+        "comp",
+        "vocab"
+      ],
+      "topics": [
+        "冠詞と形容詞のあとの名詞",
+        "make の補語になる形容詞",
+        "助動詞＋受動態",
+        "suggest＋動名詞",
+        "対象を表す前置詞 on",
+        "再帰代名詞の目的語用法",
+        "not as ... as の原級"
+      ]
+    },
     {
       "id": "2026-10-02-0404",
       "date": "2026-10-02",

@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-10-09-0415",
+  "date": "2026-10-09",
+  "time": "04:15",
+  "createdAt": "2026-10-09T04:15:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "The finance department requested a detailed ------- of all travel expenses submitted last quarter.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "analyze",
+          "ja": "（動）分析する"
+        },
+        {
+          "key": "B",
+          "text": "analysis",
+          "ja": "（名）分析"
+        },
+        {
+          "key": "C",
+          "text": "analytical",
+          "ja": "（形）分析的な"
+        },
+        {
+          "key": "D",
+          "text": "analytically",
+          "ja": "（副）分析的に"
+        }
+      ],
+      "answer": "B",
+      "ja": "財務部は、前四半期に提出されたすべての出張費についての詳細な分析を求めた。",
+      "explanation": "空所は冠詞 a と形容詞 detailed のあと、前置詞 of の前にあるので、名詞が入る。選択肢のうち名詞は analysis だけ。analytical は形容詞で、a detailed のあとに置くと名詞が欠けてしまう。",
+      "tip": "選択肢が同じ語幹で語尾だけ違えば品詞問題。「冠詞＋形容詞」のあとは名詞と決める。"
+    },
+    {
+      "id": "q2",
+      "type": "form",
+      "prompt": "The new software is designed to make the ordering process more ------- for customers.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "convenient",
+          "ja": "（形）便利な"
+        },
+        {
+          "key": "B",
+          "text": "convenience",
+          "ja": "（名）便利さ"
+        },
+        {
+          "key": "C",
+          "text": "conveniently",
+          "ja": "（副）便利に"
+        },
+        {
+          "key": "D",
+          "text": "conveniences",
+          "ja": "（名）便利な物（複）"
+        }
+      ],
+      "answer": "A",
+      "ja": "新しいソフトは、顧客にとって注文の手続きをより便利にするように作られている。",
+      "explanation": "make A more ○ は「A をより○にする」で、○には補語になる形容詞が入る。more のあとに置けるのは形容詞なので convenient。副詞 conveniently は make の補語にならない。",
+      "tip": "make＋目的語のあとの空所は補語。補語になるのは形容詞（名詞のこともあるが more の直後なら形容詞）。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "prompt": "The service contract ------- by both parties before the construction project can begin.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "must sign",
+          "ja": "署名しなければならない"
+        },
+        {
+          "key": "B",
+          "text": "must have signed",
+          "ja": "署名したに違いない"
+        },
+        {
+          "key": "C",
+          "text": "must be signed",
+          "ja": "署名されなければならない"
+        },
+        {
+          "key": "D",
+          "text": "must be signing",
+          "ja": "署名しているところでなければならない"
+        }
+      ],
+      "answer": "C",
+      "ja": "工事が始まる前に、サービス契約は双方によって署名されなければならない。",
+      "explanation": "主語は contract（物）で、署名するのは by both parties。つまり受け身にする。助動詞 must のあとは be＋過去分詞で must be signed。must sign だと契約が署名する側になってしまう。",
+      "tip": "by ＋行為者があれば受動態を疑う。主語が「物」で動作を受ける側なら be＋過去分詞。"
+    },
+    {
+      "id": "q4",
+      "type": "vocab",
+      "prompt": "Please ------- the signed application form to the personnel office no later than Friday.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "persuade",
+          "ja": "説得する"
+        },
+        {
+          "key": "B",
+          "text": "assemble",
+          "ja": "組み立てる、集める"
+        },
+        {
+          "key": "C",
+          "text": "resolve",
+          "ja": "解決する"
+        },
+        {
+          "key": "D",
+          "text": "submit",
+          "ja": "提出する"
+        }
+      ],
+      "answer": "D",
+      "ja": "署名した申込用紙は、遅くとも金曜日までに人事課へ提出してください。",
+      "explanation": "目的語が application form で、行き先が to the personnel office。「書類を提出する」の意味になるのは submit。assemble は人や部品を集める意味で合わない。",
+      "tip": "目的語と前置詞句から動詞の意味を絞る。書類＋ to ＋提出先なら submit。"
+    },
+    {
+      "id": "q5",
+      "type": "verbal",
+      "prompt": "The manager suggested ------- the staff meeting to Thursday because of the public holiday.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "postpone",
+          "ja": "延期する"
+        },
+        {
+          "key": "B",
+          "text": "to postpone",
+          "ja": "延期すること（to 不定詞）"
+        },
+        {
+          "key": "C",
+          "text": "postponing",
+          "ja": "延期すること（動名詞）"
+        },
+        {
+          "key": "D",
+          "text": "postponed",
+          "ja": "延期された"
+        }
+      ],
+      "answer": "C",
+      "ja": "部長は、祝日のためスタッフ会議を木曜日に延期することを提案した。",
+      "explanation": "suggest は動名詞を目的語に取り、to 不定詞は取らない。したがって postponing。the staff meeting は postponing の目的語になっている。",
+      "tip": "suggest・consider・avoid・finish などは動名詞を取る動詞。to 不定詞を選ばないよう、動詞を見て決める。"
+    },
+    {
+      "id": "q6",
+      "type": "prep",
+      "prompt": "The shop offers free delivery ------- orders over fifty dollars during the month of November.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "on",
+          "ja": "〜に対して"
+        },
+        {
+          "key": "B",
+          "text": "at",
+          "ja": "〜で"
+        },
+        {
+          "key": "C",
+          "text": "by",
+          "ja": "〜によって"
+        },
+        {
+          "key": "D",
+          "text": "to",
+          "ja": "〜へ"
+        }
+      ],
+      "answer": "A",
+      "ja": "その店は11月中、50ドルを超える注文に対して送料無料を提供している。",
+      "explanation": "「〜の注文に対して」という適用対象は on で表す（delivery on orders）。at は地点や価格水準、to は方向を表すので合わない。by は手段・期限で意味が合わない。",
+      "tip": "前置詞だけが並ぶときは、空所の前後の名詞同士の関係（対象・場所・期限など）を考える。"
+    },
+    {
+      "id": "q7",
+      "type": "vocab",
+      "prompt": "The hotel offers ------- rates to guests who book their rooms at least thirty days in advance.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "vacant",
+          "ja": "空いている"
+        },
+        {
+          "key": "B",
+          "text": "discounted",
+          "ja": "割引された"
+        },
+        {
+          "key": "C",
+          "text": "mutual",
+          "ja": "相互の"
+        },
+        {
+          "key": "D",
+          "text": "eligible",
+          "ja": "資格のある"
+        }
+      ],
+      "answer": "B",
+      "ja": "そのホテルは、少なくとも30日前までに予約した宿泊客に割引料金を提供している。",
+      "explanation": "rates を修飾して意味が通るのは discounted（割引された料金）。eligible は人を修飾する語で、rates には使えない。vacant は部屋に使う。",
+      "tip": "名詞とよく結びつく形容詞（discounted rates など）をセットで覚える。"
+    },
+    {
+      "id": "q8",
+      "type": "pron",
+      "prompt": "Mr. Han asked the new interns to introduce ------- to the sales team at Monday's meeting.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "them",
+          "ja": "彼らを"
+        },
+        {
+          "key": "B",
+          "text": "their",
+          "ja": "彼らの"
+        },
+        {
+          "key": "C",
+          "text": "theirs",
+          "ja": "彼らのもの"
+        },
+        {
+          "key": "D",
+          "text": "themselves",
+          "ja": "彼ら自身を"
+        }
+      ],
+      "answer": "D",
+      "ja": "ハン氏は新しいインターンに、月曜日の会議で営業チームに自己紹介するよう頼んだ。",
+      "explanation": "introduce の目的語が、動作をする the new interns 自身なので再帰代名詞 themselves を使う。them だと別の人たちを紹介する意味になる。",
+      "tip": "動作をする人と受ける人が同じなら再帰代名詞（-self / -selves）。"
+    },
+    {
+      "id": "q9",
+      "type": "comp",
+      "prompt": "The new printer is not as ------- as the older model when it handles large files.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "fast",
+          "ja": "速い"
+        },
+        {
+          "key": "B",
+          "text": "faster",
+          "ja": "より速い"
+        },
+        {
+          "key": "C",
+          "text": "fastest",
+          "ja": "最も速い"
+        },
+        {
+          "key": "D",
+          "text": "more fast",
+          "ja": "（誤）より速い"
+        }
+      ],
+      "answer": "A",
+      "ja": "新しいプリンターは、大きなファイルを扱うときには旧型ほど速くない。",
+      "explanation": "as ... as の間には形容詞・副詞の原級を入れる。後ろに as があるので faster や fastest は不可。fast が正解。more fast は fast の比較級として使わない。",
+      "tip": "as ... as に挟まれた空所は原級。比較級・最上級は選ばない。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "The company's ------- to environmental protection is reflected in its new recycling program.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "competition",
+          "ja": "競争"
+        },
+        {
+          "key": "B",
+          "text": "complaint",
+          "ja": "苦情"
+        },
+        {
+          "key": "C",
+          "text": "composition",
+          "ja": "構成"
+        },
+        {
+          "key": "D",
+          "text": "commitment",
+          "ja": "献身、取り組み"
+        }
+      ],
+      "answer": "D",
+      "ja": "同社の環境保護への取り組みは、新しいリサイクル計画に表れている。",
+      "explanation": "to environmental protection と結びつく名詞は commitment（commitment to〜）。complaint は about / against を取る。",
+      "tip": "名詞＋前置詞の組み合わせ（commitment to, access to, demand for）で決まる語彙問題がある。"
+    }
+  ],
+  "glossary": {
+    "no later than": {
+      "lemma": "no later than",
+      "pos": "熟",
+      "ja": "遅くとも〜までに",
+      "note": "期限を表す",
+      "example": {
+        "en": "Please send the report no later than noon on Wednesday.",
+        "ja": "報告書は遅くとも水曜日の正午までに送ってください。"
+      }
+    },
+    "in advance": {
+      "lemma": "in advance",
+      "pos": "熟",
+      "ja": "前もって",
+      "note": "",
+      "example": {
+        "en": "Tickets can be reserved two weeks in advance.",
+        "ja": "チケットは2週間前から予約できる。"
+      }
+    },
+    "at least": {
+      "lemma": "at least",
+      "pos": "熟",
+      "ja": "少なくとも",
+      "note": "",
+      "example": {
+        "en": "The training takes at least three hours to complete.",
+        "ja": "その研修は修了までに少なくとも3時間かかる。"
+      }
+    },
+    "travel expenses": {
+      "lemma": "travel expenses",
+      "pos": "熟",
+      "ja": "出張費、旅費",
+      "note": "",
+      "example": {
+        "en": "Travel expenses will be reimbursed within ten days.",
+        "ja": "出張費は10日以内に払い戻される。"
+      }
+    },
+    "public holiday": {
+      "lemma": "public holiday",
+      "pos": "熟",
+      "ja": "祝日",
+      "note": "",
+      "example": {
+        "en": "The bank is closed on every public holiday.",
+        "ja": "その銀行は祝日はすべて休業である。"
+      }
+    },
+    "service contract": {
+      "lemma": "service contract",
+      "pos": "熟",
+      "ja": "サービス契約",
+      "note": "",
+      "example": {
+        "en": "The service contract covers repairs for two years.",
+        "ja": "そのサービス契約は2年間の修理を対象とする。"
+      }
+    },
+    "by both parties": {
+      "lemma": "by both parties",
+      "pos": "熟",
+      "ja": "双方によって",
+      "note": "party は契約の当事者の意味",
+      "example": {
+        "en": "The agreement was reviewed by both parties last week.",
+        "ja": "その合意書は先週、双方によって確認された。"
+      }
+    },
+    "construction project": {
+      "lemma": "construction project",
+      "pos": "熟",
+      "ja": "建設工事、工事計画",
+      "note": "",
+      "example": {
+        "en": "The construction project is expected to finish in June.",
+        "ja": "その工事は6月に完了する見込みである。"
+      }
+    },
+    "application form": {
+      "lemma": "application form",
+      "pos": "熟",
+      "ja": "申込用紙",
+      "note": "",
+      "example": {
+        "en": "Please complete the application form in black ink.",
+        "ja": "申込用紙は黒インクで記入してください。"
+      }
+    },
+    "staff meeting": {
+      "lemma": "staff meeting",
+      "pos": "熟",
+      "ja": "職員会議",
+      "note": "",
+      "example": {
+        "en": "The staff meeting begins at nine every Monday.",
+        "ja": "職員会議は毎週月曜日の9時に始まる。"
+      }
+    },
+    "personnel office": {
+      "lemma": "personnel office",
+      "pos": "熟",
+      "ja": "人事課",
+      "note": "",
+      "example": {
+        "en": "Please bring your ID to the personnel office.",
+        "ja": "身分証を人事課に持参してください。"
+      }
+    },
+    "free delivery": {
+      "lemma": "free delivery",
+      "pos": "熟",
+      "ja": "送料無料",
+      "note": "",
+      "example": {
+        "en": "Free delivery is available within the city limits.",
+        "ja": "市内なら送料無料で配送できる。"
+      }
+    }
+  },
+  "point": {
+    "lead": "選択肢の見た目で型を決めてから、空所の前後を見る",
+    "items": [
+      {
+        "title": "語尾だけ違えば品詞、動詞の活用が並べば時制・態",
+        "body": "選択肢を縦に見て型を決める。品詞問題は空所の前の冠詞・形容詞・be 動詞などから、入る品詞を1つに絞る。"
+      },
+      {
+        "title": "行為者・目的語・動詞の種類で形を決める",
+        "body": "by ＋行為者があれば受動態、suggest などは動名詞、動作主と対象が同じなら再帰代名詞。空所の外のヒントを先に探す。"
+      },
+      {
+        "title": "語彙問題は組み合わせで消去する",
+        "body": "submit a form、discounted rates、commitment to のように、前後の語との結びつきを確認する。意味だけで選ばない。"
+      }
+    ]
+  }
+}
