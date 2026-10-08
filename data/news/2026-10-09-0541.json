@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-09-0541",
+  "date": "2026-10-09",
+  "time": "05:41",
+  "createdAt": "2026-10-09T05:41:00+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail",
+  "sample": false,
+  "title": {
+    "en": "Amazon, Walmart and Target Compete With Rival Fall Sales",
+    "ja": "米小売大手3社、秋のセールで競争"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Amazon held a two-day sale for its Prime members on Tuesday and Wednesday.",
+            "ja": "アマゾンは火曜日と水曜日の2日間、プライム会員向けのセールを開催した。"
+          },
+          {
+            "en": "Target ran a rival sale on the same two days, offering discounts of up to 40 percent.",
+            "ja": "ターゲットも同じ2日間に対抗セールを実施し、最大40%の割引を提供した。"
+          },
+          {
+            "en": "Walmart went further, running its sale from October 5 through October 11.",
+            "ja": "ウォルマートはさらに長く、10月5日から11日までセールを行った。"
+          },
+          {
+            "en": "It advertised up to 50 percent off home products.",
+            "ja": "同社は家庭用品を最大50%引きにすると宣伝した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The three retailers are competing for the same shoppers at almost the same time.",
+            "ja": "3社の小売大手は、ほぼ同じ時期に同じ買い物客を奪い合っている。"
+          },
+          {
+            "en": "Amazon keeps its best deals for members, but Walmart does not require a membership.",
+            "ja": "アマゾンは最もお得な商品を会員向けにとどめるが、ウォルマートは会員登録を必要としない。"
+          },
+          {
+            "en": "A recent survey found that about three in four shoppers plan to look for ways to save money.",
+            "ja": "最近の調査では、買い物客の約4人に3人が節約の方法を探すつもりだと分かった。"
+          },
+          {
+            "en": "Retailers also hope early sales will help them judge demand before the holiday season.",
+            "ja": "小売各社は、早期のセールが年末商戦の前に需要を見極める助けになることも期待している。"
+          },
+          {
+            "en": "If customers spend freely now, stores may order more inventory for the winter.",
+            "ja": "客が今、気前よくお金を使えば、店は冬に向けてより多くの在庫を発注するかもしれない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "When did Walmart's sale end?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "October 5",
+          "ja": "10月5日"
+        },
+        {
+          "key": "B",
+          "text": "October 7",
+          "ja": "10月7日"
+        },
+        {
+          "key": "C",
+          "text": "October 9",
+          "ja": "10月9日"
+        },
+        {
+          "key": "D",
+          "text": "October 11",
+          "ja": "10月11日"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は D。本文に Walmart ... running its sale from October 5 through October 11 とあり、終了日は10月11日です。A の October 5 は開始日、B の October 7 はアマゾンとターゲットのセールの最終日で、いずれも本文の別の日付を使った引っかけです。C の October 9 は本文にありません。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "日付や期間を問う問題は、from A through B の形に注目します。through は終わりの日を含むので、「終了日」を問われたら through の後ろを選びます。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT true according to the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Amazon keeps its best deals for members.",
+          "ja": "アマゾンは会員向けに最良の特典を残す。"
+        },
+        {
+          "key": "B",
+          "text": "Target offered discounts of up to 40 percent.",
+          "ja": "ターゲットは最大40%引きを提供した。"
+        },
+        {
+          "key": "C",
+          "text": "Walmart requires shoppers to hold a membership.",
+          "ja": "ウォルマートは会員資格を必要とする。"
+        },
+        {
+          "key": "D",
+          "text": "Retailers hope to judge demand before the holiday season.",
+          "ja": "小売各社は年末商戦前に需要を見極めたい。"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は C。本文には Walmart does not require a membership とあり、会員資格は不要です。C はこれと逆の内容なので「本文と一致しないもの」になります。A は Amazon keeps its best deals for members、B は up to 40 percent、D は help them judge demand before the holiday season とそれぞれ本文に一致しています。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "NOT 問題は、選択肢を1つずつ本文と照合して「一致するもの」を消していきます。but の前後で対比されている内容は、逆の選択肢が作られやすいので要注意です。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "rival",
+      "pos": "形",
+      "ja": "競合する、対抗の",
+      "gloss": "（＝同じ客や市場を取り合う相手のこと）",
+      "example": {
+        "en": "Our rival company will open a new store next month.",
+        "ja": "競合他社が来月、新店舗を開く。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "discount",
+      "pos": "名",
+      "ja": "割引",
+      "gloss": "",
+      "example": {
+        "en": "Customers can get a discount if they pay in advance.",
+        "ja": "前払いすれば割引が受けられる。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "advertise",
+      "pos": "動",
+      "ja": "宣伝する、広告する",
+      "gloss": "",
+      "example": {
+        "en": "The firm will advertise its new service on television.",
+        "ja": "同社は新サービスをテレビで宣伝する予定だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "competing",
+      "pos": "動",
+      "ja": "競争している（compete の -ing 形）",
+      "gloss": "",
+      "example": {
+        "en": "Several suppliers are competing for the contract.",
+        "ja": "複数の供給業者がその契約を争っている。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "membership",
+      "pos": "名",
+      "ja": "会員資格、会員であること",
+      "gloss": "",
+      "example": {
+        "en": "The membership includes free shipping on all orders.",
+        "ja": "会員資格には全注文の送料無料が含まれる。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "survey",
+      "pos": "名",
+      "ja": "調査、アンケート",
+      "gloss": "",
+      "example": {
+        "en": "The survey showed that most employees prefer flexible hours.",
+        "ja": "調査では、大半の従業員が柔軟な勤務時間を好むと分かった。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for electric cars has risen sharply this year.",
+        "ja": "電気自動車の需要は今年急増している。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "inventory",
+      "pos": "名",
+      "ja": "在庫",
+      "gloss": "",
+      "example": {
+        "en": "The store checks its inventory every Monday morning.",
+        "ja": "その店は毎週月曜の朝に在庫を確認する。"
+      }
+    }
+  ],
+  "glossary": {
+    "rival": {
+      "lemma": "rival",
+      "pos": "形",
+      "ja": "競合する",
+      "note": ""
+    },
+    "discounts": {
+      "lemma": "discount",
+      "pos": "名",
+      "ja": "割引",
+      "note": ""
+    },
+    "advertised": {
+      "lemma": "advertise",
+      "pos": "動",
+      "ja": "宣伝した",
+      "note": ""
+    },
+    "competing": {
+      "lemma": "compete",
+      "pos": "動",
+      "ja": "競争する",
+      "note": ""
+    },
+    "membership": {
+      "lemma": "membership",
+      "pos": "名",
+      "ja": "会員資格",
+      "note": ""
+    },
+    "survey": {
+      "lemma": "survey",
+      "pos": "名",
+      "ja": "調査",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "inventory": {
+      "lemma": "inventory",
+      "pos": "名",
+      "ja": "在庫",
+      "note": ""
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "shoppers": {
+      "lemma": "shopper",
+      "pos": "名",
+      "ja": "買い物客",
+      "note": ""
+    },
+    "members": {
+      "lemma": "member",
+      "pos": "名",
+      "ja": "会員",
+      "note": ""
+    },
+    "offering": {
+      "lemma": "offer",
+      "pos": "動",
+      "ja": "提供する",
+      "note": ""
+    },
+    "running": {
+      "lemma": "run",
+      "pos": "動",
+      "ja": "実施する",
+      "note": ""
+    },
+    "products": {
+      "lemma": "product",
+      "pos": "名",
+      "ja": "製品",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "spend": {
+      "lemma": "spend",
+      "pos": "動",
+      "ja": "(お金を)使う",
+      "note": ""
+    },
+    "freely": {
+      "lemma": "freely",
+      "pos": "副",
+      "ja": "気前よく",
+      "note": ""
+    },
+    "judge": {
+      "lemma": "judge",
+      "pos": "動",
+      "ja": "判断する",
+      "note": ""
+    },
+    "holiday": {
+      "lemma": "holiday",
+      "pos": "名",
+      "ja": "祝日、年末休暇",
+      "note": ""
+    },
+    "season": {
+      "lemma": "season",
+      "pos": "名",
+      "ja": "時期、商戦期",
+      "note": ""
+    },
+    "require": {
+      "lemma": "require",
+      "pos": "動",
+      "ja": "必要とする",
+      "note": ""
+    },
+    "early": {
+      "lemma": "early",
+      "pos": "形",
+      "ja": "早期の",
+      "note": ""
+    },
+    "deals": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "お買い得品",
+      "note": ""
+    },
+    "recent": {
+      "lemma": "recent",
+      "pos": "形",
+      "ja": "最近の",
+      "note": ""
+    },
+    "percent": {
+      "lemma": "percent",
+      "pos": "名",
+      "ja": "パーセント",
+      "note": ""
+    },
+    "hope": {
+      "lemma": "hope",
+      "pos": "動",
+      "ja": "期待する",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "if 節（現在形の条件文：If S＋現在形, S＋may / will＋原形）",
+    "quote": "If customers spend freely now, stores may order more inventory for the winter.",
+    "quoteJa": "客が今、気前よくお金を使えば、店は冬に向けてより多くの在庫を発注するかもしれない。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "「もし〜なら、…だろう」と、現実に起こりうる未来の条件と結果を述べる形です。if 節の中は未来のことでも現在形（spend）にし、主節には will / may / can などの助動詞＋原形（may order）を置きます。この文では、may を使うことで「発注するかもしれない」という可能性の強さを控えめに表しています。"
+      },
+      {
+        "heading": "書き換え例・比較",
+        "body": "If customers spend freely now, stores will order more inventory.（will を使うと見込みがより強くなる）／Stores may order more inventory if customers spend freely now.（if 節を後ろに置いても意味は同じ。この場合はカンマが不要）／× If customers will spend freely now ... は誤り。if 節に will は入れません。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では、if 節の動詞の形を選ぶ問題が頻出です。if 節に will を入れた選択肢は誤りになりやすく、主節の助動詞とセットで判断します。Part 6・7 でも、社内通知や案内文で If you have any questions, please contact ... のように、if 節＋命令文の形がよく使われます。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "If the shipment arrives late, we will notify our customers immediately.（出荷が遅れた場合は、すぐに顧客へ連絡します。）／If you submit the form by Friday, you can receive a discount.（金曜までに申込書を出せば、割引が受けられます。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ①「秋のセール」が年末商戦の前哨戦になっている",
+      "body": "アマゾンのプライム感謝祭のような10月のセールは、もともと年末商戦（ホリデーシーズン）の前に需要を前倒しで集める目的で始まりました。今ではウォルマートやターゲットなどの競合が同じ日程に合わせて独自セールを打つのが定番です。小売各社は、このセールの売れ行きを見て、年末に向けた仕入れ量（在庫）を調整します。"
+    },
+    {
+      "heading": "📌 ②「会員」を軸にした囲い込み競争",
+      "body": "アマゾンは Prime 会員限定、ターゲットは Circle 会員向けの割引を中心にしています。一方ウォルマートは会員でなくても使える特典を打ち出しました。会員制度は、顧客の購入履歴を集めて継続的に売上を伸ばす手段です。会員限定にするか全員に開くかは、各社の戦略の違いが表れる部分です。"
+    },
+    {
+      "heading": "📌 ③ 節約志向の消費者とインフレ",
+      "body": "最近の調査では、買い物客の約4人に3人が節約の方法を探すと答えています。ニューヨーク連銀の調べでも、1年先の物価上昇率の予想（中央値）は3.9%と、2023年以来の高さに上がっています。物価高の不安が続くなか、消費者は「割引を待って買う」行動を強めており、小売各社が早い時期から値引きを仕掛ける背景になっています。"
+    },
+    {
+      "heading": "📌 ④ 日本企業・ビジネスパーソンへの示唆",
+      "body": "日本でもアマゾンの大型セールに合わせて、楽天やヤフーショッピング、家電量販店が対抗企画を行うのは同じ構図です。米国の消費の強さは、日本の輸出企業や、米国向けに商品を卸す企業の業績にも影響します。投資家にとっては、セール期の売上や在庫の動きが、小売株や物流株の先行指標になります。経営者や仕入れ担当者にとっては、需要予測と在庫管理のバランスが利益率を左右する、という基本を学べる事例です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "October Prime Day dates 2026",
+      "publisher": "NBC News",
+      "url": "https://nbcnews.com/select/shopping/october-prime-day-dates-2026-rcna597737",
+      "date": "2026-10-06"
+    },
+    {
+      "title": "Amazon Sets Prime Big Deal Days For October 6-7 With Millions Of Deals",
+      "publisher": "HotHardware",
+      "url": "https://hothardware.com/news/amazon-prime-big-deal-days-october-6-7-millions-deals",
+      "date": "2026-10-06"
+    },
+    {
+      "title": "Consumers Expect to Spend More as Inflation Anxiety Rises",
+      "publisher": "PYMNTS",
+      "url": "https://pymnts.com/economy/2026/consumers-expect-to-spend-more-as-inflation-anxiety-rises",
+      "date": "2026-10-08"
+    }
+  ]
+}
