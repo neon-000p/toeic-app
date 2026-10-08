@@ -446,5 +446,23 @@
       "url": "https://finchannel.com/levi-strauss-raises-profit-outlook-after-tariff-refund-boost/137406/american-business-trends/2026/10/",
       "date": "2026-10-07"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-08-1640/00.mp3",
+      "audio/2026-10-08-1640/01.mp3",
+      "audio/2026-10-08-1640/02.mp3",
+      "audio/2026-10-08-1640/03.mp3",
+      "audio/2026-10-08-1640/04.mp3",
+      "audio/2026-10-08-1640/05.mp3",
+      "audio/2026-10-08-1640/06.mp3",
+      "audio/2026-10-08-1640/07.mp3",
+      "audio/2026-10-08-1640/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 211797,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-08T07:42:31.410Z",
+    "trimmed": true
+  }
 }
