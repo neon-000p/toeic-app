@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-08-1640",
+  "date": "2026-10-08",
+  "time": "16:40",
+  "createdAt": "2026-10-08T16:40:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Earnings",
+  "sample": false,
+  "title": {
+    "en": "Levi Strauss Raises Profit Outlook on Tariff Refunds",
+    "ja": "リーバイス、関税還付で利益見通しを上方修正"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Levi Strauss raised its profit forecast for the year on Wednesday.",
+            "ja": "リーバイ・ストラウスは水曜日、通期の利益予想を引き上げた。"
+          },
+          {
+            "en": "The jeans maker said it received $79 million in tariff refunds during the third quarter.",
+            "ja": "同社は、第3四半期に関税の還付金として7,900万ドルを受け取ったと述べた。"
+          },
+          {
+            "en": "Adjusted earnings reached 48 cents per share, well above the 36 cents that analysts had expected.",
+            "ja": "調整後利益は1株あたり48セントに達し、アナリストの予想した36セントを大きく上回った。"
+          },
+          {
+            "en": "The refunds also lifted its operating margin to 13.8 percent from 10.8 percent a year earlier.",
+            "ja": "還付金により、営業利益率も前年の10.8%から13.8%に上昇した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "However, the company lowered its sales forecast for the full year.",
+            "ja": "しかし同社は、通期の売上予想は引き下げた。"
+          },
+          {
+            "en": "Revenue rose 4 percent to $1.61 billion, but sales in its own stores and websites were flat.",
+            "ja": "売上高は4%増の16億1,000万ドルだったが、自社の店舗とウェブサイトでの売上は横ばいだった。"
+          },
+          {
+            "en": "While profit looks strong, much of it came from a one-time refund rather than from selling more jeans.",
+            "ja": "利益は好調に見えるが、その多くはジーンズの販売増ではなく、一度限りの還付金によるものだ。"
+          },
+          {
+            "en": "The company said it will spend part of the refunds on marketing and promotions during the holiday season.",
+            "ja": "同社は、還付金の一部をホリデーシーズンのマーケティングと販促に充てると述べた。"
+          },
+          {
+            "en": "Investors will watch whether higher spending can bring shoppers back.",
+            "ja": "投資家は、支出の増加が買い物客を呼び戻せるかどうかに注目するだろう。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much did Levi Strauss receive in tariff refunds during the third quarter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$48 million",
+          "ja": "4,800万ドル"
+        },
+        {
+          "key": "B",
+          "text": "$79 million",
+          "ja": "7,900万ドル"
+        },
+        {
+          "key": "C",
+          "text": "$1.61 billion",
+          "ja": "16億1,000万ドル"
+        },
+        {
+          "key": "D",
+          "text": "$13.8 million",
+          "ja": "1,380万ドル"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落2文目に「received $79 million in tariff refunds」とある。48は1株あたりの利益（48セント）、1.61 billionは売上高、13.8は営業利益率（13.8%）で、いずれも本文の別の数字を使った引っかけ。数字問題は、数字そのものよりも「何の数字か」を単位や直前の語で確認するのがコツ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う設問では、選択肢の数字がすべて本文に出てくることが多い。該当する数字がどの項目を指すか（金額・割合・1株あたり等）を必ず確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "What does the company plan to do with part of the refunds?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cut prices in its stores",
+          "ja": "店舗の値下げ"
+        },
+        {
+          "key": "B",
+          "text": "Pay a special dividend",
+          "ja": "特別配当の支払い"
+        },
+        {
+          "key": "C",
+          "text": "Spend it on marketing and promotions",
+          "ja": "マーケと販促に使う"
+        },
+        {
+          "key": "D",
+          "text": "Close weaker stores",
+          "ja": "不振店の閉鎖"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落4文目に「spend part of the refunds on marketing and promotions during the holiday season」とあるのでCが正解。A（値下げ）、B（特別配当）、D（店舗閉鎖）は本文に書かれていない情報で、もっともらしいが根拠がない。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "「何に使うか」を問う設問は、spend ... on ~ や use ... for ~ などの表現の直後に答えがある。本文にない情報の選択肢は即座に消去する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "forecast",
+      "pos": "名",
+      "ja": "予想、見通し",
+      "gloss": "",
+      "example": {
+        "en": "The company raised its sales forecast for next year.",
+        "ja": "同社は来年の売上予想を引き上げた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "refund",
+      "pos": "名",
+      "ja": "還付金、払い戻し",
+      "gloss": "",
+      "example": {
+        "en": "Customers can get a full refund within 30 days.",
+        "ja": "顧客は30日以内なら全額の払い戻しを受けられる。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "adjusted",
+      "pos": "形",
+      "ja": "調整後の",
+      "gloss": "（＝一時的な要因などを除いて計算し直した、という意味）",
+      "example": {
+        "en": "Adjusted profit was higher than last year.",
+        "ja": "調整後利益は昨年より高かった。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "operating margin",
+      "pos": "名",
+      "ja": "営業利益率",
+      "gloss": "（＝本業でどれだけ利益が残ったかの割合のこと）",
+      "example": {
+        "en": "The operating margin improved after the company cut costs.",
+        "ja": "コスト削減後、同社の営業利益率は改善した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "revenue",
+      "pos": "名",
+      "ja": "売上高、収益",
+      "gloss": "",
+      "example": {
+        "en": "Quarterly revenue rose by five percent.",
+        "ja": "四半期の売上高は5%増加した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "flat",
+      "pos": "形",
+      "ja": "横ばいの",
+      "gloss": "",
+      "example": {
+        "en": "Sales were flat compared with last year.",
+        "ja": "売上は前年と比べて横ばいだった。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "one-time",
+      "pos": "形",
+      "ja": "一度限りの",
+      "gloss": "",
+      "example": {
+        "en": "The bonus is a one-time payment.",
+        "ja": "そのボーナスは一度限りの支給だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "promotion",
+      "pos": "名",
+      "ja": "販売促進、販促",
+      "gloss": "",
+      "example": {
+        "en": "The store ran a promotion to attract new customers.",
+        "ja": "その店は新規顧客を引きつける販促を実施した。"
+      }
+    }
+  ],
+  "glossary": {
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予想",
+      "note": ""
+    },
+    "maker": {
+      "lemma": "maker",
+      "pos": "名",
+      "ja": "メーカー",
+      "note": ""
+    },
+    "received": {
+      "lemma": "receive",
+      "pos": "動",
+      "ja": "受け取った",
+      "note": ""
+    },
+    "tariff": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "refunds": {
+      "lemma": "refund",
+      "pos": "名",
+      "ja": "還付金",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": ""
+    },
+    "adjusted": {
+      "lemma": "adjust",
+      "pos": "形",
+      "ja": "調整後の",
+      "note": ""
+    },
+    "earnings": {
+      "lemma": "earnings",
+      "pos": "名",
+      "ja": "利益、業績",
+      "note": ""
+    },
+    "reached": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "達した",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "lifted": {
+      "lemma": "lift",
+      "pos": "動",
+      "ja": "押し上げた",
+      "note": ""
+    },
+    "operating": {
+      "lemma": "operating",
+      "pos": "形",
+      "ja": "営業の",
+      "note": ""
+    },
+    "margin": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": ""
+    },
+    "lowered": {
+      "lemma": "lower",
+      "pos": "動",
+      "ja": "引き下げた",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "名",
+      "ja": "売上高",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "増加した",
+      "note": ""
+    },
+    "flat": {
+      "lemma": "flat",
+      "pos": "形",
+      "ja": "横ばいの",
+      "note": ""
+    },
+    "one-time": {
+      "lemma": "one-time",
+      "pos": "形",
+      "ja": "一度限りの",
+      "note": ""
+    },
+    "spend": {
+      "lemma": "spend",
+      "pos": "動",
+      "ja": "使う",
+      "note": ""
+    },
+    "marketing": {
+      "lemma": "marketing",
+      "pos": "名",
+      "ja": "マーケティング",
+      "note": ""
+    },
+    "promotions": {
+      "lemma": "promotion",
+      "pos": "名",
+      "ja": "販促",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "shoppers": {
+      "lemma": "shopper",
+      "pos": "名",
+      "ja": "買い物客",
+      "note": ""
+    },
+    "holiday": {
+      "lemma": "holiday",
+      "pos": "名",
+      "ja": "休暇、祝祭",
+      "note": ""
+    },
+    "stores": {
+      "lemma": "store",
+      "pos": "名",
+      "ja": "店舗",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "while 節（譲歩・対比：〜だけれども）",
+    "quote": "While profit looks strong, much of it came from a one-time refund rather than from selling more jeans.",
+    "quoteJa": "利益は好調に見えるが、その多くはジーンズの販売増ではなく、一度限りの還付金によるものだ。",
+    "blocks": [
+      {
+        "heading": "構文：While ＋ S ＋ V, S ＋ V（譲歩）",
+        "body": "この文の while は「〜の間」という時間ではなく、「〜だけれども」「〜である一方」という譲歩・対比を表す接続詞。While 節で前提を認め、主節で本当に言いたいこと（ここでは『利益の中身は一時的』）を述べる。主節側が書き手の主張なので、TOEIC の読解ではカンマの後ろに注目する。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "While profit looks strong, ... ≒ Although profit looks strong, ... ≒ Profit looks strong, but ...。while は although よりやや口語的で、2つの事実の対比を示すときによく使われる。また本文の A rather than B は「BではなくA」で、much of it came from A（a one-time refund）rather than from B（selling more jeans）と読む。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では空所に while / although / whereas / because など接続詞を選ぶ問題が頻出。前後の関係が『逆接・対比』なら while / although / whereas、『理由』なら because / since と判断する。Part 7 では While 節に好材料、主節に懸念点が置かれる形が多く、設問は主節側を問うことが多い。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "While sales increased in Asia, they declined in Europe.（アジアでは売上が増えた一方、欧州では減少した。）／ While we appreciate your offer, we are unable to accept it at this time.（ご提案には感謝いたしますが、現時点でお受けすることはできません。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① 何が起きたのか：増益の中身は「関税の還付金」",
+      "body": "リーバイ・ストラウスは2026年度第3四半期（6〜8月期）決算で、通期の調整後利益予想を1株あたり1.54〜1.56ドルに引き上げた。背景にあるのは、米国が非常時の経済権限（IEEPA）に基づいて課していた関税を巡る還付金で、同期だけで7,900万ドルを受け取った。還付金は営業利益率を約4.9ポイント押し上げており、これを除くと本業の収益力はそれほど伸びていない。『調整後』という言葉は、一時的な要因を含めたり除いたりして計算し直した数字を指すので、決算では何を除外しているかの確認が大切である。"
+    },
+    {
+      "heading": "📌 ② 専門用語の整理：営業利益率とDTC",
+      "body": "営業利益率は、売上高のうち本業でどれだけ利益が残ったかを示す割合。10.8%から13.8%への上昇は大きく見えるが、還付金という一度限りの要因が含まれる。また、記事でdirect-to-consumer（DTC）と呼ばれる『自社店舗とウェブサイトでの直販』は既存店ベースで横ばいにとどまった。卸売りに頼らず直販を伸ばす戦略を掲げてきた同社にとって、直販の失速は重い課題だ。"
+    },
+    {
+      "heading": "📌 ③ 業界の動向：衣料各社は関税とインフレの板挟み",
+      "body": "アパレル各社は、関税コストの価格転嫁と、インフレで節約志向を強める消費者の間で難しい舵取りを迫られている。関税還付が決まったことで一時的に利益が膨らむ企業が出る一方、同社のように売上見通しを下げる例もあり、需要面の弱さは共通課題と言える。還付金をマーケティングや販促に回す動きは、利益を使って需要を喚起する戦略の表れだ。"
+    },
+    {
+      "heading": "📌 ④ 日本・投資家への示唆",
+      "body": "日本のアパレル・小売企業にとっても、米国向け輸出や米国店舗での関税対応、還付手続きは他人事ではない。決算を読む投資家は、増益の質（一時益か、本業の改善か）と、売上見通しの変化を分けて評価する必要がある。ビジネスパーソンにとっても、『利益が増えた』という見出しだけで判断せず、内訳を確認する習慣は、TOEICのPart 7で数字と理由を読み取る力にも直結する。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Levi Strauss hikes profit guidance after tariff refunds, but its sales outlook is less optimistic",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/07/levi-strauss-levi-q3-2026-earnings.html",
+      "date": "2026-10-07"
+    },
+    {
+      "title": "Levi Strauss Raises Profit Outlook After Tariff Refund Boost",
+      "publisher": "FinChannel",
+      "url": "https://finchannel.com/levi-strauss-raises-profit-outlook-after-tariff-refund-boost/137406/american-business-trends/2026/10/",
+      "date": "2026-10-07"
+    }
+  ]
+}
