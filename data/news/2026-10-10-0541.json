@@ -462,5 +462,24 @@
       "url": "https://www.ajot.com/news/savannah-achieves-record-container-volumes-in-september",
       "date": "2026-10-07"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-10-0541/00.mp3",
+      "audio/2026-10-10-0541/01.mp3",
+      "audio/2026-10-10-0541/02.mp3",
+      "audio/2026-10-10-0541/03.mp3",
+      "audio/2026-10-10-0541/04.mp3",
+      "audio/2026-10-10-0541/05.mp3",
+      "audio/2026-10-10-0541/06.mp3",
+      "audio/2026-10-10-0541/07.mp3",
+      "audio/2026-10-10-0541/08.mp3",
+      "audio/2026-10-10-0541/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 268770,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-09T20:43:04.653Z",
+    "trimmed": true
+  }
 }
