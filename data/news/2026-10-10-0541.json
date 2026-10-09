@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-10-0541",
+  "date": "2026-10-10",
+  "time": "05:41",
+  "createdAt": "2026-10-10T05:41:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "Savannah Port Sets a September Record",
+    "ja": "サバンナ港、9月の取扱量が過去最高"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The Port of Savannah in Georgia handled a record 504,015 containers last month.",
+            "ja": "ジョージア州のサバンナ港は先月、過去最高となる504,015個のコンテナを取り扱った。"
+          },
+          {
+            "en": "That was 3.7% more than in September last year.",
+            "ja": "これは昨年9月より3.7%多い。"
+          },
+          {
+            "en": "Imports led the growth, rising 5.5% from a year earlier.",
+            "ja": "輸入が伸びを主導し、前年から5.5%増加した。"
+          },
+          {
+            "en": "The Georgia Ports Authority, which runs the port, announced the results on October 7.",
+            "ja": "同港を運営するジョージア港湾局が、10月7日にこの結果を発表した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Typhoon delays at Asian ports pushed some shipments into September and extended the usual peak season.",
+            "ja": "アジアの港での台風による遅れで、一部の貨物が9月にずれ込み、通常の繁忙期が延びた。"
+          },
+          {
+            "en": "Strong consumer demand also kept retailers ordering goods.",
+            "ja": "堅調な消費者需要も、小売業者の商品発注を後押しした。"
+          },
+          {
+            "en": "As a result, the port's first fiscal quarter passed 1.5 million containers, its second-best quarter ever.",
+            "ja": "その結果、同港の会計年度第1四半期は150万個を超え、過去2番目に良い四半期となった。"
+          },
+          {
+            "en": "The port is also expanding, with a $1.6 billion renovation of its Ocean Terminal now more than 60% complete.",
+            "ja": "同港は拡張も進めており、オーシャン・ターミナルの16億ドルの改修工事は6割以上が完了している。"
+          },
+          {
+            "en": "Once finished, the project is expected to raise the terminal's yearly capacity from about 200,000 containers to 1.75 million.",
+            "ja": "完成すれば、この事業によりターミナルの年間処理能力は約20万個から175万個に引き上げられる見込みだ。"
+          },
+          {
+            "en": "Port chief Griff Lynch thanked workers and said the port is providing good service while handling record volumes.",
+            "ja": "港のトップであるグリフ・リンチ氏は、従業員に感謝し、記録的な取扱量をこなしながら質の高いサービスを提供していると述べた。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did imports at the port rise from a year earlier?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3.7%",
+          "ja": "3.7%"
+        },
+        {
+          "key": "B",
+          "text": "5.5%",
+          "ja": "5.5%"
+        },
+        {
+          "key": "C",
+          "text": "60%",
+          "ja": "60%"
+        },
+        {
+          "key": "D",
+          "text": "1.6%",
+          "ja": "1.6%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落3文目に「Imports led the growth, rising 5.5% from a year earlier」とあり、輸入の伸びは5.5%。(A) 3.7%は港全体のコンテナ取扱量の増加率（2文目）で、輸入の数字ではない。(C) 60%は改修工事の進捗率、(D) 1.6は工事費の16億ドルを思わせる引っかけで、いずれも輸入とは無関係。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "同じ文書に似た数字が複数出るときは、設問が「何の」数字かを先に押さえ、その主語（imports）と結びつく数字だけを拾う。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did some shipments arrive in September?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Port workers ended a strike.",
+          "ja": "港湾労働者がストを終えた。"
+        },
+        {
+          "key": "B",
+          "text": "Typhoons delayed ships at Asian ports.",
+          "ja": "台風でアジアの港で船が遅れた。"
+        },
+        {
+          "key": "C",
+          "text": "The Ocean Terminal opened early.",
+          "ja": "ターミナルが早く開業した。"
+        },
+        {
+          "key": "D",
+          "text": "Retailers cancelled their orders.",
+          "ja": "小売業者が注文を取り消した。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落1文目に「Typhoon delays at Asian ports pushed some shipments into September」とあり、台風による遅れが理由。(A) ストライキは本文にない。(C) ターミナルは改修中で、まだ完成していない。(D) 小売業者は注文を続けており、本文と逆の内容。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由を問う設問では、because / due to のほか、原因を主語にして結果を述べる文（A pushed B）にも注意する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "handled",
+      "pos": "動",
+      "ja": "取り扱った、処理した",
+      "gloss": "",
+      "example": {
+        "en": "The warehouse handled over 2,000 orders yesterday.",
+        "ja": "その倉庫は昨日、2,000件以上の注文を処理した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "shipments",
+      "pos": "名",
+      "ja": "出荷（貨物）、発送品",
+      "gloss": "",
+      "example": {
+        "en": "Two shipments were delayed because of the storm.",
+        "ja": "嵐のため、2件の出荷が遅れた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "extended",
+      "pos": "動",
+      "ja": "延長した、延ばした",
+      "gloss": "",
+      "example": {
+        "en": "The company extended the sale until the end of the month.",
+        "ja": "その会社はセールを月末まで延長した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "retailers",
+      "pos": "名",
+      "ja": "小売業者",
+      "gloss": "",
+      "example": {
+        "en": "Many retailers hire extra staff in December.",
+        "ja": "多くの小売業者は12月に追加の人員を雇う。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "renovation",
+      "pos": "名",
+      "ja": "改修（工事）",
+      "gloss": "（＝古い建物や設備を新しく作り直すこと）",
+      "example": {
+        "en": "The renovation of the office will take three months.",
+        "ja": "オフィスの改修には3か月かかる。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "capacity",
+      "pos": "名",
+      "ja": "処理能力、収容力",
+      "gloss": "",
+      "example": {
+        "en": "The factory is running at full capacity.",
+        "ja": "その工場はフル稼働している。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "volumes",
+      "pos": "名",
+      "ja": "量、取扱量",
+      "gloss": "",
+      "example": {
+        "en": "Sales volumes rose sharply in the second quarter.",
+        "ja": "第2四半期に販売量が大きく伸びた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "expected",
+      "pos": "形",
+      "ja": "見込まれる、予想される",
+      "gloss": "",
+      "example": {
+        "en": "The new store is expected to open next spring.",
+        "ja": "新店舗は来春開業する見込みだ。"
+      }
+    }
+  ],
+  "glossary": {
+    "handled": {
+      "lemma": "handle",
+      "pos": "動",
+      "ja": "取り扱う",
+      "note": ""
+    },
+    "record": {
+      "lemma": "record",
+      "pos": "形",
+      "ja": "過去最高の",
+      "note": ""
+    },
+    "containers": {
+      "lemma": "container",
+      "pos": "名",
+      "ja": "コンテナ",
+      "note": ""
+    },
+    "growth": {
+      "lemma": "growth",
+      "pos": "名",
+      "ja": "成長、伸び",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇する",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "early",
+      "pos": "副",
+      "ja": "より前に",
+      "note": ""
+    },
+    "authority": {
+      "lemma": "authority",
+      "pos": "名",
+      "ja": "当局、局",
+      "note": ""
+    },
+    "runs": {
+      "lemma": "run",
+      "pos": "動",
+      "ja": "運営する",
+      "note": ""
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "発表する",
+      "note": ""
+    },
+    "results": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "結果",
+      "note": ""
+    },
+    "typhoon": {
+      "lemma": "typhoon",
+      "pos": "名",
+      "ja": "台風",
+      "note": ""
+    },
+    "delays": {
+      "lemma": "delay",
+      "pos": "名",
+      "ja": "遅れ",
+      "note": ""
+    },
+    "pushed": {
+      "lemma": "push",
+      "pos": "動",
+      "ja": "押しやる",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷、貨物",
+      "note": ""
+    },
+    "extended": {
+      "lemma": "extend",
+      "pos": "動",
+      "ja": "延ばす",
+      "note": ""
+    },
+    "peak": {
+      "lemma": "peak",
+      "pos": "形",
+      "ja": "最盛期の",
+      "note": ""
+    },
+    "season": {
+      "lemma": "season",
+      "pos": "名",
+      "ja": "時期、季節",
+      "note": ""
+    },
+    "consumer": {
+      "lemma": "consumer",
+      "pos": "名",
+      "ja": "消費者",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "ordering": {
+      "lemma": "order",
+      "pos": "動",
+      "ja": "注文する",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "商品",
+      "note": ""
+    },
+    "fiscal": {
+      "lemma": "fiscal",
+      "pos": "形",
+      "ja": "会計の",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": ""
+    },
+    "renovation": {
+      "lemma": "renovation",
+      "pos": "名",
+      "ja": "改修",
+      "note": ""
+    },
+    "complete": {
+      "lemma": "complete",
+      "pos": "形",
+      "ja": "完了した",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "capacity": {
+      "lemma": "capacity",
+      "pos": "名",
+      "ja": "処理能力",
+      "note": ""
+    },
+    "yearly": {
+      "lemma": "yearly",
+      "pos": "形",
+      "ja": "年間の",
+      "note": ""
+    },
+    "volumes": {
+      "lemma": "volume",
+      "pos": "名",
+      "ja": "量、取扱量",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "be expected to do（受動態＋to不定詞：〜する見込みだ）",
+    "quote": "Once finished, the project is expected to raise the terminal's yearly capacity from about 200,000 containers to 1.75 million.",
+    "quoteJa": "完成すれば、この事業によりターミナルの年間処理能力は約20万個から175万個に引き上げられる見込みだ。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "「be expected to＋動詞の原形」は、「（人々が）〜すると予想している」を受動態で表した形で、「〜する見込みだ、〜するはずだ」という意味になります。誰が予想しているかは重要でないため、行為者を書かずに客観的な見通しを述べるときの定番表現です。本文では the project is expected to raise ... で「この事業は〜を引き上げる見込みだ」と、将来の効果を述べています。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Analysts expect the project to raise the capacity. → The project is expected to raise the capacity.（能動態の expect＋O＋to do を受動態にした形）。似た形に be scheduled to do（〜する予定だ）、be supposed to do（〜することになっている）、be likely to do（〜しそうだ）があり、確実さや計画性のニュアンスが少しずつ異なります。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では空所の後ろに to＋原形があり、「be expected ( )」「is ( ) to open」のような形で、過去分詞 expected を選ばせる問題が頻出です。expect は expect A to do の形を取るため、受動態では A が主語になり be expected to do となる点を押さえましょう。Part 7 でも、新店舗の開業や会議の開催日など、予定・見通しを述べる文でよく使われます。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "The new warehouse is expected to open in March. / Demand is expected to remain strong through the end of the year."
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 TEU（20フィート換算コンテナ）とは",
+      "body": "港湾の取扱量は、標準的な20フィートコンテナ1個を1とする単位「TEU」で数えるのが一般的です。本文の「504,015 containers」は原文では TEU にあたります。船の大きさや港の規模を比べるときの共通ものさしで、数字が増えれば貨物の動きが活発だと読めます。"
+    },
+    {
+      "heading": "📌 繁忙期（ピークシーズン）が9月にずれ込んだ理由",
+      "body": "米国の小売業者は、年末商戦に備えて夏から秋にかけて商品を大量に輸入します。今回はアジアの港で台風による遅れが出て、本来は8月までに着くはずだった貨物の一部が9月に到着しました。輸入が前年を5.5%上回った背景には、この「後ろ倒し」と堅調な消費者需要があります。"
+    },
+    {
+      "heading": "📌 港湾・物流業界の動向",
+      "body": "米国東海岸・メキシコ湾岸の港は、西海岸の混雑や労使交渉のリスクを避ける荷主の受け皿として、ここ数年取扱量を伸ばしてきました。サバンナ港は東海岸でも有数のコンテナ港で、16億ドル規模のターミナル改修により処理能力を大きく広げようとしています。能力を増やす投資は、将来の貨物増を見込んだ競争の一環といえます。"
+    },
+    {
+      "heading": "📌 日本企業・投資家への示唆",
+      "body": "米国向けに部品や完成品を輸出する日本企業にとって、港の混雑や運賃の動きは納期とコストに直結します。米国の輸入需要が強いことは日本の輸出企業や海運会社にとって追い風ですが、繁忙期の長期化は船腹や倉庫の逼迫を招きやすい点に注意が必要です。投資家は、港湾の取扱量を米国の消費と貿易の動きを測る先行指標として見ることができます。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Port of Savannah sets September container record as imports rise",
+      "publisher": "gCaptain",
+      "url": "https://gcaptain.com/port-of-savannah-sets-september-container-record-as-imports-rise/",
+      "date": "2026-10-07"
+    },
+    {
+      "title": "Savannah achieves record container volumes in September",
+      "publisher": "AJOT",
+      "url": "https://www.ajot.com/news/savannah-achieves-record-container-volumes-in-september",
+      "date": "2026-10-07"
+    }
+  ]
+}
