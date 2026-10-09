@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-09-1639",
+  "date": "2026-10-09",
+  "time": "16:39",
+  "createdAt": "2026-10-09T16:39:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Apple Raises iPhone 18 Pro Price as Memory Costs Climb",
+    "ja": "アップル、メモリー高でiPhone値上げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Apple raised the price of its new iPhone 18 Pro by $100.",
+            "ja": "アップルは新型iPhone 18 Proの価格を100ドル引き上げた。"
+          },
+          {
+            "en": "The starting price is now $1,199, up from $1,099 for last year's model.",
+            "ja": "開始価格は現在1,199ドルで、昨年モデルの1,099ドルから上昇した。"
+          },
+          {
+            "en": "Retailers in India said early demand rose 15 to 28 percent from a year ago, despite the higher price.",
+            "ja": "インドの小売店によると、価格が上がったにもかかわらず、初期の需要は前年より15〜28%増えた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Apple blamed the price rise on a surge in memory costs.",
+            "ja": "アップルは値上げの理由を、メモリー費用の急騰だと説明した。"
+          },
+          {
+            "en": "Data centers built for artificial intelligence are buying huge amounts of memory chips, so fewer chips are left for phones.",
+            "ja": "AI向けのデータセンターが大量のメモリーチップを買っており、スマホに回るチップが減っている。"
+          },
+          {
+            "en": "As a result, makers must pay more for each device.",
+            "ja": "その結果、メーカーは1台ごとにより多く支払わねばならない。"
+          },
+          {
+            "en": "Analysts at Counterpoint Research said the new phone is selling better than last year's model, although it is too early to be sure.",
+            "ja": "カウンターポイント・リサーチのアナリストは、新型は昨年モデルより売れていると述べたが、断定するには早いとも語った。"
+          },
+          {
+            "en": "Still, some experts warn that customers may upgrade less often if prices keep rising.",
+            "ja": "それでも、値上がりが続けば買い替えの頻度が下がるかもしれないと警告する専門家もいる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did Apple raise the price of the iPhone 18 Pro?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$50",
+          "ja": "50ドル"
+        },
+        {
+          "key": "B",
+          "text": "$100",
+          "ja": "100ドル"
+        },
+        {
+          "key": "C",
+          "text": "$200",
+          "ja": "200ドル"
+        },
+        {
+          "key": "D",
+          "text": "$1,199",
+          "ja": "1,199ドル"
+        }
+      ],
+      "answer": "B",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "explanation": "正解はB。第1段落の1文目に「raised the price of its new iPhone 18 Pro by $100」とある。Aの$50は本文にない数字。Cの$200は本文にない数字で、分かりやすい引っかけ。Dの$1,199は値上げ幅ではなく、値上げ後の開始価格（starting price）である。「いくら上がったか（by）」と「いくらになったか」を区別するのが決め手。",
+      "tip": "by ＋ 金額は「差・変化の幅」を表す。to ＋ 金額（変化後の値）と混同させる選択肢が頻出。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why must phone makers pay more for each device?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Retailers in India ordered fewer phones.",
+          "ja": "インドの小売店が注文を減らした"
+        },
+        {
+          "key": "B",
+          "text": "AI data centers are buying large amounts of memory chips.",
+          "ja": "AI用データセンターがチップを大量購入"
+        },
+        {
+          "key": "C",
+          "text": "Customers are upgrading more often.",
+          "ja": "客が頻繁に買い替えている"
+        },
+        {
+          "key": "D",
+          "text": "Last year's model was withdrawn.",
+          "ja": "昨年モデルが販売終了になった"
+        }
+      ],
+      "answer": "B",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "explanation": "正解はB。第2段落2文目に、AI向けデータセンターが大量のメモリーチップを買い、スマホ向けのチップが減っているとあり、その結果（As a result）メーカーの支払いが増えると続く。Aはインドでは需要が増えたと書かれており逆。Cは本文の最後で、買い替えは減るかもしれないと警告されており逆。Dは本文にない情報。",
+      "tip": "理由を問う設問は、As a result / so / because などの接続表現の「直前」に根拠がある。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "retailer",
+      "pos": "名",
+      "ja": "小売業者、小売店",
+      "gloss": "",
+      "example": {
+        "en": "The retailer plans to open three new stores next spring.",
+        "ja": "その小売業者は来春、新店舗を3つ開く予定だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for electric cars has grown steadily this year.",
+        "ja": "電気自動車の需要は今年着実に伸びている。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "surge",
+      "pos": "名",
+      "ja": "急増、急騰",
+      "gloss": "（＝短い間に一気に増えること）",
+      "example": {
+        "en": "A surge in orders kept the warehouse staff busy.",
+        "ja": "注文の急増で倉庫の従業員は忙しかった。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "blame",
+      "pos": "動",
+      "ja": "〜のせいにする",
+      "gloss": "",
+      "example": {
+        "en": "The manager blamed the delay on a late shipment.",
+        "ja": "部長は遅れを出荷の遅延のせいにした。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "analyst",
+      "pos": "名",
+      "ja": "アナリスト、分析担当者",
+      "gloss": "",
+      "example": {
+        "en": "An analyst expects the company to hire more staff.",
+        "ja": "アナリストは同社が人員を増やすと見ている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "upgrade",
+      "pos": "動",
+      "ja": "買い替える、更新する",
+      "gloss": "",
+      "example": {
+        "en": "Many users upgrade their phones every two years.",
+        "ja": "多くの利用者は2年ごとにスマホを買い替える。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "warn",
+      "pos": "動",
+      "ja": "警告する",
+      "gloss": "",
+      "example": {
+        "en": "The agency warned that prices may rise again.",
+        "ja": "当局は価格が再び上がる可能性があると警告した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "as a result",
+      "pos": "熟",
+      "ja": "その結果",
+      "gloss": "",
+      "example": {
+        "en": "As a result, the store had to cancel the sale.",
+        "ja": "その結果、その店はセールを中止せざるを得なかった。"
+      }
+    }
+  ],
+  "glossary": {
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "上げる、引き上げる",
+      "note": ""
+    },
+    "starting": {
+      "lemma": "start",
+      "pos": "形",
+      "ja": "開始の、最初の",
+      "note": ""
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上がった、増えた",
+      "note": "rise（上がる）の過去形"
+    },
+    "despite": {
+      "lemma": "despite",
+      "pos": "前",
+      "ja": "〜にもかかわらず",
+      "note": "後ろには名詞（句）が来る。節は続けられない"
+    },
+    "blamed": {
+      "lemma": "blame",
+      "pos": "動",
+      "ja": "責任を負わせた",
+      "note": ""
+    },
+    "surge": {
+      "lemma": "surge",
+      "pos": "名",
+      "ja": "急増、急騰",
+      "note": ""
+    },
+    "memory": {
+      "lemma": "memory",
+      "pos": "名",
+      "ja": "メモリー、記憶装置",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用、コスト",
+      "note": ""
+    },
+    "data": {
+      "lemma": "data",
+      "pos": "名",
+      "ja": "データ",
+      "note": ""
+    },
+    "centers": {
+      "lemma": "center",
+      "pos": "名",
+      "ja": "センター、施設",
+      "note": ""
+    },
+    "artificial": {
+      "lemma": "artificial",
+      "pos": "形",
+      "ja": "人工の",
+      "note": ""
+    },
+    "intelligence": {
+      "lemma": "intelligence",
+      "pos": "名",
+      "ja": "知能",
+      "note": ""
+    },
+    "buying": {
+      "lemma": "buy",
+      "pos": "動",
+      "ja": "買っている",
+      "note": ""
+    },
+    "huge": {
+      "lemma": "huge",
+      "pos": "形",
+      "ja": "巨大な、大量の",
+      "note": ""
+    },
+    "chips": {
+      "lemma": "chip",
+      "pos": "名",
+      "ja": "半導体チップ",
+      "note": ""
+    },
+    "makers": {
+      "lemma": "maker",
+      "pos": "名",
+      "ja": "メーカー",
+      "note": ""
+    },
+    "device": {
+      "lemma": "device",
+      "pos": "名",
+      "ja": "機器、端末",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "selling": {
+      "lemma": "sell",
+      "pos": "動",
+      "ja": "売れている",
+      "note": ""
+    },
+    "upgrade": {
+      "lemma": "upgrade",
+      "pos": "動",
+      "ja": "買い替える",
+      "note": ""
+    },
+    "warn": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告する",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "often": {
+      "lemma": "often",
+      "pos": "副",
+      "ja": "しばしば、頻繁に",
+      "note": ""
+    },
+    "model": {
+      "lemma": "model",
+      "pos": "名",
+      "ja": "機種、型",
+      "note": ""
+    },
+    "result": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "結果",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "despite＋名詞（譲歩を表す前置詞）",
+    "quote": "Retailers in India said early demand rose 15 to 28 percent from a year ago, despite the higher price.",
+    "quoteJa": "インドの小売店によると、価格が上がったにもかかわらず、初期の需要は前年より15〜28%増えた。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "despite は「〜にもかかわらず」を表す前置詞で、後ろには名詞または名詞句（ここでは the higher price）が続く。「値上げされたのに需要は伸びた」という、予想と逆の結果を述べるときに使う。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "in spite of ＋名詞 も同じ意味。節を続けたいときは although / even though を使う。\n・Demand rose despite the higher price.\n・Demand rose although the price was higher.\n・Demand rose in spite of the higher price.\nなお、despite of という形は誤り。despite の直後に of は付かない。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、空所の後ろが名詞か節かを見て despite / although を選ばせる問題が定番。後ろが the delay のような名詞句なら despite、the shipment was delayed のような〈主語＋動詞〉なら although。Part 6・7 でも、however や nevertheless と並べて逆接の関係を読み取る力が問われる。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "・Sales increased despite the rise in material costs.（原材料費の上昇にもかかわらず、売上は伸びた）\n・The meeting will go ahead despite the bad weather.（悪天候にもかかわらず、会議は予定どおり行われる）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 値上げの背景：AIがメモリーを奪い合っている",
+      "body": "スマホやパソコンには、データを一時的に置く「DRAM」と、保存用の「NAND（ナンド）フラッシュ」という2種類のメモリーが入っている。生成AIを動かすデータセンターは、このメモリーを桁違いの量で必要とするため、メーカーは利益の大きい業務用に生産を振り向けている。その結果、一般向けのメモリーが不足し、価格が高騰している。報道ではメモリー価格は1年前の2倍以上になったとされる。"
+    },
+    {
+      "heading": "📌 業界の動き：アップルもサムスンも価格に転嫁",
+      "body": "アップルは新型iPhone 18 Proを前モデルより100ドル高く設定し、ティム・クックCEOも値上げは避けられないと語っている。サムスンも今年に入り、一部の折りたたみスマホなどを米国で値上げした。かつて「スマホの価格には上限がある」と言われたが、部品コストの上昇でその常識が崩れ始め、「フォンフレーション」と呼ばれる状況になっている。なお、価格上昇の程度や需要への影響は調査会社によって見方が分かれる。"
+    },
+    {
+      "heading": "📌 日本への影響：円安と値上げの二重の負担",
+      "body": "日本ではiPhoneの価格改定が為替の影響も受けるため、米国より値上げ幅が大きくなる傾向がある。報道では日本の256GBモデルは約2割上がったとされる。企業にとっては、社用スマホやタブレットの更新費用が増えるため、買い替え周期を延ばすか、台数を絞るかといった判断が必要になる。個人も、中古や型落ちを選ぶ動きが強まりそうだ。日本の電子部品・素材メーカーには、メモリー需要の拡大が追い風になる面もある。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点：価格転嫁力と買い替えサイクル",
+      "body": "投資家が見るポイントは、アップルが値上げしても販売台数を保てるか（価格転嫁力）である。ブランド力の強い企業は値上げを吸収しやすいが、利幅の薄い低価格帯のメーカーは苦しくなる。一方で、買い替え間隔が長くなれば、中長期の販売台数は減る可能性がある。経営者にとっては、調達先の分散や長期契約でメモリーを確保できるかが競争力の差になる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Analysts warn the iPhone 18 price hike could be worse than we thought",
+      "publisher": "Tom's Guide",
+      "url": "https://www.tomsguide.com/phones/iphones/analysts-warn-the-iphone-18-price-hike-could-be-worse-than-we-thought",
+      "date": ""
+    },
+    {
+      "title": "Apple iPhone 18 Pro series clocks 15-28 pc rise in initial India demand",
+      "publisher": "Morung Express",
+      "url": "https://morungexpress.com/apple-iphone-18-pro-series-clocks-15-28-pc-rise-in-initial-india-demand",
+      "date": ""
+    },
+    {
+      "title": "Apple Confirms Price Increases Coming Due To Rising Chip Costs",
+      "publisher": "HWBusters",
+      "url": "https://hwbusters.com/news/apple-confirms-price-increases-coming-due-to-rising-chip-costs/",
+      "date": ""
+    }
+  ]
+}
