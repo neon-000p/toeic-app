@@ -442,5 +442,22 @@
       "url": "https://hwbusters.com/news/apple-confirms-price-increases-coming-due-to-rising-chip-costs/",
       "date": ""
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-09-1639/00.mp3",
+      "audio/2026-10-09-1639/01.mp3",
+      "audio/2026-10-09-1639/02.mp3",
+      "audio/2026-10-09-1639/03.mp3",
+      "audio/2026-10-09-1639/04.mp3",
+      "audio/2026-10-09-1639/05.mp3",
+      "audio/2026-10-09-1639/06.mp3",
+      "audio/2026-10-09-1639/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 202152,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-09T07:42:53.824Z",
+    "trimmed": true
+  }
 }
