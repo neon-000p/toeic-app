@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-10-1639",
+  "date": "2026-10-10",
+  "time": "16:39",
+  "createdAt": "2026-10-10T16:39:00+09:00",
+  "genre": "宇宙",
+  "genreEn": "Space",
+  "sample": false,
+  "title": {
+    "en": "SpaceX Buys Airwaves to Enter the Mobile Market",
+    "ja": "スペースX、携帯市場参入へ電波免許を購入"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "SpaceX agreed on Thursday to buy a nationwide set of radio licenses from Grain Management.",
+            "ja": "スペースXは木曜日、グレイン・マネジメントから全米規模の電波免許一式を買うことで合意した。"
+          },
+          {
+            "en": "The licenses cover 14 megahertz of low-frequency airwaves, which carry signals farther and through walls.",
+            "ja": "この免許は14メガヘルツ分の低い周波数帯をカバーしており、この電波は信号をより遠くまで、また壁を通して届けられる。"
+          },
+          {
+            "en": "SpaceX plans to use them to turn its satellite business into a mobile phone service.",
+            "ja": "スペースXはこれを使い、衛星事業を携帯電話サービスへと広げる計画だ。"
+          },
+          {
+            "en": "The deal still needs approval from the FCC, and the price was not disclosed.",
+            "ja": "この取引はなお米連邦通信委員会（FCC）の承認が必要で、価格は公表されていない。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Investors reacted quickly.",
+            "ja": "投資家はすぐに反応した。"
+          },
+          {
+            "en": "On Friday, shares of T-Mobile fell about 13 percent, while two other big carriers lost 9 to 10 percent.",
+            "ja": "金曜日、Tモバイルの株価は約13％下落し、大手携帯会社2社も9〜10％値を下げた。"
+          },
+          {
+            "en": "The airwaves had belonged to T-Mobile until it sold them two months ago for $2.9 billion.",
+            "ja": "この電波は、2カ月前に29億ドルで売却するまでTモバイルが持っていたものだった。"
+          },
+          {
+            "en": "Analysts said the purchase could make SpaceX a serious rival for established carriers.",
+            "ja": "アナリストは、この購入でスペースXが既存の携帯会社の有力な競合になりうると述べた。"
+          },
+          {
+            "en": "Customers may soon have more choices, but competition could squeeze carrier profits.",
+            "ja": "利用者の選択肢はまもなく増えるかもしれないが、競争は携帯会社の利益を圧迫しかねない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "About how much did the shares of T-Mobile fall on Friday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 2.9 percent",
+          "ja": "約2.9％"
+        },
+        {
+          "key": "B",
+          "text": "About 9 percent",
+          "ja": "約9％"
+        },
+        {
+          "key": "C",
+          "text": "About 13 percent",
+          "ja": "約13％"
+        },
+        {
+          "key": "D",
+          "text": "About 14 percent",
+          "ja": "約14％"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落2文目に「Tモバイルの株価は金曜日に約13％下落した（fell about 13 percent）」とあるのでCが正解。Aの2.9は売却額の29億ドル（$2.9 billion）、Bの9は他の2社の下落率（9 to 10 percent）、Dの14は免許の周波数幅（14 megahertz）から作られた引っかけで、いずれも本文の別の数字である。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "数字を問う問題は、まず設問の主語（T-Mobile）と時（Friday）で該当文を探す。選択肢の数字は本文の別の箇所の数字が使い回されるので、何の数字かまで確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT stated about the licenses?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They cover airwaves that pass through walls.",
+          "ja": "壁を通る電波を含む"
+        },
+        {
+          "key": "B",
+          "text": "They were once owned by T-Mobile.",
+          "ja": "かつてTモバイルが所有"
+        },
+        {
+          "key": "C",
+          "text": "They need the FCC's approval.",
+          "ja": "FCCの承認が必要"
+        },
+        {
+          "key": "D",
+          "text": "They will be sold to another carrier next year.",
+          "ja": "来年別の会社に売却される"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Dの「来年別の携帯会社に売却される」という記述は本文のどこにもないので、これがNOTの答え。Aは第1段落2文目（through walls）、Bは第2段落3文目（belonged to T-Mobile）、Cは第1段落4文目（needs approval from the FCC）にそれぞれ書かれている。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "NOT問題は、各選択肢を本文と一つずつ照合して「書かれているもの」を消去していく。残った1つが正解。本文にない情報（時期や将来の予定）が答えになりやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "licenses",
+      "pos": "名",
+      "ja": "免許、許可",
+      "gloss": "（＝営業や利用を公式に認める許可証のこと）",
+      "example": {
+        "en": "The firm bought two licenses to sell its products abroad.",
+        "ja": "その会社は製品を海外で売るため、2件の免許を取得した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "nationwide",
+      "pos": "形",
+      "ja": "全国的な、全国規模の",
+      "gloss": "",
+      "example": {
+        "en": "The retailer launched a nationwide sale on Monday.",
+        "ja": "その小売店は月曜日に全国規模のセールを始めた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "approval",
+      "pos": "名",
+      "ja": "承認、認可",
+      "gloss": "",
+      "example": {
+        "en": "The new budget needs approval from the board.",
+        "ja": "新しい予算には取締役会の承認が必要だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "disclosed",
+      "pos": "動",
+      "ja": "公表した、明かした",
+      "gloss": "",
+      "example": {
+        "en": "The terms of the contract were not disclosed.",
+        "ja": "契約の条件は公表されなかった。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "established",
+      "pos": "形",
+      "ja": "既存の、確立した",
+      "gloss": "",
+      "example": {
+        "en": "The startup is trying to compete with established firms.",
+        "ja": "そのスタートアップは既存の企業と競おうとしている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "rival",
+      "pos": "名",
+      "ja": "競争相手、ライバル",
+      "gloss": "",
+      "example": {
+        "en": "Our main rival lowered its prices last week.",
+        "ja": "主な競合他社が先週、価格を下げた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "squeeze",
+      "pos": "動",
+      "ja": "圧迫する、締めつける",
+      "gloss": "",
+      "example": {
+        "en": "Higher costs may squeeze our profit margins.",
+        "ja": "コスト上昇で利益率が圧迫されるかもしれない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "competition",
+      "pos": "名",
+      "ja": "競争",
+      "gloss": "",
+      "example": {
+        "en": "Competition in the airline industry is getting tougher.",
+        "ja": "航空業界の競争は厳しさを増している。"
+      }
+    }
+  ],
+  "glossary": {
+    "agreed": {
+      "lemma": "agree",
+      "pos": "動",
+      "ja": "合意した",
+      "note": ""
+    },
+    "nationwide": {
+      "lemma": "nationwide",
+      "pos": "形",
+      "ja": "全国的な",
+      "note": ""
+    },
+    "licenses": {
+      "lemma": "license",
+      "pos": "名",
+      "ja": "免許",
+      "note": ""
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "対象とする",
+      "note": ""
+    },
+    "megahertz": {
+      "lemma": "megahertz",
+      "pos": "名",
+      "ja": "メガヘルツ(周波数の単位)",
+      "note": ""
+    },
+    "airwaves": {
+      "lemma": "airwave",
+      "pos": "名",
+      "ja": "電波",
+      "note": "radio waves のこと。通信に使う電波帯域を指す"
+    },
+    "signals": {
+      "lemma": "signal",
+      "pos": "名",
+      "ja": "信号、電波",
+      "note": ""
+    },
+    "farther": {
+      "lemma": "far",
+      "pos": "副",
+      "ja": "より遠くへ",
+      "note": ""
+    },
+    "plans": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "計画する",
+      "note": ""
+    },
+    "satellite": {
+      "lemma": "satellite",
+      "pos": "名",
+      "ja": "人工衛星",
+      "note": ""
+    },
+    "approval": {
+      "lemma": "approval",
+      "pos": "名",
+      "ja": "承認",
+      "note": ""
+    },
+    "disclosed": {
+      "lemma": "disclose",
+      "pos": "動",
+      "ja": "公表した",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "reacted": {
+      "lemma": "react",
+      "pos": "動",
+      "ja": "反応した",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式",
+      "note": ""
+    },
+    "carriers": {
+      "lemma": "carrier",
+      "pos": "名",
+      "ja": "携帯通信会社",
+      "note": ""
+    },
+    "belonged": {
+      "lemma": "belong",
+      "pos": "動",
+      "ja": "所属していた",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト、分析家",
+      "note": ""
+    },
+    "purchase": {
+      "lemma": "purchase",
+      "pos": "名",
+      "ja": "購入",
+      "note": ""
+    },
+    "serious": {
+      "lemma": "serious",
+      "pos": "形",
+      "ja": "手ごわい、本格的な",
+      "note": ""
+    },
+    "rival": {
+      "lemma": "rival",
+      "pos": "名",
+      "ja": "競合相手",
+      "note": ""
+    },
+    "established": {
+      "lemma": "established",
+      "pos": "形",
+      "ja": "既存の",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "choices": {
+      "lemma": "choice",
+      "pos": "名",
+      "ja": "選択肢",
+      "note": ""
+    },
+    "competition": {
+      "lemma": "competition",
+      "pos": "名",
+      "ja": "競争",
+      "note": ""
+    },
+    "squeeze": {
+      "lemma": "squeeze",
+      "pos": "動",
+      "ja": "圧迫する",
+      "note": ""
+    },
+    "profits": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "関係代名詞 which の非制限用法（, which ...）",
+    "quote": "The licenses cover 14 megahertz of low-frequency airwaves, which carry signals farther and through walls.",
+    "quoteJa": "この免許は14メガヘルツ分の低い周波数帯をカバーしており、この電波は信号をより遠くまで、また壁を通して届けられる。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "「, which carry signals farther and through walls」は関係代名詞 which の非制限用法（継続用法）です。カンマの直前の名詞（ここでは low-frequency airwaves）について、「ちなみにそれは〜だ」と補足説明を足します。制限用法のように名詞を絞り込むのではなく、すでに特定されている名詞に情報を付け足す働きです。"
+      },
+      {
+        "heading": "書き換えと比較",
+        "body": "この文は and they carry signals farther and through walls と書き換えられます（which＝and they）。また which は前の文全体を受けることもあります。例：The company cut prices, which surprised its rivals.（値下げをしたことが競合を驚かせた）。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6では、カンマ直後の空所に which が入るか、that は入らないか、が問われます。非制限用法では that は使えません。また先行詞が人なら who、場所・時なら where / when を選びます。Part 7では、カンマ後の which 節は補足なので、設問の根拠は主節にあることが多いと知っておくと読むスピードが上がります。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "The new system will start in May, which gives us time to train the staff.（新システムは5月に始まり、そのため社員研修の時間が取れる。）／ We signed a contract with Brown Co., which has offices in six countries.（ブラウン社と契約を結んだ。同社は6カ国に拠点がある。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 「電波免許」とは何か",
+      "body": "携帯電話は目に見えない電波で通信しており、電波は国が帯域ごとに事業者へ貸し出す「公共の資源」です。今回の800MHz帯は「低い周波数」で、遠くまで届き、建物の中にも入りやすいため、通信会社にとって『プラチナバンド』級の貴重な帯域です。日本でも、携帯各社がこの帯域の割り当てを重視してきました。"
+    },
+    {
+      "heading": "📌 2. なぜ携帯各社の株価が急落したのか",
+      "body": "スペースXは衛星インターネット（スターリンク）で、すでに地上の基地局がない場所にも通信を届けています。そこに低い周波数帯の免許が加わると、衛星と地上の両方で携帯サービスを展開できる可能性が出てきます。投資家は『新たな強力な競合が現れ、料金競争で利益が削られる』と見て、既存の大手各社を売りました。ただし取引はFCCの承認待ちで、実現までに時間がかかる可能性があります。"
+    },
+    {
+      "heading": "📌 3. 業界の動き",
+      "body": "今回の件では、通信各社がほぼ同時期に、衛星を使った圏外対策で提携する動きを見せていたことも注目点です。衛星通信と地上の携帯網の境目があいまいになり、『誰が携帯会社になるのか』という業界の線引き自体が変わりつつあります。電波を持つ企業、衛星を持つ企業、利用者を持つ企業の組み合わせ方が競争の鍵になります。"
+    },
+    {
+      "heading": "📌 4. 日本と投資家への示唆",
+      "body": "日本でも、山間部や離島、災害時のつながりやすさを目的に、衛星と携帯のサービスを組み合わせる動きが進んでいます。海外で衛星企業が携帯事業に入れば、日本の通信会社の提携戦略や料金にも影響しうる点に注目です。投資家にとっては、通信株が『安定したディフェンシブ銘柄』という見方だけでは済まなくなり、新規参入のリスクを織り込む必要が出てきたといえます。ビジネスパーソンにとっても、業界の境界が崩れるときは、自社の競合が思わぬところから現れると考える良い事例です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SpaceX deal to acquire spectrum license hammers shares of AT&T, Verizon and T-Mobile",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/08/spacex-spectrum-license-att-verizon-tmobile.html",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "SpaceX spectrum acquisition ripples through telecom stocks",
+      "publisher": "Axios",
+      "url": "https://www.axios.com/2026/10/09/spacex-elon-musk-spectrum",
+      "date": "2026-10-09"
+    }
+  ]
+}
