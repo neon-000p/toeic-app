@@ -448,5 +448,22 @@
       "url": "https://finance.yahoo.com/markets/article/oil-falls-to-103-as-trump-says-us-will-not-attack-iran-before-the-midterm-elections-171630147.html",
       "date": "2026-10-09"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-11-0539/00.mp3",
+      "audio/2026-10-11-0539/01.mp3",
+      "audio/2026-10-11-0539/02.mp3",
+      "audio/2026-10-11-0539/03.mp3",
+      "audio/2026-10-11-0539/04.mp3",
+      "audio/2026-10-11-0539/05.mp3",
+      "audio/2026-10-11-0539/06.mp3",
+      "audio/2026-10-11-0539/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 204744,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-10T20:43:12.073Z",
+    "trimmed": true
+  }
 }
