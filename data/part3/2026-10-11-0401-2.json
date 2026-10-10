@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-11-0401-2",
+  "date": "2026-10-11",
+  "time": "04:01",
+  "scene": "顧客対応｜見積書の再提出",
+  "speakers": [
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-AU"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-CA"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "M",
+      "en": "Ms. Lopez, Harbor Foods just called about Monday's quote. They say the quantity is too large for their storage space.",
+      "ja": "ロペスさん、ハーバーフーズから月曜の見積りの件でお電話がありました。数量が多すぎて保管場所に収まらないそうです。"
+    },
+    {
+      "tag": "W",
+      "en": "How many units did they originally order?",
+      "ja": "もともと何個で注文されたのですか。"
+    },
+    {
+      "tag": "M",
+      "en": "Twelve hundred. Now they'd like to cut it to eight hundred, but they still want the same delivery date.",
+      "ja": "1,200個です。今度は800個に減らしたいそうですが、納期は同じままがいいとのことです。"
+    },
+    {
+      "tag": "W",
+      "en": "That should be fine, but the unit price will go up a little because it's a smaller order.",
+      "ja": "それは問題ないはずですが、注文が少なくなるので単価は少し上がります。"
+    },
+    {
+      "tag": "M",
+      "en": "I mentioned that, and they can live with it. They just need the revised quote in writing by Thursday.",
+      "ja": "その点はお伝えしましたし、受け入れられるとのことでした。木曜までに修正した見積書を書面でほしいだけだそうです。"
+    },
+    {
+      "tag": "W",
+      "en": "I'm tied up with the budget review, so I can't sign off on it myself. Could you draft it and send it to Mr. Kim?",
+      "ja": "私は予算の見直しで手が離せないので、自分では承認できません。あなたが作成して、キムさんに送ってもらえますか。"
+    },
+    {
+      "tag": "M",
+      "en": "Sure. Do you want me to copy you on the email?",
+      "ja": "わかりました。メールにあなたをコピーで入れましょうか。"
+    },
+    {
+      "tag": "W",
+      "en": "Yes, and follow up with the customer on Wednesday to make sure they received it.",
+      "ja": "ええ、それと水曜日にお客さまへ連絡して、届いたか確認してください。"
+    },
+    {
+      "tag": "M",
+      "en": "Will do. I'll call them first thing in the morning.",
+      "ja": "そうします。朝一番に電話します。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What problem does the customer mention?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The delivery date is too late.",
+          "ja": "納期が遅すぎる"
+        },
+        {
+          "key": "B",
+          "text": "The unit price is too high.",
+          "ja": "単価が高すぎる"
+        },
+        {
+          "key": "C",
+          "text": "It does not have enough room for the order.",
+          "ja": "注文品を置く場所が足りない"
+        },
+        {
+          "key": "D",
+          "text": "The quote was sent to the wrong person.",
+          "ja": "見積書が違う人に送られた"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0
+      ],
+      "explanation": "男性が the quantity is too large for their storage space と伝えており、選択肢 C は storage space を room に言い換えている。単価の上昇は女性が説明するだけで、客が問題にしたのではない。納期は同じままを希望している。",
+      "tip": "客の問題は最初の発言に出る。他の選択肢の価格や納期は後で別の話題として出てくるので、先に飛びつかない。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the man mean when he says, \"I mentioned that\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "He has already told the customer about a price change.",
+          "ja": "価格の変更をすでに客に伝えた"
+        },
+        {
+          "key": "B",
+          "text": "He forgot to put a price in the quote.",
+          "ja": "見積りに価格を入れ忘れた"
+        },
+        {
+          "key": "C",
+          "text": "He is unsure the customer will agree.",
+          "ja": "客が同意するか自信がない"
+        },
+        {
+          "key": "D",
+          "text": "He wants the woman to explain the increase.",
+          "ja": "女性に値上がりを説明してほしい"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "直前に女性が単価が上がると言い、それに対して男性が I mentioned that と答え、続けて they said they can live with it と述べている。単価の上昇をすでに客に伝え、了承を得たという意味である。",
+      "tip": "引用文の意味は直前の発言とのつながりで決まる。that が何を指すかを前の行から探す。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about Mr. Kim?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "He works for Harbor Foods.",
+          "ja": "ハーバーフーズで働いている"
+        },
+        {
+          "key": "B",
+          "text": "He can approve the revised quote.",
+          "ja": "修正した見積書を承認できる"
+        },
+        {
+          "key": "C",
+          "text": "He is conducting the budget review.",
+          "ja": "予算の見直しを担当している"
+        },
+        {
+          "key": "D",
+          "text": "He will visit the customer on Wednesday.",
+          "ja": "水曜日に客を訪問する"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        5
+      ],
+      "explanation": "女性は自分は忙しくて sign off できないので、作成して Mr. Kim に送るよう頼んでいる。つまり Mr. Kim が承認する立場にあると推測できる。予算の見直しをしているのは女性自身である。",
+      "tip": "推測の設問は、直接言われていない人物の役割を、依頼の流れから読み取る。「自分はできない、だから〜さんに」の形に注目する。"
+    }
+  ],
+  "glossary": {
+    "quote": {
+      "lemma": "quote",
+      "pos": "名",
+      "ja": "見積り（書）",
+      "note": "estimate の言い換え",
+      "example": {
+        "en": "Please send us a quote for 500 office chairs.",
+        "ja": "オフィスチェア500脚の見積りを送ってください。"
+      }
+    },
+    "storage space": {
+      "lemma": "storage space",
+      "pos": "熟",
+      "ja": "保管場所",
+      "note": "",
+      "example": {
+        "en": "We need more storage space for the seasonal stock.",
+        "ja": "季節商品の在庫のために、もっと保管場所が必要だ。"
+      }
+    },
+    "unit price": {
+      "lemma": "unit price",
+      "pos": "熟",
+      "ja": "単価",
+      "note": "",
+      "example": {
+        "en": "The unit price drops when you order in bulk.",
+        "ja": "まとめて注文すると単価が下がる。"
+      }
+    },
+    "live with": {
+      "lemma": "live with",
+      "pos": "熟",
+      "ja": "（不満はあっても）受け入れる",
+      "note": "accept の言い換え",
+      "example": {
+        "en": "The team can live with a one-day delay.",
+        "ja": "チームは1日の遅れなら受け入れられる。"
+      }
+    },
+    "revised quote": {
+      "lemma": "revised quote",
+      "pos": "熟",
+      "ja": "修正された見積書",
+      "note": "",
+      "example": {
+        "en": "The revised quote reflects the lower quantity.",
+        "ja": "修正された見積書には数量の減少が反映されている。"
+      }
+    },
+    "in writing": {
+      "lemma": "in writing",
+      "pos": "熟",
+      "ja": "書面で",
+      "note": "",
+      "example": {
+        "en": "Please confirm your request in writing.",
+        "ja": "ご依頼は書面で確認してください。"
+      }
+    },
+    "tied up": {
+      "lemma": "be tied up",
+      "pos": "熟",
+      "ja": "手が離せない",
+      "note": "busy の言い換え",
+      "example": {
+        "en": "I'm tied up in meetings until three o'clock.",
+        "ja": "私は3時まで会議で手が離せません。"
+      }
+    },
+    "sign off on": {
+      "lemma": "sign off on",
+      "pos": "熟",
+      "ja": "承認する",
+      "note": "approve の言い換え",
+      "example": {
+        "en": "The director must sign off on every purchase over $500.",
+        "ja": "500ドルを超える購入は、すべて部長の承認が必要だ。"
+      }
+    },
+    "draft": {
+      "lemma": "draft",
+      "pos": "動",
+      "ja": "下書きする、草案を作る",
+      "note": "",
+      "example": {
+        "en": "Could you draft a reply to the customer's complaint?",
+        "ja": "お客さまの苦情への返信を下書きしてもらえますか。"
+      }
+    },
+    "follow up with": {
+      "lemma": "follow up with",
+      "pos": "熟",
+      "ja": "（後日）連絡して確認する",
+      "note": "",
+      "example": {
+        "en": "I'll follow up with the supplier about the delay.",
+        "ja": "納品の遅れについて、仕入先に後日確認します。"
+      }
+    },
+    "first thing in the morning": {
+      "lemma": "first thing in the morning",
+      "pos": "熟",
+      "ja": "朝一番に",
+      "note": "",
+      "example": {
+        "en": "Let's review the schedule first thing in the morning.",
+        "ja": "朝一番にスケジュールを見直しましょう。"
+      }
+    }
+  },
+  "point": {
+    "flow": "報告 → 数量・納期の確認 → 条件の変化 → 承認者の指示 → 期限と確認",
+    "items": [
+      {
+        "title": "報告の中身は問題・要望・期限の3点",
+        "body": "報告型の会話では、客の問題、変更の要望、期限（今回は木曜）がまとめて出る。聞きながらこの3点を押さえる。"
+      },
+      {
+        "title": "できない理由は、担当の振り分けを示す",
+        "body": "「自分は〜で手が離せないので、〜さんに」という流れは、誰が何を承認・実行するかの推測問題に直結する。"
+      },
+      {
+        "title": "終盤の指示は日付と順序で聞き分ける",
+        "body": "水曜に連絡、朝一番に電話のように、時を示す語が並ぶと、誰がいつ何をするかが設問になる。"
+      }
+    ]
+  }
+}

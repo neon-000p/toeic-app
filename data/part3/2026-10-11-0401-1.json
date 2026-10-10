@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-11-0401-1",
+  "date": "2026-10-11",
+  "time": "04:01",
+  "scene": "出張・移動｜航空便の選択と宿泊の手配",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-GB"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "Daniel, I'm putting together your itinerary for the Denver conference. Do you prefer the morning flight or the evening one?",
+      "ja": "ダニエル、デンバーの会議に向けた旅程をまとめているところです。午前の便と夕方の便、どちらがいいですか。"
+    },
+    {
+      "tag": "M",
+      "en": "What's the difference in price? I'd rather not go over the travel budget this quarter.",
+      "ja": "料金はどれくらい違いますか。今四半期は出張予算を超えたくないんです。"
+    },
+    {
+      "tag": "W",
+      "en": "The 7 a.m. flight is $380, and the 6 p.m. one is $320. But the evening flight lands after the shuttle stops running.",
+      "ja": "午前7時の便は380ドル、午後6時の便は320ドルです。ただ、夕方の便はシャトルバスの運行が終わった後に到着します。"
+    },
+    {
+      "tag": "M",
+      "en": "Hmm. I'd have to take a taxi, then. How much would that run me?",
+      "ja": "うーん。それならタクシーに乗ることになりますね。いくらかかるでしょうか。"
+    },
+    {
+      "tag": "W",
+      "en": "Probably around $45, so you'd end up saving very little.",
+      "ja": "おそらく45ドル前後なので、結局ほとんど節約になりません。"
+    },
+    {
+      "tag": "M",
+      "en": "In that case, I'll take the early flight. I can also drop by the client's office before the opening session.",
+      "ja": "それなら早い便にします。開会前にお客さまのオフィスへ立ち寄ることもできますし。"
+    },
+    {
+      "tag": "W",
+      "en": "Great. I'll lock in your seat on the 7 a.m. flight now. Should I reserve a hotel near the venue as well?",
+      "ja": "わかりました。午前7時の便の席を今すぐ確保します。会場の近くのホテルも予約しましょうか。"
+    },
+    {
+      "tag": "M",
+      "en": "Yes, please. Just make sure it has a desk, because I need to practice my slides that night.",
+      "ja": "ええ、お願いします。その夜にスライドの練習をしたいので、机があることだけ確認してください。"
+    },
+    {
+      "tag": "W",
+      "en": "Understood. I'll email you the confirmation this afternoon.",
+      "ja": "承知しました。今日の午後に確認メールをお送りします。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hiring a conference speaker",
+          "ja": "会議の講演者を雇うこと"
+        },
+        {
+          "key": "B",
+          "text": "Planning a business trip",
+          "ja": "出張の計画を立てること"
+        },
+        {
+          "key": "C",
+          "text": "Changing a hotel booking",
+          "ja": "ホテルの予約を変更すること"
+        },
+        {
+          "key": "D",
+          "text": "Lowering a department budget",
+          "ja": "部署の予算を下げること"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "女性が I'm putting together your itinerary for the Denver conference と述べ、便の選択と宿泊の手配が続く。話題は出張の計画である。ホテルは終盤に出るが、予約の変更ではなく新規の手配なので C は不適切。",
+      "tip": "冒頭1〜2行で話題は決まる。itinerary は旅程の意味で、出張や旅行の話を示す合図になる。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why does the man choose the morning flight?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The evening flight is sold out.",
+          "ja": "夕方の便は満席だから"
+        },
+        {
+          "key": "B",
+          "text": "The shuttle bus runs all night.",
+          "ja": "シャトルバスが一晩中走っているから"
+        },
+        {
+          "key": "C",
+          "text": "He needs time to practice his slides.",
+          "ja": "スライドを練習する時間が必要だから"
+        },
+        {
+          "key": "D",
+          "text": "The later flight would save little money.",
+          "ja": "遅い便ではほとんど節約にならないから"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "explanation": "夕方の便は320ドルだが、シャトルが終わっているためタクシー代が約45ドルかかり、you'd end up saving very little と女性が言う。男性はそれを受けて In that case と早い便を選ぶ。スライドの練習はホテルでの話で、便を選ぶ理由ではない。",
+      "tip": "In that case や Then の直前に理由がある。数字を足し引きして差が小さいことを聞き取る。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the woman probably do next?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Reserve a seat on a flight",
+          "ja": "便の座席を予約する"
+        },
+        {
+          "key": "B",
+          "text": "Call a taxi company",
+          "ja": "タクシー会社に電話する"
+        },
+        {
+          "key": "C",
+          "text": "Revise the travel budget",
+          "ja": "出張予算を修正する"
+        },
+        {
+          "key": "D",
+          "text": "Send slides to a client",
+          "ja": "お客さまにスライドを送る"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        6
+      ],
+      "explanation": "女性は I'll lock in your seat on the 7 a.m. flight right now と述べており、lock in は reserve の言い換えである。確認メールは午後に送るので、すぐ行うのは座席の確保。タクシーは男性が使う可能性があるだけで、女性の行動ではない。",
+      "tip": "next の設問は終盤の I'll ... で答える。right now と this afternoon のような時の違いで順番も判断できる。"
+    }
+  ],
+  "glossary": {
+    "putting together": {
+      "lemma": "put together",
+      "pos": "熟",
+      "ja": "まとめる、作成する",
+      "note": "prepare の言い換え",
+      "example": {
+        "en": "Could you put together a short report on last month's sales?",
+        "ja": "先月の売上について短い報告書をまとめてもらえますか。"
+      }
+    },
+    "itinerary": {
+      "lemma": "itinerary",
+      "pos": "名",
+      "ja": "旅程、行程表",
+      "note": "",
+      "example": {
+        "en": "The itinerary includes a factory tour on the second day.",
+        "ja": "旅程には2日目の工場見学が含まれている。"
+      }
+    },
+    "go over": {
+      "lemma": "go over",
+      "pos": "熟",
+      "ja": "超える",
+      "note": "exceed の言い換え。review（見直す）の意味もある",
+      "example": {
+        "en": "Expenses must not go over the limit set by the finance team.",
+        "ja": "経費は経理部が定めた上限を超えてはならない。"
+      }
+    },
+    "run me": {
+      "lemma": "run",
+      "pos": "動",
+      "ja": "（費用が）かかる",
+      "note": "cost の言い換え",
+      "example": {
+        "en": "The repairs could run us as much as $2,000.",
+        "ja": "修理には2,000ドルもかかるかもしれない。"
+      }
+    },
+    "end up": {
+      "lemma": "end up",
+      "pos": "熟",
+      "ja": "結局〜になる",
+      "note": "",
+      "example": {
+        "en": "We ended up working late to finish the proposal.",
+        "ja": "私たちは結局、提案書を仕上げるために遅くまで働いた。"
+      }
+    },
+    "in that case": {
+      "lemma": "in that case",
+      "pos": "熟",
+      "ja": "それなら",
+      "note": "",
+      "example": {
+        "en": "In that case, let's move the meeting to Friday.",
+        "ja": "それなら、会議を金曜日に移しましょう。"
+      }
+    },
+    "drop by": {
+      "lemma": "drop by",
+      "pos": "熟",
+      "ja": "立ち寄る",
+      "note": "stop by と同じ",
+      "example": {
+        "en": "I'll drop by your office after the lunch meeting.",
+        "ja": "昼食会のあとでそちらのオフィスに立ち寄ります。"
+      }
+    },
+    "lock in": {
+      "lemma": "lock in",
+      "pos": "熟",
+      "ja": "確保する、確定させる",
+      "note": "reserve の言い換え",
+      "example": {
+        "en": "We should lock in the venue before the price goes up.",
+        "ja": "値上がりする前に会場を確保しておくべきです。"
+      }
+    },
+    "venue": {
+      "lemma": "venue",
+      "pos": "名",
+      "ja": "会場",
+      "note": "",
+      "example": {
+        "en": "The venue can hold up to 300 guests.",
+        "ja": "その会場は最大300名を収容できる。"
+      }
+    },
+    "confirmation": {
+      "lemma": "confirmation",
+      "pos": "名",
+      "ja": "確認（書）",
+      "note": "",
+      "example": {
+        "en": "Please keep the confirmation until you check in.",
+        "ja": "チェックインするまで確認書を保管してください。"
+      }
+    },
+    "shuttle": {
+      "lemma": "shuttle",
+      "pos": "名",
+      "ja": "シャトルバス、送迎便",
+      "note": "",
+      "example": {
+        "en": "A free shuttle runs between the airport and the hotel.",
+        "ja": "空港とホテルの間を無料のシャトルバスが走っている。"
+      }
+    }
+  },
+  "point": {
+    "flow": "依頼 → 2案の提示 → 費用の比較 → 決定と理由 → 手配の分担",
+    "items": [
+      {
+        "title": "2案が出たら、比べる軸を先に押さえる",
+        "body": "便・価格・到着時刻のように、比較に使う軸が最初の数行で出る。軸ごとに差をメモしておくと、決定の理由を問う設問で迷わない。"
+      },
+      {
+        "title": "理由は In that case の直前にある",
+        "body": "決定の合図（In that case / Then / I'll take）が聞こえたら、そのひとつ前の発言に戻って理由を拾う。"
+      },
+      {
+        "title": "最後の約束が次の行動になる",
+        "body": "終盤の I'll ... は、今すぐ行うことと後で行うことを分けて聞く。right now と this afternoon で順番が決まる。"
+      }
+    ]
+  }
+}
