@@ -1,8 +1,28 @@
 {
   "schemaVersion": 1,
   "type": "part4",
-  "updatedAt": "2026-10-07T04:00:00+09:00",
+  "updatedAt": "2026-10-11T04:01:00+09:00",
   "items": [
+    {
+      "no": 15,
+      "id": "2026-10-11-0401-2",
+      "date": "2026-10-11",
+      "time": "04:01",
+      "talkType": "meeting",
+      "kind": "会議の一部",
+      "questions": 3,
+      "file": "2026-10-11-0401-2.json"
+    },
+    {
+      "no": 14,
+      "id": "2026-10-11-0401-1",
+      "date": "2026-10-11",
+      "time": "04:01",
+      "talkType": "announcement",
+      "kind": "アナウンス",
+      "questions": 3,
+      "file": "2026-10-11-0401-1.json"
+    },
     {
       "id": "2026-10-07-0400-2",
       "no": 13,

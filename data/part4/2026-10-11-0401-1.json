@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-11-0401-1",
+  "date": "2026-10-11",
+  "time": "04:01",
+  "createdAt": "2026-10-11T04:01:00+09:00",
+  "sample": false,
+  "scene": "館内放送｜搭乗口の変更と出発の遅れ",
+  "talkType": "announcement",
+  "intro": "Questions 1 through 3 refer to the following announcement.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-US"
+  },
+  "lines": [
+    {
+      "en": "May I have your attention, passengers on Flight 218 to Boston.",
+      "ja": "ボストン行き218便にご搭乗のお客さまにお知らせいたします。"
+    },
+    {
+      "en": "Due to a mechanical check on the incoming aircraft, your departure has been pushed back from 2:15 to 3:30 p.m.",
+      "ja": "到着機の整備点検のため、出発時刻が午後2時15分から3時30分に変更となりました。"
+    },
+    {
+      "en": "We apologize for the inconvenience, and we are also moving this flight from Gate 12 to Gate 27, which is at the far end of Terminal B.",
+      "ja": "ご不便をおかけして申し訳ございません。また、この便は12番ゲートから、ターミナルBの端にある27番ゲートに変更となります。"
+    },
+    {
+      "en": "Please allow at least ten minutes to walk there, and keep your boarding pass handy.",
+      "ja": "そちらまで歩くのに少なくとも10分はみてください。搭乗券をすぐ出せるようにしておいてください。"
+    },
+    {
+      "en": "To make up for the wait, we are handing out $10 meal vouchers at the service counter near Gate 12.",
+      "ja": "お待たせするお詫びとして、12番ゲート近くのサービスカウンターで10ドルの食事券をお配りしています。"
+    },
+    {
+      "en": "Passengers with checked bags do not need to do anything, as your luggage will be moved to the new aircraft automatically.",
+      "ja": "預け荷物のあるお客さまは、何もする必要はありません。お荷物は自動的に新しい機体に移されます。"
+    },
+    {
+      "en": "If you have a connecting flight that you may miss, please see an agent at the counter before 3 o'clock, and we will rebook you free of charge.",
+      "ja": "乗り継ぎ便に間に合わない可能性のあるお客さまは、3時までにカウンターの係員にお申し出ください。無料で予約を取り直します。"
+    },
+    {
+      "en": "Thank you for your patience.",
+      "ja": "ご理解のほどお願いいたします。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely is the speaker?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A pilot",
+          "ja": "パイロット"
+        },
+        {
+          "key": "B",
+          "text": "A security guard",
+          "ja": "警備員"
+        },
+        {
+          "key": "C",
+          "text": "An airline representative",
+          "ja": "航空会社の係員"
+        },
+        {
+          "key": "D",
+          "text": "A shop clerk",
+          "ja": "店の販売員"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "Flight 218 の乗客に呼びかけ、出発の遅れや搭乗口の変更、食事券、乗り継ぎ便の再予約を案内している。これらを知らせる立場は航空会社の係員である。食事券を配るが、店員が話し手なわけではない。",
+      "tip": "話し手の職業は、案内の中身（何を決められる人か）から決める。冒頭の呼びかけ（passengers on Flight）が聞き手を示す。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why has the departure time changed?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Several passengers are missing.",
+          "ja": "乗客が数人いない"
+        },
+        {
+          "key": "B",
+          "text": "An aircraft needs to be inspected.",
+          "ja": "機体の点検が必要だから"
+        },
+        {
+          "key": "C",
+          "text": "A gate is under repair.",
+          "ja": "搭乗口が修理中だから"
+        },
+        {
+          "key": "D",
+          "text": "Some luggage was lost.",
+          "ja": "荷物が紛失したから"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        1
+      ],
+      "explanation": "Due to a mechanical check on the incoming aircraft と理由が述べられている。mechanical check は inspected への言い換え。ゲートは変更になるが、修理が理由とは言っていない。",
+      "tip": "Due to や Because of の直後が理由。the incoming aircraft のような言い換えの少ない語は、選択肢では別の語に置き換わる。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about Gate 27?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is next to the service counter.",
+          "ja": "サービスカウンターの隣にある"
+        },
+        {
+          "key": "B",
+          "text": "It is reserved for connecting flights.",
+          "ja": "乗り継ぎ便専用である"
+        },
+        {
+          "key": "C",
+          "text": "It is closed for the day.",
+          "ja": "今日は閉鎖されている"
+        },
+        {
+          "key": "D",
+          "text": "It is a long walk from Gate 12.",
+          "ja": "12番ゲートから歩くと遠い"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "27番ゲートは at the far end of Terminal B にあり、歩くのに at least ten minutes かかると述べられている。したがって12番ゲートからは遠いと推測できる。サービスカウンターがあるのは12番ゲートの近くである。",
+      "tip": "推測の設問は、距離や時間のような数字つきの注意から答えを作る。near と far end を取り違えない。"
+    }
+  ],
+  "glossary": {
+    "pushed back": {
+      "lemma": "push back",
+      "pos": "熟",
+      "ja": "延期する、後ろ倒しにする",
+      "note": "delay の言い換え",
+      "example": {
+        "en": "The launch date was pushed back by two weeks.",
+        "ja": "発売日は2週間後ろに延ばされた。"
+      }
+    },
+    "mechanical check": {
+      "lemma": "mechanical check",
+      "pos": "熟",
+      "ja": "機械の点検",
+      "note": "inspection の言い換え",
+      "example": {
+        "en": "The bus failed its mechanical check and was taken out of service.",
+        "ja": "そのバスは機械の点検に通らず、運行を外された。"
+      }
+    },
+    "inconvenience": {
+      "lemma": "inconvenience",
+      "pos": "名",
+      "ja": "不便、迷惑",
+      "note": "",
+      "example": {
+        "en": "We apologize for any inconvenience caused by the construction.",
+        "ja": "工事でご迷惑をおかけしたことをお詫びします。"
+      }
+    },
+    "make up for": {
+      "lemma": "make up for",
+      "pos": "熟",
+      "ja": "埋め合わせる、償う",
+      "note": "",
+      "example": {
+        "en": "We offered a discount to make up for the delay.",
+        "ja": "遅れの埋め合わせとして割引を提供した。"
+      }
+    },
+    "handing out": {
+      "lemma": "hand out",
+      "pos": "熟",
+      "ja": "配る",
+      "note": "distribute の言い換え",
+      "example": {
+        "en": "Volunteers will hand out brochures at the entrance.",
+        "ja": "ボランティアが入口でパンフレットを配る予定だ。"
+      }
+    },
+    "vouchers": {
+      "lemma": "voucher",
+      "pos": "名",
+      "ja": "引換券、利用券",
+      "note": "",
+      "example": {
+        "en": "Each guest received a voucher for a free coffee.",
+        "ja": "宿泊客はそれぞれコーヒーの無料引換券をもらった。"
+      }
+    },
+    "checked bags": {
+      "lemma": "checked bag",
+      "pos": "熟",
+      "ja": "預け荷物",
+      "note": "",
+      "example": {
+        "en": "Checked bags must weigh less than 23 kilograms.",
+        "ja": "預け荷物の重さは23キロ未満でなければならない。"
+      }
+    },
+    "connecting flight": {
+      "lemma": "connecting flight",
+      "pos": "熟",
+      "ja": "乗り継ぎ便",
+      "note": "",
+      "example": {
+        "en": "My connecting flight leaves only forty minutes after I land.",
+        "ja": "乗り継ぎ便は着陸のわずか40分後に出発する。"
+      }
+    },
+    "rebook": {
+      "lemma": "rebook",
+      "pos": "動",
+      "ja": "予約を取り直す",
+      "note": "",
+      "example": {
+        "en": "The agency will rebook you on the next available train.",
+        "ja": "旅行会社が次に空いている列車に予約を取り直します。"
+      }
+    },
+    "free of charge": {
+      "lemma": "free of charge",
+      "pos": "熟",
+      "ja": "無料で",
+      "note": "",
+      "example": {
+        "en": "Delivery is free of charge for orders over $100.",
+        "ja": "100ドルを超える注文は配送が無料です。"
+      }
+    }
+  },
+  "point": {
+    "flow": "呼びかけ → 変更の中身（時刻・理由）→ 場所の変更 → 補償 → 条件つきの案内",
+    "items": [
+      {
+        "title": "館内放送は「誰向けか」から始まる",
+        "body": "冒頭の呼びかけ（passengers on Flight 218）で聞き手が決まり、話し手の職業もそこから推測できる。"
+      },
+      {
+        "title": "数字は変更前と変更後の組で聞く",
+        "body": "2:15から3:30、Gate 12からGate 27のように、変更前後の対を意識すると、理由や影響の設問に答えやすい。"
+      },
+      {
+        "title": "後半の if は対象者を限定する",
+        "body": "If you have ... のあとに、特定の人向けの指示が来る。自分が当てはまるかを判断しながら聞く。"
+      }
+    ]
+  }
+}

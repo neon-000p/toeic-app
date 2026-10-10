@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part4-history",
-  "updatedAt": "2026-10-07T04:00:00+09:00",
+  "updatedAt": "2026-10-11T04:01:00+09:00",
   "items": [
+    {
+      "id": "2026-10-11-0401-2",
+      "date": "2026-10-11",
+      "scene": "会議｜経費精算のオンライン化",
+      "genre": "会議の一部",
+      "talkType": "meeting",
+      "types": [
+        "gist",
+        "intent",
+        "next"
+      ],
+      "flow": "変更の説明と依頼"
+    },
+    {
+      "id": "2026-10-11-0401-1",
+      "date": "2026-10-11",
+      "scene": "館内放送｜搭乗口の変更と出発の遅れ",
+      "genre": "館内アナウンス",
+      "talkType": "announcement",
+      "types": [
+        "who",
+        "detail",
+        "infer"
+      ],
+      "flow": "状況と代替手段"
+    },
     {
       "id": "2026-10-07-0400-2",
       "date": "2026-10-07",

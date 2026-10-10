@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-11-0401-2",
+  "date": "2026-10-11",
+  "time": "04:01",
+  "createdAt": "2026-10-11T04:01:00+09:00",
+  "sample": false,
+  "scene": "会議｜経費精算のオンライン化",
+  "talkType": "meeting",
+  "intro": "Questions 1 through 3 refer to the following excerpt from a meeting.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-GB"
+  },
+  "lines": [
+    {
+      "en": "Before we wrap up, I'd like to go over a change to how we submit expense reports.",
+      "ja": "終わる前に、経費報告書の提出方法の変更についてご説明します。"
+    },
+    {
+      "en": "Starting next month, you will file all claims through the new online portal instead of handing in paper forms.",
+      "ja": "来月から、紙の用紙を提出する代わりに、新しいオンラインのポータルですべての申請を行います。"
+    },
+    {
+      "en": "Right now, it takes the finance team about two weeks to process a claim, and the portal should cut that down to three days.",
+      "ja": "現在、経理部が申請を処理するのに約2週間かかっていますが、ポータルによって3日に短縮される見込みです。"
+    },
+    {
+      "en": "You will need to scan your receipts with your phone and upload them along with each request.",
+      "ja": "スマートフォンで領収書をスキャンし、申請のたびに一緒にアップロードする必要があります。"
+    },
+    {
+      "en": "I know some of you travel a lot and may find this a hassle at first.",
+      "ja": "皆さんの中には出張が多く、最初は面倒に感じる人もいると思います。"
+    },
+    {
+      "en": "But keep in mind that we will no longer lose track of receipts, which has been a recurring problem.",
+      "ja": "しかし、今後は領収書の所在がわからなくなることはありません。これまで繰り返し起きていた問題でした。"
+    },
+    {
+      "en": "Training sessions will be held on the fourth floor next Wednesday and Thursday.",
+      "ja": "研修は来週の水曜と木曜に、4階で行います。"
+    },
+    {
+      "en": "Please sign up for one of them by this Friday so we can plan the room.",
+      "ja": "部屋の手配ができるよう、今週の金曜までにどちらかへ申し込んでください。"
+    },
+    {
+      "en": "If you cannot make either day, let me know and we will arrange something else.",
+      "ja": "どちらの日も都合がつかない場合は、私に知らせてください。別の対応を考えます。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the main topic of the talk?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A new way to submit expense claims",
+          "ja": "経費申請の新しい提出方法"
+        },
+        {
+          "key": "B",
+          "text": "A plan to reduce business travel",
+          "ja": "出張を減らす計画"
+        },
+        {
+          "key": "C",
+          "text": "A change in finance team staffing",
+          "ja": "経理部の人員体制の変更"
+        },
+        {
+          "key": "D",
+          "text": "A method for storing paper receipts",
+          "ja": "紙の領収書の保管方法"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で a change to how we submit expense reports と述べ、2文目でオンラインのポータルで申請を行うと続ける。話題は経費申請の方法の変更である。領収書は出てくるが、保管ではなくスキャンして送る話である。",
+      "tip": "会議の抜粋は、最初の1〜2文で議題を述べる。I'd like to go over の目的語が話題になる。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when he says, \"may find this a hassle at first\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "He wants employees to travel less.",
+          "ja": "社員に出張を減らしてほしい"
+        },
+        {
+          "key": "B",
+          "text": "He believes the portal is unreliable.",
+          "ja": "ポータルは信頼できないと思っている"
+        },
+        {
+          "key": "C",
+          "text": "He plans to cancel the training.",
+          "ja": "研修を中止するつもりだ"
+        },
+        {
+          "key": "D",
+          "text": "He understands the change may be inconvenient.",
+          "ja": "変更が不便かもしれないと理解している"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "explanation": "領収書をスキャンして上げる手間を説明した直後の発言で、続けて But keep in mind と良い面を挙げている。聞き手の負担に理解を示してから、変更の利点を述べる流れである。ポータルへの不信ではない。",
+      "tip": "I know ... のあとの But が来る前後で、話し手の立場を確認する。hassle は「面倒なこと」で、不満への共感を示す。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are the listeners asked to do by Friday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Scan their receipts",
+          "ja": "領収書をスキャンする"
+        },
+        {
+          "key": "B",
+          "text": "Hand in their paper forms",
+          "ja": "紙の用紙を提出する"
+        },
+        {
+          "key": "C",
+          "text": "Register for a training session",
+          "ja": "研修に登録する"
+        },
+        {
+          "key": "D",
+          "text": "Contact the finance team",
+          "ja": "経理部に連絡する"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        7
+      ],
+      "explanation": "Please sign up for one of them by this Friday と依頼している。sign up は register の言い換え。紙の用紙は来月から使わなくなるので、提出を求められてはいない。",
+      "tip": "聞き手への依頼は、Please と期限（by this Friday）が一緒に出る。動詞 sign up は register に言い換えられる。"
+    }
+  ],
+  "glossary": {
+    "wrap up": {
+      "lemma": "wrap up",
+      "pos": "熟",
+      "ja": "終える、切り上げる",
+      "note": "",
+      "example": {
+        "en": "Let's wrap up the meeting before the lunch break.",
+        "ja": "昼休みの前に会議を終えましょう。"
+      }
+    },
+    "go over": {
+      "lemma": "go over",
+      "pos": "熟",
+      "ja": "（内容を）説明する、見直す",
+      "note": "",
+      "example": {
+        "en": "I'd like to go over the schedule for next week.",
+        "ja": "来週の日程について確認させてください。"
+      }
+    },
+    "expense reports": {
+      "lemma": "expense report",
+      "pos": "熟",
+      "ja": "経費報告書",
+      "note": "",
+      "example": {
+        "en": "Expense reports are due on the last day of the month.",
+        "ja": "経費報告書の提出期限は月末日です。"
+      }
+    },
+    "file": {
+      "lemma": "file",
+      "pos": "動",
+      "ja": "（書類を）提出する、申請する",
+      "note": "多義語。ここでは「提出する」",
+      "example": {
+        "en": "You must file your tax forms by the end of April.",
+        "ja": "税務書類は4月末までに提出しなければならない。"
+      }
+    },
+    "process": {
+      "lemma": "process",
+      "pos": "動",
+      "ja": "処理する",
+      "note": "",
+      "example": {
+        "en": "It takes three days to process a refund request.",
+        "ja": "返金の依頼を処理するのに3日かかる。"
+      }
+    },
+    "cut that down": {
+      "lemma": "cut down",
+      "pos": "熟",
+      "ja": "減らす、短縮する",
+      "note": "reduce の言い換え",
+      "example": {
+        "en": "The new system should cut down the waiting time.",
+        "ja": "新しいシステムで待ち時間が短くなるはずだ。"
+      }
+    },
+    "hassle": {
+      "lemma": "hassle",
+      "pos": "名",
+      "ja": "面倒なこと",
+      "note": "",
+      "example": {
+        "en": "Changing flights at the last minute was a real hassle.",
+        "ja": "直前に便を変更するのは本当に面倒だった。"
+      }
+    },
+    "lose track of": {
+      "lemma": "lose track of",
+      "pos": "熟",
+      "ja": "〜を見失う、把握できなくなる",
+      "note": "",
+      "example": {
+        "en": "We lost track of several invoices during the move.",
+        "ja": "引っ越しの間に請求書が何通か行方不明になった。"
+      }
+    },
+    "recurring": {
+      "lemma": "recurring",
+      "pos": "形",
+      "ja": "繰り返し起こる",
+      "note": "",
+      "example": {
+        "en": "Late deliveries have been a recurring issue this year.",
+        "ja": "今年は配送の遅れが繰り返し起きている。"
+      }
+    },
+    "sign up": {
+      "lemma": "sign up",
+      "pos": "熟",
+      "ja": "申し込む",
+      "note": "register の言い換え",
+      "example": {
+        "en": "Please sign up for the workshop by Monday.",
+        "ja": "月曜までにワークショップへ申し込んでください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "議題の提示 → 変更の中身 → 現状の数字と改善 → 手順 → 理解を示す一言 → 依頼と期限",
+    "items": [
+      {
+        "title": "会議の抜粋は冒頭で議題を言う",
+        "body": "Before we wrap up や I'd like to go over の直後に議題が来る。1問目はここで答えが決まる。"
+      },
+      {
+        "title": "But の前後で話し手の立場を確認する",
+        "body": "相手の負担に理解を示す一言のあとには But で利点が続く。意図を問う設問は、この前後の文を使う。"
+      },
+      {
+        "title": "最後の Please が行動の依頼",
+        "body": "依頼と期限はセットで終盤に出る。動詞は言い換えられるので、期限の語（by this Friday）を目印に探す。"
+      }
+    ]
+  }
+}
