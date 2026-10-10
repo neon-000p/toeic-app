@@ -1,0 +1,452 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-11-0539",
+  "date": "2026-10-11",
+  "time": "05:39",
+  "createdAt": "2026-10-11T05:39:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "Oil Falls as Trump Rules Out Iran Attack Before Midterms",
+    "ja": "トランプ氏が選挙前の対イラン攻撃を否定、原油安"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "On Thursday, President Trump said the United States will not attack Iran before the November 3 elections.",
+            "ja": "木曜日、トランプ大統領は、11月3日の選挙前に米国がイランを攻撃することはないと述べた。"
+          },
+          {
+            "en": "He wrote that talks with Iran were productive, but he did not give any details.",
+            "ja": "同氏はイランとの協議は実りあるものだったと投稿したが、詳細は明らかにしなかった。"
+          },
+          {
+            "en": "Earlier that day, oil prices had jumped after a news report said officials were considering a strike.",
+            "ja": "同じ日の早い時間には、当局者が攻撃を検討していると報じられ、原油価格が急騰していた。"
+          },
+          {
+            "en": "Investors had feared that an attack would disrupt shipments and push prices higher.",
+            "ja": "投資家は、攻撃が出荷を混乱させ、価格をさらに押し上げることを懸念していた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "On Friday, Brent, the global oil benchmark, fell about 0.8% to $103.45 a barrel.",
+            "ja": "金曜日、世界の原油指標であるブレントは約0.8%下落し、1バレル103.45ドルとなった。"
+          },
+          {
+            "en": "Stocks around the world rose as investors worried less about supply.",
+            "ja": "投資家が供給への不安を和らげたため、世界の株式は上昇した。"
+          },
+          {
+            "en": "Ships carrying about one-fifth of the world's oil pass near Iran, so any attack could cut supply.",
+            "ja": "世界の石油の約5分の1を運ぶ船がイラン近海を通るため、攻撃があれば供給が減る可能性がある。"
+          },
+          {
+            "en": "Analysts warned that the pledge covers only a short period, so prices could swing again after the vote.",
+            "ja": "アナリストは、この約束は短い期間しか対象としておらず、投票後に価格が再び大きく変動し得ると警告した。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What was the price of Brent after it fell on Friday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$93.45 a barrel",
+          "ja": "1バレル93.45ドル"
+        },
+        {
+          "key": "B",
+          "text": "$103.45 a barrel",
+          "ja": "1バレル103.45ドル"
+        },
+        {
+          "key": "C",
+          "text": "$105.83 a barrel",
+          "ja": "1バレル105.83ドル"
+        },
+        {
+          "key": "D",
+          "text": "$113.45 a barrel",
+          "ja": "1バレル113.45ドル"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落1文目に「Brent … fell about 0.8% to $103.45 a barrel」とあるので B が正解。A は数字を変えた誤り、C と D は本文にない数字。数字を問う設問は、選択肢の数字を本文と1つずつ照らし合わせるのが確実。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "数字問題は該当文を見つけたら、桁や小数点まで選択肢と照合する。似た数字の引っかけが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did oil prices jump earlier on Thursday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mr. Trump promised not to attack Iran.",
+          "ja": "トランプ氏が攻撃しないと約束した"
+        },
+        {
+          "key": "B",
+          "text": "A report said officials were considering a strike.",
+          "ja": "当局者が攻撃を検討中との報道があった"
+        },
+        {
+          "key": "C",
+          "text": "Talks with Iran ended without a result.",
+          "ja": "イランとの協議が決裂した"
+        },
+        {
+          "key": "D",
+          "text": "Stocks around the world rose sharply.",
+          "ja": "世界の株式が急上昇した"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落3文目に「oil prices had jumped after a news report said officials were considering a strike」とあり、B が根拠。A は価格が急騰した後の出来事で、原因ではなく結果として原油が下がった要因。C は本文にない情報。D は金曜の動きで、原因と結果も逆。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "理由を問う設問は after / because / so などの接続語の前後を探す。出来事の時間順（前か後か）に注意する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "disrupt",
+      "pos": "動",
+      "ja": "混乱させる、妨げる",
+      "gloss": "",
+      "example": {
+        "en": "The storm may disrupt our delivery schedule this week.",
+        "ja": "嵐で今週の配送予定が乱れるかもしれない。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "shipments",
+      "pos": "名",
+      "ja": "出荷、積み荷",
+      "gloss": "",
+      "example": {
+        "en": "The shipments left the warehouse on Monday morning.",
+        "ja": "その出荷品は月曜の朝に倉庫を出た。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "gloss": "",
+      "example": {
+        "en": "A shortage of supply pushed the price up.",
+        "ja": "供給不足が価格を押し上げた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "基準、指標",
+      "gloss": "（＝比べるときのものさしのこと）",
+      "example": {
+        "en": "The firm used last year's sales as a benchmark.",
+        "ja": "その会社は昨年の売上を基準として使った。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "pledge",
+      "pos": "名",
+      "ja": "約束、誓約",
+      "gloss": "",
+      "example": {
+        "en": "The manager made a pledge to improve customer service.",
+        "ja": "部長は顧客サービスを改善すると約束した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "investors",
+      "pos": "名",
+      "ja": "投資家",
+      "gloss": "",
+      "example": {
+        "en": "Investors want clear information before they buy shares.",
+        "ja": "投資家は株を買う前に明確な情報を求める。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "details",
+      "pos": "名",
+      "ja": "詳細",
+      "gloss": "",
+      "example": {
+        "en": "Please send me the details of the contract.",
+        "ja": "契約の詳細を送ってください。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "analysts",
+      "pos": "名",
+      "ja": "アナリスト、分析家",
+      "gloss": "",
+      "example": {
+        "en": "Analysts expect sales to grow next year.",
+        "ja": "アナリストは来年の売上が伸びると予想している。"
+      }
+    }
+  ],
+  "glossary": {
+    "attack": {
+      "lemma": "attack",
+      "pos": "動",
+      "ja": "攻撃する",
+      "note": ""
+    },
+    "elections": {
+      "lemma": "election",
+      "pos": "名",
+      "ja": "選挙",
+      "note": ""
+    },
+    "talks": {
+      "lemma": "talk",
+      "pos": "名",
+      "ja": "協議、交渉",
+      "note": "複数形 talks で「交渉」の意味"
+    },
+    "productive": {
+      "lemma": "productive",
+      "pos": "形",
+      "ja": "実りある",
+      "note": ""
+    },
+    "details": {
+      "lemma": "detail",
+      "pos": "名",
+      "ja": "詳細",
+      "note": ""
+    },
+    "jumped": {
+      "lemma": "jump",
+      "pos": "動",
+      "ja": "急騰した",
+      "note": "価格が急に上がるときにも使う"
+    },
+    "report": {
+      "lemma": "report",
+      "pos": "名",
+      "ja": "報道、報告",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "considering": {
+      "lemma": "consider",
+      "pos": "動",
+      "ja": "検討する",
+      "note": "consider＋〜ing"
+    },
+    "strike": {
+      "lemma": "strike",
+      "pos": "名",
+      "ja": "攻撃",
+      "note": "ここでは軍事攻撃。「ストライキ」の意味もある"
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "feared": {
+      "lemma": "fear",
+      "pos": "動",
+      "ja": "恐れた",
+      "note": ""
+    },
+    "disrupt": {
+      "lemma": "disrupt",
+      "pos": "動",
+      "ja": "混乱させる",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷、積み荷",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "指標",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": "fall の過去形"
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "名",
+      "ja": "バレル（樽）",
+      "note": "原油の量の単位"
+    },
+    "worried": {
+      "lemma": "worry",
+      "pos": "動",
+      "ja": "心配した",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "carrying": {
+      "lemma": "carry",
+      "pos": "動",
+      "ja": "運ぶ",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告した",
+      "note": ""
+    },
+    "pledge": {
+      "lemma": "pledge",
+      "pos": "名",
+      "ja": "約束",
+      "note": ""
+    },
+    "covers": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "対象とする、含む",
+      "note": ""
+    },
+    "period": {
+      "lemma": "period",
+      "pos": "名",
+      "ja": "期間",
+      "note": ""
+    },
+    "swing": {
+      "lemma": "swing",
+      "pos": "動",
+      "ja": "大きく変動する",
+      "note": ""
+    },
+    "push": {
+      "lemma": "push",
+      "pos": "動",
+      "ja": "押す、押し上げる",
+      "note": ""
+    },
+    "wrote": {
+      "lemma": "write",
+      "pos": "動",
+      "ja": "書いた",
+      "note": "write の過去形"
+    }
+  },
+  "grammar": {
+    "topic": "過去完了形（had＋過去分詞：過去のある時点より前の出来事）",
+    "quote": "Earlier that day, oil prices had jumped after a news report said officials were considering a strike.",
+    "quoteJa": "同じ日の早い時間には、当局者が攻撃を検討していると報じられ、原油価格が急騰していた。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "had jumped は過去完了形（had＋過去分詞）です。「過去のある時点より前に起きたこと」を表します。ここでは「トランプ氏が発言した時点」より前に、すでに原油が急騰していたことを示しています。過去の出来事を時間順にそのまま並べるのではなく、「どちらが先か」をはっきりさせたいときに使います。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Oil prices jumped, and then Mr. Trump spoke. と書くと、出来事を順番に並べただけの文になります。過去完了を使うと、Mr. Trump spoke after oil prices had jumped. のように、基準となる過去の時点（spoke）と、それより前の出来事（had jumped）の関係が一文で伝わります。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 では、before / after / by the time / when などと一緒に出て、空所に had＋過去分詞を選ばせる問題が出ます。文中に「基準となる過去の動詞」があるかを探すのがコツです。Part 7 では、メールや記事で「すでに〜していた」という経緯を読み取る場面で出てきます。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "By the time the client called, we had already sent the revised quote.（顧客から電話があった時には、すでに修正見積書を送っていた。）／ The shipment had left the warehouse before the order was canceled.（注文が取り消される前に、荷物は倉庫を出ていた。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか：原油が「発言一つ」で動く局面",
+      "body": "今回の動きは、米国とイランの対立が続くなかで起きました。木曜日に「米政権が中間選挙前の攻撃を検討している」との報道が出て、原油は急騰し株は下落しました。その後トランプ大統領が「11月3日の中間選挙までイランを攻撃しない」と投稿し、金曜日にはブレント原油が約0.8%安の103ドル台、WTI も約90ドル台に下がり、世界の株は上昇しました。ブレントは欧州・中東産の原油価格の国際的な指標、WTI は米国産原油の指標です。"
+    },
+    {
+      "heading": "📌 なぜ供給不安が価格に直結するのか",
+      "body": "世界の石油の約5分の1は、中東の狭い海上輸送路（ホルムズ海峡）を通るとされます。この海峡周辺で攻撃や封鎖が起きると、タンカーの出荷が滞り、供給が減るという見方から価格が跳ね上がります。実際の供給が減っていなくても、「減るかもしれない」という予想だけで価格が動くのが原油市場の特徴です。"
+    },
+    {
+      "heading": "📌 市場の見方：約束の期限は選挙まで",
+      "body": "アナリストは、今回の約束が選挙までの短い期間に限られる点を警戒しています。報道によると、選挙後により大きな軍事行動が検討されているとの見方もあり、過去の発言と実際の行動が一致しなかった例もあります。市場は日々の発言に振り回されやすく、価格は再び大きく動く可能性があります。"
+    },
+    {
+      "heading": "📌 日本・投資家・経営者への示唆",
+      "body": "日本は原油の大半を中東からの輸入に頼っているため、原油高はガソリン、電気・ガス料金、物流費、化学品・食品の原材料費に波及し、企業の利益を押し下げます。円安が重なると影響はさらに大きくなります。経営者は燃料費や調達コストの変動に備えた契約や在庫の見直しを、投資家は発言ひとつで揺れる相場に対し、短期の値動きと長期のリスクを分けて考える視点が求められます。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trump: U.S. won't attack Iran before midterms",
+      "publisher": "Axios",
+      "url": "https://www.axios.com/2026/10/08/trump-iran-strikes-midterm-elections",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "Trump says US will not strike Iran before midterm elections",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/9/trump-says-us-will-not-strike-iran-before-midterm-elections",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "Oil falls to $103 as Trump says US will not attack Iran before the midterm elections",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/oil-falls-to-103-as-trump-says-us-will-not-attack-iran-before-the-midterm-elections-171630147.html",
+      "date": "2026-10-09"
+    }
+  ]
+}
