@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-12-0541",
+  "date": "2026-10-12",
+  "time": "05:41",
+  "createdAt": "2026-10-12T05:41:27+09:00",
+  "genre": "企業決算",
+  "genreEn": "Earnings",
+  "sample": false,
+  "title": {
+    "en": "Delta Cuts Profit Forecast as Fuel Costs Surge",
+    "ja": "デルタ航空、燃料高で利益予想を下方修正"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Delta Air Lines lowered its full-year profit forecast on higher fuel costs.",
+            "ja": "デルタ航空は、燃料費の上昇を理由に通期の利益予想を引き下げた。"
+          },
+          {
+            "en": "The airline now expects adjusted earnings of $5.10 to $5.60 per share, down from $6.50 to $7.50 in its July outlook.",
+            "ja": "同社は調整後の1株当たり利益を5.10〜5.60ドルと見込んでおり、7月時点の見通しである6.50〜7.50ドルから下がった。"
+          },
+          {
+            "en": "It also cut its free cash flow target to $2.5 billion from as much as $4 billion.",
+            "ja": "また、フリーキャッシュフローの目標も、最大40億ドルから25億ドルへ引き下げた。"
+          },
+          {
+            "en": "Third-quarter revenue was $17.59 billion, slightly below what analysts had expected.",
+            "ja": "第3四半期の売上高は175億9千万ドルで、アナリストの予想をわずかに下回った。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Delta's jet fuel costs rose about 60% from a year earlier because of the Iran war.",
+            "ja": "デルタのジェット燃料費は、イラン戦争の影響で前年から約60%上昇した。"
+          },
+          {
+            "en": "The company faces a $6 billion increase in fuel costs.",
+            "ja": "同社は燃料費が60億ドル増えるという事態に直面している。"
+          },
+          {
+            "en": "Delta is passing much of that increase on to customers through higher fares.",
+            "ja": "デルタはその増加分の多くを、運賃の引き上げを通じて顧客に転嫁している。"
+          },
+          {
+            "en": "Because travelers keep booking flights, Delta's adjusted pretax profit stayed roughly flat.",
+            "ja": "旅行者が予約を続けているため、デルタの調整後税引き前利益はほぼ横ばいだった。"
+          },
+          {
+            "en": "The CEO said demand is still strong, but high fuel prices keep weighing on the industry.",
+            "ja": "CEOは需要は依然として強いと述べたが、高い燃料価格が業界の重荷になり続けている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What is Delta's new adjusted earnings forecast per share?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$6.50 to $7.50",
+          "ja": "6.50〜7.50ドル"
+        },
+        {
+          "key": "B",
+          "text": "$2.50 to $4.00",
+          "ja": "2.50〜4.00ドル"
+        },
+        {
+          "key": "C",
+          "text": "$5.10 to $5.60",
+          "ja": "5.10〜5.60ドル"
+        },
+        {
+          "key": "D",
+          "text": "$4.00 to $6.00",
+          "ja": "4.00〜6.00ドル"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落2文目に「adjusted earnings of $5.10 to $5.60 per share」とある。A の $6.50〜$7.50 は7月時点の旧見通しで、引っかけの選択肢。B の $2.5 billion〜$4 billion に近い数字はフリーキャッシュフローの目標で、1株当たり利益とは別の指標。D は本文にない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "『現在の数字』と『以前の数字（down from ...）』が同じ文に並ぶ問題では、from の前後を取り違えないこと。新しい数字は expects の直後にある。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why did Delta's adjusted pretax profit stay roughly flat?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fuel prices fell during the quarter.",
+          "ja": "四半期中に燃料価格が下がった。"
+        },
+        {
+          "key": "B",
+          "text": "Travelers kept booking and Delta raised fares.",
+          "ja": "旅行者が予約を続け、運賃も上げた。"
+        },
+        {
+          "key": "C",
+          "text": "The company reduced the number of flights.",
+          "ja": "便数を減らした。"
+        },
+        {
+          "key": "D",
+          "text": "Revenue was higher than analysts expected.",
+          "ja": "売上が予想を上回った。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落の3文目「passing much of that increase on to customers through higher fares」と4文目「Because travelers keep booking flights ... stayed roughly flat」が根拠。A は燃料費が60%上昇したと逆の内容。C は本文に記述なし。D は売上が予想をわずかに下回ったとあり逆。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "理由を問う問題では、Because や through などの理由・手段を示す語の周辺に答えがある。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "forecast",
+      "pos": "名・動",
+      "ja": "予想、予測；予想する",
+      "gloss": "",
+      "example": {
+        "en": "The company will publish its sales forecast on Monday.",
+        "ja": "会社は月曜に売上予想を公表する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "outlook",
+      "pos": "名",
+      "ja": "見通し",
+      "gloss": "",
+      "example": {
+        "en": "The manager shared a positive outlook for next year.",
+        "ja": "部長は来年について前向きな見通しを示した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "adjusted",
+      "pos": "形",
+      "ja": "調整後の、修正された",
+      "gloss": "",
+      "example": {
+        "en": "Adjusted profit was higher than last year.",
+        "ja": "調整後利益は昨年より高かった。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "revenue",
+      "pos": "名",
+      "ja": "収益、売上高",
+      "gloss": "",
+      "example": {
+        "en": "Online sales brought in more revenue this quarter.",
+        "ja": "オンライン販売で今四半期の売上高が増えた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "target",
+      "pos": "名",
+      "ja": "目標",
+      "gloss": "",
+      "example": {
+        "en": "We missed our monthly sales target.",
+        "ja": "私たちは月間の販売目標を達成できなかった。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "fare",
+      "pos": "名",
+      "ja": "運賃、料金",
+      "gloss": "",
+      "example": {
+        "en": "The train fare will go up in April.",
+        "ja": "電車の運賃は4月に値上がりする。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for the new model is growing fast.",
+        "ja": "新モデルの需要は急速に伸びている。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "flat",
+      "pos": "形",
+      "ja": "横ばいの、変化のない",
+      "gloss": "",
+      "example": {
+        "en": "Sales were flat compared with last year.",
+        "ja": "売上は前年と比べて横ばいだった。"
+      }
+    }
+  ],
+  "glossary": {
+    "lowered": {
+      "lemma": "lower",
+      "pos": "動",
+      "ja": "下げた",
+      "note": ""
+    },
+    "full-year": {
+      "lemma": "full-year",
+      "pos": "形",
+      "ja": "通期の",
+      "note": "1年間全体の"
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予想",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "adjusted": {
+      "lemma": "adjust",
+      "pos": "形",
+      "ja": "調整後の",
+      "note": "特別項目などを除いた数字"
+    },
+    "earnings": {
+      "lemma": "earnings",
+      "pos": "名",
+      "ja": "利益、収益",
+      "note": ""
+    },
+    "outlook": {
+      "lemma": "outlook",
+      "pos": "名",
+      "ja": "見通し",
+      "note": ""
+    },
+    "target": {
+      "lemma": "target",
+      "pos": "名",
+      "ja": "目標",
+      "note": ""
+    },
+    "third-quarter": {
+      "lemma": "third-quarter",
+      "pos": "形",
+      "ja": "第3四半期の",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "名",
+      "ja": "売上高",
+      "note": ""
+    },
+    "slightly": {
+      "lemma": "slightly",
+      "pos": "副",
+      "ja": "わずかに",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "jet": {
+      "lemma": "jet",
+      "pos": "名",
+      "ja": "ジェット機",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": "riseの過去形"
+    },
+    "earlier": {
+      "lemma": "earlier",
+      "pos": "副",
+      "ja": "以前に",
+      "note": "a year earlier＝1年前"
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "増加",
+      "note": ""
+    },
+    "faces": {
+      "lemma": "face",
+      "pos": "動",
+      "ja": "直面する",
+      "note": ""
+    },
+    "passing": {
+      "lemma": "pass on",
+      "pos": "熟",
+      "ja": "転嫁する",
+      "note": "pass A on to B＝AをBに回す"
+    },
+    "fares": {
+      "lemma": "fare",
+      "pos": "名",
+      "ja": "運賃",
+      "note": ""
+    },
+    "travelers": {
+      "lemma": "traveler",
+      "pos": "名",
+      "ja": "旅行者",
+      "note": ""
+    },
+    "booking": {
+      "lemma": "book",
+      "pos": "動",
+      "ja": "予約する",
+      "note": ""
+    },
+    "pretax": {
+      "lemma": "pretax",
+      "pos": "形",
+      "ja": "税引き前の",
+      "note": ""
+    },
+    "roughly": {
+      "lemma": "roughly",
+      "pos": "副",
+      "ja": "ほぼ、おおよそ",
+      "note": ""
+    },
+    "flat": {
+      "lemma": "flat",
+      "pos": "形",
+      "ja": "横ばいの",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "weighing": {
+      "lemma": "weigh on",
+      "pos": "熟",
+      "ja": "重荷になる",
+      "note": "weigh on A＝Aに重くのしかかる"
+    },
+    "industry": {
+      "lemma": "industry",
+      "pos": "名",
+      "ja": "業界",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用、コスト",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "句動詞 pass A on to B（目的語の位置と「転嫁する」の意味）",
+    "quote": "Delta is passing much of that increase on to customers through higher fares.",
+    "quoteJa": "デルタはその増加分の多くを、運賃の引き上げを通じて顧客に転嫁している。",
+    "blocks": [
+      {
+        "heading": "構文の解説",
+        "body": "pass on は「（物・情報・費用を）次へ渡す」という句動詞で、ここでは「コスト増を顧客に転嫁する」という意味。pass A on to B の形で、A が目的語、B が渡す相手になる。is passing は現在進行形で、今まさに進行中の動きを表す。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Delta is passing much of that increase on to customers. ＝ Delta is passing on much of that increase to customers.（on の位置は動かせる）。ただし目的語が代名詞のときは必ず間に入れる：passing it on to customers（○）／passing on it to customers（×）。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では on / off / up などの前置詞・副詞を選ばせる問題や、句動詞の意味を問う問題が出る。Part 7 では pass on（情報を伝える・費用を転嫁する）が通知文や請求書関連の文章に登場する。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The supplier plans to pass the higher shipping costs on to its clients.（仕入先は上昇した輸送費を顧客に転嫁する予定だ。）／Please pass this notice on to your team.（この通知をチームに伝えてください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜ燃料費が航空会社の利益を左右するのか",
+      "body": "航空会社にとって燃料は人件費と並ぶ最大級のコストで、価格が上がるとそのまま利益を圧迫する。今回デルタのジェット燃料費は前年比で約60%上がり、年間では60億ドルの負担増になる。燃料費を運賃に上乗せする「転嫁」ができるかどうかが、各社の業績の分かれ目になっている。"
+    },
+    {
+      "heading": "📌 『調整後』利益とガイダンス（業績予想）とは",
+      "body": "adjusted（調整後）の利益は、一時的な費用などを除いて本業の力を見やすくした数字。企業は決算発表のときに、通期の利益見通し（ガイダンス）も示す。今回は7月時点の1株当たり6.50〜7.50ドルから5.10〜5.60ドルへ下方修正された。第3四半期の利益と売上が予想をわずかに下回ったことも重なり、市場は見通しの引き下げを重く受け止めやすい。"
+    },
+    {
+      "heading": "📌 業界全体と日本企業への影響",
+      "body": "燃料高は大手だけでなく世界の航空会社に共通する逆風で、運賃の上昇が続く可能性がある。日本の航空会社も燃料費や為替の影響を受け、燃油サーチャージの動向が注目される。出張や海外旅行のコストが上がれば、企業の出張費の予算にも影響する。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "投資家は「需要が強いうちに価格転嫁を進められるか」を見ている。デルタのCEOは需要は強いと述べており、値上げが受け入れられている間は利益の落ち込みを抑えられる。ただし需要が弱まれば転嫁は難しくなり、燃料高の影響が直撃する。経営者にとっては、コスト上昇時に価格をどこまで動かせるかが重要な判断になる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Delta Air Lines cuts 2026 forecast on fuel surge, but CEO says demand is still strong",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/09/delta-air-lines-dal-q3-2026-earnings.html",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "Jim Cramer on Delta Air Lines' earnings and fuel costs",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/09/jim-cramer-delta-earnings-fuel-costs.html",
+      "date": "2026-10-09"
+    }
+  ]
+}
