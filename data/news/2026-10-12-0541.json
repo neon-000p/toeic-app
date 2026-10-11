@@ -452,5 +452,23 @@
       "url": "https://www.cnbc.com/2026/10/09/jim-cramer-delta-earnings-fuel-costs.html",
       "date": "2026-10-09"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-12-0541/00.mp3",
+      "audio/2026-10-12-0541/01.mp3",
+      "audio/2026-10-12-0541/02.mp3",
+      "audio/2026-10-12-0541/03.mp3",
+      "audio/2026-10-12-0541/04.mp3",
+      "audio/2026-10-12-0541/05.mp3",
+      "audio/2026-10-12-0541/06.mp3",
+      "audio/2026-10-12-0541/07.mp3",
+      "audio/2026-10-12-0541/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 238101,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-11T20:42:56.555Z",
+    "trimmed": true
+  }
 }
