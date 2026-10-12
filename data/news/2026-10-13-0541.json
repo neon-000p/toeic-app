@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-13-0541",
+  "date": "2026-10-13",
+  "time": "05:41",
+  "createdAt": "2026-10-13T05:41:51+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Oracle Trucks In Gas to Keep Its AI Data Centers on Schedule",
+    "ja": "オラクル、AI施設にガスをトラック輸送"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oracle is delivering natural gas by truck to some of its AI data centers, according to a report by Bloomberg.",
+            "ja": "オラクルは、ブルームバーグの報道によると、AIデータセンターの一部に天然ガスをトラックで運び込んでいる。"
+          },
+          {
+            "en": "The trucks carry compressed gas to sites in Utah, keeping the data centers running while pipelines are built.",
+            "ja": "トラックは圧縮ガスをユタ州の施設に運び、パイプラインが整備される間もデータセンターを稼働させ続けている。"
+          },
+          {
+            "en": "One site has used this method for more than a year.",
+            "ja": "ある施設では1年以上この方法を使っている。"
+          },
+          {
+            "en": "The company is also considering the same plan for a large campus in New Mexico.",
+            "ja": "同社はニューメキシコ州の大規模キャンパスでも同じ方法を検討している。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "A new pipeline for the New Mexico campus has been delayed until February 2027, so the company cannot depend on it.",
+            "ja": "ニューメキシコのキャンパス向けの新しいパイプラインは2027年2月まで遅れており、同社はそれに頼れない。"
+          },
+          {
+            "en": "Trucked gas costs about four times as much as pipeline gas, but Oracle accepts the higher bill to keep its projects on schedule.",
+            "ja": "トラック輸送のガスはパイプラインのガスの約4倍かかるが、オラクルは計画を予定通り進めるため高い費用を受け入れている。"
+          },
+          {
+            "en": "The company has also sent a formal notice to the project developer, saying the delay was outside its control.",
+            "ja": "同社は事業の開発業者にも正式な通知を送り、遅れは自社の管理外だと伝えた。"
+          },
+          {
+            "en": "The case shows that electricity supply, not computer chips, is now a major limit on AI growth.",
+            "ja": "この件は、AIの成長を制約する主な要因が、半導体ではなく電力の供給になりつつあることを示している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much more does trucked gas cost than pipeline gas?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About the same price",
+          "ja": "ほぼ同じ価格"
+        },
+        {
+          "key": "B",
+          "text": "About two times as much",
+          "ja": "約2倍"
+        },
+        {
+          "key": "C",
+          "text": "About four times as much",
+          "ja": "約4倍"
+        },
+        {
+          "key": "D",
+          "text": "About ten times as much",
+          "ja": "約10倍"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は C。第2段落2文目に「Trucked gas costs about four times as much as pipeline gas」とあり、約4倍と明記されている。A は「同じ」で本文と逆。B の 2倍と D の 10倍は本文にない数字。Part 7 の数字問題は、倍数・金額・日付を本文と照合し、選択肢の数字が本文のどの語句に当たるかを確認するのが基本。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "数字を問う設問は、本文の該当文を探して比較表現（times as much as）を正確に読み取る。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why can Oracle not depend on a pipeline for its New Mexico campus?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The pipeline has been delayed until 2027.",
+          "ja": "完成が2027年に遅れた"
+        },
+        {
+          "key": "B",
+          "text": "Oracle has stopped building the campus.",
+          "ja": "建設を中止した"
+        },
+        {
+          "key": "C",
+          "text": "There are no trucks available there.",
+          "ja": "トラックが使えない"
+        },
+        {
+          "key": "D",
+          "text": "The developer asked Oracle to pay more.",
+          "ja": "開発業者が増額を要求"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正解は A。第2段落1文目に「has been delayed until February 2027, so the company cannot depend on it」とあり、パイプラインの完成が2027年2月に遅れたことが理由。B のキャンパス建設の中止、C のトラック不足、D の開発業者による増額要求は本文に書かれていない。理由を問う設問では、so や because の前後を読めば根拠が見つかる。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由問題は so / because / due to などの接続表現の前後に答えがある。本文にない情報の選択肢は誤り。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "method",
+      "pos": "名",
+      "ja": "方法、やり方",
+      "gloss": "",
+      "example": {
+        "en": "The team tested a new method to cut costs.",
+        "ja": "チームはコストを削減する新しい方法を試した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "schedule",
+      "pos": "名",
+      "ja": "予定、日程",
+      "gloss": "",
+      "example": {
+        "en": "The project is on schedule.",
+        "ja": "そのプロジェクトは予定通りに進んでいる。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "developer",
+      "pos": "名",
+      "ja": "開発業者、開発者",
+      "gloss": "（＝建物や事業を計画して作る会社のこと）",
+      "example": {
+        "en": "The developer will finish the office building next spring.",
+        "ja": "開発業者は来春にそのオフィスビルを完成させる予定だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "depend on",
+      "pos": "熟",
+      "ja": "〜に頼る、〜次第である",
+      "gloss": "",
+      "example": {
+        "en": "Our sales depend on the weather.",
+        "ja": "当社の売上は天候に左右される。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "accepts",
+      "pos": "動",
+      "ja": "受け入れる",
+      "gloss": "",
+      "example": {
+        "en": "The firm accepts credit cards only.",
+        "ja": "その会社はクレジットカードのみ受け付けている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "notice",
+      "pos": "名",
+      "ja": "通知、お知らせ",
+      "gloss": "",
+      "example": {
+        "en": "We sent a notice to all customers.",
+        "ja": "私たちは全顧客に通知を送った。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "gloss": "",
+      "example": {
+        "en": "A supply problem delayed the launch.",
+        "ja": "供給の問題で発売が遅れた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "delayed",
+      "pos": "動",
+      "ja": "遅れた、延期された",
+      "gloss": "",
+      "example": {
+        "en": "The flight was delayed by two hours.",
+        "ja": "その便は2時間遅れた。"
+      }
+    }
+  ],
+  "glossary": {
+    "delivering": {
+      "lemma": "deliver",
+      "pos": "動",
+      "ja": "運ぶ、届ける",
+      "note": ""
+    },
+    "compressed": {
+      "lemma": "compress",
+      "pos": "形",
+      "ja": "圧縮された",
+      "note": ""
+    },
+    "sites": {
+      "lemma": "site",
+      "pos": "名",
+      "ja": "現場、施設",
+      "note": ""
+    },
+    "pipelines": {
+      "lemma": "pipeline",
+      "pos": "名",
+      "ja": "パイプライン",
+      "note": ""
+    },
+    "considering": {
+      "lemma": "consider",
+      "pos": "動",
+      "ja": "検討する",
+      "note": ""
+    },
+    "campus": {
+      "lemma": "campus",
+      "pos": "名",
+      "ja": "敷地、キャンパス",
+      "note": ""
+    },
+    "large": {
+      "lemma": "large",
+      "pos": "形",
+      "ja": "大規模な",
+      "note": ""
+    },
+    "pipeline": {
+      "lemma": "pipeline",
+      "pos": "名",
+      "ja": "パイプライン",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "動",
+      "ja": "費用がかかる",
+      "note": ""
+    },
+    "trucked": {
+      "lemma": "truck",
+      "pos": "形",
+      "ja": "トラックで運んだ",
+      "note": ""
+    },
+    "higher": {
+      "lemma": "high",
+      "pos": "形",
+      "ja": "より高い",
+      "note": ""
+    },
+    "bill": {
+      "lemma": "bill",
+      "pos": "名",
+      "ja": "請求額、費用",
+      "note": ""
+    },
+    "projects": {
+      "lemma": "project",
+      "pos": "名",
+      "ja": "事業、計画",
+      "note": ""
+    },
+    "formal": {
+      "lemma": "formal",
+      "pos": "形",
+      "ja": "正式な",
+      "note": ""
+    },
+    "developer": {
+      "lemma": "developer",
+      "pos": "名",
+      "ja": "開発業者",
+      "note": ""
+    },
+    "outside": {
+      "lemma": "outside",
+      "pos": "前",
+      "ja": "〜の外の",
+      "note": ""
+    },
+    "control": {
+      "lemma": "control",
+      "pos": "名",
+      "ja": "管理、制御",
+      "note": ""
+    },
+    "electricity": {
+      "lemma": "electricity",
+      "pos": "名",
+      "ja": "電力",
+      "note": ""
+    },
+    "chips": {
+      "lemma": "chip",
+      "pos": "名",
+      "ja": "半導体",
+      "note": ""
+    },
+    "major": {
+      "lemma": "major",
+      "pos": "形",
+      "ja": "主要な",
+      "note": ""
+    },
+    "limit": {
+      "lemma": "limit",
+      "pos": "名",
+      "ja": "制約、限界",
+      "note": ""
+    },
+    "growth": {
+      "lemma": "growth",
+      "pos": "名",
+      "ja": "成長",
+      "note": ""
+    },
+    "running": {
+      "lemma": "run",
+      "pos": "動",
+      "ja": "稼働する",
+      "note": ""
+    },
+    "method": {
+      "lemma": "method",
+      "pos": "名",
+      "ja": "方法",
+      "note": ""
+    },
+    "schedule": {
+      "lemma": "schedule",
+      "pos": "名",
+      "ja": "予定",
+      "note": ""
+    },
+    "depend": {
+      "lemma": "depend",
+      "pos": "動",
+      "ja": "頼る",
+      "note": ""
+    },
+    "accepts": {
+      "lemma": "accept",
+      "pos": "動",
+      "ja": "受け入れる",
+      "note": ""
+    },
+    "notice": {
+      "lemma": "notice",
+      "pos": "名",
+      "ja": "通知",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "delayed": {
+      "lemma": "delay",
+      "pos": "動",
+      "ja": "遅れる",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "分詞構文（V-ing：付帯状況・結果）",
+    "quote": "The trucks carry compressed gas to sites in Utah, keeping the data centers running while pipelines are built.",
+    "quoteJa": "トラックは圧縮ガスをユタ州の施設に運び、パイプラインが整備される間もデータセンターを稼働させ続けている。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "「keeping the data centers running」は分詞構文で、主節「The trucks carry compressed gas ...」に続けて「そして〜させている」という結果・付帯状況を添えている。接続詞と主語を省き、動詞を -ing 形にした形。主節の主語（The trucks）が keeping の意味上の主語になる。keep＋O＋-ing は「Oを〜し続けさせる」という意味。"
+      },
+      {
+        "heading": "書き換え",
+        "body": "The trucks carry compressed gas to sites in Utah, and they keep the data centers running. と同じ意味。分詞構文のほうが2つの動作を1文で簡潔につなげられる。「while pipelines are built」は接続詞 while が残った別の副詞節。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6 では、空所に -ing 形（分詞）か to不定詞か、あるいは接続詞＋主語＋動詞かを選ぶ問題が出る。主語が同じで「結果・同時進行」の意味なら -ing を選ぶ。Part 7 では、前の文の内容を受けて「その結果〜する」と続く文で頻出する。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The company opened a new warehouse, reducing delivery times by two days.（同社は新倉庫を開設し、配送を2日短縮した。）/ We will send the contract tomorrow, allowing you to review it before the meeting.（明日契約書を送りますので、会議前にご確認いただけます。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 AIのボトルネックは「電力」へ",
+      "body": "生成AIの普及で、データセンターは巨大な電力を必要とする。これまでは半導体の確保が課題だったが、いまは電力と燃料の確保が先に詰まり始めている。パイプラインは建設許可やルート調整に年単位かかるため、建物とサーバーが完成しても動かせない事態が起きる。"
+    },
+    {
+      "heading": "📌 「トラック輸送のガス」とは",
+      "body": "天然ガスを高圧で圧縮してタンクに詰め、トラックで運ぶ方式。業界では「仮想パイプライン（virtual pipeline）」と呼ばれる。配管がなくても供給できる反面、報道ではパイプラインのガスの約4倍のコストがかかるとされる。つまり、オラクルは割高でも開業の遅れを避けることを優先している。"
+    },
+    {
+      "heading": "📌 業界全体の動き",
+      "body": "米国ではグーグル、マイクロソフト、メタなどの巨大IT企業も、現地発電や電力会社との長期契約を急いでいる。ガス火力、原子力、再生可能エネルギーなど手段はさまざまだが、「電力を先に押さえた会社が開業で先行する」という構図が強まっている。契約上の不可抗力（force majeure）通知は、遅れの責任を相手に負わせない目的の法的な手続き。"
+    },
+    {
+      "heading": "📌 日本・投資家への示唆",
+      "body": "日本でもデータセンター向け電力の確保が課題で、立地は電力の供給余力に左右される。日本企業にとっては、電力設備、ガス関連機器、送配電網、冷却設備を扱う企業にも商機がある。投資家は、AI関連企業の投資負担が電力コストの上昇で増える点と、工事の遅れが収益化の時期にどう響くかを確認しておきたい。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Oracle trucks in natural gas to keep AI data centres on schedule as pipelines lag",
+      "publisher": "investingLive",
+      "url": "https://investinglive.com/news/oracle-trucks-in-natural-gas-to-keep-ai-data-centres-on-schedule-as-pipelines-lag/",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "Oracle moves gas by trucks to keep its AI data centres on schedule",
+      "publisher": "The Next Web",
+      "url": "https://thenextweb.com/news/oracle-trucked-gas-data-centres-europe",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "Oracle mulls gas delivery by truck to speed up AI datacenter going live",
+      "publisher": "Techzine",
+      "url": "https://www.techzine.eu/news/infrastructure/144872/oracle-mulls-gas-delivery-by-truck-to-speed-up-ai-datacenter-going-live/",
+      "date": "2026-10-09"
+    }
+  ]
+}
