@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-12-1641",
+  "date": "2026-10-12",
+  "time": "16:41",
+  "createdAt": "2026-10-12T16:41:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "Netflix Reportedly Plans to Cut 5% of Its Workforce",
+    "ja": "ネットフリックス、従業員5%削減を計画か"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Netflix is reportedly planning to cut about 5% of its workforce.",
+            "ja": "ネットフリックスが従業員の約5%を削減する計画だと報じられている。"
+          },
+          {
+            "en": "Puck News said on October 9 that the company could announce the layoffs as early as this week.",
+            "ja": "パックニュースは10月9日、同社が早ければ今週にも人員削減を発表する可能性があると伝えた。"
+          },
+          {
+            "en": "Netflix declined to comment on the report, so the plan is not yet confirmed.",
+            "ja": "ネットフリックスは報道へのコメントを控えており、計画はまだ確認されていない。"
+          },
+          {
+            "en": "If the cut is based on its roughly 16,000 full-time employees, hundreds of jobs would be affected.",
+            "ja": "約1万6000人の正社員が基準なら、数百人の雇用が影響を受けることになる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The timing is notable because Netflix will report its third-quarter results on October 20.",
+            "ja": "同社が10月20日に第3四半期決算を発表する予定のため、このタイミングは注目に値する。"
+          },
+          {
+            "en": "Co-CEO Ted Sarandos recently admitted that the company is not growing as fast as he wants.",
+            "ja": "共同CEOのテッド・サランドス氏は最近、会社が望むほど速く成長していないと認めた。"
+          },
+          {
+            "en": "One report says a reorganization may follow in the coming months, but the company has not shared details.",
+            "ja": "今後数カ月以内に組織再編が行われる可能性があるとの報道もあるが、同社は詳細を明らかにしていない。"
+          },
+          {
+            "en": "The move would show that even a leading streaming firm is working to control costs as growth slows.",
+            "ja": "この動きは、成長が鈍る中で大手の動画配信企業でさえコスト管理に動いていることを示すだろう。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "When will Netflix report its third-quarter results?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "On October 9",
+          "ja": "10月9日"
+        },
+        {
+          "key": "B",
+          "text": "On October 12",
+          "ja": "10月12日"
+        },
+        {
+          "key": "C",
+          "text": "On October 20",
+          "ja": "10月20日"
+        },
+        {
+          "key": "D",
+          "text": "On October 31",
+          "ja": "10月31日"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落の1文目に「Netflix will report its third-quarter results on October 20」とあり、正解は (C)。October 9 は Puck News が報じた日、October 12 は本文に登場しない日付で、いずれも決算発表日ではない。October 31 も本文にない日付。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "日付を問う設問は、本文中の複数の日付（報道日・発表予定日）を区別して読む。「何の日付か」を先にマークすると引っかけを避けられる。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why does the article say the layoff plan is not yet confirmed?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Puck News withdrew its report.",
+          "ja": "パックが報道を撤回した"
+        },
+        {
+          "key": "B",
+          "text": "Netflix declined to comment on it.",
+          "ja": "同社がコメントを断った"
+        },
+        {
+          "key": "C",
+          "text": "Netflix said the cuts were cancelled.",
+          "ja": "削減は中止と発表した"
+        },
+        {
+          "key": "D",
+          "text": "The earnings report was delayed.",
+          "ja": "決算発表が延期された"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落3文目に「Netflix declined to comment on the report, so the plan is not yet confirmed」とあり、理由は (B)。so の前が原因、後ろが結果。(A) 撤回の記述はなく、(C) 中止の発表もない。(D) 決算は10月20日に発表予定で延期の記述はない。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "理由を問う設問は、so / because / since など因果を示す語の前後に根拠がある。本文にない内容を述べる選択肢は消去する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "workforce",
+      "pos": "名",
+      "ja": "従業員（全体）、労働力",
+      "gloss": "",
+      "example": {
+        "en": "The company plans to expand its workforce next year.",
+        "ja": "その会社は来年、従業員数を増やす予定だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "reportedly",
+      "pos": "副",
+      "ja": "報道によれば",
+      "gloss": "（＝確認はされていないが、そう伝えられている）",
+      "example": {
+        "en": "The firm is reportedly planning to open a new office.",
+        "ja": "その会社は新しい事務所を開く計画だと報じられている。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "declined",
+      "pos": "動",
+      "ja": "〜を断った、辞退した",
+      "gloss": "",
+      "example": {
+        "en": "She declined the invitation to the meeting.",
+        "ja": "彼女は会議への招待を断った。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "confirmed",
+      "pos": "形",
+      "ja": "確認された、確定した",
+      "gloss": "",
+      "example": {
+        "en": "The date of the event is not yet confirmed.",
+        "ja": "イベントの日程はまだ確定していない。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "notable",
+      "pos": "形",
+      "ja": "注目に値する、顕著な",
+      "gloss": "",
+      "example": {
+        "en": "The report showed a notable increase in sales.",
+        "ja": "その報告書は売上の顕著な増加を示した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "admitted",
+      "pos": "動",
+      "ja": "〜を認めた",
+      "gloss": "",
+      "example": {
+        "en": "The manager admitted that the schedule was too tight.",
+        "ja": "部長は日程が厳しすぎたと認めた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "reorganization",
+      "pos": "名",
+      "ja": "組織再編",
+      "gloss": "（＝部署や体制を作り替えること）",
+      "example": {
+        "en": "The reorganization will take effect in April.",
+        "ja": "組織再編は4月に実施される。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "affected",
+      "pos": "動",
+      "ja": "影響を受けた",
+      "gloss": "",
+      "example": {
+        "en": "Many customers were affected by the delay.",
+        "ja": "多くの顧客が遅延の影響を受けた。"
+      }
+    }
+  ],
+  "glossary": {
+    "planning": {
+      "lemma": "planning",
+      "pos": "動",
+      "ja": "〜を計画している",
+      "note": ""
+    },
+    "cut": {
+      "lemma": "cut",
+      "pos": "動",
+      "ja": "〜を削減する",
+      "note": ""
+    },
+    "announce": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "〜を発表する",
+      "note": ""
+    },
+    "layoffs": {
+      "lemma": "layoff",
+      "pos": "名",
+      "ja": "人員削減、解雇",
+      "note": ""
+    },
+    "comment": {
+      "lemma": "comment",
+      "pos": "動",
+      "ja": "コメントする",
+      "note": "comment on 〜 で「〜についてコメントする」"
+    },
+    "based": {
+      "lemma": "base",
+      "pos": "動",
+      "ja": "基づいた",
+      "note": "be based on 〜 で「〜に基づく」"
+    },
+    "roughly": {
+      "lemma": "roughly",
+      "pos": "副",
+      "ja": "およそ",
+      "note": ""
+    },
+    "full-time": {
+      "lemma": "full-time",
+      "pos": "形",
+      "ja": "常勤の、正社員の",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    },
+    "hundreds": {
+      "lemma": "hundred",
+      "pos": "名",
+      "ja": "数百",
+      "note": ""
+    },
+    "timing": {
+      "lemma": "timing",
+      "pos": "名",
+      "ja": "時期、タイミング",
+      "note": ""
+    },
+    "third-quarter": {
+      "lemma": "third-quarter",
+      "pos": "形",
+      "ja": "第3四半期の",
+      "note": ""
+    },
+    "results": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "結果、決算",
+      "note": ""
+    },
+    "recently": {
+      "lemma": "recently",
+      "pos": "副",
+      "ja": "最近",
+      "note": ""
+    },
+    "growing": {
+      "lemma": "grow",
+      "pos": "動",
+      "ja": "成長する",
+      "note": ""
+    },
+    "details": {
+      "lemma": "detail",
+      "pos": "名",
+      "ja": "詳細",
+      "note": ""
+    },
+    "leading": {
+      "lemma": "leading",
+      "pos": "形",
+      "ja": "大手の、主要な",
+      "note": ""
+    },
+    "streaming": {
+      "lemma": "streaming",
+      "pos": "形",
+      "ja": "動画配信の",
+      "note": ""
+    },
+    "control": {
+      "lemma": "control",
+      "pos": "動",
+      "ja": "〜を管理する",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用、コスト",
+      "note": ""
+    },
+    "growth": {
+      "lemma": "growth",
+      "pos": "名",
+      "ja": "成長",
+      "note": ""
+    },
+    "slows": {
+      "lemma": "slow",
+      "pos": "動",
+      "ja": "鈍る",
+      "note": ""
+    },
+    "workforce": {
+      "lemma": "workforce",
+      "pos": "名",
+      "ja": "従業員（全体）",
+      "note": ""
+    },
+    "reportedly": {
+      "lemma": "reportedly",
+      "pos": "副",
+      "ja": "報道によれば",
+      "note": ""
+    },
+    "declined": {
+      "lemma": "decline",
+      "pos": "動",
+      "ja": "〜を断った",
+      "note": ""
+    },
+    "confirmed": {
+      "lemma": "confirm",
+      "pos": "形",
+      "ja": "確認された",
+      "note": ""
+    },
+    "notable": {
+      "lemma": "notable",
+      "pos": "形",
+      "ja": "注目に値する",
+      "note": ""
+    },
+    "admitted": {
+      "lemma": "admit",
+      "pos": "動",
+      "ja": "〜を認めた",
+      "note": ""
+    },
+    "reorganization": {
+      "lemma": "reorganization",
+      "pos": "名",
+      "ja": "組織再編",
+      "note": ""
+    },
+    "affected": {
+      "lemma": "affect",
+      "pos": "動",
+      "ja": "影響を受けた",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "decline / plan など to不定詞を目的語にとる動詞と、結果を表す接続詞 so",
+    "quote": "Netflix declined to comment on the report, so the plan is not yet confirmed.",
+    "quoteJa": "ネットフリックスは報道へのコメントを控えており、計画はまだ確認されていない。",
+    "blocks": [
+      {
+        "heading": "構文：動詞＋to不定詞",
+        "body": "declined to comment は「コメントすることを断った」。decline / refuse / plan / agree / fail / hope / decide / expect などは、目的語に to不定詞を取り、動名詞（-ing）は取れない。例：× declined commenting → ○ declined to comment。第1段落1文目の is planning to cut も同じ型（plan to do）。"
+      },
+      {
+        "heading": "構文：結果を表す接続詞 so",
+        "body": "A, so B は「A なので B」（A が原因、B が結果）。because は逆に「B because A」と原因を後ろに置く。書き換え：The plan is not yet confirmed because Netflix declined to comment. 前の節との間にカンマを置くのが一般的。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では decline / plan / agree の後ろの形（to do か -ing か）を問う問題が頻出。Part 7 では declined to comment（コメントを控えた）が報道記事の定型表現として出る。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The vendor declined to extend the contract, so we are looking for another supplier.（取引先が契約更新を断ったので、別の仕入先を探している。）／ We plan to hire ten new staff members this fall.（今秋、新規に10名を採用する予定だ。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きているのか：未確認だが「大手の人員削減」報道",
+      "body": "米メディアのPuck Newsが10月9日、ネットフリックスが従業員の約5%を削減する計画だと報じ、ロイターなども後追いで伝えた。同社はコメントを控えており、正式発表はまだない。同社は2025年末時点で約1万6000人の常勤従業員がいると説明しており、単純計算では約800人規模になる。人数は媒体ごとに推計が異なるため、確定情報ではない点に注意したい。"
+    },
+    {
+      "heading": "📌 2. なぜ今なのか：成長鈍化と決算発表前というタイミング",
+      "body": "共同CEOのサランドス氏は最近のイベントで、成長のスピードに満足していないという趣旨を述べた。10月20日の第3四半期決算を前にしたタイミングで、「reduction in force（人員削減）」や「reorganization（組織再編）」を打ち出すのは、コスト構造を見直して投資家に示したい意図があるとみられる。決算前の人員整理は、費用を先に計上して以降の利益率を見せやすくする狙いが語られることもある。"
+    },
+    {
+      "heading": "📌 3. 業界の動向：他のテック・メディア企業も人員調整が続く",
+      "body": "直近でもHubSpotが全従業員の約7%を削減すると発表するなど、テクノロジー・メディア分野で人員の見直しが続いている。米国の労働市場は「採用も解雇も少ない」状態と言われてきたが、大手企業の削減報道が重なると、求職者や在職者の不安が高まりやすい。動画配信業界全体でも、競争の激化と利益重視への転換が背景にある。"
+    },
+    {
+      "heading": "📌 4. 日本への示唆：外資系・グローバル企業で働く人と投資家の視点",
+      "body": "日本でもネットフリックスは大型のコンテンツ投資を行っており、制作会社や取引先への影響が出るかは今後の発表次第だ。グローバル企業の組織再編は日本法人の人員・予算にも波及しうるため、外資系で働く人や取引先は動向を注視したい。投資家にとっては、人員削減は短期的にはコスト減の好材料と受け止められやすい一方、成長戦略の実行力が問われる局面でもある。決算での説明が注目点になる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Netflix is sharpening the layoff axe",
+      "publisher": "Puck",
+      "url": "https://puck.news/netflix-is-sharpening-the-layoff-axe/",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "Netflix plans to cut 5% of its workforce, Puck News reports",
+      "publisher": "The Star (Reuters)",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/09/netflix-plans-to-cut-5-of-its-workforce-puck-news-reports",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "Netflix Planning Layoffs Targeting 5% of Its Workforce",
+      "publisher": "TheWrap",
+      "url": "https://www.thewrap.com/culture-lifestyle/culture/netflix-layoffs-5-percent-workforce/",
+      "date": "2026-10-09"
+    }
+  ]
+}
