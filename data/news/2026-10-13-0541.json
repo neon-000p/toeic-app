@@ -460,5 +460,22 @@
       "url": "https://www.techzine.eu/news/infrastructure/144872/oracle-mulls-gas-delivery-by-truck-to-speed-up-ai-datacenter-going-live/",
       "date": "2026-10-09"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-13-0541/00.mp3",
+      "audio/2026-10-13-0541/01.mp3",
+      "audio/2026-10-13-0541/02.mp3",
+      "audio/2026-10-13-0541/03.mp3",
+      "audio/2026-10-13-0541/04.mp3",
+      "audio/2026-10-13-0541/05.mp3",
+      "audio/2026-10-13-0541/06.mp3",
+      "audio/2026-10-13-0541/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 211272,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-12T20:43:26.222Z",
+    "trimmed": true
+  }
 }
