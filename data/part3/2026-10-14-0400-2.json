@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-14-0400-2",
+  "date": "2026-10-14",
+  "time": "04:00",
+  "scene": "製造・在庫｜検品での不良品と代替在庫の確保",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-AU"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-CA"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "I just finished inspecting this morning's batch, and fourteen of two hundred units failed.",
+      "ja": "今朝のロットの検品が終わりましたが、200個のうち14個が不合格でした。"
+    },
+    {
+      "tag": "M",
+      "en": "That's higher than usual. Is it the same defect we ran into last month?",
+      "ja": "いつもより多いですね。先月当たったのと同じ不具合ですか。"
+    },
+    {
+      "tag": "W",
+      "en": "No, this time the casings are cracked. I think the new supplier's plastic is too thin.",
+      "ja": "いいえ、今回は外装にひびが入っています。新しい仕入先のプラスチックが薄すぎるのだと思います。"
+    },
+    {
+      "tag": "M",
+      "en": "Let's not jump to conclusions. Set aside the damaged units, and hold off on shipping the rest.",
+      "ja": "早合点はやめましょう。傷んだ分は脇によけて、残りの出荷は見合わせてください。"
+    },
+    {
+      "tag": "W",
+      "en": "The Harlow order is due out Friday, though. Forty of those units are in this batch.",
+      "ja": "でもハーロウ社の注文は金曜に出荷予定です。そのうち40個がこのロットに入っています。"
+    },
+    {
+      "tag": "M",
+      "en": "Then ask the supplier for a replacement shipment. I'll see if the warehouse has spare stock.",
+      "ja": "では今日中に仕入先へ電話して、代替品の発送を頼んでください。私は倉庫に予備の在庫がないか確かめます。"
+    },
+    {
+      "tag": "W",
+      "en": "The warehouse showed sixty in stock yesterday, enough to cover that order.",
+      "ja": "倉庫には昨日60個の在庫がありましたから、ハーロウ社の注文分はまかなえます。"
+    },
+    {
+      "tag": "M",
+      "en": "Good. Have them pull forty from the shelves, and log the rejected units.",
+      "ja": "いいですね。棚から40個を取り出してもらい、不合格品は在庫システムに記録してください。"
+    },
+    {
+      "tag": "W",
+      "en": "Will do. Should I also write up a report on the cracks for the supplier?",
+      "ja": "承知しました。ひびについて、仕入先向けに報告書も書いておきましょうか。"
+    },
+    {
+      "tag": "M",
+      "en": "Yes, include photos and send it to me before five, so I can forward it.",
+      "ja": "ええ、写真を付けて5時までに私へ送ってください。私が転送します。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What problem does the woman report?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Some products failed a quality check.",
+          "ja": "一部の製品が品質検査に不合格だった。"
+        },
+        {
+          "key": "B",
+          "text": "A shipment arrived late.",
+          "ja": "荷物の到着が遅れた。"
+        },
+        {
+          "key": "C",
+          "text": "The warehouse ran out of stock.",
+          "ja": "倉庫の在庫が切れた。"
+        },
+        {
+          "key": "D",
+          "text": "A supplier raised its prices.",
+          "ja": "仕入先が値上げした。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        0
+      ],
+      "explanation": "女性は冒頭で fourteen of the two hundred units failed と述べ、2行目で casings are cracked と説明しています。failed を failed a quality check と言い換えた A が正解です。倉庫の在庫は後半で足りていると分かります。",
+      "tip": "問題を問う設問は冒頭に根拠があります。warehouse や supplier は後半の別の話なので、選択肢にあっても飛びつかないこと。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the man mean when he says, \"Let's not jump to conclusions\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "He thinks the inspection was inaccurate.",
+          "ja": "検品が不正確だったと考えている。"
+        },
+        {
+          "key": "B",
+          "text": "He wants to confirm the cause first.",
+          "ja": "まず原因を確かめたい。"
+        },
+        {
+          "key": "C",
+          "text": "He wants to cancel the order.",
+          "ja": "注文を取り消したい。"
+        },
+        {
+          "key": "D",
+          "text": "He disagrees about the number of defects.",
+          "ja": "不良品の数に異論がある。"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "直前で女性が I think the new supplier's plastic is too thin と推測を述べています。それに対して男性は結論を急がず、傷んだ分をよけて出荷を止めるよう指示しており、原因を確かめたい意図だと分かります。数への異論は述べていないので D は誤りです。",
+      "tip": "意図の設問は引用文の直前を見ます。相手の『思う』という推測に対する返しなら、断定を避けたい意図になります。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about the Harlow order?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It can still be sent on schedule.",
+          "ja": "予定どおり出荷できる見込みだ。"
+        },
+        {
+          "key": "B",
+          "text": "It will be canceled by the customer.",
+          "ja": "顧客に取り消される。"
+        },
+        {
+          "key": "C",
+          "text": "It must be rebuilt by the supplier.",
+          "ja": "仕入先が作り直す必要がある。"
+        },
+        {
+          "key": "D",
+          "text": "It was already shipped.",
+          "ja": "すでに出荷された。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        4,
+        6,
+        7
+      ],
+      "explanation": "ハーロウ社の注文は金曜期限で、うち40個が不良ロットに入っています。しかし倉庫に60個の在庫があり、男性が pull forty from the shelves と指示しているため、期限に間に合うと推測できます。",
+      "tip": "推測の設問は、明言されない結論を複数行から組み立てます。必要数（40）と在庫（60）のように数字を突き合わせましょう。"
+    }
+  ],
+  "glossary": {
+    "ran into": {
+      "lemma": "run into",
+      "pos": "熟",
+      "ja": "（問題などに）出くわす",
+      "note": "encounter の言い換え",
+      "example": {
+        "en": "We ran into some delays while renovating the lobby.",
+        "ja": "ロビーの改装中にいくつか遅れに出くわした。"
+      }
+    },
+    "set aside": {
+      "lemma": "set aside",
+      "pos": "熟",
+      "ja": "脇に置く、取っておく",
+      "note": "",
+      "example": {
+        "en": "Please set aside two copies of the report for the director.",
+        "ja": "部長用に報告書を2部取っておいてください。"
+      }
+    },
+    "hold off on": {
+      "lemma": "hold off on",
+      "pos": "熟",
+      "ja": "〜を見合わせる、延期する",
+      "note": "postpone の言い換え",
+      "example": {
+        "en": "Let's hold off on hiring until the budget is approved.",
+        "ja": "予算が承認されるまで採用を見合わせましょう。"
+      }
+    },
+    "jump to conclusions": {
+      "lemma": "jump to conclusions",
+      "pos": "熟",
+      "ja": "早合点する、結論を急ぐ",
+      "note": "",
+      "example": {
+        "en": "It's too early to jump to conclusions about the sales drop.",
+        "ja": "売上減について結論を急ぐのはまだ早い。"
+      }
+    },
+    "batch": {
+      "lemma": "batch",
+      "pos": "名",
+      "ja": "（一度に作る）ロット、一束",
+      "note": "",
+      "example": {
+        "en": "Each batch is tested before it leaves the factory.",
+        "ja": "各ロットは工場を出る前に検査される。"
+      }
+    },
+    "defect": {
+      "lemma": "defect",
+      "pos": "名",
+      "ja": "欠陥、不具合",
+      "note": "",
+      "example": {
+        "en": "The inspector found a defect in the left hinge.",
+        "ja": "検査員は左の蝶番に欠陥を見つけた。"
+      }
+    },
+    "in stock": {
+      "lemma": "in stock",
+      "pos": "熟",
+      "ja": "在庫がある",
+      "note": "available の言い換え",
+      "example": {
+        "en": "The blue model is no longer in stock at this store.",
+        "ja": "青いモデルはこの店舗にはもう在庫がない。"
+      }
+    },
+    "write up": {
+      "lemma": "write up",
+      "pos": "熟",
+      "ja": "（報告書などを）書き上げる",
+      "note": "",
+      "example": {
+        "en": "Could you write up the results of the survey by Friday?",
+        "ja": "金曜までにアンケート結果をまとめてもらえますか。"
+      }
+    },
+    "log": {
+      "lemma": "log",
+      "pos": "動",
+      "ja": "記録する、登録する",
+      "note": "多義語。ここでは帳簿・システムに記録する意味",
+      "example": {
+        "en": "All incoming parts must be logged at the receiving desk.",
+        "ja": "入荷した部品はすべて受付で記録しなければならない。"
+      }
+    }
+  },
+  "point": {
+    "flow": "問題の報告 → 原因の推測 → 判断（保留と対応） → 代替手段の確認 → 報告書の指示と期限",
+    "items": [
+      {
+        "title": "報告と指示は『誰が何を』で追う",
+        "body": "上司の返答は指示が連続する。それぞれの指示に主語と期限が付くので、動詞と時刻を拾いながら聞く。"
+      },
+      {
+        "title": "意図の設問は直前の発言を見る",
+        "body": "相手の推測や提案に返す一言は、直前の内容との関係で意味が決まる。引用文だけで判断しない。"
+      },
+      {
+        "title": "推測問題は数字の突き合わせ",
+        "body": "必要数と在庫数など、別々の行に出た数字を比べると結論が出る。1行だけで決めない。"
+      }
+    ]
+  }
+}

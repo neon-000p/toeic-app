@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-14-0400-1",
+  "date": "2026-10-14",
+  "time": "04:00",
+  "scene": "採用・研修｜面接の日程と会場の調整",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性1",
+      "accent": "en-GB"
+    },
+    {
+      "tag": "M2",
+      "role": "男性2",
+      "accent": "en-AU"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "We have three sales candidates, and I'm trying to line up interviews for next week.",
+      "ja": "営業職の候補者が3人いて、来週の面接の予定を組もうとしているところです。"
+    },
+    {
+      "tag": "M",
+      "en": "I can do Tuesday afternoon, but I'm tied up with a budget review all day Wednesday.",
+      "ja": "私は火曜の午後か木曜の午前なら大丈夫ですが、水曜は予算の見直しで一日中手がふさがっています。"
+    },
+    {
+      "tag": "M2",
+      "en": "Tuesday is better for me. The department head, Ms. Ortega, leaves for a conference on Thursday.",
+      "ja": "私は火曜のほうが都合がいいです。部長のオルテガさんは木曜に会議のため出発しますから。"
+    },
+    {
+      "tag": "W",
+      "en": "Then Tuesday it is. Each interview takes forty-five minutes, so we need about two hours.",
+      "ja": "では火曜にしましょう。面接は1人45分なので、3人だと2時間強かかります。"
+    },
+    {
+      "tag": "M",
+      "en": "Where should we hold them? The small room seats four, but the training room seats ten.",
+      "ja": "場所はどうしましょう。小会議室は4人用ですが、研修室は10人入ります。"
+    },
+    {
+      "tag": "M2",
+      "en": "The training room is booked until one, so we could start at one thirty.",
+      "ja": "研修室は1時まで予約が入っているので、1時半開始にできます。"
+    },
+    {
+      "tag": "W",
+      "en": "That works. I'll ask the candidates to arrive early to fill out the application forms.",
+      "ja": "それで大丈夫です。候補者には応募用紙を記入してもらうため、15分早く来るようお願いします。"
+    },
+    {
+      "tag": "M",
+      "en": "Good. I'll print out the résumés and put together a list of questions for the panel.",
+      "ja": "いいですね。私が履歴書を印刷し、面接官用の質問リストをまとめておきます。"
+    },
+    {
+      "tag": "M2",
+      "en": "Please send me the evaluation sheet, and I'll go over it with Ms. Ortega.",
+      "ja": "評価シートも送ってください。火曜までにオルテガさんと一緒に目を通しておきます。"
+    },
+    {
+      "tag": "W",
+      "en": "I'll email it to both of you this afternoon. Thank you both.",
+      "ja": "今日の午後、お二人にメールで送ります。ありがとうございました。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Planning a conference trip",
+          "ja": "出張会議の計画"
+        },
+        {
+          "key": "B",
+          "text": "Reviewing a department budget",
+          "ja": "部署の予算の見直し"
+        },
+        {
+          "key": "C",
+          "text": "Scheduling job interviews",
+          "ja": "採用面接の日程調整"
+        },
+        {
+          "key": "D",
+          "text": "Booking a training course",
+          "ja": "研修講座の予約"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0
+      ],
+      "explanation": "冒頭で女性が I'm trying to line up the interviews for next week と述べており、候補者との面接の予定を組む話だと分かります。conference や budget review は途中で出てくる別の話題で、全体のテーマではありません。",
+      "tip": "1問目は冒頭1〜2行で答えが出ます。途中に出る語（budget、training room）に引っ張られないようにしましょう。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why will the interviews take place on Tuesday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The training room is free all day.",
+          "ja": "研修室が一日中空いている。"
+        },
+        {
+          "key": "B",
+          "text": "Some of the interviewers are unavailable on other days.",
+          "ja": "面接官の一部が他の日は都合がつかない。"
+        },
+        {
+          "key": "C",
+          "text": "The budget review was moved to Tuesday.",
+          "ja": "予算の見直しが火曜に移された。"
+        },
+        {
+          "key": "D",
+          "text": "The candidates must arrive early.",
+          "ja": "候補者は早く来なければならない。"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "男性1は水曜が budget review で tied up、男性2は部長が木曜に leaves for a conference と言っています。他の日は面接官が出られないため火曜に決まります。研修室は1時まで予約済みなので A は誤りです。",
+      "tip": "3人会話では、別々の話者が出す制約を合わせて理由になります。1人の発言だけで決めず、2人目の発言まで待ちましょう。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the woman do this afternoon?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Print out some résumés",
+          "ja": "履歴書を印刷する"
+        },
+        {
+          "key": "B",
+          "text": "Reserve the training room",
+          "ja": "研修室を予約する"
+        },
+        {
+          "key": "C",
+          "text": "Cancel a budget review",
+          "ja": "予算の見直しを取り消す"
+        },
+        {
+          "key": "D",
+          "text": "Email a form to her colleagues",
+          "ja": "同僚に書式をメールで送る"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        8,
+        9
+      ],
+      "explanation": "男性2が評価シートを送るよう頼み、女性が I'll email it to both of you this afternoon と答えています。履歴書の印刷は男性1の担当なので A は話者の取り違えです。",
+      "tip": "次の行動の設問は「誰が」を必ず確認します。同じ作業でも話者が違うと別の選択肢になります。"
+    }
+  ],
+  "glossary": {
+    "line up": {
+      "lemma": "line up",
+      "pos": "熟",
+      "ja": "（予定・人を）手配する、取りまとめる",
+      "note": "arrange の言い換え",
+      "example": {
+        "en": "Could you line up a few speakers for the March seminar?",
+        "ja": "3月のセミナーの講演者を何人か手配してもらえますか。"
+      }
+    },
+    "tied up": {
+      "lemma": "be tied up",
+      "pos": "熟",
+      "ja": "手がふさがっている、忙しい",
+      "note": "unavailable の言い換え",
+      "example": {
+        "en": "I'm tied up in meetings until noon, so I'll call you back later.",
+        "ja": "正午まで会議で手が離せないので、あとで折り返します。"
+      }
+    },
+    "department head": {
+      "lemma": "department head",
+      "pos": "名",
+      "ja": "部長、部門責任者",
+      "note": "",
+      "example": {
+        "en": "The department head approved the new schedule on Monday.",
+        "ja": "部長は月曜に新しいスケジュールを承認した。"
+      }
+    },
+    "panel": {
+      "lemma": "panel",
+      "pos": "名",
+      "ja": "（面接などの）審査員団、委員会",
+      "note": "多義語。ここでは面接官のグループ",
+      "example": {
+        "en": "A panel of three managers will interview each applicant.",
+        "ja": "3人の管理職が各応募者を面接する。"
+      }
+    },
+    "fill out": {
+      "lemma": "fill out",
+      "pos": "熟",
+      "ja": "（書類に）記入する",
+      "note": "complete の言い換え",
+      "example": {
+        "en": "Please fill out this form and return it to the front desk.",
+        "ja": "この用紙に記入して受付に返してください。"
+      }
+    },
+    "put together": {
+      "lemma": "put together",
+      "pos": "熟",
+      "ja": "まとめる、作成する",
+      "note": "prepare の言い換え",
+      "example": {
+        "en": "She put together a short presentation for the client meeting.",
+        "ja": "彼女は顧客との会議用に短い発表資料をまとめた。"
+      }
+    },
+    "print out": {
+      "lemma": "print out",
+      "pos": "熟",
+      "ja": "印刷する",
+      "note": "",
+      "example": {
+        "en": "I'll print out the agenda before everyone arrives.",
+        "ja": "全員が来る前に議題表を印刷しておきます。"
+      }
+    },
+    "go over": {
+      "lemma": "go over",
+      "pos": "熟",
+      "ja": "見直す、詳しく確認する",
+      "note": "review の言い換え",
+      "example": {
+        "en": "Let's go over the contract once more before we sign it.",
+        "ja": "署名する前にもう一度契約書を確認しましょう。"
+      }
+    },
+    "evaluation sheet": {
+      "lemma": "evaluation sheet",
+      "pos": "名",
+      "ja": "評価シート、採点表",
+      "note": "コロケーション",
+      "example": {
+        "en": "Each trainee receives an evaluation sheet at the end of the course.",
+        "ja": "研修生は修了時にそれぞれ評価シートを受け取る。"
+      }
+    },
+    "candidates": {
+      "lemma": "candidate",
+      "pos": "名",
+      "ja": "候補者、応募者",
+      "note": "applicant とほぼ同義",
+      "example": {
+        "en": "Three candidates were shortlisted for the marketing position.",
+        "ja": "マーケティング職には3人の候補者が絞り込まれた。"
+      }
+    }
+  },
+  "point": {
+    "flow": "目的の提示 → 各人の制約 → 日程の絞り込み → 会場の比較 → 分担と期限",
+    "items": [
+      {
+        "title": "3人会話は制約を合わせて聞く",
+        "body": "1人が空き日を出し、別の人が反対の制約を出す形が多い。理由を問う設問は、2人以上の発言を足し合わせて答えが決まる。"
+      },
+      {
+        "title": "比較の会話は数字を整理しながら聞く",
+        "body": "部屋の定員や空き時間のように2案が並んだら、数字と条件を対にしてメモする。決定の理由が後半の1文に出る。"
+      },
+      {
+        "title": "終盤は『誰が何を』を拾う",
+        "body": "最後の数行で分担が決まる。同じ作業でも話者が違えば別の選択肢なので、I'll と You の主語を聞き分ける。"
+      }
+    ]
+  }
+}
