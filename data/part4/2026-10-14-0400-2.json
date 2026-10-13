@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-14-0400-2",
+  "date": "2026-10-14",
+  "time": "04:00",
+  "createdAt": "2026-10-14T04:00:00+09:00",
+  "sample": false,
+  "scene": "スピーチ｜管理職の退職を祝う会での挨拶",
+  "talkType": "speech",
+  "intro": "Questions 1 through 3 refer to the following speech.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-US"
+  },
+  "lines": [
+    {
+      "en": "Good evening, everyone, and thank you for joining us tonight to celebrate Linda Moreno's retirement after twenty-two years with Brightway Logistics.",
+      "ja": "皆さん、こんばんは。ブライトウェイ・ロジスティクスで22年間勤めたリンダ・モレノさんの退職を祝うために、今夜お集まりいただきありがとうございます。"
+    },
+    {
+      "en": "As her supervisor for the past six years, I have had the pleasure of watching her lead the customer service team.",
+      "ja": "この6年間、上司として、彼女がカスタマーサービスチームを率いる姿を見られたことを光栄に思っています。"
+    },
+    {
+      "en": "When Linda started here, she was a part-time clerk who answered phones in a tiny office with three desks.",
+      "ja": "リンダが入社したとき、彼女は3つの机しかない小さな事務所で電話に出るパートの事務員でした。"
+    },
+    {
+      "en": "She worked her way up to team leader within five years, and she never took the easy road.",
+      "ja": "彼女は5年以内にチームリーダーまで昇進しましたが、決して楽な道を選びませんでした。"
+    },
+    {
+      "en": "Under her guidance, our customer satisfaction scores rose from seventy percent to ninety-two percent.",
+      "ja": "彼女の指導のもと、顧客満足度は70パーセントから92パーセントに上がりました。"
+    },
+    {
+      "en": "She also set up the training program that every new employee still goes through today.",
+      "ja": "また、今でも新入社員全員が受ける研修制度を立ち上げました。"
+    },
+    {
+      "en": "Linda is stepping down at the end of this month, and Daniel Kim will take over her role.",
+      "ja": "リンダは今月末で退任し、ダニエル・キムが後任を務めます。"
+    },
+    {
+      "en": "Before we enjoy dessert, I'd like to ask all of you to raise your glasses.",
+      "ja": "デザートをいただく前に、皆さんにグラスを掲げていただきたいと思います。"
+    },
+    {
+      "en": "To Linda, with our thanks and best wishes for a well-deserved rest.",
+      "ja": "リンダに、感謝と、十分に報われた休息への願いを込めて。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely is the speaker?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A newly hired clerk",
+          "ja": "新しく入った事務員"
+        },
+        {
+          "key": "B",
+          "text": "Linda's supervisor",
+          "ja": "リンダの上司"
+        },
+        {
+          "key": "C",
+          "text": "A training consultant",
+          "ja": "研修の外部講師"
+        },
+        {
+          "key": "D",
+          "text": "A customer",
+          "ja": "顧客"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        1
+      ],
+      "explanation": "As her supervisor for the past six years と自己の立場を明かしています。Linda 本人ではなく、彼女のチームを見てきた上司が話し手です。clerk は Linda が昔就いていた職で、話し手ではありません。",
+      "tip": "話し手を問う設問は、As ~ や 'I have had the pleasure of ~' のような立場を示す一言を探します。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker imply when he says, \"she never took the easy road\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Linda often changed jobs.",
+          "ja": "リンダは何度も転職した。"
+        },
+        {
+          "key": "B",
+          "text": "Linda disliked the tiny office.",
+          "ja": "リンダは小さな事務所を嫌った。"
+        },
+        {
+          "key": "C",
+          "text": "Linda refused to be promoted.",
+          "ja": "リンダは昇進を断った。"
+        },
+        {
+          "key": "D",
+          "text": "Linda took on difficult tasks to advance.",
+          "ja": "リンダは難しい仕事に挑んで昇進した。"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "直前で part-time clerk から worked her way up to team leader と、努力して昇進した経緯が語られています。『楽な道を選ばなかった』は、困難な仕事に取り組んで昇進したという意味です。昇進を断ったという C は、昇進した事実と逆です。",
+      "tip": "比喩的な表現は、直前の事実とのつながりで意味を決めます。楽な道ではなかったなら、努力して成果を出した話が続きます。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are the listeners asked to do?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Welcome a new team leader",
+          "ja": "新しいリーダーを迎える"
+        },
+        {
+          "key": "B",
+          "text": "Apply for a training program",
+          "ja": "研修制度に応募する"
+        },
+        {
+          "key": "C",
+          "text": "Join in a toast",
+          "ja": "乾杯に加わる"
+        },
+        {
+          "key": "D",
+          "text": "Take a survey",
+          "ja": "アンケートに答える"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        7,
+        8
+      ],
+      "explanation": "終盤で I'd like to ask all of you to raise your glasses と依頼し、最後に To Linda と乾杯の言葉を述べています。raise your glasses を言い換えた Join in a toast が正解です。後任の Daniel Kim の紹介は事実の説明で、依頼ではありません。",
+      "tip": "スピーチの依頼は最後の2文に出ます。I'd like to ask you to ~ のあとが依頼内容です。"
+    }
+  ],
+  "glossary": {
+    "retirement": {
+      "lemma": "retirement",
+      "pos": "名",
+      "ja": "退職、引退",
+      "note": "",
+      "example": {
+        "en": "The company held a party for his retirement last Friday.",
+        "ja": "会社は先週金曜に彼の退職を祝う会を開いた。"
+      }
+    },
+    "worked her way up": {
+      "lemma": "work one's way up",
+      "pos": "熟",
+      "ja": "努力して昇進する",
+      "note": "be promoted の言い換え",
+      "example": {
+        "en": "He worked his way up from a sales trainee to the director.",
+        "ja": "彼は営業の研修生から部長まで昇進した。"
+      }
+    },
+    "took the easy road": {
+      "lemma": "take the easy road",
+      "pos": "熟",
+      "ja": "楽な道を選ぶ",
+      "note": "比喩表現",
+      "example": {
+        "en": "She could have taken the easy road, but she chose to study abroad.",
+        "ja": "彼女は楽な道を選ぶこともできたが、留学を選んだ。"
+      }
+    },
+    "under her guidance": {
+      "lemma": "under one's guidance",
+      "pos": "熟",
+      "ja": "〜の指導のもとで",
+      "note": "スピーチ定型表現",
+      "example": {
+        "en": "The new team improved under her guidance.",
+        "ja": "新しいチームは彼女の指導のもとで向上した。"
+      }
+    },
+    "customer satisfaction": {
+      "lemma": "customer satisfaction",
+      "pos": "名",
+      "ja": "顧客満足度",
+      "note": "コロケーション",
+      "example": {
+        "en": "Customer satisfaction rose after we extended our opening hours.",
+        "ja": "営業時間を延ばしてから顧客満足度が上がった。"
+      }
+    },
+    "set up": {
+      "lemma": "set up",
+      "pos": "熟",
+      "ja": "設立する、立ち上げる",
+      "note": "establish の言い換え",
+      "example": {
+        "en": "The firm set up a new branch office in Osaka.",
+        "ja": "その会社は大阪に新しい支店を設立した。"
+      }
+    },
+    "goes through": {
+      "lemma": "go through",
+      "pos": "熟",
+      "ja": "（過程を）経る、受ける",
+      "note": "",
+      "example": {
+        "en": "All applicants go through a two-step screening process.",
+        "ja": "応募者は全員、2段階の選考を受ける。"
+      }
+    },
+    "stepping down": {
+      "lemma": "step down",
+      "pos": "熟",
+      "ja": "退任する",
+      "note": "resign の言い換え",
+      "example": {
+        "en": "The chairman is stepping down after ten years in office.",
+        "ja": "会長は10年間の在任を経て退任する。"
+      }
+    },
+    "take over": {
+      "lemma": "take over",
+      "pos": "熟",
+      "ja": "引き継ぐ",
+      "note": "",
+      "example": {
+        "en": "Ms. Lee will take over the project when I leave.",
+        "ja": "私が去ったらリーさんがプロジェクトを引き継ぐ。"
+      }
+    },
+    "raise your glasses": {
+      "lemma": "raise a glass",
+      "pos": "熟",
+      "ja": "グラスを掲げて乾杯する",
+      "note": "乾杯の定型",
+      "example": {
+        "en": "Please raise your glasses to our guests of honor.",
+        "ja": "主賓に向けてグラスをお掲げください。"
+      }
+    },
+    "well-deserved": {
+      "lemma": "well-deserved",
+      "pos": "形",
+      "ja": "十分に値する、当然の",
+      "note": "",
+      "example": {
+        "en": "After the long project, the team took a well-deserved break.",
+        "ja": "長いプロジェクトの後、チームは当然の休暇を取った。"
+      }
+    }
+  },
+  "point": {
+    "flow": "謝辞と場の説明 → 立場の明示 → 経歴 → 功績の数字 → 後任の紹介 → 乾杯の依頼",
+    "items": [
+      {
+        "title": "スピーチは冒頭で立場と対象を聞く",
+        "body": "誰が誰について話すのかは、最初の2文で示される。話し手を問う設問はここから出る。"
+      },
+      {
+        "title": "経歴は『前→後』の変化で追う",
+        "body": "入社時の姿と現在の役職、70から92のような数字の変化がセットで出る。変化の中身が比喩表現の意味を決める。"
+      },
+      {
+        "title": "依頼は最後の2文に出る",
+        "body": "乾杯や拍手などの依頼は締めの直前に置かれる。内容は定型の言い換えで選択肢に出る。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-14-0400-1",
+  "date": "2026-10-14",
+  "time": "04:00",
+  "createdAt": "2026-10-14T04:00:00+09:00",
+  "sample": false,
+  "scene": "留守番電話｜会議室の二重予約と代替案",
+  "talkType": "voicemail",
+  "intro": "Questions 1 through 3 refer to the following telephone message.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-GB"
+  },
+  "lines": [
+    {
+      "en": "Hello, Mr. Tanaka, this is Emily Carter from the Lakeside Hotel, returning your call about next week's reservation.",
+      "ja": "もしもし、タナカ様、レイクサイドホテルのエミリー・カーターです。来週のご予約についてお電話をいただいた件で、折り返しています。"
+    },
+    {
+      "en": "Unfortunately, the conference room you booked for Tuesday has been double-booked because of an error on our side.",
+      "ja": "あいにく、火曜日にご予約いただいた会議室は、当方の手違いで二重に予約されてしまいました。"
+    },
+    {
+      "en": "We apologize for the mix-up, and we'd like to sort it out as quickly as possible.",
+      "ja": "手違いをお詫びし、できるだけ早く解決したいと考えております。"
+    },
+    {
+      "en": "The only space free that day is the Garden Room, which seats forty rather than the sixty you requested.",
+      "ja": "その日に空いている唯一の部屋はガーデンルームで、ご希望の60名ではなく40名収容です。"
+    },
+    {
+      "en": "To make up for the inconvenience, we are waiving the room fee, which would have been four hundred dollars.",
+      "ja": "ご不便のお詫びとして、400ドルかかるはずだった会場費を免除いたします。"
+    },
+    {
+      "en": "If forty seats won't be enough, we can offer you the larger ballroom on Wednesday morning instead.",
+      "ja": "40席で足りない場合は、代わりに水曜日の午前に大きいほうのボールルームをご用意できます。"
+    },
+    {
+      "en": "Please call me back before five o'clock today at extension 215 so that I can hold a room for you.",
+      "ja": "お部屋を押さえておけるよう、本日5時までに内線215番へ折り返しお電話ください。"
+    },
+    {
+      "en": "Otherwise, I'll have to release it to another client first thing tomorrow.",
+      "ja": "そうでない場合は、明日の朝一番に他のお客様へお部屋を回さなければなりません。"
+    },
+    {
+      "en": "Again, we're very sorry, and thank you for your understanding.",
+      "ja": "重ねてお詫び申し上げます。ご理解に感謝いたします。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "Why is the speaker calling?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To confirm a fee payment",
+          "ja": "料金の支払いを確認するため"
+        },
+        {
+          "key": "B",
+          "text": "To request more seats",
+          "ja": "席を増やすよう頼むため"
+        },
+        {
+          "key": "C",
+          "text": "To change a guest's schedule",
+          "ja": "宿泊客の予定を変更するため"
+        },
+        {
+          "key": "D",
+          "text": "To explain a booking error",
+          "ja": "予約の手違いを説明するため"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で来週の reservation の件で折り返していると述べ、次の文で会議室が double-booked になったと伝えています。これを a booking error と言い換えた D が正解です。fee の話は補償の一部で、電話の目的ではありません。",
+      "tip": "留守電は名乗り・用件・依頼の順に出ます。1問目の根拠は2文目までの『Unfortunately』の後ろにあります。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What does the speaker say about the Garden Room?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It costs four hundred dollars.",
+          "ja": "400ドルかかる。"
+        },
+        {
+          "key": "B",
+          "text": "It is available on Wednesday morning.",
+          "ja": "水曜の午前に空いている。"
+        },
+        {
+          "key": "C",
+          "text": "It cannot hold as many people as requested.",
+          "ja": "希望した人数が入らない。"
+        },
+        {
+          "key": "D",
+          "text": "It was reserved by another client.",
+          "ja": "他の顧客に予約された。"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        3
+      ],
+      "explanation": "ガーデンルームは seats forty rather than the sixty you requested と説明されています。希望より少ない収容人数なので C が正解です。400ドルは免除される会場費、水曜の午前はボールルームの話で、どちらも別の対象です。",
+      "tip": "部屋が複数出てきたら、部屋名ごとに数字と日時を対にして聞きます。数字だけ拾うと別の部屋の情報を選んでしまいます。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is implied about the listener's group?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It may include more than forty people.",
+          "ja": "40人を超えるかもしれない。"
+        },
+        {
+          "key": "B",
+          "text": "It has stayed at the hotel before.",
+          "ja": "以前そのホテルに泊まったことがある。"
+        },
+        {
+          "key": "C",
+          "text": "It needs rooms for Wednesday night.",
+          "ja": "水曜の夜の客室が必要だ。"
+        },
+        {
+          "key": "D",
+          "text": "It asked for a catering service.",
+          "ja": "ケータリングを依頼した。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        3,
+        5
+      ],
+      "explanation": "ホテルは希望の60名に対し40名収容の部屋を示し、『40席で足りない場合』には大きいボールルームを提案しています。聞き手の集まりは40人を超える可能性があると推測できます。",
+      "tip": "推測の設問は、提案の条件（if で始まる文）に注目します。相手の状況が裏返しで示されます。"
+    }
+  ],
+  "glossary": {
+    "returning your call": {
+      "lemma": "return a call",
+      "pos": "熟",
+      "ja": "折り返し電話をする",
+      "note": "留守電の定型表現",
+      "example": {
+        "en": "Hi, I'm returning your call about the delivery schedule.",
+        "ja": "配達日程の件で折り返しお電話しています。"
+      }
+    },
+    "double-booked": {
+      "lemma": "double-book",
+      "pos": "形",
+      "ja": "二重に予約された",
+      "note": "",
+      "example": {
+        "en": "The meeting room was double-booked, so we moved to the lounge.",
+        "ja": "会議室が二重予約だったので、ラウンジに移った。"
+      }
+    },
+    "mix-up": {
+      "lemma": "mix-up",
+      "pos": "名",
+      "ja": "手違い、取り違え",
+      "note": "error の言い換え",
+      "example": {
+        "en": "A mix-up at the front desk delayed our check-in.",
+        "ja": "受付の手違いでチェックインが遅れた。"
+      }
+    },
+    "sort it out": {
+      "lemma": "sort out",
+      "pos": "熟",
+      "ja": "解決する、整理する",
+      "note": "resolve の言い換え",
+      "example": {
+        "en": "We need to sort out the billing problem before Friday.",
+        "ja": "金曜までに請求の問題を解決する必要がある。"
+      }
+    },
+    "make up for": {
+      "lemma": "make up for",
+      "pos": "熟",
+      "ja": "〜の埋め合わせをする",
+      "note": "compensate for の言い換え",
+      "example": {
+        "en": "The discount is meant to make up for the late delivery.",
+        "ja": "その値引きは配達の遅れの埋め合わせのためだ。"
+      }
+    },
+    "waiving": {
+      "lemma": "waive",
+      "pos": "動",
+      "ja": "（料金などを）免除する",
+      "note": "free の言い換え",
+      "example": {
+        "en": "The bank is waiving the transfer fee for new customers.",
+        "ja": "その銀行は新規顧客の振込手数料を免除している。"
+      }
+    },
+    "inconvenience": {
+      "lemma": "inconvenience",
+      "pos": "名",
+      "ja": "不便、迷惑",
+      "note": "",
+      "example": {
+        "en": "We apologize for any inconvenience caused by the construction.",
+        "ja": "工事でご迷惑をおかけしたことをお詫びします。"
+      }
+    },
+    "call me back": {
+      "lemma": "call back",
+      "pos": "熟",
+      "ja": "折り返し電話する",
+      "note": "",
+      "example": {
+        "en": "Could you call me back after the meeting ends?",
+        "ja": "会議が終わったら折り返し電話をもらえますか。"
+      }
+    },
+    "release": {
+      "lemma": "release",
+      "pos": "動",
+      "ja": "（予約枠などを）解放する、手放す",
+      "note": "多義語。ここでは確保していたものを他へ回す意味",
+      "example": {
+        "en": "Unclaimed tickets will be released to the public on Monday.",
+        "ja": "引き取られないチケットは月曜に一般向けに放出される。"
+      }
+    },
+    "first thing": {
+      "lemma": "first thing",
+      "pos": "熟",
+      "ja": "朝一番に",
+      "note": "",
+      "example": {
+        "en": "I'll review your proposal first thing on Monday.",
+        "ja": "月曜の朝一番にご提案を確認します。"
+      }
+    }
+  },
+  "point": {
+    "flow": "名乗りと用件 → 問題の発生 → お詫びと代替案 → 条件付きの追加案 → 折り返しの依頼と期限",
+    "items": [
+      {
+        "title": "留守電は名乗り・用件・依頼の3点で聞く",
+        "body": "1問目は名乗りと用件、最終問題は依頼と期限から出る。Unfortunately や However のあとに用件の核心が来る。"
+      },
+      {
+        "title": "複数の案は対応づけてメモする",
+        "body": "部屋や日程が2案出たら、名前・数字・日時を対にして聞く。設問は『どの案か』を取り違えさせる作りになる。"
+      },
+      {
+        "title": "If の文は相手の状況を映す",
+        "body": "『足りない場合は』という提案は、聞き手の事情を裏返しに示す。推測問題の根拠になりやすい。"
+      }
+    ]
+  }
+}
