@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-14-0540",
+  "date": "2026-10-14",
+  "time": "05:40",
+  "createdAt": "2026-10-14T05:40:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Apple Launches $299 HomeView Smart Home Hub",
+    "ja": "アップル、299ドルのスマート家電ハブを発売"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Apple announced a new smart home device called HomeView on Tuesday.",
+            "ja": "アップルは火曜日、HomeView（ホームビュー）という新しいスマートホーム機器を発表した。"
+          },
+          {
+            "en": "The device has a seven-inch screen and costs $299.",
+            "ja": "この機器は7インチの画面を備え、価格は299ドルだ。"
+          },
+          {
+            "en": "Customers can place orders now, and the first units will ship on November 13.",
+            "ja": "顧客は今すぐ注文でき、最初の出荷は11月13日の予定だ。"
+          },
+          {
+            "en": "It can be mounted on a wall or placed on a table.",
+            "ja": "壁に取り付けることも、テーブルに置くこともできる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The product is meant to showcase a new version of Siri that can answer a wide range of questions.",
+            "ja": "この製品は、幅広い質問に答えられるSiriの新バージョンを披露するためのものだ。"
+          },
+          {
+            "en": "It recognizes each person's face and shows their messages, photos, and calendar events.",
+            "ja": "利用者一人ひとりの顔を認識し、その人のメッセージや写真、予定を表示する。"
+          },
+          {
+            "en": "Up to six people can use one device.",
+            "ja": "1台を最大6人で使える。"
+          },
+          {
+            "en": "However, it will not be sold in the European Union because the new Siri is not yet available there.",
+            "ja": "ただし、新しいSiriがまだ利用できないため、欧州連合では販売されない。"
+          },
+          {
+            "en": "The company also introduced a new speaker and an updated TV box.",
+            "ja": "同社は新しいスピーカーと、更新されたテレビ用端末も発表した。"
+          },
+          {
+            "en": "The launch is seen as an effort to expand its smart home business.",
+            "ja": "今回の発売は、スマートホーム事業を拡大する取り組みと見られている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much does HomeView cost?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$199",
+          "ja": "199ドル"
+        },
+        {
+          "key": "B",
+          "text": "$299",
+          "ja": "299ドル"
+        },
+        {
+          "key": "C",
+          "text": "$350",
+          "ja": "350ドル"
+        },
+        {
+          "key": "D",
+          "text": "$399",
+          "ja": "399ドル"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落2文目に「costs $299」とある。数字を問う問題は本文の該当箇所を探すだけで解ける。A・Dは本文にない金額。Cの350ドルは本文に出てこないので、記憶や推測で選ばないこと。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "金額・日付などの数字問題は、選択肢の数字を本文と1つずつ照合する。本文にない数字は即座に消せる。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why will HomeView not be sold in the European Union?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Its price is too high there.",
+          "ja": "価格がそこでは高すぎる"
+        },
+        {
+          "key": "B",
+          "text": "Its screen does not meet local rules.",
+          "ja": "画面が現地の規則に合わない"
+        },
+        {
+          "key": "C",
+          "text": "The new Siri is not yet available there.",
+          "ja": "新しいSiriがまだ使えない"
+        },
+        {
+          "key": "D",
+          "text": "All units have already sold out.",
+          "ja": "全台がすでに売り切れた"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落4文目に「because the new Siri is not yet available there」とあり、理由が because の後ろに直接書かれている。A（価格）、B（画面と規則）、D（売り切れ）はいずれも本文に書かれていない情報で、もっともらしく見せた引っかけ。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "理由を問う設問は because / since / due to などの直後を探す。本文に根拠がない選択肢は、内容が自然でも選ばない。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "announced",
+      "pos": "動",
+      "ja": "発表した",
+      "gloss": "",
+      "example": {
+        "en": "Apple announced a new product on Monday.",
+        "ja": "アップルは月曜日に新製品を発表した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "ship",
+      "pos": "動",
+      "ja": "出荷する、発送する",
+      "gloss": "",
+      "example": {
+        "en": "We will ship your order within two business days.",
+        "ja": "ご注文の品は2営業日以内に発送します。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "mounted",
+      "pos": "動",
+      "ja": "取り付ける",
+      "gloss": "（mountの過去分詞）",
+      "example": {
+        "en": "The sign is mounted on the wall near the entrance.",
+        "ja": "その看板は入口近くの壁に取り付けられている。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "showcase",
+      "pos": "動",
+      "ja": "披露する、見せる",
+      "gloss": "",
+      "example": {
+        "en": "The company will showcase its new products at the trade fair.",
+        "ja": "同社は見本市で新製品を披露する。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "available",
+      "pos": "形",
+      "ja": "利用できる、入手できる",
+      "gloss": "",
+      "example": {
+        "en": "The report will be available online next week.",
+        "ja": "その報告書は来週オンラインで入手できる。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "expand",
+      "pos": "動",
+      "ja": "拡大する",
+      "gloss": "",
+      "example": {
+        "en": "The retailer plans to expand its business overseas.",
+        "ja": "その小売業者は海外へ事業を拡大する計画だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "introduced",
+      "pos": "動",
+      "ja": "導入した、発表した",
+      "gloss": "",
+      "example": {
+        "en": "The firm introduced a new pricing plan last month.",
+        "ja": "その会社は先月、新しい料金プランを導入した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "updated",
+      "pos": "形",
+      "ja": "更新された",
+      "gloss": "",
+      "example": {
+        "en": "Please read the updated schedule before the meeting.",
+        "ja": "会議の前に更新された日程表を読んでください。"
+      }
+    }
+  ],
+  "glossary": {
+    "announced": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "発表した",
+      "note": ""
+    },
+    "device": {
+      "lemma": "device",
+      "pos": "名",
+      "ja": "機器、端末",
+      "note": ""
+    },
+    "called": {
+      "lemma": "call",
+      "pos": "動",
+      "ja": "〜と呼ばれる",
+      "note": "called A ＝ Aという名前の"
+    },
+    "screen": {
+      "lemma": "screen",
+      "pos": "名",
+      "ja": "画面",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "動",
+      "ja": "費用がかかる",
+      "note": "cost＋金額 ＝ 〜の値段だ"
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "place": {
+      "lemma": "place",
+      "pos": "動",
+      "ja": "（注文を）出す",
+      "note": "place an order ＝ 注文する"
+    },
+    "orders": {
+      "lemma": "order",
+      "pos": "名",
+      "ja": "注文",
+      "note": ""
+    },
+    "units": {
+      "lemma": "unit",
+      "pos": "名",
+      "ja": "（製品の）台、個数",
+      "note": ""
+    },
+    "ship": {
+      "lemma": "ship",
+      "pos": "動",
+      "ja": "出荷する",
+      "note": "「船で運ぶ」だけでなく、発送全般に使う"
+    },
+    "mounted": {
+      "lemma": "mount",
+      "pos": "動",
+      "ja": "取り付ける",
+      "note": ""
+    },
+    "placed": {
+      "lemma": "place",
+      "pos": "動",
+      "ja": "置く",
+      "note": ""
+    },
+    "product": {
+      "lemma": "product",
+      "pos": "名",
+      "ja": "製品",
+      "note": ""
+    },
+    "meant": {
+      "lemma": "mean",
+      "pos": "動",
+      "ja": "〜するつもりだ",
+      "note": "be meant to do ＝ 〜するためのものだ"
+    },
+    "showcase": {
+      "lemma": "showcase",
+      "pos": "動",
+      "ja": "披露する、見せる",
+      "note": ""
+    },
+    "version": {
+      "lemma": "version",
+      "pos": "名",
+      "ja": "版、バージョン",
+      "note": ""
+    },
+    "answer": {
+      "lemma": "answer",
+      "pos": "動",
+      "ja": "答える",
+      "note": ""
+    },
+    "range": {
+      "lemma": "range",
+      "pos": "名",
+      "ja": "範囲、幅",
+      "note": "a wide range of ＝ 幅広い〜"
+    },
+    "recognizes": {
+      "lemma": "recognize",
+      "pos": "動",
+      "ja": "認識する",
+      "note": ""
+    },
+    "shows": {
+      "lemma": "show",
+      "pos": "動",
+      "ja": "表示する",
+      "note": ""
+    },
+    "available": {
+      "lemma": "available",
+      "pos": "形",
+      "ja": "利用できる",
+      "note": "in stock／販売中の意味でも使う"
+    },
+    "sold": {
+      "lemma": "sell",
+      "pos": "動",
+      "ja": "販売する",
+      "note": "sellの過去分詞"
+    },
+    "introduced": {
+      "lemma": "introduce",
+      "pos": "動",
+      "ja": "導入する、発表する",
+      "note": ""
+    },
+    "updated": {
+      "lemma": "update",
+      "pos": "形",
+      "ja": "更新された",
+      "note": ""
+    },
+    "launch": {
+      "lemma": "launch",
+      "pos": "名",
+      "ja": "発売、開始",
+      "note": ""
+    },
+    "seen": {
+      "lemma": "see",
+      "pos": "動",
+      "ja": "見なす",
+      "note": "be seen as ＝ 〜と見られている"
+    },
+    "effort": {
+      "lemma": "effort",
+      "pos": "名",
+      "ja": "取り組み、努力",
+      "note": ""
+    },
+    "expand": {
+      "lemma": "expand",
+      "pos": "動",
+      "ja": "拡大する",
+      "note": ""
+    },
+    "business": {
+      "lemma": "business",
+      "pos": "名",
+      "ja": "事業",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "未来の受動態（will be＋過去分詞）と、理由を表す because 節",
+    "quote": "However, it will not be sold in the European Union because the new Siri is not yet available there.",
+    "quoteJa": "ただし、新しいSiriがまだ利用できないため、欧州連合では販売されない。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "「will be＋過去分詞」は、未来に〜される予定だという受動態。ここでは it（HomeView）が売られる側なので、will be sold となる。否定は will not be sold。能動態に直すと「Apple will not sell it in the European Union」で、行為者（Apple）が文脈から明らかなため、受動態にして省いている。後ろの because 節（because＋S＋V）は理由を表し、「Siri が利用できない」ことが販売しない原因だと示す。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "because は接続詞なので後ろに主語と動詞が続く（because the new Siri is not yet available）。名詞が続くときは because of を使う（because of the delay）。同じ内容を due to ... で言い換えることもできる：It will not be sold there due to the lack of Siri.\n能動態：The company will ship the units on November 13. → 受動態：The units will be shipped on November 13."
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では「will be＋過去分詞」の形を選ばせる問題や、because / because of / although などの使い分けが頻出。空所の後ろに主語＋動詞があれば because、名詞だけなら because of と判断する。Part 7 の通知文では、予定や変更の連絡に will be announced / will be delivered のような受動態がよく出る。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "The new policy will be introduced next month because the old system is too slow.（新しい方針は、旧システムが遅すぎるため来月導入される。）\nYour order will be shipped as soon as the item is available.（商品が入手可能になり次第、ご注文品は発送されます。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が発表されたのか",
+      "body": "アップルは10月13日にニューヨークで開いたイベントで、画面付きのスマートホーム機器「HomeView」を発表した。価格は299ドルで、予約は始まっており、発売は11月13日。7インチの画面で、顔認識により利用者ごとにメッセージ・写真・予定を出し分け、最大6人まで使える。ドアベルやサーモスタット、スマートロックなどの対応機器も操作できる。同時に小型スピーカーの新型とApple TV 4Kの更新版も発表した。"
+    },
+    {
+      "heading": "📌 なぜ「Siri」が主役なのか",
+      "body": "今回の機器は、AI を使った新しいSiriを家庭に置くための入口という位置づけだ。スマートフォンの外に、常に家の中にあって話しかけられる端末を増やすことで、AI アシスタントの利用機会を広げる狙いがある。ただし、新しいSiriがまだ使えない欧州連合では販売されない。規制や審査の都合で機能の提供時期が地域ごとに異なる状況が、ハードウェアの販売地域にも直接影響する例になっている。"
+    },
+    {
+      "heading": "📌 業界の動向と競合",
+      "body": "スマートホーム機器の分野では、アマゾンやグーグルがすでに画面付きスマートスピーカーを販売している。アップルは「家」の分野では後発だが、iPhone などの自社製品との連携と、顔認識による個人ごとの表示を強みにしている。価格を299ドルに設定したことは、普及を重視する姿勢のあらわれと見られる。各社は AI アシスタントを軸に、家庭内での存在感を争う局面に入っている。"
+    },
+    {
+      "heading": "📌 日本への影響と投資家の視点",
+      "body": "日本では、iPhone を使う人が多く、スマートホーム機器との連携需要が見込める一方、日本語での新Siriの提供時期や発売地域はまだ確認できていない。部品や組み立てで関わる日本の電子部品メーカーにとっては、アップルの新製品投入は受注の追い風になり得る。投資家にとっては、スマートフォン以外の分野で収益源を増やせるか、また地域ごとの提供差が販売に響かないかが注目点になる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apple releases HomeView smart home hub with screen as showcase for Siri AI",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/13/apple-homeview-smart-home-siri-ai.html",
+      "date": "2026-10-13"
+    },
+    {
+      "title": "Apple Announces 'HomeView' Smart Home Hub",
+      "publisher": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/13/apple-announces-homeview-smart-home-hub/",
+      "date": "2026-10-13"
+    },
+    {
+      "title": "Everything announced at Apple's 'Welcome Home' event",
+      "publisher": "Engadget",
+      "url": "https://www.engadget.com/2285079/everything-apple-announced-home-view-homepod-mini-2-event/",
+      "date": "2026-10-13"
+    }
+  ]
+}
