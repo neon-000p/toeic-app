@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-13-1641",
+  "date": "2026-10-13",
+  "time": "16:41",
+  "createdAt": "2026-10-13T16:41:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Investors Wait for Inflation Data as Bond Yields Stay High",
+    "ja": "債券利回り高止まり、インフレ統計待ち"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Investors in the United States are waiting for a key inflation report on Wednesday.",
+            "ja": "米国の投資家は、水曜日に発表される重要なインフレ統計を待っている。"
+          },
+          {
+            "en": "The report will show how fast consumer prices rose in September.",
+            "ja": "この統計は、9月に消費者物価がどれだけ速く上昇したかを示す。"
+          },
+          {
+            "en": "The Federal Reserve raised interest rates last month for the first time in more than three years.",
+            "ja": "連邦準備制度は先月、3年以上ぶりに政策金利を引き上げた。"
+          },
+          {
+            "en": "Traders think it may raise them again before the end of the year.",
+            "ja": "市場参加者は、年末までに再び利上げがあるかもしれないと見ている。"
+          },
+          {
+            "en": "Meanwhile, the yield on the 10-year Treasury note is still above 5 percent.",
+            "ja": "一方、10年物米国債の利回りは今も5%を上回っている。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "A higher yield means the government must pay more to borrow money.",
+            "ja": "利回りが高いということは、政府が資金を借りるためにより多く支払わなければならないという意味だ。"
+          },
+          {
+            "en": "It also pushes up the cost of loans for companies and families.",
+            "ja": "それは企業や家計の借入コストも押し上げる。"
+          },
+          {
+            "en": "Mortgage rates have already climbed above 7 percent, which is making it harder for people to buy homes.",
+            "ja": "住宅ローン金利はすでに7%を超えており、人々が住宅を買いにくくなっている。"
+          },
+          {
+            "en": "If prices rise faster than expected, the Fed may feel pressure to act again.",
+            "ja": "物価が予想より速く上昇すれば、Fedは再び動くよう圧力を受けるかもしれない。"
+          },
+          {
+            "en": "If the data are weaker, investors may expect fewer hikes, and borrowing costs might ease.",
+            "ja": "データが弱ければ、投資家は利上げが減ると予想し、借入コストは和らぐかもしれない。"
+          },
+          {
+            "en": "Either way, the report may move stock and bond markets.",
+            "ja": "どちらにせよ、この統計は株式市場と債券市場を動かす可能性がある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What did the Federal Reserve do last month?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It cut rates for the first time in three years.",
+          "ja": "3年ぶりに利下げした"
+        },
+        {
+          "key": "B",
+          "text": "It raised rates for the first time in more than three years.",
+          "ja": "3年超ぶりに利上げした"
+        },
+        {
+          "key": "C",
+          "text": "It kept rates the same for the third time.",
+          "ja": "3回連続で据え置いた"
+        },
+        {
+          "key": "D",
+          "text": "It sold Treasury notes to the public.",
+          "ja": "国債を一般に売却した"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落3文目に 'raised interest rates last month for the first time in more than three years' とあり、3年以上ぶりの利上げが正解（B）。A は利下げで逆。C の据え置きは本文に無い。D の国債売却も本文に無い情報。数字や時期（more than three years）まで本文と照合して選ぶこと。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "Part 7 では動詞（raised / cut）と時期（last month）を先に拾い、選択肢の逆の動きに惑わされない。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT mentioned as an effect of higher yields?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The government pays more to borrow money.",
+          "ja": "政府の借入負担が増える"
+        },
+        {
+          "key": "B",
+          "text": "Loans cost more for companies and families.",
+          "ja": "企業・家計のローンが高くなる"
+        },
+        {
+          "key": "C",
+          "text": "It is harder for people to buy homes.",
+          "ja": "住宅を買いにくくなる"
+        },
+        {
+          "key": "D",
+          "text": "Stock prices fall every time yields rise.",
+          "ja": "利回り上昇のたび株価が下がる"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A は第2段落1文目、B は2文目、C は3文目に書かれている。D の『利回りが上がるたびに株価が下がる』は本文に無く、every time という断定も不自然。NOT 問題は、本文に書かれている選択肢を1つずつ消して、残ったものを選ぶ。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "NOT 問題は『本文にある』ものを3つ消去する。always / every time のような断定表現は誤答の目印になりやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "inflation",
+      "pos": "名",
+      "ja": "インフレ、物価上昇",
+      "gloss": "（＝物の値段が全体的に上がり続けること）",
+      "example": {
+        "en": "Inflation made food more expensive this year.",
+        "ja": "今年はインフレで食品が値上がりした。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "consumer",
+      "pos": "名",
+      "ja": "消費者",
+      "gloss": "",
+      "example": {
+        "en": "Consumer demand is strong this season.",
+        "ja": "今シーズンは消費者の需要が強い。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "gloss": "（＝債券や投資から得られる収益の割合のこと）",
+      "example": {
+        "en": "The yield on this bond is 4 percent.",
+        "ja": "この債券の利回りは4％だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "gloss": "",
+      "example": {
+        "en": "The company will raise its prices in April.",
+        "ja": "その会社は4月に価格を引き上げる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "borrow",
+      "pos": "動",
+      "ja": "借りる",
+      "gloss": "",
+      "example": {
+        "en": "We had to borrow money to open the new office.",
+        "ja": "新しい事務所を開くために資金を借りなければならなかった。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "gloss": "",
+      "example": {
+        "en": "The manager is under pressure to cut costs.",
+        "ja": "その部長はコスト削減の圧力を受けている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "ease",
+      "pos": "動",
+      "ja": "和らぐ、緩和する",
+      "gloss": "",
+      "example": {
+        "en": "Delivery delays should ease next month.",
+        "ja": "配送の遅れは来月には和らぐはずだ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "expect",
+      "pos": "動",
+      "ja": "予想する、見込む",
+      "gloss": "",
+      "example": {
+        "en": "We expect sales to grow by five percent.",
+        "ja": "売上は5％伸びると見込んでいる。"
+      }
+    }
+  ],
+  "glossary": {
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "waiting": {
+      "lemma": "wait",
+      "pos": "動",
+      "ja": "待っている",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "インフレ",
+      "note": ""
+    },
+    "report": {
+      "lemma": "report",
+      "pos": "名",
+      "ja": "報告、統計発表",
+      "note": ""
+    },
+    "consumer": {
+      "lemma": "consumer",
+      "pos": "名",
+      "ja": "消費者",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "名",
+      "ja": "物価、価格",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "金利、利子",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "金利、率",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "yield": {
+      "lemma": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "note": "債券では『利回り』。価格が下がると利回りは上がる"
+    },
+    "treasury": {
+      "lemma": "treasury",
+      "pos": "名",
+      "ja": "国債（財務省証券）",
+      "note": ""
+    },
+    "borrow": {
+      "lemma": "borrow",
+      "pos": "動",
+      "ja": "借りる",
+      "note": ""
+    },
+    "loans": {
+      "lemma": "loan",
+      "pos": "名",
+      "ja": "ローン、融資",
+      "note": ""
+    },
+    "families": {
+      "lemma": "family",
+      "pos": "名",
+      "ja": "家計、家族",
+      "note": ""
+    },
+    "mortgage": {
+      "lemma": "mortgage",
+      "pos": "名",
+      "ja": "住宅ローン",
+      "note": ""
+    },
+    "climbed": {
+      "lemma": "climb",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想された",
+      "note": ""
+    },
+    "weaker": {
+      "lemma": "weak",
+      "pos": "形",
+      "ja": "より弱い",
+      "note": ""
+    },
+    "hikes": {
+      "lemma": "hike",
+      "pos": "名",
+      "ja": "引き上げ",
+      "note": "rate hike＝利上げ"
+    },
+    "borrowing": {
+      "lemma": "borrowing",
+      "pos": "名",
+      "ja": "借入",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "コスト、費用",
+      "note": ""
+    },
+    "ease": {
+      "lemma": "ease",
+      "pos": "動",
+      "ja": "和らぐ",
+      "note": ""
+    },
+    "markets": {
+      "lemma": "market",
+      "pos": "名",
+      "ja": "市場",
+      "note": ""
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "間接疑問文（疑問詞＋S＋V：how fast consumer prices rose）",
+    "quote": "The report will show how fast consumer prices rose in September.",
+    "quoteJa": "この統計は、9月に消費者物価がどれだけ速く上昇したかを示す。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "how fast consumer prices rose は『疑問詞＋主語＋動詞』の語順をとる間接疑問文で、show の目的語（名詞節）になっています。直接疑問文なら How fast did consumer prices rise? ですが、文の一部に組み込まれると do / did が消え、普通の文の語順（S＋V）に戻ります。時制は動詞そのものに表れるため、did rise ではなく rose となります。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "・直接疑問：Where did the shipment go? → 間接疑問：The report shows where the shipment went.\n・how＋形容詞／副詞のまとまり（how fast / how much / how many）は、ひとかたまりで文頭に置きます。\n・疑問詞が主語のときは語順が変わりません：The report shows what caused the delay."
+      },
+      {
+        "heading": "TOEIC での注意点",
+        "body": "Part 5・6 では、know / show / explain / ask / tell などの後ろに続く節の語順がよく問われます。選択肢に did や is が前に出た形（how did prices rise）があれば、ほぼ誤りです。Part 7 の設問文でも I wonder what…, Could you tell me when… のような丁寧表現で頻出します。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "・The memo explains why the schedule was changed.\n・Please let us know when the order will arrive."
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きているのか：利回りとは",
+      "body": "国債の『利回り』は、国にお金を貸した人が受け取る年間の収益率です。国債の人気が下がり価格が下がると利回りは上がります。10年物米国債の利回りは今月、2000年代初頭以来の高い水準である5%台前半まで上昇しました。世界の金利の基準とされるため、住宅ローンや社債の金利にも波及します。"
+    },
+    {
+      "heading": "📌 2. FRBと物価のせめぎ合い",
+      "body": "FRB（米連邦準備制度理事会）は9月、3年以上ぶりに0.25ポイントの利上げを行い、年内にもう一度の可能性を示しました。原油高や強い雇用統計で物価が下がりにくいとの見方が強く、市場は14日（水）の消費者物価指数（CPI）に注目しています。予想より強ければ追加利上げ観測が強まり、弱ければ利回りが低下しやすくなります。"
+    },
+    {
+      "heading": "📌 3. 業界全体への影響",
+      "body": "米国の30年固定住宅ローン金利は7%を超え、住宅販売や建設業に逆風です。企業にとっても社債の発行コストや設備投資のための借入コストが上がり、成長株や不動産、公益事業など金利に敏感な業種が売られやすくなります。一方、預金金利が上がるため、銀行の利ざやが改善する面もあります。"
+    },
+    {
+      "heading": "📌 4. 日本への示唆と投資家・経営者の視点",
+      "body": "米金利が高いと日米金利差が広がり、円安・ドル高圧力になります。円安は輸出企業には追い風ですが、輸入コストを押し上げ、エネルギーや原材料を輸入する企業や家計には負担です。日本の投資家は外貨建て債券の利回り魅力と為替リスクを、経営者は調達コストと為替前提の見直しを、それぞれ点検する局面です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mortgage Rates Tick Higher Before Wednesday's CPI",
+      "publisher": "The Mortgage Reports",
+      "url": "https://themortgagereports.com/mortgage-rates-now/mortgage-rates-today-october-12-2026-b",
+      "date": "2026-10-12"
+    },
+    {
+      "title": "Mortgage Rates Next Week: Oct 12–16, 2026",
+      "publisher": "Mortgage Daily",
+      "url": "https://www.mortgagedaily.com/rates/mortgage-rates-week-ahead-2026-10-11/",
+      "date": "2026-10-11"
+    },
+    {
+      "title": "Mortgage rates surge to highest level since 2023 as bond yields spike",
+      "publisher": "Fox Business",
+      "url": "https://www.foxbusiness.com/economy/mortgage-rates-10-1-2026",
+      "date": "2026-10-01"
+    }
+  ]
+}
