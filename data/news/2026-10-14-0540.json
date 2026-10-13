@@ -462,5 +462,24 @@
       "url": "https://www.engadget.com/2285079/everything-apple-announced-home-view-homepod-mini-2-event/",
       "date": "2026-10-13"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-14-0540/00.mp3",
+      "audio/2026-10-14-0540/01.mp3",
+      "audio/2026-10-14-0540/02.mp3",
+      "audio/2026-10-14-0540/03.mp3",
+      "audio/2026-10-14-0540/04.mp3",
+      "audio/2026-10-14-0540/05.mp3",
+      "audio/2026-10-14-0540/06.mp3",
+      "audio/2026-10-14-0540/07.mp3",
+      "audio/2026-10-14-0540/08.mp3",
+      "audio/2026-10-14-0540/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 198114,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-13T20:43:56.443Z",
+    "trimmed": true
+  }
 }
