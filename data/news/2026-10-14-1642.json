@@ -430,5 +430,22 @@
       "url": "https://stocktwits.com/news-articles/markets/equity/kroger-to-reportedly-eliminate-37-of-corporate-workforce-in-operations-overhaul/cZxIpuIRB8p",
       "date": "2026-10-13"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-14-1642/00.mp3",
+      "audio/2026-10-14-1642/01.mp3",
+      "audio/2026-10-14-1642/02.mp3",
+      "audio/2026-10-14-1642/03.mp3",
+      "audio/2026-10-14-1642/04.mp3",
+      "audio/2026-10-14-1642/05.mp3",
+      "audio/2026-10-14-1642/06.mp3",
+      "audio/2026-10-14-1642/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 185736,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-14T07:43:42.103Z",
+    "trimmed": true
+  }
 }
