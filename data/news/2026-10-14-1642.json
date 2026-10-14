@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-14-1642",
+  "date": "2026-10-14",
+  "time": "16:42",
+  "createdAt": "2026-10-14T16:42:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment",
+  "sample": false,
+  "title": {
+    "en": "Kroger to Cut About 3,000 Corporate Jobs",
+    "ja": "クローガー、本社職約3,000人を削減へ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Kroger, a large U.S. grocery chain, plans to cut about 3,000 corporate jobs over the next three years.",
+            "ja": "米大手スーパーのクローガーは、今後3年間で本社部門の約3,000人を削減する計画だ。"
+          },
+          {
+            "en": "Chief executive Greg Foran told employees about the plan in a memo on Monday.",
+            "ja": "最高経営責任者のグレッグ・フォランは月曜日、社内メモで従業員にこの計画を伝えた。"
+          },
+          {
+            "en": "The cuts equal about 37% of the company's 8,200 office workers.",
+            "ja": "この削減は、同社の事務職員8,200人の約37%に当たる。"
+          },
+          {
+            "en": "It is one of the largest staff reductions in the company's long history.",
+            "ja": "これは同社の長い歴史の中でも最大級の人員削減の一つだ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Mr. Foran said the company will use more technology, such as artificial intelligence, to handle routine office tasks.",
+            "ja": "フォランは、人工知能などの技術をより多く使い、日常的な事務作業をこなす方針だと述べた。"
+          },
+          {
+            "en": "Kroger said the savings will be used to lower prices and to invest in store workers.",
+            "ja": "クローガーは、節約できた費用は値下げと店舗従業員への投資に使われると述べた。"
+          },
+          {
+            "en": "The grocer has also said it will close about 60 weak stores by the end of this year.",
+            "ja": "同社はまた、今年末までに採算の悪い約60店を閉鎖するとも述べている。"
+          },
+          {
+            "en": "Many other large employers have also reduced their office staff this year.",
+            "ja": "他の多くの大手企業も今年、事務部門の人員を減らしている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many corporate jobs does Kroger plan to cut?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 1,000",
+          "ja": "約1,000人"
+        },
+        {
+          "key": "B",
+          "text": "About 3,000",
+          "ja": "約3,000人"
+        },
+        {
+          "key": "C",
+          "text": "About 8,200",
+          "ja": "約8,200人"
+        },
+        {
+          "key": "D",
+          "text": "About 60",
+          "ja": "約60人"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落の1文目に「plans to cut about 3,000 corporate jobs」とあるため、正解は (B)。(A) の1,000は本文にない数字。(C) の8,200は削減数ではなく、同社の事務職員の総数（3文目）で、本文の別の数字を使った引っかけ。(D) の60は閉鎖予定の店舗数（第2段落3文目）で、これも別の数字。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "数字を問う設問は、選択肢の数字が本文のどこに出ているかを照合する。本文に複数の数字がある場合、それぞれ何の数字か（人数・割合・店舗数）を区別して読むのが解法。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, how will Kroger use the money it saves?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To open new stores",
+          "ja": "新店舗を開くため"
+        },
+        {
+          "key": "B",
+          "text": "To lower prices and invest in store workers",
+          "ja": "値下げと店舗従業員への投資"
+        },
+        {
+          "key": "C",
+          "text": "To raise pay for office workers",
+          "ja": "事務職員の給与を上げるため"
+        },
+        {
+          "key": "D",
+          "text": "To buy another grocery chain",
+          "ja": "他のスーパーを買収するため"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落2文目に「the savings will be used to lower prices and to invest in store workers」とあり、(B) が一致。(A) 新店舗は本文になく、むしろ約60店を閉鎖する予定。(C) 削減対象は事務職なので給与引き上げは逆の内容。(D) 買収に関する記述は本文にない。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "「どう使うか」を問う設問は、savings・money・budget などの語が出る文を探す。目的を表す to 不定詞（to lower / to invest）の後ろが答えになることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "corporate",
+      "pos": "形",
+      "ja": "会社の、本社の",
+      "gloss": "",
+      "example": {
+        "en": "The corporate office is located in Chicago.",
+        "ja": "本社はシカゴにある。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "memo",
+      "pos": "名",
+      "ja": "社内メモ、通達",
+      "gloss": "（＝社内向けの短い連絡文書のこと）",
+      "example": {
+        "en": "The manager sent a memo about the new schedule.",
+        "ja": "部長は新しい予定について社内メモを送った。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "equal",
+      "pos": "動",
+      "ja": "～に等しい、相当する",
+      "gloss": "",
+      "example": {
+        "en": "The new budget equals last year's budget.",
+        "ja": "新しい予算は昨年の予算と同額だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "reduction",
+      "pos": "名",
+      "ja": "削減、縮小",
+      "gloss": "",
+      "example": {
+        "en": "The reduction in costs helped the company.",
+        "ja": "費用の削減は会社の助けになった。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "routine",
+      "pos": "形",
+      "ja": "日常的な、定型の",
+      "gloss": "",
+      "example": {
+        "en": "Employees spend hours on routine tasks.",
+        "ja": "従業員は定型業務に何時間も費やしている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "savings",
+      "pos": "名",
+      "ja": "節約できた金額、貯蓄",
+      "gloss": "",
+      "example": {
+        "en": "The savings will be used to buy new equipment.",
+        "ja": "節約した費用は新しい機器の購入に使われる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "invest",
+      "pos": "動",
+      "ja": "投資する、力を入れる",
+      "gloss": "",
+      "example": {
+        "en": "The firm plans to invest in staff training.",
+        "ja": "その会社は社員研修に投資する予定だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "employer",
+      "pos": "名",
+      "ja": "雇用主、企業",
+      "gloss": "",
+      "example": {
+        "en": "The city's largest employer announced a hiring plan.",
+        "ja": "市内最大の雇用主が採用計画を発表した。"
+      }
+    }
+  ],
+  "glossary": {
+    "grocery": {
+      "lemma": "grocery",
+      "pos": "名",
+      "ja": "食料品店",
+      "note": "grocery chain＝食品スーパーチェーン"
+    },
+    "chain": {
+      "lemma": "chain",
+      "pos": "名",
+      "ja": "チェーン店",
+      "note": ""
+    },
+    "corporate": {
+      "lemma": "corporate",
+      "pos": "形",
+      "ja": "会社の、本社の",
+      "note": ""
+    },
+    "chief": {
+      "lemma": "chief",
+      "pos": "形",
+      "ja": "最高位の",
+      "note": ""
+    },
+    "executive": {
+      "lemma": "executive",
+      "pos": "名",
+      "ja": "経営幹部",
+      "note": ""
+    },
+    "memo": {
+      "lemma": "memo",
+      "pos": "名",
+      "ja": "社内メモ",
+      "note": ""
+    },
+    "equal": {
+      "lemma": "equal",
+      "pos": "動",
+      "ja": "相当する",
+      "note": ""
+    },
+    "cuts": {
+      "lemma": "cut",
+      "pos": "名",
+      "ja": "削減",
+      "note": ""
+    },
+    "office": {
+      "lemma": "office",
+      "pos": "名",
+      "ja": "事務所、事務の",
+      "note": ""
+    },
+    "staff": {
+      "lemma": "staff",
+      "pos": "名",
+      "ja": "職員",
+      "note": ""
+    },
+    "reductions": {
+      "lemma": "reduction",
+      "pos": "名",
+      "ja": "削減",
+      "note": ""
+    },
+    "largest": {
+      "lemma": "large",
+      "pos": "形",
+      "ja": "最大の",
+      "note": "largeの最上級"
+    },
+    "history": {
+      "lemma": "history",
+      "pos": "名",
+      "ja": "歴史",
+      "note": ""
+    },
+    "routine": {
+      "lemma": "routine",
+      "pos": "形",
+      "ja": "日常的な",
+      "note": ""
+    },
+    "tasks": {
+      "lemma": "task",
+      "pos": "名",
+      "ja": "業務",
+      "note": ""
+    },
+    "handle": {
+      "lemma": "handle",
+      "pos": "動",
+      "ja": "処理する",
+      "note": ""
+    },
+    "technology": {
+      "lemma": "technology",
+      "pos": "名",
+      "ja": "技術",
+      "note": ""
+    },
+    "artificial": {
+      "lemma": "artificial",
+      "pos": "形",
+      "ja": "人工の",
+      "note": ""
+    },
+    "intelligence": {
+      "lemma": "intelligence",
+      "pos": "名",
+      "ja": "知能",
+      "note": ""
+    },
+    "savings": {
+      "lemma": "savings",
+      "pos": "名",
+      "ja": "節約額",
+      "note": ""
+    },
+    "invest": {
+      "lemma": "invest",
+      "pos": "動",
+      "ja": "投資する",
+      "note": ""
+    },
+    "lower": {
+      "lemma": "lower",
+      "pos": "動",
+      "ja": "下げる",
+      "note": "形容詞では「より低い」"
+    },
+    "weak": {
+      "lemma": "weak",
+      "pos": "形",
+      "ja": "業績の弱い",
+      "note": "ここでは採算の悪い店のこと"
+    },
+    "employers": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主、企業",
+      "note": ""
+    },
+    "reduced": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "目的を表す to 不定詞（used to lower ... and to invest ...）",
+    "quote": "Kroger said the savings will be used to lower prices and to invest in store workers.",
+    "quoteJa": "クローガーは、節約できた費用は値下げと店舗従業員への投資に使われると述べた。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "「be used to＋動詞の原形」は「～するために使われる」という意味で、受動態（be used）のあとに to 不定詞が続き、目的を表します。本文では to lower prices と to invest in store workers の2つが and でつながれています。2つ目の to は省略もできますが、動作が別々であることを示すため、繰り返すと読みやすくなります。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "The savings will be used to lower prices. ＝ The company will use the savings to lower prices.（能動態）。また、「～に慣れている」を表す be used to＋名詞／動名詞（例：She is used to working late.）とは別の表現です。後ろが原形動詞なら「使われる」、-ing 形や名詞なら「慣れている」と見分けます。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では be used to の後ろの形（原形か -ing か）を選ぶ問題や、目的を表す to 不定詞と for＋名詞の使い分けが出ます。Part 7 では「お金や時間を何に使うか」を問う設問の根拠文に、この形がよく現れます。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "The new budget will be used to upgrade our software and to train new staff.（新予算はソフトの更新と新入社員の研修に使われます。）／ This fund is used to cover shipping costs.（この基金は配送費をまかなうために使われます。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 クローガーとはどんな会社か",
+      "body": "クローガーは米国最大級の食品スーパーチェーンで、全米で数千店を運営しています。2024年にはライバルのアルバートソンズとの合併が当局に阻止されており、その後は経営の立て直しが課題でした。2026年2月にはグレッグ・フォラン氏がCEOに就任し、組織の見直しを進めています。「corporate job」は店舗ではなく本社で働く人の仕事（経理・マーケティング・IT・商品企画など）を指します。"
+    },
+    {
+      "heading": "📌 なぜ本社職を減らすのか",
+      "body": "今回の削減は約3,000人で、本社職員（約8,200人）の約37%に当たります。会社は、浮いた費用を値下げと店舗従業員への投資に回すと説明しています。食品の価格に敏感な消費者が増える中、スーパーにとって「安さ」と「店舗の人手」は競争力の源です。そのため、コストは店舗ではなく本社側で絞る、という考え方です。AIで定型の事務作業を減らす点も、今回の特徴です。"
+    },
+    {
+      "heading": "📌 業界全体の動き",
+      "body": "小売業では、店舗数の見直しや本社部門の縮小が続いています。クローガーも今年、約60店の閉鎖を決めており、本社削減は過去8か月で少なくとも3回目の人員整理です。他社でも、フォルクスワーゲンやウーバー、テリアなどが今年に入り人員削減を発表しており、「事務部門の効率化」は業種を問わず広がっています。"
+    },
+    {
+      "heading": "📌 日本・投資家への示唆",
+      "body": "日本でも、イオンやセブン＆アイなどの小売大手が人手不足と人件費の上昇に直面しており、本社業務のデジタル化や自動化は共通の課題です。日本のビジネスパーソンにとっては、定型業務をAIが担う流れの中で、判断・企画・現場との調整といった仕事の価値が高まることを示す事例といえます。投資家の視点では、人員削減は短期的に費用を減らしますが、削減分の節約を本当に値下げや売り場の改善に使えるかが、中長期の評価を分けます。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kroger plans to eliminate 3,000 corporate roles, memo shows, as it expands AI use",
+      "publisher": "Reuters (via GV Wire)",
+      "url": "https://gvwire.com/2026/10/12/kroger-plans-to-eliminate-3000-corporate-roles-memo-shows-as-it-expands-ai-use/",
+      "date": "2026-10-12"
+    },
+    {
+      "title": "Kroger To Reportedly Eliminate 37% Of Corporate Workforce In Operations Overhaul",
+      "publisher": "Stocktwits",
+      "url": "https://stocktwits.com/news-articles/markets/equity/kroger-to-reportedly-eliminate-37-of-corporate-workforce-in-operations-overhaul/cZxIpuIRB8p",
+      "date": "2026-10-13"
+    }
+  ]
+}
