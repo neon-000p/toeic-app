@@ -442,5 +442,22 @@
       "url": "https://www.manilatimes.net/2026/10/04/news/national/asian-port-congestion-may-prolong-shipping-crunch-into-2027/2438502",
       "date": "2026-10-04"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-15-0542/00.mp3",
+      "audio/2026-10-15-0542/01.mp3",
+      "audio/2026-10-15-0542/02.mp3",
+      "audio/2026-10-15-0542/03.mp3",
+      "audio/2026-10-15-0542/04.mp3",
+      "audio/2026-10-15-0542/05.mp3",
+      "audio/2026-10-15-0542/06.mp3",
+      "audio/2026-10-15-0542/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 204456,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-14T20:43:48.348Z",
+    "trimmed": true
+  }
 }
