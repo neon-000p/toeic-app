@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-15-0542",
+  "date": "2026-10-15",
+  "time": "05:42",
+  "createdAt": "2026-10-15T05:42:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "Port Jams in Asia Could Last Into 2027",
+    "ja": "アジアの港湾混雑、2027年まで続く恐れ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Many container ships are waiting outside busy ports in Asia, and the delays are now affecting global trade.",
+            "ja": "アジアの主要港の沖で多くのコンテナ船が待機しており、遅れは世界の貿易に影響を及ぼし始めている。"
+          },
+          {
+            "en": "Analysts say that more than 10 percent of the world's container ship capacity is stuck in line to enter port.",
+            "ja": "アナリストによると、世界のコンテナ船の輸送能力の10%超が、入港を待つ列で足止めされている。"
+          },
+          {
+            "en": "Shanghai and Ningbo, two of the world's busiest ports, are among the worst affected.",
+            "ja": "世界有数の忙しい港である上海と寧波は、最も影響を受けている港に含まれる。"
+          },
+          {
+            "en": "Shipping companies have changed their schedules, but fewer than half of all ships arrived on time in August.",
+            "ja": "船会社は運航スケジュールを変更したが、8月に定刻どおり到着した船は全体の半数に満たなかった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Strong demand before the holiday season sent more cargo to the ports than they could handle.",
+            "ja": "年末商戦を前にした強い需要で、港が処理できる量を超える貨物が押し寄せた。"
+          },
+          {
+            "en": "Importers are now facing not only late shipments but also higher costs on some routes.",
+            "ja": "輸入業者は今、出荷の遅れだけでなく、一部の航路での費用上昇にも直面している。"
+          },
+          {
+            "en": "Freight rates have eased a little this month, but experts do not expect quick relief.",
+            "ja": "運賃は今月やや下がったが、専門家は早期の改善を見込んでいない。"
+          },
+          {
+            "en": "Some analysts warn that the delays may last into 2027, so companies should plan their orders carefully.",
+            "ja": "一部のアナリストは、遅れが2027年まで続く可能性があると警告しており、企業は発注を慎重に計画すべきだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to analysts, how much of the world's container ship capacity is waiting to enter port?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Less than 1 percent",
+          "ja": "1%未満"
+        },
+        {
+          "key": "B",
+          "text": "About 5 percent",
+          "ja": "約5%"
+        },
+        {
+          "key": "C",
+          "text": "More than 10 percent",
+          "ja": "10%超"
+        },
+        {
+          "key": "D",
+          "text": "More than 50 percent",
+          "ja": "50%超"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落の2文目に「more than 10 percent of the world's container ship capacity is stuck in line to enter port」とあるため、正解は (C)。(A) と (B) は本文より小さい数字で、本文にない情報。(D) の50%は、4文目の「fewer than half of all ships arrived on time」（定刻到着は半数未満）という別の「半分」の話と混同させる引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う設問は、選択肢の数字を本文と照合する。「more than」「fewer than」など数量を限定する表現まで正確に読むことが大切。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did more cargo reach the ports than they could handle?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The ports were closed for repairs.",
+          "ja": "港が修理で閉鎖された。"
+        },
+        {
+          "key": "B",
+          "text": "Demand was strong before the holiday season.",
+          "ja": "年末商戦前に需要が強かった。"
+        },
+        {
+          "key": "C",
+          "text": "Shipping companies changed their schedules.",
+          "ja": "船会社が運航予定を変更した。"
+        },
+        {
+          "key": "D",
+          "text": "Freight rates fell sharply.",
+          "ja": "運賃が急落した。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落の1文目に「Strong demand before the holiday season sent more cargo to the ports than they could handle」とあり、貨物が集中した理由は需要の強さなので (B)。(A) の港の閉鎖は本文に書かれていない。(C) の日程変更は理由ではなく、遅れへの対応（結果）。(D) の運賃は「little eased（わずかに下がった）」であり、急落ではなく、貨物増加の理由でもない。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由を問う設問は、because や sent...to のような因果を示す表現の前後を探す。結果として起きたことを理由と取り違えない。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "capacity",
+      "pos": "名",
+      "ja": "能力、容量、生産能力",
+      "gloss": "",
+      "example": {
+        "en": "The factory increased its capacity to meet new orders.",
+        "ja": "その工場は新しい注文に応えるため生産能力を引き上げた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "shipment",
+      "pos": "名",
+      "ja": "出荷、発送、積荷",
+      "gloss": "",
+      "example": {
+        "en": "The shipment will arrive at the warehouse on Friday.",
+        "ja": "その荷物は金曜日に倉庫に到着する予定だ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "freight",
+      "pos": "名",
+      "ja": "貨物、運送（料）",
+      "gloss": "（＝船・トラックなどで運ぶ荷物やその運賃のこと）",
+      "example": {
+        "en": "Air freight is faster but more expensive than sea freight.",
+        "ja": "航空貨物は海上貨物より速いが高い。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "importer",
+      "pos": "名",
+      "ja": "輸入業者",
+      "gloss": "（＝外国から商品を買って国内に入れる会社のこと）",
+      "example": {
+        "en": "The importer asked the supplier to deliver earlier.",
+        "ja": "その輸入業者は納入元に、もっと早く届けるよう頼んだ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要、要求",
+      "gloss": "",
+      "example": {
+        "en": "Demand for our new product has been strong.",
+        "ja": "当社の新製品への需要は堅調だ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "handle",
+      "pos": "動",
+      "ja": "処理する、扱う",
+      "gloss": "",
+      "example": {
+        "en": "Our team can handle up to 200 orders a day.",
+        "ja": "私たちのチームは1日200件までの注文を処理できる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "relief",
+      "pos": "名",
+      "ja": "緩和、安心",
+      "gloss": "",
+      "example": {
+        "en": "The new rule brought relief to small businesses.",
+        "ja": "その新しい規則は中小企業に負担の軽減をもたらした。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "schedule",
+      "pos": "名・動",
+      "ja": "予定、日程；予定を組む",
+      "gloss": "",
+      "example": {
+        "en": "We changed the schedule because of the delay.",
+        "ja": "遅れのため、私たちは日程を変更した。"
+      }
+    }
+  ],
+  "glossary": {
+    "container": {
+      "lemma": "container",
+      "pos": "名",
+      "ja": "コンテナ",
+      "note": ""
+    },
+    "waiting": {
+      "lemma": "wait",
+      "pos": "動",
+      "ja": "待っている",
+      "note": "wait の -ing 形"
+    },
+    "ports": {
+      "lemma": "port",
+      "pos": "名",
+      "ja": "港",
+      "note": ""
+    },
+    "delays": {
+      "lemma": "delay",
+      "pos": "名",
+      "ja": "遅れ",
+      "note": ""
+    },
+    "affecting": {
+      "lemma": "affect",
+      "pos": "動",
+      "ja": "影響する",
+      "note": "affect の -ing 形"
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界的な",
+      "note": ""
+    },
+    "trade": {
+      "lemma": "trade",
+      "pos": "名",
+      "ja": "貿易",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト、分析者",
+      "note": ""
+    },
+    "percent": {
+      "lemma": "percent",
+      "pos": "名",
+      "ja": "パーセント",
+      "note": ""
+    },
+    "capacity": {
+      "lemma": "capacity",
+      "pos": "名",
+      "ja": "輸送能力、容量",
+      "note": ""
+    },
+    "stuck": {
+      "lemma": "stuck",
+      "pos": "形",
+      "ja": "動けない、足止めされた",
+      "note": ""
+    },
+    "enter": {
+      "lemma": "enter",
+      "pos": "動",
+      "ja": "入る",
+      "note": ""
+    },
+    "busiest": {
+      "lemma": "busiest",
+      "pos": "形",
+      "ja": "最も忙しい",
+      "note": "busy の最上級"
+    },
+    "worst": {
+      "lemma": "bad",
+      "pos": "副",
+      "ja": "最も悪く",
+      "note": "bad の最上級"
+    },
+    "affected": {
+      "lemma": "affect",
+      "pos": "動",
+      "ja": "影響を受けた",
+      "note": "過去分詞"
+    },
+    "shipping": {
+      "lemma": "shipping",
+      "pos": "名",
+      "ja": "海運、輸送",
+      "note": ""
+    },
+    "schedules": {
+      "lemma": "schedule",
+      "pos": "名",
+      "ja": "予定、日程",
+      "note": ""
+    },
+    "fewer": {
+      "lemma": "few",
+      "pos": "形",
+      "ja": "より少ない",
+      "note": "数えられる名詞に使う"
+    },
+    "arrived": {
+      "lemma": "arrive",
+      "pos": "動",
+      "ja": "到着した",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "handle": {
+      "lemma": "handle",
+      "pos": "動",
+      "ja": "処理する",
+      "note": ""
+    },
+    "importers": {
+      "lemma": "importer",
+      "pos": "名",
+      "ja": "輸入業者",
+      "note": ""
+    },
+    "facing": {
+      "lemma": "face",
+      "pos": "動",
+      "ja": "直面する",
+      "note": "face の -ing 形"
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷、積荷",
+      "note": ""
+    },
+    "freight": {
+      "lemma": "freight",
+      "pos": "名",
+      "ja": "運賃、貨物",
+      "note": ""
+    },
+    "relief": {
+      "lemma": "relief",
+      "pos": "名",
+      "ja": "緩和",
+      "note": ""
+    },
+    "experts": {
+      "lemma": "expert",
+      "pos": "名",
+      "ja": "専門家",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "not only A but also B（相関接続詞：AだけでなくBも）",
+    "quote": "Importers are now facing not only late shipments but also higher costs on some routes.",
+    "quoteJa": "輸入業者は今、出荷の遅れだけでなく、一部の航路での費用上昇にも直面している。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "not only A but also B は「AだけでなくBも」を表す相関接続詞です。A と B には文法的に同じ形（名詞どうし、動詞どうし、形容詞どうしなど）を置きます。この文では A = late shipments（遅れた出荷）、B = higher costs on some routes（一部の航路での費用上昇）と、どちらも名詞のまとまりです。B の方に伝えたい重点があり、also は省略されることもあります。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Importers are facing late shipments and higher costs.（輸入業者は出荷の遅れと費用上昇に直面している）と比べると、not only ... but also を使うと『問題が1つではない』という強調が加わります。同じ意味の as well as（B as well as A）は、重点が前の語に置かれる点が逆になるので注意しましょう。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 では、but also の空所補充や、A と B の形をそろえる問題（not only to reduce costs but also to improve quality のように to 不定詞どうし）が出ます。また、主語に使うときは動詞を B（but also の後ろ）に一致させる点が頻出です。Part 7 では、メールや案内文の中で『AだけでなくBも』と条件・特典を並べる場面でよく登場します。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The new system will not only save time but also reduce errors.（新システムは時間を節約するだけでなく、ミスも減らす）／ The company is looking for staff who are not only skilled but also willing to learn.（会社は、スキルがあるだけでなく学ぶ意欲もある人材を探している）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きているのか：世界のコンテナ船の1割超が「渋滞」",
+      "body": "コンテナ船は、港の岸壁（バース）が空くまで沖で待つ必要があります。現在は、世界のコンテナ船の輸送能力のうち1割を超える分が、入港待ちで事実上動けない状態だと複数のアナリストが指摘しています。特に、上海や寧波といった中国の巨大港で混雑が目立ちます。調査会社によって数字に幅はありますが、『数年で最悪の水準』という見方は共通しています。"
+    },
+    {
+      "heading": "📌 なぜ渋滞するのか：需要の前倒しと船の遅れの連鎖",
+      "body": "年末商戦に向けた輸入が早めに集中し、港の処理能力を超えたことが引き金です。さらに、船の到着が遅れると次の港でも予定が崩れ、遅れが連鎖します。定刻到着率（スケジュール信頼性）が50%を下回ったとの報告もあり、船会社は便の欠航（ブランクセーリング）や寄港地変更で対応していますが、根本的な解消には時間がかかる見通しです。"
+    },
+    {
+      "heading": "📌 業界・競合の動き：運賃は高止まり、アジア域内では過去最高水準も",
+      "body": "主要航路の運賃は国慶節（ゴールデンウィーク）明けにやや下がったものの、アジア域内の運賃は過去最高水準にあると報じられています。船が港で待つと、実質的に使える船腹が減り、運賃を押し上げます。荷主は納期を守るため、割高でも早く運べる手段を選ばざるを得ず、物流会社や船会社の収益は押し上げられる一方、輸入企業の負担は増します。"
+    },
+    {
+      "heading": "📌 日本への影響と投資家・経営者の視点",
+      "body": "日本企業にとっても、中国経由の部品や衣料品、日用品の調達に遅れとコスト増が出る可能性があります。年末の在庫確保のため、早めの発注、複数の調達ルートの確保、在庫の積み増しが検討課題です。投資家にとっては、海運株や港湾関連株には追い風になりやすい反面、小売・製造業の利益率は輸送費で圧迫されやすい点に注意が必要です。TOEIC でも shipment、freight、inventory といった物流語彙は頻出です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Asian port congestion seen lasting until 2027",
+      "publisher": "The Philippine Star",
+      "url": "https://www.philstar.com/business/2026/10/13/2562720/asian-port-congestion-seen-lasting-until-2027",
+      "date": "2026-10-13"
+    },
+    {
+      "title": "Asian port congestion may prolong shipping crunch into 2027",
+      "publisher": "The Manila Times",
+      "url": "https://www.manilatimes.net/2026/10/04/news/national/asian-port-congestion-may-prolong-shipping-crunch-into-2027/2438502",
+      "date": "2026-10-04"
+    }
+  ]
+}
