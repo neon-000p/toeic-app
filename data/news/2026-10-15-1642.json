@@ -464,5 +464,23 @@
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Trump-Considers-Easing-Sanctions-on-Shadow-Fleet-Tankers.html",
       "date": "2026-10-15"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-15-1642/00.mp3",
+      "audio/2026-10-15-1642/01.mp3",
+      "audio/2026-10-15-1642/02.mp3",
+      "audio/2026-10-15-1642/03.mp3",
+      "audio/2026-10-15-1642/04.mp3",
+      "audio/2026-10-15-1642/05.mp3",
+      "audio/2026-10-15-1642/06.mp3",
+      "audio/2026-10-15-1642/07.mp3",
+      "audio/2026-10-15-1642/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 204501,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-15T07:43:41.236Z",
+    "trimmed": true
+  }
 }
