@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part5-history",
-  "updatedAt": "2026-10-09T04:16:19+09:00",
+  "updatedAt": "2026-10-16T04:14:00+09:00",
   "items": [
+    {
+      "id": "2026-10-16-0414",
+      "date": "2026-10-16",
+      "focus": "文法7・語彙3",
+      "types": [
+        "form",
+        "vocab",
+        "verb",
+        "prep",
+        "form",
+        "conj",
+        "vocab",
+        "verbal",
+        "pron",
+        "vocab"
+      ],
+      "topics": [
+        "現在完了のあとの副詞",
+        "仮定法過去完了",
+        "分野を表す前置詞 in",
+        "形容詞＋名詞＋of",
+        "whether to 不定詞",
+        "ask＋目的語＋to 不定詞",
+        "非制限用法の which"
+      ]
+    },
     {
       "id": "2026-10-09-0415",
       "date": "2026-10-09",

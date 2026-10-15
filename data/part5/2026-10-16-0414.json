@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-10-16-0414",
+  "date": "2026-10-16",
+  "time": "04:14",
+  "createdAt": "2026-10-16T04:14:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "Sales of the new line of office chairs have increased ------- since the spring advertising campaign began.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "steady",
+          "ja": "（形）安定した"
+        },
+        {
+          "key": "B",
+          "text": "steadily",
+          "ja": "（副）着実に"
+        },
+        {
+          "key": "C",
+          "text": "steadiness",
+          "ja": "（名）安定"
+        },
+        {
+          "key": "D",
+          "text": "steadied",
+          "ja": "安定させた"
+        }
+      ],
+      "answer": "B",
+      "ja": "春の広告キャンペーンが始まって以来、新しい事務用椅子シリーズの売上は着実に伸びている。",
+      "explanation": "have increased は完成した述部で、意味はすでに足りている。空所は動詞を後ろから修飾する語なので副詞 steadily が入る。steady は形容詞なので increased の後ろに単独では置けない。",
+      "tip": "選択肢が同じ語幹で語尾だけ違えば品詞問題。空所の前が完成した文なら、入るのは副詞。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "prompt": "To meet growing demand, Larkspur Foods plans to ------- its product line to include several organic items.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "expand",
+          "ja": "拡大する"
+        },
+        {
+          "key": "B",
+          "text": "deliver",
+          "ja": "配達する"
+        },
+        {
+          "key": "C",
+          "text": "observe",
+          "ja": "観察する、守る"
+        },
+        {
+          "key": "D",
+          "text": "depend",
+          "ja": "頼る"
+        }
+      ],
+      "answer": "A",
+      "ja": "高まる需要に応えるため、ラークスパー・フーズは製品ラインを拡大して有機食品を数品加える予定だ。",
+      "explanation": "「製品ラインを〜して有機食品を含める」という流れに合う他動詞は expand（拡大する）。depend は自動詞で、目的語を直接取れない。deliver は product line を目的語にすると意味が合わない。",
+      "tip": "4つとも動詞の語彙問題は、目的語との相性（コロケーション）で絞る。expand a product line / expand the business は定番。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "prompt": "If Ms. Park ------- the budget earlier, the renovation project would not have been delayed.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "approves",
+          "ja": "承認する"
+        },
+        {
+          "key": "B",
+          "text": "would approve",
+          "ja": "承認するだろう"
+        },
+        {
+          "key": "C",
+          "text": "had approved",
+          "ja": "承認していた"
+        },
+        {
+          "key": "D",
+          "text": "approving",
+          "ja": "承認している"
+        }
+      ],
+      "answer": "C",
+      "ja": "パークさんがもっと早く予算を承認していれば、改装プロジェクトは遅れなかっただろう。",
+      "explanation": "主節が would not have been delayed（would have + 過去分詞）なので、過去の事実と反対の仮定を表す仮定法過去完了。if 節は had + 過去分詞になる。would approve は if 節には使えない。",
+      "tip": "主節に would have + 過去分詞があれば、if 節は had + 過去分詞。まず主節を見る。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "prompt": "Applicants must have at least three years of experience ------- the field of logistics.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "in",
+          "ja": "〜において"
+        },
+        {
+          "key": "B",
+          "text": "on",
+          "ja": "〜の上に"
+        },
+        {
+          "key": "C",
+          "text": "at",
+          "ja": "〜で"
+        },
+        {
+          "key": "D",
+          "text": "to",
+          "ja": "〜へ"
+        }
+      ],
+      "answer": "A",
+      "ja": "応募者は物流分野で最低3年の経験が必要だ。",
+      "explanation": "「〜の分野での経験」は experience in the field of ... と言う。on は主題（on the subject of）に使うことが多く、field とは結びつかない。",
+      "tip": "前置詞は空所の前後2〜3語のセット表現で決まる。experience in / interest in / increase in はまとめて覚える。"
+    },
+    {
+      "id": "q5",
+      "type": "form",
+      "prompt": "Please submit a written ------- of the training session to your supervisor by Friday.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "evaluate",
+          "ja": "評価する"
+        },
+        {
+          "key": "B",
+          "text": "evaluated",
+          "ja": "評価された"
+        },
+        {
+          "key": "C",
+          "text": "evaluative",
+          "ja": "（形）評価の"
+        },
+        {
+          "key": "D",
+          "text": "evaluation",
+          "ja": "（名）評価"
+        }
+      ],
+      "answer": "D",
+      "ja": "研修についての書面の評価を、金曜日までに上司に提出してください。",
+      "explanation": "a written ------- of ... の形で、冠詞 a と形容詞 written のあとに名詞が必要、しかも後ろに of が続く。名詞は evaluation。evaluative は形容詞なので名詞の位置に入らない。",
+      "tip": "冠詞＋形容詞のあとで、後ろに of が続く空所は名詞。"
+    },
+    {
+      "id": "q6",
+      "type": "conj",
+      "prompt": "We have not yet decided ------- to renew the lease or move to a larger office.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "unless",
+          "ja": "〜でない限り"
+        },
+        {
+          "key": "B",
+          "text": "whether",
+          "ja": "〜かどうか"
+        },
+        {
+          "key": "C",
+          "text": "because",
+          "ja": "なぜなら"
+        },
+        {
+          "key": "D",
+          "text": "although",
+          "ja": "〜だけれども"
+        }
+      ],
+      "answer": "B",
+      "ja": "賃貸契約を更新するか、もっと広い事務所に移るか、まだ決めていない。",
+      "explanation": "decided の目的語になる名詞節を、to 不定詞と or を伴ってつなぐのは whether。whether to A or B は「AかBか」の定型。unless や because は後ろに主語と動詞を要求する。",
+      "tip": "whether のあとに to 不定詞と or が続く形は定型。空所のあとが to なら接続詞は限られる。"
+    },
+    {
+      "id": "q7",
+      "type": "vocab",
+      "prompt": "The Rosewood Hotel offers ------- wireless Internet access to all registered guests during their stay.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "numerous",
+          "ja": "多数の"
+        },
+        {
+          "key": "B",
+          "text": "hesitant",
+          "ja": "ためらう"
+        },
+        {
+          "key": "C",
+          "text": "complimentary",
+          "ja": "無料の"
+        },
+        {
+          "key": "D",
+          "text": "relevant",
+          "ja": "関連する"
+        }
+      ],
+      "answer": "C",
+      "ja": "ローズウッド・ホテルは、宿泊中の登録済みの宿泊客全員に無料の無線インターネットを提供している。",
+      "explanation": "「宿泊客に提供する Internet access」を修飾して意味が通るのは complimentary（無料の）。numerous は複数名詞に使い、不可算の access とは合わない。",
+      "tip": "ホテルや店のサービスの文では complimentary（無料の）が頻出。数えられない名詞に numerous は付かない。"
+    },
+    {
+      "id": "q8",
+      "type": "verbal",
+      "prompt": "The manager asked all department heads ------- their quarterly timesheets to the payroll office by noon.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "submitting",
+          "ja": "提出している"
+        },
+        {
+          "key": "B",
+          "text": "submitted",
+          "ja": "提出された"
+        },
+        {
+          "key": "C",
+          "text": "submit",
+          "ja": "提出する"
+        },
+        {
+          "key": "D",
+          "text": "to submit",
+          "ja": "提出するよう"
+        }
+      ],
+      "answer": "D",
+      "ja": "部長は、各部門長に四半期の勤務表を正午までに給与課に提出するよう求めた。",
+      "explanation": "ask + 人 + to 不定詞で「人に〜するよう頼む」。asked のあとの all department heads が目的語なので、to submit が続く。",
+      "tip": "ask / want / require / allow + 人 のあとは to 不定詞。動詞の原形は入らない。"
+    },
+    {
+      "id": "q9",
+      "type": "pron",
+      "prompt": "The seminar, ------- was held in the main auditorium, drew more than two hundred attendees.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "who",
+          "ja": "誰が"
+        },
+        {
+          "key": "B",
+          "text": "which",
+          "ja": "それは〜"
+        },
+        {
+          "key": "C",
+          "text": "whose",
+          "ja": "その〜の"
+        },
+        {
+          "key": "D",
+          "text": "what",
+          "ja": "何"
+        }
+      ],
+      "answer": "B",
+      "ja": "セミナーは大講堂で開かれ、200人を超える参加者を集めた。",
+      "explanation": "カンマで区切られた先行詞 The seminar は物で、後ろに was held と動詞が続く。主格の関係代名詞で物を受けるのは which。who は人にしか使えない。",
+      "tip": "関係詞はまず先行詞が人か物かを見て、次に後ろが動詞か名詞かを見る。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "The factory will operate at reduced ------- while the main assembly line is being inspected.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "attendance",
+          "ja": "出席"
+        },
+        {
+          "key": "B",
+          "text": "tendency",
+          "ja": "傾向"
+        },
+        {
+          "key": "C",
+          "text": "capacity",
+          "ja": "生産能力"
+        },
+        {
+          "key": "D",
+          "text": "appointment",
+          "ja": "予約"
+        }
+      ],
+      "answer": "C",
+      "ja": "主要な組立ラインの点検中は、工場は縮小した生産能力で稼働する。",
+      "explanation": "operate at reduced capacity（縮小した稼働能力で稼働）が定型のコロケーション。attendance や appointment は工場の稼働とは結びつかない。",
+      "tip": "形容詞（reduced）と動詞（operate at）の両側から名詞を決める。operate at full capacity もセットで覚える。"
+    }
+  ],
+  "glossary": {
+    "meet growing demand": {
+      "lemma": "meet demand",
+      "pos": "熟",
+      "ja": "高まる需要に応える",
+      "note": "",
+      "example": {
+        "en": "The company hired extra staff to meet growing demand during the holidays.",
+        "ja": "その会社は休暇期間の高まる需要に応えるため、追加の人員を雇った。"
+      }
+    },
+    "product line": {
+      "lemma": "product line",
+      "pos": "熟",
+      "ja": "製品ライン",
+      "note": "",
+      "example": {
+        "en": "The firm will add a new product line for small offices next spring.",
+        "ja": "その会社は来春、小規模オフィス向けの新しい製品ラインを加える。"
+      }
+    },
+    "at least": {
+      "lemma": "at least",
+      "pos": "熟",
+      "ja": "少なくとも",
+      "note": "",
+      "example": {
+        "en": "You should arrive at least thirty minutes before the interview.",
+        "ja": "面接の少なくとも30分前には到着してください。"
+      }
+    },
+    "department heads": {
+      "lemma": "department head",
+      "pos": "熟",
+      "ja": "部門長",
+      "note": "",
+      "example": {
+        "en": "All department heads must attend the budget review on Tuesday.",
+        "ja": "部門長は全員、火曜日の予算審査に出席しなければならない。"
+      }
+    },
+    "assembly line": {
+      "lemma": "assembly line",
+      "pos": "熟",
+      "ja": "組立ライン",
+      "note": "",
+      "example": {
+        "en": "Workers on the assembly line check each unit before packing it.",
+        "ja": "組立ラインの作業員は梱包前に各製品を点検する。"
+      }
+    },
+    "registered guests": {
+      "lemma": "registered guest",
+      "pos": "熟",
+      "ja": "登録済みの宿泊客",
+      "note": "",
+      "example": {
+        "en": "Only registered guests may use the fitness room after ten.",
+        "ja": "登録済みの宿泊客だけが10時以降にフィットネスルームを使える。"
+      }
+    },
+    "renovation": {
+      "lemma": "renovation",
+      "pos": "名",
+      "ja": "改装、改築",
+      "note": "",
+      "example": {
+        "en": "The renovation of the library will take about four months.",
+        "ja": "図書館の改装には約4か月かかる。"
+      }
+    },
+    "logistics": {
+      "lemma": "logistics",
+      "pos": "名",
+      "ja": "物流、ロジスティクス",
+      "note": "",
+      "example": {
+        "en": "She works in logistics and manages deliveries to twelve stores.",
+        "ja": "彼女は物流の仕事をしており、12店舗への配送を管理している。"
+      }
+    },
+    "payroll": {
+      "lemma": "payroll",
+      "pos": "名",
+      "ja": "給与計算、給与課",
+      "note": "",
+      "example": {
+        "en": "The payroll for this month will be processed on the twenty-fifth.",
+        "ja": "今月の給与計算は25日に処理される。"
+      }
+    },
+    "lease": {
+      "lemma": "lease",
+      "pos": "名",
+      "ja": "賃貸契約",
+      "note": "動詞では「賃借する」",
+      "example": {
+        "en": "The lease on our current warehouse expires at the end of June.",
+        "ja": "現在の倉庫の賃貸契約は6月末で切れる。"
+      }
+    },
+    "attendees": {
+      "lemma": "attendee",
+      "pos": "名",
+      "ja": "参加者",
+      "note": "",
+      "example": {
+        "en": "Attendees will receive a printed schedule at the registration desk.",
+        "ja": "参加者は受付で印刷された日程表を受け取る。"
+      }
+    }
+  },
+  "point": {
+    "lead": "選択肢の見た目で型を決めてから、空所の前後2〜3語を見る",
+    "items": [
+      {
+        "title": "語尾だけ違えば品詞、活用が並べば動詞の形",
+        "body": "steady/steadily/steadiness や evaluate/evaluation のように語幹が同じなら品詞問題。空所の前が完成した文なら副詞、冠詞や形容詞のあとなら名詞と決める。"
+      },
+      {
+        "title": "主節・先行詞・ask の形を先に見る",
+        "body": "仮定法は主節の would have + 過去分詞、関係詞は先行詞が人か物か、ask + 人 は to 不定詞。空所から少し離れた手がかりが答えを決める。"
+      },
+      {
+        "title": "語彙問題は相性で絞る",
+        "body": "expand a product line、operate at reduced capacity、complimentary access のように、前後の語とセットで覚えた表現を当てはめる。"
+      }
+    ]
+  }
+}
