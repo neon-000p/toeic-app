@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-16-0541",
+  "date": "2026-10-16",
+  "time": "05:41",
+  "createdAt": "2026-10-16T05:41:56+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "TSMC Posts Record Profit, but Margin Slips",
+    "ja": "TSMC、過去最高益も利益率は低下"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Taiwan Semiconductor Manufacturing Company (TSMC) reported a record profit for the third quarter.",
+            "ja": "台湾積体電路製造（TSMC）は、第3四半期に過去最高の利益を計上したと発表した。"
+          },
+          {
+            "en": "Net income rose about 69 percent from a year earlier, as customers kept ordering chips for artificial intelligence.",
+            "ja": "純利益は前年同期から約69％増加した。顧客が人工知能向けの半導体を発注し続けたためだ。"
+          },
+          {
+            "en": "The results were better than analysts had expected.",
+            "ja": "この結果はアナリストの予想を上回った。"
+          },
+          {
+            "en": "Even so, the company's share price fell after the announcement.",
+            "ja": "それでも、発表後に同社の株価は下落した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The reason was the gross margin, which is the share of sales left after production costs.",
+            "ja": "理由は粗利益率だった。これは生産コストを差し引いた後に売上高に占める残りの割合のことだ。"
+          },
+          {
+            "en": "It slipped to 66.4 percent from 67.7 percent in the previous quarter.",
+            "ja": "粗利益率は前四半期の67.7％から66.4％に低下した。"
+          },
+          {
+            "en": "The company said the decline came mainly from the start of production of its newest, most advanced chips.",
+            "ja": "同社は、低下の主因は最新かつ最先端の半導体の生産開始にあると説明した。"
+          },
+          {
+            "en": "Managers also warned that spending on new factories over the next three years will be higher than before.",
+            "ja": "経営陣はまた、今後3年間の新工場への支出がこれまでより増えると警告した。"
+          },
+          {
+            "en": "Investors worry that large costs could reduce future profit, although demand remains strong.",
+            "ja": "投資家は、需要は引き続き堅調だが、巨額のコストが将来の利益を圧迫しかねないと懸念している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By about how much did net income rise from a year earlier?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "19 percent",
+          "ja": "19％"
+        },
+        {
+          "key": "B",
+          "text": "39 percent",
+          "ja": "39％"
+        },
+        {
+          "key": "C",
+          "text": "69 percent",
+          "ja": "69％"
+        },
+        {
+          "key": "D",
+          "text": "96 percent",
+          "ja": "96％"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落2文目に「Net income rose about 69 percent from a year earlier」とあるため、正解は (C) 69 percent。(A)(B)(D) は本文にない数字で、(D) は 69 の数字を入れ替えた引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う設問は、選択肢の数字を本文と1つずつ照合する。桁や並びを入れ替えた選択肢に注意。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did the share price fall after the announcement?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Profit was lower than analysts expected.",
+          "ja": "利益が予想を下回った"
+        },
+        {
+          "key": "B",
+          "text": "Gross margin slipped and large spending is coming.",
+          "ja": "利益率が下がり、巨額支出が控える"
+        },
+        {
+          "key": "C",
+          "text": "The company stopped making advanced chips.",
+          "ja": "最先端チップの生産を止めた"
+        },
+        {
+          "key": "D",
+          "text": "Customers cut their orders for AI chips.",
+          "ja": "顧客がAIチップの発注を減らした"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落は「The reason was the gross margin」で始まり、粗利益率が66.4％に低下したことと、今後3年間の工場投資が増えることを述べている。よって (B)。(A) は第1段落で結果が予想を上回ったとあり逆。(C) は先端チップの生産を開始したのであり停止ではない。(D) 需要は強いままと書かれており本文と逆。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "Why 問題は理由を示す語（The reason was / because / due to）の直後に答えがある。選択肢は本文と逆の内容に注意。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "net income",
+      "pos": "名",
+      "ja": "純利益",
+      "gloss": "",
+      "example": {
+        "en": "Net income increased for the third year in a row.",
+        "ja": "純利益は3年連続で増加した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "gross margin",
+      "pos": "名",
+      "ja": "粗利益率",
+      "gloss": "（＝売上から製造コストを引いた残りの割合のこと）",
+      "example": {
+        "en": "The store improved its gross margin by cutting costs.",
+        "ja": "その店はコスト削減で粗利益率を改善した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "analysts",
+      "pos": "名",
+      "ja": "アナリスト、分析家",
+      "gloss": "",
+      "example": {
+        "en": "Analysts expect the company to hire more staff.",
+        "ja": "アナリストは、同社が人員を増やすと予想している。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "announcement",
+      "pos": "名",
+      "ja": "発表、告知",
+      "gloss": "",
+      "example": {
+        "en": "The announcement will be made at the next meeting.",
+        "ja": "その発表は次の会議で行われる予定だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "slipped",
+      "pos": "動",
+      "ja": "下がった、低下した",
+      "gloss": "",
+      "example": {
+        "en": "Sales slipped slightly in the second quarter.",
+        "ja": "売上は第2四半期にわずかに下がった。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "decline",
+      "pos": "名・動",
+      "ja": "減少、低下／減る",
+      "gloss": "",
+      "example": {
+        "en": "The decline in orders surprised the manager.",
+        "ja": "注文の減少は部長を驚かせた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "warned",
+      "pos": "動",
+      "ja": "警告した、注意を促した",
+      "gloss": "",
+      "example": {
+        "en": "The supplier warned that deliveries might be late.",
+        "ja": "供給元は、納品が遅れる可能性があると警告した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "spending",
+      "pos": "名",
+      "ja": "支出、出費",
+      "gloss": "",
+      "example": {
+        "en": "The office plans to reduce travel spending next year.",
+        "ja": "その事務所は来年、出張費を減らす計画だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "semiconductor": {
+      "lemma": "semiconductor",
+      "pos": "名",
+      "ja": "半導体",
+      "note": "chip とほぼ同義の業界語"
+    },
+    "record": {
+      "lemma": "record",
+      "pos": "形",
+      "ja": "過去最高の",
+      "note": "名詞では「記録」"
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": "3か月間のこと"
+    },
+    "income": {
+      "lemma": "income",
+      "pos": "名",
+      "ja": "収入、所得",
+      "note": "net income = 純利益"
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": "rise-rose-risen"
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "kept": {
+      "lemma": "keep",
+      "pos": "動",
+      "ja": "〜し続けた",
+      "note": "keep -ing = 〜し続ける"
+    },
+    "ordering": {
+      "lemma": "order",
+      "pos": "動",
+      "ja": "注文する",
+      "note": ""
+    },
+    "artificial": {
+      "lemma": "artificial",
+      "pos": "形",
+      "ja": "人工の",
+      "note": ""
+    },
+    "intelligence": {
+      "lemma": "intelligence",
+      "pos": "名",
+      "ja": "知能",
+      "note": ""
+    },
+    "results": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "結果、業績",
+      "note": "決算では「業績」"
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": "市場や企業を分析する専門家"
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "announcement": {
+      "lemma": "announcement",
+      "pos": "名",
+      "ja": "発表",
+      "note": ""
+    },
+    "gross": {
+      "lemma": "gross",
+      "pos": "形",
+      "ja": "総〜、粗〜",
+      "note": "gross margin = 粗利益率"
+    },
+    "margin": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": ""
+    },
+    "slipped": {
+      "lemma": "slip",
+      "pos": "動",
+      "ja": "下がった",
+      "note": "少しずつ下がるニュアンス"
+    },
+    "decline": {
+      "lemma": "decline",
+      "pos": "名",
+      "ja": "低下、減少",
+      "note": "動詞でも使う"
+    },
+    "mainly": {
+      "lemma": "mainly",
+      "pos": "副",
+      "ja": "主に",
+      "note": ""
+    },
+    "advanced": {
+      "lemma": "advanced",
+      "pos": "形",
+      "ja": "先進的な",
+      "note": ""
+    },
+    "production": {
+      "lemma": "production",
+      "pos": "名",
+      "ja": "生産",
+      "note": ""
+    },
+    "managers": {
+      "lemma": "manager",
+      "pos": "名",
+      "ja": "経営陣、管理職",
+      "note": ""
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告した",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "factories": {
+      "lemma": "factory",
+      "pos": "名",
+      "ja": "工場",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "reduce": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "remains": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "〜のままである",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "譲歩を表す接続詞 although（〜だけれども）",
+    "quote": "Investors worry that large costs could reduce future profit, although demand remains strong.",
+    "quoteJa": "需要は堅調だが、巨額のコストが将来の利益を圧迫しかねないと、投資家は懸念している。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "although は「〜だけれども」を表す接続詞で、後ろに〈主語＋動詞〉の節が続く。この文では although 以下が「需要は強い」という反対の事実を示し、主節の「投資家は懸念している」と対比している。文頭にも文中にも置ける。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Although demand remains strong, investors worry about large costs.（文頭に置く形）／Investors worry about large costs despite strong demand.（despite＋名詞）。although は節（S＋V）、despite / in spite of は名詞が続く点が違う。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 では although / despite / because / so の品詞と意味の識別が頻出。空欄の後が〈S＋V〉なら although、名詞句なら despite を選ぶ。although と but は同時に使えない（×Although ..., but ...）点も要注意。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Although the project is on schedule, we need additional staff. ／ The shipment arrived on time, although some boxes were damaged."
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 TSMCとは何か、なぜ重要か",
+      "body": "TSMCは、他社が設計した半導体を専門に製造する「ファウンドリ」の世界最大手。AI向けの高性能チップの多くがここで作られており、同社の決算はAI投資ブームの強さを測る指標として世界の投資家が注目する。純利益は6四半期連続で過去最高を更新した。"
+    },
+    {
+      "heading": "📌 粗利益率と「2ナノ」の立ち上げコスト",
+      "body": "粗利益率は、売上から製造コストを引いた残りの割合。新しい製造技術（2ナノメートル世代）を量産し始める時期は、設備の償却や歩留まりの調整でコストがかさみ、利益率が一時的に下がりやすい。今回の66.4％は前四半期の67.7％から1.3ポイントの低下だが、水準自体は非常に高い。"
+    },
+    {
+      "heading": "📌 業界の動向と投資家の見方",
+      "body": "AI向け需要はNVIDIAなどの顧客企業を通じて堅調な一方、工場への設備投資は今後3年間でこれまで以上に膨らむと同社は説明している。投資家は「成長のための先行投資」と見るか「利益を圧迫する負担」と見るかで評価が割れ、好決算でも株価が下がる展開になった。"
+    },
+    {
+      "heading": "📌 日本への影響・示唆",
+      "body": "日本では熊本の工場を含め、TSMCは国内の半導体産業と深く結びつく。装置・素材メーカー（東京エレクトロン、信越化学など）にとって同社の設備投資計画は受注の先行指標となる。ビジネスパーソンには、「好決算でも将来の費用見通しで株価が動く」という決算の読み方の好例として参考になる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "TSMC posts record profit for a sixth straight quarter, beating estimates on AI boom",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html",
+      "date": "2026-10-15"
+    },
+    {
+      "title": "TSMC (TSM) Q3 2026 Earnings Call Transcript",
+      "publisher": "The Motley Fool",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/",
+      "date": "2026-10-15"
+    }
+  ]
+}
