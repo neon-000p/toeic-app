@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-15-1642",
+  "date": "2026-10-15",
+  "time": "16:42",
+  "createdAt": "2026-10-15T16:42:17+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "US Weighs Easing Sanctions on Shadow Fleet Tankers",
+    "ja": "米、影の船団への制裁緩和を検討"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The United States is considering a plan to ease sanctions on so-called shadow fleet tankers.",
+            "ja": "米国は、いわゆる「影の船団」のタンカーに対する制裁を緩和する案を検討している。"
+          },
+          {
+            "en": "These ships were punished for carrying sanctioned oil, but they would be allowed to carry other cargo.",
+            "ja": "これらの船は制裁対象の石油を運んだとして処罰されたが、それ以外の貨物であれば運べるようになる。"
+          },
+          {
+            "en": "Companies would have to apply to the Treasury Department for permission before using them.",
+            "ja": "企業は、利用する前に財務省へ許可を申請しなければならなくなる。"
+          },
+          {
+            "en": "Energy Secretary Chris Wright said officials are discussing the idea to lower record shipping costs.",
+            "ja": "クリス・ライト・エネルギー長官は、記録的な輸送コストを下げるため、当局がこの案を協議していると述べた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Freight rates for oil tankers have reached record highs, which has hurt demand for American crude.",
+            "ja": "石油タンカーの運賃は過去最高水準に達しており、これが米国産原油の需要を押し下げている。"
+          },
+          {
+            "en": "Buyers in Asia now find it too expensive to ship oil across the ocean.",
+            "ja": "アジアの買い手は、海を越えて石油を運ぶと割高になると感じている。"
+          },
+          {
+            "en": "The plan aims to move more crude oil and fuel out of the Gulf.",
+            "ja": "この案は、より多くの原油と燃料を湾岸から運び出すことを狙っている。"
+          },
+          {
+            "en": "However, analysts doubt it will help much, because many of the old ships face insurance problems.",
+            "ja": "しかし、古い船の多くは保険の問題を抱えているため、アナリストは大きな効果は望めないと見ている。"
+          },
+          {
+            "en": "The proposal is not final, and no official decision has been announced.",
+            "ja": "この案はまだ確定しておらず、正式な決定も発表されていない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What would companies have to do before using the sanctioned ships?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Report to a foreign government",
+          "ja": "外国政府に報告する"
+        },
+        {
+          "key": "B",
+          "text": "Apply to the Treasury Department",
+          "ja": "財務省に申請する"
+        },
+        {
+          "key": "C",
+          "text": "Sell their oil cargo first",
+          "ja": "先に石油貨物を売る"
+        },
+        {
+          "key": "D",
+          "text": "Replace their old ships",
+          "ja": "古い船を入れ替える"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落3文目に「Companies would have to apply to the Treasury Department for permission before using them」とあり、財務省への許可申請が必要だと分かる。A（外国政府への報告）とC（貨物の先売り）とD（船の入れ替え）は本文に一切書かれていない「本文にない情報」の引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "設問の動詞（have to do）をそのまま本文で探す。助動詞や義務表現（have to / be required to）が目印になり、該当の1文だけを読めば解ける。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "What is the main aim of the plan?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To punish more tankers",
+          "ja": "より多くの船を罰する"
+        },
+        {
+          "key": "B",
+          "text": "To raise oil prices in Asia",
+          "ja": "アジアの油価を上げる"
+        },
+        {
+          "key": "C",
+          "text": "To move more oil and fuel out of the Gulf",
+          "ja": "湾岸からより多くの石油を出す"
+        },
+        {
+          "key": "D",
+          "text": "To end all sanctions on the fleet",
+          "ja": "船団への制裁を全廃する"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落3文目「The plan aims to move more crude oil and fuel out of the Gulf.」が根拠。A（さらに処罰）は制裁を「緩和」する案なので逆。B（アジアの油価上昇）は本文にない。D（制裁の全廃）は、他の貨物に限って運べるようにするだけで、全面撤廃ではない点で誤り。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "目的を問う設問は aim / goal / to do を含む文が根拠になる。「緩和」と「全廃」のような程度の違いの選択肢に注意する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "ease",
+      "pos": "動",
+      "ja": "和らげる、緩和する",
+      "gloss": "（＝厳しさや圧力を弱めること）",
+      "example": {
+        "en": "The bank plans to ease its lending rules next year.",
+        "ja": "その銀行は来年、融資ルールを緩和する予定だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "cargo",
+      "pos": "名",
+      "ja": "貨物、積み荷",
+      "gloss": "",
+      "example": {
+        "en": "The ship carried cargo from Osaka to Singapore.",
+        "ja": "その船は大阪からシンガポールへ貨物を運んだ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "permission",
+      "pos": "名",
+      "ja": "許可",
+      "gloss": "",
+      "example": {
+        "en": "You need permission to enter the warehouse.",
+        "ja": "倉庫に入るには許可が必要だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "apply",
+      "pos": "動",
+      "ja": "申請する、応募する",
+      "gloss": "",
+      "example": {
+        "en": "Please apply to the HR office by Friday.",
+        "ja": "金曜までに人事部へ申請してください。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "freight",
+      "pos": "名",
+      "ja": "貨物運送、運賃",
+      "gloss": "（＝荷物を運ぶこと、またはその料金）",
+      "example": {
+        "en": "Freight costs rose sharply this quarter.",
+        "ja": "今四半期は運送費が急上昇した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for electric cars continues to grow.",
+        "ja": "電気自動車の需要は伸び続けている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "insurance",
+      "pos": "名",
+      "ja": "保険",
+      "gloss": "",
+      "example": {
+        "en": "The company pays for health insurance for all staff.",
+        "ja": "会社は全従業員の健康保険料を負担している。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "doubt",
+      "pos": "動",
+      "ja": "疑う、疑わしいと思う",
+      "gloss": "",
+      "example": {
+        "en": "Many experts doubt the sales target is realistic.",
+        "ja": "多くの専門家はその販売目標が現実的か疑っている。"
+      }
+    }
+  ],
+  "glossary": {
+    "considering": {
+      "lemma": "consider",
+      "pos": "動",
+      "ja": "検討している",
+      "note": ""
+    },
+    "ease": {
+      "lemma": "ease",
+      "pos": "動",
+      "ja": "緩和する",
+      "note": ""
+    },
+    "sanctions": {
+      "lemma": "sanction",
+      "pos": "名",
+      "ja": "制裁",
+      "note": ""
+    },
+    "shadow": {
+      "lemma": "shadow",
+      "pos": "名",
+      "ja": "影",
+      "note": ""
+    },
+    "fleet": {
+      "lemma": "fleet",
+      "pos": "名",
+      "ja": "船団",
+      "note": "shadow fleet＝制裁逃れで使われる老朽船団"
+    },
+    "tankers": {
+      "lemma": "tanker",
+      "pos": "名",
+      "ja": "タンカー",
+      "note": ""
+    },
+    "punished": {
+      "lemma": "punish",
+      "pos": "動",
+      "ja": "罰した",
+      "note": ""
+    },
+    "sanctioned": {
+      "lemma": "sanction",
+      "pos": "動",
+      "ja": "制裁された",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "allowed": {
+      "lemma": "allow",
+      "pos": "動",
+      "ja": "許された",
+      "note": ""
+    },
+    "apply": {
+      "lemma": "apply",
+      "pos": "動",
+      "ja": "申請する",
+      "note": ""
+    },
+    "permission": {
+      "lemma": "permission",
+      "pos": "名",
+      "ja": "許可",
+      "note": ""
+    },
+    "discussing": {
+      "lemma": "discuss",
+      "pos": "動",
+      "ja": "協議している",
+      "note": ""
+    },
+    "lower": {
+      "lemma": "lower",
+      "pos": "動",
+      "ja": "下げる",
+      "note": ""
+    },
+    "record": {
+      "lemma": "record",
+      "pos": "形",
+      "ja": "記録的な",
+      "note": "record highs＝過去最高"
+    },
+    "shipping": {
+      "lemma": "shipping",
+      "pos": "名",
+      "ja": "輸送",
+      "note": ""
+    },
+    "freight": {
+      "lemma": "freight",
+      "pos": "名",
+      "ja": "貨物運送",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "料金、率",
+      "note": ""
+    },
+    "hurt": {
+      "lemma": "hurt",
+      "pos": "動",
+      "ja": "損なった",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "crude": {
+      "lemma": "crude",
+      "pos": "名",
+      "ja": "原油",
+      "note": ""
+    },
+    "expensive": {
+      "lemma": "expensive",
+      "pos": "形",
+      "ja": "高価な",
+      "note": ""
+    },
+    "aims": {
+      "lemma": "aim",
+      "pos": "動",
+      "ja": "狙う",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "doubt": {
+      "lemma": "doubt",
+      "pos": "動",
+      "ja": "疑う",
+      "note": ""
+    },
+    "insurance": {
+      "lemma": "insurance",
+      "pos": "名",
+      "ja": "保険",
+      "note": ""
+    },
+    "final": {
+      "lemma": "final",
+      "pos": "形",
+      "ja": "最終的な",
+      "note": ""
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "発表された",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "前置詞 before＋動名詞（before using：〜する前に）と would have to",
+    "quote": "Companies would have to apply to the Treasury Department for permission before using them.",
+    "quoteJa": "企業は、利用する前に財務省へ許可を申請しなければならなくなる。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "「before＋動名詞（-ing）」は「〜する前に」を表します。before は前置詞としても接続詞としても使えますが、前置詞の場合は後ろに名詞か動名詞が来ます。本文では before using them（それらを使う前に）となっており、主語（Companies）と使う人が同じなので、接続詞を使った before they use them より短く書けます。また would have to は「（案が実行されれば）〜しなければならなくなる」という、まだ決まっていない将来の義務を表します。"
+      },
+      {
+        "heading": "書き換え・比較例",
+        "body": "① before using them ＝ before they use them（主語が同じときだけ動名詞にできる）。② 主語が違うと動名詞では不自然になります：Please call me before you leave.（×before leaving だと「誰が」が曖昧）。③ would have to は決定済みの must / have to より、「検討中・仮の話」というニュアンスが出ます。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では before / after / by の後ろに入る形（using か use か used か）を選ぶ問題が頻出です。前置詞の後ろは -ing、接続詞の後ろは S＋V、と見分けます。Part 7 では would have to のような仮定の文は、「すでに決定した事実」と「案・予定」を取り違えさせる選択肢に注意が必要です。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Employees must submit a form before entering the server room.（従業員はサーバー室に入る前に申請書を提出する必要があります。）／ Visitors will have to sign in before receiving a badge.（来訪者はバッジを受け取る前に受付をしなければなりません。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 「影の船団（shadow fleet）」とは",
+      "body": "制裁を避けるために、ロシア・イラン・ベネズエラなどの石油を運ぶ目的で使われてきた古いタンカーの集まりを指します。所有者がわかりにくく、保険や整備の状況も不透明な船が多いのが特徴です。米国はこうした船そのものに制裁を科してきました。今回の案は、その船が「制裁対象でない貨物」を運ぶことを、財務省への申請を条件に認めるというものです。"
+    },
+    {
+      "heading": "📌 なぜ今、緩和を検討するのか",
+      "body": "タンカー運賃（freight rate）が記録的な高さになり、米国産原油がアジアなど遠い買い手にとって割高になっています。運べる船が増えれば運賃が下がり、湾岸からの原油や燃料の流れが増えるという期待があります。制裁の「穴」を広げる政策にも見えるため、制裁の効果と物価対策のバランスをどう取るかが問われています。"
+    },
+    {
+      "heading": "📌 業界・競合の見方",
+      "body": "アナリストは、対象の船は老朽化が進み、保険や港の受け入れに問題を抱えるものが多いため、米国が許可しても船の供給はあまり増えないと見ています。また、英国や欧州の規制が残る限り、使える航路や港は限られます。つまり、制度が変わっても現場で実際に使えるかは別問題だという点が重要です。なお、現時点では案の検討段階で、正式決定は発表されていません。"
+    },
+    {
+      "heading": "📌 日本への影響と投資家・経営者の視点",
+      "body": "日本は原油の多くを中東からの輸入に頼っており、運賃の高騰は電気・ガス料金やガソリン価格、製造業のコストに跳ね返ります。商社や海運、石油元売り各社にとっては、運賃の動きが業績見通しを左右します。投資家は、①制裁緩和の正式決定の有無、②運賃（タンカー市況）の下落、③原油価格への影響、の3点を注視するとよいでしょう。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "US weighs easing shadow fleet sanctions to cut record tanker freight rates",
+      "publisher": "investingLive",
+      "url": "https://investinglive.com/commodities/us-weighs-easing-shadow-fleet-sanctions-to-cut-record-tanker-freight-rates/",
+      "date": "2026-10-15"
+    },
+    {
+      "title": "U.S. weighs easing sanctions on shadow fleet to curb shipping costs",
+      "publisher": "Reuters (Investing.com)",
+      "url": "https://in.investing.com/news/commodities-news/us-weighs-easing-sanctions-on-shadow-fleet-to-curb-shipping-costs--reuters-5634110",
+      "date": "2026-10-15"
+    },
+    {
+      "title": "Oil Prices Fall as Trump Considers Easing Sanctions on Shadow Fleet Tankers",
+      "publisher": "OilPrice.com",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Trump-Considers-Easing-Sanctions-on-Shadow-Fleet-Tankers.html",
+      "date": "2026-10-15"
+    }
+  ]
+}
