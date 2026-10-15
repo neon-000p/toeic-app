@@ -458,5 +458,23 @@
       "url": "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/",
       "date": "2026-10-15"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-16-0541/00.mp3",
+      "audio/2026-10-16-0541/01.mp3",
+      "audio/2026-10-16-0541/02.mp3",
+      "audio/2026-10-16-0541/03.mp3",
+      "audio/2026-10-16-0541/04.mp3",
+      "audio/2026-10-16-0541/05.mp3",
+      "audio/2026-10-16-0541/06.mp3",
+      "audio/2026-10-16-0541/07.mp3",
+      "audio/2026-10-16-0541/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 218229,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-15T20:43:21.174Z",
+    "trimmed": true
+  }
 }
