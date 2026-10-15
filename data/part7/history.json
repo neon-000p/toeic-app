@@ -1,8 +1,23 @@
 {
   "schemaVersion": 1,
   "type": "part7-history",
-  "updatedAt": "2026-10-09T04:18:20+09:00",
+  "updatedAt": "2026-10-16T04:14:00+09:00",
   "items": [
+    {
+      "id": "2026-10-16-0414",
+      "date": "2026-10-16",
+      "scene": "記事｜図書館の夜間開館時間の延長",
+      "format": "single",
+      "docTypes": [
+        "article"
+      ],
+      "types": [
+        "gist",
+        "detail",
+        "insert",
+        "detail"
+      ]
+    },
     {
       "id": "2026-10-09-0415",
       "date": "2026-10-09",

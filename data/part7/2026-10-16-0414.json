@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-10-16-0414",
+  "date": "2026-10-16",
+  "time": "04:14",
+  "createdAt": "2026-10-16T04:14:00+09:00",
+  "sample": false,
+  "format": "single",
+  "scene": "記事｜図書館の夜間開館時間の延長",
+  "intro": "Questions 1-4 refer to the following article.",
+  "docs": [
+    {
+      "docType": "article",
+      "label": "記事",
+      "header": [
+        {
+          "label": "",
+          "text": "Eastgate Library to Stay Open Later"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Eastgate Public Library will extend its weekday opening hours starting on 2 February, the library director announced on Monday.",
+              "ja": "イーストゲート公立図書館は、2月2日から平日の開館時間を延長すると、館長が月曜日に発表した。"
+            },
+            {
+              "en": "The library, which currently closes at 6:00 p.m., will stay open until 9:00 p.m. from Monday to Thursday.",
+              "ja": "現在は午後6時に閉まる同館は、月曜から木曜まで午後9時まで開館する。",
+              "pos": 1
+            },
+            {
+              "en": "The change follows a survey of 600 residents last autumn, in which nearly half said they could not visit during the day because of work.",
+              "ja": "この変更は昨年秋に600人の住民を対象に行われた調査を受けたもので、半数近くが仕事のために日中は来館できないと答えた。",
+              "pos": 2
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "To cover the longer hours, the library will hire four part-time staff members and add a quiet study room on the second floor.",
+              "ja": "開館時間の延長に対応するため、同館は非常勤職員4人を雇い、2階に静かな学習室を設ける。",
+              "pos": 3
+            },
+            {
+              "en": "The additional costs will be paid by a grant from the Eastgate Community Fund, so there will be no increase in local taxes.",
+              "ja": "追加の費用はイーストゲート地域基金からの助成金で賄われるため、地方税の増額はない。",
+              "pos": 4
+            },
+            {
+              "en": "Friday and Saturday hours will remain the same, and the library will stay closed on Sundays.",
+              "ja": "金曜と土曜の開館時間は変わらず、日曜は引き続き休館となる。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Residents who would like to apply for the part-time positions should send a résumé to the library office by 15 January.",
+              "ja": "非常勤の職に応募したい住民は、1月15日までに履歴書を図書館の事務室へ送ること。"
+            },
+            {
+              "en": "A reception to introduce the new schedule will be held at the main desk on 1 February at 5:30 p.m.",
+              "ja": "新しい開館時間を紹介する歓談会が、2月1日の午後5時30分にメインカウンターで開かれる。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the purpose of the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To advertise part-time positions",
+          "ja": "非常勤職の求人を宣伝すること"
+        },
+        {
+          "key": "B",
+          "text": "To describe a community fund",
+          "ja": "地域基金について説明すること"
+        },
+        {
+          "key": "C",
+          "text": "To announce longer opening hours",
+          "ja": "開館時間の延長を知らせること"
+        },
+        {
+          "key": "D",
+          "text": "To introduce a new study room",
+          "ja": "新しい学習室を紹介すること"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "第1段落の最初の文で、開館時間（weekday opening hours）を延長すると発表している。求人、基金、学習室はいずれも第2・第3段落で触れられる補足情報で、記事全体の目的ではない。",
+      "tip": "目的を問う設問は、見出しと第1段落の最初の文を読めばほぼ決まる。後ろの細部は補足にすぎないことが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why did the library decide to change its hours?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Many residents could not visit during the day.",
+          "ja": "多くの住民が日中に来館できなかった。"
+        },
+        {
+          "key": "B",
+          "text": "The local tax rate was reduced.",
+          "ja": "地方税の税率が引き下げられた。"
+        },
+        {
+          "key": "C",
+          "text": "A community fund requested the change.",
+          "ja": "地域基金が変更を求めた。"
+        },
+        {
+          "key": "D",
+          "text": "More staff members were hired.",
+          "ja": "職員がさらに雇われた。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "第1段落の最後の文に、調査で半数近くが仕事のために日中は来館できないと答えたとある。基金は費用を負担するだけで変更を求めたわけではなく、職員の採用は変更の理由ではなく対応策である。",
+      "tip": "理由を問う設問は、because や follows などの理由を示す語の前後に根拠がある。選択肢の語が本文にあっても、役割が違えば誤答。"
+    },
+    {
+      "id": "q3",
+      "type": "insert",
+      "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "insert": "Several of them also asked for a quiet place to study.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "[1]",
+          "ja": "1の位置"
+        },
+        {
+          "key": "B",
+          "text": "[2]",
+          "ja": "2の位置"
+        },
+        {
+          "key": "C",
+          "text": "[3]",
+          "ja": "3の位置"
+        },
+        {
+          "key": "D",
+          "text": "[4]",
+          "ja": "4の位置"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "挿入文の them は人々を指すので、直前に人の話が必要。[2] の前の文は調査に答えた600人の住民の話で、them が受けられる。しかもその後の第2段落に静かな学習室を作るとあり、要望への対応として自然につながる。[1] や [4] の前には指す先となる人がいない。",
+      "tip": "挿入文の them / they / this などは、直前にそれが指す先があるかを確かめる。"
+    },
+    {
+      "id": "q4",
+      "type": "detail",
+      "prompt": "How will the library pay for the additional costs?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "By raising local taxes",
+          "ja": "地方税を引き上げて"
+        },
+        {
+          "key": "B",
+          "text": "By closing on Saturdays",
+          "ja": "土曜日を休館にして"
+        },
+        {
+          "key": "C",
+          "text": "By charging a fee for the study room",
+          "ja": "学習室の利用料を取って"
+        },
+        {
+          "key": "D",
+          "text": "By using a grant from a community fund",
+          "ja": "地域基金からの助成金を使って"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第2段落の2文目に、追加の費用は Eastgate Community Fund の助成金で賄われ、地方税の増額はないとある。A は本文と反対で、B は土曜の開館時間は変わらないとあるので誤り。",
+      "tip": "手段を問う設問は paid by / funded by などの前置詞のあとが根拠。本文と逆の内容の選択肢（税の増額）は誤答の典型。"
+    }
+  ],
+  "glossary": {
+    "extend": {
+      "lemma": "extend",
+      "pos": "動",
+      "ja": "〜を延長する、広げる",
+      "note": "",
+      "example": {
+        "en": "The bank plans to extend its Saturday hours until the end of the year.",
+        "ja": "その銀行は年末まで土曜日の営業時間を延長する予定だ。"
+      }
+    },
+    "opening hours": {
+      "lemma": "opening hours",
+      "pos": "熟",
+      "ja": "開館時間、営業時間",
+      "note": "",
+      "example": {
+        "en": "Please check the opening hours before visiting the museum.",
+        "ja": "博物館を訪れる前に開館時間を確認してください。"
+      }
+    },
+    "residents": {
+      "lemma": "resident",
+      "pos": "名",
+      "ja": "住民",
+      "note": "",
+      "example": {
+        "en": "Residents are asked to recycle glass and paper separately.",
+        "ja": "住民はガラスと紙を分けてリサイクルするよう求められている。"
+      }
+    },
+    "part-time": {
+      "lemma": "part-time",
+      "pos": "形",
+      "ja": "非常勤の、パートタイムの",
+      "note": "",
+      "example": {
+        "en": "He took a part-time job at a bookstore after graduation.",
+        "ja": "彼は卒業後、書店で非常勤の仕事に就いた。"
+      }
+    },
+    "grant": {
+      "lemma": "grant",
+      "pos": "名",
+      "ja": "助成金",
+      "note": "動詞では「許可する」",
+      "example": {
+        "en": "The university received a grant to expand its research program.",
+        "ja": "その大学は研究計画を拡大するための助成金を受け取った。"
+      }
+    },
+    "community fund": {
+      "lemma": "community fund",
+      "pos": "熟",
+      "ja": "地域基金",
+      "note": "",
+      "example": {
+        "en": "The community fund supports small projects run by local groups.",
+        "ja": "その地域基金は、地元団体が行う小規模な事業を支援している。"
+      }
+    },
+    "local taxes": {
+      "lemma": "local tax",
+      "pos": "熟",
+      "ja": "地方税",
+      "note": "",
+      "example": {
+        "en": "Local taxes help pay for roads, schools, and public parks.",
+        "ja": "地方税は道路や学校、公園の費用に充てられる。"
+      }
+    },
+    "remain the same": {
+      "lemma": "remain the same",
+      "pos": "熟",
+      "ja": "変わらないままである",
+      "note": "",
+      "example": {
+        "en": "Prices will remain the same until the end of the sale.",
+        "ja": "価格はセール終了まで変わらない。"
+      }
+    },
+    "apply for": {
+      "lemma": "apply for",
+      "pos": "熟",
+      "ja": "〜に応募する、申請する",
+      "note": "",
+      "example": {
+        "en": "You can apply for the position through our Web site.",
+        "ja": "その職には当社のウェブサイトから応募できます。"
+      }
+    },
+    "study room": {
+      "lemma": "study room",
+      "pos": "熟",
+      "ja": "学習室、自習室",
+      "note": "",
+      "example": {
+        "en": "The study room can be reserved for up to two hours.",
+        "ja": "自習室は最長2時間まで予約できる。"
+      }
+    }
+  },
+  "point": {
+    "lead": "設問を先に読み、根拠の文を探してから選択肢を選ぶ",
+    "items": [
+      {
+        "title": "挿入文は代名詞と接続語が手がかり",
+        "body": "them / this / the same などは直前に指す先が必要。位置の候補を、指す先がある場所に絞ってから、前後のつながりを確認する。"
+      },
+      {
+        "title": "設問の順番は本文の順番に近い",
+        "body": "q2 から q4 は本文の前から後ろへ進む。1問解いたら、続きはその根拠より後ろを探すと速い。"
+      },
+      {
+        "title": "本文と逆の選択肢は誤答の定番",
+        "body": "「税を上げる」のように、本文が否定している内容を選択肢に混ぜるのは典型的な誤答。根拠の文で否定されていないか確かめる。"
+      }
+    ]
+  }
+}
