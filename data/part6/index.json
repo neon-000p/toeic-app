@@ -1,8 +1,18 @@
 {
   "schemaVersion": 1,
   "type": "part6",
-  "updatedAt": "2026-10-09T04:17:25+09:00",
+  "updatedAt": "2026-10-16T04:14:00+09:00",
   "items": [
+    {
+      "id": "2026-10-16-0414",
+      "no": 10,
+      "date": "2026-10-16",
+      "time": "04:14",
+      "docType": "advertisement",
+      "kind": "広告",
+      "questions": 4,
+      "file": "2026-10-16-0414.json"
+    },
     {
       "id": "2026-10-09-0415",
       "no": 9,

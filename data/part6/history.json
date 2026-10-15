@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
   "type": "part6-history",
-  "updatedAt": "2026-10-09T04:17:25+09:00",
+  "updatedAt": "2026-10-16T04:14:00+09:00",
   "items": [
+    {
+      "id": "2026-10-16-0414",
+      "date": "2026-10-16",
+      "scene": "広告｜社会人向け夜間ビジネス英語コースの受講生募集",
+      "docType": "advertisement",
+      "types": [
+        "verbal",
+        "sentence",
+        "conj",
+        "vocab"
+      ]
+    },
     {
       "id": "2026-10-09-0415",
       "date": "2026-10-09",

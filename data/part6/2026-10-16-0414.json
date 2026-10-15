@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-10-16-0414",
+  "date": "2026-10-16",
+  "time": "04:14",
+  "createdAt": "2026-10-16T04:14:00+09:00",
+  "sample": false,
+  "docType": "advertisement",
+  "scene": "広告｜社会人向け夜間ビジネス英語コースの受講生募集",
+  "intro": "Questions 1-4 refer to the following advertisement.",
+  "header": [
+    {
+      "label": "",
+      "text": "Evening Business English at Harbor Lane Language School"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "Do you want to improve your business English without disrupting your work schedule?",
+          "ja": "仕事の予定を乱さずに、ビジネス英語を上達させたいと思っていませんか。"
+        },
+        {
+          "en": "Harbor Lane Language School is proud ------- a new evening course for working professionals, starting on 4 November.",
+          "ja": "ハーバー・レーン語学学校は、11月4日開講の社会人向け新夜間コースを発表できることを誇りに思います。",
+          "q": 1
+        },
+        {
+          "en": "Classes meet every Tuesday and Thursday from 7:00 to 9:00 p.m. at our downtown campus, a short walk from Central Station.",
+          "ja": "授業は毎週火曜と木曜の午後7時から9時まで、中央駅から歩いてすぐの市内中心部のキャンパスで行います。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Each class focuses on practical skills such as writing e-mails and leading meetings.",
+          "ja": "各回の授業では、メールの書き方や会議の進行といった実践的なスキルに重点を置きます。"
+        },
+        {
+          "en": "Our teachers all have at least five years of experience in international business.",
+          "ja": "講師は全員、国際ビジネスで5年以上の経験があります。"
+        },
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 2
+        },
+        {
+          "en": "As a result, lessons are realistic and easy to apply at work.",
+          "ja": "そのため、授業は現実的で、仕事ですぐに活かせます。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "The regular fee for the full evening course is 480 dollars.",
+          "ja": "通常の受講料は480ドルです。"
+        },
+        {
+          "en": "-------, students who register before 25 October will receive a 15 percent discount.",
+          "ja": "ただし、10月25日までに登録した受講生は15パーセント割引になります。",
+          "q": 3
+        },
+        {
+          "en": "Because seats are limited to twelve per class, interested professionals are encouraged to ------- as soon as possible.",
+          "ja": "定員は1クラス12名のため、ご興味のある方はできるだけお早めにご入会ください。",
+          "q": 4
+        },
+        {
+          "en": "To reserve your place, visit our Web site or call the front desk at 555-0143.",
+          "ja": "お申し込みは、当校のウェブサイトか受付の555-0143までお電話ください。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "verbal",
+      "choices": [
+        {
+          "key": "A",
+          "text": "announce",
+          "ja": "発表する"
+        },
+        {
+          "key": "B",
+          "text": "announcing",
+          "ja": "発表している"
+        },
+        {
+          "key": "C",
+          "text": "to announce",
+          "ja": "発表することを"
+        },
+        {
+          "key": "D",
+          "text": "announced",
+          "ja": "発表した"
+        }
+      ],
+      "answer": "C",
+      "explanation": "be proud to ~ で「〜することを誇りに思う」。感情を表す形容詞 proud のあとは to 不定詞が続くので to announce。announcing は前置詞 of のあとなら入るが、ここには of が無い。",
+      "tip": "形容詞（proud / pleased / ready / eager）のあとに動詞が来るなら to 不定詞。空所の直前の形容詞を見る。"
+    },
+    {
+      "id": "q2",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Registration for the evening course closes on 25 October at noon.",
+          "ja": "夜間コースの登録は10月25日の正午に締め切られる。"
+        },
+        {
+          "key": "B",
+          "text": "Many of them have also worked abroad and know what employers expect.",
+          "ja": "その多くは海外で働いた経験もあり、雇用主が何を求めるかを知っている。"
+        },
+        {
+          "key": "C",
+          "text": "Students who miss a class may attend another session free of charge.",
+          "ja": "授業を欠席した受講生は、別の回に無料で出席できる。"
+        },
+        {
+          "key": "D",
+          "text": "The downtown campus was renovated last year with several new classrooms.",
+          "ja": "市内中心部のキャンパスは昨年、新しい教室をいくつか備えて改装された。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "直前の「講師は全員国際ビジネスで5年以上の経験がある」を Many of them で受け、直後の As a result, lessons are realistic（その結果、授業は現実的）の理由にもなるのは B。A は登録の締め切りで、第3段落の話題。C と D は講師の経歴にも授業の現実味にもつながらない。",
+      "tip": "一文挿入は、前の文からの代名詞（them）と、後ろの文の As a result のような接続語の両方に合うものを選ぶ。"
+    },
+    {
+      "id": "q3",
+      "type": "conj",
+      "choices": [
+        {
+          "key": "A",
+          "text": "However",
+          "ja": "しかし、ただし"
+        },
+        {
+          "key": "B",
+          "text": "Therefore",
+          "ja": "したがって"
+        },
+        {
+          "key": "C",
+          "text": "For example",
+          "ja": "たとえば"
+        },
+        {
+          "key": "D",
+          "text": "Meanwhile",
+          "ja": "その間に"
+        }
+      ],
+      "answer": "A",
+      "explanation": "前の文は「通常の受講料は480ドル」で、空所のあとは「割引になる」。通常料金に対して条件つきの例外を示すので、逆接の However が合う。Therefore は因果関係を表すが、料金から割引が導かれるわけではない。",
+      "tip": "接続副詞は、空所の文だけでなく前の文との関係（逆接・追加・因果）で決める。前の文へ戻って確認する。"
+    },
+    {
+      "id": "q4",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "appoint",
+          "ja": "任命する"
+        },
+        {
+          "key": "B",
+          "text": "transfer",
+          "ja": "移す"
+        },
+        {
+          "key": "C",
+          "text": "inform",
+          "ja": "知らせる"
+        },
+        {
+          "key": "D",
+          "text": "enroll",
+          "ja": "入会する、登録する"
+        }
+      ],
+      "answer": "D",
+      "explanation": "「定員があるので、できるだけ早く〜するよう勧める」の流れで、空所のあとに目的語が無く、受講に申し込む意味になるのは enroll。inform は inform + 人 の形で目的語を必要とし、appoint と transfer も目的語が要る。",
+      "tip": "空所のあとに目的語が無ければ、自動詞として使える語を選ぶ。enroll in / enroll for は申し込みの文で頻出。"
+    }
+  ],
+  "glossary": {
+    "working professionals": {
+      "lemma": "working professional",
+      "pos": "熟",
+      "ja": "社会人",
+      "note": "",
+      "example": {
+        "en": "The seminar is designed for working professionals who study after hours.",
+        "ja": "そのセミナーは、仕事のあとに学ぶ社会人向けに作られている。"
+      }
+    },
+    "at least": {
+      "lemma": "at least",
+      "pos": "熟",
+      "ja": "少なくとも",
+      "note": "",
+      "example": {
+        "en": "Please book your ticket at least a week before departure.",
+        "ja": "出発の少なくとも1週間前には切符を予約してください。"
+      }
+    },
+    "a short walk from": {
+      "lemma": "a short walk from",
+      "pos": "熟",
+      "ja": "〜から歩いてすぐ",
+      "note": "",
+      "example": {
+        "en": "Our new office is a short walk from the main station.",
+        "ja": "新しい事務所は主要駅から歩いてすぐのところにある。"
+      }
+    },
+    "as a result": {
+      "lemma": "as a result",
+      "pos": "熟",
+      "ja": "その結果",
+      "note": "",
+      "example": {
+        "en": "As a result of the merger, the two teams now share one office.",
+        "ja": "合併の結果、2つのチームは今では1つの事務所を共有している。"
+      }
+    },
+    "limited to": {
+      "lemma": "be limited to",
+      "pos": "熟",
+      "ja": "〜に限られる",
+      "note": "",
+      "example": {
+        "en": "Entry to the laboratory is limited to authorized staff only.",
+        "ja": "実験室への立ち入りは、許可された職員のみに限られる。"
+      }
+    },
+    "as soon as possible": {
+      "lemma": "as soon as possible",
+      "pos": "熟",
+      "ja": "できるだけ早く",
+      "note": "",
+      "example": {
+        "en": "Please return the signed form as soon as possible.",
+        "ja": "署名した書類をできるだけ早くご返送ください。"
+      }
+    },
+    "front desk": {
+      "lemma": "front desk",
+      "pos": "熟",
+      "ja": "受付",
+      "note": "",
+      "example": {
+        "en": "Visitors should leave their luggage at the front desk.",
+        "ja": "来訪者は荷物を受付に預けてください。"
+      }
+    },
+    "reserve your place": {
+      "lemma": "reserve a place",
+      "pos": "熟",
+      "ja": "席を確保する、予約する",
+      "note": "",
+      "example": {
+        "en": "Call us today to reserve your place at the workshop.",
+        "ja": "本日お電話いただければ、ワークショップの席を確保できます。"
+      }
+    },
+    "focuses on": {
+      "lemma": "focus on",
+      "pos": "熟",
+      "ja": "〜に重点を置く",
+      "note": "",
+      "example": {
+        "en": "The training session focuses on customer service skills.",
+        "ja": "その研修は接客スキルに重点を置いている。"
+      }
+    },
+    "disrupting": {
+      "lemma": "disrupt",
+      "pos": "動",
+      "ja": "〜を乱す、妨げる",
+      "note": "",
+      "example": {
+        "en": "Heavy snow disrupted train services across the region this morning.",
+        "ja": "大雪が今朝、地域全体の列車の運行を乱した。"
+      }
+    }
+  },
+  "point": {
+    "lead": "空所の文で決まらないときは、前の文と後ろの文に戻る",
+    "items": [
+      {
+        "title": "一文挿入は前後の両方につなぐ",
+        "body": "前の文から受ける代名詞（them など）と、後ろの文の接続語（As a result）の両方に合う文を選ぶ。話題が合うだけの文は誤答。"
+      },
+      {
+        "title": "接続副詞は前の文との関係で決める",
+        "body": "However・Therefore・For example は空所の文だけでは決まらない。前の文が何を述べ、空所の文がそれにどう続くかを確認する。"
+      },
+      {
+        "title": "空所の直前直後の品詞を見る",
+        "body": "be proud の後ろは to 不定詞、目的語が無ければ自動詞、のように、前後の形から候補を絞ってから意味を確認する。"
+      }
+    ]
+  }
+}
