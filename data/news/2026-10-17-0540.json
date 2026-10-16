@@ -454,5 +454,22 @@
       "url": "https://grafa.com/en/news/united-states/brent-crude-105-oil-prices-hormuz-tanker-attacks",
       "date": "2026-10-16"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-17-0540/00.mp3",
+      "audio/2026-10-17-0540/01.mp3",
+      "audio/2026-10-17-0540/02.mp3",
+      "audio/2026-10-17-0540/03.mp3",
+      "audio/2026-10-17-0540/04.mp3",
+      "audio/2026-10-17-0540/05.mp3",
+      "audio/2026-10-17-0540/06.mp3",
+      "audio/2026-10-17-0540/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 211272,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-16T20:44:31.362Z",
+    "trimmed": true
+  }
 }
