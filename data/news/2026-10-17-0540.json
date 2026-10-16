@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-17-0540",
+  "date": "2026-10-17",
+  "time": "05:40",
+  "createdAt": "2026-10-17T05:40:00+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Oil Stays Above $100 as Tanker Attacks Rattle Hormuz",
+    "ja": "タンカー攻撃で原油100ドル超が続く"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oil prices headed for a weekly gain on Friday as attacks on ships continued near the Strait of Hormuz.",
+            "ja": "原油価格は、ホルムズ海峡付近で船舶への攻撃が続くなか、金曜日に週間での上昇に向かった。"
+          },
+          {
+            "en": "Brent crude, the global benchmark, traded at about $105 a barrel.",
+            "ja": "世界の指標であるブレント原油は、1バレル＝約105ドルで取引された。"
+          },
+          {
+            "en": "Traders also reacted to government data showing that US crude stocks fell by about 8.6 million barrels last week.",
+            "ja": "トレーダーは、先週の米国の原油在庫が約860万バレル減ったことを示す政府統計にも反応した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The Strait of Hormuz is a narrow sea route that carries a large share of the world's oil.",
+            "ja": "ホルムズ海峡は、世界の石油の大きな割合を運ぶ狭い海上ルートである。"
+          },
+          {
+            "en": "Repeated attacks have kept prices above $100 a barrel, and shipping through the route has dropped sharply.",
+            "ja": "相次ぐ攻撃により価格は1バレル＝100ドルを上回ったままで、このルートを通る船の往来は急減している。"
+          },
+          {
+            "en": "To calm the market, the International Energy Agency agreed to release 100 million barrels from its emergency reserves.",
+            "ja": "市場を落ち着かせるため、国際エネルギー機関は緊急備蓄から1億バレルを放出することで合意した。"
+          },
+          {
+            "en": "Higher oil prices raise costs for airlines, shipping firms, and factories.",
+            "ja": "原油高は、航空会社、海運会社、工場のコストを押し上げる。"
+          },
+          {
+            "en": "Analysts expect prices to stay high until ships can pass safely again.",
+            "ja": "アナリストは、船が再び安全に通れるようになるまで価格は高止まりすると見ている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did US crude stocks fall last week?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 3.2 million barrels",
+          "ja": "約320万バレル"
+        },
+        {
+          "key": "B",
+          "text": "About 8.6 million barrels",
+          "ja": "約860万バレル"
+        },
+        {
+          "key": "C",
+          "text": "About 11.6 million barrels",
+          "ja": "約1,160万バレル"
+        },
+        {
+          "key": "D",
+          "text": "About 100 million barrels",
+          "ja": "約1億バレル"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落の3文目に「US crude stocks fell by about 8.6 million barrels last week」とあるため、Bが正解。Aと Cは本文にない数字。Dの100 million barrelsは本文に出てくるが、これは国際エネルギー機関が緊急備蓄から放出することで合意した量であり、米国の原油在庫の減少幅ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字を問う問題は、同じ本文に別の数字（ここでは100 million）が出てくる点がひっかけ。数字が何の量なのか、直前の主語まで確認して選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did the International Energy Agency agree to release oil from its reserves?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To make more ships pass through the Strait",
+          "ja": "より多くの船を海峡に通すため"
+        },
+        {
+          "key": "B",
+          "text": "To help calm the market",
+          "ja": "市場を落ち着かせるため"
+        },
+        {
+          "key": "C",
+          "text": "To lower costs for airlines only",
+          "ja": "航空会社だけのコスト削減"
+        },
+        {
+          "key": "D",
+          "text": "To stop the attacks on tankers",
+          "ja": "タンカーへの攻撃を止めるため"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落3文目の冒頭「To calm the market」が目的を表している（to不定詞の副詞的用法）。Aは船の往来を増やすための措置とは書かれていない。Cは航空会社「だけ」が誤りで、本文は航空・海運・工場の3つを挙げている。Dは備蓄の放出で攻撃を止められるとは書かれていない。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "理由・目的を問う問題は、To ～,（目的）や because / so that といった目的・理由を示す表現の周辺に答えがある。それを探してから選択肢と照合する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "基準、指標",
+      "gloss": "（＝比べるときの目安になるもの）",
+      "example": {
+        "en": "Our sales figures are above the industry benchmark.",
+        "ja": "当社の売上は業界の基準を上回っている。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "reacted",
+      "pos": "動",
+      "ja": "反応した（react）",
+      "gloss": "",
+      "example": {
+        "en": "Investors reacted quickly to the news.",
+        "ja": "投資家はそのニュースにすぐ反応した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "reserves",
+      "pos": "名",
+      "ja": "備蓄、蓄え",
+      "gloss": "（＝いざという時のためにとっておく分）",
+      "example": {
+        "en": "The company keeps cash reserves for emergencies.",
+        "ja": "その会社は緊急時に備えて現金の蓄えを持っている。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "release",
+      "pos": "動",
+      "ja": "放出する、公開する",
+      "gloss": "",
+      "example": {
+        "en": "The company will release its new product in March.",
+        "ja": "同社は3月に新製品を発売する。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "gloss": "",
+      "example": {
+        "en": "Demand for the product dropped sharply last month.",
+        "ja": "その商品の需要は先月急激に落ち込んだ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "analysts",
+      "pos": "名",
+      "ja": "アナリスト、分析担当者",
+      "gloss": "",
+      "example": {
+        "en": "Analysts expect the company to hire more staff.",
+        "ja": "アナリストは同社が人員を増やすと見ている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "raise",
+      "pos": "動",
+      "ja": "引き上げる、増やす",
+      "gloss": "",
+      "example": {
+        "en": "The new tax may raise the price of imported goods.",
+        "ja": "新しい税は輸入品の価格を押し上げるかもしれない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "calm",
+      "pos": "動",
+      "ja": "落ち着かせる",
+      "gloss": "",
+      "example": {
+        "en": "The manager tried to calm the angry customer.",
+        "ja": "店長は怒った客を落ち着かせようとした。"
+      }
+    }
+  ],
+  "glossary": {
+    "headed": {
+      "lemma": "head",
+      "pos": "動",
+      "ja": "向かう",
+      "note": "head for ～で、～に向かう"
+    },
+    "weekly": {
+      "lemma": "weekly",
+      "pos": "形",
+      "ja": "週間の",
+      "note": ""
+    },
+    "gain": {
+      "lemma": "gain",
+      "pos": "名",
+      "ja": "上昇、増加",
+      "note": ""
+    },
+    "attacks": {
+      "lemma": "attack",
+      "pos": "名",
+      "ja": "攻撃",
+      "note": ""
+    },
+    "continued": {
+      "lemma": "continue",
+      "pos": "動",
+      "ja": "続く",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "指標",
+      "note": ""
+    },
+    "traded": {
+      "lemma": "trade",
+      "pos": "動",
+      "ja": "取引される",
+      "note": ""
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "名",
+      "ja": "バレル（原油の単位）",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー",
+      "note": ""
+    },
+    "reacted": {
+      "lemma": "react",
+      "pos": "動",
+      "ja": "反応した",
+      "note": "react to ～で「～に反応する」"
+    },
+    "government": {
+      "lemma": "government",
+      "pos": "名",
+      "ja": "政府",
+      "note": ""
+    },
+    "data": {
+      "lemma": "data",
+      "pos": "名",
+      "ja": "データ、統計",
+      "note": ""
+    },
+    "showing": {
+      "lemma": "show",
+      "pos": "動",
+      "ja": "示す",
+      "note": ""
+    },
+    "crude": {
+      "lemma": "crude",
+      "pos": "名",
+      "ja": "原油",
+      "note": "crude oil の略した言い方"
+    },
+    "stocks": {
+      "lemma": "stock",
+      "pos": "名",
+      "ja": "在庫",
+      "note": "ここでは株ではなく「在庫」の意味"
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下がった",
+      "note": "fall-fell-fallen"
+    },
+    "narrow": {
+      "lemma": "narrow",
+      "pos": "形",
+      "ja": "狭い",
+      "note": ""
+    },
+    "route": {
+      "lemma": "route",
+      "pos": "名",
+      "ja": "ルート、経路",
+      "note": ""
+    },
+    "carries": {
+      "lemma": "carry",
+      "pos": "動",
+      "ja": "運ぶ",
+      "note": ""
+    },
+    "share": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "割合、シェア",
+      "note": ""
+    },
+    "repeated": {
+      "lemma": "repeated",
+      "pos": "形",
+      "ja": "繰り返される",
+      "note": ""
+    },
+    "kept": {
+      "lemma": "keep",
+      "pos": "動",
+      "ja": "保った",
+      "note": "keep O C で「OをCのままにする」"
+    },
+    "shipping": {
+      "lemma": "shipping",
+      "pos": "名",
+      "ja": "海運、船の往来",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "落ち込んだ",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "calm": {
+      "lemma": "calm",
+      "pos": "動",
+      "ja": "落ち着かせる",
+      "note": ""
+    },
+    "release": {
+      "lemma": "release",
+      "pos": "動",
+      "ja": "放出する",
+      "note": ""
+    },
+    "reserves": {
+      "lemma": "reserve",
+      "pos": "名",
+      "ja": "備蓄",
+      "note": ""
+    },
+    "emergency": {
+      "lemma": "emergency",
+      "pos": "形",
+      "ja": "緊急の",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "コスト、費用",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "safely": {
+      "lemma": "safely",
+      "pos": "副",
+      "ja": "安全に",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "第5文型 SVOC（keep O C：OをCの状態に保つ）",
+    "quote": "Repeated attacks have kept prices above $100 a barrel, and shipping through the route has dropped sharply.",
+    "quoteJa": "相次ぐ攻撃により価格は1バレル＝100ドルを上回ったままで、このルートを通る船の往来は急減している。",
+    "blocks": [
+      {
+        "heading": "構文：keep ＋ O ＋ C",
+        "body": "kept prices above $100 は「keep（S）＋ O（prices）＋ C（above $100）」の形で、「OをCの状態に保ち続ける」という意味です。Cには形容詞・前置詞句・現在分詞などが入ります。ここでは前置詞句 above $100 a barrel がCの役割をしています。現在完了形 have kept により、「これまでずっとその状態を保ってきた」という継続の意味も加わります。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Prices have stayed above $100.（価格は100ドル超にとどまっている）と比べると、kept を使った文は「攻撃が原因で価格をその状態に保った」と、原因の側（attacks）を主語にしている点が違います。同じ形の仲間に、make O C（OをCにする）、leave O C（OをCのままにしておく）、find O C（OがCだとわかる）があります。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、keep O ＋ 形容詞（keep the office open など）の空所補充が出ます。ここで副詞を選ぶ誤答に注意してください（O の後ろは形容詞）。Part 7 では、keep A informed（Aに情報を伝え続ける）のように、keep ＋ O ＋ 過去分詞の形も頻出です。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "The new system will keep our customers satisfied.（新システムは顧客の満足を保つだろう。）／ Please keep the door closed during the meeting.（会議中はドアを閉めたままにしてください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① ホルムズ海峡とは何か",
+      "body": "ホルムズ海峡は、ペルシャ湾とアラビア海をつなぐ細い海上ルートで、世界の石油輸送の大きな割合が通ります。ここで船が襲われると、保険料や運賃が上がり、船が通るのを避ける動きも広がります。供給が実際に止まらなくても、「止まるかもしれない」という不安だけで価格が上がりやすいのが特徴です。本文の記事では、通航量が平時より大きく落ち込んでいると報じられています。"
+    },
+    {
+      "heading": "📌 ② 市場と各国の対応",
+      "body": "価格の安定のため、国際エネルギー機関（IEA）の加盟国は、緊急備蓄から1億バレルを放出することで合意しました。備蓄の放出は市場を落ち着かせる手段ですが、供給不安の根本原因が解決するわけではないため、効果は限定的との見方もあります。一方、米国の原油在庫は減っており、需給面でも価格を支える要因になっています。"
+    },
+    {
+      "heading": "📌 ③ 日本への影響",
+      "body": "日本は原油の大部分を中東から輸入しており、その多くがホルムズ海峡を通ります。原油高は、ガソリンや電気・ガス料金、航空運賃、物流費の上昇につながり、家計と企業の収益の両方に圧力をかけます。円安が同時に進んでいると、円建ての輸入コストはさらに膨らみます。ビジネスパーソンにとっては、出張費や配送コストの見直し、価格転嫁の判断が実務上の課題になります。"
+    },
+    {
+      "heading": "📌 ④ 投資家・経営者の視点",
+      "body": "投資家にとっては、エネルギー関連株が上がる一方、航空・運輸・化学など燃料費の重い業種は利益が圧迫されやすくなります。経営者にとっては、燃料費の変動に備えた契約（固定価格の調達など）や、輸送ルートの分散が重要です。原油価格の予測は地政学ニュースに左右されやすいため、シナリオを複数用意しておく姿勢が求められます。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Oil Prices Head for Weekly Gain as Hormuz Attacks Rattle Markets",
+      "publisher": "OilPrice.com",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-Weekly-Gain-as-Hormuz-Attacks-Rattle-Markets.html",
+      "date": "2026-10-16"
+    },
+    {
+      "title": "Oil supply is rising, but Brent still won't crack below $105: here's why",
+      "publisher": "Invezz",
+      "url": "https://invezz.com/news/2026/10/16/oil-supply-is-rising-but-brent-still-wont-crack-below-105-heres-why/",
+      "date": "2026-10-16"
+    },
+    {
+      "title": "Brent Crude at $105 as Hormuz Attacks Disrupt Oil Flows",
+      "publisher": "Grafa",
+      "url": "https://grafa.com/en/news/united-states/brent-crude-105-oil-prices-hormuz-tanker-attacks",
+      "date": "2026-10-16"
+    }
+  ]
+}
