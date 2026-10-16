@@ -219,18 +219,6 @@
     }
   ],
   "glossary": {
-    "headed": {
-      "lemma": "head",
-      "pos": "動",
-      "ja": "向かう",
-      "note": "head for ～で、～に向かう"
-    },
-    "weekly": {
-      "lemma": "weekly",
-      "pos": "形",
-      "ja": "週間の",
-      "note": ""
-    },
     "gain": {
       "lemma": "gain",
       "pos": "名",
@@ -243,22 +231,10 @@
       "ja": "攻撃",
       "note": ""
     },
-    "continued": {
-      "lemma": "continue",
-      "pos": "動",
-      "ja": "続く",
-      "note": ""
-    },
     "benchmark": {
       "lemma": "benchmark",
       "pos": "名",
       "ja": "指標",
-      "note": ""
-    },
-    "traded": {
-      "lemma": "trade",
-      "pos": "動",
-      "ja": "取引される",
       "note": ""
     },
     "barrel": {
@@ -289,12 +265,6 @@
       "lemma": "data",
       "pos": "名",
       "ja": "データ、統計",
-      "note": ""
-    },
-    "showing": {
-      "lemma": "show",
-      "pos": "動",
-      "ja": "示す",
       "note": ""
     },
     "crude": {
