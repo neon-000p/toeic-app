@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-16-1639",
+  "date": "2026-10-16",
+  "time": "16:39",
+  "createdAt": "2026-10-16T16:39:00+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail & Consumer",
+  "sample": false,
+  "title": {
+    "en": "US Retail Sales Rise 0.8% in September, Led by Gasoline",
+    "ja": "米9月小売売上高0.8%増、ガソリンが主因"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. retail sales rose 0.8% in September, the Commerce Department said on Thursday.",
+            "ja": "米商務省は木曜日、9月の米小売売上高が0.8%増加したと発表した。"
+          },
+          {
+            "en": "Retail sales measure how much people spend at stores, online, and in restaurants.",
+            "ja": "小売売上高は、人々が店舗、オンライン、飲食店で使った金額を示す指標だ。"
+          },
+          {
+            "en": "Economists had expected a gain of only 0.3%.",
+            "ja": "エコノミストの予想は、わずか0.3%の増加だった。"
+          },
+          {
+            "en": "August sales were also revised up, to a rise of 1.3%.",
+            "ja": "8月の売上高も、1.3%の増加へと上方修正された。"
+          },
+          {
+            "en": "Most of the increase came from higher gasoline prices.",
+            "ja": "増加分の大半は、ガソリン価格の上昇によるものだった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Spending on other goods grew much more slowly.",
+            "ja": "それ以外の商品への支出の伸びは、はるかに緩やかだった。"
+          },
+          {
+            "en": "This means the strong headline number may hide weaker demand for everyday products.",
+            "ja": "つまり、好調に見える見出しの数字は、日用品の需要の弱さを覆い隠している可能性がある。"
+          },
+          {
+            "en": "Wealthier households kept buying, helped by gains in the stock market.",
+            "ja": "株式市場の上昇に支えられ、富裕層の世帯は買い物を続けた。"
+          },
+          {
+            "en": "However, lower-income families have started to cut back as prices rise.",
+            "ja": "しかし、低所得の家庭は、物価の上昇を受けて支出を減らし始めている。"
+          },
+          {
+            "en": "An economist at Oxford Economics expects spending to lose momentum before the holiday season.",
+            "ja": "オックスフォード・エコノミクスのエコノミストは、年末商戦の前に消費の勢いが弱まると見ている。"
+          },
+          {
+            "en": "Many shoppers are also using savings and promotions to stretch their budgets.",
+            "ja": "多くの消費者は、貯蓄や販促セールを使ってやりくりしている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much had economists expected retail sales to rise in September?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.3%",
+          "ja": "0.3%"
+        },
+        {
+          "key": "B",
+          "text": "0.8%",
+          "ja": "0.8%"
+        },
+        {
+          "key": "C",
+          "text": "1.3%",
+          "ja": "1.3%"
+        },
+        {
+          "key": "D",
+          "text": "3.0%",
+          "ja": "3.0%"
+        }
+      ],
+      "answer": "A",
+      "explanation": "本文に “Economists had expected a gain of only 0.3%.” とあるので正解は A。B の 0.8% は実際の増加率、C の 1.3% は8月の上方修正後の数字で、どちらも本文の別の数字を使った引っかけ。D の 3.0% は本文にない。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字の設問は、数字そのものでなく「誰の数字か（予想か実績か）」を問う。expected / actual / revised の語を手がかりに、該当文を探す。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "What mainly caused the increase in retail sales?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Strong demand for holiday products",
+          "ja": "年末商品への強い需要"
+        },
+        {
+          "key": "B",
+          "text": "Higher gasoline prices",
+          "ja": "ガソリン価格の上昇"
+        },
+        {
+          "key": "C",
+          "text": "More spending by lower-income families",
+          "ja": "低所得家庭の支出増"
+        },
+        {
+          "key": "D",
+          "text": "Large discounts at online stores",
+          "ja": "ネット店舗の大幅値引き"
+        }
+      ],
+      "answer": "B",
+      "explanation": "“Most of the increase came from higher gasoline prices.” が根拠なので正解は B。A の年末商戦は、消費の勢いが弱まる時期として将来の話で出てくるだけ。C は本文と逆で、低所得家庭は支出を減らし始めている。D の値引きは本文にない（販促を使うのは消費者側のやりくりの話）。",
+      "evidence": {
+        "p": 0,
+        "s": 4
+      },
+      "tip": "理由を問う設問では、Most of / mainly / because などの語を含む文が根拠になりやすい。選択肢の内容が本文のどこの話か、時期と主語まで確認する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "revised",
+      "pos": "形",
+      "ja": "修正された（revise＝修正する）",
+      "gloss": "",
+      "example": {
+        "en": "The schedule was revised after the client changed the deadline.",
+        "ja": "顧客が期限を変更したため、予定は修正された。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "headline",
+      "pos": "形",
+      "ja": "主要な、見出しの",
+      "gloss": "（＝ニュースや報告で最初に目立つ数字のこと）",
+      "example": {
+        "en": "The headline figure looked good, but the details were weak.",
+        "ja": "見出しの数字は良く見えたが、中身は弱かった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for the new model is higher than we expected.",
+        "ja": "新モデルへの需要は、私たちの予想より高い。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "households",
+      "pos": "名",
+      "ja": "世帯、家庭",
+      "gloss": "",
+      "example": {
+        "en": "Most households in the area use the delivery service.",
+        "ja": "その地域のほとんどの世帯が配送サービスを利用している。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "momentum",
+      "pos": "名",
+      "ja": "勢い、弾み",
+      "gloss": "",
+      "example": {
+        "en": "The company lost momentum after the product launch.",
+        "ja": "その会社は製品の発売後、勢いを失った。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "promotions",
+      "pos": "名",
+      "ja": "販促、セール",
+      "gloss": "（＝商品を売るための値引きや宣伝のこと）",
+      "example": {
+        "en": "The store runs promotions every weekend.",
+        "ja": "その店は毎週末に販促セールを行っている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "budgets",
+      "pos": "名",
+      "ja": "予算、家計",
+      "gloss": "",
+      "example": {
+        "en": "Many departments have to cut their budgets this year.",
+        "ja": "今年は多くの部署が予算を削らなければならない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "stretch",
+      "pos": "動",
+      "ja": "（お金などを）やりくりして長持ちさせる、伸ばす",
+      "gloss": "（＝限られたお金をできるだけ長く使うこと）",
+      "example": {
+        "en": "We used coupons to stretch our travel budget.",
+        "ja": "私たちはクーポンを使って旅行の予算をやりくりした。"
+      }
+    }
+  ],
+  "glossary": {
+    "revised": {
+      "lemma": "revise",
+      "pos": "動",
+      "ja": "修正した",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "経済学者",
+      "note": "ここでは市場予測をする専門家"
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "gain": {
+      "lemma": "gain",
+      "pos": "名",
+      "ja": "増加、上昇",
+      "note": ""
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "増加",
+      "note": ""
+    },
+    "gasoline": {
+      "lemma": "gasoline",
+      "pos": "名",
+      "ja": "ガソリン",
+      "note": "米国英語。英国では petrol"
+    },
+    "goods": {
+      "lemma": "good",
+      "pos": "名",
+      "ja": "商品",
+      "note": "複数形 goods で「商品」"
+    },
+    "grew": {
+      "lemma": "grow",
+      "pos": "動",
+      "ja": "伸びた",
+      "note": ""
+    },
+    "slowly": {
+      "lemma": "slowly",
+      "pos": "副",
+      "ja": "ゆっくり",
+      "note": ""
+    },
+    "headline": {
+      "lemma": "headline",
+      "pos": "形",
+      "ja": "主要な、見出しの",
+      "note": ""
+    },
+    "hide": {
+      "lemma": "hide",
+      "pos": "動",
+      "ja": "隠す",
+      "note": ""
+    },
+    "weaker": {
+      "lemma": "weak",
+      "pos": "形",
+      "ja": "より弱い",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "everyday": {
+      "lemma": "everyday",
+      "pos": "形",
+      "ja": "日常の",
+      "note": ""
+    },
+    "products": {
+      "lemma": "product",
+      "pos": "名",
+      "ja": "製品",
+      "note": ""
+    },
+    "wealthier": {
+      "lemma": "wealthy",
+      "pos": "形",
+      "ja": "より裕福な",
+      "note": ""
+    },
+    "households": {
+      "lemma": "household",
+      "pos": "名",
+      "ja": "世帯",
+      "note": ""
+    },
+    "families": {
+      "lemma": "family",
+      "pos": "名",
+      "ja": "家族、家庭",
+      "note": ""
+    },
+    "momentum": {
+      "lemma": "momentum",
+      "pos": "名",
+      "ja": "勢い",
+      "note": ""
+    },
+    "savings": {
+      "lemma": "saving",
+      "pos": "名",
+      "ja": "貯蓄",
+      "note": "お金の意味では複数形"
+    },
+    "promotions": {
+      "lemma": "promotion",
+      "pos": "名",
+      "ja": "販促、セール",
+      "note": ""
+    },
+    "stretch": {
+      "lemma": "stretch",
+      "pos": "動",
+      "ja": "やりくりする",
+      "note": ""
+    },
+    "budgets": {
+      "lemma": "budget",
+      "pos": "名",
+      "ja": "予算",
+      "note": ""
+    },
+    "restaurants": {
+      "lemma": "restaurant",
+      "pos": "名",
+      "ja": "飲食店",
+      "note": ""
+    },
+    "measure": {
+      "lemma": "measure",
+      "pos": "動",
+      "ja": "測る、示す",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "比較級の強調（much＋比較級：はるかに〜）",
+    "quote": "Spending on other goods grew much more slowly.",
+    "quoteJa": "それ以外の商品への支出の伸びは、はるかに緩やかだった。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "much more slowly は「slowly」の比較級 more slowly を much で強めた形。「〜よりはるかにゆっくり」という意味になる。比較の相手（than ...）は、この文では書かれていないが、前の文脈（ガソリンの伸び）が相手だと読み取れる。比較級を強めるときは much / far / a lot / even / still を使い、very は使えない。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Spending grew slowly.（ゆっくり伸びた）→ Spending grew more slowly.（より遅く伸びた）→ Spending grew much more slowly.（はるかに遅く伸びた）。much の代わりに far や a lot を使っても意味はほぼ同じ。「とても」を表す very は原級を強めるときだけ使える（very slowly は可、very more slowly は不可）。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では、比較級の前の空所に much / far / even などの副詞を選ばせる問題が出る。選択肢に very や so が並んでいたら誤り。Part 7 では、グラフや報告書の説明で “much higher than” “far fewer than” のような表現が頻出する。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Online orders grew much faster than store sales this quarter.（今四半期は、ネット注文が店舗売上よりはるかに速く伸びた。）／ The new supplier is far more reliable than the old one.（新しい仕入先は、以前の業者よりはるかに信頼できる。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① 小売売上高とは何か",
+      "body": "小売売上高は、米商務省が毎月発表する、店舗・ネット通販・飲食店などでの消費額の統計。米国の経済活動の約7割を個人消費が占めるため、景気の強さを測る代表的な指標として市場が注目する。物価の上昇分を調整していない「名目値」なので、ガソリンのような価格が大きく動く品目があると、実際の販売数量が増えていなくても数字が膨らむ。今回の0.8%増が「予想を上回った」のに「中身は弱い」と評されたのはこのためである。"
+    },
+    {
+      "heading": "📌 ② 「見出しの数字」と中身のズレ",
+      "body": "記事では、ガソリン価格の上昇が増加分の大半を占め、それ以外の商品の伸びは緩やかだったとされる。ガソリンは生活に必要で、価格が上がっても買う量を減らしにくい支出。このため売上高は増えても、消費者が余裕を持って買い物をしているとは限らない。投資家は、自動車とガソリンを除いた数字（コア）を見て、本当の需要の強さを判断する。"
+    },
+    {
+      "heading": "📌 ③ 二極化する消費者（K字型経済）",
+      "body": "株高で資産が増えた富裕層は支出を続ける一方、低所得の家庭は物価高で支出を減らし始めている。このように所得や資産の差で消費が二極化する状況は「K字型経済」と呼ばれる。小売企業にとっては、高級品と低価格品は堅調でも、中間価格帯が苦しくなりやすい。年末商戦を前に、各社は販促セールで慎重な客を引きつけようとしている。"
+    },
+    {
+      "heading": "📌 ④ 日本・投資家・経営者への示唆",
+      "body": "米国の消費は、日本の自動車や機械、部品メーカーの輸出に直結する。米国の消費が減速すれば、輸出企業の業績見通しや、為替・日米の株価にも影響しうる。また、米国の物価と消費が強いままだと、米国の利下げが遠のいてドル高・円安要因になる一方、日本の輸入コストを押し上げる。経営者は、米国向けの販売計画を、売上の総額だけでなく中身（価格要因か数量要因か）で点検する必要がある。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Retail sales up a better-than-expected 0.8% in September as shoppers remain resilient",
+      "publisher": "U.S. News & World Report (AP)",
+      "url": "https://www.usnews.com/news/business/articles/2026-10-15/retail-sales-up-a-better-than-expected-0-8-in-september-as-shoppers-remain-resilient",
+      "date": "2026-10-15"
+    },
+    {
+      "title": "U.S. retail sales beat expectations on higher gasoline prices",
+      "publisher": "The Globe and Mail",
+      "url": "https://theglobeandmail.com/business/economy/article-us-retail-sales-september-2026-gasoline-prices",
+      "date": "2026-10-15"
+    },
+    {
+      "title": "September producer price index, retail sales data",
+      "publisher": "CNBC",
+      "url": "https://cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html",
+      "date": "2026-10-15"
+    }
+  ]
+}
