@@ -458,5 +458,23 @@
       "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/10/16/us-markets-weighed-down-by-extended-sell-off-in-the-tech-sector/",
       "date": "2026-10-16"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-17-1640/00.mp3",
+      "audio/2026-10-17-1640/01.mp3",
+      "audio/2026-10-17-1640/02.mp3",
+      "audio/2026-10-17-1640/03.mp3",
+      "audio/2026-10-17-1640/04.mp3",
+      "audio/2026-10-17-1640/05.mp3",
+      "audio/2026-10-17-1640/06.mp3",
+      "audio/2026-10-17-1640/07.mp3",
+      "audio/2026-10-17-1640/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 212085,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-17T07:43:06.518Z",
+    "trimmed": true
+  }
 }
