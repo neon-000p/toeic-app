@@ -462,5 +462,24 @@
       "url": "https://www.washingtonpost.com/business/2026/10/16/china-export-restrictions-ai-chips-solar-us/216d5918-c95c-11f1-aefb-abe4112d087e_story.html",
       "date": "2026-10-16"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-18-0545/00.mp3",
+      "audio/2026-10-18-0545/01.mp3",
+      "audio/2026-10-18-0545/02.mp3",
+      "audio/2026-10-18-0545/03.mp3",
+      "audio/2026-10-18-0545/04.mp3",
+      "audio/2026-10-18-0545/05.mp3",
+      "audio/2026-10-18-0545/06.mp3",
+      "audio/2026-10-18-0545/07.mp3",
+      "audio/2026-10-18-0545/08.mp3",
+      "audio/2026-10-18-0545/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 240546,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-17T20:48:35.560Z",
+    "trimmed": true
+  }
 }
