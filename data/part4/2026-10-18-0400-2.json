@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-18-0400-2",
+  "date": "2026-10-18",
+  "time": "04:00",
+  "createdAt": "2026-10-18T04:00:00+09:00",
+  "sample": false,
+  "scene": "放送｜橋の車線規制と迂回路の案内",
+  "talkType": "broadcast",
+  "intro": "Questions 1 through 3 refer to the following broadcast.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-CA"
+  },
+  "lines": [
+    {
+      "en": "Good morning, this is Rachel Hart with your Radio Eight traffic update.",
+      "ja": "おはようございます、ラジオ・エイトの交通情報、レイチェル・ハートがお伝えします。"
+    },
+    {
+      "en": "If you're heading downtown today, expect long delays on the Harbor Bridge.",
+      "ja": "本日市街地へ向かう方は、ハーバー橋で長い遅れが出ることを見込んでください。"
+    },
+    {
+      "en": "One of the four lanes is closed for repairs, and traffic is backed up for nearly three miles.",
+      "ja": "4車線のうち1車線が補修のため閉鎖されており、渋滞は3マイル近くに及んでいます。"
+    },
+    {
+      "en": "Normally, the trip across takes ten minutes, but this morning it is taking closer to forty.",
+      "ja": "通常、渡るのに10分ですが、今朝は40分近くかかっています。"
+    },
+    {
+      "en": "Crews hope to reopen the lane by six this evening, though that could change if the weather turns bad.",
+      "ja": "作業班は今夜6時までの車線再開を目指していますが、天候が悪化すれば変わる可能性があります。"
+    },
+    {
+      "en": "In the meantime, drivers are encouraged to take Route 9, which is running smoothly.",
+      "ja": "それまでの間、ドライバーの皆さんには、流れが順調な9号線の利用をお勧めします。"
+    },
+    {
+      "en": "Another option is the downtown shuttle, which will leave from the Elm Street station every ten minutes.",
+      "ja": "もう一つの手段は市街地行きのシャトルで、エルム通り駅から10分おきに出発します。"
+    },
+    {
+      "en": "Parking fees at that station are being waived until noon today.",
+      "ja": "その駅の駐車料金は、本日正午まで免除されています。"
+    },
+    {
+      "en": "We'll bring you another update at eight fifteen.",
+      "ja": "8時15分に次の情報をお届けします。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely is the speaker?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A construction worker",
+          "ja": "工事作業員"
+        },
+        {
+          "key": "B",
+          "text": "A radio host",
+          "ja": "ラジオの司会者"
+        },
+        {
+          "key": "C",
+          "text": "A shuttle driver",
+          "ja": "シャトルの運転手"
+        },
+        {
+          "key": "D",
+          "text": "A city official",
+          "ja": "市の職員"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0
+      ],
+      "explanation": "冒頭で this is Rachel Hart with your Radio Eight traffic update と名乗っており、ラジオで交通情報を伝える人物だと分かります。C のシャトルや A の工事は話の内容に出てきますが、話し手自身の職業ではありません。",
+      "tip": "職業を問う1問目は、名乗りの文に根拠があります。本文に出る crews や shuttle は話題であって、話し手ではありません。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What has caused the delays?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bad weather",
+          "ja": "悪天候"
+        },
+        {
+          "key": "B",
+          "text": "A broken-down shuttle",
+          "ja": "故障したシャトル"
+        },
+        {
+          "key": "C",
+          "text": "A shortage of parking",
+          "ja": "駐車場の不足"
+        },
+        {
+          "key": "D",
+          "text": "Repair work on a lane",
+          "ja": "車線の補修作業"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        2
+      ],
+      "explanation": "2文目から3文目で、4車線のうち1車線が closed for repairs で、渋滞が起きていると述べています。repairs を repair work に言い換えた D が正解です。A の天候は復旧時期が変わる可能性の話で、遅れの原因ではありません。",
+      "tip": "原因は「渋滞の説明」のすぐ近くにあります。weather のように条件として出る語は、原因と取り違えやすい引っかけです。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about the Elm Street station?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It has free parking in the morning.",
+          "ja": "午前中は駐車が無料である。"
+        },
+        {
+          "key": "B",
+          "text": "It is located on Route 9.",
+          "ja": "9号線沿いにある。"
+        },
+        {
+          "key": "C",
+          "text": "It closes at noon.",
+          "ja": "正午に閉まる。"
+        },
+        {
+          "key": "D",
+          "text": "It is next to the bridge.",
+          "ja": "橋のすぐ隣にある。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        6,
+        7
+      ],
+      "explanation": "エルム通り駅の話では、Parking fees at that station are being waived until noon today と述べています。waived を free に、until noon を in the morning に置き換えた A が正解です。C は「正午まで」を「正午に閉まる」と取り違えた誤答です。",
+      "tip": "waived は free の言い換えです。until noon は「正午まで」なので、駅が閉まるという意味ではなく、午前中に限った話です。"
+    }
+  ],
+  "glossary": {
+    "traffic update": {
+      "lemma": "traffic update",
+      "pos": "熟",
+      "ja": "交通情報",
+      "note": "放送の定型表現",
+      "example": {
+        "en": "Please listen to the traffic update before leaving home.",
+        "ja": "家を出る前に交通情報を聞いてください。"
+      }
+    },
+    "heading downtown": {
+      "lemma": "head downtown",
+      "pos": "熟",
+      "ja": "市街地へ向かう",
+      "note": "head は「向かう」の意味",
+      "example": {
+        "en": "Many commuters are heading downtown for the festival.",
+        "ja": "多くの通勤客が祭りのため市街地へ向かっている。"
+      }
+    },
+    "closed for repairs": {
+      "lemma": "closed for repairs",
+      "pos": "熟",
+      "ja": "補修のため閉鎖された",
+      "note": "",
+      "example": {
+        "en": "The library will be closed for repairs next week.",
+        "ja": "図書館は来週、補修のため閉館する。"
+      }
+    },
+    "backed up": {
+      "lemma": "back up",
+      "pos": "熟",
+      "ja": "渋滞している",
+      "note": "道路が詰まる意味",
+      "example": {
+        "en": "The highway was backed up for miles after the accident.",
+        "ja": "事故のあと、高速道路は何マイルも渋滞した。"
+      }
+    },
+    "crews": {
+      "lemma": "crew",
+      "pos": "名",
+      "ja": "作業班、作業員",
+      "note": "複数形で工事の人員をさす",
+      "example": {
+        "en": "Road crews worked through the night to fix the pipe.",
+        "ja": "作業班は水道管を直すために夜通し働いた。"
+      }
+    },
+    "in the meantime": {
+      "lemma": "in the meantime",
+      "pos": "熟",
+      "ja": "その間は、それまでの間",
+      "note": "",
+      "example": {
+        "en": "The printer is broken, so use the one upstairs in the meantime.",
+        "ja": "プリンターが故障中なので、それまでは上階のものを使ってください。"
+      }
+    },
+    "encouraged to": {
+      "lemma": "be encouraged to",
+      "pos": "熟",
+      "ja": "～するよう勧められる",
+      "note": "お願いに近い、やわらかい指示",
+      "example": {
+        "en": "Visitors are encouraged to use public transportation.",
+        "ja": "来訪者には公共交通機関の利用が勧められている。"
+      }
+    },
+    "running smoothly": {
+      "lemma": "run smoothly",
+      "pos": "熟",
+      "ja": "順調に流れている",
+      "note": "交通・業務のどちらにも使う",
+      "example": {
+        "en": "Traffic is running smoothly on the east side today.",
+        "ja": "今日は東側の交通は順調に流れている。"
+      }
+    },
+    "waived": {
+      "lemma": "waive",
+      "pos": "動",
+      "ja": "免除する",
+      "note": "選択肢では free に言い換わる",
+      "example": {
+        "en": "The bank waived the monthly fee for new customers.",
+        "ja": "銀行は新規顧客の月額手数料を免除した。"
+      }
+    },
+    "reopen": {
+      "lemma": "reopen",
+      "pos": "動",
+      "ja": "再開する、再び開通させる",
+      "note": "道路・店舗どちらにも使う",
+      "example": {
+        "en": "The store will reopen on Monday after the renovation.",
+        "ja": "その店は改装後、月曜に再開する。"
+      }
+    }
+  },
+  "point": {
+    "flow": "名乗りと主題 → 現状 → 影響（通常時と今日の数字） → 復旧の見込み → 代替手段（複数） → 次回の予告",
+    "items": [
+      {
+        "title": "放送は名乗りの1文で話し手の役割が決まる",
+        "body": "番組名と名前の直後に「誰が何を伝えるか」が出る。話題に出る職業（作業員、運転手）と話し手を混同しない。"
+      },
+      {
+        "title": "通常時と今日の数字は対で聞く",
+        "body": "10分と40分のように対の数字が出たら、「いつの数字か」を一緒にメモする。設問は取り違えを誘う。"
+      },
+      {
+        "title": "代替手段は条件と一緒に覚える",
+        "body": "案が2つ以上出たら、それぞれの条件（無料、10分おき）を対にする。推測問題は言い換えで条件を問う。"
+      }
+    ]
+  }
+}

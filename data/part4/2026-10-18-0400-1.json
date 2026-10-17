@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-18-0400-1",
+  "date": "2026-10-18",
+  "time": "04:00",
+  "createdAt": "2026-10-18T04:00:00+09:00",
+  "sample": false,
+  "scene": "会議｜出荷入力システムの切り替えと研修",
+  "talkType": "meeting",
+  "intro": "Questions 1 through 3 refer to the following excerpt from a meeting.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-AU"
+  },
+  "lines": [
+    {
+      "en": "Before we wrap up, I'd like to explain a change to how we handle shipments starting next month.",
+      "ja": "会議を終える前に、来月から出荷の扱い方が変わることをご説明します。"
+    },
+    {
+      "en": "Right now, our warehouse staff enter every order by hand, and it takes about twenty minutes per delivery.",
+      "ja": "現在、倉庫スタッフはすべての注文を手入力しており、1件の配送につき約20分かかっています。"
+    },
+    {
+      "en": "That is why we've been running behind during the busy season.",
+      "ja": "繁忙期に作業が遅れ気味になっているのは、そのためです。"
+    },
+    {
+      "en": "To fix this, the company will switch to a scanning system that reads barcodes automatically.",
+      "ja": "これを解消するため、会社はバーコードを自動で読み取るスキャン方式に切り替えます。"
+    },
+    {
+      "en": "According to the vendor, the new system cuts the entry time to five minutes.",
+      "ja": "業者によると、新しいシステムで入力時間は5分に短縮されます。"
+    },
+    {
+      "en": "The software will be installed over the weekend, so the warehouse will be closed on Saturday.",
+      "ja": "ソフトは週末のうちに導入されるため、倉庫は土曜日は閉まります。"
+    },
+    {
+      "en": "On Monday morning, each team will have a one-hour training session to get up to speed.",
+      "ja": "月曜の朝には、各チームが1時間の研修を受け、操作に慣れてもらいます。"
+    },
+    {
+      "en": "I know some of you are worried about the learning curve, but support staff will stay on site all week.",
+      "ja": "習得の難しさを心配している方もいると思いますが、サポート担当が1週間ずっと現場に待機します。"
+    },
+    {
+      "en": "Please sign up for a session time on the shared calendar by this Friday.",
+      "ja": "今週の金曜までに、共有カレンダーで研修の時間枠に申し込んでください。"
+    },
+    {
+      "en": "If you have any questions, just stop by my office.",
+      "ja": "ご質問があれば、私の執務室に気軽に立ち寄ってください。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the speaker mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A warehouse relocation",
+          "ja": "倉庫の移転"
+        },
+        {
+          "key": "B",
+          "text": "A holiday schedule",
+          "ja": "休日の予定"
+        },
+        {
+          "key": "C",
+          "text": "A new order-entry method",
+          "ja": "新しい注文入力の方法"
+        },
+        {
+          "key": "D",
+          "text": "A vendor contract",
+          "ja": "業者との契約"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で how we handle shipments が変わると予告し、続けて現在は注文を手入力していると説明しています。バーコードで自動入力する方式への切り替えが話題なので C が正解です。A の relocation や D の contract は本文に出ません。",
+      "tip": "会議の抜粋は、最初の1文で「何が変わるか」を予告します。その直後の現状の説明まで聞けば1問目は決まります。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when he says, \"That is why we've been running behind during the busy season\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The current process is too slow.",
+          "ja": "現在の手順は遅すぎる。"
+        },
+        {
+          "key": "B",
+          "text": "Some workers are not trying hard.",
+          "ja": "努力していない従業員がいる。"
+        },
+        {
+          "key": "C",
+          "text": "The vendor delivered late.",
+          "ja": "業者の納品が遅れた。"
+        },
+        {
+          "key": "D",
+          "text": "More staff should be hired.",
+          "ja": "もっと人を雇うべきだ。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        1,
+        2
+      ],
+      "explanation": "直前で手入力に1件あたり約20分かかると述べており、That is why は「その手間が遅れの原因だ」という意味です。つまり今のやり方が遅いという指摘で A が正解です。C の vendor は新システムの説明で出る別の話題です。",
+      "tip": "That is why は直前の内容が原因だと示す合図です。引用文の意図は、直前の1文が何を言っているかで決まります。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are the listeners asked to do by Friday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Install some software",
+          "ja": "ソフトを導入する"
+        },
+        {
+          "key": "B",
+          "text": "Visit the vendor's office",
+          "ja": "業者の事務所を訪ねる"
+        },
+        {
+          "key": "C",
+          "text": "Work on Saturday",
+          "ja": "土曜に働く"
+        },
+        {
+          "key": "D",
+          "text": "Reserve a training time",
+          "ja": "研修の時間を予約する"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        8
+      ],
+      "explanation": "後半で Please sign up for a session time ... by this Friday と依頼しています。sign up を reserve に言い換えた D が正解です。A の install は週末に行われる作業で、聞き手への依頼ではありません。",
+      "tip": "依頼表現の Please の直後と、期限の by Friday をセットで拾います。週末の作業は会社側がやることです。"
+    }
+  ],
+  "glossary": {
+    "wrap up": {
+      "lemma": "wrap up",
+      "pos": "熟",
+      "ja": "終える、切り上げる",
+      "note": "会議の終わりによく使う",
+      "example": {
+        "en": "Let's wrap up the meeting and send out the notes today.",
+        "ja": "会議を終えて、今日中に議事録を送りましょう。"
+      }
+    },
+    "by hand": {
+      "lemma": "by hand",
+      "pos": "熟",
+      "ja": "手作業で",
+      "note": "automatically の反対",
+      "example": {
+        "en": "The invoices are still being checked by hand each month.",
+        "ja": "請求書は今も毎月手作業で確認されている。"
+      }
+    },
+    "running behind": {
+      "lemma": "run behind",
+      "pos": "熟",
+      "ja": "予定より遅れている",
+      "note": "behind schedule とほぼ同義",
+      "example": {
+        "en": "We are running behind because two staff members are absent.",
+        "ja": "スタッフ2人が欠勤で、作業が遅れている。"
+      }
+    },
+    "busy season": {
+      "lemma": "busy season",
+      "pos": "熟",
+      "ja": "繁忙期",
+      "note": "",
+      "example": {
+        "en": "The post office hires extra workers during the busy season.",
+        "ja": "郵便局は繁忙期に臨時の人員を雇う。"
+      }
+    },
+    "according to": {
+      "lemma": "according to",
+      "pos": "熟",
+      "ja": "～によると",
+      "note": "情報源を示す",
+      "example": {
+        "en": "According to the report, sales rose by ten percent.",
+        "ja": "報告書によると、売上は10%伸びた。"
+      }
+    },
+    "vendor": {
+      "lemma": "vendor",
+      "pos": "名",
+      "ja": "納入業者、販売業者",
+      "note": "supplier と近い",
+      "example": {
+        "en": "We asked the vendor to send a revised quote.",
+        "ja": "業者に修正した見積書を送るよう依頼した。"
+      }
+    },
+    "get up to speed": {
+      "lemma": "get up to speed",
+      "pos": "熟",
+      "ja": "状況や操作に慣れる",
+      "note": "研修・引き継ぎの定型表現",
+      "example": {
+        "en": "New employees usually get up to speed within two weeks.",
+        "ja": "新入社員は通常2週間で業務に慣れる。"
+      }
+    },
+    "learning curve": {
+      "lemma": "learning curve",
+      "pos": "熟",
+      "ja": "習得の難しさ",
+      "note": "steep で「習得が大変」",
+      "example": {
+        "en": "The new software has a steep learning curve for beginners.",
+        "ja": "その新しいソフトは初心者には習得が難しい。"
+      }
+    },
+    "on site": {
+      "lemma": "on site",
+      "pos": "熟",
+      "ja": "現場で、その場に",
+      "note": "",
+      "example": {
+        "en": "A technician will be on site to fix the printer.",
+        "ja": "技術者が現場に来てプリンターを直す。"
+      }
+    },
+    "sign up": {
+      "lemma": "sign up",
+      "pos": "熟",
+      "ja": "申し込む、登録する",
+      "note": "reserve などに言い換わる",
+      "example": {
+        "en": "Employees can sign up for the workshop online.",
+        "ja": "従業員はオンラインで講習に申し込める。"
+      }
+    },
+    "stop by": {
+      "lemma": "stop by",
+      "pos": "熟",
+      "ja": "立ち寄る",
+      "note": "visit の軽い言い方",
+      "example": {
+        "en": "Please stop by my desk if you need the report.",
+        "ja": "報告書が必要なら私の席に立ち寄ってください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "主題の予告 → 現状の問題（数字） → 変更の中身と効果 → 導入の手順 → 不安への配慮 → 依頼と期限",
+    "items": [
+      {
+        "title": "会議の抜粋は最初の1文で主題を予告する",
+        "body": "「これから何が変わるか」が冒頭に来るので、1問目はそこで決める。現状の数字はその後に続く。"
+      },
+      {
+        "title": "現状と改善後の数字を対で控える",
+        "body": "時間や件数が2つ出たら、どちらが今でどちらが変更後かを分けて聞く。設問は取り違えを誘う作りになる。"
+      },
+      {
+        "title": "依頼は Please と期限の組で聞く",
+        "body": "終盤の依頼は、動作と期限が1文に入る。会社側がやること（導入作業）と聞き手がやることを混同しない。"
+      }
+    ]
+  }
+}
