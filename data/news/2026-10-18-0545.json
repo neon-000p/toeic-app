@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-18-0545",
+  "date": "2026-10-18",
+  "time": "05:45",
+  "createdAt": "2026-10-18T05:45:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "China Moves to Limit Exports of Its Own AI Technology",
+    "ja": "中国、自国AI技術の輸出制限を提案"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "China has proposed new limits on the export of its own artificial intelligence technology.",
+            "ja": "中国は、自国の人工知能技術の輸出に新たな制限を設けることを提案した。"
+          },
+          {
+            "en": "The plan, released on October 16, would cover AI models, software agents, and chip designs.",
+            "ja": "10月16日に公表されたこの案は、AIモデル、ソフトウェアエージェント、半導体設計を対象とする。"
+          },
+          {
+            "en": "It was prepared by the country's commerce and science ministries.",
+            "ja": "案は同国の商務部門と科学技術部門が作成した。"
+          },
+          {
+            "en": "A temporary rule also took effect that day, so companies must now register before they send such technology abroad.",
+            "ja": "同日には暫定規則も発効し、企業はそうした技術を海外へ送る前に登録しなければならなくなった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Officials said the step is meant to protect national security.",
+            "ja": "当局は、この措置は国家安全保障を守るためのものだと述べた。"
+          },
+          {
+            "en": "The public can comment on the proposal for about one month, and the final list may still change.",
+            "ja": "案には約1か月間、一般から意見を出せ、最終的なリストはまだ変わる可能性がある。"
+          },
+          {
+            "en": "Analysts say the move could make it harder for foreign firms to use Chinese AI tools.",
+            "ja": "アナリストは、この動きで外国企業が中国製のAIツールを使いにくくなる可能性があると指摘する。"
+          },
+          {
+            "en": "Taiwan is also drafting tougher penalties for unauthorized chip exports to China.",
+            "ja": "台湾も、無許可の半導体の対中輸出に対する罰則の強化を検討している。"
+          },
+          {
+            "en": "For companies that work with Chinese partners, such rules can mean longer delays and higher costs.",
+            "ja": "中国のパートナーと取引する企業にとって、こうした規則は遅れの長期化とコスト増を意味しうる。"
+          },
+          {
+            "en": "It may also push global companies to review their supply chains and prepare for more paperwork.",
+            "ja": "世界の企業がサプライチェーンを見直し、書類手続きの増加に備える動きも強まりそうだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What must companies now do before sending such technology abroad?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Pay a new tax",
+          "ja": "新しい税金を払う"
+        },
+        {
+          "key": "B",
+          "text": "Register with the authorities",
+          "ja": "当局に登録する"
+        },
+        {
+          "key": "C",
+          "text": "Close their foreign offices",
+          "ja": "海外拠点を閉鎖する"
+        },
+        {
+          "key": "D",
+          "text": "Hire more staff",
+          "ja": "人員を増やす"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本文の最終文(第1段落)に「企業はそうした技術を海外へ送る前に登録しなければならない(companies must now register before they send such technology abroad)」とある。A の税金、C の海外拠点の閉鎖、D の増員はいずれも本文に出てこない「本文にない情報」の引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "設問の動詞(must ... do)に注目し、must / required などの義務表現を含む文を探す。選択肢は言い換え(register→Register with the authorities)になりやすい。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did officials say the step is needed?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To raise government income",
+          "ja": "政府収入を増やすため"
+        },
+        {
+          "key": "B",
+          "text": "To help foreign firms",
+          "ja": "外国企業を助けるため"
+        },
+        {
+          "key": "C",
+          "text": "To protect national security",
+          "ja": "国家安全保障を守るため"
+        },
+        {
+          "key": "D",
+          "text": "To lower chip prices",
+          "ja": "半導体価格を下げるため"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落の1文目に「当局はこの措置は国家安全保障を守るためのものだと述べた(meant to protect national security)」とある。A・D は本文に無く、B は「外国企業は使いにくくなる」という本文の内容と逆。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由を問う設問は meant to / in order to / because などの目的・理由表現が手がかり。段落の冒頭に答えがあることも多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "proposal",
+      "pos": "名",
+      "ja": "提案、計画案",
+      "gloss": "",
+      "example": {
+        "en": "The board approved the proposal on Monday.",
+        "ja": "取締役会は月曜に提案を承認した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "temporary",
+      "pos": "形",
+      "ja": "一時的な、暫定の",
+      "gloss": "",
+      "example": {
+        "en": "We hired a temporary worker for the busy season.",
+        "ja": "繁忙期に臨時の従業員を雇った。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "register",
+      "pos": "動",
+      "ja": "登録する",
+      "gloss": "",
+      "example": {
+        "en": "Visitors must register at the front desk.",
+        "ja": "訪問者は受付で登録しなければならない。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "abroad",
+      "pos": "副",
+      "ja": "海外へ、海外で",
+      "gloss": "",
+      "example": {
+        "en": "She plans to work abroad next year.",
+        "ja": "彼女は来年海外で働く予定だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "analysts",
+      "pos": "名",
+      "ja": "アナリスト、分析担当者",
+      "gloss": "",
+      "example": {
+        "en": "Analysts expect sales to rise this quarter.",
+        "ja": "アナリストは今期の売上増を見込んでいる。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "unauthorized",
+      "pos": "形",
+      "ja": "無許可の、権限のない",
+      "gloss": "",
+      "example": {
+        "en": "Unauthorized access to the system is prohibited.",
+        "ja": "システムへの無許可のアクセスは禁止されている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "paperwork",
+      "pos": "名",
+      "ja": "書類手続き、事務書類",
+      "gloss": "",
+      "example": {
+        "en": "The paperwork must be filed by Friday.",
+        "ja": "書類手続きは金曜までに提出しなければならない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "supply chains",
+      "pos": "名",
+      "ja": "サプライチェーン",
+      "gloss": "（＝原料の調達から商品が客に届くまでの流れのこと）",
+      "example": {
+        "en": "The firm is rebuilding its supply chains after the delays.",
+        "ja": "同社は遅れを受けてサプライチェーンを立て直している。"
+      }
+    }
+  ],
+  "glossary": {
+    "artificial": {
+      "lemma": "artificial",
+      "pos": "形",
+      "ja": "人工の",
+      "note": ""
+    },
+    "technology": {
+      "lemma": "technology",
+      "pos": "名",
+      "ja": "技術",
+      "note": ""
+    },
+    "export": {
+      "lemma": "export",
+      "pos": "名",
+      "ja": "輸出",
+      "note": ""
+    },
+    "proposed": {
+      "lemma": "propose",
+      "pos": "動",
+      "ja": "提案した",
+      "note": ""
+    },
+    "proposal": {
+      "lemma": "proposal",
+      "pos": "名",
+      "ja": "提案",
+      "note": ""
+    },
+    "released": {
+      "lemma": "release",
+      "pos": "動",
+      "ja": "公表した",
+      "note": ""
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "対象とする",
+      "note": ""
+    },
+    "agents": {
+      "lemma": "agent",
+      "pos": "名",
+      "ja": "エージェント",
+      "note": ""
+    },
+    "prepared": {
+      "lemma": "prepare",
+      "pos": "動",
+      "ja": "作成した",
+      "note": ""
+    },
+    "ministries": {
+      "lemma": "ministry",
+      "pos": "名",
+      "ja": "省庁",
+      "note": ""
+    },
+    "temporary": {
+      "lemma": "temporary",
+      "pos": "形",
+      "ja": "暫定の",
+      "note": ""
+    },
+    "rule": {
+      "lemma": "rule",
+      "pos": "名",
+      "ja": "規則",
+      "note": ""
+    },
+    "register": {
+      "lemma": "register",
+      "pos": "動",
+      "ja": "登録する",
+      "note": ""
+    },
+    "abroad": {
+      "lemma": "abroad",
+      "pos": "副",
+      "ja": "海外へ",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "protect": {
+      "lemma": "protect",
+      "pos": "動",
+      "ja": "守る",
+      "note": ""
+    },
+    "comment": {
+      "lemma": "comment",
+      "pos": "動",
+      "ja": "意見を述べる",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "foreign": {
+      "lemma": "foreign",
+      "pos": "形",
+      "ja": "外国の",
+      "note": ""
+    },
+    "firms": {
+      "lemma": "firm",
+      "pos": "名",
+      "ja": "企業",
+      "note": ""
+    },
+    "drafting": {
+      "lemma": "draft",
+      "pos": "動",
+      "ja": "起草する",
+      "note": ""
+    },
+    "tougher": {
+      "lemma": "tough",
+      "pos": "形",
+      "ja": "より厳しい",
+      "note": ""
+    },
+    "penalties": {
+      "lemma": "penalty",
+      "pos": "名",
+      "ja": "罰則",
+      "note": ""
+    },
+    "unauthorized": {
+      "lemma": "unauthorized",
+      "pos": "形",
+      "ja": "無許可の",
+      "note": ""
+    },
+    "exports": {
+      "lemma": "export",
+      "pos": "名",
+      "ja": "輸出",
+      "note": ""
+    },
+    "delays": {
+      "lemma": "delay",
+      "pos": "名",
+      "ja": "遅れ",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "paperwork": {
+      "lemma": "paperwork",
+      "pos": "名",
+      "ja": "書類手続き",
+      "note": ""
+    },
+    "review": {
+      "lemma": "review",
+      "pos": "動",
+      "ja": "見直す",
+      "note": ""
+    },
+    "partners": {
+      "lemma": "partner",
+      "pos": "名",
+      "ja": "提携先",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "過去分詞の後置修飾（名詞＋過去分詞：〜された…）",
+    "quote": "The plan, released on October 16, would cover AI models, software agents, and chip designs.",
+    "quoteJa": "10月16日に公表されたこの案は、AIモデル、ソフトウェアエージェント、半導体設計を対象とする。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "released on October 16 は過去分詞 released から始まる句で、直前の名詞 The plan を後ろから説明しています（後置修飾）。意味は「10月16日に公表された（案）」と受け身です。文の中ほどにカンマで挟まれて、補足情報として入っています。"
+      },
+      {
+        "heading": "書き換えと比較",
+        "body": "関係代名詞を使うと The plan, which was released on October 16, ... となります。which was を省いて過去分詞だけを残したものが後置修飾です。現在分詞なら「〜している」という能動の意味になり、a plan covering AI models（AIモデルを対象とする案）のように使い分けます。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、名詞の直後に動詞の原形・過去形・過去分詞のどれを入れるかを問う形で出ます。名詞と動詞が「〜される」関係なら過去分詞を選びます（the documents attached to this e-mail など）。Part 7 では、この形が長い名詞句を作るため、主語がどこまでかを見極める力が必要です。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "The report submitted last week contains several errors.（先週提出された報告書にはいくつかの誤りがある。）／ All items listed below are available in stock.（以下に挙げる商品はすべて在庫があります。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか",
+      "body": "中国は、自国で開発したAIモデルやAIエージェント、半導体の設計技術などを「輸出管理の対象リスト」に加えることを提案しました。同時に、対象技術を海外へ出す前の事前登録を求める暫定規則が10月16日に始まっています。リスト案は意見募集の段階で、内容は今後変わる可能性があります。報道によって対象技術の数え方に差があるため、ここでは件数は取り上げません。"
+    },
+    {
+      "heading": "📌 用語の解説",
+      "body": "「輸出管理」とは、安全保障上重要な製品や技術を、国が許可なく外国へ出せないようにする仕組みです。これまでは米国が中国向けに先端半導体を制限する動きが目立ちましたが、今回は中国が自国の技術を外に出さないよう縛る側に回った点が特徴です。「AIエージェント」は、人に代わって一連の作業を自動で進めるAIのことです。"
+    },
+    {
+      "heading": "📌 業界の動き",
+      "body": "米中は9月下旬に一部品目の関税を引き下げることで合意するなど、貿易面では対話を続けています。一方で、AIと半導体は両国が最も警戒する分野です。台湾も、米国との取り決めを背景に、AI半導体の無許可輸出への罰則を強める案を出しており、技術の囲い込みが各地で進んでいます。"
+    },
+    {
+      "heading": "📌 日本・投資家への示唆",
+      "body": "日本企業にとっては、中国発のAIツールや中国企業との共同開発で、契約や許可の手続きが増える可能性があります。調達や開発の拠点を複数持つなど、サプライチェーンの見直しが課題になります。投資家は、規則が最終決定されるまでの意見募集の行方と、関連する中国のAI・半導体企業の海外展開への影響を注視するとよいでしょう。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "China Plans AI Export Curbs to Exert Control Over Key Tech",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-16/china-proposes-export-controls-on-ai-models-chips-and-agents",
+      "date": "2026-10-16"
+    },
+    {
+      "title": "China moves to curb tech exports, including AI, citing national security risks",
+      "publisher": "The Washington Post",
+      "url": "https://www.washingtonpost.com/business/2026/10/16/china-export-restrictions-ai-chips-solar-us/216d5918-c95c-11f1-aefb-abe4112d087e_story.html",
+      "date": "2026-10-16"
+    }
+  ]
+}
