@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-17-1640",
+  "date": "2026-10-17",
+  "time": "16:40",
+  "createdAt": "2026-10-17T16:40:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "US Stocks Slide as Hot Inflation and AI Worries Hit Tech",
+    "ja": "米株安、インフレとAI不安でハイテク売り"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "US stocks fell sharply on Friday as technology shares led the market lower.",
+            "ja": "米国株は、ハイテク株が相場を押し下げ、金曜日に急落した。"
+          },
+          {
+            "en": "The S&P 500 dropped about 1.1%, and the Nasdaq lost about 2%.",
+            "ja": "S&P 500は約1.1%下落し、ナスダックは約2%下げた。"
+          },
+          {
+            "en": "Chipmakers were hit hardest, and chip stocks fell for an eighth straight day.",
+            "ja": "半導体メーカーが最も大きな打撃を受け、半導体株は8営業日連続で下落した。"
+          },
+          {
+            "en": "The Nasdaq also ended the week with its first weekly loss in five weeks.",
+            "ja": "ナスダックは、5週間ぶりの週間下落でこの週を終えた。"
+          },
+          {
+            "en": "Many investors sold their tech holdings to avoid further losses.",
+            "ja": "多くの投資家は、さらなる損失を避けるためにハイテク株の保有分を売った。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "A report earlier this week showed that inflation rose faster than economists had expected, which pushed bond yields higher.",
+            "ja": "今週初めの統計は、インフレが経済学者の予想より速く進んだことを示し、それが債券利回りを押し上げた。"
+          },
+          {
+            "en": "Higher yields make borrowing more expensive, and investors worry that companies cannot easily pay for their costly AI projects.",
+            "ja": "利回りの上昇は借り入れを高くし、投資家は、企業が費用のかさむAI事業の資金をまかなうのは簡単でないと懸念している。"
+          },
+          {
+            "en": "Some traders now think the Federal Reserve could raise interest rates again.",
+            "ja": "一部のトレーダーは、連邦準備制度が再び利上げする可能性があると見ている。"
+          },
+          {
+            "en": "Energy was the only strong sector, as oil stayed above $100 a barrel.",
+            "ja": "原油が1バレル＝100ドルを上回ったままだったため、エネルギーが唯一堅調な業種だった。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much did the S&P 500 fall on Friday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 0.3%",
+          "ja": "約0.3%"
+        },
+        {
+          "key": "B",
+          "text": "About 1.1%",
+          "ja": "約1.1%"
+        },
+        {
+          "key": "C",
+          "text": "About 2%",
+          "ja": "約2%"
+        },
+        {
+          "key": "D",
+          "text": "About 5%",
+          "ja": "約5%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落の2文目に「The S&P 500 dropped about 1.1%」とあるので正解は (B)。(C) の「about 2%」は同じ文の後半にあるナスダックの下落率で、数字の引っかけ。(A) と (D) は本文にない数字。「どの指数の数字か」を主語で確認するのが Part 7 の基本。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "1文に複数の数字があるときは、設問が問う主語（S&P 500かナスダックか）と数字を結びつけて読む。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why did bond yields rise?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chip stocks fell for eight days.",
+          "ja": "半導体株が8日続落した。"
+        },
+        {
+          "key": "B",
+          "text": "Oil prices dropped below $100.",
+          "ja": "原油が100ドルを割った。"
+        },
+        {
+          "key": "C",
+          "text": "Inflation was higher than expected.",
+          "ja": "インフレが予想より高かった。"
+        },
+        {
+          "key": "D",
+          "text": "The Federal Reserve cut interest rates.",
+          "ja": "FRBが利下げした。"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落の1文目に「inflation rose faster than economists had expected, which pushed bond yields higher」とあり、予想より高いインフレが利回り上昇の原因。(A) は株安の結果の説明、(B) は本文と逆（原油は100ドル超のまま）、(D) は本文にない情報（むしろ利上げ観測）。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由を問う設問は which / because / as などの接続表現の前後に答えがある。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "sharply",
+      "pos": "副",
+      "ja": "急激に、大幅に",
+      "gloss": "",
+      "example": {
+        "en": "Sales fell sharply after the price increase.",
+        "ja": "値上げのあと、売上は急激に落ち込んだ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "straight",
+      "pos": "形",
+      "ja": "連続の",
+      "gloss": "（＝間を空けずに続くこと）",
+      "example": {
+        "en": "The company reported a profit for the fifth straight quarter.",
+        "ja": "その会社は5四半期連続で黒字を報告した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "yields",
+      "pos": "名",
+      "ja": "利回り",
+      "gloss": "（＝債券などに投資して得られる収益の割合のこと）",
+      "example": {
+        "en": "Higher yields attract investors to government bonds.",
+        "ja": "利回りが高いと、投資家は国債に引きつけられる。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "gloss": "",
+      "example": {
+        "en": "Borrowing costs rose after the bank raised its rates.",
+        "ja": "銀行が金利を上げたあと、借り入れコストが上がった。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "sector",
+      "pos": "名",
+      "ja": "業種、部門",
+      "gloss": "",
+      "example": {
+        "en": "The retail sector added many jobs last month.",
+        "ja": "小売業界は先月、多くの雇用を生んだ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "raise",
+      "pos": "動",
+      "ja": "〜を引き上げる",
+      "gloss": "",
+      "example": {
+        "en": "The firm plans to raise prices next spring.",
+        "ja": "その会社は来春に価格を引き上げる予定だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "expected",
+      "pos": "動",
+      "ja": "〜を予想した",
+      "gloss": "",
+      "example": {
+        "en": "Sales were lower than analysts had expected.",
+        "ja": "売上はアナリストの予想より低かった。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "worry",
+      "pos": "動",
+      "ja": "懸念する、心配する",
+      "gloss": "",
+      "example": {
+        "en": "Managers worry that costs will keep rising.",
+        "ja": "管理職たちはコストが上がり続けることを懸念している。"
+      }
+    }
+  ],
+  "glossary": {
+    "stocks": {
+      "lemma": "stock",
+      "pos": "名",
+      "ja": "株式",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株",
+      "note": ""
+    },
+    "led": {
+      "lemma": "lead",
+      "pos": "動",
+      "ja": "主導した",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "lost": {
+      "lemma": "lose",
+      "pos": "動",
+      "ja": "失った、下げた",
+      "note": ""
+    },
+    "chipmakers": {
+      "lemma": "chipmaker",
+      "pos": "名",
+      "ja": "半導体メーカー",
+      "note": ""
+    },
+    "hit": {
+      "lemma": "hit",
+      "pos": "動",
+      "ja": "打撃を受けた",
+      "note": ""
+    },
+    "hardest": {
+      "lemma": "hard",
+      "pos": "副",
+      "ja": "最も強く",
+      "note": ""
+    },
+    "straight": {
+      "lemma": "straight",
+      "pos": "形",
+      "ja": "連続の",
+      "note": ""
+    },
+    "ended": {
+      "lemma": "end",
+      "pos": "動",
+      "ja": "終えた",
+      "note": ""
+    },
+    "weekly": {
+      "lemma": "weekly",
+      "pos": "形",
+      "ja": "週間の",
+      "note": ""
+    },
+    "loss": {
+      "lemma": "loss",
+      "pos": "名",
+      "ja": "損失、下落",
+      "note": ""
+    },
+    "report": {
+      "lemma": "report",
+      "pos": "名",
+      "ja": "報告、統計",
+      "note": ""
+    },
+    "showed": {
+      "lemma": "show",
+      "pos": "動",
+      "ja": "示した",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "インフレ",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "faster": {
+      "lemma": "fast",
+      "pos": "副",
+      "ja": "より速く",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "経済学者",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "pushed": {
+      "lemma": "push",
+      "pos": "動",
+      "ja": "押し上げた",
+      "note": ""
+    },
+    "bond": {
+      "lemma": "bond",
+      "pos": "名",
+      "ja": "債券",
+      "note": ""
+    },
+    "yields": {
+      "lemma": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "note": ""
+    },
+    "borrowing": {
+      "lemma": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "note": ""
+    },
+    "expensive": {
+      "lemma": "expensive",
+      "pos": "形",
+      "ja": "高価な",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "worry": {
+      "lemma": "worry",
+      "pos": "動",
+      "ja": "懸念する",
+      "note": ""
+    },
+    "costly": {
+      "lemma": "costly",
+      "pos": "形",
+      "ja": "費用のかさむ",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "関係代名詞 which の継続用法（前の節全体を受ける）",
+    "quote": "A report earlier this week showed that inflation rose faster than economists had expected, which pushed bond yields higher.",
+    "quoteJa": "今週初めの統計は、インフレが経済学者の予想より速く進んだことを示し、それが債券利回りを押し上げた。",
+    "blocks": [
+      {
+        "heading": "構文：which が前の節全体を受ける",
+        "body": "この文の which の前にはカンマがあり、which は直前の名詞ではなく「inflation rose faster than economists had expected（インフレが予想より速く進んだこと）」という節全体を指します。「そしてそのことが〜」と訳し下ろすのがコツです。which の後ろは動詞（pushed）から始まるので、which が主語の働きをしています。"
+      },
+      {
+        "heading": "書き換え",
+        "body": "A report showed that inflation rose faster than expected, which pushed bond yields higher. ＝ A report showed that inflation rose faster than expected, and this pushed bond yields higher.（which は and this に置き換えられる）。カンマの無い制限用法（the report which showed…）は直前の名詞を修飾するので、働きが違います。"
+      },
+      {
+        "heading": "TOEICでの注意点",
+        "body": "Part 5 では、カンマ＋空所＋動詞の形で which と that のどちらかを選ばせる問題が出ます。継続用法（カンマあり）では that は使えません。who/which/whose の選択では、先行詞が人か物か、前の節全体かを確認しましょう。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "The shipment arrived two days late, which caused a delay in production.（出荷が2日遅れ、それが生産の遅れを招いた。）／ Sales rose 8% this quarter, which exceeded our forecast.（売上は今四半期8%増え、これは予想を上回った。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① 何が起きたのか：インフレ統計とAI不安のダブルパンチ",
+      "body": "今週発表された米国の物価統計が市場の予想より強く、「インフレが再燃しているのでは」という見方が広がりました。そこにAI関連への資金調達の不安が重なり、半導体を中心にハイテク株が売られました。AP通信によると、半導体株は8営業日連続で下落し、ナスダックは5週間ぶりの週間下落となりました。"
+    },
+    {
+      "heading": "📌 ② 用語のかみ砕き：利回りと借り入れコスト",
+      "body": "債券の利回りとは、債券を買った人が受け取る収益の割合のことです。利回りが上がると、国や企業がお金を借りるときの金利も上がりやすくなります。AI向けのデータセンターは巨額の借金で建てられることが多く、金利上昇は事業の採算を悪化させるため、AI関連株が敏感に反応しました。"
+    },
+    {
+      "heading": "📌 ③ 市場全体の動き：エネルギーだけが堅調",
+      "body": "ほとんどの業種が下げるなか、エネルギー株だけは堅調でした。中東情勢で原油が1バレル＝100ドル前後の高値にとどまっていることが、インフレ率を押し上げる要因にもなっています。物価が下がりにくいと、中央銀行が利下げしにくくなり、株式市場には重しとなります。"
+    },
+    {
+      "heading": "📌 ④ 日本への影響と投資家の視点",
+      "body": "米国のハイテク株安は、半導体関連の日本株（製造装置・素材メーカーなど）にも波及しやすく、日経平均の下押し要因になります。また、米金利の上昇は円安・ドル高を招きやすく、輸入コストの上昇を通じて日本企業の収益にも影響します。投資家にとっては、米国の物価統計と中央銀行の発言が当面の最重要イベントとなります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "How major US stock indexes fared Friday 10/16/2026",
+      "publisher": "AP (ABC News)",
+      "url": "https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-friday-10162026-137331951",
+      "date": "2026-10-16"
+    },
+    {
+      "title": "Markets today: U.S. stocks weighed down by extended sell-off in the tech sector",
+      "publisher": "BNN Bloomberg",
+      "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/10/16/us-markets-weighed-down-by-extended-sell-off-in-the-tech-sector/",
+      "date": "2026-10-16"
+    }
+  ]
+}
