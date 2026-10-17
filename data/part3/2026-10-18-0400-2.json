@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-18-0400-2",
+  "date": "2026-10-18",
+  "time": "04:00",
+  "scene": "社内｜シフト交代の調整と承認",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-CA"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-AU"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "Daniel, are you free to cover my Saturday shift? I have to go to my cousin's wedding out of town.",
+      "ja": "ダニエル、私の土曜のシフトを代わってもらえませんか。いとこの結婚式で遠方に行かなければならなくて。"
+    },
+    {
+      "tag": "M",
+      "en": "I'd like to help, but I'm already scheduled to close the store on Friday night.",
+      "ja": "力になりたいのですが、金曜の夜はすでに閉店作業の予定が入っています。"
+    },
+    {
+      "tag": "W",
+      "en": "I know it's short notice. I could take your Friday closing shift in exchange.",
+      "ja": "急な話なのは分かっています。代わりに金曜の閉店シフトを私が引き受けられます。"
+    },
+    {
+      "tag": "M",
+      "en": "That could work. Does the manager need to sign off on a swap like that?",
+      "ja": "それならいけそうです。そういう交換は店長の承認が必要ですか。"
+    },
+    {
+      "tag": "W",
+      "en": "Yes, she wants any changes in writing by Wednesday, so I'll fill out the request form now.",
+      "ja": "はい、変更はすべて水曜までに書面で出してほしいそうなので、今から申請用紙を書きます。"
+    },
+    {
+      "tag": "M",
+      "en": "Fine. Also, Saturday starts at eight, not nine, because of the weekend inventory count.",
+      "ja": "分かりました。それと、週末の棚卸しがあるので、土曜は9時ではなく8時開始ですよ。"
+    },
+    {
+      "tag": "W",
+      "en": "Really? I thought we only did the count on the first Sunday of the month.",
+      "ja": "本当ですか。棚卸しは月の最初の日曜だけだと思っていました。"
+    },
+    {
+      "tag": "M",
+      "en": "They moved it up this month. Check the schedule posted near the break room.",
+      "ja": "今月は前倒しになったんです。休憩室の近くに貼ってある予定表を見てください。"
+    },
+    {
+      "tag": "W",
+      "en": "Thanks for the warning. I'll update the form and hand it to her this afternoon.",
+      "ja": "教えてくれてありがとう。用紙を修正して、今日の午後に店長へ渡します。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "Why is the woman unable to work on Saturday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "She is attending a training course.",
+          "ja": "研修に出席する。"
+        },
+        {
+          "key": "B",
+          "text": "She has to inspect some inventory.",
+          "ja": "在庫を点検しなければならない。"
+        },
+        {
+          "key": "C",
+          "text": "She will go to a family event.",
+          "ja": "家族の行事に行く。"
+        },
+        {
+          "key": "D",
+          "text": "She is moving to a new store.",
+          "ja": "別の店舗に異動する。"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0
+      ],
+      "explanation": "女性は冒頭で I have to go to my cousin's wedding out of town と述べています。cousin's wedding を a family event と言い換えた C が正解です。B の inventory は男性が後半で話す別の話題で、女性が土曜に働けない理由ではありません。",
+      "tip": "理由を問う設問は、依頼の直後に根拠が来ます。inventory のように後で出る語を選ばないよう、冒頭の発言に戻って確認します。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the man mean when he says, \"That could work\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "He is open to the suggestion.",
+          "ja": "提案を受け入れる余地がある。"
+        },
+        {
+          "key": "B",
+          "text": "He has already signed the form.",
+          "ja": "すでに用紙に署名した。"
+        },
+        {
+          "key": "C",
+          "text": "He prefers working on Saturday.",
+          "ja": "土曜に働くほうがよい。"
+        },
+        {
+          "key": "D",
+          "text": "He needs a different day off.",
+          "ja": "別の日に休みが要る。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "直前で女性が金曜の閉店シフトを引き受けると提案しており、男性はそれに対して That could work と答えています。交換案に前向きだという意味で A が正解です。B は承認が必要か尋ねている段階なので誤りです。",
+      "tip": "意図を問う引用文は、必ず直前の発言とセットで考えます。「提案に対する返事」かどうかで意味が決まります。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about the woman?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "She works every weekend.",
+          "ja": "毎週末働いている。"
+        },
+        {
+          "key": "B",
+          "text": "She is the store manager.",
+          "ja": "店長である。"
+        },
+        {
+          "key": "C",
+          "text": "She wants to close on Wednesday.",
+          "ja": "水曜に閉店作業をしたい。"
+        },
+        {
+          "key": "D",
+          "text": "She did not know about a schedule change.",
+          "ja": "予定の変更を知らなかった。"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        5,
+        6
+      ],
+      "explanation": "男性が土曜は8時開始だと告げると、女性は Really? I thought we only did the count on the first Sunday と驚いています。棚卸しの日程が変わったことを知らなかったと分かるので D が正解です。B の manager は承認する別の人物です。",
+      "tip": "推測問題は、Really? のような驚きの返事と、その直後の「思っていた内容」に根拠があります。表現そのものは本文に出ません。"
+    }
+  ],
+  "glossary": {
+    "cover": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "代わりを務める",
+      "note": "多義語。ここは欠勤者のシフトを代わる意味",
+      "example": {
+        "en": "Could you cover for me at the front desk this afternoon?",
+        "ja": "今日の午後、受付で私の代わりを務めてもらえますか。"
+      }
+    },
+    "scheduled to": {
+      "lemma": "be scheduled to",
+      "pos": "熟",
+      "ja": "～する予定になっている",
+      "note": "予定が組まれている状態",
+      "example": {
+        "en": "The new manager is scheduled to arrive on Monday.",
+        "ja": "新しい部長は月曜に着任する予定だ。"
+      }
+    },
+    "short notice": {
+      "lemma": "short notice",
+      "pos": "熟",
+      "ja": "急な知らせ、直前の連絡",
+      "note": "at short notice の形でよく使う",
+      "example": {
+        "en": "We had to reschedule the meeting at short notice.",
+        "ja": "直前になって会議の日程を変更しなければならなかった。"
+      }
+    },
+    "in exchange": {
+      "lemma": "in exchange",
+      "pos": "熟",
+      "ja": "その代わりに",
+      "note": "",
+      "example": {
+        "en": "The vendor offered a discount in exchange for a larger order.",
+        "ja": "業者はより大口の注文の代わりに値引きを提示した。"
+      }
+    },
+    "sign off on": {
+      "lemma": "sign off on",
+      "pos": "熟",
+      "ja": "～を承認する",
+      "note": "approve の言い換え",
+      "example": {
+        "en": "The director must sign off on every purchase over five hundred dollars.",
+        "ja": "500ドルを超える購入はすべて部長の承認が必要だ。"
+      }
+    },
+    "swap": {
+      "lemma": "swap",
+      "pos": "名",
+      "ja": "交換、入れ替え",
+      "note": "動詞でも使う",
+      "example": {
+        "en": "A shift swap needs approval from the supervisor.",
+        "ja": "シフトの交換には上司の承認が必要だ。"
+      }
+    },
+    "in writing": {
+      "lemma": "in writing",
+      "pos": "熟",
+      "ja": "書面で",
+      "note": "verbally の反対",
+      "example": {
+        "en": "Please confirm the change in writing by Friday.",
+        "ja": "変更は金曜までに書面で確認してください。"
+      }
+    },
+    "fill out": {
+      "lemma": "fill out",
+      "pos": "熟",
+      "ja": "記入する",
+      "note": "form とセットで使う",
+      "example": {
+        "en": "Please fill out this form and return it to the office.",
+        "ja": "この用紙に記入して事務所に提出してください。"
+      }
+    },
+    "inventory count": {
+      "lemma": "inventory count",
+      "pos": "熟",
+      "ja": "棚卸し",
+      "note": "在庫の数量確認",
+      "example": {
+        "en": "The store closes early on the day of the inventory count.",
+        "ja": "棚卸しの日は店が早く閉まる。"
+      }
+    },
+    "moved it up": {
+      "lemma": "move up",
+      "pos": "熟",
+      "ja": "前倒しにする",
+      "note": "反対は push back",
+      "example": {
+        "en": "We moved the deadline up by two days.",
+        "ja": "締め切りを2日前倒しにした。"
+      }
+    }
+  },
+  "point": {
+    "flow": "依頼 → 断る理由 → 交換案 → 承認手続き → 追加の確認事項 → 修正と提出",
+    "items": [
+      {
+        "title": "依頼と調整の会話は「断る → 代案」の順に進む",
+        "body": "最初の依頼が断られたら、次に出る代案が会話の中心になる。誰の何を交換するのかを対にして聞く。"
+      },
+      {
+        "title": "驚きの返事は推測問題の根拠になる",
+        "body": "Really? や I thought のような返事は、話者が知らなかった内容を示す。直後の発言と合わせて拾う。"
+      }
+    ]
+  }
+}

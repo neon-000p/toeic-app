@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-18-0400-1",
+  "date": "2026-10-18",
+  "time": "04:00",
+  "scene": "店舗・サービス｜修理の遅れと代替機の貸出",
+  "speakers": [
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-GB"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "M",
+      "en": "Hi, I dropped off my tablet for repair last Friday, and I haven't heard anything since.",
+      "ja": "こんにちは、先週の金曜にタブレットの修理を預けたのですが、それ以来何の連絡もありません。"
+    },
+    {
+      "tag": "W",
+      "en": "Let me check. It's still waiting on a new screen, which has been held up at our supplier.",
+      "ja": "確認しますね。新しい画面部品の入荷待ちで、その部品が仕入れ先で止まっています。"
+    },
+    {
+      "tag": "M",
+      "en": "That's a problem. I need it for a client presentation on Thursday.",
+      "ja": "それは困ります。木曜に取引先へのプレゼンで必要なんです。"
+    },
+    {
+      "tag": "W",
+      "en": "I understand. We can lend you a loaner tablet at no charge while you wait.",
+      "ja": "承知しました。お待ちの間、無料で代替のタブレットをお貸しできます。"
+    },
+    {
+      "tag": "M",
+      "en": "That would help, but will my files be on it?",
+      "ja": "助かりますが、私のファイルはそれに入っていますか。"
+    },
+    {
+      "tag": "W",
+      "en": "Not automatically. You'd need to back up your data first, and I can walk you through it today.",
+      "ja": "自動では入りません。先にデータのバックアップを取っていただく必要がありますが、今日その手順をご案内できます。"
+    },
+    {
+      "tag": "M",
+      "en": "Okay. And do you know when the new screen will arrive?",
+      "ja": "分かりました。それと、新しい画面部品はいつ届くか分かりますか。"
+    },
+    {
+      "tag": "W",
+      "en": "It should ship by Wednesday, so we'd call you and you could pick it up on Friday.",
+      "ja": "水曜までに出荷される見込みなので、こちらからご連絡し、金曜に受け取っていただけます。"
+    },
+    {
+      "tag": "M",
+      "en": "Fine. I'll take the loaner for now.",
+      "ja": "分かりました。とりあえず代替機をお借りします。"
+    },
+    {
+      "tag": "W",
+      "en": "Great. I'll get the paperwork ready while you set up the backup.",
+      "ja": "ありがとうございます。バックアップの設定をされている間に、書類を用意しておきます。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Upgrading a device's software",
+          "ja": "機器のソフトの更新"
+        },
+        {
+          "key": "B",
+          "text": "A delayed repair",
+          "ja": "修理の遅れ"
+        },
+        {
+          "key": "C",
+          "text": "Returning a purchase",
+          "ja": "購入品の返品"
+        },
+        {
+          "key": "D",
+          "text": "Changing a delivery address",
+          "ja": "配送先の変更"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で男性が I dropped off my tablet for repair と述べ、女性が still waiting on a new screen, ... held up at our supplier と答えています。修理が遅れている話なので B が正解です。software や delivery は本文に出ない話題で、D の address も話に出てきません。",
+      "tip": "1問目は最初の2行で決まります。「預けた」「連絡がない」から修理の話と分かれば、後半の細部に惑わされません。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why does the man need the tablet on Thursday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To attend a training session",
+          "ja": "研修に出るため"
+        },
+        {
+          "key": "B",
+          "text": "To pick up a replacement",
+          "ja": "交換品を受け取るため"
+        },
+        {
+          "key": "C",
+          "text": "To back up some files",
+          "ja": "ファイルを保存するため"
+        },
+        {
+          "key": "D",
+          "text": "To present to a client",
+          "ja": "取引先に発表するため"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        2
+      ],
+      "explanation": "男性は I need it for a client presentation on Thursday と言っています。present to a client は a client presentation の言い換えです。B の pick up や C の back up は後の発言に出る語で、木曜に必要な理由ではありません。",
+      "tip": "Thursday のような曜日は聞こえた瞬間に、直後の理由まで追います。後で出る pick up や back up は別の話です。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the woman most likely do next?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Prepare some forms",
+          "ja": "書類を準備する"
+        },
+        {
+          "key": "B",
+          "text": "Call the supplier",
+          "ja": "仕入れ先に電話する"
+        },
+        {
+          "key": "C",
+          "text": "Back up the man's files",
+          "ja": "男性のファイルを保存する"
+        },
+        {
+          "key": "D",
+          "text": "Order a new screen",
+          "ja": "新しい画面部品を注文する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        9
+      ],
+      "explanation": "最後に女性が I'll get the paperwork ready と述べています。paperwork を forms に言い換えた A が正解です。C のバックアップは男性が自分で行うもので、女性は手順を案内するだけです。",
+      "tip": "最後の1〜2行で、誰が何をすると言ったかを確認します。バックアップは「男性がやること」なので C は外れます。"
+    }
+  ],
+  "glossary": {
+    "dropped off": {
+      "lemma": "drop off",
+      "pos": "熟",
+      "ja": "預ける、置いていく",
+      "note": "修理や荷物を預ける言い方",
+      "example": {
+        "en": "I dropped off the documents at the front desk this morning.",
+        "ja": "今朝、書類を受付に預けてきました。"
+      }
+    },
+    "waiting on": {
+      "lemma": "wait on",
+      "pos": "熟",
+      "ja": "～の入荷・到着を待つ",
+      "note": "部品や承認を待つ状態を表す",
+      "example": {
+        "en": "We are still waiting on approval from the finance team.",
+        "ja": "まだ経理チームの承認待ちです。"
+      }
+    },
+    "held up": {
+      "lemma": "hold up",
+      "pos": "熟",
+      "ja": "遅れる、滞る",
+      "note": "delayed の言い換え",
+      "example": {
+        "en": "The shipment was held up at customs for two days.",
+        "ja": "荷物は税関で2日間止められた。"
+      }
+    },
+    "supplier": {
+      "lemma": "supplier",
+      "pos": "名",
+      "ja": "仕入れ先、供給業者",
+      "note": "vendor とほぼ同義",
+      "example": {
+        "en": "Our supplier promised to deliver the parts by Monday.",
+        "ja": "仕入れ先は月曜までに部品を納品すると約束した。"
+      }
+    },
+    "at no charge": {
+      "lemma": "at no charge",
+      "pos": "熟",
+      "ja": "無料で",
+      "note": "free の言い換え",
+      "example": {
+        "en": "The hotel offers airport pickup at no charge to guests.",
+        "ja": "そのホテルは宿泊客に空港送迎を無料で提供している。"
+      }
+    },
+    "loaner": {
+      "lemma": "loaner",
+      "pos": "名",
+      "ja": "代替の貸出品",
+      "note": "修理中に貸す機器",
+      "example": {
+        "en": "The garage gave me a loaner car while mine was repaired.",
+        "ja": "修理工場は修理中、代車を貸してくれた。"
+      }
+    },
+    "back up": {
+      "lemma": "back up",
+      "pos": "熟",
+      "ja": "バックアップを取る",
+      "note": "データを別の場所に保存すること",
+      "example": {
+        "en": "Please back up your files before updating the system.",
+        "ja": "システム更新の前にファイルのバックアップを取ってください。"
+      }
+    },
+    "walk you through": {
+      "lemma": "walk through",
+      "pos": "熟",
+      "ja": "手順を順に説明する",
+      "note": "案内・説明の定型表現",
+      "example": {
+        "en": "Let me walk you through the new expense system.",
+        "ja": "新しい経費システムを順にご説明します。"
+      }
+    },
+    "pick it up": {
+      "lemma": "pick up",
+      "pos": "熟",
+      "ja": "受け取りに行く",
+      "note": "選択肢では collect などに言い換わる",
+      "example": {
+        "en": "You can pick it up at the service counter after noon.",
+        "ja": "正午以降にサービスカウンターで受け取れます。"
+      }
+    },
+    "set up": {
+      "lemma": "set up",
+      "pos": "熟",
+      "ja": "設定する、準備する",
+      "note": "",
+      "example": {
+        "en": "She set up a meeting with the new supplier for Tuesday.",
+        "ja": "彼女は火曜に新しい仕入れ先との会議を設定した。"
+      }
+    }
+  },
+  "point": {
+    "flow": "状況の確認 → 原因 → 代替手段の提示 → 条件の質問 → 受け取りの見通し → 次の行動",
+    "items": [
+      {
+        "title": "代替案のあとには条件の質問が来る",
+        "body": "代わりの手段が示されたら、「それで足りるか」を確かめる質問が続く。その答えが細部の設問の根拠になる。"
+      },
+      {
+        "title": "誰が何をするかを分けて聞く",
+        "body": "依頼や手続きが複数出るときは、話者ごとに役割を分けて聞く。最後の設問は、最後に宣言された行動から作られる。"
+      }
+    ]
+  }
+}
