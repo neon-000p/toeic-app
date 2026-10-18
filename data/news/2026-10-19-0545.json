@@ -458,5 +458,23 @@
       "url": "https://www.placera.se/pressmeddelanden/dhl-dhl-ag-dhl-ag-raises-full-year-2026-earnings-guidance-20261016",
       "date": "2026-10-16"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-19-0545/00.mp3",
+      "audio/2026-10-19-0545/01.mp3",
+      "audio/2026-10-19-0545/02.mp3",
+      "audio/2026-10-19-0545/03.mp3",
+      "audio/2026-10-19-0545/04.mp3",
+      "audio/2026-10-19-0545/05.mp3",
+      "audio/2026-10-19-0545/06.mp3",
+      "audio/2026-10-19-0545/07.mp3",
+      "audio/2026-10-19-0545/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 232341,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-18T20:49:42.381Z",
+    "trimmed": true
+  }
 }
