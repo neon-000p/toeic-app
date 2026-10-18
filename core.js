@@ -1600,9 +1600,11 @@
     var aiHTML =
       '<hr class="sep">' +
       '<h2>語の意味（Gemini）</h2>' +
-      '<p class="small muted" style="margin:-6px 0 10px">語をタップしたとき、その文での使われ方を Gemini に尋ねます。' +
-        '背景の英訳にも使います。キーは<b>この端末にだけ</b>保存され、GitHub には入りません。' +
-        'Google Cloud 側で HTTP リファラを <code>neon-000p.github.io</code> に制限しておくと安全です。</p>' +
+      /* 一般の人向けの言い方にする。キーの制限のかけ方（管理者向け）は README の「Gemini の API キー」 */
+      '<p class="small muted" style="margin:-6px 0 10px">語をタップしたとき、その文での意味を Gemini（Google の AI）に聞いて表示します。' +
+        '背景の英訳にも使います。使うには Gemini の API キーが必要です' +
+        '（<a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">Google AI Studio</a> で無料で作れます）。' +
+        'キーは<b>この端末にだけ</b>保存され、ほかの人やほかの端末には送られません。</p>' +
       '<label class="field"><span>API キー</span>' +
         '<input type="password" id="gKey" placeholder="AIza…" autocomplete="off" value="' + esc(AI.cfg().key) + '"></label>' +
       '<label class="field"><span>モデル</span><select id="gModel"></select></label>' +
