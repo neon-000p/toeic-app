@@ -458,5 +458,23 @@
       "url": "https://www.tomtom.com/newsroom/press-releases/earnings-other/29691/third-quarter-2026-results/",
       "date": "2026-10-15"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-18-1647/00.mp3",
+      "audio/2026-10-18-1647/01.mp3",
+      "audio/2026-10-18-1647/02.mp3",
+      "audio/2026-10-18-1647/03.mp3",
+      "audio/2026-10-18-1647/04.mp3",
+      "audio/2026-10-18-1647/05.mp3",
+      "audio/2026-10-18-1647/06.mp3",
+      "audio/2026-10-18-1647/07.mp3",
+      "audio/2026-10-18-1647/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 228117,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-18T07:48:36.102Z",
+    "trimmed": true
+  }
 }
