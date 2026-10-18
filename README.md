@@ -215,6 +215,20 @@ API キーはこれまでどおり端末ごとに入れる。
 - ホーム・一覧・語彙帳は、記録が届くと描き直す
 - 動作の確認は `node tools/test-sync.js`（2台の端末と偽の Firestore で確かめる）
 
+### iPad・iPhone でのログイン
+
+Firebase の既定のままだと、ログインの受け渡しは `toeic-daily-7cea5.firebaseapp.com` で行われる。
+iPad・iPhone（Safari も Chrome も中身は WebKit）はドメインをまたぐ受け渡しを遮るので、
+Google でアカウントを選んでもアプリに結果が届かない。そこで次のようにしている。
+
+- 受け渡し用のファイルを、アプリと同じドメインに置く。リポジトリ
+  [neon-000p.github.io](https://github.com/neon-000p/neon-000p.github.io) の `__/auth/`
+  （Firebase から Actions が取り寄せる）。`core.js` の `authDomain` は `neon-000p.github.io`
+- Google Cloud Console → API とサービス → 認証情報 → OAuth 2.0 クライアント（Web client）の
+  「承認済みのリダイレクト URI」に `https://neon-000p.github.io/__/auth/handler` を足す
+- iPad・iPhone ではポップアップではなく、ページごと Google へ移って戻る方式にする
+  （`signInWithRedirect`。戻ってきたら `finishRedirect()` が結果を受け取って同期する）
+
 ### はじめの設定（1回だけ）
 
 1. [Firebase コンソール](https://console.firebase.google.com/) でプロジェクトを作る
