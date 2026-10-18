@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-18-1647",
+  "date": "2026-10-18",
+  "time": "16:47",
+  "createdAt": "2026-10-18T16:47:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "TomTom to Cut 200 Jobs in Reorganization",
+    "ja": "トムトム、200人削減へ組織再編"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Dutch navigation company TomTom, known for its maps and traffic data, said on Thursday that it will cut about 200 jobs.",
+            "ja": "マップと交通データで知られるオランダのナビゲーション会社トムトムは木曜日、約200人の人員を削減すると発表した。"
+          },
+          {
+            "en": "This is roughly 6% of its 3,300 employees.",
+            "ja": "これは3,300人の従業員のおよそ6％にあたる。"
+          },
+          {
+            "en": "The company will also reorganize into three divisions: automated driving, location data, and navigation.",
+            "ja": "同社は組織も再編し、自動運転、位置情報データ、ナビゲーションの3部門にする。"
+          },
+          {
+            "en": "Executives said the goal is to reduce management layers.",
+            "ja": "経営陣は、目的は管理職の階層を減らすことだと述べた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The news came with third-quarter results that missed expectations.",
+            "ja": "この発表は、予想を下回った第3四半期決算と同時に行われた。"
+          },
+          {
+            "en": "Revenue fell 6% to 129 million euros, and sales to carmakers dropped 19%.",
+            "ja": "売上高は6％減の1億2,900万ユーロで、自動車メーカー向けの売上は19％減った。"
+          },
+          {
+            "en": "The restructuring will cost 15 million euros in the fourth quarter, but it should save about 21 million euros a year.",
+            "ja": "再編には第4四半期に1,500万ユーロの費用がかかるが、年間で約2,100万ユーロを節約できる見込みだ。"
+          },
+          {
+            "en": "TomTom raised its profit forecast for the year, yet its shares fell about 5%.",
+            "ja": "トムトムは通期の利益見通しを引き上げたが、株価は約5％下落した。"
+          },
+          {
+            "en": "The firm had already cut 300 jobs last year as it shifted toward artificial intelligence.",
+            "ja": "同社は昨年、人工知能（AI）へ軸足を移す中で、すでに300人を削減していた。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "About what share of TomTom's employees will lose their jobs?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 3%",
+          "ja": "約3％"
+        },
+        {
+          "key": "B",
+          "text": "About 6%",
+          "ja": "約6％"
+        },
+        {
+          "key": "C",
+          "text": "About 19%",
+          "ja": "約19％"
+        },
+        {
+          "key": "D",
+          "text": "About 21%",
+          "ja": "約21％"
+        }
+      ],
+      "answer": "B",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "explanation": "本文の2文目に「This is roughly 6% of its 3,300 employees.」とあり、削減対象は従業員の約6％です。したがってBが正解。Aの3％は本文にない数字です。Cの19％は自動車メーカー向け売上の減少率（sales to carmakers dropped 19%）で、人員削減の割合ではありません。Dの21％は年間の節約額21 million euros の数字を取り違えさせる引っかけです。",
+      "tip": "Part 7 の数字問題では、同じ文書に複数の数字が出てくる。「何についての数字か」（対象）を必ず確認してから選ぶこと。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "What does TomTom say is the goal of the reorganization?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To open new offices abroad",
+          "ja": "海外に新しい拠点を開く"
+        },
+        {
+          "key": "B",
+          "text": "To stop making maps",
+          "ja": "地図の制作をやめる"
+        },
+        {
+          "key": "C",
+          "text": "To reduce management layers",
+          "ja": "管理職の階層を減らす"
+        },
+        {
+          "key": "D",
+          "text": "To raise prices for carmakers",
+          "ja": "自動車メーカー向け価格を上げる"
+        }
+      ],
+      "answer": "C",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "explanation": "本文の4文目に「Executives said the goal is to reduce management layers.」とあり、目的は管理職の階層を減らすことです。したがってCが正解。Aの海外拠点やBの地図制作の中止、Dの価格引き上げは本文に一切書かれていません（本文にない情報）。Bは、同社が地図で知られているという記述を利用した引っかけです。",
+      "tip": "目的・理由を問う設問では、the goal is / aims to / in order to などの表現が根拠のサインになる。該当文を探してから選択肢と照合する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "reorganize",
+      "pos": "動",
+      "ja": "再編する、組織を作り直す",
+      "gloss": "",
+      "example": {
+        "en": "The company will reorganize its sales team next month.",
+        "ja": "同社は来月、営業チームを再編する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "division",
+      "pos": "名",
+      "ja": "部門、事業部",
+      "gloss": "",
+      "example": {
+        "en": "Each division has its own budget.",
+        "ja": "各部門にはそれぞれ予算がある。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "layer",
+      "pos": "名",
+      "ja": "階層、層",
+      "gloss": "（＝組織の上下の段階のこと）",
+      "example": {
+        "en": "We want to remove one layer of approval to speed up the process.",
+        "ja": "手続きを速めるため、承認の段階を1つ減らしたい。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "expectation",
+      "pos": "名",
+      "ja": "予想、期待",
+      "gloss": "",
+      "example": {
+        "en": "Sales were below our expectations this quarter.",
+        "ja": "今四半期の売上は私たちの予想を下回った。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "revenue",
+      "pos": "名",
+      "ja": "売上高、収益",
+      "gloss": "",
+      "example": {
+        "en": "Annual revenue rose by 8%.",
+        "ja": "年間の売上高は8％増えた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "restructuring",
+      "pos": "名",
+      "ja": "（組織の）再編、リストラ",
+      "gloss": "（＝会社の仕組みや人員を作り直すこと）",
+      "example": {
+        "en": "The restructuring will be completed by March.",
+        "ja": "再編は3月までに完了する予定だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "forecast",
+      "pos": "名・動",
+      "ja": "見通し、予測（する）",
+      "gloss": "",
+      "example": {
+        "en": "The company raised its sales forecast for the year.",
+        "ja": "会社は通期の売上見通しを引き上げた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "shift",
+      "pos": "動・名",
+      "ja": "移す、転換する",
+      "gloss": "",
+      "example": {
+        "en": "The firm plans to shift its focus to online services.",
+        "ja": "その会社はオンラインサービスに軸足を移す計画だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "dutch": {
+      "lemma": "Dutch",
+      "pos": "形",
+      "ja": "オランダの",
+      "note": ""
+    },
+    "navigation": {
+      "lemma": "navigation",
+      "pos": "名",
+      "ja": "ナビゲーション、航行",
+      "note": ""
+    },
+    "known": {
+      "lemma": "know",
+      "pos": "動",
+      "ja": "知られている",
+      "note": ""
+    },
+    "traffic": {
+      "lemma": "traffic",
+      "pos": "名",
+      "ja": "交通、通信量",
+      "note": ""
+    },
+    "cut": {
+      "lemma": "cut",
+      "pos": "動",
+      "ja": "削減する",
+      "note": "cut jobs＝人員を削減する"
+    },
+    "jobs": {
+      "lemma": "job",
+      "pos": "名",
+      "ja": "仕事、雇用",
+      "note": ""
+    },
+    "roughly": {
+      "lemma": "roughly",
+      "pos": "副",
+      "ja": "おおよそ",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    },
+    "reorganize": {
+      "lemma": "reorganize",
+      "pos": "動",
+      "ja": "再編する",
+      "note": ""
+    },
+    "divisions": {
+      "lemma": "division",
+      "pos": "名",
+      "ja": "部門",
+      "note": ""
+    },
+    "automated": {
+      "lemma": "automated",
+      "pos": "形",
+      "ja": "自動化された",
+      "note": ""
+    },
+    "location": {
+      "lemma": "location",
+      "pos": "名",
+      "ja": "位置、所在地",
+      "note": ""
+    },
+    "executives": {
+      "lemma": "executive",
+      "pos": "名",
+      "ja": "経営幹部",
+      "note": ""
+    },
+    "goal": {
+      "lemma": "goal",
+      "pos": "名",
+      "ja": "目標、目的",
+      "note": ""
+    },
+    "reduce": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "management": {
+      "lemma": "management",
+      "pos": "名",
+      "ja": "経営陣、管理",
+      "note": ""
+    },
+    "layers": {
+      "lemma": "layer",
+      "pos": "名",
+      "ja": "階層",
+      "note": ""
+    },
+    "results": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "結果、決算",
+      "note": "決算発表の意味でも使う"
+    },
+    "missed": {
+      "lemma": "miss",
+      "pos": "動",
+      "ja": "達しない、外す",
+      "note": ""
+    },
+    "expectations": {
+      "lemma": "expectation",
+      "pos": "名",
+      "ja": "予想、期待",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "名",
+      "ja": "売上高",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落する",
+      "note": ""
+    },
+    "sales": {
+      "lemma": "sales",
+      "pos": "名",
+      "ja": "売上、販売",
+      "note": ""
+    },
+    "carmakers": {
+      "lemma": "carmaker",
+      "pos": "名",
+      "ja": "自動車メーカー",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下がる",
+      "note": ""
+    },
+    "restructuring": {
+      "lemma": "restructuring",
+      "pos": "名",
+      "ja": "再編",
+      "note": ""
+    },
+    "save": {
+      "lemma": "save",
+      "pos": "動",
+      "ja": "節約する",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "見通し",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式",
+      "note": "株価の話では「株」の意味"
+    },
+    "shifted": {
+      "lemma": "shift",
+      "pos": "動",
+      "ja": "移した",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "過去完了形（had＋過去分詞）と、同時進行・理由を表す接続詞 as",
+    "quote": "The firm had already cut 300 jobs last year as it shifted toward artificial intelligence.",
+    "quoteJa": "同社は昨年、人工知能（AI）へ軸足を移す中で、すでに300人を削減していた。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "「had already cut」は過去完了形（had＋過去分詞）です。過去のある時点（ここでは今回の発表）より前に完了していた出来事を表し、already（すでに）とよく一緒に使われます。後半の「as it shifted toward…」の as は「〜する中で／〜するにつれて」という同時進行を表す接続詞で、文脈によっては「〜なので」という理由の意味にもなります。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "The firm cut 300 jobs last year.（単純な過去：昨年300人を削減した事実を述べるだけ）→ The firm had already cut 300 jobs last year.（今回の発表より前に済んでいたことを強調）。as は while（〜する間に）や because（〜なので）に近い意味で置き換えられる場合があります。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 では、by the time / before / after などの時を表す語とセットで、過去完了形か過去形かを選ばせる問題が出ます。「過去の2つの出来事のうち、先に起きたほうが had＋過去分詞」と覚えましょう。Part 7 では、時系列を整理して「いつ何が起きたか」を問う設問で役立ちます。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "By the time the report was submitted, the team had already finished the review.（報告書が提出されたとき、チームはすでに確認を終えていた。）／ We had already signed the contract when the price changed.（価格が変わったとき、すでに契約を結んでいた。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 トムトムとはどんな会社か",
+      "body": "トムトムはオランダの会社で、かつては車載ナビゲーション機器で有名でした。現在は自動車メーカーなどに地図データや交通情報を提供する事業が中心です。スマートフォンの地図アプリが普及したことで、機器販売は縮小し、データやソフトウェアを売るビジネスへ移ってきました。"
+    },
+    {
+      "heading": "📌 今回の削減の中身",
+      "body": "削減は約200人で、全従業員（約3,300人）の約6％です。会社は組織を3つの部門に再編し、管理職の階層（レイヤー）を減らす方針です。再編費用は第4四半期に1,500万ユーロですが、年間で約2,100万ユーロの節約になる見込みです。「リストラ費用を先に払い、翌年以降にコストを下げる」という典型的な流れです。"
+    },
+    {
+      "heading": "📌 業界全体の動き",
+      "body": "自動車向けのソフトウェア・データ企業は、車の販売の伸び悩みや、自動車メーカーが自社開発へ移る動きの影響を受けています。トムトムでも自動車向け売上が19％減りました。一方で、通期の利益率の見通しは引き上げられており、「売上は落ちても、コスト構造を見直して利益を守る」という姿勢が見えます。昨年はAIの活用を進める中で300人を削減しており、人員の見直しが続いています。"
+    },
+    {
+      "heading": "📌 日本への示唆と投資家の視点",
+      "body": "日本の自動車メーカーや部品メーカーにとって、地図・交通データの調達先の動向は無関係ではありません。また、日本企業でも「管理職の階層が多く意思決定が遅い」ことは長く課題とされており、階層を減らす今回のような動きは参考になります。投資家にとっては、売上減でも利益見通しを上げた点は好材料ですが、株価が約5％下がったことは、成長への不安が根強いことを示しています。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "TomTom plans to cut 200 jobs, roughly 6% of workforce",
+      "publisher": "NL Times",
+      "url": "https://nltimes.nl/2026/10/15/tomtom-plans-cut-200-jobs-roughly-6-workforce",
+      "date": "2026-10-15"
+    },
+    {
+      "title": "Third quarter 2026 results",
+      "publisher": "TomTom",
+      "url": "https://www.tomtom.com/newsroom/press-releases/earnings-other/29691/third-quarter-2026-results/",
+      "date": "2026-10-15"
+    }
+  ]
+}
