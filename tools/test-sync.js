@@ -81,12 +81,15 @@ function makeDevice(server, opts) {
     delete() { dev.deleted = true; current = null; setTimeout(() => authCb(null), 0); return Promise.resolve(); }
   };
   const dev = { reauth: null, deleted: false };
-  let current = opts.signedIn ? fbUser : null;
+  /* ページ移動式のログインから戻ったときは、本物と同じく最初の知らせからログイン中にする */
+  let current = (opts.signedIn || opts.redirectUser) ? fbUser : null;
   const auth = {
     get currentUser() { return current; },
     onAuthStateChanged(cb) { authCb = cb; setTimeout(() => cb(current), 0); },
     signInWithPopup() { current = fbUser; setTimeout(() => authCb(current), 0); return Promise.resolve(); },
-    signOut() { current = null; setTimeout(() => authCb(null), 0); return Promise.resolve(); }
+    signOut() { current = null; setTimeout(() => authCb(null), 0); return Promise.resolve(); },
+    signInWithRedirect() { dev.redirected = true; return new Promise(() => {}); },   // ページが移るので戻らない
+    getRedirectResult() { return Promise.resolve({ user: current }); }
   };
   const authFn = () => auth;
   authFn.GoogleAuthProvider = function () { this.setCustomParameters = () => {}; };
@@ -362,6 +365,16 @@ async function settle(dev) {
   assert.strictEqual(D.raw('days'), null);
   assert.strictEqual(D.raw('gemini').key, 'K', 'API キーは残す');
   console.log('ok 18 この端末の記録も消せる（API キーは残す）');
+
+  /* 19. ページ移動式のログインから戻ってきたら、結果を受け取って記録を合わせる（iPad・iPhone） */
+  const E = makeDevice(server, { uid: 'u3', signedIn: false,
+    redirectUser: true, data: { days: ['2026-10-01'] }, store: { 'toeic.sync.redirect': String(Date.now()) } });
+  await settle(E); await tick(50); await settle(E);
+  assert.strictEqual(E.T.Sync.status().phase, 'idle', 'E: ' + E.T.Sync.status().msg);
+  assert(E.T.Sync.status().account, '戻ってきたらログイン中になる');
+  assert.deepStrictEqual(server.get('u3', 'days'), ['2026-10-01'], '戻ってきてすぐ手元の記録が送られる');
+  assert(!E.store['toeic.sync.redirect'], '印は消える');
+  console.log('ok 19 ページ移動式のログインから戻ると、ログイン中になり記録が送られる');
 
   console.log('\nすべて通りました');
   process.exit(0);

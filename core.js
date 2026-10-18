@@ -270,7 +270,11 @@
      値は公開されてよいもの（守りは Firestore のルールで行う）。手順は README。 */
   var FIREBASE = {
     apiKey: 'AIzaSyBTSQB2bwjcVfz-l5UFnmkpRWGQFnDuBqs',
-    authDomain: 'toeic-daily-7cea5.firebaseapp.com',
+    /* ログインの受け渡しは、アプリと同じドメインに置いた Firebase のファイルで行う
+       （リポジトリ neon-000p.github.io の __/auth/）。別ドメインの firebaseapp.com だと、
+       iPad・iPhone（Safari も Chrome も中身は同じ WebKit）がドメインをまたぐ受け渡しを遮り、
+       ログインしても結果がアプリに届かない。手順は README の「iPad・iPhone でのログイン」 */
+    authDomain: 'neon-000p.github.io',
     projectId: 'toeic-daily-7cea5',
     appId: '1:227084784386:web:2674b140fa4b4cec51e81b'
   };
@@ -439,14 +443,28 @@
       return sdk;
     }
 
+    /* iPad・iPhone。ブラウザが何であっても中身は WebKit で、ポップアップは別のタブとして開き、
+       元のページに結果が戻りにくい。ページごと Google へ移って戻ってくる方式にする */
+    function needsRedirect() {
+      if (typeof navigator === 'undefined') return false;
+      var ua = navigator.userAgent || '';
+      return /iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    }
+
     function signIn() {
       if (!available()) return Promise.reject(new Error(FIREBASE ? 'このページでは使えません' : '未設定です'));
       return loadSdk().then(function (fb) {
         var p = new fb.auth.GoogleAuthProvider();
         p.setCustomParameters({ prompt: 'select_account' });
+        if (needsRedirect()) {
+          /* 戻ってきたページで結果を受け取るための印。init() が見る */
+          write('sync.redirect', Date.now());
+          return fb.auth().signInWithRedirect(p);
+        }
         return fb.auth().signInWithPopup(p).catch(function (e) {
           /* ポップアップが開けない環境だけ、ページ移動式に切り替える */
           if (e && (e.code === 'auth/popup-blocked' || e.code === 'auth/operation-not-supported-in-environment')) {
+            write('sync.redirect', Date.now());
             return fb.auth().signInWithRedirect(p);
           }
           throw e;
@@ -680,7 +698,28 @@
         else if (Date.now() - lastFull() > FULL_GAP) run(true);
       });
       global.addEventListener('online', resume);
-      resume();
+      if (!finishRedirect()) resume();
+    }
+
+    /* ページ移動式のログインから戻ってきたとき。まだログインしていない扱いなので
+       resume() は SDK を読まない。印があれば SDK を読んで結果を受け取り、両方の記録を合わせる */
+    function finishRedirect() {
+      var at = read('sync.redirect', 0);
+      if (!at) return false;
+      forget('sync.redirect');
+      if (Date.now() - at > 10 * 60 * 1000) return false;   // 古い印は捨てる
+      setState('busy');
+      loadSdk().then(function (fb) { return fb.auth().getRedirectResult(); })
+        .then(function (r) {
+          /* 普通は最初の知らせでログイン中になっているが、遅れたときは結果のほうを使う */
+          if (!user && r && r.user) {
+            user = r.user;
+            write('sync.user', { uid: user.uid, email: user.email || '', name: user.displayName || '' });
+          }
+          if (user) run(true); else setState('off');
+        })
+        .catch(fail);
+      return true;
     }
 
     /* ログイン状態の小さな表示。ホームの歯車の隣に置き、押すと設定を開く。
