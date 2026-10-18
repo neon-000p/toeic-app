@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-19-0545",
+  "date": "2026-10-19",
+  "time": "05:45",
+  "createdAt": "2026-10-19T05:45:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "DHL Raises Its Profit Forecast Again on Strong Express Business",
+    "ja": "DHL、特急便好調で再び利益予想を上方修正"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "DHL Group has raised its profit forecast for the second time this year.",
+            "ja": "DHLグループは、今年2度目となる利益予想の引き上げを行った。"
+          },
+          {
+            "en": "The German logistics company said on October 16 that its 2026 operating profit should exceed 7 billion euros.",
+            "ja": "このドイツの物流会社は10月16日、2026年の営業利益が70億ユーロを超える見通しだと発表した。"
+          },
+          {
+            "en": "The earlier target was more than 6.5 billion euros.",
+            "ja": "従来の目標は65億ユーロ超だった。"
+          },
+          {
+            "en": "Third-quarter profit rose about 16 percent from a year earlier, to roughly 1.7 billion euros.",
+            "ja": "第3四半期の利益は前年同期から約16%増え、およそ17億ユーロとなった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The company said the increase was driven by strong results in its Express division, which delivers urgent parcels around the world.",
+            "ja": "同社は、上方修正の要因は、世界中へ急ぎの荷物を届ける特急便部門の好調な業績だと説明した。"
+          },
+          {
+            "en": "Limited cargo space on airplanes also helped, because customers paid more to move goods quickly.",
+            "ja": "航空機の貨物スペースが限られていたことも追い風となった。顧客が荷物を早く運ぶためにより多く支払ったためだ。"
+          },
+          {
+            "en": "Managers also expect a strong peak season in the fourth quarter, when online shopping increases.",
+            "ja": "経営陣は、ネット通販が増える第4四半期の繁忙期も好調になるとみている。"
+          },
+          {
+            "en": "As a result, DHL plans to raise its spending on equipment and facilities to about 3.6 billion euros.",
+            "ja": "その結果、DHLは設備や施設への支出を約36億ユーロに引き上げる計画だ。"
+          },
+          {
+            "en": "The company will review its longer-term profit target in March 2027.",
+            "ja": "同社は、より長期の利益目標を2027年3月に見直す予定だ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What does DHL now expect for its 2026 operating profit?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "More than 6.5 billion euros",
+          "ja": "65億ユーロ超"
+        },
+        {
+          "key": "B",
+          "text": "About 1.7 billion euros",
+          "ja": "約17億ユーロ"
+        },
+        {
+          "key": "C",
+          "text": "More than 7 billion euros",
+          "ja": "70億ユーロ超"
+        },
+        {
+          "key": "D",
+          "text": "About 3.6 billion euros",
+          "ja": "約36億ユーロ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落の2文目に「2026年の営業利益は70億ユーロを超える見通し(should exceed 7 billion euros)」とあるため、正解は C。A は3文目の「従来の目標」で、今回の見通しではない。B は4文目の第3四半期の利益(約17億ユーロ)で、通期の見通しとは別の数字。D は最終段落にある設備・施設への支出額で、利益ではない。このように、本文の別の数字を選択肢に並べる引っかけが典型的。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う問題は、質問の主語(何の数字か)を先に確認する。本文には複数の数字が出るので、「通期の営業利益」という条件に合うものだけを拾う。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT mentioned as a reason for the higher forecast?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Strong results in the Express division",
+          "ja": "特急便部門の好調"
+        },
+        {
+          "key": "B",
+          "text": "Limited cargo space on airplanes",
+          "ja": "航空貨物スペースの不足"
+        },
+        {
+          "key": "C",
+          "text": "A strong peak season expected in the fourth quarter",
+          "ja": "第4四半期の繁忙期への期待"
+        },
+        {
+          "key": "D",
+          "text": "Lower fuel prices",
+          "ja": "燃料価格の下落"
+        }
+      ],
+      "answer": "D",
+      "explanation": "第2段落に挙がる要因は、A(特急便部門の好調)、B(航空機の貨物スペースの不足)、C(第4四半期の繁忙期への期待)の3つ。燃料価格の下落は本文に出てこないので、「述べられていないもの」を選ぶこの設問の正解は D。A・B・C はいずれも第2段落の1〜3文目に対応する。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "NOT問題は、選択肢を1つずつ本文と照合し、「本文にあるもの」を消していく。最後に残った、本文に根拠のない選択肢が正解。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "forecast",
+      "pos": "名・動",
+      "ja": "予想、予測(する)",
+      "gloss": "",
+      "example": {
+        "en": "DHL cut its sales forecast after the order was canceled.",
+        "ja": "DHLは注文が取り消された後、売上予想を引き下げた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "exceed",
+      "pos": "動",
+      "ja": "〜を超える",
+      "gloss": "",
+      "example": {
+        "en": "Sales this quarter should exceed our target.",
+        "ja": "今四半期の売上は目標を上回るはずだ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "target",
+      "pos": "名",
+      "ja": "目標",
+      "gloss": "",
+      "example": {
+        "en": "The team met its monthly target.",
+        "ja": "そのチームは月間目標を達成した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "urgent",
+      "pos": "形",
+      "ja": "急ぎの、緊急の",
+      "gloss": "",
+      "example": {
+        "en": "Please send the urgent documents by noon.",
+        "ja": "急ぎの書類は正午までに送ってください。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "limited",
+      "pos": "形",
+      "ja": "限られた",
+      "gloss": "",
+      "example": {
+        "en": "We have limited stock of this item.",
+        "ja": "この商品は在庫が限られている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "peak season",
+      "pos": "熟",
+      "ja": "繁忙期",
+      "gloss": "(＝1年のうちで荷物や客が最も多い時期のこと)",
+      "example": {
+        "en": "The warehouse hires extra staff during the peak season.",
+        "ja": "その倉庫は繁忙期に追加の人員を雇う。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "facilities",
+      "pos": "名",
+      "ja": "施設、設備",
+      "gloss": "",
+      "example": {
+        "en": "The company is building new storage facilities near the port.",
+        "ja": "その会社は港の近くに新しい保管施設を建設している。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "review",
+      "pos": "動",
+      "ja": "〜を見直す、検討する",
+      "gloss": "",
+      "example": {
+        "en": "The manager will review the budget next week.",
+        "ja": "部長は来週、予算を見直す。"
+      }
+    }
+  ],
+  "glossary": {
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予想",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "logistics": {
+      "lemma": "logistics",
+      "pos": "名",
+      "ja": "物流",
+      "note": ""
+    },
+    "operating": {
+      "lemma": "operating",
+      "pos": "形",
+      "ja": "営業の",
+      "note": "operating profit で営業利益"
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "exceed": {
+      "lemma": "exceed",
+      "pos": "動",
+      "ja": "〜を超える",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "earlier",
+      "pos": "形",
+      "ja": "以前の",
+      "note": ""
+    },
+    "target": {
+      "lemma": "target",
+      "pos": "名",
+      "ja": "目標",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "増えた",
+      "note": "riseの過去形"
+    },
+    "roughly": {
+      "lemma": "roughly",
+      "pos": "副",
+      "ja": "およそ",
+      "note": ""
+    },
+    "driven": {
+      "lemma": "drive",
+      "pos": "動",
+      "ja": "押し上げられた",
+      "note": "be driven by 〜で、〜が原動力で"
+    },
+    "results": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "業績、結果",
+      "note": "決算の文脈では「業績」"
+    },
+    "division": {
+      "lemma": "division",
+      "pos": "名",
+      "ja": "部門",
+      "note": ""
+    },
+    "delivers": {
+      "lemma": "deliver",
+      "pos": "動",
+      "ja": "配送する",
+      "note": ""
+    },
+    "urgent": {
+      "lemma": "urgent",
+      "pos": "形",
+      "ja": "急ぎの",
+      "note": ""
+    },
+    "parcels": {
+      "lemma": "parcel",
+      "pos": "名",
+      "ja": "小包",
+      "note": ""
+    },
+    "limited": {
+      "lemma": "limited",
+      "pos": "形",
+      "ja": "限られた",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "space": {
+      "lemma": "space",
+      "pos": "名",
+      "ja": "スペース",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "商品、荷物",
+      "note": "常に複数形"
+    },
+    "peak": {
+      "lemma": "peak",
+      "pos": "名・形",
+      "ja": "最盛期(の)",
+      "note": ""
+    },
+    "season": {
+      "lemma": "season",
+      "pos": "名",
+      "ja": "時期、季節",
+      "note": ""
+    },
+    "managers": {
+      "lemma": "manager",
+      "pos": "名",
+      "ja": "経営陣、管理職",
+      "note": ""
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "〜を見込む",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "equipment": {
+      "lemma": "equipment",
+      "pos": "名",
+      "ja": "設備、機器",
+      "note": "不可算名詞"
+    },
+    "facilities": {
+      "lemma": "facility",
+      "pos": "名",
+      "ja": "施設",
+      "note": ""
+    },
+    "review": {
+      "lemma": "review",
+      "pos": "動",
+      "ja": "見直す",
+      "note": ""
+    },
+    "longer-term": {
+      "lemma": "long-term",
+      "pos": "形",
+      "ja": "より長期の",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "現在完了形（have/has＋過去分詞）と for the second time",
+    "quote": "DHL Group has raised its profit forecast for the second time this year.",
+    "quoteJa": "DHLグループは、今年2度目となる利益予想の引き上げを行った。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "has raised は「現在完了形（has＋過去分詞）」です。過去に起きたことが、今の状態につながっているときに使います。ここでは「予想を引き上げた」という出来事が、現在の新しい予想として残っていることを表します。for the second time this year(今年2度目)のように回数を示す語句とも相性がよく、「経験・回数」を表す用法です。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "DHL raised its forecast on October 16.(過去形)は、10月16日に引き上げた、という過去の事実だけを述べます。一方、DHL has raised its forecast.(現在完了形)は、「その結果、今は引き上げ後の予想になっている」という現在とのつながりを伝えます。ニュースの1文目に現在完了形が多いのはこのためで、続く文で具体的な日付を過去形で説明するのが定番の流れです。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、last year や yesterday などの過去を表す語があれば過去形、since や so far、for the second time のような語があれば現在完了形、という判断を問う問題が頻出します。Part 6 の社内通知やメールでも、We have received your order. のような現在完了形が自然に使われます。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The company has opened three new warehouses this year.（今年、その会社は新しい倉庫を3つ開設した。）／ We have already shipped your order.（ご注文品はすでに発送済みです。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① 何が起きたのか：DHLの上方修正",
+      "body": "DHLグループは、ドイツ郵便を源流とする世界最大級の物流企業です。2026年の営業利益見通しを「65億ユーロ超」から「70億ユーロ超」へ引き上げ、7月に続く今年2度目の上方修正となりました。第3四半期の利益は前年同期比で約16%増えています。"
+    },
+    {
+      "heading": "📌 ② 専門用語をかみ砕く",
+      "body": "「Express(特急便)」は、国をまたいで急ぎの荷物を空輸する高単価のサービスです。「ピークシーズン」は、ブラックフライデーやクリスマスなどで通販の荷物が急増する年末の繁忙期のことです。また、今回は航空機の貨物スペースが不足したことで運賃が上がり、同社の特急便部門の利益を約1億ユーロ押し上げたと報じられています。需給が逼迫すると物流会社の収益が増える、という構図です。"
+    },
+    {
+      "heading": "📌 ③ 業界全体と日本への影響",
+      "body": "物流各社は、関税をめぐる貿易の変動や、中東情勢による海上輸送の混乱の影響を受けています。海上が混乱すると空輸に荷物が流れ、航空貨物の需給がさらに引き締まりやすくなります。日本の輸出企業や小売企業にとっては、国際輸送費の上昇や納期の遅れが、年末商戦に向けたコスト増につながる可能性があります。一方、日本の航空・物流会社には追い風となる場面もあります。"
+    },
+    {
+      "heading": "📌 ④ 投資家・経営者の視点",
+      "body": "投資家にとって注目点は、利益の増加が「一時的な需給の逼迫」によるものか、「構造的な成長」によるものかです。同社も、利益の一部は航空貨物の逼迫に支えられたと説明しています。経営者にとっては、設備投資額を約36億ユーロに引き上げた点が、繁忙期の荷物量に自信を持っているサインとして読めます。同社は長期の利益目標を2027年3月に見直す予定です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "DHL Group raises full-year 2026 earnings guidance",
+      "publisher": "DHL Group",
+      "url": "https://group.dhl.com/en/media-relations/press-releases/2026/dhl-group-raises-full-year-2026-earnings-guidance.html",
+      "date": "2026-10-16"
+    },
+    {
+      "title": "DHL AG: DHL AG raises full-year 2026 earnings guidance",
+      "publisher": "EQS / Placera",
+      "url": "https://www.placera.se/pressmeddelanden/dhl-dhl-ag-dhl-ag-raises-full-year-2026-earnings-guidance-20261016",
+      "date": "2026-10-16"
+    }
+  ]
+}
