@@ -466,5 +466,24 @@
       "url": "https://www.newsweek.com/trump-waives-new-russia-sanctions-one-week-after-diesel-deal-12583060",
       "date": "2026-10-19"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-19-1647/00.mp3",
+      "audio/2026-10-19-1647/01.mp3",
+      "audio/2026-10-19-1647/02.mp3",
+      "audio/2026-10-19-1647/03.mp3",
+      "audio/2026-10-19-1647/04.mp3",
+      "audio/2026-10-19-1647/05.mp3",
+      "audio/2026-10-19-1647/06.mp3",
+      "audio/2026-10-19-1647/07.mp3",
+      "audio/2026-10-19-1647/08.mp3",
+      "audio/2026-10-19-1647/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 227778,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-19T07:49:35.636Z",
+    "trimmed": true
+  }
 }
