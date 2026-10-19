@@ -1,0 +1,470 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-19-1647",
+  "date": "2026-10-19",
+  "time": "16:47",
+  "createdAt": "2026-10-19T16:47:00+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Oil Slips as Trump Eases Russia Fuel Sanctions",
+    "ja": "トランプ氏がロシア燃料制裁を緩和、原油は小幅安"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oil prices slipped on Monday after President Donald Trump eased sanctions on Russian fuel.",
+            "ja": "月曜、ドナルド・トランプ大統領がロシア産燃料への制裁を緩めたことを受け、原油価格は小幅に下落した。"
+          },
+          {
+            "en": "Last Friday, he signed an order that waives some new tariffs and penalties on Russia.",
+            "ja": "先週金曜、彼はロシアに対する新たな関税や制裁の一部を免除する命令に署名した。"
+          },
+          {
+            "en": "The government also issued a temporary license that allows Russian diesel deliveries until April 2027.",
+            "ja": "政府はまた、2027年4月までロシア産ディーゼルの輸送を認める一時的な許可も出した。"
+          },
+          {
+            "en": "Brent crude, the global oil benchmark, fell to about $108 a barrel.",
+            "ja": "世界の原油指標であるブレント原油は、1バレル約108ドルまで下げた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Mr. Trump said Russia would send 300,000 tonnes of diesel to world markets immediately.",
+            "ja": "トランプ氏は、ロシアが30万トンのディーゼルを直ちに世界市場へ供給すると述べた。"
+          },
+          {
+            "en": "Shipments would then rise to 500,000 tonnes in November and 1 million tonnes after that.",
+            "ja": "その後、出荷量は11月に50万トン、それ以降は100万トンに増える見込みだ。"
+          },
+          {
+            "en": "Fuel prices have climbed sharply in recent weeks, so the White House wants more supply.",
+            "ja": "燃料価格がここ数週間で急上昇しているため、ホワイトハウスは供給を増やしたい考えだ。"
+          },
+          {
+            "en": "However, many analysts doubt the deal will change the market quickly.",
+            "ja": "しかし多くのアナリストは、この合意が市場をすぐに変えるとは疑っている。"
+          },
+          {
+            "en": "They say traders need more details on how long the waiver will last.",
+            "ja": "免除がいつまで続くのか、トレーダーはさらに詳しい情報を必要としていると彼らは言う。"
+          },
+          {
+            "en": "The waiver will stay in effect until officials decide otherwise.",
+            "ja": "免除は、当局が別の判断をするまで有効である。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much diesel did Mr. Trump say Russia would send immediately?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "100,000 tonnes",
+          "ja": "10万トン"
+        },
+        {
+          "key": "B",
+          "text": "300,000 tonnes",
+          "ja": "30万トン"
+        },
+        {
+          "key": "C",
+          "text": "500,000 tonnes",
+          "ja": "50万トン"
+        },
+        {
+          "key": "D",
+          "text": "1 million tonnes",
+          "ja": "100万トン"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落の1文目に「ロシアは30万トンのディーゼルを直ちに供給する」とある。500,000 tonnes（C）は11月の出荷量、1 million tonnes（D）はその後の量なので、時期が違う引っかけ。100,000 tonnes（A）は本文にない数字。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "数字の設問は、数字そのものと一緒に「いつの話か」（immediately / in November / after that）を確認する。別の時期の数字が誤答に使われやすい。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the analysts, what do traders need?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A lower price for diesel",
+          "ja": "ディーゼルの値下げ"
+        },
+        {
+          "key": "B",
+          "text": "More details about the waiver's length",
+          "ja": "免除の期間の詳細"
+        },
+        {
+          "key": "C",
+          "text": "A new license from the government",
+          "ja": "政府の新たな許可"
+        },
+        {
+          "key": "D",
+          "text": "Larger shipments in November",
+          "ja": "11月の出荷増"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落の5文目に「免除がいつまで続くかについて、トレーダーはさらに詳しい情報を必要としている」とある。A・Dは本文に述べられていない。C の license は政府がすでに出した許可の話で、トレーダーが求めているものではない。",
+      "evidence": {
+        "p": 1,
+        "s": 4
+      },
+      "tip": "how long ... will last は期間を問う表現。設問の need に対応する語（need more details）を本文から探すと根拠が見つかる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "waiver",
+      "pos": "名",
+      "ja": "免除",
+      "gloss": "（＝規則や罰則を適用しないと認めること）",
+      "example": {
+        "en": "The manager granted a waiver of the late fee.",
+        "ja": "部長は延滞料の免除を認めた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "temporary",
+      "pos": "形",
+      "ja": "一時的な",
+      "gloss": "",
+      "example": {
+        "en": "We hired a temporary worker for the busy season.",
+        "ja": "繁忙期のために臨時の従業員を雇った。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "license",
+      "pos": "名",
+      "ja": "許可、免許",
+      "gloss": "",
+      "example": {
+        "en": "The company needs a license to export the product.",
+        "ja": "その会社は製品を輸出するために許可が必要だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "gloss": "（＝比べるときのものさしになる数値のこと）",
+      "example": {
+        "en": "Sales figures are a benchmark for our performance.",
+        "ja": "売上の数字は私たちの業績を測る指標だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "shipments",
+      "pos": "名",
+      "ja": "出荷（量）",
+      "gloss": "",
+      "example": {
+        "en": "Shipments to Asia increased last month.",
+        "ja": "アジア向けの出荷は先月増えた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "gloss": "",
+      "example": {
+        "en": "A shortage of supply pushed prices up.",
+        "ja": "供給不足が価格を押し上げた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "doubt",
+      "pos": "動",
+      "ja": "疑う",
+      "gloss": "",
+      "example": {
+        "en": "Few people doubt that demand will grow.",
+        "ja": "需要が伸びることを疑う人はほとんどいない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "in effect",
+      "pos": "熟",
+      "ja": "有効で、実施されて",
+      "gloss": "",
+      "example": {
+        "en": "The new policy is in effect from April.",
+        "ja": "新しい方針は4月から有効だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "slipped": {
+      "lemma": "slip",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "eased": {
+      "lemma": "ease",
+      "pos": "動",
+      "ja": "緩和した",
+      "note": ""
+    },
+    "sanctions": {
+      "lemma": "sanction",
+      "pos": "名",
+      "ja": "制裁",
+      "note": ""
+    },
+    "russian": {
+      "lemma": "Russian",
+      "pos": "形",
+      "ja": "ロシアの",
+      "note": ""
+    },
+    "signed": {
+      "lemma": "sign",
+      "pos": "動",
+      "ja": "署名した",
+      "note": ""
+    },
+    "waives": {
+      "lemma": "waive",
+      "pos": "動",
+      "ja": "免除する",
+      "note": ""
+    },
+    "tariffs": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "penalties": {
+      "lemma": "penalty",
+      "pos": "名",
+      "ja": "罰則、制裁",
+      "note": ""
+    },
+    "issued": {
+      "lemma": "issue",
+      "pos": "動",
+      "ja": "発行した",
+      "note": ""
+    },
+    "temporary": {
+      "lemma": "temporary",
+      "pos": "形",
+      "ja": "一時的な",
+      "note": ""
+    },
+    "license": {
+      "lemma": "license",
+      "pos": "名",
+      "ja": "許可、免許",
+      "note": ""
+    },
+    "allows": {
+      "lemma": "allow",
+      "pos": "動",
+      "ja": "認める",
+      "note": ""
+    },
+    "deliveries": {
+      "lemma": "delivery",
+      "pos": "名",
+      "ja": "配送、輸送",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "note": ""
+    },
+    "crude": {
+      "lemma": "crude",
+      "pos": "名",
+      "ja": "原油",
+      "note": ""
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "名",
+      "ja": "バレル（原油の単位）",
+      "note": ""
+    },
+    "tonnes": {
+      "lemma": "tonne",
+      "pos": "名",
+      "ja": "トン",
+      "note": ""
+    },
+    "immediately": {
+      "lemma": "immediately",
+      "pos": "副",
+      "ja": "直ちに",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷（量）",
+      "note": ""
+    },
+    "climbed": {
+      "lemma": "climb",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "doubt": {
+      "lemma": "doubt",
+      "pos": "動",
+      "ja": "疑う",
+      "note": ""
+    },
+    "details": {
+      "lemma": "detail",
+      "pos": "名",
+      "ja": "詳細",
+      "note": ""
+    },
+    "waiver": {
+      "lemma": "waiver",
+      "pos": "名",
+      "ja": "免除",
+      "note": ""
+    },
+    "effect": {
+      "lemma": "effect",
+      "pos": "名",
+      "ja": "効力",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "decide": {
+      "lemma": "decide",
+      "pos": "動",
+      "ja": "決める",
+      "note": ""
+    },
+    "otherwise": {
+      "lemma": "otherwise",
+      "pos": "副",
+      "ja": "別の方法で",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー、取引業者",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "接続詞 until（until＋S＋V：〜するまで）と時を表す副詞節の現在形",
+    "quote": "The waiver will stay in effect until officials decide otherwise.",
+    "quoteJa": "免除は、当局が別の判断をするまで有効である。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "until は「〜するまで」と継続の期限を表す接続詞で、後ろに〈S＋V〉の節を置く。主節の動作や状態が、その時点まで続くことを示す。"
+      },
+      {
+        "heading": "時を表す副詞節では現在形",
+        "body": "until / when / before / after / as soon as などが作る「時の副詞節」では、未来のことでも will を使わず現在形で書く。例：× until officials will decide → ○ until officials decide。主節だけが will を使う。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "until は前置詞としても使え、The waiver will stay in effect until April.（名詞が続く）と書き換えられる。「〜までに（期限）」の by とは違い、until は「〜までずっと」続く状態に使う。"
+      },
+      {
+        "heading": "TOEICでの注意点",
+        "body": "Part 5 では until と by の使い分け、および時の副詞節で will を入れた誤答が狙われる。Part 7 のお知らせ文では The offer is valid until June 30. のように有効期限を示す表現として頻出。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The contract will remain valid until both parties agree to change it.（契約は双方が変更に合意するまで有効です。）／ Please keep the receipt until the refund is processed.（返金処理が終わるまで領収書を保管してください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか：ロシア産ディーゼルへの制裁一時停止",
+      "body": "米政権は10月16日（金）、ロシアに対する一部の新たな関税・制裁の適用を免除する命令を出し、あわせて財務省がロシア産ディーゼルの取引を認める一時的な許可を2027年4月まで出した。トランプ大統領は、ロシアから30万トンを直ちに、11月に50万トン、その後は100万トンを市場に出すと説明している。「制裁を緩めてでも燃料の価格を下げたい」という判断が背景にある。"
+    },
+    {
+      "heading": "📌 専門用語を噛み砕く：ブレントとは",
+      "body": "ブレント原油は北海で採れる原油で、欧州やアジアの取引価格の基準（ベンチマーク）として使われる。ガソリンや軽油の値段、海上運賃、航空運賃などはこの指標に連動しやすい。ディーゼル（軽油）はトラックや船、建設機械の燃料であり、値上がりすると物流費全体に波及する。"
+    },
+    {
+      "heading": "📌 業界・市場の見方：効果は限定的との声",
+      "body": "報道では、アナリストの多くが「ディーゼルの追加供給だけでは原油市場の流れを大きく変えにくい」と見ている。春にも同様の免除措置があったが、価格の方向を変えるには至らなかった。一方、ウクライナ大統領や欧州理事会は措置に懸念を示しており、制裁の足並みが乱れる点も市場の不確実性になっている。"
+    },
+    {
+      "heading": "📌 日本への影響と投資家・経営者の視点",
+      "body": "日本は原油や燃料の大半を輸入に頼るため、ブレント価格と円安の組み合わせがガソリン・電気代・物流費に直結する。運送や製造業では、燃料サーチャージ（燃料費の変動分を運賃に上乗せする仕組み）の見直しが続きそうだ。投資家にとっては、制裁の免除期間や中東の供給リスクが価格の上下を左右するため、「期間の詳細」が最大の注目点になる。経営者は、燃料費の上昇を前提にした価格転嫁や調達の分散を検討しておきたい。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Oil prices slide as Trump waives Russia sanctions",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/energy/articles/oil-prices-slide-trump-waives-004424276.html",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "Trump Waives New Russia Sanctions One Week After Diesel Deal",
+      "publisher": "Newsweek",
+      "url": "https://www.newsweek.com/trump-waives-new-russia-sanctions-one-week-after-diesel-deal-12583060",
+      "date": "2026-10-19"
+    }
+  ]
+}
