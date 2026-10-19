@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-20-0546",
+  "date": "2026-10-20",
+  "time": "05:46",
+  "createdAt": "2026-10-20T05:46:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Chip Stocks Rebound After Steepest Weekly Selloff in Months",
+    "ja": "半導体株が反発、数か月ぶりの週間急落のあと"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Chip stocks rose sharply on Monday after their worst week in months.",
+            "ja": "チップ株は、数か月ぶりの最悪の週を経て、月曜日に急伸した。"
+          },
+          {
+            "en": "The Nasdaq, which is full of technology companies, closed more than 1% higher.",
+            "ja": "ハイテク企業の多いナスダックは、1％超高く取引を終えた。"
+          },
+          {
+            "en": "A popular chip fund gained nearly 3%, and Micron climbed almost 4%.",
+            "ja": "人気の半導体ファンドは3％近く上昇し、マイクロンは4％近く値上がりした。"
+          },
+          {
+            "en": "Intel also advanced after an analyst upgraded the company.",
+            "ja": "インテルも、アナリストが同社の評価を引き上げたことを受けて上昇した。"
+          },
+          {
+            "en": "The rebound followed more than a week of steady losses.",
+            "ja": "この反発は、1週間以上続いた着実な下落のあとに起きた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Investors had sold chip shares last week over worries about debt and high prices in the artificial intelligence sector.",
+            "ja": "投資家は先週、人工知能（AI）分野の債務や株価の高さへの不安から、半導体株を売っていた。"
+          },
+          {
+            "en": "On Monday, lower Treasury yields and falling oil prices eased some of that pressure.",
+            "ja": "月曜日は、米国債利回りの低下と原油価格の下落が、その圧力をいくらか和らげた。"
+          },
+          {
+            "en": "Lower yields make borrowing cheaper, which usually helps technology firms that spend heavily on new projects.",
+            "ja": "利回りが下がると借り入れが安くなり、新規事業に多額を投じるハイテク企業には通常追い風となる。"
+          },
+          {
+            "en": "Analysts said the market faces another test this week, when several large companies are due to report earnings.",
+            "ja": "アナリストは、今週は複数の大手企業が決算を発表する予定で、市場がもう一つの試練に直面すると述べた。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By about how much did the popular chip fund gain on Monday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 1%",
+          "ja": "約1％"
+        },
+        {
+          "key": "B",
+          "text": "Nearly 3%",
+          "ja": "3％近く"
+        },
+        {
+          "key": "C",
+          "text": "Almost 4%",
+          "ja": "4％近く"
+        },
+        {
+          "key": "D",
+          "text": "More than 6%",
+          "ja": "6％超"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落3文目に「A popular chip fund gained nearly 3%」とあり、正解は B。A の1％は、ナスダックの上昇幅（more than 1%）を使った引っかけ。C の4％は、マイクロン（Micron）の値上がり幅（almost 4%）で、ファンドの数字ではない。D の6％超は本文に出てこない。同じ文に複数の数字があるときは、「誰（何）の数字か」を主語と結びつけて確認する。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "Part 7 の数字問題は、本文に複数の数字が並ぶことが多い。数字そのものより、その数字がどの主語に付いているかを見る。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "What helped ease the pressure on chip stocks on Monday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Higher oil prices and rising yields",
+          "ja": "原油高と利回り上昇"
+        },
+        {
+          "key": "B",
+          "text": "Lower Treasury yields and falling oil prices",
+          "ja": "利回り低下と原油安"
+        },
+        {
+          "key": "C",
+          "text": "Strong earnings from several large companies",
+          "ja": "複数の大手企業の好決算"
+        },
+        {
+          "key": "D",
+          "text": "Upgrades for every chip company",
+          "ja": "全半導体企業の評価引き上げ"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落2文目に「lower Treasury yields and falling oil prices eased some of that pressure」とあり、正解は B。A は本文と逆の内容。C は、決算発表が「今週予定されている」（are due to report）だけで、まだ好決算が出たわけではない。D は、評価が引き上げられたのはインテル1社（Intel）だけで、すべての企業ではない。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由を問う問題は、because / eased / helped などの目印の語の周辺に根拠がある。選択肢の「全部」「every」といった極端な語は誤りの目印になりやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "rebound",
+      "pos": "名",
+      "ja": "反発、持ち直し",
+      "gloss": "",
+      "example": {
+        "en": "The rebound in sales surprised the retailer's managers.",
+        "ja": "売上の持ち直しは、その小売企業の経営陣を驚かせた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "sharply",
+      "pos": "副",
+      "ja": "急激に、大幅に",
+      "gloss": "",
+      "example": {
+        "en": "Prices rose sharply after the supplier changed its contract.",
+        "ja": "供給業者が契約を変更したあと、価格は急激に上昇した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "upgrade",
+      "pos": "動",
+      "ja": "（評価・等級を）引き上げる",
+      "gloss": "（＝より高い評価や等級にすること）",
+      "example": {
+        "en": "The agency decided to upgrade the airline's credit rating.",
+        "ja": "その機関は航空会社の信用格付けを引き上げることを決めた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "steady",
+      "pos": "形",
+      "ja": "着実な、安定した",
+      "gloss": "",
+      "example": {
+        "en": "We have seen steady growth in online orders this year.",
+        "ja": "今年はオンライン注文が着実に伸びている。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "pressure",
+      "pos": "名",
+      "ja": "圧力、重圧",
+      "gloss": "",
+      "example": {
+        "en": "Rising costs put pressure on the company's profit margin.",
+        "ja": "コスト上昇が、同社の利益率に圧力をかけた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "gloss": "（＝銀行などからお金を借りること）",
+      "example": {
+        "en": "Borrowing costs affect how fast a firm can expand.",
+        "ja": "借り入れコストは、企業がどれだけ速く拡大できるかに影響する。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "sector",
+      "pos": "名",
+      "ja": "分野、業界",
+      "gloss": "",
+      "example": {
+        "en": "The retail sector hired more workers this quarter.",
+        "ja": "小売業界は今四半期、より多くの人を雇った。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "due to",
+      "pos": "熟",
+      "ja": "〜する予定で（be due to do）",
+      "gloss": "",
+      "example": {
+        "en": "The manager is due to submit the report on Friday.",
+        "ja": "部長は金曜日に報告書を提出する予定だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "worst": {
+      "lemma": "bad",
+      "pos": "形",
+      "ja": "最悪の",
+      "note": ""
+    },
+    "fund": {
+      "lemma": "fund",
+      "pos": "名",
+      "ja": "ファンド、基金",
+      "note": ""
+    },
+    "gained": {
+      "lemma": "gain",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "nearly": {
+      "lemma": "nearly",
+      "pos": "副",
+      "ja": "ほぼ、〜近く",
+      "note": ""
+    },
+    "climbed": {
+      "lemma": "climb",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "advanced": {
+      "lemma": "advance",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "analyst": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "upgraded": {
+      "lemma": "upgrade",
+      "pos": "動",
+      "ja": "評価を上げた",
+      "note": ""
+    },
+    "rebound": {
+      "lemma": "rebound",
+      "pos": "名",
+      "ja": "反発",
+      "note": ""
+    },
+    "steady": {
+      "lemma": "steady",
+      "pos": "形",
+      "ja": "着実な",
+      "note": ""
+    },
+    "losses": {
+      "lemma": "loss",
+      "pos": "名",
+      "ja": "損失、下落",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "sold": {
+      "lemma": "sell",
+      "pos": "動",
+      "ja": "売った",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式",
+      "note": ""
+    },
+    "worries": {
+      "lemma": "worry",
+      "pos": "名",
+      "ja": "不安、心配",
+      "note": ""
+    },
+    "debt": {
+      "lemma": "debt",
+      "pos": "名",
+      "ja": "債務、借金",
+      "note": ""
+    },
+    "sector": {
+      "lemma": "sector",
+      "pos": "名",
+      "ja": "分野、業界",
+      "note": ""
+    },
+    "yields": {
+      "lemma": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "note": "債券の利回り。価格と逆に動く"
+    },
+    "falling": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落している",
+      "note": ""
+    },
+    "eased": {
+      "lemma": "ease",
+      "pos": "動",
+      "ja": "和らげた",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "note": ""
+    },
+    "borrowing": {
+      "lemma": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "note": ""
+    },
+    "cheaper": {
+      "lemma": "cheap",
+      "pos": "形",
+      "ja": "より安い",
+      "note": ""
+    },
+    "heavily": {
+      "lemma": "heavily",
+      "pos": "副",
+      "ja": "大量に、多額に",
+      "note": ""
+    },
+    "projects": {
+      "lemma": "project",
+      "pos": "名",
+      "ja": "事業、計画",
+      "note": ""
+    },
+    "earnings": {
+      "lemma": "earnings",
+      "pos": "名",
+      "ja": "決算、収益",
+      "note": "通常は複数形で「決算（発表）」"
+    },
+    "due": {
+      "lemma": "due",
+      "pos": "形",
+      "ja": "〜する予定の",
+      "note": "be due to do で「〜する予定である」"
+    }
+  },
+  "grammar": {
+    "topic": "関係副詞 when の継続用法（, when＋S＋V：そしてその時に〜）と be due to do",
+    "quote": "Analysts said the market faces another test this week, when several large companies are due to report earnings.",
+    "quoteJa": "アナリストは、今週は複数の大手企業が決算を発表する予定で、市場がもう一つの試練に直面すると述べた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "this week のように「時」を表す名詞のあとにカンマを置き、when で続けると、「そして、その時に〜」と補足を加える継続用法になる。when は関係副詞で、this week を先行詞として、その週に起きる出来事を説明している。there / where（場所）の継続用法と同じ仕組み。"
+      },
+      {
+        "heading": "書き換え",
+        "body": "この文は「Analysts said the market faces another test this week. Several large companies are due to report earnings then.」と、2文に分けて書き換えられる。when の部分が「then（その時）」に当たると考えると理解しやすい。"
+      },
+      {
+        "heading": "be due to do",
+        "body": "後半の are due to report は「〜する予定である」という意味で、締め切りや到着、発表など、あらかじめ決まっている予定に使う。due to＋名詞（〜が原因で）とは意味が全く違うので注意。後ろが動詞の原形なら予定、名詞なら原因と見分ける。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では空所に when / where / which / who のどれを入れるかが問われ、先行詞が「時」なら when、「場所」なら where と判断する。Part 7 の社内通知やメールでも、due の予定表現が頻出する。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The new system will launch in November, when all branches are due to complete their training.（新システムは11月に開始され、その時までに全支店が研修を終える予定だ。）／ The report is due to be submitted on Friday, when the board will meet.（報告書は金曜日に提出予定で、その日に取締役会が開かれる。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか：半導体株の急落からの反発",
+      "body": "先週、半導体株は大きく売られ、ナスダックも週間で大きく下がった。AI関連企業の借金の多さや、株価が高すぎるのではないかという不安が背景にある。月曜日はその反動で買い戻しが入り、半導体関連の ETF（＝多くの銘柄をまとめて買える投資信託）は3％近く上昇した。主要媒体で、日中の上げ幅や終値の数字に差があるため、本教材では数字を絞って記載している。"
+    },
+    {
+      "heading": "📌 用語の解説：利回りと資金調達コスト",
+      "body": "国債の利回り（yield）は、国債を買ったときの年あたりの収益率で、国債の価格が下がると上がる。利回りが上がると、企業や投資家が資金を借りるコストも上がる。AI 関連企業は、データセンターや半導体の設備に多額を投じるため、借り入れコストに特に敏感だ。利回りの低下が、ハイテク株にとって追い風になりやすい理由はここにある。"
+    },
+    {
+      "heading": "📌 業界の動向：AI 投資への「見極め」の局面",
+      "body": "AI の設備投資は過去数年、半導体・メモリー・クラウドなど幅広い企業の業績を押し上げてきた。一方で、先週のように債務への懸念が出ると、期待先行で上がってきた銘柄から先に売られやすい。今週は複数の大手企業の決算発表が予定されており、投資額に見合う売上や利益が出ているかが試される。"
+    },
+    {
+      "heading": "📌 日本・投資家への示唆",
+      "body": "日本の株式市場は、半導体製造装置や素材、電子部品など、世界の半導体株と連動しやすい企業を多く含む。米国のハイテク株が大きく動くと、東京市場にも影響が及びやすい。投資家にとっては、利回りの動き（借り入れコスト）と今週の決算が、AI 関連株の方向を決める材料になる。ビジネスパーソンにとっても、「金利と設備投資の関係」を知っておくと、ニュースの読み解きに役立つ。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stock market news for Oct. 19, 2026",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/18/stock-market-today-live-updates.html",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "US Chip Stocks Rise After Steepest Weekly Selloff in Months",
+      "publisher": "U.S. News & World Report (Reuters)",
+      "url": "https://money.usnews.com/investing/news/articles/2026-10-19/us-chip-stocks-rise-after-steepest-weekly-selloff-in-months",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "Stock Market Midday, Oct. 19: Tech Stocks Rebound as AI Confidence Returns",
+      "publisher": "The Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/19/stock-market-midday-oct-19-tech-stocks-rebound-as-ai-confidence-returns/",
+      "date": "2026-10-19"
+    }
+  ]
+}
