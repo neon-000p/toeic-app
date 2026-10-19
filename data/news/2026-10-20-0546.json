@@ -456,5 +456,23 @@
       "url": "https://www.fool.com/coverage/stock-market-today/2026/10/19/stock-market-midday-oct-19-tech-stocks-rebound-as-ai-confidence-returns/",
       "date": "2026-10-19"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-20-0546/00.mp3",
+      "audio/2026-10-20-0546/01.mp3",
+      "audio/2026-10-20-0546/02.mp3",
+      "audio/2026-10-20-0546/03.mp3",
+      "audio/2026-10-20-0546/04.mp3",
+      "audio/2026-10-20-0546/05.mp3",
+      "audio/2026-10-20-0546/06.mp3",
+      "audio/2026-10-20-0546/07.mp3",
+      "audio/2026-10-20-0546/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 202101,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-19T20:50:17.851Z",
+    "trimmed": true
+  }
 }
