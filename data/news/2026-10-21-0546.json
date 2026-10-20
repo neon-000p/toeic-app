@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-21-0546",
+  "date": "2026-10-21",
+  "time": "05:46",
+  "createdAt": "2026-10-21T05:46:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "U.S. and India Near a Trade Deal",
+    "ja": "米印、貿易協定の締結に接近"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. Secretary of State Marco Rubio said on Tuesday that Washington and India are close to finishing a trade deal.",
+            "ja": "マルコ・ルビオ米国務長官は火曜日、米国とインドが貿易協定の締結に近づいていると述べた。"
+          },
+          {
+            "en": "He spoke in Mumbai after meeting India's foreign minister.",
+            "ja": "彼はインドの外相と会談した後、ムンバイで語った。"
+          },
+          {
+            "en": "Rubio said only a small number of items remain to be settled.",
+            "ja": "ルビオ氏は、決着すべき項目はごくわずかしか残っていないと述べた。"
+          },
+          {
+            "en": "The two sides agreed on a framework in February, which lowered the U.S. tariff on Indian goods to 18 percent.",
+            "ja": "両国は2月に枠組みで合意し、これによりインド製品への米国の関税は18%に引き下げられた。"
+          },
+          {
+            "en": "Since then, however, talks have moved slowly.",
+            "ja": "しかしその後、協議は遅々として進んでいない。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "A final deal would give Indian exporters a more stable path into the American market.",
+            "ja": "最終合意が成立すれば、インドの輸出企業は米国市場により安定した道筋を得られる。"
+          },
+          {
+            "en": "It would also help U.S. companies that want to sell more farm goods and technology products to India.",
+            "ja": "また、農産物や技術製品をインドにもっと売りたい米国企業にも役立つだろう。"
+          },
+          {
+            "en": "One difficult issue is energy, because Washington wants Indian refiners to buy less oil from sanctioned suppliers.",
+            "ja": "難しい課題の一つはエネルギーである。米国は、インドの精製会社に制裁対象の供給元からの原油購入を減らしてほしいと考えているからだ。"
+          },
+          {
+            "en": "Officials have not yet announced a date for signing the agreement.",
+            "ja": "当局者は、協定の署名日をまだ発表していない。"
+          },
+          {
+            "en": "Until then, companies must plan for uncertain tariff costs.",
+            "ja": "それまでは、企業は不確実な関税コストを見込んで計画を立てなければならない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What tariff rate did the February framework set on Indian goods?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "8 percent",
+          "ja": "8%"
+        },
+        {
+          "key": "B",
+          "text": "12 percent",
+          "ja": "12%"
+        },
+        {
+          "key": "C",
+          "text": "18 percent",
+          "ja": "18%"
+        },
+        {
+          "key": "D",
+          "text": "25 percent",
+          "ja": "25%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落第4文に「lowered the U.S. tariff on Indian goods to 18 percent」とあるため正解はC。A・Bは本文にない数字。Dの25%は本文に出ない数字で、引き下げ前の水準と混同させる引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "数字問題は選択肢の数字を本文と1つずつ照合する。to＋数字は「〜に」変化後の値、from＋数字は変化前の値を示す。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why is energy a difficult issue in the talks?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "India wants to sell more oil to the U.S.",
+          "ja": "インドが米国に原油を売りたい"
+        },
+        {
+          "key": "B",
+          "text": "The U.S. wants India to buy less oil from sanctioned suppliers.",
+          "ja": "米国はインドに制裁対象からの原油購入を減らしてほしい"
+        },
+        {
+          "key": "C",
+          "text": "Oil prices have risen sharply.",
+          "ja": "原油価格が急騰した"
+        },
+        {
+          "key": "D",
+          "text": "India has stopped buying American farm goods.",
+          "ja": "インドが米国産農産物の購入をやめた"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落第3文「Washington wants Indian refiners to buy less oil from sanctioned suppliers」が根拠。Aは売る側が逆。Cの価格急騰は本文にない。Dは農産物の話が別の文脈（米企業が売りたい）であり、購入停止とは書かれていない。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "理由を問う設問は because / since を含む文に根拠があることが多い。選択肢の主語（誰が何をしたいか）の向きの逆転に注意する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "framework",
+      "pos": "名",
+      "ja": "枠組み、骨組み",
+      "gloss": "",
+      "example": {
+        "en": "The two companies signed a framework for future cooperation.",
+        "ja": "両社は今後の協力のための枠組みに署名した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "remain",
+      "pos": "動",
+      "ja": "残る、〜のままである",
+      "gloss": "",
+      "example": {
+        "en": "Several questions remain about the budget.",
+        "ja": "予算についていくつかの疑問が残っている。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "settled",
+      "pos": "動",
+      "ja": "解決された、決着した（settleの過去分詞）",
+      "gloss": "",
+      "example": {
+        "en": "The dispute was settled before the end of the year.",
+        "ja": "その紛争は年内に決着した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "exporters",
+      "pos": "名",
+      "ja": "輸出業者、輸出企業",
+      "gloss": "",
+      "example": {
+        "en": "Exporters are worried about rising shipping costs.",
+        "ja": "輸出企業は上昇する運送費を心配している。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "stable",
+      "pos": "形",
+      "ja": "安定した",
+      "gloss": "",
+      "example": {
+        "en": "We need a stable supplier for these parts.",
+        "ja": "私たちはこれらの部品の安定した供給元を必要としている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "sanctioned",
+      "pos": "形",
+      "ja": "制裁を受けた（＝国などから取引を禁じられた）",
+      "gloss": "（＝取引を禁じる罰則を受けたこと）",
+      "example": {
+        "en": "The bank cannot work with sanctioned companies.",
+        "ja": "その銀行は制裁対象の企業とは取引できない。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "uncertain",
+      "pos": "形",
+      "ja": "不確かな、不透明な",
+      "gloss": "",
+      "example": {
+        "en": "The market outlook is uncertain this quarter.",
+        "ja": "今四半期の市場見通しは不透明だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "announced",
+      "pos": "動",
+      "ja": "発表した",
+      "gloss": "",
+      "example": {
+        "en": "The firm announced its new pricing plan on Monday.",
+        "ja": "同社は月曜日に新しい料金プランを発表した。"
+      }
+    }
+  ],
+  "glossary": {
+    "secretary": {
+      "lemma": "secretary",
+      "pos": "名",
+      "ja": "長官、書記官",
+      "note": ""
+    },
+    "trade": {
+      "lemma": "trade",
+      "pos": "名",
+      "ja": "貿易",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "取引、協定",
+      "note": ""
+    },
+    "foreign": {
+      "lemma": "foreign",
+      "pos": "形",
+      "ja": "外国の",
+      "note": "foreign minister＝外相"
+    },
+    "minister": {
+      "lemma": "minister",
+      "pos": "名",
+      "ja": "大臣",
+      "note": ""
+    },
+    "items": {
+      "lemma": "item",
+      "pos": "名",
+      "ja": "項目、品目",
+      "note": ""
+    },
+    "agreed": {
+      "lemma": "agree",
+      "pos": "動",
+      "ja": "合意した",
+      "note": ""
+    },
+    "lowered": {
+      "lemma": "lower",
+      "pos": "動",
+      "ja": "引き下げた",
+      "note": ""
+    },
+    "tariff": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "商品、製品",
+      "note": ""
+    },
+    "however": {
+      "lemma": "however",
+      "pos": "副",
+      "ja": "しかしながら",
+      "note": ""
+    },
+    "market": {
+      "lemma": "market",
+      "pos": "名",
+      "ja": "市場",
+      "note": ""
+    },
+    "technology": {
+      "lemma": "technology",
+      "pos": "名",
+      "ja": "技術",
+      "note": ""
+    },
+    "energy": {
+      "lemma": "energy",
+      "pos": "名",
+      "ja": "エネルギー",
+      "note": ""
+    },
+    "refiners": {
+      "lemma": "refiner",
+      "pos": "名",
+      "ja": "精製会社",
+      "note": ""
+    },
+    "suppliers": {
+      "lemma": "supplier",
+      "pos": "名",
+      "ja": "供給元、仕入先",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "agreement": {
+      "lemma": "agreement",
+      "pos": "名",
+      "ja": "協定、合意",
+      "note": ""
+    },
+    "framework": {
+      "lemma": "framework",
+      "pos": "名",
+      "ja": "枠組み",
+      "note": ""
+    },
+    "remain": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "残る",
+      "note": ""
+    },
+    "settled": {
+      "lemma": "settle",
+      "pos": "動",
+      "ja": "解決された",
+      "note": ""
+    },
+    "exporters": {
+      "lemma": "exporter",
+      "pos": "名",
+      "ja": "輸出業者",
+      "note": ""
+    },
+    "stable": {
+      "lemma": "stable",
+      "pos": "形",
+      "ja": "安定した",
+      "note": ""
+    },
+    "sanctioned": {
+      "lemma": "sanctioned",
+      "pos": "形",
+      "ja": "制裁を受けた",
+      "note": ""
+    },
+    "uncertain": {
+      "lemma": "uncertain",
+      "pos": "形",
+      "ja": "不確かな",
+      "note": ""
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "発表した",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "不定詞の受動態（to be＋過去分詞：〜されるべき）",
+    "quote": "Rubio said only a small number of items remain to be settled.",
+    "quoteJa": "ルビオ氏は、決着すべき項目はごくわずかしか残っていないと述べた。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "remain to be settled は「remain＋to不定詞」の形で、「まだ〜されないまま残っている」という意味になる。to不定詞が受動態（to be＋過去分詞）になっているため、主語の items は「決着される側」である。能動の to settle だと『項目が決着させる』という意味になってしまうので注意。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "items remain to be settled ＝ items have not been settled yet（まだ決着していない）。同様に「There is nothing to be done.（なされるべきことは何もない）」「The report remains to be reviewed.（報告書はまだ確認されていない）」のように使える。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、to の後ろに be＋過去分詞を選ぶ問題が出る。主語が「〜される側」ならto be doneの形を選ぶ。Part 7 では remain to be confirmed / announced / determined の形で「未確定」を示す表現がよく登場し、まだ決まっていない事項を読み取る設問につながる。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "The final schedule remains to be confirmed.（最終日程はまだ確定していない。）／Several details remain to be discussed at the next meeting.（いくつかの詳細は次回会議で協議される予定だ。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① 今回のニュースの要点と用語",
+      "body": "米国とインドは2026年2月に暫定的な貿易の「枠組み」で合意し、米国がインド製品にかける追加関税を18%に下げました。枠組み合意とは、細部を詰める前に大きな方向性だけを決める合意のことです。今回、ルビオ米国務長官がムンバイでジャイシャンカル外相らと会談し、最終合意まで『あと少し』と述べました。制裁（sanctions）とは、特定の国や企業との取引を政府が禁じる措置のことです。"
+    },
+    {
+      "heading": "📌 ② 争点：ロシア産原油とエネルギー",
+      "body": "米国はロシアへの圧力として、インド企業にロシア産原油の購入を減らすよう求めてきました。インドは世界有数の原油輸入国で、安価なロシア産原油は製油所のコスト低減に役立ってきたため、ここが最後まで残る難所です。報道によると、制裁に関する米国の判断も近く示される見通しですが、日程や中身は確認できていません。"
+    },
+    {
+      "heading": "📌 ③ 業界・他国の動向",
+      "body": "米国は関税を交渉カードに、メキシコやカナダなどとも個別に貿易交渉を進めています。報道では、メキシコとは自動車や鉄鋼・アルミの関税をめぐり協議が難航しているとされ、各国は『誰が先に有利な条件を得るか』を競う形になっています。インドは人口と成長力から、サプライチェーンを中国以外に分散したい企業の受け皿としても注目されています。"
+    },
+    {
+      "heading": "📌 ④ 日本への影響と投資家・経営者の視点",
+      "body": "インドに生産拠点を持つ日本企業（自動車・電機・素材など）にとって、米国向け輸出の関税が下がれば採算が改善します。逆に交渉が長引けば、関税コストの見通しが立たず、価格設定や在庫計画が難しくなります。投資家は、合意の時期とエネルギー調達への影響を確認し、インド関連の銘柄や為替（ルピー）への波及に注意が必要です。経営者は、関税が上下どちらに動いても対応できるよう、調達先の複数化と価格転嫁の方針を準備しておくことが重要です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Marco Rubio says 'we're about as close as you can be' to an India trade deal after talks in Mumbai",
+      "publisher": "Fortune",
+      "url": "https://fortune.com/2026/10/20/marco-rubio-india-trade-talks-tariffs-russia-oil/",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "Rubio and Jaishankar hold talks in Mumbai as US and India aim to finalize trade deal",
+      "publisher": "myMotherLode.com",
+      "url": "https://mymotherlode.com/news/asia/11236266/rubio-and-jaishankar-hold-talks-in-mumbai-as-us-and-india-aim-to-finalize-trade-deal.html",
+      "date": "2026-10-20"
+    }
+  ]
+}
