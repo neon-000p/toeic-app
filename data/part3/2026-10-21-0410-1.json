@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-21-0410-1",
+  "date": "2026-10-21",
+  "time": "04:10",
+  "scene": "設備トラブル｜空調の故障と会議会場の変更",
+  "speakers": [
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-GB"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "M",
+      "en": "Hi, the air conditioning on the third floor stopped working this morning.",
+      "ja": "こんにちは、3階のエアコンが今朝止まってしまい、ここは暑くなってきています。"
+    },
+    {
+      "tag": "W",
+      "en": "Thanks. A technician is on his way, but the main unit may need a new part.",
+      "ja": "お知らせありがとうございます。技術者はすでに向かっていますが、本体に新しい部品が必要かもしれないとのことです。"
+    },
+    {
+      "tag": "M",
+      "en": "How long would that take? We have a client workshop in that room Thursday.",
+      "ja": "どのくらいかかりますか。木曜にその部屋で顧客向けのワークショップがあるんです。"
+    },
+    {
+      "tag": "W",
+      "en": "If the part is in stock, the repair could wrap up by Wednesday. Otherwise, it might take a week.",
+      "ja": "部品の在庫があれば、水曜の午後までに修理は終わるでしょう。なければ1週間ほどかかるかもしれません。"
+    },
+    {
+      "tag": "M",
+      "en": "That is too risky. Is there another room we could use?",
+      "ja": "それは危険ですね。ワークショップに使える別の部屋はありませんか。"
+    },
+    {
+      "tag": "W",
+      "en": "The first-floor seminar room is free all day Thursday, and it seats thirty.",
+      "ja": "1階のセミナー室が木曜は終日空いていて、30人入れるので十分な広さです。"
+    },
+    {
+      "tag": "M",
+      "en": "Perfect. Can you put a hold on it under my name?",
+      "ja": "完璧です。私の名前で押さえておいてもらえますか。"
+    },
+    {
+      "tag": "W",
+      "en": "Done. I will also have the staff move the projector down tomorrow so you can test it.",
+      "ja": "済ませました。明日、試せるようにこちらのスタッフにプロジェクターも下へ移してもらいます。"
+    },
+    {
+      "tag": "M",
+      "en": "Great. In the meantime, I will tell the team they can work from home this afternoon.",
+      "ja": "助かります。それまでの間、今日の午後は在宅勤務でよいとチームに伝えます。"
+    },
+    {
+      "tag": "W",
+      "en": "Good idea. I will send out a notice once I hear back from the technician.",
+      "ja": "いい考えですね。技術者から返事があり次第、フロア全体にお知らせを送ります。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What problem are the speakers discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A late delivery of parts",
+          "ja": "部品の納品の遅れ"
+        },
+        {
+          "key": "B",
+          "text": "A broken cooling system",
+          "ja": "冷房設備の故障"
+        },
+        {
+          "key": "C",
+          "text": "A canceled client workshop",
+          "ja": "中止になった顧客向け研修"
+        },
+        {
+          "key": "D",
+          "text": "A noisy construction project",
+          "ja": "騒がしい工事"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で男性が the air conditioning ... stopped working と述べ、女性が修理の技術者と部品の話をしています。air conditioning を cooling system と言い換えた B が正解です。A の部品は修理の一部の話にすぎず、全体の話題ではありません。",
+      "tip": "冒頭1〜2行の名詞（air conditioning）が選択肢でどう言い換わるかを探します。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why does the man ask about another room?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The current room is too small",
+          "ja": "今の部屋は狭すぎる"
+        },
+        {
+          "key": "B",
+          "text": "A technician needs the space",
+          "ja": "技術者が場所を使う"
+        },
+        {
+          "key": "C",
+          "text": "The workshop starts earlier",
+          "ja": "ワークショップが早まる"
+        },
+        {
+          "key": "D",
+          "text": "The repair might not be done in time",
+          "ja": "修理が間に合わないかもしれない"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "explanation": "女性が Otherwise, it might take a week と言い、男性は That is too risky と返して別の部屋を尋ねています。木曜の会に間に合わないおそれが理由なので D です。B は技術者が登場するだけで、場所を使う話は出ていません。",
+      "tip": "理由は That is ... の直前にあります。risky の指す内容を1つ前の発言まで戻って確認します。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the man probably do next?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tell his coworkers to work remotely",
+          "ja": "同僚に在宅勤務を伝える"
+        },
+        {
+          "key": "B",
+          "text": "Call the client to cancel",
+          "ja": "顧客に連絡して中止する"
+        },
+        {
+          "key": "C",
+          "text": "Move the projector himself",
+          "ja": "自分でプロジェクターを移す"
+        },
+        {
+          "key": "D",
+          "text": "Contact the technician again",
+          "ja": "技術者に再び連絡する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        8
+      ],
+      "explanation": "最後に男性が I will tell the team they can work from home と述べています。work from home を work remotely と言い換えた A が正解です。C のプロジェクターを移すのは女性が手配するスタッフの仕事です。",
+      "tip": "次の行動は I will ... で始まる最後の方の発言を拾います。誰がやるのかも区別します。"
+    }
+  ],
+  "glossary": {
+    "wrap up": {
+      "lemma": "wrap up",
+      "pos": "熟",
+      "ja": "終わる、終える",
+      "note": "finish の言い換え",
+      "example": {
+        "en": "The team hopes to wrap up the audit by Friday.",
+        "ja": "チームは金曜までに監査を終えたいと考えている。"
+      }
+    },
+    "in stock": {
+      "lemma": "in stock",
+      "pos": "熟",
+      "ja": "在庫がある",
+      "note": "",
+      "example": {
+        "en": "The blue model is no longer in stock at this store.",
+        "ja": "その青いモデルはもうこの店に在庫がない。"
+      }
+    },
+    "put a hold on": {
+      "lemma": "put a hold on",
+      "pos": "熟",
+      "ja": "～を取り置く、押さえる",
+      "note": "reserve に近い",
+      "example": {
+        "en": "Please put a hold on two seats for the afternoon session.",
+        "ja": "午後の部の席を2つ押さえておいてください。"
+      }
+    },
+    "in the meantime": {
+      "lemma": "in the meantime",
+      "pos": "熟",
+      "ja": "それまでの間",
+      "note": "",
+      "example": {
+        "en": "The shipment is late, so in the meantime we will use the old stock.",
+        "ja": "荷物が遅れているので、それまでは古い在庫を使います。"
+      }
+    },
+    "hear back from": {
+      "lemma": "hear back from",
+      "pos": "熟",
+      "ja": "～から返事をもらう",
+      "note": "",
+      "example": {
+        "en": "I expect to hear back from the supplier by noon.",
+        "ja": "昼までに仕入れ先から返事が来る見込みです。"
+      }
+    },
+    "work from home": {
+      "lemma": "work from home",
+      "pos": "熟",
+      "ja": "在宅で働く",
+      "note": "選択肢では work remotely に置き換わる",
+      "example": {
+        "en": "Staff may work from home on days with heavy snow.",
+        "ja": "大雪の日は、社員は在宅で働いてもよい。"
+      }
+    },
+    "send out": {
+      "lemma": "send out",
+      "pos": "熟",
+      "ja": "（案内などを）送付する",
+      "note": "",
+      "example": {
+        "en": "We will send out the agenda a day before the meeting.",
+        "ja": "会議の前日に議題を送付します。"
+      }
+    },
+    "technician": {
+      "lemma": "technician",
+      "pos": "名",
+      "ja": "技術者、技師",
+      "note": "",
+      "example": {
+        "en": "A technician will inspect the elevator on Monday.",
+        "ja": "月曜に技術者がエレベーターを点検する。"
+      }
+    },
+    "seats": {
+      "lemma": "seats",
+      "pos": "動",
+      "ja": "～人分の席がある、収容できる",
+      "note": "名詞の seat（席）と区別する",
+      "example": {
+        "en": "The conference hall seats about two hundred guests.",
+        "ja": "その会議場は約200人の来客を収容できる。"
+      }
+    },
+    "stopped working": {
+      "lemma": "stop working",
+      "pos": "熟",
+      "ja": "動かなくなる、故障する",
+      "note": "break down の言い換え",
+      "example": {
+        "en": "The scanner stopped working just before the deadline.",
+        "ja": "スキャナーが締め切り直前に動かなくなった。"
+      }
+    }
+  },
+  "point": {
+    "flow": "問題の発生 → 原因と修理の見通し → 不確実さによる代替案 → 代替の確保 → 関係者への連絡",
+    "items": [
+      {
+        "title": "修理の話では「いつ直るか」の条件分岐を追う",
+        "body": "If ... Otherwise ... の形が出たら、最悪の場合の日数が次の行動（別案の検討）の理由になる。理由を問う設問はこの分岐の直後を見る。"
+      },
+      {
+        "title": "最後の I will ... が next の答えになる",
+        "body": "終盤は誰が何をするかが順に出る。主語を聞き分けて、自分の担当だけを拾う。"
+      }
+    ]
+  }
+}

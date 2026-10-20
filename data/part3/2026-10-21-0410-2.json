@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-21-0410-2",
+  "date": "2026-10-21",
+  "time": "04:10",
+  "scene": "社内｜備品の発注先の比較と承認",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-CA"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-AU"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "I have compared the two quotes for the new office chairs. Vendor A is cheaper, but delivery takes four weeks.",
+      "ja": "ダニエル、新しいオフィスチェアの2社の見積を比べました。A社のほうが安いですが、納品に4週間かかります。"
+    },
+    {
+      "tag": "M",
+      "en": "How much cheaper are we talking?",
+      "ja": "どのくらい安いんですか。"
+    },
+    {
+      "tag": "W",
+      "en": "About two hundred dollars. Vendor B costs more, but they can deliver in ten days.",
+      "ja": "全体で約200ドルです。B社は高いものの、10日で納品できます。"
+    },
+    {
+      "tag": "M",
+      "en": "Ten days works better. The new hires start on the fifteenth, and I do not want them using temporary stools.",
+      "ja": "10日のほうが都合がいいです。新入社員は15日に入社するので、仮の丸椅子を使わせたくありません。"
+    },
+    {
+      "tag": "W",
+      "en": "Still, our budget caps this purchase at three thousand dollars, and Vendor B comes in just under that.",
+      "ja": "そうですね。ただ、予算は今回の購入を3,000ドルに抑えていて、B社はそれをわずかに下回っています。"
+    },
+    {
+      "tag": "M",
+      "en": "Then that settles it. Can you draw up the order form?",
+      "ja": "それなら決まりですね。今日、注文書を作成してもらえますか。"
+    },
+    {
+      "tag": "W",
+      "en": "Sure, but I need Ms. Patel's signature first. She is out of the office until Friday.",
+      "ja": "はい、ただ先にパテルさんの署名が必要です。彼女は金曜まで不在です。"
+    },
+    {
+      "tag": "M",
+      "en": "I will try her mobile. If she is on board, she can approve it by email.",
+      "ja": "携帯に連絡してみます。同意してもらえれば、メールで承認してもらえます。"
+    },
+    {
+      "tag": "W",
+      "en": "That would speed things up. I will hold off on placing the order until I see her reply.",
+      "ja": "それなら早く進みますね。返信を確認するまで発注は控えておきます。"
+    },
+    {
+      "tag": "M",
+      "en": "Let me know as soon as it is confirmed.",
+      "ja": "わかりました。確定したらすぐ知らせてください。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "Why does the man prefer Vendor B?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It offers a lower price",
+          "ja": "価格が安い"
+        },
+        {
+          "key": "B",
+          "text": "It has better chair designs",
+          "ja": "椅子のデザインが良い"
+        },
+        {
+          "key": "C",
+          "text": "It can deliver sooner",
+          "ja": "より早く届けられる"
+        },
+        {
+          "key": "D",
+          "text": "It is closer to the office",
+          "ja": "オフィスに近い"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "B社は高いが10日で納品できると女性が述べ、男性は Ten days works better と応じ、新入社員の入社日を理由にしています。deliver in ten days を deliver sooner と言い換えた C が正解です。A は価格が安いのはA社のほうなので誤りです。",
+      "tip": "2社の比較では、各社の特徴を頭の中で表にして、男性がどちらの特徴に反応したかを聞きます。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the woman mean when she says, \"Vendor B comes in just under that\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The cost fits within the budget",
+          "ja": "費用が予算に収まる"
+        },
+        {
+          "key": "B",
+          "text": "The quote needs to be corrected",
+          "ja": "見積を訂正する必要がある"
+        },
+        {
+          "key": "C",
+          "text": "The vendor is not reliable",
+          "ja": "業者は信頼できない"
+        },
+        {
+          "key": "D",
+          "text": "The order is too large",
+          "ja": "注文が多すぎる"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "直前に our budget caps this purchase at three thousand dollars とあり、that は3,000ドルの上限を指します。just under が上限をわずかに下回ることなので A です。B社が高めという話から、予算超過と取る C や D は文脈に合いません。",
+      "tip": "引用文の that が指すものは直前の発言にあります。just under は「ぎりぎり下」の意味です。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about Ms. Patel?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "She works for Vendor B",
+          "ja": "B社で働いている"
+        },
+        {
+          "key": "B",
+          "text": "She recently joined the company",
+          "ja": "最近入社した"
+        },
+        {
+          "key": "C",
+          "text": "She prefers the cheaper option",
+          "ja": "安いほうを好んでいる"
+        },
+        {
+          "key": "D",
+          "text": "She has authority to approve the purchase",
+          "ja": "購入を承認する権限がある"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        6,
+        7
+      ],
+      "explanation": "女性は注文の前に Ms. Patel's signature が必要だと述べ、男性は she can approve it by email と言っています。明言はされませんが、購入の承認権を持つと推測できるので D です。C は本文に根拠がありません。",
+      "tip": "人物の推測問題は、その人物の名前が出た行とその前後で、周囲が何を頼んでいるかを見ます。"
+    }
+  ],
+  "glossary": {
+    "quotes": {
+      "lemma": "quote",
+      "pos": "名",
+      "ja": "見積（書）",
+      "note": "estimate の言い換え",
+      "example": {
+        "en": "Please compare the quotes from the three suppliers by Monday.",
+        "ja": "月曜までに3社の見積を比較してください。"
+      }
+    },
+    "new hires": {
+      "lemma": "new hire",
+      "pos": "熟",
+      "ja": "新入社員、新規採用者",
+      "note": "",
+      "example": {
+        "en": "All new hires attend a safety briefing on their first day.",
+        "ja": "新入社員は全員、初日に安全説明を受ける。"
+      }
+    },
+    "temporary": {
+      "lemma": "temporary",
+      "pos": "形",
+      "ja": "一時的な、仮の",
+      "note": "permanent の反対",
+      "example": {
+        "en": "We rented a temporary office while the building was repaired.",
+        "ja": "建物の修繕中、私たちは仮のオフィスを借りた。"
+      }
+    },
+    "comes in": {
+      "lemma": "come in",
+      "pos": "熟",
+      "ja": "（金額などが）～になる",
+      "note": "come in under は「～を下回る」",
+      "example": {
+        "en": "The final bill came in at less than expected.",
+        "ja": "最終の請求額は予想を下回った。"
+      }
+    },
+    "that settles it": {
+      "lemma": "that settles it",
+      "pos": "熟",
+      "ja": "それで決まりだ",
+      "note": "",
+      "example": {
+        "en": "You have the experience we need, so that settles it.",
+        "ja": "必要な経験をお持ちなので、それで決まりです。"
+      }
+    },
+    "draw up": {
+      "lemma": "draw up",
+      "pos": "熟",
+      "ja": "（書類などを）作成する",
+      "note": "prepare の言い換え",
+      "example": {
+        "en": "The legal team will draw up the contract this week.",
+        "ja": "法務チームが今週、契約書を作成する。"
+      }
+    },
+    "out of the office": {
+      "lemma": "out of the office",
+      "pos": "熟",
+      "ja": "不在で、外出中で",
+      "note": "",
+      "example": {
+        "en": "Mr. Kim is out of the office until next Tuesday.",
+        "ja": "キムさんは来週の火曜まで不在です。"
+      }
+    },
+    "on board": {
+      "lemma": "on board",
+      "pos": "熟",
+      "ja": "賛成して、同意して",
+      "note": "乗り物の「搭乗中」ではない用法",
+      "example": {
+        "en": "Once the manager is on board, we can start the project.",
+        "ja": "部長の賛同が得られれば、プロジェクトを始められる。"
+      }
+    },
+    "speed things up": {
+      "lemma": "speed up",
+      "pos": "熟",
+      "ja": "物事を早める",
+      "note": "",
+      "example": {
+        "en": "A new system should speed things up at the front desk.",
+        "ja": "新しいシステムで受付の作業が早くなるはずだ。"
+      }
+    },
+    "hold off on": {
+      "lemma": "hold off on",
+      "pos": "熟",
+      "ja": "～を見合わせる、延期する",
+      "note": "",
+      "example": {
+        "en": "Let us hold off on printing until the layout is final.",
+        "ja": "レイアウトが確定するまで印刷は見合わせましょう。"
+      }
+    }
+  },
+  "point": {
+    "flow": "2案の提示 → 条件の比較（価格と納期）→ 予算で絞る → 決定 → 承認待ちによる保留",
+    "items": [
+      {
+        "title": "2案が出たら「価格・納期・上限」を聞く",
+        "body": "比較の会話は、各案の差がどの条件に表れるかで決まる。どの条件に話者が反応したかが理由の設問の答えになる。"
+      },
+      {
+        "title": "決定のあとに出る承認の一言が最後の設問になる",
+        "body": "結論が出ても、署名や承認が残っていれば話は続く。誰の承認が必要かは推測問題でよく問われる。"
+      }
+    ]
+  }
+}
