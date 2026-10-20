@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-20-1650",
+  "date": "2026-10-20",
+  "time": "16:50",
+  "createdAt": "2026-10-20T16:50:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "Container Rates Rise Again as Carriers Push for Higher Prices",
+    "ja": "コンテナ運賃が反発、船会社は値上げ狙う"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Container shipping rates on a key trade route rose this week for the first time in a long while.",
+            "ja": "主要航路のコンテナ運賃が、久しぶりに今週上昇に転じた。"
+          },
+          {
+            "en": "Drewry, a research firm, said the cost of sending a 40-foot container from Shanghai to Rotterdam climbed 6% to $3,522.",
+            "ja": "調査会社のドリューリーによると、上海からロッテルダムまで40フィートコンテナ1本を送る費用は6％上昇し、3,522ドルとなった。"
+          },
+          {
+            "en": "The increase ended a long run of weekly declines.",
+            "ja": "この上昇で、週ごとの下落が長く続いた局面に歯止めがかかった。"
+          },
+          {
+            "en": "Several carriers now plan to raise their base prices again from October 19.",
+            "ja": "複数の船会社は現在、10月19日から基本運賃を再び引き上げる計画だ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Shipping lines want to stop the slide, because too many ships have been competing for too little cargo.",
+            "ja": "船会社は下落を止めたいと考えている。荷物が少ないのに、あまりに多くの船が競い合ってきたからだ。"
+          },
+          {
+            "en": "They have announced higher prices of about $4,500 to $4,800 per container, hoping that customers will accept them.",
+            "ja": "各社は1本あたり約4,500〜4,800ドルへの値上げを発表し、荷主が受け入れてくれることを期待している。"
+          },
+          {
+            "en": "However, Drewry warned that the new prices may not hold, since extra ship capacity is still available.",
+            "ja": "しかしドリューリーは、船腹にまだ余裕があるため、新しい運賃は定着しない可能性があると警告した。"
+          },
+          {
+            "en": "Drewry expects rates to stay stable next week, but importers should still prepare for uncertain shipping costs.",
+            "ja": "ドリューリーは来週の運賃は安定すると見ているが、輸入企業は不透明な輸送コストに備えるべきだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did the cost of shipping a container from Shanghai to Rotterdam rise?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3%",
+          "ja": "3％"
+        },
+        {
+          "key": "B",
+          "text": "6%",
+          "ja": "6％"
+        },
+        {
+          "key": "C",
+          "text": "7%",
+          "ja": "7％"
+        },
+        {
+          "key": "D",
+          "text": "12%",
+          "ja": "12％"
+        }
+      ],
+      "answer": "B",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "explanation": "正解は B。第1段落第2文に「climbed 6% to $3,522」とあり、上昇率は6％と明記されている。A・C・D はいずれも本文に書かれていない数字で、数字を問う問題の引っかけとして置かれている。",
+      "tip": "数字を問う設問は、選択肢の数字を本文と1つずつ照合する。『to $3,522』は到達額、『6%』は上昇率と、何の数字かを区別して読むこと。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why do shipping lines want to raise their prices?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Customers asked for faster delivery.",
+          "ja": "顧客が早い配送を求めた"
+        },
+        {
+          "key": "B",
+          "text": "Ports have started to charge higher fees.",
+          "ja": "港が手数料を引き上げた"
+        },
+        {
+          "key": "C",
+          "text": "Too many ships have been chasing too little cargo.",
+          "ja": "少ない荷物を多くの船が奪い合った"
+        },
+        {
+          "key": "D",
+          "text": "Fuel costs have risen sharply.",
+          "ja": "燃料費が急騰した"
+        }
+      ],
+      "answer": "C",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "explanation": "正解は C。第2段落第1文に「too many ships have been competing for too little cargo」とあり、船が余って運賃が下がり続けたため、値上げで歯止めをかけたい、という理由が述べられている。A の配送の速さ、B の港の手数料、D の燃料費はいずれも本文に出てこない。",
+      "tip": "理由を問う設問は、because / since / so that などの接続表現の直後に答えがある。本文にない情報はもっともらしくても選ばない。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "carrier",
+      "pos": "名",
+      "ja": "運送会社、船会社",
+      "gloss": "（＝荷物を運ぶ会社のこと）",
+      "example": {
+        "en": "The carrier will deliver the goods by Friday.",
+        "ja": "その運送会社は金曜までに商品を届ける。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "decline",
+      "pos": "名・動",
+      "ja": "減少、下落（する）",
+      "gloss": "",
+      "example": {
+        "en": "Sales continued to decline last quarter.",
+        "ja": "売上は前四半期も減少が続いた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "capacity",
+      "pos": "名",
+      "ja": "容量、供給能力",
+      "gloss": "",
+      "example": {
+        "en": "The warehouse has no capacity for more stock.",
+        "ja": "その倉庫にはこれ以上在庫を置く余裕がない。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "uncertain",
+      "pos": "形",
+      "ja": "不確かな、不透明な",
+      "gloss": "",
+      "example": {
+        "en": "The delivery date is still uncertain.",
+        "ja": "配送日はまだ確定していない。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "stable",
+      "pos": "形",
+      "ja": "安定した",
+      "gloss": "",
+      "example": {
+        "en": "The company hopes to keep prices stable this year.",
+        "ja": "同社は今年、価格を安定させたいと考えている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "announce",
+      "pos": "動",
+      "ja": "発表する",
+      "gloss": "",
+      "example": {
+        "en": "The firm will announce its new schedule on Monday.",
+        "ja": "その会社は月曜に新しい日程を発表する。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "accept",
+      "pos": "動",
+      "ja": "受け入れる",
+      "gloss": "",
+      "example": {
+        "en": "Most customers accepted the price change.",
+        "ja": "ほとんどの顧客が価格変更を受け入れた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "prepare for",
+      "pos": "熟",
+      "ja": "〜に備える",
+      "gloss": "",
+      "example": {
+        "en": "Managers should prepare for a busy holiday season.",
+        "ja": "管理職は繁忙な年末商戦に備えるべきだ。"
+      }
+    }
+  ],
+  "glossary": {
+    "container": {
+      "lemma": "container",
+      "pos": "名",
+      "ja": "コンテナ",
+      "note": ""
+    },
+    "shipping": {
+      "lemma": "shipping",
+      "pos": "名",
+      "ja": "海運、輸送",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "運賃、料金",
+      "note": ""
+    },
+    "route": {
+      "lemma": "route",
+      "pos": "名",
+      "ja": "航路、経路",
+      "note": ""
+    },
+    "climbed": {
+      "lemma": "climb",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "research": {
+      "lemma": "research",
+      "pos": "名",
+      "ja": "調査",
+      "note": ""
+    },
+    "firm": {
+      "lemma": "firm",
+      "pos": "名",
+      "ja": "会社",
+      "note": ""
+    },
+    "cost": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "ended": {
+      "lemma": "end",
+      "pos": "動",
+      "ja": "終わらせた",
+      "note": ""
+    },
+    "declines": {
+      "lemma": "decline",
+      "pos": "名",
+      "ja": "下落",
+      "note": ""
+    },
+    "carriers": {
+      "lemma": "carrier",
+      "pos": "名",
+      "ja": "船会社",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "base": {
+      "lemma": "base",
+      "pos": "形",
+      "ja": "基本の",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "名",
+      "ja": "価格",
+      "note": ""
+    },
+    "lines": {
+      "lemma": "line",
+      "pos": "名",
+      "ja": "船会社（海運会社）",
+      "note": ""
+    },
+    "slide": {
+      "lemma": "slide",
+      "pos": "名",
+      "ja": "下落、低下",
+      "note": ""
+    },
+    "competing": {
+      "lemma": "compete",
+      "pos": "動",
+      "ja": "競い合う",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "発表した",
+      "note": ""
+    },
+    "accept": {
+      "lemma": "accept",
+      "pos": "動",
+      "ja": "受け入れる",
+      "note": ""
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告した",
+      "note": ""
+    },
+    "hold": {
+      "lemma": "hold",
+      "pos": "動",
+      "ja": "持ちこたえる",
+      "note": ""
+    },
+    "extra": {
+      "lemma": "extra",
+      "pos": "形",
+      "ja": "余分の",
+      "note": ""
+    },
+    "capacity": {
+      "lemma": "capacity",
+      "pos": "名",
+      "ja": "供給能力",
+      "note": ""
+    },
+    "available": {
+      "lemma": "available",
+      "pos": "形",
+      "ja": "利用できる",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "stable": {
+      "lemma": "stable",
+      "pos": "形",
+      "ja": "安定した",
+      "note": ""
+    },
+    "importers": {
+      "lemma": "importer",
+      "pos": "名",
+      "ja": "輸入業者",
+      "note": ""
+    },
+    "prepare": {
+      "lemma": "prepare",
+      "pos": "動",
+      "ja": "備える",
+      "note": ""
+    },
+    "uncertain": {
+      "lemma": "uncertain",
+      "pos": "形",
+      "ja": "不透明な",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "分詞構文（現在分詞：, hoping that〜）",
+    "quote": "They have announced higher prices of about $4,500 to $4,800 per container, hoping that customers will accept them.",
+    "quoteJa": "各社は1本あたり約4,500〜4,800ドルへの値上げを発表し、荷主が受け入れてくれることを期待している。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "この文の「, hoping that customers will accept them」は分詞構文です。接続詞と主語を省き、動詞を現在分詞（-ing）に変えて、主節に情報を付け足す形です。主節の主語（They）と分詞の意味上の主語が同じ場合に使います。ここでは『発表する』と『期待する』が同時に起きていて、付帯状況（〜しながら、〜して）を表しています。"
+      },
+      {
+        "heading": "書き換え",
+        "body": "They have announced higher prices, and they hope that customers will accept them.（and で2文をつないだ形）／ They have announced higher prices, hoping that customers will accept them.（分詞構文）。分詞構文のほうが文が短く、ニュース記事でよく使われます。理由を表す例は Knowing the risk, the firm delayed the shipment.（リスクを知っていたので、会社は出荷を遅らせた）です。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 では、空所に doing / done / to do のどれが入るかを問う形で出ます。主語が『する側』なら -ing、『される側』なら過去分詞です。例：The package, ( ) yesterday, arrived today.（過去分詞）と The staff left early, ( ) the meeting.（finishing）を見分けます。Part 7 では、文が長くても『, -ing』の部分は付け足しの情報だと割り切って主節を先に読むと速く読めます。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The company will open a new office in Osaka, aiming to serve more clients in western Japan.（大阪に新オフィスを開設し、西日本の顧客をより多く獲得することを目指す）／ Please send the form by Friday, attaching a copy of your receipt.（金曜までに、領収書の写しを添付してフォームをお送りください）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 コンテナ運賃とは何か",
+      "body": "コンテナ運賃は、40フィート（約12メートル）の大型の箱1本を港から港へ運ぶ料金です。航路や時期によって大きく変わり、需要が強いと上がり、船が余ると下がります。ドリューリー社の指数は、主要航路の運賃を毎週まとめた業界の物差しとして、荷主や船会社が参考にしています。"
+    },
+    {
+      "heading": "📌 なぜ船会社は値上げを急ぐのか",
+      "body": "近年は新造船が相次いで投入され、荷物に対して船が余りがちです。船が余ると各社が運賃を下げて荷物を取り合い、運賃が下がります。そこで船会社は、決まった日に一斉に基本運賃（FAK）を引き上げると発表し、下落に歯止めをかけようとします。ただし実際に通るかどうかは荷主との交渉しだいで、今回も定着するかは不透明です。"
+    },
+    {
+      "heading": "📌 業界全体と競合の動き",
+      "body": "船会社は、運航する船の数を調整したり、一部の便を欠航させたりして、供給を絞る手も使います。一方で荷主は、複数の船会社の見積もりを比べ、長期契約とスポット（その都度の契約）を組み合わせてコストを抑えようとします。航路ごとに需給が異なるため、アジア発欧州向けと太平洋航路で運賃の動きがずれることも珍しくありません。"
+    },
+    {
+      "heading": "📌 日本企業・ビジネスパーソンへの示唆",
+      "body": "日本は輸出入の大半を海運に頼っており、運賃の変動は仕入れ価格や販売価格にそのまま響きます。貿易や調達の担当者は、運賃の指数や船会社の値上げ通知を毎週確認し、契約の見直しや出荷時期の分散を早めに検討することが大切です。投資家にとっては、運賃の底打ちは海運会社の業績回復の手がかりになりますが、船余りが続く間は上昇が長続きしない点にも注意が必要です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "World Container Index assessed by Drewry",
+      "publisher": "Drewry",
+      "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry",
+      "date": "2026-10-15"
+    },
+    {
+      "title": "Container freight rates rebound as Asia-Europe indexes diverge",
+      "publisher": "Container News",
+      "url": "https://container-news.com/container-freight-rates-rebound-as-asia-europe-indexes-diverge/",
+      "date": "2026-10-15"
+    },
+    {
+      "title": "Carriers eye FAK hikes as spot decline eases and capacity stays tight",
+      "publisher": "The Loadstar",
+      "url": "https://theloadstar.com/carriers-eye-fak-hikes-as-spot-decline-eases-and-capacity-stays-tight/",
+      "date": "2026-10-16"
+    }
+  ]
+}
