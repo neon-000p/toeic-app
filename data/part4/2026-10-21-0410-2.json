@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-21-0410-2",
+  "date": "2026-10-21",
+  "time": "04:10",
+  "createdAt": "2026-10-21T04:10:00+09:00",
+  "sample": false,
+  "scene": "広告｜家具店の開店記念セールと会員登録",
+  "talkType": "ad",
+  "intro": "Questions 1 through 3 refer to the following advertisement.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-US"
+  },
+  "lines": [
+    {
+      "en": "Looking for a way to refresh your home without breaking the bank?",
+      "ja": "家計に負担をかけずに家を一新する方法をお探しですか。"
+    },
+    {
+      "en": "Come visit Harbor Home Goods, the newest furniture store in the Millbrook Shopping Center.",
+      "ja": "ミルブルック・ショッピングセンターの最新の家具店、ハーバー・ホーム・グッズへお越しください。"
+    },
+    {
+      "en": "To celebrate our grand opening this Saturday, everything in the store will be marked down by thirty percent.",
+      "ja": "今週土曜のグランドオープンを記念して、店内の全商品が30パーセント値引きされます。"
+    },
+    {
+      "en": "That includes our full line of sofas and lamps, and we have a limited stock of rugs at half price.",
+      "ja": "ソファやランプの全商品が対象で、数量限定のラグは半額です。"
+    },
+    {
+      "en": "Customers who sign up for a free membership card on opening day will also receive a twenty-dollar coupon.",
+      "ja": "開店日に無料の会員カードに登録されたお客様には、20ドルのクーポンも差し上げます。"
+    },
+    {
+      "en": "You can use it on any purchase over one hundred dollars through the end of the month.",
+      "ja": "月末まで、100ドルを超えるお買い物にお使いいただけます。"
+    },
+    {
+      "en": "Delivery is available for a flat fee, and our staff will even carry items up to your apartment.",
+      "ja": "配送は定額料金でご利用いただけ、スタッフがお部屋まで運びます。"
+    },
+    {
+      "en": "Do not wait until the last minute, because the best pieces tend to sell out quickly.",
+      "ja": "ぎりぎりまで待たないでください。人気の品は早く売り切れる傾向があります。"
+    },
+    {
+      "en": "Stop by this weekend and see why our customers keep coming back!",
+      "ja": "今週末にお立ち寄りください。お客様が何度も来店される理由がお分かりいただけます。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely is the speaker?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A delivery driver",
+          "ja": "配送ドライバー"
+        },
+        {
+          "key": "B",
+          "text": "A shopping center manager",
+          "ja": "ショッピングセンターの管理者"
+        },
+        {
+          "key": "C",
+          "text": "A furniture designer",
+          "ja": "家具デザイナー"
+        },
+        {
+          "key": "D",
+          "text": "A store representative",
+          "ja": "店の担当者"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        1,
+        2
+      ],
+      "explanation": "Come visit Harbor Home Goods ... や our grand opening と、店の立場で宣伝しています。話し手は店の担当者なので D です。B の shopping center は店の所在地として出るだけで、話し手の立場ではありません。",
+      "tip": "広告の話し手は、our や we が指す主体を探すと分かります。場所の名前と話し手の職業を混同しないようにします。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What will customers receive for signing up for a membership?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Free home delivery",
+          "ja": "無料の配送"
+        },
+        {
+          "key": "B",
+          "text": "A discount coupon",
+          "ja": "割引クーポン"
+        },
+        {
+          "key": "C",
+          "text": "A half-price rug",
+          "ja": "半額のラグ"
+        },
+        {
+          "key": "D",
+          "text": "A set of lamps",
+          "ja": "ランプのセット"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        4
+      ],
+      "explanation": "Customers who sign up for a free membership card ... will also receive a twenty-dollar coupon と述べています。coupon を discount coupon と言い換えた B が正解です。A の配送は flat fee で有料、C の半額のラグは会員登録と無関係です。",
+      "tip": "「登録すると何がもらえるか」は sign up の近くに答えがあります。別の文のお得情報を選ばないことが肝心です。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What does the speaker imply about the products?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They are all handmade",
+          "ja": "すべて手作りである"
+        },
+        {
+          "key": "B",
+          "text": "They are sold only online",
+          "ja": "オンラインでのみ販売される"
+        },
+        {
+          "key": "C",
+          "text": "Some of them may run out",
+          "ja": "なくなるものがあるかもしれない"
+        },
+        {
+          "key": "D",
+          "text": "They are available to rent",
+          "ja": "貸し出しもできる"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        7
+      ],
+      "explanation": "limited stock of rugs と the best pieces tend to sell out quickly から、在庫がなくなる商品があると推測できます。sell out を run out と言い換えた C が正解です。B と D は本文に根拠がありません。",
+      "tip": "推測問題は、数量や時期を急がせる一言を探します。sell out のような熟語が選択肢で別の語に変わります。"
+    }
+  ],
+  "glossary": {
+    "without breaking the bank": {
+      "lemma": "without breaking the bank",
+      "pos": "熟",
+      "ja": "大金を使わずに、手頃に",
+      "note": "",
+      "example": {
+        "en": "You can furnish an office without breaking the bank.",
+        "ja": "大金を使わずにオフィスの家具をそろえられます。"
+      }
+    },
+    "grand opening": {
+      "lemma": "grand opening",
+      "pos": "熟",
+      "ja": "開店記念、グランドオープン",
+      "note": "",
+      "example": {
+        "en": "The grand opening of our new branch is on May 3.",
+        "ja": "新支店のグランドオープンは5月3日です。"
+      }
+    },
+    "marked down": {
+      "lemma": "mark down",
+      "pos": "熟",
+      "ja": "値下げする",
+      "note": "discount の言い換え",
+      "example": {
+        "en": "All winter coats are marked down by half this week.",
+        "ja": "今週、冬物のコートはすべて半額に値下げされています。"
+      }
+    },
+    "full line of": {
+      "lemma": "full line of",
+      "pos": "熟",
+      "ja": "全商品ライン、フルラインアップ",
+      "note": "",
+      "example": {
+        "en": "The shop carries a full line of kitchen tools.",
+        "ja": "その店は調理器具を全ラインそろえている。"
+      }
+    },
+    "limited stock": {
+      "lemma": "limited stock",
+      "pos": "熟",
+      "ja": "数量限定の在庫",
+      "note": "",
+      "example": {
+        "en": "We have only a limited stock of the new model.",
+        "ja": "新型モデルは数量限定の在庫しかありません。"
+      }
+    },
+    "sign up for": {
+      "lemma": "sign up for",
+      "pos": "熟",
+      "ja": "～に登録する、申し込む",
+      "note": "",
+      "example": {
+        "en": "Please sign up for the newsletter on our Web site.",
+        "ja": "当社のウェブサイトでニュースレターにご登録ください。"
+      }
+    },
+    "coupon": {
+      "lemma": "coupon",
+      "pos": "名",
+      "ja": "クーポン、割引券",
+      "note": "",
+      "example": {
+        "en": "Show this coupon at the register to get ten percent off.",
+        "ja": "このクーポンをレジで見せると10パーセント引きになります。"
+      }
+    },
+    "flat fee": {
+      "lemma": "flat fee",
+      "pos": "熟",
+      "ja": "定額料金",
+      "note": "",
+      "example": {
+        "en": "The company charges a flat fee for every installation.",
+        "ja": "その会社は設置ごとに定額料金を請求する。"
+      }
+    },
+    "sell out": {
+      "lemma": "sell out",
+      "pos": "熟",
+      "ja": "売り切れる",
+      "note": "run out に近い",
+      "example": {
+        "en": "Tickets for the concert usually sell out within an hour.",
+        "ja": "そのコンサートのチケットはたいてい1時間で売り切れる。"
+      }
+    },
+    "stop by": {
+      "lemma": "stop by",
+      "pos": "熟",
+      "ja": "立ち寄る",
+      "note": "",
+      "example": {
+        "en": "Please stop by the front desk to pick up your badge.",
+        "ja": "バッジを受け取りに受付へお立ち寄りください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "呼びかけ → 店の紹介 → 開店セールの値引き → 会員特典 → 配送サービス → 急がせる一言 → 来店の呼びかけ",
+    "items": [
+      {
+        "title": "広告は冒頭の呼びかけと店名で話し手と商品が決まる",
+        "body": "Come visit ... の文で店の種類と宣伝の主体が分かる。who の設問は、この数文から選ぶ。"
+      },
+      {
+        "title": "特典は「条件」と「内容」をセットで聞く",
+        "body": "sign up したら coupon、のように条件と中身が対になる。値引き・配送・クーポンが混在するときは、条件の語から答えを探す。"
+      }
+    ]
+  }
+}

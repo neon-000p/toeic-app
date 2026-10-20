@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part4-history",
-  "updatedAt": "2026-10-18T04:20:00+09:00",
+  "updatedAt": "2026-10-21T04:20:00+09:00",
   "items": [
+    {
+      "id": "2026-10-21-0410-2",
+      "date": "2026-10-21",
+      "scene": "広告｜家具店の開店記念セールと会員登録",
+      "genre": "広告",
+      "talkType": "ad",
+      "types": [
+        "who",
+        "detail",
+        "infer"
+      ],
+      "flow": "告知と指示"
+    },
+    {
+      "id": "2026-10-21-0410-1",
+      "date": "2026-10-21",
+      "scene": "留守番電話｜機器の設置日の変更と立会いの依頼",
+      "genre": "留守番電話",
+      "talkType": "voicemail",
+      "types": [
+        "gist",
+        "intent",
+        "next"
+      ],
+      "flow": "問題と代替案"
+    },
     {
       "id": "2026-10-18-0400-2",
       "date": "2026-10-18",

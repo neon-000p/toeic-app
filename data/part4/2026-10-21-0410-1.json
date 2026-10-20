@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-21-0410-1",
+  "date": "2026-10-21",
+  "time": "04:10",
+  "createdAt": "2026-10-21T04:10:00+09:00",
+  "sample": false,
+  "scene": "留守番電話｜機器の設置日の変更と立会いの依頼",
+  "talkType": "voicemail",
+  "intro": "Questions 1 through 3 refer to the following telephone message.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-GB"
+  },
+  "lines": [
+    {
+      "en": "Hello, Mr. Reyes. This is Linda Park from Brightline Office Systems, returning your call about the new printer installation.",
+      "ja": "レイエスさん、こんにちは。ブライトライン・オフィス・システムズのリンダ・パークです。新しいプリンターの設置の件で折り返しお電話しています。"
+    },
+    {
+      "en": "I am sorry to say we have to reschedule your appointment on Tuesday.",
+      "ja": "申し訳ないのですが、火曜日のご予約を変更しなければなりません。"
+    },
+    {
+      "en": "Our delivery truck was held up at the warehouse, so the equipment will not reach us until Wednesday morning.",
+      "ja": "配送トラックが倉庫で足止めされたため、機器は水曜の朝まで当社に届きません。"
+    },
+    {
+      "en": "I can offer you a technician visit on Wednesday at two o'clock instead, or first thing on Thursday.",
+      "ja": "代わりに、水曜の2時に技術者が伺うか、木曜の朝一番に伺うことができます。"
+    },
+    {
+      "en": "Either way, the installation takes about an hour and a half, and there is no extra charge for the change.",
+      "ja": "どちらにしても設置には約1時間半かかり、変更に伴う追加料金はありません。"
+    },
+    {
+      "en": "Someone from your office will need to be on site to sign off on the work.",
+      "ja": "作業の承認のため、御社の方が現場にいらっしゃる必要があります。"
+    },
+    {
+      "en": "Could you call me back before five today and let me know which time suits you?",
+      "ja": "本日5時までに折り返しお電話いただき、どちらの時間がよいかお知らせいただけますか。"
+    },
+    {
+      "en": "You can reach me at extension 218, and I will be here until the end of the day.",
+      "ja": "内線218番でお呼び出しください。本日は終業までおります。"
+    },
+    {
+      "en": "Thank you for your patience.",
+      "ja": "ご辛抱いただきありがとうございます。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "Why is the speaker calling?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To change an installation date",
+          "ja": "設置日を変更するため"
+        },
+        {
+          "key": "B",
+          "text": "To confirm a delivery address",
+          "ja": "配送先を確認するため"
+        },
+        {
+          "key": "C",
+          "text": "To request a payment",
+          "ja": "支払いを求めるため"
+        },
+        {
+          "key": "D",
+          "text": "To report a broken printer",
+          "ja": "プリンターの故障を知らせるため"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で printer installation の件で折り返していると述べ、次に we have to reschedule your appointment と続けています。reschedule を change a date と言い換えた A が正解です。D はプリンターが話題でも、故障の話は出ていません。",
+      "tip": "留守電は名乗りのあとの用件が1問目の答えです。reschedule のような動詞が選択肢で名詞に言い換わります。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker imply when she says, \"Either way, the installation takes about an hour and a half\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A technician may arrive late",
+          "ja": "技術者が遅れて到着するかもしれない"
+        },
+        {
+          "key": "B",
+          "text": "The customer can do the work",
+          "ja": "顧客が作業できる"
+        },
+        {
+          "key": "C",
+          "text": "Both options take the same time",
+          "ja": "どちらの案も所要時間は同じ"
+        },
+        {
+          "key": "D",
+          "text": "The installation costs extra",
+          "ja": "設置には追加費用がかかる"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "直前に水曜と木曜の2つの案があり、Either way は「どちらを選んでも」の意味です。どちらも約1時間半という趣旨なので C が正解です。D の extra charge は同じ文の後半で「ない」と述べられています。",
+      "tip": "Either way が出たら、直前の2案を指していると考えます。同じ文の後半の語を選択肢に使った誤答に注意します。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What is Mr. Reyes asked to do?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Visit the warehouse",
+          "ja": "倉庫を訪れる"
+        },
+        {
+          "key": "B",
+          "text": "Choose a time for the visit",
+          "ja": "訪問の時間を選ぶ"
+        },
+        {
+          "key": "C",
+          "text": "Sign a contract at the office",
+          "ja": "事務所で契約書に署名する"
+        },
+        {
+          "key": "D",
+          "text": "Send a payment by five",
+          "ja": "5時までに支払う"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        6
+      ],
+      "explanation": "Could you call me back ... and let me know which time suits you? が依頼です。2案のうちどちらがよいか知らせることは、時間を選ぶことなので B が正解です。D の five は折り返しの期限であり、支払いではありません。",
+      "tip": "依頼は Could you ... で始まる文に出ます。期限の数字（five）と依頼の中身を混ぜない点が引っかけです。"
+    }
+  ],
+  "glossary": {
+    "returning your call": {
+      "lemma": "return a call",
+      "pos": "熟",
+      "ja": "折り返し電話をする",
+      "note": "留守電の定型",
+      "example": {
+        "en": "Hello, I am returning your call about the invoice.",
+        "ja": "こんにちは、請求書の件で折り返しお電話しています。"
+      }
+    },
+    "reschedule": {
+      "lemma": "reschedule",
+      "pos": "動",
+      "ja": "予定を変更する",
+      "note": "change a date に言い換わる",
+      "example": {
+        "en": "We had to reschedule the meeting to next Monday.",
+        "ja": "会議を来週の月曜に変更しなければならなかった。"
+      }
+    },
+    "held up": {
+      "lemma": "hold up",
+      "pos": "熟",
+      "ja": "遅れる、足止めされる",
+      "note": "delay の言い換え",
+      "example": {
+        "en": "The shipment was held up at customs for two days.",
+        "ja": "荷物は税関で2日間足止めされた。"
+      }
+    },
+    "first thing": {
+      "lemma": "first thing",
+      "pos": "熟",
+      "ja": "朝一番に",
+      "note": "",
+      "example": {
+        "en": "Please send me the report first thing tomorrow.",
+        "ja": "明日の朝一番にその報告書を送ってください。"
+      }
+    },
+    "no extra charge": {
+      "lemma": "no extra charge",
+      "pos": "熟",
+      "ja": "追加料金なし",
+      "note": "free に言い換わる",
+      "example": {
+        "en": "Gift wrapping is available at no extra charge.",
+        "ja": "ギフト包装は追加料金なしで承ります。"
+      }
+    },
+    "on site": {
+      "lemma": "on site",
+      "pos": "熟",
+      "ja": "現場で、その場で",
+      "note": "",
+      "example": {
+        "en": "An engineer will be on site during the inspection.",
+        "ja": "点検の間、技術者が現場に待機します。"
+      }
+    },
+    "sign off on": {
+      "lemma": "sign off on",
+      "pos": "熟",
+      "ja": "～を承認する",
+      "note": "approve の言い換え",
+      "example": {
+        "en": "The director must sign off on the budget plan.",
+        "ja": "予算案は部長が承認しなければならない。"
+      }
+    },
+    "call me back": {
+      "lemma": "call back",
+      "pos": "熟",
+      "ja": "折り返し電話する",
+      "note": "",
+      "example": {
+        "en": "Please call me back as soon as you receive this message.",
+        "ja": "このメッセージを受け取りしだい、折り返し電話してください。"
+      }
+    },
+    "extension": {
+      "lemma": "extension",
+      "pos": "名",
+      "ja": "内線（番号）",
+      "note": "",
+      "example": {
+        "en": "Please dial extension 305 to reach the sales team.",
+        "ja": "営業チームには内線305番におかけください。"
+      }
+    },
+    "installation": {
+      "lemma": "installation",
+      "pos": "名",
+      "ja": "設置、取り付け",
+      "note": "",
+      "example": {
+        "en": "The installation of the new server will take two days.",
+        "ja": "新しいサーバーの設置には2日かかる。"
+      }
+    }
+  },
+  "point": {
+    "flow": "名乗りと用件 → 日程変更の謝罪 → 原因（配送の遅れ）→ 代替案の提示 → 条件 → 折り返しの依頼と期限",
+    "items": [
+      {
+        "title": "留守電は「名乗り・用件・依頼」の3点で聞く",
+        "body": "冒頭で誰が何の件かをつかみ、最後に依頼と期限を待つ。1問目は冒頭、3問目は終盤の依頼から作られる。"
+      },
+      {
+        "title": "Either way は直前の2案をまとめる合図",
+        "body": "選択肢が2つ出たあとの Either way は、2案に共通する条件を述べる。共通点が何かを一言で言い換えてから選択肢を見る。"
+      }
+    ]
+  }
+}
