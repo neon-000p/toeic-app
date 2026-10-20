@@ -438,5 +438,24 @@
       "url": "https://mymotherlode.com/news/asia/11236266/rubio-and-jaishankar-hold-talks-in-mumbai-as-us-and-india-aim-to-finalize-trade-deal.html",
       "date": "2026-10-20"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-21-0546/00.mp3",
+      "audio/2026-10-21-0546/01.mp3",
+      "audio/2026-10-21-0546/02.mp3",
+      "audio/2026-10-21-0546/03.mp3",
+      "audio/2026-10-21-0546/04.mp3",
+      "audio/2026-10-21-0546/05.mp3",
+      "audio/2026-10-21-0546/06.mp3",
+      "audio/2026-10-21-0546/07.mp3",
+      "audio/2026-10-21-0546/08.mp3",
+      "audio/2026-10-21-0546/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 222594,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-20T20:48:44.844Z",
+    "trimmed": true
+  }
 }
