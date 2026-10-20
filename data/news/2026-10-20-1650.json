@@ -460,5 +460,22 @@
       "url": "https://theloadstar.com/carriers-eye-fak-hikes-as-spot-decline-eases-and-capacity-stays-tight/",
       "date": "2026-10-16"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-20-1650/00.mp3",
+      "audio/2026-10-20-1650/01.mp3",
+      "audio/2026-10-20-1650/02.mp3",
+      "audio/2026-10-20-1650/03.mp3",
+      "audio/2026-10-20-1650/04.mp3",
+      "audio/2026-10-20-1650/05.mp3",
+      "audio/2026-10-20-1650/06.mp3",
+      "audio/2026-10-20-1650/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 218472,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-20T07:49:04.559Z",
+    "trimmed": true
+  }
 }
