@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-22-0548",
+  "date": "2026-10-22",
+  "time": "05:48",
+  "createdAt": "2026-10-22T05:48:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Apple's Foldable iPhone Duo Sells Out Within Hours",
+    "ja": "アップルの折りたたみiPhone、数時間で完売"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Apple's first foldable phone, the iPhone Duo, sold out within hours of opening for pre-orders on October 16.",
+            "ja": "アップル初の折りたたみ式スマートフォン「iPhone Duo」は、10月16日に予約受付を開始してから数時間で完売した。"
+          },
+          {
+            "en": "The phone costs $1,999 in the United States.",
+            "ja": "米国での価格は1,999ドルである。"
+          },
+          {
+            "en": "Delivery dates for new orders have already moved to late January.",
+            "ja": "新規注文の配送日は、すでに1月下旬にずれ込んでいる。"
+          },
+          {
+            "en": "Apple said that demand is \"extraordinary\" and that it is working to deliver the devices quickly.",
+            "ja": "アップルは、需要が「並外れて高い」とし、端末をできるだけ早く届けるよう取り組んでいると述べた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The company has not said how many units it made, so it is unclear when supply will catch up.",
+            "ja": "同社は何台を生産したか明らかにしておらず、供給がいつ追いつくのかは不透明だ。"
+          },
+          {
+            "en": "Store employees have reportedly been told to discourage customers without pre-orders from coming in on launch day, October 23.",
+            "ja": "報道によると、店舗の従業員は、予約をしていない客に対し、発売日の10月23日に来店しないよう促すよう指示されたという。"
+          },
+          {
+            "en": "Some pre-orders are reportedly being resold online for thousands of dollars more than the original price.",
+            "ja": "一部の予約枠は、元の価格より数千ドル高い値段でオンライン転売されていると伝えられている。"
+          },
+          {
+            "en": "The sellout shows strong interest in foldable phones, but it also reveals a risk.",
+            "ja": "この完売は折りたたみ式スマホへの強い関心を示す一方で、リスクも浮き彫りにしている。"
+          },
+          {
+            "en": "If a company cannot supply enough products, customers may become frustrated, and sales may be delayed until next year.",
+            "ja": "企業が十分な製品を供給できなければ、顧客は不満を抱き、販売が来年に持ち越される可能性がある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much does the iPhone Duo cost in the United States?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$1,499",
+          "ja": "1,499ドル"
+        },
+        {
+          "key": "B",
+          "text": "$1,799",
+          "ja": "1,799ドル"
+        },
+        {
+          "key": "C",
+          "text": "$1,999",
+          "ja": "1,999ドル"
+        },
+        {
+          "key": "D",
+          "text": "$2,499",
+          "ja": "2,499ドル"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落第2文に「The phone costs $1,999 in the United States.」とあるため正解はC。A・B・Dは本文に出ない金額で、数字の記憶違いを誘う引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "金額問題は、選択肢の数字を本文と1つずつ照合する。通貨記号や単位（$、million 等）も合わせて確認すること。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, what is one risk when a company cannot supply enough products?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Customers may become frustrated.",
+          "ja": "顧客が不満を抱く"
+        },
+        {
+          "key": "B",
+          "text": "Prices may fall sharply.",
+          "ja": "価格が急落する"
+        },
+        {
+          "key": "C",
+          "text": "Stores may have to close.",
+          "ja": "店舗が閉鎖される"
+        },
+        {
+          "key": "D",
+          "text": "Apple may cancel the phone.",
+          "ja": "アップルが製品を中止する"
+        }
+      ],
+      "answer": "A",
+      "explanation": "第2段落最終文に「If a company cannot supply enough products, customers may become frustrated」とあるため正解はA。Bの価格下落、Cの店舗閉鎖、Dの製品中止はいずれも本文に書かれていない情報で、『品不足なら何か悪いことが起こる』という連想を誘う引っかけ。",
+      "evidence": {
+        "p": 1,
+        "s": 4
+      },
+      "tip": "risk（リスク）を問う設問は、if や but の後ろに答えが置かれやすい。本文にない常識的な連想で選ばず、根拠となる1文を必ず特定する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "delivery",
+      "pos": "名",
+      "ja": "配送、納品",
+      "gloss": "",
+      "example": {
+        "en": "Please check the delivery date before you place the order.",
+        "ja": "注文する前に、配送日を確認してください。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for electric cars has grown rapidly this year.",
+        "ja": "電気自動車の需要は今年、急速に伸びている。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "supply",
+      "pos": "名・動",
+      "ja": "供給（する）",
+      "gloss": "",
+      "example": {
+        "en": "The supplier will supply parts to our factory every week.",
+        "ja": "その供給元は、毎週当社の工場に部品を供給する。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "units",
+      "pos": "名",
+      "ja": "（製品の）台数、個数",
+      "gloss": "（＝商品を1つ、2つと数えるときの単位のこと）",
+      "example": {
+        "en": "The company sold two million units in the first month.",
+        "ja": "その会社は最初の1か月で200万台を販売した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "discourage",
+      "pos": "動",
+      "ja": "（〜しないよう）思いとどまらせる",
+      "gloss": "",
+      "example": {
+        "en": "The high fee may discourage people from joining the program.",
+        "ja": "高い料金は、人々がそのプログラムに参加するのをためらわせるかもしれない。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "reportedly",
+      "pos": "副",
+      "ja": "報道によると",
+      "gloss": "",
+      "example": {
+        "en": "The firm has reportedly signed a new contract with a major retailer.",
+        "ja": "その会社は、大手小売業者と新たな契約を結んだと報じられている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "frustrated",
+      "pos": "形",
+      "ja": "不満を抱いた、いらだった",
+      "gloss": "",
+      "example": {
+        "en": "Frustrated customers called the support center several times.",
+        "ja": "不満を抱いた顧客は、サポートセンターに何度も電話した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "pre-orders",
+      "pos": "名",
+      "ja": "予約注文",
+      "gloss": "",
+      "example": {
+        "en": "The store received thousands of pre-orders before the release.",
+        "ja": "その店は、発売前に数千件の予約注文を受けた。"
+      }
+    }
+  ],
+  "glossary": {
+    "foldable": {
+      "lemma": "foldable",
+      "pos": "形",
+      "ja": "折りたたみ式の",
+      "note": ""
+    },
+    "sold": {
+      "lemma": "sell",
+      "pos": "動",
+      "ja": "売れた",
+      "note": "sell out で「売り切れる」"
+    },
+    "pre-orders": {
+      "lemma": "pre-order",
+      "pos": "名",
+      "ja": "予約注文",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "動",
+      "ja": "（費用が）かかる",
+      "note": ""
+    },
+    "delivery": {
+      "lemma": "delivery",
+      "pos": "名",
+      "ja": "配送、納品",
+      "note": ""
+    },
+    "moved": {
+      "lemma": "move",
+      "pos": "動",
+      "ja": "動いた、ずれた",
+      "note": ""
+    },
+    "late": {
+      "lemma": "late",
+      "pos": "形",
+      "ja": "後半の、遅い",
+      "note": "late January で「1月下旬」"
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "extraordinary": {
+      "lemma": "extraordinary",
+      "pos": "形",
+      "ja": "並外れた",
+      "note": ""
+    },
+    "deliver": {
+      "lemma": "deliver",
+      "pos": "動",
+      "ja": "届ける",
+      "note": ""
+    },
+    "devices": {
+      "lemma": "device",
+      "pos": "名",
+      "ja": "端末、機器",
+      "note": ""
+    },
+    "quickly": {
+      "lemma": "quickly",
+      "pos": "副",
+      "ja": "すばやく",
+      "note": ""
+    },
+    "units": {
+      "lemma": "unit",
+      "pos": "名",
+      "ja": "台数、個数",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "catch": {
+      "lemma": "catch",
+      "pos": "動",
+      "ja": "追いつく",
+      "note": "catch up で「追いつく」"
+    },
+    "reportedly": {
+      "lemma": "reportedly",
+      "pos": "副",
+      "ja": "報道によると",
+      "note": ""
+    },
+    "discourage": {
+      "lemma": "discourage",
+      "pos": "動",
+      "ja": "思いとどまらせる",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "launch": {
+      "lemma": "launch",
+      "pos": "名",
+      "ja": "発売、開始",
+      "note": ""
+    },
+    "resold": {
+      "lemma": "resell",
+      "pos": "動",
+      "ja": "転売された",
+      "note": ""
+    },
+    "original": {
+      "lemma": "original",
+      "pos": "形",
+      "ja": "元の、最初の",
+      "note": ""
+    },
+    "sellout": {
+      "lemma": "sellout",
+      "pos": "名",
+      "ja": "完売",
+      "note": ""
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "関心",
+      "note": ""
+    },
+    "reveals": {
+      "lemma": "reveal",
+      "pos": "動",
+      "ja": "明らかにする",
+      "note": ""
+    },
+    "risk": {
+      "lemma": "risk",
+      "pos": "名",
+      "ja": "リスク",
+      "note": ""
+    },
+    "frustrated": {
+      "lemma": "frustrated",
+      "pos": "形",
+      "ja": "不満を抱いた",
+      "note": ""
+    },
+    "delayed": {
+      "lemma": "delay",
+      "pos": "動",
+      "ja": "遅らされた",
+      "note": ""
+    },
+    "enough": {
+      "lemma": "enough",
+      "pos": "形",
+      "ja": "十分な",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "前置詞＋動名詞（前置詞の後ろに -ing 形を置く）",
+    "quote": "Apple's first foldable phone, the iPhone Duo, sold out within hours of opening for pre-orders on October 16.",
+    "quoteJa": "アップル初の折りたたみ式スマートフォン「iPhone Duo」は、10月16日に予約受付を開始してから数時間で完売した。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "of opening は「前置詞 of＋動名詞（opening）」の形で、「〜を開始すること」という意味のまとまりを作っている。前置詞の後ろには名詞のはたらきをする語しか置けないため、動詞を使いたいときは -ing 形（動名詞）にする。to不定詞（of to open）や原形（of open）にはできない。within hours of opening は「予約受付の開始から数時間以内に」と読む。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "within hours of opening for pre-orders ＝ within hours after pre-orders opened（予約受付が始まってから数時間以内に）。同様に「after signing the contract（契約に署名した後で）」「before leaving the office（退社する前に）」「by working together（協力することで）」も前置詞＋動名詞である。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 で最も多いのは、前置詞（after / before / by / without / instead of など）の直後の空所に -ing 形を選ばせる問題。選択肢に原形・to不定詞・過去形が並んでいたら、前置詞の直後なので動名詞を選ぶ。Part 6・7 でも、Thank you for contacting us.（ご連絡ありがとうございます）のような定型表現で頻出する。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "We reduced costs by renegotiating our contracts.（契約を再交渉することでコストを削減した。）／Please contact us before returning the item.（商品を返送する前にご連絡ください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① 今回のニュースの要点と用語",
+      "body": "アップルは初の折りたたみ式iPhone「iPhone Duo」の予約を10月16日に開始し、数時間で完売しました。米国での価格は1,999ドルで、発売日は10月23日です。折りたたみ式（foldable）とは、画面を本のように開閉できるスマートフォンのことです。新規注文の配送は1月下旬になっており、アップルは需要が「並外れて高い」と説明しています。予約が完売した状態でも、発売日に店頭で買えるのはごく少数にとどまる見通しだと伝えられています。"
+    },
+    {
+      "heading": "📌 ② 供給制約という課題",
+      "body": "今回の最大の焦点は、需要ではなく供給です。折りたたみ式は画面やヒンジ（開閉部分）など特殊な部品が多く、通常のスマホより大量生産が難しいとされます。アップルは生産台数を公表しておらず、品不足がいつ解消するかは不透明です。報道では、店舗の従業員が予約のない客に来店を控えるよう促すよう指示されたとも伝えられており、発売日の混乱を避けたい意図がうかがえます。一方で、予約枠が高値で転売されているという報道もあり、需給の逼迫が表れています。"
+    },
+    {
+      "heading": "📌 ③ 業界・競合の動向",
+      "body": "折りたたみ式スマホは、サムスンや中国メーカーが先行してきた分野ですが、市場全体ではまだ小さな存在でした。アップルの参入は、折りたたみ式を「高価格帯の一般商品」に押し上げるきっかけになると見られています。1,999ドルという高い価格でも完売したことは、高級スマホの需要がなお強いことを示します。競合各社は、価格や耐久性の面でアップルに対抗する戦略の見直しを迫られる可能性があります。"
+    },
+    {
+      "heading": "📌 ④ 日本・日本人ビジネスパーソンへの示唆",
+      "body": "日本はiPhoneの普及率が高い市場で、価格の高い端末でも購入意欲が強いとされます。日本の部品・素材メーカー（ヒンジ、折り曲げ可能なガラスやフィルム、電子部品など）にとっては、新しい受注の機会になり得ます。ただし、供給が追いつかず発売時期が延びると、部品メーカーの生産計画にも影響します。投資家にとっては、アップルの今期から来期にかけての売上と、サプライチェーン（部品の調達網）の安定性が注目点です。英語学習の観点では、demand・supply・delivery・units といった語が、納期や在庫の連絡メールなど、TOEICの実務文書でそのまま使われます。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "iPhone Duo Pre-Orders Launched, and Three Hours Later It's Sold Out Through the End of January",
+      "publisher": "Daring Fireball",
+      "url": "https://daringfireball.net/linked/2026/10/16/duo-preorders-sellout",
+      "date": "2026-10-16"
+    },
+    {
+      "title": "Apple's iPhone Duo sells out in minutes, with deliveries pushed to 2027",
+      "publisher": "The Next Web",
+      "url": "https://thenextweb.com/news/iphone-duo-preorders-shipping-january",
+      "date": "2026-10-16"
+    }
+  ]
+}
