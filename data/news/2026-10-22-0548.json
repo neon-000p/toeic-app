@@ -446,5 +446,23 @@
       "url": "https://thenextweb.com/news/iphone-duo-preorders-shipping-january",
       "date": "2026-10-16"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-22-0548/00.mp3",
+      "audio/2026-10-22-0548/01.mp3",
+      "audio/2026-10-22-0548/02.mp3",
+      "audio/2026-10-22-0548/03.mp3",
+      "audio/2026-10-22-0548/04.mp3",
+      "audio/2026-10-22-0548/05.mp3",
+      "audio/2026-10-22-0548/06.mp3",
+      "audio/2026-10-22-0548/07.mp3",
+      "audio/2026-10-22-0548/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 233781,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-21T20:50:02.299Z",
+    "trimmed": true
+  }
 }
