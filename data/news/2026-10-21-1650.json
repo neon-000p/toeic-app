@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-21-1650",
+  "date": "2026-10-21",
+  "time": "16:50",
+  "createdAt": "2026-10-21T16:50:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "Hasbro Raises Its Outlook After a Strong Quarter",
+    "ja": "ハズブロ、好決算で通期予想を引き上げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Hasbro, the toy and game maker, reported strong results for the third quarter on Tuesday.",
+            "ja": "おもちゃとゲームのメーカーであるハズブロは、火曜日に第3四半期の好決算を発表した。"
+          },
+          {
+            "en": "Revenue reached $1.59 billion, which was higher than the $1.48 billion that analysts had expected.",
+            "ja": "売上高は15億9,000万ドルに達し、アナリストが予想していた14億8,000万ドルを上回った。"
+          },
+          {
+            "en": "Sales of Magic: The Gathering, a popular card game, rose 34% to $616 million.",
+            "ja": "人気カードゲーム「マジック：ザ・ギャザリング」の売上は34%増の6億1,600万ドルとなった。"
+          },
+          {
+            "en": "The company also raised its forecast for the full year for the second time this year.",
+            "ja": "同社は通期の業績予想も、今年2度目となる引き上げを行った。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Hasbro now expects annual sales to grow 7% to 9%, up from its earlier forecast of 5% to 7%.",
+            "ja": "ハズブロは現在、年間売上高が7〜9%成長すると見込んでおり、従来予想の5〜7%から引き上げた。"
+          },
+          {
+            "en": "Profit margins improved as well, partly because the company received about $55 million in tariff refunds.",
+            "ja": "利益率も改善した。一因は、同社が約5,500万ドルの関税還付金を受け取ったことだ。"
+          },
+          {
+            "en": "However, the company warned that sales of its games unit may fall in the fourth quarter because some sales came earlier than planned.",
+            "ja": "ただし同社は、一部の売上が計画より早く計上されたため、ゲーム部門の売上が第4四半期に減少する可能性があると警告した。"
+          },
+          {
+            "en": "Even so, investors reacted well, and the share price rose in early trading.",
+            "ja": "それでも投資家の反応は良く、株価は取引序盤に上昇した。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What was Hasbro's revenue in the third quarter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$616 million",
+          "ja": "6億1,600万ドル"
+        },
+        {
+          "key": "B",
+          "text": "$1.48 billion",
+          "ja": "14億8,000万ドル"
+        },
+        {
+          "key": "C",
+          "text": "$1.59 billion",
+          "ja": "15億9,000万ドル"
+        },
+        {
+          "key": "D",
+          "text": "$55 million",
+          "ja": "5,500万ドル"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落の2文目に「Revenue reached $1.59 billion」とあるため、正解は (C)。(A) $616 million はマジック：ザ・ギャザリングの売上、(B) $1.48 billion はアナリストの予想値、(D) $55 million は関税還付金の額で、いずれも売上高そのものではない。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字問題では、同じ文章に複数の金額が出てくる。「何の数字か」を示す名詞（revenue / forecast / refunds など）とセットで確認し、別項目の数字を選ばないこと。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why may sales of the games unit fall in the fourth quarter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tariffs will become higher.",
+          "ja": "関税が高くなるため"
+        },
+        {
+          "key": "B",
+          "text": "Some sales came earlier than planned.",
+          "ja": "一部の売上が前倒しになったため"
+        },
+        {
+          "key": "C",
+          "text": "Customers have lost interest in the games.",
+          "ja": "客がゲームに飽きたため"
+        },
+        {
+          "key": "D",
+          "text": "The company has cut its annual forecast.",
+          "ja": "通期予想を引き下げたため"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落の3文目に「sales of its games unit may fall in the fourth quarter because some sales came earlier than planned」とある。because の後ろが理由なので (B) が正解。(A) 関税は還付金として利益を押し上げた側の話で、減少の理由ではない。(C) 本文にない情報。(D) 予想は引き下げではなく引き上げた（逆の内容）。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "理由を問う設問は、because / since / due to の直後に答えがあることが多い。本文と逆の内容（引き上げ↔引き下げ）の選択肢は典型的な引っかけ。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "revenue",
+      "pos": "名",
+      "ja": "収益、売上高",
+      "gloss": "",
+      "example": {
+        "en": "Revenue from online orders grew by 12% last year.",
+        "ja": "オンライン注文による売上高は昨年12%増えた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "analyst",
+      "pos": "名",
+      "ja": "アナリスト、分析家",
+      "gloss": "",
+      "example": {
+        "en": "Analysts expect the company to open three new offices next year.",
+        "ja": "アナリストは、同社が来年3つの新しい事務所を開設すると予想している。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "forecast",
+      "pos": "名・動",
+      "ja": "予想、見通し／予想する",
+      "gloss": "",
+      "example": {
+        "en": "The finance team revised its sales forecast for the next quarter.",
+        "ja": "財務チームは次の四半期の売上予想を修正した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "margin",
+      "pos": "名",
+      "ja": "利益率、余白",
+      "gloss": "（＝売上のうち、手元に残る利益の割合のこと）",
+      "example": {
+        "en": "A lower margin means the firm earns less on each sale.",
+        "ja": "利益率が低いと、会社は1件の販売あたりの利益が少なくなる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "gloss": "（＝輸入品にかかる税金のこと）",
+      "example": {
+        "en": "The new tariff raised the price of imported furniture.",
+        "ja": "新しい関税により、輸入家具の価格が上がった。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "refund",
+      "pos": "名・動",
+      "ja": "返金、還付／返金する",
+      "gloss": "",
+      "example": {
+        "en": "Customers can request a full refund within 30 days.",
+        "ja": "顧客は30日以内なら全額返金を請求できる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "annual",
+      "pos": "形",
+      "ja": "年間の、毎年の",
+      "gloss": "",
+      "example": {
+        "en": "The annual report will be published in March.",
+        "ja": "年次報告書は3月に公表される予定だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "gloss": "",
+      "example": {
+        "en": "Investors welcomed the news about higher profits.",
+        "ja": "投資家は増益の知らせを歓迎した。"
+      }
+    }
+  ],
+  "glossary": {
+    "hasbro": {
+      "lemma": "Hasbro",
+      "pos": "名",
+      "ja": "ハズブロ（玩具会社）",
+      "note": ""
+    },
+    "maker": {
+      "lemma": "maker",
+      "pos": "名",
+      "ja": "製造会社",
+      "note": ""
+    },
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "発表した",
+      "note": ""
+    },
+    "strong": {
+      "lemma": "strong",
+      "pos": "形",
+      "ja": "好調な",
+      "note": ""
+    },
+    "results": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "業績、結果",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "名",
+      "ja": "売上高",
+      "note": ""
+    },
+    "reached": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "〜に達した",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "sales": {
+      "lemma": "sale",
+      "pos": "名",
+      "ja": "売上",
+      "note": ""
+    },
+    "popular": {
+      "lemma": "popular",
+      "pos": "形",
+      "ja": "人気の",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予想、見通し",
+      "note": ""
+    },
+    "annual": {
+      "lemma": "annual",
+      "pos": "形",
+      "ja": "年間の",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "early",
+      "pos": "形",
+      "ja": "より早い",
+      "note": "early の比較級。earlier than planned＝計画より早く"
+    },
+    "margins": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": ""
+    },
+    "improved": {
+      "lemma": "improve",
+      "pos": "動",
+      "ja": "改善した",
+      "note": ""
+    },
+    "partly": {
+      "lemma": "partly",
+      "pos": "副",
+      "ja": "一部は",
+      "note": ""
+    },
+    "received": {
+      "lemma": "receive",
+      "pos": "動",
+      "ja": "受け取った",
+      "note": ""
+    },
+    "tariff": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "refunds": {
+      "lemma": "refund",
+      "pos": "名",
+      "ja": "還付金",
+      "note": ""
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告した",
+      "note": ""
+    },
+    "unit": {
+      "lemma": "unit",
+      "pos": "名",
+      "ja": "部門",
+      "note": ""
+    },
+    "planned": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "計画した",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "reacted": {
+      "lemma": "react",
+      "pos": "動",
+      "ja": "反応した",
+      "note": ""
+    },
+    "trading": {
+      "lemma": "trading",
+      "pos": "名",
+      "ja": "取引",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "目的格の関係代名詞 that と過去完了（had expected：予想していた）",
+    "quote": "Revenue reached $1.59 billion, which was higher than the $1.48 billion that analysts had expected.",
+    "quoteJa": "売上高は15億9,000万ドルに達し、アナリストが予想していた14億8,000万ドルを上回った。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "the $1.48 billion that analysts had expected の that は目的格の関係代名詞です。元の文は analysts had expected the $1.48 billion で、expected の目的語（$1.48 billion）が前に出て、that でつながれています。「アナリストが予想していた14億8,000万ドル」と、名詞を後ろから説明します。また、had expected は過去完了形で、「発表された時点より前に予想されていた」という時間のずれを表します。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "目的格の that は省略できます。the $1.48 billion analysts had expected と言っても意味は同じです。一方、主格（後ろに動詞が続く場合）の関係代名詞は省略できません。例：the analysts who expected growth（who は省略不可）。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、空所の前が名詞で、後ろが「主語＋動詞」で目的語が欠けている形のとき、関係代名詞（that / which）を選ぶ問題が出ます。後ろの文に主語がそろっているか、目的語が欠けているかを見て判断しましょう。Part 7 でも、the report that you requested のような形が頻出です。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The budget that the committee had approved was cut by 10%.（委員会が承認していた予算は10%削減された。）／ Please send the documents that we discussed yesterday.（昨日話し合った書類を送ってください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ハズブロとはどんな会社か",
+      "body": "ハズブロは米国の大手玩具・ゲーム会社です。近年は、人形などの玩具（消費者向け製品）よりも、カードゲーム「マジック：ザ・ギャザリング」を持つ子会社のウィザーズ・オブ・ザ・コースト部門が利益の大黒柱になっています。今回もマジックの売上が初めて四半期で6億ドルを超え、部門の営業利益率は約49%と非常に高い水準でした。"
+    },
+    {
+      "heading": "📌 「通期予想の引き上げ」と「関税還付」の意味",
+      "body": "企業は年初に「今年はこのくらい稼ぐ」という見通しを出し、好調なら途中で引き上げます。今回は今年2度目の引き上げで、売上成長率は5〜7%から7〜9%へ上がりました。また、利益には約5,500万ドルの関税還付金（以前に払い過ぎた関税が戻ってきたもの）という一回限りの要因が含まれています。投資家はこうした「一時的な要因」を除いた実力値を見るため、決算を読むときはこの点に注意が必要です。"
+    },
+    {
+      "heading": "📌 業界の動向と、第4四半期への注意点",
+      "body": "玩具・ゲーム業界は、関税や消費者の節約志向で厳しい環境にあります。そのなかで、コレクター需要に支えられたカードゲームは強い分野です。ただし会社は、約4,000万ドル分の売上が第4四半期から第3四半期に前倒しされたため、次の四半期のゲーム部門は減収になり得ると説明しています。好決算の裏で、売上の「時期のずれ」が起きている点に注意が必要です。"
+    },
+    {
+      "heading": "📌 日本・日本人ビジネスパーソンへの示唆",
+      "body": "日本でもトレーディングカードは大きな市場で、国内企業にとっても競合・協業の両面で無関係ではありません。また、関税の還付や通商政策の変化は、輸出入を行う日本企業の収益にも直接影響します。英文決算ニュースでは revenue（売上高）、forecast（予想）、margin（利益率）、guidance（業績見通し）といった語が頻出するため、TOEIC のビジネス文書対策としても有用です。投資家の視点では、一時要因を除いた利益と次期の見通しの両方を確認する姿勢が大切です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Earnings call transcript: Hasbro tops Q3 2026 estimates and lifts outlook",
+      "publisher": "Investing.com",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-hasbro-tops-q3-2026-estimates-and-lifts-outlook-93CH-4960320",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "Hasbro (HAS) Q3 2026 Earnings Call Transcript",
+      "publisher": "The Motley Fool",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/20/hasbro-has-q3-2026-earnings-call-transcript/",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "Hasbro Inc (HAS) Q3 2026 Earnings Call Highlights: Magic: The Gathering Tops $600 Million",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hasbro-inc-q3-2026-earnings-210142130.html",
+      "date": "2026-10-20"
+    }
+  ]
+}
