@@ -460,5 +460,22 @@
       "url": "https://www.wfmj.com/news/consumer/sinking-ai-stocks-undercut-markets-worldwide-as-oil-climbs-to-its-highest-price-since-may/article_dd8a47c5-d57c-5b9e-bef3-3f056f57e355.html",
       "date": "2026-10-22"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-23-0546/00.mp3",
+      "audio/2026-10-23-0546/01.mp3",
+      "audio/2026-10-23-0546/02.mp3",
+      "audio/2026-10-23-0546/03.mp3",
+      "audio/2026-10-23-0546/04.mp3",
+      "audio/2026-10-23-0546/05.mp3",
+      "audio/2026-10-23-0546/06.mp3",
+      "audio/2026-10-23-0546/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 184008,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-22T20:50:14.520Z",
+    "trimmed": true
+  }
 }
