@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-23-0546",
+  "date": "2026-10-23",
+  "time": "05:46",
+  "createdAt": "2026-10-23T05:46:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Tech Stocks Fall as Meta Raises AI Spending; Treasury Yield Drops Below 5%",
+    "ja": "AI投資懸念で株安、米10年債利回り5%割れ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "US stocks fell on Thursday, led by technology shares, and investors grew cautious.",
+            "ja": "木曜の米国株は、テクノロジー株を中心に下落し、投資家は慎重になった。"
+          },
+          {
+            "en": "Meta dropped about 6 percent after it raised its plan for spending on artificial intelligence.",
+            "ja": "メタは、人工知能への支出計画を引き上げたことを受けて約6%下落した。"
+          },
+          {
+            "en": "Investors worried that the huge costs may not bring profits soon.",
+            "ja": "投資家は、巨額の費用がすぐには利益につながらないのではないかと懸念した。"
+          },
+          {
+            "en": "At the same time, the yield on the 10-year Treasury note fell below 5 percent.",
+            "ja": "同時に、米10年物国債の利回りは5%を下回った。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Yields move in the opposite direction from bond prices, so the drop shows that many investors bought bonds as a safe place for their money.",
+            "ja": "利回りは債券価格と逆方向に動くため、この低下は多くの投資家が資金の安全な置き場所として債券を買ったことを示している。"
+          },
+          {
+            "en": "Oil prices also rose to their highest level since May.",
+            "ja": "原油価格も5月以来の高値まで上昇した。"
+          },
+          {
+            "en": "Higher fuel costs can push up inflation and make it harder for central banks to cut interest rates.",
+            "ja": "燃料費の上昇はインフレを押し上げ、中央銀行が利下げを行いにくくする可能性がある。"
+          },
+          {
+            "en": "Analysts said investors will now watch whether companies can show clear returns on their AI projects.",
+            "ja": "アナリストは、投資家は今後、企業がAI事業で明確な収益を示せるかどうかに注目すると述べた。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What happened to the yield on the 10-year Treasury note?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It rose above 5 percent.",
+          "ja": "5%を上回った"
+        },
+        {
+          "key": "B",
+          "text": "It fell below 5 percent.",
+          "ja": "5%を下回った"
+        },
+        {
+          "key": "C",
+          "text": "It did not change.",
+          "ja": "変わらなかった"
+        },
+        {
+          "key": "D",
+          "text": "It reached its highest level since May.",
+          "ja": "5月以来の高値になった"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落の最終文に the yield on the 10-year Treasury note fell below 5 percent とあるので B が正解。A は逆の内容。C は本文にない。D の highest level since May は利回りではなく原油価格(Oil prices)の説明で、別の数字・対象を混ぜた引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "設問の主語(yield)と動詞(happened)を先に押さえ、本文の該当文を探す。『5月』など本文にある別の情報を、問われている対象と取り違えさせる選択肢に注意。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why were investors worried about Meta?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Its sales fell sharply last year.",
+          "ja": "昨年の売上が急減した"
+        },
+        {
+          "key": "B",
+          "text": "The huge AI costs may not bring profits soon.",
+          "ja": "巨額のAI費用がすぐ利益にならない恐れ"
+        },
+        {
+          "key": "C",
+          "text": "Oil prices reached a record high.",
+          "ja": "原油価格が過去最高になった"
+        },
+        {
+          "key": "D",
+          "text": "Bond prices fell below 5 percent.",
+          "ja": "債券価格が5%を下回った"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第3文に Investors worried that the huge costs may not bring profits soon とある。A の売上減少は本文に書かれていない。C は原油価格の話で、メタとは無関係かつ『過去最高』とも書かれていない。D は利回り(yield)と債券価格を取り違えた誤り。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "理由を問う設問は、worry that / because / so などの手がかり表現の直後に答えがある。選択肢が本文の言い換え(huge AI costs ← huge costs)になっている点も確認する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "spending",
+      "pos": "名",
+      "ja": "支出、出費",
+      "gloss": "",
+      "example": {
+        "en": "The company plans to increase its spending on training.",
+        "ja": "その会社は研修への支出を増やす予定だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "gloss": "",
+      "example": {
+        "en": "Investors welcomed the new business plan.",
+        "ja": "投資家たちは新しい事業計画を歓迎した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "gloss": "（＝債券や預金に投資したお金に対して、1年でもらえる収益の割合のこと）",
+      "example": {
+        "en": "The yield on this bond is higher than last year.",
+        "ja": "この債券の利回りは昨年より高い。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "inflation",
+      "pos": "名",
+      "ja": "インフレ、物価上昇",
+      "gloss": "（＝モノやサービスの値段が全体的に上がり続けること）",
+      "example": {
+        "en": "Inflation made food and rent more expensive.",
+        "ja": "インフレで食料品や家賃が高くなった。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "analyst",
+      "pos": "名",
+      "ja": "アナリスト、分析担当者",
+      "gloss": "",
+      "example": {
+        "en": "An analyst will present the sales forecast on Monday.",
+        "ja": "アナリストが月曜日に売上予測を発表する。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "return",
+      "pos": "名",
+      "ja": "収益、見返り",
+      "gloss": "",
+      "example": {
+        "en": "The new store has brought a good return on our investment.",
+        "ja": "新店舗は私たちの投資に対して良い見返りをもたらした。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "push up",
+      "pos": "熟",
+      "ja": "〜を押し上げる",
+      "gloss": "",
+      "example": {
+        "en": "Rising labor costs pushed up the price of the service.",
+        "ja": "人件費の上昇がそのサービスの価格を押し上げた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "at the same time",
+      "pos": "熟",
+      "ja": "同時に、その一方で",
+      "gloss": "",
+      "example": {
+        "en": "The firm cut costs and, at the same time, hired new staff.",
+        "ja": "その会社は費用を削減する一方で、新しい人材も採用した。"
+      }
+    }
+  ],
+  "glossary": {
+    "stocks": {
+      "lemma": "stock",
+      "pos": "名",
+      "ja": "株式",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": "過去形。fall–fell–fallen"
+    },
+    "led": {
+      "lemma": "lead",
+      "pos": "動",
+      "ja": "導いた",
+      "note": "過去分詞 led by〜＝〜が主導して"
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式",
+      "note": "株の意味では複数形が多い"
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "cautious": {
+      "lemma": "cautious",
+      "pos": "形",
+      "ja": "慎重な",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "artificial": {
+      "lemma": "artificial",
+      "pos": "形",
+      "ja": "人工の",
+      "note": ""
+    },
+    "intelligence": {
+      "lemma": "intelligence",
+      "pos": "名",
+      "ja": "知能",
+      "note": ""
+    },
+    "worried": {
+      "lemma": "worry",
+      "pos": "動",
+      "ja": "心配した",
+      "note": ""
+    },
+    "huge": {
+      "lemma": "huge",
+      "pos": "形",
+      "ja": "巨大な",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "profits": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "yield": {
+      "lemma": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "note": ""
+    },
+    "opposite": {
+      "lemma": "opposite",
+      "pos": "形",
+      "ja": "反対の",
+      "note": ""
+    },
+    "bond": {
+      "lemma": "bond",
+      "pos": "名",
+      "ja": "債券",
+      "note": ""
+    },
+    "safe": {
+      "lemma": "safe",
+      "pos": "形",
+      "ja": "安全な",
+      "note": ""
+    },
+    "highest": {
+      "lemma": "high",
+      "pos": "形",
+      "ja": "最も高い",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "push": {
+      "lemma": "push",
+      "pos": "動",
+      "ja": "押す",
+      "note": "push up＝押し上げる"
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "インフレ",
+      "note": ""
+    },
+    "central": {
+      "lemma": "central",
+      "pos": "形",
+      "ja": "中央の",
+      "note": ""
+    },
+    "cut": {
+      "lemma": "cut",
+      "pos": "動",
+      "ja": "引き下げる",
+      "note": ""
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "金利",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "率",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "returns": {
+      "lemma": "return",
+      "pos": "名",
+      "ja": "収益",
+      "note": ""
+    },
+    "whether": {
+      "lemma": "whether",
+      "pos": "接",
+      "ja": "〜かどうか",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "形式目的語 it（make it＋形容詞＋for A to do）",
+    "quote": "Higher fuel costs can push up inflation and make it harder for central banks to cut interest rates.",
+    "quoteJa": "燃料費の上昇はインフレを押し上げ、中央銀行が利下げを行いにくくする可能性がある。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "make の後ろの it は『形式目的語』で、本当の目的語は後ろの to cut interest rates（利下げすること）です。形は make＋it＋形容詞(harder)＋for A to do で、『Aが〜することを（形容詞）にする』という意味になります。to不定詞が長いので、先に it を置いて文の見通しを良くしています。for central banks は to cut の意味上の主語です。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Higher fuel costs make it harder for central banks to cut interest rates. ＝ Higher fuel costs make cutting interest rates harder for central banks.（動名詞を目的語にした形）。ただし to不定詞が長い場合は it を使う形が自然です。形容詞が harder（比較級）になっている点も確認しましょう。『より〜にする』という変化を表します。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では make it ＋形容詞＋to do の空所補充（it が入る／入らない）や、make の後ろに形容詞 (easier, possible, difficult) を選ぶ問題がよく出ます。make easier to do のように it を抜いた形は誤りです。Part 7 では、新システムや新制度が仕事を楽に(easier)する、という文脈で頻出です。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The new software makes it easier for our staff to share files. （新しいソフトにより、スタッフがファイルを共有しやすくなります。）／ The delay made it difficult for us to meet the deadline. （遅れのせいで、私たちは期限に間に合わせるのが難しくなりました。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① 何が起きたのか：AI投資への警戒と『安全資産への逃避』",
+      "body": "今回の動きは、AI（人工知能）に巨額を使う企業の費用が本当に利益に結びつくのか、という不安が再び強まったことが出発点です。メタが支出計画を引き上げたことで、テクノロジー株全体が売られました。株が売られると、投資家は資金の置き場所として国債に向かいます。国債が買われると価格が上がり、価格と逆に動く『利回り』は下がります。10年物国債の利回りが5%を下回ったのは、この動きが表れたものです。"
+    },
+    {
+      "heading": "📌 ② 専門用語をかみ砕くと",
+      "body": "『利回り』とは、債券に投資したお金に対して毎年どれくらいの収益が見込めるかを示す割合です。『インフレ』は物価が全体的に上がり続けること、『利下げ』は中央銀行が政策金利を引き下げて、お金を借りやすくすることです。原油など燃料の値段が上がると輸送費や電気代が増え、さまざまな商品の価格を押し上げるため、インフレの心配が強まり、中央銀行は利下げに慎重になります。"
+    },
+    {
+      "heading": "📌 ③ 日本経済・日本企業・ビジネスパーソンへの影響",
+      "body": "米国の長期金利が動くと、為替（円相場）や日本の長期金利にも影響が及びます。米国のテクノロジー株が下がれば、半導体や電子部品など、AI関連の需要に支えられてきた日本企業の株価にも売りが出やすくなります。また、原油価格が上がると、ガソリン、電気・ガス料金、物流コストが上がり、輸入に頼る日本の企業や家計には負担です。出張や出荷の費用を見直す企業も増えるかもしれません。"
+    },
+    {
+      "heading": "📌 ④ 投資家・経営者の視点",
+      "body": "投資家にとっての焦点は、AIへの支出が『いつ、どれだけの収益になって戻ってくるか』を企業が具体的に示せるかどうかです。企業側は、支出の計画と成果の見通しをセットで説明する責任が重くなっています。経営者は、金利・原油・為替の変動が自社の費用に与える影響を点検し、価格や調達の計画に余裕を持たせることが求められます。個人投資家は一日の値動きに振り回されず、分散投資と長期の視点を保つことが大切です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stock market today: S&P 500, Nasdaq tanks as tech stocks sink amid AI trade worries, Meta shares plummet",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "Meta Sinks 6%, 10-Year Yield Falls Below 5%: Stock Market Today",
+      "publisher": "Benzinga",
+      "url": "https://www.benzinga.com/markets/equities/26/10/62539017/meta-ai-spending-10-year-yield-below-5-stock-market-today",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "Sinking AI stocks undercut markets worldwide as oil climbs to its highest price since May",
+      "publisher": "AP (WFMJ)",
+      "url": "https://www.wfmj.com/news/consumer/sinking-ai-stocks-undercut-markets-worldwide-as-oil-climbs-to-its-highest-price-since-may/article_dd8a47c5-d57c-5b9e-bef3-3f056f57e355.html",
+      "date": "2026-10-22"
+    }
+  ]
+}
