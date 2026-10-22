@@ -464,5 +464,23 @@
       "url": "https://calmatters.org/economy/2026/10/seiu-local-1000-strike-authorization/",
       "date": "2026-10-08"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-22-1647/00.mp3",
+      "audio/2026-10-22-1647/01.mp3",
+      "audio/2026-10-22-1647/02.mp3",
+      "audio/2026-10-22-1647/03.mp3",
+      "audio/2026-10-22-1647/04.mp3",
+      "audio/2026-10-22-1647/05.mp3",
+      "audio/2026-10-22-1647/06.mp3",
+      "audio/2026-10-22-1647/07.mp3",
+      "audio/2026-10-22-1647/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 195189,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-22T07:48:54.668Z",
+    "trimmed": true
+  }
 }
