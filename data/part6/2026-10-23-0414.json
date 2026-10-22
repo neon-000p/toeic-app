@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-10-23-0414",
+  "date": "2026-10-23",
+  "time": "04:14",
+  "createdAt": "2026-10-23T04:14:00+09:00",
+  "sample": false,
+  "docType": "article",
+  "scene": "記事｜市内で自転車シェア事業が始まる",
+  "intro": "Questions 1-4 refer to the following article.",
+  "header": [
+    {
+      "label": "",
+      "text": "Greenfield to Launch Bike-Sharing Program"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "Greenfield residents will soon have a new way to travel around the city.",
+          "ja": "グリーンフィールドの住民は、まもなく市内を移動する新しい手段を手にする。"
+        },
+        {
+          "en": "A bike-sharing program, funded by the city council, ------- on 1 April, the mayor's office announced on Monday.",
+          "ja": "市議会が資金を出す自転車シェア事業が4月1日に始まると、市長室が月曜日に発表した。",
+          "q": 1
+        },
+        {
+          "en": "Forty stations will be located near major bus stops, train stations, and public parks.",
+          "ja": "40か所のステーションが、主要なバス停、駅、公園の近くに設けられる。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Users can rent a bicycle with a smartphone application or a membership card.",
+          "ja": "利用者はスマートフォンのアプリか会員カードで自転車を借りられる。"
+        },
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 2
+        },
+        {
+          "en": "After that, a fee of one dollar will be charged for every additional fifteen minutes.",
+          "ja": "それを過ぎると、追加の15分ごとに1ドルの料金がかかる。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Officials expect the program to reduce traffic downtown.",
+          "ja": "市は、この事業が中心街の交通量を減らすと見込んでいる。"
+        },
+        {
+          "en": "-------, some residents worry that there are not enough protected bike lanes.",
+          "ja": "しかし、保護された自転車レーンが足りないと心配する住民もいる。",
+          "q": 3
+        },
+        {
+          "en": "To address these concerns, the council plans to ------- new lanes along Main Street by the end of summer.",
+          "ja": "こうした懸念に対応するため、市議会は夏の終わりまでにメインストリート沿いに新しいレーンを建設する計画だ。",
+          "q": 4
+        },
+        {
+          "en": "Applications for annual membership will be accepted at city hall beginning next week.",
+          "ja": "年間会員の申込みは、来週から市役所で受け付けられる。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "verb",
+      "choices": [
+        {
+          "key": "A",
+          "text": "began",
+          "ja": "始まった"
+        },
+        {
+          "key": "B",
+          "text": "will begin",
+          "ja": "始まる予定だ"
+        },
+        {
+          "key": "C",
+          "text": "has begun",
+          "ja": "すでに始まっている"
+        },
+        {
+          "key": "D",
+          "text": "beginning",
+          "ja": "始まる"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1文に「まもなく新しい手段を手にする（will soon have）」とあり、事業はまだ始まっていないと分かる。文中の on 1 April と announced on Monday だけでは時制は決まらないので、前の文に戻る必要がある。began と has begun は過去・完了で合わず、beginning は述語動詞にならない。",
+      "tip": "時制は空所の文だけで決めず、前の文の will や過去を示す語を確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bicycles must be returned to a station before the system closes at 10:00 p.m.",
+          "ja": "自転車は、システムが午後10時に停止する前にステーションへ返却しなければならない。"
+        },
+        {
+          "key": "B",
+          "text": "Council members approved the budget for the program in January.",
+          "ja": "市議会議員は1月にこの事業の予算を承認した。"
+        },
+        {
+          "key": "C",
+          "text": "The first thirty minutes of each trip will be free of charge.",
+          "ja": "各利用の最初の30分は無料になる。"
+        },
+        {
+          "key": "D",
+          "text": "Many residents have asked for safer roads for cyclists in recent years.",
+          "ja": "近年、多くの住民が自転車利用者のためのより安全な道路を求めてきた。"
+        }
+      ],
+      "answer": "C",
+      "explanation": "直後の After that, a fee of one dollar ...（それを過ぎると1ドル）は、料金が発生する前の無料時間を受けている。C の The first thirty minutes ... free of charge が前後の両方につながる。A は返却時刻の話で After that とつながらない。B は予算の承認で時系列がずれ、D は利用方法の説明から外れる。",
+      "tip": "一文挿入は、直後の After that のような接続語が何を受けるかを先に見て、前の文との流れも確認する。"
+    },
+    {
+      "id": "q3",
+      "type": "conj",
+      "choices": [
+        {
+          "key": "A",
+          "text": "However",
+          "ja": "しかし"
+        },
+        {
+          "key": "B",
+          "text": "Therefore",
+          "ja": "したがって"
+        },
+        {
+          "key": "C",
+          "text": "For example",
+          "ja": "たとえば"
+        },
+        {
+          "key": "D",
+          "text": "In addition",
+          "ja": "さらに"
+        }
+      ],
+      "answer": "A",
+      "explanation": "直前は「交通量を減らすと見込んでいる」という前向きな内容、空所のあとは「レーンが足りないと心配する住民もいる」という懸念で、逆接になる。よって However。Therefore は因果、In addition は追加で、いずれも前後の関係に合わない。",
+      "tip": "接続副詞は空所の前の文と後の文の関係（逆接・因果・追加・例示）で決める。空所の文だけ見ても選べない。"
+    },
+    {
+      "id": "q4",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "postpone",
+          "ja": "延期する"
+        },
+        {
+          "key": "B",
+          "text": "estimate",
+          "ja": "見積もる"
+        },
+        {
+          "key": "C",
+          "text": "withdraw",
+          "ja": "撤回する"
+        },
+        {
+          "key": "D",
+          "text": "construct",
+          "ja": "建設する"
+        }
+      ],
+      "answer": "D",
+      "explanation": "To address these concerns の「懸念」は、前の文の「保護された自転車レーンが足りない」こと。それに対応するには、新しいレーンを construct（建設する）が自然。postpone や withdraw では懸念が解消せず、estimate は lanes を目的語にしても意味が通らない。",
+      "tip": "語彙問題は、空所の前にある目的や理由（To address these concerns）を手がかりに、前の文の問題点を解決する語を選ぶ。"
+    }
+  ],
+  "glossary": {
+    "funded by": {
+      "lemma": "fund",
+      "pos": "動",
+      "ja": "〜から資金を得た",
+      "note": "",
+      "example": {
+        "en": "The research was funded by a grant from the regional government.",
+        "ja": "その研究は地方政府の助成金で資金がまかなわれた。"
+      }
+    },
+    "city council": {
+      "lemma": "city council",
+      "pos": "名",
+      "ja": "市議会",
+      "note": "",
+      "example": {
+        "en": "The city council voted to extend the library's opening hours.",
+        "ja": "市議会は図書館の開館時間の延長を可決した。"
+      }
+    },
+    "located near": {
+      "lemma": "be located near",
+      "pos": "熟",
+      "ja": "〜の近くにある",
+      "note": "",
+      "example": {
+        "en": "Our office is conveniently located near the central station.",
+        "ja": "当社の事務所は中央駅の近くという便利な場所にある。"
+      }
+    },
+    "after that": {
+      "lemma": "after that",
+      "pos": "熟",
+      "ja": "それ以降は、そのあとは",
+      "note": "",
+      "example": {
+        "en": "The trial is free for a month, and after that the fee is ten dollars.",
+        "ja": "試用は1か月無料で、それ以降は料金が10ドルになる。"
+      }
+    },
+    "additional": {
+      "lemma": "additional",
+      "pos": "形",
+      "ja": "追加の",
+      "note": "",
+      "example": {
+        "en": "Additional seats were set up for the unexpected guests.",
+        "ja": "予想外の来場者のために追加の席が用意された。"
+      }
+    },
+    "traffic": {
+      "lemma": "traffic",
+      "pos": "名",
+      "ja": "交通（量）",
+      "note": "",
+      "example": {
+        "en": "Heavy traffic delayed the delivery truck by an hour.",
+        "ja": "交通渋滞のせいで、配送トラックは1時間遅れた。"
+      }
+    },
+    "address these concerns": {
+      "lemma": "address a concern",
+      "pos": "熟",
+      "ja": "懸念に対処する",
+      "note": "",
+      "example": {
+        "en": "The manager held a meeting to address employees' concerns.",
+        "ja": "部長は従業員の懸念に対処するため会議を開いた。"
+      }
+    },
+    "protected": {
+      "lemma": "protected",
+      "pos": "形",
+      "ja": "保護された、守られた",
+      "note": "",
+      "example": {
+        "en": "The documents are kept in a protected folder on the server.",
+        "ja": "その書類はサーバー上の保護されたフォルダーに保管されている。"
+      }
+    },
+    "annual membership": {
+      "lemma": "annual membership",
+      "pos": "名",
+      "ja": "年間会員（資格）",
+      "note": "",
+      "example": {
+        "en": "An annual membership includes unlimited access to the fitness room.",
+        "ja": "年間会員になると、フィットネスルームを自由に利用できる。"
+      }
+    },
+    "will be accepted": {
+      "lemma": "accept",
+      "pos": "動",
+      "ja": "受け付ける、受理する",
+      "note": "",
+      "example": {
+        "en": "Entries will be accepted until the end of the month.",
+        "ja": "応募は月末まで受け付けられる。"
+      }
+    },
+    "plans to": {
+      "lemma": "plan to",
+      "pos": "熟",
+      "ja": "〜する計画だ",
+      "note": "",
+      "example": {
+        "en": "The firm plans to open two new stores in the spring.",
+        "ja": "その会社は春に2つの新店舗を開く計画だ。"
+      }
+    }
+  },
+  "point": {
+    "lead": "空所の文で決まらなければ、前後の文に戻る",
+    "items": [
+      {
+        "title": "時制と接続副詞は前の文で決まる",
+        "body": "空所の文に日付があっても、時制は前の文の will や過去を示す語で決まることがある。接続副詞は直前の文との関係（逆接・因果・追加）で選ぶ。"
+      },
+      {
+        "title": "一文挿入は直後の接続語を先に見る",
+        "body": "After that、As a result、them のような語は前の文の内容を受ける。何を受けているかを先に確認し、前後の両方につながる文を選ぶ。"
+      },
+      {
+        "title": "語彙問題は前の文の問題点を探す",
+        "body": "To address these concerns のような表現があれば、前の文の問題点に対応する語を選ぶ。"
+      }
+    ]
+  }
+}
