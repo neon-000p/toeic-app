@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-22-1647",
+  "date": "2026-10-22",
+  "time": "16:47",
+  "createdAt": "2026-10-22T16:47:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "California State Workers Strike Over Pay and Office Rules",
+    "ja": "カリフォルニア州職員、賃金と出社ルールでスト"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Around 100,000 California state workers staged a one-day strike on Wednesday.",
+            "ja": "約10万人のカリフォルニア州職員が、水曜日に1日限りのストライキを実施した。"
+          },
+          {
+            "en": "Members of SEIU Local 1000 left their jobs and set up picket lines in cities across the state.",
+            "ja": "SEIUローカル1000の組合員は職場を離れ、州内各地の都市でピケラインを張った。"
+          },
+          {
+            "en": "Their contract expired in June, and talks with the state have not produced a new deal.",
+            "ja": "労働協約は6月に失効し、州との協議では新たな合意に至っていない。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The union wants higher pay and more affordable health insurance.",
+            "ja": "組合は賃上げと、より手頃な医療保険を求めている。"
+          },
+          {
+            "en": "It also opposes a return-to-office rule.",
+            "ja": "また、出社義務のルールにも反対している。"
+          },
+          {
+            "en": "Governor Gavin Newsom has required most employees to work in the office four days a week.",
+            "ja": "ギャビン・ニューサム知事は、大半の職員に週4日の出社を義務づけている。"
+          },
+          {
+            "en": "The state says it is ready to keep negotiating and may move to mediation.",
+            "ja": "州は交渉を続ける用意があるとし、調停に移る可能性もある。"
+          },
+          {
+            "en": "The dispute matters because return-to-office rules have become a bargaining issue, not just a management decision.",
+            "ja": "この争議が重要なのは、出社ルールが単なる経営判断ではなく、交渉の論点になっているからだ。"
+          },
+          {
+            "en": "Public employers may now face more pressure to offer flexible work as a benefit.",
+            "ja": "公的機関の雇用主は今後、柔軟な働き方を福利厚生として提供するよう、より強い圧力に直面するかもしれない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "About how many state workers took part in the strike?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10,000",
+          "ja": "1万人"
+        },
+        {
+          "key": "B",
+          "text": "50,000",
+          "ja": "5万人"
+        },
+        {
+          "key": "C",
+          "text": "100,000",
+          "ja": "10万人"
+        },
+        {
+          "key": "D",
+          "text": "120,000",
+          "ja": "12万人"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落第1文に「Around 100,000 California state workers staged a one-day strike」とあるため正解はC。A・B・Dは本文に出ない人数で、桁や数字の記憶違いを誘う引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "人数・金額の設問は、選択肢の数字を本文と1つずつ照合する。Around などの概数表現も見落とさないこと。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT mentioned as something the union wants or opposes?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Higher pay",
+          "ja": "高い賃金"
+        },
+        {
+          "key": "B",
+          "text": "More affordable health insurance",
+          "ja": "より手頃な医療保険"
+        },
+        {
+          "key": "C",
+          "text": "A return-to-office rule",
+          "ja": "出社ルール"
+        },
+        {
+          "key": "D",
+          "text": "A shorter workweek",
+          "ja": "週の労働時間の短縮"
+        }
+      ],
+      "answer": "D",
+      "explanation": "第2段落第1・2文に、組合が求めるのは higher pay と more affordable health insurance、反対するのは return-to-office rule とある。A・B・Cはいずれも本文に出ている。D の労働時間短縮は本文に出ないため、NOT に当たるDが正解。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "NOT問題は、各選択肢を本文と照合して「本文にある」ものを消していき、残った1つを選ぶ。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "expired",
+      "pos": "動",
+      "ja": "期限が切れた、失効した",
+      "gloss": "",
+      "example": {
+        "en": "Our supplier contract expired at the end of March.",
+        "ja": "仕入先との契約は3月末で失効した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "negotiating",
+      "pos": "動",
+      "ja": "交渉している",
+      "gloss": "",
+      "example": {
+        "en": "The two firms are negotiating the price of the new order.",
+        "ja": "両社は新規注文の価格を交渉している。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "mediation",
+      "pos": "名",
+      "ja": "調停、仲裁",
+      "gloss": "（＝第三者が間に入って話し合いをまとめること）",
+      "example": {
+        "en": "The dispute was settled through mediation.",
+        "ja": "その争議は調停によって解決した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "bargaining",
+      "pos": "名",
+      "ja": "（労使などの）交渉",
+      "gloss": "",
+      "example": {
+        "en": "Collective bargaining begins next week.",
+        "ja": "団体交渉は来週始まる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "benefit",
+      "pos": "名",
+      "ja": "福利厚生、利益",
+      "gloss": "",
+      "example": {
+        "en": "Health insurance is a major benefit for new employees.",
+        "ja": "健康保険は新入社員にとって大きな福利厚生だ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "pressure",
+      "pos": "名",
+      "ja": "圧力、プレッシャー",
+      "gloss": "",
+      "example": {
+        "en": "The manager is under pressure to cut costs.",
+        "ja": "その部長はコスト削減を迫られている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "flexible",
+      "pos": "形",
+      "ja": "柔軟な",
+      "gloss": "",
+      "example": {
+        "en": "We offer flexible working hours to all staff.",
+        "ja": "当社は全社員に柔軟な勤務時間を提供している。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "required",
+      "pos": "動",
+      "ja": "義務づけた、求めた",
+      "gloss": "",
+      "example": {
+        "en": "All visitors are required to sign in at the front desk.",
+        "ja": "訪問者は全員、受付で記帳することが求められる。"
+      }
+    }
+  ],
+  "glossary": {
+    "around": {
+      "lemma": "around",
+      "pos": "副",
+      "ja": "およそ",
+      "note": ""
+    },
+    "staged": {
+      "lemma": "stage",
+      "pos": "動",
+      "ja": "実施した",
+      "note": "stage a strike で「ストを行う」"
+    },
+    "strike": {
+      "lemma": "strike",
+      "pos": "名",
+      "ja": "ストライキ",
+      "note": ""
+    },
+    "members": {
+      "lemma": "member",
+      "pos": "名",
+      "ja": "組合員、会員",
+      "note": ""
+    },
+    "picket": {
+      "lemma": "picket",
+      "pos": "名",
+      "ja": "ピケ（抗議の見張り）",
+      "note": ""
+    },
+    "across": {
+      "lemma": "across",
+      "pos": "前",
+      "ja": "〜の至る所に",
+      "note": ""
+    },
+    "contract": {
+      "lemma": "contract",
+      "pos": "名",
+      "ja": "契約、労働協約",
+      "note": ""
+    },
+    "expired": {
+      "lemma": "expire",
+      "pos": "動",
+      "ja": "失効した",
+      "note": ""
+    },
+    "talks": {
+      "lemma": "talk",
+      "pos": "名",
+      "ja": "協議、話し合い",
+      "note": ""
+    },
+    "produced": {
+      "lemma": "produce",
+      "pos": "動",
+      "ja": "生み出した",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "合意、取引",
+      "note": ""
+    },
+    "higher": {
+      "lemma": "high",
+      "pos": "形",
+      "ja": "より高い",
+      "note": ""
+    },
+    "pay": {
+      "lemma": "pay",
+      "pos": "名",
+      "ja": "賃金",
+      "note": ""
+    },
+    "affordable": {
+      "lemma": "affordable",
+      "pos": "形",
+      "ja": "手頃な",
+      "note": ""
+    },
+    "insurance": {
+      "lemma": "insurance",
+      "pos": "名",
+      "ja": "保険",
+      "note": ""
+    },
+    "opposes": {
+      "lemma": "oppose",
+      "pos": "動",
+      "ja": "反対する",
+      "note": ""
+    },
+    "rule": {
+      "lemma": "rule",
+      "pos": "名",
+      "ja": "規則",
+      "note": ""
+    },
+    "governor": {
+      "lemma": "governor",
+      "pos": "名",
+      "ja": "知事",
+      "note": ""
+    },
+    "required": {
+      "lemma": "require",
+      "pos": "動",
+      "ja": "義務づけた",
+      "note": "require A to do で「Aに〜するよう求める」"
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員、職員",
+      "note": ""
+    },
+    "negotiating": {
+      "lemma": "negotiate",
+      "pos": "動",
+      "ja": "交渉する",
+      "note": ""
+    },
+    "mediation": {
+      "lemma": "mediation",
+      "pos": "名",
+      "ja": "調停",
+      "note": ""
+    },
+    "dispute": {
+      "lemma": "dispute",
+      "pos": "名",
+      "ja": "争議、紛争",
+      "note": ""
+    },
+    "bargaining": {
+      "lemma": "bargaining",
+      "pos": "名",
+      "ja": "交渉",
+      "note": ""
+    },
+    "issue": {
+      "lemma": "issue",
+      "pos": "名",
+      "ja": "論点、問題",
+      "note": ""
+    },
+    "management": {
+      "lemma": "management",
+      "pos": "名",
+      "ja": "経営（陣）",
+      "note": ""
+    },
+    "employers": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "note": ""
+    },
+    "flexible": {
+      "lemma": "flexible",
+      "pos": "形",
+      "ja": "柔軟な",
+      "note": ""
+    },
+    "benefit": {
+      "lemma": "benefit",
+      "pos": "名",
+      "ja": "福利厚生",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "require A to do（第3文型：SVO＋to不定詞）",
+    "quote": "Governor Gavin Newsom has required most employees to work in the office four days a week.",
+    "quoteJa": "ギャビン・ニューサム知事は、大半の職員に週4日の出社を義務づけている。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "required most employees to work は「require＋目的語（人）＋to不定詞」の形で、「（人）に〜するよう義務づける・求める」という意味になる。「人に何かをさせる」型の動詞（allow, enable, ask, expect, require など）に共通する語順で、目的語の直後に to＋動詞の原形を置く。has required と現在完了形になっているのは、命令が出されて以降いまも有効であることを表すため。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "The governor requires that employees work in the office.（that節を使う形）とも言えるが、実務文書では require A to do のほうが簡潔でよく使われる。受動態にすると Employees are required to work in the office. となり、社内通知で頻出。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では空所の後ろの to を手がかりに、require / allow / enable / expect などの動詞を選ばせる問題が出る。逆に suggest や insist のあとに「目的語＋to do」は置けない点が引っかけになる。Part 7 の社内通知では are required to ＋動詞（〜することが義務づけられている）がよく出る。"
+      },
+      {
+        "heading": "ビジネスでの応用例",
+        "body": "The new policy requires all staff to submit expense reports by Friday.（新方針により、全社員は金曜までに経費報告書を提出する必要がある。）／ Our client has asked us to revise the contract.（顧客から契約書の修正を求められた。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① 今回のニュースの要点と用語",
+      "body": "カリフォルニア州の公務員約10万人を代表する労働組合 SEIU Local 1000 が、10月21日に1日限りのストライキを行った。労働協約（contract）は6月に期限切れとなり、新協約をめぐる団体交渉（collective bargaining）が決着していない。組合は賃上げ、医療保険の負担軽減、出社義務の見直しを求めている。調停（mediation）とは、第三者が間に入って双方の歩み寄りを促す手続きのこと。"
+    },
+    {
+      "heading": "📌 ② 出社義務が争点になった背景",
+      "body": "コロナ禍で広がったリモート勤務は、民間企業を中心に「出社回帰（return to office）」へ揺り戻しが進んでいる。州政府も週4日の出社を求めたが、職員側は通勤費や育児・介護との両立、オフィス賃料の無駄を理由に反発している。勤務形態が給与や保険と並ぶ「労働条件」として交渉テーブルに載る例は、今後ほかの州や自治体でも増えそうだ。"
+    },
+    {
+      "heading": "📌 ③ 日本企業・ビジネスパーソンへの示唆",
+      "body": "日本でも、出社回帰とテレワーク継続のどちらを選ぶかは採用競争力に直結しつつある。人材獲得で「柔軟な働き方」は福利厚生の一部として比較されるため、出社ルールを一方的に変えると離職率や採用応募数に響く可能性がある。外資系・グローバル企業で働く人は、勤務地や在宅日数が就業規則や契約書に明記されているかを確認しておきたい。"
+    },
+    {
+      "heading": "📌 ④ 投資家・経営者の視点",
+      "body": "公共部門のストは行政サービスの遅れという形で住民に影響するが、州財政にとっては賃上げ要求の受け入れ幅が人件費の見通しを左右する。経営者にとっては、出社方針を決める際に、生産性だけでなく人材定着（retention）コストまで織り込む必要があるという教訓になる。州職員の待遇改善が民間の賃金水準に波及するかも、労働市場を見るうえで注目点だ。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "California state workers go on strike over pay, healthcare, and Gavin Newsom's return-to-work mandate",
+      "publisher": "Fortune",
+      "url": "https://fortune.com/2026/10/21/california-union-strike-gavin-newsom-pay-healthcare-remote-work/",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "California state workers launching 1-day strike over return-to-office mandate, pay and healthcare",
+      "publisher": "ABC News",
+      "url": "https://abcnews.com/US/wireStory/california-state-workers-launching-1-day-strike-return-137436177",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "SEIU Local 1000 strike authorization",
+      "publisher": "CalMatters",
+      "url": "https://calmatters.org/economy/2026/10/seiu-local-1000-strike-authorization/",
+      "date": "2026-10-08"
+    }
+  ]
+}
