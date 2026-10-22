@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-10-23-0414",
+  "date": "2026-10-23",
+  "time": "04:14",
+  "createdAt": "2026-10-23T04:14:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "Employees will receive ------- of their registration by e-mail within two business days.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "confirm",
+          "ja": "確認する"
+        },
+        {
+          "key": "B",
+          "text": "confirmed",
+          "ja": "（形）確認された"
+        },
+        {
+          "key": "C",
+          "text": "confirmation",
+          "ja": "（名）確認、確認書"
+        },
+        {
+          "key": "D",
+          "text": "confirmative",
+          "ja": "（形）確認の"
+        }
+      ],
+      "answer": "C",
+      "ja": "従業員は、2営業日以内に登録の確認をメールで受け取る。",
+      "explanation": "空所は他動詞 receive の目的語で、直後に of が続くので名詞が入る。confirmation が正解。confirm は動詞、confirmed と confirmative は形容詞で、of の前に単独では置けない。",
+      "tip": "選択肢が同じ語幹で語尾だけ違えば品詞問題。空所の前が他動詞、後ろが of なら名詞。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "prompt": "The extended warranty does not ------- damage caused by improper use or unauthorized repairs.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "cover",
+          "ja": "（保険・保証が）対象とする"
+        },
+        {
+          "key": "B",
+          "text": "hold",
+          "ja": "保持する"
+        },
+        {
+          "key": "C",
+          "text": "carry",
+          "ja": "運ぶ"
+        },
+        {
+          "key": "D",
+          "text": "reach",
+          "ja": "届く"
+        }
+      ],
+      "answer": "A",
+      "ja": "延長保証は、不適切な使用や無許可の修理によって生じた損傷を対象としない。",
+      "explanation": "warranty（保証）の主語に合う動詞は cover（〜を補償の対象に含める）。hold や carry は保証の対象を表す意味では使わない。reach は「届く」で文意に合わない。",
+      "tip": "warranty / insurance / policy が主語なら、動詞は cover（対象とする）を第一候補にする。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "prompt": "The conference room ------- for the training session since Monday, so it is not available for other meetings.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "reserves",
+          "ja": "予約する"
+        },
+        {
+          "key": "B",
+          "text": "is reserving",
+          "ja": "予約している"
+        },
+        {
+          "key": "C",
+          "text": "has reserved",
+          "ja": "予約してしまった"
+        },
+        {
+          "key": "D",
+          "text": "has been reserved",
+          "ja": "予約されている"
+        }
+      ],
+      "answer": "D",
+      "ja": "会議室は月曜から研修のために押さえられているので、ほかの会議には使えない。",
+      "explanation": "since Monday があるので現在完了。主語は The conference room（物）で、予約される側なので受動態の has been reserved になる。has reserved は能動態なので、目的語が必要になり不適切。",
+      "tip": "since や for＋期間があれば現在完了。主語が物で動詞の目的語が無ければ、受動態を疑う。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "prompt": "Quarterly sales at the Osaka branch have risen ------- 12 percent compared with the same period last year.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "at",
+          "ja": "〜で"
+        },
+        {
+          "key": "B",
+          "text": "by",
+          "ja": "〜の差で"
+        },
+        {
+          "key": "C",
+          "text": "for",
+          "ja": "〜のために"
+        },
+        {
+          "key": "D",
+          "text": "with",
+          "ja": "〜とともに"
+        }
+      ],
+      "answer": "B",
+      "ja": "大阪支店の四半期売上は、前年の同じ時期と比べて12パーセント伸びた。",
+      "explanation": "増減した「幅」を表すときは前置詞 by を使う。rise by 12 percent で「12パーセント上昇する」。at は到達した水準（at 12 percent）には使えるが、増加幅には使わない。",
+      "tip": "increase / rise / fall / drop のあとに数字が来て「どれだけ」を表すなら by。"
+    },
+    {
+      "id": "q5",
+      "type": "form",
+      "prompt": "All of our technicians are ------- trained to handle a wide range of equipment problems.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "thoroughly",
+          "ja": "（副）徹底的に"
+        },
+        {
+          "key": "B",
+          "text": "thorough",
+          "ja": "（形）徹底した"
+        },
+        {
+          "key": "C",
+          "text": "thoroughness",
+          "ja": "（名）徹底"
+        },
+        {
+          "key": "D",
+          "text": "thoroughest",
+          "ja": "（形）最も徹底した"
+        }
+      ],
+      "answer": "A",
+      "ja": "当社の技術者は全員、幅広い機器の不具合に対応できるよう十分に訓練されている。",
+      "explanation": "are と過去分詞 trained の間に入って分詞を修飾するのは副詞。thoroughly が正解。thorough は形容詞なので、受動態の分詞の前には置けない。",
+      "tip": "be 動詞と過去分詞の間の空所は副詞。語尾が -ly の選択肢を探す。"
+    },
+    {
+      "id": "q6",
+      "type": "conj",
+      "prompt": "------- the road construction is finished, drivers are advised to use the north entrance to the factory.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "During",
+          "ja": "〜の間"
+        },
+        {
+          "key": "B",
+          "text": "Despite",
+          "ja": "〜にもかかわらず"
+        },
+        {
+          "key": "C",
+          "text": "Until",
+          "ja": "〜するまで"
+        },
+        {
+          "key": "D",
+          "text": "Throughout",
+          "ja": "〜の間じゅう"
+        }
+      ],
+      "answer": "C",
+      "ja": "道路工事が終わるまでは、運転者は工場の北入口を使うようにしてください。",
+      "explanation": "空所のあとは the road construction is finished という節なので、接続詞が必要。選択肢のうち接続詞として使えるのは Until だけ。During、Despite、Throughout は前置詞で、名詞句しか続かない。",
+      "tip": "接続詞と前置詞が混ざっていたら、空所のあとが「主語＋動詞」か名詞かを見る。節なら接続詞。"
+    },
+    {
+      "id": "q7",
+      "type": "vocab",
+      "prompt": "Ms. Okafor was ------- to regional director after five years of outstanding service with the company.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "supported",
+          "ja": "支援された"
+        },
+        {
+          "key": "B",
+          "text": "transferred",
+          "ja": "異動させられた"
+        },
+        {
+          "key": "C",
+          "text": "relocated",
+          "ja": "移転させられた"
+        },
+        {
+          "key": "D",
+          "text": "promoted",
+          "ja": "昇進した"
+        }
+      ],
+      "answer": "D",
+      "ja": "オカフォーさんは、会社で5年間すぐれた働きをしたあと、地域統括責任者に昇進した。",
+      "explanation": "「役職への昇進」を表すのは be promoted to ~。transferred と relocated は部署や場所への異動を表すので、役職名の前では不自然。supported は to とつながらない。",
+      "tip": "役職名の前の to は promoted。部署や支店の前の to は transferred。"
+    },
+    {
+      "id": "q8",
+      "type": "verbal",
+      "prompt": "To ------- operating costs, the company has replaced the lighting in all of its offices with LED bulbs.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "reduces",
+          "ja": "減らす"
+        },
+        {
+          "key": "B",
+          "text": "reduce",
+          "ja": "減らす"
+        },
+        {
+          "key": "C",
+          "text": "reduced",
+          "ja": "減らされた"
+        },
+        {
+          "key": "D",
+          "text": "reducing",
+          "ja": "減らしている"
+        }
+      ],
+      "answer": "B",
+      "ja": "運営費を減らすため、会社はすべてのオフィスの照明を LED 電球に取り替えた。",
+      "explanation": "文頭の To は目的を表す to 不定詞で、動詞の原形が続く。reduce が正解。reduces は3人称単数の形で、to のあとには使えない。",
+      "tip": "文頭の To のあとは動詞の原形。意味は「〜するために」。"
+    },
+    {
+      "id": "q9",
+      "type": "pron",
+      "prompt": "Applicants ------- have at least two years of experience in logistics will be given priority.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "whom",
+          "ja": "（目的格）"
+        },
+        {
+          "key": "B",
+          "text": "which",
+          "ja": "（物を先行詞）"
+        },
+        {
+          "key": "C",
+          "text": "who",
+          "ja": "（主格・人）"
+        },
+        {
+          "key": "D",
+          "text": "whose",
+          "ja": "（所有格）"
+        }
+      ],
+      "answer": "C",
+      "ja": "物流で少なくとも2年の経験がある応募者が優先される。",
+      "explanation": "先行詞 Applicants は人で、空所のあとに動詞 have が続くので主格の who。whom は目的格で、あとに主語が必要。which は人には使わない。whose は名詞が続く。",
+      "tip": "関係詞は、先行詞が人か物か、あとに動詞が続くか名詞が続くかの2点で決める。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "The hotel offers a ------- breakfast to all guests who stay for more than two nights.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "complimentary",
+          "ja": "無料の"
+        },
+        {
+          "key": "B",
+          "text": "complementary",
+          "ja": "補完的な"
+        },
+        {
+          "key": "C",
+          "text": "competitive",
+          "ja": "競争力のある"
+        },
+        {
+          "key": "D",
+          "text": "compulsory",
+          "ja": "義務の"
+        }
+      ],
+      "answer": "A",
+      "ja": "そのホテルは、2泊を超えて滞在する宿泊客全員に無料の朝食を提供している。",
+      "explanation": "「サービスとして無料の」は complimentary。綴りの似た complementary は「補い合う」で、無料の意味は無い。competitive は「競争力のある」、compulsory は「義務の」で文意に合わない。",
+      "tip": "complimentary（無料の）と complementary（補完的な）は綴りが似ているので、意味でセットで覚える。"
+    }
+  ],
+  "glossary": {
+    "business days": {
+      "lemma": "business day",
+      "pos": "名",
+      "ja": "営業日",
+      "note": "",
+      "example": {
+        "en": "Refunds are usually processed within five business days.",
+        "ja": "返金は通常、5営業日以内に処理される。"
+      }
+    },
+    "extended warranty": {
+      "lemma": "extended warranty",
+      "pos": "名",
+      "ja": "延長保証",
+      "note": "",
+      "example": {
+        "en": "We recommend buying an extended warranty for the new printer.",
+        "ja": "新しいプリンターには延長保証の購入をお勧めします。"
+      }
+    },
+    "improper use": {
+      "lemma": "improper use",
+      "pos": "名",
+      "ja": "不適切な使用",
+      "note": "",
+      "example": {
+        "en": "Improper use of the machine may lead to serious injury.",
+        "ja": "機械の不適切な使用は、重大なけがにつながるおそれがある。"
+      }
+    },
+    "unauthorized repairs": {
+      "lemma": "unauthorized repair",
+      "pos": "名",
+      "ja": "無許可の修理",
+      "note": "",
+      "example": {
+        "en": "Unauthorized repairs will make the product warranty invalid.",
+        "ja": "無許可の修理は、製品保証を無効にする。"
+      }
+    },
+    "compared with": {
+      "lemma": "compared with",
+      "pos": "熟",
+      "ja": "〜と比べて",
+      "note": "",
+      "example": {
+        "en": "Compared with last year, our shipping costs have dropped slightly.",
+        "ja": "昨年と比べて、当社の配送費はわずかに下がった。"
+      }
+    },
+    "a wide range of": {
+      "lemma": "a wide range of",
+      "pos": "熟",
+      "ja": "幅広い〜",
+      "note": "",
+      "example": {
+        "en": "The store carries a wide range of office supplies.",
+        "ja": "その店は幅広い事務用品を扱っている。"
+      }
+    },
+    "are advised to": {
+      "lemma": "be advised to",
+      "pos": "熟",
+      "ja": "〜するよう勧められる",
+      "note": "",
+      "example": {
+        "en": "Visitors are advised to bring a photo ID to the building.",
+        "ja": "来訪者は、写真付きの身分証を持参するよう勧められている。"
+      }
+    },
+    "operating costs": {
+      "lemma": "operating cost",
+      "pos": "名",
+      "ja": "運営費、営業経費",
+      "note": "",
+      "example": {
+        "en": "The company hopes to cut operating costs by ten percent.",
+        "ja": "会社は運営費を10パーセント削減したいと考えている。"
+      }
+    },
+    "given priority": {
+      "lemma": "give priority to",
+      "pos": "熟",
+      "ja": "優先される",
+      "note": "give priority to ~ の受動態",
+      "example": {
+        "en": "Urgent orders will be given priority over regular ones.",
+        "ja": "緊急の注文は、通常の注文より優先される。"
+      }
+    },
+    "outstanding service": {
+      "lemma": "outstanding service",
+      "pos": "名",
+      "ja": "すぐれた働き、傑出した貢献",
+      "note": "",
+      "example": {
+        "en": "She received an award for outstanding service to the customers.",
+        "ja": "彼女は顧客へのすぐれた対応で表彰を受けた。"
+      }
+    },
+    "at least": {
+      "lemma": "at least",
+      "pos": "熟",
+      "ja": "少なくとも",
+      "note": "",
+      "example": {
+        "en": "Please arrive at least fifteen minutes before the interview.",
+        "ja": "面接の少なくとも15分前には到着してください。"
+      }
+    }
+  },
+  "point": {
+    "lead": "選択肢の見た目で型を決めてから、空所の前後を見る",
+    "items": [
+      {
+        "title": "品詞問題は前後の語だけで決める",
+        "body": "同じ語幹で語尾だけ違う選択肢は品詞問題。他動詞のあとは名詞、be 動詞と過去分詞の間は副詞、のように空所の前後2〜3語で判断し、文全体は読まない。"
+      },
+      {
+        "title": "接続詞と前置詞は空所のあとを見る",
+        "body": "両方が選択肢に並んでいたら、空所のあとが主語と動詞の節か、名詞だけかを確認する。節なら接続詞、名詞なら前置詞。"
+      },
+      {
+        "title": "語彙問題は主語や目的語との組み合わせで選ぶ",
+        "body": "warranty は cover、役職は promoted to のように、相性の良い語の組み合わせで決まる。綴りの似た語（complimentary / complementary）は意味でセットで覚える。"
+      }
+    ]
+  }
+}

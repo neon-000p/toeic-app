@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part5-history",
-  "updatedAt": "2026-10-16T04:14:00+09:00",
+  "updatedAt": "2026-10-23T04:14:00+09:00",
   "items": [
+    {
+      "id": "2026-10-23-0414",
+      "date": "2026-10-23",
+      "focus": "文法7・語彙3",
+      "types": [
+        "form",
+        "vocab",
+        "verb",
+        "prep",
+        "form",
+        "conj",
+        "vocab",
+        "verbal",
+        "pron",
+        "vocab"
+      ],
+      "topics": [
+        "他動詞の目的語になる名詞（receive ＋ confirmation）",
+        "現在完了の受動態（since ＋ 時点）",
+        "増減の幅を表す by",
+        "be 動詞と過去分詞の間の副詞（thoroughly trained）",
+        "継続を表す接続詞 until",
+        "目的を表す文頭の to 不定詞",
+        "人を先行詞とする主格の who"
+      ]
+    },
     {
       "id": "2026-10-16-0414",
       "date": "2026-10-16",
