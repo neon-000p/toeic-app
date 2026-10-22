@@ -1,8 +1,23 @@
 {
   "schemaVersion": 1,
   "type": "part7-history",
-  "updatedAt": "2026-10-16T04:14:00+09:00",
+  "updatedAt": "2026-10-23T04:14:00+09:00",
   "items": [
+    {
+      "id": "2026-10-23-0414",
+      "date": "2026-10-23",
+      "scene": "メール｜見本市のブース割り当ての確認",
+      "format": "single",
+      "docTypes": [
+        "email"
+      ],
+      "types": [
+        "gist",
+        "detail",
+        "insert",
+        "detail"
+      ]
+    },
     {
       "id": "2026-10-16-0414",
       "date": "2026-10-16",

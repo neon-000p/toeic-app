@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-10-23-0414",
+  "date": "2026-10-23",
+  "time": "04:14",
+  "createdAt": "2026-10-23T04:14:00+09:00",
+  "sample": false,
+  "format": "single",
+  "scene": "メール｜見本市のブース割り当ての確認",
+  "intro": "Questions 1-4 refer to the following e-mail.",
+  "docs": [
+    {
+      "docType": "email",
+      "label": "メール",
+      "header": [
+        {
+          "label": "To",
+          "text": "Paul Mendel, Mendel Packaging"
+        },
+        {
+          "label": "From",
+          "text": "Rachel Ostrom, Events Coordinator"
+        },
+        {
+          "label": "Subject",
+          "text": "Booth confirmation for the Westport Trade Show"
+        },
+        {
+          "label": "Date",
+          "text": "14 November"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Thank you for registering Mendel Packaging for the Westport Trade Show, which will be held at the Harbor Convention Hall from 9 to 11 March.",
+              "ja": "メンデル・パッケージングをウェストポート見本市にご登録いただき、ありがとうございます。見本市は3月9日から11日まで、ハーバー・コンベンションホールで開催されます。"
+            },
+            {
+              "en": "I am writing to confirm that your company has been assigned Booth 214 near the main entrance.",
+              "ja": "御社に、正面入口近くの214番ブースが割り当てられたことをお知らせするため、ご連絡しています。",
+              "pos": 1
+            },
+            {
+              "en": "This is one of our most popular locations, so we are pleased to offer it to you.",
+              "ja": "ここは最も人気のある場所の一つですので、御社にご案内できることをうれしく思います。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Please note that exhibitors may begin setting up their booths at 2:00 p.m. on 8 March.",
+              "ja": "出展者は3月8日の午後2時からブースの設営を始められますのでご注意ください。",
+              "pos": 2
+            },
+            {
+              "en": "All displays must be completed by 6:00 p.m. that day, when the hall will be inspected by the fire department.",
+              "ja": "展示はすべて、消防署による会場の検査が行われる当日の午後6時までに完成させなければなりません。"
+            },
+            {
+              "en": "If you plan to ship materials in advance, they should arrive at the hall no later than 5 March.",
+              "ja": "資料を事前に発送する場合は、遅くとも3月5日までに会場に届くようにしてください。",
+              "pos": 3
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "The remaining balance of 450 dollars is due by 15 January.",
+              "ja": "残金の450ドルは、1月15日が支払期限です。"
+            },
+            {
+              "en": "Payments received after that date will be subject to a ten percent late fee.",
+              "ja": "その日以降に受け取った支払いには、10パーセントの延滞料が課されます。",
+              "pos": 4
+            },
+            {
+              "en": "Please contact me at extension 212 if you have any questions.",
+              "ja": "ご質問があれば、内線212の私までご連絡ください。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the purpose of the e-mail?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To confirm arrangements for a trade show booth",
+          "ja": "見本市のブースに関する手配を確認すること"
+        },
+        {
+          "key": "B",
+          "text": "To request payment for a past event",
+          "ja": "過去のイベントの支払いを求めること"
+        },
+        {
+          "key": "C",
+          "text": "To announce a change of venue",
+          "ja": "会場の変更を知らせること"
+        },
+        {
+          "key": "D",
+          "text": "To invite a company to apply for a booth",
+          "ja": "企業にブースの申込みを勧めること"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        },
+        {
+          "d": 0,
+          "p": 0,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第1段落で、登録への礼に続き、214番ブースが割り当てられたことの確認が書かれ、第2・3段落で設営時間や支払い期限が案内されている。B は支払いの話があるが過去のイベントではない。D はすでに登録済みなので合わない。",
+      "tip": "目的を問う設問は、第1段落の最初の2文を読む。以降の段落は、その目的の詳細になっていることが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "According to the e-mail, when can exhibitors start setting up their booths?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "At 9:00 a.m. on 9 March",
+          "ja": "3月9日の午前9時"
+        },
+        {
+          "key": "B",
+          "text": "At 6:00 p.m. on 8 March",
+          "ja": "3月8日の午後6時"
+        },
+        {
+          "key": "C",
+          "text": "At 2:00 p.m. on 5 March",
+          "ja": "3月5日の午後2時"
+        },
+        {
+          "key": "D",
+          "text": "At 2:00 p.m. on 8 March",
+          "ja": "3月8日の午後2時"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "第2段落の1文目に「3月8日の午後2時から設営を始められる」とある。B の午後6時は展示を完成させる期限、C の3月5日は資料を発送する期限、A は見本市の初日で、いずれも本文の別の日時。",
+      "tip": "日時の設問は、本文にある複数の日時が選択肢に混ざる。何についての日時かを本文で確かめてから選ぶ。"
+    },
+    {
+      "id": "q3",
+      "type": "insert",
+      "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "[1]",
+          "ja": "1の位置"
+        },
+        {
+          "key": "B",
+          "text": "[2]",
+          "ja": "2の位置"
+        },
+        {
+          "key": "C",
+          "text": "[3]",
+          "ja": "3の位置"
+        },
+        {
+          "key": "D",
+          "text": "[4]",
+          "ja": "4の位置"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "挿入文は「各箱にブース番号をはっきり書いてください」。第2段落の最後の文が資料を事前に発送する話なので、その直後の [3] が合う。[2] は設営の時間、[4] は延滞料の話で、箱の表示とはつながらない。",
+      "tip": "挿入文は、this や that などの指示語と、話題になっている名詞（box ← materials）がどの文を受けるかで位置を決める。",
+      "insert": "Please label each box clearly with your booth number."
+    },
+    {
+      "id": "q4",
+      "type": "detail",
+      "prompt": "What will happen to payments received after 15 January?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The booth will be given to another company.",
+          "ja": "ブースは別の会社に割り当てられる。"
+        },
+        {
+          "key": "B",
+          "text": "An additional ten percent will be charged.",
+          "ja": "さらに10パーセントが請求される。"
+        },
+        {
+          "key": "C",
+          "text": "The payment will be returned to the sender.",
+          "ja": "支払いは送り主に返却される。"
+        },
+        {
+          "key": "D",
+          "text": "The exhibitor will be moved to a smaller booth.",
+          "ja": "出展者はより小さなブースに移される。"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 2,
+          "s": 0
+        },
+        {
+          "d": 0,
+          "p": 2,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第3段落に、1月15日が支払期限で、それ以降の支払いには10パーセントの延滞料が課されるとある。late fee を an additional ten percent charged と言い換えた B が正解。A、C、D は本文に書かれていない。",
+      "tip": "選択肢は本文の言い換えになる。late fee が additional ... charged になるように、語が変わっていても意味で照合する。"
+    }
+  ],
+  "glossary": {
+    "assigned": {
+      "lemma": "assign",
+      "pos": "動",
+      "ja": "割り当てる",
+      "note": "",
+      "example": {
+        "en": "Each new employee is assigned a locker on the first day.",
+        "ja": "新入社員は全員、初日にロッカーを割り当てられる。"
+      }
+    },
+    "exhibitors": {
+      "lemma": "exhibitor",
+      "pos": "名",
+      "ja": "出展者",
+      "note": "",
+      "example": {
+        "en": "Exhibitors must register at the information desk before noon.",
+        "ja": "出展者は正午までに案内所で登録しなければならない。"
+      }
+    },
+    "setting up": {
+      "lemma": "set up",
+      "pos": "熟",
+      "ja": "設営する、準備する",
+      "note": "",
+      "example": {
+        "en": "The staff began setting up chairs for the seminar early in the morning.",
+        "ja": "職員はセミナーのため、早朝から椅子を並べ始めた。"
+      }
+    },
+    "in advance": {
+      "lemma": "in advance",
+      "pos": "熟",
+      "ja": "前もって",
+      "note": "",
+      "example": {
+        "en": "Tickets must be reserved in advance during the holiday season.",
+        "ja": "休暇の時期は、チケットを前もって予約しなければならない。"
+      }
+    },
+    "no later than": {
+      "lemma": "no later than",
+      "pos": "熟",
+      "ja": "遅くとも〜までに",
+      "note": "",
+      "example": {
+        "en": "Please send your report no later than Friday afternoon.",
+        "ja": "遅くとも金曜の午後までに報告書を送ってください。"
+      }
+    },
+    "remaining balance": {
+      "lemma": "remaining balance",
+      "pos": "名",
+      "ja": "残金、未払い残高",
+      "note": "",
+      "example": {
+        "en": "The remaining balance will be charged to your credit card.",
+        "ja": "残金はお客様のクレジットカードに請求されます。"
+      }
+    },
+    "due by": {
+      "lemma": "be due by",
+      "pos": "熟",
+      "ja": "〜が期限である",
+      "note": "",
+      "example": {
+        "en": "The final report is due by the end of next week.",
+        "ja": "最終報告書の提出期限は来週末である。"
+      }
+    },
+    "subject to": {
+      "lemma": "be subject to",
+      "pos": "熟",
+      "ja": "〜の対象となる、〜を受ける",
+      "note": "",
+      "example": {
+        "en": "All prices are subject to change without notice.",
+        "ja": "価格はすべて、予告なく変更されることがある。"
+      }
+    },
+    "late fee": {
+      "lemma": "late fee",
+      "pos": "名",
+      "ja": "延滞料",
+      "note": "",
+      "example": {
+        "en": "A late fee applies to books returned after the due date.",
+        "ja": "返却期限を過ぎた本には延滞料がかかる。"
+      }
+    }
+  },
+  "point": {
+    "lead": "設問を1つ読んでから本文に戻り、根拠の1文を探す",
+    "items": [
+      {
+        "title": "設問の順番は本文の流れと合っている",
+        "body": "gist 以外は、設問の順に本文を前から後ろへ読み進められる。前の設問の根拠より前に戻る必要はほとんどない。"
+      },
+      {
+        "title": "日時や金額の設問は、何についての数字かを確かめる",
+        "body": "選択肢には本文の別の日時が混ざる。設営開始、展示の完成、発送期限のように、何の日時かを本文で確認してから選ぶ。"
+      },
+      {
+        "title": "文の位置挿入は指示語と名詞で決める",
+        "body": "挿入文の名詞（box）が、どの文の名詞（materials）を受けるかを確認する。前後の文の話題が変わる位置は避ける。"
+      }
+    ]
+  }
+}
