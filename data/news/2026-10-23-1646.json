@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-23-1646",
+  "date": "2026-10-23",
+  "time": "16:46",
+  "createdAt": "2026-10-23T16:46:00+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Oil Prices Rise Above $110 on Middle East Fears",
+    "ja": "中東不安で原油が110ドル超に上昇"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oil prices rose sharply on Thursday as fears grew about attacks on energy sites in the Middle East.",
+            "ja": "中東のエネルギー施設への攻撃への懸念が高まり、木曜に原油価格が急上昇した。"
+          },
+          {
+            "en": "Brent crude, the global benchmark, climbed above $110 a barrel.",
+            "ja": "世界の指標となるブレント原油は、1バレル110ドルを上回った。"
+          },
+          {
+            "en": "Traders said reports of strikes by Houthi fighters on Saudi Arabia added to their worries.",
+            "ja": "トレーダーは、フーシ派の戦闘員によるサウジアラビアへの攻撃の報道が不安を強めたと述べた。"
+          },
+          {
+            "en": "US crude also moved close to $100 a barrel.",
+            "ja": "米国産原油も1バレル100ドル近くまで上昇した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Higher oil prices raise costs for many businesses, including airlines and shipping firms.",
+            "ja": "原油高は、航空会社や海運会社を含む多くの企業のコストを押し上げる。"
+          },
+          {
+            "en": "Fuel is one of their largest expenses, so they often pass on part of the extra cost to customers.",
+            "ja": "燃料は最大級の支出の一つであるため、企業は追加コストの一部を顧客に転嫁することが多い。"
+          },
+          {
+            "en": "Prices could stay high if shipping routes remain at risk.",
+            "ja": "航路が危険にさらされたままなら、価格は高止まりする可能性がある。"
+          },
+          {
+            "en": "Some forecasters expect prices to ease slightly by the end of the year, but they warn that new attacks could push them up again.",
+            "ja": "年末までに価格はやや落ち着くと予想する専門家もいるが、新たな攻撃で再び上昇しかねないと警告している。"
+          },
+          {
+            "en": "Companies and governments are now watching supply data closely.",
+            "ja": "企業も政府も、現在は供給データを注意深く見守っている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How high did Brent crude climb on Thursday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About $90 a barrel",
+          "ja": "約90ドル"
+        },
+        {
+          "key": "B",
+          "text": "About $100 a barrel",
+          "ja": "約100ドル"
+        },
+        {
+          "key": "C",
+          "text": "More than $110 a barrel",
+          "ja": "110ドル超"
+        },
+        {
+          "key": "D",
+          "text": "More than $130 a barrel",
+          "ja": "130ドル超"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落2文目に Brent crude ... climbed above $110 a barrel とあり、正解は (C)。(B) の約100ドルは米国産原油（US crude）の水準で、別の数字を混ぜた引っかけ。(A) と (D) は本文に登場しない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字問題は、その数字が「何の」数字か（ここではブレント原油）まで本文で確認する。似た数字が別の対象に使われていることが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why do airlines and shipping firms often raise prices when oil becomes more expensive?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They plan to buy new aircraft and ships.",
+          "ja": "新しい機材を買う計画"
+        },
+        {
+          "key": "B",
+          "text": "Fuel is one of their largest expenses.",
+          "ja": "燃料は最大級の支出"
+        },
+        {
+          "key": "C",
+          "text": "Governments told them to raise prices.",
+          "ja": "政府が値上げを指示"
+        },
+        {
+          "key": "D",
+          "text": "They have fewer customers than before.",
+          "ja": "顧客が以前より減った"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落2文目に Fuel is one of their largest expenses, so they often pass on part of the extra cost to customers とあり、so の前が理由。正解は (B)。(A)(C)(D) は本文に書かれていない情報。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由問題では so / because / since の前後を探す。so は「前が理由、後ろが結果」を示す。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "gloss": "",
+      "example": {
+        "en": "Sales fell sharply after the company raised its prices.",
+        "ja": "同社が値上げした後、売上は急激に落ち込んだ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "gloss": "（＝価格や成績を比べるときの目安のこと）",
+      "example": {
+        "en": "The bank used the average rate as a benchmark.",
+        "ja": "その銀行は平均金利を指標として使った。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "expenses",
+      "pos": "名",
+      "ja": "支出、経費",
+      "gloss": "",
+      "example": {
+        "en": "Travel expenses must be reported by the end of the month.",
+        "ja": "出張経費は月末までに報告しなければならない。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "pass on",
+      "pos": "熟",
+      "ja": "（費用を）転嫁する",
+      "gloss": "",
+      "example": {
+        "en": "The store did not pass on the higher cost to customers.",
+        "ja": "その店は高くなったコストを客に転嫁しなかった。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "remain",
+      "pos": "動",
+      "ja": "〜のままである",
+      "gloss": "",
+      "example": {
+        "en": "Prices are expected to remain stable this year.",
+        "ja": "価格は今年は安定したままと予想されている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "ease",
+      "pos": "動",
+      "ja": "和らぐ、緩和する",
+      "gloss": "",
+      "example": {
+        "en": "Demand is expected to ease after the holiday season.",
+        "ja": "需要は年末商戦の後に落ち着く見込みだ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "gloss": "",
+      "example": {
+        "en": "A shortage of supply delayed the delivery.",
+        "ja": "供給不足のため配送が遅れた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "closely",
+      "pos": "副",
+      "ja": "注意深く、綿密に",
+      "gloss": "",
+      "example": {
+        "en": "Managers are closely monitoring the budget.",
+        "ja": "管理職は予算を注意深く監視している。"
+      }
+    }
+  ],
+  "glossary": {
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "fears": {
+      "lemma": "fear",
+      "pos": "名",
+      "ja": "懸念",
+      "note": ""
+    },
+    "attacks": {
+      "lemma": "attack",
+      "pos": "名",
+      "ja": "攻撃",
+      "note": ""
+    },
+    "sites": {
+      "lemma": "site",
+      "pos": "名",
+      "ja": "施設、場所",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "指標",
+      "note": ""
+    },
+    "climbed": {
+      "lemma": "climb",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "名",
+      "ja": "バレル（原油の単位）",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー",
+      "note": ""
+    },
+    "strikes": {
+      "lemma": "strike",
+      "pos": "名",
+      "ja": "攻撃、空爆",
+      "note": ""
+    },
+    "fighters": {
+      "lemma": "fighter",
+      "pos": "名",
+      "ja": "戦闘員",
+      "note": ""
+    },
+    "worries": {
+      "lemma": "worry",
+      "pos": "名",
+      "ja": "不安",
+      "note": ""
+    },
+    "crude": {
+      "lemma": "crude",
+      "pos": "名",
+      "ja": "原油",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "businesses": {
+      "lemma": "business",
+      "pos": "名",
+      "ja": "企業",
+      "note": ""
+    },
+    "including": {
+      "lemma": "include",
+      "pos": "前",
+      "ja": "〜を含む",
+      "note": ""
+    },
+    "shipping": {
+      "lemma": "shipping",
+      "pos": "名",
+      "ja": "海運",
+      "note": ""
+    },
+    "firms": {
+      "lemma": "firm",
+      "pos": "名",
+      "ja": "会社",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "expenses": {
+      "lemma": "expense",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "remain": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "〜のままである",
+      "note": ""
+    },
+    "risk": {
+      "lemma": "risk",
+      "pos": "名",
+      "ja": "危険",
+      "note": ""
+    },
+    "forecasters": {
+      "lemma": "forecaster",
+      "pos": "名",
+      "ja": "予測する専門家",
+      "note": ""
+    },
+    "ease": {
+      "lemma": "ease",
+      "pos": "動",
+      "ja": "和らぐ",
+      "note": ""
+    },
+    "slightly": {
+      "lemma": "slightly",
+      "pos": "副",
+      "ja": "わずかに",
+      "note": ""
+    },
+    "warn": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告する",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "closely": {
+      "lemma": "closely",
+      "pos": "副",
+      "ja": "注意深く",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "条件を表す if 節（if＋現在形, 主節に助動詞）",
+    "quote": "Prices could stay high if shipping routes remain at risk.",
+    "quoteJa": "航路が危険にさらされたままなら、価格は高止まりする可能性がある。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "if は「もし〜なら」という条件を表す接続詞です。if の後ろの節（条件節）は、未来のことでも現在形で書きます（remain）。主節には will / could / may / should などの助動詞を置き、「その条件が満たされたらどうなるか」を述べます。この文の could は「〜する可能性がある」という控えめな推量です。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "if 節は文頭にも置けます。If shipping routes remain at risk, prices could stay high.（カンマが必要）。また、when は「起きることが確実な時」、if は「起きるかどうか分からない条件」に使い分けます。× if shipping routes will remain のように if 節に will を入れるのは誤りです。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では if 節の動詞の形（remain / will remain / remained）を選ぶ問題がよく出ます。条件節が現在形なら、主節は will＋原形が基本形です。Part 7 の契約書・社内通知でも、If you have any questions, please contact us. のような条件文が頻出します。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "We will ship the order by Friday if the payment arrives by Wednesday.（水曜までに入金があれば、金曜までに出荷します）／ Costs may rise if demand continues to grow.（需要が伸び続ければ、コストは上がるかもしれません）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① ブレント原油とは何か",
+      "body": "ブレント原油は北海で採れる原油で、欧州・アジア・中東など世界の多くの取引で価格の「ものさし」になっています。米国の指標は WTI と呼ばれ、通常はブレントより少し安く取引されます。今回の記事でも、ブレントが110ドルを超え、WTI も100ドル近くまで上がりました。"
+    },
+    {
+      "heading": "📌 ② なぜ中東の不安で原油が上がるのか",
+      "body": "世界の原油の多くは中東で産出され、ホルムズ海峡や紅海などの限られた航路を通って運ばれます。サウジアラビアなどの施設や船舶が攻撃を受けると、実際に供給が止まらなくても「将来足りなくなるかもしれない」という不安だけで価格が上がります。これを地政学リスクプレミアムと呼びます。"
+    },
+    {
+      "heading": "📌 ③ 日本経済・日本人ビジネスパーソンへの影響",
+      "body": "日本は原油のほぼ全量を輸入しており、その大半を中東に頼っています。原油高と円安が重なると、ガソリン、電気・ガス料金、物流費、航空運賃が上がり、企業のコストを押し上げます。メーカーや運送会社は価格転嫁（pass on）を迫られ、消費者物価や日銀の金融政策判断にも影響します。出張や輸入調達を担当する人は、燃料サーチャージの動向を注視したい局面です。"
+    },
+    {
+      "heading": "📌 ④ 投資家・経営者の視点",
+      "body": "投資家にとって原油高は、石油・資源関連株には追い風、航空・海運・化学など燃料費の重い業種には逆風です。経営者は、燃料費の上昇を価格に転嫁できるか、長期契約で価格を固定（ヘッジ）できるかを検討する必要があります。航路が危険にさらされた状態が続くかどうかが、今後の価格を左右する最大の焦点です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Crude Oil Price Today: October 22, 2026",
+      "publisher": "Forbes Advisor",
+      "url": "https://www.forbes.com/advisor/investing/oil-prices-today/",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "Brent oil - Price - Chart - Historical Data - News",
+      "publisher": "Trading Economics",
+      "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "Oil Prices Surge Amid Middle East Tensions as Brent Crosses $112",
+      "publisher": "The UBJ",
+      "url": "https://theubj.com/oil-prices-surge-amid-middle-east-tensions-as-brent-crosses-112/",
+      "date": "2026-10-22"
+    }
+  ]
+}
