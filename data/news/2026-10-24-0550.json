@@ -458,5 +458,23 @@
       "url": "https://247wallst.com/investing/2026/10/23/dollar-store-stocks-slide-as-selling-hits-discount-retail-dollar-tree-and-dollar-general-drop-6/",
       "date": "2026-10-23"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-24-0550/00.mp3",
+      "audio/2026-10-24-0550/01.mp3",
+      "audio/2026-10-24-0550/02.mp3",
+      "audio/2026-10-24-0550/03.mp3",
+      "audio/2026-10-24-0550/04.mp3",
+      "audio/2026-10-24-0550/05.mp3",
+      "audio/2026-10-24-0550/06.mp3",
+      "audio/2026-10-24-0550/07.mp3",
+      "audio/2026-10-24-0550/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 220725,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-23T20:49:09.876Z",
+    "trimmed": true
+  }
 }
