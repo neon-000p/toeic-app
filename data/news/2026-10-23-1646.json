@@ -458,5 +458,23 @@
       "url": "https://theubj.com/oil-prices-surge-amid-middle-east-tensions-as-brent-crosses-112/",
       "date": "2026-10-22"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-23-1646/00.mp3",
+      "audio/2026-10-23-1646/01.mp3",
+      "audio/2026-10-23-1646/02.mp3",
+      "audio/2026-10-23-1646/03.mp3",
+      "audio/2026-10-23-1646/04.mp3",
+      "audio/2026-10-23-1646/05.mp3",
+      "audio/2026-10-23-1646/06.mp3",
+      "audio/2026-10-23-1646/07.mp3",
+      "audio/2026-10-23-1646/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 206421,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-23T08:19:44.915Z",
+    "trimmed": true
+  }
 }
