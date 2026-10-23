@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-24-0550",
+  "date": "2026-10-24",
+  "time": "05:50",
+  "createdAt": "2026-10-24T05:50:00+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail & Consumer",
+  "sample": false,
+  "title": {
+    "en": "Rising Diesel Costs Hit Discount Retailers",
+    "ja": "ディーゼル高、割引小売株を直撃"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Shares of discount retailers fell sharply on Thursday after analysts warned about rising fuel costs.",
+            "ja": "割引小売チェーンの株価は、アナリストが燃料費の上昇を警告したことを受け、木曜に急落した。"
+          },
+          {
+            "en": "Wells Fargo said higher diesel prices could reduce profits through the rest of this year and into 2027.",
+            "ja": "ウェルズ・ファーゴは、ディーゼル価格の上昇が今年の残りから2027年にかけて利益を減らす可能性があると述べた。"
+          },
+          {
+            "en": "Diesel prices in the third quarter are about 60% higher than a year ago.",
+            "ja": "第3四半期のディーゼル価格は、1年前より約60%高い。"
+          },
+          {
+            "en": "Dollar Tree and Dollar General were both trading lower by midday.",
+            "ja": "ダラー・ツリーとダラー・ゼネラルは、どちらも昼までに下落して取引されていた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Retailers spend a large share of their sales on moving goods from warehouses to stores.",
+            "ja": "小売業者は、倉庫から店舗へ商品を動かすために、売上の大きな割合を使っている。"
+          },
+          {
+            "en": "When fuel becomes more expensive, delivery costs rise and profit margins shrink.",
+            "ja": "燃料が高くなると、配送コストが上がり、利益率が縮む。"
+          },
+          {
+            "en": "The analysts expect Dollar Tree to be the most exposed, with a hit of about $25 million in the quarter.",
+            "ja": "アナリストは、ダラー・ツリーが最も影響を受けやすく、同四半期に約2,500万ドルの打撃を受けると見ている。"
+          },
+          {
+            "en": "Because these chains sell low-priced goods, they cannot easily raise prices to cover the extra expense.",
+            "ja": "これらのチェーンは低価格の商品を売っているため、追加の出費を賄うために簡単には値上げできない。"
+          },
+          {
+            "en": "Investors will now watch whether the companies cut other costs to protect their profits.",
+            "ja": "投資家は今後、各社が利益を守るためにほかのコストを削るかどうかに注目する。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much higher are diesel prices in the third quarter than a year ago?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 6%",
+          "ja": "約6%"
+        },
+        {
+          "key": "B",
+          "text": "About 25%",
+          "ja": "約25%"
+        },
+        {
+          "key": "C",
+          "text": "About 60%",
+          "ja": "約60%"
+        },
+        {
+          "key": "D",
+          "text": "About 100%",
+          "ja": "約100%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落第3文に「Diesel prices in the third quarter are about 60% higher than a year ago.」とあるため、正解は (C) About 60%。(A) 6% は「約6%」と数字が似ているだけの引っかけ。(B) 25% は本文の「約2,500万ドル（$25 million）」の数字を流用した誤答。(D) 100% は本文に根拠がない。数字を問う問題では、単位（% か金額か）まで確認すると、似た数字の引っかけを避けられる。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字問題は本文の該当箇所をすぐ探せるよう、設問の key word（third quarter / diesel）に印をつけて探す。同じ数字が別の意味（金額など）で出てくる引っかけに注意。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why is it difficult for these chains to raise prices?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They sell low-priced goods.",
+          "ja": "低価格の商品を売っている"
+        },
+        {
+          "key": "B",
+          "text": "Their stores are closing.",
+          "ja": "店舗が閉鎖されている"
+        },
+        {
+          "key": "C",
+          "text": "Diesel is delivered late.",
+          "ja": "ディーゼルの納入が遅れている"
+        },
+        {
+          "key": "D",
+          "text": "Wells Fargo controls their prices.",
+          "ja": "ウェルズ・ファーゴが価格を決める"
+        }
+      ],
+      "answer": "A",
+      "explanation": "第2段落第4文に「Because these chains sell low-priced goods, they cannot easily raise prices」とあり、理由は低価格の商品を売っているから。したがって (A) が正解。(B) 店舗閉鎖は本文に出てこない。(C) delivery（配送）とdiesel（燃料）を混ぜた作り話の選択肢。(D) Wells Fargo は分析した側であり、価格を決める立場ではない。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "理由を問う設問は Because / since / so などの理由を表す語の周辺に答えがある。本文にない情報を足した選択肢（B, D）は消去する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "analysts",
+      "pos": "名",
+      "ja": "アナリスト、分析家",
+      "gloss": "",
+      "example": {
+        "en": "Analysts expect the company to report higher sales.",
+        "ja": "アナリストは、その会社がより高い売上を報告すると見ている。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "reduce",
+      "pos": "動",
+      "ja": "減らす、下げる",
+      "gloss": "",
+      "example": {
+        "en": "We plan to reduce shipping costs next year.",
+        "ja": "来年は配送費を減らす計画だ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "exposed",
+      "pos": "形",
+      "ja": "影響を受けやすい、さらされた",
+      "gloss": "（＝リスクの影響を直接受ける状態のこと）",
+      "example": {
+        "en": "Small suppliers are more exposed to price changes.",
+        "ja": "小規模な納入業者は、価格変動の影響をより受けやすい。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "margins",
+      "pos": "名",
+      "ja": "利益率、利ざや",
+      "gloss": "（＝売上のうち、利益として残る割合のこと）",
+      "example": {
+        "en": "Higher costs have reduced our margins this year.",
+        "ja": "コスト高により、今年は当社の利益率が下がった。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "shrink",
+      "pos": "動",
+      "ja": "縮む、減る",
+      "gloss": "",
+      "example": {
+        "en": "Profits may shrink if sales stay weak.",
+        "ja": "売上が弱いままなら、利益は減る可能性がある。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "cover",
+      "pos": "動",
+      "ja": "賄う、補う",
+      "gloss": "",
+      "example": {
+        "en": "The fee will cover the cost of delivery.",
+        "ja": "その料金で配送費が賄われる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "expense",
+      "pos": "名",
+      "ja": "出費、経費",
+      "gloss": "",
+      "example": {
+        "en": "Travel is a major expense for our sales team.",
+        "ja": "出張は、営業チームにとって大きな経費だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "delivery",
+      "pos": "名",
+      "ja": "配送、配達",
+      "gloss": "",
+      "example": {
+        "en": "Delivery to the new store will take three days.",
+        "ja": "新店舗への配送には3日かかる。"
+      }
+    }
+  ],
+  "glossary": {
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式",
+      "note": "複数形で「株」の意味"
+    },
+    "discount": {
+      "lemma": "discount",
+      "pos": "形",
+      "ja": "割引の",
+      "note": ""
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": "fall の過去形"
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告した",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇している",
+      "note": "現在分詞"
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用、コスト",
+      "note": ""
+    },
+    "diesel": {
+      "lemma": "diesel",
+      "pos": "名",
+      "ja": "ディーゼル、軽油",
+      "note": ""
+    },
+    "higher": {
+      "lemma": "high",
+      "pos": "形",
+      "ja": "より高い",
+      "note": "比較級"
+    },
+    "reduce": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "profits": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": ""
+    },
+    "midday": {
+      "lemma": "midday",
+      "pos": "名",
+      "ja": "正午、昼",
+      "note": ""
+    },
+    "trading": {
+      "lemma": "trade",
+      "pos": "動",
+      "ja": "取引されている",
+      "note": "現在分詞"
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込む、予想する",
+      "note": ""
+    },
+    "exposed": {
+      "lemma": "expose",
+      "pos": "形",
+      "ja": "影響を受けやすい",
+      "note": ""
+    },
+    "hit": {
+      "lemma": "hit",
+      "pos": "名",
+      "ja": "打撃",
+      "note": ""
+    },
+    "sales": {
+      "lemma": "sale",
+      "pos": "名",
+      "ja": "売上",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "商品",
+      "note": ""
+    },
+    "warehouses": {
+      "lemma": "warehouse",
+      "pos": "名",
+      "ja": "倉庫",
+      "note": ""
+    },
+    "delivery": {
+      "lemma": "delivery",
+      "pos": "名",
+      "ja": "配送",
+      "note": ""
+    },
+    "margins": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": ""
+    },
+    "shrink": {
+      "lemma": "shrink",
+      "pos": "動",
+      "ja": "縮む",
+      "note": ""
+    },
+    "chains": {
+      "lemma": "chain",
+      "pos": "名",
+      "ja": "チェーン店",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "上げる",
+      "note": ""
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "賄う",
+      "note": ""
+    },
+    "expense": {
+      "lemma": "expense",
+      "pos": "名",
+      "ja": "出費",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "最上級（the most＋形容詞）と expect A to be",
+    "quote": "The analysts expect Dollar Tree to be the most exposed, with a hit of about $25 million in the quarter.",
+    "quoteJa": "アナリストは、ダラー・ツリーが最も影響を受けやすく、同四半期に約2,500万ドルの打撃を受けると見ている。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "the most exposed は最上級です。3音節以上の長い形容詞は、語尾に -est を付けず、前に the most を置いて最上級にします（the most important / the most expensive など）。最上級には原則として the が付き、「〜の中で最も…」の範囲は of the group / in the industry などで示します。また expect A to be B は「A が B であると見込む」という意味で、expect の後ろに目的語＋to 不定詞を置く形です。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "短い形容詞は -est を付けます（cheap → the cheapest, high → the highest）。比較級との違いは、2者なら more exposed、3者以上なら the most exposed という点です。Dollar Tree is more exposed than Dollar General.（2社の比較）／ Dollar Tree is the most exposed of the group.（グループ全体の比較）。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では、形容詞の形（most / more / -est）を選ばせる問題が頻出です。the がある → 最上級、than がある → 比較級、と手がかりで判断します。最上級の後ろの of / in / among も合わせて確認しましょう。Part 7 では the most popular / the largest など、最上級が「一番の〜」を示す情報の根拠になります。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "This is the most efficient way to reduce our delivery costs.（これが配送費を減らす最も効率的な方法です。）／ We expect the new store to be the busiest in the region.（新店舗は地域で最も忙しくなると見込んでいます。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① 「ディーゼル高」がなぜ小売の利益を削るのか",
+      "body": "ディーゼルはトラックや貨物船の燃料です。工場や港から倉庫、倉庫から店舗へ商品を運ぶたびに燃料費がかかるため、燃料が上がると配送コストがそのまま増えます。小売業は売上の数％を輸送費に使うといわれ、燃料高は利益率（売上のうち手元に残る割合）をじわじわ押し下げます。記事ではディーゼル価格が前年比で約6割も高いとされ、影響は小さくありません。"
+    },
+    {
+      "heading": "📌 ② ダラー・ストア（均一価格店）の事情",
+      "body": "ダラー・ツリーやダラー・ゼネラルは、日用品を低価格で売る米国のチェーンです。客の多くは節約志向の世帯で、少し値上げしただけでも客が離れるおそれがあります。そのため、コストが上がっても価格に転嫁しにくく、利益率が圧迫されやすいのが特徴です。アナリストが「最も影響を受けやすい」と指摘したのは、この構造を踏まえたものです。"
+    },
+    {
+      "heading": "📌 ③ 業界全体と日本への示唆",
+      "body": "燃料高の影響は米国のスーパーや衣料品店、EC各社の配送費にも及びます。日本でも、トラックの燃料費や人手不足による物流コストの上昇が、コンビニ・ドラッグストア・100円ショップなど低価格業態の収益を圧迫しています。値上げで対応するか、配送ルートの見直しや発注の共同化でコストを吸収するかは、日本の小売・物流担当者にも身近なテーマです。また燃料高は輸入物価を通じて、日本の家計の支出にも波及します。"
+    },
+    {
+      "heading": "📌 ④ 投資家・経営者の視点",
+      "body": "投資家は、四半期決算で各社がどこまで燃料高を価格に転嫁できるか、また調達先の見直しや店舗運営の効率化など、ほかのコスト削減策で利益率を守れるかを注視します。アナリストのメモ一つで株価が数％動くのは、燃料コストが小売の収益力に直結する重要な変数だと市場が見ているためです。経営者にとっては、燃料価格の動きを織り込んだ価格戦略と物流の最適化が、今後の競争力を左右します。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stock market news for Oct. 23, 2026 (Dow tumbles more than 600 points as oil prices rise)",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "Dollar Store Stocks Slide as Selling Hits Discount Retail",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/23/dollar-store-stocks-slide-as-selling-hits-discount-retail-dollar-tree-and-dollar-general-drop-6/",
+      "date": "2026-10-23"
+    }
+  ]
+}
