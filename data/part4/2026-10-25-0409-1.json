@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-25-0409-1",
+  "date": "2026-10-25",
+  "time": "04:09",
+  "createdAt": "2026-10-25T04:09:00+09:00",
+  "sample": false,
+  "scene": "館内放送｜カード決済の停止と現金払いの案内",
+  "talkType": "announcement",
+  "intro": "Questions 1 through 3 refer to the following announcement.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-GB"
+  },
+  "lines": [
+    {
+      "en": "Attention, shoppers at Harbor Point Department Store, and thank you for your patience today.",
+      "ja": "ハーバーポイント百貨店にご来店のお客様にお知らせいたします。本日はご辛抱いただき、ありがとうございます。"
+    },
+    {
+      "en": "Our card payment system has been down since about noon because of a network problem.",
+      "ja": "ネットワークの問題により、カード決済システムは正午ごろから停止しております。"
+    },
+    {
+      "en": "As a result, all registers on the first and second floors can accept cash only.",
+      "ja": "その結果、1階と2階のすべてのレジでは、現金のみのお取り扱いとなっております。"
+    },
+    {
+      "en": "A technician is on site, and we expect the system to be back up by three o'clock.",
+      "ja": "技術者が現場に来ており、システムは3時までに復旧する見込みです。"
+    },
+    {
+      "en": "If you don't have enough cash, there is an automated teller machine next to the main entrance.",
+      "ja": "現金が足りない場合は、正面入口の隣に現金自動預け払い機がございます。"
+    },
+    {
+      "en": "If you would prefer to shop later, please leave your items with the service desk clerk.",
+      "ja": "後ほどお買い物をなさりたい場合は、サービスデスクの係員にお品物をお預けください。"
+    },
+    {
+      "en": "We will set aside your items at no charge until closing time.",
+      "ja": "閉店時刻まで、お品物を無料で取り置きいたします。"
+    },
+    {
+      "en": "We apologize for the inconvenience, and we will make another announcement as soon as the registers are working again.",
+      "ja": "ご不便をおかけして申し訳ございません。レジが再び使えるようになり次第、改めてお知らせいたします。"
+    },
+    {
+      "en": "Thank you.",
+      "ja": "ありがとうございました。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely is the speaker?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A bank teller",
+          "ja": "銀行の窓口係"
+        },
+        {
+          "key": "B",
+          "text": "A delivery driver",
+          "ja": "配達員"
+        },
+        {
+          "key": "C",
+          "text": "A store employee",
+          "ja": "店の従業員"
+        },
+        {
+          "key": "D",
+          "text": "A network technician",
+          "ja": "ネットワーク技術者"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0
+      ],
+      "explanation": "冒頭で shoppers at Harbor Point Department Store と客に呼びかけ、続いて Our card payment system と自社のシステムを説明しています。店の従業員が話していると分かるので C が正解です。D の technician は3文目に別の人物として出てきます。",
+      "tip": "冒頭の呼びかけ（shoppers）と our の使い方から、話し手と聞き手の関係を決めます。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when she says, \"there is an automated teller machine next to the main entrance\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "She is suggesting a way to get cash",
+          "ja": "現金を入手する方法を提案している"
+        },
+        {
+          "key": "B",
+          "text": "She is announcing a new service",
+          "ja": "新しいサービスを知らせている"
+        },
+        {
+          "key": "C",
+          "text": "She is asking customers to leave",
+          "ja": "客に退店を求めている"
+        },
+        {
+          "key": "D",
+          "text": "She is explaining how to return items",
+          "ja": "返品の方法を説明している"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "直前で現金のみの扱いだと述べたうえで、If you don't have enough cash と続けています。現金が足りない客のために機械の場所を教えているので A が正解です。B の new service は話に出てきません。",
+      "tip": "If you don't have ... の条件は、困りごとの解決策につながります。直前の状況（cash only）とセットで意図を決めます。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are listeners asked to do if they want to shop later?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Pay in advance",
+          "ja": "前払いする"
+        },
+        {
+          "key": "B",
+          "text": "Return to the registers",
+          "ja": "レジに戻る"
+        },
+        {
+          "key": "C",
+          "text": "Call a technician",
+          "ja": "技術者に電話する"
+        },
+        {
+          "key": "D",
+          "text": "Give their items to a staff member",
+          "ja": "品物を従業員に預ける"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        5,
+        6
+      ],
+      "explanation": "後で買い物をしたい人には、please leave your items with the service desk clerk と依頼しています。leave ... with the clerk を give ... to a staff member に言い換えた D が正解です。B の registers は現金のみで使える場所で、依頼の中身ではありません。",
+      "tip": "please で始まる文が聞き手への依頼です。直前の If 節で、誰に向けた依頼かを確認します。"
+    }
+  ],
+  "glossary": {
+    "thank you for your patience": {
+      "lemma": "thank you for your patience",
+      "pos": "熟",
+      "ja": "ご辛抱いただきありがとうございます",
+      "note": "待たせるときの定型表現",
+      "example": {
+        "en": "We thank you for your patience while we update the system.",
+        "ja": "システムを更新する間、ご辛抱いただきありがとうございます。"
+      }
+    },
+    "has been down": {
+      "lemma": "be down",
+      "pos": "熟",
+      "ja": "(機械・システムが)停止している",
+      "note": "",
+      "example": {
+        "en": "The website has been down since early this morning.",
+        "ja": "そのウェブサイトは今朝早くから停止している。"
+      }
+    },
+    "as a result": {
+      "lemma": "as a result",
+      "pos": "熟",
+      "ja": "その結果",
+      "note": "",
+      "example": {
+        "en": "As a result of the storm, all flights were canceled.",
+        "ja": "嵐の結果、すべての便が欠航になった。"
+      }
+    },
+    "on site": {
+      "lemma": "on site",
+      "pos": "熟",
+      "ja": "現場に、その場で",
+      "note": "",
+      "example": {
+        "en": "Two engineers are on site to inspect the equipment.",
+        "ja": "2人の技術者が機器の点検のために現場にいる。"
+      }
+    },
+    "back up": {
+      "lemma": "be back up",
+      "pos": "熟",
+      "ja": "復旧して",
+      "note": "",
+      "example": {
+        "en": "The elevator should be back up and running by noon.",
+        "ja": "エレベーターは正午までに復旧して動く見込みだ。"
+      }
+    },
+    "automated teller machine": {
+      "lemma": "automated teller machine",
+      "pos": "名",
+      "ja": "現金自動預け払い機（ATM）",
+      "note": "",
+      "example": {
+        "en": "There is an automated teller machine in the station lobby.",
+        "ja": "駅のロビーに現金自動預け払い機がある。"
+      }
+    },
+    "set aside": {
+      "lemma": "set aside",
+      "pos": "熟",
+      "ja": "取り置く、とっておく",
+      "note": "hold の言い換え",
+      "example": {
+        "en": "Please set aside two tickets for me until Friday.",
+        "ja": "金曜まで私のチケットを2枚取り置いてください。"
+      }
+    },
+    "at no charge": {
+      "lemma": "at no charge",
+      "pos": "熟",
+      "ja": "無料で",
+      "note": "free の言い換え",
+      "example": {
+        "en": "Delivery is available at no charge for orders over fifty dollars.",
+        "ja": "50ドル以上のご注文は無料で配送いたします。"
+      }
+    },
+    "inconvenience": {
+      "lemma": "inconvenience",
+      "pos": "名",
+      "ja": "不便、迷惑",
+      "note": "",
+      "example": {
+        "en": "We regret any inconvenience caused by the schedule change.",
+        "ja": "日程変更によるご不便をおわびします。"
+      }
+    },
+    "registers": {
+      "lemma": "register",
+      "pos": "名",
+      "ja": "レジ",
+      "note": "",
+      "example": {
+        "en": "Only two registers are open during the lunch hour.",
+        "ja": "昼食時間帯に開いているレジは2台だけだ。"
+      }
+    }
+  },
+  "point": {
+    "flow": "呼びかけと謝意 → 状況（決済の停止） → 影響（現金のみ） → 復旧の見込み → 代替手段 → 依頼 → おわびと次回の予告",
+    "items": [
+      {
+        "title": "館内放送は「状況→影響→代替手段」で進む",
+        "body": "アナウンスは問題の説明のあとに、客が取れる行動が続きます。代替手段の文が3問目の根拠になることが多いので、状況の説明は大づかみに聞きます。"
+      },
+      {
+        "title": "1問目は冒頭の呼びかけで決まる",
+        "body": "Attention, shoppers の呼びかけと our を使う言い方で、話し手が店側だと分かります。誰に向けた誰の話かは冒頭2文で押さえます。"
+      }
+    ]
+  }
+}

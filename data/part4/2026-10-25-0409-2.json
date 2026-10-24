@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-10-25-0409-2",
+  "date": "2026-10-25",
+  "time": "04:09",
+  "createdAt": "2026-10-25T04:09:00+09:00",
+  "sample": false,
+  "scene": "案内｜家具工場の見学の流れと注意事項",
+  "talkType": "tour",
+  "intro": "Questions 1 through 3 refer to the following tour information.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-CA"
+  },
+  "lines": [
+    {
+      "en": "Good morning, everyone, and welcome to the Ridgeway Furniture factory tour.",
+      "ja": "皆さん、おはようございます。リッジウェイ家具の工場見学へようこそ。"
+    },
+    {
+      "en": "My name is David, and I will be your guide for the next ninety minutes.",
+      "ja": "私はデイビッドと申します。これから90分間、案内役を務めます。"
+    },
+    {
+      "en": "We will begin in the cutting area, where raw timber is shaped into table legs and chair frames.",
+      "ja": "まず裁断エリアから始めます。ここでは原木がテーブルの脚や椅子の枠に加工されます。"
+    },
+    {
+      "en": "Next, we will move to the assembly line, where about forty workers put together the pieces by hand.",
+      "ja": "次に組み立てラインへ移ります。そこでは約40人の作業員が部品を手作業で組み上げています。"
+    },
+    {
+      "en": "Please keep in mind that the machines are loud, so each of you will receive earplugs before we go inside.",
+      "ja": "機械の音が大きいため、中に入る前に皆さん全員に耳栓をお渡しする点にご留意ください。"
+    },
+    {
+      "en": "For safety reasons, photography is not allowed on the factory floor, but you are welcome to take pictures in the showroom at the end.",
+      "ja": "安全上の理由から、工場の作業場での撮影はできませんが、最後のショールームでは自由に撮影していただけます。"
+    },
+    {
+      "en": "Also, please stay behind the yellow line and do not touch any equipment.",
+      "ja": "また、黄色い線の内側にとどまり、設備には触れないでください。"
+    },
+    {
+      "en": "Because our second shift starts at noon, we need to wrap up by eleven thirty.",
+      "ja": "正午に第2シフトが始まるため、11時30分までに終える必要があります。"
+    },
+    {
+      "en": "If you have questions, feel free to ask me along the way.",
+      "ja": "ご質問があれば、途中でいつでもお尋ねください。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the speaker mainly doing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Interviewing job applicants",
+          "ja": "求職者を面接している"
+        },
+        {
+          "key": "B",
+          "text": "Welcoming visitors to a facility",
+          "ja": "施設の訪問者を迎えている"
+        },
+        {
+          "key": "C",
+          "text": "Demonstrating a new product",
+          "ja": "新製品を実演している"
+        },
+        {
+          "key": "D",
+          "text": "Training new employees",
+          "ja": "新入社員を研修している"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で welcome to the Ridgeway Furniture factory tour と述べ、続けて自分が your guide だと名乗っています。見学者を迎える話なので B が正解です。D は工場の作業の話に引きずられた選択肢ですが、研修とは言っていません。",
+      "tip": "tour / guide / welcome の語が冒頭に出たら、訪問者を迎える場面だと決められます。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What are visitors not allowed to do on the factory floor?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Ask questions",
+          "ja": "質問する"
+        },
+        {
+          "key": "B",
+          "text": "Use earplugs",
+          "ja": "耳栓を使う"
+        },
+        {
+          "key": "C",
+          "text": "Enter the showroom",
+          "ja": "ショールームに入る"
+        },
+        {
+          "key": "D",
+          "text": "Take photos",
+          "ja": "写真を撮る"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        5
+      ],
+      "explanation": "For safety reasons, photography is not allowed on the factory floor と述べています。photography を photos と言い換えた D が正解です。C のショールームは、むしろ撮影してよい場所として出てきます。",
+      "tip": "not allowed のような禁止の表現が出たら、その直前直後の名詞が答えです。but 以下の許可と取り違えないようにします。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about the factory?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is hiring more workers",
+          "ja": "従業員を増員している"
+        },
+        {
+          "key": "B",
+          "text": "It only makes tables",
+          "ja": "テーブルしか作っていない"
+        },
+        {
+          "key": "C",
+          "text": "It runs more than one work shift",
+          "ja": "複数のシフトで稼働している"
+        },
+        {
+          "key": "D",
+          "text": "It will relocate soon",
+          "ja": "まもなく移転する"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        7
+      ],
+      "explanation": "Because our second shift starts at noon と述べているので、工場には少なくとも2つのシフトがあると推測できます。C が正解です。B は table legs and chair frames と椅子の部品も作っていると述べているので誤りです。",
+      "tip": "推測の設問は、何気なく出た語（second shift）が根拠になります。選択肢の言い換え（more than one）と結び付けます。"
+    }
+  ],
+  "glossary": {
+    "raw timber": {
+      "lemma": "raw timber",
+      "pos": "名",
+      "ja": "原木、加工前の木材",
+      "note": "",
+      "example": {
+        "en": "The mill buys raw timber from nearby forests.",
+        "ja": "その製材所は近隣の森から原木を仕入れている。"
+      }
+    },
+    "assembly line": {
+      "lemma": "assembly line",
+      "pos": "名",
+      "ja": "組み立てライン",
+      "note": "",
+      "example": {
+        "en": "The assembly line stops for a short break every two hours.",
+        "ja": "組み立てラインは2時間ごとに短い休憩で止まる。"
+      }
+    },
+    "put together": {
+      "lemma": "put together",
+      "pos": "熟",
+      "ja": "組み立てる",
+      "note": "assemble の言い換え",
+      "example": {
+        "en": "It took us an hour to put together the new desk.",
+        "ja": "新しい机を組み立てるのに1時間かかった。"
+      }
+    },
+    "by hand": {
+      "lemma": "by hand",
+      "pos": "熟",
+      "ja": "手作業で",
+      "note": "",
+      "example": {
+        "en": "The labels are attached by hand before shipping.",
+        "ja": "ラベルは出荷前に手作業で貼られる。"
+      }
+    },
+    "keep in mind": {
+      "lemma": "keep in mind",
+      "pos": "熟",
+      "ja": "覚えておく、留意する",
+      "note": "",
+      "example": {
+        "en": "Keep in mind that the museum closes early on Sundays.",
+        "ja": "美術館は日曜に早く閉まることを覚えておいてください。"
+      }
+    },
+    "earplugs": {
+      "lemma": "earplug",
+      "pos": "名",
+      "ja": "耳栓",
+      "note": "",
+      "example": {
+        "en": "Workers near the press are required to wear earplugs.",
+        "ja": "プレス機の近くの作業員は耳栓の着用が義務だ。"
+      }
+    },
+    "for safety reasons": {
+      "lemma": "for safety reasons",
+      "pos": "熟",
+      "ja": "安全上の理由で",
+      "note": "",
+      "example": {
+        "en": "For safety reasons, the stairs will be closed tonight.",
+        "ja": "安全上の理由から、今夜は階段が閉鎖される。"
+      }
+    },
+    "factory floor": {
+      "lemma": "factory floor",
+      "pos": "名",
+      "ja": "工場の作業現場",
+      "note": "",
+      "example": {
+        "en": "Managers walk around the factory floor each morning.",
+        "ja": "管理者は毎朝、工場の作業現場を見て回る。"
+      }
+    },
+    "second shift": {
+      "lemma": "second shift",
+      "pos": "名",
+      "ja": "第2シフト、午後の勤務帯",
+      "note": "",
+      "example": {
+        "en": "She works the second shift, from two until ten.",
+        "ja": "彼女は2時から10時までの第2シフトで働いている。"
+      }
+    },
+    "wrap up": {
+      "lemma": "wrap up",
+      "pos": "熟",
+      "ja": "終える、切り上げる",
+      "note": "finish の言い換え",
+      "example": {
+        "en": "Let's wrap up the meeting before the next group arrives.",
+        "ja": "次のグループが来る前に会議を終えましょう。"
+      }
+    }
+  },
+  "point": {
+    "flow": "歓迎と名乗り → 見学の流れ（工程の順） → 注意事項 → 時間の制約 → 質問の呼びかけ",
+    "items": [
+      {
+        "title": "見学案内は「順路→注意→時間」で聞く",
+        "body": "案内は工程を順に説明したあと、禁止事項と時間の制約が続きます。禁止事項は not allowed、時間は starts at / by に印を付けて聞くと設問に対応できます。"
+      },
+      {
+        "title": "推測の設問は、さりげない一言が根拠",
+        "body": "推測型は理由を述べる文の中に答えが隠れています。because に続く名詞句（second shift など）を拾い、選択肢の言い換えと照らします。"
+      }
+    ]
+  }
+}

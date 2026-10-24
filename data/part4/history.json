@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part4-history",
-  "updatedAt": "2026-10-21T04:20:00+09:00",
+  "updatedAt": "2026-10-25T04:09:00+09:00",
   "items": [
+    {
+      "id": "2026-10-25-0409-2",
+      "date": "2026-10-25",
+      "scene": "案内｜家具工場の見学の流れと注意事項",
+      "genre": "見学の案内",
+      "talkType": "tour",
+      "types": [
+        "gist",
+        "detail",
+        "infer"
+      ],
+      "flow": "告知と指示"
+    },
+    {
+      "id": "2026-10-25-0409-1",
+      "date": "2026-10-25",
+      "scene": "館内放送｜カード決済の停止と現金払いの案内",
+      "genre": "館内アナウンス",
+      "talkType": "announcement",
+      "types": [
+        "who",
+        "intent",
+        "next"
+      ],
+      "flow": "状況と代替手段"
+    },
     {
       "id": "2026-10-21-0410-2",
       "date": "2026-10-21",
