@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-25-0545",
+  "date": "2026-10-25",
+  "time": "05:45",
+  "createdAt": "2026-10-25T05:45:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "Amazon Shipping Starts Higher Holiday Surcharges",
+    "ja": "アマゾン配送、割増料金を25%引き上げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Amazon Shipping begins its holiday delivery surcharges on October 25.",
+            "ja": "アマゾン・シッピングは10月25日からホリデー期の配送割増料金を開始する。"
+          },
+          {
+            "en": "The extra fees will last until January 16, 2027.",
+            "ja": "この追加料金は2027年1月16日まで続く。"
+          },
+          {
+            "en": "Customers will pay $0.50 more per package at first, and $0.75 more from November 22 to December 26, when demand is highest.",
+            "ja": "利用者は当初は1個あたり0.50ドル、需要が最も高まる11月22日から12月26日までは0.75ドルを追加で支払う。"
+          },
+          {
+            "en": "Both amounts are 25 percent higher than last year's fees.",
+            "ja": "どちらの金額も昨年の料金より25%高い。"
+          },
+          {
+            "en": "The fees apply to every package, with larger charges for heavy or oversized items.",
+            "ja": "料金はすべての荷物に適用され、重い荷物や大型の荷物にはさらに大きな料金がかかる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Its fees closely match those charged by UPS and FedEx, so shippers have few ways to avoid higher costs.",
+            "ja": "同社の料金はUPSやフェデックスが課す料金とほぼ同じため、荷主がコスト増を避ける手立てはほとんどない。"
+          },
+          {
+            "en": "The surcharges are added to the rates that companies have already agreed to pay.",
+            "ja": "割増料金は、企業が支払うことで既に合意した運賃に上乗せされる。"
+          },
+          {
+            "en": "Many retailers must now decide whether to raise delivery prices, ask shoppers to order earlier, or accept lower profits during the busiest season of the year.",
+            "ja": "多くの小売業者は今、配送料を上げるか、買い物客に早めの注文を促すか、年間で最も忙しい時期の利益減を受け入れるかを決めなければならない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much more will customers pay per package during the busiest period?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$0.25",
+          "ja": "0.25ドル"
+        },
+        {
+          "key": "B",
+          "text": "$0.50",
+          "ja": "0.50ドル"
+        },
+        {
+          "key": "C",
+          "text": "$0.60",
+          "ja": "0.60ドル"
+        },
+        {
+          "key": "D",
+          "text": "$0.75",
+          "ja": "0.75ドル"
+        }
+      ],
+      "answer": "D",
+      "explanation": "第1段落の3文目に「$0.75 more from November 22 to December 26, when demand is highest（需要が最も高い11月22日〜12月26日は0.75ドル追加）」とある。busiest period は when demand is highest の言い換え。B の$0.50は「at first（当初）」の金額なので時期が違う。A の$0.25と C の$0.60は本文に出てこない金額。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "設問の busiest を本文の highest demand に言い換えて探す。期間ごとに金額が複数ある文章では、時期の条件を必ず確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT mentioned as a choice for retailers?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Raising delivery prices",
+          "ja": "配送料を上げる"
+        },
+        {
+          "key": "B",
+          "text": "Asking shoppers to order earlier",
+          "ja": "早めの注文を促す"
+        },
+        {
+          "key": "C",
+          "text": "Accepting lower profits",
+          "ja": "利益減を受け入れる"
+        },
+        {
+          "key": "D",
+          "text": "Changing to a different carrier",
+          "ja": "別の配送会社に変える"
+        }
+      ],
+      "answer": "D",
+      "explanation": "第2段落の最終文に、小売業者の選択肢として raise delivery prices（A）、ask shoppers to order earlier（B）、accept lower profits（C）の3つが挙がっている。D の別の配送会社への切り替えは本文になく、むしろ UPS と FedEx も同様の料金なので避けにくいと書かれている。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "NOT問題は選択肢を1つずつ本文と照合し、「書かれていないもの」を探す。並列（A, B, or C）の箇所が根拠になることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "surcharge",
+      "pos": "名",
+      "ja": "割増料金、追加料金",
+      "gloss": "（＝通常の料金に上乗せされる追加の料金のこと）",
+      "example": {
+        "en": "The airline added a fuel surcharge to every ticket.",
+        "ja": "その航空会社はすべての航空券に燃油サーチャージを加えた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for winter coats rises every November.",
+        "ja": "冬用コートの需要は毎年11月に高まる。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "apply to",
+      "pos": "熟",
+      "ja": "〜に適用される",
+      "gloss": "",
+      "example": {
+        "en": "The new rule applies to all full-time employees.",
+        "ja": "新しい規則はすべての正社員に適用される。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "rate",
+      "pos": "名",
+      "ja": "料金、運賃",
+      "gloss": "",
+      "example": {
+        "en": "The hotel offers a special rate for groups.",
+        "ja": "そのホテルは団体向けの特別料金を提供している。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "shipper",
+      "pos": "名",
+      "ja": "荷主、発送業者",
+      "gloss": "",
+      "example": {
+        "en": "Shippers must submit the forms before the cargo leaves.",
+        "ja": "荷主は貨物が出発する前に書類を提出しなければならない。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "gloss": "",
+      "example": {
+        "en": "The retailer plans to open ten new stores next year.",
+        "ja": "その小売業者は来年10店舗を新たに開く計画だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "avoid",
+      "pos": "動",
+      "ja": "避ける",
+      "gloss": "",
+      "example": {
+        "en": "We should avoid delays by booking early.",
+        "ja": "早めに予約して遅れを避けるべきだ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "accept",
+      "pos": "動",
+      "ja": "受け入れる",
+      "gloss": "",
+      "example": {
+        "en": "The manager decided to accept the revised budget.",
+        "ja": "部長は修正された予算を受け入れることにした。"
+      }
+    }
+  ],
+  "glossary": {
+    "begins": {
+      "lemma": "begin",
+      "pos": "動",
+      "ja": "始まる",
+      "note": ""
+    },
+    "holiday": {
+      "lemma": "holiday",
+      "pos": "形",
+      "ja": "休暇期の",
+      "note": ""
+    },
+    "delivery": {
+      "lemma": "delivery",
+      "pos": "名",
+      "ja": "配送",
+      "note": ""
+    },
+    "surcharges": {
+      "lemma": "surcharge",
+      "pos": "名",
+      "ja": "割増料金",
+      "note": ""
+    },
+    "extra": {
+      "lemma": "extra",
+      "pos": "形",
+      "ja": "追加の",
+      "note": ""
+    },
+    "fees": {
+      "lemma": "fee",
+      "pos": "名",
+      "ja": "料金",
+      "note": ""
+    },
+    "last": {
+      "lemma": "last",
+      "pos": "動",
+      "ja": "続く",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "package": {
+      "lemma": "package",
+      "pos": "名",
+      "ja": "荷物、小包",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "percent": {
+      "lemma": "percent",
+      "pos": "名",
+      "ja": "パーセント",
+      "note": ""
+    },
+    "apply": {
+      "lemma": "apply",
+      "pos": "動",
+      "ja": "適用される",
+      "note": ""
+    },
+    "heavy": {
+      "lemma": "heavy",
+      "pos": "形",
+      "ja": "重い",
+      "note": ""
+    },
+    "oversized": {
+      "lemma": "oversized",
+      "pos": "形",
+      "ja": "大型の",
+      "note": ""
+    },
+    "larger": {
+      "lemma": "large",
+      "pos": "形",
+      "ja": "より大きい",
+      "note": ""
+    },
+    "charges": {
+      "lemma": "charge",
+      "pos": "名",
+      "ja": "料金",
+      "note": ""
+    },
+    "match": {
+      "lemma": "match",
+      "pos": "動",
+      "ja": "一致する",
+      "note": ""
+    },
+    "charged": {
+      "lemma": "charge",
+      "pos": "動",
+      "ja": "請求する",
+      "note": ""
+    },
+    "shippers": {
+      "lemma": "shipper",
+      "pos": "名",
+      "ja": "荷主",
+      "note": ""
+    },
+    "avoid": {
+      "lemma": "avoid",
+      "pos": "動",
+      "ja": "避ける",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "added": {
+      "lemma": "add",
+      "pos": "動",
+      "ja": "加える",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "運賃、料金",
+      "note": ""
+    },
+    "agreed": {
+      "lemma": "agree",
+      "pos": "動",
+      "ja": "合意する",
+      "note": ""
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "decide": {
+      "lemma": "decide",
+      "pos": "動",
+      "ja": "決める",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "accept": {
+      "lemma": "accept",
+      "pos": "動",
+      "ja": "受け入れる",
+      "note": ""
+    },
+    "profits": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "busiest": {
+      "lemma": "busy",
+      "pos": "形",
+      "ja": "最も忙しい",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "差・倍数を表す比較表現（数値＋形容詞の比較級＋than）",
+    "quote": "Both amounts are 25 percent higher than last year's fees.",
+    "quoteJa": "どちらの金額も昨年の料金より25%高い。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "「A is 25 percent higher than B」は、AがBよりどれだけ高いかを数値で示す比較表現です。比較級（higher）の前に差を表す数値表現（25 percent）を置きます。形は「A is ＋ 差 ＋ 比較級 ＋ than B」で、「AはBより〜だけ高い」と訳します。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "・The fee is 25 percent higher than last year's.（昨年より25%高い）\n・The fee is 25 percent more than last year's.（同じ意味）\n・The fee has risen by 25 percent from last year.（動詞で言い換え：by は変化の幅、from は基準点）\n差を表す語句は比較級の直前に置き、than の後ろには比べる相手（last year's fees）がきます。than の後ろの名詞は、比べる対象を揃えるため last year's（＝last year's fees）のように所有格で省略形にすることが多い点も確認しましょう。"
+      },
+      {
+        "heading": "TOEICでの傾向",
+        "body": "Part 5 では比較級の直後に than が入るか、強調の much / far / even が入るかが問われます（例：far higher than）。「very higher」は誤りです。Part 7 では「by 25 percent」「25 percent higher」「increased by $0.10」のように、増加幅と増加後の値を取り違えさせる設問が頻出します。幅（差）なのか、結果の値なのかを必ず区別してください。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "・Operating costs this quarter are 8 percent lower than those of the previous quarter.（今四半期の運営費は前四半期より8%低い）\n・Our new model is twice as fast as the old one, and 15 percent cheaper.（新モデルは旧型の2倍速く、15%安い）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 割増料金（サーチャージ）とは何か",
+      "body": "配送会社が、年末商戦（11〜12月）のように荷物が急増する時期に、契約済みの運賃へ上乗せして請求する追加料金です。燃料費の変動に応じる燃油サーチャージとは別に、「需要が高い時期の混雑対応コスト」を荷主に負担してもらう仕組みで、米国ではデマンド・サーチャージやピークシーズン・サーチャージと呼ばれます。今回のアマゾン・シッピングは、1個あたり0.50ドルから、最繁忙期は0.75ドルへ上がる設定で、昨年（0.40ドル／0.60ドル）より25%高くなりました。"
+    },
+    {
+      "heading": "📌 2. 業界全体・競合の動き",
+      "body": "UPSとフェデックスも同じ時期（10月下旬）から同様の1個あたり割増料金を始めます。三社の料金水準が近いため、荷主が配送会社を乗り換えてもコスト増を避けにくい状況です。調査会社の報告では、今年のピーク期は昨年より荷動きが多くなると見る物流担当者が過半数に上り、トラックの輸送力が逼迫しているとの声も出ています。"
+    },
+    {
+      "heading": "📌 3. 日本経済・日本企業への影響",
+      "body": "米国向けにECで販売する日本のメーカーや、アマゾンの販売サービスを使う日本の事業者にとっては、年末商戦期の物流コストが上がることを意味します。送料に転嫁するか、利益を削るか、早期発送を促すキャンペーンで需要を前倒しするかの判断が必要です。また日本国内でも、宅配各社が繁忙期の運賃や取扱量を調整する動きがあり、「物流コストは年末に上がる」という認識を持つ必要があります。"
+    },
+    {
+      "heading": "📌 4. 投資家・経営者の視点",
+      "body": "投資家は、配送会社の増収余地（割増料金による単価上昇）と、荷主側である小売業者の利益率圧迫の両面を見ています。小売業者にとっては、配送料の値上げが消費者の購買意欲を下げるリスクがあります。経営者は、在庫を早めに積み増して繁忙期前に出荷する、配送会社を複数使って交渉力を保つ、といった対策でコスト増をどう吸収するかが問われます。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon Shipping readies 2026 holiday delivery surcharges",
+      "publisher": "Supply Chain Dive",
+      "url": "https://supplychaindive.com/news/amazon-shipping-readies-2026-holiday-delivery-surcharges/829550",
+      "date": "2026-10"
+    },
+    {
+      "title": "Inside the Amazon Shipping 2026-27 peak surcharge schedule",
+      "publisher": "TransImpact",
+      "url": "https://transimpact.com/blog/inside-the-amazon-shipping-2026-27-peak-surcharge-schedule",
+      "date": "2026-10"
+    },
+    {
+      "title": "Holiday shipping surcharges: UPS, FedEx, USPS dates guide",
+      "publisher": "Beancount.io",
+      "url": "https://beancount.io/blog/2026/09/19/holiday-shipping-surcharges-ups-fedex-usps-dates-guide",
+      "date": "2026-09-19"
+    }
+  ]
+}
