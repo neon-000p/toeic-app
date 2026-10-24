@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-25-0409-2",
+  "date": "2026-10-25",
+  "time": "04:09",
+  "scene": "請求・経理｜請求書の二重請求の確認",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-AU"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-CA"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "Hi Tom, I'm looking at the invoice from our cleaning vendor, and it looks like we were charged twice for March.",
+      "ja": "こんにちは、トム。清掃業者の請求書を見ているのですが、3月分が二重に請求されているようです。"
+    },
+    {
+      "tag": "M",
+      "en": "Let me pull up the account. You're right, the same eight hundred fifty dollars appears on two dates.",
+      "ja": "口座の記録を開いてみます。おっしゃる通り、同じ850ドルが2つの日付で出ています。"
+    },
+    {
+      "tag": "W",
+      "en": "Is that a system error, or did someone submit the payment twice?",
+      "ja": "システムの誤りですか、それとも誰かが支払いを2回申請したのですか。"
+    },
+    {
+      "tag": "M",
+      "en": "The first invoice was returned for a missing purchase order number, so the vendor reissued it without canceling the original.",
+      "ja": "最初の請求書は発注書番号が抜けていて差し戻され、業者は元の請求書を取り消さずに再発行したのです。"
+    },
+    {
+      "tag": "W",
+      "en": "So we aren't on the hook for both payments?",
+      "ja": "では、両方を支払う義務はないのですね。"
+    },
+    {
+      "tag": "M",
+      "en": "Correct. I'll ask the vendor to void the duplicate and apply the credit to next month's bill.",
+      "ja": "その通りです。業者に重複分を無効にして、その分を来月の請求に充てるよう頼みます。"
+    },
+    {
+      "tag": "W",
+      "en": "Could you get that in writing? The payment deadline is this Friday, and I don't want a late fee.",
+      "ja": "それを書面でもらってもらえますか。支払期限は今週金曜で、延滞料は払いたくないので。"
+    },
+    {
+      "tag": "M",
+      "en": "I'll email them right now and copy you. If they haven't replied by Thursday, I'll hold off on releasing the payment.",
+      "ja": "今すぐ業者にメールして、あなたにも写しを送ります。木曜までに返信がなければ、支払いの実行は見合わせます。"
+    },
+    {
+      "tag": "W",
+      "en": "Thanks. That should keep us on track.",
+      "ja": "ありがとう。それなら予定通りに進められそうです。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What caused the duplicate charge?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A payment was made by mistake",
+          "ja": "誤って支払いが行われた"
+        },
+        {
+          "key": "B",
+          "text": "A late fee was added",
+          "ja": "延滞料が加算された"
+        },
+        {
+          "key": "C",
+          "text": "An invoice was reissued without cancellation",
+          "ja": "請求書が取り消されずに再発行された"
+        },
+        {
+          "key": "D",
+          "text": "An order was placed twice",
+          "ja": "注文が2回出された"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        3
+      ],
+      "explanation": "男性が The first invoice was returned for a missing purchase order number, so the vendor reissued it without canceling the original と説明しています。取り消さずに再発行したことが原因なので C が正解です。A は女性の推測で、男性が否定しています。",
+      "tip": "原因を問う設問は because / so の前後に根拠があります。女性の推測と男性の説明を混同しないようにします。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the woman mean when she says, \"So we aren't on the hook for both payments\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The company does not have to pay twice",
+          "ja": "会社は二重に払う必要がない"
+        },
+        {
+          "key": "B",
+          "text": "The company will pay in installments",
+          "ja": "会社は分割で支払う"
+        },
+        {
+          "key": "C",
+          "text": "The vendor made a mistake with a name",
+          "ja": "業者が名前を間違えた"
+        },
+        {
+          "key": "D",
+          "text": "The payment has already been released",
+          "ja": "支払いはすでに実行済みである"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "直前で男性が、請求書が再発行されただけで元の請求書は取り消されていないと説明しています。女性はそれを受けて、両方を払う義務はないのかと確認しているので A が正解です。男性がその直後に Correct と答えている点も根拠になります。",
+      "tip": "慣用表現の意図は、直前の発言と直後の返事（Correct）で確かめると確実です。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the man do if the vendor does not reply by Thursday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cancel the contract",
+          "ja": "契約を解除する"
+        },
+        {
+          "key": "B",
+          "text": "Call the woman",
+          "ja": "女性に電話する"
+        },
+        {
+          "key": "C",
+          "text": "Pay the late fee",
+          "ja": "延滞料を支払う"
+        },
+        {
+          "key": "D",
+          "text": "Delay a payment",
+          "ja": "支払いを遅らせる"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        7
+      ],
+      "explanation": "男性は If they haven't replied by Thursday, I'll hold off on releasing the payment と述べています。hold off on を delay に言い換えた D が正解です。C の late fee は女性が避けたいと言った費用で、男性の行動ではありません。",
+      "tip": "If で始まる条件の文は、後ろに続く I'll ... が答えです。条件の部分は聞き流して結果を拾います。"
+    }
+  ],
+  "glossary": {
+    "charged": {
+      "lemma": "charge",
+      "pos": "動",
+      "ja": "請求する",
+      "note": "",
+      "example": {
+        "en": "The hotel charged us an extra fee for late checkout.",
+        "ja": "ホテルはチェックアウトが遅れたため追加料金を請求してきた。"
+      }
+    },
+    "pull up": {
+      "lemma": "pull up",
+      "pos": "熟",
+      "ja": "(画面に)呼び出す、開く",
+      "note": "",
+      "example": {
+        "en": "Let me pull up your reservation on the computer.",
+        "ja": "コンピューターであなたの予約を開かせてください。"
+      }
+    },
+    "purchase order": {
+      "lemma": "purchase order",
+      "pos": "名",
+      "ja": "発注書",
+      "note": "",
+      "example": {
+        "en": "We cannot ship the goods without a purchase order.",
+        "ja": "発注書がなければ商品を出荷できません。"
+      }
+    },
+    "reissued": {
+      "lemma": "reissue",
+      "pos": "動",
+      "ja": "再発行する",
+      "note": "",
+      "example": {
+        "en": "The bank reissued my card after it was lost.",
+        "ja": "紛失のあと、銀行はカードを再発行してくれた。"
+      }
+    },
+    "on the hook": {
+      "lemma": "on the hook",
+      "pos": "熟",
+      "ja": "責任・支払い義務を負って",
+      "note": "",
+      "example": {
+        "en": "The tenant is on the hook for any damage to the unit.",
+        "ja": "借り主は部屋の損害すべてに責任を負う。"
+      }
+    },
+    "void": {
+      "lemma": "void",
+      "pos": "動",
+      "ja": "無効にする、取り消す",
+      "note": "cancel の言い換え",
+      "example": {
+        "en": "The clerk voided the receipt and printed a new one.",
+        "ja": "店員はレシートを無効にして新しく印刷した。"
+      }
+    },
+    "in writing": {
+      "lemma": "in writing",
+      "pos": "熟",
+      "ja": "書面で",
+      "note": "",
+      "example": {
+        "en": "Please confirm the new schedule in writing.",
+        "ja": "新しい日程を書面で確認してください。"
+      }
+    },
+    "late fee": {
+      "lemma": "late fee",
+      "pos": "名",
+      "ja": "延滞料",
+      "note": "",
+      "example": {
+        "en": "A late fee applies if payment arrives after the due date.",
+        "ja": "支払いが期日を過ぎると延滞料がかかる。"
+      }
+    },
+    "hold off on": {
+      "lemma": "hold off on",
+      "pos": "熟",
+      "ja": "〜を見合わせる、延期する",
+      "note": "delay の言い換え",
+      "example": {
+        "en": "Let's hold off on ordering new chairs until the budget is set.",
+        "ja": "予算が決まるまで新しい椅子の注文は見合わせましょう。"
+      }
+    },
+    "on track": {
+      "lemma": "on track",
+      "pos": "熟",
+      "ja": "予定通りに進んで",
+      "note": "",
+      "example": {
+        "en": "The project is on track to finish before the deadline.",
+        "ja": "プロジェクトは期限前に終わる見通しで順調に進んでいる。"
+      }
+    }
+  },
+  "point": {
+    "flow": "問題の発見 → 記録の確認 → 原因の説明 → 義務の確認 → 解決策 → 期限と書面の依頼 → 条件つきの保留",
+    "items": [
+      {
+        "title": "原因は「because / so」の文に出る",
+        "body": "請求や納期の問題の会話では、原因の説明が長めの1文で語られます。接続の so や without に注目し、誰の説明かを意識して聞きます。"
+      },
+      {
+        "title": "確認の質問のあとに次の行動が出る",
+        "body": "Is that ...? や So we ...? の確認のあとに、解決策と担当が続きます。期限（Friday / Thursday）が出たら、その期限と結び付く行動を選びます。"
+      }
+    ]
+  }
+}

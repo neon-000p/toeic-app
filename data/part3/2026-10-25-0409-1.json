@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-10-25-0409-1",
+  "date": "2026-10-25",
+  "time": "04:09",
+  "scene": "広報・販促｜展示会用パンフレットの印刷計画",
+  "speakers": [
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-GB"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "M",
+      "en": "Hi Karen, do you have a minute? I'm putting together the booth materials for next month's trade show.",
+      "ja": "こんにちは、カレン、少しいいですか。来月の展示会に向けて、ブース用の資料をまとめているところです。"
+    },
+    {
+      "tag": "W",
+      "en": "Sure. How many brochures are you planning to print?",
+      "ja": "もちろん。パンフレットは何部印刷する予定ですか。"
+    },
+    {
+      "tag": "M",
+      "en": "The printer quoted five hundred copies for nine hundred dollars, but that goes over our budget.",
+      "ja": "印刷会社は500部で900ドルと見積もりましたが、それでは予算を超えてしまいます。"
+    },
+    {
+      "tag": "W",
+      "en": "Marketing has some money left over this quarter. I can cover the extra cost if you sign off on the design by Friday.",
+      "ja": "マーケティング部は今四半期に予算が余っています。金曜までにデザインを承認してくれるなら、超過分は私が負担できます。"
+    },
+    {
+      "tag": "M",
+      "en": "Friday is tight because the product photos are still being edited.",
+      "ja": "製品写真がまだ編集中なので、金曜は厳しいです。"
+    },
+    {
+      "tag": "W",
+      "en": "Then how about printing two hundred now and a second batch after the show opens?",
+      "ja": "それなら、今は200部を刷って、展示会が始まってから2回目を刷るのはどうですか。"
+    },
+    {
+      "tag": "M",
+      "en": "That works. We can also hand out a digital version through a scannable code at the booth.",
+      "ja": "それでいけます。ブースではスキャン用のコードでデジタル版も配れますね。"
+    },
+    {
+      "tag": "W",
+      "en": "Good idea. Send me the cost for the smaller order, and I'll fill out the request form today.",
+      "ja": "いい考えですね。少ない部数の費用を送ってください。申請書は今日中に私が記入します。"
+    },
+    {
+      "tag": "M",
+      "en": "Will do. I'll follow up with the photographer this afternoon.",
+      "ja": "わかりました。今日の午後、カメラマンに状況を確認します。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hiring a photographer",
+          "ja": "カメラマンの採用"
+        },
+        {
+          "key": "B",
+          "text": "Preparing printed materials for an exhibition",
+          "ja": "展示会向けの印刷物の準備"
+        },
+        {
+          "key": "C",
+          "text": "Reducing a quarterly budget",
+          "ja": "四半期予算の削減"
+        },
+        {
+          "key": "D",
+          "text": "Scheduling a product launch",
+          "ja": "製品発売の日程調整"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で男性が putting together the booth materials for next month's trade show と述べ、女性が brochures の部数を尋ねています。trade show を exhibition、brochures を printed materials と言い換えた B が正解です。A のカメラマンは終盤に出るだけの話題です。",
+      "tip": "冒頭1〜2行の名詞（booth materials / brochures）が選択肢でどう言い換わるかを探します。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why is Friday difficult for the man?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The printer is closed",
+          "ja": "印刷会社が休業している"
+        },
+        {
+          "key": "B",
+          "text": "The budget has not been approved",
+          "ja": "予算がまだ承認されていない"
+        },
+        {
+          "key": "C",
+          "text": "The booth is not ready",
+          "ja": "ブースの準備ができていない"
+        },
+        {
+          "key": "D",
+          "text": "Some photos are not finished",
+          "ja": "写真の編集が終わっていない"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "女性が金曜までにデザインを承認するよう求め、男性が the product photos are still being edited と理由を述べています。still being edited を not finished と言い換えた D が正解です。B の budget は女性が負担を申し出た話で、金曜が難しい理由ではありません。",
+      "tip": "Friday が出たら、その直後の because 以下に理由が来ると予測して聞きます。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the woman do today?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Complete a request form",
+          "ja": "申請書に記入する"
+        },
+        {
+          "key": "B",
+          "text": "Call the printer",
+          "ja": "印刷会社に電話する"
+        },
+        {
+          "key": "C",
+          "text": "Edit the photographs",
+          "ja": "写真を編集する"
+        },
+        {
+          "key": "D",
+          "text": "Update the Web site",
+          "ja": "ウェブサイトを更新する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        7
+      ],
+      "explanation": "女性は最後に近い発言で I'll fill out the request form today と述べています。fill out を complete と言い換えた A が正解です。B のプリンターは男性が見積もりを聞いた相手で、女性が連絡するとは言っていません。C の写真は男性がカメラマンに確認する話題です。",
+      "tip": "What will the woman do? は woman の I'll / I will の発言だけを拾います。男性の予定と混ざらないようにします。"
+    }
+  ],
+  "glossary": {
+    "putting together": {
+      "lemma": "put together",
+      "pos": "熟",
+      "ja": "まとめる、作成する",
+      "note": "prepare の言い換え",
+      "example": {
+        "en": "Could you put together a short summary of the survey results?",
+        "ja": "アンケート結果の短い要約をまとめてもらえますか。"
+      }
+    },
+    "quoted": {
+      "lemma": "quote",
+      "pos": "動",
+      "ja": "見積もる、見積額を提示する",
+      "note": "",
+      "example": {
+        "en": "The supplier quoted us a lower price for bulk orders.",
+        "ja": "仕入先はまとめ買いに対してより安い価格を提示してくれた。"
+      }
+    },
+    "goes over": {
+      "lemma": "go over",
+      "pos": "熟",
+      "ja": "(予算などを)超える",
+      "note": "exceed の言い換え",
+      "example": {
+        "en": "Travel costs went over the limit again this month.",
+        "ja": "今月も出張費が上限を超えた。"
+      }
+    },
+    "left over": {
+      "lemma": "left over",
+      "pos": "熟",
+      "ja": "余っている、残っている",
+      "note": "",
+      "example": {
+        "en": "We had a few tickets left over after the seminar.",
+        "ja": "セミナーのあと、チケットが数枚余った。"
+      }
+    },
+    "sign off on": {
+      "lemma": "sign off on",
+      "pos": "熟",
+      "ja": "〜を正式に承認する",
+      "note": "approve の言い換え",
+      "example": {
+        "en": "The director must sign off on every contract before it is sent.",
+        "ja": "部長はすべての契約書を送付前に承認しなければならない。"
+      }
+    },
+    "batch": {
+      "lemma": "batch",
+      "pos": "名",
+      "ja": "1回分の生産・印刷、ひとまとまり",
+      "note": "",
+      "example": {
+        "en": "The first batch of uniforms arrives on Monday.",
+        "ja": "制服の第1回分は月曜に届く。"
+      }
+    },
+    "hand out": {
+      "lemma": "hand out",
+      "pos": "熟",
+      "ja": "配布する",
+      "note": "distribute の言い換え",
+      "example": {
+        "en": "Staff will hand out name tags at the entrance.",
+        "ja": "スタッフが入口で名札を配る。"
+      }
+    },
+    "fill out": {
+      "lemma": "fill out",
+      "pos": "熟",
+      "ja": "(用紙に)記入する",
+      "note": "complete の言い換え",
+      "example": {
+        "en": "Please fill out this form and return it to the front desk.",
+        "ja": "この用紙に記入して受付に返してください。"
+      }
+    },
+    "follow up with": {
+      "lemma": "follow up with",
+      "pos": "熟",
+      "ja": "〜に改めて連絡して確認する",
+      "note": "",
+      "example": {
+        "en": "I will follow up with the client about the delivery date.",
+        "ja": "納期について、顧客に改めて連絡して確認します。"
+      }
+    },
+    "brochures": {
+      "lemma": "brochure",
+      "pos": "名",
+      "ja": "パンフレット",
+      "note": "",
+      "example": {
+        "en": "The hotel keeps travel brochures in the lobby.",
+        "ja": "そのホテルはロビーに旅行パンフレットを置いている。"
+      }
+    }
+  },
+  "point": {
+    "flow": "依頼と状況説明 → 費用の問題 → 条件つきの支援 → 制約の提示 → 分割案で合意 → 担当の確認",
+    "items": [
+      {
+        "title": "「費用→条件→制約→妥協案」の順で聞く",
+        "body": "依頼と調整の会話は、まず金額などの問題が出て、次に条件が付き、制約で行き詰まり、妥協案で決着します。この順を頭に置くと、どの発言が設問の根拠かを絞りやすくなります。"
+      },
+      {
+        "title": "最後の数行に次の行動が集まる",
+        "body": "後半では各話者が I'll ... と自分の担当を宣言します。誰が何をするかは話者ごとに分けてメモすると、次の行動を問う設問で取り違えません。"
+      }
+    ]
+  }
+}
