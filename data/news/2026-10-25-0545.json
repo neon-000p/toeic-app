@@ -460,5 +460,22 @@
       "url": "https://beancount.io/blog/2026/09/19/holiday-shipping-surcharges-ups-fedex-usps-dates-guide",
       "date": "2026-09-19"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-25-0545/00.mp3",
+      "audio/2026-10-25-0545/01.mp3",
+      "audio/2026-10-25-0545/02.mp3",
+      "audio/2026-10-25-0545/03.mp3",
+      "audio/2026-10-25-0545/04.mp3",
+      "audio/2026-10-25-0545/05.mp3",
+      "audio/2026-10-25-0545/06.mp3",
+      "audio/2026-10-25-0545/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 213472,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-24T20:49:14.615Z",
+    "trimmed": true
+  }
 }
