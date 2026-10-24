@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-24-1648",
+  "date": "2026-10-24",
+  "time": "16:48",
+  "createdAt": "2026-10-24T16:48:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "EU Seeks More Trade Deals to Limit Chinese Imports",
+    "ja": "EU、中国製品の輸入抑制へ協議拡大"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "European Union trade ministers said on Friday that the bloc should seek new deals with China to limit imports.",
+            "ja": "EU（欧州連合）の貿易担当相らは金曜、域内への輸入を抑えるため、EUは中国との新たな合意を探るべきだと述べた。"
+          },
+          {
+            "en": "They met in Dublin to discuss how to respond to rising Chinese exports.",
+            "ja": "彼らはダブリンに集まり、増え続ける中国からの輸出にどう対応するかを話し合った。"
+          },
+          {
+            "en": "The talks may cover chemicals, machinery and medicines, three sectors where European firms face strong competition.",
+            "ja": "協議では、欧州企業が激しい競争にさらされている化学品、機械、医薬品の3分野が対象になる可能性がある。"
+          },
+          {
+            "en": "Earlier this month, the two sides agreed to cut imports of hybrid cars from China by more than half.",
+            "ja": "今月初め、双方は中国製ハイブリッド車の輸入を半分以上減らすことで合意した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The EU buys far more from China than it sells, and the trade gap is now about one billion euros a day.",
+            "ja": "EUは中国に売る以上にはるかに多くを中国から買っており、貿易赤字は現在1日あたり約10億ユーロにのぼる。"
+          },
+          {
+            "en": "Many officials fear that cheap imports could force factories in Europe to close.",
+            "ja": "多くの当局者は、安価な輸入品によって欧州の工場が閉鎖に追い込まれかねないと懸念している。"
+          },
+          {
+            "en": "Trade chief Maros Sefcovic said the bloc is studying which sectors to address next, either through talks or on its own.",
+            "ja": "通商担当トップのマロシュ・シェフチョビッチ氏は、EUは協議を通じてか単独でか、次にどの分野に対処すべきかを検討中だと述べた。"
+          },
+          {
+            "en": "Technical discussions will continue until the end of the year, and political talks are planned for January and March 2027.",
+            "ja": "実務レベルの協議は年末まで続き、政治レベルの交渉は2027年1月と3月に予定されている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "About how large is the EU's trade gap with China per day?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 100 million euros",
+          "ja": "約1億ユーロ"
+        },
+        {
+          "key": "B",
+          "text": "About 500 million euros",
+          "ja": "約5億ユーロ"
+        },
+        {
+          "key": "C",
+          "text": "About one billion euros",
+          "ja": "約10億ユーロ"
+        },
+        {
+          "key": "D",
+          "text": "About five billion euros",
+          "ja": "約50億ユーロ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落の1文目に the trade gap is now about one billion euros a day とあるため、正解は (C)。(A) と (B) は本文にない小さい数字、(D) は本文にない大きい数字で、いずれも本文と一致しない。金額・単位（a day）まで確認するのがポイント。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "数字の問題は、本文中の数字と単位（per day など）の両方を照合する。選択肢の数字は桁違いの引っかけが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT mentioned as a sector the talks may cover?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chemicals",
+          "ja": "化学品"
+        },
+        {
+          "key": "B",
+          "text": "Machinery",
+          "ja": "機械"
+        },
+        {
+          "key": "C",
+          "text": "Medicines",
+          "ja": "医薬品"
+        },
+        {
+          "key": "D",
+          "text": "Smartphones",
+          "ja": "スマートフォン"
+        }
+      ],
+      "answer": "D",
+      "explanation": "第1段落の3文目に chemicals, machinery and medicines とある。(A)(B)(C) はすべて本文に登場する。(D) の smartphones は本文のどこにも出てこないので、これが NOT に当たる正解。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "NOT 問題は、選択肢を1つずつ本文と照らして「ある」ものを消していく。列挙された語句は本文の同じ箇所にまとまっていることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "bloc",
+      "pos": "名",
+      "ja": "（国の）ブロック、連合",
+      "gloss": "（＝共通の目的で結びついた国々のグループのこと）",
+      "example": {
+        "en": "The trading bloc agreed to lower prices on farm goods.",
+        "ja": "その貿易ブロックは農産物の価格を下げることで合意した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "seek",
+      "pos": "動",
+      "ja": "〜を求める、探す",
+      "gloss": "",
+      "example": {
+        "en": "We seek a supplier who can deliver on time.",
+        "ja": "当社は期日どおりに納品できる供給業者を探している。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "respond",
+      "pos": "動",
+      "ja": "対応する、返答する",
+      "gloss": "",
+      "example": {
+        "en": "The company must respond to customer requests within two days.",
+        "ja": "会社は顧客の依頼に2日以内に対応しなければならない。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "sector",
+      "pos": "名",
+      "ja": "部門、分野",
+      "gloss": "",
+      "example": {
+        "en": "The retail sector added many new jobs this year.",
+        "ja": "小売部門は今年、多くの新規雇用を生んだ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "competition",
+      "pos": "名",
+      "ja": "競争、競合",
+      "gloss": "",
+      "example": {
+        "en": "Competition between the two airlines has pushed prices down.",
+        "ja": "2つの航空会社の競争が価格を押し下げている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "gap",
+      "pos": "名",
+      "ja": "差、隔たり",
+      "gloss": "",
+      "example": {
+        "en": "The gap between sales and costs is getting smaller.",
+        "ja": "売上と費用の差は小さくなってきている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "address",
+      "pos": "動",
+      "ja": "（問題に）対処する",
+      "gloss": "",
+      "example": {
+        "en": "The manager will address the delay at tomorrow's meeting.",
+        "ja": "部長は明日の会議で遅延の問題に対処する。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "cut",
+      "pos": "動",
+      "ja": "減らす、削減する",
+      "gloss": "",
+      "example": {
+        "en": "The firm plans to cut costs by ten percent.",
+        "ja": "その会社は費用を10%削減する計画だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "ministers": {
+      "lemma": "minister",
+      "pos": "名",
+      "ja": "大臣",
+      "note": ""
+    },
+    "bloc": {
+      "lemma": "bloc",
+      "pos": "名",
+      "ja": "圏、連合",
+      "note": ""
+    },
+    "seek": {
+      "lemma": "seek",
+      "pos": "動",
+      "ja": "求める",
+      "note": ""
+    },
+    "deals": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "取り決め、合意",
+      "note": ""
+    },
+    "limit": {
+      "lemma": "limit",
+      "pos": "動",
+      "ja": "制限する",
+      "note": ""
+    },
+    "imports": {
+      "lemma": "import",
+      "pos": "名",
+      "ja": "輸入（品）",
+      "note": ""
+    },
+    "respond": {
+      "lemma": "respond",
+      "pos": "動",
+      "ja": "対応する",
+      "note": "respond to で「〜に対応する」"
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "形",
+      "ja": "増加中の",
+      "note": ""
+    },
+    "exports": {
+      "lemma": "export",
+      "pos": "名",
+      "ja": "輸出（品）",
+      "note": ""
+    },
+    "talks": {
+      "lemma": "talk",
+      "pos": "名",
+      "ja": "協議、交渉",
+      "note": "複数形で「協議」"
+    },
+    "chemicals": {
+      "lemma": "chemical",
+      "pos": "名",
+      "ja": "化学品",
+      "note": ""
+    },
+    "machinery": {
+      "lemma": "machinery",
+      "pos": "名",
+      "ja": "機械類",
+      "note": ""
+    },
+    "medicines": {
+      "lemma": "medicine",
+      "pos": "名",
+      "ja": "医薬品",
+      "note": ""
+    },
+    "sectors": {
+      "lemma": "sector",
+      "pos": "名",
+      "ja": "部門、分野",
+      "note": ""
+    },
+    "competition": {
+      "lemma": "competition",
+      "pos": "名",
+      "ja": "競争",
+      "note": ""
+    },
+    "agreed": {
+      "lemma": "agree",
+      "pos": "動",
+      "ja": "合意した",
+      "note": ""
+    },
+    "cut": {
+      "lemma": "cut",
+      "pos": "動",
+      "ja": "減らす",
+      "note": "cut は過去形・原形が同じ形"
+    },
+    "hybrid": {
+      "lemma": "hybrid",
+      "pos": "形",
+      "ja": "ハイブリッドの",
+      "note": ""
+    },
+    "gap": {
+      "lemma": "gap",
+      "pos": "名",
+      "ja": "差、格差",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "fear": {
+      "lemma": "fear",
+      "pos": "動",
+      "ja": "恐れる、懸念する",
+      "note": ""
+    },
+    "force": {
+      "lemma": "force",
+      "pos": "動",
+      "ja": "強いて〜させる",
+      "note": "force A to do で「Aに〜させる」"
+    },
+    "factories": {
+      "lemma": "factory",
+      "pos": "名",
+      "ja": "工場",
+      "note": ""
+    },
+    "chief": {
+      "lemma": "chief",
+      "pos": "名",
+      "ja": "責任者、トップ",
+      "note": ""
+    },
+    "address": {
+      "lemma": "address",
+      "pos": "動",
+      "ja": "対処する",
+      "note": ""
+    },
+    "technical": {
+      "lemma": "technical",
+      "pos": "形",
+      "ja": "実務的な、技術的な",
+      "note": ""
+    },
+    "political": {
+      "lemma": "political",
+      "pos": "形",
+      "ja": "政治的な",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "疑問詞＋to不定詞（which sectors to address：どの分野に対処すべきか）",
+    "quote": "Trade chief Maros Sefcovic said the bloc is studying which sectors to address next, either through talks or on its own.",
+    "quoteJa": "通商担当トップのマロシュ・シェフチョビッチ氏は、EUは協議を通じてか単独でか、次にどの分野に対処すべきかを検討中だと述べた。",
+    "blocks": [
+      {
+        "heading": "構文の名称と働き",
+        "body": "「疑問詞（what / which / how / where など）＋to不定詞」は、全体で名詞のまとまりになり、「〜すべきか」「〜のしかた」という意味を表します。本文の which sectors to address は「どの分野に対処すべきか」で、studying の目的語になっています。which の後ろに名詞（sectors）が続く形も作れます。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "疑問詞＋to不定詞は、疑問詞＋S＋should＋動詞の形に言い換えられます。\n・which sectors to address ＝ which sectors they should address\n・how to respond ＝ how they should respond\n主語が文の主語と同じ（または誰でもよい）ときに、to不定詞のほうがすっきり書けます。ただし whether は「whether to do」の形をとれますが、why は to不定詞と一緒に使えません。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では、know / decide / explain / show / learn などの後ろに「how to do」「what to do」「where to find」を選ぶ問題が頻出です。空所の後ろに to＋動詞の原形が続いていたら、疑問詞が入る可能性を疑いましょう。Part 7 のメールでは「Please let me know when to submit the form.」のような依頼文で出ます。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "・The manual explains how to set up the new printer.（マニュアルには新しいプリンターの設定方法が書かれている。）\n・We have not decided where to hold the annual meeting.（年次総会をどこで開くかはまだ決めていない。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 「チャイナ・ショック2.0」とは何か",
+      "body": "2000年代に中国からの安価な製品が世界に流れ込み、先進国の製造業の雇用が失われた現象は「チャイナ・ショック」と呼ばれました。今回の「2.0」は、中国が鉄鋼や化学品、機械、電気自動車などで作りすぎた分を輸出に振り向け、欧州の産業を再び圧迫しているという懸念を指します。EUの対中貿易赤字は1日約10億ユーロにのぼるとされ、域内では工場の閉鎖や産業の空洞化への警戒が強まっています。"
+    },
+    {
+      "heading": "📌 2. EUが使える手段",
+      "body": "EUは今月初めの北京での協議で、中国製ハイブリッド車の輸入を半分以上減らす方向で中国側と一致しました。今回の閣僚会合は、同様の合意を化学品・機械・医薬品へ広げられるかを探るものです。協議がまとまらない場合に備え、EUの首脳は先週、欧州委員会に市場アクセスを断ち得る手段（いわゆるキルスイッチ）の検討を求めました。実務協議は年末まで、政治交渉は2027年1月と3月の予定です。"
+    },
+    {
+      "heading": "📌 3. 業界・競合の動き",
+      "body": "自動車、化学、機械は欧州の主力産業であり、中国メーカーとの価格競争が最も激しい分野です。一方で、中国は報復を示唆しており、EU企業の中国市場での売上や、レアアースなど重要資源の供給にも影響しかねません。EU域内でも、輸入規制に積極的な国と、中国との貿易や投資に依存する国とで意見が分かれやすい点が交渉の難しさです。"
+    },
+    {
+      "heading": "📌 4. 日本・投資家への示唆",
+      "body": "日本企業にとっては、欧州市場で中国製品の流入が抑えられれば、価格競争の緩和につながる可能性があります。ただし、行き場を失った中国製品がアジアや日本市場へ向かう「輸出先の付け替え」が起きれば、国内の化学・機械メーカーの競争が一段と厳しくなりかねません。投資家は、欧州に工場を持つ日本の自動車・化学企業の収益と、通商摩擦を受けた為替・資源価格の変動に注意が必要です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "EU ministers vow to tackle 'China Shock 2.0' through talks with Beijing",
+      "publisher": "Reuters（Investing.com 配信）",
+      "url": "https://www.investing.com/news/economic-indicators/eu-ministers-vow-to-tackle-china-shock-20-through-talks-with-beijing-4969048",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "EU Working on More China Curbs as Trade Deficit Heads for Record",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-23/eu-looks-beyond-cars-for-next-round-of-china-trade-talks",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "EU trade chief seeks to rebalance EU-China trade as Brussels weighs tougher measures",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/2026/10/23/eu-trade-chief-seeks-to-rebalance-eu-china-trade-as-brussels-weighs-tougher-measures",
+      "date": "2026-10-23"
+    }
+  ]
+}
