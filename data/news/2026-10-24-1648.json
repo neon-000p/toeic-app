@@ -442,5 +442,22 @@
       "url": "https://www.euronews.com/2026/10/23/eu-trade-chief-seeks-to-rebalance-eu-china-trade-as-brussels-weighs-tougher-measures",
       "date": "2026-10-23"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-24-1648/00.mp3",
+      "audio/2026-10-24-1648/01.mp3",
+      "audio/2026-10-24-1648/02.mp3",
+      "audio/2026-10-24-1648/03.mp3",
+      "audio/2026-10-24-1648/04.mp3",
+      "audio/2026-10-24-1648/05.mp3",
+      "audio/2026-10-24-1648/06.mp3",
+      "audio/2026-10-24-1648/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 221064,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-24T07:49:16.762Z",
+    "trimmed": true
+  }
 }
