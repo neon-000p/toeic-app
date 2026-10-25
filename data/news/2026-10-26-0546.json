@@ -458,5 +458,23 @@
       "url": "https://www.bankingdive.com/news/amex-american-express-cut-3500-employees-ai-squeri/833861/",
       "date": "2026-10-23"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-26-0546/00.mp3",
+      "audio/2026-10-26-0546/01.mp3",
+      "audio/2026-10-26-0546/02.mp3",
+      "audio/2026-10-26-0546/03.mp3",
+      "audio/2026-10-26-0546/04.mp3",
+      "audio/2026-10-26-0546/05.mp3",
+      "audio/2026-10-26-0546/06.mp3",
+      "audio/2026-10-26-0546/07.mp3",
+      "audio/2026-10-26-0546/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 191532,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-25T20:48:30.481Z",
+    "trimmed": true
+  }
 }
