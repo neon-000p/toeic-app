@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-26-0546",
+  "date": "2026-10-26",
+  "time": "05:46",
+  "createdAt": "2026-10-26T05:46:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "Amex to Cut 5% of Staff to Prepare for AI",
+    "ja": "アメックス、AI対応へ人員5%削減"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "American Express said on Thursday that it will cut about 5% of its global workforce.",
+            "ja": "アメリカン・エキスプレスは木曜日、世界全体の従業員の約5%を削減すると発表した。"
+          },
+          {
+            "en": "The card company had almost 77,000 employees at the end of last year.",
+            "ja": "このカード会社には昨年末時点で約7万7000人の従業員がいた。"
+          },
+          {
+            "en": "Managers plan to remove layers of management and streamline the organization.",
+            "ja": "経営陣は管理職の階層を減らし、組織を簡素化する計画だ。"
+          },
+          {
+            "en": "The cuts come even though the firm's profit is growing.",
+            "ja": "会社の利益が伸びているにもかかわらず、この削減が行われる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The finance chief said the goal is to prepare the company for artificial intelligence.",
+            "ja": "最高財務責任者は、目的は会社をAIに備えさせることだと述べた。"
+          },
+          {
+            "en": "He explained that the firm must first simplify its processes so that it can automate them later.",
+            "ja": "同氏は、後で自動化できるように、まず業務プロセスを簡素化する必要があると説明した。"
+          },
+          {
+            "en": "He added that the company does not want to automate tasks that are poorly organized.",
+            "ja": "また、整理されていない業務は自動化したくないとも付け加えた。"
+          },
+          {
+            "en": "Barclays, a British bank, has also planned to reduce its headcount by about 5%.",
+            "ja": "英国の銀行バークレイズも、人員を約5%減らす計画を立てている。"
+          },
+          {
+            "en": "These moves suggest that large employers will reshape their staffing as AI spreads.",
+            "ja": "こうした動きは、AIの普及に合わせて大手企業が人員体制を見直していることを示している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What share of its global workforce will American Express cut?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 3%",
+          "ja": "約3%"
+        },
+        {
+          "key": "B",
+          "text": "About 5%",
+          "ja": "約5%"
+        },
+        {
+          "key": "C",
+          "text": "About 8%",
+          "ja": "約8%"
+        },
+        {
+          "key": "D",
+          "text": "About 10%",
+          "ja": "約10%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落1文目に「cut about 5% of its global workforce」とあり、正解は B。A・C・D は本文にない割合で、第2段落で Barclays の削減率も約5%と出てくるため数字だけで選ぶと混乱しやすい。ただし設問の主語は American Express なので、まず1文目を確認すればよい。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "設問の主語（どの会社か）と数字を対応させて探す。本文に複数の会社が出る場合、別の会社の数字を引っかけに使われやすい。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why does the company want to simplify its processes first?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To lower its tax payments",
+          "ja": "納税額を減らすため"
+        },
+        {
+          "key": "B",
+          "text": "To open offices abroad",
+          "ja": "海外に拠点を開くため"
+        },
+        {
+          "key": "C",
+          "text": "To be able to automate them later",
+          "ja": "後で自動化できるようにするため"
+        },
+        {
+          "key": "D",
+          "text": "To hire more managers",
+          "ja": "管理職を増やすため"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落2文目「simplify its processes so that it can automate them later」より、後で自動化できるようにするためなので C。A の税金と B の海外拠点は本文に出てこない。D は本文の「remove layers of management（管理職の階層を減らす）」と逆の内容で、引っかけ。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由を問う設問は so that / because / to do などの目的・理由を示す表現の直後を探す。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "workforce",
+      "pos": "名",
+      "ja": "従業員（全体）、労働力",
+      "gloss": "",
+      "example": {
+        "en": "The company's workforce grew by 10% last year.",
+        "ja": "その会社の従業員数は昨年10%増えた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "layer",
+      "pos": "名",
+      "ja": "層、階層",
+      "gloss": "",
+      "example": {
+        "en": "The new manager removed one layer of approval.",
+        "ja": "新しい部長は承認の段階を1つ減らした。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "streamline",
+      "pos": "動",
+      "ja": "簡素化する、効率化する",
+      "gloss": "（＝無駄をなくして流れをよくすること）",
+      "example": {
+        "en": "We plan to streamline the ordering process.",
+        "ja": "私たちは発注の手順を効率化する予定だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "simplify",
+      "pos": "動",
+      "ja": "簡単にする、簡素化する",
+      "gloss": "",
+      "example": {
+        "en": "Please simplify the form so customers can finish it quickly.",
+        "ja": "顧客がすぐ記入できるよう、書式を簡単にしてください。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "automate",
+      "pos": "動",
+      "ja": "自動化する",
+      "gloss": "（＝人の手を使わず機械やソフトに任せること）",
+      "example": {
+        "en": "The warehouse will automate its inventory counts next year.",
+        "ja": "その倉庫は来年、在庫の数え上げを自動化する。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "headcount",
+      "pos": "名",
+      "ja": "人員数、従業員数",
+      "gloss": "（＝会社の人数のこと）",
+      "example": {
+        "en": "The firm froze its headcount for the rest of the year.",
+        "ja": "その会社は年内の人員数を据え置いた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "reshape",
+      "pos": "動",
+      "ja": "作り直す、見直す",
+      "gloss": "",
+      "example": {
+        "en": "The merger will reshape the entire sales department.",
+        "ja": "その合併は営業部門全体を作り変えるだろう。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "staffing",
+      "pos": "名",
+      "ja": "人員配置、人員体制",
+      "gloss": "",
+      "example": {
+        "en": "Staffing at the new branch is still under review.",
+        "ja": "新支店の人員配置はまだ検討中だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "workforce": {
+      "lemma": "workforce",
+      "pos": "名",
+      "ja": "従業員全体",
+      "note": ""
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界的な",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    },
+    "layers": {
+      "lemma": "layer",
+      "pos": "名",
+      "ja": "階層",
+      "note": ""
+    },
+    "management": {
+      "lemma": "management",
+      "pos": "名",
+      "ja": "経営陣、管理職",
+      "note": ""
+    },
+    "streamline": {
+      "lemma": "streamline",
+      "pos": "動",
+      "ja": "簡素化する",
+      "note": ""
+    },
+    "organization": {
+      "lemma": "organization",
+      "pos": "名",
+      "ja": "組織",
+      "note": ""
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "growing": {
+      "lemma": "grow",
+      "pos": "動",
+      "ja": "成長している",
+      "note": ""
+    },
+    "finance": {
+      "lemma": "finance",
+      "pos": "名",
+      "ja": "財務",
+      "note": ""
+    },
+    "chief": {
+      "lemma": "chief",
+      "pos": "名",
+      "ja": "最高責任者",
+      "note": ""
+    },
+    "goal": {
+      "lemma": "goal",
+      "pos": "名",
+      "ja": "目標",
+      "note": ""
+    },
+    "prepare": {
+      "lemma": "prepare",
+      "pos": "動",
+      "ja": "備える",
+      "note": ""
+    },
+    "artificial": {
+      "lemma": "artificial",
+      "pos": "形",
+      "ja": "人工の",
+      "note": ""
+    },
+    "intelligence": {
+      "lemma": "intelligence",
+      "pos": "名",
+      "ja": "知能",
+      "note": ""
+    },
+    "simplify": {
+      "lemma": "simplify",
+      "pos": "動",
+      "ja": "簡素化する",
+      "note": ""
+    },
+    "processes": {
+      "lemma": "process",
+      "pos": "名",
+      "ja": "業務手順",
+      "note": ""
+    },
+    "automate": {
+      "lemma": "automate",
+      "pos": "動",
+      "ja": "自動化する",
+      "note": ""
+    },
+    "explained": {
+      "lemma": "explain",
+      "pos": "動",
+      "ja": "説明した",
+      "note": ""
+    },
+    "tasks": {
+      "lemma": "task",
+      "pos": "名",
+      "ja": "業務、作業",
+      "note": ""
+    },
+    "poorly": {
+      "lemma": "poorly",
+      "pos": "副",
+      "ja": "不十分に",
+      "note": ""
+    },
+    "organized": {
+      "lemma": "organize",
+      "pos": "動",
+      "ja": "整理された",
+      "note": ""
+    },
+    "reduce": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "headcount": {
+      "lemma": "headcount",
+      "pos": "名",
+      "ja": "人員数",
+      "note": ""
+    },
+    "planned": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "計画した",
+      "note": ""
+    },
+    "reshape": {
+      "lemma": "reshape",
+      "pos": "動",
+      "ja": "見直す",
+      "note": ""
+    },
+    "staffing": {
+      "lemma": "staffing",
+      "pos": "名",
+      "ja": "人員体制",
+      "note": ""
+    },
+    "spreads": {
+      "lemma": "spread",
+      "pos": "動",
+      "ja": "広がる",
+      "note": ""
+    },
+    "employers": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主、企業",
+      "note": ""
+    },
+    "moves": {
+      "lemma": "move",
+      "pos": "名",
+      "ja": "動き、措置",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "目的を表す so that（so that＋S＋can/will＋動詞）",
+    "quote": "He explained that the firm must first simplify its processes so that it can automate them later.",
+    "quoteJa": "同氏は、後で自動化できるように、まず業務プロセスを簡素化する必要があると説明した。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "so that は「〜できるように、〜するために」という目的を表す接続詞で、後ろに「主語＋can / will / may＋動詞」の節が続きます。ここでは simplify its processes（手順を簡素化する）という行動の目的が、so that it can automate them later（後で自動化できるように）で示されています。so that の前にカンマは通常置きません。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "so that it can automate ... ＝ in order to automate ...（主語が同じなら to 不定詞で言い換え可）。ただし主語が変わる場合は so that のみ使えます。例：We will send the file now so that you can review it today.（あなたが確認できるように）。なお、so ... that ～（とても…なので～）は結果を表す別の構文なので区別しましょう。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 では so that / because / so の選択や、so that の後ろの助動詞（can / will）を選ぶ問題が出ます。Part 7 では「なぜ〜するのか」という設問の答えが so that や in order to の直後にあることが多いので、設問の理由を探すときの目印にしましょう。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Please submit the report by Friday so that we can finalize the budget. / We updated the system so that staff can access files remotely."
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. ニュースの要点：好業績でも人員を減らす",
+      "body": "アメリカン・エキスプレス（アメックス）は世界最大級のクレジットカード会社の一つです。今回、全従業員の約5%を削減すると発表しました。報道によっては人数を約3,500人、約3,800人などと異なる数字で伝えており、確定した人数より「約5%」という割合が共通した事実です。同時期の決算は好調で、業績悪化によるリストラではない点が特徴です。"
+    },
+    {
+      "heading": "📌 2. 用語解説：「階層を減らす」とは",
+      "body": "原文の remove layers は、管理職の階層（係長→課長→部長…）を減らして意思決定を速くする組織改革を指します。経営用語では「フラット化」と呼ばれます。会社は、業務手順が整理されていないままAIで自動化すると混乱が大きくなるため、先に組織と手順を整える方針だと説明しています。"
+    },
+    {
+      "heading": "📌 3. 業界の動向：金融業界でAI対応の人員見直しが続く",
+      "body": "英国のバークレイズも人員を約5%減らす計画を立てており、大手金融機関では事務・管理部門を中心に、AI活用を見据えた人員体制の見直しが相次いでいます。AIが定型業務を代替しやすい分野ほど、採用抑制や配置転換が進む傾向があります。"
+    },
+    {
+      "heading": "📌 4. 日本への影響と投資家の視点",
+      "body": "日本のメガバンクや保険会社でも、事務作業の自動化と人員配置の見直しが進んでいます。ビジネスパーソンにとっては、定型業務をこなす力だけでなく、AIを使いこなし、判断や対人調整といった付加価値を出す力が重視される流れです。投資家にとっては、人員削減は短期的にコストを下げ利益率を押し上げる材料ですが、再編費用の発生や、実際にAIで生産性が上がるかの見極めが重要になります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "American Express is cutting 5% of its workforce to 'prepare for AI'",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/23/american-express-job-cuts.html",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "Amex to cut roughly 3,500 employees",
+      "publisher": "Banking Dive",
+      "url": "https://www.bankingdive.com/news/amex-american-express-cut-3500-employees-ai-squeri/833861/",
+      "date": "2026-10-23"
+    }
+  ]
+}
