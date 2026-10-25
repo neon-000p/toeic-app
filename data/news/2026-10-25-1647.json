@@ -448,5 +448,22 @@
       "url": "https://www.benzinga.com/markets/earnings/26/10/62527709/tide-and-gillette-maker-procter-gambles-sales-machine-keeps-humming-despite-inflation-pressure",
       "date": "2026-10-22"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-25-1647/00.mp3",
+      "audio/2026-10-25-1647/01.mp3",
+      "audio/2026-10-25-1647/02.mp3",
+      "audio/2026-10-25-1647/03.mp3",
+      "audio/2026-10-25-1647/04.mp3",
+      "audio/2026-10-25-1647/05.mp3",
+      "audio/2026-10-25-1647/06.mp3",
+      "audio/2026-10-25-1647/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 225472,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-25T07:49:08.353Z",
+    "trimmed": true
+  }
 }
