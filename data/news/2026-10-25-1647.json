@@ -1,0 +1,452 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-25-1647",
+  "date": "2026-10-25",
+  "time": "16:47",
+  "createdAt": "2026-10-25T16:47:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "P&G Beats Forecasts and Keeps Its Outlook",
+    "ja": "P&G、予想上回る決算で通期見通し据え置き"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Procter & Gamble reported better-than-expected results for its latest quarter on Thursday.",
+            "ja": "プロクター・アンド・ギャンブル（P&G）は木曜、直近の四半期について市場予想を上回る決算を発表した。"
+          },
+          {
+            "en": "Sales rose 4% to $23.3 billion, helped by higher volume and a better product mix rather than by higher prices.",
+            "ja": "売上高は4%増の233億ドルで、販売数量の増加と商品構成の改善が寄与した（値上げ頼みではない）。"
+          },
+          {
+            "en": "Core earnings per share were $2.00, which beat analyst forecasts.",
+            "ja": "コア1株当たり利益は2.00ドルで、アナリスト予想を上回った。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The company kept its yearly forecast for organic sales growth, which leaves out deals and currency effects, at 1% to 3%.",
+            "ja": "同社は、買収や為替の影響を除くオーガニック売上高の通期成長率予想を1〜3%に据え置いた。"
+          },
+          {
+            "en": "Although it did not raise this range, management said the strong start keeps the firm on track to meet its goals.",
+            "ja": "この範囲は引き上げなかったものの、経営陣は好調な出だしにより目標達成に向けて順調だと述べた。"
+          },
+          {
+            "en": "Its total sales forecast rose to 2% to 4% after it bought Thorne, a supplement maker.",
+            "ja": "サプリメントメーカーのソーンを買収したことで、全体の売上高予想は2〜4%に上方修正された。"
+          },
+          {
+            "en": "Higher costs for raw materials remain a concern, but investors welcomed the news.",
+            "ja": "原材料費の上昇は引き続き懸念材料だが、投資家はこの発表を歓迎した。"
+          },
+          {
+            "en": "Shares jumped 5.6% on Thursday to their highest level since late February.",
+            "ja": "株価は木曜に5.6%急伸し、2月下旬以来の高値をつけた。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much were Procter & Gamble's sales for the quarter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$2.00 million",
+          "ja": "200万ドル"
+        },
+        {
+          "key": "B",
+          "text": "$4 billion",
+          "ja": "40億ドル"
+        },
+        {
+          "key": "C",
+          "text": "$23.3 billion",
+          "ja": "233億ドル"
+        },
+        {
+          "key": "D",
+          "text": "$33 billion",
+          "ja": "330億ドル"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落2文目に「Sales rose 4% to $23.3 billion」とあり、売上高は233億ドル（C）。A の 2.00 は1株当たり利益（ドル）の数字を混ぜた引っかけ、B の「4」は増収率 4% を金額にすり替えた引っかけ。D は本文にない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "金額・割合が複数出る記事では「何の数字か（売上・利益・増加率）」を本文の主語と結びつけて確認する。選択肢の数字は本文の別の数字を流用した引っかけが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did the company's total sales forecast rise to 2% to 4%?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It raised prices on many products.",
+          "ja": "多くの商品を値上げした"
+        },
+        {
+          "key": "B",
+          "text": "It bought a supplement maker.",
+          "ja": "サプリメント会社を買収した"
+        },
+        {
+          "key": "C",
+          "text": "Raw material costs fell sharply.",
+          "ja": "原材料費が大幅に下がった"
+        },
+        {
+          "key": "D",
+          "text": "Its organic growth range was raised.",
+          "ja": "オーガニック成長率の範囲を引き上げた"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落3文目に「rose to 2% to 4% after it bought Thorne, a supplement maker」とあり、買収が理由（B）。A の値上げは本文に書かれていない。C は逆で、原材料費は懸念材料。D は、オーガニック成長率は1〜3%で据え置かれたと本文にあるので誤り。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "理由を問う問題は after / because / due to など理由を示す語の前後に答えがある。本文と逆の内容（C・D）を選ばせる引っかけに注意。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "forecast",
+      "pos": "名・動",
+      "ja": "予想、予測（する）",
+      "gloss": "",
+      "example": {
+        "en": "The sales forecast for next year looks positive.",
+        "ja": "来年の売上予想は明るい。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "volume",
+      "pos": "名",
+      "ja": "量、販売数量",
+      "gloss": "（＝売れた個数や取扱量のこと）",
+      "example": {
+        "en": "Higher shipping volume pushed up our revenue.",
+        "ja": "出荷量の増加で収益が押し上げられた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "organic",
+      "pos": "形",
+      "ja": "オーガニックの（買収や為替を除いた）",
+      "gloss": "（＝買収や為替の影響を除いた、事業そのものの成長のこと）",
+      "example": {
+        "en": "Organic growth came mainly from existing customers.",
+        "ja": "オーガニックな成長は主に既存顧客によるものだった。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "range",
+      "pos": "名",
+      "ja": "範囲、幅",
+      "gloss": "",
+      "example": {
+        "en": "The price range for the new model is quite wide.",
+        "ja": "新モデルの価格帯はかなり幅広い。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "gloss": "",
+      "example": {
+        "en": "The firm plans to raise its profit target.",
+        "ja": "その会社は利益目標を引き上げる予定だ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "on track",
+      "pos": "熟",
+      "ja": "順調で、予定どおりで",
+      "gloss": "",
+      "example": {
+        "en": "The project is on track to finish by June.",
+        "ja": "そのプロジェクトは6月までに完了する見込みだ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "raw materials",
+      "pos": "名",
+      "ja": "原材料",
+      "gloss": "",
+      "example": {
+        "en": "The price of raw materials has gone up again.",
+        "ja": "原材料の価格がまた上がった。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "concern",
+      "pos": "名",
+      "ja": "懸念、心配",
+      "gloss": "",
+      "example": {
+        "en": "Rising costs are a major concern for the retailer.",
+        "ja": "コスト上昇はその小売業者にとって大きな懸念だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "sales": {
+      "lemma": "sale",
+      "pos": "名",
+      "ja": "売上",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": ""
+    },
+    "volume": {
+      "lemma": "volume",
+      "pos": "名",
+      "ja": "販売数量",
+      "note": ""
+    },
+    "mix": {
+      "lemma": "mix",
+      "pos": "名",
+      "ja": "商品構成",
+      "note": ""
+    },
+    "core": {
+      "lemma": "core",
+      "pos": "形",
+      "ja": "中核の",
+      "note": ""
+    },
+    "earnings": {
+      "lemma": "earnings",
+      "pos": "名",
+      "ja": "利益、収益",
+      "note": ""
+    },
+    "beat": {
+      "lemma": "beat",
+      "pos": "動",
+      "ja": "上回った",
+      "note": ""
+    },
+    "analyst": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "forecasts": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予想",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予想",
+      "note": ""
+    },
+    "yearly": {
+      "lemma": "yearly",
+      "pos": "形",
+      "ja": "年間の",
+      "note": ""
+    },
+    "organic": {
+      "lemma": "organic",
+      "pos": "形",
+      "ja": "オーガニックの",
+      "note": ""
+    },
+    "growth": {
+      "lemma": "growth",
+      "pos": "名",
+      "ja": "成長",
+      "note": ""
+    },
+    "range": {
+      "lemma": "range",
+      "pos": "名",
+      "ja": "範囲",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "management": {
+      "lemma": "management",
+      "pos": "名",
+      "ja": "経営陣",
+      "note": ""
+    },
+    "track": {
+      "lemma": "track",
+      "pos": "名",
+      "ja": "軌道、進路",
+      "note": ""
+    },
+    "supplement": {
+      "lemma": "supplement",
+      "pos": "名",
+      "ja": "サプリメント",
+      "note": ""
+    },
+    "maker": {
+      "lemma": "maker",
+      "pos": "名",
+      "ja": "メーカー",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "raw": {
+      "lemma": "raw",
+      "pos": "形",
+      "ja": "未加工の",
+      "note": ""
+    },
+    "materials": {
+      "lemma": "material",
+      "pos": "名",
+      "ja": "材料",
+      "note": ""
+    },
+    "concern": {
+      "lemma": "concern",
+      "pos": "名",
+      "ja": "懸念",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "welcomed": {
+      "lemma": "welcome",
+      "pos": "動",
+      "ja": "歓迎した",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式",
+      "note": ""
+    },
+    "jumped": {
+      "lemma": "jump",
+      "pos": "動",
+      "ja": "急騰した",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "譲歩の接続詞 although（Although＋S＋V, 主節）",
+    "quote": "Although it did not raise this range, management said the strong start keeps the firm on track to meet its goals.",
+    "quoteJa": "この範囲は引き上げなかったものの、経営陣は好調な出だしにより目標達成に向けて順調だと述べた。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "Although は「〜だけれども」を表す譲歩の接続詞で、後ろに「主語＋動詞」を置いて副詞節を作ります。Although it did not raise this range（範囲は引き上げなかったが）という控えめな事実を先に述べ、主節で本当に伝えたいこと（順調である）を続けています。主節が文の主張です。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Although it did not raise this range, ... ＝ Even though it did not raise this range, ... ＝ Despite not raising this range, ...（前置詞は後ろが名詞・動名詞）。また「..., but management said ...」とも言い換えられますが、although と but は同時に使えません（×Although ..., but ...）。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 では although / despite / because / however の選択が頻出です。後ろが「S＋V」なら although（接続詞）、名詞句なら despite / in spite of（前置詞）、however は副詞で文を2つつなげません。Part 7 では譲歩の後ろの主節が筆者の主張になるので、そこを読み取ります。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Although sales fell slightly in June, we expect a full recovery by the third quarter. / Although the meeting was shortened, all agenda items were covered."
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 決算の意味：「予想超え」と「見通し据え置き」",
+      "body": "P&G は洗剤（タイド）、カミソリ（ジレット）、紙おむつなど日用品の世界最大手です。今回は売上・利益とも市場予想を上回りました。一方、通期のオーガニック成長率予想は据え置きでした。株価が大きく上がったのは、「悪い材料が出なかった」うえに、販売数量が増えて値上げ頼みではない成長が確認できたためと考えられます。"
+    },
+    {
+      "heading": "📌 2. 用語解説：オーガニック成長とコア EPS",
+      "body": "オーガニック成長とは、買収・売却や為替変動の影響を取り除いた「事業そのものの成長」です。コア EPS は、一時的な費用などを除いた1株当たり利益で、企業の実力を比べやすくするために使われます。決算記事ではこの2つがよく登場するので、意味を押さえておくと読みやすくなります。"
+    },
+    {
+      "heading": "📌 3. 業界の動向：原材料費と消費者の節約志向",
+      "body": "日用品業界では、原材料やエネルギー、輸送のコストが上がり、各社の利益を圧迫しています。値上げをすると消費者が安い商品に流れるリスクがあり、各社は値上げと販売数量のバランスに苦心しています。今回は数量と商品構成の改善が成長を支えた点が評価されました。"
+    },
+    {
+      "heading": "📌 4. 日本への影響と投資家の視点",
+      "body": "花王やユニ・チャームなど日本の日用品メーカーも、同じ原材料高と値上げの課題を抱えており、P&G の動向は競合の参考になります。投資家にとっては、「ディフェンシブ銘柄（景気に左右されにくい株）」の底堅さを確認する材料です。経営者の視点では、買収で成長を補いつつ、既存事業で数量を伸ばす戦略が示唆になります。ビジネスパーソンは、見通しを据え置く企業の発言を「慎重なのか自信があるのか」を意識して読むと、決算ニュースの理解が深まります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "P&G Announces Fiscal Year 2027 First Quarter Results",
+      "publisher": "Procter & Gamble Investor Relations",
+      "url": "https://www.pginvestor.com/news/news-details/2026/PG-Announces-Fiscal-Year-2027-First-Quarter-Results/default.aspx",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "Procter & Gamble shares rise 2% in premarket trade after Q1 sales, profit beat",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/procter-gamble-shares-rise-2-114412483.html",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "Tide and Gillette maker Procter & Gamble's sales machine keeps humming despite inflation pressure",
+      "publisher": "Benzinga",
+      "url": "https://www.benzinga.com/markets/earnings/26/10/62527709/tide-and-gillette-maker-procter-gambles-sales-machine-keeps-humming-despite-inflation-pressure",
+      "date": "2026-10-22"
+    }
+  ]
+}
