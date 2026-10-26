@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-27-0546",
+  "date": "2026-10-27",
+  "time": "05:46",
+  "createdAt": "2026-10-27T05:46:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "PC Shipments Fall by a Fifth as Memory Costs Rise",
+    "ja": "メモリー高騰でPC出荷が2割減"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Global PC shipments fell by more than 20 percent in the third quarter, according to new reports from several research firms.",
+            "ja": "世界のパソコン出荷台数は、複数の調査会社の最新報告によると、第3四半期に20％超減少した。"
+          },
+          {
+            "en": "IDC said makers shipped 62.7 million computers, down 20.1 percent from a year earlier.",
+            "ja": "IDCによると、メーカーの出荷は6,270万台で、前年同期比20.1％減だった。"
+          },
+          {
+            "en": "Lenovo remained the largest seller, but its shipments dropped by 22.6 percent.",
+            "ja": "レノボは引き続き最大の販売元だったが、出荷は22.6％減少した。"
+          },
+          {
+            "en": "Gartner reported a similar fall of 22.4 percent.",
+            "ja": "Gartnerも22.4％減と同様の落ち込みを報告した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Analysts blame the price of memory chips, which has risen sharply as AI data centers buy huge amounts of them.",
+            "ja": "アナリストは、AIデータセンターが大量に買い付けるためメモリー半導体の価格が急騰したことを原因に挙げている。"
+          },
+          {
+            "en": "PC makers passed the higher costs on to customers, pushing prices up and weakening demand.",
+            "ja": "PCメーカーは値上がりしたコストを顧客に転嫁し、価格を押し上げて需要を弱めた。"
+          },
+          {
+            "en": "Omdia expects shipments to fall by another 24 percent in the fourth quarter, so companies may delay product launches and cut orders from suppliers.",
+            "ja": "Omdiaは第4四半期にさらに24％の出荷減を見込んでおり、各社は新製品の発売を遅らせ、サプライヤーへの発注を減らす可能性がある。"
+          },
+          {
+            "en": "Memory prices are now several times higher than they were a year ago.",
+            "ja": "メモリー価格は現在、1年前の数倍の水準にある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did PC shipments fall from a year earlier, according to IDC?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10.1 percent",
+          "ja": "10.1％"
+        },
+        {
+          "key": "B",
+          "text": "20.1 percent",
+          "ja": "20.1％"
+        },
+        {
+          "key": "C",
+          "text": "22.6 percent",
+          "ja": "22.6％"
+        },
+        {
+          "key": "D",
+          "text": "24 percent",
+          "ja": "24％"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。第1段落2文目に「IDC said makers shipped 62.7 million computers, down 20.1 percent」とある。Aは本文にない数字。Cはレノボ単独の減少率（22.6％）で、IDC全体の数字ではない。Dは第4四半期にOmdiaが見込む今後の減少率で、第3四半期の実績ではない。数字の問題は『誰の・いつの数字か』を主語まで確認するのがポイント。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字問題は選択肢の数字が本文に複数あることが多い。主語（IDC／レノボ／Omdia）と時期（第3四半期か第4四半期か）をセットで照合する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why did demand for PCs weaken?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Makers passed higher memory costs on to customers.",
+          "ja": "メーカーが高いメモリー費用を顧客に転嫁した"
+        },
+        {
+          "key": "B",
+          "text": "Lenovo stopped selling computers.",
+          "ja": "レノボが販売を停止した"
+        },
+        {
+          "key": "C",
+          "text": "AI data centers stopped buying chips.",
+          "ja": "AIデータセンターがチップ購入をやめた"
+        },
+        {
+          "key": "D",
+          "text": "Suppliers raised orders from makers.",
+          "ja": "供給業者がメーカーへの発注を増やした"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正解はA。第2段落2文目に「PC makers passed the higher costs on to customers, pushing prices up and weakening demand」とあり、費用の転嫁→価格上昇→需要減という因果が読み取れる。Bはレノボは『最大の販売元のまま』なので誤り。Cは本文と逆で、AIデータセンターは大量にチップを買っている。Dは発注を減らすのは企業側（サプライヤーへの発注）であり、向きが逆。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由問題は because / so / -ing（分詞構文）など因果を示す表現の前後に根拠がある。本文の言い換え（passed ... on → 転嫁）を選択肢で探す。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "shipments",
+      "pos": "名",
+      "ja": "出荷、出荷台数",
+      "gloss": "",
+      "example": {
+        "en": "The shipments will leave the warehouse on Monday.",
+        "ja": "その出荷分は月曜に倉庫を出る予定だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "according to",
+      "pos": "熟",
+      "ja": "〜によると",
+      "gloss": "",
+      "example": {
+        "en": "According to the schedule, the meeting starts at ten.",
+        "ja": "予定表によると、会議は10時に始まる。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "remained",
+      "pos": "動",
+      "ja": "〜のままである",
+      "gloss": "",
+      "example": {
+        "en": "The store remained open during the renovation.",
+        "ja": "その店舗は改装中も営業を続けた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "blame",
+      "pos": "動",
+      "ja": "〜のせいにする、原因とみなす",
+      "gloss": "",
+      "example": {
+        "en": "Managers blame the delay on a late shipment.",
+        "ja": "管理職は遅れを出荷の遅延のせいにしている。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "costs",
+      "pos": "名",
+      "ja": "費用、コスト",
+      "gloss": "",
+      "example": {
+        "en": "We need to reduce costs by ten percent.",
+        "ja": "私たちは費用を10％削減する必要がある。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for the new model is growing.",
+        "ja": "新型への需要は高まっている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "delay",
+      "pos": "動",
+      "ja": "〜を遅らせる",
+      "gloss": "",
+      "example": {
+        "en": "The company decided to delay the launch until spring.",
+        "ja": "同社は発売を春まで遅らせることにした。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "suppliers",
+      "pos": "名",
+      "ja": "供給業者、サプライヤー",
+      "gloss": "",
+      "example": {
+        "en": "Our suppliers deliver parts every week.",
+        "ja": "当社の供給業者は毎週部品を納入している。"
+      }
+    }
+  ],
+  "glossary": {
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": ""
+    },
+    "according": {
+      "lemma": "according to",
+      "pos": "熟",
+      "ja": "〜によると",
+      "note": ""
+    },
+    "shipped": {
+      "lemma": "ship",
+      "pos": "動",
+      "ja": "出荷した",
+      "note": ""
+    },
+    "remained": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "〜のままだった",
+      "note": ""
+    },
+    "largest": {
+      "lemma": "large",
+      "pos": "形",
+      "ja": "最大の",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下がった",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "blame": {
+      "lemma": "blame",
+      "pos": "動",
+      "ja": "原因とみなす",
+      "note": ""
+    },
+    "memory": {
+      "lemma": "memory",
+      "pos": "名",
+      "ja": "メモリー",
+      "note": ""
+    },
+    "risen": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "passed": {
+      "lemma": "pass",
+      "pos": "動",
+      "ja": "渡した、転嫁した",
+      "note": "passed A on to B で「AをBに転嫁する」"
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "pushing": {
+      "lemma": "push",
+      "pos": "動",
+      "ja": "押し上げる",
+      "note": ""
+    },
+    "weakening": {
+      "lemma": "weaken",
+      "pos": "動",
+      "ja": "弱める",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込む",
+      "note": ""
+    },
+    "another": {
+      "lemma": "another",
+      "pos": "形",
+      "ja": "さらなる",
+      "note": ""
+    },
+    "delay": {
+      "lemma": "delay",
+      "pos": "動",
+      "ja": "遅らせる",
+      "note": ""
+    },
+    "launches": {
+      "lemma": "launch",
+      "pos": "名",
+      "ja": "発売",
+      "note": ""
+    },
+    "orders": {
+      "lemma": "order",
+      "pos": "名",
+      "ja": "発注",
+      "note": ""
+    },
+    "suppliers": {
+      "lemma": "supplier",
+      "pos": "名",
+      "ja": "供給業者",
+      "note": ""
+    },
+    "makers": {
+      "lemma": "maker",
+      "pos": "名",
+      "ja": "メーカー",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "分詞構文（-ing 形で結果・付帯状況を表す）",
+    "quote": "PC makers passed the higher costs on to customers, pushing prices up and weakening demand.",
+    "quoteJa": "PCメーカーは値上がりしたコストを顧客に転嫁し、価格を押し上げて需要を弱めた。",
+    "blocks": [
+      {
+        "heading": "構文の名称と働き",
+        "body": "カンマの後ろの pushing ... and weakening ... は分詞構文で、主節の動作の『結果』や『同時に起きたこと』を表します。意味上の主語は主節の主語（PC makers）と同じです。接続詞と主語を省いて文を短くまとめる、ニュースやビジネス文書で多用される形です。"
+      },
+      {
+        "heading": "書き換えで理解する",
+        "body": "分詞構文は接続詞を使った文に戻せます。PC makers passed the higher costs on to customers, and as a result they pushed prices up and weakened demand.（…その結果、価格を押し上げ、需要を弱めた）。ただし『A, -ing』の形は、前から読み進めて『Aをして、その結果-ingになった』と理解すると速く読めます。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では、空所に動詞の -ing 形・過去分詞・原形のどれが入るかを問う形で出ます。主節の主語が -ing の動作をする側なら現在分詞（pushing）、される側なら過去分詞（pushed）です。Part 7 では、結果を表す -ing の後ろに原因・影響が続くため、因果関係の設問の根拠になります。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The company raised its prices, helping to protect its profit margin.（同社は価格を引き上げ、利益率の維持に役立てた。）／ We will revise the schedule, allowing the team to finish the project on time.（日程を見直し、チームが期限内にプロジェクトを終えられるようにします。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 メモリー価格はなぜ上がったのか",
+      "body": "パソコンやスマートフォンは、作業用の記憶装置であるメモリー半導体（DRAMなど）を必ず使います。ところがAIデータセンター向けの需要が急拡大し、メモリーメーカーが生産能力をそちらに振り向けた結果、一般向けの供給が細りました。Gartnerの分析では、第2四半期のDRAMコストは前年の約5倍に達したとされます。"
+    },
+    {
+      "heading": "📌 業界全体と各社の動向",
+      "body": "調査会社ごとに数字は異なります（IDCは20.1％減、Gartnerは22.4％減、Omdiaは21.2％減）が、いずれも約2割の大幅減という点で一致しています。レノボの出荷は22.6％減、HPは30.9％減、Dellは25％減と、主要メーカーが軒並み落ち込みました。一方でAppleのMacは台数は減っても市場シェアは上昇しており、価格転嫁力の差が表れています。"
+    },
+    {
+      "heading": "📌 日本企業・ビジネスパーソンへの影響",
+      "body": "日本の企業や学校でも、PCの調達価格の上昇や納期の遅れが起きやすくなります。円安が重なれば、輸入部材に頼るメーカーのコスト負担はさらに重くなります。社内のPC更新計画では、予算の積み増しか、更新時期の分散・延長を検討する必要があります。英語のニュースで shipments や costs が出てきたら、サプライチェーンの状況を読み取る手がかりになります。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "Omdiaは第4四半期にさらに24％減、2027年も7％減と予測しており、需要の回復は遅れる見通しです。投資家は、メモリーメーカーの収益拡大と、PCメーカーの利益率悪化という『勝ち負けの分かれ目』に注目します。経営者にとっては、値上げを受け入れてもらえる製品力があるか、在庫と発注量をどう調整するかが問われる局面です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Global PC shipments fall 20.1% as high prices curb demand, IDC says",
+      "publisher": "Techenclave (IDC data)",
+      "url": "https://techenclave.com/news/items/global-pc-shipments-fall-20-1-as-high-prices-curb-demand-idc-says",
+      "date": "2026-10"
+    },
+    {
+      "title": "Rising Memory and Storage Costs Push Global PC Shipments Down 22.4%: Gartner",
+      "publisher": "Digital Terminal",
+      "url": "https://digitalterminal.in/trending/rising-memory-and-storage-costs-push-global-pc-shipments-down-224-gartner",
+      "date": "2026-10"
+    },
+    {
+      "title": "Q3 global PC shipments plunge more than 20 percent, hit by AI-driven memory squeeze",
+      "publisher": "Digital Today",
+      "url": "https://www.digitaltoday.co.kr/en/view/113170/q3-global-pc-shipments-plunge-more-than-20-percent-hit-by-ai-driven-memory-squeeze",
+      "date": "2026-10"
+    }
+  ]
+}
