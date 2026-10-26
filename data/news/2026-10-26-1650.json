@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-26-1650",
+  "date": "2026-10-26",
+  "time": "16:50",
+  "createdAt": "2026-10-26T16:50:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "Oil Prices Ease as US-Iran Tension Stays High",
+    "ja": "米イラン緊張続く中、原油は反落"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oil prices fell on Monday after they climbed to a six-month high last week.",
+            "ja": "原油価格は、先週付けた6か月ぶりの高値から月曜日に下落した。"
+          },
+          {
+            "en": "Brent, the global benchmark, slipped to about $114 a barrel.",
+            "ja": "世界的な指標であるブレント原油は、1バレル約114ドルまで下げた。"
+          },
+          {
+            "en": "US crude also declined and traded below $101.",
+            "ja": "米国産原油も下落し、101ドルを下回って取引された。"
+          },
+          {
+            "en": "However, Murban, a regional oil grade, rose above $118.",
+            "ja": "一方、地域の原油銘柄であるムルバンは118ドルを超えて上昇した。"
+          },
+          {
+            "en": "Prices had jumped sharply on fears of supply problems in the region.",
+            "ja": "価格は、地域での供給不安から急騰していた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Investors are watching the standoff between the US and Iran closely.",
+            "ja": "投資家は、米国とイランの対立を注意深く見守っている。"
+          },
+          {
+            "en": "The US president has said he must soon decide whether to reach a deal with Iran or take tougher action.",
+            "ja": "米大統領は、イランと合意に至るか、より強硬な措置に出るかを近く決める必要があると述べている。"
+          },
+          {
+            "en": "Traders also worry that high fuel costs may reduce demand.",
+            "ja": "トレーダーは、燃料費の高騰が需要を減らす可能性も懸念している。"
+          },
+          {
+            "en": "Refiners are under pressure because crude oil now costs more than the fuel products they sell.",
+            "ja": "精製会社は、原油の価格が自社の販売する燃料製品の価格を上回っているため、圧力を受けている。"
+          },
+          {
+            "en": "As a result, prices may stay volatile, and companies that depend on fuel must plan for higher costs.",
+            "ja": "その結果、価格は不安定な状態が続く可能性があり、燃料に依存する企業は費用増に備えなければならない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "About how much was Brent crude per barrel on Monday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$101",
+          "ja": "101ドル"
+        },
+        {
+          "key": "B",
+          "text": "$114",
+          "ja": "114ドル"
+        },
+        {
+          "key": "C",
+          "text": "$118",
+          "ja": "118ドル"
+        },
+        {
+          "key": "D",
+          "text": "$120",
+          "ja": "120ドル"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本文第2文に「Brent, the global benchmark, slipped to about $114 a barrel」とあるので正解は (B)。(A) の $101 は米国産原油（US crude）の水準、(C) の $118 はムルバン原油の水準で、いずれも別の銘柄の数字。(D) の $120 は本文に登場しない。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字問題は、同じ段落に複数の数字が並ぶ。「どの対象の数字か」（主語）を必ず確認してから選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why are refiners under pressure?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Demand for oil has stopped completely.",
+          "ja": "需要が完全に止まった"
+        },
+        {
+          "key": "B",
+          "text": "Crude oil costs more than the fuel they sell.",
+          "ja": "原油が販売燃料より高い"
+        },
+        {
+          "key": "C",
+          "text": "The government banned fuel sales.",
+          "ja": "政府が燃料販売を禁じた"
+        },
+        {
+          "key": "D",
+          "text": "Murban prices fell sharply.",
+          "ja": "ムルバンが急落した"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第9文「Refiners are under pressure because crude oil now costs more than the fuel products they sell」が根拠で、正解は (B)。(A) 需要は「減る可能性がある」と懸念されているだけで、止まったとは書かれていない。(C) 政府による販売禁止は本文にない。(D) ムルバンは下落ではなく上昇した（本文と逆）。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "理由を問う問題は because / since / as a result などの接続表現の前後に答えがある。選択肢の「極端な表現」（completely, banned）は誤りの可能性が高い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "gloss": "",
+      "example": {
+        "en": "Our sales figures are a benchmark for the whole industry.",
+        "ja": "当社の売上は業界全体の指標になっている。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "standoff",
+      "pos": "名",
+      "ja": "対立、膠着状態",
+      "gloss": "（＝どちらも譲らず、物事が進まない状態のこと）",
+      "example": {
+        "en": "The standoff between the union and the company lasted a month.",
+        "ja": "労働組合と会社の対立は1か月続いた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "volatile",
+      "pos": "形",
+      "ja": "不安定な、変動の激しい",
+      "gloss": "",
+      "example": {
+        "en": "Exchange rates have been volatile this year.",
+        "ja": "為替レートは今年、変動が激しい。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "reduce",
+      "pos": "動",
+      "ja": "減らす、削減する",
+      "gloss": "",
+      "example": {
+        "en": "We plan to reduce shipping costs by ten percent.",
+        "ja": "私たちは配送費を10%削減する計画だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "pressure",
+      "pos": "名",
+      "ja": "圧力、負担",
+      "gloss": "",
+      "example": {
+        "en": "The company is under pressure to lower its prices.",
+        "ja": "その会社は価格を下げるよう圧力を受けている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "refiners",
+      "pos": "名",
+      "ja": "精製会社",
+      "gloss": "（＝原油をガソリンなどの製品に作り変える会社のこと）",
+      "example": {
+        "en": "Refiners bought more crude oil ahead of winter.",
+        "ja": "精製会社は冬に備えて原油をより多く購入した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "depend on",
+      "pos": "熟",
+      "ja": "〜に依存する、〜次第である",
+      "gloss": "",
+      "example": {
+        "en": "Many small shops depend on seasonal customers.",
+        "ja": "多くの小さな店は季節ごとの客に頼っている。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "plan for",
+      "pos": "熟",
+      "ja": "〜に備える、〜を計画に織り込む",
+      "gloss": "",
+      "example": {
+        "en": "Managers should plan for higher fuel costs next year.",
+        "ja": "管理職は来年の燃料費の上昇に備えるべきだ。"
+      }
+    }
+  ],
+  "glossary": {
+    "climbed": {
+      "lemma": "climb",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "指標",
+      "note": ""
+    },
+    "slipped": {
+      "lemma": "slip",
+      "pos": "動",
+      "ja": "下がった",
+      "note": ""
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "名",
+      "ja": "バレル（原油の単位）",
+      "note": ""
+    },
+    "declined": {
+      "lemma": "decline",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "traded": {
+      "lemma": "trade",
+      "pos": "動",
+      "ja": "取引された",
+      "note": ""
+    },
+    "regional": {
+      "lemma": "regional",
+      "pos": "形",
+      "ja": "地域の",
+      "note": ""
+    },
+    "grade": {
+      "lemma": "grade",
+      "pos": "名",
+      "ja": "等級、銘柄",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "jumped": {
+      "lemma": "jump",
+      "pos": "動",
+      "ja": "急騰した",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "fears": {
+      "lemma": "fear",
+      "pos": "名",
+      "ja": "懸念、不安",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "standoff": {
+      "lemma": "standoff",
+      "pos": "名",
+      "ja": "対立",
+      "note": ""
+    },
+    "decide": {
+      "lemma": "decide",
+      "pos": "動",
+      "ja": "決める",
+      "note": ""
+    },
+    "whether": {
+      "lemma": "whether",
+      "pos": "接",
+      "ja": "〜かどうか",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "合意、取引",
+      "note": ""
+    },
+    "tougher": {
+      "lemma": "tough",
+      "pos": "形",
+      "ja": "より厳しい",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "reduce": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "refiners": {
+      "lemma": "refiner",
+      "pos": "名",
+      "ja": "精製会社",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "note": ""
+    },
+    "crude": {
+      "lemma": "crude",
+      "pos": "名",
+      "ja": "原油",
+      "note": ""
+    },
+    "volatile": {
+      "lemma": "volatile",
+      "pos": "形",
+      "ja": "不安定な",
+      "note": ""
+    },
+    "depend": {
+      "lemma": "depend",
+      "pos": "動",
+      "ja": "依存する",
+      "note": ""
+    },
+    "plan": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "計画する",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "whether＋to不定詞 … or …（〜するか…するか）",
+    "quote": "The US president has said he must soon decide whether to reach a deal with Iran or take tougher action.",
+    "quoteJa": "米大統領は、イランと合意に至るか、より強硬な措置に出るかを近く決める必要があると述べている。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "decide whether to do A or (to) do B は「A するか B するか（を決める）」という意味です。whether は「〜かどうか」を表す接続詞で、to不定詞を続けると名詞のかたまりになり、decide の目的語として働きます。or の後ろの to は省略されることが多く、本文でも take の前の to が省かれています。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "He must decide whether he should reach a deal or take tougher action. のように whether 節（主語＋動詞）に言い換えられます。to不定詞を使うと主語が文の主語と同じ場合に簡潔になります。なお if も「〜かどうか」を表せますが、to不定詞とは結べず、or not と直接つなげる形も不自然です。「whether to do」が基本形と覚えましょう。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では空所に whether を選ばせる問題（if や that が誤答）が頻出です。特に前置詞の直後（about whether / on whether）や to不定詞の直前は if が使えないため、whether 一択になります。Part 7 では「決定を保留している」文脈（The board has not decided whether to…）でよく出ます。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "We have not yet decided whether to expand the warehouse or rent additional space.（倉庫を拡張するか、追加のスペースを借りるか、まだ決めていません。）／ The manager will confirm whether to hire more staff by Friday.（マネージャーは追加採用をするかどうかを金曜日までに確認します。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 なぜ原油は上がったり下がったりするのか",
+      "body": "原油価格は「供給が足りなくなる不安」で上がり、「需要が減る不安」や「交渉が進む期待」で下がります。今回は米国とイランの対立で、中東からの供給が滞るのではという不安が先週の6か月ぶり高値を押し上げました。月曜は米大統領の発言などを受けて売りが先行し、ブレント（世界の指標）とWTI（米国産の指標）が反落しました。一方、中東産のムルバンは上昇しており、地域によって需給の感じ方が違うことを示しています。"
+    },
+    {
+      "heading": "📌 精製会社の「利ざや」圧迫とは",
+      "body": "精製会社は原油を買い、ガソリンや軽油などに加工して売ります。原油が上がっても製品価格が同じだけ上げられないと、その差（精製マージン）が縮み、利益が減ります。需要が弱いときは製品価格に転嫁しにくいため、今回のように「原油高・製品安」になると精製会社が圧迫されます。"
+    },
+    {
+      "heading": "📌 日本経済・日本企業への影響",
+      "body": "日本は原油のほとんどを輸入に頼り、その大半を中東から調達しています。原油高は電気・ガス料金、物流費、航空運賃の上昇を通じて企業のコストと家計を直撃します。円安が重なると輸入コストはさらに膨らみます。燃料費に敏感な運輸・化学・航空業界は、燃料サーチャージの見直しやヘッジ（先物による価格固定）を急ぐ可能性があります。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "価格が荒く動く局面では、予想を一本に決めず「高止まり」「急落」の両方に備えるシナリオ管理が重要です。経営者は燃料費の変動を価格に転嫁できるか、調達を複数に分けられるかを点検し、投資家はエネルギー株だけでなく、燃料コストを負担する側の企業の利益率にも注意を払う必要があります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Latest Oil Market News and Analysis for Oct. 26",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-25/latest-oil-market-news-and-analysis-for-oct-26",
+      "date": "2026-10-25"
+    },
+    {
+      "title": "Crude oil's weird Monday: Brent, WTI slip as attacks rattle markets, Murban jumps 3% to $118",
+      "publisher": "Gulf News",
+      "url": "https://gulfnews.com/business/energy/crude-oils-weird-monday-brent-wti-slip-as-attacks-rattle-markets-murban-jumps-3-to-118-1.500723522",
+      "date": "2026-10-26"
+    }
+  ]
+}
