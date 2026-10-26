@@ -436,5 +436,22 @@
       "url": "https://www.digitaltoday.co.kr/en/view/113170/q3-global-pc-shipments-plunge-more-than-20-percent-hit-by-ai-driven-memory-squeeze",
       "date": "2026-10"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-27-0546/00.mp3",
+      "audio/2026-10-27-0546/01.mp3",
+      "audio/2026-10-27-0546/02.mp3",
+      "audio/2026-10-27-0546/03.mp3",
+      "audio/2026-10-27-0546/04.mp3",
+      "audio/2026-10-27-0546/05.mp3",
+      "audio/2026-10-27-0546/06.mp3",
+      "audio/2026-10-27-0546/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 220192,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-26T20:49:24.096Z",
+    "trimmed": true
+  }
 }
