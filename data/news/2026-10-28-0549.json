@@ -458,5 +458,23 @@
       "url": "https://gvwire.com/2026/10/27/oil-falls-2-as-middle-east-talks-help-ease-supply-worries/",
       "date": "2026-10-27"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-28-0549/00.mp3",
+      "audio/2026-10-28-0549/01.mp3",
+      "audio/2026-10-28-0549/02.mp3",
+      "audio/2026-10-28-0549/03.mp3",
+      "audio/2026-10-28-0549/04.mp3",
+      "audio/2026-10-28-0549/05.mp3",
+      "audio/2026-10-28-0549/06.mp3",
+      "audio/2026-10-28-0549/07.mp3",
+      "audio/2026-10-28-0549/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 235020,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-27T20:50:35.008Z",
+    "trimmed": true
+  }
 }
