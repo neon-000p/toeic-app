@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-28-0549",
+  "date": "2026-10-28",
+  "time": "05:49",
+  "createdAt": "2026-10-28T05:49:00+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Oil Falls as Talks Raise Hopes for Peace",
+    "ja": "原油下落、協議で和平期待"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oil prices fell for a second straight day on Tuesday as diplomatic talks gave traders some hope.",
+            "ja": "原油価格は火曜日、外交協議がトレーダーに期待を抱かせたことで、2日続けて下落した。"
+          },
+          {
+            "en": "Brent crude, the global benchmark, dropped about 2% to roughly $114 a barrel.",
+            "ja": "世界の指標であるブレント原油は約2％下落し、1バレル＝約114ドルとなった。"
+          },
+          {
+            "en": "Officials from Saudi Arabia and two other countries met Iranian officials to discuss ways to ease tensions.",
+            "ja": "サウジアラビアなど3カ国の当局者がイランの当局者と会い、緊張を和らげる方法を協議した。"
+          },
+          {
+            "en": "Separately, Iran's supreme leader said his country would keep its conditions for ending the war.",
+            "ja": "別途、イランの最高指導者は、戦争を終わらせるための条件を維持する考えを示した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "However, the market remains nervous.",
+            "ja": "しかし、市場は依然として神経質なままだ。"
+          },
+          {
+            "en": "Rebels backed by Iran said they again targeted Saudi Arabia over the weekend, including energy sites.",
+            "ja": "イランが支援する武装勢力は、週末にもエネルギー施設を含むサウジアラビアを再び標的にしたと主張した。"
+          },
+          {
+            "en": "Because Saudi Arabia is a key supplier, any damage to its facilities could reduce the global supply of oil.",
+            "ja": "サウジアラビアは主要な供給国であるため、その施設への被害は世界の原油供給を減らしかねない。"
+          },
+          {
+            "en": "UBS now expects Brent to stay near $110 through the end of the year, up from its earlier forecast of $100.",
+            "ja": "UBSは現在、ブレントが年末まで110ドル近辺にとどまると予想しており、従来予想の100ドルから引き上げた。"
+          },
+          {
+            "en": "Higher fuel prices will likely keep raising expenses for airlines, shipping firms, and factories.",
+            "ja": "燃料価格の上昇は、航空会社や海運会社、工場の費用を押し上げ続ける可能性が高い。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "About how much was a barrel of Brent crude on Tuesday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$100",
+          "ja": "100ドル"
+        },
+        {
+          "key": "B",
+          "text": "$110",
+          "ja": "110ドル"
+        },
+        {
+          "key": "C",
+          "text": "$114",
+          "ja": "114ドル"
+        },
+        {
+          "key": "D",
+          "text": "$120",
+          "ja": "120ドル"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落の2文目に Brent crude ... dropped about 2% to roughly $114 a barrel とあり、正解は (C)。(A) $100 は UBS の「従来の予想」、(B) $110 は UBS の「年末までの新予想」で、いずれも現在の価格ではない。(D) $120 は本文にない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う問題では、本文に複数の数字が出てくる。『何の数字か』（現在価格・予想・過去の予想）を区別して、該当する文だけを根拠にしよう。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "What is mentioned as a reason the market is still nervous?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Iran's supreme leader ended the war.",
+          "ja": "最高指導者が戦争を終わらせた"
+        },
+        {
+          "key": "B",
+          "text": "Rebels targeted Saudi Arabia again.",
+          "ja": "武装勢力が再びサウジを標的にした"
+        },
+        {
+          "key": "C",
+          "text": "UBS lowered its oil price forecast.",
+          "ja": "UBSが原油予想を引き下げた"
+        },
+        {
+          "key": "D",
+          "text": "Airlines stopped buying fuel.",
+          "ja": "航空会社が燃料購入をやめた"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落の2文目に、イラン支援の武装勢力が週末にサウジアラビアを再び標的にしたとあり、これが市場の不安材料。(A) 最高指導者は条件を維持すると述べただけで、戦争を終わらせてはいない。(C) UBSは予想を100ドルから110ドルへ『引き上げた』ので逆。(D) 本文にない情報。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由を問う設問は、However や Because の直後に答えがあることが多い。逆の内容（引き上げ↔引き下げ）の選択肢に注意。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "gloss": "（＝比べるときの基準になるもののこと）",
+      "example": {
+        "en": "The company used last year's sales as a benchmark for this year's target.",
+        "ja": "その会社は昨年の売上を今年の目標の基準にした。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "ease",
+      "pos": "動",
+      "ja": "和らげる、緩和する",
+      "gloss": "",
+      "example": {
+        "en": "The new policy should ease the pressure on small suppliers.",
+        "ja": "新しい方針は、小規模な供給業者への圧力を和らげるはずだ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "conditions",
+      "pos": "名",
+      "ja": "条件",
+      "gloss": "",
+      "example": {
+        "en": "The contract includes several conditions for early payment.",
+        "ja": "その契約には、早期支払いのいくつかの条件が含まれている。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "supplier",
+      "pos": "名",
+      "ja": "供給業者、供給国",
+      "gloss": "",
+      "example": {
+        "en": "We signed a new contract with a supplier in Vietnam.",
+        "ja": "私たちはベトナムの供給業者と新たに契約を結んだ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "facilities",
+      "pos": "名",
+      "ja": "施設、設備",
+      "gloss": "",
+      "example": {
+        "en": "The company plans to open two new facilities next year.",
+        "ja": "その会社は来年、新しい施設を2つ開設する予定だ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "gloss": "",
+      "example": {
+        "en": "A shortage of parts reduced the supply of new cars.",
+        "ja": "部品不足により新車の供給が減った。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "forecast",
+      "pos": "名",
+      "ja": "予想、見通し",
+      "gloss": "",
+      "example": {
+        "en": "The company raised its sales forecast for the year.",
+        "ja": "その会社は今年の売上予想を引き上げた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "expenses",
+      "pos": "名",
+      "ja": "費用、経費",
+      "gloss": "",
+      "example": {
+        "en": "Travel expenses must be submitted by the end of the month.",
+        "ja": "出張費は月末までに提出しなければならない。"
+      }
+    }
+  ],
+  "glossary": {
+    "straight": {
+      "lemma": "straight",
+      "pos": "形",
+      "ja": "連続の",
+      "note": "a second straight day＝2日連続"
+    },
+    "diplomatic": {
+      "lemma": "diplomatic",
+      "pos": "形",
+      "ja": "外交の",
+      "note": ""
+    },
+    "talks": {
+      "lemma": "talk",
+      "pos": "名",
+      "ja": "協議、会談",
+      "note": "複数形で「交渉・協議」"
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー、取引業者",
+      "note": ""
+    },
+    "crude": {
+      "lemma": "crude",
+      "pos": "名",
+      "ja": "原油",
+      "note": "crude oil の略"
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "roughly": {
+      "lemma": "roughly",
+      "pos": "副",
+      "ja": "およそ",
+      "note": ""
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "名",
+      "ja": "バレル（原油の単位）",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者、役人",
+      "note": ""
+    },
+    "ease": {
+      "lemma": "ease",
+      "pos": "動",
+      "ja": "和らげる",
+      "note": ""
+    },
+    "tensions": {
+      "lemma": "tension",
+      "pos": "名",
+      "ja": "緊張",
+      "note": ""
+    },
+    "separately": {
+      "lemma": "separately",
+      "pos": "副",
+      "ja": "別途、これとは別に",
+      "note": ""
+    },
+    "supreme": {
+      "lemma": "supreme",
+      "pos": "形",
+      "ja": "最高の",
+      "note": ""
+    },
+    "conditions": {
+      "lemma": "condition",
+      "pos": "名",
+      "ja": "条件",
+      "note": ""
+    },
+    "ending": {
+      "lemma": "end",
+      "pos": "動",
+      "ja": "終わらせる",
+      "note": "ここでは動名詞"
+    },
+    "nervous": {
+      "lemma": "nervous",
+      "pos": "形",
+      "ja": "神経質な、不安な",
+      "note": ""
+    },
+    "rebels": {
+      "lemma": "rebel",
+      "pos": "名",
+      "ja": "反政府勢力、武装勢力",
+      "note": ""
+    },
+    "backed": {
+      "lemma": "back",
+      "pos": "動",
+      "ja": "支援した",
+      "note": "backed by〜＝〜に支援された"
+    },
+    "targeted": {
+      "lemma": "target",
+      "pos": "動",
+      "ja": "標的にした",
+      "note": ""
+    },
+    "including": {
+      "lemma": "include",
+      "pos": "前",
+      "ja": "〜を含めて",
+      "note": ""
+    },
+    "supplier": {
+      "lemma": "supplier",
+      "pos": "名",
+      "ja": "供給業者、供給国",
+      "note": ""
+    },
+    "damage": {
+      "lemma": "damage",
+      "pos": "名",
+      "ja": "被害、損害",
+      "note": ""
+    },
+    "facilities": {
+      "lemma": "facility",
+      "pos": "名",
+      "ja": "施設",
+      "note": ""
+    },
+    "reduce": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予想",
+      "note": ""
+    },
+    "expenses": {
+      "lemma": "expense",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "keep＋動名詞（〜し続ける）と will likely（〜する可能性が高い）",
+    "quote": "Higher fuel prices will likely keep raising expenses for airlines, shipping firms, and factories.",
+    "quoteJa": "燃料価格の上昇は、航空会社や海運会社、工場の費用を押し上げ続ける可能性が高い。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "keep＋-ing は「〜し続ける」という意味で、同じ状態や動作が途切れず続くことを表します。ここでは keep raising expenses＝「費用を押し上げ続ける」。will likely は「〜する可能性が高い」で、will だけで言い切るより、推測であることを示します（likely は副詞で will の直後に置くのが基本）。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "keep＋-ing は continue to＋動詞の原形 / continue＋-ing とほぼ同じ意味です（Higher fuel prices will likely continue to raise expenses.）。ただし keep は『やめずにそのまま』のニュアンスが強い表現です。keep は後ろに to 不定詞を取れない点が重要で、× keep to raise とは言いません。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、keep の後ろの形を問う問題（keep ＋ ①raise ②to raise ③raising ④raised）が定番で、正解は -ing 形です。同様に enjoy / avoid / finish / consider / suggest も動名詞だけを目的語に取る動詞として頻出。Part 7 では keep ＋ -ing を見たら『その状況がまだ続いている』と読み取れます。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "Rising shipping costs will likely keep affecting our profit margins.（海上運賃の上昇は、当社の利益率に影響し続ける可能性が高い。）／ Please keep sending us the weekly sales report.（週次の売上報告をこれからも送り続けてください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① ブレント原油とは何か",
+      "body": "ブレント原油は北海で採れる原油の価格で、世界の原油取引の「物差し（ベンチマーク）」とされています。日本が輸入する中東産原油の価格も、このブレントや米国のWTIを参考に決まることが多く、ブレントの上下は日本のガソリン代や電気代に直結します。1バレルは約159リットルで、約114ドルという水準は、戦争前と比べるとかなりの高値です。"
+    },
+    {
+      "heading": "📌 ② 今回の下落の背景",
+      "body": "サウジアラビア、トルコ、パキスタンの当局者がテヘランでイラン側と協議し、イランの最高指導者も戦争終結の条件に言及したことで、「事態が収まるかもしれない」という期待が出て原油は売られました。ただし、イランが示す条件には海上封鎖の解除や制裁の解除などが含まれ、米国との距離は大きく、期待はまだ脆いままです。さらにイラン系武装勢力によるサウジ攻撃が続いており、市場は材料が出るたびに上下する神経質な展開です。"
+    },
+    {
+      "heading": "📌 ③ 日本経済・日本企業への影響",
+      "body": "日本は原油の大半を輸入に頼り、その大部分を中東に依存しています。原油高は円建てで見るとさらに重くなり、ガソリン・電気・ガス料金、航空運賃、海運の燃料サーチャージ、化学・樹脂などの素材価格を押し上げます。製造業・運輸業・小売業のコスト増につながり、価格転嫁がうまくいかない企業は利益率が下がります。TOEICでも、fuel surcharge（燃料サーチャージ）や shipping costs といった語が、請求書や通知文で出てきます。"
+    },
+    {
+      "heading": "📌 ④ 投資家・経営者の視点",
+      "body": "UBSが年末の予想を100ドルから110ドル近辺に引き上げたのは、戦争が長引いて供給が不安定な状態が続くという見方が強まったためです。投資家は、外交のニュースで短期的に価格が下がっても、供給リスクが消えていない点を見ています。経営者にとっては、燃料費の上昇を前提に予算を組む、為替予約やサプライヤーとの価格条項を見直す、といった備えが重要になります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Oil prices fall after Iran supreme leader and top security official discuss conditions to end war",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/27/oil-today-iran-us-crude-wti-brent-trump.html",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "Oil eases on Middle East diplomacy hopes, Saudi attacks keep supply worries alive",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/amp/2026/10/27/oil-eases-on-mideast-diplomacy-hopes-saudi-attacks-stoke-supply-woes.html",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "Oil Falls $2 as Middle East Talks Help Ease Supply Worries",
+      "publisher": "GV Wire",
+      "url": "https://gvwire.com/2026/10/27/oil-falls-2-as-middle-east-talks-help-ease-supply-worries/",
+      "date": "2026-10-27"
+    }
+  ]
+}
