@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-27-1647",
+  "date": "2026-10-27",
+  "time": "16:47",
+  "createdAt": "2026-10-27T16:47:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Fed Expected to Hold Rates After September Hike",
+    "ja": "FRB、9月の利上げ後は据え置きの見通し"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The Federal Reserve is widely expected to keep interest rates unchanged this week.",
+            "ja": "米連邦準備制度理事会（FRB）は今週、政策金利を据え置くとの見方が広がっている。"
+          },
+          {
+            "en": "Its meeting ends on Wednesday, October 28.",
+            "ja": "会合は10月28日（水）に終了する。"
+          },
+          {
+            "en": "A Reuters poll found that 94 of 100 economists expect no change.",
+            "ja": "ロイターの調査では、エコノミスト100人中94人が変更なしと予想している。"
+          },
+          {
+            "en": "The target range would stay at 3.75% to 4.00%.",
+            "ja": "誘導目標レンジは3.75〜4.00％のまま維持される見通しだ。"
+          },
+          {
+            "en": "Last month, the Fed raised rates by a quarter point, its first increase since 2023.",
+            "ja": "先月、FRBは0.25ポイントの利上げを行い、これは2023年以来初めての引き上げだった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Inflation remains the main concern.",
+            "ja": "インフレが依然として最大の懸念だ。"
+          },
+          {
+            "en": "Prices have stayed above the Fed's 2% target for five years, and higher energy costs are making the situation harder.",
+            "ja": "物価は5年間、FRBの目標である2％を上回り続けており、エネルギー価格の上昇が状況をさらに難しくしている。"
+          },
+          {
+            "en": "Chair Kevin Warsh has reportedly gained support for a pause from senior officials.",
+            "ja": "ケビン・ウォーシュ議長は、幹部の間で据え置きへの支持を得たと伝えられている。"
+          },
+          {
+            "en": "Many analysts think the Fed will raise rates again in December.",
+            "ja": "多くのアナリストは、FRBが12月に再び利上げすると考えている。"
+          },
+          {
+            "en": "For households, this means that borrowing costs are likely to stay high for now, while savers can keep earning good interest.",
+            "ja": "家計にとっては、当面は借入コストが高止まりしやすく、預金者は引き続き良い利息を得られるということだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many economists in the Reuters poll expect no change in rates?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "50 of 100",
+          "ja": "100人中50人"
+        },
+        {
+          "key": "B",
+          "text": "74 of 100",
+          "ja": "100人中74人"
+        },
+        {
+          "key": "C",
+          "text": "94 of 100",
+          "ja": "100人中94人"
+        },
+        {
+          "key": "D",
+          "text": "All 100",
+          "ja": "100人全員"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落第3文に「A Reuters poll found that 94 of 100 economists expect no change.」とあり、正解は (C) です。(A) 50 と (B) 74 は本文にない数字、(D) の「全員」は本文と合いません（94人であって全員ではない）。TOEICでは数字の問題で、選択肢の数字が本文のどの数字と対応するかを落ち着いて照合することが大切です。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字を問う設問は、キーワード（poll, economists）を本文で探し、その文の数字をそのまま照合する。『全員』など極端な表現の選択肢は誤りのことが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT stated in the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The Fed raised rates last month.",
+          "ja": "FRBは先月利上げした。"
+        },
+        {
+          "key": "B",
+          "text": "Inflation has been above the target for five years.",
+          "ja": "物価は5年間目標超え。"
+        },
+        {
+          "key": "C",
+          "text": "Many analysts expect another increase in December.",
+          "ja": "多くが12月の再利上げを予想。"
+        },
+        {
+          "key": "D",
+          "text": "The Fed plans to cut rates this week.",
+          "ja": "FRBは今週利下げする予定。"
+        }
+      ],
+      "answer": "D",
+      "explanation": "(A) は第1段落最終文、(B) は第2段落第2文、(C) は第2段落第4文に書かれています。(D) 利下げの話は本文になく、今週は据え置きが予想されています。したがって NOT に当たる (D) が正解です。NOT問題では、本文にある内容を1つずつ消去していくと確実に解けます。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "NOT問題は、各選択肢を本文と照らして『書いてある』ものを消去し、最後に残ったものを選ぶ。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "unchanged",
+      "pos": "形",
+      "ja": "変わらない、そのままの",
+      "gloss": "",
+      "example": {
+        "en": "The contract terms remained unchanged after the meeting.",
+        "ja": "会議の後も契約条件は変わらなかった。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "range",
+      "pos": "名",
+      "ja": "範囲、幅",
+      "gloss": "",
+      "example": {
+        "en": "The price range for this model is between $200 and $300.",
+        "ja": "このモデルの価格帯は200〜300ドルだ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "inflation",
+      "pos": "名",
+      "ja": "インフレ、物価上昇",
+      "gloss": "（＝物の値段が全体的に上がり続けること）",
+      "example": {
+        "en": "Inflation has made daily goods more expensive.",
+        "ja": "インフレで日用品が値上がりした。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "concern",
+      "pos": "名",
+      "ja": "懸念、心配",
+      "gloss": "",
+      "example": {
+        "en": "Rising costs are a major concern for small businesses.",
+        "ja": "コスト上昇は中小企業にとって大きな懸念だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "pause",
+      "pos": "名",
+      "ja": "一時停止、小休止",
+      "gloss": "",
+      "example": {
+        "en": "The company announced a pause in hiring.",
+        "ja": "その会社は採用の一時停止を発表した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "senior",
+      "pos": "形",
+      "ja": "上級の、幹部の",
+      "gloss": "",
+      "example": {
+        "en": "A senior manager will lead the new project.",
+        "ja": "上級管理職が新規プロジェクトを率いる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "household",
+      "pos": "名",
+      "ja": "家計、世帯",
+      "gloss": "",
+      "example": {
+        "en": "Household spending rose slightly in September.",
+        "ja": "9月の家計支出はわずかに増えた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "gloss": "",
+      "example": {
+        "en": "Higher borrowing costs may slow our expansion plans.",
+        "ja": "借入コストの上昇で拡大計画が遅れるかもしれない。"
+      }
+    }
+  ],
+  "glossary": {
+    "widely": {
+      "lemma": "widely",
+      "pos": "副",
+      "ja": "広く",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想される",
+      "note": "be expected to do で「〜すると見込まれる」"
+    },
+    "unchanged": {
+      "lemma": "unchanged",
+      "pos": "形",
+      "ja": "変わらない",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "経済学者",
+      "note": ""
+    },
+    "target": {
+      "lemma": "target",
+      "pos": "名",
+      "ja": "目標",
+      "note": ""
+    },
+    "range": {
+      "lemma": "range",
+      "pos": "名",
+      "ja": "範囲、幅",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "上昇、増加",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "物価上昇",
+      "note": ""
+    },
+    "remains": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "〜のままである",
+      "note": ""
+    },
+    "concern": {
+      "lemma": "concern",
+      "pos": "名",
+      "ja": "懸念",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "名",
+      "ja": "物価、価格",
+      "note": ""
+    },
+    "stayed": {
+      "lemma": "stay",
+      "pos": "動",
+      "ja": "〜のままでいる",
+      "note": ""
+    },
+    "above": {
+      "lemma": "above",
+      "pos": "前",
+      "ja": "〜を上回って",
+      "note": ""
+    },
+    "energy": {
+      "lemma": "energy",
+      "pos": "名",
+      "ja": "エネルギー",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用、コスト",
+      "note": ""
+    },
+    "situation": {
+      "lemma": "situation",
+      "pos": "名",
+      "ja": "状況",
+      "note": ""
+    },
+    "harder": {
+      "lemma": "hard",
+      "pos": "形",
+      "ja": "より難しい",
+      "note": ""
+    },
+    "chair": {
+      "lemma": "chair",
+      "pos": "名",
+      "ja": "議長",
+      "note": ""
+    },
+    "reportedly": {
+      "lemma": "reportedly",
+      "pos": "副",
+      "ja": "伝えられるところでは",
+      "note": ""
+    },
+    "gained": {
+      "lemma": "gain",
+      "pos": "動",
+      "ja": "得た",
+      "note": ""
+    },
+    "support": {
+      "lemma": "support",
+      "pos": "名",
+      "ja": "支持",
+      "note": ""
+    },
+    "pause": {
+      "lemma": "pause",
+      "pos": "名",
+      "ja": "一時停止",
+      "note": ""
+    },
+    "senior": {
+      "lemma": "senior",
+      "pos": "形",
+      "ja": "幹部の",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "households": {
+      "lemma": "household",
+      "pos": "名",
+      "ja": "家計、世帯",
+      "note": ""
+    },
+    "borrowing": {
+      "lemma": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "note": ""
+    },
+    "savers": {
+      "lemma": "saver",
+      "pos": "名",
+      "ja": "預金者",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "継続を表す現在完了形（have＋過去分詞＋for＋期間）",
+    "quote": "Prices have stayed above the Fed's 2% target for five years, and higher energy costs are making the situation harder.",
+    "quoteJa": "物価は5年間、FRBの目標である2％を上回り続けており、エネルギー価格の上昇が状況をさらに難しくしている。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "「have stayed … for five years」は現在完了形の『継続』用法です。過去のある時点から現在までずっと同じ状態が続いていることを表します。後半の『are making』は現在進行形で、「今まさに状況を悪化させている」という動きを示しており、前半（ずっと続いてきたこと）と対比されています。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Prices stayed above the target. （過去の一時期の話で、今は不明）／Prices have stayed above the target for five years. （5年前から今までずっと。今も続いている）。期間を表す for（〜の間）と since（〜以来）が目印になります。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、for / since / over the past three years などの語句から時制を選ぶ問題が頻出です。『for＋期間』や『since＋過去の時点』があれば現在完了形（または現在完了進行形）を選びます。単純過去形（stayed）や現在形（stay）にひっかからないよう注意しましょう。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "Sales have remained stable for three quarters.（売上は3四半期連続で安定している。）／We have worked with this supplier since 2020.（当社は2020年からこの供給業者と取引している。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 ① 今回のニュースの要点：なぜ「据え置き」が注目されるのか",
+      "body": "通常、金融政策の会合では利上げや利下げが注目されますが、今回は先月に約3年ぶりの利上げを行った直後であり、『一息つくのか、さらに引き締めるのか』が焦点です。市場はほぼ据え置きを織り込んでおり、むしろ声明文や議長会見で『次の12月に再び利上げするのか』というヒントが出るかが注目されます。"
+    },
+    {
+      "heading": "📌 ② 専門用語をかみ砕くと",
+      "body": "『政策金利（誘導目標レンジ）』は、中央銀行が景気を調整するために決める短期金利の目標です。上げると借入が高くなり、物価の上昇を抑える効果があります。『インフレ』は物価が全体として上がり続ける状態で、物価目標の2％を5年間超えているため、中央銀行は引き締めを続ける圧力を受けています。"
+    },
+    {
+      "heading": "📌 ③ 日本経済・日本企業・日本人への影響",
+      "body": "米国の金利が高い状態が続くと、日米の金利差が意識されやすく、為替では円安ドル高の圧力になりやすいと言われます。円安は輸入コストを押し上げ、エネルギーや原材料を輸入する日本企業の負担になる一方、輸出企業には追い風になり得ます。米国向けに投資・外貨預金・ドル建て商品を持つ個人にとっても、金利と為替の両方に目配りが必要です。"
+    },
+    {
+      "heading": "📌 ④ 投資家・経営者の視点",
+      "body": "投資家は、据え置きという結果そのものより、議長の発言から今後の利上げ見通しを読み取ろうとします。経営者にとっては、借入コストが高止まりする可能性を前提に、設備投資や資金調達の計画を保守的に組むことが重要です。一方で預金者にとっては、高めの利息が得られる局面が続くという側面もあります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Federal Reserve is likely to hold interest rates steady in October",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/26/fed-decision-expectations-october-meeting.html",
+      "date": "2026-10-26"
+    },
+    {
+      "title": "Fed paces itself",
+      "publisher": "KPMG",
+      "url": "https://kpmg.com/us/en/articles/2026/october-2026-fed-primer.html",
+      "date": "2026-10"
+    },
+    {
+      "title": "What To Look For From The Fed's October Meeting",
+      "publisher": "Forbes",
+      "url": "https://www.forbes.com/sites/simonmoore/2026/10/19/what-to-look-for-from-the-feds-october-meeting/",
+      "date": "2026-10-19"
+    }
+  ]
+}
