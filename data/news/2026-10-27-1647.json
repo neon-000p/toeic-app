@@ -462,5 +462,24 @@
       "url": "https://www.forbes.com/sites/simonmoore/2026/10/19/what-to-look-for-from-the-feds-october-meeting/",
       "date": "2026-10-19"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-27-1647/00.mp3",
+      "audio/2026-10-27-1647/01.mp3",
+      "audio/2026-10-27-1647/02.mp3",
+      "audio/2026-10-27-1647/03.mp3",
+      "audio/2026-10-27-1647/04.mp3",
+      "audio/2026-10-27-1647/05.mp3",
+      "audio/2026-10-27-1647/06.mp3",
+      "audio/2026-10-27-1647/07.mp3",
+      "audio/2026-10-27-1647/08.mp3",
+      "audio/2026-10-27-1647/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 221336,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-27T07:48:55.891Z",
+    "trimmed": true
+  }
 }
