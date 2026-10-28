@@ -452,5 +452,23 @@
       "url": "https://www.selfemployed.com/news/2026-holiday-seasonal-hiring-gig-workers/",
       "date": "2026-10"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-28-1648/00.mp3",
+      "audio/2026-10-28-1648/01.mp3",
+      "audio/2026-10-28-1648/02.mp3",
+      "audio/2026-10-28-1648/03.mp3",
+      "audio/2026-10-28-1648/04.mp3",
+      "audio/2026-10-28-1648/05.mp3",
+      "audio/2026-10-28-1648/06.mp3",
+      "audio/2026-10-28-1648/07.mp3",
+      "audio/2026-10-28-1648/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 244524,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-28T07:49:32.642Z",
+    "trimmed": true
+  }
 }
