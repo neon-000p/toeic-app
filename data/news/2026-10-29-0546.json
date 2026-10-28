@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-29-0546",
+  "date": "2026-10-29",
+  "time": "05:46",
+  "createdAt": "2026-10-29T05:46:00+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail & Consumer",
+  "sample": false,
+  "title": {
+    "en": "US Consumer Confidence Rises as Gas Prices Ease",
+    "ja": "米消費者信頼感が改善、ガソリン安"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. consumer confidence rose in October for the first time in four months.",
+            "ja": "米国の消費者信頼感は、10月に4カ月ぶりに上昇した。"
+          },
+          {
+            "en": "The Conference Board said its confidence index climbed 7.5 points to 91.7.",
+            "ja": "コンファレンス・ボードによると、同団体の信頼感指数は7.5ポイント上昇して91.7となった。"
+          },
+          {
+            "en": "Economists had expected confidence to fall to about 81 this month.",
+            "ja": "エコノミストは、今月の信頼感は81前後まで低下すると予想していた。"
+          },
+          {
+            "en": "The group linked the recovery to lower gasoline prices, which eased from September to October.",
+            "ja": "同団体はこの回復を、9月から10月にかけて下がったガソリン価格の低下と結びつけた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Shoppers still feel pressure on their budgets, though.",
+            "ja": "とはいえ、買い物客は依然として家計への圧迫を感じている。"
+          },
+          {
+            "en": "Many households plan to spend less on services and big purchases over the next six months because prices remain high.",
+            "ja": "物価が高止まりしているため、多くの世帯は今後6カ月、サービスや大きな買い物への支出を減らす計画だ。"
+          },
+          {
+            "en": "Consumers expect prices to rise 5.8% over the next year, down from September but still elevated.",
+            "ja": "消費者は今後1年で物価が5.8％上昇すると見ており、9月からは低下したものの依然として高い水準だ。"
+          },
+          {
+            "en": "While the index for current conditions rose 8.6 points to 120.4, the outlook index stayed below 80.",
+            "ja": "現況指数が8.6ポイント上昇して120.4となった一方で、先行きを示す指数は80を下回ったままだった。"
+          },
+          {
+            "en": "A reading under 80 often warns of a recession.",
+            "ja": "80を下回る数値は、しばしば景気後退の警告とされる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how many points did the confidence index rise in October?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4.5 points",
+          "ja": "4.5ポイント"
+        },
+        {
+          "key": "B",
+          "text": "7.5 points",
+          "ja": "7.5ポイント"
+        },
+        {
+          "key": "C",
+          "text": "8.6 points",
+          "ja": "8.6ポイント"
+        },
+        {
+          "key": "D",
+          "text": "91.7 points",
+          "ja": "91.7ポイント"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落2文目に「the confidence index climbed 7.5 points to 91.7」とあるので正解は B。A の4.5は本文にない数字。C の8.6は現況指数（current conditions）の上昇幅で、総合の信頼感指数ではないので誤り。D の91.7は上昇後の指数の水準であって、上昇幅ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字問題は「何の数字か」を確認する。同じ段落に別の指数の数字が出ているときは、対象（総合か現況か）が引っかけになりやすい。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT stated in the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Confidence rose for the first time in four months.",
+          "ja": "4カ月ぶりに信頼感が上昇した。"
+        },
+        {
+          "key": "B",
+          "text": "Economists had expected confidence to fall.",
+          "ja": "エコノミストは低下を予想していた。"
+        },
+        {
+          "key": "C",
+          "text": "Households plan to spend more on big purchases.",
+          "ja": "世帯は大きな買い物を増やす予定だ。"
+        },
+        {
+          "key": "D",
+          "text": "Consumers expect prices to rise 5.8% in a year.",
+          "ja": "1年で物価が5.8％上昇すると予想されている。"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落2文目に、世帯は大きな買い物への支出を「減らす」計画とある。C は逆の内容なので、これが本文に書かれていない選択肢で正解。A は第1段落1文目、B は同3文目、D は第2段落3文目に書かれている。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "NOT問題は、A〜Dを本文と1つずつ照合して「書かれている」ものを消していく。「逆の内容」の選択肢が正解になる典型パターン。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "recovery",
+      "pos": "名",
+      "ja": "回復、持ち直し",
+      "gloss": "",
+      "example": {
+        "en": "The recovery in sales began in the spring.",
+        "ja": "売上の回復は春に始まった。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "linked",
+      "pos": "動",
+      "ja": "結びつけた、関連づけた",
+      "gloss": "（link A to B：AをBと関連づける）",
+      "example": {
+        "en": "Managers linked the delay to a staff shortage.",
+        "ja": "管理職は遅れを人手不足と結びつけた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "eased",
+      "pos": "動",
+      "ja": "和らいだ、下がった",
+      "gloss": "",
+      "example": {
+        "en": "Demand eased after the holiday season.",
+        "ja": "需要は休暇シーズンの後に落ち着いた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "households",
+      "pos": "名",
+      "ja": "世帯、家庭",
+      "gloss": "（＝同じ家で暮らす人々のまとまり）",
+      "example": {
+        "en": "Most households now have internet access.",
+        "ja": "今ではほとんどの世帯がインターネットを使える。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "remain",
+      "pos": "動",
+      "ja": "〜のままである",
+      "gloss": "",
+      "example": {
+        "en": "Prices remain stable at our stores.",
+        "ja": "当店の価格は安定したままだ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "elevated",
+      "pos": "形",
+      "ja": "高い水準の",
+      "gloss": "",
+      "example": {
+        "en": "Costs are still elevated this year.",
+        "ja": "今年もコストは依然として高い。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "outlook",
+      "pos": "名",
+      "ja": "見通し",
+      "gloss": "",
+      "example": {
+        "en": "The outlook for next quarter is positive.",
+        "ja": "来四半期の見通しは明るい。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "pressure",
+      "pos": "名",
+      "ja": "圧力、負担",
+      "gloss": "",
+      "example": {
+        "en": "Rising rents put pressure on small shops.",
+        "ja": "家賃の上昇は小さな店に負担をかけている。"
+      }
+    }
+  ],
+  "glossary": {
+    "consumer": {
+      "lemma": "consumer",
+      "pos": "名",
+      "ja": "消費者",
+      "note": ""
+    },
+    "confidence": {
+      "lemma": "confidence",
+      "pos": "名",
+      "ja": "信頼、自信",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "climbed": {
+      "lemma": "climb",
+      "pos": "動",
+      "ja": "上がった",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "エコノミスト",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "linked": {
+      "lemma": "link",
+      "pos": "動",
+      "ja": "結びつけた",
+      "note": ""
+    },
+    "recovery": {
+      "lemma": "recovery",
+      "pos": "名",
+      "ja": "回復",
+      "note": ""
+    },
+    "gasoline": {
+      "lemma": "gasoline",
+      "pos": "名",
+      "ja": "ガソリン",
+      "note": ""
+    },
+    "eased": {
+      "lemma": "ease",
+      "pos": "動",
+      "ja": "和らいだ",
+      "note": ""
+    },
+    "shoppers": {
+      "lemma": "shopper",
+      "pos": "名",
+      "ja": "買い物客",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力、負担",
+      "note": ""
+    },
+    "budgets": {
+      "lemma": "budget",
+      "pos": "名",
+      "ja": "予算、家計",
+      "note": ""
+    },
+    "households": {
+      "lemma": "household",
+      "pos": "名",
+      "ja": "世帯",
+      "note": ""
+    },
+    "plan": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "計画する",
+      "note": ""
+    },
+    "spend": {
+      "lemma": "spend",
+      "pos": "動",
+      "ja": "支出する",
+      "note": ""
+    },
+    "services": {
+      "lemma": "service",
+      "pos": "名",
+      "ja": "サービス",
+      "note": ""
+    },
+    "purchases": {
+      "lemma": "purchase",
+      "pos": "名",
+      "ja": "購入、買い物",
+      "note": ""
+    },
+    "remain": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "〜のままだ",
+      "note": ""
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "elevated": {
+      "lemma": "elevated",
+      "pos": "形",
+      "ja": "高い水準の",
+      "note": ""
+    },
+    "current": {
+      "lemma": "current",
+      "pos": "形",
+      "ja": "現在の",
+      "note": ""
+    },
+    "conditions": {
+      "lemma": "condition",
+      "pos": "名",
+      "ja": "状況",
+      "note": ""
+    },
+    "outlook": {
+      "lemma": "outlook",
+      "pos": "名",
+      "ja": "見通し",
+      "note": ""
+    },
+    "stayed": {
+      "lemma": "stay",
+      "pos": "動",
+      "ja": "〜のままでいた",
+      "note": ""
+    },
+    "reading": {
+      "lemma": "reading",
+      "pos": "名",
+      "ja": "数値、読み取り値",
+      "note": ""
+    },
+    "warns": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告する",
+      "note": ""
+    },
+    "recession": {
+      "lemma": "recession",
+      "pos": "名",
+      "ja": "景気後退",
+      "note": ""
+    },
+    "points": {
+      "lemma": "point",
+      "pos": "名",
+      "ja": "ポイント",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "対比を表す接続詞 while（〜である一方で）",
+    "quote": "While the index for current conditions rose 8.6 points to 120.4, the outlook index stayed below 80.",
+    "quoteJa": "現況指数が8.6ポイント上昇して120.4となった一方で、先行きを示す指数は80を下回ったままだった。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "While＋S＋V, S＋V の形で、while は「〜する一方で」という対比（コントラスト）を表す接続詞。While 節で一方の事実を述べ、主節でそれと反対の事実を述べる。ここでは「現況指数は上昇した」と「先行き指数は低いままだった」という2つの対照的な事実を1文にまとめている。"
+      },
+      {
+        "heading": "書き換え例・比較例",
+        "body": "While A rose, B stayed low. ＝ A rose, but B stayed low. ＝ A rose, whereas B stayed low.\nwhile には「〜している間に」という時間の意味もある（例：While I was traveling, prices went up.）。文の前半と後半が対照的なら対比、同時に起きているなら時間、と文脈で見分ける。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6 では while / although / whereas / because など接続詞の選択問題がよく出る。空所の前後が正反対の内容なら while か whereas、原因と結果なら because、のように前後の意味関係で選ぶ。Part 7 では、while 節の前後で対照されている2つの情報を取り違えないことが大切。今回の設問Q1も、現況指数の8.6と総合指数の7.5を区別できるかが引っかけだった。"
+      },
+      {
+        "heading": "ビジネス文書での応用例",
+        "body": "While sales in Asia grew by 8%, sales in Europe remained flat.（アジアの売上が8％伸びた一方で、欧州の売上は横ばいだった。）\nWhile the new office is larger, the rent is much higher.（新しいオフィスは広い一方で、家賃はずっと高い。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 消費者信頼感指数とは何か",
+      "body": "米国の民間調査団体コンファレンス・ボードが毎月発表する、家計の景況感を示す指標。1985年を100として、現在の景気や雇用の状況（現況指数）と、半年先の見通し（期待指数）を調べた調査をもとに作られる。米国のGDPの約7割は個人消費なので、この指数は株式や債券の市場が注目する材料になっている。期待指数が80を下回ると景気後退の予兆とされる。"
+    },
+    {
+      "heading": "📌 今回の結果が意味すること",
+      "body": "総合指数は84.2から91.7へと上がり、予想の81を大きく上回った。同団体はガソリン価格の低下が主因とみている。ただし期待指数は72.6と、80の水準を依然として下回る。家計は物価の高さを理由に、サービスや耐久財への支出を控える意向を示しており、「気分は少し持ち直したが、財布のひもは固い」という状況といえる。"
+    },
+    {
+      "heading": "📌 業界・企業への影響",
+      "body": "小売業や外食業にとっては、ガソリン価格の下落は消費者の自由に使えるお金を増やす追い風になる。一方で、消費者は値上げに敏感なままで、メーカーや小売各社は価格転嫁と販売数量の維持の間で難しい判断を迫られる。サービスや大型商品の需要が弱い点は、家電・自動車・旅行関連の企業には逆風となり得る。"
+    },
+    {
+      "heading": "📌 日本・投資家への示唆",
+      "body": "米国の消費は日本の輸出企業（自動車、電機、機械など）の業績に直結するため、日本企業にとっても重要な先行指標になる。為替の面では、米景気の持ち直しは米金利や円安・ドル高の見方に影響しやすい。投資家は、次回以降の指数で期待指数が80を回復できるか、物価の見通しが落ち着くかを確認したい。ビジネスパーソンにとっては、「現況」と「先行き」の指数を分けて読む習慣が、経済ニュースを読む助けになる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "US Consumer Confidence Increased in October",
+      "publisher": "The Conference Board (via Morningstar / PR Newswire)",
+      "url": "https://www.morningstar.com/news/pr-newswire/20261027ny82041/us-consumer-confidence-increased-in-october",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "US consumer confidence ticks up in October",
+      "publisher": "Semafor",
+      "url": "https://semafor.com/article/10/27/2026/us-consumer-confidence-ticks-up-in-october",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "U.S. consumer confidence rises for first time in four months",
+      "publisher": "Quartz",
+      "url": "https://qz.com/us-consumer-confidence-october-first-rise-four-months-102726",
+      "date": "2026-10-27"
+    }
+  ]
+}
