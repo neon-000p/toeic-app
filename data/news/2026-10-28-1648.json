@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-28-1648",
+  "date": "2026-10-28",
+  "time": "16:48",
+  "createdAt": "2026-10-28T16:48:15+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment",
+  "sample": false,
+  "title": {
+    "en": "Retailers Plan Fewer Holiday Hires as Part-Time Jobs Grow",
+    "ja": "小売の年末採用が減少、パート求人は増加"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Retailers are planning to hire fewer seasonal workers for the 2026 holiday season.",
+            "ja": "小売各社は、2026年の年末商戦に向けて季節雇用の採用数を減らす計画だ。"
+          },
+          {
+            "en": "Challenger, Gray & Christmas, a research firm, expects about 450,000 seasonal jobs to be added this fall, roughly 2.5% fewer than last year.",
+            "ja": "調査会社チャレンジャー・グレー・アンド・クリスマスは、今秋に増える季節雇用は約45万件で、昨年より約2.5%少ないと予想している。"
+          },
+          {
+            "en": "Retailers plan to cover busy weeks with current staff, automation, and on-demand workers.",
+            "ja": "小売各社は、繁忙期を現在の従業員、自動化、そして必要に応じて働く人材でまかなう計画だ。"
+          },
+          {
+            "en": "Many are also offering part-time jobs rather than short seasonal contracts.",
+            "ja": "多くの企業は、短期の季節契約ではなくパートタイムの仕事も提示している。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Data from Indeed shows how the job market is changing.",
+            "ja": "インディードのデータは、雇用市場がどう変化しているかを示している。"
+          },
+          {
+            "en": "About 34% of large employers' postings were labeled seasonal in September 2025, but that share has fallen to about 20% this year.",
+            "ja": "大手企業の求人のうち、2025年9月には約34%が季節雇用と表示されていたが、その割合は今年約20%に低下した。"
+          },
+          {
+            "en": "At the same time, part-time postings rose from 38% to 49%.",
+            "ja": "同時に、パートタイムの求人は38%から49%に上昇した。"
+          },
+          {
+            "en": "Experts call the signals mixed, because some employers may expect demand to stay strong into next year.",
+            "ja": "専門家はこの動きを「強弱入り混じった兆し」と呼ぶ。来年まで需要が強いと見込む企業もあるかもしれないからだ。"
+          },
+          {
+            "en": "Even so, job seekers should expect fewer short-term openings than in past years.",
+            "ja": "それでも、求職者は過去の年より短期の募集が少ないと考えておくべきだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many seasonal jobs does the research firm expect to be added this fall?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 250,000",
+          "ja": "約25万件"
+        },
+        {
+          "key": "B",
+          "text": "About 450,000",
+          "ja": "約45万件"
+        },
+        {
+          "key": "C",
+          "text": "About 38,000",
+          "ja": "約3万8千件"
+        },
+        {
+          "key": "D",
+          "text": "About 530,000",
+          "ja": "約53万件"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落2文目に「expects about 450,000 seasonal jobs to be added this fall」とあり、正解はBの約45万件。Aの250,000とDの530,000は本文に出てこない数字。Cの38は、パートタイム求人の割合（38%）を取り違えさせる引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う設問は、選択肢の数字を本文と照合する。別の箇所に出てくる数字（ここでは38%）が選択肢に紛れ込むのが定番の引っかけ。"
+    },
+    {
+      "id": "q2",
+      "type": "contrast",
+      "prompt": "What does Indeed's data show about job postings from large employers?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Seasonal postings rose to 49%.",
+          "ja": "季節求人が49%に上昇"
+        },
+        {
+          "key": "B",
+          "text": "Part-time postings rose from 38% to 49%.",
+          "ja": "パート求人が38%から49%に上昇"
+        },
+        {
+          "key": "C",
+          "text": "Part-time postings fell to 20%.",
+          "ja": "パート求人が20%に低下"
+        },
+        {
+          "key": "D",
+          "text": "Seasonal postings stayed at 34%.",
+          "ja": "季節求人は34%のまま"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落3文目に「part-time postings rose from 38% to 49%」とあるので正解はB。Aは季節求人とパート求人を取り違えている（季節求人は34%から20%へ低下）。Cはパート求人が下がったとする逆の内容。Dは季節求人が「約20%に低下した」という本文と矛盾する。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "どの項目が上がり、どの項目が下がったかを分けて読む。似た数字と項目名の組み合わせを入れ替えた選択肢が誤答になりやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "seasonal",
+      "pos": "形",
+      "ja": "季節的な、繁忙期限定の",
+      "gloss": "",
+      "example": {
+        "en": "Many stores hire seasonal staff before the holidays.",
+        "ja": "多くの店は、年末前に季節雇用の従業員を採用する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "automation",
+      "pos": "名",
+      "ja": "自動化",
+      "gloss": "（＝人の作業を機械やソフトに任せること）",
+      "example": {
+        "en": "Automation reduced the time needed to pack each order.",
+        "ja": "自動化により、1件ごとの梱包にかかる時間が減った。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "on-demand",
+      "pos": "形",
+      "ja": "必要に応じた、オンデマンドの",
+      "gloss": "（＝必要なときだけ呼ぶ、という意味）",
+      "example": {
+        "en": "The company uses on-demand drivers during busy weeks.",
+        "ja": "その会社は繁忙週にオンデマンドのドライバーを使う。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "posting",
+      "pos": "名",
+      "ja": "求人広告、掲載",
+      "gloss": "",
+      "example": {
+        "en": "The job posting closes on Friday.",
+        "ja": "その求人広告は金曜に締め切られる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "share",
+      "pos": "名",
+      "ja": "割合、シェア",
+      "gloss": "",
+      "example": {
+        "en": "Our share of the market grew last year.",
+        "ja": "当社の市場シェアは昨年拡大した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "contract",
+      "pos": "名",
+      "ja": "契約",
+      "gloss": "",
+      "example": {
+        "en": "She signed a one-year contract with the supplier.",
+        "ja": "彼女はその仕入れ先と1年契約を結んだ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "opening",
+      "pos": "名",
+      "ja": "欠員、空きポジション",
+      "gloss": "",
+      "example": {
+        "en": "We have two openings in the sales team.",
+        "ja": "営業チームには2つの欠員がある。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "labeled",
+      "pos": "動",
+      "ja": "〜と表示した、分類した（label の過去分詞）",
+      "gloss": "",
+      "example": {
+        "en": "The boxes were labeled with the delivery date.",
+        "ja": "箱には配達日が表示されていた。"
+      }
+    }
+  ],
+  "glossary": {
+    "seasonal": {
+      "lemma": "seasonal",
+      "pos": "形",
+      "ja": "季節的な",
+      "note": ""
+    },
+    "holiday": {
+      "lemma": "holiday",
+      "pos": "名",
+      "ja": "年末商戦、休暇",
+      "note": ""
+    },
+    "fewer": {
+      "lemma": "few",
+      "pos": "形",
+      "ja": "より少ない",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "added": {
+      "lemma": "add",
+      "pos": "動",
+      "ja": "増える、追加される",
+      "note": ""
+    },
+    "roughly": {
+      "lemma": "roughly",
+      "pos": "副",
+      "ja": "およそ",
+      "note": ""
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "まかなう",
+      "note": ""
+    },
+    "busy": {
+      "lemma": "busy",
+      "pos": "形",
+      "ja": "忙しい",
+      "note": ""
+    },
+    "current": {
+      "lemma": "current",
+      "pos": "形",
+      "ja": "現在の",
+      "note": ""
+    },
+    "staff": {
+      "lemma": "staff",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    },
+    "automation": {
+      "lemma": "automation",
+      "pos": "名",
+      "ja": "自動化",
+      "note": ""
+    },
+    "on-demand": {
+      "lemma": "on-demand",
+      "pos": "形",
+      "ja": "必要に応じた",
+      "note": ""
+    },
+    "offering": {
+      "lemma": "offer",
+      "pos": "動",
+      "ja": "提供する",
+      "note": ""
+    },
+    "part-time": {
+      "lemma": "part-time",
+      "pos": "形",
+      "ja": "パートタイムの",
+      "note": ""
+    },
+    "contracts": {
+      "lemma": "contract",
+      "pos": "名",
+      "ja": "契約",
+      "note": ""
+    },
+    "data": {
+      "lemma": "data",
+      "pos": "名",
+      "ja": "データ",
+      "note": ""
+    },
+    "employers'": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主",
+      "note": "複数形の所有格（employers の〜）"
+    },
+    "postings": {
+      "lemma": "posting",
+      "pos": "名",
+      "ja": "求人広告",
+      "note": ""
+    },
+    "labeled": {
+      "lemma": "label",
+      "pos": "動",
+      "ja": "表示する、分類する",
+      "note": ""
+    },
+    "share": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "割合、シェア",
+      "note": ""
+    },
+    "fallen": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下がる",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上がる",
+      "note": ""
+    },
+    "experts": {
+      "lemma": "expert",
+      "pos": "名",
+      "ja": "専門家",
+      "note": ""
+    },
+    "signals": {
+      "lemma": "signal",
+      "pos": "名",
+      "ja": "兆し",
+      "note": ""
+    },
+    "mixed": {
+      "lemma": "mixed",
+      "pos": "形",
+      "ja": "入り混じった",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "short-term": {
+      "lemma": "short-term",
+      "pos": "形",
+      "ja": "短期の",
+      "note": ""
+    },
+    "openings": {
+      "lemma": "opening",
+      "pos": "名",
+      "ja": "欠員、募集枠",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "A rather than B（BではなくA）",
+    "quote": "Many are also offering part-time jobs rather than short seasonal contracts.",
+    "quoteJa": "多くの企業は、短期の季節契約ではなくパートタイムの仕事も提示している。",
+    "blocks": [
+      {
+        "heading": "構文の解説",
+        "body": "rather than は「〜ではなく、〜よりむしろ」を表し、A rather than B の形で「BではなくA」と、選んだ方（A）を前に、退けた方（B）を後ろに置く。ここでは offering part-time jobs（選んだ方）と short seasonal contracts（退けた方）が対比されている。A と B は同じ品詞・同じ形でそろえるのが原則で、本文では名詞句どうしを比べている。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "・They offer part-time jobs instead of short seasonal contracts.（instead of でも同じ意味。ただし instead of の後ろは名詞か動名詞）\n・They chose to hire part-time workers rather than (to) hire seasonal workers.（動詞を比べる場合は原形または to 不定詞が続く）\nrather than が文頭や主語の後ろで接続詞のように動詞を比べる点が、instead of との違い。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では、rather than の前後の形が問われる。例：The manager decided to extend the deadline rather than ( ) the project.（正解：cancel。to 不定詞の to は省略できる）また Part 7 では、選んだ方（A）と退けた方（B）を取り違えさせる設問がよく出る。「何を選び、何を選ばなかったか」を押さえて読むこと。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "・We will hold the meeting online rather than in person.（会議は対面ではなくオンラインで開催します。）\n・The company chose to repair the machines rather than replace them.（会社は機械を買い替えるのではなく修理することにした。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 「季節雇用」とは何か",
+      "body": "季節雇用（seasonal hiring）とは、年末商戦のように忙しい時期だけ店舗や物流センターが短期で採用する仕組み。米国ではブラックフライデーからクリスマスにかけて売上が集中するため、毎年秋に小売各社の採用計画が発表され、「年末の消費がどの程度強いか」を占う先行指標として投資家にも注目される。今年は発表数自体が少なく、各社が採用を抑えている様子がうかがえる。"
+    },
+    {
+      "heading": "📌 2. 「パートタイム化」が進む理由",
+      "body": "本文のインディードのデータでは、大手企業の求人で季節雇用の表示が約34%から約20%に下がり、パートタイムは38%から49%に上がった。企業は繁忙期だけの大量採用を避け、通年で働くパート人材を増やして、必要なときに労働時間を調整する方向に動いている。自動化や必要なときだけ働くオンデマンド人材の活用も、人手の確保を柔軟にする手段になっている。"
+    },
+    {
+      "heading": "📌 3. 業界全体の動向",
+      "body": "チャレンジャー社の予測では、今年の季節雇用は約45万件で、昨年より約2.5%少ない。景気の先行きに慎重な消費者を前に、小売各社は固定費を増やしたくないと考えているとみられる。一方で、一部の雇用主は来年まで需要が強いと見込んでおり、そうした企業は季節雇用ではなく長く働いてもらえるパート採用を選んでいる可能性がある。このため、専門家は兆候を「強弱入り混じった」ものと見ている。"
+    },
+    {
+      "heading": "📌 4. 日本への影響・示唆",
+      "body": "日本でも、小売・物流・外食で人手不足を背景に、短期の派遣やアルバイトから、通年のパート・短時間正社員へ切り替える動きがある。米国の動きは、需要の波に合わせて雇用の形を柔軟に変える流れが世界的に強まっていることを示す。日本企業にとっては、米国市場向けの商品を扱う場合、年末商戦の人員体制や在庫の動きに影響する可能性がある。投資家は、米小売各社の年末採用計画や決算説明で示される消費の見通しを、需要の温度感を測る材料として確認しておくとよい。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "As holiday shopping approaches, seasonal hiring gives 'mixed signals,' experts say",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/make-it/2026/10/27/seasonal-hiring-2026-holiday-jobs.html",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "Large employers are hiring part-time workers over seasonal ones, Indeed says",
+      "publisher": "HR Dive",
+      "url": "https://www.hrdive.com/news/large-employers-are-hiring-part-time-workers-over-seasonal-ones-indeed/833437/",
+      "date": "2026-10"
+    },
+    {
+      "title": "Retailers Plan Fewer Holiday Hires, Lean On Gig Workers Instead",
+      "publisher": "SelfEmployed.com",
+      "url": "https://www.selfemployed.com/news/2026-holiday-seasonal-hiring-gig-workers/",
+      "date": "2026-10"
+    }
+  ]
+}
