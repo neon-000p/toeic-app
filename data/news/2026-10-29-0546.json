@@ -458,5 +458,23 @@
       "url": "https://qz.com/us-consumer-confidence-october-first-rise-four-months-102726",
       "date": "2026-10-27"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-29-0546/00.mp3",
+      "audio/2026-10-29-0546/01.mp3",
+      "audio/2026-10-29-0546/02.mp3",
+      "audio/2026-10-29-0546/03.mp3",
+      "audio/2026-10-29-0546/04.mp3",
+      "audio/2026-10-29-0546/05.mp3",
+      "audio/2026-10-29-0546/06.mp3",
+      "audio/2026-10-29-0546/07.mp3",
+      "audio/2026-10-29-0546/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 214572,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-28T23:51:12.634Z",
+    "trimmed": true
+  }
 }
