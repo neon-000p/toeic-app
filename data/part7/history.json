@@ -1,8 +1,25 @@
 {
   "schemaVersion": 1,
   "type": "part7-history",
-  "updatedAt": "2026-10-23T04:14:00+09:00",
+  "updatedAt": "2026-10-30T04:13:00+09:00",
   "items": [
+    {
+      "id": "2026-10-30-0413",
+      "date": "2026-10-30",
+      "scene": "手紙＋日程表｜地域ビジネスフォーラムの登壇者案内",
+      "format": "double",
+      "docTypes": [
+        "letter",
+        "schedule"
+      ],
+      "types": [
+        "gist",
+        "synonym",
+        "detail",
+        "infer",
+        "detail"
+      ]
+    },
     {
       "id": "2026-10-23-0414",
       "date": "2026-10-23",

@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-10-30-0413",
+  "date": "2026-10-30",
+  "time": "04:13",
+  "createdAt": "2026-10-30T04:13:00+09:00",
+  "sample": false,
+  "format": "double",
+  "scene": "手紙＋日程表｜地域ビジネスフォーラムの登壇者案内",
+  "intro": "Questions 1-5 refer to the following letter and schedule.",
+  "docs": [
+    {
+      "docType": "letter",
+      "label": "手紙",
+      "header": [
+        {
+          "label": "Date",
+          "text": "5 September"
+        },
+        {
+          "label": "To",
+          "text": "Ms. Helena Brandt, Brandt Logistics Consulting"
+        },
+        {
+          "label": "From",
+          "text": "Owen Pritchard, Program Chair, Eastport Business Forum"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Thank you for agreeing to speak at the Eastport Business Forum on 14 October.",
+              "ja": "10月14日のイーストポート・ビジネスフォーラムでご講演いただけることに御礼申し上げます。"
+            },
+            {
+              "en": "Your presentation on reducing warehouse costs has been placed in the afternoon program.",
+              "ja": "倉庫コストの削減に関するご発表は、午後のプログラムに入れてあります。"
+            },
+            {
+              "en": "A schedule of the day's sessions is enclosed.",
+              "ja": "当日のセッションの日程表を同封しております。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Speakers are asked to check in at the East Lobby by 8:30 a.m. so that the technical staff can test their equipment.",
+              "ja": "登壇者の皆様は、技術スタッフが機材を試せるよう、午前8時30分までに東ロビーで受付をお済ませください。"
+            },
+            {
+              "en": "Please send your slides to our office no later than 7 October.",
+              "ja": "スライドは遅くとも10月7日までに当事務所へお送りください。"
+            },
+            {
+              "en": "Because the forum has limited seating, each speaker may invite two guests free of charge.",
+              "ja": "当フォーラムは座席に限りがあるため、登壇者は2名まで無料でお客様をご招待いただけます。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "To reserve their places, please reply with their names by 30 September.",
+              "ja": "お客様の席を確保するため、9月30日までに氏名をお知らせください。"
+            },
+            {
+              "en": "Directions to Harbor Hall and a list of nearby hotels are available on our Web site.",
+              "ja": "ハーバーホールへの道順と近隣のホテル一覧は、当フォーラムのウェブサイトでご覧いただけます。"
+            },
+            {
+              "en": "We look forward to welcoming you to Eastport.",
+              "ja": "イーストポートでお迎えできることを楽しみにしております。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "docType": "schedule",
+      "label": "日程表",
+      "header": [
+        {
+          "label": "",
+          "text": "Eastport Business Forum — Saturday, 14 October (Harbor Hall)"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "8:00 a.m. Registration and speaker check-in (East Lobby)",
+              "ja": "午前8時　受付・登壇者の確認（東ロビー）"
+            },
+            {
+              "en": "9:00–10:00 a.m. Opening remarks and keynote speech (Main Room)",
+              "ja": "午前9時〜10時　開会のあいさつと基調講演（メインルーム）"
+            },
+            {
+              "en": "10:30–11:30 a.m. Session A: Hiring in a Changing Market (Room 1)",
+              "ja": "午前10時30分〜11時30分　セッションA：変化する市場での採用（1号室）"
+            },
+            {
+              "en": "12:00–1:00 p.m. Lunch for speakers and registered guests only (Dining Hall)",
+              "ja": "正午〜午後1時　昼食（登壇者と登録済みのお客様のみ・食堂）"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "1:30–2:30 p.m. Session B: Reducing Warehouse Costs (Room 2)",
+              "ja": "午後1時30分〜2時30分　セッションB：倉庫コストの削減（2号室）"
+            },
+            {
+              "en": "3:00–4:00 p.m. Session C: Marketing to Online Shoppers (Room 1)",
+              "ja": "午後3時〜4時　セッションC：オンライン購買客へのマーケティング（1号室）"
+            },
+            {
+              "en": "4:30–5:00 p.m. Closing remarks and prize drawing (Main Room)",
+              "ja": "午後4時30分〜5時　閉会のあいさつと抽選会（メインルーム）"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the purpose of the letter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To request payment of a registration fee",
+          "ja": "参加費の支払いを求めること"
+        },
+        {
+          "key": "B",
+          "text": "To confirm details for a forum speaker",
+          "ja": "フォーラム登壇者に詳細を伝えること"
+        },
+        {
+          "key": "C",
+          "text": "To invite guests to a company lunch",
+          "ja": "会社の昼食会に客を招くこと"
+        },
+        {
+          "key": "D",
+          "text": "To announce a change of location",
+          "ja": "会場変更を知らせること"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "第1段落の冒頭で登壇への礼を述べ、その後に発表の時間帯、到着時刻、スライドの期限、招待客の手続きが続く。登壇者への案内が目的なので B。参加費の話は出てこないので A は誤り。",
+      "tip": "目的を問う設問は、冒頭の1〜2文と最後の依頼で決める。細部の話題（昼食など）に引っ張られない。"
+    },
+    {
+      "id": "q2",
+      "type": "synonym",
+      "prompt": "The word \"enclosed\" in paragraph 1, line 3, is closest in meaning to",
+      "choices": [
+        {
+          "key": "A",
+          "text": "attached",
+          "ja": "添付された"
+        },
+        {
+          "key": "B",
+          "text": "surrounded",
+          "ja": "囲まれた"
+        },
+        {
+          "key": "C",
+          "text": "delivered",
+          "ja": "配達された"
+        },
+        {
+          "key": "D",
+          "text": "required",
+          "ja": "必要とされた"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "第1段落の最後の文は「日程表が enclosed されている」で、手紙に同封されていることを表す。近い意味は attached。surrounded は「周りを囲まれた」で、書類の話には合わない。",
+      "tip": "言い換え問題は、候補の語を本文の位置に入れて文が成り立つかを確かめる。手紙・メールの同封や添付は enclosed ＝ attached。"
+    },
+    {
+      "id": "q3",
+      "type": "detail",
+      "prompt": "What is Ms. Brandt asked to do by 7 October?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Reserve a seat in the dining hall",
+          "ja": "食堂の席を予約する"
+        },
+        {
+          "key": "B",
+          "text": "Test the equipment in Room 2",
+          "ja": "2号室で機材を試す"
+        },
+        {
+          "key": "C",
+          "text": "Confirm the names of her guests",
+          "ja": "招待客の名前を確認する"
+        },
+        {
+          "key": "D",
+          "text": "Send her presentation slides",
+          "ja": "発表用のスライドを送る"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第2段落の2文目に「10月7日までにスライドを事務所へ送る」とある。名前を知らせる期限は9月30日で、7日ではないので C は誤り。",
+      "tip": "日付を問う設問は、その日付を本文で探してから、同じ文の動詞を見る。似た別の日付（30 September）に注意。"
+    },
+    {
+      "id": "q4",
+      "type": "infer",
+      "prompt": "When will Ms. Brandt most likely give her presentation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "At 1:30 p.m.",
+          "ja": "午後1時30分"
+        },
+        {
+          "key": "B",
+          "text": "At 10:30 a.m.",
+          "ja": "午前10時30分"
+        },
+        {
+          "key": "C",
+          "text": "At 3:00 p.m.",
+          "ja": "午後3時"
+        },
+        {
+          "key": "D",
+          "text": "At 12:00 noon",
+          "ja": "正午"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 1
+        },
+        {
+          "d": 1,
+          "p": 1,
+          "s": 0
+        }
+      ],
+      "cross": true,
+      "explanation": "手紙は発表の題名を「倉庫コストの削減」とし、午後のプログラムだと述べている。日程表でその題名のセッションBは午後1時30分から。時間は日程表にしか載っていないので、両方を見ないと決まらない。",
+      "tip": "複数文書で時間や場所を聞かれたら、手紙・メールで題名や名前を拾い、もう一方の表でその題名を探す。"
+    },
+    {
+      "id": "q5",
+      "type": "detail",
+      "prompt": "What must Ms. Brandt do for her guests to receive lunch?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Pay a fee in advance",
+          "ja": "事前に料金を払う"
+        },
+        {
+          "key": "B",
+          "text": "Arrive before 8:30 a.m.",
+          "ja": "午前8時30分前に着く"
+        },
+        {
+          "key": "C",
+          "text": "Send their names by 30 September",
+          "ja": "9月30日までに氏名を伝える"
+        },
+        {
+          "key": "D",
+          "text": "Ask for seats in Room 2",
+          "ja": "2号室の席を頼む"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 2,
+          "s": 0
+        },
+        {
+          "d": 1,
+          "p": 0,
+          "s": 3
+        }
+      ],
+      "cross": true,
+      "explanation": "日程表では、昼食は登壇者と「登録済みのお客様」だけに出る。手紙では、客の席を確保するために9月30日までに氏名を知らせるよう求めている。両方を合わせると、氏名を送ることで客が登録され、昼食を受けられると分かる。A は手紙に無料とあるので誤り。",
+      "tip": "日程表の注意書き（registered guests only）は、もう一方の文書の手続きと結びつけて読む。"
+    }
+  ],
+  "glossary": {
+    "no later than": {
+      "lemma": "no later than",
+      "pos": "熟",
+      "ja": "遅くとも〜までに",
+      "note": "",
+      "example": {
+        "en": "Please return the form no later than Wednesday noon.",
+        "ja": "水曜日の正午までに用紙をご返送ください。"
+      }
+    },
+    "free of charge": {
+      "lemma": "free of charge",
+      "pos": "熟",
+      "ja": "無料で",
+      "note": "",
+      "example": {
+        "en": "Parking is free of charge for hotel guests.",
+        "ja": "駐車場はホテル宿泊客は無料だ。"
+      }
+    },
+    "look forward to": {
+      "lemma": "look forward to",
+      "pos": "熟",
+      "ja": "〜を楽しみにする",
+      "note": "to のあとは名詞か動名詞",
+      "example": {
+        "en": "We look forward to working with your team this spring.",
+        "ja": "この春、御社のチームと仕事をするのを楽しみにしています。"
+      }
+    },
+    "keynote speech": {
+      "lemma": "keynote speech",
+      "pos": "熟",
+      "ja": "基調講演",
+      "note": "",
+      "example": {
+        "en": "The CEO will deliver the keynote speech at the trade show.",
+        "ja": "最高経営責任者が見本市で基調講演を行う。"
+      }
+    },
+    "registered guests": {
+      "lemma": "registered guests",
+      "pos": "熟",
+      "ja": "登録済みの客",
+      "note": "",
+      "example": {
+        "en": "Only registered guests may enter the VIP lounge.",
+        "ja": "登録済みのお客様だけが貴賓ラウンジに入れる。"
+      }
+    },
+    "limited seating": {
+      "lemma": "limited seating",
+      "pos": "熟",
+      "ja": "限られた座席数",
+      "note": "",
+      "example": {
+        "en": "Due to limited seating, early reservations are advised.",
+        "ja": "座席に限りがあるため、早めのご予約をお勧めします。"
+      }
+    },
+    "technical staff": {
+      "lemma": "technical staff",
+      "pos": "熟",
+      "ja": "技術スタッフ",
+      "note": "",
+      "example": {
+        "en": "The technical staff will repair the projector before noon.",
+        "ja": "技術スタッフが正午前にプロジェクターを修理する。"
+      }
+    },
+    "reserve": {
+      "lemma": "reserve",
+      "pos": "動",
+      "ja": "予約する、確保する",
+      "note": "",
+      "example": {
+        "en": "Please reserve a table for six people at seven o'clock.",
+        "ja": "7時に6名分のテーブルを予約してください。"
+      }
+    },
+    "enclosed": {
+      "lemma": "enclosed",
+      "pos": "形",
+      "ja": "同封された",
+      "note": "動詞 enclose の過去分詞",
+      "example": {
+        "en": "Enclosed is a copy of the signed agreement.",
+        "ja": "署名済みの契約書の写しを同封します。"
+      }
+    },
+    "closing remarks": {
+      "lemma": "closing remarks",
+      "pos": "熟",
+      "ja": "閉会のあいさつ",
+      "note": "",
+      "example": {
+        "en": "The director gave brief closing remarks to the audience.",
+        "ja": "部長は聴衆に向けて短い閉会のあいさつをした。"
+      }
+    }
+  },
+  "point": {
+    "lead": "設問を先に読み、根拠が1つの文書にあるか2つにまたがるかを見分ける",
+    "items": [
+      {
+        "title": "複数文書は「つなぎの情報」を探す",
+        "body": "片方の文書の題名・名前・条件を拾い、もう一方の表や案内でそれを探す。時間・場所・料金は表にあることが多い。"
+      },
+      {
+        "title": "似た日付や数字は同じ文の動詞で見分ける",
+        "body": "期限が複数あるときは、設問の動作（送る・知らせる）と同じ文の日付を選ぶ。別の動作の日付は誤答に使われやすい。"
+      },
+      {
+        "title": "設問の順番は本文の流れに沿う",
+        "body": "設問は前から順に根拠が進むので、前の設問の根拠の位置から続きを探すと、本文を最初から読み直さずに済む。"
+      }
+    ]
+  }
+}
