@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-29-1645",
+  "date": "2026-10-29",
+  "time": "16:45",
+  "createdAt": "2026-10-29T16:45:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "UPS Raises Outlook as It Ships Fewer Amazon Packages",
+    "ja": "UPS、アマゾン向けを減らし見通し上方修正"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "UPS reported higher profit in the third quarter and raised its outlook for the full year.",
+            "ja": "UPSは第3四半期に増益を報告し、通期の見通しを引き上げた。"
+          },
+          {
+            "en": "Revenue grew 6.7% to $22.9 billion, even though the company delivered fewer packages.",
+            "ja": "同社の配達個数は減ったものの、売上高は6.7%増の229億ドルとなった。"
+          },
+          {
+            "en": "In its U.S. business, average daily volume fell 3.3%, but revenue still rose 4.5% to $14.9 billion.",
+            "ja": "米国事業では1日あたりの平均取扱量が3.3%減ったが、売上高は4.5%増の149億ドルだった。"
+          },
+          {
+            "en": "UPS now expects annual revenue of about $92.6 billion and a free cash flow target of about $6.1 billion.",
+            "ja": "UPSは現在、年間売上高を約926億ドル、フリーキャッシュフローの目標を約61億ドルと見込んでいる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The drop in volume was planned, because UPS chose to deliver fewer low-margin parcels for Amazon.",
+            "ja": "取扱量の減少は計画的なもので、UPSはアマゾン向けの低採算の荷物を減らすことを選んだ。"
+          },
+          {
+            "en": "The company charged more for each package, which lifted its U.S. operating margin to 7%.",
+            "ja": "同社は荷物1個あたりの料金を引き上げ、それが米国の営業利益率を7%に押し上げた。"
+          },
+          {
+            "en": "Executives said that higher prices, not volume alone, will drive future profit.",
+            "ja": "幹部は、今後の利益を牽引するのは取扱量だけではなく、価格の上昇だと述べた。"
+          },
+          {
+            "en": "Even so, daily volume is expected to decline again in the fourth quarter, and the Amazon comparison will remain a headwind into 2027.",
+            "ja": "それでも1日あたりの取扱量は第4四半期に再び減る見通しで、アマゾンとの比較は2027年まで逆風になる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did UPS's average daily U.S. volume fall in the third quarter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "6.1%",
+          "ja": "6.1%"
+        },
+        {
+          "key": "B",
+          "text": "6.7%",
+          "ja": "6.7%"
+        },
+        {
+          "key": "C",
+          "text": "3.3%",
+          "ja": "3.3%"
+        },
+        {
+          "key": "D",
+          "text": "4.5%",
+          "ja": "4.5%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解はC。本文2文目に「average daily volume fell 3.3%」とある。A(6.1%)は本文にない数字、B(6.7%)は全社の売上高の伸び率、D(4.5%)は米国事業の売上高の伸び率で、いずれも取扱量の減少率ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字問題は、同じ段落に複数のパーセントが並ぶ。「何の数字か」(量か売上か)を示す名詞を必ず確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did UPS's volume drop?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Customers stopped using its services.",
+          "ja": "顧客が利用をやめた。"
+        },
+        {
+          "key": "B",
+          "text": "The company chose to deliver fewer low-margin parcels.",
+          "ja": "低採算の荷物を意図的に減らした。"
+        },
+        {
+          "key": "C",
+          "text": "A strike delayed deliveries.",
+          "ja": "ストが配達を遅らせた。"
+        },
+        {
+          "key": "D",
+          "text": "Prices were lowered for small businesses.",
+          "ja": "小企業向けに値下げした。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。第2段落1文目に「The drop in volume was planned, because UPS chose to deliver fewer low-margin parcels for Amazon」とある。Aは顧客離れの記述がなく、Cのストライキは本文にない。Dは逆で、UPSは荷物1個あたりの料金を引き上げている。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由問題は because / so / due to の直後に答えがある。選択肢は本文の言い換え(chose to deliver fewer → 意図的に減らした)になっていることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "outlook",
+      "pos": "名",
+      "ja": "見通し、予測",
+      "gloss": "",
+      "example": {
+        "en": "The outlook for next year is positive.",
+        "ja": "来年の見通しは明るい。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "revenue",
+      "pos": "名",
+      "ja": "売上高、収益",
+      "gloss": "",
+      "example": {
+        "en": "The firm's revenue doubled in three years.",
+        "ja": "その会社の売上高は3年で倍になった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "volume",
+      "pos": "名",
+      "ja": "取扱量、量",
+      "gloss": "",
+      "example": {
+        "en": "Shipping volume rises before the holidays.",
+        "ja": "出荷量は休暇シーズンの前に増える。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "margin",
+      "pos": "名",
+      "ja": "利益率、利ざや",
+      "gloss": "（＝売上のうち利益として残る割合のこと）",
+      "example": {
+        "en": "A higher margin means the company keeps more profit.",
+        "ja": "利益率が高いと会社に残る利益が増える。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "charge",
+      "pos": "動",
+      "ja": "（料金を）請求する",
+      "gloss": "",
+      "example": {
+        "en": "The hotel charges extra for late checkout.",
+        "ja": "そのホテルは遅いチェックアウトに追加料金を請求する。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "executive",
+      "pos": "名",
+      "ja": "幹部、役員",
+      "gloss": "",
+      "example": {
+        "en": "Senior executives will attend the meeting.",
+        "ja": "幹部たちが会議に出席する。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "decline",
+      "pos": "動",
+      "ja": "減少する、低下する",
+      "gloss": "",
+      "example": {
+        "en": "Sales may decline during the summer.",
+        "ja": "売上は夏の間に落ち込むかもしれない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "headwind",
+      "pos": "名",
+      "ja": "逆風、向かい風",
+      "gloss": "（＝業績の足を引っ張る要因のこと）",
+      "example": {
+        "en": "Rising fuel costs are a headwind for airlines.",
+        "ja": "燃料費の上昇は航空会社にとって逆風だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "報告した",
+      "note": ""
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "third": {
+      "lemma": "third",
+      "pos": "形",
+      "ja": "第3の",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "outlook": {
+      "lemma": "outlook",
+      "pos": "名",
+      "ja": "見通し",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "名",
+      "ja": "売上高",
+      "note": ""
+    },
+    "grew": {
+      "lemma": "grow",
+      "pos": "動",
+      "ja": "伸びた",
+      "note": ""
+    },
+    "delivered": {
+      "lemma": "deliver",
+      "pos": "動",
+      "ja": "配達した",
+      "note": ""
+    },
+    "packages": {
+      "lemma": "package",
+      "pos": "名",
+      "ja": "荷物、小包",
+      "note": ""
+    },
+    "average": {
+      "lemma": "average",
+      "pos": "形",
+      "ja": "平均の",
+      "note": ""
+    },
+    "volume": {
+      "lemma": "volume",
+      "pos": "名",
+      "ja": "取扱量",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "減った",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込む",
+      "note": ""
+    },
+    "annual": {
+      "lemma": "annual",
+      "pos": "形",
+      "ja": "年間の",
+      "note": ""
+    },
+    "free": {
+      "lemma": "free",
+      "pos": "形",
+      "ja": "自由な",
+      "note": ""
+    },
+    "cash": {
+      "lemma": "cash",
+      "pos": "名",
+      "ja": "現金",
+      "note": ""
+    },
+    "flow": {
+      "lemma": "flow",
+      "pos": "名",
+      "ja": "流れ",
+      "note": ""
+    },
+    "target": {
+      "lemma": "target",
+      "pos": "名",
+      "ja": "目標",
+      "note": ""
+    },
+    "planned": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "計画した",
+      "note": ""
+    },
+    "parcels": {
+      "lemma": "parcel",
+      "pos": "名",
+      "ja": "小包",
+      "note": ""
+    },
+    "charged": {
+      "lemma": "charge",
+      "pos": "動",
+      "ja": "請求した",
+      "note": ""
+    },
+    "operating": {
+      "lemma": "operate",
+      "pos": "形",
+      "ja": "営業の",
+      "note": ""
+    },
+    "margin": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": ""
+    },
+    "lifted": {
+      "lemma": "lift",
+      "pos": "動",
+      "ja": "押し上げた",
+      "note": ""
+    },
+    "executives": {
+      "lemma": "executive",
+      "pos": "名",
+      "ja": "幹部",
+      "note": ""
+    },
+    "decline": {
+      "lemma": "decline",
+      "pos": "動",
+      "ja": "減少する",
+      "note": ""
+    },
+    "comparison": {
+      "lemma": "comparison",
+      "pos": "名",
+      "ja": "比較",
+      "note": ""
+    },
+    "headwind": {
+      "lemma": "headwind",
+      "pos": "名",
+      "ja": "逆風",
+      "note": ""
+    },
+    "low-margin": {
+      "lemma": "low-margin",
+      "pos": "形",
+      "ja": "低採算の",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "関係代名詞 which の非制限用法(継続用法)",
+    "quote": "The company charged more for each package, which lifted its U.S. operating margin to 7%.",
+    "quoteJa": "同社は荷物1個あたりの料金を引き上げ、それが米国の営業利益率を7%に押し上げた。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "カンマ＋which は、直前の節(ここでは The company charged more for each package という内容全体)を先行詞として受け、「そしてそれが〜」と結果や補足を付け足す用法です。which は直前の名詞 package だけでなく、前の節全体を指しています。"
+      },
+      {
+        "heading": "書き換え",
+        "body": "The company charged more for each package, and this lifted its U.S. operating margin to 7%. と言い換えられます。which = and this と考えると意味を取りやすくなります。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 では、カンマの後に that は置けない点が狙われます(×, that lifted)。また Part 7 では、which が受ける内容を問う設問が出ます。直前の語ではなく前の節全体を指すことがある点に注意しましょう。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "Sales rose 10% last quarter, which exceeded our forecast. (先四半期の売上は10%伸びて、それは予想を上回りました。) / The office will move in May, which gives us time to prepare. (オフィスは5月に移転し、準備の時間が取れます。)"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか",
+      "body": "米宅配大手UPSが第3四半期決算を発表し、通期の見通しを再び引き上げました。荷物の数は減ったのに売上高と利益率は改善しています。ポイントは「量より質」への方針転換で、低採算のアマゾン向け配送を意図的に減らし、1個あたりの単価を高めた点です。"
+    },
+    {
+      "heading": "📌 用語のかみ砕き",
+      "body": "「営業利益率(operating margin)」は売上のうち本業の利益として残る割合のことです。「フリーキャッシュフロー」は、事業で稼いだ現金から投資に使った分を引いた、自由に使える現金を指します。「headwind(逆風)」は業績の足を引っ張る要因を表す、ビジネス英語の定番表現です。"
+    },
+    {
+      "heading": "📌 業界全体の動き",
+      "body": "宅配業界では、ネット通販の急拡大で取扱量が増えた一方、荷物1個あたりの利益は伸び悩んできました。大口顧客に依存すると値下げ圧力を受けやすいため、中小企業やヘルスケア分野といった採算の良い顧客を増やす動きが各社で進んでいます。UPSは中小企業が国内取扱量の35%超まで増えたと説明しています。"
+    },
+    {
+      "heading": "📌 日本への示唆と投資家の視点",
+      "body": "日本でも、宅配大手が運賃の引き上げや取引条件の見直しを進めており、「量を追うより利益率を重視する」流れは共通しています。荷主企業にとっては物流コストが上がりやすい環境が続く可能性があります。投資家にとっては、取扱量の減少を単価と利益率の改善で補えるかが、今後の評価を分けるポイントになります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "UPS beats quarterly expectations, raises full-year guidance again",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/27/ups-ups-q3-2026-earnings.html",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "UPS expects $92.6B 2026 revenue as it raises operating profit outlook to $8.75B",
+      "publisher": "Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4658131-ups-expects-92_6b-2026-revenue-as-it-raises-operating-profit-outlook-to-8_75b",
+      "date": "2026-10-27"
+    }
+  ]
+}
