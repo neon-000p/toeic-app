@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part5-history",
-  "updatedAt": "2026-10-23T04:14:00+09:00",
+  "updatedAt": "2026-10-30T04:09:00+09:00",
   "items": [
+    {
+      "id": "2026-10-30-0409",
+      "date": "2026-10-30",
+      "focus": "文法7・語彙3",
+      "types": [
+        "form",
+        "vocab",
+        "verb",
+        "prep",
+        "form",
+        "vocab",
+        "conj",
+        "comp",
+        "verbal",
+        "vocab"
+      ],
+      "topics": [
+        "所有格のあとの名詞",
+        "現在形の受動態（主語が物）",
+        "譲歩の前置詞 despite",
+        "be 動詞のあとの形容詞",
+        "理由を表す接続詞 now that",
+        "most of ＋ the ＋ 名詞",
+        "enable ＋ 目的語 ＋ to 不定詞"
+      ]
+    },
     {
       "id": "2026-10-23-0414",
       "date": "2026-10-23",

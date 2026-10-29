@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-10-30-0409",
+  "date": "2026-10-30",
+  "time": "04:09",
+  "createdAt": "2026-10-30T04:09:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "Ms. Okada was recognized for her ------- in reducing delivery delays during the busy holiday season.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "dedicate",
+          "ja": "（動）捧げる"
+        },
+        {
+          "key": "B",
+          "text": "dedicated",
+          "ja": "（形）献身的な"
+        },
+        {
+          "key": "C",
+          "text": "dedication",
+          "ja": "（名）献身、熱意"
+        },
+        {
+          "key": "D",
+          "text": "dedicatedly",
+          "ja": "（副）ひたむきに"
+        }
+      ],
+      "answer": "C",
+      "ja": "岡田さんは、繁忙な年末年始の時期に配送の遅れを減らすことに尽力したことが評価された。",
+      "explanation": "空所は所有格 her のあと、前置詞 in の前にあり、名詞が入る。dedication が正解。dedicated は形容詞で her の直後に置くと「her dedicated in」となり不自然。dedicatedly は副詞で名詞の位置に入らない。",
+      "tip": "選択肢が同じ語幹で語尾だけ違えば品詞問題。空所の前が所有格なら名詞を第一候補にする。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "prompt": "Please ------- the signed contract to the legal department no later than Friday afternoon.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "submit",
+          "ja": "提出する"
+        },
+        {
+          "key": "B",
+          "text": "resolve",
+          "ja": "解決する"
+        },
+        {
+          "key": "C",
+          "text": "reserve",
+          "ja": "予約する"
+        },
+        {
+          "key": "D",
+          "text": "withdraw",
+          "ja": "引き出す、撤回する"
+        }
+      ],
+      "answer": "A",
+      "ja": "署名済みの契約書を、遅くとも金曜日の午後までに法務部へ提出してください。",
+      "explanation": "「署名済みの契約書を法務部へ」という流れから、書類を出す意味の submit が合う。reserve は席や部屋を予約する語、withdraw は預金を引き出す・申し出を取り下げる語で、書類の提出には使わない。",
+      "tip": "動詞の語彙問題は目的語と to 以下の相手を先に見る。「書類 ＋ to 部署」なら submit。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "prompt": "All online orders ------- to customers within three business days of the payment date.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "deliver",
+          "ja": "配達する"
+        },
+        {
+          "key": "B",
+          "text": "delivering",
+          "ja": "配達している"
+        },
+        {
+          "key": "C",
+          "text": "has delivered",
+          "ja": "配達した"
+        },
+        {
+          "key": "D",
+          "text": "are delivered",
+          "ja": "配達される"
+        }
+      ],
+      "answer": "D",
+      "ja": "オンライン注文はすべて、支払い日から3営業日以内にお客様へ配達される。",
+      "explanation": "主語 All online orders は「配達される側」なので受動態。複数主語に合う are delivered が正解。has delivered は主語が単数でないと合わず、能動で目的語も続かない。deliver は動詞の原形で時制がなく、述語にならない。",
+      "tip": "選択肢に活用形が並べば動詞の問題。主語が物で後ろに目的語が無ければ受動態を疑う。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "prompt": "The outdoor concert will proceed as scheduled ------- the forecast of light rain this evening.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "owing to",
+          "ja": "〜が原因で"
+        },
+        {
+          "key": "B",
+          "text": "despite",
+          "ja": "〜にもかかわらず"
+        },
+        {
+          "key": "C",
+          "text": "regarding",
+          "ja": "〜に関して"
+        },
+        {
+          "key": "D",
+          "text": "following",
+          "ja": "〜のあとで"
+        }
+      ],
+      "answer": "B",
+      "ja": "今夜は小雨の予報だが、野外コンサートは予定どおり開催される。",
+      "explanation": "予報（雨）があっても予定どおり行う、という逆接の関係なので despite が正解。owing to は原因を表すため「雨のせいで予定どおり」となり意味が通らない。following は時間的な「あと」。",
+      "tip": "前置詞の選択肢は、空所の前後の意味の関係（原因・逆接・時間）を先に決める。proceed as scheduled の前後が逆の方向なら despite。"
+    },
+    {
+      "id": "q5",
+      "type": "form",
+      "prompt": "The updated employee manual is ------- to all new hires through the company intranet.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "accessible",
+          "ja": "（形）利用できる"
+        },
+        {
+          "key": "B",
+          "text": "access",
+          "ja": "（名・動）接続、利用"
+        },
+        {
+          "key": "C",
+          "text": "accessibly",
+          "ja": "（副）利用しやすく"
+        },
+        {
+          "key": "D",
+          "text": "accessing",
+          "ja": "（動名詞）利用すること"
+        }
+      ],
+      "answer": "A",
+      "ja": "更新された従業員マニュアルは、社内ネットワークを通じて新入社員全員が利用できる。",
+      "explanation": "be 動詞 is のあとに補語が必要で、「利用できる」という意味の形容詞 accessible が合う。access は名詞だと is access to…となり主語の manual と同一にならない。accessibly は副詞で補語にならない。",
+      "tip": "同じ語幹で語尾が違えば品詞問題。be 動詞のあとで主語の状態を説明するなら形容詞。"
+    },
+    {
+      "id": "q6",
+      "type": "vocab",
+      "prompt": "The hotel offers a ------- shuttle service between the airport and the downtown convention center.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "reluctant",
+          "ja": "気が進まない"
+        },
+        {
+          "key": "B",
+          "text": "concise",
+          "ja": "簡潔な"
+        },
+        {
+          "key": "C",
+          "text": "moderate",
+          "ja": "適度な"
+        },
+        {
+          "key": "D",
+          "text": "complimentary",
+          "ja": "無料の"
+        }
+      ],
+      "answer": "D",
+      "ja": "そのホテルは、空港と中心街のコンベンションセンターを結ぶ無料シャトルサービスを提供している。",
+      "explanation": "ホテルが提供するサービスを修飾するので、「無料の」を表す complimentary が合う。moderate は金額や程度が「適度な」の意味で、サービスそのものを無料と示さない。reluctant は人の気持ちを表す語で、サービスには使えない。",
+      "tip": "ホテル・店の案内で service や gift に付く形容詞は complimentary（無料の）が定番。"
+    },
+    {
+      "id": "q7",
+      "type": "conj",
+      "prompt": "------- the new payroll system is in place, employees can view their pay statements online.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Whereas",
+          "ja": "〜である一方"
+        },
+        {
+          "key": "B",
+          "text": "Now that",
+          "ja": "今や〜なので"
+        },
+        {
+          "key": "C",
+          "text": "Rather than",
+          "ja": "〜ではなく"
+        },
+        {
+          "key": "D",
+          "text": "Even so",
+          "ja": "それでも"
+        }
+      ],
+      "answer": "B",
+      "ja": "新しい給与システムが整ったので、従業員はオンラインで給与明細を確認できる。",
+      "explanation": "空所のあとに主語と動詞を含む節が続くので接続詞が入る。「システムが整った今、〜できる」という理由を表す Now that が正解。Even so は接続副詞で、節をつなぐ接続詞としては使えない。Whereas は対比で意味が合わない。",
+      "tip": "空所のあとに主語＋動詞が続いて文頭にあれば接続詞。そのうえで「前の状況→今できること」の因果なら now that。"
+    },
+    {
+      "id": "q8",
+      "type": "comp",
+      "prompt": "------- of the staff members attended the safety workshop held in the main auditorium on Monday.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Most",
+          "ja": "大部分"
+        },
+        {
+          "key": "B",
+          "text": "Almost",
+          "ja": "ほとんど（副詞）"
+        },
+        {
+          "key": "C",
+          "text": "Mostly",
+          "ja": "たいてい"
+        },
+        {
+          "key": "D",
+          "text": "Much",
+          "ja": "多量"
+        }
+      ],
+      "answer": "A",
+      "ja": "従業員の大半が、月曜日に大講堂で開かれた安全講習に出席した。",
+      "explanation": "空所のあとに of the staff members が続くので、名詞として働く Most（of ＋ the ＋ 複数名詞）が入る。Almost は副詞で all や every を修飾する語で、of の前には置けない。Much は数えられない名詞に使う。",
+      "tip": "most of the ＋ 名詞は「〜の大半」。almost は副詞なので almost all of … の形でしか使えない。"
+    },
+    {
+      "id": "q9",
+      "type": "verbal",
+      "prompt": "The new scanner enables clerks ------- invoices in about half the time it took before.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "process",
+          "ja": "処理する"
+        },
+        {
+          "key": "B",
+          "text": "processing",
+          "ja": "処理すること"
+        },
+        {
+          "key": "C",
+          "text": "to process",
+          "ja": "処理すること、処理するために"
+        },
+        {
+          "key": "D",
+          "text": "processed",
+          "ja": "処理された"
+        }
+      ],
+      "answer": "C",
+      "ja": "新しいスキャナーのおかげで、事務員は以前の約半分の時間で請求書を処理できる。",
+      "explanation": "enable ＋ 人 ＋ to 不定詞の形で「人が〜できるようにする」を表すので to process が正解。enable は動名詞を直接続けられず、原形も取らない。processed では invoices との関係が逆になる。",
+      "tip": "enable・allow・require・encourage などは「動詞 ＋ 人 ＋ to 不定詞」。空所の直前の動詞で型が決まる。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "The company plans to ------- its operations to several overseas markets by the end of next year.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "prevent",
+          "ja": "防ぐ"
+        },
+        {
+          "key": "B",
+          "text": "enclose",
+          "ja": "同封する"
+        },
+        {
+          "key": "C",
+          "text": "extend",
+          "ja": "広げる、延ばす"
+        },
+        {
+          "key": "D",
+          "text": "require",
+          "ja": "必要とする"
+        }
+      ],
+      "answer": "C",
+      "ja": "同社は、来年末までに事業をいくつかの海外市場へ拡大する計画だ。",
+      "explanation": "「事業を海外市場へ」の流れで、範囲を広げる意味の extend が合う。require は目的語が必要とされるものになるため意味が通らず、enclose は書類を封筒に同封するときに使う語である。",
+      "tip": "語彙問題は目的語（operations）と to 以下のつながりを見る。「事業を〜へ広げる」は extend / expand。"
+    }
+  ],
+  "glossary": {
+    "no later than": {
+      "lemma": "no later than",
+      "pos": "熟",
+      "ja": "遅くとも〜までに",
+      "note": "期限を示す",
+      "example": {
+        "en": "Please send your reply no later than noon on Tuesday.",
+        "ja": "火曜日の正午までに返信をお送りください。"
+      }
+    },
+    "as scheduled": {
+      "lemma": "as scheduled",
+      "pos": "熟",
+      "ja": "予定どおりに",
+      "note": "",
+      "example": {
+        "en": "The new software was installed as scheduled last weekend.",
+        "ja": "新しいソフトは先週末に予定どおりインストールされた。"
+      }
+    },
+    "in place": {
+      "lemma": "in place",
+      "pos": "熟",
+      "ja": "整って、導入されて",
+      "note": "",
+      "example": {
+        "en": "A backup plan is in place in case the server fails.",
+        "ja": "サーバーが故障した場合に備えた代替策が用意されている。"
+      }
+    },
+    "recognized for": {
+      "lemma": "recognized for",
+      "pos": "熟",
+      "ja": "〜で評価される",
+      "note": "recognize A for B",
+      "example": {
+        "en": "The team was recognized for its outstanding customer service.",
+        "ja": "そのチームは優れた顧客対応で評価された。"
+      }
+    },
+    "business days": {
+      "lemma": "business days",
+      "pos": "熟",
+      "ja": "営業日",
+      "note": "土日祝を除く日数",
+      "example": {
+        "en": "Refunds are processed within five business days.",
+        "ja": "返金は5営業日以内に処理される。"
+      }
+    },
+    "by the end of": {
+      "lemma": "by the end of",
+      "pos": "熟",
+      "ja": "〜の終わりまでに",
+      "note": "",
+      "example": {
+        "en": "The report must be finished by the end of this month.",
+        "ja": "報告書は今月末までに仕上げなければならない。"
+      }
+    },
+    "convention center": {
+      "lemma": "convention center",
+      "pos": "熟",
+      "ja": "会議・展示場",
+      "note": "",
+      "example": {
+        "en": "The trade show will be held at the city convention center.",
+        "ja": "その見本市は市のコンベンションセンターで開かれる。"
+      }
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予報、予測",
+      "note": "動詞では「予測する」",
+      "example": {
+        "en": "The sales forecast for next quarter looks promising.",
+        "ja": "来四半期の売上予測は有望だ。"
+      }
+    },
+    "overseas": {
+      "lemma": "overseas",
+      "pos": "形",
+      "ja": "海外の",
+      "note": "副詞では「海外へ」",
+      "example": {
+        "en": "Our overseas branch employs about fifty people.",
+        "ja": "当社の海外支店は約50人を雇用している。"
+      }
+    },
+    "enables": {
+      "lemma": "enables",
+      "pos": "動",
+      "ja": "〜を可能にする",
+      "note": "原形 enable",
+      "example": {
+        "en": "This feature enables users to share files instantly.",
+        "ja": "この機能により、利用者はファイルを即座に共有できる。"
+      }
+    }
+  },
+  "point": {
+    "lead": "選択肢の見た目で型を決めてから、空所の前後を見る",
+    "items": [
+      {
+        "title": "語尾だけ違えば品詞、活用が並べば動詞",
+        "body": "選択肢を縦に見て型を決める。品詞問題は空所の前（所有格・be 動詞）と後ろ（前置詞）だけで解く。"
+      },
+      {
+        "title": "前置詞・接続詞は意味の関係を先に決める",
+        "body": "原因・逆接・時間のどれかを空所の前後で判断する。空所のあとが節なら接続詞、句なら前置詞。"
+      },
+      {
+        "title": "動詞の直後の形は動詞が決める",
+        "body": "enable ＋ 人 ＋ to 不定詞のように、直前の動詞で後ろの形が決まる。語彙問題は目的語とのつながりで絞る。"
+      }
+    ]
+  }
+}
