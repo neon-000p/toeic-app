@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-30-0545",
+  "date": "2026-10-30",
+  "time": "05:45",
+  "createdAt": "2026-10-30T05:45:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "Malaysia Seizes $12 Million in AI Chip Servers",
+    "ja": "マレーシア、AI半導体サーバー1,200万ドル相当を押収"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Malaysian customs officials said on Wednesday that they had seized 30 servers containing advanced AI chips at Kuala Lumpur International Airport.",
+            "ja": "マレーシアの税関当局は水曜日、クアラルンプール国際空港で先端AI半導体を搭載したサーバー30台を押収したと発表した。"
+          },
+          {
+            "en": "The shipment was worth about $12 million.",
+            "ja": "積み荷の価値は約1,200万ドルだった。"
+          },
+          {
+            "en": "Officials said the cargo was falsely labeled as electrical parts and was going to be sent on to another Asian country without the required permit.",
+            "ja": "当局によると、貨物は電気部品と偽って表示されており、必要な許可なしに別のアジアの国へ転送される予定だった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Customs treats such chips as dual-use items, which means they can serve both civilian and military purposes.",
+            "ja": "税関はこうした半導体を軍民両用品として扱っており、民生用にも軍事用にも使えるという意味である。"
+          },
+          {
+            "en": "Exporters must apply for a permit before moving them, and a company that breaks the rule can face a fine of up to 20 million ringgit.",
+            "ja": "輸出業者は移動前に許可を申請しなければならず、違反した企業は最大2,000万リンギットの罰金を科される可能性がある。"
+          },
+          {
+            "en": "Officials link the case to a suspected smuggling group behind five seizures this year, worth more than 100 million ringgit in total.",
+            "ja": "当局はこの件を、今年の5件の押収（合計1億リンギット超）の背後にいるとみられる密輸グループと結び付けている。"
+          },
+          {
+            "en": "A local company that handled the shipment has been called in for questioning, but no arrests have been made.",
+            "ja": "この積み荷を扱った地元企業が事情聴取のために呼ばれたが、逮捕者は出ていない。"
+          },
+          {
+            "en": "The case shows how closely governments now watch the AI hardware trade.",
+            "ja": "この件は、各国政府がAI関連機器の取引をいかに厳しく監視しているかを示している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much were the seized servers worth?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About $1.2 million",
+          "ja": "約120万ドル"
+        },
+        {
+          "key": "B",
+          "text": "About $12 million",
+          "ja": "約1,200万ドル"
+        },
+        {
+          "key": "C",
+          "text": "About $50 million",
+          "ja": "約5,000万ドル"
+        },
+        {
+          "key": "D",
+          "text": "About $100 million",
+          "ja": "約1億ドル"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落2文目に「The shipment was worth about $12 million.」とある。A は桁が違う。C は本文にない数字。D は第2段落の「100 million ringgit」（5件の押収の合計額・通貨はリンギット）を使った引っかけで、今回の積み荷の価値ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字の設問は、金額・通貨単位・何の数字かを本文で照合する。別の箇所の数字を混ぜた選択肢が定番の誤答。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why did customs act against the shipment?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The servers were too old to be exported.",
+          "ja": "サーバーが古すぎて輸出できない"
+        },
+        {
+          "key": "B",
+          "text": "The cargo was mislabeled and lacked a required permit.",
+          "ja": "貨物表示が偽りで許可もなかった"
+        },
+        {
+          "key": "C",
+          "text": "The company had not paid a 20 million ringgit fine.",
+          "ja": "企業が罰金を払っていなかった"
+        },
+        {
+          "key": "D",
+          "text": "The chips had been stolen from a local factory.",
+          "ja": "半導体が地元工場から盗まれた"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落3文目に「falsely labeled as electrical parts」「without the required permit」とあり、B が一致する。A と D は本文に記述がない。C の2,000万リンギットは違反時に科されうる罰金の上限であり、すでに未払いだったという話ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "理由を問う設問は、本文の該当文を言い換えた選択肢を選ぶ。falsely labeled → mislabeled、without the required permit → lacked a required permit のような言い換えに慣れておく。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "seized",
+      "pos": "動",
+      "ja": "押収した",
+      "gloss": "",
+      "example": {
+        "en": "The customs office seized the illegal goods at the port.",
+        "ja": "税関は港で違法な品物を押収した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "shipment",
+      "pos": "名",
+      "ja": "積み荷、出荷",
+      "gloss": "",
+      "example": {
+        "en": "The shipment will arrive at the warehouse on Monday.",
+        "ja": "その積み荷は月曜日に倉庫へ到着する。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "gloss": "（＝船や飛行機で運ぶ荷物のこと）",
+      "example": {
+        "en": "The cargo was loaded onto the plane this morning.",
+        "ja": "貨物は今朝、飛行機に積み込まれた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "falsely",
+      "pos": "副",
+      "ja": "偽って、誤って",
+      "gloss": "",
+      "example": {
+        "en": "The invoice was falsely marked as paid.",
+        "ja": "その請求書は支払い済みと誤って記されていた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "permit",
+      "pos": "名",
+      "ja": "許可（証）",
+      "gloss": "",
+      "example": {
+        "en": "You need a permit to export these products.",
+        "ja": "これらの製品を輸出するには許可が必要だ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "required",
+      "pos": "形",
+      "ja": "必要な、必須の",
+      "gloss": "",
+      "example": {
+        "en": "Please submit the required documents by Friday.",
+        "ja": "必要書類を金曜までに提出してください。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "link",
+      "pos": "動",
+      "ja": "関連づける",
+      "gloss": "（link A to B：AをBと結び付ける）",
+      "example": {
+        "en": "Experts link the delay to a shortage of drivers.",
+        "ja": "専門家はその遅れをドライバー不足と関連づけている。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "handled",
+      "pos": "動",
+      "ja": "扱った、処理した",
+      "gloss": "",
+      "example": {
+        "en": "Our team handled all the customer complaints last week.",
+        "ja": "当チームは先週、すべての顧客の苦情を処理した。"
+      }
+    }
+  ],
+  "glossary": {
+    "malaysian": {
+      "lemma": "Malaysian",
+      "pos": "形",
+      "ja": "マレーシアの",
+      "note": ""
+    },
+    "customs": {
+      "lemma": "customs",
+      "pos": "名",
+      "ja": "税関",
+      "note": "常に複数形扱い"
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "seized": {
+      "lemma": "seize",
+      "pos": "動",
+      "ja": "押収する",
+      "note": ""
+    },
+    "containing": {
+      "lemma": "contain",
+      "pos": "動",
+      "ja": "含む",
+      "note": ""
+    },
+    "advanced": {
+      "lemma": "advanced",
+      "pos": "形",
+      "ja": "先進的な",
+      "note": ""
+    },
+    "international": {
+      "lemma": "international",
+      "pos": "形",
+      "ja": "国際的な",
+      "note": ""
+    },
+    "shipment": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "積み荷、出荷",
+      "note": ""
+    },
+    "worth": {
+      "lemma": "worth",
+      "pos": "形",
+      "ja": "〜の価値がある",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "falsely": {
+      "lemma": "falsely",
+      "pos": "副",
+      "ja": "偽って",
+      "note": ""
+    },
+    "labeled": {
+      "lemma": "label",
+      "pos": "動",
+      "ja": "表示する",
+      "note": ""
+    },
+    "electrical": {
+      "lemma": "electrical",
+      "pos": "形",
+      "ja": "電気の",
+      "note": ""
+    },
+    "permit": {
+      "lemma": "permit",
+      "pos": "名",
+      "ja": "許可（証）",
+      "note": ""
+    },
+    "required": {
+      "lemma": "require",
+      "pos": "動",
+      "ja": "必要とする",
+      "note": ""
+    },
+    "treats": {
+      "lemma": "treat",
+      "pos": "動",
+      "ja": "扱う",
+      "note": ""
+    },
+    "dual-use": {
+      "lemma": "dual-use",
+      "pos": "形",
+      "ja": "軍民両用の",
+      "note": "民生・軍事の両方に使えること"
+    },
+    "civilian": {
+      "lemma": "civilian",
+      "pos": "形",
+      "ja": "民間の",
+      "note": ""
+    },
+    "military": {
+      "lemma": "military",
+      "pos": "形",
+      "ja": "軍事の",
+      "note": ""
+    },
+    "exporters": {
+      "lemma": "exporter",
+      "pos": "名",
+      "ja": "輸出業者",
+      "note": ""
+    },
+    "apply": {
+      "lemma": "apply",
+      "pos": "動",
+      "ja": "申請する",
+      "note": "apply for 〜で「〜を申請する」"
+    },
+    "fine": {
+      "lemma": "fine",
+      "pos": "名",
+      "ja": "罰金",
+      "note": ""
+    },
+    "link": {
+      "lemma": "link",
+      "pos": "動",
+      "ja": "関連づける",
+      "note": ""
+    },
+    "suspected": {
+      "lemma": "suspected",
+      "pos": "形",
+      "ja": "〜の疑いのある",
+      "note": ""
+    },
+    "smuggling": {
+      "lemma": "smuggling",
+      "pos": "名",
+      "ja": "密輸",
+      "note": ""
+    },
+    "seizures": {
+      "lemma": "seizure",
+      "pos": "名",
+      "ja": "押収",
+      "note": ""
+    },
+    "handled": {
+      "lemma": "handle",
+      "pos": "動",
+      "ja": "扱う、処理する",
+      "note": ""
+    },
+    "questioning": {
+      "lemma": "questioning",
+      "pos": "名",
+      "ja": "事情聴取",
+      "note": ""
+    },
+    "arrests": {
+      "lemma": "arrest",
+      "pos": "名",
+      "ja": "逮捕",
+      "note": ""
+    },
+    "hardware": {
+      "lemma": "hardware",
+      "pos": "名",
+      "ja": "機器、ハードウェア",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "時制の一致と過去完了（said that they had＋過去分詞）",
+    "quote": "Malaysian customs officials said on Wednesday that they had seized 30 servers containing advanced AI chips at Kuala Lumpur International Airport.",
+    "quoteJa": "マレーシアの税関当局は水曜日、クアラルンプール国際空港で先端AI半導体を搭載したサーバー30台を押収したと発表した。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "主節の動詞が過去形（said）のとき、that 節の中で「それより前に起きたこと」を表すには過去完了形（had＋過去分詞）を使います。ここでは「発表した（said）」より前に「押収した（had seized）」が完了しているため、had seized となっています。これを時制の一致と呼びます。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "officials said they had seized 30 servers（発表時点より前に押収済み）／officials said they would seize 30 servers（これから押収する）／officials said they were seizing 30 servers（その時点で押収中）。時間関係の違いで動詞の形が変わります。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6 では、said / announced / reported などの後ろの that 節に入る動詞の形を問う問題が出ます。「その発言より前の出来事か」を手がかりに、過去完了か過去形かを選びましょう。before / by the time / already などの語は強いヒントです。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "The manager said that the team had finished the report before the meeting.（部長は、チームは会議の前に報告書を仕上げていたと述べた。）／The supplier told us that the shipment had left the factory on Monday.（仕入先は、積み荷は月曜に工場を出たと伝えてきた。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか：AI半導体の「迂回輸出」",
+      "body": "米国は先端AI半導体の中国向け輸出を厳しく制限しており、規制を避けるために第三国を経由して流す動きが問題になっています。マレーシアは半導体の後工程やデータセンターが集積する東南アジアの拠点で、「中継地（transit hub）」として狙われやすい立場にあります。今回の押収は、その摘発の一例です。"
+    },
+    {
+      "heading": "📌 用語の解説：軍民両用品（dual-use）",
+      "body": "dual-use とは、民生用にも軍事用にも使える製品・技術のことです。高性能なAIサーバーは、画像生成などの民間利用だけでなく、軍事分析や兵器開発にも使えるため、多くの国で輸出に許可が必要です。マレーシアでは戦略貿易法（Strategic Trade Act）が許可制の根拠となっています。"
+    },
+    {
+      "heading": "📌 業界・各国の動向",
+      "body": "今年の同種の摘発は5件目で、同一とみられる組織の関与が疑われています。マレーシア当局は、データセンター投資を呼び込みたい一方で、「規制逃れの通り道」と見られることは避けたい立場です。他の東南アジア諸国やシンガポールでも、AIサーバーの輸出をめぐる調査が続いています。"
+    },
+    {
+      "heading": "📌 日本・投資家への示唆",
+      "body": "日本企業も、半導体や製造装置、AIサーバーを海外へ出荷する際には、輸出管理（外為法）に基づく用途・需要者の確認が欠かせません。商社や物流会社は、積み荷の申告内容と実態が一致しているかの管理体制が問われます。投資家にとっては、AI半導体の供給網に対する規制の強まりが、東南アジアのデータセンター投資や半導体関連企業の業績に与える影響を点検する材料になります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "AI chips worth $12.1 million seized at Malaysia airport, customs authority says",
+      "publisher": "Reuters (Investing.com)",
+      "url": "https://www.investing.com/news/economy-news/ai-chips-worth-121-million-seized-at-malaysia-airport-customs-authority-says-4977488",
+      "date": "2026-10-28"
+    },
+    {
+      "title": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
+      "publisher": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
+      "date": "2026-10-28"
+    },
+    {
+      "title": "Malaysia seizes AI chip servers at Kuala Lumpur airport",
+      "publisher": "KIRO 7 News",
+      "url": "https://www.kiro7.com/news/technology/malaysia-seizes/S54XHAWR542YZPIWA2SGDQMXXQ/",
+      "date": "2026-10-28"
+    }
+  ]
+}
