@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
   "type": "part6-history",
-  "updatedAt": "2026-10-23T04:14:00+09:00",
+  "updatedAt": "2026-10-30T04:11:00+09:00",
   "items": [
+    {
+      "id": "2026-10-30-0411",
+      "date": "2026-10-30",
+      "scene": "取引先メール｜納品の遅れと代替の対応",
+      "docType": "email",
+      "types": [
+        "vocab",
+        "conj",
+        "verb",
+        "sentence"
+      ]
+    },
     {
       "id": "2026-10-23-0414",
       "date": "2026-10-23",

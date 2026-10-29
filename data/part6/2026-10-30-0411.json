@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-10-30-0411",
+  "date": "2026-10-30",
+  "time": "04:11",
+  "createdAt": "2026-10-30T04:11:00+09:00",
+  "sample": false,
+  "docType": "email",
+  "scene": "取引先メール｜納品の遅れと代替の対応",
+  "intro": "Questions 1-4 refer to the following e-mail.",
+  "header": [
+    {
+      "label": "To",
+      "text": "Priya Nair, Orchard Furniture"
+    },
+    {
+      "label": "From",
+      "text": "Tom Alvarez, Bayline Office Supplies"
+    },
+    {
+      "label": "Subject",
+      "text": "Change to delivery date for your chair order"
+    },
+    {
+      "label": "Date",
+      "text": "12 November"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "Thank you for your order of forty ergonomic chairs for your new Dunmore office.",
+          "ja": "ご注文いただいた、新しいダンモア事務所向けの人間工学に基づいた椅子40脚について、御礼申し上げます。"
+        },
+        {
+          "en": "I am writing to inform you that the delivery, originally scheduled for 18 November, will be ------- by about one week.",
+          "ja": "当初11月18日に予定されていた納品が、約1週間遅れることをお知らせするためご連絡しています。",
+          "q": 1
+        },
+        {
+          "en": "The delay is due to a shortage of seat cushions at our supplier's factory.",
+          "ja": "遅れの原因は、当社の仕入れ先の工場でシートクッションが不足していることです。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "We understand that your staff will move into the new office on 25 November.",
+          "ja": "御社のスタッフが11月25日に新しい事務所へ移られることは承知しております。"
+        },
+        {
+          "en": "-------, we will ship the chairs by express freight at no extra charge.",
+          "ja": "そのため、追加料金なしで、椅子を特急貨物便で発送いたします。",
+          "q": 2
+        },
+        {
+          "en": "The chairs ------- in two shipments, with the first twenty arriving on 22 November.",
+          "ja": "椅子は2回に分けて届けられ、最初の20脚は11月22日に到着します。",
+          "q": 3
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "If the new schedule causes any problems for your team, please contact me directly.",
+          "ja": "新しい日程でチームに支障がある場合は、私に直接ご連絡ください。"
+        },
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 4
+        },
+        {
+          "en": "We apologize for the inconvenience and appreciate your patience.",
+          "ja": "ご不便をおかけしたことをお詫びするとともに、ご辛抱いただけますようお願い申し上げます。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "refunded",
+          "ja": "返金された"
+        },
+        {
+          "key": "B",
+          "text": "delayed",
+          "ja": "遅れる"
+        },
+        {
+          "key": "C",
+          "text": "inspected",
+          "ja": "検査された"
+        },
+        {
+          "key": "D",
+          "text": "replaced",
+          "ja": "交換された"
+        }
+      ],
+      "answer": "B",
+      "explanation": "空所の前に「当初11月18日に予定されていた納品が」、後ろに by about one week とある。予定より1週間ずれるので「遅れる」意味の delayed が合う。第1段落の最後の文でも遅れの原因が説明されている。replaced は「交換される」で、期間のずれを表せない。",
+      "tip": "語彙問題は、空所の前後だけでなく同じ段落の別の文（ここでは The delay is due to ...）も手がかりにする。"
+    },
+    {
+      "id": "q2",
+      "type": "conj",
+      "choices": [
+        {
+          "key": "A",
+          "text": "However",
+          "ja": "しかしながら"
+        },
+        {
+          "key": "B",
+          "text": "For example",
+          "ja": "たとえば"
+        },
+        {
+          "key": "C",
+          "text": "Therefore",
+          "ja": "そのため"
+        },
+        {
+          "key": "D",
+          "text": "Otherwise",
+          "ja": "さもなければ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "前の文に「11月25日に新しい事務所へ移る」とあり、空所のあとに「特急便で追加料金なしに発送する」とある。移転日に間に合わせるための対応なので、因果を表す Therefore が正解。However は逆接で流れが合わず、Otherwise は「そうしなければ」の意味で、前の文が条件になっていない。",
+      "tip": "接続副詞は、空所の文だけでなく前の文との関係（逆接・追加・因果）で決める。前の文が理由、あとの文が対応なら therefore。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "choices": [
+        {
+          "key": "A",
+          "text": "will be delivered",
+          "ja": "配達される予定だ"
+        },
+        {
+          "key": "B",
+          "text": "were delivered",
+          "ja": "配達された"
+        },
+        {
+          "key": "C",
+          "text": "delivering",
+          "ja": "配達している"
+        },
+        {
+          "key": "D",
+          "text": "have delivered",
+          "ja": "配達した"
+        }
+      ],
+      "answer": "A",
+      "explanation": "手紙の日付は11月12日で、同じ文に「最初の20脚は11月22日に到着する」とある。未来の出来事で、主語 The chairs は届けられる側なので、未来の受動態 will be delivered が正解。were delivered は過去で、日付と合わない。",
+      "tip": "時制は文書の頭にある日付と、文中の日付を見比べて決める。主語が物で、動作の相手になっていれば受動態。"
+    },
+    {
+      "id": "q4",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Your invoice will be sent to the accounting department at the end of the month.",
+          "ja": "請求書は月末に経理部へ送られる。"
+        },
+        {
+          "key": "B",
+          "text": "Last year's order from your company arrived two days ahead of schedule.",
+          "ja": "昨年の御社の注文は予定より2日早く届いた。"
+        },
+        {
+          "key": "C",
+          "text": "Our showroom on Dunmore Street will be open until six o'clock on weekdays.",
+          "ja": "ダンモア通りの当社ショールームは平日6時まで営業している。"
+        },
+        {
+          "key": "D",
+          "text": "In the meantime, we can lend you twenty temporary chairs at no charge.",
+          "ja": "それまでの間、20脚の仮の椅子を無料でお貸しできます。"
+        }
+      ],
+      "answer": "D",
+      "explanation": "直前の文は「日程に支障があれば連絡を」と相談を促し、直後の文はお詫びで締めている。その間に入るのは、遅れている間の対応策を示す D が自然。In the meantime が「椅子が届くまでの間」を受ける。A は請求の話で目的とずれ、B は時系列が合わず、C は文書に出てこない展示場の話になる。",
+      "tip": "一文挿入は、前の文（困りごと）と後ろの文（お詫び）の両方につながるものを選ぶ。話題が合っても目的とずれる選択肢は外す。"
+    }
+  ],
+  "glossary": {
+    "originally scheduled for": {
+      "lemma": "originally scheduled for",
+      "pos": "熟",
+      "ja": "当初〜に予定されていた",
+      "note": "",
+      "example": {
+        "en": "The seminar was originally scheduled for March but moved to April.",
+        "ja": "そのセミナーは当初3月に予定されていたが、4月に変更された。"
+      }
+    },
+    "due to": {
+      "lemma": "due to",
+      "pos": "熟",
+      "ja": "〜が原因で",
+      "note": "",
+      "example": {
+        "en": "The flight was canceled due to heavy snow.",
+        "ja": "その便は大雪のため欠航した。"
+      }
+    },
+    "shortage of": {
+      "lemma": "shortage of",
+      "pos": "熟",
+      "ja": "〜の不足",
+      "note": "",
+      "example": {
+        "en": "The factory faces a shortage of skilled workers.",
+        "ja": "その工場は熟練工の不足に直面している。"
+      }
+    },
+    "move into": {
+      "lemma": "move into",
+      "pos": "熟",
+      "ja": "〜に引っ越す、入居する",
+      "note": "",
+      "example": {
+        "en": "Several departments will move into the renovated building in May.",
+        "ja": "いくつかの部署が5月に改装された建物へ移る。"
+      }
+    },
+    "express freight": {
+      "lemma": "express freight",
+      "pos": "熟",
+      "ja": "特急貨物便",
+      "note": "",
+      "example": {
+        "en": "Urgent parts are usually sent by express freight.",
+        "ja": "急ぎの部品は通常、特急貨物便で送られる。"
+      }
+    },
+    "at no extra charge": {
+      "lemma": "at no extra charge",
+      "pos": "熟",
+      "ja": "追加料金なしで",
+      "note": "",
+      "example": {
+        "en": "Gift wrapping is available at no extra charge.",
+        "ja": "ギフト包装は追加料金なしで利用できる。"
+      }
+    },
+    "apologize for": {
+      "lemma": "apologize for",
+      "pos": "熟",
+      "ja": "〜をお詫びする",
+      "note": "",
+      "example": {
+        "en": "We apologize for the error on your last invoice.",
+        "ja": "前回の請求書の誤りをお詫びします。"
+      }
+    },
+    "ergonomic": {
+      "lemma": "ergonomic",
+      "pos": "形",
+      "ja": "人間工学に基づいた",
+      "note": "",
+      "example": {
+        "en": "The company bought ergonomic keyboards to reduce wrist strain.",
+        "ja": "会社は手首の負担を減らすため、人間工学に基づいたキーボードを購入した。"
+      }
+    },
+    "inconvenience": {
+      "lemma": "inconvenience",
+      "pos": "名",
+      "ja": "不便、迷惑",
+      "note": "",
+      "example": {
+        "en": "Please excuse any inconvenience during the road work.",
+        "ja": "道路工事中の不便をご容赦ください。"
+      }
+    },
+    "appreciate your patience": {
+      "lemma": "appreciate your patience",
+      "pos": "熟",
+      "ja": "ご辛抱に感謝する",
+      "note": "",
+      "example": {
+        "en": "We appreciate your patience while the system is updated.",
+        "ja": "システム更新の間、ご辛抱いただき感謝します。"
+      }
+    }
+  },
+  "point": {
+    "lead": "空所の文で決まらなければ、前の文や冒頭の日付に戻る",
+    "items": [
+      {
+        "title": "接続副詞は前の文との関係で決める",
+        "body": "逆接・追加・因果のどれかを、前の文を読み直して判断する。空所の文だけを見ても選べない。"
+      },
+      {
+        "title": "時制は文書の日付で決める",
+        "body": "ヘッダーの日付と文中の日付を比べ、過去か未来かを先に決める。そのうえで主語から能動か受動かを選ぶ。"
+      },
+      {
+        "title": "一文挿入は前後の両方につなげる",
+        "body": "困りごと→対応策→お詫びのように流れを作り、前だけ、後ろだけに合う選択肢は外す。"
+      }
+    ]
+  }
+}
