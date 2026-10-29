@@ -460,5 +460,22 @@
       "url": "https://www.kiro7.com/news/technology/malaysia-seizes/S54XHAWR542YZPIWA2SGDQMXXQ/",
       "date": "2026-10-28"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-30-0545/00.mp3",
+      "audio/2026-10-30-0545/01.mp3",
+      "audio/2026-10-30-0545/02.mp3",
+      "audio/2026-10-30-0545/03.mp3",
+      "audio/2026-10-30-0545/04.mp3",
+      "audio/2026-10-30-0545/05.mp3",
+      "audio/2026-10-30-0545/06.mp3",
+      "audio/2026-10-30-0545/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 229120,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-29T20:48:20.969Z",
+    "trimmed": true
+  }
 }
