@@ -454,5 +454,22 @@
       "url": "https://seekingalpha.com/news/4658131-ups-expects-92_6b-2026-revenue-as-it-raises-operating-profit-outlook-to-8_75b",
       "date": "2026-10-27"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-29-1645/00.mp3",
+      "audio/2026-10-29-1645/01.mp3",
+      "audio/2026-10-29-1645/02.mp3",
+      "audio/2026-10-29-1645/03.mp3",
+      "audio/2026-10-29-1645/04.mp3",
+      "audio/2026-10-29-1645/05.mp3",
+      "audio/2026-10-29-1645/06.mp3",
+      "audio/2026-10-29-1645/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 256960,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-29T07:48:03.418Z",
+    "trimmed": true
+  }
 }
