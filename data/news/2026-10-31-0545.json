@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-31-0545",
+  "date": "2026-10-31",
+  "time": "05:45",
+  "createdAt": "2026-10-31T05:45:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Fed Holds Rates, but Two Officials Want a Hike",
+    "ja": "FRBは金利据え置き、2人は利上げを主張"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The Federal Reserve kept its main interest rate unchanged at a range of 3.75% to 4% on Wednesday.",
+            "ja": "米連邦準備制度理事会（FRB）は水曜日、主要な政策金利を3.75～4%の範囲で据え置いた。"
+          },
+          {
+            "en": "The decision passed by a vote of 10 to 2.",
+            "ja": "決定は10対2の票決で可決された。"
+          },
+          {
+            "en": "Two officials, Lisa Cook and Beth Hammack, were in favor of raising the rate by a quarter point instead.",
+            "ja": "リサ・クック氏とベス・ハマック氏の2人の当局者は、代わりに0.25ポイントの利上げに賛成していた。"
+          },
+          {
+            "en": "The central bank had last raised rates in September.",
+            "ja": "中央銀行は直近では9月に利上げを行っていた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The split vote shows that some officials worry that inflation remains too high.",
+            "ja": "票が割れたことは、一部の当局者がインフレ率の高止まりを懸念していることを示している。"
+          },
+          {
+            "en": "Some investors now expect the bank to raise rates again at its next meeting in December.",
+            "ja": "一部の投資家は現在、次回12月の会合で再び利上げが行われると予想している。"
+          },
+          {
+            "en": "Higher rates make loans more expensive for companies and households.",
+            "ja": "金利が上がると、企業や家計にとって借り入れが割高になる。"
+          },
+          {
+            "en": "They can also slow hiring and spending, so the bank must balance price control with economic growth.",
+            "ja": "金利上昇は採用や支出を鈍らせることもあるため、中央銀行は物価の抑制と経済成長の両立を図らなければならない。"
+          },
+          {
+            "en": "The bank will meet again on December 9, and new forecasts will be released then.",
+            "ja": "中央銀行は12月9日に再び会合を開き、その際に新たな見通しが公表される予定だ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What was the result of the vote on the decision?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "12 to 0",
+          "ja": "12対0"
+        },
+        {
+          "key": "B",
+          "text": "10 to 2",
+          "ja": "10対2"
+        },
+        {
+          "key": "C",
+          "text": "7 to 5",
+          "ja": "7対5"
+        },
+        {
+          "key": "D",
+          "text": "9 to 3",
+          "ja": "9対3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本文2文目に「The decision passed by a vote of 10 to 2.」とあるので正解は (B)。(A) 12対0 は全会一致を意味するが、本文では2人が反対している。(C) と (D) は本文にない数字で、数字を入れ替えた引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う設問は、選択肢の数字をすばやく本文と照合する。「to」で結ぶ票数の表現（10 to 2）に慣れておくと Part 7 で素早く拾える。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "What did Lisa Cook and Beth Hammack want to do?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cut the rate by a quarter point",
+          "ja": "0.25ポイント利下げ"
+        },
+        {
+          "key": "B",
+          "text": "Keep the rate unchanged",
+          "ja": "金利を据え置く"
+        },
+        {
+          "key": "C",
+          "text": "Raise the rate by a quarter point",
+          "ja": "0.25ポイント利上げ"
+        },
+        {
+          "key": "D",
+          "text": "Raise the rate by half a point",
+          "ja": "0.5ポイント利上げ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本文3文目に「were in favor of raising the rate by a quarter point」とあり、(C) が正解。(A) は逆方向の内容。(B) は多数派（据え置き）の立場で、2人はそれに反対した。(D) は「quarter point」を「half a point」に変えた別の数字の引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "「in favor of ～」は「～に賛成して」。人物名＋賛成・反対の内容を問う設問では、その人物が多数派か少数派かを先に確認すると誤答を避けやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "unchanged",
+      "pos": "形",
+      "ja": "変わらない、そのままの",
+      "gloss": "（＝以前と同じ状態のこと）",
+      "example": {
+        "en": "The price of the product remained unchanged for three years.",
+        "ja": "その製品の価格は3年間変わらなかった。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "range",
+      "pos": "名",
+      "ja": "範囲、幅",
+      "gloss": "",
+      "example": {
+        "en": "The company offers a wide range of services.",
+        "ja": "その会社は幅広いサービスを提供している。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "officials",
+      "pos": "名",
+      "ja": "当局者、役員",
+      "gloss": "",
+      "example": {
+        "en": "Company officials will announce the plan next week.",
+        "ja": "会社の幹部は来週その計画を発表する。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "in favor of",
+      "pos": "熟",
+      "ja": "～に賛成して",
+      "gloss": "",
+      "example": {
+        "en": "Most managers were in favor of the new schedule.",
+        "ja": "ほとんどの管理職が新しい日程に賛成だった。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "inflation",
+      "pos": "名",
+      "ja": "インフレ、物価上昇",
+      "gloss": "（＝物の値段が全体的に上がり続けること）",
+      "example": {
+        "en": "Inflation has made daily life more expensive.",
+        "ja": "物価上昇で日常生活の費用が高くなった。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "expect",
+      "pos": "動",
+      "ja": "予想する、見込む",
+      "gloss": "",
+      "example": {
+        "en": "We expect sales to rise in the next quarter.",
+        "ja": "来四半期は売上が増えると見込んでいる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "balance",
+      "pos": "動",
+      "ja": "両立させる、釣り合いをとる",
+      "gloss": "",
+      "example": {
+        "en": "Employees must balance work and family life.",
+        "ja": "従業員は仕事と家庭生活を両立させなければならない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "forecasts",
+      "pos": "名",
+      "ja": "予測、見通し",
+      "gloss": "",
+      "example": {
+        "en": "The forecasts show strong demand next year.",
+        "ja": "その見通しは来年の需要が強いことを示している。"
+      }
+    }
+  ],
+  "glossary": {
+    "kept": {
+      "lemma": "keep",
+      "pos": "動",
+      "ja": "保つ、据え置く",
+      "note": ""
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "利子、金利",
+      "note": ""
+    },
+    "rate": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "率、金利",
+      "note": ""
+    },
+    "unchanged": {
+      "lemma": "unchanged",
+      "pos": "形",
+      "ja": "変わらない",
+      "note": ""
+    },
+    "range": {
+      "lemma": "range",
+      "pos": "名",
+      "ja": "範囲",
+      "note": ""
+    },
+    "decision": {
+      "lemma": "decision",
+      "pos": "名",
+      "ja": "決定",
+      "note": ""
+    },
+    "passed": {
+      "lemma": "pass",
+      "pos": "動",
+      "ja": "可決された",
+      "note": ""
+    },
+    "vote": {
+      "lemma": "vote",
+      "pos": "名",
+      "ja": "投票、票決",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "favor": {
+      "lemma": "favor",
+      "pos": "名",
+      "ja": "賛成",
+      "note": "in favor of ＝「～に賛成して」の意味で、favor 単独とは別に覚える"
+    },
+    "raising": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "instead": {
+      "lemma": "instead",
+      "pos": "副",
+      "ja": "代わりに",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "split": {
+      "lemma": "split",
+      "pos": "形",
+      "ja": "割れた",
+      "note": ""
+    },
+    "worry": {
+      "lemma": "worry",
+      "pos": "動",
+      "ja": "心配する",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "インフレ",
+      "note": ""
+    },
+    "remains": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "～のままである",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "loans": {
+      "lemma": "loan",
+      "pos": "名",
+      "ja": "融資、借入",
+      "note": ""
+    },
+    "expensive": {
+      "lemma": "expensive",
+      "pos": "形",
+      "ja": "高価な",
+      "note": ""
+    },
+    "households": {
+      "lemma": "household",
+      "pos": "名",
+      "ja": "世帯、家計",
+      "note": ""
+    },
+    "slow": {
+      "lemma": "slow",
+      "pos": "動",
+      "ja": "遅くする",
+      "note": ""
+    },
+    "hiring": {
+      "lemma": "hiring",
+      "pos": "名",
+      "ja": "採用",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "balance": {
+      "lemma": "balance",
+      "pos": "動",
+      "ja": "両立させる",
+      "note": ""
+    },
+    "control": {
+      "lemma": "control",
+      "pos": "名",
+      "ja": "抑制、管理",
+      "note": ""
+    },
+    "growth": {
+      "lemma": "growth",
+      "pos": "名",
+      "ja": "成長",
+      "note": ""
+    },
+    "forecasts": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "見通し",
+      "note": ""
+    },
+    "released": {
+      "lemma": "release",
+      "pos": "動",
+      "ja": "公表する",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "前置詞＋動名詞（in favor of / instead of ＋ -ing）",
+    "quote": "Two officials, Lisa Cook and Beth Hammack, were in favor of raising the rate by a quarter point instead.",
+    "quoteJa": "リサ・クック氏とベス・ハマック氏の2人の当局者は、代わりに0.25ポイントの利上げに賛成していた。",
+    "blocks": [
+      {
+        "heading": "構文の解説",
+        "body": "前置詞の後ろに動詞を置くときは、不定詞（to do）ではなく必ず動名詞（-ing）にします。本文の「were in favor of raising the rate」では、前置詞 of の後ろに raising が来ています。「be in favor of ～ing」は「～することに賛成だ」という意味です。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "were in favor of raising the rate ＝ supported raising the rate ＝ wanted to raise the rate。意味はほぼ同じですが、前置詞を使う形では raise ではなく raising になる点が違います。同じ仕組みの表現に instead of ～ing（～する代わりに）、before ～ing（～する前に）、by ～ing（～することで）があります。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では「前置詞＋( )」の空所に to 不定詞・原形・動名詞を並べ、動名詞を選ばせる問題が頻出です。特に注意したいのは、to が前置詞の表現（look forward to ～ing, be committed to ～ing など）です。後ろに原形を置いてしまう誤りが定番です。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Our team is in favor of postponing the launch until next month.（私たちのチームは発売を来月まで延期することに賛成です。）／ The firm decided to hire more staff instead of outsourcing the work.（その会社は仕事を外注する代わりに、人員を増やすことにした。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 政策金利と据え置きの意味",
+      "body": "政策金利とは、中央銀行が経済全体の金利水準を誘導するために決める基準の金利です。引き上げると借り入れの負担が増えて景気や物価の勢いが弱まり、引き下げると逆に強まります。今回FRBは3.75～4%に据え置きましたが、直近の9月に利上げを行ったばかりで、その効果を見極める局面にあります。"
+    },
+    {
+      "heading": "📌 反対票が示すもの",
+      "body": "今回は10対2の票決で、クック理事とハマック氏（クリーブランド連銀総裁）の2人が0.25ポイントの利上げを求めました。決定会合で反対票が2票出るのは異例で、物価の高止まりへの警戒が委員会内で強まっていることを示します。市場では12月9日の次回会合での追加利上げを意識する見方が出ていますが、確率は報道によって差があり、確定的ではありません。"
+    },
+    {
+      "heading": "📌 世界の中央銀行の動き",
+      "body": "インフレ警戒は米国だけの問題ではありません。報道によれば、日銀も今年9月に政策金利を1.25%へ引き上げ、欧州中央銀行（ECB）は10月29日の会合を経て、引き続きインフレの動向を慎重に見ています。主要中銀が「引き締めを続けるか、様子を見るか」で揺れている状況です。"
+    },
+    {
+      "heading": "📌 日本・投資家・経営者への示唆",
+      "body": "日米の金利差が大きいままだと円安圧力が続き、輸入品の値上がりを通じて日本企業のコストや家計の負担が増える可能性があります。投資家にとっては、米金利の上昇は株式（特にハイテク株）の割高感を意識させる材料で、為替や債券の変動にも注意が必要です。経営者にとっては、借入金利の動向を踏まえた資金調達の時期の見直しが課題になります。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "FOMC decision Oct 28: Rates left unchanged",
+      "publisher": "investingLive",
+      "url": "https://investinglive.com/central-banks/fomc-decision-oct-28/",
+      "date": "2026-10-28"
+    },
+    {
+      "title": "FOMC October 2026: Fed Holds Rates in a 10-2 Vote as Markets Price a December Hike",
+      "publisher": "Admirals",
+      "url": "https://admiralmarkets.com/analytics/traders-blog/fomc-october-2026-fed-holds-rates",
+      "date": "2026-10-28"
+    },
+    {
+      "title": "Warsh Press Conference: Fed Holds Rates at 3.75% to 4% as Cook and Hammack Vote for a Hike",
+      "publisher": "Admirals",
+      "url": "https://admiralmarkets.com/analytics/traders-blog/warsh-press-conference-october-2026",
+      "date": "2026-10-28"
+    }
+  ]
+}
