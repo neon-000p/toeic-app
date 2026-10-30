@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-30-1646",
+  "date": "2026-10-30",
+  "time": "16:46",
+  "createdAt": "2026-10-30T16:46:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "Port Security Workers Threaten Strike at Two Major U.S. Ports",
+    "ja": "米主要2港で警備員がスト警告"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Security workers at two of the busiest U.S. ports have voted to authorize a strike.",
+            "ja": "米国で最も忙しい港の2つで働く警備員が、ストライキを承認する投票を行った。"
+          },
+          {
+            "en": "About 250 watchmen at the ports of Los Angeles and Long Beach could stop work as early as Sunday, November 1.",
+            "ja": "ロサンゼルス港とロングビーチ港の約250人の警備員は、早ければ11月1日（日）に業務を止める可能性がある。"
+          },
+          {
+            "en": "Their union, ILWU Local 26, said talks on a new contract have failed since 2025.",
+            "ja": "労働組合のILWUローカル26は、新しい契約をめぐる協議が2025年から不調に終わっていると述べた。"
+          },
+          {
+            "en": "The employers' group, the Pacific Maritime Association, said it would keep negotiating after the deadline.",
+            "ja": "使用者側の団体である太平洋海事協会は、期限を過ぎても交渉を続けると述べた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The group is small: only 2% of dockworkers at the two ports.",
+            "ja": "この集団は小さく、両港の港湾労働者のわずか2%にすぎない。"
+          },
+          {
+            "en": "However, the terminals where it works handle about 85% of the cargo in Long Beach and 33% in Los Angeles.",
+            "ja": "しかし、その人たちが働くターミナルは、ロングビーチの貨物の約85%、ロサンゼルスの約33%を扱っている。"
+          },
+          {
+            "en": "A strike by just 250 workers could become a much larger shutdown if other dockworkers refuse to cross picket lines.",
+            "ja": "わずか250人のストでも、ほかの港湾労働者がピケラインを越えるのを拒めば、はるかに大規模な閉鎖につながる可能性がある。"
+          },
+          {
+            "en": "The warning comes weeks after the two ports set a record in September, handling 2.04 million container units combined.",
+            "ja": "この警告は、両港が9月に合計204万コンテナ単位を扱って記録を更新した数週間後に出た。"
+          },
+          {
+            "en": "Shippers could face delays if the dispute is not settled soon.",
+            "ja": "争議が早期に決着しなければ、荷主は遅れに直面する可能性がある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What share of the cargo in Long Beach is handled at terminals where the watchmen work?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 2%",
+          "ja": "約2%"
+        },
+        {
+          "key": "B",
+          "text": "About 33%",
+          "ja": "約33%"
+        },
+        {
+          "key": "C",
+          "text": "About 85%",
+          "ja": "約85%"
+        },
+        {
+          "key": "D",
+          "text": "About 250%",
+          "ja": "約250%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落に「the terminals where it works handle about 85% of the cargo in Long Beach and 33% in Los Angeles」とあるため、ロングビーチは85%でC。Aの2%は警備員が港湾労働者全体に占める割合、Bの33%はロサンゼルスの割合で、いずれも本文の別の数字を使った引っかけ。Dの250は警備員の人数（約250人）を混ぜた誤りで、割合としてあり得ない。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "同じ文に複数の数字がある場合は、設問の地名（Long Beach）と数字を正確に結びつける。Part 7では「どの数字がどれを指すか」の取り違えが定番の誤答。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why could a strike by a small group have a large effect?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Other dockworkers might refuse to cross picket lines.",
+          "ja": "他の労働者がピケを越えない恐れ"
+        },
+        {
+          "key": "B",
+          "text": "The group manages all shipping prices.",
+          "ja": "全運賃を管理しているから"
+        },
+        {
+          "key": "C",
+          "text": "The ports are closed every November.",
+          "ja": "11月は毎年閉鎖されるから"
+        },
+        {
+          "key": "D",
+          "text": "The group handles the cargo records.",
+          "ja": "貨物記録を扱うから"
+        }
+      ],
+      "answer": "A",
+      "explanation": "第2段落の最終文に「could become a much larger shutdown if other dockworkers refuse to cross picket lines」とあり、理由はA。Bの運賃管理、Cの11月の閉鎖、Dの記録の取り扱いは、いずれも本文に書かれていない情報。「record」は9月の取扱量の新記録を指しており、警備員の仕事ではない点にも注意。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "理由を問う設問では、if や because の節に答えがあることが多い。本文にない情報を並べた選択肢は、根拠の有無で切り捨てる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "authorize",
+      "pos": "動",
+      "ja": "承認する、認可する",
+      "gloss": "",
+      "example": {
+        "en": "The board voted to authorize the new budget.",
+        "ja": "取締役会は新しい予算を承認する票を投じた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "contract",
+      "pos": "名",
+      "ja": "契約",
+      "gloss": "",
+      "example": {
+        "en": "We will sign the contract with the supplier on Monday.",
+        "ja": "私たちは月曜に仕入先と契約を結ぶ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "deadline",
+      "pos": "名",
+      "ja": "期限、締め切り",
+      "gloss": "",
+      "example": {
+        "en": "The deadline for the report is next Friday.",
+        "ja": "報告書の期限は来週の金曜だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "handle",
+      "pos": "動",
+      "ja": "扱う、処理する",
+      "gloss": "",
+      "example": {
+        "en": "The warehouse can handle 500 orders a day.",
+        "ja": "その倉庫は1日500件の注文を処理できる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "gloss": "（＝船や飛行機で運ぶ荷物のこと）",
+      "example": {
+        "en": "The cargo was loaded onto the ship this morning.",
+        "ja": "貨物は今朝、船に積み込まれた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "shutdown",
+      "pos": "名",
+      "ja": "閉鎖、停止",
+      "gloss": "",
+      "example": {
+        "en": "A shutdown of the factory would delay all orders.",
+        "ja": "工場が停止すれば、すべての注文が遅れるだろう。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "refuse",
+      "pos": "動",
+      "ja": "拒む、断る",
+      "gloss": "",
+      "example": {
+        "en": "The client refused to accept the late delivery.",
+        "ja": "顧客は遅れた配送の受け取りを拒んだ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "delays",
+      "pos": "名",
+      "ja": "遅れ、遅延",
+      "gloss": "",
+      "example": {
+        "en": "Bad weather caused delays at the airport.",
+        "ja": "悪天候で空港に遅れが出た。"
+      }
+    }
+  ],
+  "glossary": {
+    "busiest": {
+      "lemma": "busy",
+      "pos": "形",
+      "ja": "最も忙しい",
+      "note": ""
+    },
+    "security": {
+      "lemma": "security",
+      "pos": "名",
+      "ja": "警備、安全",
+      "note": ""
+    },
+    "voted": {
+      "lemma": "vote",
+      "pos": "動",
+      "ja": "投票した",
+      "note": ""
+    },
+    "authorize": {
+      "lemma": "authorize",
+      "pos": "動",
+      "ja": "承認する",
+      "note": ""
+    },
+    "strike": {
+      "lemma": "strike",
+      "pos": "名",
+      "ja": "ストライキ",
+      "note": ""
+    },
+    "watchmen": {
+      "lemma": "watchman",
+      "pos": "名",
+      "ja": "警備員",
+      "note": "ここでは港の警備を担当する労働者"
+    },
+    "union": {
+      "lemma": "union",
+      "pos": "名",
+      "ja": "労働組合",
+      "note": ""
+    },
+    "talks": {
+      "lemma": "talk",
+      "pos": "名",
+      "ja": "協議",
+      "note": ""
+    },
+    "contract": {
+      "lemma": "contract",
+      "pos": "名",
+      "ja": "契約",
+      "note": ""
+    },
+    "failed": {
+      "lemma": "fail",
+      "pos": "動",
+      "ja": "失敗した",
+      "note": ""
+    },
+    "employers": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "使用者、雇用主",
+      "note": ""
+    },
+    "negotiating": {
+      "lemma": "negotiate",
+      "pos": "動",
+      "ja": "交渉する",
+      "note": ""
+    },
+    "deadline": {
+      "lemma": "deadline",
+      "pos": "名",
+      "ja": "期限",
+      "note": ""
+    },
+    "dockworkers": {
+      "lemma": "dockworker",
+      "pos": "名",
+      "ja": "港湾労働者",
+      "note": ""
+    },
+    "terminals": {
+      "lemma": "terminal",
+      "pos": "名",
+      "ja": "ターミナル",
+      "note": ""
+    },
+    "handle": {
+      "lemma": "handle",
+      "pos": "動",
+      "ja": "扱う",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "shutdown": {
+      "lemma": "shutdown",
+      "pos": "名",
+      "ja": "閉鎖、停止",
+      "note": ""
+    },
+    "refuse": {
+      "lemma": "refuse",
+      "pos": "動",
+      "ja": "拒む",
+      "note": ""
+    },
+    "cross": {
+      "lemma": "cross",
+      "pos": "動",
+      "ja": "越える",
+      "note": ""
+    },
+    "picket": {
+      "lemma": "picket",
+      "pos": "名",
+      "ja": "ピケ（抗議の見張り）",
+      "note": "picket lines＝スト参加者が職場の前に作る抗議の列"
+    },
+    "lines": {
+      "lemma": "line",
+      "pos": "名",
+      "ja": "列、線",
+      "note": ""
+    },
+    "record": {
+      "lemma": "record",
+      "pos": "名",
+      "ja": "記録",
+      "note": ""
+    },
+    "combined": {
+      "lemma": "combine",
+      "pos": "動",
+      "ja": "合計した",
+      "note": ""
+    },
+    "shippers": {
+      "lemma": "shipper",
+      "pos": "名",
+      "ja": "荷主",
+      "note": ""
+    },
+    "delays": {
+      "lemma": "delay",
+      "pos": "名",
+      "ja": "遅れ",
+      "note": ""
+    },
+    "dispute": {
+      "lemma": "dispute",
+      "pos": "名",
+      "ja": "争議、対立",
+      "note": ""
+    },
+    "settled": {
+      "lemma": "settle",
+      "pos": "動",
+      "ja": "決着した",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "助動詞 could による可能性の表現（could＋動詞原形）と if 節",
+    "quote": "A strike by just 250 workers could become a much larger shutdown if other dockworkers refuse to cross picket lines.",
+    "quoteJa": "わずか250人のストでも、ほかの港湾労働者がピケラインを越えるのを拒めば、はるかに大規模な閉鎖につながる可能性がある。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "could＋動詞原形は「〜する可能性がある」と、起こるかもしれないことを控えめに述べる形です。ここでは could become が「〜になりうる」を表し、断定を避けています。ニュースでは、まだ起きていない出来事を伝えるときによく使われます。後ろの if other dockworkers refuse … は条件を表す節で、「もしほかの港湾労働者が拒めば」という前提を示します。if 節の中の動詞が現在形（refuse）なのは、条件を表す節では未来のことも現在形で書くためです。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "could と may / might はどれも可能性を表しますが、could は「状況しだいでそうなりうる」、might は「かもしれない（確信が弱い）」というニュアンスです。この文は A strike … may become … とほぼ同じ意味に書き換えられます。will become と書くと「必ずなる」と断定になり、事実がまだ確定していない記事には不向きです。"
+      },
+      {
+        "heading": "TOEICでの注意点",
+        "body": "Part 5 では空所に could / would / will のどれを入れるかが問われます。if 節が現在形で「可能性」を述べる文なら、主節には can / may / could / will などが入ります。Part 7 では、could や might を含む文を「すでに起きたこと」と取り違えると誤答になります。「起きる可能性がある」と「起きた」を区別しましょう。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The delay could affect our delivery schedule if the supplier cannot ship by Friday.（仕入先が金曜までに出荷できなければ、納期に影響が出る可能性があります。）／ Costs could rise if the contract is not renewed.（契約が更新されなければ、コストが上がる可能性があります。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きているのか：小さな労組の大きな影響力",
+      "body": "今回ストライキを承認したのは、港湾労働者全体のわずか2%にあたる約250人の警備員（watchmen）です。ただし、彼らが働くターミナルはロングビーチ港の貨物の約85%、ロサンゼルス港の約33%を扱っています。警備員が持ち場を離れると、ほかの労働者が「ピケライン（抗議の見張りの列）を越えない」という形で連帯し、作業全体が止まるおそれがあります。人数の少なさと影響の大きさの落差が、このニュースの核心です。"
+    },
+    {
+      "heading": "📌 2. 業界背景：西海岸の港と労使交渉",
+      "body": "両港は9月に合計204万コンテナ単位（TEU＝20フィートコンテナ換算の単位）を扱い、過去最高を記録しました。港湾労働者の主な協定は2028年まで続いているため、全面的な交渉決裂とは性質が異なります。今回は警備員の契約だけが別に交渉されています。太平洋海事協会は期限後も交渉を続ける姿勢を示しており、短期間で決着する可能性もあります。港湾の労使問題は、これまでも運賃や納期を大きく動かしてきました。"
+    },
+    {
+      "heading": "📌 3. 日本への影響・示唆",
+      "body": "日本から米国西海岸向けに自動車部品、電子部品、機械などを輸出する企業にとって、ロサンゼルス・ロングビーチ両港は重要な玄関口です。閉鎖が起きれば、船が沖で待たされ、納期の遅れや在庫不足につながります。輸入側でも、年末商戦向けの商品の到着が遅れかねません。実務では、納期に余裕を持つこと、他港や別ルートへの切り替え案を事前に用意すること、取引先への早めの連絡が対策になります。"
+    },
+    {
+      "heading": "📌 4. 投資家・経営者の視点",
+      "body": "投資家にとっては、物流の混乱が小売・製造業の業績見通しや運賃の動きに響く点が注目材料です。ただし現時点ではあくまで警告の段階で、実際に業務が止まるかは交渉次第です。経営者は、サプライチェーンの寸断リスクを「起きる前提」で点検し、在庫の積み増しや代替輸送の契約を検討する時期といえます。TOEICでも、shipment、delay、contract、deadlineといった語は頻出で、こうしたニュースの語彙がそのまま役立ちます。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Strike threat looms at eight Los Angeles-Long Beach port terminals",
+      "publisher": "gCaptain",
+      "url": "https://gcaptain.com/strike-threat-looms-at-eight-los-angeles-long-beach-port-terminals/",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "Strike threat by port security workers at Los Angeles–Long Beach",
+      "publisher": "FreightWaves",
+      "url": "https://www.freightwaves.com/?p=584451",
+      "date": ""
+    }
+  ]
+}
