@@ -446,5 +446,23 @@
       "url": "https://www.freightwaves.com/?p=584451",
       "date": ""
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-30-1646/00.mp3",
+      "audio/2026-10-30-1646/01.mp3",
+      "audio/2026-10-30-1646/02.mp3",
+      "audio/2026-10-30-1646/03.mp3",
+      "audio/2026-10-30-1646/04.mp3",
+      "audio/2026-10-30-1646/05.mp3",
+      "audio/2026-10-30-1646/06.mp3",
+      "audio/2026-10-30-1646/07.mp3",
+      "audio/2026-10-30-1646/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 256908,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-30T07:50:02.345Z",
+    "trimmed": true
+  }
 }
