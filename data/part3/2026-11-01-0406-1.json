@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-11-01-0406-1",
+  "date": "2026-11-01",
+  "time": "04:06",
+  "scene": "オフィス移転｜引っ越し前のレイアウトと準備の調整",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-GB"
+    },
+    {
+      "tag": "M2",
+      "role": "男性",
+      "accent": "en-AU"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "The movers are booked for the twelfth, so we need to finalize the floor plan by Thursday.",
+      "ja": "引っ越し業者は12日に予約済みなので、木曜までにフロアプランを確定させる必要があります。"
+    },
+    {
+      "tag": "M",
+      "en": "I'd like sales near the window, but that side only has room for twelve desks.",
+      "ja": "営業は窓際にしたいのですが、その側には12席分の余地しかありません。"
+    },
+    {
+      "tag": "W",
+      "en": "We have fifteen people in sales, so three would end up in the middle.",
+      "ja": "営業は15人いるので、3人は中央に回ることになります。"
+    },
+    {
+      "tag": "M2",
+      "en": "The building manager says we can put up a partition and fit four more desks.",
+      "ja": "ビル管理者によると、間仕切りを設置してさらに4席置けるそうです。"
+    },
+    {
+      "tag": "M",
+      "en": "That would work. How much extra would it cost?",
+      "ja": "それならいけますね。追加でいくらかかりますか。"
+    },
+    {
+      "tag": "M2",
+      "en": "About six hundred dollars, and it would be finished two days before we move in.",
+      "ja": "約600ドルで、入居の2日前に完了する見込みです。"
+    },
+    {
+      "tag": "W",
+      "en": "That's within budget. Paul, could you sign off on the quote today?",
+      "ja": "予算内ですね。ポール、今日中にその見積を承認してもらえますか。"
+    },
+    {
+      "tag": "M",
+      "en": "Sure, I'll send it back with my approval this afternoon.",
+      "ja": "わかりました。今日の午後、承認を付けて返送します。"
+    },
+    {
+      "tag": "W",
+      "en": "We also need to update our address on the website before the move.",
+      "ja": "移転前にウェブサイトの住所も更新する必要があります。"
+    },
+    {
+      "tag": "M2",
+      "en": "I'll take care of that. Then I'll ask the print shop about new business cards.",
+      "ja": "それは私が対応します。その後、印刷店に新しい名刺について聞いてみます。"
+    },
+    {
+      "tag": "W",
+      "en": "Let's go over the checklist on Friday.",
+      "ja": "金曜にチェックリストを確認しましょう。"
+    },
+    {
+      "tag": "M2",
+      "en": "Sounds good. I'll reserve a conference room.",
+      "ja": "いいですね。会議室を押さえておきます。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hiring more sales staff",
+          "ja": "営業職の増員"
+        },
+        {
+          "key": "B",
+          "text": "Preparing for an office move",
+          "ja": "オフィス移転の準備"
+        },
+        {
+          "key": "C",
+          "text": "Replacing old office furniture",
+          "ja": "古い家具の入れ替え"
+        },
+        {
+          "key": "D",
+          "text": "Choosing a new building manager",
+          "ja": "新しいビル管理者の選定"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭の The movers are booked ... finalize the floor plan と、続く窓際の席の話から、引っ越し前のレイアウト調整が主題だと分かる。Aは営業の人数が出るだけで採用の話ではない。Cはビル管理者が出るが、選ぶ話ではない。",
+      "tip": "最初の1〜2行で『誰が・何のために集まっているか』が出る。movers と floor plan で場面を決める。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What problem do the speakers have with the floor plan?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The movers are unavailable on Saturday.",
+          "ja": "業者が土曜に来られない"
+        },
+        {
+          "key": "B",
+          "text": "The partition costs too much money.",
+          "ja": "間仕切りの費用が高すぎる"
+        },
+        {
+          "key": "C",
+          "text": "The move date is too early.",
+          "ja": "移転日が早すぎる"
+        },
+        {
+          "key": "D",
+          "text": "Not all sales staff fit near the window.",
+          "ja": "営業全員が窓際に収まらない"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        1,
+        2
+      ],
+      "explanation": "M が窓側は12席分しかないと言い、W が営業は15人だと続ける。2人の発言を合わせると、窓際に全員は座れないと分かる。Bの間仕切りは問題ではなく解決策で、予算内と判断されている。",
+      "tip": "数字が別の話者から出たら、足し引きして問題を作る。12席と15人を結び付ける。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What does the woman ask Paul to do?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Approve a cost estimate",
+          "ja": "見積を承認する"
+        },
+        {
+          "key": "B",
+          "text": "Contact the print shop",
+          "ja": "印刷店に連絡する"
+        },
+        {
+          "key": "C",
+          "text": "Update the company website",
+          "ja": "ウェブサイトを更新する"
+        },
+        {
+          "key": "D",
+          "text": "Reserve a conference room",
+          "ja": "会議室を予約する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        6
+      ],
+      "explanation": "W が Paul に sign off on the quote today と頼んでいる。sign off on は approve、quote は cost estimate に言い換えられている。B・C・D はいずれも M2 が引き受けた作業である。",
+      "tip": "頼まれた相手の名前を聞き取る。同じ依頼でも、誰が引き受けるかで選択肢が変わる。"
+    }
+  ],
+  "glossary": {
+    "finalize": {
+      "lemma": "finalize",
+      "pos": "動",
+      "ja": "最終決定する、確定させる",
+      "note": "",
+      "example": {
+        "en": "We need to finalize the budget before the board meeting.",
+        "ja": "取締役会の前に予算を確定させる必要があります。"
+      }
+    },
+    "floor plan": {
+      "lemma": "floor plan",
+      "pos": "熟",
+      "ja": "フロアプラン、間取り図",
+      "note": "",
+      "example": {
+        "en": "The new floor plan includes a larger meeting area.",
+        "ja": "新しいフロアプランには、より広い会議スペースがあります。"
+      }
+    },
+    "end up": {
+      "lemma": "end up",
+      "pos": "熟",
+      "ja": "結局〜になる",
+      "note": "",
+      "example": {
+        "en": "If we skip the test, we may end up with more errors.",
+        "ja": "テストを省くと、結局エラーが増えるかもしれません。"
+      }
+    },
+    "put up": {
+      "lemma": "put up",
+      "pos": "熟",
+      "ja": "設置する、立てる",
+      "note": "",
+      "example": {
+        "en": "They put up a sign near the main entrance.",
+        "ja": "正面入口の近くに看板が設置されました。"
+      }
+    },
+    "partition": {
+      "lemma": "partition",
+      "pos": "名",
+      "ja": "間仕切り",
+      "note": "",
+      "example": {
+        "en": "A glass partition separates the lobby from the office.",
+        "ja": "ガラスの間仕切りがロビーと事務所を分けています。"
+      }
+    },
+    "within budget": {
+      "lemma": "within budget",
+      "pos": "熟",
+      "ja": "予算内で",
+      "note": "",
+      "example": {
+        "en": "The renovation was completed within budget.",
+        "ja": "改修工事は予算内で完了しました。"
+      }
+    },
+    "sign off on": {
+      "lemma": "sign off on",
+      "pos": "熟",
+      "ja": "〜を承認する",
+      "note": "approve の言い換え",
+      "example": {
+        "en": "The director must sign off on every purchase over one thousand dollars.",
+        "ja": "1,000ドルを超える購入はすべて部長の承認が必要です。"
+      }
+    },
+    "quote": {
+      "lemma": "quote",
+      "pos": "名",
+      "ja": "見積(書)",
+      "note": "estimate の言い換え",
+      "example": {
+        "en": "Please send us a quote for fifty folding chairs.",
+        "ja": "折りたたみ椅子50脚の見積をお送りください。"
+      }
+    },
+    "take care of": {
+      "lemma": "take care of",
+      "pos": "熟",
+      "ja": "〜を処理する、対応する",
+      "note": "",
+      "example": {
+        "en": "I will take care of the hotel reservation myself.",
+        "ja": "ホテルの予約は私自身が対応します。"
+      }
+    },
+    "go over": {
+      "lemma": "go over",
+      "pos": "熟",
+      "ja": "〜を見直す、確認する",
+      "note": "",
+      "example": {
+        "en": "Let us go over the agenda before the client arrives.",
+        "ja": "顧客が到着する前に議題を確認しましょう。"
+      }
+    }
+  },
+  "point": {
+    "flow": "日程の提示 → 制約（席数）→ 解決策の提案 → 費用の確認 → 承認と分担",
+    "items": [
+      {
+        "title": "3人会話は数字を突き合わせる",
+        "body": "別の話者が出した数字（12席と15人）を結び付ける設問が入る。数字は誰が言ったかとセットでメモする。"
+      },
+      {
+        "title": "依頼と引き受けを分けて聞く",
+        "body": "誰が頼み、誰が引き受けたかが後半に並ぶ。名前を呼ばれた人の返事を次の行で確認する。"
+      },
+      {
+        "title": "解決策は費用と期限で比較する",
+        "body": "提案が出たら、金額と完了時期の2点を待つ。ここが最後の可否判断の根拠になる。"
+      }
+    ]
+  }
+}

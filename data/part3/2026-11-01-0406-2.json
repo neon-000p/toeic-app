@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-11-01-0406-2",
+  "date": "2026-11-01",
+  "time": "04:06",
+  "scene": "顧客対応｜誤配送された注文品の再発送",
+  "speakers": [
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-CA"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-GB"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "M",
+      "en": "Hi Lisa, a customer called to say her office chairs were delivered to the wrong address.",
+      "ja": "リサ、お客様から、事務用椅子が間違った住所に届いたと電話がありました。"
+    },
+    {
+      "tag": "W",
+      "en": "Oh no. Did the shipping label have the old address on it?",
+      "ja": "まさか。発送ラベルに古い住所が書かれていたのですか。"
+    },
+    {
+      "tag": "M",
+      "en": "Yes, she moved last month, but she updated the information on our website two weeks ago.",
+      "ja": "はい。彼女は先月引っ越しましたが、2週間前に当社のウェブサイトで情報を更新しています。"
+    },
+    {
+      "tag": "W",
+      "en": "Then the system must not have saved the change. I'll ask the warehouse to track the package.",
+      "ja": "それならシステムが変更を保存していなかったのでしょう。倉庫に荷物を追跡するよう頼みます。"
+    },
+    {
+      "tag": "M",
+      "en": "She needs the chairs by Wednesday for a new employee orientation.",
+      "ja": "彼女は新入社員研修のため、水曜までに椅子が必要です。"
+    },
+    {
+      "tag": "W",
+      "en": "A reshipment by express would arrive Tuesday, but it would cost sixty dollars.",
+      "ja": "速達での再発送なら火曜に着きますが、60ドルかかります。"
+    },
+    {
+      "tag": "M",
+      "en": "Can we cover the fee? She's been a loyal customer for years.",
+      "ja": "その料金を当社で負担できませんか。彼女は長年の大切なお客様です。"
+    },
+    {
+      "tag": "W",
+      "en": "I think so. I'll check with my manager and call you back within the hour.",
+      "ja": "できると思います。上司に確認して、1時間以内に折り返します。"
+    },
+    {
+      "tag": "M",
+      "en": "Thanks. I'll let her know we're working on it.",
+      "ja": "ありがとう。対応中だと彼女に伝えておきます。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What problem does the man report?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A chair was damaged during shipping.",
+          "ja": "配送中に椅子が破損した"
+        },
+        {
+          "key": "B",
+          "text": "An invoice showed the wrong price.",
+          "ja": "請求書の金額が誤っていた"
+        },
+        {
+          "key": "C",
+          "text": "A shipment went to an old address.",
+          "ja": "荷物が古い住所に届いた"
+        },
+        {
+          "key": "D",
+          "text": "A website was not working.",
+          "ja": "ウェブサイトが動かなかった"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "男性は delivered to the wrong address と述べ、女性が古い住所のラベルかと確認している。つまり荷物が古い住所に送られた。Dのウェブサイトは住所の更新に使われただけで、故障の話はない。",
+      "tip": "問題は最初の1〜2行で述べられる。wrong address を『古い住所』に言い換えた選択肢を探す。"
+    },
+    {
+      "id": "q2",
+      "type": "infer",
+      "prompt": "What is suggested about the customer's address change?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It contained a spelling mistake.",
+          "ja": "綴りの誤りがあった"
+        },
+        {
+          "key": "B",
+          "text": "It was submitted after the order was placed.",
+          "ja": "注文後に提出された"
+        },
+        {
+          "key": "C",
+          "text": "It was sent to the wrong department.",
+          "ja": "別の部署に送られた"
+        },
+        {
+          "key": "D",
+          "text": "It was not reflected in the system.",
+          "ja": "システムに反映されていなかった"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "男性は2週間前にウェブサイトで更新したと言い、女性は the system must not have saved the change と推測している。更新したのに古い住所が使われたので、反映されていなかったと分かる。Bは注文日が語られておらず根拠がない。",
+      "tip": "『したはずなのに起きた』という食い違いが推測の材料になる。2人の発言を足して結論を出す。"
+    },
+    {
+      "id": "q3",
+      "type": "intent",
+      "prompt": "What does the man imply when he says, \"She's been a loyal customer for years\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The company should pay the extra cost.",
+          "ja": "会社が追加費用を負担すべきだ"
+        },
+        {
+          "key": "B",
+          "text": "The customer wants to close her account.",
+          "ja": "顧客が口座を解約したがっている"
+        },
+        {
+          "key": "C",
+          "text": "The shipment will probably be late.",
+          "ja": "荷物は遅れそうだ"
+        },
+        {
+          "key": "D",
+          "text": "The warehouse should give a discount.",
+          "ja": "倉庫が値引きすべきだ"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        5,
+        6
+      ],
+      "explanation": "直前で女性が60ドルの速達料金を告げ、男性は Can we cover the fee? と続けてから、長年の顧客だと理由を添えている。つまり会社が費用を持つべきだという主張である。Dの値引きは倉庫とは無関係。",
+      "tip": "意図の設問は、引用文の直前を見る。直前の fee（料金）が、その一言の向かう先になる。"
+    }
+  ],
+  "glossary": {
+    "shipping label": {
+      "lemma": "shipping label",
+      "pos": "熟",
+      "ja": "発送ラベル",
+      "note": "",
+      "example": {
+        "en": "Please attach the shipping label to the side of the box.",
+        "ja": "発送ラベルは箱の側面に貼ってください。"
+      }
+    },
+    "track": {
+      "lemma": "track",
+      "pos": "動",
+      "ja": "追跡する",
+      "note": "",
+      "example": {
+        "en": "You can track your order on our Web site.",
+        "ja": "当社のウェブサイトで注文の状況を追跡できます。"
+      }
+    },
+    "reshipment": {
+      "lemma": "reshipment",
+      "pos": "名",
+      "ja": "再発送",
+      "note": "",
+      "example": {
+        "en": "A reshipment of the missing parts will go out tomorrow.",
+        "ja": "不足した部品の再発送は明日行われます。"
+      }
+    },
+    "by express": {
+      "lemma": "by express",
+      "pos": "熟",
+      "ja": "速達で、急送で",
+      "note": "",
+      "example": {
+        "en": "The documents were sent by express to the Osaka branch.",
+        "ja": "書類は大阪支店へ速達で送られました。"
+      }
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "(費用を)負担する",
+      "note": "「覆う」ではなく費用を持つ意味",
+      "example": {
+        "en": "The company will cover all travel expenses for the training.",
+        "ja": "研修の出張費はすべて会社が負担します。"
+      }
+    },
+    "loyal customer": {
+      "lemma": "loyal customer",
+      "pos": "熟",
+      "ja": "常連客、長年の顧客",
+      "note": "",
+      "example": {
+        "en": "We offer special discounts to loyal customers every spring.",
+        "ja": "当店では毎年春に、常連のお客様へ特別割引を行っています。"
+      }
+    },
+    "call you back": {
+      "lemma": "call you back",
+      "pos": "熟",
+      "ja": "折り返し電話する",
+      "note": "",
+      "example": {
+        "en": "I will call you back as soon as the meeting ends.",
+        "ja": "会議が終わり次第、折り返しお電話します。"
+      }
+    },
+    "within the hour": {
+      "lemma": "within the hour",
+      "pos": "熟",
+      "ja": "1時間以内に",
+      "note": "",
+      "example": {
+        "en": "The technician should arrive within the hour.",
+        "ja": "技術者は1時間以内に到着するはずです。"
+      }
+    },
+    "check with": {
+      "lemma": "check with",
+      "pos": "熟",
+      "ja": "〜に確認する",
+      "note": "",
+      "example": {
+        "en": "Please check with the front desk about parking permits.",
+        "ja": "駐車許可については受付に確認してください。"
+      }
+    },
+    "orientation": {
+      "lemma": "orientation",
+      "pos": "名",
+      "ja": "オリエンテーション、新人研修",
+      "note": "",
+      "example": {
+        "en": "The orientation for new staff starts at nine on Monday.",
+        "ja": "新人向けのオリエンテーションは月曜の9時に始まります。"
+      }
+    }
+  },
+  "point": {
+    "flow": "問題の発生 → 原因の切り分け → 納期の制約 → 費用つきの代替案 → 負担の相談と確認",
+    "items": [
+      {
+        "title": "問題は冒頭、原因は2〜3行目",
+        "body": "クレーム系の会話は、何が起きたかが1行目、なぜ起きたかが数行後に出る。原因の設問は、その食い違いを足して答える。"
+      },
+      {
+        "title": "金額が出たら次の発言に注目する",
+        "body": "費用が告げられた直後に、負担の相談や意図の一言が来る。意図問題は引用の直前の数字や条件を見る。"
+      },
+      {
+        "title": "最後の行は次の行動の予告",
+        "body": "『確認して折り返す』『伝えておく』のように、両者の次の動作が最後にまとまる。誰が何をするか分けて聞く。"
+      }
+    ]
+  }
+}
