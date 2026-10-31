@@ -269,5 +269,25 @@
         "body": "short notice や apologize が出たら、直前の変更内容が相手に負担をかけると認めた発言だと読む。"
       }
     ]
+  },
+  "audio": {
+    "file": "audio/2026-11-01-0406-1.mp3",
+    "sec": 49.2,
+    "bytes": 231568,
+    "lines": [
+      "audio/2026-11-01-0406-1/00.mp3",
+      "audio/2026-11-01-0406-1/01.mp3",
+      "audio/2026-11-01-0406-1/02.mp3",
+      "audio/2026-11-01-0406-1/03.mp3",
+      "audio/2026-11-01-0406-1/04.mp3",
+      "audio/2026-11-01-0406-1/05.mp3",
+      "audio/2026-11-01-0406-1/06.mp3",
+      "audio/2026-11-01-0406-1/07.mp3"
+    ],
+    "voice": "Puck",
+    "narrator": "Charon",
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-31T19:13:04.382Z",
+    "trimmed": true
   }
 }
