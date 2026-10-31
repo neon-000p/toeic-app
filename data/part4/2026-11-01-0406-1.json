@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-11-01-0406-1",
+  "date": "2026-11-01",
+  "time": "04:06",
+  "createdAt": "2026-11-01T04:06:00+09:00",
+  "sample": false,
+  "scene": "留守番電話｜面接日程の変更と持ち物の連絡",
+  "talkType": "voicemail",
+  "intro": "Questions 1 through 3 refer to the following telephone message.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-GB"
+  },
+  "lines": [
+    {
+      "en": "Hello, Ms. Tanaka, this is Daniel Reeves from Brightfield Logistics, returning your call about Thursday's interview.",
+      "ja": "もしもし、田中さん。ブライトフィールド物流のダニエル・リーブスです。木曜の面接の件でお電話をいただいたので、折り返しています。"
+    },
+    {
+      "en": "Unfortunately, our hiring manager has been tied up with a client visit, so we'll need to move the interview to Friday at ten a.m.",
+      "ja": "あいにく採用担当の責任者が顧客の訪問対応で手が離せないため、面接を金曜の午前10時に変更させてください。"
+    },
+    {
+      "en": "I know that's short notice, and I apologize for any inconvenience.",
+      "ja": "急なお知らせで、ご不便をおかけして申し訳ありません。"
+    },
+    {
+      "en": "If Friday doesn't work, we also have an opening on Monday morning.",
+      "ja": "金曜が難しければ、月曜の午前にも空きがあります。"
+    },
+    {
+      "en": "Please bring two copies of your résumé and a list of references.",
+      "ja": "履歴書を2部と、推薦者の一覧をお持ちください。"
+    },
+    {
+      "en": "Also, parking is limited, so I'd suggest taking the train if you can.",
+      "ja": "また、駐車場は台数に限りがあるため、可能であれば電車でお越しになることをお勧めします。"
+    },
+    {
+      "en": "Could you call me back by this afternoon to confirm which day you prefer?",
+      "ja": "どちらの日がよいか確認のため、今日の午後までに折り返しお電話をいただけますか。"
+    },
+    {
+      "en": "My direct line is five five five, zero one four two. Thank you.",
+      "ja": "私の直通番号は555の0142です。よろしくお願いします。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "Why is the speaker calling?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To offer Ms. Tanaka a job",
+          "ja": "田中さんに採用を伝えるため"
+        },
+        {
+          "key": "B",
+          "text": "To ask about a client visit",
+          "ja": "顧客訪問について尋ねるため"
+        },
+        {
+          "key": "C",
+          "text": "To change an interview schedule",
+          "ja": "面接の日程を変更するため"
+        },
+        {
+          "key": "D",
+          "text": "To describe a parking policy",
+          "ja": "駐車場の規則を説明するため"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で折り返しの電話だと述べ、続く文で move the interview to Friday と日程の変更を伝えている。Aは面接の前の段階なので不適切。Bの client visit は変更の理由として出るだけである。",
+      "tip": "留守電は名乗り・用件・依頼の順。用件は2文目までに出るので、move や change に注目する。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when he says, \"I know that's short notice\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "He wants the listener to arrive early.",
+          "ja": "早く来てほしい"
+        },
+        {
+          "key": "B",
+          "text": "He realizes the change may cause trouble.",
+          "ja": "変更が支障になるかもしれないと分かっている"
+        },
+        {
+          "key": "C",
+          "text": "He is unsure about the new date.",
+          "ja": "新しい日程に自信がない"
+        },
+        {
+          "key": "D",
+          "text": "He has already hired another person.",
+          "ja": "すでに別の人を採用した"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        1,
+        2
+      ],
+      "explanation": "直前の文で面接を Friday に動かすと伝えており、その急な変更を short notice と認めて apologize している。つまり、相手に迷惑になりうると自覚している。Cのように日程に迷っているわけではなく、別日も提案している。",
+      "tip": "short notice は『急な連絡』。直前に変更の内容があれば、お詫びや配慮の一言だと予想できる。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What is the listener asked to do by this afternoon?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Submit a list of references online",
+          "ja": "推薦者一覧をオンラインで提出する"
+        },
+        {
+          "key": "B",
+          "text": "Take a train to the office",
+          "ja": "電車で事務所へ行く"
+        },
+        {
+          "key": "C",
+          "text": "Contact the hiring manager",
+          "ja": "採用責任者に連絡する"
+        },
+        {
+          "key": "D",
+          "text": "Confirm her preferred day",
+          "ja": "希望する日を知らせる"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        6
+      ],
+      "explanation": "最後の依頼は call me back by this afternoon to confirm which day you prefer。折り返しの電話で希望日を伝えることが求められている。Aは持参物であり提出は求められていない。Bは提案にとどまる。",
+      "tip": "時刻や期限を示す語（by this afternoon）が付いた依頼が、設問の答えになる。持参物の依頼と混同しない。"
+    }
+  ],
+  "glossary": {
+    "returning your call": {
+      "lemma": "returning your call",
+      "pos": "熟",
+      "ja": "折り返しお電話しています",
+      "note": "",
+      "example": {
+        "en": "Hello, I am returning your call about the broken printer.",
+        "ja": "もしもし、壊れたプリンターの件で折り返しお電話しています。"
+      }
+    },
+    "tied up": {
+      "lemma": "tied up",
+      "pos": "熟",
+      "ja": "手が離せない、忙しい",
+      "note": "busy の言い換え",
+      "example": {
+        "en": "The manager is tied up in a budget meeting until noon.",
+        "ja": "部長は正午まで予算会議で手が離せません。"
+      }
+    },
+    "short notice": {
+      "lemma": "short notice",
+      "pos": "熟",
+      "ja": "急な知らせ",
+      "note": "",
+      "example": {
+        "en": "We had to cancel the seminar on short notice.",
+        "ja": "急な連絡でしたが、セミナーを中止せざるを得ませんでした。"
+      }
+    },
+    "doesn't work": {
+      "lemma": "doesn't work",
+      "pos": "熟",
+      "ja": "都合がつかない",
+      "note": "「動かない」ではなく日程が合わない意味",
+      "example": {
+        "en": "If two o'clock doesn't work, we can meet after lunch.",
+        "ja": "2時が難しければ、昼食後にお会いできます。"
+      }
+    },
+    "opening": {
+      "lemma": "opening",
+      "pos": "名",
+      "ja": "空き、欠員",
+      "note": "ここでは予約枠の空き",
+      "example": {
+        "en": "There is an opening for a technician in our Boston office.",
+        "ja": "ボストン事務所に技術者の欠員があります。"
+      }
+    },
+    "references": {
+      "lemma": "references",
+      "pos": "名",
+      "ja": "推薦者、身元照会先",
+      "note": "",
+      "example": {
+        "en": "Applicants should include three professional references.",
+        "ja": "応募者は仕事上の推薦者を3名記載してください。"
+      }
+    },
+    "call me back": {
+      "lemma": "call me back",
+      "pos": "熟",
+      "ja": "折り返し電話する",
+      "note": "",
+      "example": {
+        "en": "Please call me back when you have the final figures.",
+        "ja": "最終的な数字が出たら折り返し電話をください。"
+      }
+    },
+    "direct line": {
+      "lemma": "direct line",
+      "pos": "熟",
+      "ja": "直通電話",
+      "note": "",
+      "example": {
+        "en": "You can reach me on my direct line after nine.",
+        "ja": "9時以降は私の直通電話でつながります。"
+      }
+    },
+    "inconvenience": {
+      "lemma": "inconvenience",
+      "pos": "名",
+      "ja": "不便、迷惑",
+      "note": "",
+      "example": {
+        "en": "We apologize for the inconvenience caused by the road work.",
+        "ja": "道路工事によるご不便をお詫びします。"
+      }
+    },
+    "résumé": {
+      "lemma": "résumé",
+      "pos": "名",
+      "ja": "履歴書",
+      "note": "",
+      "example": {
+        "en": "Please attach your résumé to the online application form.",
+        "ja": "オンラインの応募用紙に履歴書を添付してください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "名乗りと用件 → 変更の中身 → 理由とお詫び → 代替の提示 → 持ち物と注意 → 期限つきの依頼",
+    "items": [
+      {
+        "title": "留守電は名乗り・用件・依頼の3点で聞く",
+        "body": "誰が何の用で、聞き手に何を求めるかが必ず入る。1問目は用件、3問目は最後の依頼が定番。"
+      },
+      {
+        "title": "依頼が複数あるときは期限で選ぶ",
+        "body": "持ち物と折り返しのように複数の依頼が出たら、『by this afternoon』のような期限が付いたものが設問の対象になりやすい。"
+      },
+      {
+        "title": "お詫びの一言は意図問題の定番",
+        "body": "short notice や apologize が出たら、直前の変更内容が相手に負担をかけると認めた発言だと読む。"
+      }
+    ]
+  }
+}

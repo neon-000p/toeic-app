@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-11-01-0406-2",
+  "date": "2026-11-01",
+  "time": "04:06",
+  "createdAt": "2026-11-01T04:06:00+09:00",
+  "sample": false,
+  "scene": "広告｜語学スクールの体験レッスンと登録料の免除",
+  "talkType": "ad",
+  "intro": "Questions 1 through 3 refer to the following advertisement.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-AU"
+  },
+  "lines": [
+    {
+      "en": "Are you tired of putting off your English studies because of a busy schedule?",
+      "ja": "忙しいスケジュールのせいで、英語の勉強を後回しにしていませんか。"
+    },
+    {
+      "en": "At Harbor Language Academy, our evening and weekend classes are designed for working professionals.",
+      "ja": "ハーバー語学アカデミーの夜間・週末クラスは、働く社会人のために作られています。"
+    },
+    {
+      "en": "Each course runs for ten weeks, with small groups of no more than eight students.",
+      "ja": "各コースは10週間で、生徒は8人以下の少人数制です。"
+    },
+    {
+      "en": "This month only, new students can try a lesson at no charge.",
+      "ja": "今月に限り、新しい生徒は無料でレッスンを体験できます。"
+    },
+    {
+      "en": "If you sign up for a full course before November thirtieth, we'll waive the registration fee, a savings of fifty dollars.",
+      "ja": "11月30日までにフルコースに申し込むと、登録料を免除し、50ドルお得になります。"
+    },
+    {
+      "en": "Our friendly instructors will help you build confidence in meetings and presentations.",
+      "ja": "親しみやすい講師が、会議やプレゼンテーションでの自信づくりをお手伝いします。"
+    },
+    {
+      "en": "Visit our Web site to reserve a seat, or stop by our downtown office any weekday after five.",
+      "ja": "席の予約はウェブサイトから、または平日の5時以降に市内中心部の事務所にお立ち寄りください。"
+    },
+    {
+      "en": "Don't wait, because space is filling up fast.",
+      "ja": "お急ぎください。定員がどんどん埋まっています。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who is the advertisement most likely intended for?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Working adults who want to study English",
+          "ja": "英語を学びたい働く大人"
+        },
+        {
+          "key": "B",
+          "text": "University students looking for jobs",
+          "ja": "就職活動中の大学生"
+        },
+        {
+          "key": "C",
+          "text": "Teachers seeking employment",
+          "ja": "職を探している教師"
+        },
+        {
+          "key": "D",
+          "text": "Business owners who need translators",
+          "ja": "通訳を必要とする経営者"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭の busy schedule と英語の勉強、続く designed for working professionals から、仕事で忙しい社会人向けだと分かる。Bの大学生やCの教師は本文に出ない。",
+      "tip": "広告の1問目は対象者。冒頭の呼びかけ（Are you tired of ...?）と designed for の後ろを聞く。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What does the speaker say about the registration fee?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is fifty dollars for everyone.",
+          "ja": "全員が50ドルである"
+        },
+        {
+          "key": "B",
+          "text": "It must be paid at the downtown office.",
+          "ja": "中心部の事務所で支払う必要がある"
+        },
+        {
+          "key": "C",
+          "text": "It will not be charged for early sign-ups.",
+          "ja": "早く申し込めば請求されない"
+        },
+        {
+          "key": "D",
+          "text": "It increases after ten weeks.",
+          "ja": "10週間後に上がる"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        4
+      ],
+      "explanation": "before November thirtieth に申し込めば we'll waive the registration fee と言っている。waive を『請求されない』と言い換えた選択肢が正解。Aの50ドルは免除で浮く額であり、全員が払う額ではない。",
+      "tip": "waive は『免除する』。金額が出ても、払う額か浮く額かを区別する。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What does the speaker imply about the classes?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They are held only on weekends.",
+          "ja": "週末にしか行われない"
+        },
+        {
+          "key": "B",
+          "text": "They may soon be fully booked.",
+          "ja": "まもなく満席になるかもしれない"
+        },
+        {
+          "key": "C",
+          "text": "They are taught by volunteers.",
+          "ja": "ボランティアが教えている"
+        },
+        {
+          "key": "D",
+          "text": "They cost less than other schools.",
+          "ja": "他校より安い"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        7
+      ],
+      "explanation": "最後に space is filling up fast と言っている。定員が埋まりつつあるので、すぐ満席になる可能性を示している。Aは evening and weekend と両方あるため誤り。",
+      "tip": "広告の最後は行動を急がせる一言。filling up は『定員が埋まる』と言い換えて選ぶ。"
+    }
+  ],
+  "glossary": {
+    "putting off": {
+      "lemma": "putting off",
+      "pos": "熟",
+      "ja": "後回しにする",
+      "note": "postpone の言い換え",
+      "example": {
+        "en": "Stop putting off the report and start writing it today.",
+        "ja": "報告書を後回しにせず、今日書き始めてください。"
+      }
+    },
+    "designed for": {
+      "lemma": "designed for",
+      "pos": "熟",
+      "ja": "〜向けに作られた",
+      "note": "",
+      "example": {
+        "en": "This software is designed for small retail businesses.",
+        "ja": "このソフトは小規模な小売店向けに作られています。"
+      }
+    },
+    "no more than": {
+      "lemma": "no more than",
+      "pos": "熟",
+      "ja": "〜以下、多くても〜",
+      "note": "",
+      "example": {
+        "en": "Each team may have no more than five members.",
+        "ja": "各チームのメンバーは最大5名までです。"
+      }
+    },
+    "at no charge": {
+      "lemma": "at no charge",
+      "pos": "熟",
+      "ja": "無料で",
+      "note": "free の言い換え",
+      "example": {
+        "en": "Samples are available at no charge for registered customers.",
+        "ja": "登録済みのお客様は、サンプルを無料で入手できます。"
+      }
+    },
+    "sign up": {
+      "lemma": "sign up",
+      "pos": "熟",
+      "ja": "申し込む、登録する",
+      "note": "",
+      "example": {
+        "en": "Employees can sign up for the workshop on the intranet.",
+        "ja": "社員は社内サイトで研修に申し込めます。"
+      }
+    },
+    "waive": {
+      "lemma": "waive",
+      "pos": "動",
+      "ja": "(料金などを)免除する",
+      "note": "選択肢では not charged などに置き換わる",
+      "example": {
+        "en": "The bank will waive the monthly fee for new accounts.",
+        "ja": "銀行は新規口座の月額手数料を免除します。"
+      }
+    },
+    "registration fee": {
+      "lemma": "registration fee",
+      "pos": "熟",
+      "ja": "登録料",
+      "note": "",
+      "example": {
+        "en": "The registration fee covers all conference materials.",
+        "ja": "登録料に会議の資料代がすべて含まれます。"
+      }
+    },
+    "build confidence": {
+      "lemma": "build confidence",
+      "pos": "熟",
+      "ja": "自信をつける",
+      "note": "",
+      "example": {
+        "en": "Regular practice will help you build confidence in public speaking.",
+        "ja": "継続的な練習が、人前で話す自信につながります。"
+      }
+    },
+    "stop by": {
+      "lemma": "stop by",
+      "pos": "熟",
+      "ja": "立ち寄る",
+      "note": "",
+      "example": {
+        "en": "Please stop by my desk when you have a moment.",
+        "ja": "お時間のあるときに私の席へお立ち寄りください。"
+      }
+    },
+    "filling up": {
+      "lemma": "filling up",
+      "pos": "熟",
+      "ja": "埋まっていく",
+      "note": "fill up の進行形。選択肢では booked などに置き換わる",
+      "example": {
+        "en": "The parking lot is filling up, so please arrive early.",
+        "ja": "駐車場が埋まりつつあるので、早めにお越しください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "呼びかけ（悩み）→ サービスの特徴 → 数字（期間・人数）→ 期間限定の特典 → 申込方法 → 急がせる一言",
+    "items": [
+      {
+        "title": "広告は対象者・特典・申込方法の3点",
+        "body": "1問目は対象者、中盤は特典の条件、最後は申込方法か期限という並びが定番。"
+      },
+      {
+        "title": "特典は条件と期限をセットで聞く",
+        "body": "「いつまでに何をすれば何が得か」を1文で言う。waive や at no charge は『無料』の言い換えとして覚える。"
+      },
+      {
+        "title": "最後の一言は推測の根拠になる",
+        "body": "Don't wait などの急かす表現は、定員や期限が迫っていることを暗に示す。infer 問題の材料になる。"
+      }
+    ]
+  }
+}

@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part4-history",
-  "updatedAt": "2026-10-25T04:09:00+09:00",
+  "updatedAt": "2026-11-01T04:06:00+09:00",
   "items": [
+    {
+      "id": "2026-11-01-0406-2",
+      "date": "2026-11-01",
+      "scene": "広告｜語学スクールの体験レッスンと登録料の免除",
+      "genre": "広告",
+      "talkType": "ad",
+      "types": [
+        "who",
+        "detail",
+        "infer"
+      ],
+      "flow": "告知と指示"
+    },
+    {
+      "id": "2026-11-01-0406-1",
+      "date": "2026-11-01",
+      "scene": "留守番電話｜面接日程の変更と持ち物の連絡",
+      "genre": "留守番電話",
+      "talkType": "voicemail",
+      "types": [
+        "gist",
+        "intent",
+        "next"
+      ],
+      "flow": "問題と代替案"
+    },
     {
       "id": "2026-10-25-0409-2",
       "date": "2026-10-25",
