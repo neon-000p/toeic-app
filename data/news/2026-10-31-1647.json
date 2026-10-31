@@ -450,5 +450,24 @@
       "url": "https://www.thestar.com.my/news/world/2026/10/28/britain039s-shop-price-inflation-keeps-surging-in-october-amid-cost-hikes-brc",
       "date": "2026-10-28"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-10-31-1647/00.mp3",
+      "audio/2026-10-31-1647/01.mp3",
+      "audio/2026-10-31-1647/02.mp3",
+      "audio/2026-10-31-1647/03.mp3",
+      "audio/2026-10-31-1647/04.mp3",
+      "audio/2026-10-31-1647/05.mp3",
+      "audio/2026-10-31-1647/06.mp3",
+      "audio/2026-10-31-1647/07.mp3",
+      "audio/2026-10-31-1647/08.mp3",
+      "audio/2026-10-31-1647/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 230456,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-31T07:48:42.631Z",
+    "trimmed": true
+  }
 }
