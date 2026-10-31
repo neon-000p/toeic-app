@@ -458,5 +458,23 @@
       "url": "https://yournews.com/2026/10/30/7245444/dockworkers-strike-at-more-than-100-ports-worldwide-to-protest",
       "date": "2026-10-30"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-01-0547/00.mp3",
+      "audio/2026-11-01-0547/01.mp3",
+      "audio/2026-11-01-0547/02.mp3",
+      "audio/2026-11-01-0547/03.mp3",
+      "audio/2026-11-01-0547/04.mp3",
+      "audio/2026-11-01-0547/05.mp3",
+      "audio/2026-11-01-0547/06.mp3",
+      "audio/2026-11-01-0547/07.mp3",
+      "audio/2026-11-01-0547/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 225324,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-10-31T20:48:51.476Z",
+    "trimmed": true
+  }
 }
