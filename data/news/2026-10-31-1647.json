@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-10-31-1647",
+  "date": "2026-10-31",
+  "time": "16:47",
+  "createdAt": "2026-10-31T16:47:00+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail & Consumer",
+  "sample": false,
+  "title": {
+    "en": "UK Shop Prices Rise at the Fastest Pace in Over Two Years",
+    "ja": "英国の店頭価格、約2年半ぶりの速さで上昇"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Shop prices in Britain rose at their fastest pace in about two and a half years last month.",
+            "ja": "先月、英国の店頭価格は約2年半ぶりの速いペースで上昇した。"
+          },
+          {
+            "en": "The British Retail Consortium (BRC) reported that prices in October were 2.1% higher than a year earlier.",
+            "ja": "英国小売協会（BRC）は、10月の価格が前年より2.1%高かったと報告した。"
+          },
+          {
+            "en": "That compares with an increase of 1.4% in September.",
+            "ja": "9月の上昇率は1.4%だった。"
+          },
+          {
+            "en": "Food prices rose 2.9%, while non-food prices rose 1.7%.",
+            "ja": "食品価格は2.9%、非食品価格は1.7%上昇した。"
+          },
+          {
+            "en": "Furniture and flooring were among the items with sharper increases.",
+            "ja": "家具や床材は、上昇幅がより大きい品目に含まれていた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "For the past two years, many retailers chose to absorb higher costs instead of raising prices.",
+            "ja": "この2年間、多くの小売業者は値上げせずに、高くなったコストを自社で吸収してきた。"
+          },
+          {
+            "en": "According to the BRC, that approach is now becoming harder to maintain.",
+            "ja": "BRCによると、そのやり方は維持するのが難しくなってきている。"
+          },
+          {
+            "en": "As a result, stores are passing more of their costs on to customers.",
+            "ja": "その結果、店舗はコストの多くを顧客に転嫁している。"
+          },
+          {
+            "en": "Higher prices could put pressure on household budgets ahead of the busy holiday shopping season.",
+            "ja": "価格上昇は、繁忙な年末商戦を前に家計への圧力になりうる。"
+          },
+          {
+            "en": "Retailers will be watching closely to see whether shoppers accept the increases or simply buy less.",
+            "ja": "小売業者は、消費者が値上げを受け入れるのか、単に買う量を減らすのかを注視することになる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much higher were shop prices in Britain in October than a year earlier?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1.4%",
+          "ja": "1.4%"
+        },
+        {
+          "key": "B",
+          "text": "1.7%",
+          "ja": "1.7%"
+        },
+        {
+          "key": "C",
+          "text": "2.1%",
+          "ja": "2.1%"
+        },
+        {
+          "key": "D",
+          "text": "2.9%",
+          "ja": "2.9%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解はC。第1段落の2文目に「10月の価格は前年より2.1%高かった」とある。Aの1.4%は9月の上昇率、Bの1.7%は非食品価格の上昇率、Dの2.9%は食品価格の上昇率で、いずれも本文に出てくる別の数字を使った引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "同じ文章に複数の数字が出るときは、設問が「何の数字か」（全体・月・品目）を先に確認してから該当文を探す。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why are stores passing more costs on to customers?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Customers have asked for higher-quality goods.",
+          "ja": "顧客がより高品質を求めた。"
+        },
+        {
+          "key": "B",
+          "text": "It is becoming harder for stores to absorb costs.",
+          "ja": "店がコストを吸収しづらくなっている。"
+        },
+        {
+          "key": "C",
+          "text": "The government introduced a new sales tax.",
+          "ja": "政府が新しい売上税を導入した。"
+        },
+        {
+          "key": "D",
+          "text": "Holiday demand has fallen sharply.",
+          "ja": "年末の需要が急減した。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。第2段落2文目に「BRCによると、コストを吸収するというやり方は維持するのが難しくなっている」とあり、これが転嫁の理由。Aの品質要求とCの新税は本文にない情報。Dの需要急減も書かれておらず、むしろ本文は繁忙な年末商戦を前にした状況を述べている。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由を問う設問は、As a result などの結果を示す語の直前の文に原因が書かれていることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "absorb",
+      "pos": "動",
+      "ja": "吸収する、負担する",
+      "gloss": "",
+      "example": {
+        "en": "Our supplier will absorb the extra shipping cost this month.",
+        "ja": "仕入れ先は今月、追加の送料を負担する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "gloss": "",
+      "example": {
+        "en": "The retailer plans to open ten new stores next year.",
+        "ja": "その小売業者は来年10店舗を新規出店する予定だ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "approach",
+      "pos": "名",
+      "ja": "やり方、取り組み方",
+      "gloss": "",
+      "example": {
+        "en": "The new approach saved the team a lot of time.",
+        "ja": "新しいやり方でチームは多くの時間を節約できた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "maintain",
+      "pos": "動",
+      "ja": "維持する",
+      "gloss": "",
+      "example": {
+        "en": "We must maintain high quality while cutting costs.",
+        "ja": "私たちはコストを削減しながら高い品質を維持しなければならない。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "household",
+      "pos": "名",
+      "ja": "家計、世帯",
+      "gloss": "",
+      "example": {
+        "en": "Household spending rose slightly in the third quarter.",
+        "ja": "第3四半期の家計支出はわずかに増えた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "pressure",
+      "pos": "名",
+      "ja": "圧力、負担",
+      "gloss": "",
+      "example": {
+        "en": "Rising rents put pressure on small businesses.",
+        "ja": "家賃の上昇は中小企業に圧力をかける。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "ahead of",
+      "pos": "熟",
+      "ja": "〜に先立って、〜の前に",
+      "gloss": "",
+      "example": {
+        "en": "The firm hired extra staff ahead of the sales event.",
+        "ja": "その会社はセールに先立って追加の人員を採用した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "as a result",
+      "pos": "熟",
+      "ja": "その結果",
+      "gloss": "",
+      "example": {
+        "en": "Demand fell. As a result, the store lowered its prices.",
+        "ja": "需要が落ち込んだ。その結果、店は価格を下げた。"
+      }
+    }
+  ],
+  "glossary": {
+    "shop": {
+      "lemma": "shop",
+      "pos": "名",
+      "ja": "店の",
+      "note": "形容詞的に使われる。shop prices＝店頭価格"
+    },
+    "pace": {
+      "lemma": "pace",
+      "pos": "名",
+      "ja": "ペース、速さ",
+      "note": ""
+    },
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "報告した",
+      "note": ""
+    },
+    "consortium": {
+      "lemma": "consortium",
+      "pos": "名",
+      "ja": "協会、連合",
+      "note": ""
+    },
+    "compares": {
+      "lemma": "compare",
+      "pos": "動",
+      "ja": "比べられる",
+      "note": "compare with＝〜と比べる"
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "上昇、増加",
+      "note": ""
+    },
+    "non-food": {
+      "lemma": "non-food",
+      "pos": "形",
+      "ja": "食品以外の",
+      "note": ""
+    },
+    "furniture": {
+      "lemma": "furniture",
+      "pos": "名",
+      "ja": "家具",
+      "note": ""
+    },
+    "flooring": {
+      "lemma": "flooring",
+      "pos": "名",
+      "ja": "床材",
+      "note": ""
+    },
+    "among": {
+      "lemma": "among",
+      "pos": "前",
+      "ja": "〜の中に",
+      "note": ""
+    },
+    "sharper": {
+      "lemma": "sharp",
+      "pos": "形",
+      "ja": "より急な、大きい",
+      "note": "sharp increase＝急上昇"
+    },
+    "items": {
+      "lemma": "item",
+      "pos": "名",
+      "ja": "品目、商品",
+      "note": ""
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "chose": {
+      "lemma": "choose",
+      "pos": "動",
+      "ja": "選んだ",
+      "note": ""
+    },
+    "absorb": {
+      "lemma": "absorb",
+      "pos": "動",
+      "ja": "吸収する",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "コスト、費用",
+      "note": ""
+    },
+    "instead": {
+      "lemma": "instead",
+      "pos": "副",
+      "ja": "代わりに",
+      "note": "instead of＝〜の代わりに"
+    },
+    "raising": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "上げること",
+      "note": ""
+    },
+    "approach": {
+      "lemma": "approach",
+      "pos": "名",
+      "ja": "やり方",
+      "note": ""
+    },
+    "maintain": {
+      "lemma": "maintain",
+      "pos": "動",
+      "ja": "維持する",
+      "note": ""
+    },
+    "passing": {
+      "lemma": "pass",
+      "pos": "動",
+      "ja": "転嫁する",
+      "note": "pass on＝（コストを）転嫁する"
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "note": ""
+    },
+    "household": {
+      "lemma": "household",
+      "pos": "名",
+      "ja": "家計、世帯",
+      "note": ""
+    },
+    "budgets": {
+      "lemma": "budget",
+      "pos": "名",
+      "ja": "予算、家計",
+      "note": ""
+    },
+    "ahead": {
+      "lemma": "ahead",
+      "pos": "副",
+      "ja": "前に",
+      "note": "ahead of＝〜に先立って"
+    },
+    "busy": {
+      "lemma": "busy",
+      "pos": "形",
+      "ja": "忙しい、繁忙な",
+      "note": ""
+    },
+    "accept": {
+      "lemma": "accept",
+      "pos": "動",
+      "ja": "受け入れる",
+      "note": ""
+    },
+    "result": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "結果",
+      "note": "as a result＝その結果"
+    }
+  },
+  "grammar": {
+    "topic": "差を表す比較級（数値＋比較級＋than）",
+    "quote": "The British Retail Consortium (BRC) reported that prices in October were 2.1% higher than a year earlier.",
+    "quoteJa": "英国小売協会（BRC）は、10月の価格が前年より2.1%高かったと報告した。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "「A is 2.1% higher than B」は、AがBより2.1%高いという差を表す形です。比較級（higher）の前に数値や倍率を置くと、どれだけ違うかを具体的に示せます。than の後ろには比べる相手（a year earlier＝前年の同じ時期）が来ます。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Prices were 2.1% higher than a year earlier. ≒ Prices rose 2.1% from a year earlier.（動詞 rose で上昇を表す書き換え）。また、by を使って Prices were higher by 2.1% とも言えます。差の大きさを強調するときは much / far、小さいときは slightly を比較級の前に置きます（much higher / slightly higher）。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、比較級の形（higher / more high / highest）を選ぶ問題や、than が入る空所補充が定番です。比較級の前の副詞（much, far, slightly, significantly）を選ばせる問題も出ます。Part 7 では、前年同期比の数字（a year earlier / from last year）を読み取る設問が頻出です。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Sales this quarter were 8% higher than last quarter.（今四半期の売上は前四半期より8%高かった。）／ Shipping costs are slightly lower than a year ago.（送料は1年前よりわずかに低い。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 BRC店頭価格指数とは",
+      "body": "BRC（英国小売協会）は英国の小売業界団体で、毎月、店頭で売られる商品の価格が前年と比べてどれだけ変わったかをまとめて発表しています。政府の消費者物価指数より早く出るため、英国の物価の先行きを見る手がかりとして市場や企業が注目します。今回は全体で前年比2.1%と、約2年半ぶりの高い伸びでした。"
+    },
+    {
+      "heading": "📌 なぜ今、値上げが広がるのか",
+      "body": "小売業者は、仕入れ値や人件費が上がっても、客離れを恐れて売価を据え置き、利益を削って耐えることがあります（コストの吸収）。それが2年ほど続き、余力が小さくなったため、値上げに踏み切る店が増えているというのが今回の説明です。家具や床材のような住まい関連の品目で上昇幅が大きかった点も特徴です。"
+    },
+    {
+      "heading": "📌 日本への影響・示唆",
+      "body": "英国に店舗や取引先を持つ日本企業にとって、現地の物価上昇は販売価格の見直しや仕入れコストの管理に直結します。また、日本でも長く続いた「コスト吸収」から「価格転嫁」へという流れは同じで、英国の動きは日本の小売・メーカーが値上げをどう進めるかを考える材料になります。英語の求人や決算資料でも pass on costs（コストを転嫁する）といった表現は頻出です。"
+    },
+    {
+      "heading": "📌 投資家・経営者の視点",
+      "body": "投資家にとっては、物価の上昇が中央銀行の金融政策や小売株の利益率にどう響くかが焦点です。経営者にとっては、値上げが客数を減らすリスクと、値上げしない場合の利益圧迫を天秤にかける判断が迫られます。年末商戦での消費者の反応が、次の価格戦略を左右するでしょう。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Britain's shop price inflation keeps surging in October amid cost hikes: BRC",
+      "publisher": "The Star (Malaysia)",
+      "url": "https://www.thestar.com.my/news/world/2026/10/28/britain039s-shop-price-inflation-keeps-surging-in-october-amid-cost-hikes-brc",
+      "date": "2026-10-28"
+    }
+  ]
+}
