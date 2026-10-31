@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-01-0547",
+  "date": "2026-11-01",
+  "time": "05:47",
+  "createdAt": "2026-11-01T05:47:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "Dockworkers Stage Strikes at Ports Around the World",
+    "ja": "世界の港で港湾労働者がスト"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Dockworkers at more than 100 ports in 17 countries held strikes and protests on Friday.",
+            "ja": "金曜日、17カ国の100を超える港で、港湾労働者がストライキや抗議行動を行った。"
+          },
+          {
+            "en": "The action was organized by unions that oppose the use of civilian ports for military cargo.",
+            "ja": "この行動は、民間の港が軍事貨物に使われることに反対する労働組合が組織した。"
+          },
+          {
+            "en": "In Italy, a 24-hour strike was called at ports across the country.",
+            "ja": "イタリアでは、全国の港で24時間のストライキが呼びかけられた。"
+          },
+          {
+            "en": "In France, workers also walked out at many ports for one day.",
+            "ja": "フランスでも、多くの港で労働者が1日の作業停止に入った。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Not every port was affected equally, because some countries held only small demonstrations.",
+            "ja": "一部の国では小規模なデモにとどまったため、すべての港が同じように影響を受けたわけではない。"
+          },
+          {
+            "en": "An expert at Marsh, an insurance broker, said a one-day strike was unlikely to disrupt global trade seriously.",
+            "ja": "保険仲介会社マーシュの専門家は、1日のストライキが世界の貿易を深刻に混乱させる可能性は低いと述べた。"
+          },
+          {
+            "en": "However, delays could still hurt perishable goods and other time-sensitive shipments.",
+            "ja": "ただし、遅れは生鮮品やその他の納期が厳しい貨物には依然として打撃となりうる。"
+          },
+          {
+            "en": "The Italian government also ordered transport workers back to work, so the disruption was smaller than expected.",
+            "ja": "イタリア政府が運輸労働者に職場復帰を命じたため、混乱は予想より小さかった。"
+          },
+          {
+            "en": "A nationwide general strike is scheduled in France for November 5, and shippers will be watching it closely.",
+            "ja": "フランスでは11月5日に全国的なゼネストが予定されており、荷主は注意深く見守ることになる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "In how many countries did dockworkers take part in the action?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Seven",
+          "ja": "7カ国"
+        },
+        {
+          "key": "B",
+          "text": "Twelve",
+          "ja": "12カ国"
+        },
+        {
+          "key": "C",
+          "text": "Seventeen",
+          "ja": "17カ国"
+        },
+        {
+          "key": "D",
+          "text": "Twenty-four",
+          "ja": "24カ国"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解はC。第1段落の第1文に「more than 100 ports in 17 countries」とある。A・Bは本文にない数字。Dの「24」は本文の「24-hour strike」（24時間のスト）の数字を使った引っかけで、国の数ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "Part 7では、同じ数字が別の意味で出てくる引っかけが多い。数字は「何の数か（国・港・時間）」までセットで確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why was the disruption in Italy smaller than expected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Port owners agreed to higher wages.",
+          "ja": "港の運営側が賃上げに合意した。"
+        },
+        {
+          "key": "B",
+          "text": "The government ordered transport workers back to work.",
+          "ja": "政府が運輸労働者に職場復帰を命じた。"
+        },
+        {
+          "key": "C",
+          "text": "Ships were sent to other countries.",
+          "ja": "船が他国に回された。"
+        },
+        {
+          "key": "D",
+          "text": "The unions canceled the strike.",
+          "ja": "組合がストを中止した。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。第2段落の第4文に「The Italian government also ordered transport workers back to work, so the disruption was smaller than expected.」とあり、so の前が原因、後が結果。Aの賃上げ合意とCの船の振り分けは本文にない。Dは、ストは実際に行われており（第1段落）、中止されたとは書かれていないので誤り。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "理由を問う問題では、so / because / since の前後で原因と結果を切り分けて探す。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "oppose",
+      "pos": "動",
+      "ja": "反対する",
+      "gloss": "",
+      "example": {
+        "en": "Many employees oppose the new office rules.",
+        "ja": "多くの従業員が新しい社内規則に反対している。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "cargo",
+      "pos": "名",
+      "ja": "貨物、積み荷",
+      "gloss": "（＝船や飛行機で運ぶ荷物のこと）",
+      "example": {
+        "en": "The cargo was loaded onto the ship this morning.",
+        "ja": "その貨物は今朝、船に積み込まれた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "disrupt",
+      "pos": "動",
+      "ja": "混乱させる、妨げる",
+      "gloss": "",
+      "example": {
+        "en": "Bad weather may disrupt our delivery schedule.",
+        "ja": "悪天候が配送の予定を乱すかもしれない。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "perishable",
+      "pos": "形",
+      "ja": "傷みやすい、生鮮の",
+      "gloss": "（＝長く置くと腐りやすいもののこと）",
+      "example": {
+        "en": "Perishable items must be delivered within two days.",
+        "ja": "傷みやすい商品は2日以内に届けなければならない。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "time-sensitive",
+      "pos": "形",
+      "ja": "期限が厳しい、急ぎの",
+      "gloss": "",
+      "example": {
+        "en": "Please handle this time-sensitive request first.",
+        "ja": "この急ぎの依頼を最初に処理してください。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "shipment",
+      "pos": "名",
+      "ja": "出荷、積荷",
+      "gloss": "",
+      "example": {
+        "en": "The shipment will arrive at the warehouse on Friday.",
+        "ja": "その積荷は金曜日に倉庫へ到着する予定だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "delay",
+      "pos": "名",
+      "ja": "遅れ、遅延",
+      "gloss": "",
+      "example": {
+        "en": "We apologize for the delay in your order.",
+        "ja": "ご注文の遅れをお詫び申し上げます。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "order",
+      "pos": "動",
+      "ja": "命じる",
+      "gloss": "",
+      "example": {
+        "en": "The manager ordered the team to finish the report today.",
+        "ja": "部長はチームに今日中に報告書を仕上げるよう命じた。"
+      }
+    }
+  ],
+  "glossary": {
+    "dockworkers": {
+      "lemma": "dockworker",
+      "pos": "名",
+      "ja": "港湾労働者",
+      "note": ""
+    },
+    "ports": {
+      "lemma": "port",
+      "pos": "名",
+      "ja": "港",
+      "note": ""
+    },
+    "held": {
+      "lemma": "hold",
+      "pos": "動",
+      "ja": "行う、開く",
+      "note": "hold a strike で「ストを行う」"
+    },
+    "strikes": {
+      "lemma": "strike",
+      "pos": "名",
+      "ja": "ストライキ",
+      "note": ""
+    },
+    "protests": {
+      "lemma": "protest",
+      "pos": "名",
+      "ja": "抗議行動",
+      "note": ""
+    },
+    "organized": {
+      "lemma": "organize",
+      "pos": "動",
+      "ja": "組織する、主催する",
+      "note": ""
+    },
+    "unions": {
+      "lemma": "union",
+      "pos": "名",
+      "ja": "労働組合",
+      "note": ""
+    },
+    "oppose": {
+      "lemma": "oppose",
+      "pos": "動",
+      "ja": "反対する",
+      "note": ""
+    },
+    "civilian": {
+      "lemma": "civilian",
+      "pos": "形",
+      "ja": "民間の",
+      "note": ""
+    },
+    "military": {
+      "lemma": "military",
+      "pos": "形",
+      "ja": "軍事の",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "called": {
+      "lemma": "call",
+      "pos": "動",
+      "ja": "呼びかける",
+      "note": "be called で「呼びかけられた」"
+    },
+    "walked": {
+      "lemma": "walk out",
+      "pos": "熟",
+      "ja": "作業を放棄する",
+      "note": "walk out で「ストに入る」"
+    },
+    "affected": {
+      "lemma": "affect",
+      "pos": "動",
+      "ja": "影響を与える",
+      "note": ""
+    },
+    "demonstrations": {
+      "lemma": "demonstration",
+      "pos": "名",
+      "ja": "デモ",
+      "note": ""
+    },
+    "broker": {
+      "lemma": "broker",
+      "pos": "名",
+      "ja": "仲介業者",
+      "note": ""
+    },
+    "unlikely": {
+      "lemma": "unlikely",
+      "pos": "形",
+      "ja": "可能性が低い",
+      "note": ""
+    },
+    "disrupt": {
+      "lemma": "disrupt",
+      "pos": "動",
+      "ja": "混乱させる",
+      "note": ""
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界的な",
+      "note": ""
+    },
+    "trade": {
+      "lemma": "trade",
+      "pos": "名",
+      "ja": "貿易",
+      "note": ""
+    },
+    "delays": {
+      "lemma": "delay",
+      "pos": "名",
+      "ja": "遅れ",
+      "note": ""
+    },
+    "perishable": {
+      "lemma": "perishable",
+      "pos": "形",
+      "ja": "傷みやすい",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "商品",
+      "note": ""
+    },
+    "time-sensitive": {
+      "lemma": "time-sensitive",
+      "pos": "形",
+      "ja": "期限が厳しい",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷、積荷",
+      "note": ""
+    },
+    "ordered": {
+      "lemma": "order",
+      "pos": "動",
+      "ja": "命じる",
+      "note": ""
+    },
+    "disruption": {
+      "lemma": "disruption",
+      "pos": "名",
+      "ja": "混乱",
+      "note": ""
+    },
+    "scheduled": {
+      "lemma": "schedule",
+      "pos": "動",
+      "ja": "予定する",
+      "note": ""
+    },
+    "shippers": {
+      "lemma": "shipper",
+      "pos": "名",
+      "ja": "荷主",
+      "note": ""
+    },
+    "nationwide": {
+      "lemma": "nationwide",
+      "pos": "形",
+      "ja": "全国的な",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "受動態（be＋過去分詞＋by 行為者）",
+    "quote": "The action was organized by unions that oppose the use of civilian ports for military cargo.",
+    "quoteJa": "この行動は、民間の港が軍事貨物に使われることに反対する労働組合が組織した。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "The action was organized by unions … は「be動詞＋過去分詞」の受動態で、by 以下が行為者（する側）を表す。能動態に直すと Unions organized the action. となる。受動態は「行為そのもの」を主役にしたいとき、または行為者が長い・重要でないときに使う。本文では『何が行われたか（the action）』を先に示し、誰が主催したかを by で後から補っている。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "能動：Unions that oppose the use of civilian ports organized the action.\n受動：The action was organized by unions that oppose the use of civilian ports.\n同じ意味だが、受動態のほうが主語が短く、長い説明（that 以下）を文末に回せるので読みやすい。行為者が不明・自明なときは by 以下を省く（例：A 24-hour strike was called at ports.）。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5では、主語と動詞の関係から能動態か受動態かを選ぶ問題が頻出する。動詞の直後に目的語がなければ受動態、目的語があれば能動態が基本。Part 7では、by 以下から『誰が行ったか』を問う設問につながる。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The new policy was announced by the HR department last week.（新方針は先週、人事部から発表された。）\nAll shipments will be inspected by our staff before delivery.（すべての出荷品は配送前に当社スタッフが検査する。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか：港湾ストの「世界同時行動」",
+      "body": "港湾労働者の労働組合が、民間の港が軍事貨物の積み降ろしに使われることへの反対を掲げ、金曜日に世界の多くの港でストライキやデモを行った。主催者側は100を超える港・17カ国が参加したとしているが、この数字は主催者の主張で、国によってはスト（作業停止）ではなく小規模なデモにとどまった。"
+    },
+    {
+      "heading": "📌 2. 物流への影響：なぜ「1日ならすぐ回復」と言われるのか",
+      "body": "港は船から荷物を降ろし、トラックや鉄道に引き継ぐ『物流の関所』。停止すると船が沖で待つことになり、コンテナの返却や次の寄港も遅れる。ただ、1日だけのストなら滞った荷物を翌日以降に処理できるため、世界全体の貿易への打撃は小さいと専門家は見ている。一方、果物や医薬品のような傷みやすい貨物、納期が厳しい部品は、数日の遅れでも損失につながりやすい。"
+    },
+    {
+      "heading": "📌 3. 日本企業・ビジネスパーソンへの示唆",
+      "body": "日本は輸出入の大半を海運に頼るため、欧州航路の遅れは部品調達や小売の在庫に影響しうる。実務では、(1)重要な貨物の輸送経路を複数用意する、(2)納期に余裕を持った発注をする、(3)荷主として船会社・フォワーダーから最新の運航情報を受け取る体制をつくる、といった備えが有効。TOEICでも、shipment や delay といった物流語彙は出張・配送・注文のビジネス文でよく再会する。"
+    },
+    {
+      "heading": "📌 4. 投資家・経営者の視点",
+      "body": "フランスでは11月5日に全国的なゼネストが予定されており、今回の行動がその前哨戦になる可能性がある。経営者は『ストが頻発する時期は物流コストと納期の不確実性が増す』ことを前提に在庫水準を見直し、投資家は海運・港湾運営・保険（貨物保険）関連の業績や運賃の動きを確認したい。なお、今回の個別の被害額や運賃への影響を示す確かなデータは、現時点では確認できていない。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dockworkers worldwide striking against arms shipments, demand better working conditions",
+      "publisher": "The Washington Times",
+      "url": "https://washingtontimes.com/news/2026/oct/30/dockworkers-worldwide-striking-arms-shipments-demand-better-working",
+      "date": "2026-10-30"
+    },
+    {
+      "title": "Dockworkers Strike at More Than 100 Ports Worldwide to Protest Arms Shipments and Military Conflicts",
+      "publisher": "YourNews",
+      "url": "https://yournews.com/2026/10/30/7245444/dockworkers-strike-at-more-than-100-ports-worldwide-to-protest",
+      "date": "2026-10-30"
+    }
+  ]
+}
