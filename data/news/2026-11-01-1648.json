@@ -460,5 +460,25 @@
       "url": "https://financefeeds.com/brent-crude-oil-price-113-saturday-week-ahead-after-october-13-6-percent-gain-hormuz-mines-midterms-jobs-report-bull-120-bear-106/",
       "date": "2026-10-31"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-01-1648/00.mp3",
+      "audio/2026-11-01-1648/01.mp3",
+      "audio/2026-11-01-1648/02.mp3",
+      "audio/2026-11-01-1648/03.mp3",
+      "audio/2026-11-01-1648/04.mp3",
+      "audio/2026-11-01-1648/05.mp3",
+      "audio/2026-11-01-1648/06.mp3",
+      "audio/2026-11-01-1648/07.mp3",
+      "audio/2026-11-01-1648/08.mp3",
+      "audio/2026-11-01-1648/09.mp3",
+      "audio/2026-11-01-1648/10.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 209380,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-01T07:51:02.591Z",
+    "trimmed": true
+  }
 }
