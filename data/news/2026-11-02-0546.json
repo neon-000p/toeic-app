@@ -464,5 +464,23 @@
       "url": "https://stocktwits.com/news-articles/markets/equity/amzn-stock-drops-7-as-ai-spending-soars-past-expectations-while-e-commerce-growth-cools/cZUXG0SR9RX",
       "date": "2026-10-29"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-02-0546/00.mp3",
+      "audio/2026-11-02-0546/01.mp3",
+      "audio/2026-11-02-0546/02.mp3",
+      "audio/2026-11-02-0546/03.mp3",
+      "audio/2026-11-02-0546/04.mp3",
+      "audio/2026-11-02-0546/05.mp3",
+      "audio/2026-11-02-0546/06.mp3",
+      "audio/2026-11-02-0546/07.mp3",
+      "audio/2026-11-02-0546/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 227052,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-01T20:49:07.053Z",
+    "trimmed": true
+  }
 }
