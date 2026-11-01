@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-01-1648",
+  "date": "2026-11-01",
+  "time": "16:48",
+  "createdAt": "2026-11-01T16:48:53+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Oil Posts Fourth Straight Monthly Gain as Hormuz Fears Linger",
+    "ja": "原油が4カ月連続で上昇、ホルムズ不安続く"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oil prices rose again in October, ending the month with a fourth straight monthly gain.",
+            "ja": "原油価格は10月も上昇し、4カ月連続の月間上昇で月を終えた。"
+          },
+          {
+            "en": "Brent crude, the global benchmark, climbed more than 13 percent over the month.",
+            "ja": "世界的な指標であるブレント原油は、月間で13％超上昇した。"
+          },
+          {
+            "en": "On Friday, it settled above $110 a barrel.",
+            "ja": "金曜日には1バレル110ドルを上回って取引を終えた。"
+          },
+          {
+            "en": "The main U.S. benchmark rose even faster, by about 15 percent.",
+            "ja": "米国の主要な指標原油はさらに速く、約15％上昇した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Traders blame supply fears around the Strait of Hormuz.",
+            "ja": "トレーダーは、ホルムズ海峡をめぐる供給不安が原因だと見ている。"
+          },
+          {
+            "en": "It is a narrow sea route through which much of the world's oil travels.",
+            "ja": "そこは世界の石油の多くが通る狭い海上輸送路である。"
+          },
+          {
+            "en": "Concerns about attacks on ships have led some companies to delay shipments.",
+            "ja": "船舶への攻撃への懸念から、出荷を遅らせる企業も出ている。"
+          },
+          {
+            "en": "Many buyers fear that supply will stay tight through the winter.",
+            "ja": "多くの買い手は、供給が冬の間ずっと逼迫したままになると懸念している。"
+          },
+          {
+            "en": "Higher fuel prices may raise costs for airlines, factories, and retailers.",
+            "ja": "燃料価格の上昇は、航空会社、工場、小売業者のコストを押し上げる可能性がある。"
+          },
+          {
+            "en": "Analysts say prices could stay high if shipping does not return to normal.",
+            "ja": "アナリストは、海運が正常に戻らなければ価格は高止まりしうると述べている。"
+          },
+          {
+            "en": "OPEC+ is due to meet on Sunday to review its output plans.",
+            "ja": "OPECプラスは日曜日に会合を開き、生産計画を見直す予定だ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did Brent crude rise in October?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Less than 5 percent",
+          "ja": "5％未満"
+        },
+        {
+          "key": "B",
+          "text": "About 8 percent",
+          "ja": "約8％"
+        },
+        {
+          "key": "C",
+          "text": "More than 13 percent",
+          "ja": "13％超"
+        },
+        {
+          "key": "D",
+          "text": "More than 25 percent",
+          "ja": "25％超"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落の2文目に「Brent crude … climbed more than 13 percent over the month」とあり、正解は C。A・B は本文にない小さな数字。D は本文にない大きな数字で、約15％という米国指標の上昇幅（4文目）とも合わない。Part 7 では、数字を問う設問は本文の数字と言い換えを照合し、どの指標の数字かまで確認する。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字の設問は「何の数字か」を先に確認する。ここは Brent と米国指標の2つの数字が並ぶ引っかけ。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why are traders worried about supply?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Airlines have stopped buying fuel.",
+          "ja": "航空会社が燃料購入をやめた"
+        },
+        {
+          "key": "B",
+          "text": "OPEC+ has sharply cut its output.",
+          "ja": "OPECプラスが大幅減産した"
+        },
+        {
+          "key": "C",
+          "text": "There are risks around an important sea route.",
+          "ja": "重要な海上輸送路にリスクがある"
+        },
+        {
+          "key": "D",
+          "text": "Factories have closed for the winter.",
+          "ja": "工場が冬に閉鎖された"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落の1〜2文目に、供給不安はホルムズ海峡（世界の石油の多くが通る狭い海上輸送路）をめぐるものだとある。したがって C が正解。A は本文にない情報。B の OPEC+ は会合予定が述べられるだけで、減産したとは書かれていない。D も本文にない。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由の設問は because / blame / due to など理由を示す語の周辺に根拠がある。固有名詞を一般語に言い換えた選択肢を正解として探す。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "gloss": "（＝比べるときの基準になるもの。ここでは基準となる原油価格）",
+      "example": {
+        "en": "This index is a benchmark for the industry.",
+        "ja": "この指数は業界の指標となっている。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "settle",
+      "pos": "動",
+      "ja": "（取引が）終わる、落ち着く、解決する",
+      "gloss": "",
+      "example": {
+        "en": "The shares settled at $50 on Friday.",
+        "ja": "その株は金曜日に50ドルで取引を終えた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "blame",
+      "pos": "動",
+      "ja": "〜のせいにする、責める",
+      "gloss": "",
+      "example": {
+        "en": "Managers blamed the weak sales on bad weather.",
+        "ja": "管理職は売上不振を悪天候のせいにした。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "shipment",
+      "pos": "名",
+      "ja": "出荷、発送、積荷",
+      "gloss": "",
+      "example": {
+        "en": "The shipment will arrive at the warehouse on Friday.",
+        "ja": "その荷物は金曜日に倉庫へ到着する予定だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "delay",
+      "pos": "動",
+      "ja": "遅らせる、延期する",
+      "gloss": "",
+      "example": {
+        "en": "The company decided to delay the launch until May.",
+        "ja": "会社は発売を5月まで遅らせることにした。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "tight",
+      "pos": "形",
+      "ja": "逼迫した、余裕のない",
+      "gloss": "",
+      "example": {
+        "en": "The budget is tight this year.",
+        "ja": "今年は予算に余裕がない。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "output",
+      "pos": "名",
+      "ja": "生産量、産出",
+      "gloss": "",
+      "example": {
+        "en": "The factory increased its output by 10 percent.",
+        "ja": "その工場は生産量を10％増やした。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "review",
+      "pos": "動",
+      "ja": "見直す、検討する",
+      "gloss": "",
+      "example": {
+        "en": "We will review the contract next week.",
+        "ja": "私たちは来週、契約を見直す。"
+      }
+    }
+  ],
+  "glossary": {
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上がった",
+      "note": "rise の過去形"
+    },
+    "straight": {
+      "lemma": "straight",
+      "pos": "形",
+      "ja": "連続の",
+      "note": "a fourth straight … で「4回連続の」"
+    },
+    "monthly": {
+      "lemma": "monthly",
+      "pos": "形",
+      "ja": "月ごとの",
+      "note": ""
+    },
+    "gain": {
+      "lemma": "gain",
+      "pos": "名",
+      "ja": "上昇、増加",
+      "note": ""
+    },
+    "crude": {
+      "lemma": "crude",
+      "pos": "名",
+      "ja": "原油",
+      "note": "crude oil の略した言い方"
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界的な",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "note": ""
+    },
+    "climbed": {
+      "lemma": "climb",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "settled": {
+      "lemma": "settle",
+      "pos": "動",
+      "ja": "取引を終えた",
+      "note": "価格が最終的についた値を言うときに使う"
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "名",
+      "ja": "バレル（原油の単位）",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー、取引業者",
+      "note": ""
+    },
+    "blame": {
+      "lemma": "blame",
+      "pos": "動",
+      "ja": "〜のせいにする",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "strait": {
+      "lemma": "strait",
+      "pos": "名",
+      "ja": "海峡",
+      "note": ""
+    },
+    "narrow": {
+      "lemma": "narrow",
+      "pos": "形",
+      "ja": "狭い",
+      "note": ""
+    },
+    "route": {
+      "lemma": "route",
+      "pos": "名",
+      "ja": "経路、航路",
+      "note": ""
+    },
+    "concerns": {
+      "lemma": "concern",
+      "pos": "名",
+      "ja": "懸念",
+      "note": ""
+    },
+    "attacks": {
+      "lemma": "attack",
+      "pos": "名",
+      "ja": "攻撃",
+      "note": ""
+    },
+    "delay": {
+      "lemma": "delay",
+      "pos": "動",
+      "ja": "遅らせる",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷、積荷",
+      "note": ""
+    },
+    "buyers": {
+      "lemma": "buyer",
+      "pos": "名",
+      "ja": "買い手",
+      "note": ""
+    },
+    "tight": {
+      "lemma": "tight",
+      "pos": "形",
+      "ja": "逼迫した",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用、コスト",
+      "note": ""
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "normal": {
+      "lemma": "normal",
+      "pos": "名",
+      "ja": "通常の状態",
+      "note": "return to normal で「正常に戻る」"
+    },
+    "review": {
+      "lemma": "review",
+      "pos": "動",
+      "ja": "見直す",
+      "note": ""
+    },
+    "output": {
+      "lemma": "output",
+      "pos": "名",
+      "ja": "生産量",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "前置詞＋関係代名詞（through which）",
+    "quote": "It is a narrow sea route through which much of the world's oil travels.",
+    "quoteJa": "そこは世界の石油の多くが通る狭い海上輸送路である。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "「前置詞＋which」は、前置詞を関係代名詞の直前に置いて名詞（先行詞）を説明する形。ここでは a narrow sea route を先行詞として、「much of the world's oil travels through the route（その航路を通って石油が運ばれる）」という文を through which でつないでいる。which の後ろは主語＋動詞がそろった完全な文になるのが特徴。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "① It is a narrow sea route. Much of the world's oil travels through it.（2文）→ ② It is a narrow sea route through which much of the world's oil travels.（前置詞＋which）→ ③ It is a narrow sea route which much of the world's oil travels through.（前置詞を文末に置く形。会話的でややくだける）。②と③は同じ意味。前置詞を前に出す②のほうが書き言葉・フォーマルな文書に向く。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6 では、空所に入る語として「前置詞＋which」か単独の which / that かを選ばせる問題が出る。見分け方は、関係詞の後ろが完全な文か不完全な文か。後ろに主語も目的語もそろっていれば「前置詞＋which」、目的語などが欠けていれば which / that。また、先行詞が人なら「前置詞＋whom」、場所なら where で言い換えられる場合もある（例：a route where oil travels は不自然なので through which が自然）。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The company has a program through which employees can learn new skills.（従業員が新しい技能を学べる制度がある）／ This is the contract under which the supplier must deliver the goods by June.（これは納入業者が6月までに商品を納めなければならない契約である）。契約書や社内通知でよく使われる。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか：原油が4カ月連続で上昇",
+      "body": "原油先物は10月も上がり、ブレント原油は月間で13％超、米国の指標であるWTIは約15％上昇した。いずれも4カ月連続の月間上昇で、ブレントは金曜日に1バレル110ドル台前半（報道により多少の差がある）で取引を終えた。ブレントは欧州・アフリカ・アジアの取引で広く使われる「世界の基準価格」、WTIは米国の基準価格で、ニュースでは両方がセットで報じられる。"
+    },
+    {
+      "heading": "📌 2. なぜ上がるのか：ホルムズ海峡のリスク",
+      "body": "ホルムズ海峡は、ペルシャ湾の産油国から原油を輸出するほぼ唯一の海上出口で、世界の石油の取引量の大きな割合が通る。ここで船舶への攻撃や航行の制限が続くと、実際に供給が減らなくても「届かないかもしれない」という不安だけで価格が上がる。これを「リスクプレミアム（不安の上乗せ分）」と呼ぶ。報道では、船舶攻撃の件数が10月に過去最多になったとも伝えられている。"
+    },
+    {
+      "heading": "📌 3. 産油国と他の業界の動き",
+      "body": "OPECプラスは、OPEC加盟国とロシアなどの産油国でつくる枠組みで、毎月のように会合を開いて生産量の方針を決める。今回は11月1日（日）の会合で生産計画を見直す予定とされ、市場は追加の増産があるかに注目している。燃料費が上がると、航空会社・海運・製造業などコストに占める燃料の割合が高い業界ほど利益が圧迫され、値上げや出荷の遅れにつながりやすい。"
+    },
+    {
+      "heading": "📌 4. 日本と投資家・経営者への示唆",
+      "body": "日本は原油のほぼすべてを輸入に頼り、しかもその大半を中東から調達している。原油高は円建てのガソリン・電気・ガス料金や、物流・原材料のコストを通じて企業収益と家計を直撃する。為替が円安に振れていると影響はさらに大きい。投資家は、エネルギー関連株の上昇と、燃料コストに弱い業種の下落という二面を見ておく必要がある。経営者は、燃料費の変動に備えた調達契約や価格転嫁のルールの見直しを求められる。TOEICでも、supply, shipment, delay, output といった語は物流・調達の文書で頻出する。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Oil Ends Volatile Week Mixed as Emergency Reserve Release Knocks WTI Lower but Brent Holds Above $102",
+      "publisher": "EnergyNow.com",
+      "url": "https://energynow.com/2026/10/oil-ends-volatile-week-mixed-as-emergency-reserve-release-knocks-wti-lower-but-brent-holds-above-102/",
+      "date": "2026-10"
+    },
+    {
+      "title": "Brent Crude Oil Price at $113.43: OPEC+ Meets Sunday",
+      "publisher": "FinanceFeeds",
+      "url": "https://financefeeds.com/brent-crude-oil-price-113-saturday-week-ahead-after-october-13-6-percent-gain-hormuz-mines-midterms-jobs-report-bull-120-bear-106/",
+      "date": "2026-10-31"
+    }
+  ]
+}
