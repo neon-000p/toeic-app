@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-02-0546",
+  "date": "2026-11-02",
+  "time": "05:46",
+  "createdAt": "2026-11-02T05:46:09+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Tech Stocks Sink as AI Spending Worries Return",
+    "ja": "AI投資への不安再燃、ハイテク株が急落"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Technology stocks fell sharply on Friday as worries about AI spending came back.",
+            "ja": "金曜日、AI投資への不安が再燃し、テクノロジー株が急落した。"
+          },
+          {
+            "en": "The Nasdaq dropped nearly 3%, and October became its worst month since March 2025.",
+            "ja": "ナスダックは3%近く下落し、10月は2025年3月以来で最も悪い月となった。"
+          },
+          {
+            "en": "Intel, a major chip maker, had its worst day in decades after it gave a weak sales outlook.",
+            "ja": "大手半導体メーカーのインテルは、弱い売上見通しを示したことで、数十年で最悪の日を迎えた。"
+          },
+          {
+            "en": "Reddit also lost about a quarter of its value after it gave a softer forecast for the next quarter.",
+            "ja": "レディットも、次の四半期について控えめな予想を示し、株価が約4分の1下落した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Investors had hoped that huge spending on data centers would soon create strong profits.",
+            "ja": "投資家は、データセンターへの巨額の支出がまもなく大きな利益を生むと期待していた。"
+          },
+          {
+            "en": "Companies that build AI systems must pay for chips, power, and buildings long before they earn any money.",
+            "ja": "AIシステムを作る企業は、お金を稼ぐずっと前に、半導体や電力、建物の費用を払わなければならない。"
+          },
+          {
+            "en": "Amazon said it will keep spending heavily on AI, and its shares fell after the news.",
+            "ja": "アマゾンはAIへの巨額支出を続けると述べ、その発表を受けて株価が下落した。"
+          },
+          {
+            "en": "Not only is the spending huge, but the payoff is also unclear.",
+            "ja": "支出が巨額であるだけでなく、見返りも不透明である。"
+          },
+          {
+            "en": "The sell-off suggests that investors now want proof that AI projects can make money.",
+            "ja": "今回の売りは、投資家がAI事業で収益が出るという証拠を求め始めたことを示している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did the Nasdaq fall on Friday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Nearly 1%",
+          "ja": "1%近く"
+        },
+        {
+          "key": "B",
+          "text": "Nearly 3%",
+          "ja": "3%近く"
+        },
+        {
+          "key": "C",
+          "text": "Nearly 5%",
+          "ja": "5%近く"
+        },
+        {
+          "key": "D",
+          "text": "Nearly 25%",
+          "ja": "25%近く"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落の2文目に「The Nasdaq dropped nearly 3%」とあるので、正解は(B)。(A)は小さすぎる数字。(C)は本文にない数字。(D)の約25%は本文でレディットの株価が下落した割合であり、ナスダックの下落率ではないので誤り。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う問題では、本文に複数の数字が出てくる。その数字が「何の」数字かを主語まで確認し、別の対象の数字を使った引っかけを避ける。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did Reddit lose value?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It stopped spending on AI.",
+          "ja": "AIへの支出をやめた"
+        },
+        {
+          "key": "B",
+          "text": "Its forecast for the next quarter was weak.",
+          "ja": "次の四半期の予想が弱かった"
+        },
+        {
+          "key": "C",
+          "text": "Its chip sales fell sharply.",
+          "ja": "半導体の売上が急減した"
+        },
+        {
+          "key": "D",
+          "text": "Its main office was closed.",
+          "ja": "本社が閉鎖された"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落の4文目に「after it gave a softer forecast for the next quarter」とあり、次の四半期の予想が控えめだったことが理由なので、正解は(B)。(A)と(C)と(D)は本文に書かれていない。なお半導体の売上不振で下落したのはインテルのほうである。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "理由を問う問題は、after / because / as などの接続表現の直後に答えがあることが多い。同じ段落の別企業の話（インテル）と混同しないよう、主語を確認する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "outlook",
+      "pos": "名",
+      "ja": "見通し、予測",
+      "gloss": "",
+      "example": {
+        "en": "The company gave a positive outlook for next year.",
+        "ja": "その会社は来年について明るい見通しを示した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "forecast",
+      "pos": "名",
+      "ja": "予想、予測",
+      "gloss": "",
+      "example": {
+        "en": "The sales forecast was lower than expected.",
+        "ja": "売上予想は予想より低かった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "investors",
+      "pos": "名",
+      "ja": "投資家",
+      "gloss": "",
+      "example": {
+        "en": "Investors are waiting for the quarterly report.",
+        "ja": "投資家は四半期報告を待っている。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "profits",
+      "pos": "名",
+      "ja": "利益",
+      "gloss": "",
+      "example": {
+        "en": "Profits rose by 8% in the second quarter.",
+        "ja": "第2四半期の利益は8%増えた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "heavily",
+      "pos": "副",
+      "ja": "大量に、多額に",
+      "gloss": "",
+      "example": {
+        "en": "The firm has invested heavily in new equipment.",
+        "ja": "その会社は新しい設備に多額の投資をしてきた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "payoff",
+      "pos": "名",
+      "ja": "見返り、成果",
+      "gloss": "（＝かけたお金や努力に対する結果のこと）",
+      "example": {
+        "en": "The payoff from the new system came within a year.",
+        "ja": "新システムの成果は1年以内に現れた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "proof",
+      "pos": "名",
+      "ja": "証拠、証明",
+      "gloss": "",
+      "example": {
+        "en": "Please show proof of purchase when you return the item.",
+        "ja": "返品の際は購入の証明をご提示ください。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "sell-off",
+      "pos": "名",
+      "ja": "（株などの）大量売り",
+      "gloss": "（＝多くの人が一斉に株を売ること）",
+      "example": {
+        "en": "A sell-off in tech shares hurt the market.",
+        "ja": "ハイテク株の売りが市場を圧迫した。"
+      }
+    }
+  ],
+  "glossary": {
+    "technology": {
+      "lemma": "technology",
+      "pos": "名",
+      "ja": "技術",
+      "note": ""
+    },
+    "stocks": {
+      "lemma": "stock",
+      "pos": "名",
+      "ja": "株式",
+      "note": "複数形で「株」"
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "worries": {
+      "lemma": "worry",
+      "pos": "名",
+      "ja": "不安、懸念",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "worst": {
+      "lemma": "bad",
+      "pos": "形",
+      "ja": "最悪の",
+      "note": ""
+    },
+    "chip": {
+      "lemma": "chip",
+      "pos": "名",
+      "ja": "半導体",
+      "note": ""
+    },
+    "maker": {
+      "lemma": "maker",
+      "pos": "名",
+      "ja": "製造業者",
+      "note": ""
+    },
+    "decades": {
+      "lemma": "decade",
+      "pos": "名",
+      "ja": "数十年",
+      "note": ""
+    },
+    "weak": {
+      "lemma": "weak",
+      "pos": "形",
+      "ja": "弱い",
+      "note": ""
+    },
+    "sales": {
+      "lemma": "sale",
+      "pos": "名",
+      "ja": "売上",
+      "note": ""
+    },
+    "softer": {
+      "lemma": "soft",
+      "pos": "形",
+      "ja": "控えめな、弱めの",
+      "note": "ここでは予想が弱気な意味"
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": "3か月の会計期間"
+    },
+    "hoped": {
+      "lemma": "hope",
+      "pos": "動",
+      "ja": "期待した",
+      "note": ""
+    },
+    "huge": {
+      "lemma": "huge",
+      "pos": "形",
+      "ja": "巨大な",
+      "note": ""
+    },
+    "earn": {
+      "lemma": "earn",
+      "pos": "動",
+      "ja": "稼ぐ",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株",
+      "note": ""
+    },
+    "unclear": {
+      "lemma": "unclear",
+      "pos": "形",
+      "ja": "不明確な",
+      "note": ""
+    },
+    "suggests": {
+      "lemma": "suggest",
+      "pos": "動",
+      "ja": "示唆する",
+      "note": ""
+    },
+    "projects": {
+      "lemma": "project",
+      "pos": "名",
+      "ja": "事業、計画",
+      "note": ""
+    },
+    "outlook": {
+      "lemma": "outlook",
+      "pos": "名",
+      "ja": "見通し",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予想",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "profits": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "heavily": {
+      "lemma": "heavily",
+      "pos": "副",
+      "ja": "大量に",
+      "note": ""
+    },
+    "payoff": {
+      "lemma": "payoff",
+      "pos": "名",
+      "ja": "見返り",
+      "note": ""
+    },
+    "proof": {
+      "lemma": "proof",
+      "pos": "名",
+      "ja": "証拠",
+      "note": ""
+    },
+    "sell-off": {
+      "lemma": "sell-off",
+      "pos": "名",
+      "ja": "大量売り",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "not only A but also B の倒置（Not only is A ..., but B also ...）",
+    "quote": "Not only is the spending huge, but the payoff is also unclear.",
+    "quoteJa": "支出が巨額であるだけでなく、見返りも不透明である。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "「not only A but also B（AだけでなくBも）」は、2つの事実を並べて強調する構文です。Not only を文頭に出すと、後ろは疑問文と同じ語順（倒置）になり、Not only is the spending huge ... のように be動詞が主語の前に出ます。一般動詞の場合は Not only does the firm ... のように does を使います。後半の but 以降は普通の語順のままです。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "The spending is not only huge but also risky.（支出は巨額なだけでなく、危険でもある。）／ Not only is the spending huge, but the payoff is also unclear.（倒置版）。意味は同じですが、倒置にすると「Aだけでも驚きだが、さらにB」という強調のニュアンスが出ます。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6では、not only に対応する but also の空所補充や、A と B の品詞・形をそろえる問題（平行構造）が出ます。also は省略されることもあります。主語と動詞の一致は B 側に合わせる点にも注意してください（例：Not only the manager but also the staff are ...）。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Not only does the new software save time, but it also reduces errors.（新しいソフトは時間を節約するだけでなく、ミスも減らします。）／ Not only is the office close to the station, but the rent is also reasonable.（そのオフィスは駅に近いだけでなく、賃料も手頃です。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 何が起きたのか：「AIバブル」への警戒",
+      "body": "2026年10月30日（金）の米国市場は、ナスダックが3%近く下げ、10月は2025年3月以来で最悪の月となりました。背景には、巨額のAI投資が本当に利益につながるのか、という投資家の疑念があります。インテルは弱い見通しで数十年ぶりの大幅安となり、レディットも次の四半期の予想が控えめだったことで急落しました。"
+    },
+    {
+      "heading": "📌 専門用語の解説：設備投資（CapEx）と見通し（guidance）",
+      "body": "CapExとは、データセンターや半導体など、会社が将来のために買う設備にかけるお金のことです。また guidance（業績見通し）は、会社自身が次の期の売上や利益を予想して発表する数字です。市場は実績よりもこの見通しを重視するため、実績が良くても見通しが弱いと株価は大きく下がります。"
+    },
+    {
+      "heading": "📌 業界全体の動き：巨大IT企業の投資競争",
+      "body": "アマゾンをはじめとする巨大IT企業は、AI需要を見込んでデータセンターへの投資を競っています。アマゾンは支出を高い水準で続ける方針を示し、株価は下落しました。投資の回収が見えるまでは、投資が増えるほど株価が売られるという局面になりやすい点に注意が必要です。"
+    },
+    {
+      "heading": "📌 日本への影響と投資家の視点",
+      "body": "日本ではAI関連の半導体・製造装置・電力関連の銘柄が米ハイテク株に連動しやすく、週明けの東京市場も影響を受ける可能性があります。企業にとっては、AI投資は「設備を買う時期」と「利益が出る時期」にずれがあることを理解し、効果を測れる小さな案件から始めるという示唆があります。投資家は、売上の伸びと設備投資の増加を見比べ、見返りが確認できる企業を選ぶ視点が重要です。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stock Market Today (Oct. 30, 2026): Intel, Reddit are latest tech earnings casualties as Nasdaq sinks nearly 3%",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-30-141142726.html",
+      "date": "2026-10-30"
+    },
+    {
+      "title": "Stock Market Today (Oct. 30, 2026)",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026",
+      "date": "2026-10-30"
+    },
+    {
+      "title": "AMZN Stock Drops 7% As AI Spending Soars Past Expectations, While E-Commerce Growth Cools",
+      "publisher": "Stocktwits",
+      "url": "https://stocktwits.com/news-articles/markets/equity/amzn-stock-drops-7-as-ai-spending-soars-past-expectations-while-e-commerce-growth-cools/cZUXG0SR9RX",
+      "date": "2026-10-29"
+    }
+  ]
+}
