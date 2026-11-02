@@ -450,5 +450,21 @@
       "url": "https://www.staradvertiser.com/2026/10/30/breaking-news/alaska-airlines-cutting-48-hawaii-jobs-citing-higher-fuel-costs/",
       "date": "2026-10-30"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-02-1648/00.mp3",
+      "audio/2026-11-02-1648/01.mp3",
+      "audio/2026-11-02-1648/02.mp3",
+      "audio/2026-11-02-1648/03.mp3",
+      "audio/2026-11-02-1648/04.mp3",
+      "audio/2026-11-02-1648/05.mp3",
+      "audio/2026-11-02-1648/06.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 200948,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-02T07:51:04.090Z",
+    "trimmed": true
+  }
 }
