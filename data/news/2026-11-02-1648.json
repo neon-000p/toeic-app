@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-02-1648",
+  "date": "2026-11-02",
+  "time": "16:48",
+  "createdAt": "2026-11-02T16:48:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "Alaska Air Group Cuts About 200 Management Jobs",
+    "ja": "アラスカ航空、管理職約200人を削減"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Alaska Air Group said on October 30 that it will cut about 200 management jobs.",
+            "ja": "アラスカ航空グループは10月30日、管理職約200人の職を削減すると発表した。"
+          },
+          {
+            "en": "The company has about 32,500 employees, so the cuts affect a small part of its workforce.",
+            "ja": "同社の従業員は約3万2,500人で、今回の削減は全従業員のごく一部に当たる。"
+          },
+          {
+            "en": "Of the total, 125 positions are in Washington, where the company is based.",
+            "ja": "総数のうち125の職は、同社が本拠を置くワシントン州にある。"
+          },
+          {
+            "en": "The workers will leave on November 13, but they will keep receiving pay until the end of the year.",
+            "ja": "対象者は11月13日に退職するが、年末までは給与を受け取り続ける。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The airline blamed higher fuel costs and global tensions, saying the cuts are needed to protect its finances.",
+            "ja": "同社は燃料費の上昇と世界的な緊張を理由に挙げ、財務を守るために今回の削減が必要だと述べた。"
+          },
+          {
+            "en": "Its chief executive, Ben Minicucci, warned that the company could lose as much as $700 million this year if conditions do not improve.",
+            "ja": "最高経営責任者のベン・ミニクッチ氏は、状況が改善しなければ、同社は今年最大7億ドルの損失を出す可能性があると警告した。"
+          },
+          {
+            "en": "Fuel is one of the biggest expenses for any airline, so a rise in prices can quickly turn a profit into a loss.",
+            "ja": "燃料は航空会社にとって最大級の費用の一つであり、価格が上がると利益がすぐ赤字に変わりかねない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many management jobs will Alaska Air Group cut?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 48",
+          "ja": "約48"
+        },
+        {
+          "key": "B",
+          "text": "About 125",
+          "ja": "約125"
+        },
+        {
+          "key": "C",
+          "text": "About 200",
+          "ja": "約200"
+        },
+        {
+          "key": "D",
+          "text": "About 32,500",
+          "ja": "約3万2,500"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落の1文目に「about 200 management jobs」とあり、正解は (C)。(A) の48は本文にない数字。(B) の125はワシントンにある職の数で、全体ではない。(D) の32,500は従業員の総数で、削減数ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "数字の設問は、似た数字が複数並ぶ。「何の数字か」（削減数・一部の地域・従業員総数）を区別して該当箇所を探す。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did the company announce the cuts?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It plans to open new routes.",
+          "ja": "新路線を開く予定"
+        },
+        {
+          "key": "B",
+          "text": "Fuel costs have risen.",
+          "ja": "燃料費が上がった"
+        },
+        {
+          "key": "C",
+          "text": "It has too few pilots.",
+          "ja": "パイロットが足りない"
+        },
+        {
+          "key": "D",
+          "text": "It is merging with another airline.",
+          "ja": "他社と合併する"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落の1文目に「blamed higher fuel costs and global tensions」とあり、正解は (B)。(A) 新路線、(C) パイロット不足、(D) 合併はいずれも本文に書かれていない。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由を問う設問は blame / because / due to / citing などの手がかり語の近くに答えがある。本文にない情報の選択肢は除外する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "workforce",
+      "pos": "名",
+      "ja": "従業員全体",
+      "gloss": "",
+      "example": {
+        "en": "The company will keep its workforce at the current size.",
+        "ja": "その会社は従業員数を現在の規模に保つ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "affect",
+      "pos": "動",
+      "ja": "影響を与える",
+      "gloss": "",
+      "example": {
+        "en": "The new rule will affect all of our branch offices.",
+        "ja": "新しい規則はすべての支店に影響する。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "based",
+      "pos": "形",
+      "ja": "本拠を置く",
+      "gloss": "（＝be based in で「〜に拠点がある」）",
+      "example": {
+        "en": "Our head office is based in Osaka.",
+        "ja": "当社の本社は大阪にある。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "blamed",
+      "pos": "動",
+      "ja": "〜のせいにした、原因だと述べた",
+      "gloss": "（＝blame A for B で「BをAのせいにする」）",
+      "example": {
+        "en": "The manager blamed the delay on bad weather.",
+        "ja": "部長は遅れを悪天候のせいにした。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "finances",
+      "pos": "名",
+      "ja": "財務状況、資金",
+      "gloss": "",
+      "example": {
+        "en": "The firm is working to improve its finances.",
+        "ja": "その会社は財務状況の改善に取り組んでいる。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "warned",
+      "pos": "動",
+      "ja": "警告した",
+      "gloss": "",
+      "example": {
+        "en": "The report warned that costs could rise next year.",
+        "ja": "その報告書は来年コストが上がる可能性があると警告した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "conditions",
+      "pos": "名",
+      "ja": "状況、情勢",
+      "gloss": "",
+      "example": {
+        "en": "If market conditions change, we will update our plan.",
+        "ja": "市場の状況が変われば、計画を更新します。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "expenses",
+      "pos": "名",
+      "ja": "費用、経費",
+      "gloss": "",
+      "example": {
+        "en": "Travel expenses must be reported by Friday.",
+        "ja": "出張費は金曜までに申告しなければならない。"
+      }
+    }
+  ],
+  "glossary": {
+    "management": {
+      "lemma": "management",
+      "pos": "名",
+      "ja": "管理職、経営",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    },
+    "affect": {
+      "lemma": "affect",
+      "pos": "動",
+      "ja": "影響を与える",
+      "note": ""
+    },
+    "workforce": {
+      "lemma": "workforce",
+      "pos": "名",
+      "ja": "従業員全体",
+      "note": ""
+    },
+    "positions": {
+      "lemma": "position",
+      "pos": "名",
+      "ja": "職、ポスト",
+      "note": ""
+    },
+    "based": {
+      "lemma": "based",
+      "pos": "形",
+      "ja": "本拠を置く",
+      "note": ""
+    },
+    "workers": {
+      "lemma": "worker",
+      "pos": "名",
+      "ja": "労働者",
+      "note": ""
+    },
+    "receiving": {
+      "lemma": "receive",
+      "pos": "動",
+      "ja": "受け取る",
+      "note": ""
+    },
+    "pay": {
+      "lemma": "pay",
+      "pos": "名",
+      "ja": "給与",
+      "note": ""
+    },
+    "airline": {
+      "lemma": "airline",
+      "pos": "名",
+      "ja": "航空会社",
+      "note": ""
+    },
+    "blamed": {
+      "lemma": "blame",
+      "pos": "動",
+      "ja": "〜のせいにする",
+      "note": ""
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界的な",
+      "note": ""
+    },
+    "tensions": {
+      "lemma": "tension",
+      "pos": "名",
+      "ja": "緊張",
+      "note": ""
+    },
+    "saying": {
+      "lemma": "say",
+      "pos": "動",
+      "ja": "述べる",
+      "note": ""
+    },
+    "needed": {
+      "lemma": "need",
+      "pos": "動",
+      "ja": "必要とされる",
+      "note": ""
+    },
+    "protect": {
+      "lemma": "protect",
+      "pos": "動",
+      "ja": "守る",
+      "note": ""
+    },
+    "finances": {
+      "lemma": "finances",
+      "pos": "名",
+      "ja": "財務状況",
+      "note": ""
+    },
+    "chief": {
+      "lemma": "chief",
+      "pos": "形",
+      "ja": "最高位の",
+      "note": ""
+    },
+    "executive": {
+      "lemma": "executive",
+      "pos": "名",
+      "ja": "経営幹部",
+      "note": ""
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告する",
+      "note": ""
+    },
+    "lose": {
+      "lemma": "lose",
+      "pos": "動",
+      "ja": "失う、損失を出す",
+      "note": ""
+    },
+    "conditions": {
+      "lemma": "condition",
+      "pos": "名",
+      "ja": "状況",
+      "note": ""
+    },
+    "improve": {
+      "lemma": "improve",
+      "pos": "動",
+      "ja": "改善する",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "expenses": {
+      "lemma": "expense",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "rise": {
+      "lemma": "rise",
+      "pos": "名",
+      "ja": "上昇",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "名",
+      "ja": "価格",
+      "note": ""
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "loss": {
+      "lemma": "loss",
+      "pos": "名",
+      "ja": "損失、赤字",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "分詞構文（, saying ... ／ , citing ...）",
+    "quote": "The airline blamed higher fuel costs and global tensions, saying the cuts are needed to protect its finances.",
+    "quoteJa": "同社は燃料費の上昇と世界的な緊張を理由に挙げ、財務を守るために今回の削減が必要だと述べた。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "文の後ろに「, saying ...」のように現在分詞（-ing）を置くと、「〜と言って」「〜と述べながら」と、前の文に補足情報を付け足せる。これが分詞構文。本文では The airline blamed ... , saying the cuts are needed ... となっており、「同社は〜を理由に挙げ、〜だと述べた」と、主文の動作と同時に、またはその直後の発言を表している。分詞の意味上の主語は主文の主語（the airline）と同じ。"
+      },
+      {
+        "heading": "書き換えと比較",
+        "body": "分詞構文は接続詞を使った文に書き換えられる。The airline blamed higher fuel costs, saying the cuts are needed. ＝ The airline blamed higher fuel costs, and it said the cuts are needed. ニュースでは and + 主語 + 動詞を短くまとめるために、saying / citing / adding / noting が非常によく使われる。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5 では、空所に動詞の原形・過去形・-ing 形のどれが入るかを問う形で出る。主語が同じ2つの動作をつなぐ場面では、カンマ + -ing（分詞構文）が正解になる。-ed 形（過去分詞）との区別も要注意で、意味上の主語が「する側」なら -ing、「される側」なら -ed を選ぶ。Part 7 の記事では citing や according to が理由・根拠を示す合図になる。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The team revised the schedule, citing a shortage of staff.（チームは人手不足を理由に、日程を改めた。）／ The company announced a new policy, saying it would take effect in April.（会社は新方針を発表し、4月に施行されると述べた。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "アラスカ航空グループは2026年10月30日、管理職を中心に約200人の職を削減すると発表した。報道によると、対象者は11月13日付で職を離れるが、年末までは給与が支払われる。従業員は約3万2,500人なので、全体から見れば小さな割合だが、同社は燃料費の上昇と世界情勢の緊張を理由に挙げた。"
+    },
+    {
+      "heading": "📌 2. なぜ燃料費が重いのか",
+      "body": "燃料は航空会社の費用の中で最も大きな項目の一つで、価格が上がると利益が一気に減る。いわゆる「コスト構造が燃料価格に敏感な業種」である。CEOのミニクッチ氏は、状況が続けば今年は最大7億ドルの損失になりうると警告した。航空会社が現場の運航要員より先に管理部門の人員を見直すのは、ほかの業界でもよく見られるやり方だ。"
+    },
+    {
+      "heading": "📌 3. 業界全体と日本への示唆",
+      "body": "燃料高の影響は米国の航空会社に限らない。日本の航空会社も燃料費や為替の影響を強く受け、運賃や燃油サーチャージの水準に反映される。出張や旅行の費用が上がれば、企業の出張規定や個人の旅行計画にも影響する。日本企業にとっても、外部環境の変化に合わせて管理部門の人員を見直す動きは他人事ではない。"
+    },
+    {
+      "heading": "📌 4. 投資家・経営者の視点",
+      "body": "投資家は、人員削減の発表を「コスト管理の意思表示」として見る一方、需要の弱さや先行きの不安のサインと受け取ることもある。経営者にとっては、一時的な費用（退職関連費用など）と将来の固定費削減を比べて判断する必要がある。燃料価格の動向と今後の業績見通しが、今後の株価を左右する重要な材料になる。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Report: Alaska to Lay Off 200 Employees",
+      "publisher": "Airline Geeks",
+      "url": "https://airlinegeeks.com/2026/10/30/report-alaska-to-lay-off-200-employees/",
+      "date": "2026-10-30"
+    },
+    {
+      "title": "Alaska Air Group lays off 200 people, navigates challenging operating environment",
+      "publisher": "FOX 13 Seattle",
+      "url": "https://www.fox13seattle.com/news/alaska-air-group-lays-off-200",
+      "date": "2026-10-30"
+    },
+    {
+      "title": "Alaska Airlines cutting 48 Hawaii jobs, citing higher fuel costs",
+      "publisher": "Honolulu Star-Advertiser",
+      "url": "https://www.staradvertiser.com/2026/10/30/breaking-news/alaska-airlines-cutting-48-hawaii-jobs-citing-higher-fuel-costs/",
+      "date": "2026-10-30"
+    }
+  ]
+}
