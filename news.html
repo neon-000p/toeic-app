@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-10-18 a360a16">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EQZky+k1gQh6QMJGIRzx/w8aKR/sToE7dS39Y4ZJdsc=' 'sha256-jJPKQmrRKNgcT/nrf1aD3pqA4AwZ1uUyYyLO5CsWT+w=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://neon-000p.github.io https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="app-build" content="2026-11-02 7343d25">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EQZky+k1gQh6QMJGIRzx/w8aKR/sToE7dS39Y4ZJdsc=' 'sha256-e2GIS7S8P1ScoGi9mvcgFNeur4sOkFwaFoL0Wi/SaKs=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://neon-000p.github.io https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>News | AkariEN</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -161,6 +161,9 @@ details.src[open]>summary::before{content:"▾ ";}
 .blk h3{font-size:14px;margin:0 0 6px;color:var(--accent-ink)}
 .blk p{margin:0;font-size:14.5px;white-space:pre-wrap}
 .blk p.en{font-family:var(--serif);font-size:15.5px;line-height:1.8}
+/* 背景本文の英語キーワード。「燃料ヘッジ(fuel hedging)」の括弧の中だけ色を変える */
+.blk .kw{font-family:var(--serif);font-weight:700;color:var(--accent-ink)}
+.kw-intro{font-size:12.5px;color:var(--muted);margin:0 0 10px}
 
 /* 対訳（音読を統合） */
 .trans-bar{display:flex;gap:8px;flex-wrap:wrap}
@@ -1123,6 +1126,50 @@ details.src[open]>summary::before{content:"▾ ";}
 
   /* ---- 語彙 ---- */
 
+  /* 語彙カード1枚。語彙ステップと背景のキーワードで共用する。
+     no が無い語（背景のキーワード）は番号の札を出さない。 */
+  function termCard(v) {
+    var on = T.Vocab.has(v.term);
+    return '<div class="vcard">' +
+      (v.no ? '<span class="no">' + esc(v.no) + '</span>' : '') +
+      '<div class="body">' +
+        '<div class="vterm">' + esc(v.term) +
+          '<button class="say-btn" data-say="' + esc(v.term) + '" title="単語を再生">▶</button>' +
+          (v.pos ? '<span class="vpos">（' + esc(T.posJa(v.pos)) + '）</span>' : '') + '</div>' +
+        '<div class="vja">' + esc(v.ja) + '</div>' +
+        (v.gloss ? '<div class="vgloss">' + esc(v.gloss) + '</div>' : '') +
+        (v.example ? '<div class="vex">' + esc(v.example.en) +
+          '<button class="say-btn" data-say="' + esc(v.example.en) + '" title="例文を再生">▶</button>' +
+          (v.example.ja ? '<div class="j">' + esc(v.example.ja) + '</div>' : '') + '</div>' : '') +
+      '</div>' +
+      '<button class="star' + (on ? ' on' : '') + '" data-term="' + esc(v.term) + '" title="語彙帳">' +
+        (on ? '★' : '☆') + '</button>' +
+    '</div>';
+  }
+
+  /* 背景の本文で、キーワードの英語（括弧の中）に色を付ける。
+     本文は「燃料ヘッジ(fuel hedging)」の形で書かれている。各段落の最初の1か所だけ。 */
+  function markKeywords(body) {
+    var html = esc(body);
+    (DATA.keywords || []).forEach(function (k) {
+      if (!k || !k.term) return;
+      var t = esc(k.term).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      html = html.replace(new RegExp('([(（]\\s*)(' + t + ')(\\s*[)）])', 'i'), '$1<span class="kw">$2</span>$3');
+    });
+    return html;
+  }
+
+  /* 英訳に渡す本文。括弧の英語を残すと「fuel hedging (fuel hedging)」と重なるので外す */
+  function plainBody(body) {
+    var out = String(body || '');
+    (DATA.keywords || []).forEach(function (k) {
+      if (!k || !k.term) return;
+      var t = String(k.term).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      out = out.replace(new RegExp('\\s*[(（]\\s*' + t + '\\s*[)）]', 'gi'), '');
+    });
+    return out;
+  }
+
   function viewVocab() {
     var showMean = T.Settings.get('vocabJa') !== false;
     return '<div class="card' + (showMean ? '' : ' terms-only') + '" id="vocabCard">' +
@@ -1131,24 +1178,7 @@ details.src[open]>summary::before{content:"▾ ";}
           '<button class="btn btn-sm icon' + (showMean ? ' on' : '') + '" id="toggleVocabJa" title="' +
             (showMean ? '英単語だけにする' : '意味を出す') + '">訳</button>' +
         '</span></div>' +
-      (DATA.vocabulary || []).map(function (v) {
-        var on = T.Vocab.has(v.term);
-        return '<div class="vcard">' +
-          '<span class="no">' + esc(v.no || '') + '</span>' +
-          '<div class="body">' +
-            '<div class="vterm">' + esc(v.term) +
-              '<button class="say-btn" data-say="' + esc(v.term) + '" title="単語を再生">▶</button>' +
-              (v.pos ? '<span class="vpos">（' + esc(T.posJa(v.pos)) + '）</span>' : '') + '</div>' +
-            '<div class="vja">' + esc(v.ja) + '</div>' +
-            (v.gloss ? '<div class="vgloss">' + esc(v.gloss) + '</div>' : '') +
-            (v.example ? '<div class="vex">' + esc(v.example.en) +
-              '<button class="say-btn" data-say="' + esc(v.example.en) + '" title="例文を再生">▶</button>' +
-              (v.example.ja ? '<div class="j">' + esc(v.example.ja) + '</div>' : '') + '</div>' : '') +
-          '</div>' +
-          '<button class="star' + (on ? ' on' : '') + '" data-term="' + esc(v.term) + '" title="語彙帳">' +
-            (on ? '★' : '☆') + '</button>' +
-        '</div>';
-      }).join('') +
+      (DATA.vocabulary || []).map(termCard).join('') +
       '</div><p class="hint">' +
       (showMean
         ? '★ を押すと<a href="vocab.html" style="color:var(--accent)">語彙帳</a>に入り、間隔をあけて復習できます。現在 ' + T.Vocab.count() + ' 語。'
@@ -1175,6 +1205,8 @@ details.src[open]>summary::before{content:"▾ ";}
     /* 出典の URL は教材データ由来。javascript: などを踏ませないよう http(s) だけ通す */
     var src = (DATA.sources || []).filter(function (s) { return /^https?:\/\//i.test(String(s.url || '')); });
     var blocks = DATA.background || [];
+    /* キーワード（2026-11 以降の教材だけが持つ）。古い教材では出さない */
+    var kws = (DATA.keywords || []).filter(function (k) { return k && k.term; });
     var can = hasAI();
     var en = can && T.Settings.get('bgEn') === true;
     return '<div class="card">' +
@@ -1187,7 +1219,7 @@ details.src[open]>summary::before{content:"▾ ";}
       (en && bgBusy ? '<p class="hint" style="margin-top:0">英訳しています…</p>' : '') +
       blocks.map(function (b, i) {
         var useEn = en && bgEn && bgEn[i];
-        if (!useEn) return '<div class="blk"><h3>' + esc(b.heading) + '</h3><p>' + esc(b.body) + '</p></div>';
+        if (!useEn) return '<div class="blk"><h3>' + esc(b.heading) + '</h3><p>' + markKeywords(b.body) + '</p></div>';
         /* 文ごとに包む。語注の照会に渡すのは段落ではなくこの1文 */
         var sents = String(bgEn[i]).match(/[^.!?]+[.!?]*s*/g) || [String(bgEn[i])];
         return '<div class="blk"><h3>' + esc(b.heading) + '</h3><p class="en">' +
@@ -1197,6 +1229,9 @@ details.src[open]>summary::before{content:"▾ ";}
       }).join('') +
       (can ? (en && bgEn ? '<p class="hint">英単語をタップすると意味が出ます。</p>' : '') : '<p class="hint">⚙ で Gemini のキーを設定すると、英語で読めます。</p>') +
     '</div>' +
+    (kws.length ? '<div class="card"><div class="sec-label">Keywords</div>' +
+      '<p class="kw-intro">背景に出てきた用語です。★ で語彙帳に入ります。</p>' +
+      kws.map(termCard).join('') + '</div>' : '') +
     (src.length ? '<div class="card"><div class="sec-label">出典</div>' + src.map(function (s) {
       return '<p class="small" style="margin:0 0 6px"><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' +
         esc(s.title || s.url) + '</a>' + (s.publisher ? ' <span class="muted">— ' + esc(s.publisher) + '</span>' : '') + '</p>';
@@ -1365,7 +1400,8 @@ details.src[open]>summary::before{content:"▾ ";}
     var st = t.closest('.star[data-term]');
     if (st) {
       var term = st.dataset.term;
-      var v = (DATA.vocabulary || []).filter(function (x) { return x.term === term; })[0] || { term: term };
+      var v = (DATA.vocabulary || []).concat(DATA.keywords || [])
+        .filter(function (x) { return x && x.term === term; })[0] || { term: term };
       if (T.Vocab.has(term)) { T.Vocab.remove(term); T.toast('語彙帳から外しました'); }
       else {
         T.Vocab.add({
@@ -1394,7 +1430,7 @@ details.src[open]>summary::before{content:"▾ ";}
       /* 訳がまだ無ければ Gemini に頼む。一度訳したらこの端末に残るので、
          同じ教材で切り替え直しても通信しない。 */
       if (on && !bgEn && !bgBusy) {
-        var texts = (DATA.background || []).map(function (b) { return b.body; });
+        var texts = (DATA.background || []).map(function (b) { return plainBody(b.body); });
         if (texts.length) {
           bgBusy = true;
           render();
