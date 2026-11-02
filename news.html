@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-11-02 7343d25">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EQZky+k1gQh6QMJGIRzx/w8aKR/sToE7dS39Y4ZJdsc=' 'sha256-e2GIS7S8P1ScoGi9mvcgFNeur4sOkFwaFoL0Wi/SaKs=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://neon-000p.github.io https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="app-build" content="2026-11-02 3423279">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EQZky+k1gQh6QMJGIRzx/w8aKR/sToE7dS39Y4ZJdsc=' 'sha256-kkHtFwU1q20NYC/LTV9PikpteDu5bhfw+YZqRNVovO8=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://neon-000p.github.io https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>News | AkariEN</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -163,7 +163,13 @@ details.src[open]>summary::before{content:"▾ ";}
 .blk p.en{font-family:var(--serif);font-size:15.5px;line-height:1.8}
 /* 背景本文の英語キーワード。「燃料ヘッジ(fuel hedging)」の括弧の中だけ色を変える */
 .blk .kw{font-family:var(--serif);font-weight:700;color:var(--accent-ink)}
-.kw-intro{font-size:12.5px;color:var(--muted);margin:0 0 10px}
+/* キーワードの横の小さな ☆。押すと語彙帳に入る */
+.star.kw-star{
+  /* 字は小さいまま、上下の余白で指が当たる範囲だけ広げる（行の高さは変えない） */
+  display:inline;width:auto;height:auto;padding:8px 4px 8px 6px;margin:-8px -3px -8px -2px;border:0;border-radius:0;
+  background:none;font-size:13px;line-height:1;vertical-align:baseline;color:var(--muted);
+}
+.star.kw-star.on{background:none;color:var(--mark)}
 
 /* 対訳（音読を統合） */
 .trans-bar{display:flex;gap:8px;flex-wrap:wrap}
@@ -1126,8 +1132,7 @@ details.src[open]>summary::before{content:"▾ ";}
 
   /* ---- 語彙 ---- */
 
-  /* 語彙カード1枚。語彙ステップと背景のキーワードで共用する。
-     no が無い語（背景のキーワード）は番号の札を出さない。 */
+  /* 語彙カード1枚 */
   function termCard(v) {
     var on = T.Vocab.has(v.term);
     return '<div class="vcard">' +
@@ -1147,14 +1152,19 @@ details.src[open]>summary::before{content:"▾ ";}
     '</div>';
   }
 
-  /* 背景の本文で、キーワードの英語（括弧の中）に色を付ける。
+  /* 背景の本文で、キーワードの英語（括弧の中）に色を付け、横に ☆ を置く。
      本文は「燃料ヘッジ(fuel hedging)」の形で書かれている。各段落の最初の1か所だけ。 */
   function markKeywords(body) {
     var html = esc(body);
     (DATA.keywords || []).forEach(function (k) {
       if (!k || !k.term) return;
       var t = esc(k.term).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      html = html.replace(new RegExp('([(（]\\s*)(' + t + ')(\\s*[)）])', 'i'), '$1<span class="kw">$2</span>$3');
+      var on = T.Vocab.has(k.term);
+      var star = '<button class="star kw-star' + (on ? ' on' : '') + '" data-term="' + esc(k.term) +
+        '" title="語彙帳">' + (on ? '★' : '☆') + '</button>';
+      html = html.replace(new RegExp('([(（]\\s*)(' + t + ')(\\s*[)）])', 'i'), function (m, a, w, c) {
+        return a + '<span class="kw">' + w + '</span>' + star + c;
+      });
     });
     return html;
   }
@@ -1205,8 +1215,8 @@ details.src[open]>summary::before{content:"▾ ";}
     /* 出典の URL は教材データ由来。javascript: などを踏ませないよう http(s) だけ通す */
     var src = (DATA.sources || []).filter(function (s) { return /^https?:\/\//i.test(String(s.url || '')); });
     var blocks = DATA.background || [];
-    /* キーワード（2026-11 以降の教材だけが持つ）。古い教材では出さない */
-    var kws = (DATA.keywords || []).filter(function (k) { return k && k.term; });
+    /* キーワード（2026-11 以降の教材だけが持つ） */
+    var hasKw = (DATA.keywords || []).some(function (k) { return k && k.term; });
     var can = hasAI();
     var en = can && T.Settings.get('bgEn') === true;
     return '<div class="card">' +
@@ -1227,11 +1237,9 @@ details.src[open]>summary::before{content:"▾ ";}
             return '<span class="sent">' + T.markupEnglish(s, DATA.glossary) + '</span>';
           }).join('') + '</p></div>';
       }).join('') +
+      (hasKw && !(en && bgEn) ? '<p class="hint">英語の用語の横の ☆ を押すと語彙帳に入ります。</p>' : '') +
       (can ? (en && bgEn ? '<p class="hint">英単語をタップすると意味が出ます。</p>' : '') : '<p class="hint">⚙ で Gemini のキーを設定すると、英語で読めます。</p>') +
     '</div>' +
-    (kws.length ? '<div class="card"><div class="sec-label">Keywords</div>' +
-      '<p class="kw-intro">背景に出てきた用語です。★ で語彙帳に入ります。</p>' +
-      kws.map(termCard).join('') + '</div>' : '') +
     (src.length ? '<div class="card"><div class="sec-label">出典</div>' + src.map(function (s) {
       return '<p class="small" style="margin:0 0 6px"><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' +
         esc(s.title || s.url) + '</a>' + (s.publisher ? ' <span class="muted">— ' + esc(s.publisher) + '</span>' : '') + '</p>';
