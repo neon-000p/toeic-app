@@ -1,0 +1,498 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-03-0545",
+  "date": "2026-11-03",
+  "time": "05:45",
+  "createdAt": "2026-11-03T05:45:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "Marriott Raises Its Outlook as Hotel Demand Stays Strong",
+    "ja": "マリオット、通期見通しを引き上げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Marriott International reported strong third-quarter results on Monday.",
+            "ja": "マリオット・インターナショナルは月曜日、好調な7〜9月期決算を発表した。"
+          },
+          {
+            "en": "Revenue per available room, or RevPAR, rose 6.5% worldwide.",
+            "ja": "1室あたり客室収入（RevPAR）は世界全体で6.5％上昇した。"
+          },
+          {
+            "en": "This figure shows how much money a hotel earns from each room it has.",
+            "ja": "この数値は、ホテルが持つ各部屋からどれだけ稼いでいるかを示す。"
+          },
+          {
+            "en": "Growth in the United States and Canada was even stronger, at more than 7%.",
+            "ja": "米国とカナダの伸びはさらに強く、7％を超えた。"
+          },
+          {
+            "en": "Because of these results, the company raised its full-year forecast for RevPAR growth.",
+            "ja": "この結果を受けて、同社は通期のRevPAR成長率の見通しを引き上げた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The increase came from both higher room rates and more occupied rooms.",
+            "ja": "この増加は、客室料金の上昇と、埋まった部屋の増加の両方によるものだった。"
+          },
+          {
+            "en": "The Middle East remained a weak spot because of the regional conflict, but conditions there improved from the previous quarter.",
+            "ja": "中東は地域の紛争のため弱い部分であり続けたが、現地の状況は前の四半期から改善した。"
+          },
+          {
+            "en": "The company also kept expanding, and its total number of rooms was up 4.6% from a year earlier.",
+            "ja": "同社は拡大も続け、総客室数は前年から4.6％増えた。"
+          },
+          {
+            "en": "These results suggest that travelers are still willing to spend on hotels, even though the global situation is uncertain.",
+            "ja": "この結果は、世界情勢が不透明でも、旅行者がなおホテルにお金を使う意思があることを示している。"
+          },
+          {
+            "en": "Hotel companies often use RevPAR to judge how healthy their business is.",
+            "ja": "ホテル会社は、事業がどれだけ健全かを判断するためにRevPARをよく使う。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did Marriott's RevPAR rise worldwide in the third quarter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "More than 7%",
+          "ja": "7％超"
+        },
+        {
+          "key": "B",
+          "text": "4.6%",
+          "ja": "4.6％"
+        },
+        {
+          "key": "C",
+          "text": "6.5%",
+          "ja": "6.5％"
+        },
+        {
+          "key": "D",
+          "text": "3.5%",
+          "ja": "3.5％"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本文第1段落の第2文に「RevPAR rose 6.5% worldwide」とあるため、正解は (C)。(A) の「more than 7%」は世界全体ではなく米国とカナダの伸びで、本文の別の数字を使った引っかけ。(B) の4.6％は総客室数の増加率（第2段落）で、RevPARとは別の指標。(D) の3.5％は本文に出てこない。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う設問は、選択肢の数字が本文のどこに出ていたかを照合する。本文の別の数字が選択肢に並ぶのが定番の引っかけなので、「何の数字か」まで確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT stated in the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Room rates were higher than a year earlier.",
+          "ja": "客室料金が前年より高かった"
+        },
+        {
+          "key": "B",
+          "text": "More rooms were occupied.",
+          "ja": "埋まった部屋が増えた"
+        },
+        {
+          "key": "C",
+          "text": "Conditions in the Middle East improved from the previous quarter.",
+          "ja": "中東は前期より改善した"
+        },
+        {
+          "key": "D",
+          "text": "Marriott plans to close hotels in the Middle East.",
+          "ja": "中東のホテルを閉鎖する予定"
+        }
+      ],
+      "answer": "D",
+      "explanation": "第2段落の第1文に (A) の客室料金の上昇と (B) 埋まった部屋の増加が、第2文に (C) 中東の状況が前の四半期から改善したことが書かれている。(D) のホテル閉鎖の計画は本文のどこにも書かれていないため、これが正解。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "NOT問題は、A〜Cを本文で1つずつ確認して消していく。残った1つが答えになる。「本文にない情報」が正解になるタイプなので、もっともらしさで選ばない。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "forecast",
+      "pos": "名・動",
+      "ja": "予想、見通し（予想する）",
+      "gloss": "（＝将来の数字や出来事を前もって見積もったもの）",
+      "example": {
+        "en": "The company raised its sales forecast for next year.",
+        "ja": "同社は来年の売上予想を引き上げた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "figure",
+      "pos": "名",
+      "ja": "数値、数字",
+      "gloss": "",
+      "example": {
+        "en": "The figure in the report was higher than expected.",
+        "ja": "報告書の数値は予想より高かった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "occupied",
+      "pos": "形",
+      "ja": "使用中の、埋まっている",
+      "gloss": "",
+      "example": {
+        "en": "Only half of the seats were occupied during the meeting.",
+        "ja": "会議中、席は半分しか埋まっていなかった。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "remained",
+      "pos": "動",
+      "ja": "〜のままだった",
+      "gloss": "",
+      "example": {
+        "en": "Prices remained stable throughout the year.",
+        "ja": "価格は1年を通じて安定したままだった。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "previous",
+      "pos": "形",
+      "ja": "前の、以前の",
+      "gloss": "",
+      "example": {
+        "en": "Sales rose compared with the previous month.",
+        "ja": "売上は前月と比べて増えた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "expanding",
+      "pos": "動",
+      "ja": "拡大している",
+      "gloss": "",
+      "example": {
+        "en": "The firm is expanding its business into Asia.",
+        "ja": "その会社はアジアへ事業を拡大している。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "uncertain",
+      "pos": "形",
+      "ja": "不透明な、不確かな",
+      "gloss": "",
+      "example": {
+        "en": "The schedule is uncertain because of the weather.",
+        "ja": "天候のせいで日程は不確かだ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "willing",
+      "pos": "形",
+      "ja": "〜する意思がある",
+      "gloss": "",
+      "example": {
+        "en": "Customers are willing to pay more for better service.",
+        "ja": "顧客はより良いサービスにはより多く払う意思がある。"
+      }
+    }
+  ],
+  "glossary": {
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "発表した",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "名",
+      "ja": "収益",
+      "note": ""
+    },
+    "available": {
+      "lemma": "available",
+      "pos": "形",
+      "ja": "利用できる",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "worldwide": {
+      "lemma": "worldwide",
+      "pos": "副",
+      "ja": "世界中で",
+      "note": ""
+    },
+    "earns": {
+      "lemma": "earn",
+      "pos": "動",
+      "ja": "稼ぐ",
+      "note": ""
+    },
+    "growth": {
+      "lemma": "growth",
+      "pos": "名",
+      "ja": "成長",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "増加",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "料金、率",
+      "note": ""
+    },
+    "regional": {
+      "lemma": "regional",
+      "pos": "形",
+      "ja": "地域の",
+      "note": ""
+    },
+    "conflict": {
+      "lemma": "conflict",
+      "pos": "名",
+      "ja": "紛争",
+      "note": ""
+    },
+    "conditions": {
+      "lemma": "condition",
+      "pos": "名",
+      "ja": "状況",
+      "note": ""
+    },
+    "improved": {
+      "lemma": "improve",
+      "pos": "動",
+      "ja": "改善した",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": ""
+    },
+    "total": {
+      "lemma": "total",
+      "pos": "形",
+      "ja": "合計の",
+      "note": ""
+    },
+    "suggest": {
+      "lemma": "suggest",
+      "pos": "動",
+      "ja": "示唆する",
+      "note": ""
+    },
+    "travelers": {
+      "lemma": "traveler",
+      "pos": "名",
+      "ja": "旅行者",
+      "note": ""
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界的な",
+      "note": ""
+    },
+    "situation": {
+      "lemma": "situation",
+      "pos": "名",
+      "ja": "状況",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名・動",
+      "ja": "予想、見通し",
+      "note": ""
+    },
+    "figure": {
+      "lemma": "figure",
+      "pos": "名",
+      "ja": "数値、数字",
+      "note": ""
+    },
+    "occupied": {
+      "lemma": "occupy",
+      "pos": "形",
+      "ja": "使用中の、埋まっている",
+      "note": ""
+    },
+    "remained": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "〜のままだった",
+      "note": ""
+    },
+    "previous": {
+      "lemma": "previous",
+      "pos": "形",
+      "ja": "前の、以前の",
+      "note": ""
+    },
+    "expanding": {
+      "lemma": "expand",
+      "pos": "動",
+      "ja": "拡大している",
+      "note": ""
+    },
+    "uncertain": {
+      "lemma": "uncertain",
+      "pos": "形",
+      "ja": "不透明な、不確かな",
+      "note": ""
+    },
+    "willing": {
+      "lemma": "willing",
+      "pos": "形",
+      "ja": "〜する意思がある",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "原因を表す前置詞句 because of と接続詞 because の使い分け",
+    "quote": "Because of these results, the company raised its full-year forecast for RevPAR growth.",
+    "quoteJa": "この結果を受けて、同社は通期のRevPAR成長率の見通しを引き上げた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "because of は「〜のせいで・〜のために」を表す前置詞句で、後ろに名詞（句）が来る。この文では because of の後ろが these results（名詞句）で、主語と動詞を含む節ではない。一方、接続詞 because の後ろには「主語＋動詞」の節が続く。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Because of these results, the company raised its forecast. ＝ Because the results were strong, the company raised its forecast.（前置詞句→節）。because of は文頭にも文中にも置ける。同じ意味の due to / owing to も後ろは名詞（句）。as a result of も同様で、いずれも後ろに節は置けない。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 で、空所の後ろが名詞か節かを見て because of と because を選ばせる問題が頻出する。空所の後ろが名詞なら because of / due to / owing to、節なら because / since / as を選ぶ。Part 6 の文書補充でも同じ型が出る。譲歩の despite / in spite of（名詞句）と although / though（節）も同じ考え方で区別する。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The shipment was delayed because of a strike at the port.（港湾ストのため、出荷が遅れた。）／ Because the budget was cut, the project was postponed.（予算が削られたため、計画は延期された。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "マリオットは11月2日、7〜9月期決算を発表した。世界のRevPARは前年同期比6.5%増、米国・カナダは7%超の伸びだった。これを受けて、通期のRevPAR成長率の見通しを引き上げた。中東は紛争の影響が続くが、4〜6月期より改善したという。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "RevPARは「客室単価(average daily rate)×稼働率(occupancy rate)」で決まる指標で、部屋が高く売れても埋まらなければ数字は伸びない。ホテル大手は他社の建物を運営して手数料を得る形が多く、RevPARの伸びが収益に直結しやすい。会社が示す通期の予想値はガイダンス(guidance)と呼ばれ、決算のたびに修正されて株価を動かす。"
+    },
+    {
+      "heading": "📌 3. 他社の中東対応",
+      "body": "ヒルトンは2026年7〜9月期に全体のRevPARが5.8%増となり、通期見通しを従来の3〜3.5%増から4〜4.5%増へ引き上げた。ただし中東・アフリカは5.6%減で、10〜12月期は中東の影響がさらに強まると見ている。一方、仏アコーは2026年上期のRevPARが2.2%増にとどまったが、中東を除くと4.6%増で、落ち込みを地域別に切り分けて開示した。ヒルトンは好調な米国で押し切って見通しを上げ、アコーは中東の影響を数字で分けて説明する道を選んだ。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "共立メンテナンス（ドーミーイン）は2026年3月期、大阪・関西万博の宿泊需要と年間4,200万人を超えたインバウンドが追い風となり、期初の稼働率は97.4%で始まった。一方、7月5日の災害予言をめぐる誤情報や日中間の政治的緊張が逆風となった。外的な出来事に需要が左右される点は、中東の影響を受けるマリオットと共通している。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "average daily rate",
+      "pos": "熟",
+      "ja": "客室単価",
+      "gloss": "（＝1室が1泊あたり平均いくらで売れたかを示す数字）",
+      "example": {
+        "en": "The average daily rate rose during the holiday season.",
+        "ja": "客室単価は休暇シーズンに上昇した。"
+      }
+    },
+    {
+      "term": "occupancy rate",
+      "pos": "熟",
+      "ja": "稼働率",
+      "gloss": "（＝全部屋のうち、実際に埋まった部屋の割合）",
+      "example": {
+        "en": "The occupancy rate of the new office building is 90%.",
+        "ja": "その新しいオフィスビルの稼働率は90％だ。"
+      }
+    },
+    {
+      "term": "guidance",
+      "pos": "名",
+      "ja": "（会社の）業績見通し",
+      "gloss": "（＝会社が投資家に向けて示す、先の数字の予想）",
+      "example": {
+        "en": "The retailer lowered its guidance after weak holiday sales.",
+        "ja": "その小売会社は、年末商戦の不振を受けて見通しを引き下げた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Marriott International Form 8-K: Third-Quarter 2026 earnings release",
+      "publisher": "SEC (EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001048286/000104828626000040/mar-2026q3xex99earningsrel.htm",
+      "date": "2026-11-02"
+    },
+    {
+      "title": "Hilton raises full-year RevPAR outlook after strong Q3",
+      "publisher": "Hotel Dive",
+      "url": "https://www.hoteldive.com/news/hilton-raises-full-year-revpar-outlook-after-strong-q3/872934/",
+      "date": "2026-10"
+    },
+    {
+      "title": "Accor half year 2026 results",
+      "publisher": "Accor",
+      "url": "https://group.accor.com/en/news-stories/accor-half-year-2026-results",
+      "date": "2026-07"
+    },
+    {
+      "title": "共立メンテナンス 決算説明会（2026年3月期）",
+      "publisher": "logmi Finance",
+      "url": "https://finance.logmi.jp/articles/384954",
+      "date": "2026"
+    }
+  ]
+}
