@@ -506,5 +506,24 @@
       "url": "https://www.rigzone.com/news/japan_refiners_rush_for_mideast_oil-16-sep-2026-184632-article",
       "date": "2026-09-16"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-03-1645/00.mp3",
+      "audio/2026-11-03-1645/01.mp3",
+      "audio/2026-11-03-1645/02.mp3",
+      "audio/2026-11-03-1645/03.mp3",
+      "audio/2026-11-03-1645/04.mp3",
+      "audio/2026-11-03-1645/05.mp3",
+      "audio/2026-11-03-1645/06.mp3",
+      "audio/2026-11-03-1645/07.mp3",
+      "audio/2026-11-03-1645/08.mp3",
+      "audio/2026-11-03-1645/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 244184,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-03T07:49:32.770Z",
+    "trimmed": true
+  }
 }
