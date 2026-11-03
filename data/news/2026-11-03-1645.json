@@ -1,0 +1,510 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-03-1645",
+  "date": "2026-11-03",
+  "time": "16:45",
+  "createdAt": "2026-11-03T16:45:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "Oil Falls as Iran Signals Openness to Talks",
+    "ja": "イラン交渉観測で原油が急落"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oil prices fell sharply on Monday after Iran signaled it was ready to talk.",
+            "ja": "月曜日、イランが交渉に応じる用意があると示したことを受け、原油価格は急落した。"
+          },
+          {
+            "en": "Brent crude, the global benchmark, dropped more than 7 percent to settle just below $105 a barrel.",
+            "ja": "世界的な指標であるブレント原油は7%超下落し、1バレル=105ドル弱で取引を終えた。"
+          },
+          {
+            "en": "It had topped $110 a week earlier.",
+            "ja": "1週間前には110ドルを超えていた。"
+          },
+          {
+            "en": "Iran's president said the supreme leader had given the government extra authority to negotiate.",
+            "ja": "イランの大統領は、最高指導者が政府に交渉のための追加の権限を与えたと述べた。"
+          },
+          {
+            "en": "Its foreign minister added that the Strait of Hormuz could reopen within two days if the United States meets certain demands.",
+            "ja": "同国の外相は、米国が一定の要求を満たせば、ホルムズ海峡は2日以内に再開しうると付け加えた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The strait is a narrow sea route that carries much of the world's oil, so its closure has kept prices high.",
+            "ja": "この海峡は世界の石油の多くが通る狭い海上航路であり、その封鎖が価格を高止まりさせてきた。"
+          },
+          {
+            "en": "Iran wants recent sanctions removed and a new shipping route approved.",
+            "ja": "イランは最近の制裁の解除と、新しい航路の承認を求めている。"
+          },
+          {
+            "en": "The United States has not agreed, and talks through mediators have produced no deal yet.",
+            "ja": "米国は同意しておらず、仲介者を通じた協議もまだ合意に至っていない。"
+          },
+          {
+            "en": "Traders expect supply to stay tight because ships are still not moving freely.",
+            "ja": "船舶がまだ自由に動けていないため、トレーダーは供給が引き締まった状態が続くとみている。"
+          },
+          {
+            "en": "Prices remain far above pre-conflict levels, and fuel costs stay high for airlines and factories.",
+            "ja": "価格は紛争前の水準をはるかに上回ったままで、航空会社や工場の燃料コストは高止まりしている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did Brent crude fall on Monday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Less than 2 percent",
+          "ja": "2%未満"
+        },
+        {
+          "key": "B",
+          "text": "About 3 percent",
+          "ja": "約3%"
+        },
+        {
+          "key": "C",
+          "text": "More than 7 percent",
+          "ja": "7%超"
+        },
+        {
+          "key": "D",
+          "text": "Nearly 20 percent",
+          "ja": "20%近く"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落の第2文に「ブレント原油は7%超下落し、1バレル=105ドル弱で取引を終えた（dropped more than 7 percent）」とあるので (C) が正解。(A) と (B) は下落幅が小さすぎ、(D) の20%近くは本文のどこにもない。110ドル超から105ドル弱への変化も、おおよそ7%台の下落と一致する。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う問題は、設問のキーワード（Brent / fall）を本文で探し、その文の数字を選択肢と照合する。less than / more than / nearly など数量表現の違いが引っかけになりやすい。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why have oil prices stayed high for months?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mediators ended the talks.",
+          "ja": "仲介者が協議を打ち切った"
+        },
+        {
+          "key": "B",
+          "text": "A key sea route for oil has been closed.",
+          "ja": "石油の要所の航路が封鎖されている"
+        },
+        {
+          "key": "C",
+          "text": "Iran increased its oil exports.",
+          "ja": "イランが石油輸出を増やした"
+        },
+        {
+          "key": "D",
+          "text": "The supreme leader resigned.",
+          "ja": "最高指導者が辞任した"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落の第1文に「この海峡は世界の石油の多くが通る狭い海上航路であり、その封鎖が価格を高止まりさせてきた（so its closure has kept prices high）」とある。(B) はこの内容の言い換え。(A) は協議が続いていると書かれており逆。(C) と (D) は本文にない情報。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由を問う問題は so / because / due to などの目印を探す。本文の the strait が選択肢では a key sea route for oil と言い換えられている点に注意。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "基準、指標",
+      "gloss": "（＝価格などを比べるときの基準になる数字のこと）",
+      "example": {
+        "en": "The company uses last year's sales as a benchmark.",
+        "ja": "その会社は昨年の売上を基準として使っている。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "settle",
+      "pos": "動",
+      "ja": "（取引を）終える、落ち着く；解決する",
+      "gloss": "",
+      "example": {
+        "en": "The stock is expected to settle at around 50 dollars.",
+        "ja": "その株は50ドル前後で取引を終える見込みだ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "authority",
+      "pos": "名",
+      "ja": "権限、当局",
+      "gloss": "",
+      "example": {
+        "en": "The manager has the authority to approve travel expenses.",
+        "ja": "その部長には出張費を承認する権限がある。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "negotiate",
+      "pos": "動",
+      "ja": "交渉する",
+      "gloss": "",
+      "example": {
+        "en": "We will negotiate the contract terms next week.",
+        "ja": "私たちは来週、契約条件を交渉する。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "demands",
+      "pos": "名",
+      "ja": "要求、需要",
+      "gloss": "",
+      "example": {
+        "en": "The supplier agreed to the buyer's demands.",
+        "ja": "その納入業者は買い手の要求に同意した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "sanctions",
+      "pos": "名",
+      "ja": "制裁",
+      "gloss": "（＝ルール違反をした国や企業への罰則のこと）",
+      "example": {
+        "en": "The country faces new trade sanctions.",
+        "ja": "その国は新たな貿易制裁に直面している。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "tight",
+      "pos": "形",
+      "ja": "（供給などが）逼迫した、厳しい",
+      "gloss": "",
+      "example": {
+        "en": "Supply remains tight because of the strong demand.",
+        "ja": "強い需要のため、供給は逼迫したままだ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "approved",
+      "pos": "形",
+      "ja": "承認された",
+      "gloss": "",
+      "example": {
+        "en": "Please use only approved suppliers.",
+        "ja": "承認された納入業者だけを使ってください。"
+      }
+    }
+  ],
+  "glossary": {
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "signaled": {
+      "lemma": "signal",
+      "pos": "動",
+      "ja": "示した",
+      "note": ""
+    },
+    "ready": {
+      "lemma": "ready",
+      "pos": "形",
+      "ja": "用意ができた",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "指標",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "settle": {
+      "lemma": "settle",
+      "pos": "動",
+      "ja": "取引を終える",
+      "note": ""
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "名",
+      "ja": "バレル（樽）",
+      "note": ""
+    },
+    "topped": {
+      "lemma": "top",
+      "pos": "動",
+      "ja": "〜を超えた",
+      "note": ""
+    },
+    "supreme": {
+      "lemma": "supreme",
+      "pos": "形",
+      "ja": "最高の",
+      "note": ""
+    },
+    "authority": {
+      "lemma": "authority",
+      "pos": "名",
+      "ja": "権限",
+      "note": ""
+    },
+    "negotiate": {
+      "lemma": "negotiate",
+      "pos": "動",
+      "ja": "交渉する",
+      "note": ""
+    },
+    "reopen": {
+      "lemma": "reopen",
+      "pos": "動",
+      "ja": "再開する",
+      "note": ""
+    },
+    "meets": {
+      "lemma": "meet",
+      "pos": "動",
+      "ja": "満たす",
+      "note": ""
+    },
+    "demands": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "要求",
+      "note": ""
+    },
+    "narrow": {
+      "lemma": "narrow",
+      "pos": "形",
+      "ja": "狭い",
+      "note": ""
+    },
+    "route": {
+      "lemma": "route",
+      "pos": "名",
+      "ja": "航路、経路",
+      "note": ""
+    },
+    "carries": {
+      "lemma": "carry",
+      "pos": "動",
+      "ja": "運ぶ",
+      "note": ""
+    },
+    "closure": {
+      "lemma": "closure",
+      "pos": "名",
+      "ja": "封鎖、閉鎖",
+      "note": ""
+    },
+    "sanctions": {
+      "lemma": "sanction",
+      "pos": "名",
+      "ja": "制裁",
+      "note": ""
+    },
+    "approved": {
+      "lemma": "approve",
+      "pos": "動",
+      "ja": "承認する",
+      "note": ""
+    },
+    "agreed": {
+      "lemma": "agree",
+      "pos": "動",
+      "ja": "同意した",
+      "note": ""
+    },
+    "mediators": {
+      "lemma": "mediator",
+      "pos": "名",
+      "ja": "仲介者",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー",
+      "note": ""
+    },
+    "tight": {
+      "lemma": "tight",
+      "pos": "形",
+      "ja": "逼迫した",
+      "note": ""
+    },
+    "freely": {
+      "lemma": "freely",
+      "pos": "副",
+      "ja": "自由に",
+      "note": ""
+    },
+    "remain": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "〜のままだ",
+      "note": ""
+    },
+    "conflict": {
+      "lemma": "conflict",
+      "pos": "名",
+      "ja": "紛争",
+      "note": ""
+    },
+    "levels": {
+      "lemma": "level",
+      "pos": "名",
+      "ja": "水準",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "接続詞 so による結果表現（原因, so 結果）",
+    "quote": "The strait is a narrow sea route that carries much of the world's oil, so its closure has kept prices high.",
+    "quoteJa": "この海峡は世界の石油の多くが通る狭い海上航路であり、その封鎖が価格を高止まりさせてきた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "「A, so B」は「Aである。だからB」と、前の内容の結果を後ろで述べる等位接続詞 so の用法。この文では、前半（海峡は石油の多くが通る航路）が原因、後半（封鎖が価格を高止まりさせてきた）が結果になっている。so の前にはカンマを置くのが普通。後半の has kept は現在完了形で、封鎖の影響が今も続いていることを表す。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "The strait carries much of the world's oil, so its closure has kept prices high. ＝ Its closure has kept prices high because the strait carries much of the world's oil.（because は理由を後ろに置く）。so は結果、because は理由を導くので、位置が逆になる点に注意。so と so that（〜するために）、so ... that（非常に〜なので…）は別の表現。"
+      },
+      {
+        "heading": "TOEIC対策",
+        "body": "Part 5・6では、空所の前後の関係を見て so / because / although / however を選ばせる問題が出る。前が原因で後ろが結果なら so、前が結果で後ろが理由なら because。so は接続詞なので、2つの文をカンマなしのピリオドだけで並べる誤りも出題されやすい。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The shipment was delayed, so we have changed the delivery date.（出荷が遅れたため、納品日を変更しました。）／Demand is strong, so we will hire more staff.（需要が強いので、人員を増やします。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "11月2日、ブレント原油は7%超下げて1バレル=105ドル弱で終えた。前週は110ドル超だった。イラン大統領が交渉の権限を得たと述べ、外相も海峡再開に言及したため、戦争の不安を映した上乗せ分のリスクプレミアム(risk premium)が剥がれた。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "ブレントは世界の取引の目安になる原油価格。ホルムズ海峡は湾岸産原油の大動脈で、封鎖が続くほど価格に不安が上乗せされる。サウジアラビアは東西パイプラインで紅海側へ迂回させ、最大日量700万バレルを流せるが、穴埋めは一部にとどまる。各国は戦略石油備蓄(strategic petroleum reserve)を取り崩して急場をしのいできた。"
+    },
+    {
+      "heading": "📌 3. 他社の燃料高対策",
+      "body": "米サウスウエスト航空は2026年初めに燃料ヘッジ(fuel hedging)をやめ、燃料高の影響を直接受けた。一方、ルフトハンザは燃料の大半を先物などで固定し、急騰の衝撃を和らげた。ヘッジの有無が、費用増を吸収できた会社と、減便など即時の対応を迫られた会社を分けた。ただしヘッジは原油連動が多く、ジェット燃料の急騰までは防ぎきれない。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本は2025年に原油の94%を中東から輸入しており、2026年4月の中東産輸入は前年比で約67%減と、1979年以来の低水準になった。最大手のENEOSは海峡を通らない原油を9月分まで確保し、同社の財務責任者は中東依存を下げる方針を示した。出光興産もオマーン産原油を買い増している。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "risk premium",
+      "pos": "熟",
+      "ja": "リスクプレミアム",
+      "gloss": "（＝不安が高まるほど価格に上乗せされる、危険に見合う分の値段のこと）",
+      "example": {
+        "en": "Investors demanded a higher risk premium on the bonds.",
+        "ja": "投資家はその債券に、より高いリスクプレミアムを求めた。"
+      }
+    },
+    {
+      "term": "strategic petroleum reserve",
+      "pos": "熟",
+      "ja": "戦略石油備蓄",
+      "gloss": "（＝非常時に備えて国が貯めておく石油のこと）",
+      "example": {
+        "en": "The government released oil from its strategic petroleum reserve.",
+        "ja": "政府は戦略石油備蓄から石油を放出した。"
+      }
+    },
+    {
+      "term": "fuel hedging",
+      "pos": "熟",
+      "ja": "燃料ヘッジ",
+      "gloss": "（＝先物などで将来の燃料価格を固定しておくこと）",
+      "example": {
+        "en": "The airline ended its fuel hedging program last year.",
+        "ja": "その航空会社は昨年、燃料ヘッジをやめた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Oil Prices Plunge 8% as US-Iran Peace Talks Ease Hormuz Tensions",
+      "publisher": "Gulf News",
+      "url": "https://gulfnews.com/business/energy/oil-plunges-8-as-us-iran-peace-hopes-ease-hormuz-fears-1.500733408",
+      "date": "2026-11-02"
+    },
+    {
+      "title": "Mediators continue US-Iran negotiations amid war rhetoric: What we know",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/1/mediators-continue-us-iran-negotiations-amid-war-rhetoric-what-we-know",
+      "date": "2026-11-01"
+    },
+    {
+      "title": "Airline fuel hedging: who is protected in Iran's fuel crisis",
+      "publisher": "AeroTime",
+      "url": "https://www.aerotime.aero/articles/airline-fuel-hedging-iran-conflict-crisis",
+      "date": "2026"
+    },
+    {
+      "title": "Japan's Middle East Crude Oil Imports Hit 47-Year Low Amid Hormuz Closure",
+      "publisher": "IndexBox",
+      "url": "https://www.indexbox.io/blog/japans-middle-east-crude-imports-hit-record-low-in-april-2026/",
+      "date": "2026-05"
+    },
+    {
+      "title": "Japan Refiners Rush for Mideast Oil",
+      "publisher": "Rigzone",
+      "url": "https://www.rigzone.com/news/japan_refiners_rush_for_mideast_oil-16-sep-2026-184632-article",
+      "date": "2026-09-16"
+    }
+  ]
+}
