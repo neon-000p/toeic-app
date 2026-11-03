@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-04-0545",
+  "date": "2026-11-04",
+  "time": "05:45",
+  "createdAt": "2026-11-04T05:45:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Australia's Central Bank Raises Rates for the Fifth Time This Year",
+    "ja": "豪中銀、今年5回目の利上げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Australia's central bank raised its main interest rate on Tuesday for the fifth time this year.",
+            "ja": "オーストラリアの中央銀行は火曜日、主要な政策金利を今年5回目となる引き上げに踏み切った。"
+          },
+          {
+            "en": "The Reserve Bank of Australia lifted the cash rate by 0.25 percentage points to 4.85 percent.",
+            "ja": "豪準備銀行は政策金利を0.25ポイント引き上げ、4.85%とした。"
+          },
+          {
+            "en": "The new rate is the highest in well over a decade.",
+            "ja": "新しい金利は10年をはるかに超える期間で最も高い水準である。"
+          },
+          {
+            "en": "Six of nine board members backed the increase, but three wanted to keep the rate at 4.60 percent.",
+            "ja": "理事9人のうち6人が利上げを支持したが、3人は4.60%の据え置きを望んだ。"
+          },
+          {
+            "en": "Governor Michele Bullock said the move was needed to bring inflation down.",
+            "ja": "ミシェル・ブロック総裁は、この措置はインフレを抑えるために必要だったと述べた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Prices are still rising too fast, partly because high oil prices have raised transport costs.",
+            "ja": "物価は依然として上がり方が速すぎる。一因は、原油高が輸送コストを押し上げたことだ。"
+          },
+          {
+            "en": "Higher rates make loans more expensive, so households spend less and price pressure should ease.",
+            "ja": "金利が上がると借入れの負担が増すため、家計は支出を減らし、物価上昇の圧力は和らぐはずだ。"
+          },
+          {
+            "en": "At least one lender has already said it will pass on the increase to customers with variable-rate loans.",
+            "ja": "少なくとも1行の貸し手は、変動金利型ローンの顧客に今回の引き上げ分を転嫁すると既に表明している。"
+          },
+          {
+            "en": "Many people with home loans will soon pay more each month.",
+            "ja": "住宅ローンを抱える多くの人が、まもなく毎月の支払いが増えることになる。"
+          },
+          {
+            "en": "Bullock did not say whether a further increase is coming.",
+            "ja": "ブロック総裁は、さらなる利上げがあるかどうかは明言しなかった。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What is the cash rate after Tuesday's decision?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4.35 percent",
+          "ja": "4.35%"
+        },
+        {
+          "key": "B",
+          "text": "4.60 percent",
+          "ja": "4.60%"
+        },
+        {
+          "key": "C",
+          "text": "4.85 percent",
+          "ja": "4.85%"
+        },
+        {
+          "key": "D",
+          "text": "5.10 percent",
+          "ja": "5.10%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は C。第1段落第2文に「政策金利を0.25ポイント引き上げ、4.85%とした」とある。B の 4.60% は引き上げ前の水準で、3人の理事が据え置きを望んだ数字として本文に出てくる『別の数字』の引っかけ。A と D は本文に登場しない。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字問題は、本文の数字が「前の値」なのか「変更後の値」なのかを見分ける。by（差）と to（到達点）の違い（by 0.25 points to 4.85 percent）に注目すると確実。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why should higher interest rates help reduce price pressure?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Households spend less because loans cost more.",
+          "ja": "借入れが高くなり家計が支出を減らす"
+        },
+        {
+          "key": "B",
+          "text": "Oil and fuel become cheaper for companies.",
+          "ja": "企業にとって原油・燃料が安くなる"
+        },
+        {
+          "key": "C",
+          "text": "Banks have more money available to lend.",
+          "ja": "銀行の貸出資金が増える"
+        },
+        {
+          "key": "D",
+          "text": "Fewer board members disagree with the bank.",
+          "ja": "反対する理事が減る"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正解は A。第2段落第2文に「金利が上がるとローンが高くなり、家計は支出を減らし、物価上昇の圧力は和らぐ」とある。B は原油高が物価を押し上げているという本文と逆。C は本文にない情報。D は理事会の票決の話で、物価への効果とは無関係。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由を問う問題は so / because / partly because などの接続表現の前後に答えがある。この文では so の前が原因、後ろが結果。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "inflation",
+      "pos": "名",
+      "ja": "インフレ、物価上昇",
+      "gloss": "（＝モノやサービスの値段が全体として上がり続けること）",
+      "example": {
+        "en": "The company raised salaries to keep up with inflation.",
+        "ja": "その会社はインフレに合わせて給与を引き上げた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "back",
+      "pos": "動",
+      "ja": "〜を支持する、後押しする",
+      "gloss": "",
+      "example": {
+        "en": "Most managers backed the plan to open a new office.",
+        "ja": "大半の管理職が新オフィス開設の計画を支持した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "lender",
+      "pos": "名",
+      "ja": "貸し手、融資会社",
+      "gloss": "",
+      "example": {
+        "en": "The lender approved the loan within a week.",
+        "ja": "その融資会社は1週間以内にローンを承認した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "pass on",
+      "pos": "熟",
+      "ja": "〜を転嫁する、伝える",
+      "gloss": "",
+      "example": {
+        "en": "The supplier will pass on the higher costs to its customers.",
+        "ja": "仕入先は上昇したコストを顧客に転嫁する予定だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "ease",
+      "pos": "動",
+      "ja": "和らぐ、緩和する",
+      "gloss": "",
+      "example": {
+        "en": "Delivery delays should ease by the end of the month.",
+        "ja": "配送の遅れは月末までに和らぐはずだ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "household",
+      "pos": "名",
+      "ja": "世帯、家計",
+      "gloss": "",
+      "example": {
+        "en": "Household spending rose slightly in September.",
+        "ja": "9月の家計支出はわずかに増えた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "variable-rate",
+      "pos": "形",
+      "ja": "変動金利の",
+      "gloss": "（＝市場の金利に合わせて、返済の利率が変わる仕組みの）",
+      "example": {
+        "en": "She switched from a fixed-rate to a variable-rate mortgage.",
+        "ja": "彼女は固定金利から変動金利の住宅ローンに切り替えた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "further",
+      "pos": "形",
+      "ja": "さらなる、追加の",
+      "gloss": "",
+      "example": {
+        "en": "Please contact us if you need further information.",
+        "ja": "追加の情報が必要でしたらご連絡ください。"
+      }
+    }
+  ],
+  "glossary": {
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "利子、金利",
+      "note": ""
+    },
+    "rate": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "率、金利",
+      "note": ""
+    },
+    "fifth": {
+      "lemma": "fifth",
+      "pos": "形",
+      "ja": "5番目の",
+      "note": ""
+    },
+    "lifted": {
+      "lemma": "lift",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "percentage": {
+      "lemma": "percentage",
+      "pos": "名",
+      "ja": "パーセンテージ",
+      "note": ""
+    },
+    "highest": {
+      "lemma": "high",
+      "pos": "形",
+      "ja": "最も高い",
+      "note": ""
+    },
+    "decade": {
+      "lemma": "decade",
+      "pos": "名",
+      "ja": "10年間",
+      "note": ""
+    },
+    "board": {
+      "lemma": "board",
+      "pos": "名",
+      "ja": "理事会",
+      "note": ""
+    },
+    "backed": {
+      "lemma": "back",
+      "pos": "動",
+      "ja": "支持した",
+      "note": ""
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "引き上げ、上昇",
+      "note": ""
+    },
+    "wanted": {
+      "lemma": "want",
+      "pos": "動",
+      "ja": "望んだ",
+      "note": ""
+    },
+    "governor": {
+      "lemma": "governor",
+      "pos": "名",
+      "ja": "総裁",
+      "note": ""
+    },
+    "move": {
+      "lemma": "move",
+      "pos": "名",
+      "ja": "措置、動き",
+      "note": ""
+    },
+    "needed": {
+      "lemma": "need",
+      "pos": "動",
+      "ja": "必要とされた",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "インフレ",
+      "note": ""
+    },
+    "prices": {
+      "lemma": "price",
+      "pos": "名",
+      "ja": "物価、価格",
+      "note": ""
+    },
+    "partly": {
+      "lemma": "partly",
+      "pos": "副",
+      "ja": "一部は",
+      "note": ""
+    },
+    "transport": {
+      "lemma": "transport",
+      "pos": "名",
+      "ja": "輸送",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "loans": {
+      "lemma": "loan",
+      "pos": "名",
+      "ja": "ローン、融資",
+      "note": ""
+    },
+    "expensive": {
+      "lemma": "expensive",
+      "pos": "形",
+      "ja": "高価な",
+      "note": ""
+    },
+    "households": {
+      "lemma": "household",
+      "pos": "名",
+      "ja": "世帯、家計",
+      "note": ""
+    },
+    "ease": {
+      "lemma": "ease",
+      "pos": "動",
+      "ja": "和らぐ",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "note": ""
+    },
+    "lender": {
+      "lemma": "lender",
+      "pos": "名",
+      "ja": "貸し手",
+      "note": ""
+    },
+    "pass": {
+      "lemma": "pass on",
+      "pos": "熟",
+      "ja": "転嫁する",
+      "note": "pass は on とセットで「転嫁する」"
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "variable-rate": {
+      "lemma": "variable-rate",
+      "pos": "形",
+      "ja": "変動金利の",
+      "note": ""
+    },
+    "further": {
+      "lemma": "further",
+      "pos": "形",
+      "ja": "さらなる",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "to不定詞の副詞的用法（目的・be needed to do）",
+    "quote": "Governor Michele Bullock said the move was needed to bring inflation down.",
+    "quoteJa": "ミシェル・ブロック総裁は、この措置はインフレを抑えるために必要だったと述べた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "to bring inflation down の to 不定詞は副詞的用法で、「〜するために」という目的を表す。was needed は「必要とされた」という受動態で、be needed to do は「〜するために必要だ」という定番の言い方。bring A down は「Aを下げる」で、bring down inflation と語順を入れ替えても同じ意味。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "The move was needed to bring inflation down. ＝ The move was needed in order to bring inflation down. ＝ The move was needed so as to bring inflation down.（in order to / so as to は目的をよりはっきり示す形）。否定の目的は in order not to / so as not to を使い、単なる not to ではあいまいになりやすい。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では空所に to 不定詞を入れるか、for -ing や that 節との区別を問う形で出る。目的を表す to の直後は必ず動詞の原形。Part 7 では「〜するために」を見抜き、設問の Why / What is the purpose of ... に答える。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "We will hire two more staff to handle the increase in orders.（注文増に対応するため、あと2人採用します。）／ The office will close early to allow for system maintenance.（システム保守のため、事務所は早く閉まります。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "11月3日、豪準備銀行(RBA)は政策金利(cash rate)を0.25ポイント上げ、4.85%とした。今年5回目の利上げで、理事会の票決は6対3の僅差だった。反対票(dissenting vote)を投じた3人は4.60%での据え置きを求めた。声明からは「必要なら追加利上げ」という趣旨の一文が外れ、市場は打ち止め近しと受け止めた。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "利上げは金融引き締め(monetary tightening)の代表的な手段だ。借入れの利息が増えるので、家計は消費を、企業は投資を控え、物価の上昇が収まりやすくなる。今年は中東の紛争で原油が高止まりし、輸送費を通じて物価を押し上げてきた。オーストラリアは変動金利型の住宅ローンが身近で、政策金利の変化が毎月の返済額にすぐ響く。"
+    },
+    {
+      "heading": "📌 3. 他社の対応",
+      "body": "大手4行(ウエストパックなど)は、2026年9月29日の0.25ポイント利上げを10月9日から全額転嫁した。ウエストパックの最低変動金利は5.99%から6.24%になった。一方、マッコーリー銀行は今回の利上げ分を2026年11月19日から住宅ローンの基準金利に加え、貯蓄口座・取引口座の変動金利にも0.25%上乗せするとした。前者は借り手の負担増が中心だが、後者は預金者にも利上げの恩恵を回している点が違う。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日銀が2025年12月に利上げしたのを受け、三菱UFJ銀行は2026年3月に住宅ローンの変動金利を0.275ポイント、三井住友銀行は0.25ポイント引き上げた。三菱UFJは優遇幅も縮めている。報道では、2026年4月にはほぼ全ての銀行が基準金利を0.25ポイント上げ、変動金利の平均が約15年ぶりに1%台に乗る見通しとされた。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "cash rate",
+      "pos": "熟",
+      "ja": "政策金利(豪)",
+      "gloss": "（＝中央銀行が決める、銀行どうしが短期でお金を貸し借りするときの基準の金利のこと）",
+      "example": {
+        "en": "The cash rate is reviewed at every board meeting.",
+        "ja": "政策金利は理事会のたびに見直される。"
+      }
+    },
+    {
+      "term": "dissenting vote",
+      "pos": "熟",
+      "ja": "反対票",
+      "gloss": "（＝決定に賛成しない人が投じる票のこと）",
+      "example": {
+        "en": "The merger passed with only one dissenting vote.",
+        "ja": "その合併は反対票1票だけで承認された。"
+      }
+    },
+    {
+      "term": "monetary tightening",
+      "pos": "熟",
+      "ja": "金融引き締め",
+      "gloss": "（＝金利を上げてお金を借りにくくし、景気の熱を冷ますこと）",
+      "example": {
+        "en": "Monetary tightening has slowed demand for new homes.",
+        "ja": "金融引き締めで新築住宅の需要が鈍った。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "RBA Raises Cash Rate to 4.85% in a 6-3 Split Vote",
+      "publisher": "Babypips",
+      "url": "https://babypips.com/news/headline-rba-interest-rate-decision-november-2026-fifth-hike-split-vote",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "RBA November Cash Rate Decision: Live updates",
+      "publisher": "savings.com.au",
+      "url": "https://www.savings.com.au/news/rba-november-2026-cash-rate-live-updates",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "RBA's Cup Day call takes rates to 18-year high; board divided over decision — as it happened",
+      "publisher": "SBS News",
+      "url": "https://www.sbs.com.au/news/live-blog/rba-november-2026-interest-rates-decision-live/f6csn2n1w",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "ASX jumps as traders cut bets on November rate rise as big banks pass on RBA decision — as it happened",
+      "publisher": "ABC News",
+      "url": "https://www.abc.net.au/news/2026-09-30/asx-markets-business-live-news/107210136",
+      "date": "2026-09-30"
+    },
+    {
+      "title": "住宅ローン変動金利を三菱UFJ銀行と三井住友銀行が3月に引き上げ",
+      "publisher": "ダイヤモンド不動産研究所",
+      "url": "https://diamond-fudosan.jp/articles/-/1113121",
+      "date": "2026-03-01"
+    }
+  ]
+}
