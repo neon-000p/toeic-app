@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-05-0857",
+  "date": "2026-11-05",
+  "time": "08:57",
+  "createdAt": "2026-11-05T08:57:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "Democrats Win Control of Congress, Setting Up Policy Fights",
+    "ja": "民主党が上下両院を制す、政策の攻防へ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Democrats won control of both houses of Congress in Tuesday's midterm elections, ending one-party control of the government.",
+            "ja": "火曜日の中間選挙で民主党が上下両院の主導権を握り、一つの党が政府を独占する体制が終わった。"
+          },
+          {
+            "en": "The party gained seats in both chambers, though a few close races were still being counted.",
+            "ja": "同党は両院で議席を伸ばしたが、接戦の数選挙区ではまだ開票が続いていた。"
+          },
+          {
+            "en": "President Trump acknowledged the results, but he has promised to veto the new majority's agenda.",
+            "ja": "トランプ大統領は結果を認めたが、新たな多数派の政策には拒否権を使うと表明している。"
+          },
+          {
+            "en": "The new Congress will take office in January.",
+            "ja": "新しい議会は1月に就任する。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Analysts say the result could change policy, but only in some areas.",
+            "ja": "アナリストによると、今回の結果は政策を変える可能性があるが、それは一部の分野に限られる。"
+          },
+          {
+            "en": "Because Congress controls government spending, lawmakers may be able to limit funding for the unpopular war with Iran.",
+            "ja": "議会は政府の支出を管理しているため、議員たちは不人気なイランとの戦争の資金を制限できるかもしれない。"
+          },
+          {
+            "en": "Tariffs, however, are a different story.",
+            "ja": "しかし、関税は事情が異なる。"
+          },
+          {
+            "en": "The power to set most tariffs rests with the president, and a law to cancel them would likely face a veto.",
+            "ja": "関税の大半を決める権限は大統領にあり、関税を取り消す法律は拒否権に直面する可能性が高い。"
+          },
+          {
+            "en": "This makes it hard for Democrats to remove tariffs quickly.",
+            "ja": "このため、民主党が関税をすぐに撤廃するのは難しい。"
+          },
+          {
+            "en": "Some economists even expect the president to raise tariffs further.",
+            "ja": "大統領が関税をさらに引き上げると予想するエコノミストさえいる。"
+          },
+          {
+            "en": "Investors are watching the next debt limit vote, which Democrats could use to win concessions.",
+            "ja": "投資家は次の債務上限をめぐる採決に注目している。民主党はこれを使って譲歩を引き出す可能性がある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "When will the new Congress take office?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "In November",
+          "ja": "11月"
+        },
+        {
+          "key": "B",
+          "text": "In January",
+          "ja": "1月"
+        },
+        {
+          "key": "C",
+          "text": "After the debt limit vote",
+          "ja": "債務上限の採決の後"
+        },
+        {
+          "key": "D",
+          "text": "Next summer",
+          "ja": "来年の夏"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第1段落の最後の文に The new Congress will take office in January. とあります。(A) の11月は選挙が行われた時期で、就任時期ではありません。(C) の債務上限の採決は第2段落で投資家が注目している出来事として出てくるだけで、就任時期とは無関係です。(D) は本文にない情報です。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "When を問う設問では、本文の日付・月・曜日をすべて拾い、それぞれが「何の時期か」を確かめましょう。選挙の時期と就任の時期のように、別の出来事の時期が引っかけとして並びます。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why may it be difficult for Democrats to remove tariffs quickly?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Most voters support the current tariffs.",
+          "ja": "大半の有権者が今の関税を支持している"
+        },
+        {
+          "key": "B",
+          "text": "The president holds most tariff power and can block new laws.",
+          "ja": "大統領が関税の権限の大半を持ち、法律を阻止できる"
+        },
+        {
+          "key": "C",
+          "text": "Congress has no control over government spending.",
+          "ja": "議会は政府支出を管理できない"
+        },
+        {
+          "key": "D",
+          "text": "Several close races are still being counted.",
+          "ja": "接戦の選挙区の開票が続いている"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落に The power to set most tariffs rests with the president, and a law to cancel them would likely face a veto. とあり、その直後の This makes it hard ... が「だから難しい」と結論づけています。rests with the president を holds most tariff power、face a veto を can block new laws と言い換えています。(A) は本文にない情報です。(C) は本文と逆で、議会は支出を管理していると書かれています。(D) は開票が続いているという事実ですが、関税の撤廃が難しい理由ではありません。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "Why の設問では、This makes it hard ... や because のような「理由と結果をつなぐ語」の前後が根拠になります。正解の選択肢は本文の語を言い換えて作られることが多いので、同じ意味かどうかで判断しましょう。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "acknowledge",
+      "pos": "動",
+      "ja": "認める",
+      "gloss": "",
+      "example": {
+        "en": "The manager acknowledged the delay and apologized to the client.",
+        "ja": "マネージャーは遅れを認め、顧客に謝罪した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "veto",
+      "pos": "名・動",
+      "ja": "拒否権（を行使する）",
+      "gloss": "（＝大統領などが議会で決まった法案を認めず、止めること）",
+      "example": {
+        "en": "The board chair can veto any plan that goes over budget.",
+        "ja": "取締役会の議長は、予算を超える計画に拒否権を使える。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "majority",
+      "pos": "名",
+      "ja": "多数派、過半数",
+      "gloss": "",
+      "example": {
+        "en": "A majority of employees voted for the new schedule.",
+        "ja": "社員の過半数が新しい勤務表に賛成した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "agenda",
+      "pos": "名",
+      "ja": "政策課題、議題",
+      "gloss": "",
+      "example": {
+        "en": "The first item on today's agenda is the office move.",
+        "ja": "本日の議題の1つ目はオフィスの移転だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "take office",
+      "pos": "熟",
+      "ja": "就任する",
+      "gloss": "",
+      "example": {
+        "en": "The new CEO will take office on April 1.",
+        "ja": "新しいCEOは4月1日に就任する。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "limit",
+      "pos": "動",
+      "ja": "制限する",
+      "gloss": "",
+      "example": {
+        "en": "We need to limit travel costs this quarter.",
+        "ja": "今四半期は出張費を抑える必要がある。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "funding",
+      "pos": "名",
+      "ja": "資金、資金提供",
+      "gloss": "",
+      "example": {
+        "en": "The project received additional funding from the city.",
+        "ja": "そのプロジェクトは市から追加の資金を得た。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "concession",
+      "pos": "名",
+      "ja": "譲歩",
+      "gloss": "",
+      "example": {
+        "en": "The supplier made a concession on price to keep the contract.",
+        "ja": "その供給業者は契約を守るため、価格面で譲歩した。"
+      }
+    }
+  ],
+  "glossary": {
+    "control": {
+      "lemma": "control",
+      "pos": "名",
+      "ja": "主導権、支配",
+      "note": ""
+    },
+    "houses": {
+      "lemma": "house",
+      "pos": "名",
+      "ja": "議院",
+      "note": "both houses で「上下両院」"
+    },
+    "midterm": {
+      "lemma": "midterm",
+      "pos": "形",
+      "ja": "中間の",
+      "note": "midterm elections で「中間選挙」"
+    },
+    "elections": {
+      "lemma": "election",
+      "pos": "名",
+      "ja": "選挙",
+      "note": ""
+    },
+    "ending": {
+      "lemma": "end",
+      "pos": "動",
+      "ja": "終わらせる",
+      "note": ""
+    },
+    "gained": {
+      "lemma": "gain",
+      "pos": "動",
+      "ja": "獲得する、増やす",
+      "note": ""
+    },
+    "chambers": {
+      "lemma": "chamber",
+      "pos": "名",
+      "ja": "議院",
+      "note": ""
+    },
+    "though": {
+      "lemma": "though",
+      "pos": "接",
+      "ja": "～だけれども",
+      "note": ""
+    },
+    "close": {
+      "lemma": "close",
+      "pos": "形",
+      "ja": "接戦の",
+      "note": "close race で「接戦」"
+    },
+    "races": {
+      "lemma": "race",
+      "pos": "名",
+      "ja": "選挙戦",
+      "note": ""
+    },
+    "acknowledged": {
+      "lemma": "acknowledge",
+      "pos": "動",
+      "ja": "認めた",
+      "note": ""
+    },
+    "promised": {
+      "lemma": "promise",
+      "pos": "動",
+      "ja": "約束した、表明した",
+      "note": ""
+    },
+    "veto": {
+      "lemma": "veto",
+      "pos": "名・動",
+      "ja": "拒否権（を行使する）",
+      "note": ""
+    },
+    "majority's": {
+      "lemma": "majority",
+      "pos": "名",
+      "ja": "多数派の",
+      "note": ""
+    },
+    "agenda": {
+      "lemma": "agenda",
+      "pos": "名",
+      "ja": "政策課題",
+      "note": ""
+    },
+    "office": {
+      "lemma": "office",
+      "pos": "名",
+      "ja": "公職",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト、分析家",
+      "note": ""
+    },
+    "policy": {
+      "lemma": "policy",
+      "pos": "名",
+      "ja": "政策",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "lawmakers": {
+      "lemma": "lawmaker",
+      "pos": "名",
+      "ja": "議員",
+      "note": ""
+    },
+    "limit": {
+      "lemma": "limit",
+      "pos": "動・名",
+      "ja": "制限する／上限",
+      "note": ""
+    },
+    "funding": {
+      "lemma": "funding",
+      "pos": "名",
+      "ja": "資金",
+      "note": ""
+    },
+    "unpopular": {
+      "lemma": "unpopular",
+      "pos": "形",
+      "ja": "人気のない",
+      "note": ""
+    },
+    "tariffs": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "rests": {
+      "lemma": "rest",
+      "pos": "動",
+      "ja": "（権限が）ある",
+      "note": "rest with A で「Aにある」"
+    },
+    "cancel": {
+      "lemma": "cancel",
+      "pos": "動",
+      "ja": "取り消す",
+      "note": ""
+    },
+    "face": {
+      "lemma": "face",
+      "pos": "動",
+      "ja": "直面する",
+      "note": ""
+    },
+    "remove": {
+      "lemma": "remove",
+      "pos": "動",
+      "ja": "取り除く",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "エコノミスト",
+      "note": ""
+    },
+    "concessions": {
+      "lemma": "concession",
+      "pos": "名",
+      "ja": "譲歩",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "形式目的語 it（make it hard for A to do）",
+    "quote": "This makes it hard for Democrats to remove tariffs quickly.",
+    "quoteJa": "このため、民主党が関税をすぐに撤廃するのは難しい。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "make it ＋ 形容詞 ＋ for A ＋ to do は「A が～するのを（形容詞）にする」という形です。本来の目的語は to remove tariffs quickly（関税をすぐに撤廃すること）ですが、長い to不定詞をそのまま make の直後に置くと文の形が分かりにくくなります。そこで仮の目的語 it を置き、本当の目的語を後ろに回します。この it を「形式目的語」と呼び、「それ」とは訳しません。for Democrats は to remove の意味上の主語（誰が撤廃するのか）を表します。"
+      },
+      {
+        "heading": "書き換え",
+        "body": "This makes it hard for Democrats to remove tariffs quickly. ＝ Because of this, it is hard for Democrats to remove tariffs quickly. 〔形式主語 it に書き換え〕 / ＝ Because of this, Democrats cannot easily remove tariffs. 〔平易な言い換え〕。形式主語は it is ～ to do、形式目的語は make / find / consider it ～ to do の形をとります。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では make ___ easier to do の空所に it を入れる問題や、make it possible / difficult の形容詞を選ぶ問題が出ます。×make easier to ... のように it を落とした形は誤りです。また、空所に入るのは副詞ではなく形容詞（×make it easily）である点も狙われます。Part 7 では、This makes it difficult ... の文が前文の理由を受けて結論を述べるため、Why を問う設問の根拠になりやすい部分です。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The new software makes it easier for staff to track orders. （新しいソフトで、社員は注文を追跡しやすくなる。）/ We find it necessary to review the contract every year. （契約を毎年見直す必要があると考えている。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "2026年11月3日の中間選挙で民主党が上下両院で過半数を取り、共和党が大統領と議会を握る体制が終わりました。大統領は結果を認めつつ、民主党の政策には拒否権を使うと表明しています。新議会は2027年1月に始まります。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "大統領の党と議会の多数派が違う状態を、ねじれ議会(divided government)と呼びます。議会は予算を決めるので、戦費を絞って戦争に歯止めをかけられます。一方、関税の多くは大統領の権限で決まり、議会が取り消す法律を作っても大統領は拒否権を使えます。拒否権の覆し(veto override)には両院で3分の2の賛成が必要です。"
+    },
+    {
+      "heading": "📌 3. 過去のねじれ議会では",
+      "body": "2006年の中間選挙で上下両院を制した民主党は、2007年、イラクからの撤兵期限を付けた約1240億ドルの戦費法案を可決しました。しかしブッシュ大統領が5月1日に拒否権を使い、民主党は覆せませんでした。2018年の中間選挙では民主党が下院で約40議席を奪いましたが、同年4月に発表された中国製品約500億ドル分への25%関税は続きました。2019年1月予定の追加引き上げを延期したのも、議会ではなく大統領でした。戦費では議会が法案で対抗できたのに対し、関税は大統領の判断だけで動いた点が違いです。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "トヨタ自動車は2025年8月、米関税で2026年3月期の利益が1.4兆円減るとして、営業利益(operating profit)の見通しを3.8兆円から3.2兆円に下げました。日米合意で自動車関税は27.5%から15%に下がったものの、ホンダも4500億円の影響を見込みました。関税は大統領の権限で決まるため、議会の勢力が変わっても両社の負担がすぐ軽くなるとは限りません。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "divided government",
+      "pos": "熟",
+      "ja": "ねじれ議会",
+      "gloss": "（＝大統領の党と議会の多数派の党が違う状態のこと）",
+      "example": {
+        "en": "Divided government often slows down new laws.",
+        "ja": "ねじれ議会では新しい法律の成立が遅れがちだ。"
+      }
+    },
+    {
+      "term": "veto override",
+      "pos": "熟",
+      "ja": "拒否権の覆し",
+      "gloss": "（＝議会が3分の2の賛成で拒否権を無効にすること）",
+      "example": {
+        "en": "The veto override failed by only two votes.",
+        "ja": "拒否権の覆しはわずか2票差で失敗した。"
+      }
+    },
+    {
+      "term": "operating profit",
+      "pos": "熟",
+      "ja": "営業利益",
+      "gloss": "（＝本業でかせいだ利益のこと）",
+      "example": {
+        "en": "Our operating profit rose because of lower shipping costs.",
+        "ja": "輸送費が下がったため、当社の営業利益は増えた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "A Democratic Congress could curb the Iran war but not Trump's tariffs, former ambassador says",
+      "publisher": "Fortune",
+      "url": "https://fortune.com/2026/11/03/us-midterms-iran-war-tariffs-asia/",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
+      "date": "2026-11-04"
+    },
+    {
+      "title": "Timetable Prompts Veto Of War Funds Bill",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2007/05/02/9955592/timetable-prompts-veto-of-war-funds-bill",
+      "date": "2007-05-02"
+    },
+    {
+      "title": "The Trump administration on trade",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/The_Trump_administration_on_trade",
+      "date": "2019-01-01"
+    },
+    {
+      "title": "Toyota expects to lose billions as Trump tariffs weigh on auto sector",
+      "publisher": "Al Jazeera",
+      "url": "https://aljazeera.com/economy/2025/8/7/toyota-expects-to-lose-billions-as-trump-tariffs-weigh-on-auto-sector",
+      "date": "2025-08-07"
+    }
+  ]
+}
