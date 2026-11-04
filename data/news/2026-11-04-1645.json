@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-04-1645",
+  "date": "2026-11-04",
+  "time": "16:45",
+  "createdAt": "2026-11-04T16:45:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "Sysco Trims Sales Outlook as Food Inflation Cools",
+    "ja": "シスコ、インフレ鈍化で売上見通しを下方修正"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Sysco, a large food distributor to restaurants, reported first-quarter sales of $21.7 billion on Tuesday.",
+            "ja": "食品卸の大手でレストランに食材を供給するシスコが、火曜日に第1四半期の売上高217億ドルを発表した。"
+          },
+          {
+            "en": "That was up 2.8% from a year earlier.",
+            "ja": "これは前年同期比2.8%の増加だった。"
+          },
+          {
+            "en": "The number of cases it delivered to local customers rose 2.7%, even though fewer people visited restaurants across the industry.",
+            "ja": "業界全体では外食の客足が減ったにもかかわらず、同社が地域の顧客に届けたケース数は2.7%増えた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "However, food prices rose much less than the company had expected.",
+            "ja": "しかし、食品価格の上昇は会社の想定をはるかに下回った。"
+          },
+          {
+            "en": "Because sales depend partly on prices, weaker inflation slowed Sysco's revenue growth.",
+            "ja": "売上は一部が価格に左右されるため、インフレの鈍化がシスコの売上高の伸びを抑えた。"
+          },
+          {
+            "en": "Lower inflation helps restaurants, but each case Sysco delivers then brings in less money.",
+            "ja": "インフレの鈍化は飲食店には助けになるが、シスコが届ける1ケースあたりの売上は減ってしまう。"
+          },
+          {
+            "en": "As a result, the company now expects full-year sales growth at the lower end of its earlier 6% to 7% forecast.",
+            "ja": "その結果、同社は通期の売上高成長率を、当初予想の6〜7%の下限になると見込んでいる。"
+          },
+          {
+            "en": "The company kept its target for earnings per share growth of 9% to 11%.",
+            "ja": "一方、1株利益の成長率の目標9〜11%は据え置いた。"
+          },
+          {
+            "en": "Shares fell after the report.",
+            "ja": "決算発表を受けて株価は下落した。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did Sysco's first-quarter sales rise from a year earlier?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.3%",
+          "ja": "0.3%"
+        },
+        {
+          "key": "B",
+          "text": "2.7%",
+          "ja": "2.7%"
+        },
+        {
+          "key": "C",
+          "text": "2.8%",
+          "ja": "2.8%"
+        },
+        {
+          "key": "D",
+          "text": "6%",
+          "ja": "6%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解はC。2文目に「That was up 2.8% from a year earlier.」とあり、前年同期比で売上高は2.8%増えています。Bの2.7%は「届けたケース数（local case volume）」の伸び率で、売上高の伸びではありません。AとDは本文のどの数字とも合いません（6%は通期予想の範囲の一部）。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "同じ文章に似た数字が複数出る問題では、その数字が「何の」数字かを必ず確認する。選択肢の数字が本文の別の項目を指す引っかけが定番。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did Sysco lower its full-year sales growth forecast?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fewer cases were delivered to local customers.",
+          "ja": "地域顧客への配送ケース数が減った。"
+        },
+        {
+          "key": "B",
+          "text": "Food price inflation was weaker than expected.",
+          "ja": "食品のインフレが想定より弱かった。"
+        },
+        {
+          "key": "C",
+          "text": "The company cut its target for earnings per share.",
+          "ja": "1株利益の目標を引き下げた。"
+        },
+        {
+          "key": "D",
+          "text": "Restaurants stopped buying from the company.",
+          "ja": "飲食店が取引をやめた。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。5文目「Because sales depend partly on prices, weaker inflation slowed Sysco's revenue growth.」が理由を述べており、4文目でも食品価格の上昇が想定を下回ったとあります。Aは本文と逆で、ケース数は2.7%増えています。Cは逆で、1株利益の目標は据え置かれました。Dは本文に書かれていない内容です。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "Because などの理由を表す語の直後に答えがあることが多い。「本文と逆」「本文にない」の2種類の誤答を見分けるとミスが減る。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "distributor",
+      "pos": "名",
+      "ja": "卸売業者、販売会社",
+      "gloss": "",
+      "example": {
+        "en": "Our distributor delivers fresh products to hotels every morning.",
+        "ja": "私たちの販売会社は毎朝、ホテルに生鮮品を届けている。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "inflation",
+      "pos": "名",
+      "ja": "インフレ、物価上昇",
+      "gloss": "",
+      "example": {
+        "en": "Inflation has raised the cost of office supplies this year.",
+        "ja": "インフレのせいで、今年は事務用品のコストが上がった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "revenue",
+      "pos": "名",
+      "ja": "収益、売上高",
+      "gloss": "",
+      "example": {
+        "en": "The firm's revenue rose after it opened two new stores.",
+        "ja": "その会社は新店を2つ開いた後、売上高が増えた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "forecast",
+      "pos": "名・動",
+      "ja": "予想、見通し（予想する）",
+      "gloss": "",
+      "example": {
+        "en": "The finance team will update the forecast next week.",
+        "ja": "財務チームは来週、予想を更新する。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "target",
+      "pos": "名",
+      "ja": "目標",
+      "gloss": "",
+      "example": {
+        "en": "We set a target of 500 new customers this year.",
+        "ja": "私たちは今年、新規顧客500人という目標を立てた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "earnings",
+      "pos": "名",
+      "ja": "利益、収益",
+      "gloss": "（＝会社がもうけた利益のこと）",
+      "example": {
+        "en": "Quarterly earnings were better than the analysts had predicted.",
+        "ja": "四半期の利益はアナリストの予想より良かった。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "expect",
+      "pos": "動",
+      "ja": "見込む、予想する",
+      "gloss": "",
+      "example": {
+        "en": "We expect the shipment to arrive on Monday.",
+        "ja": "荷物は月曜日に届く見込みだ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "deliver",
+      "pos": "動",
+      "ja": "届ける、配達する",
+      "gloss": "",
+      "example": {
+        "en": "The company can deliver your order within two days.",
+        "ja": "その会社は注文品を2日以内に届けられる。"
+      }
+    }
+  ],
+  "glossary": {
+    "distributor": {
+      "lemma": "distributor",
+      "pos": "名",
+      "ja": "卸売業者",
+      "note": ""
+    },
+    "restaurants": {
+      "lemma": "restaurant",
+      "pos": "名",
+      "ja": "飲食店",
+      "note": ""
+    },
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "発表した",
+      "note": ""
+    },
+    "first-quarter": {
+      "lemma": "first-quarter",
+      "pos": "形",
+      "ja": "第1四半期の",
+      "note": ""
+    },
+    "billion": {
+      "lemma": "billion",
+      "pos": "名",
+      "ja": "10億",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "earlier",
+      "pos": "形",
+      "ja": "以前の",
+      "note": ""
+    },
+    "cases": {
+      "lemma": "case",
+      "pos": "名",
+      "ja": "ケース（箱単位）",
+      "note": ""
+    },
+    "delivered": {
+      "lemma": "deliver",
+      "pos": "動",
+      "ja": "届けた",
+      "note": ""
+    },
+    "local": {
+      "lemma": "local",
+      "pos": "形",
+      "ja": "地元の",
+      "note": ""
+    },
+    "fewer": {
+      "lemma": "few",
+      "pos": "形",
+      "ja": "より少ない",
+      "note": ""
+    },
+    "visited": {
+      "lemma": "visit",
+      "pos": "動",
+      "ja": "訪れた",
+      "note": ""
+    },
+    "industry": {
+      "lemma": "industry",
+      "pos": "名",
+      "ja": "業界",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込んでいる",
+      "note": ""
+    },
+    "depend": {
+      "lemma": "depend",
+      "pos": "動",
+      "ja": "左右される",
+      "note": ""
+    },
+    "partly": {
+      "lemma": "partly",
+      "pos": "副",
+      "ja": "一部は",
+      "note": ""
+    },
+    "weaker": {
+      "lemma": "weak",
+      "pos": "形",
+      "ja": "より弱い",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "インフレ",
+      "note": ""
+    },
+    "slowed": {
+      "lemma": "slow",
+      "pos": "動",
+      "ja": "鈍らせた",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "名",
+      "ja": "売上高",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "予想",
+      "note": ""
+    },
+    "kept": {
+      "lemma": "keep",
+      "pos": "動",
+      "ja": "保った",
+      "note": ""
+    },
+    "target": {
+      "lemma": "target",
+      "pos": "名",
+      "ja": "目標",
+      "note": ""
+    },
+    "earnings": {
+      "lemma": "earnings",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": ""
+    },
+    "growth": {
+      "lemma": "growth",
+      "pos": "名",
+      "ja": "成長",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上がった",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "譲歩を表す接続詞 even though（～にもかかわらず）",
+    "quote": "The number of cases it delivered to local customers rose 2.7%, even though fewer people visited restaurants across the industry.",
+    "quoteJa": "業界全体では外食の客足が減ったにもかかわらず、同社が地域の顧客に届けたケース数は2.7%増えた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "even though は「～にもかかわらず」を表す譲歩の接続詞で、後ろに〈主語＋動詞〉の節が続きます。本文では「ケース数は増えた」という主節に対し、「客足は減った」という予想外の事実を even though 節で添えています。though 単独より強調した言い方で、although とほぼ同じ意味です。また主語の The number of cases は「ケースの数」という単数扱いで、動詞は rose と単数的に対応します（a number of ～ は「多くの～」で複数扱い）。"
+      },
+      {
+        "heading": "書き換え",
+        "body": "Although fewer people visited restaurants across the industry, the number of cases it delivered rose 2.7%. 〔文頭に出す書き換え〕 / Despite the drop in restaurant visits, the number of cases rose 2.7%. 〔前置詞 despite は後ろが名詞〕。接続詞（although / even though）は後ろに節、前置詞（despite / in spite of）は後ろに名詞、という違いが重要です。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5・6 で although / despite / because / however の中から選ぶ品詞・接続の問題として頻出します。空所の後ろが〈主語＋動詞〉なら接続詞（although / even though）、名詞だけなら前置詞（despite）です。even though の後ろに but を重ねない点にも注意（×Even though ..., but ...）。Part 7 では、逆接の語の後ろに「意外な事実」が書かれるため、設問の根拠になりやすい部分です。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "Even though demand was strong, we could not ship the orders on time. （需要は強かったが、注文を期日どおりに出荷できなかった。）/ Sales grew even though prices stayed flat. （価格は横ばいだったが、売上は伸びた。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "シスコの2026年6月下旬〜9月26日の13週間の売上高は217億ドルで、前年比2.8%増でした。ケース数量(case volume)は2.7%増と堅調でしたが、食品価格の上昇が想定を下回り、通期の売上成長率は予想レンジ6〜7%の下限になる見通しです。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "食品卸の売上は「数量×単価」で決まります。物価の上昇が鈍る(disinflation)と、同じ量を運んでも売上の伸びは小さくなります。一方、利益は仕入値と売値の差で稼ぐため、業績見通し(guidance)のうち売上だけが下がり、1株利益の成長率目標9〜11%は据え置かれることがあります。"
+    },
+    {
+      "heading": "📌 3. 他社ではどうだったか",
+      "body": "同業のUS Foodsは2026年6月27日までの四半期で、純売上高が105億ドル(4.5%増)、ケース数量が1.9%増、食品コストのインフレ率は2.3%で、通期見通しを据え置きました。Performance Food Groupは2026年6月期通期で、ケース数量が5.1%増、製品コストのインフレ率が約4.5%、調整後1株利益は1.6%増の4.55ドルでした。インフレ率が高いほど売上は伸びやすい一方、PFGのように利益の伸びは小幅にとどまる例もあります。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "三菱食品の2026年3月期は、売上高が約2兆1230億円(0.1%増)、売上数量は5.5%減でしたが、経常利益は7.9%増の359億円で5期連続の最高益でした。数量が減っても単価の上昇と卸売の効率化で利益を伸ばした形で、売上と利益の動きが別になる点はシスコと共通します。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "case volume",
+      "pos": "熟",
+      "ja": "ケース数量",
+      "gloss": "（＝運んだ荷物の箱数のこと）",
+      "example": {
+        "en": "The distributor reported higher case volume in the third quarter.",
+        "ja": "その卸売業者は第3四半期にケース数量が増えたと発表した。"
+      }
+    },
+    {
+      "term": "guidance",
+      "pos": "名",
+      "ja": "業績見通し",
+      "gloss": "（＝会社が発表する先の業績の見込みのこと）",
+      "example": {
+        "en": "The firm raised its guidance for the full year.",
+        "ja": "その会社は通期の業績見通しを引き上げた。"
+      }
+    },
+    {
+      "term": "disinflation",
+      "pos": "名",
+      "ja": "インフレ鈍化",
+      "gloss": "（＝物価の上昇ペースが落ちること）",
+      "example": {
+        "en": "Disinflation gave households some relief this summer.",
+        "ja": "インフレ鈍化で、この夏は家計に少し余裕が出た。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sysco Reports First Quarter 2027 Results; Reiterates FY27 Adjusted EPS and Local Volume Guidance",
+      "publisher": "Manila Times (GlobeNewswire)",
+      "url": "https://www.manilatimes.net/2026/11/03/tmt-newswire/globenewswire/sysco-reports-first-quarter-2027-results-reiterates-fy27-adjusted-eps-and-local-volume-guidance/2460662",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "Sysco Q1 FY27 slides show volume gains, inflation miss sparks stock drop",
+      "publisher": "Investing.com",
+      "url": "https://www.investing.com/news/company-news/sysco-q1-fy27-slides-show-volume-gains-inflation-miss-sparks-stock-drop-93CH-4995978",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "US Foods Holding Corp. Form 8-K (second quarter 2026 results)",
+      "publisher": "SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001665918/000166591826000043/usfd06272026ex991.htm",
+      "date": "2026-08-07"
+    },
+    {
+      "title": "Performance Food Group Co Form 8-K (fiscal 2026 results)",
+      "publisher": "SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001618673/000119312526345718/pfgc-ex99_1.htm",
+      "date": "2026-08-12"
+    },
+    {
+      "title": "三菱食品 決算/3月期、利益は5期連続で過去最高を更新",
+      "publisher": "流通ニュース",
+      "url": "https://www.ryutsuu.biz/accounts/s060113.html",
+      "date": "2026-06-01"
+    }
+  ]
+}
