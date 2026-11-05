@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-11-06-0406",
+  "date": "2026-11-06",
+  "time": "04:06",
+  "createdAt": "2026-11-06T04:06:00+09:00",
+  "sample": false,
+  "format": "single",
+  "scene": "広告｜コワーキングスペースの会員募集",
+  "intro": "Questions 1-4 refer to the following advertisement.",
+  "docs": [
+    {
+      "docType": "advertisement",
+      "label": "広告",
+      "header": [
+        {
+          "label": "",
+          "text": "Riverside Workspace: Now Accepting Members"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Riverside Workspace, a new coworking facility in the Harmon Building, will open its doors on 15 January.",
+              "ja": "リバーサイド・ワークスペースは、ハーモン・ビルにできる新しいコワーキング施設で、1月15日に開業します。"
+            },
+            {
+              "en": "Located two minutes from Central Station, it offers private offices, shared desks, and four meeting rooms.",
+              "ja": "中央駅から2分の場所にあり、個室オフィス、共用デスク、4つの会議室を備えています。",
+              "pos": 1
+            },
+            {
+              "en": "All members receive high-speed Internet access and free coffee throughout the day.",
+              "ja": "会員の皆様は全員、高速インターネットと一日中無料のコーヒーをご利用いただけます。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Three membership plans are available.",
+              "ja": "会員プランは3種類あります。"
+            },
+            {
+              "en": "The Basic plan, at $120 per month, includes use of a shared desk on weekdays.",
+              "ja": "月額120ドルのベーシックプランには、平日の共用デスクの利用が含まれます。",
+              "pos": 2
+            },
+            {
+              "en": "The Standard plan, at $210 per month, adds access to the meeting rooms for up to ten hours.",
+              "ja": "月額210ドルのスタンダードプランでは、さらに会議室を10時間まで利用できます。",
+              "pos": 3
+            },
+            {
+              "en": "The Premium plan, at $340 per month, provides a private office with 24-hour access.",
+              "ja": "月額340ドルのプレミアムプランでは、24時間利用できる個室オフィスが付きます。",
+              "pos": 4
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Anyone who signs up before 31 December will receive the first month at half price.",
+              "ja": "12月31日までにお申し込みの方は、初月が半額になります。"
+            },
+            {
+              "en": "To reserve a place, visit our Web site or stop by our front desk between 9:00 A.M. and 6:00 P.M.",
+              "ja": "席のご予約は、ウェブサイトをご覧になるか、午前9時から午後6時の間に受付へお立ち寄りください。"
+            },
+            {
+              "en": "Tours are offered every Saturday morning.",
+              "ja": "見学は毎週土曜の午前に行っています。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is being advertised?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A new workspace for rent",
+          "ja": "新しい賃貸ワークスペース"
+        },
+        {
+          "key": "B",
+          "text": "A shuttle service to Central Station",
+          "ja": "中央駅へのシャトルサービス"
+        },
+        {
+          "key": "C",
+          "text": "A set of meeting rooms for sale",
+          "ja": "販売用の会議室一式"
+        },
+        {
+          "key": "D",
+          "text": "An Internet service for businesses",
+          "ja": "法人向けインターネットサービス"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "第1段落の最初の文に、新しいコワーキング施設が1月15日に開業するとある。その後も会員プランと申込方法が続く。Central Station や Internet は本文に出るが、広告の対象ではなく施設の特徴にすぎない。",
+      "tip": "目的・主題の問題は、冒頭の1〜2文と、最後の呼びかけ（申込方法）の両方から決める。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What do all members receive?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A private office",
+          "ja": "個室オフィス"
+        },
+        {
+          "key": "B",
+          "text": "High-speed Internet access",
+          "ja": "高速インターネットの利用"
+        },
+        {
+          "key": "C",
+          "text": "24-hour access",
+          "ja": "24時間の利用"
+        },
+        {
+          "key": "D",
+          "text": "Use of the meeting rooms",
+          "ja": "会議室の利用"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "第1段落の最後に All members receive high-speed Internet access and free coffee とある。個室オフィスと24時間利用はプレミアム、会議室はスタンダード以上のプランの内容で、全員が対象ではない。",
+      "tip": "All や every の付く設問は、特定のプランに限らない記述を探し、プランごとの特典を選ばないようにする。"
+    },
+    {
+      "id": "q3",
+      "type": "insert",
+      "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "insert": "Members who need more than ten hours can book extra time at $15 per hour.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "[1]",
+          "ja": "1の位置"
+        },
+        {
+          "key": "B",
+          "text": "[2]",
+          "ja": "2の位置"
+        },
+        {
+          "key": "C",
+          "text": "[3]",
+          "ja": "3の位置"
+        },
+        {
+          "key": "D",
+          "text": "[4]",
+          "ja": "4の位置"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "挿入文の more than ten hours は、スタンダードプランの up to ten hours を受けている。したがって、その文の直後の [3] が合う。[2] の時点ではまだ10時間という数字が出ていない。[4] はプレミアムプランの説明で、会議室の時間とは関係しない。",
+      "tip": "文挿入は、挿入文の数字・指示語・「追加」を表す語が、本文のどの情報を受けているかを探す。"
+    },
+    {
+      "id": "q4",
+      "type": "detail",
+      "prompt": "How much will a person who joins the Standard plan on 20 December pay for the first month?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$60",
+          "ja": "60ドル"
+        },
+        {
+          "key": "B",
+          "text": "$120",
+          "ja": "120ドル"
+        },
+        {
+          "key": "C",
+          "text": "$210",
+          "ja": "210ドル"
+        },
+        {
+          "key": "D",
+          "text": "$105",
+          "ja": "105ドル"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 2
+        },
+        {
+          "d": 0,
+          "p": 2,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "スタンダードプランは月額210ドル（第2段落）。12月31日までに申し込めば初月は半額（第3段落）なので、20日に入会する人は105ドルになる。210ドルは割引前の金額、120ドルはベーシックプランの料金。",
+      "tip": "金額の問題は、料金表の数字と、割引などの条件を別々の場所から拾い、条件を当てはめてから計算する。"
+    }
+  ],
+  "glossary": {
+    "located": {
+      "lemma": "located",
+      "pos": "形",
+      "ja": "〜に位置している",
+      "note": "be located in の形でよく使う",
+      "example": {
+        "en": "The new branch is located across from the post office.",
+        "ja": "新しい支店は郵便局の向かいにある。"
+      }
+    },
+    "private office": {
+      "lemma": "private office",
+      "pos": "熟",
+      "ja": "個室オフィス",
+      "note": "",
+      "example": {
+        "en": "Each manager has a private office on the fourth floor.",
+        "ja": "各部長は4階に個室オフィスを持っている。"
+      }
+    },
+    "membership plans": {
+      "lemma": "membership plans",
+      "pos": "熟",
+      "ja": "会員プラン",
+      "note": "",
+      "example": {
+        "en": "Three membership plans are offered at the fitness center.",
+        "ja": "そのフィットネスセンターでは3種類の会員プランがある。"
+      }
+    },
+    "throughout the day": {
+      "lemma": "throughout the day",
+      "pos": "熟",
+      "ja": "一日中",
+      "note": "",
+      "example": {
+        "en": "Light snacks are served throughout the day at the conference.",
+        "ja": "会議では、軽食が一日中提供される。"
+      }
+    },
+    "up to": {
+      "lemma": "up to",
+      "pos": "熟",
+      "ja": "最大〜まで",
+      "note": "",
+      "example": {
+        "en": "Passengers may carry up to two bags onto the train.",
+        "ja": "乗客は電車に最大2個まで荷物を持ち込める。"
+      }
+    },
+    "24-hour access": {
+      "lemma": "24-hour access",
+      "pos": "熟",
+      "ja": "24時間の利用",
+      "note": "",
+      "example": {
+        "en": "The lab provides 24-hour access to authorized researchers.",
+        "ja": "その研究室は、許可された研究者が24時間利用できる。"
+      }
+    },
+    "signs up": {
+      "lemma": "signs up",
+      "pos": "熟",
+      "ja": "申し込む、登録する",
+      "note": "sign up の三単現",
+      "example": {
+        "en": "Anyone who signs up early gets a free workbook.",
+        "ja": "早く申し込んだ人は、無料の問題集がもらえる。"
+      }
+    },
+    "at half price": {
+      "lemma": "at half price",
+      "pos": "熟",
+      "ja": "半額で",
+      "note": "",
+      "example": {
+        "en": "Students can enter the museum at half price on Sundays.",
+        "ja": "学生は日曜日、半額で美術館に入れる。"
+      }
+    },
+    "stop by": {
+      "lemma": "stop by",
+      "pos": "熟",
+      "ja": "立ち寄る",
+      "note": "",
+      "example": {
+        "en": "Please stop by the reception desk to pick up your badge.",
+        "ja": "受付に立ち寄って名札を受け取ってください。"
+      }
+    },
+    "reserve": {
+      "lemma": "reserve",
+      "pos": "動",
+      "ja": "予約する",
+      "note": "",
+      "example": {
+        "en": "You can reserve a seat on our Web site up to a week ahead.",
+        "ja": "当社のウェブサイトで、1週間前まで席を予約できる。"
+      }
+    }
+  },
+  "point": {
+    "lead": "設問を先に読み、数字と条件は別々の場所から拾う",
+    "items": [
+      {
+        "title": "設問の順番は本文の流れに沿う",
+        "body": "設問は上から順に本文の前から後ろへ進むことが多い。1問ずつ根拠を探せば、毎回最初から読み直さずに済む。"
+      },
+      {
+        "title": "全員向けか、プランごとか",
+        "body": "all members のような範囲を示す語を見落とすと、特定のプランだけの特典を選んでしまう。範囲を示す語に印をつけて読む。"
+      },
+      {
+        "title": "計算問題は条件を最後に当てはめる",
+        "body": "料金を表の数字から拾い、割引や期限などの条件は別の段落から拾って、最後に当てはめる。"
+      }
+    ]
+  }
+}
