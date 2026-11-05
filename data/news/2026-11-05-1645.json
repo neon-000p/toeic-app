@@ -512,5 +512,24 @@
       "url": "https://japantimes.co.jp/news/2023/01/11/business/corporate-business/fast-retailing-boost-salaries",
       "date": "2023-01-11"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-05-1645/00.mp3",
+      "audio/2026-11-05-1645/01.mp3",
+      "audio/2026-11-05-1645/02.mp3",
+      "audio/2026-11-05-1645/03.mp3",
+      "audio/2026-11-05-1645/04.mp3",
+      "audio/2026-11-05-1645/05.mp3",
+      "audio/2026-11-05-1645/06.mp3",
+      "audio/2026-11-05-1645/07.mp3",
+      "audio/2026-11-05-1645/08.mp3",
+      "audio/2026-11-05-1645/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 240248,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-05T07:51:20.379Z",
+    "trimmed": true
+  }
 }
