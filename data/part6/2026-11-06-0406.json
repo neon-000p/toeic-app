@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-11-06-0406",
+  "date": "2026-11-06",
+  "time": "04:06",
+  "createdAt": "2026-11-06T04:06:00+09:00",
+  "sample": false,
+  "docType": "notice",
+  "scene": "掲示｜社員食堂の営業時間の変更",
+  "intro": "Questions 1-4 refer to the following notice.",
+  "header": [
+    {
+      "label": "",
+      "text": "Cafeteria Hours to Change on 1 December"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "Beginning on 1 December, the employee cafeteria on the second floor will ------- its hours of operation.",
+          "ja": "12月1日から、2階の社員食堂は営業時間を調整します。",
+          "q": 1
+        },
+        {
+          "en": "Breakfast will now be served from 7:30 A.M., thirty minutes earlier than before.",
+          "ja": "朝食は午前7時30分から提供され、これまでより30分早くなります。"
+        },
+        {
+          "en": "Lunch service will continue from 11:30 A.M. to 2:00 P.M.",
+          "ja": "昼食の提供は、これまでどおり午前11時30分から午後2時までです。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 2
+        },
+        {
+          "en": "This change was made because a recent survey showed that few employees stayed for dinner.",
+          "ja": "この変更は、最近の調査で夕食まで残る従業員がほとんどいないことが分かったためです。"
+        },
+        {
+          "en": "-------, hot drinks will remain available from the vending machines in the lobby until 10:00 P.M.",
+          "ja": "ただし、温かい飲み物は午後10時までロビーの自動販売機で引き続き購入できます。",
+          "q": 3
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "To order a boxed lunch, please submit the online form by 10:00 A.M. on the same day.",
+          "ja": "弁当を注文するには、当日の午前10時までにオンラインの申込書を提出してください。"
+        },
+        {
+          "en": "Orders that ------- after that time cannot be guaranteed.",
+          "ja": "その時刻より後に受け付けた注文は、お約束できません。",
+          "q": 4
+        },
+        {
+          "en": "Questions about the new schedule should be directed to the Facilities Department at extension 214.",
+          "ja": "新しい時間割についてのお問い合わせは、施設部（内線214）にお願いします。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "adjust",
+          "ja": "調整する"
+        },
+        {
+          "key": "B",
+          "text": "appoint",
+          "ja": "任命する"
+        },
+        {
+          "key": "C",
+          "text": "consult",
+          "ja": "相談する"
+        },
+        {
+          "key": "D",
+          "text": "forecast",
+          "ja": "予測する"
+        }
+      ],
+      "answer": "A",
+      "explanation": "空所の目的語は its hours of operation（営業時間）。以降の文で開始時刻が早まるなど、時間が変わる内容が続くので「調整する」の adjust が合う。appoint は人を任命する、consult は人や資料に相談する、forecast は予測する、という意味で営業時間とは結びつかない。",
+      "tip": "語彙問題は目的語とのコロケーション（adjust hours）で絞り、あとの文の内容で裏づける。"
+    },
+    {
+      "id": "q2",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Several employees have asked for a wider variety of vegetarian meals.",
+          "ja": "複数の従業員が、より多様なベジタリアン向けの食事を求めている。"
+        },
+        {
+          "key": "B",
+          "text": "The cafeteria was renovated by an outside contractor during the spring of last year.",
+          "ja": "食堂は昨年の春、外部の業者によって改装された。"
+        },
+        {
+          "key": "C",
+          "text": "The cafeteria will close at 6:00 P.M. on weekdays instead of 8:00 P.M.",
+          "ja": "食堂は平日、午後8時ではなく午後6時に閉まる。"
+        },
+        {
+          "key": "D",
+          "text": "Employees who work late may order meals from nearby restaurants.",
+          "ja": "遅くまで働く従業員は近くの飲食店から食事を注文できる。"
+        }
+      ],
+      "answer": "C",
+      "explanation": "空所の次の文は This change was made because ... few employees stayed for dinner なので、直前には「変更」の内容が必要。夕食の利用が少ないという理由と合うのは、夜の閉店時刻を早める C だけ。直前の文は昼食の時間帯を述べており、そこから営業時間の話題が続く点も合う。D は話題に近いが、This change の指す内容にならない。",
+      "tip": "一文挿入は前後の両方を確認する。後ろの文の This change や them のような指示語が何を受けるかを手がかりにする。"
+    },
+    {
+      "id": "q3",
+      "type": "conj",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Therefore",
+          "ja": "したがって"
+        },
+        {
+          "key": "B",
+          "text": "However",
+          "ja": "しかしながら"
+        },
+        {
+          "key": "C",
+          "text": "Similarly",
+          "ja": "同様に"
+        },
+        {
+          "key": "D",
+          "text": "For instance",
+          "ja": "たとえば"
+        }
+      ],
+      "answer": "B",
+      "explanation": "前の文は食堂が早く閉まる理由、空所の文は夜も温かい飲み物が買えるという補足で、不便を和らげる逆接の関係になる。そのため However が合う。Therefore は前の文の結果を述べる場合に使うが、飲み物の提供が閉店の結果とはいえない。",
+      "tip": "接続副詞は空所の文だけでは選べない。前の文との関係（逆接・因果・追加・例示）を言い換えてから選ぶ。"
+    },
+    {
+      "id": "q4",
+      "type": "verb",
+      "choices": [
+        {
+          "key": "A",
+          "text": "receive",
+          "ja": "受け取る"
+        },
+        {
+          "key": "B",
+          "text": "will receive",
+          "ja": "受け取るだろう"
+        },
+        {
+          "key": "C",
+          "text": "have received",
+          "ja": "受け取った"
+        },
+        {
+          "key": "D",
+          "text": "are received",
+          "ja": "受け付けられる"
+        }
+      ],
+      "answer": "D",
+      "explanation": "主語は Orders で、注文は「受け付けられる」側なので受動態の are received が合う。関係詞節に目的語がないことも根拠になる。receive や will receive など能動態では、注文が何かを受け取ることになってしまう。",
+      "tip": "関係詞節の主語が物で、動詞のあとに目的語が続かなければ、受動態を第一候補にする。"
+    }
+  ],
+  "glossary": {
+    "hours of operation": {
+      "lemma": "hours of operation",
+      "pos": "熟",
+      "ja": "営業時間",
+      "note": "",
+      "example": {
+        "en": "The hours of operation are listed on the front door.",
+        "ja": "営業時間は正面のドアに掲示されている。"
+      }
+    },
+    "beginning on": {
+      "lemma": "beginning on",
+      "pos": "熟",
+      "ja": "〜から、〜日付で",
+      "note": "期間の起点を示す",
+      "example": {
+        "en": "Beginning on Monday, all staff must wear their ID badges.",
+        "ja": "月曜日から、全職員は身分証を着用しなければならない。"
+      }
+    },
+    "recent survey": {
+      "lemma": "recent survey",
+      "pos": "熟",
+      "ja": "最近の調査",
+      "note": "",
+      "example": {
+        "en": "A recent survey found that most customers prefer online booking.",
+        "ja": "最近の調査で、大半の客がオンライン予約を好むことが分かった。"
+      }
+    },
+    "vending machines": {
+      "lemma": "vending machines",
+      "pos": "熟",
+      "ja": "自動販売機",
+      "note": "",
+      "example": {
+        "en": "The vending machines near the lobby accept both cash and cards.",
+        "ja": "ロビー付近の自動販売機は現金とカードの両方が使える。"
+      }
+    },
+    "remain available": {
+      "lemma": "remain available",
+      "pos": "熟",
+      "ja": "引き続き利用できる",
+      "note": "",
+      "example": {
+        "en": "Tickets for the evening show will remain available until noon.",
+        "ja": "夜の公演のチケットは正午まで購入できる。"
+      }
+    },
+    "boxed lunch": {
+      "lemma": "boxed lunch",
+      "pos": "熟",
+      "ja": "弁当",
+      "note": "",
+      "example": {
+        "en": "The caterer delivers a boxed lunch to every conference attendee.",
+        "ja": "仕出し業者は会議の参加者全員に弁当を届ける。"
+      }
+    },
+    "on the same day": {
+      "lemma": "on the same day",
+      "pos": "熟",
+      "ja": "同じ日に、当日に",
+      "note": "",
+      "example": {
+        "en": "Express orders are shipped on the same day they are placed.",
+        "ja": "速達の注文は、受けたその日に発送される。"
+      }
+    },
+    "cannot be guaranteed": {
+      "lemma": "cannot be guaranteed",
+      "pos": "熟",
+      "ja": "保証できない",
+      "note": "",
+      "example": {
+        "en": "Delivery before the holiday cannot be guaranteed at this time.",
+        "ja": "現時点では、休日前の配達はお約束できません。"
+      }
+    },
+    "directed to": {
+      "lemma": "directed to",
+      "pos": "熟",
+      "ja": "〜に向けられる、〜に宛てられる",
+      "note": "direct A to B の受動態",
+      "example": {
+        "en": "Complaints should be directed to the customer service manager.",
+        "ja": "苦情は顧客サービス責任者に宛ててください。"
+      }
+    },
+    "extension": {
+      "lemma": "extension",
+      "pos": "名",
+      "ja": "内線（番号）",
+      "note": "",
+      "example": {
+        "en": "Please call me at extension 305 after lunch.",
+        "ja": "昼食後に内線305番までお電話ください。"
+      }
+    }
+  },
+  "point": {
+    "lead": "空所の文だけで決まらないときは、前の文に戻る",
+    "items": [
+      {
+        "title": "接続副詞は前の文との関係で決める",
+        "body": "however・therefore・similarly などは、空所の文だけでは選べない。前の文を一言で言い換え、逆接・因果・追加のどれかを決めてから選ぶ。"
+      },
+      {
+        "title": "一文挿入は前後の両方につなぐ",
+        "body": "後ろの文の This change のような指示語が何を受けるかを確認し、前の文の話題からも自然に続く1文を選ぶ。話題が近いだけの選択肢は誤答になりやすい。"
+      },
+      {
+        "title": "主語と動詞の関係を見る",
+        "body": "主語が物で動詞のあとに目的語が無ければ受動態。関係詞節の中でも同じ手順で確認できる。"
+      }
+    ]
+  }
+}

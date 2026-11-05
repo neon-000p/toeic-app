@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
   "type": "part6-history",
-  "updatedAt": "2026-10-30T04:11:00+09:00",
+  "updatedAt": "2026-11-06T04:06:00+09:00",
   "items": [
+    {
+      "id": "2026-11-06-0406",
+      "date": "2026-11-06",
+      "scene": "掲示｜社員食堂の営業時間の変更",
+      "docType": "notice",
+      "types": [
+        "vocab",
+        "sentence",
+        "conj",
+        "verb"
+      ]
+    },
     {
       "id": "2026-10-30-0411",
       "date": "2026-10-30",
