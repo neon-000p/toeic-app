@@ -516,5 +516,25 @@
       "url": "https://thepharmaletter.com/biotechnology/gilead-to-offer-hep-c-drug-sofosbuvir-at-greatly-reduced-price-in-developing-countries",
       "date": "2014"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-06-0546/00.mp3",
+      "audio/2026-11-06-0546/01.mp3",
+      "audio/2026-11-06-0546/02.mp3",
+      "audio/2026-11-06-0546/03.mp3",
+      "audio/2026-11-06-0546/04.mp3",
+      "audio/2026-11-06-0546/05.mp3",
+      "audio/2026-11-06-0546/06.mp3",
+      "audio/2026-11-06-0546/07.mp3",
+      "audio/2026-11-06-0546/08.mp3",
+      "audio/2026-11-06-0546/09.mp3",
+      "audio/2026-11-06-0546/10.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 222436,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-05T20:50:34.356Z",
+    "trimmed": true
+  }
 }
