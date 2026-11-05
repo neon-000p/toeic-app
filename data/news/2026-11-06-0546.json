@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-06-0546",
+  "date": "2026-11-06",
+  "time": "05:46",
+  "createdAt": "2026-11-06T05:46:00+09:00",
+  "genre": "医療",
+  "genreEn": "Healthcare",
+  "sample": false,
+  "title": {
+    "en": "FDA Clears Cheap Generic of Twice-Yearly HIV Shot",
+    "ja": "FDA、年2回のHIV予防注射の格安版を仮承認"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The FDA has granted tentative approval to a low-cost version of an HIV prevention shot.",
+            "ja": "米FDA（食品医薬品局）は、HIV予防注射の低価格版に仮承認を与えた。"
+          },
+          {
+            "en": "The generic was developed by Dr. Reddy's, an Indian drugmaker.",
+            "ja": "このジェネリック（後発薬）はインドの製薬会社ドクター・レディーズが開発した。"
+          },
+          {
+            "en": "The original product belongs to Gilead, which licensed six generic makers in 2024.",
+            "ja": "元の製品はギリアドのもので、同社は2024年に後発薬メーカー6社へライセンスを与えた。"
+          },
+          {
+            "en": "The shot is needed only twice a year.",
+            "ja": "この注射は年に2回で済む。"
+          },
+          {
+            "en": "The generic is expected to cost about $40 per person each year.",
+            "ja": "ジェネリックの価格は1人あたり年間約40ドルになる見込みだ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "In the United States, the brand-name version lists at more than $28,000 a year.",
+            "ja": "米国では、ブランド薬の定価は年間2万8000ドル超である。"
+          },
+          {
+            "en": "The new price applies only to 120 low- and middle-income countries covered by the license.",
+            "ja": "この新価格は、ライセンスの対象となる低・中所得国120か国にのみ適用される。"
+          },
+          {
+            "en": "Tentative approval means the product cannot be sold in the U.S. yet because of patents.",
+            "ja": "仮承認とは、特許のため製品がまだ米国では販売できないという意味である。"
+          },
+          {
+            "en": "However, it helps other countries approve the shot faster.",
+            "ja": "ただし、他国がこの注射をより早く承認する助けにはなる。"
+          },
+          {
+            "en": "The company expects first supplies to reach buyers by the end of 2026.",
+            "ja": "同社は、最初の供給が2026年末までに買い手へ届くと見込んでいる。"
+          },
+          {
+            "en": "Wider availability is planned for 2027.",
+            "ja": "より広い入手可能性は2027年に計画されている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "About how much is the generic expected to cost per person each year?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$4",
+          "ja": "4ドル"
+        },
+        {
+          "key": "B",
+          "text": "$28",
+          "ja": "28ドル"
+        },
+        {
+          "key": "C",
+          "text": "$40",
+          "ja": "40ドル"
+        },
+        {
+          "key": "D",
+          "text": "$28,000",
+          "ja": "2万8000ドル"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落の最終文に「cost about $40 per person each year」とあるため、正解は (C) $40。(D) の$28,000は第2段落1文目にあるが、これは米国のブランド薬の定価であってジェネリックの価格ではない。(A) と (B) は本文にない数字で、$40 や $28,000 と見た目が近いことを利用した引っかけ。数字問題では「何の価格か」を必ず確認する。",
+      "evidence": {
+        "p": 0,
+        "s": 4
+      },
+      "tip": "Part 7 では似た数字が複数並ぶ。設問が問う対象（ジェネリックかブランド薬か）を先に確認してから該当文を探す。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why can the generic NOT be sold in the U.S. yet?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The FDA rejected the application.",
+          "ja": "FDAが申請を却下した。"
+        },
+        {
+          "key": "B",
+          "text": "Patents still protect the original product.",
+          "ja": "元の製品が特許で守られている。"
+        },
+        {
+          "key": "C",
+          "text": "Dr. Reddy's has not started production.",
+          "ja": "生産がまだ始まっていない。"
+        },
+        {
+          "key": "D",
+          "text": "The shot is needed only twice a year.",
+          "ja": "注射は年2回で足りる。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落3文目に「cannot be sold in the U.S. yet because of patents」とあるため、正解は (B)。本文は「却下」ではなく「仮承認」を与えたと述べており (A) は逆。(C) の生産開始の遅れは本文にない。(D) は年2回投与という事実だが、米国で売れない理由ではない。because of の後ろに理由が来るので、設問の「Why」と結びつけて探す。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "理由を問う設問では、because of / due to / since などの理由表現の直後に正解の根拠がある。本文中の事実でも、理由として問われていない選択肢は外す。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "tentative",
+      "pos": "形",
+      "ja": "仮の、暫定的な",
+      "gloss": "",
+      "example": {
+        "en": "The company reached a tentative agreement with the union.",
+        "ja": "会社は組合と暫定合意に達した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "approval",
+      "pos": "名",
+      "ja": "承認、認可",
+      "gloss": "",
+      "example": {
+        "en": "The new plan needs approval from the board.",
+        "ja": "新しい計画には取締役会の承認が必要だ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "license",
+      "pos": "名・動",
+      "ja": "許諾、免許；（動）許諾する",
+      "gloss": "（＝他社が特許や製品を使うことを正式に認める契約のこと）",
+      "example": {
+        "en": "The firm licensed its software to three partners.",
+        "ja": "その会社はソフトを3社に使用許諾した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "generic",
+      "pos": "形・名",
+      "ja": "ジェネリックの、後発の",
+      "gloss": "（＝特許切れ後などに他社が作る同じ成分の安い薬のこと）",
+      "example": {
+        "en": "Many patients switched to the generic version to save money.",
+        "ja": "多くの患者が節約のためジェネリック版に切り替えた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "patent",
+      "pos": "名",
+      "ja": "特許",
+      "gloss": "",
+      "example": {
+        "en": "The company holds a patent on the new design.",
+        "ja": "その会社は新しい設計の特許を持っている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "supplies",
+      "pos": "名",
+      "ja": "供給（品）、物資",
+      "gloss": "",
+      "example": {
+        "en": "Office supplies will be delivered on Monday.",
+        "ja": "事務用品は月曜日に配送される。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "availability",
+      "pos": "名",
+      "ja": "入手のしやすさ、空き状況",
+      "gloss": "",
+      "example": {
+        "en": "Please check the availability of the meeting room.",
+        "ja": "会議室の空き状況を確認してください。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "covered by",
+      "pos": "熟",
+      "ja": "〜の対象となっている",
+      "gloss": "",
+      "example": {
+        "en": "Repairs are covered by the one-year warranty.",
+        "ja": "修理は1年間の保証の対象である。"
+      }
+    }
+  ],
+  "glossary": {
+    "tentative": {
+      "lemma": "tentative",
+      "pos": "形",
+      "ja": "仮の",
+      "note": ""
+    },
+    "approval": {
+      "lemma": "approval",
+      "pos": "名",
+      "ja": "承認",
+      "note": ""
+    },
+    "granted": {
+      "lemma": "grant",
+      "pos": "動",
+      "ja": "与えた",
+      "note": "grant approval＝承認を与える"
+    },
+    "low-cost": {
+      "lemma": "low-cost",
+      "pos": "形",
+      "ja": "低価格の",
+      "note": ""
+    },
+    "version": {
+      "lemma": "version",
+      "pos": "名",
+      "ja": "版、型",
+      "note": ""
+    },
+    "prevention": {
+      "lemma": "prevention",
+      "pos": "名",
+      "ja": "予防",
+      "note": ""
+    },
+    "shot": {
+      "lemma": "shot",
+      "pos": "名",
+      "ja": "注射",
+      "note": "medical の口語で「注射」"
+    },
+    "generic": {
+      "lemma": "generic",
+      "pos": "形",
+      "ja": "後発の",
+      "note": ""
+    },
+    "drugmaker": {
+      "lemma": "drugmaker",
+      "pos": "名",
+      "ja": "製薬会社",
+      "note": ""
+    },
+    "developed": {
+      "lemma": "develop",
+      "pos": "動",
+      "ja": "開発した",
+      "note": ""
+    },
+    "original": {
+      "lemma": "original",
+      "pos": "形",
+      "ja": "元の、最初の",
+      "note": ""
+    },
+    "belongs": {
+      "lemma": "belong",
+      "pos": "動",
+      "ja": "属する",
+      "note": "belong to＝〜のものである"
+    },
+    "licensed": {
+      "lemma": "license",
+      "pos": "動",
+      "ja": "許諾した",
+      "note": ""
+    },
+    "makers": {
+      "lemma": "maker",
+      "pos": "名",
+      "ja": "メーカー",
+      "note": ""
+    },
+    "needed": {
+      "lemma": "need",
+      "pos": "動",
+      "ja": "必要とされる",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込まれる",
+      "note": "be expected to do＝〜する見込みだ"
+    },
+    "cost": {
+      "lemma": "cost",
+      "pos": "動",
+      "ja": "（費用が）かかる",
+      "note": ""
+    },
+    "brand-name": {
+      "lemma": "brand-name",
+      "pos": "形",
+      "ja": "ブランド（先発）の",
+      "note": ""
+    },
+    "lists": {
+      "lemma": "list",
+      "pos": "動",
+      "ja": "定価がつく",
+      "note": "ここでは list at＝定価が〜である"
+    },
+    "applies": {
+      "lemma": "apply",
+      "pos": "動",
+      "ja": "適用される",
+      "note": "apply to＝〜に当てはまる"
+    },
+    "middle-income": {
+      "lemma": "middle-income",
+      "pos": "形",
+      "ja": "中所得の",
+      "note": ""
+    },
+    "covered": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "対象とする",
+      "note": ""
+    },
+    "license": {
+      "lemma": "license",
+      "pos": "名",
+      "ja": "許諾、ライセンス",
+      "note": ""
+    },
+    "patents": {
+      "lemma": "patent",
+      "pos": "名",
+      "ja": "特許",
+      "note": ""
+    },
+    "supplies": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "reach": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "届く",
+      "note": ""
+    },
+    "buyers": {
+      "lemma": "buyer",
+      "pos": "名",
+      "ja": "買い手",
+      "note": ""
+    },
+    "availability": {
+      "lemma": "availability",
+      "pos": "名",
+      "ja": "入手のしやすさ",
+      "note": ""
+    },
+    "planned": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "計画された",
+      "note": ""
+    },
+    "wider": {
+      "lemma": "wide",
+      "pos": "形",
+      "ja": "より広い",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "関係代名詞の非制限用法（, which ...）",
+    "quote": "The original product belongs to Gilead, which licensed six generic makers in 2024.",
+    "quoteJa": "元の製品はギリアドのもので、同社は2024年に後発薬メーカー6社へライセンスを与えた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "Gilead の後ろにカンマを置き、which 以下で補足説明を足す形を「関係代名詞の非制限用法（継続用法）」と呼ぶ。which の先行詞は直前の Gilead で、which licensed ... は「そして（その会社は）〜した」のように、前から順に訳せる。カンマがない制限用法（Gilead which ...）は「〜するギリアド」と絞り込む働きで、固有名詞には通常使わない。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "The original product belongs to Gilead, which licensed six generic makers in 2024. ＝ The original product belongs to Gilead, and it licensed six generic makers in 2024.（接続詞＋代名詞に置き換えられる）。固有名詞や、すでに特定されたものが先行詞のときは、必ずカンマ付きの非制限用法になる。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、先行詞が人か物か、固有名詞か、カンマの有無から who / which / that を選ばせる問題が出る。特に「カンマの後ろに that は使えない」が頻出の引っかけ。Part 7 では、which が前の節全体を受ける場合（, which means ...）もあり、何を指すかを読み取る力が問われる。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "Our supplier, which opened a new plant in May, will ship the order next week.（5月に新工場を開いた当社の仕入先が、来週注文品を発送する。）／ The board approved the budget, which allows us to hire five more staff.（取締役会が予算を承認し、そのため我々は追加で5人を採用できる。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米FDAは11月初め、インドの製薬会社ドクター・レディーズが開発したHIV予防注射のジェネリックを仮承認した。元薬は米ギリアドの年2回注射で、価格は1人年約40ドル。米国の定価は年約2万8000ドルで、約700分の1になる。初回の供給は2026年末までに各国へ届く見込みで、本格的な普及は2027年とされる。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "仮承認とは、安全性や品質の審査は通ったが、特許などで米国内ではまだ売れない状態のこと。それでも各国の規制当局が承認の参考にできる。ギリアドは2024年に6社へ自主ライセンス(voluntary license)を与えた。特許を持つ会社が、他社に製造と販売を許す契約である。"
+    },
+    {
+      "heading": "📌 3. 他社の先例：2件",
+      "body": "ギリアドは2014年、C型肝炎薬ソバルディを米国で12週約8万4000ドルとした一方、インドの後発薬メーカーに製造を許諾し、約90か国に安価な版が広がった。ファイザーは2021年11月、コロナ飲み薬パキロビッドの製造を、特許プール(patent pool)のMPP経由で95か国向けに認め、2022年3月には35社がMPPと契約した。ただし国境なき医師団は、アルゼンチンや中国が対象外だと批判した。前者は企業が直接許諾し、後者は特許プールが窓口になった点が違う。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "塩野義製薬は2022年10月、コロナ飲み薬ゾコーバ（エンシトレルビル）の後発薬製造をMPP経由で117か国向けに認めた。その後、インドのヘテロなど7社が製造の許諾を受けている。使用料(royalty)は、WHOが緊急事態とみなす間は免除され、終了後は公的購入5%、民間10%とされる。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "voluntary license",
+      "pos": "熟",
+      "ja": "自主ライセンス",
+      "gloss": "（＝特許を持つ会社が自分の意思で他社に製造を認めること）",
+      "example": {
+        "en": "The drugmaker offered a voluntary license to local factories.",
+        "ja": "その製薬会社は現地の工場に自主ライセンスを提示した。"
+      }
+    },
+    {
+      "term": "patent pool",
+      "pos": "熟",
+      "ja": "特許プール",
+      "gloss": "（＝複数の特許を集めて、まとめて使用許諾を出す仕組みのこと）",
+      "example": {
+        "en": "A patent pool lets small firms use key technology at a fair price.",
+        "ja": "特許プールにより、中小企業も重要技術を適正価格で使える。"
+      }
+    },
+    {
+      "term": "royalty",
+      "pos": "名",
+      "ja": "使用料、ロイヤルティ",
+      "gloss": "（＝特許や商標を使う側が持ち主に払うお金のこと）",
+      "example": {
+        "en": "The author receives a royalty on every copy sold.",
+        "ja": "著者は売れた1冊ごとに使用料を受け取る。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "U.S. FDA approves first generic injectable lenacapavir for HIV prevention",
+      "publisher": "Unitaid",
+      "url": "https://unitaid.org/news-blog/u-s-fda-approves-first-generic-injectable-lenacapavir-for-hiv-prevention/",
+      "date": "2026-11-02"
+    },
+    {
+      "title": "US FDA grants tentative nod to Dr Reddy's twice-yearly HIV prevention drug",
+      "publisher": "Business Standard",
+      "url": "https://www.business-standard.com/health/us-fda-grants-tentative-nod-to-dr-reddy-s-twice-yearly-hiv-prevention-drug-126110201511_1.html",
+      "date": "2026-11-02"
+    },
+    {
+      "title": "Pfizer to allow generic versions of its COVID-19 pill in 95 countries",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2021/11/16/pfizer-to-allow-generic-versions-of-its-covid-19-pill-in-95-countries.html",
+      "date": "2021-11-16"
+    },
+    {
+      "title": "Shionogi and the Medicines Patent Pool sign licence agreement for COVID-19 oral antiviral",
+      "publisher": "Shionogi",
+      "url": "https://www.shionogi.com/global/en/news/2022/10/20221004.html",
+      "date": "2022-10-04"
+    },
+    {
+      "title": "Gilead to offer hep C drug sofosbuvir at greatly-reduced price in developing countries",
+      "publisher": "The Pharma Letter",
+      "url": "https://thepharmaletter.com/biotechnology/gilead-to-offer-hep-c-drug-sofosbuvir-at-greatly-reduced-price-in-developing-countries",
+      "date": "2014"
+    }
+  ]
+}
