@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part5-history",
-  "updatedAt": "2026-10-30T04:09:00+09:00",
+  "updatedAt": "2026-11-06T04:06:00+09:00",
   "items": [
+    {
+      "id": "2026-11-06-0406",
+      "date": "2026-11-06",
+      "focus": "文法7・語彙3",
+      "types": [
+        "form",
+        "vocab",
+        "verb",
+        "prep",
+        "vocab",
+        "conj",
+        "verbal",
+        "form",
+        "comp",
+        "vocab"
+      ],
+      "topics": [
+        "冠詞と前置詞にはさまれた名詞",
+        "未来完了（by the end of）",
+        "原因を表す群前置詞 owing to",
+        "対比の接続詞 whereas",
+        "過去分詞の前置修飾",
+        "他動詞の目的語になる不可算名詞（provide assistance）",
+        "fewer ＋ 可算複数名詞の比較級"
+      ]
+    },
     {
       "id": "2026-10-30-0409",
       "date": "2026-10-30",

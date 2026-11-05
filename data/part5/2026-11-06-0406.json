@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-11-06-0406",
+  "date": "2026-11-06",
+  "time": "04:06",
+  "createdAt": "2026-11-06T04:06:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "The ------- of the new scheduling software has reduced the time managers spend on weekly reports.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "implement",
+          "ja": "（動）実行する"
+        },
+        {
+          "key": "B",
+          "text": "implements",
+          "ja": "（動・三単現）／（名）道具"
+        },
+        {
+          "key": "C",
+          "text": "implementation",
+          "ja": "（名）導入、実施"
+        },
+        {
+          "key": "D",
+          "text": "implementing",
+          "ja": "（動名詞・分詞）実施している"
+        }
+      ],
+      "answer": "C",
+      "ja": "新しいスケジュール管理ソフトの導入によって、管理職が週次報告書に費やす時間が減った。",
+      "explanation": "空所は The のあと、of の前にあるので、冠詞に続く名詞が入る。選択肢で名詞は implementation だけ。implements も名詞（道具）として存在するが、複数形に冠詞 The がつくと意味が通らず、動詞 has reduced の主語としても不自然。",
+      "tip": "選択肢が同じ語幹で語尾だけ違えば品詞問題。「The ------- of」のように冠詞と前置詞にはさまれた空所は名詞。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "prompt": "Employees are asked to ------- their expense reports to the accounting office no later than the 5th of each month.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "register",
+          "ja": "登録する"
+        },
+        {
+          "key": "B",
+          "text": "submit",
+          "ja": "提出する"
+        },
+        {
+          "key": "C",
+          "text": "approve",
+          "ja": "承認する"
+        },
+        {
+          "key": "D",
+          "text": "reserve",
+          "ja": "予約する"
+        }
+      ],
+      "answer": "B",
+      "ja": "従業員は、経費報告書を毎月5日までに経理部へ提出するよう求められている。",
+      "explanation": "「経費報告書を経理部に提出する」という意味になる submit が正解。approve は承認する側の動作で、経理部「へ」という方向とも合わない。register は人や名前を登録する、reserve は席などを予約する意味。",
+      "tip": "動詞の語彙問題は、目的語（ここでは reports）と to ... の方向から、その動詞が取りうる組み合わせを考える。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "prompt": "By the end of this year, the company ------- more than two hundred new employees across its three regional offices.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "will have hired",
+          "ja": "（未来完了）採用し終えているだろう"
+        },
+        {
+          "key": "B",
+          "text": "hired",
+          "ja": "（過去形）採用した"
+        },
+        {
+          "key": "C",
+          "text": "has hired",
+          "ja": "（現在完了）採用した"
+        },
+        {
+          "key": "D",
+          "text": "hires",
+          "ja": "（現在形）採用する"
+        }
+      ],
+      "answer": "A",
+      "ja": "今年の終わりまでに、その会社は3つの地方事務所で200人以上の新入社員を採用し終えているだろう。",
+      "explanation": "By the end of this year という未来の期限を示す表現があるので、その時点までの完了を表す未来完了 will have hired が合う。has hired は現在完了で、未来の期限とは結びつかない。",
+      "tip": "by the end of ＋ 未来の時点が見えたら、未来完了（will have ＋ 過去分詞）を第一候補にする。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "prompt": "The shipment of office furniture was delayed ------- unexpected weather conditions at the port last week.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "despite",
+          "ja": "〜にもかかわらず"
+        },
+        {
+          "key": "B",
+          "text": "except",
+          "ja": "〜を除いて"
+        },
+        {
+          "key": "C",
+          "text": "throughout",
+          "ja": "〜の間じゅう"
+        },
+        {
+          "key": "D",
+          "text": "owing to",
+          "ja": "〜が原因で"
+        }
+      ],
+      "answer": "D",
+      "ja": "事務用家具の出荷は、先週港で予期せぬ悪天候があったために遅れた。",
+      "explanation": "遅れの原因を述べる文なので、理由を表す owing to が正解。despite は逆の関係で「悪天候にもかかわらず遅れた」となり不自然。throughout は期間の全体、except は除外を表す。",
+      "tip": "選択肢が前置詞だけなら、空所の前後の関係（原因・逆接・期間・除外）を一言で言い換えてから選ぶ。"
+    },
+    {
+      "id": "q5",
+      "type": "vocab",
+      "prompt": "The hotel offers a ------- breakfast to all guests who book directly through its Web site.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "durable",
+          "ja": "耐久性のある"
+        },
+        {
+          "key": "B",
+          "text": "spacious",
+          "ja": "広々とした"
+        },
+        {
+          "key": "C",
+          "text": "complimentary",
+          "ja": "無料の"
+        },
+        {
+          "key": "D",
+          "text": "tentative",
+          "ja": "仮の"
+        }
+      ],
+      "answer": "C",
+      "ja": "そのホテルは、自社のウェブサイトから直接予約したすべての宿泊客に無料の朝食を提供している。",
+      "explanation": "直接予約した客への特典なので、「無料の」を意味する complimentary が合う。spacious は部屋などの広さ、durable は製品の耐久性、tentative は予定が仮であることを表し、breakfast を修飾しない。",
+      "tip": "形容詞の語彙問題は、修飾される名詞とよく結びつくコロケーション（complimentary breakfast など）を覚えておく。"
+    },
+    {
+      "id": "q6",
+      "type": "conj",
+      "prompt": "Sales in the domestic market grew steadily last year, ------- overseas sales declined because of higher shipping costs.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "so",
+          "ja": "だから"
+        },
+        {
+          "key": "B",
+          "text": "whereas",
+          "ja": "一方で〜"
+        },
+        {
+          "key": "C",
+          "text": "unless",
+          "ja": "〜でない限り"
+        },
+        {
+          "key": "D",
+          "text": "therefore",
+          "ja": "したがって"
+        }
+      ],
+      "answer": "B",
+      "ja": "昨年、国内市場の売上は着実に伸びた一方で、海外の売上は輸送費の上昇により減少した。",
+      "explanation": "前半は「国内は伸びた」、後半は「海外は減った」という対比なので、対比を表す接続詞 whereas が合う。therefore は副詞で文をつなげず、so は結果を示す。unless は条件。",
+      "tip": "接続詞が並ぶ問題は、前後の節の関係（対比・因果・条件）を先に決める。副詞（therefore）は2つの節を直接つなげない。"
+    },
+    {
+      "id": "q7",
+      "type": "verbal",
+      "prompt": "Please review the ------- schedule carefully, as several training sessions have been moved to different rooms.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "update",
+          "ja": "（動）更新する／（名）更新"
+        },
+        {
+          "key": "B",
+          "text": "updates",
+          "ja": "（動・三単現）更新する／（名）更新情報"
+        },
+        {
+          "key": "C",
+          "text": "updating",
+          "ja": "（動名詞）更新すること"
+        },
+        {
+          "key": "D",
+          "text": "updated",
+          "ja": "（過去分詞）更新された"
+        }
+      ],
+      "answer": "D",
+      "ja": "研修がいくつか別の部屋に移されたので、更新されたスケジュールをよく確認してください。",
+      "explanation": "schedule（名詞）の前に置いて「更新された」と修飾するので、過去分詞 updated が入る。スケジュールは更新される側（受け身の関係）なので、現在分詞 updating は合わない。",
+      "tip": "名詞の前の空所で、その名詞が「〜される」側なら過去分詞、「〜している」側なら現在分詞。"
+    },
+    {
+      "id": "q8",
+      "type": "form",
+      "prompt": "Mr. Dunn will provide ------- with the registration process at the front desk.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "assistance",
+          "ja": "（名）手助け"
+        },
+        {
+          "key": "B",
+          "text": "assist",
+          "ja": "（動）手伝う"
+        },
+        {
+          "key": "C",
+          "text": "assistant",
+          "ja": "（名）助手"
+        },
+        {
+          "key": "D",
+          "text": "assisting",
+          "ja": "（動名詞）手伝うこと"
+        }
+      ],
+      "answer": "A",
+      "ja": "ダン氏が受付で登録手続きについてお手伝いする。",
+      "explanation": "provide は他動詞で、冠詞のない目的語には不可算名詞が入る。assistant は可算名詞で冠詞が必要なため不可。provide assistance with ... は「〜について手助けする」という定型の言い方である。",
+      "tip": "他動詞のあとで冠詞が無い空所は、不可算名詞か複数形の名詞。可算の単数形は冠詞が必要なので外せる。"
+    },
+    {
+      "id": "q9",
+      "type": "comp",
+      "prompt": "The new filing system has resulted in ------- errors than the previous one, according to the quality report.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "little",
+          "ja": "ほとんどない"
+        },
+        {
+          "key": "B",
+          "text": "fewer",
+          "ja": "より少ない"
+        },
+        {
+          "key": "C",
+          "text": "less",
+          "ja": "より少ない（不可算）"
+        },
+        {
+          "key": "D",
+          "text": "fewest",
+          "ja": "最も少ない"
+        }
+      ],
+      "answer": "B",
+      "ja": "品質報告書によると、新しいファイリングシステムは以前のものより誤りが少なくなった。",
+      "explanation": "空所の直後は than なので比較級が入る。errors は可算の複数名詞なので、few の比較級 fewer が正解。less は不可算名詞に使う比較級。little と fewest は than と結びつかない。",
+      "tip": "空所のあとに than があれば比較級。数える名詞には fewer / more、数えない名詞には less / more。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "Mr. Takeda was ------- to the position of regional manager after leading the Osaka branch for five years.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "promoted",
+          "ja": "昇進した"
+        },
+        {
+          "key": "B",
+          "text": "persuaded",
+          "ja": "説得された"
+        },
+        {
+          "key": "C",
+          "text": "required",
+          "ja": "求められた"
+        },
+        {
+          "key": "D",
+          "text": "accepted",
+          "ja": "受け入れられた"
+        }
+      ],
+      "answer": "A",
+      "ja": "タケダ氏は大阪支店を5年間率いたあと、地域統括マネージャーに昇進した。",
+      "explanation": "「〜の職に昇進した」は be promoted to で表す。accepted to や required to のあとに the position は続かず、persuaded to のあとも動詞が必要。支店を率いた実績とも promoted が自然につながる。",
+      "tip": "語彙問題で選択肢が過去分詞のときは、空所のあとの前置詞（to）との結びつきから絞る。"
+    }
+  ],
+  "glossary": {
+    "no later than": {
+      "lemma": "no later than",
+      "pos": "熟",
+      "ja": "〜までに、遅くとも",
+      "note": "期限の言い方",
+      "example": {
+        "en": "Please send the signed contract no later than Friday afternoon.",
+        "ja": "署名済みの契約書は、遅くとも金曜の午後までに送ってください。"
+      }
+    },
+    "by the end of": {
+      "lemma": "by the end of",
+      "pos": "熟",
+      "ja": "〜の終わりまでに",
+      "note": "",
+      "example": {
+        "en": "The team plans to finish the audit by the end of March.",
+        "ja": "チームは3月末までに監査を終える予定だ。"
+      }
+    },
+    "resulted in": {
+      "lemma": "resulted in",
+      "pos": "熟",
+      "ja": "〜という結果になった",
+      "note": "result in の過去形",
+      "example": {
+        "en": "The change in suppliers resulted in lower costs for the department.",
+        "ja": "仕入先の変更で、その部門の費用は下がった。"
+      }
+    },
+    "according to": {
+      "lemma": "according to",
+      "pos": "熟",
+      "ja": "〜によると",
+      "note": "",
+      "example": {
+        "en": "According to the schedule, the inspection begins on Tuesday.",
+        "ja": "予定表によると、点検は火曜日に始まる。"
+      }
+    },
+    "domestic market": {
+      "lemma": "domestic market",
+      "pos": "熟",
+      "ja": "国内市場",
+      "note": "",
+      "example": {
+        "en": "The firm plans to focus on the domestic market next year.",
+        "ja": "その会社は来年、国内市場に力を入れる予定だ。"
+      }
+    },
+    "shipping costs": {
+      "lemma": "shipping costs",
+      "pos": "熟",
+      "ja": "輸送費、送料",
+      "note": "",
+      "example": {
+        "en": "Shipping costs will be included in the final invoice.",
+        "ja": "送料は最終的な請求書に含まれる。"
+      }
+    },
+    "front desk": {
+      "lemma": "front desk",
+      "pos": "熟",
+      "ja": "受付、フロント",
+      "note": "",
+      "example": {
+        "en": "Visitors should pick up their passes at the front desk.",
+        "ja": "来訪者は受付で入館証を受け取ってください。"
+      }
+    },
+    "registration process": {
+      "lemma": "registration process",
+      "pos": "熟",
+      "ja": "登録手続き",
+      "note": "",
+      "example": {
+        "en": "The registration process takes about ten minutes online.",
+        "ja": "登録手続きはオンラインで約10分かかる。"
+      }
+    },
+    "regional manager": {
+      "lemma": "regional manager",
+      "pos": "熟",
+      "ja": "地域統括マネージャー",
+      "note": "",
+      "example": {
+        "en": "The regional manager visits each store once a quarter.",
+        "ja": "地域統括マネージャーは四半期に一度、各店舗を訪れる。"
+      }
+    },
+    "steadily": {
+      "lemma": "steadily",
+      "pos": "副",
+      "ja": "着実に、少しずつ",
+      "note": "",
+      "example": {
+        "en": "Membership has increased steadily since the gym reopened.",
+        "ja": "ジムの再開以来、会員数は着実に増えている。"
+      }
+    },
+    "overseas": {
+      "lemma": "overseas",
+      "pos": "形",
+      "ja": "海外の",
+      "note": "副詞としても使う",
+      "example": {
+        "en": "Our overseas offices will be closed during the holiday.",
+        "ja": "当社の海外事務所は休暇中は閉まる。"
+      }
+    }
+  },
+  "point": {
+    "lead": "選択肢を縦に見て型を決めてから、空所の前後で絞る",
+    "items": [
+      {
+        "title": "選択肢の見た目で型を決める",
+        "body": "語尾だけ違えば品詞、活用が並べば動詞の形、前置詞や接続詞だけなら関係を見る。型を決めてから空所に戻ると迷いが減る。"
+      },
+      {
+        "title": "時のキーワードで時制を決める",
+        "body": "by the end of ＋ 未来の時点は未来完了、since は現在完了のように、時を示す語句が時制を決める手がかりになる。"
+      },
+      {
+        "title": "語彙は組み合わせで考える",
+        "body": "語の意味だけでなく、目的語・前置詞・修飾する名詞との結びつき（submit reports、promoted to、complimentary breakfast）で絞ると消去法が効く。"
+      }
+    ]
+  }
+}
