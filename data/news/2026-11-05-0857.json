@@ -516,5 +516,25 @@
       "url": "https://aljazeera.com/economy/2025/8/7/toyota-expects-to-lose-billions-as-trump-tariffs-weigh-on-auto-sector",
       "date": "2025-08-07"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-05-0857/00.mp3",
+      "audio/2026-11-05-0857/01.mp3",
+      "audio/2026-11-05-0857/02.mp3",
+      "audio/2026-11-05-0857/03.mp3",
+      "audio/2026-11-05-0857/04.mp3",
+      "audio/2026-11-05-0857/05.mp3",
+      "audio/2026-11-05-0857/06.mp3",
+      "audio/2026-11-05-0857/07.mp3",
+      "audio/2026-11-05-0857/08.mp3",
+      "audio/2026-11-05-0857/09.mp3",
+      "audio/2026-11-05-0857/10.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 238276,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-05T00:00:03.787Z",
+    "trimmed": true
+  }
 }
