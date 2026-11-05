@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-05-1645",
+  "date": "2026-11-05",
+  "time": "16:45",
+  "createdAt": "2026-11-05T16:45:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "U.S. Employers Add 86,000 Jobs as Job-Changers Win Bigger Raises",
+    "ja": "米民間雇用8.6万人増、転職者の賃上げが際立つ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Private employers in the United States added 86,000 jobs in October, according to payroll firm ADP.",
+            "ja": "米国の民間企業は10月に8万6000人の雇用を増やしたと、給与計算会社のADPが発表した。"
+          },
+          {
+            "en": "That was higher than the 69,000 that economists had expected.",
+            "ja": "これは経済学者が予想していた6万9000人を上回る数字だった。"
+          },
+          {
+            "en": "Trade, transportation, and utilities led the gains with 39,000 jobs, followed by health care and hospitality.",
+            "ja": "増加を主導したのは貿易・運輸・公益事業で3万9000人、医療と接客業がそれに続いた。"
+          },
+          {
+            "en": "However, professional and business services lost jobs for the third month in a row.",
+            "ja": "一方、専門・ビジネスサービスは3カ月連続で雇用が減った。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Pay also rose, but not equally for everyone.",
+            "ja": "賃金も上昇したが、全員が同じように上がったわけではない。"
+          },
+          {
+            "en": "Base pay rose 3.2 percent overall, while base pay for job-changers rose 4.8 percent.",
+            "ja": "基本給は全体で3.2%上昇した一方、転職者の基本給は4.8%上昇した。"
+          },
+          {
+            "en": "Their total pay, including bonuses and overtime, rose 7.6 percent.",
+            "ja": "ボーナスや残業代を含む彼らの総支給額は7.6%増えた。"
+          },
+          {
+            "en": "ADP's chief economist said these workers were attracted by bonuses, overtime, and more hours, not only higher base pay.",
+            "ja": "ADPのチーフエコノミストは、こうした労働者は基本給の高さだけでなく、ボーナス、残業、労働時間の増加にも引きつけられたと述べた。"
+          },
+          {
+            "en": "The data suggests that companies may need to offer more to keep experienced staff.",
+            "ja": "このデータは、企業が経験豊富な人材をつなぎとめるには、より手厚い条件が必要になる可能性を示している。"
+          },
+          {
+            "en": "The government will report its own jobs data on Friday.",
+            "ja": "政府は金曜日に独自の雇用統計を発表する予定だ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many jobs did private employers add in October, according to ADP?",
+      "answer": "B",
+      "explanation": "第1段落の1文目に「Private employers in the United States added 86,000 jobs in October」とあるため、正解は (B) 86,000。(A) の69,000は経済学者の「予想値」で、実際の結果ではない（2文目）。(C) の39,000は貿易・運輸・公益事業という1つの業種だけの増加数。(D) の76,000は本文にない数字。同じ段落に数字が複数出てくるため、「何についての数字か」を必ず確認する。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "Part 7 の数字問題では、本文に複数の数字が並ぶ。設問が聞いているのは「実績」か「予想」か「一部の内訳」かを見分けるのがポイント。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "69,000",
+          "ja": "6万9000人"
+        },
+        {
+          "key": "B",
+          "text": "86,000",
+          "ja": "8万6000人"
+        },
+        {
+          "key": "C",
+          "text": "39,000",
+          "ja": "3万9000人"
+        },
+        {
+          "key": "D",
+          "text": "76,000",
+          "ja": "7万6000人"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "contrast",
+      "prompt": "According to the article, which is true about workers who changed jobs?",
+      "answer": "B",
+      "explanation": "第2段落の3文目「Their total pay, including bonuses and overtime, rose 7.6 percent.」の Their は直前の job-changers（転職者）を指すため、正解は (B)。(A) は逆で、転職者の基本給は4.8%と全体の3.2%より大きく伸びた。(C) 専門・ビジネスサービスは雇用が減った業種として出てくるだけで、転職者との関連は述べられていない。(D) ADP は統計を発表した会社で、採用主体ではない。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "Their / These などの代名詞が何を指すかを一つ前の文までさかのぼって確認する。TRUE問題は、各選択肢を本文と1つずつ照合する。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Their base pay rose less than 3.2 percent.",
+          "ja": "基本給の伸びは3.2%未満"
+        },
+        {
+          "key": "B",
+          "text": "Their total pay rose 7.6 percent.",
+          "ja": "総支給額は7.6%増"
+        },
+        {
+          "key": "C",
+          "text": "They mostly worked in professional services.",
+          "ja": "主に専門サービス業で働いた"
+        },
+        {
+          "key": "D",
+          "text": "They were hired by ADP.",
+          "ja": "ADPに採用された"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "payroll",
+      "pos": "名",
+      "ja": "給与支払い、給与計算",
+      "gloss": "（＝従業員に給料を払う業務やその記録のこと）",
+      "example": {
+        "en": "The payroll team sends the monthly report on the 25th.",
+        "ja": "給与チームは毎月25日に月次報告を送る。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "gain",
+      "pos": "名",
+      "ja": "増加、伸び",
+      "gloss": "",
+      "example": {
+        "en": "The company reported a gain of 5 percent in sales.",
+        "ja": "その会社は売上が5%増えたと報告した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "overall",
+      "pos": "副",
+      "ja": "全体として",
+      "gloss": "",
+      "example": {
+        "en": "Overall, the new system has saved us time.",
+        "ja": "全体として、新しいシステムは時間の節約になった。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "attract",
+      "pos": "動",
+      "ja": "引きつける",
+      "gloss": "",
+      "example": {
+        "en": "The firm offers flexible hours to attract new employees.",
+        "ja": "その会社は新入社員を引きつけるために柔軟な勤務時間を提供している。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "overtime",
+      "pos": "名",
+      "ja": "残業、時間外労働",
+      "gloss": "",
+      "example": {
+        "en": "Staff were paid extra for overtime during the busy season.",
+        "ja": "繁忙期の残業には割増の給与が支払われた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "bonus",
+      "pos": "名",
+      "ja": "ボーナス、賞与",
+      "gloss": "",
+      "example": {
+        "en": "Every employee received a year-end bonus.",
+        "ja": "全従業員が年末のボーナスを受け取った。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "according to",
+      "pos": "熟",
+      "ja": "〜によれば",
+      "gloss": "",
+      "example": {
+        "en": "According to the schedule, the meeting starts at ten.",
+        "ja": "予定表によると、会議は10時に始まる。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "in a row",
+      "pos": "熟",
+      "ja": "連続で",
+      "gloss": "",
+      "example": {
+        "en": "The store has met its sales target three months in a row.",
+        "ja": "その店は3カ月連続で売上目標を達成した。"
+      }
+    }
+  ],
+  "glossary": {
+    "private": {
+      "lemma": "private",
+      "pos": "形",
+      "ja": "民間の",
+      "note": ""
+    },
+    "employers": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主、企業",
+      "note": ""
+    },
+    "added": {
+      "lemma": "add",
+      "pos": "動",
+      "ja": "加えた、増やした",
+      "note": ""
+    },
+    "according": {
+      "lemma": "according",
+      "pos": "形",
+      "ja": "〜によれば",
+      "note": "according to の形で使う"
+    },
+    "payroll": {
+      "lemma": "payroll",
+      "pos": "名",
+      "ja": "給与計算",
+      "note": ""
+    },
+    "firm": {
+      "lemma": "firm",
+      "pos": "名",
+      "ja": "会社",
+      "note": ""
+    },
+    "higher": {
+      "lemma": "high",
+      "pos": "形",
+      "ja": "より高い",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "経済学者",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "trade": {
+      "lemma": "trade",
+      "pos": "名",
+      "ja": "貿易、商業",
+      "note": ""
+    },
+    "transportation": {
+      "lemma": "transportation",
+      "pos": "名",
+      "ja": "運輸",
+      "note": ""
+    },
+    "utilities": {
+      "lemma": "utility",
+      "pos": "名",
+      "ja": "公益事業",
+      "note": "電気・ガス・水道など"
+    },
+    "led": {
+      "lemma": "lead",
+      "pos": "動",
+      "ja": "主導した",
+      "note": "lead の過去形"
+    },
+    "gains": {
+      "lemma": "gain",
+      "pos": "名",
+      "ja": "増加",
+      "note": ""
+    },
+    "followed": {
+      "lemma": "follow",
+      "pos": "動",
+      "ja": "続いた",
+      "note": ""
+    },
+    "hospitality": {
+      "lemma": "hospitality",
+      "pos": "名",
+      "ja": "接客業",
+      "note": "ホテル・飲食など"
+    },
+    "professional": {
+      "lemma": "professional",
+      "pos": "形",
+      "ja": "専門的な",
+      "note": ""
+    },
+    "lost": {
+      "lemma": "lose",
+      "pos": "動",
+      "ja": "失った、減らした",
+      "note": "lose の過去形"
+    },
+    "row": {
+      "lemma": "row",
+      "pos": "名",
+      "ja": "列",
+      "note": "in a row で「連続で」"
+    },
+    "equally": {
+      "lemma": "equally",
+      "pos": "副",
+      "ja": "等しく、同じように",
+      "note": ""
+    },
+    "base": {
+      "lemma": "base",
+      "pos": "形",
+      "ja": "基本の",
+      "note": "base pay = 基本給"
+    },
+    "overall": {
+      "lemma": "overall",
+      "pos": "副",
+      "ja": "全体で",
+      "note": ""
+    },
+    "including": {
+      "lemma": "include",
+      "pos": "前",
+      "ja": "〜を含めて",
+      "note": ""
+    },
+    "bonuses": {
+      "lemma": "bonus",
+      "pos": "名",
+      "ja": "ボーナス",
+      "note": ""
+    },
+    "overtime": {
+      "lemma": "overtime",
+      "pos": "名",
+      "ja": "残業",
+      "note": ""
+    },
+    "attracted": {
+      "lemma": "attract",
+      "pos": "動",
+      "ja": "引きつけた",
+      "note": "be attracted by ～ で「～に惹かれる」"
+    },
+    "suggests": {
+      "lemma": "suggest",
+      "pos": "動",
+      "ja": "示唆する",
+      "note": ""
+    },
+    "offer": {
+      "lemma": "offer",
+      "pos": "動",
+      "ja": "提供する",
+      "note": ""
+    },
+    "experienced": {
+      "lemma": "experienced",
+      "pos": "形",
+      "ja": "経験豊富な",
+      "note": ""
+    },
+    "staff": {
+      "lemma": "staff",
+      "pos": "名",
+      "ja": "従業員、人材",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "過去完了形（had＋過去分詞）",
+    "quote": "That was higher than the 69,000 that economists had expected.",
+    "quoteJa": "これは経済学者が予想していた6万9000人を上回る数字だった。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "had expected は過去完了形（had＋過去分詞）で、「基準となる過去の時点より前に起きたこと」を表す。この文では、基準時点は結果が発表された時（That was higher の was）で、経済学者が予想したのはそれより前なので had expected になる。the 69,000 の直後に関係代名詞 that が省略されずに置かれ、「経済学者が予想していた6万9000」という名詞を後ろから説明している。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "過去完了を使わない書き方は That was higher than economists expected.（予想より高かった）で、日常のニュースではこちらも多い。過去完了を使うと「発表の前から予想があった」という時間の前後がはっきりする。比較：The report showed more jobs than analysts had forecast.（アナリストの予測より多かった）。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 では、動詞の形を選ぶ問題で「基準となる過去の時点」を探す力が問われる。before / by the time / when などの語が手がかりになる。Part 7 では、過去完了は「すでに終わっていた計画・発注・手続き」を述べるときによく使われる。had ＋過去分詞のあとに already / not yet が来る形も定番。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The shipment had already left the warehouse when the customer called to change the order.（顧客が注文変更の電話をしたとき、荷物はすでに倉庫を出ていた。）／ The sales team exceeded the goal that the manager had set in April.（営業チームは、部長が4月に設定した目標を上回った。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "給与計算大手ADPが11月4日に発表した10月の米民間雇用者数は前月比8万6000人増で、市場予想（6万9000人）を上回った。9月分も9万人から8万6000人に下方修正された。賃金では転職者の基本給が前年比4.8%増、総支給は7.6%増と、全体の基本給3.2%増を大きく上回った。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "転職した人の賃上げ率が、同じ会社に残る人より高くなる現象を賃金上乗せ(wage premium)と呼ぶ。新規採用は市場の相場に合わせる必要があるが、既存社員の昇給は予算の範囲に抑えられがちなため差が開く。差が大きいと条件のよい会社へ人が動き、離職率(turnover)が上がる。企業は採用と研修の費用を再び負担するので、先に待遇を上げて引き止める動機が生まれる。"
+    },
+    {
+      "heading": "📌 3. 他社の人材確保策",
+      "body": "コストコは2025年1月、米国の非組合の店舗で働く時給制の従業員の賃金を引き上げ、多くの人が時給30ドル超になると発表した。1年以上勤める従業員の定着率は約93%とされ、賃金で長く働いてもらう戦略をとる。一方アマゾンは2026年の年末商戦に向け、米国で30万人超の季節雇用(seasonal hiring)を行うと発表した。平均時給は20ドルで、9月には時給1ドルの引き上げを含む15億ドル超の賃上げ投資も示し、2027年1月から週30時間以上の季節従業員に初日から健康保険も付ける。前者は長期定着、後者は短期に大量の人手を集める戦略という違いがある。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "ファーストリテイリングは2023年1月、国内の正社員約8400人の年収を最大で約40%引き上げると発表した。物価上昇が続くなかで優秀な人材をつなぎとめ、日本の賃金水準を欧米に近づける狙いがあり、国内の人件費は約15%増える見通しとされた。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "wage premium",
+      "pos": "熟",
+      "ja": "賃金上乗せ",
+      "gloss": "（＝転職者が残留者より多く得る賃金の差のこと）",
+      "example": {
+        "en": "The wage premium for job-changers has grown in the past year.",
+        "ja": "転職者の賃金上乗せ分は過去1年で拡大した。"
+      }
+    },
+    {
+      "term": "turnover",
+      "pos": "名",
+      "ja": "離職率",
+      "gloss": "（＝一定期間に退職した社員の割合のこと）",
+      "example": {
+        "en": "High turnover makes it costly to train new staff.",
+        "ja": "離職率が高いと、新人の研修に費用がかかる。"
+      }
+    },
+    {
+      "term": "seasonal hiring",
+      "pos": "熟",
+      "ja": "季節雇用",
+      "gloss": "（＝繁忙期だけ人を増やして雇うこと）",
+      "example": {
+        "en": "Seasonal hiring starts in October at most online retailers.",
+        "ja": "ほとんどのネット小売業者では、季節雇用が10月に始まる。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "ADP National Employment Report: Private-Sector Employment Increased by 86,000 Jobs in October",
+      "publisher": "ADP",
+      "url": "https://mediacenter.adp.com/2026-11-04-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-86,000-Jobs-in-October",
+      "date": "2026-11-04"
+    },
+    {
+      "title": "Private sector added 86,000 jobs in October, above expectations, ADP says",
+      "publisher": "Fox Business",
+      "url": "https://www.foxbusiness.com/economy/private-sector-added-86000-jobs-october-above-expectations-adp-says",
+      "date": "2026-11-04"
+    },
+    {
+      "title": "Costco to raise hourly pay for most US store workers to over USD 30",
+      "publisher": "Bloomberg (via IADS)",
+      "url": "https://www.iads.org/member/news/costco-to-raise-hourly-pay-for-most-us-store-workers-to-over-usd-30",
+      "date": "2025-01"
+    },
+    {
+      "title": "Amazon to hire 300,000 US holiday workers, up from 250,000 in 2025",
+      "publisher": "PPC Land",
+      "url": "https://ppc.land/amazon-to-hire-300-000-us-holiday-workers-up-from-250-000-in-2025/",
+      "date": "2026-10"
+    },
+    {
+      "title": "Fast Retailing to boost salaries",
+      "publisher": "The Japan Times",
+      "url": "https://japantimes.co.jp/news/2023/01/11/business/corporate-business/fast-retailing-boost-salaries",
+      "date": "2023-01-11"
+    }
+  ]
+}
