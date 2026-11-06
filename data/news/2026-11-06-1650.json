@@ -496,5 +496,23 @@
       "url": "https://www.freepressjournal.in/business/bank-of-japan-raises-interest-rate-to-125-highest-level-in-three-decades",
       "date": "2026-09-18"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-06-1650/00.mp3",
+      "audio/2026-11-06-1650/01.mp3",
+      "audio/2026-11-06-1650/02.mp3",
+      "audio/2026-11-06-1650/03.mp3",
+      "audio/2026-11-06-1650/04.mp3",
+      "audio/2026-11-06-1650/05.mp3",
+      "audio/2026-11-06-1650/06.mp3",
+      "audio/2026-11-06-1650/07.mp3",
+      "audio/2026-11-06-1650/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 200460,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-06T07:51:25.833Z",
+    "trimmed": true
+  }
 }
