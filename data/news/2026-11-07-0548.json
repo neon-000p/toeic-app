@@ -508,5 +508,23 @@
       "url": "https://www.retaildive.com/news/walmart-isnt-hiring-holiday-help/505411/",
       "date": "2017-09-20"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-07-0548/00.mp3",
+      "audio/2026-11-07-0548/01.mp3",
+      "audio/2026-11-07-0548/02.mp3",
+      "audio/2026-11-07-0548/03.mp3",
+      "audio/2026-11-07-0548/04.mp3",
+      "audio/2026-11-07-0548/05.mp3",
+      "audio/2026-11-07-0548/06.mp3",
+      "audio/2026-11-07-0548/07.mp3",
+      "audio/2026-11-07-0548/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 216684,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-06T20:49:36.092Z",
+    "trimmed": true
+  }
 }
