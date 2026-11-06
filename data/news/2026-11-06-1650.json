@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-06-1650",
+  "date": "2026-11-06",
+  "time": "16:50",
+  "createdAt": "2026-11-06T16:50:10+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Bank of England Raises Interest Rates as Energy Costs Push Up Prices",
+    "ja": "英中銀が利上げ、エネルギー高が物価を押し上げ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The Bank of England raised its main interest rate from 3.75% to 4% on Thursday.",
+            "ja": "英中銀は木曜日、主要政策金利を3.75%から4%に引き上げた。"
+          },
+          {
+            "en": "It was the first increase since August 2023.",
+            "ja": "利上げは2023年8月以来となる。"
+          },
+          {
+            "en": "Eight members of the nine-person committee voted for the quarter-point rise.",
+            "ja": "9人の委員のうち8人が0.25ポイントの引き上げに賛成した。"
+          },
+          {
+            "en": "The ninth member wanted a larger increase of half a point.",
+            "ja": "残る1人は、0.5ポイントというより大きな引き上げを求めた。"
+          },
+          {
+            "en": "The decision was widely expected by investors.",
+            "ja": "この決定は投資家の間で広く予想されていた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The bank said higher energy prices are now pushing up the cost of many other goods and services.",
+            "ja": "同行は、エネルギー価格の上昇が今や他の多くの商品やサービスのコストを押し上げていると述べた。"
+          },
+          {
+            "en": "Inflation was 3.5% in September, and the bank expects it to rise to almost 5% next year.",
+            "ja": "物価上昇率は9月に3.5%で、同行は来年に5%近くまで上昇すると予想している。"
+          },
+          {
+            "en": "Governor Andrew Bailey said more increases will follow unless the conflict in the Middle East is resolved.",
+            "ja": "アンドリュー・ベイリー総裁は、中東の紛争が解決しない限り、さらなる利上げが続くと述べた。"
+          },
+          {
+            "en": "The rate is the benchmark that banks use to price mortgages and business loans, so higher rates make borrowing more expensive.",
+            "ja": "この金利は銀行が住宅ローンや事業融資の金利を決める際の基準なので、金利が上がると借り入れのコストが高くなる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How large an increase did the ninth committee member want?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A tenth of a point",
+          "ja": "0.1ポイント"
+        },
+        {
+          "key": "B",
+          "text": "A quarter of a point",
+          "ja": "0.25ポイント"
+        },
+        {
+          "key": "C",
+          "text": "Half a point",
+          "ja": "0.5ポイント"
+        },
+        {
+          "key": "D",
+          "text": "One full point",
+          "ja": "1ポイント"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落の4文目に「The ninth member wanted a larger increase of half a point」とあるため、正解は (C) Half a point。(B) の quarter of a point（0.25ポイント）は、8人の委員が賛成した実際の引き上げ幅（3文目の quarter-point rise）で、反対した1人が求めた幅ではない。(A) と (D) は本文にない数字。設問が「誰が」求めた数字かを確認し、多数派の数字と混同しないこと。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "Part 7 の数字問題では、同じ段落に「多数派の数字」と「少数意見の数字」が並ぶことが多い。設問の主語（ninth member）に印を付けてから該当文を探す。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the passage, why did the bank raise the rate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Unemployment had fallen sharply.",
+          "ja": "失業率が急低下した"
+        },
+        {
+          "key": "B",
+          "text": "Energy costs were raising other prices.",
+          "ja": "エネルギー高が他の物価を押し上げた"
+        },
+        {
+          "key": "C",
+          "text": "Investors asked for a higher rate.",
+          "ja": "投資家が利上げを求めた"
+        },
+        {
+          "key": "D",
+          "text": "The economy was growing too slowly.",
+          "ja": "景気の減速が大きすぎた"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落の1文目に「higher energy prices are now pushing up the cost of many other goods and services」とあり、利上げの理由はエネルギー価格の上昇が他の物価に波及していることだとわかる。(A) の失業率と (D) の景気減速は本文に出てこない。(C) は第1段落で投資家が「決定を予想していた」とあるだけで、利上げを求めたとは書かれていない。理由を問う設問では、because / said / so などの手がかりと一緒に書かれた文を探す。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "Part 7 の理由問題は、本文の言い回しが選択肢で言い換えられる（pushing up the cost → raising other prices）。語そのものではなく意味で照合する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "committee",
+      "pos": "名",
+      "ja": "委員会",
+      "gloss": "（＝ある物事を決めるために集められた人のグループのこと）",
+      "example": {
+        "en": "The committee will review the budget on Monday.",
+        "ja": "委員会は月曜日に予算を審査する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "基準、指標",
+      "gloss": "（＝比べるときの目安になる数字や水準のこと）",
+      "example": {
+        "en": "Last year's sales serve as the benchmark for this year's goal.",
+        "ja": "昨年の売上が今年の目標の基準になる。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "inflation",
+      "pos": "名",
+      "ja": "物価上昇、インフレ",
+      "gloss": "（＝物の値段が全体として上がり続けること）",
+      "example": {
+        "en": "Rising inflation has made office supplies more costly.",
+        "ja": "物価上昇でオフィス用品が高くなった。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "resolve",
+      "pos": "動",
+      "ja": "解決する",
+      "gloss": "",
+      "example": {
+        "en": "The team worked all night to resolve the billing error.",
+        "ja": "チームは請求ミスを解決するため徹夜で作業した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "gloss": "",
+      "example": {
+        "en": "Borrowing for new equipment became more expensive this year.",
+        "ja": "新しい設備のための借り入れは今年、高くなった。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "widely",
+      "pos": "副",
+      "ja": "広く、幅広く",
+      "gloss": "",
+      "example": {
+        "en": "The new policy was widely discussed among employees.",
+        "ja": "新しい方針は従業員の間で広く議論された。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "gloss": "",
+      "example": {
+        "en": "Investors were pleased with the quarterly results.",
+        "ja": "投資家は四半期決算に満足した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "expect",
+      "pos": "動",
+      "ja": "予想する、見込む",
+      "gloss": "",
+      "example": {
+        "en": "We expect the shipment to arrive by Friday.",
+        "ja": "出荷品は金曜までに届く見込みだ。"
+      }
+    }
+  ],
+  "glossary": {
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "金利、利子",
+      "note": ""
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "引き上げ、増加",
+      "note": ""
+    },
+    "members": {
+      "lemma": "member",
+      "pos": "名",
+      "ja": "委員、メンバー",
+      "note": ""
+    },
+    "committee": {
+      "lemma": "committee",
+      "pos": "名",
+      "ja": "委員会",
+      "note": ""
+    },
+    "voted": {
+      "lemma": "vote",
+      "pos": "動",
+      "ja": "投票した",
+      "note": ""
+    },
+    "quarter-point": {
+      "lemma": "quarter-point",
+      "pos": "形",
+      "ja": "0.25ポイントの",
+      "note": ""
+    },
+    "larger": {
+      "lemma": "large",
+      "pos": "形",
+      "ja": "より大きな",
+      "note": ""
+    },
+    "widely": {
+      "lemma": "widely",
+      "pos": "副",
+      "ja": "広く",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想された",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "decision": {
+      "lemma": "decision",
+      "pos": "名",
+      "ja": "決定",
+      "note": ""
+    },
+    "energy": {
+      "lemma": "energy",
+      "pos": "名",
+      "ja": "エネルギー",
+      "note": ""
+    },
+    "pushing": {
+      "lemma": "push",
+      "pos": "動",
+      "ja": "押し上げる",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "商品",
+      "note": ""
+    },
+    "services": {
+      "lemma": "service",
+      "pos": "名",
+      "ja": "サービス",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "物価上昇",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "governor": {
+      "lemma": "governor",
+      "pos": "名",
+      "ja": "総裁",
+      "note": ""
+    },
+    "unless": {
+      "lemma": "unless",
+      "pos": "接",
+      "ja": "～でない限り",
+      "note": ""
+    },
+    "conflict": {
+      "lemma": "conflict",
+      "pos": "名",
+      "ja": "紛争",
+      "note": ""
+    },
+    "resolved": {
+      "lemma": "resolve",
+      "pos": "動",
+      "ja": "解決される",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "基準",
+      "note": ""
+    },
+    "mortgages": {
+      "lemma": "mortgage",
+      "pos": "名",
+      "ja": "住宅ローン",
+      "note": ""
+    },
+    "loans": {
+      "lemma": "loan",
+      "pos": "名",
+      "ja": "融資、ローン",
+      "note": ""
+    },
+    "borrowing": {
+      "lemma": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "note": ""
+    },
+    "expensive": {
+      "lemma": "expensive",
+      "pos": "形",
+      "ja": "高価な",
+      "note": ""
+    },
+    "price": {
+      "lemma": "price",
+      "pos": "動",
+      "ja": "値付けする",
+      "note": "ここでは「（金利などを）決める」の意味"
+    },
+    "rise": {
+      "lemma": "rise",
+      "pos": "名",
+      "ja": "上昇、引き上げ",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "条件を表す接続詞 unless（～でない限り）",
+    "quote": "Governor Andrew Bailey said more increases will follow unless the conflict in the Middle East is resolved.",
+    "quoteJa": "アンドリュー・ベイリー総裁は、中東の紛争が解決しない限り、さらなる利上げが続くと述べた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "unless は「～でない限り」という意味の接続詞で、if ... not とほぼ同じ働きをする。この文では「紛争が解決されない場合を除いて、利上げは続く」と読む。unless の後ろは未来のことでも現在形で書くため、will be resolved ではなく is resolved になる（時・条件を表す節のルール）。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "書き換えると More increases will follow if the conflict is not resolved.（紛争が解決されなければ利上げが続く）となる。unless は「唯一の例外」を示すニュアンスが強く、if ... not は単に条件を述べる。注意点として、unless の節の中に not を入れない（× unless ... is not resolved）。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 では、空所に unless / if / although / because から接続詞を選ばせる問題が出る。「～でない限り」と訳せるかどうかで判断する。Part 7 の契約書や社内通知では、Unless otherwise stated（特に記載がない限り）、Unless notified（通知がない限り）の形がよく出る。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "The order will ship on Monday unless the payment is delayed.（支払いが遅れない限り、注文品は月曜に出荷されます。）／ Please keep the room reserved unless you hear from us.（当社から連絡がない限り、部屋の予約はそのままにしてください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "英中銀(BoE)は11月5日、政策金利を3.75%から4%へ0.25ポイント引き上げた。2023年8月以来の利上げ(rate hike)で、9人の委員のうち8人が賛成し、1人は0.5ポイントの引き上げを求めた。背景は中東情勢によるエネルギー価格の上昇で、9月に3.5%だった物価上昇率は来年前半に5%近くへ高まる見通しだ。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "エネルギー価格が上がると、輸送費や電気代、食品の値段へと順に波及していく。これを価格転嫁(pass-through)と呼ぶ。中銀は転嫁が広がる前に金利を上げ、需要を冷やして物価上昇を抑えようとする。ベイリー総裁は中東紛争が解決しない限り追加の引き上げもあり得るとし、今回が最後とは限らないと示した。"
+    },
+    {
+      "heading": "📌 3. 他の中央銀行の対応",
+      "body": "欧州中央銀行(ECB)は2026年10月29日の理事会で利上げを議論したが、全会一致で据え置き、預金金利を2.50%に保った。ラガルド総裁は、エネルギーショックの物価への影響はまだ出きっていないと述べ、市場は12月の利上げを織り込んでいる。一方、日本銀行は9月18日に政策金利を1.0%から1.25%へ引き上げ、1995年以来の高水準にした。理由はエネルギー高と円安による物価上振れへの警戒だった。様子を見て据え置いたECBと、先に動いた日銀という違いがある。"
+    },
+    {
+      "heading": "📌 4. 日本の銀行と借り手では",
+      "body": "日本では住宅ローン利用者の約8割が変動金利を選ぶとされる。三菱UFJ銀行とみずほ銀行は2025年12月、短期プライムレートを1.875%から2.125%へ引き上げた。この指標は変動金利(variable rate)型の住宅ローンの見直しに使われ、半年ごとに反映される。日銀の利上げは数カ月遅れて借り手の返済負担に表れるため、変動型で借りた人は今後の金利の動きを確かめておく必要がある。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "rate hike",
+      "pos": "名",
+      "ja": "利上げ",
+      "gloss": "（＝中央銀行が政策金利を引き上げること）",
+      "example": {
+        "en": "Analysts expect another rate hike in December.",
+        "ja": "アナリストは12月にもう一度の利上げを予想している。"
+      }
+    },
+    {
+      "term": "pass-through",
+      "pos": "名",
+      "ja": "価格転嫁",
+      "gloss": "（＝コストの上昇が商品の値段に反映されること）",
+      "example": {
+        "en": "Weak demand slowed the pass-through of higher costs to customers.",
+        "ja": "需要の弱さで、コスト増の顧客への転嫁は遅れた。"
+      }
+    },
+    {
+      "term": "variable rate",
+      "pos": "名",
+      "ja": "変動金利",
+      "gloss": "（＝市場の金利に合わせて、借りている間に変わる金利のこと）",
+      "example": {
+        "en": "She chose a variable rate for her home loan.",
+        "ja": "彼女は住宅ローンに変動金利を選んだ。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
+      "date": "2026-11-05"
+    },
+    {
+      "title": "Bank of England raises rates for first time since 2023, warns more likely",
+      "publisher": "Reuters (Investing.com)",
+      "url": "https://ca.investing.com/news/economy-news/bank-of-england-raises-rates-for-first-time-since-2023-warns-more-likely-4935844",
+      "date": "2026-11-05"
+    },
+    {
+      "title": "ECB holds interest rates steady as energy shock threatens inflation and growth",
+      "publisher": "Cyprus Mail",
+      "url": "https://cyprus-mail.com/2026/10/29/ecb-holds-interest-rates-steady-as-energy-shock-threatens-inflation-and-growth",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "Bank Of Japan Raises Interest Rate To 1.25%, Highest Level In Three Decades",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/business/bank-of-japan-raises-interest-rate-to-125-highest-level-in-three-decades",
+      "date": "2026-09-18"
+    }
+  ]
+}
