@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-07-0548",
+  "date": "2026-11-07",
+  "time": "05:48",
+  "createdAt": "2026-11-07T05:48:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment",
+  "sample": false,
+  "title": {
+    "en": "U.S. Hiring Picks Up in October",
+    "ja": "米雇用、10月は予想を大幅に上回る"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. employers added 165,000 jobs in October, the government said on Friday.",
+            "ja": "米政府は金曜日、10月に米国の雇用主が16万5000人分の雇用を増やしたと発表した。"
+          },
+          {
+            "en": "The number was well above what economists had expected.",
+            "ja": "この数字はエコノミストの予想をはるかに上回った。"
+          },
+          {
+            "en": "The unemployment rate fell to 4.1% from 4.2%, and earlier figures for August and September were revised up.",
+            "ja": "失業率は4.2%から4.1%に低下し、8月と9月の従来の数字も上方修正された。"
+          },
+          {
+            "en": "Business services and healthcare led the gains, while restaurants and construction firms cut jobs.",
+            "ja": "増加を主導したのは企業向けサービスと医療で、飲食店や建設会社は雇用を減らした。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Wages rose 3.1% from a year earlier, but the picture is not entirely bright.",
+            "ja": "賃金は前年同月比で3.1%上昇したが、状況が全面的に明るいわけではない。"
+          },
+          {
+            "en": "Jobless workers now take longer to find new work than at any time in several years.",
+            "ja": "失業者が次の仕事を見つけるまでの期間は、ここ数年で最も長くなっている。"
+          },
+          {
+            "en": "Still, the strong report has changed the mood in financial markets.",
+            "ja": "それでも、この強い内容は金融市場の雰囲気を変えた。"
+          },
+          {
+            "en": "Traders now believe the Federal Reserve is likely to raise interest rates at its next meeting in December.",
+            "ja": "トレーダーは今や、米連邦準備制度が12月の次回会合で利上げに動く可能性が高いと見ている。"
+          },
+          {
+            "en": "Higher rates would make borrowing more costly for companies and could slow hiring later.",
+            "ja": "金利が上がれば企業の借り入れコストが増え、のちの採用が鈍る可能性がある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many jobs did U.S. employers add in October?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "60,000",
+          "ja": "6万人"
+        },
+        {
+          "key": "B",
+          "text": "84,000",
+          "ja": "8万4000人"
+        },
+        {
+          "key": "C",
+          "text": "165,000",
+          "ja": "16万5000人"
+        },
+        {
+          "key": "D",
+          "text": "275,000",
+          "ja": "27万5000人"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解はC。第1段落の1文目に「U.S. employers added 165,000 jobs in October」とある。A（60,000）やB（84,000）は本文に出てこない数字で、Dも本文にない。数字を問う問題は、選択肢の数字を本文と1つずつ照合すれば確実に解ける。4.1%（失業率）や3.1%（賃金上昇率）など別の数字が本文にあるので、何の数字かを必ず確認すること。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "数字問題は「何の数字か」を先に押さえる。本文には4.1%や3.1%など複数の数字があり、雇用の増加数を問われているのに別の数字を選ぶ引っかけが定番。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT stated in the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The unemployment rate fell in October.",
+          "ja": "10月に失業率が低下した。"
+        },
+        {
+          "key": "B",
+          "text": "Healthcare was one of the strongest sectors.",
+          "ja": "医療は最も好調な分野の1つ。"
+        },
+        {
+          "key": "C",
+          "text": "Wages rose 3.1% from a year earlier.",
+          "ja": "賃金は前年比3.1%上昇した。"
+        },
+        {
+          "key": "D",
+          "text": "The Federal Reserve has already raised rates in December.",
+          "ja": "連邦準備制度は12月に利上げ済み。"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解はD。第2段落では、トレーダーが「連邦準備制度は12月の次回会合で利上げする可能性が高い」と見ているだけで、すでに利上げしたとは書かれていない（12月はまだ先）。Aは第1段落3文目、Bは4文目、Cは第2段落1文目に明記されている。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "NOT問題は、本文に書いてある選択肢を3つ消去して残りを選ぶ。「likely（可能性が高い）」を「already（すでに）」に変えるなど、時制・確度のすり替えが典型的な誤答。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "employers",
+      "pos": "名",
+      "ja": "雇用主、企業",
+      "gloss": "",
+      "example": {
+        "en": "The employers plan to hire more staff next spring.",
+        "ja": "その雇用主は来春にさらに人員を採用する予定だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "unemployment",
+      "pos": "名",
+      "ja": "失業、失業率",
+      "gloss": "",
+      "example": {
+        "en": "Unemployment dropped slightly in the region last month.",
+        "ja": "その地域の失業率は先月わずかに下がった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "revised",
+      "pos": "動",
+      "ja": "修正した",
+      "gloss": "（＝数字や計画を見直して直すこと）",
+      "example": {
+        "en": "The finance team revised the budget on Monday.",
+        "ja": "財務チームは月曜に予算を修正した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "gains",
+      "pos": "名",
+      "ja": "増加、上昇",
+      "gloss": "",
+      "example": {
+        "en": "The company reported strong gains in online sales.",
+        "ja": "その会社はオンライン販売の大幅な伸びを報告した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "wages",
+      "pos": "名",
+      "ja": "賃金、給料",
+      "gloss": "",
+      "example": {
+        "en": "Wages at the factory will rise next year.",
+        "ja": "その工場の賃金は来年上がる。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "jobless",
+      "pos": "形",
+      "ja": "失業中の",
+      "gloss": "",
+      "example": {
+        "en": "Jobless residents can join the free training program.",
+        "ja": "失業中の住民は無料の研修プログラムに参加できる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "gloss": "（＝銀行などからお金を借りること）",
+      "example": {
+        "en": "Borrowing costs have risen for small businesses.",
+        "ja": "中小企業の借り入れコストは上昇している。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "costly",
+      "pos": "形",
+      "ja": "費用のかかる",
+      "gloss": "",
+      "example": {
+        "en": "Delays in delivery can be costly for retailers.",
+        "ja": "配送の遅れは小売業者にとって高くつくことがある。"
+      }
+    }
+  ],
+  "glossary": {
+    "employers": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主",
+      "note": ""
+    },
+    "added": {
+      "lemma": "add",
+      "pos": "動",
+      "ja": "加えた、増やした",
+      "note": ""
+    },
+    "jobs": {
+      "lemma": "job",
+      "pos": "名",
+      "ja": "雇用、仕事",
+      "note": ""
+    },
+    "government": {
+      "lemma": "government",
+      "pos": "名",
+      "ja": "政府",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "経済学者",
+      "note": ""
+    },
+    "unemployment": {
+      "lemma": "unemployment",
+      "pos": "名",
+      "ja": "失業（率）",
+      "note": ""
+    },
+    "fell": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下がった",
+      "note": ""
+    },
+    "figures": {
+      "lemma": "figure",
+      "pos": "名",
+      "ja": "数字、統計",
+      "note": ""
+    },
+    "revised": {
+      "lemma": "revise",
+      "pos": "動",
+      "ja": "修正した",
+      "note": ""
+    },
+    "gains": {
+      "lemma": "gain",
+      "pos": "名",
+      "ja": "増加",
+      "note": ""
+    },
+    "led": {
+      "lemma": "lead",
+      "pos": "動",
+      "ja": "主導した",
+      "note": ""
+    },
+    "firms": {
+      "lemma": "firm",
+      "pos": "名",
+      "ja": "会社",
+      "note": ""
+    },
+    "cut": {
+      "lemma": "cut",
+      "pos": "動",
+      "ja": "削減した",
+      "note": ""
+    },
+    "construction": {
+      "lemma": "construction",
+      "pos": "名",
+      "ja": "建設",
+      "note": ""
+    },
+    "wages": {
+      "lemma": "wage",
+      "pos": "名",
+      "ja": "賃金",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": ""
+    },
+    "entirely": {
+      "lemma": "entirely",
+      "pos": "副",
+      "ja": "完全に",
+      "note": ""
+    },
+    "bright": {
+      "lemma": "bright",
+      "pos": "形",
+      "ja": "明るい",
+      "note": ""
+    },
+    "jobless": {
+      "lemma": "jobless",
+      "pos": "形",
+      "ja": "失業中の",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー",
+      "note": ""
+    },
+    "likely": {
+      "lemma": "likely",
+      "pos": "形",
+      "ja": "可能性が高い",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "金利、利子",
+      "note": ""
+    },
+    "borrowing": {
+      "lemma": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "note": ""
+    },
+    "costly": {
+      "lemma": "costly",
+      "pos": "形",
+      "ja": "費用のかかる",
+      "note": ""
+    },
+    "slow": {
+      "lemma": "slow",
+      "pos": "動",
+      "ja": "鈍らせる",
+      "note": ""
+    },
+    "hiring": {
+      "lemma": "hiring",
+      "pos": "名",
+      "ja": "採用",
+      "note": ""
+    },
+    "mood": {
+      "lemma": "mood",
+      "pos": "名",
+      "ja": "雰囲気",
+      "note": ""
+    },
+    "financial": {
+      "lemma": "financial",
+      "pos": "形",
+      "ja": "金融の",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "先行詞を含む関係代名詞 what（～するもの・こと）",
+    "quote": "The number was well above what economists had expected.",
+    "quoteJa": "この数字はエコノミストの予想をはるかに上回った。",
+    "blocks": [
+      {
+        "heading": "構文の説明",
+        "body": "what は「the thing(s) which」と同じ働きをする関係代名詞で、先行詞（the thing）を中に含んでいます。what 以下（economists had expected）が名詞のかたまりになり、前置詞 above の目的語になっています。「～するもの／こと」と訳します。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "The number was well above the level which economists had expected.（先行詞 the level を置いた形）と同じ意味です。what を使うと先行詞が要らず、短くなります。また had expected は「発表より前の時点の予想」を表す過去完了で、「予想した」のが「上回った」より前だと分かります。well は above を強めて「はるかに」の意味を足します。"
+      },
+      {
+        "heading": "TOEICでの注意点",
+        "body": "Part 5 では that と what の使い分けが頻出です。直後の節に主語や目的語が欠けていれば what（先行詞なし）、先行詞があって節が完全なら that や which を選びます。この文は expected の目的語が欠けているので what が入ります。Part 7 では what we expected / what was announced のような表現が、予想・計画との比較を述べる文で頻繁に出ます。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Sales came in below what we had planned.（売上は計画を下回った。）／ The final cost was higher than what the client had approved.（最終費用は顧客が承認した額を上回った。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米労働省が11月6日に発表した10月の雇用統計で、非農業部門雇用者数(nonfarm payrolls)は16.5万人増と予想を大きく上回った。失業率は4.2%から4.1%に下がり、労働参加率(labor force participation rate)もわずかに上昇した。一方、失業者が仕事を見つけるまでの期間は長期化している。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "非農業部門雇用者数は、農業を除く企業・政府の雇用の増減を示す、景気の体温計のような指標。労働参加率は、働く意思のある人が15歳以上人口に占める割合。雇用が強いと賃金と物価が上がりやすく、中央銀行は利上げに動きやすくなる。"
+    },
+    {
+      "heading": "📌 3. 他社の年末の人手確保",
+      "body": "米アマゾンは2026年10月20日、年末商戦に向けて米国で30万人超を季節雇用(seasonal hiring)すると発表した。過去3年は約25万人で、3年ぶりの増員。平均時給は約20ドルで、週30時間以上働く季節従業員には2027年から医療保険も付ける。一方、ウォルマートは2017年、年末の人手を新規募集に頼らず、既存従業員に追加の勤務時間を優先して割り当てる方針を示した。これに対し労働団体は、十分な勤務時間をもらえないことが従業員の最大の不満だと指摘した。前者は待遇を上げて人を集め、後者は今いる人の労働時間で賄う点が違う。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "人手不足の日本でも初任給の引き上げが相次ぐ。大和証券は総合職の初任給を1万円上げて31万円とする方針を示し、第一生命ホールディングスも総合職を33万5,560円から35万4,000円（固定残業代を含む）に引き上げるとしている。ただし中小企業では、固定費の増加が死活問題になるとの声が帝国データバンクの調査で出ている。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "nonfarm payrolls",
+      "pos": "名",
+      "ja": "非農業部門雇用者数",
+      "gloss": "（＝農業以外の仕事に就いている人の数のこと）",
+      "example": {
+        "en": "Nonfarm payrolls grew faster than analysts had predicted.",
+        "ja": "非農業部門雇用者数はアナリストの予測より速く増えた。"
+      }
+    },
+    {
+      "term": "labor force participation rate",
+      "pos": "名",
+      "ja": "労働参加率",
+      "gloss": "（＝働いている人と求職中の人が、人口に占める割合）",
+      "example": {
+        "en": "The labor force participation rate has stayed flat this year.",
+        "ja": "労働参加率は今年、横ばいが続いている。"
+      }
+    },
+    {
+      "term": "seasonal hiring",
+      "pos": "名",
+      "ja": "季節雇用",
+      "gloss": "（＝繁忙期だけ一時的に人を雇うこと）",
+      "example": {
+        "en": "Seasonal hiring starts early at most warehouses.",
+        "ja": "ほとんどの倉庫では季節雇用が早くから始まる。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hiring jumps: The economy added 165,000 jobs last month",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6030867/jobs-labor-market-economy-wages-inflation",
+      "date": "2026-11-06"
+    },
+    {
+      "title": "October jobs report: US economy added 165,000 jobs last month",
+      "publisher": "Fox Business",
+      "url": "https://www.foxbusiness.com/economy/us-jobs-report-october-2026",
+      "date": "2026-11-06"
+    },
+    {
+      "title": "U.S. Jobs Report October 2026: Payrolls Jump 165,000",
+      "publisher": "Babypips",
+      "url": "https://www.babypips.com/news/headline-us-jobs-report-october-2026-payrolls-beat-fed",
+      "date": "2026-11-06"
+    },
+    {
+      "title": "Amazon to hire 300,000 US holiday workers, up from 250,000 in 2025",
+      "publisher": "PPC Land",
+      "url": "https://ppc.land/amazon-to-hire-300-000-us-holiday-workers-up-from-250-000-in-2025/",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "Walmart isn't hiring holiday help",
+      "publisher": "Retail Dive",
+      "url": "https://www.retaildive.com/news/walmart-isnt-hiring-holiday-help/505411/",
+      "date": "2017-09-20"
+    }
+  ]
+}
