@@ -508,5 +508,23 @@
       "url": "https://english.adnkronos.com/2026/04/20/jal-ana-to-double-fuel-surcharges-in-may/",
       "date": "2026-04-20"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-08-0548/00.mp3",
+      "audio/2026-11-08-0548/01.mp3",
+      "audio/2026-11-08-0548/02.mp3",
+      "audio/2026-11-08-0548/03.mp3",
+      "audio/2026-11-08-0548/04.mp3",
+      "audio/2026-11-08-0548/05.mp3",
+      "audio/2026-11-08-0548/06.mp3",
+      "audio/2026-11-08-0548/07.mp3",
+      "audio/2026-11-08-0548/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 190380,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-07T20:49:36.939Z",
+    "trimmed": true
+  }
 }
