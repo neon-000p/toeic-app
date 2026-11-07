@@ -1,0 +1,506 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-07-1645",
+  "date": "2026-11-07",
+  "time": "16:45",
+  "createdAt": "2026-11-07T16:45:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Apple Warns Memory Costs Will Cut Its Margin",
+    "ja": "アップル、メモリー高騰で利益率低下を警告"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Apple said earlier this week that its profit margin will fall in the holiday quarter.",
+            "ja": "アップルは今週、10〜12月期の利益率が下がる見通しだと発表した。"
+          },
+          {
+            "en": "The company expects its gross margin to be between 45% and 46%, down from 47.9% in the last quarter.",
+            "ja": "同社は売上総利益率を45〜46%と見込んでおり、前四半期の47.9%から低下する。"
+          },
+          {
+            "en": "Chief executive John Ternus called the current price of memory chips \"unprecedented\" and said it will keep rising.",
+            "ja": "ジョン・ターナスCEOは、現在のメモリーチップの価格を「前例がない」と呼び、さらに上がり続けると述べた。"
+          },
+          {
+            "en": "Apple's shares fell about 4% after the earnings call.",
+            "ja": "決算説明会の後、アップルの株価は約4%下落した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Memory chips are used in nearly every phone and computer.",
+            "ja": "メモリーチップは、ほぼすべてのスマートフォンやパソコンに使われている。"
+          },
+          {
+            "en": "Prices have jumped because AI data centers are buying huge amounts of them.",
+            "ja": "AIのデータセンターが大量に買い入れているため、価格が急騰している。"
+          },
+          {
+            "en": "Apple said it raised some prices to cover part of the extra cost.",
+            "ja": "アップルは、増えたコストの一部をまかなうため、一部の製品を値上げしたと述べた。"
+          },
+          {
+            "en": "It also warned that its computers and tablets will be in short supply during the holiday quarter, mainly because of memory.",
+            "ja": "また、パソコンやタブレットは、主にメモリーが原因で、10〜12月期に品薄になると警告した。"
+          },
+          {
+            "en": "Rival phone makers face the same pressure, and many have already raised prices.",
+            "ja": "競合のスマホメーカーも同じ圧力に直面し、すでに多くが値上げした。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What does Apple expect its gross margin to be in the holiday quarter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "44% to 45%",
+          "ja": "44〜45%"
+        },
+        {
+          "key": "B",
+          "text": "45% to 46%",
+          "ja": "45〜46%"
+        },
+        {
+          "key": "C",
+          "text": "47.9%",
+          "ja": "47.9%"
+        },
+        {
+          "key": "D",
+          "text": "About 4%",
+          "ja": "約4%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落2文目に「gross margin to be between 45% and 46%」とある。47.9%は前四半期の実績で、(C)は引っかけ。約4%は株価の下落幅（4文目）で、利益率とは無関係。(A)は本文にない数字。Part 7では、似た数字が複数並ぶとき『何の数字か』を修飾語（gross margin / last quarter / shares）で区別するのがコツ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字問題は、数字そのものより『何についての数字か』を先に特定する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why have memory chip prices jumped?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Apple raised its own prices.",
+          "ja": "アップルが自社製品を値上げした"
+        },
+        {
+          "key": "B",
+          "text": "AI data centers are buying large amounts.",
+          "ja": "AIデータセンターが大量に買っている"
+        },
+        {
+          "key": "C",
+          "text": "Phone makers cut their production.",
+          "ja": "スマホメーカーが減産した"
+        },
+        {
+          "key": "D",
+          "text": "Apple's shares fell sharply.",
+          "ja": "アップルの株価が急落した"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落2文目「Prices have jumped because AI data centers are buying huge amounts of them.」が根拠。(A)は値上げの対応であって原因ではなく、因果が逆。(C)は本文に記述がない。(D)は発表後の結果であり、価格高騰の原因ではない。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由問題は because / since / due to の直後が正解の根拠になることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "margin",
+      "pos": "名",
+      "ja": "利益率、余白",
+      "gloss": "（＝売上のうち、利益として残る割合のこと）",
+      "example": {
+        "en": "Our profit margin improved in the second quarter.",
+        "ja": "当社の利益率は第2四半期に改善した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "executive",
+      "pos": "名",
+      "ja": "役員、幹部",
+      "gloss": "",
+      "example": {
+        "en": "The chief executive will speak at the meeting.",
+        "ja": "最高経営責任者が会議で講演する。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "unprecedented",
+      "pos": "形",
+      "ja": "前例のない",
+      "gloss": "",
+      "example": {
+        "en": "The company faced an unprecedented level of demand.",
+        "ja": "その会社は前例のない水準の需要に直面した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "rising",
+      "pos": "形",
+      "ja": "上昇している",
+      "gloss": "",
+      "example": {
+        "en": "Rising costs forced the store to change its prices.",
+        "ja": "コスト上昇のため、その店は価格を変更せざるをえなかった。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "cover",
+      "pos": "動",
+      "ja": "（費用を）まかなう",
+      "gloss": "",
+      "example": {
+        "en": "The fee will cover the cost of delivery.",
+        "ja": "その手数料は配送費をまかなう。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "warned",
+      "pos": "動",
+      "ja": "警告した",
+      "gloss": "",
+      "example": {
+        "en": "The supplier warned us about possible delays.",
+        "ja": "その供給元は起こりうる遅延について私たちに警告した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "in short supply",
+      "pos": "熟",
+      "ja": "品薄で、不足して",
+      "gloss": "",
+      "example": {
+        "en": "Rental cars are in short supply during the holidays.",
+        "ja": "休暇中はレンタカーが不足する。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "gloss": "",
+      "example": {
+        "en": "The company is under pressure to cut costs.",
+        "ja": "その会社はコスト削減を迫られている。"
+      }
+    }
+  ],
+  "glossary": {
+    "margin": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": ""
+    },
+    "holiday": {
+      "lemma": "holiday",
+      "pos": "名",
+      "ja": "祝日、年末商戦期",
+      "note": "ここでは10〜12月の販売期"
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": "3か月間の会計期間"
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込む",
+      "note": ""
+    },
+    "gross": {
+      "lemma": "gross",
+      "pos": "形",
+      "ja": "総計の",
+      "note": "gross margin＝売上総利益率"
+    },
+    "chief": {
+      "lemma": "chief",
+      "pos": "形",
+      "ja": "最高位の",
+      "note": ""
+    },
+    "executive": {
+      "lemma": "executive",
+      "pos": "名",
+      "ja": "役員",
+      "note": ""
+    },
+    "unprecedented": {
+      "lemma": "unprecedented",
+      "pos": "形",
+      "ja": "前例のない",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上がる",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式、株価",
+      "note": ""
+    },
+    "earnings": {
+      "lemma": "earnings",
+      "pos": "名",
+      "ja": "決算、収益",
+      "note": ""
+    },
+    "memory": {
+      "lemma": "memory",
+      "pos": "名",
+      "ja": "メモリー",
+      "note": ""
+    },
+    "chips": {
+      "lemma": "chip",
+      "pos": "名",
+      "ja": "半導体チップ",
+      "note": ""
+    },
+    "jumped": {
+      "lemma": "jump",
+      "pos": "動",
+      "ja": "急上昇した",
+      "note": ""
+    },
+    "buying": {
+      "lemma": "buy",
+      "pos": "動",
+      "ja": "買う",
+      "note": ""
+    },
+    "huge": {
+      "lemma": "huge",
+      "pos": "形",
+      "ja": "巨大な",
+      "note": ""
+    },
+    "amounts": {
+      "lemma": "amount",
+      "pos": "名",
+      "ja": "量",
+      "note": ""
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "まかなう",
+      "note": ""
+    },
+    "extra": {
+      "lemma": "extra",
+      "pos": "形",
+      "ja": "追加の",
+      "note": ""
+    },
+    "cost": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告した",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "mainly": {
+      "lemma": "mainly",
+      "pos": "副",
+      "ja": "主に",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "note": ""
+    },
+    "rival": {
+      "lemma": "rival",
+      "pos": "形",
+      "ja": "競合の",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": ""
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "centers": {
+      "lemma": "center",
+      "pos": "名",
+      "ja": "センター",
+      "note": ""
+    },
+    "tablets": {
+      "lemma": "tablet",
+      "pos": "名",
+      "ja": "タブレット端末",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "第5文型 call A B（AをBと呼ぶ）と say の that 節",
+    "quote": "Chief executive John Ternus called the current price of memory chips \"unprecedented\" and said it will keep rising.",
+    "quoteJa": "ジョン・ターナスCEOは、現在のメモリーチップの価格を「前例がない」と呼び、さらに上がり続けると述べた。",
+    "blocks": [
+      {
+        "heading": "構文：call O C",
+        "body": "called the price \"unprecedented\" は S＋V＋O＋C（第5文型）。『O を C と呼ぶ』という意味で、O（the current price）＝C（unprecedented）の関係が成り立つ。同じ型の動詞に make（Oを〜にする）、keep（Oを〜に保つ）、find（Oが〜と分かる）がある。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "called the price unprecedented ＝ described the price as unprecedented ＝ said the price was unprecedented。後ろの and said it will keep rising は、同じ主語 Ternus に2つの動詞（called / said）がつながった形。it は the price を受ける。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では call / consider / find / keep ＋ O ＋ 形容詞・名詞 の形が問われ、空所に副詞を入れる誤答が定番。例：The manager found the schedule (confusing / confusingly). 正解は形容詞の confusing。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "The board called the results \"disappointing.\"（取締役会は結果を「期待外れ」と評した）／ The new system keeps our data safe.（新システムはデータを安全に保つ）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "アップルは10〜12月期の売上総利益率を45〜46%と見込み、前四半期の47.9%から下がると発表した。メモリー価格は「前例がない」水準で、12月以降も上がるとCEOは述べた。パソコンとタブレットはメモリー不足で品薄になる見通しだ。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "スマホやパソコンの部品表(bill of materials)の中で、メモリーの比重が急に高まっている。AIデータセンターが大量に買うため、メーカーは確保に苦労する。部品が高くなると、企業は値上げで客に負担を回す価格転嫁(cost pass-through)を考えるが、全額は回せず利益率が下がる。会社はその見込みを業績見通し(guidance)として先に開示する。"
+    },
+    {
+      "heading": "📌 3. 他社のメモリー高対策",
+      "body": "シャオミは2026年4月に一部機種を値上げし、その後も中国で値上げを重ねた。幹部のルー・ウェイビン氏は、値上げしても負担を完全には補えないと述べた。一方ソニーは2026年3月にPS5を値上げし、米国の標準機を100ドル上げて649.99ドルにした。メモリー高の影響は今年度に約300億円と見込むが、今年度分の調達は確保済みだという。2社の違いは、シャオミが値上げを繰り返したのに対し、ソニーは先に調達を固めて影響額を見通した点だ。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "任天堂は2026年5月、スイッチ2を日本で5月25日から20%値上げし、メモリーや部品の高騰を理由に挙げた。同社は今期の純利益が27%減ると予想し、発表後に株価は約7%下がった。アップルと同様、部品高を値上げで受け止めつつ、利益率の悪化は避けられない構図だ。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "bill of materials",
+      "pos": "熟",
+      "ja": "部品表",
+      "gloss": "（＝製品を作るのに必要な部品と費用の一覧のこと）",
+      "example": {
+        "en": "The bill of materials shows the cost of every part in the product.",
+        "ja": "部品表には、製品に使う全部品のコストが載っている。"
+      }
+    },
+    {
+      "term": "cost pass-through",
+      "pos": "熟",
+      "ja": "価格転嫁",
+      "gloss": "（＝増えたコストを販売価格に上乗せして客に負担してもらうこと）",
+      "example": {
+        "en": "The retailer limited cost pass-through to protect its customers.",
+        "ja": "その小売業者は、顧客を守るため価格転嫁を抑えた。"
+      }
+    },
+    {
+      "term": "guidance",
+      "pos": "名",
+      "ja": "業績見通し",
+      "gloss": "（＝会社が自ら発表する、先の売上や利益の予想のこと）",
+      "example": {
+        "en": "The firm lowered its guidance for the next quarter.",
+        "ja": "その会社は来四半期の業績見通しを下方修正した。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apple sees margins falling to 45% as memory chip prices keep climbing",
+      "publisher": "The Next Web",
+      "url": "https://thenextweb.com/news/apple-earnings-q4-2026-memory-costs-margins",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "Apple Flags Holiday Margin Drop as Memory Pricing Turns Unprecedented",
+      "publisher": "iPhone in Canada",
+      "url": "https://www.iphoneincanada.ca/2026/11/03/apple-holiday-margin-drop-memory-pricing-unprecedented/",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "Huawei, Xiaomi and Honor Raise Phone Prices by Up to $150 as Memory Costs Surge",
+      "publisher": "Channel Insider",
+      "url": "https://www.channelinsider.com/infrastructure/news-huawei-xiaomi-honor-smartphone-price-hikes-memory-costs-china-apac/",
+      "date": "2026"
+    },
+    {
+      "title": "Sony, Nintendo grapple with memory price surge as AI boom constrains supply",
+      "publisher": "The Star",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/05/08/sony-nintendo-grapple-with-memory-price-surge-as-ai-boom-constrains-supply",
+      "date": "2026-05-08"
+    },
+    {
+      "title": "Nintendo to hike price of gaming console Switch 2, warns on profits amid soaring memory chip prices",
+      "publisher": "Dawn",
+      "url": "https://www.dawn.com/news/1998660",
+      "date": "2026-05-08"
+    }
+  ]
+}
