@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "date": "2026-11-08",
+  "time": "04:09",
+  "id": "2026-11-08-0409-1",
+  "scene": "出張・移動｜出張の航空便の比較と費用の承認",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-GB"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "Daniel, I'm putting together your itinerary for Singapore, and I need you to choose between two flights.",
+      "ja": "ダニエル、シンガポール出張の日程表を作っているところで、2つの便のどちらかを選んでほしいの。"
+    },
+    {
+      "tag": "M",
+      "en": "What are the options? I have to be at the client's office by nine on Tuesday.",
+      "ja": "選択肢は？火曜の9時までに顧客のオフィスにいなければならないんだ。"
+    },
+    {
+      "tag": "W",
+      "en": "One lands Monday at ten p.m. for six hundred dollars. The other lands Tuesday at six a.m. for four hundred.",
+      "ja": "1つは月曜の午後10時着で600ドル。もう1つは火曜の午前6時着で400ドルよ。"
+    },
+    {
+      "tag": "M",
+      "en": "The cheaper one is tempting, but I'd be cutting it close if the plane gets held up.",
+      "ja": "安い方は魅力的だけど、飛行機が遅れたらぎりぎりになってしまう。"
+    },
+    {
+      "tag": "W",
+      "en": "Right, and the Monday flight lets you check in and get some sleep before the meeting.",
+      "ja": "そうね、それに月曜の便なら、会議の前にチェックインして少し眠れるわ。"
+    },
+    {
+      "tag": "M",
+      "en": "Then let's take the evening flight. Will the company cover the extra two hundred dollars?",
+      "ja": "じゃあ夜の便にしよう。追加の200ドルは会社が負担してくれるかな？"
+    },
+    {
+      "tag": "W",
+      "en": "Anything over five hundred needs a manager's approval, so I'll run it by Ms. Ortega this afternoon.",
+      "ja": "500ドルを超えるものは管理職の承認が要るから、今日の午後オルテガさんに確認してみるわ。"
+    },
+    {
+      "tag": "M",
+      "en": "Please do. The fare could go up if we wait until tomorrow.",
+      "ja": "お願い。明日まで待つと運賃が上がるかもしれないから。"
+    },
+    {
+      "tag": "W",
+      "en": "I'll email her right away and tell you as soon as she signs off.",
+      "ja": "すぐ彼女にメールして、承認が出たらすぐ知らせるわね。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Booking a hotel for a client",
+          "ja": "顧客のためにホテルを予約すること"
+        },
+        {
+          "key": "B",
+          "text": "Moving a meeting to Tuesday",
+          "ja": "会議を火曜に移すこと"
+        },
+        {
+          "key": "C",
+          "text": "Choosing a flight for a business trip",
+          "ja": "出張の航空便を選ぶこと"
+        },
+        {
+          "key": "D",
+          "text": "Reducing the cost of a project",
+          "ja": "プロジェクトの費用を減らすこと"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0,
+        2
+      ],
+      "explanation": "冒頭で女性が putting together your itinerary と言い、続けて2つの便（月曜着600ドルと火曜着400ドル）を比べている。ホテルは check in の一言で触れるだけで、話の中心ではない。",
+      "tip": "最初の2〜3行で『何を選ぶ話か』が出る。途中に出る hotel や meeting は話題の一部にすぎないので飛びつかない。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why does the man prefer the Monday flight?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "He is concerned about a possible delay.",
+          "ja": "遅れる可能性を心配している。"
+        },
+        {
+          "key": "B",
+          "text": "It costs less than the other flight.",
+          "ja": "もう一方の便より安い。"
+        },
+        {
+          "key": "C",
+          "text": "His client asked him to arrive early.",
+          "ja": "顧客に早く着くよう頼まれた。"
+        },
+        {
+          "key": "D",
+          "text": "It lands closer to the hotel.",
+          "ja": "ホテルに近い空港に着く。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "男性は I'd be cutting it close if the plane gets held up と述べ、遅れの心配を理由に夜の便を選んでいる。安いのは火曜の便なので B は逆。女性の発言（眠れる）は補足であり、男性自身の理由は遅延への懸念。",
+      "tip": "held up を delay に言い換えた A を探す。値段の話は『安い方は選ばなかった』側に付く。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the woman do next?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Choose the cheaper flight",
+          "ja": "安い方の便を選ぶ"
+        },
+        {
+          "key": "B",
+          "text": "Email the client about the schedule",
+          "ja": "日程について顧客にメールする"
+        },
+        {
+          "key": "C",
+          "text": "Check in at the hotel",
+          "ja": "ホテルにチェックインする"
+        },
+        {
+          "key": "D",
+          "text": "Ask a manager to approve a cost",
+          "ja": "費用の承認を管理職に求める"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        6,
+        8
+      ],
+      "explanation": "女性は run it by Ms. Ortega と言い、最後に I'll email her right away と続ける。ここでの run it by は『確認を取る』で、費用の承認を求める行為。顧客へのメールではなく、上司へのメール。",
+      "tip": "最後の2〜3行に次の行動が集まる。email の宛先が顧客ではなく上司である点を押さえる。"
+    }
+  ],
+  "glossary": {
+    "putting together": {
+      "lemma": "put together",
+      "pos": "熟",
+      "ja": "まとめる、作成する",
+      "note": "prepare の言い換え",
+      "example": {
+        "en": "Could you put together a short report on last month’s sales?",
+        "ja": "先月の売上について短い報告書をまとめてもらえますか。"
+      }
+    },
+    "itinerary": {
+      "lemma": "itinerary",
+      "pos": "名",
+      "ja": "旅程表、日程",
+      "note": "",
+      "example": {
+        "en": "The itinerary shows when we leave and where we stay.",
+        "ja": "旅程表には出発時刻と宿泊先が書かれている。"
+      }
+    },
+    "cutting it close": {
+      "lemma": "cut it close",
+      "pos": "熟",
+      "ja": "ぎりぎりになる",
+      "note": "時間に余裕がない状態",
+      "example": {
+        "en": "If we leave at noon, we’ll be cutting it close for the two o’clock meeting.",
+        "ja": "正午に出ると、2時の会議にはぎりぎりになる。"
+      }
+    },
+    "held up": {
+      "lemma": "hold up",
+      "pos": "熟",
+      "ja": "遅らせる、足止めする",
+      "note": "選択肢では delayed に置き換わる",
+      "example": {
+        "en": "The shipment was held up at customs for two days.",
+        "ja": "その貨物は税関で2日間足止めされた。"
+      }
+    },
+    "check in": {
+      "lemma": "check in",
+      "pos": "熟",
+      "ja": "宿泊・搭乗の手続きをする",
+      "note": "",
+      "example": {
+        "en": "Guests can check in at the front desk after three.",
+        "ja": "宿泊客は3時以降にフロントで手続きができる。"
+      }
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "費用を負担する",
+      "note": "「覆う」ではなく『費用をまかなう』の意味",
+      "example": {
+        "en": "The company will cover your hotel expenses during the trip.",
+        "ja": "会社は出張中のホテル代を負担する。"
+      }
+    },
+    "approval": {
+      "lemma": "approval",
+      "pos": "名",
+      "ja": "承認",
+      "note": "",
+      "example": {
+        "en": "The budget needs approval from the finance director.",
+        "ja": "その予算には財務部長の承認が必要だ。"
+      }
+    },
+    "run it by": {
+      "lemma": "run it by",
+      "pos": "熟",
+      "ja": "（人に）確認を取る、相談する",
+      "note": "",
+      "example": {
+        "en": "Let me run the schedule by my supervisor first.",
+        "ja": "まず上司に日程を確認させてください。"
+      }
+    },
+    "fare": {
+      "lemma": "fare",
+      "pos": "名",
+      "ja": "運賃",
+      "note": "",
+      "example": {
+        "en": "Train fares will rise by five percent next month.",
+        "ja": "電車の運賃は来月5％上がる。"
+      }
+    },
+    "signs off": {
+      "lemma": "sign off",
+      "pos": "熟",
+      "ja": "承認する、決裁する",
+      "note": "approve の言い換え",
+      "example": {
+        "en": "The project can start once the director signs off on the plan.",
+        "ja": "部長が計画を承認すれば、プロジェクトは始められる。"
+      }
+    }
+  },
+  "point": {
+    "flow": "依頼 → 2案の提示（価格と到着時刻）→ 条件の比較 → 決定と理由 → 承認手続きという次の行動",
+    "items": [
+      {
+        "title": "2案が出たら比較の軸を3つ拾う",
+        "body": "値段・時刻・リスクの3点を聞き取り、どの軸で決めたかを追う。決定の理由は決める直前の発言に出る。"
+      },
+      {
+        "title": "『決めた後』の一言に次の行動がある",
+        "body": "決定のあとに出てくる承認・連絡・手配の話が、最後の設問になる。誰が誰に何をするかを整理して聞く。"
+      },
+      {
+        "title": "言い換えを予測する",
+        "body": "held up は delayed、signs off は approve のように、選択肢は本文の語を置き換える。意味で照合する。"
+      }
+    ]
+  }
+}

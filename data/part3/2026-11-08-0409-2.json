@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "date": "2026-11-08",
+  "time": "04:09",
+  "id": "2026-11-08-0409-2",
+  "scene": "イベント運営｜取引先レセプションの出席者数の確認",
+  "speakers": [
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-AU"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-CA"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "M",
+      "en": "Ms. Reyes, I just heard back from the caterer about next Friday's customer reception.",
+      "ja": "レイエスさん、来週金曜の顧客レセプションについて、ケータリング業者から返事が来ました。"
+    },
+    {
+      "tag": "W",
+      "en": "Great. Did they confirm the menu we picked?",
+      "ja": "よかった。私たちが選んだメニューは確定した？"
+    },
+    {
+      "tag": "M",
+      "en": "They did, but they need a final head count by Wednesday. So far, only sixty guests have signed up.",
+      "ja": "はい。ただ水曜までに最終の人数が必要だそうです。今のところ申し込みは60人だけです。"
+    },
+    {
+      "tag": "W",
+      "en": "Sixty? We were expecting at least eighty, and we've paid a deposit for a ballroom that seats one hundred.",
+      "ja": "60人？少なくとも80人は見込んでいたし、100人入る宴会場の手付金も払ってあるのよ。"
+    },
+    {
+      "tag": "M",
+      "en": "Some clients are still waiting for approval from their managers to attend.",
+      "ja": "顧客の中には、出席の許可を上司から待っている人もいます。"
+    },
+    {
+      "tag": "W",
+      "en": "Then I'd like you to follow up with each of them by phone tomorrow.",
+      "ja": "それなら、明日、一人ずつ電話でフォローしてもらいたいわ。"
+    },
+    {
+      "tag": "M",
+      "en": "Will do. Should I also set up the registration desk in the lobby?",
+      "ja": "分かりました。ロビーの受付デスクも設営しましょうか？"
+    },
+    {
+      "tag": "W",
+      "en": "Leave that to the hotel staff. They've handled it before.",
+      "ja": "それはホテルのスタッフに任せて。前にもやってもらっているから。"
+    },
+    {
+      "tag": "M",
+      "en": "Good. And if we fall short of eighty, should we switch to a smaller room?",
+      "ja": "了解です。80人に届かなかったら、小さい部屋に替えるべきでしょうか？"
+    },
+    {
+      "tag": "W",
+      "en": "Let's hold off on that until Wednesday and see where we stand.",
+      "ja": "それは水曜まで待って、状況を見ましょう。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A mistake on a catering invoice",
+          "ja": "ケータリングの請求書の誤り"
+        },
+        {
+          "key": "B",
+          "text": "Preparations for a customer event",
+          "ja": "顧客向け行事の準備"
+        },
+        {
+          "key": "C",
+          "text": "A change in a hotel's policy",
+          "ja": "ホテルの方針の変更"
+        },
+        {
+          "key": "D",
+          "text": "The design of a registration form",
+          "ja": "申込用紙のデザイン"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        2
+      ],
+      "explanation": "男性は next Friday's customer reception についてケータリング業者から連絡があったと切り出し、人数と準備の話が続く。請求書の話は出ておらず、deposit（手付金）が出るだけ。",
+      "tip": "冒頭の1文で行事名（reception）が出る。以降の細部（deposit、menu）は準備の一部と捉える。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the woman imply when she says, \"Sixty\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "She wants to confirm the guest list.",
+          "ja": "招待客名簿を確認したい。"
+        },
+        {
+          "key": "B",
+          "text": "She has already paid the caterer in full.",
+          "ja": "業者に全額支払い済みだ。"
+        },
+        {
+          "key": "C",
+          "text": "She thinks the room is too small.",
+          "ja": "部屋が狭すぎると思っている。"
+        },
+        {
+          "key": "D",
+          "text": "She expected a higher number.",
+          "ja": "もっと多い数を予想していた。"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "直前の男性の発言が only sixty guests。それを受けた Sixty? に続けて We were expecting at least eighty と言っており、予想より少ないという驚きを表す。部屋は100人入るので C は逆。",
+      "tip": "繰り返しの疑問形は『予想外』のサイン。直前の数字と、直後の We were expecting を結びつける。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about the reception?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The location may change depending on attendance.",
+          "ja": "出席者数によって会場が変わるかもしれない。"
+        },
+        {
+          "key": "B",
+          "text": "It has been postponed until next month.",
+          "ja": "来月に延期された。"
+        },
+        {
+          "key": "C",
+          "text": "Its menu will be chosen again.",
+          "ja": "メニューが選び直される。"
+        },
+        {
+          "key": "D",
+          "text": "It will be held in a restaurant.",
+          "ja": "レストランで開かれる。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        8,
+        9
+      ],
+      "explanation": "男性が if we fall short of eighty, should we switch to a smaller room? と尋ね、女性は hold off on that until Wednesday と答える。結論は保留だが、人数次第で部屋を替える可能性が残っている。",
+      "tip": "『保留』の返事は、可能性を残したまま終わる。最終の2行で、何が条件で何が保留されたかを整理する。"
+    }
+  ],
+  "glossary": {
+    "heard back": {
+      "lemma": "hear back",
+      "pos": "熟",
+      "ja": "返事をもらう",
+      "note": "",
+      "example": {
+        "en": "I haven’t heard back from the supplier about the delivery date.",
+        "ja": "納期について仕入先からまだ返事がない。"
+      }
+    },
+    "head count": {
+      "lemma": "head count",
+      "pos": "名",
+      "ja": "（出席）人数",
+      "note": "",
+      "example": {
+        "en": "We need a final head count to order enough food.",
+        "ja": "十分な食事を注文するため、最終的な人数が必要だ。"
+      }
+    },
+    "signed up": {
+      "lemma": "sign up",
+      "pos": "熟",
+      "ja": "申し込む、登録する",
+      "note": "register の言い換え",
+      "example": {
+        "en": "Over fifty people have signed up for the workshop.",
+        "ja": "50人以上がその講習に申し込んだ。"
+      }
+    },
+    "deposit": {
+      "lemma": "deposit",
+      "pos": "名",
+      "ja": "手付金、内金",
+      "note": "",
+      "example": {
+        "en": "You must pay a deposit to reserve the meeting room.",
+        "ja": "会議室を予約するには手付金を払う必要がある。"
+      }
+    },
+    "reception": {
+      "lemma": "reception",
+      "pos": "名",
+      "ja": "歓迎会、レセプション",
+      "note": "「受付」ではなく『祝賀・歓迎の会』の意味",
+      "example": {
+        "en": "The company will hold a reception for new clients on Monday.",
+        "ja": "会社は月曜に新規顧客向けのレセプションを開く。"
+      }
+    },
+    "follow up with": {
+      "lemma": "follow up with",
+      "pos": "熟",
+      "ja": "（人に）改めて連絡する、フォローする",
+      "note": "",
+      "example": {
+        "en": "I’ll follow up with the customer after the demonstration.",
+        "ja": "実演のあとで、その顧客に改めて連絡します。"
+      }
+    },
+    "set up": {
+      "lemma": "set up",
+      "pos": "熟",
+      "ja": "設営する、準備する",
+      "note": "",
+      "example": {
+        "en": "Staff will set up the booth before the fair opens.",
+        "ja": "スタッフは見本市の開始前にブースを設営する。"
+      }
+    },
+    "leave that to": {
+      "lemma": "leave A to B",
+      "pos": "熟",
+      "ja": "それをB（人）に任せる",
+      "note": "",
+      "example": {
+        "en": "You can leave the travel arrangements to our assistant.",
+        "ja": "出張の手配は当社のアシスタントに任せてください。"
+      }
+    },
+    "fall short of": {
+      "lemma": "fall short of",
+      "pos": "熟",
+      "ja": "（目標などに）届かない",
+      "note": "",
+      "example": {
+        "en": "Sales fell short of the target by ten percent.",
+        "ja": "売上は目標に10％届かなかった。"
+      }
+    },
+    "hold off on": {
+      "lemma": "hold off on",
+      "pos": "熟",
+      "ja": "〜を見合わせる、先送りする",
+      "note": "",
+      "example": {
+        "en": "Let’s hold off on ordering new chairs until the budget is approved.",
+        "ja": "予算が承認されるまで、新しい椅子の注文は見合わせよう。"
+      }
+    }
+  },
+  "point": {
+    "flow": "報告（業者の返事）→ 問題の発覚（人数が不足）→ 原因（承認待ち）→ 指示（電話で確認）→ 判断の保留",
+    "items": [
+      {
+        "title": "報告と指示の会話は『指示』の中身を追う",
+        "body": "報告に対して上の人が何を指示し、何を任せ、何を保留したかの3つに分けて聞くと、次の行動の設問に強くなる。"
+      },
+      {
+        "title": "数字の食い違いが問題の核心",
+        "body": "見込み80人と実績60人のように、2つの数字がずれる箇所が会話の山場。どちらがどの数字か取り違えない。"
+      },
+      {
+        "title": "『今は決めない』も答えになる",
+        "body": "hold off on は結論の保留。推測の設問では、保留のあとに残る可能性（もし不足したら）を選ぶ。"
+      }
+    ]
+  }
+}
