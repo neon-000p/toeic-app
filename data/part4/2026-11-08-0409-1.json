@@ -270,5 +270,25 @@
         "body": "依頼は Please / may / can の文に出る。誰が何をするのかを区別して聞く。"
       }
     ]
+  },
+  "audio": {
+    "file": "audio/2026-11-08-0409-1.mp3",
+    "sec": 48.2,
+    "bytes": 237184,
+    "lines": [
+      "audio/2026-11-08-0409-1/00.mp3",
+      "audio/2026-11-08-0409-1/01.mp3",
+      "audio/2026-11-08-0409-1/02.mp3",
+      "audio/2026-11-08-0409-1/03.mp3",
+      "audio/2026-11-08-0409-1/04.mp3",
+      "audio/2026-11-08-0409-1/05.mp3",
+      "audio/2026-11-08-0409-1/06.mp3",
+      "audio/2026-11-08-0409-1/07.mp3"
+    ],
+    "voice": "Kore",
+    "narrator": "Charon",
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-07T19:17:53.162Z",
+    "trimmed": true
   }
 }
