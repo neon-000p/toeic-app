@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-08-0548",
+  "date": "2026-11-08",
+  "time": "05:48",
+  "createdAt": "2026-11-08T05:48:00+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Oil Falls Sharply on Hopes of a US-Iran Deal",
+    "ja": "原油急落、米イラン合意への期待で"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oil prices fell sharply last week.",
+            "ja": "先週、原油価格は急落した。"
+          },
+          {
+            "en": "Brent crude, the global price benchmark, ended Friday near $98 a barrel.",
+            "ja": "世界の指標価格であるブレント原油は、金曜日に1バレル=98ドル近辺で取引を終えた。"
+          },
+          {
+            "en": "That was a drop of more than 10% for the whole week.",
+            "ja": "この1週間では10%超の下落となった。"
+          },
+          {
+            "en": "Traders sold oil because they hope the United States and Iran can reach a deal.",
+            "ja": "米国とイランが合意に達するとの期待から、トレーダーが売りに動いたためだ。"
+          },
+          {
+            "en": "The Democratic win in the midterm elections also made some traders expect less support for the war.",
+            "ja": "中間選挙での民主党の勝利も、戦争への支持が弱まるとの見方を一部の投資家に広げた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "However, Iran still wants the naval blockade lifted before it fully reopens the Strait of Hormuz, a key route for oil tankers.",
+            "ja": "しかしイランは、石油タンカーの重要な航路であるホルムズ海峡を全面的に再開する前に、海上封鎖の解除を求めている。"
+          },
+          {
+            "en": "This means worries about supply have not gone away.",
+            "ja": "つまり、供給への懸念は消えていない。"
+          },
+          {
+            "en": "One analyst warned that prices could rise above $100 if the fighting resumes.",
+            "ja": "あるアナリストは、戦闘が再開すれば価格は再び100ドルを超えかねないと警告した。"
+          },
+          {
+            "en": "Prices are still high, so companies that use a lot of fuel remain under pressure.",
+            "ja": "価格はなお高く、燃料を大量に使う企業は引き続き圧力にさらされている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "Where did Brent crude end on Friday?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About $90 a barrel",
+          "ja": "1バレル約90ドル"
+        },
+        {
+          "key": "B",
+          "text": "About $98 a barrel",
+          "ja": "1バレル約98ドル"
+        },
+        {
+          "key": "C",
+          "text": "About $105 a barrel",
+          "ja": "1バレル約105ドル"
+        },
+        {
+          "key": "D",
+          "text": "About $110 a barrel",
+          "ja": "1バレル約110ドル"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落2文目に「ended Friday near $98 a barrel」とある。(A)(C)(D)は本文にない数字。10%は下落率（3文目）で価格ではない。Part 7では『何の数字か』を先に特定し、price・drop など修飾語で区別するのがコツ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字問題は、数字そのものより『何についての数字か』を先に確認する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, when could oil prices rise above $100?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "If a deal is signed quickly",
+          "ja": "合意がすぐ結ばれれば"
+        },
+        {
+          "key": "B",
+          "text": "If the fighting resumes",
+          "ja": "戦闘が再開すれば"
+        },
+        {
+          "key": "C",
+          "text": "If traders sell more oil",
+          "ja": "トレーダーがさらに売れば"
+        },
+        {
+          "key": "D",
+          "text": "If the blockade is lifted",
+          "ja": "封鎖が解除されれば"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落3文目に「could rise above $100 if the fighting resumes」とある。(A)と(D)は価格を下げる要因、(C)は売りが増えれば下がる方向で、いずれも逆。理由を問う設問は if・because・so that などの接続表現の直後が根拠になる。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "理由・条件を問う設問は、if / because の直後の節に正解の根拠がある。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "gloss": "",
+      "example": {
+        "en": "The bank uses the market rate as a benchmark.",
+        "ja": "その銀行は市場金利を基準として使っている。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "gloss": "",
+      "example": {
+        "en": "Sales fell sharply after the price increase.",
+        "ja": "値上げの後、売上は急激に落ち込んだ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "blockade",
+      "pos": "名",
+      "ja": "封鎖",
+      "gloss": "（＝港や道をふさいで出入りさせないこと）",
+      "example": {
+        "en": "The blockade delayed every shipment to the port.",
+        "ja": "封鎖のせいで、その港へのすべての出荷が遅れた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "gloss": "",
+      "example": {
+        "en": "A shortage of supply pushed prices up.",
+        "ja": "供給不足が価格を押し上げた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "warn",
+      "pos": "動",
+      "ja": "警告する",
+      "gloss": "",
+      "example": {
+        "en": "The manager warned that the schedule might change.",
+        "ja": "部長は、日程が変わるかもしれないと警告した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "resume",
+      "pos": "動",
+      "ja": "再開する",
+      "gloss": "",
+      "example": {
+        "en": "Production will resume next Monday.",
+        "ja": "生産は来週月曜に再開される。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "pressure",
+      "pos": "名",
+      "ja": "圧力、重圧",
+      "gloss": "",
+      "example": {
+        "en": "Rising costs put pressure on small suppliers.",
+        "ja": "コスト上昇が小さな納入業者に圧力をかけている。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "remain",
+      "pos": "動",
+      "ja": "〜のままである",
+      "gloss": "",
+      "example": {
+        "en": "Prices remain high in most cities.",
+        "ja": "ほとんどの都市で価格は高いままだ。"
+      }
+    }
+  ],
+  "glossary": {
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "指標",
+      "note": ""
+    },
+    "ended": {
+      "lemma": "end",
+      "pos": "動",
+      "ja": "終えた",
+      "note": ""
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "名",
+      "ja": "バレル（原油の単位）",
+      "note": ""
+    },
+    "drop": {
+      "lemma": "drop",
+      "pos": "名",
+      "ja": "下落",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー",
+      "note": ""
+    },
+    "sold": {
+      "lemma": "sell",
+      "pos": "動",
+      "ja": "売った",
+      "note": ""
+    },
+    "hope": {
+      "lemma": "hope",
+      "pos": "動",
+      "ja": "期待する",
+      "note": ""
+    },
+    "reach": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "到達する",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "合意、取引",
+      "note": ""
+    },
+    "democratic": {
+      "lemma": "democratic",
+      "pos": "形",
+      "ja": "民主党の",
+      "note": ""
+    },
+    "midterm": {
+      "lemma": "midterm",
+      "pos": "形",
+      "ja": "中間の",
+      "note": ""
+    },
+    "elections": {
+      "lemma": "election",
+      "pos": "名",
+      "ja": "選挙",
+      "note": ""
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "support": {
+      "lemma": "support",
+      "pos": "名",
+      "ja": "支持",
+      "note": ""
+    },
+    "naval": {
+      "lemma": "naval",
+      "pos": "形",
+      "ja": "海軍の",
+      "note": ""
+    },
+    "blockade": {
+      "lemma": "blockade",
+      "pos": "名",
+      "ja": "封鎖",
+      "note": ""
+    },
+    "lifted": {
+      "lemma": "lift",
+      "pos": "動",
+      "ja": "解除した",
+      "note": ""
+    },
+    "fully": {
+      "lemma": "fully",
+      "pos": "副",
+      "ja": "完全に",
+      "note": ""
+    },
+    "reopens": {
+      "lemma": "reopen",
+      "pos": "動",
+      "ja": "再開する",
+      "note": ""
+    },
+    "route": {
+      "lemma": "route",
+      "pos": "名",
+      "ja": "航路",
+      "note": ""
+    },
+    "tankers": {
+      "lemma": "tanker",
+      "pos": "名",
+      "ja": "タンカー",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "worries": {
+      "lemma": "worry",
+      "pos": "名",
+      "ja": "懸念",
+      "note": ""
+    },
+    "analyst": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告した",
+      "note": ""
+    },
+    "resumes": {
+      "lemma": "resume",
+      "pos": "動",
+      "ja": "再開する",
+      "note": ""
+    },
+    "fighting": {
+      "lemma": "fighting",
+      "pos": "名",
+      "ja": "戦闘",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "note": ""
+    },
+    "remain": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "〜のままだ",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "時・条件の副詞節では現在形が未来を表す（if the fighting resumes）",
+    "quote": "One analyst warned that prices could rise above $100 if the fighting resumes.",
+    "quoteJa": "あるアナリストは、戦闘が再開すれば価格は100ドルを超えかねないと警告した。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "if 節は「もし〜なら」という条件を表す副詞節で、未来の話でも動詞は現在形（resumes）にする。will resume とは言わない。主節は could rise と助動詞を使い、「起こりうる」可能性を表している。同じルールは when / before / after / as soon as / unless など、時や条件を表す接続詞の節すべてに当てはまる。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "誤：if the fighting will resume ／ 正：if the fighting resumes。時の例：We will start as soon as the shipment arrives.（荷物が着き次第、始めます）。主節に will があっても、従属節は現在形になる点が日本語と感覚が違う。"
+      },
+      {
+        "heading": "TOEIC での出題傾向",
+        "body": "Part 5・6 で「if / when / before / once + 空所」に動詞の形を選ばせる問題として頻出。選択肢に will resume と resumes が並んだら、時・条件の節では現在形を選ぶ。Part 7 では、条件を表す if 節がそのまま設問の根拠になることも多い。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Please call me if the delivery is delayed.（配送が遅れたらお電話ください）／ We will update the schedule when the supplier confirms the date.（納入業者が日付を確認したら、日程を更新します）。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "11月6日（金）、ブレント原油は1バレル約98ドルで取引を終え、週間では10%超下落した。米国とイランの合意への期待と、米中間選挙での民主党勝利が売りを誘った。ただしイランは海上封鎖の解除を求めており、供給不安は残る。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "航空会社にとって燃料は最大級のコストで、価格が動くと利益が大きく揺れる。そこで先物などで将来の価格を固定する燃料ヘッジ(fuel hedging)が使われる。価格が下がる局面ではヘッジが裏目に出ることもあり、ヘッジをやめる会社もある。また、燃料高を運賃に上乗せする仕組みが燃油サーチャージ(fuel surcharge)で、日本の国際線では数か月前の燃料価格をもとに決まる。"
+    },
+    {
+      "heading": "📌 3. 他社の燃料高対策",
+      "body": "デルタ航空は2012年に製油所を取得し、燃料の調達コストを抑えようとした。製油所の収益が燃料費に与えた効果は2022年に1ガロン約23セントあったが、2025年には約4セントまで縮み、2026年10月には燃料費が約60億ドル増える見通しとして利益予想を引き下げた。精製マージン(refining margin)が崩れた2020年には、製油所部門が2億1,600万ドルの営業赤字を出している。一方、サウスウエスト航空は2025年に残っていた燃料ヘッジ契約をすべて終了し、ロイターは2026年3月、ヘッジのない米航空会社は燃料高の影響を受けやすいと報じた。自前の製油所で備えた会社も、備えを外した会社も、燃料高の打撃は避けられていない。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "JALとANAは2026年5月、米国・欧州路線の燃油サーチャージを大幅に引き上げた。JALは2万9,000円から5万6,000円へ、ANAは3万1,900円から5万6,000円へと、ほぼ倍になった。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "fuel hedging",
+      "pos": "熟",
+      "ja": "燃料ヘッジ",
+      "gloss": "（＝先物などで将来の燃料価格を固定しておくこと）",
+      "example": {
+        "en": "The airline ended its fuel hedging program last year.",
+        "ja": "その航空会社は昨年、燃料ヘッジをやめた。"
+      }
+    },
+    {
+      "term": "fuel surcharge",
+      "pos": "名",
+      "ja": "燃油サーチャージ",
+      "gloss": "（＝燃料高の分を運賃に上乗せする追加料金）",
+      "example": {
+        "en": "A fuel surcharge was added to the ticket price.",
+        "ja": "航空券の価格に燃油サーチャージが加算された。"
+      }
+    },
+    {
+      "term": "refining margin",
+      "pos": "名",
+      "ja": "精製マージン",
+      "gloss": "（＝原油から製品を作って売ったときの利ざや）",
+      "example": {
+        "en": "A weak refining margin cut the plant's profit.",
+        "ja": "精製マージンが弱く、その工場の利益が減った。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Oil prices set for weekly drop on Trump's election rout",
+      "publisher": "The National",
+      "url": "https://thenationalnews.com/business/energy/2026/11/06/oil-prices-set-for-weekly-drop-on-trumps-election-rout",
+      "date": "2026-11-06"
+    },
+    {
+      "title": "Brent Crude Oil Price: $98.32 Saturday as US-Iran Deal Bets and Tuesday's CPI Frame the Week",
+      "publisher": "FinanceFeeds",
+      "url": "https://financefeeds.com/brent-crude-oil-price-98-32-saturday-week-ahead-us-iran-deal-bets-cpi-10-november-bull-105-bear-93/",
+      "date": "2026-11-07"
+    },
+    {
+      "title": "Delta Air slashes profit forecast as $6 billion fuel cost surge outstrips fare gains",
+      "publisher": "Hydrocarbon Processing",
+      "url": "https://hydrocarbonprocessing.com/news/2026/10/delta-air-slashes-profit-forecast-as-6-billion-fuel-cost-surge-outstrips-fare-gains/",
+      "date": "2026-10-01"
+    },
+    {
+      "title": "No fuel hedges leave US airlines exposed",
+      "publisher": "The Star",
+      "url": "https://www.thestar.com.my/business/business-news/2026/03/09/no-fuel-hedges-leave-us-airlines-exposed",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "JAL, ANA to Double Fuel Surcharges in May",
+      "publisher": "Adnkronos",
+      "url": "https://english.adnkronos.com/2026/04/20/jal-ana-to-double-fuel-surcharges-in-may/",
+      "date": "2026-04-20"
+    }
+  ]
+}
