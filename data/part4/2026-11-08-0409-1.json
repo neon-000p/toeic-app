@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "date": "2026-11-08",
+  "time": "04:09",
+  "createdAt": "2026-11-08T04:09:00+09:00",
+  "sample": false,
+  "id": "2026-11-08-0409-1",
+  "scene": "館内放送｜鉄道の信号故障による遅れとシャトルバスの案内",
+  "talkType": "announcement",
+  "intro": "Questions 1 through 3 refer to the following announcement.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-GB"
+  },
+  "lines": [
+    {
+      "en": "Attention, all passengers traveling on the Harbor Line this evening.",
+      "ja": "ハーバー線をご利用のお客様にお知らせします。"
+    },
+    {
+      "en": "Due to a signal failure near Central Station, trains are currently running about thirty minutes behind schedule.",
+      "ja": "セントラル駅付近の信号故障のため、現在、列車は約30分遅れで運行しております。"
+    },
+    {
+      "en": "Our technicians are working to fix the problem, but we expect delays to continue until at least eight o'clock.",
+      "ja": "技術係員が復旧作業を進めていますが、少なくとも8時までは遅れが続く見込みです。"
+    },
+    {
+      "en": "Passengers heading downtown can transfer to the shuttle buses waiting outside the east exit at no charge.",
+      "ja": "中心街へ向かうお客様は、東口の外で待機しているシャトルバスに無料で乗り換えられます。"
+    },
+    {
+      "en": "Please show your ticket to the driver when you board.",
+      "ja": "乗車の際は、運転手に切符をお見せください。"
+    },
+    {
+      "en": "If you have already bought a ticket for the express service, you may apply for a refund at any service counter.",
+      "ja": "特急の切符をすでにお買い求めの場合は、どの窓口でも払い戻しを申請できます。"
+    },
+    {
+      "en": "We apologize for the inconvenience and appreciate your patience.",
+      "ja": "ご不便をおかけし申し訳ございません。ご辛抱のほどお願いいたします。"
+    },
+    {
+      "en": "Updates will be announced every fifteen minutes, so please stay tuned.",
+      "ja": "15分ごとに最新情報をお知らせしますので、そのままお待ちください。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely are the listeners?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Technicians at a rail company",
+          "ja": "鉄道会社の技術係員"
+        },
+        {
+          "key": "B",
+          "text": "Drivers of shuttle buses",
+          "ja": "シャトルバスの運転手"
+        },
+        {
+          "key": "C",
+          "text": "Customers of an airline",
+          "ja": "航空会社の顧客"
+        },
+        {
+          "key": "D",
+          "text": "Commuters on a rail line",
+          "ja": "鉄道路線の利用者"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で all passengers traveling on the Harbor Line と呼びかけ、列車の遅れを伝えている。technicians や drivers は話の中に出る人だが、聞き手ではない。",
+      "tip": "『誰に向けた話か』は呼びかけの語（all passengers）で決まる。本文に出る職業名は聞き手とは限らない。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when she says, \"trains are currently running about thirty minutes behind schedule\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A signal system has been replaced.",
+          "ja": "信号設備が交換された。"
+        },
+        {
+          "key": "B",
+          "text": "Some trains have been canceled.",
+          "ja": "一部の列車が運休になった。"
+        },
+        {
+          "key": "C",
+          "text": "Trips will take longer than usual.",
+          "ja": "移動がいつもより長くかかる。"
+        },
+        {
+          "key": "D",
+          "text": "A route will be closed for the night.",
+          "ja": "路線は夜間閉鎖される。"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "behind schedule は『予定より遅れて』の意味で、約30分の遅れが出ているということ。運休とは言っていないので B は誤り。signal failure は故障であり、交換ではない。",
+      "tip": "behind schedule は delayed の言い換え。数字（thirty minutes）が遅れの幅なので、運休や閉鎖の選択肢は外す。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are passengers asked to do when boarding a shuttle bus?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Pay a small fare",
+          "ja": "わずかな運賃を払う"
+        },
+        {
+          "key": "B",
+          "text": "Show their tickets",
+          "ja": "切符を見せる"
+        },
+        {
+          "key": "C",
+          "text": "Call a service counter",
+          "ja": "窓口に電話する"
+        },
+        {
+          "key": "D",
+          "text": "Wait for the next update",
+          "ja": "次の案内を待つ"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "Please show your ticket to the driver when you board. が依頼の文。バスは at no charge（無料）なので A は誤り。service counter は払い戻しの場所で、乗車時の依頼ではない。",
+      "tip": "Please で始まる文が依頼。直前の at no charge を聞き逃すと、運賃を払う選択肢に引っかかる。"
+    }
+  ],
+  "glossary": {
+    "behind schedule": {
+      "lemma": "behind schedule",
+      "pos": "熟",
+      "ja": "予定より遅れて",
+      "note": "選択肢では delayed などに置き換わる",
+      "example": {
+        "en": "The construction is two weeks behind schedule.",
+        "ja": "工事は予定より2週間遅れている。"
+      }
+    },
+    "signal failure": {
+      "lemma": "signal failure",
+      "pos": "熟",
+      "ja": "信号故障",
+      "note": "",
+      "example": {
+        "en": "A signal failure stopped all trains for an hour.",
+        "ja": "信号故障で、すべての列車が1時間止まった。"
+      }
+    },
+    "technicians": {
+      "lemma": "technician",
+      "pos": "名",
+      "ja": "技術者、技術係員",
+      "note": "",
+      "example": {
+        "en": "Two technicians are checking the machine now.",
+        "ja": "2人の技術者が今、その機械を点検している。"
+      }
+    },
+    "at no charge": {
+      "lemma": "at no charge",
+      "pos": "熟",
+      "ja": "無料で",
+      "note": "free の言い換え",
+      "example": {
+        "en": "Replacement parts are provided at no charge during the warranty.",
+        "ja": "保証期間中は交換部品が無料で提供される。"
+      }
+    },
+    "transfer to": {
+      "lemma": "transfer to",
+      "pos": "熟",
+      "ja": "〜に乗り換える、移る",
+      "note": "",
+      "example": {
+        "en": "Passengers must transfer to another train at Lake Station.",
+        "ja": "乗客はレイク駅で別の列車に乗り換える必要がある。"
+      }
+    },
+    "shuttle buses": {
+      "lemma": "shuttle bus",
+      "pos": "熟",
+      "ja": "シャトルバス（近距離の往復バス）",
+      "note": "",
+      "example": {
+        "en": "Free shuttle buses run between the airport and the hotel.",
+        "ja": "空港とホテルの間を無料のシャトルバスが走っている。"
+      }
+    },
+    "board": {
+      "lemma": "board",
+      "pos": "動",
+      "ja": "乗車・搭乗する",
+      "note": "「板」ではなく『乗り込む』の意味",
+      "example": {
+        "en": "Passengers may board the train ten minutes before departure.",
+        "ja": "乗客は出発の10分前から列車に乗り込める。"
+      }
+    },
+    "apply for a refund": {
+      "lemma": "apply for a refund",
+      "pos": "熟",
+      "ja": "払い戻しを申請する",
+      "note": "",
+      "example": {
+        "en": "You can apply for a refund within thirty days of purchase.",
+        "ja": "購入から30日以内なら払い戻しを申請できる。"
+      }
+    },
+    "inconvenience": {
+      "lemma": "inconvenience",
+      "pos": "名",
+      "ja": "不便、迷惑",
+      "note": "apologize for the inconvenience は定型",
+      "example": {
+        "en": "We apologize for any inconvenience caused by the delay.",
+        "ja": "遅れによるご不便をお詫びします。"
+      }
+    },
+    "stay tuned": {
+      "lemma": "stay tuned",
+      "pos": "熟",
+      "ja": "そのままお待ちください",
+      "note": "放送の定型表現",
+      "example": {
+        "en": "Stay tuned for more details after the break.",
+        "ja": "休憩後に詳細をお伝えしますので、そのままお待ちください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "呼びかけ → 状況（遅れ）→ 原因と見通し → 代替手段 → 乗車時の依頼 → 払い戻し → 次回の予告",
+    "items": [
+      {
+        "title": "館内放送は呼びかけで聞き手が決まる",
+        "body": "冒頭の Attention, all ... が聞き手を示す。who の設問はここで解ける。"
+      },
+      {
+        "title": "『遅れ・原因・代わりの手段』の順で聞く",
+        "body": "状況と代替手段の型では、数字（遅れの幅、頻度）と、無料かどうかが設問になりやすい。"
+      },
+      {
+        "title": "Please の文を拾う",
+        "body": "依頼は Please / may / can の文に出る。誰が何をするのかを区別して聞く。"
+      }
+    ]
+  }
+}

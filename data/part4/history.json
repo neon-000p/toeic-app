@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part4-history",
-  "updatedAt": "2026-11-01T04:06:00+09:00",
+  "updatedAt": "2026-11-08T04:25:00+09:00",
   "items": [
+    {
+      "id": "2026-11-08-0409-1",
+      "date": "2026-11-08",
+      "scene": "館内放送｜鉄道の信号故障による遅れとシャトルバスの案内",
+      "genre": "館内アナウンス",
+      "talkType": "announcement",
+      "types": [
+        "who",
+        "intent",
+        "next"
+      ],
+      "flow": "状況と代替手段"
+    },
+    {
+      "id": "2026-11-08-0409-2",
+      "date": "2026-11-08",
+      "scene": "スピーチ｜退職する物流部長の送別と後任の紹介",
+      "genre": "スピーチ",
+      "talkType": "speech",
+      "types": [
+        "gist",
+        "detail",
+        "infer"
+      ],
+      "flow": "経歴と紹介"
+    },
     {
       "id": "2026-11-01-0406-2",
       "date": "2026-11-01",

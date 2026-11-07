@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "date": "2026-11-08",
+  "time": "04:09",
+  "createdAt": "2026-11-08T04:09:00+09:00",
+  "sample": false,
+  "id": "2026-11-08-0409-2",
+  "scene": "スピーチ｜退職する物流部長の送別と後任の紹介",
+  "talkType": "speech",
+  "intro": "Questions 1 through 3 refer to the following speech.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-AU"
+  },
+  "lines": [
+    {
+      "en": "Good evening, everyone, and thank you for joining us tonight to celebrate Ms. Patel's retirement.",
+      "ja": "皆さん、こんばんは。パテルさんの退職を祝うため、今夜お集まりいただきありがとうございます。"
+    },
+    {
+      "en": "She has led our logistics department for eighteen years, and she is stepping down at the end of this month.",
+      "ja": "彼女は18年間、物流部門を率い、今月末で退任されます。"
+    },
+    {
+      "en": "When she started, we shipped to only three regions, and deliveries often ran late.",
+      "ja": "彼女が着任したころ、当社が出荷していたのは3地域だけで、配送もよく遅れていました。"
+    },
+    {
+      "en": "Thanks to her, we now serve twelve regions, and nine out of ten orders arrive on time.",
+      "ja": "彼女のおかげで、今では12地域に対応し、注文の10件中9件が時間どおりに届いています。"
+    },
+    {
+      "en": "She also set up the training program that has helped over two hundred new employees get up to speed.",
+      "ja": "また、200人以上の新入社員が早く仕事に慣れる助けとなった研修制度も、彼女が立ち上げました。"
+    },
+    {
+      "en": "Next month, Mr. Kim will take over as department head.",
+      "ja": "来月からは、キムさんが部門長を引き継ぎます。"
+    },
+    {
+      "en": "I am confident he will carry on her work, and I would like to ask all of you to give him your full support.",
+      "ja": "彼が彼女の仕事を引き継いで続けてくれると確信していますので、皆さんも全面的に支えてあげてください。"
+    },
+    {
+      "en": "Now, please raise your glasses to a remarkable colleague.",
+      "ja": "それでは、すばらしい同僚に杯を掲げてください。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the purpose of the speech?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To celebrate a manager's career",
+          "ja": "管理職の経歴を祝うこと"
+        },
+        {
+          "key": "B",
+          "text": "To announce a new training program",
+          "ja": "新しい研修制度を発表すること"
+        },
+        {
+          "key": "C",
+          "text": "To report on delivery times",
+          "ja": "配送時間について報告すること"
+        },
+        {
+          "key": "D",
+          "text": "To welcome a new department head",
+          "ja": "新しい部門長を歓迎すること"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で celebrate Ms. Patel's retirement と述べ、続けて18年間の功績を紹介している。研修制度や新しい部門長は話の一部として出るが、主目的は退職の祝い。",
+      "tip": "Part 4 の1問目は冒頭1〜2文で決まる。celebrate の目的語に注目し、後半に出る話題は主目的にしない。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What improvement does the speaker mention?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Training sessions became shorter.",
+          "ja": "研修が短くなった。"
+        },
+        {
+          "key": "B",
+          "text": "Delivery service covers more areas.",
+          "ja": "配送が対応する地域が増えた。"
+        },
+        {
+          "key": "C",
+          "text": "The department hired two hundred workers.",
+          "ja": "部門が200人を雇った。"
+        },
+        {
+          "key": "D",
+          "text": "Shipping costs were cut by nine percent.",
+          "ja": "出荷費用が9％削減された。"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "3地域から12地域になったと述べており、これを『対応エリアの拡大』と言い換えた B が正解。two hundred は研修を受けた人数、nine は10件中9件の配送の話で、数字を取り違えた誤答。",
+      "tip": "数字の入れ替えが誤答の定番。数字が何を数えているか（地域・人数・割合）を区別して聞く。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is implied about Mr. Kim?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "He has trained over two hundred employees.",
+          "ja": "200人以上を研修した。"
+        },
+        {
+          "key": "B",
+          "text": "He will move to another department.",
+          "ja": "別の部署へ移る。"
+        },
+        {
+          "key": "C",
+          "text": "He is expected to continue Ms. Patel's approach.",
+          "ja": "パテルさんのやり方を続けると期待されている。"
+        },
+        {
+          "key": "D",
+          "text": "He plans to retire next year.",
+          "ja": "来年退職する予定だ。"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        5,
+        6
+      ],
+      "explanation": "キムさんは take over（引き継ぐ）し、話し手は he will carry on her work と確信を述べている。つまりこれまでの方針を続けることが期待されている。200人は前任者の研修制度の成果で、キムさんの実績ではない。",
+      "tip": "推測の設問は、直接言っていない内容を最後の依頼や確信の文から読む。carry on は continue の言い換え。"
+    }
+  ],
+  "glossary": {
+    "retirement": {
+      "lemma": "retirement",
+      "pos": "名",
+      "ja": "退職、引退",
+      "note": "",
+      "example": {
+        "en": "Many colleagues attended the party for his retirement.",
+        "ja": "多くの同僚が彼の退職記念パーティーに出席した。"
+      }
+    },
+    "logistics": {
+      "lemma": "logistics",
+      "pos": "名",
+      "ja": "物流",
+      "note": "",
+      "example": {
+        "en": "She works in the logistics department of a large retailer.",
+        "ja": "彼女は大手小売店の物流部門で働いている。"
+      }
+    },
+    "stepping down": {
+      "lemma": "step down",
+      "pos": "熟",
+      "ja": "退任する、辞任する",
+      "note": "retire の言い換えに近い",
+      "example": {
+        "en": "The chairperson is stepping down after ten years.",
+        "ja": "会長は10年務めたあとに退任する。"
+      }
+    },
+    "ran late": {
+      "lemma": "run late",
+      "pos": "熟",
+      "ja": "遅れる",
+      "note": "",
+      "example": {
+        "en": "Because the train ran late, I missed the opening session.",
+        "ja": "電車が遅れて、開会の部に間に合わなかった。"
+      }
+    },
+    "set up": {
+      "lemma": "set up",
+      "pos": "熟",
+      "ja": "創設する、立ち上げる",
+      "note": "「設営する」ではなく『制度を作る』の意味",
+      "example": {
+        "en": "The company set up a new help desk for customers.",
+        "ja": "会社は顧客向けに新しい相談窓口を設けた。"
+      }
+    },
+    "get up to speed": {
+      "lemma": "get up to speed",
+      "pos": "熟",
+      "ja": "仕事に慣れる、状況に追いつく",
+      "note": "",
+      "example": {
+        "en": "It took the new staff a month to get up to speed.",
+        "ja": "新入社員が仕事に慣れるまで1か月かかった。"
+      }
+    },
+    "take over": {
+      "lemma": "take over",
+      "pos": "熟",
+      "ja": "引き継ぐ、後任になる",
+      "note": "",
+      "example": {
+        "en": "Ms. Lee will take over the sales team in April.",
+        "ja": "リーさんは4月から営業チームを引き継ぐ。"
+      }
+    },
+    "carry on": {
+      "lemma": "carry on",
+      "pos": "熟",
+      "ja": "続ける、引き継いで続ける",
+      "note": "continue の言い換え",
+      "example": {
+        "en": "We will carry on the research after receiving funding.",
+        "ja": "資金を得たあとで、研究を続ける予定だ。"
+      }
+    },
+    "full support": {
+      "lemma": "full support",
+      "pos": "熟",
+      "ja": "全面的な支援",
+      "note": "",
+      "example": {
+        "en": "The manager promised full support for the new project.",
+        "ja": "部長は新規プロジェクトへの全面的な支援を約束した。"
+      }
+    },
+    "raise your glasses": {
+      "lemma": "raise your glasses",
+      "pos": "熟",
+      "ja": "杯を掲げる、乾杯する",
+      "note": "スピーチの締めの定型",
+      "example": {
+        "en": "Please raise your glasses to our guests of honor.",
+        "ja": "主賓に向けて杯を掲げてください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "謝辞と目的 → 経歴 → 功績（数字の対比）→ 後任の紹介 → 聞き手への依頼 → 乾杯",
+    "items": [
+      {
+        "title": "スピーチの目的は冒頭の動詞で決まる",
+        "body": "celebrate / welcome / thank などの動詞が目的を示す。後半に出る別の話題は主目的にならない。"
+      },
+      {
+        "title": "功績は『前と今』の数字を対にして聞く",
+        "body": "3地域から12地域のような対比が出たら、何の数字かを意識して選択肢と照合する。"
+      },
+      {
+        "title": "締めの依頼と呼びかけが最終設問の材料",
+        "body": "後任への支援のお願いや乾杯の音頭に、推測や次の行動の根拠が置かれる。"
+      }
+    ]
+  }
+}
