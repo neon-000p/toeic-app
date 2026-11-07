@@ -502,5 +502,23 @@
       "url": "https://www.dawn.com/news/1998660",
       "date": "2026-05-08"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-07-1645/00.mp3",
+      "audio/2026-11-07-1645/01.mp3",
+      "audio/2026-11-07-1645/02.mp3",
+      "audio/2026-11-07-1645/03.mp3",
+      "audio/2026-11-07-1645/04.mp3",
+      "audio/2026-11-07-1645/05.mp3",
+      "audio/2026-11-07-1645/06.mp3",
+      "audio/2026-11-07-1645/07.mp3",
+      "audio/2026-11-07-1645/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 207852,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-07T07:49:15.688Z",
+    "trimmed": true
+  }
 }
