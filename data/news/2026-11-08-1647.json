@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-08-1647",
+  "date": "2026-11-08",
+  "time": "16:47",
+  "createdAt": "2026-11-08T16:47:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "Port Strike Threat Pushed Back Again in California",
+    "ja": "米西海岸の港湾スト危機、再び先送り"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Employers and a small union at the ports of Los Angeles and Long Beach have agreed to extend their contract talks again.",
+            "ja": "ロサンゼルス港とロングビーチ港で、経営側と小さな組合が、契約交渉の期限を再び延ばすことで合意した。"
+          },
+          {
+            "en": "The new deadline is November 20.",
+            "ja": "新たな期限は11月20日だ。"
+          },
+          {
+            "en": "About 250 watchmen, who guard terminal gates and track cargo, could have gone on strike if no deal had been reached.",
+            "ja": "ターミナルのゲートを守り貨物を追跡する約250人の警備員は、合意に至らなければストライキに入る可能性があった。"
+          },
+          {
+            "en": "The Pacific Maritime Association said more talks are planned.",
+            "ja": "太平洋海事協会は、追加の交渉が予定されていると述べた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The group is small, but its terminals matter a great deal.",
+            "ja": "この集団は小さいが、彼らの持ち場であるターミナルは極めて重要だ。"
+          },
+          {
+            "en": "The watchmen work at six of the 13 container terminals, which handle about 85% of Long Beach cargo and 33% of Los Angeles cargo.",
+            "ja": "警備員は13あるコンテナターミナルのうち6か所で働いており、そこはロングビーチの貨物の約85%、ロサンゼルスの貨物の約33%を扱っている。"
+          },
+          {
+            "en": "Shippers are nervous because the two ports set a combined record of 2.04 million twenty-foot container units in September.",
+            "ja": "両港は9月に合計で過去最高の204万個（20フィートコンテナ換算）を記録しており、荷主は神経をとがらせている。"
+          },
+          {
+            "en": "A strike could delay goods moving through the busiest container port complex in the United States.",
+            "ja": "ストが起きれば、米国で最も忙しいコンテナ港湾群を通る物資が遅れかねない。"
+          },
+          {
+            "en": "The union, ILWU Local 26, has had no new contract since the old one expired in July 2025.",
+            "ja": "組合のILWUローカル26は、旧契約が2025年7月に失効して以来、新しい契約を結べていない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many watchmen could have gone on strike?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 25",
+          "ja": "約25人"
+        },
+        {
+          "key": "B",
+          "text": "About 120",
+          "ja": "約120人"
+        },
+        {
+          "key": "C",
+          "text": "About 250",
+          "ja": "約250人"
+        },
+        {
+          "key": "D",
+          "text": "About 2,500",
+          "ja": "約2,500人"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落の3文目に About 250 watchmen とある。A・B・Dは本文にない数字。なお 2% など別の数字が出てくる記事もあるが、本問は人数を問うので「250」を本文から拾えばよい。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字を問う設問は、選択肢の数字を先に見てから本文の該当箇所へ戻ると速い。単位（人・％・個）の取り違えにも注意。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why does the small group of watchmen matter so much?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is the largest union at the ports.",
+          "ja": "港で最大の組合だから"
+        },
+        {
+          "key": "B",
+          "text": "It works at terminals that handle a large share of cargo.",
+          "ja": "貨物の多くを扱うターミナルで働くから"
+        },
+        {
+          "key": "C",
+          "text": "It operates the ships that carry containers.",
+          "ja": "コンテナ船を運航しているから"
+        },
+        {
+          "key": "D",
+          "text": "It decides the price of shipping.",
+          "ja": "運賃を決めているから"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落の2文目に、警備員が働く6つのターミナルでロングビーチ貨物の約85%、ロサンゼルス貨物の約33%を扱うとある。Aは冒頭の The group is small と逆。CとDは本文に登場しない情報。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由を問う設問は but / because / which など、理由や対比を示す語の前後に答えがあることが多い。本文にない情報（C・D）は消去できる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "extend",
+      "pos": "動",
+      "ja": "延長する、延ばす",
+      "gloss": "",
+      "example": {
+        "en": "The company agreed to extend the contract by six months.",
+        "ja": "その会社は契約を6か月延長することに同意した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "deadline",
+      "pos": "名",
+      "ja": "締め切り、期限",
+      "gloss": "",
+      "example": {
+        "en": "The deadline for the report is next Friday.",
+        "ja": "報告書の期限は来週の金曜日だ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "handle",
+      "pos": "動",
+      "ja": "扱う、処理する",
+      "gloss": "",
+      "example": {
+        "en": "This warehouse can handle 500 orders a day.",
+        "ja": "この倉庫は1日500件の注文を処理できる。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "shipper",
+      "pos": "名",
+      "ja": "荷主、発送する人",
+      "gloss": "（＝荷物を運んでもらう側の会社のこと）",
+      "example": {
+        "en": "The shipper asked the carrier to deliver the goods by Monday.",
+        "ja": "荷主は運送会社に月曜までの配達を頼んだ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "expire",
+      "pos": "動",
+      "ja": "期限が切れる、失効する",
+      "gloss": "",
+      "example": {
+        "en": "Our service contract will expire at the end of March.",
+        "ja": "当社のサービス契約は3月末で失効する。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "delay",
+      "pos": "動",
+      "ja": "遅らせる",
+      "gloss": "",
+      "example": {
+        "en": "Bad weather may delay the delivery of the order.",
+        "ja": "悪天候で注文品の配達が遅れるかもしれない。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "combined",
+      "pos": "形",
+      "ja": "合計の、合わせた",
+      "gloss": "",
+      "example": {
+        "en": "The combined sales of the two stores reached $3 million.",
+        "ja": "2店舗の合計売上は300万ドルに達した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "terminal",
+      "pos": "名",
+      "ja": "ターミナル、（港の）荷役施設",
+      "gloss": "（＝船の荷物を積み降ろしする場所のこと）",
+      "example": {
+        "en": "The ship will unload at the container terminal on Tuesday.",
+        "ja": "その船は火曜にコンテナターミナルで荷降ろしする。"
+      }
+    }
+  ],
+  "glossary": {
+    "employers": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主、経営側",
+      "note": ""
+    },
+    "union": {
+      "lemma": "union",
+      "pos": "名",
+      "ja": "労働組合",
+      "note": ""
+    },
+    "agreed": {
+      "lemma": "agree",
+      "pos": "動",
+      "ja": "合意した",
+      "note": ""
+    },
+    "extend": {
+      "lemma": "extend",
+      "pos": "動",
+      "ja": "延ばす",
+      "note": ""
+    },
+    "contract": {
+      "lemma": "contract",
+      "pos": "名",
+      "ja": "契約",
+      "note": ""
+    },
+    "talks": {
+      "lemma": "talk",
+      "pos": "名",
+      "ja": "交渉、協議",
+      "note": ""
+    },
+    "deadline": {
+      "lemma": "deadline",
+      "pos": "名",
+      "ja": "期限",
+      "note": ""
+    },
+    "watchmen": {
+      "lemma": "watchman",
+      "pos": "名",
+      "ja": "警備員、見張り",
+      "note": ""
+    },
+    "guard": {
+      "lemma": "guard",
+      "pos": "動",
+      "ja": "守る、警備する",
+      "note": ""
+    },
+    "terminal": {
+      "lemma": "terminal",
+      "pos": "名",
+      "ja": "ターミナル",
+      "note": ""
+    },
+    "gates": {
+      "lemma": "gate",
+      "pos": "名",
+      "ja": "ゲート、出入口",
+      "note": ""
+    },
+    "track": {
+      "lemma": "track",
+      "pos": "動",
+      "ja": "追跡する",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "strike": {
+      "lemma": "strike",
+      "pos": "名",
+      "ja": "ストライキ",
+      "note": ""
+    },
+    "reached": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "達した",
+      "note": "reach a deal で「合意に至る」"
+    },
+    "planned": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "予定された",
+      "note": ""
+    },
+    "matter": {
+      "lemma": "matter",
+      "pos": "動",
+      "ja": "重要である",
+      "note": "matter a great deal で「非常に重要だ」"
+    },
+    "handle": {
+      "lemma": "handle",
+      "pos": "動",
+      "ja": "扱う",
+      "note": ""
+    },
+    "shippers": {
+      "lemma": "shipper",
+      "pos": "名",
+      "ja": "荷主",
+      "note": ""
+    },
+    "nervous": {
+      "lemma": "nervous",
+      "pos": "形",
+      "ja": "不安な",
+      "note": ""
+    },
+    "combined": {
+      "lemma": "combined",
+      "pos": "形",
+      "ja": "合計の",
+      "note": ""
+    },
+    "record": {
+      "lemma": "record",
+      "pos": "名",
+      "ja": "記録、最高記録",
+      "note": ""
+    },
+    "delay": {
+      "lemma": "delay",
+      "pos": "動",
+      "ja": "遅らせる",
+      "note": ""
+    },
+    "busiest": {
+      "lemma": "busy",
+      "pos": "形",
+      "ja": "最も忙しい",
+      "note": ""
+    },
+    "complex": {
+      "lemma": "complex",
+      "pos": "名",
+      "ja": "複合施設、群",
+      "note": ""
+    },
+    "expired": {
+      "lemma": "expire",
+      "pos": "動",
+      "ja": "失効した",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "could have＋過去分詞（過去の可能性）と if 節の過去完了",
+    "quote": "About 250 watchmen, who guard terminal gates and track cargo, could have gone on strike if no deal had been reached.",
+    "quoteJa": "ターミナルのゲートを守り貨物を追跡する約250人の警備員は、合意に至らなければストライキに入る可能性があった。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "「could have＋過去分詞」は、過去に実際には起きなかったが起こり得たことを表す。if 節が「had＋過去分詞」（過去完了）になると、「あのとき〜していなければ、…し得た」という過去の仮定を表す。この文では、延長で回避されたストが『合意に至らなければ起こり得た』と述べている。"
+      },
+      {
+        "heading": "書き換え",
+        "body": "If no deal had been reached, about 250 watchmen could have gone on strike.（if 節を前に出しても意味は同じ。）比較：If no deal is reached, the watchmen may go on strike.（これから先の可能性なら現在形＋may）。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、if 節が had＋過去分詞なら主節は would/could/might have＋過去分詞、という対応を選ばせる問題が頻出。Part 7 では「実際には起きなかったこと」を読み取る設問に絡む。主節だけ見て『起きた』と誤解しないこと。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "We could have avoided the delay if we had confirmed the schedule earlier.（スケジュールをもっと早く確認していれば、遅れは避けられた。）／ The shipment would have arrived on time if the carrier had not changed the route.（運送会社がルートを変えなければ、荷物は予定通り着いただろう。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "ロサンゼルス港とロングビーチ港で、警備員役の組合員（約250人）と経営側の太平洋海事協会が、交渉期限を11月20日まで延ばした。ストは直前で再び回避された。前の協約は2025年7月に失効しており、延長は今回が初めてではない。組合員は港湾労働者全体の約2%にすぎない。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "労使が賃金や働き方を話し合って契約を決めることを団体交渉(collective bargaining)と呼ぶ。今回の組合員は、ゲートでトラックの出入りを確認し、重要な貨物を見張る役だ。少人数でも持ち場が止まれば荷役全体が滞るため、交渉上の力は人数以上に大きい。"
+    },
+    {
+      "heading": "📌 3. 過去の港湾ストでは",
+      "body": "2024年10月、米東海岸・メキシコ湾岸の港湾労働者約4万5000人が36港で3日間ストを行い、6年間で賃金62%増の暫定合意で職場に戻った。1日あたりの経済損失は20億〜50億ドルと試算された。2002年には西海岸の29港が10日間閉鎖され、ブッシュ大統領がタフト・ハートレー法に基づき作業再開を命じて、80日間の冷却期間(cooling-off period)に入った。損失は1日10億ドル超と見積もられた。2024年は賃上げで収まり、2002年は政府の命令で収まった点が違う。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "2015年の西海岸の港湾労使紛争では、トヨタ自動車やホンダなどが北米工場向けの部品を、船より割高な航空貨物(air freight)に切り替えて生産を続けた。港が止まれば、日本の自動車メーカーも空輸という高い代償を払うことになる。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "collective bargaining",
+      "pos": "熟",
+      "ja": "団体交渉",
+      "gloss": "（＝労働者の代表と経営側が、賃金などの条件を話し合って決めること）",
+      "example": {
+        "en": "The two sides began collective bargaining over wages in June.",
+        "ja": "両者は6月に賃金をめぐる団体交渉を始めた。"
+      }
+    },
+    {
+      "term": "cooling-off period",
+      "pos": "熟",
+      "ja": "冷却期間",
+      "gloss": "（＝争いをいったん止めて、頭を冷やして話し合うための期間のこと）",
+      "example": {
+        "en": "The law requires a 30-day cooling-off period before any strike.",
+        "ja": "その法律は、ストの前に30日間の冷却期間を求めている。"
+      }
+    },
+    {
+      "term": "air freight",
+      "pos": "名",
+      "ja": "航空貨物、空輸",
+      "gloss": "（＝飛行機で荷物を運ぶこと。船より速いが高い）",
+      "example": {
+        "en": "We chose air freight to get the samples there by Friday.",
+        "ja": "金曜までにサンプルを届けるため、空輸を選んだ。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Strike averted at Los Angeles and Long Beach ports after deadline extension",
+      "publisher": "Baird Maritime",
+      "url": "https://www.bairdmaritime.com/shipping/ports/strike-averted-at-los-angeles-and-long-beach-ports-after-deadline-extension",
+      "date": "2026-11-07"
+    },
+    {
+      "title": "Employers, watchmen at California ports extend contract talks",
+      "publisher": "GV Wire",
+      "url": "https://gvwire.com/2026/11/07/employers-watchmen-at-california-ports-extend-contract-talks/",
+      "date": "2026-11-07"
+    },
+    {
+      "title": "Port strikes end with deal on wages, averting economic disaster",
+      "publisher": "WKAR (NPR)",
+      "url": "https://www.wkar.org/2024-10-03/port-strikes-end-with-deal-on-wages-averting-economic-disaster",
+      "date": "2024-10-03"
+    },
+    {
+      "title": "Longshoremen ordered back to work, ending 10-day lockout",
+      "publisher": "Heavy Duty Trucking",
+      "url": "https://www.truckinginfo.com/news/longshoremen-ordered-back-to-work-ending-10-day-lockout",
+      "date": "2002-10"
+    },
+    {
+      "title": "Japanese Automakers Adjust To Port Dispute",
+      "publisher": "Manufacturing.net",
+      "url": "https://www.manufacturing.net/operations/news/13238761/japanese-automakers-adjust-to-port-dispute",
+      "date": "2015"
+    }
+  ]
+}
