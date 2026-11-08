@@ -504,5 +504,22 @@
       "url": "https://www.kiplinger.com/taxes/costco-tariff-lawsuit",
       "date": "2025-12-30"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-09-0545/00.mp3",
+      "audio/2026-11-09-0545/01.mp3",
+      "audio/2026-11-09-0545/02.mp3",
+      "audio/2026-11-09-0545/03.mp3",
+      "audio/2026-11-09-0545/04.mp3",
+      "audio/2026-11-09-0545/05.mp3",
+      "audio/2026-11-09-0545/06.mp3",
+      "audio/2026-11-09-0545/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 200224,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-08T20:49:02.912Z",
+    "trimmed": true
+  }
 }
