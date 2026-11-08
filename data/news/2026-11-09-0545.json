@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-09-0545",
+  "date": "2026-11-09",
+  "time": "05:45",
+  "createdAt": "2026-11-09T05:45:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "White House Vows to Push Tariffs Harder After Midterm Losses",
+    "ja": "政権、中間選挙後も関税強化を表明"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "A White House trade adviser, Peter Navarro, said on Saturday that the administration is \"quadrupling down on tariffs.\"",
+            "ja": "ホワイトハウスの通商顧問ピーター・ナバロ氏は土曜日、政権は「関税をさらに4倍に強める」と語った。"
+          },
+          {
+            "en": "He spoke just days after Democrats won big in the midterm elections.",
+            "ja": "民主党が中間選挙で大勝してから数日後の発言だった。"
+          },
+          {
+            "en": "Exit polls showed that about two-thirds of voters believed the tariffs hurt the economy.",
+            "ja": "出口調査では、約3分の2の有権者が関税は経済に悪影響だと考えていた。"
+          },
+          {
+            "en": "Navarro replied that tariffs do not play a role in rising prices.",
+            "ja": "ナバロ氏は、関税は物価上昇の要因ではないと反論した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The Supreme Court struck down the broad tariffs in February, so the government must now rely on other legal tools.",
+            "ja": "連邦最高裁は2月に広範な関税を違法とした。そのため政府は今、別の法的手段に頼らざるをえない。"
+          },
+          {
+            "en": "Those tools include investigations into unfair trade practices and rules that protect national security.",
+            "ja": "そうした手段には、不公正な貿易慣行の調査や、国家安全保障を守るための規定がある。"
+          },
+          {
+            "en": "Importers must plan for higher costs, while many companies are waiting for refunds of the old tariffs.",
+            "ja": "輸入業者はコスト増に備えねばならず、一方で多くの企業は旧関税の還付を待っている。"
+          },
+          {
+            "en": "Democrats, however, want to end the tariffs, so a political fight is likely next year.",
+            "ja": "しかし民主党は関税の廃止を望んでおり、来年は政治的な争いになりそうだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to exit polls, how many voters believed the tariffs hurt the economy?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About one-third",
+          "ja": "約3分の1"
+        },
+        {
+          "key": "B",
+          "text": "About half",
+          "ja": "約半数"
+        },
+        {
+          "key": "C",
+          "text": "About two-thirds",
+          "ja": "約3分の2"
+        },
+        {
+          "key": "D",
+          "text": "Nearly all",
+          "ja": "ほぼ全員"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落3文目に「about two-thirds of voters believed the tariffs hurt the economy」とあるので C が正解。A の one-third は本文にない数字。B の half も本文にない。D の nearly all は言い過ぎで、本文は「約3分の2」としている。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "割合・数字の設問は、本文の該当文を探して数字と主語（誰の割合か）を照合する。選択肢の言い換え（two-thirds など）に注意。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "Which of the following is NOT stated in the article?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The Supreme Court struck down the broad tariffs.",
+          "ja": "最高裁が広範な関税を違法とした"
+        },
+        {
+          "key": "B",
+          "text": "Navarro said tariffs do not cause higher prices.",
+          "ja": "ナバロ氏は関税が物価高の原因でないと述べた"
+        },
+        {
+          "key": "C",
+          "text": "Democrats want to keep the tariffs.",
+          "ja": "民主党は関税の維持を望む"
+        },
+        {
+          "key": "D",
+          "text": "Some companies are waiting for refunds.",
+          "ja": "一部企業は還付を待っている"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落4文目で民主党は「want to end the tariffs」とあり、維持ではなく廃止を望んでいる。よって C が本文と逆で正解。A は2月の最高裁判断（第2段落1文目）、B は第1段落4文目、D は第2段落3文目に一致する。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "NOT 問題は、選択肢を1つずつ本文と照合して「一致するもの」を消していく。本文と逆の内容が正解になることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "administration",
+      "pos": "名",
+      "ja": "政権、行政府",
+      "gloss": "",
+      "example": {
+        "en": "The administration announced a new trade policy.",
+        "ja": "政権は新しい通商政策を発表した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "gloss": "（＝輸入品にかける税金のこと）",
+      "example": {
+        "en": "The tariff raised the price of imported parts.",
+        "ja": "その関税で輸入部品の価格が上がった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "struck down",
+      "pos": "熟",
+      "ja": "（法律などを）無効にした",
+      "gloss": "",
+      "example": {
+        "en": "The court struck down the new regulation.",
+        "ja": "裁判所はその新規制を無効とした。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "rely on",
+      "pos": "熟",
+      "ja": "〜に頼る",
+      "gloss": "",
+      "example": {
+        "en": "Our team must rely on local suppliers.",
+        "ja": "当社のチームは地元の供給業者に頼らざるをえない。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "importer",
+      "pos": "名",
+      "ja": "輸入業者",
+      "gloss": "",
+      "example": {
+        "en": "The importer signed a new contract with the supplier.",
+        "ja": "その輸入業者は供給業者と新しい契約を結んだ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "refund",
+      "pos": "名",
+      "ja": "返金、還付",
+      "gloss": "",
+      "example": {
+        "en": "Customers can request a refund within 30 days.",
+        "ja": "顧客は30日以内に返金を請求できる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "play a role",
+      "pos": "熟",
+      "ja": "役割を果たす、関係する",
+      "gloss": "",
+      "example": {
+        "en": "Marketing will play a role in the product launch.",
+        "ja": "マーケティングは製品発売で役割を果たす。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "plan for",
+      "pos": "熟",
+      "ja": "〜に備える",
+      "gloss": "",
+      "example": {
+        "en": "Managers should plan for higher shipping costs.",
+        "ja": "管理職は輸送費の上昇に備えるべきだ。"
+      }
+    }
+  ],
+  "glossary": {
+    "administration": {
+      "lemma": "administration",
+      "pos": "名",
+      "ja": "政権",
+      "note": ""
+    },
+    "quadrupling": {
+      "lemma": "quadruple",
+      "pos": "動",
+      "ja": "4倍にする",
+      "note": ""
+    },
+    "tariffs": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "adviser": {
+      "lemma": "adviser",
+      "pos": "名",
+      "ja": "顧問",
+      "note": ""
+    },
+    "midterm": {
+      "lemma": "midterm",
+      "pos": "形",
+      "ja": "中間の",
+      "note": ""
+    },
+    "exit": {
+      "lemma": "exit",
+      "pos": "形",
+      "ja": "出口の",
+      "note": ""
+    },
+    "polls": {
+      "lemma": "poll",
+      "pos": "名",
+      "ja": "世論調査",
+      "note": ""
+    },
+    "voters": {
+      "lemma": "voter",
+      "pos": "名",
+      "ja": "有権者",
+      "note": ""
+    },
+    "hurt": {
+      "lemma": "hurt",
+      "pos": "動",
+      "ja": "害する",
+      "note": ""
+    },
+    "replied": {
+      "lemma": "reply",
+      "pos": "動",
+      "ja": "反論する",
+      "note": ""
+    },
+    "play": {
+      "lemma": "play",
+      "pos": "動",
+      "ja": "果たす",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "形",
+      "ja": "上昇する",
+      "note": ""
+    },
+    "supreme": {
+      "lemma": "supreme",
+      "pos": "形",
+      "ja": "最高の",
+      "note": ""
+    },
+    "struck": {
+      "lemma": "strike",
+      "pos": "動",
+      "ja": "（strike downで）無効にする",
+      "note": "struck down で「無効にした」"
+    },
+    "broad": {
+      "lemma": "broad",
+      "pos": "形",
+      "ja": "広範な",
+      "note": ""
+    },
+    "rely": {
+      "lemma": "rely",
+      "pos": "動",
+      "ja": "頼る",
+      "note": ""
+    },
+    "legal": {
+      "lemma": "legal",
+      "pos": "形",
+      "ja": "法的な",
+      "note": ""
+    },
+    "tools": {
+      "lemma": "tool",
+      "pos": "名",
+      "ja": "手段",
+      "note": ""
+    },
+    "include": {
+      "lemma": "include",
+      "pos": "動",
+      "ja": "含む",
+      "note": ""
+    },
+    "investigations": {
+      "lemma": "investigation",
+      "pos": "名",
+      "ja": "調査",
+      "note": ""
+    },
+    "unfair": {
+      "lemma": "unfair",
+      "pos": "形",
+      "ja": "不公正な",
+      "note": ""
+    },
+    "practices": {
+      "lemma": "practice",
+      "pos": "名",
+      "ja": "慣行",
+      "note": ""
+    },
+    "protect": {
+      "lemma": "protect",
+      "pos": "動",
+      "ja": "守る",
+      "note": ""
+    },
+    "security": {
+      "lemma": "security",
+      "pos": "名",
+      "ja": "安全保障",
+      "note": ""
+    },
+    "importers": {
+      "lemma": "importer",
+      "pos": "名",
+      "ja": "輸入業者",
+      "note": ""
+    },
+    "refunds": {
+      "lemma": "refund",
+      "pos": "名",
+      "ja": "還付、返金",
+      "note": ""
+    },
+    "political": {
+      "lemma": "political",
+      "pos": "形",
+      "ja": "政治的な",
+      "note": ""
+    },
+    "likely": {
+      "lemma": "likely",
+      "pos": "形",
+      "ja": "ありそうな",
+      "note": ""
+    },
+    "national": {
+      "lemma": "national",
+      "pos": "形",
+      "ja": "国家の",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "接続詞 while（対比：一方で）と must の義務表現",
+    "quote": "Importers must plan for higher costs, while many companies are waiting for refunds of the old tariffs.",
+    "quoteJa": "輸入業者はコスト増に備えねばならず、一方で多くの企業は旧関税の還付を待っている。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "while には「～する間に」（時）のほかに、「一方で」（対比）の意味がある。この文は、前半（輸入業者は備える必要がある）と後半（多くの企業は還付を待っている）を並べ、2つの立場の違いを示している。後半は現在進行形（are waiting）で、今まさに続いている状態を表す。前半の must ＋動詞の原形は「～しなければならない」という強い義務。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "対比の while は、Whereas や、but でほぼ言い換えられる。例：Importers must plan for higher costs, but many companies are waiting for refunds. 時を表す while（While I was traveling, ...）とは、文脈で見分ける。時の while は、動作が同時に進む状況で使う。"
+      },
+      {
+        "heading": "TOEICでの注意点",
+        "body": "Part 5・6 では、while / whereas / although など接続詞の選択問題が出る。前後の内容が反対なら対比の while か whereas、譲歩なら although を選ぶ。Part 7 では、while の前後で「誰が何をしているか」の違いを問う設問が多い。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Sales rose 5% in Asia, while they fell 2% in Europe.（アジアの売上は5%増えた一方、欧州では2%減った。）／ Please submit the form by Friday, while the payment can be made next week.（書類は金曜までに提出し、支払いは来週でもよい。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "11月7日、ナバロ氏は中間選挙での共和党大敗後も「関税を強める」と述べた。出口調査では約3分の2が関税は経済に悪影響と回答。2月には連邦最高裁が、緊急経済権限法に基づく広範な関税を6対3で違法とした。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "違法とされた関税の代わりに、政権は通商法301条による調査や、鉄鋼・自動車部品などに課す232条の関税を使う。301条は不公正貿易慣行(unfair trade practices)を調べる制度、232条は国家安全保障(national security)を理由にする制度だ。企業が関税の負担を値上げで客に回すことを価格転嫁(cost pass-through)という。"
+    },
+    {
+      "heading": "📌 3. 他社の対応：値上げか、据え置きか",
+      "body": "ウォルマートは2025年5月、関税を理由に一部値上げを予告し、財務責任者は「吸収できる規模を超える」と述べた。トランプ大統領はこれを公に批判した。一方コストコは関税期間中も値上げを抑え、判決後に関税の全額還付を求めて提訴し、返金は値下げに回す考えを示した。値上げで受け止めたウォルマートと、価格を据え置いて還付で取り戻そうとしたコストコで、対応が分かれた。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "トヨタ自動車は2025年8月、米国の関税による影響を通期で約1.4兆円と見込み、利益予想を引き下げた。同社は不確実性が大きく業績の見通しを立てにくいと説明しつつ、原価低減や価格戦略で影響の一部を埋め合わせる方針を示した。米国が関税を強めるほど、日本の自動車大手も価格と利益のかじ取りを迫られる。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "unfair trade practices",
+      "pos": "名",
+      "ja": "不公正貿易慣行",
+      "gloss": "（＝補助金や不当な安売りなど、貿易のルールを破るやり方のこと）",
+      "example": {
+        "en": "The agency opened a probe into unfair trade practices in the steel market.",
+        "ja": "その当局は鉄鋼市場の不公正貿易慣行について調査を始めた。"
+      }
+    },
+    {
+      "term": "national security",
+      "pos": "名",
+      "ja": "国家安全保障",
+      "gloss": "（＝国を外国の脅威から守ること）",
+      "example": {
+        "en": "The law limits exports of products tied to national security.",
+        "ja": "その法律は国家安全保障に関わる製品の輸出を制限している。"
+      }
+    },
+    {
+      "term": "cost pass-through",
+      "pos": "名",
+      "ja": "価格転嫁",
+      "gloss": "（＝増えたコストを販売価格に上乗せして客に負担してもらうこと）",
+      "example": {
+        "en": "Full cost pass-through is hard when competitors keep their prices low.",
+        "ja": "競合が低価格を保つ中で、コストの全面的な価格転嫁は難しい。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Navarro: 'We're quadrupling down on tariffs'",
+      "publisher": "The Washington Times",
+      "url": "https://www.washingtontimes.com/news/2026/nov/7/navarro-quadrupling-tariffs/",
+      "date": "2026-11-07"
+    },
+    {
+      "title": "Republicans' Midterm Wipeout Reignites the War Over Tariffs",
+      "publisher": "The Washington Sun",
+      "url": "https://www.washingtonsun.com/economy/republicans-midterm-wipeout-trump-tariffs",
+      "date": "2026-11-07"
+    },
+    {
+      "title": "Businesses win big as Supreme Court strikes down Trump tariffs",
+      "publisher": "Axios",
+      "url": "https://www.axios.com/2026/02/20/trump-tariffs-overturned-companies-business",
+      "date": "2026-02-20"
+    },
+    {
+      "title": "Trump tells Walmart to 'eat the tariffs' after retailer warned it will raise prices",
+      "publisher": "NBC News",
+      "url": "https://www.nbcnews.com/news/amp/rcna207441",
+      "date": "2025-05-16"
+    },
+    {
+      "title": "Costco Sues Over Trump Tariffs: What Could That Mean for Prices in 2026?",
+      "publisher": "Kiplinger",
+      "url": "https://www.kiplinger.com/taxes/costco-tariff-lawsuit",
+      "date": "2025-12-30"
+    }
+  ]
+}
