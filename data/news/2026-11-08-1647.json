@@ -484,5 +484,23 @@
       "url": "https://www.manufacturing.net/operations/news/13238761/japanese-automakers-adjust-to-port-dispute",
       "date": "2015"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-08-1647/00.mp3",
+      "audio/2026-11-08-1647/01.mp3",
+      "audio/2026-11-08-1647/02.mp3",
+      "audio/2026-11-08-1647/03.mp3",
+      "audio/2026-11-08-1647/04.mp3",
+      "audio/2026-11-08-1647/05.mp3",
+      "audio/2026-11-08-1647/06.mp3",
+      "audio/2026-11-08-1647/07.mp3",
+      "audio/2026-11-08-1647/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 241260,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-08T07:49:08.913Z",
+    "trimmed": true
+  }
 }
