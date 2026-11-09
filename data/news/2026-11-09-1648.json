@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-09-1648",
+  "date": "2026-11-09",
+  "time": "16:48",
+  "createdAt": "2026-11-09T16:48:00+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail & Consumer",
+  "sample": false,
+  "title": {
+    "en": "U.S. Consumers Feel Better as Price Worries Ease",
+    "ja": "米消費者心理が改善、物価不安が和らぐ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "American consumers felt more hopeful about the economy in early November.",
+            "ja": "11月上旬、米国の消費者は景気に対してより前向きな気持ちになった。"
+          },
+          {
+            "en": "A University of Michigan survey put its sentiment index at 51.0, up from 48.0 in October.",
+            "ja": "ミシガン大学の調査では、消費者信頼感指数は51.0で、10月の48.0から上昇した。"
+          },
+          {
+            "en": "Economists had expected the index to stay near 48.0 this month.",
+            "ja": "エコノミストは、今月の指数は48.0付近にとどまると予想していた。"
+          },
+          {
+            "en": "It was the highest reading since August.",
+            "ja": "これは8月以来の高い数値だ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The main reason was a drop in price worries.",
+            "ja": "主な理由は、物価への不安が和らいだことだ。"
+          },
+          {
+            "en": "Shoppers now expect prices to rise 4.3% over the next year, down from 4.7% a month earlier.",
+            "ja": "消費者は今後1年で物価が4.3%上がると見ており、1か月前の4.7%から低下した。"
+          },
+          {
+            "en": "Views of current conditions improved by more than 9%, and views of the future also rose.",
+            "ja": "現在の状況への見方は9%超改善し、先行きへの見方も上向いた。"
+          },
+          {
+            "en": "That matters for retailers, because consumer spending drives most of the U.S. economy.",
+            "ja": "個人消費が米経済の大部分を支えているため、これは小売企業にとって重要だ。"
+          },
+          {
+            "en": "Still, the index is far below its long-term average of 84.5.",
+            "ja": "それでも、指数は長期平均の84.5をはるかに下回っている。"
+          },
+          {
+            "en": "Retailers will watch whether the mood holds before the final reading on November 20.",
+            "ja": "小売各社は、11月20日の確定値までこの雰囲気が続くかを注視する。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What was the sentiment index in early November?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "44.8",
+          "ja": "44.8"
+        },
+        {
+          "key": "B",
+          "text": "48.0",
+          "ja": "48.0"
+        },
+        {
+          "key": "C",
+          "text": "51.0",
+          "ja": "51.0"
+        },
+        {
+          "key": "D",
+          "text": "84.5",
+          "ja": "84.5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落の2文目に the sentiment index at 51.0 とある。Aの44.8は本文に出てこない（背景情報の5月の最低値）。Bの48.0は10月の値と予想値で、今回の数値ではない。Dの84.5は第2段落に出る長期平均で、別の数字を使った引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う設問は、選択肢の数字がすべて本文のどこかに出てくることが多い。「何の数字か」を確認してから選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why did the mood improve?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Shoppers worried less about rising prices.",
+          "ja": "買い物客が物価上昇を心配しなくなった"
+        },
+        {
+          "key": "B",
+          "text": "Stores offered bigger discounts.",
+          "ja": "店がより大きな値引きをした"
+        },
+        {
+          "key": "C",
+          "text": "The index reached a record low.",
+          "ja": "指数が過去最低を記録した"
+        },
+        {
+          "key": "D",
+          "text": "Consumer spending fell sharply.",
+          "ja": "個人消費が急減した"
+        }
+      ],
+      "answer": "A",
+      "explanation": "第2段落の1文目に The main reason was a drop in price worries とあり、続く文で物価上昇の予想が4.7%から4.3%に下がったと説明している。Bは本文に出ない情報。Cは5月の最低値を持ち出した引っかけで、今回は改善した話。Dは本文と無関係で、むしろ個人消費は経済を支えると書かれている。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由を問う設問は reason / because / drop in などの表現の直後に答えがある。本文にない情報や、時期の違う情報を使った選択肢は消去できる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "sentiment",
+      "pos": "名",
+      "ja": "（消費者・市場の）心理、意向",
+      "gloss": "（＝人々が景気などをどう感じているかのこと）",
+      "example": {
+        "en": "The sentiment among investors turned positive after the announcement.",
+        "ja": "発表後、投資家の心理は前向きに転じた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "survey",
+      "pos": "名",
+      "ja": "調査、アンケート",
+      "gloss": "",
+      "example": {
+        "en": "The survey showed that most customers prefer online shopping.",
+        "ja": "調査では、ほとんどの顧客がオンライン購入を好むと分かった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "reading",
+      "pos": "名",
+      "ja": "（計器・指標の）数値",
+      "gloss": "",
+      "example": {
+        "en": "The latest reading showed a slight increase in orders.",
+        "ja": "最新の数値は、受注がわずかに増えたことを示した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "retailer",
+      "pos": "名",
+      "ja": "小売業者、小売企業",
+      "gloss": "",
+      "example": {
+        "en": "The retailer plans to open ten new stores next year.",
+        "ja": "その小売企業は来年10店舗を新規出店する予定だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "improve",
+      "pos": "動",
+      "ja": "改善する、よくなる",
+      "gloss": "",
+      "example": {
+        "en": "Customer satisfaction began to improve after the new policy.",
+        "ja": "新方針の後、顧客満足度は改善し始めた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "matter",
+      "pos": "動",
+      "ja": "重要である",
+      "gloss": "",
+      "example": {
+        "en": "Delivery times matter to our online customers.",
+        "ja": "配送時間はオンライン顧客にとって重要だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "drive",
+      "pos": "動",
+      "ja": "動かす、押し上げる",
+      "gloss": "",
+      "example": {
+        "en": "Strong demand will drive the company's growth this year.",
+        "ja": "強い需要が今年の会社の成長を押し上げるだろう。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "average",
+      "pos": "名",
+      "ja": "平均",
+      "gloss": "",
+      "example": {
+        "en": "The average cost of shipping has risen this year.",
+        "ja": "配送費の平均は今年上昇した。"
+      }
+    }
+  ],
+  "glossary": {
+    "consumers": {
+      "lemma": "consumer",
+      "pos": "名",
+      "ja": "消費者",
+      "note": ""
+    },
+    "felt": {
+      "lemma": "feel",
+      "pos": "動",
+      "ja": "感じた",
+      "note": ""
+    },
+    "hopeful": {
+      "lemma": "hopeful",
+      "pos": "形",
+      "ja": "前向きな",
+      "note": ""
+    },
+    "economy": {
+      "lemma": "economy",
+      "pos": "名",
+      "ja": "経済、景気",
+      "note": ""
+    },
+    "survey": {
+      "lemma": "survey",
+      "pos": "名",
+      "ja": "調査",
+      "note": ""
+    },
+    "sentiment": {
+      "lemma": "sentiment",
+      "pos": "名",
+      "ja": "心理、意向",
+      "note": ""
+    },
+    "index": {
+      "lemma": "index",
+      "pos": "名",
+      "ja": "指数",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "経済学者",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": "expect A to do で「Aが〜すると予想する」"
+    },
+    "reading": {
+      "lemma": "reading",
+      "pos": "名",
+      "ja": "数値",
+      "note": ""
+    },
+    "highest": {
+      "lemma": "high",
+      "pos": "形",
+      "ja": "最も高い",
+      "note": ""
+    },
+    "reason": {
+      "lemma": "reason",
+      "pos": "名",
+      "ja": "理由",
+      "note": ""
+    },
+    "drop": {
+      "lemma": "drop",
+      "pos": "名",
+      "ja": "低下",
+      "note": ""
+    },
+    "worries": {
+      "lemma": "worry",
+      "pos": "名",
+      "ja": "不安、心配",
+      "note": ""
+    },
+    "shoppers": {
+      "lemma": "shopper",
+      "pos": "名",
+      "ja": "買い物客",
+      "note": ""
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "earlier",
+      "pos": "副",
+      "ja": "以前に",
+      "note": ""
+    },
+    "views": {
+      "lemma": "view",
+      "pos": "名",
+      "ja": "見方",
+      "note": ""
+    },
+    "conditions": {
+      "lemma": "condition",
+      "pos": "名",
+      "ja": "状況",
+      "note": ""
+    },
+    "improved": {
+      "lemma": "improve",
+      "pos": "動",
+      "ja": "改善した",
+      "note": ""
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売企業",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "drives": {
+      "lemma": "drive",
+      "pos": "動",
+      "ja": "動かす",
+      "note": ""
+    },
+    "far": {
+      "lemma": "far",
+      "pos": "副",
+      "ja": "はるかに",
+      "note": ""
+    },
+    "average": {
+      "lemma": "average",
+      "pos": "名",
+      "ja": "平均",
+      "note": ""
+    },
+    "long-term": {
+      "lemma": "long-term",
+      "pos": "形",
+      "ja": "長期の",
+      "note": ""
+    },
+    "mood": {
+      "lemma": "mood",
+      "pos": "名",
+      "ja": "雰囲気、気分",
+      "note": ""
+    },
+    "holds": {
+      "lemma": "hold",
+      "pos": "動",
+      "ja": "続く",
+      "note": ""
+    },
+    "final": {
+      "lemma": "final",
+      "pos": "形",
+      "ja": "最終の",
+      "note": ""
+    },
+    "matters": {
+      "lemma": "matter",
+      "pos": "動",
+      "ja": "重要である",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "expect＋O＋to do（Oが〜すると予想する）",
+    "quote": "Economists had expected the index to stay near 48.0 this month.",
+    "quoteJa": "エコノミストは、今月の指数は48.0付近にとどまると予想していた。",
+    "blocks": [
+      {
+        "heading": "構文の名称と説明",
+        "body": "expect A to do は「Aが〜するだろうと予想する・期待する」を表す第5文型（SVO＋to不定詞）の形です。ここでは the index が A、to stay near 48.0 が「〜にとどまる」にあたります。had expected と過去完了になっているのは、「発表の時点より前に予想していた」ことを示すためです。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Economists had expected that the index would stay near 48.0. のように that 節でも言い換えられます。意味は同じですが、to 不定詞を使うほうが短く、ニュース英語でよく好まれます。なお、expect to do（自分が〜する予定だ）と expect A to do（Aが〜すると予想する）は主語が違う点に注意しましょう。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では expect A to do の to が抜けた形や、expect A doing のような誤りの選択肢が出ます。同じ型を取る動詞（want / ask / allow / require / advise など）とまとめて覚えると効率的です。Part 7 では expected（予想）と actual（実際）の差を問う設問が定番で、予想値と実績値のどちらを聞かれているかを確認する必要があります。"
+      },
+      {
+        "heading": "ビジネス応用例",
+        "body": "We expect sales to grow by 5% next quarter.（来四半期の売上は5%伸びると見込んでいます。）／ The manager expects all staff to attend the meeting.（部長は全スタッフが会議に出席することを求めています。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "ミシガン大学が11月6日に発表した11月の消費者信頼感指数（速報値）は51.0となり、10月の48.0と市場予想の48.0をともに上回った。8月以来の高さで、1年先の物価上昇予想である期待インフレ率(inflation expectations)は4.7%から4.3%に下がった。今年の最低だった5月の44.8からは持ち直している。最終値は11月20日に出る。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "この指数は、家計に景気や物価をどう感じているかを尋ねるアンケートから作られる。物価がまだ上がると考える人が多いと、消費者は財布のひもを締めやすい。小売企業にとっては、仕入れや輸送などのコスト上昇分を売値に上乗せする価格転嫁(pass through)がどこまで通用するかを測る目安になる。信頼感が低いときの値上げは、客離れを招きやすい。"
+    },
+    {
+      "heading": "📌 3. 他社の値上げ対応：ウォルマートとコストコ",
+      "body": "ウォルマートは2025年5月の決算発表で、関税のコストが大きすぎて吸収しきれないとして、電子機器や玩具などを中心に値上げが避けられないと表明した。一方のコストコは同年、値上げは「最後の手段」だと説明し、バナナやパイナップルなどの定番品は価格を据え置き、買う頻度の低い花だけを値上げした。卵やバターなどは値下げし、卵は店頭で約10%安くなったと報じられた。前者は一律に近い上乗せ、後者は品目ごとに選んで負担を振り分けたという違いがある。"
+    },
+    {
+      "heading": "📌 4. 日本企業では：ユニクロの値引き抑制",
+      "body": "ファーストリテイリングは2022年8月期、国内ユニクロ事業の既存店売上高が前年比3.3%減と苦戦した。それでも値引き(markdown)販売を絞ったことで、粗利益率は2.5ポイント改善し、営業利益は前年比0.6%増の1,240億円を確保した。グループ全体では過去最高の業績になった。値上げではなく、安売りを減らして利益を守るやり方を選んだ例だ。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "inflation expectations",
+      "pos": "名",
+      "ja": "期待インフレ率",
+      "gloss": "（＝人々がこれから物価がどれだけ上がると思っているかのこと）",
+      "example": {
+        "en": "Rising inflation expectations can push workers to ask for higher pay.",
+        "ja": "期待インフレ率が上がると、従業員がより高い賃金を求めることがある。"
+      }
+    },
+    {
+      "term": "pass through",
+      "pos": "熟",
+      "ja": "（コストを）価格に転嫁する",
+      "gloss": "（＝増えた費用を、売値に上乗せして客に負担してもらうこと）",
+      "example": {
+        "en": "The supplier decided to pass through the higher fuel costs to its customers.",
+        "ja": "その納入業者は、燃料費の上昇分を顧客に転嫁することにした。"
+      }
+    },
+    {
+      "term": "markdown",
+      "pos": "名",
+      "ja": "値引き、値下げ",
+      "gloss": "（＝売れ残りを減らすために、元の値段から下げること）",
+      "example": {
+        "en": "The store held a markdown sale to clear its winter stock.",
+        "ja": "その店は冬物の在庫を減らすため、値引きセールを行った。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "November US UMich prelim consumer sentiment 51.0 vs 48.0 expected",
+      "publisher": "investinglive",
+      "url": "https://investinglive.com/news/november-us-umich-prelim-consumer-sentiment-vs-48-0-expected/",
+      "date": "2026-11-06"
+    },
+    {
+      "title": "Consumer sentiment recovers significantly",
+      "publisher": "Advisor Perspectives",
+      "url": "https://www.advisorperspectives.com/dshort/updates/2026/11/06/consumer-sentiment-recovers-significantly",
+      "date": "2026-11-06"
+    },
+    {
+      "title": "Preliminary consumer sentiment rises in November",
+      "publisher": "ABA Banking Journal",
+      "url": "https://bankingjournal.aba.com/2026/11/preliminary-consumer-sentiment-rises-in-november/",
+      "date": "2026-11-06"
+    },
+    {
+      "title": "Walmart will raise prices due to tariff costs",
+      "publisher": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/economy/walmart-will-raise-prices-due-to-tariff-costs",
+      "date": "2025-05-15"
+    },
+    {
+      "title": "Tariff Impact: Costco Holds Off on Raising Prices",
+      "publisher": "NACS",
+      "url": "https://www.convenience.org/Media/Daily/2025/June/2/5-Tariff-Costco-Holds-Off-Raising-Prices_Finance",
+      "date": "2025-06-02"
+    }
+  ]
+}
