@@ -512,5 +512,24 @@
       "url": "https://www.convenience.org/Media/Daily/2025/June/2/5-Tariff-Costco-Holds-Off-Raising-Prices_Finance",
       "date": "2025-06-02"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-09-1648/00.mp3",
+      "audio/2026-11-09-1648/01.mp3",
+      "audio/2026-11-09-1648/02.mp3",
+      "audio/2026-11-09-1648/03.mp3",
+      "audio/2026-11-09-1648/04.mp3",
+      "audio/2026-11-09-1648/05.mp3",
+      "audio/2026-11-09-1648/06.mp3",
+      "audio/2026-11-09-1648/07.mp3",
+      "audio/2026-11-09-1648/08.mp3",
+      "audio/2026-11-09-1648/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 221144,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-09T07:49:52.937Z",
+    "trimmed": true
+  }
 }
