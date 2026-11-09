@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-10-0549",
+  "date": "2026-11-10",
+  "time": "05:49",
+  "createdAt": "2026-11-10T05:49:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Rate Hike Bets Grow as Investors Await U.S. Inflation Data",
+    "ja": "利上げ観測が強まる、米物価統計を前に"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. government bond yields edged up on Monday as investors waited for a key inflation report.",
+            "ja": "月曜、米国債の利回りは小幅に上昇し、投資家は重要な物価統計の発表を待った。"
+          },
+          {
+            "en": "The yield on the 10-year Treasury note stayed near 4.9%.",
+            "ja": "10年物国債の利回りは4.9%付近にとどまった。"
+          },
+          {
+            "en": "Traders now see more than an 80% chance that the Federal Reserve will raise interest rates again in December.",
+            "ja": "トレーダーは、連邦準備制度理事会(FRB)が12月に再び利上げする確率を80%超と見ている。"
+          },
+          {
+            "en": "The Fed kept its key rate between 3.75% and 4.00% in October, but two officials voted for an increase.",
+            "ja": "FRBは10月に政策金利を3.75〜4.00%に据え置いたが、2人の当局者が利上げに票を投じた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "A strong jobs report on Friday pushed those odds higher.",
+            "ja": "金曜の強い雇用統計が、その確率をさらに押し上げた。"
+          },
+          {
+            "en": "Employers added 165,000 jobs in October, far more than economists had predicted.",
+            "ja": "10月は雇用主が16.5万人分の雇用を増やし、エコノミストの予想をはるかに上回った。"
+          },
+          {
+            "en": "Strong hiring can lift wages and prices, which makes the central bank more cautious.",
+            "ja": "雇用が堅調だと賃金や物価が上がりやすく、中央銀行はより慎重になる。"
+          },
+          {
+            "en": "The inflation report is due on Tuesday, and a hotter result could strengthen the case for a hike.",
+            "ja": "物価統計は火曜に発表予定で、予想より強い結果なら利上げの根拠が強まりうる。"
+          },
+          {
+            "en": "Higher rates would raise borrowing costs for companies and homebuyers alike.",
+            "ja": "金利が上がれば、企業や住宅購入者の借入コストも増える。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What range was the Fed's key rate in after its October meeting?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3.25% to 3.50%",
+          "ja": "3.25〜3.50%"
+        },
+        {
+          "key": "B",
+          "text": "3.50% to 3.75%",
+          "ja": "3.50〜3.75%"
+        },
+        {
+          "key": "C",
+          "text": "3.75% to 4.00%",
+          "ja": "3.75〜4.00%"
+        },
+        {
+          "key": "D",
+          "text": "4.00% to 4.25%",
+          "ja": "4.00〜4.25%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落最終文に「FRBは10月に政策金利を3.75%から4.00%の間に据え置いた(kept its key rate between 3.75% and 4.00%)」とある。(A)(B)(D) は本文にない数字で、数字問題の典型的な引っかけ。本文の数字と選択肢を一つずつ照らし合わせれば確実に解ける。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "数字問題は、設問のキーワード(key rate / October)を本文で探し、その文の数字だけを見る。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why did the odds of a December rate hike rise?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Inflation fell sharply in October.",
+          "ja": "10月に物価が急落した。"
+        },
+        {
+          "key": "B",
+          "text": "Employers added many more jobs than expected.",
+          "ja": "雇用が予想より大きく増えた。"
+        },
+        {
+          "key": "C",
+          "text": "The Fed lowered its key rate.",
+          "ja": "FRBが政策金利を下げた。"
+        },
+        {
+          "key": "D",
+          "text": "The 10-year yield dropped below 4%.",
+          "ja": "10年債利回りが4%を割った。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落の冒頭で、強い雇用統計が確率を押し上げたとあり、次の文で「雇用主が16.5万人増やし、予想をはるかに上回った」と説明している。(A) は本文にない内容、(C) は「据え置いた」と逆、(D) は利回りが約4.9%とあり本文と矛盾する。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由問題は、because や「〜が押し上げた」のような因果の表現の前後を探す。本文と逆の選択肢に注意。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "gloss": "（＝債券を持つと1年でもらえる収益の割合のこと）",
+      "example": {
+        "en": "The bond's yield rose to 5% this week.",
+        "ja": "その債券の利回りは今週5%に上昇した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "odds",
+      "pos": "名",
+      "ja": "見込み、確率",
+      "gloss": "",
+      "example": {
+        "en": "The odds of finishing the project on time are good.",
+        "ja": "計画が期限どおりに終わる見込みは高い。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "employer",
+      "pos": "名",
+      "ja": "雇用主、会社",
+      "gloss": "",
+      "example": {
+        "en": "Our employer offers flexible working hours.",
+        "ja": "当社は柔軟な勤務時間を提供している。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "predict",
+      "pos": "動",
+      "ja": "予想する",
+      "gloss": "",
+      "example": {
+        "en": "Analysts predict that sales will grow next year.",
+        "ja": "アナリストは来年売上が伸びると予想している。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "cautious",
+      "pos": "形",
+      "ja": "慎重な",
+      "gloss": "",
+      "example": {
+        "en": "The manager was cautious about hiring more staff.",
+        "ja": "部長は人員を増やすことに慎重だった。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "strengthen",
+      "pos": "動",
+      "ja": "強める、強化する",
+      "gloss": "",
+      "example": {
+        "en": "The new contract will strengthen our partnership.",
+        "ja": "新しい契約は私たちの提携を強化する。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "borrowing costs",
+      "pos": "熟",
+      "ja": "借入コスト",
+      "gloss": "（＝お金を借りるときに払う利息などのこと）",
+      "example": {
+        "en": "Higher borrowing costs forced the firm to delay its expansion.",
+        "ja": "借入コストの上昇で、その会社は拡大を延期した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "hike",
+      "pos": "名",
+      "ja": "引き上げ",
+      "gloss": "（＝金利や価格を一気に上げること）",
+      "example": {
+        "en": "The hike in fuel prices surprised many drivers.",
+        "ja": "燃料価格の引き上げに多くの運転者が驚いた。"
+      }
+    }
+  ],
+  "glossary": {
+    "yields": {
+      "lemma": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "note": ""
+    },
+    "edged": {
+      "lemma": "edge",
+      "pos": "動",
+      "ja": "じわじわ動く",
+      "note": "edge up で「小幅に上がる」"
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "key": {
+      "lemma": "key",
+      "pos": "形",
+      "ja": "重要な、主要な",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "インフレ、物価上昇",
+      "note": ""
+    },
+    "treasury": {
+      "lemma": "treasury",
+      "pos": "名",
+      "ja": "国債(財務省証券)",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー",
+      "note": ""
+    },
+    "chance": {
+      "lemma": "chance",
+      "pos": "名",
+      "ja": "可能性",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "金利、利息",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "金利、率",
+      "note": ""
+    },
+    "kept": {
+      "lemma": "keep",
+      "pos": "動",
+      "ja": "保つ、据え置く",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "voted": {
+      "lemma": "vote",
+      "pos": "動",
+      "ja": "投票する",
+      "note": ""
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "上昇、引き上げ",
+      "note": ""
+    },
+    "employers": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主",
+      "note": ""
+    },
+    "added": {
+      "lemma": "add",
+      "pos": "動",
+      "ja": "増やす",
+      "note": ""
+    },
+    "predicted": {
+      "lemma": "predict",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "経済学者、エコノミスト",
+      "note": ""
+    },
+    "hiring": {
+      "lemma": "hiring",
+      "pos": "名",
+      "ja": "採用",
+      "note": ""
+    },
+    "wages": {
+      "lemma": "wage",
+      "pos": "名",
+      "ja": "賃金",
+      "note": ""
+    },
+    "cautious": {
+      "lemma": "cautious",
+      "pos": "形",
+      "ja": "慎重な",
+      "note": ""
+    },
+    "due": {
+      "lemma": "due",
+      "pos": "形",
+      "ja": "予定されている",
+      "note": ""
+    },
+    "hotter": {
+      "lemma": "hot",
+      "pos": "形",
+      "ja": "(数字が)予想より強い",
+      "note": "ここでは物価が高めに出る意"
+    },
+    "strengthen": {
+      "lemma": "strengthen",
+      "pos": "動",
+      "ja": "強める",
+      "note": ""
+    },
+    "case": {
+      "lemma": "case",
+      "pos": "名",
+      "ja": "根拠、論拠",
+      "note": "the case for ～ で「～の根拠」"
+    },
+    "hike": {
+      "lemma": "hike",
+      "pos": "名",
+      "ja": "引き上げ",
+      "note": ""
+    },
+    "borrowing": {
+      "lemma": "borrowing",
+      "pos": "名",
+      "ja": "借り入れ",
+      "note": ""
+    },
+    "homebuyers": {
+      "lemma": "homebuyer",
+      "pos": "名",
+      "ja": "住宅購入者",
+      "note": ""
+    },
+    "odds": {
+      "lemma": "odds",
+      "pos": "名",
+      "ja": "見込み、確率",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "比較級の強調（far more than ～）",
+    "quote": "Employers added 165,000 jobs in October, far more than economists had predicted.",
+    "quoteJa": "10月は雇用主が16.5万人分の雇用を増やし、エコノミストの予想をはるかに上回った。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "「far／much／a lot／even＋比較級」で「はるかに〜」「さらに〜」と差の大きさを強調する。ここでは more than（〜より多い）を far が強め、「予想をはるかに上回る」の意味になる。very は比較級を強調できない点に注意。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "far more than economists had predicted ≒ well above economists' forecasts。差が小さいときは slightly more than、少し上回るなら a little more than を使う。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 で「( )　higher than last year」の空所に much／far／even を選ばせる問題が出る。very と too は不可で、これが定番の引っかけ。Part 7 では、実績が予想を far more than 上回るという表現が決算・統計の記事でよく登場する。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Sales were far higher than we had forecast.（売上は私たちの予測をはるかに上回った。）／ The new model is much more efficient than the old one.（新モデルは旧型よりずっと効率的だ。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "11月9日、米10年債利回りは約4.9%で推移した。10月の雇用が16.5万人増と強く、12月の追加利上げ確率は80%超に上昇した。10日の米消費者物価(10月分)の発表次第で、利上げ観測がさらに強まる可能性がある。金利が高止まりすれば、企業の資金調達や住宅ローンの負担にも波及する。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "政策金利(policy rate)が上がると債券の利回りも上がり、すでに発行された債券の価格は下がる。満期が長い債券ほど値下がりが大きく、持ち続けていても含み損(unrealized losses)が膨らむ。一方、貸出金利も上がるため、銀行の純利息収益(net interest income)は増えやすい。つまり利上げは、銀行の持つ資産には逆風、収益には追い風という二面性をもつ。"
+    },
+    {
+      "heading": "📌 3. 他社の利上げ局面での明暗",
+      "body": "シリコンバレー銀行は2023年3月、長期債の含み損を抱えたまま約210億ドルの債券を売り、18億ドルの損失を確定させた。これで預金者の不安が広がり、取り付けを受けて破綻した。一方、JPモルガン・チェースは同年、預金金利の引き上げを小幅に抑えて貸出金利を上げ、純利息収益は約893億ドル(前年は約667億ドル)と過去最高になった。同じ局面でも、長期債に偏った銀行は傷み、預金コストを抑えた大手は潤った。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本では日銀がマイナス金利を解除して利上げに転じ、三菱UFJ、三井住友、みずほの3メガバンクの2025年3月期の純利益は合計3.926兆円(前年比25.3%増)と過去最高になった。利ざやの改善が追い風だった。ただ、調達コストや金利スワップの支払いが増え、増益効果が一部相殺される面もある。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "policy rate",
+      "pos": "熟",
+      "ja": "政策金利",
+      "gloss": "（＝中央銀行が決める基準の金利のこと）",
+      "example": {
+        "en": "The central bank left its policy rate unchanged.",
+        "ja": "中央銀行は政策金利を据え置いた。"
+      }
+    },
+    {
+      "term": "unrealized losses",
+      "pos": "熟",
+      "ja": "含み損",
+      "gloss": "（＝売っていないので確定していない損失のこと）",
+      "example": {
+        "en": "The fund reported large unrealized losses on its holdings.",
+        "ja": "そのファンドは保有資産に大きな含み損を計上した。"
+      }
+    },
+    {
+      "term": "net interest income",
+      "pos": "熟",
+      "ja": "純利息収益",
+      "gloss": "（＝貸出で得た利息から預金などに払った利息を引いた収益のこと）",
+      "example": {
+        "en": "Net interest income rose as the bank raised loan rates.",
+        "ja": "銀行が貸出金利を上げたため、純利息収益が増えた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Treasury yields are steady as investors await more economic data",
+      "publisher": "CNBC",
+      "url": "https://cnbc.com/2026/11/09/us-treasurys-bonds-yields.html",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "Odds of a December Rate Hike Jump to 77% After a Blowout Jobs Report",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/07/odds-of-a-december-rate-hike-jump-to-77-after-a-blowout-jobs-report/",
+      "date": "2026-11-07"
+    },
+    {
+      "title": "Collapse of Silicon Valley Bank",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank",
+      "date": "2023-03-10"
+    },
+    {
+      "title": "JPMorgan reports record annual profits on interest rate windfall",
+      "publisher": "The Irish Times",
+      "url": "https://www.irishtimes.com/business/2024/01/12/jpmorgan-reports-record-annual-profits-on-interest-rate-windfall",
+      "date": "2024-01-12"
+    },
+    {
+      "title": "Yomiuri: Japan's 3 Megabanks Post Record Profits for 2nd Consecutive Year",
+      "publisher": "Tiger Brokers (Yomiuri)",
+      "url": "https://www.itiger.com/news/2536230635",
+      "date": "2025-05-20"
+    }
+  ]
+}
