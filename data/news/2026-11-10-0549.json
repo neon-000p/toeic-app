@@ -508,5 +508,23 @@
       "url": "https://www.itiger.com/news/2536230635",
       "date": "2025-05-20"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-10-0549/00.mp3",
+      "audio/2026-11-10-0549/01.mp3",
+      "audio/2026-11-10-0549/02.mp3",
+      "audio/2026-11-10-0549/03.mp3",
+      "audio/2026-11-10-0549/04.mp3",
+      "audio/2026-11-10-0549/05.mp3",
+      "audio/2026-11-10-0549/06.mp3",
+      "audio/2026-11-10-0549/07.mp3",
+      "audio/2026-11-10-0549/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 220620,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-09T20:50:33.765Z",
+    "trimmed": true
+  }
 }
