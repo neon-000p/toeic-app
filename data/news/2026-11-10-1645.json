@@ -1,0 +1,506 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-10-1645",
+  "date": "2026-11-10",
+  "time": "16:45",
+  "createdAt": "2026-11-10T16:45:00+09:00",
+  "genre": "宇宙",
+  "genreEn": "Space",
+  "sample": false,
+  "title": {
+    "en": "Redwire Wins $20 Million DARPA Contract for Low-Orbit Test Flight",
+    "ja": "レッドワイヤー、低軌道の試験飛行で2,000万ドル受注"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Redwire, a U.S. space company, won a new $20 million contract from DARPA, a military research agency.",
+            "ja": "米宇宙企業のレッドワイヤーが、軍の研究機関である国防高等研究計画局（DARPA）から、新たに2,000万ドルの契約を獲得した。"
+          },
+          {
+            "en": "The money will pay for a short test flight of a small version of its SabreSat satellite.",
+            "ja": "この資金は、同社の衛星「セイバーサット」の小型版による短時間の試験飛行に充てられる。"
+          },
+          {
+            "en": "The satellite will fly in very low Earth orbit, a zone much closer to the ground than most satellites.",
+            "ja": "衛星は超低軌道、つまりほとんどの衛星よりずっと地上に近い領域を飛行する。"
+          },
+          {
+            "en": "The flight is planned for late 2027 and will last less than 24 hours.",
+            "ja": "飛行は2027年末に計画されており、24時間未満で終わる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The contract adds to a $44 million award from last year, bringing the total to $64 million.",
+            "ja": "この契約は昨年の4,400万ドルの受注に上乗せされ、合計は6,400万ドルになった。"
+          },
+          {
+            "en": "Satellites that fly low can take sharper pictures, but thin air slows them down, so they burn fuel quickly to stay up.",
+            "ja": "低く飛ぶ衛星はより鮮明な画像を撮れるが、薄い空気で減速するため、軌道を保つのに燃料を急速に消費する。"
+          },
+          {
+            "en": "The test will try an air-breathing engine, which collects thin gas from the air and uses it as fuel.",
+            "ja": "試験では、空気中の希薄な気体を集めて燃料として使う「空気吸い込み式」エンジンを試す。"
+          },
+          {
+            "en": "Engineers will compare the flight data with ground tests to improve their computer models.",
+            "ja": "技術者は飛行データを地上試験と比べ、コンピューターモデルを改善する。"
+          },
+          {
+            "en": "If the test succeeds, the company could win larger contracts.",
+            "ja": "試験が成功すれば、同社はより大きな契約を獲得できる可能性がある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How long will the planned test flight last?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About seven days",
+          "ja": "約7日間"
+        },
+        {
+          "key": "B",
+          "text": "About three months",
+          "ja": "約3か月"
+        },
+        {
+          "key": "C",
+          "text": "Less than 24 hours",
+          "ja": "24時間未満"
+        },
+        {
+          "key": "D",
+          "text": "More than one year",
+          "ja": "1年超"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解はC。第1段落の最終文に「will last less than 24 hours」とある。Aの7日間やBの3か月は本文に出てこない数字。Dの1年超は、契約の時期（昨年の受注、2027年末の飛行）と混同させる引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "期間を問う設問は、数字と単位（hours / days / months）がセットで書かれた文を探す。less than のような比較表現が正解の鍵になることが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why will engineers compare the flight data with ground tests?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To lower launch costs",
+          "ja": "打ち上げ費用を下げるため"
+        },
+        {
+          "key": "B",
+          "text": "To improve their computer models",
+          "ja": "モデルを改善するため"
+        },
+        {
+          "key": "C",
+          "text": "To choose a new launch site",
+          "ja": "新しい発射場を選ぶため"
+        },
+        {
+          "key": "D",
+          "text": "To train new engineers",
+          "ja": "新人を訓練するため"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解はB。第2段落に「compare the flight data with ground tests to improve their computer models」とあり、to不定詞が目的を示す。A・C・Dは本文に書かれていない内容で、もっともらしいだけの選択肢。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "Why で始まる設問の答えは to do / because / so that の直後にあることが多い。目的を表す to 不定詞を探す。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "contract",
+      "pos": "名",
+      "ja": "契約",
+      "gloss": "",
+      "example": {
+        "en": "The two companies signed a one-year contract.",
+        "ja": "両社は1年契約を結んだ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "pay for",
+      "pos": "熟",
+      "ja": "～の費用をまかなう",
+      "gloss": "",
+      "example": {
+        "en": "The grant will pay for new equipment.",
+        "ja": "その助成金は新しい機器の費用をまかなう。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "version",
+      "pos": "名",
+      "ja": "版、型",
+      "gloss": "",
+      "example": {
+        "en": "A smaller version of the product goes on sale in May.",
+        "ja": "その製品の小型版は5月に発売される。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "award",
+      "pos": "名",
+      "ja": "受注、授与",
+      "gloss": "",
+      "example": {
+        "en": "The firm announced a major award from the city.",
+        "ja": "その会社は市から大型の受注を発表した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "total",
+      "pos": "名",
+      "ja": "合計",
+      "gloss": "",
+      "example": {
+        "en": "The total came to 5,000 dollars.",
+        "ja": "合計は5,000ドルになった。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "compare",
+      "pos": "動",
+      "ja": "比較する",
+      "gloss": "",
+      "example": {
+        "en": "Please compare the two quotes before deciding.",
+        "ja": "決める前に2つの見積もりを比較してください。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "improve",
+      "pos": "動",
+      "ja": "改善する",
+      "gloss": "",
+      "example": {
+        "en": "We hope to improve customer service this year.",
+        "ja": "今年は顧客対応の改善を目指している。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "succeed",
+      "pos": "動",
+      "ja": "成功する",
+      "gloss": "",
+      "example": {
+        "en": "The new plan will succeed only if everyone helps.",
+        "ja": "新計画は全員が協力して初めて成功する。"
+      }
+    }
+  ],
+  "glossary": {
+    "contract": {
+      "lemma": "contract",
+      "pos": "名",
+      "ja": "契約",
+      "note": ""
+    },
+    "research": {
+      "lemma": "research",
+      "pos": "名",
+      "ja": "研究",
+      "note": ""
+    },
+    "agency": {
+      "lemma": "agency",
+      "pos": "名",
+      "ja": "機関",
+      "note": ""
+    },
+    "military": {
+      "lemma": "military",
+      "pos": "名",
+      "ja": "軍",
+      "note": ""
+    },
+    "pay": {
+      "lemma": "pay",
+      "pos": "動",
+      "ja": "支払う",
+      "note": ""
+    },
+    "version": {
+      "lemma": "version",
+      "pos": "名",
+      "ja": "版、型",
+      "note": ""
+    },
+    "orbit": {
+      "lemma": "orbit",
+      "pos": "名",
+      "ja": "軌道",
+      "note": ""
+    },
+    "closer": {
+      "lemma": "close",
+      "pos": "形",
+      "ja": "より近い",
+      "note": ""
+    },
+    "ground": {
+      "lemma": "ground",
+      "pos": "名",
+      "ja": "地面、地上",
+      "note": ""
+    },
+    "planned": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "計画する",
+      "note": ""
+    },
+    "last": {
+      "lemma": "last",
+      "pos": "動",
+      "ja": "続く",
+      "note": ""
+    },
+    "adds": {
+      "lemma": "add",
+      "pos": "動",
+      "ja": "加わる",
+      "note": ""
+    },
+    "award": {
+      "lemma": "award",
+      "pos": "名",
+      "ja": "受注、授与",
+      "note": ""
+    },
+    "bringing": {
+      "lemma": "bring",
+      "pos": "動",
+      "ja": "もたらす",
+      "note": ""
+    },
+    "total": {
+      "lemma": "total",
+      "pos": "名",
+      "ja": "合計",
+      "note": ""
+    },
+    "sharper": {
+      "lemma": "sharp",
+      "pos": "形",
+      "ja": "より鮮明な",
+      "note": ""
+    },
+    "thin": {
+      "lemma": "thin",
+      "pos": "形",
+      "ja": "薄い",
+      "note": ""
+    },
+    "slows": {
+      "lemma": "slow",
+      "pos": "動",
+      "ja": "遅くする",
+      "note": ""
+    },
+    "burn": {
+      "lemma": "burn",
+      "pos": "動",
+      "ja": "燃やす、消費する",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "quickly": {
+      "lemma": "quickly",
+      "pos": "副",
+      "ja": "急速に",
+      "note": ""
+    },
+    "collects": {
+      "lemma": "collect",
+      "pos": "動",
+      "ja": "集める",
+      "note": ""
+    },
+    "engineers": {
+      "lemma": "engineer",
+      "pos": "名",
+      "ja": "技術者",
+      "note": ""
+    },
+    "compare": {
+      "lemma": "compare",
+      "pos": "動",
+      "ja": "比較する",
+      "note": ""
+    },
+    "improve": {
+      "lemma": "improve",
+      "pos": "動",
+      "ja": "改善する",
+      "note": ""
+    },
+    "models": {
+      "lemma": "model",
+      "pos": "名",
+      "ja": "モデル、模型",
+      "note": ""
+    },
+    "succeeds": {
+      "lemma": "succeed",
+      "pos": "動",
+      "ja": "成功する",
+      "note": ""
+    },
+    "larger": {
+      "lemma": "large",
+      "pos": "形",
+      "ja": "より大きい",
+      "note": ""
+    },
+    "air-breathing": {
+      "lemma": "air-breathing",
+      "pos": "形",
+      "ja": "空気吸い込み式の",
+      "note": "周囲の空気を取り込んで推進に使う方式"
+    }
+  },
+  "grammar": {
+    "topic": "分詞構文（結果を表す現在分詞：, bringing the total to ～）",
+    "quote": "The contract adds to a $44 million award from last year, bringing the total to $64 million.",
+    "quoteJa": "この契約は昨年の4,400万ドルの受注に上乗せされ、合計は6,400万ドルになった。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "「, bringing ～」は分詞構文で、主節の動作の結果を後ろから付け足す形。接続詞と主語を省き、動詞を -ing にして「～して、その結果…」の意味を表す。主節（The contract adds ...）の主語と、分詞の意味上の主語が同じ（または主節全体）であることが条件。"
+      },
+      {
+        "heading": "書き換え",
+        "body": "The contract adds to a $44 million award, and it brings the total to $64 million. / ..., so the total becomes $64 million. と同じ意味。カンマ＋-ing は「結果」、文頭の -ing は「理由・時」など文脈で判断する。"
+      },
+      {
+        "heading": "TOEICでの傾向",
+        "body": "Part 5 では空所に bringing / brought / brings のどれを入れるかが問われる。直前にカンマがあり、すでに動詞のある主節が完結しているなら -ing 形が正解。Part 7 では結果や数字の変化を述べる一節で頻出する。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "Sales rose 8% in October, bringing the quarterly total to 3.2 million dollars.（10月の売上は8%伸び、四半期の合計は320万ドルになった。）/ The firm hired ten staff, expanding its sales team."
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米宇宙企業レッドワイヤーが、米国防高等研究計画局（DARPA）から2,000万ドルの追加契約を受注した。2025年11月に受けた4,400万ドルと合わせ、同計画への総額は6,400万ドルになる。小型衛星の試験飛行は2027年末、24時間未満の予定で、衛星の機体づくりは同社が担当する。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "高度が低いほど地上に近く、鮮明な画像が撮れる。だが薄い大気が空気抵抗(drag)となって衛星を減速させ、軌道を保つには燃料を使い続けねばならない。そこで周囲の希薄な空気を取り込んで推進に使う方式を、実際の飛行で初めて確かめる。"
+    },
+    {
+      "heading": "📌 3. 低軌道に挑んだ他の事例",
+      "body": "宇宙航空研究開発機構（JAXA）の超低高度試験衛星「つばめ」は2017年に打ち上げられ、高度167.4kmを7日間保って、観測衛星の最低高度としてギネス記録に認定された。イオンエンジンとガスジェットで大気の抵抗に対抗した。米スペースXは2026年1月、衛星群(constellation)のスターリンク約4,400基を高度約550kmから約480kmへ下げると発表した。故障機が落ちるまでの期間は4年超から数か月に縮む。前者は観測性能の検証、後者は衝突リスクを減らす安全策と、低軌道化の目的が違う。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本では防衛省が2025年12月、衛星群事業の契約先に三菱電機が率いる企業グループを選んだ。契約額は2,831億円（税込）で、期間は2031年3月まで。シンスペクティブは下請け契約(subcontract)で、小型レーダー衛星の画像提供を約1,056億円（税込）で担う。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "drag",
+      "pos": "名",
+      "ja": "空気抵抗",
+      "gloss": "（＝空気の中を進むときに受ける、進行を妨げる力のこと）",
+      "example": {
+        "en": "Wind drag made the truck use more fuel.",
+        "ja": "風の抵抗でそのトラックは燃料をより多く使った。"
+      }
+    },
+    {
+      "term": "constellation",
+      "pos": "名",
+      "ja": "衛星群",
+      "gloss": "（＝同じ目的で連携して飛ぶ多数の衛星の集まりのこと）",
+      "example": {
+        "en": "The firm plans to expand its constellation next year.",
+        "ja": "その会社は来年、衛星群を拡大する計画だ。"
+      }
+    },
+    {
+      "term": "subcontract",
+      "pos": "名",
+      "ja": "下請け契約",
+      "gloss": "（＝元の契約の一部を別の会社が請け負う契約のこと）",
+      "example": {
+        "en": "The builder signed a subcontract for the electrical work.",
+        "ja": "施工会社は電気工事の下請け契約を結んだ。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Redwire to Fly Second VLEO Test for DARPA Otter Program",
+      "publisher": "Via Satellite",
+      "url": "https://www.satellitetoday.com/government-military/2026/11/05/redwire-to-fly-second-vleo-test-for-darpa-otter-program/",
+      "date": "2026-11-05"
+    },
+    {
+      "title": "Redwire Wins $20M DARPA Contract for Scaled SabreSat VLEO Precursor Flight",
+      "publisher": "SatNews",
+      "url": "https://satnews.com/2026/11/05/redwire-wins-20m-darpa-contract-for-scaled-sabresat-vleo-precursor-flight/",
+      "date": "2026-11-05"
+    },
+    {
+      "title": "Japan's TSUBAME press release (Guinness record, 167.4 km)",
+      "publisher": "JAXA",
+      "url": "https://global.jaxa.jp/press/2019/12/20191224a.html",
+      "date": "2019-12-24"
+    },
+    {
+      "title": "Starlink to lower orbits of thousands of satellites over safety concerns",
+      "publisher": "The Register",
+      "url": "https://www.theregister.com/2026/01/02/starlink_lower_orbits/",
+      "date": "2026-01-02"
+    },
+    {
+      "title": "Japan Ministry of Defense taps Synspective, Mitsubishi Electric consortium for satellite constellation",
+      "publisher": "SatNews",
+      "url": "https://satnews.com/2025/12/29/japan-ministry-of-defense-taps-synspective-mitsubishi-electric-consortium-for-satellite-constellation/",
+      "date": "2025-12-29"
+    }
+  ]
+}
