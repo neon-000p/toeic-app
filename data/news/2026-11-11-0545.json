@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-11-0545",
+  "date": "2026-11-11",
+  "time": "05:45",
+  "createdAt": "2026-11-11T05:45:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "Infineon Expects Strong Growth as AI Data Centers Need More Power",
+    "ja": "インフィニオン、AI需要で2割超の増収見込む"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Infineon, a German chipmaker, reported record sales for the three months to September.",
+            "ja": "ドイツの半導体メーカー、インフィニオンは、9月までの3か月間で過去最高の売上を記録したと発表した。"
+          },
+          {
+            "en": "Revenue in the quarter reached about 4.7 billion euros, and full-year revenue rose 12% to 16.35 billion euros.",
+            "ja": "この四半期の売上高は約47億ユーロに達し、通期の売上高は12%増の163.5億ユーロとなった。"
+          },
+          {
+            "en": "The company also said it expects revenue of about 20 billion euros in the new fiscal year.",
+            "ja": "同社はまた、新しい会計年度の売上高を約200億ユーロと見込んでいると述べた。"
+          },
+          {
+            "en": "That would mean growth of more than 20%, and its shares jumped about 9% after the announcement.",
+            "ja": "実現すれば2割を超える増収となり、発表後に同社の株価は約9%急伸した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The main reason for the strong outlook is demand from data centers that run artificial intelligence.",
+            "ja": "強気の見通しの主な理由は、人工知能（AI）を動かすデータセンターからの需要だ。"
+          },
+          {
+            "en": "These facilities use huge amounts of electricity, so they need power chips, which control and save energy.",
+            "ja": "こうした施設は膨大な電力を使うため、電力を制御して節約するパワー半導体が欠かせない。"
+          },
+          {
+            "en": "The company expects its data center sales to grow to nearly 4 billion euros.",
+            "ja": "同社は、データセンター向けの売上が40億ユーロ近くまで伸びると見込んでいる。"
+          },
+          {
+            "en": "It also aims to keep its profit margin in the mid-20 percent range.",
+            "ja": "また、利益率を20%台半ばに保つことを目指している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much revenue does the company expect in the new fiscal year?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 4.7 billion euros",
+          "ja": "約47億ユーロ"
+        },
+        {
+          "key": "B",
+          "text": "About 16.35 billion euros",
+          "ja": "約163.5億ユーロ"
+        },
+        {
+          "key": "C",
+          "text": "About 20 billion euros",
+          "ja": "約200億ユーロ"
+        },
+        {
+          "key": "D",
+          "text": "About 4 billion euros",
+          "ja": "約40億ユーロ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落3文目に it expects revenue of about 20 billion euros in the new fiscal year とある。(A) の47億ユーロは直近の四半期（7〜9月）の売上高、(B) の163.5億ユーロは終わったばかりの年度の通期売上高、(D) の40億ユーロは来年度のデータセンター向け売上の見込みで、いずれも「新年度の売上見通し」ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "本文に数字が多い記事では、設問のキーワード（the new fiscal year）と同じ語句がある文を探し、その文の数字だけを答える。別の数字は引っかけとして選択肢に並ぶと考えておく。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why does the company expect strong growth?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Carmakers are ordering many more chips.",
+          "ja": "自動車メーカーの発注が大幅に増えている"
+        },
+        {
+          "key": "B",
+          "text": "AI data centers need chips that control power.",
+          "ja": "AIデータセンターが電力制御チップを必要とする"
+        },
+        {
+          "key": "C",
+          "text": "Its share price rose by about 9%.",
+          "ja": "株価が約9%上がった"
+        },
+        {
+          "key": "D",
+          "text": "It plans to lower the prices of its chips.",
+          "ja": "チップの値下げを計画している"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落1文目に The main reason for the strong outlook is demand from data centers that run artificial intelligence とあり、続く文で、そうした施設が電力を制御するパワー半導体を必要とすると説明している。(A) の自動車メーカーの発注は本文に書かれていない。(C) の株価上昇は発表の「結果」であって成長の理由ではない。(D) の値下げ計画も本文にない情報。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "why を問う設問では、本文の The main reason ～ / because / so などの理由を示す表現に注目する。結果（株価の上昇など）を理由と取り違える選択肢がよく出る。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "record",
+      "pos": "形",
+      "ja": "記録的な、過去最高の",
+      "gloss": "",
+      "example": {
+        "en": "The hotel had a record number of guests this summer.",
+        "ja": "そのホテルは今夏、過去最高の宿泊客数を記録した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "revenue",
+      "pos": "名",
+      "ja": "収益、売上高",
+      "gloss": "",
+      "example": {
+        "en": "Online sales now make up half of our revenue.",
+        "ja": "今ではネット販売が当社の売上高の半分を占める。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "quarter",
+      "pos": "名",
+      "ja": "四半期（3か月）",
+      "gloss": "",
+      "example": {
+        "en": "Sales usually rise in the fourth quarter because of the holidays.",
+        "ja": "休暇シーズンがあるため、売上は通常第4四半期に伸びる。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "fiscal year",
+      "pos": "熟",
+      "ja": "会計年度",
+      "gloss": "（＝会社が決算をまとめる1年の区切りのこと。暦の1〜12月と違うことが多い）",
+      "example": {
+        "en": "Our fiscal year begins in April.",
+        "ja": "当社の会計年度は4月に始まる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "announcement",
+      "pos": "名",
+      "ja": "発表、告知",
+      "gloss": "",
+      "example": {
+        "en": "The CEO will make an important announcement at noon.",
+        "ja": "CEOが正午に重要な発表を行う。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "outlook",
+      "pos": "名",
+      "ja": "見通し、展望",
+      "gloss": "",
+      "example": {
+        "en": "The company has a positive outlook for next year.",
+        "ja": "その会社は来年について前向きな見通しを持っている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for electric bikes grew quickly this year.",
+        "ja": "今年は電動自転車の需要が急速に伸びた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "margin",
+      "pos": "名",
+      "ja": "利益率、利ざや",
+      "gloss": "",
+      "example": {
+        "en": "We need to raise prices to protect our margin.",
+        "ja": "利益率を守るために値上げが必要だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "chipmaker": {
+      "lemma": "chipmaker",
+      "pos": "名",
+      "ja": "半導体メーカー",
+      "note": ""
+    },
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "発表する",
+      "note": ""
+    },
+    "record": {
+      "lemma": "record",
+      "pos": "形",
+      "ja": "過去最高の",
+      "note": "名詞の前に置くと「記録的な」"
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "名",
+      "ja": "売上高",
+      "note": ""
+    },
+    "reached": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "達する",
+      "note": "reach＋数字で「〜に達する」"
+    },
+    "full-year": {
+      "lemma": "full-year",
+      "pos": "形",
+      "ja": "通期の",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇する",
+      "note": "rise-rose-risen"
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込む",
+      "note": ""
+    },
+    "fiscal": {
+      "lemma": "fiscal",
+      "pos": "形",
+      "ja": "会計の",
+      "note": "fiscal year で「会計年度」"
+    },
+    "growth": {
+      "lemma": "growth",
+      "pos": "名",
+      "ja": "成長、伸び",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株、株式",
+      "note": ""
+    },
+    "jumped": {
+      "lemma": "jump",
+      "pos": "動",
+      "ja": "急上昇する",
+      "note": ""
+    },
+    "announcement": {
+      "lemma": "announcement",
+      "pos": "名",
+      "ja": "発表",
+      "note": ""
+    },
+    "outlook": {
+      "lemma": "outlook",
+      "pos": "名",
+      "ja": "見通し",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": "demand from A で「Aからの需要」"
+    },
+    "artificial": {
+      "lemma": "artificial",
+      "pos": "形",
+      "ja": "人工の",
+      "note": ""
+    },
+    "intelligence": {
+      "lemma": "intelligence",
+      "pos": "名",
+      "ja": "知能",
+      "note": ""
+    },
+    "facilities": {
+      "lemma": "facility",
+      "pos": "名",
+      "ja": "施設",
+      "note": ""
+    },
+    "huge": {
+      "lemma": "huge",
+      "pos": "形",
+      "ja": "膨大な",
+      "note": ""
+    },
+    "amounts": {
+      "lemma": "amount",
+      "pos": "名",
+      "ja": "量",
+      "note": ""
+    },
+    "electricity": {
+      "lemma": "electricity",
+      "pos": "名",
+      "ja": "電気、電力",
+      "note": ""
+    },
+    "control": {
+      "lemma": "control",
+      "pos": "動",
+      "ja": "制御する",
+      "note": ""
+    },
+    "save": {
+      "lemma": "save",
+      "pos": "動",
+      "ja": "節約する",
+      "note": ""
+    },
+    "nearly": {
+      "lemma": "nearly",
+      "pos": "副",
+      "ja": "ほぼ、〜近く",
+      "note": ""
+    },
+    "aims": {
+      "lemma": "aim",
+      "pos": "動",
+      "ja": "目指す",
+      "note": "aim to do で「〜することを目指す」"
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "margin": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": ""
+    },
+    "range": {
+      "lemma": "range",
+      "pos": "名",
+      "ja": "範囲、〜台",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "推量の would（That would mean ～：実現すれば〜ということになる）",
+    "quote": "That would mean growth of more than 20%, and its shares jumped about 9% after the announcement.",
+    "quoteJa": "実現すれば2割を超える増収となり、発表後に同社の株価は約9%急伸した。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "would は will の過去形だが、ここでは過去の話ではなく「（もしそうなれば）〜だろう」という控えめな推量を表す。主語の That は直前の文の「新年度に約200億ユーロの売上を見込む」という内容を指し、if 節が省かれた仮定法の形（If that happens, it would mean ～）と考えると分かりやすい。mean はここでは「〜ということになる、〜を意味する」。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "If the forecast comes true, it would mean growth of more than 20%. と同じ意味。That will mean ～ にすると「必ずそうなる」と言い切る響きが強くなる。予測や計画の数字について話すときは、断定を避けて would を使うのが自然。"
+      },
+      {
+        "heading": "TOEICでの傾向",
+        "body": "Part 5 では would / will / had の選択や、would の後ろに動詞の原形（mean, be, cost）が来るかが問われる。Part 6・7 では、提案や計画の影響を述べる This would allow ～ / That would cost ～ が頻出で、「〜できるだろう（まだ決まっていない）」というニュアンスを読み取る設問がある。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "Moving the office would save us about 10% on rent.（事務所を移転すれば、家賃を約1割節約できるだろう。）/ A one-week delay would mean extra costs for the client.（1週間遅れれば、顧客に追加費用が生じることになる。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "独インフィニオンは2026年11月10日、7〜9月期の売上高が過去最高の約47億ユーロだったと発表した。2027年度は約200億ユーロと2割超の増収を見込み、うちデータセンター向けは40億ユーロ近くになるとした。発表を受け、株価は約9%上昇した。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "AIサーバーは大量の電力を使う。届いた電気を、チップが使える低い電圧へ損失少なく変換するのがパワー半導体(power semiconductor)だ。変換で失う電力が減れば、電気代と発熱を抑えられる。会社が年度の初めに示す業績見通し(guidance)が市場の予想を上回ると、将来の利益を先取りして株価が上がりやすい。"
+    },
+    {
+      "heading": "📌 3. 他社ではどうだったか",
+      "body": "欧州のSTマイクロエレクトロニクスは2026年10月29日、7〜9月期の売上高が前年同期比17.9%増の37.6億ドルだったと発表した。データセンター向けが伸びており、2027年の同分野の売上は「20億ドルを大きく超える」としている。一方、米ウルフスピードは電気自動車(EV)向けの炭化ケイ素チップに集中投資したが、EV需要の減速と中国勢の値下げで行き詰まり、2025年6月に米連邦破産法11条の適用を申請した。債務を約7割減らし、約3か月後に再建を終えた。伸びるAI需要をつかんだ企業と、EV向け一本に賭けた企業とで明暗が分かれた。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "ルネサスエレクトロニクスは2023年、ウルフスピードと炭化ケイ素ウエハーの長期供給契約を結び、約20億ドルの前払い金(prepayment)を預けた。同社の経営危機で2025年1〜6月期に約2,500億円の損失を計上し、高崎工場で予定していた炭化ケイ素チップの量産計画も取りやめた。売上高200億ドルの目標時期も2030年から2035年へ先送りした。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "power semiconductor",
+      "pos": "名",
+      "ja": "パワー半導体",
+      "gloss": "（＝電気の電圧や流れを制御・変換する半導体のこと）",
+      "example": {
+        "en": "Electric trains use power semiconductors to control their motors.",
+        "ja": "電車はモーターを制御するためにパワー半導体を使っている。"
+      }
+    },
+    {
+      "term": "guidance",
+      "pos": "名",
+      "ja": "業績見通し（会社予想）",
+      "gloss": "（＝会社が自ら示す今後の売上や利益の予想のこと）",
+      "example": {
+        "en": "The firm cut its guidance because of weak sales in Asia.",
+        "ja": "その会社はアジアでの販売不振を理由に業績見通しを引き下げた。"
+      }
+    },
+    {
+      "term": "prepayment",
+      "pos": "名",
+      "ja": "前払い金",
+      "gloss": "（＝商品を受け取る前に支払っておくお金のこと）",
+      "example": {
+        "en": "The supplier asked for a 30% prepayment before shipping the order.",
+        "ja": "仕入れ先は、注文品の出荷前に3割の前払いを求めた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Infineon forecasts ~€20B FY 2027 revenue as data center sales near €4B and segment margin targets mid-20s",
+      "publisher": "Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4670089-infineon-forecasts-20b-fy-2027-revenue-as-data-center-sales-near-4b-and-segment-margin",
+      "date": "2026-11-10"
+    },
+    {
+      "title": "Earnings call transcript: Infineon lifts outlook on record Q4, stock jumps 9.05%",
+      "publisher": "Investing.com",
+      "url": "https://uk.investing.com/news/stock-market-news/earnings-call-transcript-infineon-lifts-outlook-on-record-q4-stock-jumps-905--q4-2026-93CH-4970680",
+      "date": "2026-11-10"
+    },
+    {
+      "title": "STMicroelectronics forecasts $4.15bn quarter as AI data centres lift demand",
+      "publisher": "The Next Web",
+      "url": "https://thenextweb.com/news/stmicroelectronics-q3-2026-results-ai-data-centres",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "Chipmaker Wolfspeed files for Chapter 11 bankruptcy",
+      "publisher": "Financier Worldwide",
+      "url": "https://www.financierworldwide.com/fw-news/2025/7/3/chipmaker-wolfspeed-files-for-chapter-11-bankruptcy",
+      "date": "2025-07-03"
+    },
+    {
+      "title": "Renesas expects $1.7bn loss in first-half 2025 from Wolfspeed restructuring",
+      "publisher": "Semiconductor Today",
+      "url": "https://semiconductor-today.com/news_items/2025/jun/renesas-230625.shtml",
+      "date": "2025-06-23"
+    }
+  ]
+}
