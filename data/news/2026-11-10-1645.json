@@ -502,5 +502,23 @@
       "url": "https://satnews.com/2025/12/29/japan-ministry-of-defense-taps-synspective-mitsubishi-electric-consortium-for-satellite-constellation/",
       "date": "2025-12-29"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-10-1645/00.mp3",
+      "audio/2026-11-10-1645/01.mp3",
+      "audio/2026-11-10-1645/02.mp3",
+      "audio/2026-11-10-1645/03.mp3",
+      "audio/2026-11-10-1645/04.mp3",
+      "audio/2026-11-10-1645/05.mp3",
+      "audio/2026-11-10-1645/06.mp3",
+      "audio/2026-11-10-1645/07.mp3",
+      "audio/2026-11-10-1645/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 237036,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-10T07:49:34.552Z",
+    "trimmed": true
+  }
 }
