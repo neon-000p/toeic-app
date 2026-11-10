@@ -498,5 +498,22 @@
       "url": "https://semiconductor-today.com/news_items/2025/jun/renesas-230625.shtml",
       "date": "2025-06-23"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-11-0545/00.mp3",
+      "audio/2026-11-11-0545/01.mp3",
+      "audio/2026-11-11-0545/02.mp3",
+      "audio/2026-11-11-0545/03.mp3",
+      "audio/2026-11-11-0545/04.mp3",
+      "audio/2026-11-11-0545/05.mp3",
+      "audio/2026-11-11-0545/06.mp3",
+      "audio/2026-11-11-0545/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 207904,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-10T20:50:42.898Z",
+    "trimmed": true
+  }
 }
