@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-11-1649",
+  "date": "2026-11-11",
+  "time": "16:49",
+  "createdAt": "2026-11-11T16:49:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "Qantas to Move 850 Office Jobs Overseas",
+    "ja": "カンタス航空、本社の850人分を海外へ委託"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Qantas, a major airline, announced on Tuesday that it will cut about 850 office jobs.",
+            "ja": "大手航空会社のカンタス航空は火曜日、本社部門の約850人分の仕事を削減すると発表した。"
+          },
+          {
+            "en": "The work will go to Accenture, a global consulting firm, and much of it will move to India.",
+            "ja": "その業務は世界的なコンサルティング会社アクセンチュアに引き継がれ、多くはインドへ移される。"
+          },
+          {
+            "en": "The first jobs to be affected are in finance, human resources, marketing and procurement, or the buying of supplies.",
+            "ja": "最初に影響を受けるのは、財務、人事、マーケティング、そして調達（備品や資材の購買）の仕事だ。"
+          },
+          {
+            "en": "The changes will happen in stages, with the first ones expected by mid-2027.",
+            "ja": "変更は段階的に進められ、最初の切り替えは2027年半ばまでに行われる見込みだ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The airline has turned to the consulting firm to speed up its use of new technology, including artificial intelligence.",
+            "ja": "同社は、人工知能（AI）を含む新しい技術の活用を加速させるために、このコンサルティング会社に頼ることにした。"
+          },
+          {
+            "en": "However, it has not said how many roles will be replaced by automation and how many will simply move overseas.",
+            "ja": "ただし、何人分の仕事が自動化に置き換えられ、何人分がそのまま海外へ移るのかは明らかにしていない。"
+          },
+          {
+            "en": "It also has not said how much the deal will save.",
+            "ja": "この契約でどれだけの費用を節約できるのかも示していない。"
+          },
+          {
+            "en": "A union that represents office staff has strongly criticized the outsourcing plan.",
+            "ja": "本社部門の社員を代表する労働組合は、この外部委託計画を強く批判している。"
+          },
+          {
+            "en": "It warns that moving skilled work offshore could hurt service quality and cause the company to lose valuable knowledge.",
+            "ja": "組合は、熟練を要する仕事を海外へ移せばサービスの質が落ち、会社が貴重なノウハウを失うおそれがあると警告している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "Which of the following jobs will be among the first to be affected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Pilots",
+          "ja": "パイロット"
+        },
+        {
+          "key": "B",
+          "text": "Finance staff",
+          "ja": "財務部門の社員"
+        },
+        {
+          "key": "C",
+          "text": "Airport ground staff",
+          "ja": "空港の地上職員"
+        },
+        {
+          "key": "D",
+          "text": "Flight attendants",
+          "ja": "客室乗務員"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第1段落3文目に The first jobs to be affected are in finance, human resources, marketing and procurement とあり、財務（finance）が最初の対象に含まれている。(A) パイロット、(C) 空港の地上職員、(D) 客室乗務員はいずれも本文に出てこない。今回の削減は本社の事務部門（office jobs）が対象であり、航空会社だからといって現場の職種を連想すると誤答を選んでしまう。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "Part 7 では「業界から連想される語」が引っかけとして並ぶ。本文に実際に書かれている語（finance など）と一致するかを必ず確認し、常識や連想で選ばない。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why does the union oppose the plan?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It will raise ticket prices.",
+          "ja": "航空券の値上げにつながるから"
+        },
+        {
+          "key": "B",
+          "text": "It has no deadline for the changes.",
+          "ja": "変更の期限が決まっていないから"
+        },
+        {
+          "key": "C",
+          "text": "It could lower service quality.",
+          "ja": "サービスの質が落ちるおそれがあるから"
+        },
+        {
+          "key": "D",
+          "text": "It will replace pilots with machines.",
+          "ja": "パイロットを機械に置き換えるから"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第2段落最終文に It warns that moving skilled work offshore could hurt service quality とあり、hurt service quality（サービスの質を損なう）を lower service quality と言い換えた (C) が正解。(A) 航空券の値上げは本文にない情報。(B) は本文と逆で、第1段落最終文に最初の変更は2027年半ばまでと期限が示されている。(D) のパイロットの話は本文になく、自動化の対象も明らかにされていない。",
+      "evidence": {
+        "p": 1,
+        "s": 4
+      },
+      "tip": "理由を問う設問では warn / criticize / because などの語の直後を探す。正解は本文の語をそのまま使わず、hurt → lower のように同じ意味の別の語で言い換えられていることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "announce",
+      "pos": "動",
+      "ja": "発表する、公表する",
+      "gloss": "",
+      "example": {
+        "en": "The company will announce its new president next week.",
+        "ja": "その会社は来週、新社長を発表する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "consulting firm",
+      "pos": "熟",
+      "ja": "コンサルティング会社",
+      "gloss": "（＝企業に経営や業務の改善を助言し、仕事を請け負う会社のこと）",
+      "example": {
+        "en": "We hired a consulting firm to review our office costs.",
+        "ja": "当社は事務所の経費を見直すため、コンサルティング会社を雇った。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "procurement",
+      "pos": "名",
+      "ja": "調達、購買",
+      "gloss": "（＝仕事に必要な物やサービスを買いそろえること）",
+      "example": {
+        "en": "Please send the order form to the procurement team by Friday.",
+        "ja": "注文書は金曜までに調達チームへ送ってください。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "in stages",
+      "pos": "熟",
+      "ja": "段階的に",
+      "gloss": "",
+      "example": {
+        "en": "The new system will be introduced in stages over six months.",
+        "ja": "新システムは6か月かけて段階的に導入される。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "automation",
+      "pos": "名",
+      "ja": "自動化",
+      "gloss": "（＝人が行っていた作業を機械やコンピューターに任せること）",
+      "example": {
+        "en": "Automation has reduced the time needed to process invoices.",
+        "ja": "自動化によって請求書の処理にかかる時間が短くなった。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "overseas",
+      "pos": "副",
+      "ja": "海外へ、海外で",
+      "gloss": "",
+      "example": {
+        "en": "Our sales team often travels overseas to meet clients.",
+        "ja": "当社の営業チームは顧客に会うため、よく海外へ出張する。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "represent",
+      "pos": "動",
+      "ja": "代表する、〜の代理を務める",
+      "gloss": "",
+      "example": {
+        "en": "Ms. Lee will represent our department at the meeting.",
+        "ja": "会議ではリーさんが私たちの部署を代表して出席する。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "skilled",
+      "pos": "形",
+      "ja": "熟練した、技能のある",
+      "gloss": "",
+      "example": {
+        "en": "The factory is looking for skilled workers.",
+        "ja": "その工場は熟練工を募集している。"
+      }
+    }
+  ],
+  "glossary": {
+    "announced": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "発表した",
+      "note": ""
+    },
+    "major": {
+      "lemma": "major",
+      "pos": "形",
+      "ja": "大手の、主要な",
+      "note": ""
+    },
+    "airline": {
+      "lemma": "airline",
+      "pos": "名",
+      "ja": "航空会社",
+      "note": ""
+    },
+    "consulting": {
+      "lemma": "consulting",
+      "pos": "形",
+      "ja": "コンサルティングの",
+      "note": "consulting firm で「コンサルティング会社」"
+    },
+    "firm": {
+      "lemma": "firm",
+      "pos": "名",
+      "ja": "会社",
+      "note": ""
+    },
+    "affected": {
+      "lemma": "affect",
+      "pos": "動",
+      "ja": "影響を受けた",
+      "note": "be affected で「影響を受ける」"
+    },
+    "finance": {
+      "lemma": "finance",
+      "pos": "名",
+      "ja": "財務",
+      "note": ""
+    },
+    "procurement": {
+      "lemma": "procurement",
+      "pos": "名",
+      "ja": "調達",
+      "note": ""
+    },
+    "supplies": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "備品、資材",
+      "note": "複数形 supplies で「備品・消耗品」"
+    },
+    "stages": {
+      "lemma": "stage",
+      "pos": "名",
+      "ja": "段階",
+      "note": "in stages で「段階的に」"
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込まれる",
+      "note": ""
+    },
+    "turned": {
+      "lemma": "turn",
+      "pos": "動",
+      "ja": "頼った",
+      "note": "turn to A で「Aに頼る」"
+    },
+    "speed": {
+      "lemma": "speed",
+      "pos": "動",
+      "ja": "速める",
+      "note": "speed up で「加速させる」"
+    },
+    "including": {
+      "lemma": "include",
+      "pos": "前",
+      "ja": "〜を含めて",
+      "note": ""
+    },
+    "artificial": {
+      "lemma": "artificial",
+      "pos": "形",
+      "ja": "人工の",
+      "note": ""
+    },
+    "intelligence": {
+      "lemma": "intelligence",
+      "pos": "名",
+      "ja": "知能",
+      "note": ""
+    },
+    "roles": {
+      "lemma": "role",
+      "pos": "名",
+      "ja": "職、役割",
+      "note": ""
+    },
+    "replaced": {
+      "lemma": "replace",
+      "pos": "動",
+      "ja": "置き換えられる",
+      "note": "replace A with B で「AをBに置き換える」"
+    },
+    "automation": {
+      "lemma": "automation",
+      "pos": "名",
+      "ja": "自動化",
+      "note": ""
+    },
+    "overseas": {
+      "lemma": "overseas",
+      "pos": "副",
+      "ja": "海外へ",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "取引、契約",
+      "note": ""
+    },
+    "save": {
+      "lemma": "save",
+      "pos": "動",
+      "ja": "節約する",
+      "note": ""
+    },
+    "union": {
+      "lemma": "union",
+      "pos": "名",
+      "ja": "労働組合",
+      "note": ""
+    },
+    "represents": {
+      "lemma": "represent",
+      "pos": "動",
+      "ja": "代表する",
+      "note": ""
+    },
+    "criticized": {
+      "lemma": "criticize",
+      "pos": "動",
+      "ja": "批判した",
+      "note": ""
+    },
+    "outsourcing": {
+      "lemma": "outsourcing",
+      "pos": "名",
+      "ja": "外部委託",
+      "note": ""
+    },
+    "warns": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告する",
+      "note": "warn that ～ で「～だと警告する」"
+    },
+    "offshore": {
+      "lemma": "offshore",
+      "pos": "副",
+      "ja": "海外へ",
+      "note": ""
+    },
+    "skilled": {
+      "lemma": "skilled",
+      "pos": "形",
+      "ja": "熟練した",
+      "note": ""
+    },
+    "valuable": {
+      "lemma": "valuable",
+      "pos": "形",
+      "ja": "貴重な",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "to不定詞の副詞的用法（目的：～するために）",
+    "quote": "The airline has turned to the consulting firm to speed up its use of new technology, including artificial intelligence.",
+    "quoteJa": "同社は、人工知能（AI）を含む新しい技術の活用を加速させるために、このコンサルティング会社に頼ることにした。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "to speed up ～ は「～を加速させるために」という目的を表す to不定詞（副詞的用法）。動詞 has turned to（頼った）を後ろから修飾し、「なぜ頼ったのか」を説明している。文の骨組みは The airline has turned to the consulting firm で、to 以下が理由・目的を付け足している。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "in order to speed up ～ / so as to speed up ～ と書き換えると目的の意味がよりはっきりする。また so that it can speed up ～ のように so that ＋ S ＋ can の節でも表せる。否定の目的「～しないように」は in order not to do / so as not to do の形になり、not の位置は to の直前。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では「____ meet the deadline, the team worked overtime.」の空所に In order to を選ばせる問題が定番。選択肢に Because of（後ろは名詞）や So that（後ろは節）が並ぶので、空所の後ろが動詞の原形かどうかで判断する。Part 7 では to 以下が「目的」を問う設問の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "We extended the deadline to give all teams enough time.（全チームに十分な時間を与えるため締め切りを延ばした）／ Please arrive ten minutes early in order to check in.（受付のため10分前にお越しください）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "カンタス航空は2026年11月10日、本社部門の約850人分の仕事をアクセンチュアに委託し、その多くをインドへ移すと発表した。最初の対象は財務・人事・マーケティング・調達で、第1段階は2027年半ばまでに切り替える。節約額や、自動化で置き換える人数は公表していない。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "業務を社外に任せることを外部委託と呼び、なかでも人件費の安い海外拠点へ移す形を海外移管(offshoring)という。請求書処理や給与計算など手順が決まった事務は、AIによる自動化と組み合わせやすい。一方、社内のノウハウが失われる懸念が、労働組合の反対理由になっている。"
+    },
+    {
+      "heading": "📌 3. 他社の外部委託",
+      "body": "豪通信大手テルストラは2025年1月、アクセンチュアと7年間・7億豪ドル規模の合弁会社(joint venture)を設立し、データ・AI部門を移した。2026年2月にはこの合弁会社で209人分の削減と一部業務のインド移管を打ち出し、労組が反発した。豪スーパー大手コールズは2026年8月、マーケティングや財務などの本社業務をアクセンチュアに委託すると発表し、対象は「数百人」として、できる限り配置転換すると説明した。合弁で持ち分を残したテルストラと、委託と配置転換を組み合わせたコールズでは手法が異なる。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "パナソニックホールディングスは2025年5月9日、世界で1万人（うち国内5,000人）の人員削減を発表した。対象は主に営業部門と間接部門で、国内では早期退職(early retirement)を募り、構造改革費用として約1,300億円を見込んだ。業務を海外へ移さず、間接部門そのものを絞り込む手法で、カンタス航空とは対照的だ。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "offshoring",
+      "pos": "名",
+      "ja": "海外移管",
+      "gloss": "（＝業務を人件費の安い海外の拠点や会社へ移すこと）",
+      "example": {
+        "en": "The bank stopped offshoring its call center work last year.",
+        "ja": "その銀行は昨年、コールセンター業務の海外移管をやめた。"
+      }
+    },
+    {
+      "term": "joint venture",
+      "pos": "熟",
+      "ja": "合弁会社、共同事業",
+      "gloss": "（＝2つ以上の会社が一緒にお金を出してつくる会社のこと）",
+      "example": {
+        "en": "The two companies formed a joint venture to build hotels in Asia.",
+        "ja": "2社はアジアでホテルを建てるために合弁会社を設立した。"
+      }
+    },
+    {
+      "term": "early retirement",
+      "pos": "熟",
+      "ja": "早期退職",
+      "gloss": "（＝定年より前に、会社の制度を使って退職すること）",
+      "example": {
+        "en": "Many employees applied for early retirement this spring.",
+        "ja": "この春、多くの社員が早期退職に応募した。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qantas to cut 850 corporate jobs as it moves roles overseas in Accenture deal",
+      "publisher": "ABC News",
+      "url": "https://www.abc.net.au/news/2026-11-10/850-jobs-to-go-from-qantas-as-airline-moves-roles-overseas/107368120",
+      "date": "2026-11-10"
+    },
+    {
+      "title": "Qantas to cut 850 corporate jobs in outsourcing overhaul",
+      "publisher": "AAP (The Senior)",
+      "url": "https://www.thesenior.com.au/story/9389413/qantas-to-cut-850-corporate-jobs-in-outsourcing-overhaul/",
+      "date": "2026-11-10"
+    },
+    {
+      "title": "Telstra-Accenture Data and AI joint venture to cut 209 positions",
+      "publisher": "iTnews",
+      "url": "https://www.itnews.com.au/news/telstra-accenture-data-and-ai-joint-venture-to-cut-209-positions-623518",
+      "date": "2026-02-10"
+    },
+    {
+      "title": "Coles to offshore hundreds of jobs in Accenture deal",
+      "publisher": "AAP",
+      "url": "https://aapnews.aap.com.au/news/coles-to-offshore-hundreds-of-jobs-in-accenture-deal",
+      "date": "2026-08-07"
+    },
+    {
+      "title": "Panasonic job cuts",
+      "publisher": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/business/2025/05/09/companies/panasonic-job-cuts",
+      "date": "2025-05-09"
+    }
+  ]
+}
