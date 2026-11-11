@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-12-0545",
+  "date": "2026-11-12",
+  "time": "05:45",
+  "createdAt": "2026-11-12T05:45:00+09:00",
+  "genre": "医療",
+  "genreEn": "Healthcare & Pharma",
+  "sample": false,
+  "title": {
+    "en": "FDA Approves Bayer's New Pill to Prevent Repeat Strokes",
+    "ja": "米FDA、バイエルの脳卒中再発予防薬を承認"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. drug regulators approved a new pill from Bayer, a German drugmaker, on Monday.",
+            "ja": "米国の医薬品規制当局は月曜日、ドイツの製薬会社バイエルの新しい飲み薬を承認した。"
+          },
+          {
+            "en": "The drug, called Sunharbo, helps prevent a second stroke in adults.",
+            "ja": "サンハーボという名のこの薬は、成人の脳卒中の再発を防ぐのに役立つ。"
+          },
+          {
+            "en": "The pill is taken once a day together with standard medicine for blood clots.",
+            "ja": "この錠剤は1日1回、血の塊（血栓）を防ぐ標準的な薬と一緒に服用する。"
+          },
+          {
+            "en": "In a large study of more than 12,000 patients, it cut the risk of another stroke by 26%.",
+            "ja": "1万2000人を超える患者を対象にした大規模な試験で、この薬は脳卒中が再び起きるリスクを26%下げた。"
+          },
+          {
+            "en": "Serious bleeding did not increase, which is a common worry with blood thinners.",
+            "ja": "血液をさらさらにする薬でよく心配される重い出血も増えなかった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The approval is important for Bayer's business.",
+            "ja": "この承認はバイエルの事業にとって重要な意味を持つ。"
+          },
+          {
+            "en": "Sales of its older blood thinner are falling quickly because cheaper generic versions are now available.",
+            "ja": "安価な後発薬（ジェネリック）が出回るようになり、同社の従来の抗凝固薬の売上が急速に落ちているからだ。"
+          },
+          {
+            "en": "The company expects those sales to drop by up to 40% this year.",
+            "ja": "同社は、その売上が今年最大で40%減ると見込んでいる。"
+          },
+          {
+            "en": "It hopes the new pill will help fill the gap.",
+            "ja": "同社は、新しい薬がその穴を埋める助けになることを期待している。"
+          },
+          {
+            "en": "A month's supply will have a list price of about $750 in the United States.",
+            "ja": "米国での1か月分の定価は約750ドルになる。"
+          },
+          {
+            "en": "Rival drugmakers are also testing similar pills, but their results are not expected until next year.",
+            "ja": "競合する製薬会社も同様の薬を試験中だが、その結果が出るのは来年になる見通しだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did the new pill lower the risk of another stroke in the study?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "12%",
+          "ja": "12%"
+        },
+        {
+          "key": "B",
+          "text": "26%",
+          "ja": "26%"
+        },
+        {
+          "key": "C",
+          "text": "40%",
+          "ja": "40%"
+        },
+        {
+          "key": "D",
+          "text": "75%",
+          "ja": "75%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第1段落4文目に it cut the risk of another stroke by 26% とあり、脳卒中の再発リスクを26%下げたと明記されている。(A) の12は試験の参加者数（12,000人超）から作った引っかけで、割合ではない。(C) の40%は第2段落にある「従来薬の売上が今年最大で40%減る」という別の数字。(D) の75%は本文にない数字である。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "数字を問う設問では、本文に出てくる別の数字（人数・売上の減少率など）が選択肢に紛れ込む。設問の語（risk, stroke）が書かれた文を探し、その文の中の数字だけを答えに使う。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why is the approval important for Bayer?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Sales of its older product are falling.",
+          "ja": "従来の製品の売上が落ちているから"
+        },
+        {
+          "key": "B",
+          "text": "It is the company's first product sold in the U.S.",
+          "ja": "同社が米国で売る初の製品だから"
+        },
+        {
+          "key": "C",
+          "text": "Rival companies have stopped making similar pills.",
+          "ja": "競合他社が同様の薬の製造をやめたから"
+        },
+        {
+          "key": "D",
+          "text": "The new pill will be cheaper than generic versions.",
+          "ja": "新薬が後発薬より安くなるから"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正解は (A)。第2段落1文目で承認がバイエルの事業にとって重要だと述べたうえで、2文目に Sales of its older blood thinner are falling quickly とその理由が書かれている。older blood thinner を older product と言い換えた (A) が正解。(B) は本文にない情報。(C) は本文と逆で、第2段落最終文に競合他社も同様の薬を試験中（are also testing similar pills）とある。(D) も本文にない情報で、安いと書かれているのは後発薬（cheaper generic versions）の方である。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "「なぜ重要か」を問う設問では、important などの語がある文の直後の文に理由が書かれていることが多い。正解は本文の語を別の語（blood thinner → product）に言い換えている。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "regulator",
+      "pos": "名",
+      "ja": "規制当局、監督機関",
+      "gloss": "",
+      "example": {
+        "en": "The regulator asked the bank to check its accounts again.",
+        "ja": "規制当局はその銀行に、帳簿を再確認するよう求めた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "approve",
+      "pos": "動",
+      "ja": "承認する、許可する",
+      "gloss": "",
+      "example": {
+        "en": "The manager approved the new travel budget on Friday.",
+        "ja": "部長は金曜日に新しい出張予算を承認した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "prevent",
+      "pos": "動",
+      "ja": "防ぐ、予防する",
+      "gloss": "",
+      "example": {
+        "en": "Regular checks help prevent problems with the machines.",
+        "ja": "定期点検は機械のトラブルを防ぐのに役立つ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "blood thinner",
+      "pos": "名",
+      "ja": "抗凝固薬、血液をさらさらにする薬",
+      "gloss": "（＝血が固まって血管が詰まるのを防ぐ薬のこと）",
+      "example": {
+        "en": "My doctor told me to take a blood thinner before the long flight.",
+        "ja": "長時間のフライトの前に、医師から抗凝固薬を飲むように言われた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "available",
+      "pos": "形",
+      "ja": "入手できる、利用できる",
+      "gloss": "",
+      "example": {
+        "en": "The new model will be available in stores next month.",
+        "ja": "新モデルは来月から店頭で購入できる。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "supply",
+      "pos": "名",
+      "ja": "供給量、～分の量",
+      "gloss": "",
+      "example": {
+        "en": "We have a two-week supply of paper in the storage room.",
+        "ja": "倉庫には2週間分の用紙がある。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "list price",
+      "pos": "熟",
+      "ja": "定価、表示価格",
+      "gloss": "",
+      "example": {
+        "en": "Members can buy the printer at 20% off the list price.",
+        "ja": "会員はそのプリンターを定価の2割引で買える。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "rival",
+      "pos": "形・名",
+      "ja": "競合する／競争相手",
+      "gloss": "",
+      "example": {
+        "en": "Our rival opened a new store across the street.",
+        "ja": "競合他社が通りの向かいに新店舗を開いた。"
+      }
+    }
+  ],
+  "glossary": {
+    "regulators": {
+      "lemma": "regulator",
+      "pos": "名",
+      "ja": "規制当局",
+      "note": ""
+    },
+    "approved": {
+      "lemma": "approve",
+      "pos": "動",
+      "ja": "承認した",
+      "note": ""
+    },
+    "pill": {
+      "lemma": "pill",
+      "pos": "名",
+      "ja": "錠剤、飲み薬",
+      "note": ""
+    },
+    "drugmaker": {
+      "lemma": "drugmaker",
+      "pos": "名",
+      "ja": "製薬会社",
+      "note": ""
+    },
+    "drugmakers": {
+      "lemma": "drugmaker",
+      "pos": "名",
+      "ja": "製薬会社",
+      "note": ""
+    },
+    "prevent": {
+      "lemma": "prevent",
+      "pos": "動",
+      "ja": "防ぐ",
+      "note": ""
+    },
+    "stroke": {
+      "lemma": "stroke",
+      "pos": "名",
+      "ja": "脳卒中",
+      "note": "「一撃」の意味もある"
+    },
+    "standard": {
+      "lemma": "standard",
+      "pos": "形",
+      "ja": "標準的な",
+      "note": ""
+    },
+    "clots": {
+      "lemma": "clot",
+      "pos": "名",
+      "ja": "血の塊、血栓",
+      "note": ""
+    },
+    "patients": {
+      "lemma": "patient",
+      "pos": "名",
+      "ja": "患者",
+      "note": "形容詞では「我慢強い」"
+    },
+    "risk": {
+      "lemma": "risk",
+      "pos": "名",
+      "ja": "危険性、リスク",
+      "note": ""
+    },
+    "serious": {
+      "lemma": "serious",
+      "pos": "形",
+      "ja": "重い、深刻な",
+      "note": ""
+    },
+    "bleeding": {
+      "lemma": "bleeding",
+      "pos": "名",
+      "ja": "出血",
+      "note": ""
+    },
+    "worry": {
+      "lemma": "worry",
+      "pos": "名",
+      "ja": "心配事",
+      "note": ""
+    },
+    "thinners": {
+      "lemma": "thinner",
+      "pos": "名",
+      "ja": "薄めるもの",
+      "note": "blood thinner で「抗凝固薬」"
+    },
+    "thinner": {
+      "lemma": "thinner",
+      "pos": "名",
+      "ja": "薄めるもの",
+      "note": "blood thinner で「抗凝固薬」"
+    },
+    "approval": {
+      "lemma": "approval",
+      "pos": "名",
+      "ja": "承認",
+      "note": ""
+    },
+    "generic": {
+      "lemma": "generic",
+      "pos": "形",
+      "ja": "後発の、ジェネリックの",
+      "note": "特許切れ後に他社が作る同じ成分の薬"
+    },
+    "versions": {
+      "lemma": "version",
+      "pos": "名",
+      "ja": "型、版",
+      "note": ""
+    },
+    "available": {
+      "lemma": "available",
+      "pos": "形",
+      "ja": "入手できる",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込む",
+      "note": "expect A to do「Aが〜すると見込む」"
+    },
+    "gap": {
+      "lemma": "gap",
+      "pos": "名",
+      "ja": "穴、不足分",
+      "note": "fill the gap「穴を埋める」"
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "〜分の量",
+      "note": "a month's supply「1か月分」"
+    },
+    "list": {
+      "lemma": "list",
+      "pos": "名",
+      "ja": "一覧",
+      "note": "list price で「定価」"
+    },
+    "rival": {
+      "lemma": "rival",
+      "pos": "形",
+      "ja": "競合する",
+      "note": ""
+    },
+    "similar": {
+      "lemma": "similar",
+      "pos": "形",
+      "ja": "同様の",
+      "note": ""
+    },
+    "testing": {
+      "lemma": "test",
+      "pos": "動",
+      "ja": "試験している",
+      "note": ""
+    },
+    "results": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "結果",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "受動態（be＋過去分詞）と by ～ の省略",
+    "quote": "The pill is taken once a day together with standard medicine for blood clots.",
+    "quoteJa": "この錠剤は1日1回、血栓を防ぐ標準的な薬と一緒に服用する。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "is taken は「be動詞＋過去分詞」の受動態で、「（錠剤が）飲まれる」という意味。主語の The pill は動作をする側ではなく、される側である。だれが飲むのか（by patients）は言わなくても明らかなので省略されている。受動態では、このように動作をする人が分かりきっているとき、または重要でないときに by ～ を書かないのが普通である。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "能動態に直すと Patients take the pill once a day.（患者はその錠剤を1日1回飲む）。受動態にすると、話題の中心である「錠剤」を主語に置ける。同じ記事の1文目 U.S. drug regulators approved a new pill は能動態だが、受動態にすれば A new pill was approved by U.S. drug regulators. となる。時制は be動詞で表す（is taken＝現在、was approved＝過去、will be taken＝未来）。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では、空所に take / taking / taken / to take などが並び、主語が「する側」か「される側」かで判断させる問題が頻出。主語が物（The pill, The report, The order）で、後ろに目的語が無ければ受動態の過去分詞を選ぶ。Part 7 の社内通知では、The meeting will be held ... / Visitors are required to ... のように、行為者を書かない受動態が多用される。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "All invoices are processed within five business days.（請求書はすべて5営業日以内に処理されます。）／ The new policy was approved at yesterday's board meeting.（新しい方針は昨日の取締役会で承認された。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米FDAは11月9日、バイエルの脳卒中再発予防薬サンハーボを承認した。1日1回、抗血小板薬と併用する。約1万2300人の試験で再発リスクを26%下げ、重い出血は増えなかった。定価は30日分で約748ドル。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語：なぜ急ぐのか",
+      "body": "新薬は5月に優先審査(priority review)の対象となり、約6か月で結論が出た。急ぐ理由は特許の崖(patent cliff)だ。主力の抗凝固薬は特許切れで後発薬が広がり、2025年の売上は約33%減の約23億ユーロになった。同社は2026年にさらに35〜40%減ると見込んでおり、新薬がその穴を埋める役目を担う。"
+    },
+    {
+      "heading": "📌 3. 他社ではどうだったか",
+      "body": "米ブリストル・マイヤーズ スクイブ（BMS）とJ&Jは、同じ仕組みの新薬を共同開発中だ。心臓病の患者を対象にした大規模試験は2025年11月、効果が見込めず中止された。2026年8月の発表では、重い心血管症状の発生率は5.4%で、偽薬の5.1%と差がなかった。脳卒中の試験結果は2027年に出る見通しだ。一方、BMSとファイザーの主力の抗凝固薬は米メディケアの価格交渉の対象となり、2026年1月から30日分の価格が2023年の521ドルから231ドルへと56%下がった。前者は次の新薬の開発でつまずき、後者は今の主力薬が価格規制で稼ぐ力を削られた。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "小野薬品工業は、主力のがん免疫薬の特許が2028年に米国で、2030年に欧州で、2031年に日本で切れ始めるのに備え、2024年に米デシフェラを約24億ドルで買収した。欧米の販売網を手に入れ、買収先の2製品で世界売上10億ドルをめざす。自社の新薬候補群(pipeline)を外部から買い足して特許の崖に備えた例である。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "priority review",
+      "pos": "熟",
+      "ja": "優先審査",
+      "gloss": "（＝重要な新薬の審査を通常より早く進める制度のこと）",
+      "example": {
+        "en": "The agency granted priority review to the vaccine.",
+        "ja": "当局はそのワクチンを優先審査の対象にした。"
+      }
+    },
+    {
+      "term": "patent cliff",
+      "pos": "熟",
+      "ja": "特許の崖",
+      "gloss": "（＝主力商品の特許が切れて売上が急に落ちること）",
+      "example": {
+        "en": "The company bought a startup to prepare for its patent cliff.",
+        "ja": "その会社は特許の崖に備えて新興企業を買収した。"
+      }
+    },
+    {
+      "term": "pipeline",
+      "pos": "名",
+      "ja": "新薬候補群、開発中の製品群",
+      "gloss": "（＝開発中で、これから発売をめざす製品の一覧のこと）",
+      "example": {
+        "en": "Investors were pleased with the firm's strong product pipeline.",
+        "ja": "投資家はその会社の充実した開発中の製品群を評価した。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "US FDA approves Bayer's blood thinner to prevent repeat strokes",
+      "publisher": "Reuters (via Yahoo News)",
+      "url": "https://www.yahoo.com/news/science/articles/us-fda-approves-bayers-blood-222655755.html",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "Eliquis's New Lower Direct-to-Consumer Price is Still Higher Than Medicare's Negotiated Price",
+      "publisher": "KFF",
+      "url": "https://www.kff.org/quick-take/eliquiss-new-lower-direct-to-consumer-price-is-still-higher-than-medicares-negotiated-price/",
+      "date": "2025"
+    },
+    {
+      "title": "Bayer looking at another year of 'resilience' before growth kicks in behind Nubeqa, Kerendia",
+      "publisher": "Fierce Pharma",
+      "url": "https://www.fiercepharma.com/pharma/bayer-looking-one-more-year-resilience-growth-kicks-behind-nubeqa-kerendia",
+      "date": "2026-03"
+    },
+    {
+      "title": "Milvexian did not reduce cardiovascular events in the LIBREXIA ACS trial",
+      "publisher": "European Society of Cardiology",
+      "url": "https://escardio.org/news/press/press-releases/milvexian-did-not-reduce-cardiovascular-events-in-the-librexia-acs-trial/",
+      "date": "2026-08-29"
+    },
+    {
+      "title": "Japan's Ono Pharma says $2.4 bln Deciphera purchase 'first step' for global expansion",
+      "publisher": "Reuters (via Yahoo Finance)",
+      "url": "https://au.finance.yahoo.com/news/japans-ono-pharma-says-2-074116841.html",
+      "date": "2024"
+    }
+  ]
+}
