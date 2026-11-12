@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-11-13-0408",
+  "date": "2026-11-13",
+  "time": "04:08",
+  "createdAt": "2026-11-13T04:08:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "Visitors may not enter the research wing without ------- from the security office.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "permit",
+          "ja": "（動）許可する"
+        },
+        {
+          "key": "B",
+          "text": "permission",
+          "ja": "（名）許可"
+        },
+        {
+          "key": "C",
+          "text": "permissive",
+          "ja": "（形）寛大な"
+        },
+        {
+          "key": "D",
+          "text": "permissively",
+          "ja": "（副）寛大に"
+        }
+      ],
+      "answer": "B",
+      "ja": "来訪者は、警備室の許可なく研究棟に入ることはできない。",
+      "explanation": "空所は前置詞 without のあとにあり、後ろに from ... が続くだけなので、前置詞の目的語になる名詞が入る。名詞は permission。permit にも名詞（許可証）の用法はあるが可算名詞なので、冠詞なしの単数では使えない。",
+      "tip": "選択肢が同じ語幹で語尾だけ違えば品詞問題。前置詞の直後で、そのあとに名詞が無ければ空所は名詞。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "prompt": "The marketing director will ------- the findings of the customer survey at Thursday's staff meeting.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "attend",
+          "ja": "出席する"
+        },
+        {
+          "key": "B",
+          "text": "occupy",
+          "ja": "占める"
+        },
+        {
+          "key": "C",
+          "text": "remind",
+          "ja": "思い出させる"
+        },
+        {
+          "key": "D",
+          "text": "present",
+          "ja": "発表する"
+        }
+      ],
+      "answer": "D",
+      "ja": "マーケティング部長は、木曜日の職員会議で顧客調査の結果を発表する。",
+      "explanation": "目的語が the findings（調査結果）で、場所が会議なので「結果を発表する」の present が合う。attend は会議そのものを目的語に取る動詞で、findings には使えない。remind は人を目的語に取る。",
+      "tip": "動詞の語彙問題は、空所の直後の目的語と組み合わせて意味が通るかを先に確かめる。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "prompt": "Once the renovation of the lobby -------, the main entrance on Pine Street will reopen to the public.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "is completed",
+          "ja": "（現在・受動）完了する"
+        },
+        {
+          "key": "B",
+          "text": "will be completed",
+          "ja": "（未来・受動）完了するだろう"
+        },
+        {
+          "key": "C",
+          "text": "was completed",
+          "ja": "（過去・受動）完了した"
+        },
+        {
+          "key": "D",
+          "text": "is completing",
+          "ja": "（進行）完了しつつある"
+        }
+      ],
+      "answer": "A",
+      "ja": "ロビーの改装が完了し次第、パイン通りの正面玄関は一般向けに再開される。",
+      "explanation": "Once（〜し次第）は時を表す接続詞で、その節の中では未来のことも現在形で表す。主節が will reopen と未来なので、Once の節は現在形の受動態 is completed になる。will be completed は意味は合うが、時の副詞節では使わない。改装は「される」ものなので能動の進行形 is completing も合わない。",
+      "tip": "動詞の形の問題で once / when / as soon as の節に空所があれば、主節の時制を確かめる。主節が未来なら、節の中は現在形。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "prompt": "Free coffee and light snacks will be available in the conference hall ------- the two-day workshop.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "among",
+          "ja": "〜の間で（3者以上）"
+        },
+        {
+          "key": "B",
+          "text": "onto",
+          "ja": "〜の上へ"
+        },
+        {
+          "key": "C",
+          "text": "throughout",
+          "ja": "〜の間ずっと"
+        },
+        {
+          "key": "D",
+          "text": "beside",
+          "ja": "〜のそばに"
+        }
+      ],
+      "answer": "C",
+      "ja": "2日間の研修の間ずっと、会議ホールで無料のコーヒーと軽食が用意されている。",
+      "explanation": "空所のあとは the two-day workshop という期間を表す名詞なので、「〜の間ずっと」の throughout が入る。among は人や物の集まりの「間」で、期間には使わない。beside や onto は場所や方向を表す。",
+      "tip": "前置詞の問題は、空所のあとの名詞が「時間・期間」「場所」「人の集まり」のどれかを見てから選ぶ。"
+    },
+    {
+      "id": "q5",
+      "type": "verbal",
+      "prompt": "We look forward to ------- with your team on the redesign of our company website.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "working",
+          "ja": "（動名詞）働くこと"
+        },
+        {
+          "key": "B",
+          "text": "work",
+          "ja": "（原形）働く"
+        },
+        {
+          "key": "C",
+          "text": "worked",
+          "ja": "（過去・過去分詞）働いた"
+        },
+        {
+          "key": "D",
+          "text": "works",
+          "ja": "（三単現）働く"
+        }
+      ],
+      "answer": "A",
+      "ja": "当社ウェブサイトの刷新で、貴社チームとご一緒できるのを楽しみにしております。",
+      "explanation": "look forward to の to は不定詞ではなく前置詞なので、後ろには名詞か動名詞が来る。動名詞は working。to のあとだからと原形の work を選ぶのが典型的な誤り。",
+      "tip": "to のあとに空所があっても、原形とは限らない。look forward to / be committed to / be used to の to は前置詞で、動名詞が続く。"
+    },
+    {
+      "id": "q6",
+      "type": "vocab",
+      "prompt": "Applicants should have at least three years of ------- experience in commercial real estate.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "eventual",
+          "ja": "最終的な"
+        },
+        {
+          "key": "B",
+          "text": "mutual",
+          "ja": "相互の"
+        },
+        {
+          "key": "C",
+          "text": "exclusive",
+          "ja": "独占的な"
+        },
+        {
+          "key": "D",
+          "text": "relevant",
+          "ja": "関連する"
+        }
+      ],
+      "answer": "D",
+      "ja": "応募者には、商業不動産分野での関連する実務経験が3年以上必要である。",
+      "explanation": "求人の条件として「その分野に関連した経験」を求める文なので relevant が入る。exclusive も experience を修飾できそうに見えるが、「独占的な経験」では応募条件として意味をなさない。",
+      "tip": "形容詞の語彙問題は、修飾される名詞（ここでは experience）とよく組む語を選ぶ。relevant experience は求人の定番の組み合わせ。"
+    },
+    {
+      "id": "q7",
+      "type": "conj",
+      "prompt": "Customers can pay for their orders either online ------- by phone before the delivery date.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "nor",
+          "ja": "〜もない"
+        },
+        {
+          "key": "B",
+          "text": "or",
+          "ja": "または"
+        },
+        {
+          "key": "C",
+          "text": "and",
+          "ja": "そして"
+        },
+        {
+          "key": "D",
+          "text": "but",
+          "ja": "しかし"
+        }
+      ],
+      "answer": "B",
+      "ja": "顧客は配達日の前に、オンラインまたは電話で注文の代金を支払うことができる。",
+      "explanation": "空所の前に either があるので、either A or B（A か B のどちらか）の形になる or が入る。nor は neither と組み、and は both と組む。文全体を見ると「どちらかの方法で払える」と選択肢を示しているので、意味の上でも or が合う。",
+      "tip": "接続詞が並ぶ問題では、まず空所の前に either / neither / both / not only が無いかを探す。あれば組になる語で決まる。"
+    },
+    {
+      "id": "q8",
+      "type": "pron",
+      "prompt": "A discount voucher will be sent to ------- who complete the online satisfaction survey by March 31.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "them",
+          "ja": "（目的格）彼らを"
+        },
+        {
+          "key": "B",
+          "text": "whom",
+          "ja": "（関係詞）その人を"
+        },
+        {
+          "key": "C",
+          "text": "those",
+          "ja": "（代名詞）〜する人々"
+        },
+        {
+          "key": "D",
+          "text": "theirs",
+          "ja": "（所有代名詞）彼らのもの"
+        }
+      ],
+      "answer": "C",
+      "ja": "3月31日までにオンラインの満足度調査に回答した人には、割引券が送られる。",
+      "explanation": "空所のあとに who complete ... が続き、「〜する人々」を表すので those who の形になる those が入る。them は後ろに関係詞節を置いて「〜する人たち」の意味では使わない。whom は関係詞で、前に先行詞が必要。",
+      "tip": "代名詞の問題で空所の直後に who があれば、those who（〜する人々）をまず考える。"
+    },
+    {
+      "id": "q9",
+      "type": "form",
+      "prompt": "The maintenance crew responded ------- to reports of a water leak on the third floor.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "promptly",
+          "ja": "（副）すぐに"
+        },
+        {
+          "key": "B",
+          "text": "prompt",
+          "ja": "（形）迅速な／（動）促す"
+        },
+        {
+          "key": "C",
+          "text": "prompted",
+          "ja": "（動・過去）促した"
+        },
+        {
+          "key": "D",
+          "text": "promptness",
+          "ja": "（名）迅速さ"
+        }
+      ],
+      "answer": "A",
+      "ja": "保守担当チームは、3階の水漏れの報告にすぐに対応した。",
+      "explanation": "respond は「対応する」の意味の自動詞で、空所はその直後、to ... の前にある。動詞を修飾するのは副詞なので promptly が入る。形容詞の prompt は動詞を修飾できない。",
+      "tip": "自動詞と前置詞の間にある空所は、動詞を修飾する副詞。文の要素がすでにそろっていれば、足すのは副詞。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "The new branch office is ------- located near the central train station, making it easy for clients to visit.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "slightly",
+          "ja": "わずかに"
+        },
+        {
+          "key": "B",
+          "text": "nearly",
+          "ja": "ほとんど"
+        },
+        {
+          "key": "C",
+          "text": "conveniently",
+          "ja": "便利に"
+        },
+        {
+          "key": "D",
+          "text": "accurately",
+          "ja": "正確に"
+        }
+      ],
+      "answer": "C",
+      "ja": "新しい支店は中央駅の近くの便利な場所にあり、顧客が訪問しやすい。",
+      "explanation": "文の後半に making it easy for clients to visit（顧客が訪れやすい）とあるので、場所の便利さを表す conveniently が入る。nearly は数量や程度を「ほぼ」とする語で、located を修飾しても意味が通らない。後半まで読まないと決まらない問題。",
+      "tip": "副詞の語彙問題は、空所の前後だけでなく、カンマのあとの説明まで読む。理由や結果が書かれていれば、それに合う語を選ぶ。"
+    }
+  ],
+  "glossary": {
+    "look forward to": {
+      "lemma": "look forward to",
+      "pos": "熟",
+      "ja": "〜を楽しみにする",
+      "note": "to のあとは名詞か動名詞",
+      "example": {
+        "en": "I look forward to meeting you at the trade fair next month.",
+        "ja": "来月の見本市でお会いできるのを楽しみにしています。"
+      }
+    },
+    "satisfaction survey": {
+      "lemma": "satisfaction survey",
+      "pos": "名",
+      "ja": "満足度調査",
+      "note": "",
+      "example": {
+        "en": "The hotel asks every guest to fill out a short satisfaction survey.",
+        "ja": "そのホテルは宿泊客全員に短い満足度調査への記入を求めている。"
+      }
+    },
+    "discount voucher": {
+      "lemma": "discount voucher",
+      "pos": "名",
+      "ja": "割引券",
+      "note": "coupon とほぼ同じ",
+      "example": {
+        "en": "Members receive a discount voucher on their birthday.",
+        "ja": "会員は誕生日に割引券を受け取る。"
+      }
+    },
+    "commercial real estate": {
+      "lemma": "commercial real estate",
+      "pos": "名",
+      "ja": "商業不動産",
+      "note": "店舗・事務所などの不動産",
+      "example": {
+        "en": "She has worked as an agent in commercial real estate for ten years.",
+        "ja": "彼女は10年間、商業不動産の仲介業者として働いてきた。"
+      }
+    },
+    "reopen to the public": {
+      "lemma": "reopen to the public",
+      "pos": "熟",
+      "ja": "一般向けに再開する",
+      "note": "",
+      "example": {
+        "en": "The museum will reopen to the public after the summer repairs.",
+        "ja": "その博物館は夏の改修のあと一般公開を再開する。"
+      }
+    },
+    "water leak": {
+      "lemma": "water leak",
+      "pos": "名",
+      "ja": "水漏れ",
+      "note": "",
+      "example": {
+        "en": "Please report any water leak in the restrooms to the front desk.",
+        "ja": "トイレで水漏れがあれば受付に報告してください。"
+      }
+    },
+    "findings": {
+      "lemma": "finding",
+      "pos": "名",
+      "ja": "調査結果",
+      "note": "この意味ではふつう複数形",
+      "example": {
+        "en": "The research team shared its findings with the sales department.",
+        "ja": "研究チームは調査結果を営業部と共有した。"
+      }
+    },
+    "renovation": {
+      "lemma": "renovation",
+      "pos": "名",
+      "ja": "改装、改修",
+      "note": "",
+      "example": {
+        "en": "The restaurant is closed for renovation until the end of May.",
+        "ja": "そのレストランは5月末まで改装のため休業している。"
+      }
+    },
+    "applicants": {
+      "lemma": "applicant",
+      "pos": "名",
+      "ja": "応募者",
+      "note": "動詞は apply",
+      "example": {
+        "en": "All applicants will be contacted by e-mail within two weeks.",
+        "ja": "応募者全員に2週間以内にメールで連絡します。"
+      }
+    },
+    "redesign": {
+      "lemma": "redesign",
+      "pos": "名・動",
+      "ja": "刷新、設計し直し（する）",
+      "note": "",
+      "example": {
+        "en": "The redesign of the store layout made the aisles much wider.",
+        "ja": "店舗レイアウトの刷新で通路がずっと広くなった。"
+      }
+    }
+  },
+  "point": {
+    "lead": "選択肢の見た目で型を決め、型ごとに見る場所を変える",
+    "items": [
+      {
+        "title": "語尾だけ違えば、足りない要素を探す",
+        "body": "品詞問題は文の骨組み（主語・動詞・目的語）を確かめ、空所が何の役目を埋めるかで決める。前置詞のあとなら名詞、要素がそろった文に足すなら副詞。"
+      },
+      {
+        "title": "to のあと・接続詞の節は形に注意",
+        "body": "to のあとでも前置詞なら動名詞が来る。once や when の節は、主節が未来でも現在形。見た目の印象ではなく、その語の働きで形を選ぶ。"
+      },
+      {
+        "title": "語彙問題はカンマの先まで読む",
+        "body": "語彙問題は空所の前後で決まらないことが多い。目的語との組み合わせ、文の後半の理由や結果まで読んでから選ぶ。"
+      }
+    ]
+  }
+}

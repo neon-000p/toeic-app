@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part5-history",
-  "updatedAt": "2026-11-06T04:06:00+09:00",
+  "updatedAt": "2026-11-13T04:08:00+09:00",
   "items": [
+    {
+      "id": "2026-11-13-0408",
+      "date": "2026-11-13",
+      "focus": "文法7・語彙3",
+      "types": [
+        "form",
+        "vocab",
+        "verb",
+        "prep",
+        "verbal",
+        "vocab",
+        "conj",
+        "pron",
+        "form",
+        "vocab"
+      ],
+      "topics": [
+        "前置詞のあとの名詞（without permission）",
+        "時を表す once の節の現在形（未来の代用）",
+        "期間全体を表す throughout",
+        "look forward to ＋ 動名詞",
+        "相関接続詞 either A or B",
+        "those who（〜する人々）",
+        "自動詞を修飾する副詞"
+      ]
+    },
     {
       "id": "2026-11-06-0406",
       "date": "2026-11-06",
