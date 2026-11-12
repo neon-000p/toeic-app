@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-11-13-0408",
+  "date": "2026-11-13",
+  "time": "04:08",
+  "createdAt": "2026-11-13T04:08:00+09:00",
+  "sample": false,
+  "format": "single",
+  "scene": "チャット｜見本市用パンフレットの納期遅れと持ち込みの手配",
+  "intro": "Questions 1-4 refer to the following text-message chain.",
+  "docs": [
+    {
+      "docType": "chat",
+      "label": "チャット",
+      "header": [
+        {
+          "label": "",
+          "text": "Marta Feld, Owen Sato, and Lina Brooks"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "Marta Feld (2:05 P.M.): Owen, the printer just called to say our brochures for the Lisbon trade show won't be ready until Thursday.",
+              "ja": "マルタ・フェルド（午後2時5分）：オーウェン、印刷会社から電話があって、リスボンの見本市用のパンフレットは木曜日まで仕上がらないそうです。"
+            },
+            {
+              "en": "Owen Sato (2:07 P.M.): That's a problem, since the boxes have to be shipped to the venue by Wednesday morning.",
+              "ja": "オーウェン・サトウ（午後2時7分）：それは困りますね。箱は水曜日の朝までに会場へ発送しなければなりません。"
+            },
+            {
+              "en": "Marta Feld (2:08 P.M.): I know, so I asked whether they could print part of the order earlier.",
+              "ja": "マルタ・フェルド（午後2時8分）：そうなんです。それで、注文の一部だけ先に刷れないか聞いてみました。"
+            },
+            {
+              "en": "Marta Feld (2:09 P.M.): They can finish 300 copies by Tuesday afternoon, but the remaining 700 will come later.",
+              "ja": "マルタ・フェルド（午後2時9分）：火曜日の午後までに300部は仕上げられますが、残りの700部はそのあとになります。"
+            },
+            {
+              "en": "Owen Sato (2:11 P.M.): We handed out about 250 on the first day of last year's show.",
+              "ja": "オーウェン・サトウ（午後2時11分）：去年の見本市では、初日に約250部を配りました。"
+            },
+            {
+              "en": "Owen Sato (2:11 P.M.): Then I'd say that covers us.",
+              "ja": "オーウェン・サトウ（午後2時11分）：それなら、それで足りると思います。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "Lina Brooks (2:13 P.M.): I can take the rest of the brochures with me on my flight on Friday, if that helps.",
+              "ja": "リナ・ブルックス（午後2時13分）：役に立つなら、金曜日の私の便で残りのパンフレットを持っていけますよ。"
+            },
+            {
+              "en": "Owen Sato (2:15 P.M.): That would be great, Lina, so please pick them up from the print shop on Thursday after 4 P.M.",
+              "ja": "オーウェン・サトウ（午後2時15分）：リナ、それは助かります。では木曜日の午後4時以降に印刷所で受け取ってください。"
+            },
+            {
+              "en": "Marta Feld (2:16 P.M.): I'll let the printer know and ask them to pack the copies in two separate boxes.",
+              "ja": "マルタ・フェルド（午後2時16分）：印刷会社に伝えて、2つの箱に分けて梱包してもらうよう頼んでおきます。"
+            },
+            {
+              "en": "Lina Brooks (2:18 P.M.): Sounds good, and I'll check with the airline about bringing extra luggage.",
+              "ja": "リナ・ブルックス（午後2時18分）：了解です。追加の荷物を持ち込めるか、航空会社に確認しておきます。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What problem does Ms. Feld report?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The venue has changed its opening hours",
+          "ja": "会場が開場時間を変更した"
+        },
+        {
+          "key": "B",
+          "text": "Some printed materials will be finished late",
+          "ja": "印刷物が予定より遅れて仕上がる"
+        },
+        {
+          "key": "C",
+          "text": "The printer made an error in the design",
+          "ja": "印刷会社がデザインを間違えた"
+        },
+        {
+          "key": "D",
+          "text": "The shipping boxes are too small",
+          "ja": "発送用の箱が小さすぎる"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 0
+        }
+      ],
+      "cross": false,
+      "explanation": "最初の発言で、フェルドさんは見本市用のパンフレットが木曜日まで仕上がらないと伝えている。brochures を printed materials、won't be ready until Thursday を finished late と言い換えた B が正解。A の venue（会場）や D の boxes は本文に出てくる語だが、問題として述べられているのは仕上がりの遅れである。",
+      "tip": "「何が問題か」を問う設問の根拠は、たいていチャットの最初の1〜2発言にある。本文の語をそのまま使った選択肢より、言い換えた選択肢を疑ってかかる。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "At 2:11 P.M., what does Mr. Sato most likely mean when he writes, \"Then I'd say that covers us\"?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "He will pay for the extra printing",
+          "ja": "追加の印刷代を払うつもりだ"
+        },
+        {
+          "key": "B",
+          "text": "He wants to cancel part of the order",
+          "ja": "注文の一部を取り消したい"
+        },
+        {
+          "key": "C",
+          "text": "He thinks the boxes are well protected",
+          "ja": "箱がしっかり守られていると思っている"
+        },
+        {
+          "key": "D",
+          "text": "He believes the first copies will be enough",
+          "ja": "最初に届く部数で足りると考えている"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 3
+        },
+        {
+          "d": 0,
+          "p": 0,
+          "s": 4
+        },
+        {
+          "d": 0,
+          "p": 0,
+          "s": 5
+        }
+      ],
+      "cross": false,
+      "explanation": "直前でフェルドさんが「火曜日までに300部は仕上がる」と伝え、サトウさんは「去年は初日に約250部配った」と続けてから引用の一言を書いている。300部あれば初日には足りる、という意味なので D が正解。cover を「覆う・守る」と取ると C を選んでしまうが、ここでは「（必要な分を）まかなう」の意味。",
+      "tip": "意図を問う設問は、引用の前の1〜2発言にある数字や事実と結び付けて読む。引用の単語の直訳に飛びつかない。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about Ms. Brooks?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "She will travel to Lisbon after the boxes are shipped",
+          "ja": "箱が発送されたあとにリスボンへ向かう"
+        },
+        {
+          "key": "B",
+          "text": "She works at the print shop",
+          "ja": "印刷所で働いている"
+        },
+        {
+          "key": "C",
+          "text": "She attended last year's trade show",
+          "ja": "去年の見本市に参加した"
+        },
+        {
+          "key": "D",
+          "text": "She will mail the remaining brochures",
+          "ja": "残りのパンフレットを郵送する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 0
+        },
+        {
+          "d": 0,
+          "p": 0,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "箱は水曜日の朝までに会場へ発送する（2時7分）一方、ブルックスさんは金曜日の便で残りを持っていくと申し出ている（2時13分）。発送のあとにリスボンへ移動することになるので A が正解。去年の見本市の話をしたのはサトウさんなので C は根拠が無い。D は郵送ではなく自分で持っていく話である。",
+      "tip": "推測の設問は、その人物の発言だけでなく、他の人が書いた日時や予定と組み合わせて考える。"
+    },
+    {
+      "id": "q4",
+      "type": "detail",
+      "prompt": "What will Ms. Feld most likely do next?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Book a flight for Mr. Sato",
+          "ja": "サトウさんの航空便を予約する"
+        },
+        {
+          "key": "B",
+          "text": "Count the brochures from last year",
+          "ja": "去年のパンフレットを数える"
+        },
+        {
+          "key": "C",
+          "text": "Contact the print shop",
+          "ja": "印刷所に連絡する"
+        },
+        {
+          "key": "D",
+          "text": "Ship the boxes on Thursday",
+          "ja": "木曜日に箱を発送する"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "2時16分にフェルドさんは「印刷会社に伝えて、2つの箱に分けて梱包してもらうよう頼む」と書いている。let the printer know を Contact the print shop と言い換えた C が正解。A の flight はブルックスさんの便の話で、航空会社に確認するのもブルックスさんである。",
+      "tip": "「次に何をするか」は、その人物の最後の発言の I'll ... を探す。他の人の I'll と混同しない。"
+    }
+  ],
+  "glossary": {
+    "trade show": {
+      "lemma": "trade show",
+      "pos": "名",
+      "ja": "見本市、展示会",
+      "note": "trade fair ともいう",
+      "example": {
+        "en": "Our company will display its new products at the trade show in May.",
+        "ja": "当社は5月の見本市で新製品を展示する。"
+      }
+    },
+    "venue": {
+      "lemma": "venue",
+      "pos": "名",
+      "ja": "会場、開催地",
+      "note": "",
+      "example": {
+        "en": "The venue for the annual dinner has not been decided yet.",
+        "ja": "年次夕食会の会場はまだ決まっていない。"
+      }
+    },
+    "remaining": {
+      "lemma": "remaining",
+      "pos": "形",
+      "ja": "残りの",
+      "note": "",
+      "example": {
+        "en": "The remaining seats will be offered to members first.",
+        "ja": "残りの席はまず会員に案内される。"
+      }
+    },
+    "handed out": {
+      "lemma": "hand out",
+      "pos": "熟",
+      "ja": "配る",
+      "note": "",
+      "example": {
+        "en": "Staff handed out free samples at the store entrance.",
+        "ja": "スタッフが店の入口で無料の試供品を配った。"
+      }
+    },
+    "covers": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "（必要な分を）まかなう、足りる",
+      "note": "覆う以外の意味に注意",
+      "example": {
+        "en": "This budget covers the cost of food and transportation.",
+        "ja": "この予算で食事と交通の費用をまかなえる。"
+      }
+    },
+    "pick them up": {
+      "lemma": "pick up",
+      "pos": "熟",
+      "ja": "受け取る、取りに行く",
+      "note": "代名詞は pick と up の間に入る",
+      "example": {
+        "en": "You can pick up your order at the service counter after noon.",
+        "ja": "正午以降、サービスカウンターで注文品を受け取れる。"
+      }
+    },
+    "let the printer know": {
+      "lemma": "let A know",
+      "pos": "熟",
+      "ja": "Aに知らせる",
+      "note": "",
+      "example": {
+        "en": "Please let the front desk know if you need a late checkout.",
+        "ja": "チェックアウトを遅らせたい場合はフロントにお知らせください。"
+      }
+    },
+    "separate": {
+      "lemma": "separate",
+      "pos": "形",
+      "ja": "別々の",
+      "note": "動詞（分ける）としても使う",
+      "example": {
+        "en": "Please keep receipts for each trip in separate envelopes.",
+        "ja": "出張ごとの領収書は別々の封筒に入れておいてください。"
+      }
+    },
+    "check with": {
+      "lemma": "check with",
+      "pos": "熟",
+      "ja": "〜に確認する",
+      "note": "",
+      "example": {
+        "en": "I need to check with my manager before I sign the contract.",
+        "ja": "契約書に署名する前に上司に確認する必要がある。"
+      }
+    },
+    "extra luggage": {
+      "lemma": "extra luggage",
+      "pos": "名",
+      "ja": "追加の手荷物",
+      "note": "luggage は不可算名詞",
+      "example": {
+        "en": "Passengers must pay a fee for extra luggage on this route.",
+        "ja": "この路線では追加の手荷物に料金がかかる。"
+      }
+    }
+  },
+  "point": {
+    "lead": "チャットは「誰が・いつ・何をすると言ったか」を発言者ごとに押さえて読む",
+    "items": [
+      {
+        "title": "設問の順に本文を追う",
+        "body": "設問の根拠は本文の前から後ろへ並ぶ。1問解いたら、その根拠の位置から先を読み進めて次の設問の答えを探す。"
+      },
+      {
+        "title": "意図の設問は直前の発言とセットで読む",
+        "body": "引用された一言は、前の発言の数字や事情を受けたもの。直前の1〜2発言を読み、何に対する返事かを確かめてから選ぶ。"
+      },
+      {
+        "title": "人物を取り違えない",
+        "body": "複数人のチャットでは、I'll ... や予定が誰の発言かを必ず確認する。誤答は、別の人の発言をその人物のことにすり替えて作られることが多い。"
+      }
+    ]
+  }
+}
