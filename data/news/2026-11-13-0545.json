@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-13-0545",
+  "date": "2026-11-13",
+  "time": "05:45",
+  "createdAt": "2026-11-13T05:45:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Nvidia CEO Resigns as Finance Chief Steps In",
+    "ja": "エヌビディアCEOが辞任、CFOが暫定トップに"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Nvidia, the world's leading maker of AI chips, said on Thursday that its chief executive, Jensen Huang, had resigned with immediate effect.",
+            "ja": "AI向け半導体で世界最大手のエヌビディアは木曜日、最高経営責任者（CEO）のジェンスン・フアン氏が即日辞任したと発表した。"
+          },
+          {
+            "en": "The board had opened an independent investigation last weekend after reports that a foreign spy agency had targeted him.",
+            "ja": "取締役会は先週末、同氏が外国の情報機関に狙われていたとの報道を受け、独立した調査を始めていた。"
+          },
+          {
+            "en": "He also stepped down from the board.",
+            "ja": "同氏は取締役も退いた。"
+          },
+          {
+            "en": "Colette Kress, the company's finance chief, will serve as interim CEO until the board finds a permanent leader.",
+            "ja": "取締役会が正式な後任を見つけるまで、同社の最高財務責任者（CFO）コレット・クレス氏が暫定CEOを務める。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The board will consider both internal and external candidates for the top job.",
+            "ja": "取締役会は、トップの座について社内と社外の両方の候補者を検討する。"
+          },
+          {
+            "en": "It also named Harvey Jones, a director since 1993, as its first-ever chair.",
+            "ja": "また、1993年から取締役を務めるハーベイ・ジョーンズ氏を、同社として初めての取締役会議長に任命した。"
+          },
+          {
+            "en": "Until now, the board had no chair at all.",
+            "ja": "これまで同社の取締役会には議長がまったくいなかった。"
+          },
+          {
+            "en": "Investors are worried about the sudden change because Mr. Huang had led the company for more than three decades.",
+            "ja": "フアン氏が30年以上にわたって会社を率いてきたため、投資家はこの突然の交代を懸念している。"
+          },
+          {
+            "en": "The company's shares fell sharply this week.",
+            "ja": "同社の株価は今週、大きく下落した。"
+          },
+          {
+            "en": "Next week, it will report quarterly results, and analysts will watch closely for any impact on its business.",
+            "ja": "同社は来週に四半期決算を発表する予定で、アナリストは事業への影響が出ていないかを注視することになる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "Who will lead the company until a permanent CEO is chosen?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Jensen Huang",
+          "ja": "ジェンスン・フアン氏"
+        },
+        {
+          "key": "B",
+          "text": "Harvey Jones",
+          "ja": "ハーベイ・ジョーンズ氏"
+        },
+        {
+          "key": "C",
+          "text": "Colette Kress",
+          "ja": "コレット・クレス氏"
+        },
+        {
+          "key": "D",
+          "text": "An outside candidate hired last week",
+          "ja": "先週雇われた社外の候補者"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落の最後の文に Colette Kress, the company's finance chief, will serve as interim CEO until the board finds a permanent leader. とあり、正式な後任が決まるまで CFO のクレス氏が暫定CEOを務めると分かる。(A) フアン氏は辞任した本人なので誤り。(B) ジョーンズ氏は取締役会議長に任命された人物で、CEOではない。(D) 社外の候補者は「これから検討する」と書かれているだけで、すでに雇われたという記述は本文にない。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "設問の until a permanent CEO is chosen を言い換えた until the board finds a permanent leader を本文で探すのが近道。Part 7 では、似た役職名（chair と CEO）を持つ人物が複数出てくるので、誰が何の役に就いたかを1対1で整理してから選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT mentioned about the board?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It opened an independent investigation.",
+          "ja": "独立した調査を始めた"
+        },
+        {
+          "key": "B",
+          "text": "It will consider candidates from inside and outside the company.",
+          "ja": "社内外の候補者を検討する"
+        },
+        {
+          "key": "C",
+          "text": "It named a chair for the first time.",
+          "ja": "初めて議長を任命した"
+        },
+        {
+          "key": "D",
+          "text": "It plans to reduce the number of directors.",
+          "ja": "取締役の人数を減らす予定だ"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は (D)。取締役の人数を減らす計画については、本文のどこにも書かれていない。(A) は第1段落2文目 The board had opened an independent investigation に、(B) は第2段落1文目 both internal and external candidates に、(C) は第2段落2文目 its first-ever chair と3文目 Until now, the board had no chair にそれぞれ対応しており、いずれも本文に記述がある。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "NOT 問題は、選択肢を1つずつ本文と照合し、記述が見つかったものを消していく消去法で解く。internal and external → inside and outside、first-ever → for the first time のような言い換えに気づけるかがポイント。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "resign",
+      "pos": "動",
+      "ja": "辞任する、辞職する",
+      "gloss": "",
+      "example": {
+        "en": "She resigned from her position to start her own business.",
+        "ja": "彼女は自分で事業を始めるために職を辞した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "investigation",
+      "pos": "名",
+      "ja": "調査、捜査",
+      "gloss": "",
+      "example": {
+        "en": "The company started an investigation into the missing shipment.",
+        "ja": "その会社は届かなかった荷物について調査を始めた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "interim",
+      "pos": "形",
+      "ja": "暫定の、臨時の",
+      "gloss": "（＝正式な人が決まるまでの間だけの）",
+      "example": {
+        "en": "Mr. Lee will act as interim manager until a new manager is hired.",
+        "ja": "新しい部長が採用されるまで、リー氏が暫定の部長を務める。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "permanent",
+      "pos": "形",
+      "ja": "正式な、常設の、終身の",
+      "gloss": "",
+      "example": {
+        "en": "After a three-month trial, she was offered a permanent position.",
+        "ja": "3か月の試用期間の後、彼女は正社員の職を提示された。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "external",
+      "pos": "形",
+      "ja": "外部の、社外の",
+      "gloss": "",
+      "example": {
+        "en": "We hired an external consultant to review our budget.",
+        "ja": "当社は予算を見直すために社外のコンサルタントを雇った。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "candidate",
+      "pos": "名",
+      "ja": "候補者、志願者",
+      "gloss": "",
+      "example": {
+        "en": "We interviewed five candidates for the sales position.",
+        "ja": "当社は営業職の候補者5人と面接した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "sudden",
+      "pos": "形",
+      "ja": "突然の、急な",
+      "gloss": "",
+      "example": {
+        "en": "The sudden rise in fuel prices increased our delivery costs.",
+        "ja": "燃料価格の急な上昇で、当社の配送コストが増えた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "quarterly",
+      "pos": "形",
+      "ja": "四半期の、年4回の",
+      "gloss": "",
+      "example": {
+        "en": "The quarterly report will be sent to all shareholders next week.",
+        "ja": "四半期報告書は来週、全株主に送られる。"
+      }
+    }
+  ],
+  "glossary": {
+    "leading": {
+      "lemma": "leading",
+      "pos": "形",
+      "ja": "一流の、主要な",
+      "note": ""
+    },
+    "chips": {
+      "lemma": "chip",
+      "pos": "名",
+      "ja": "半導体チップ",
+      "note": ""
+    },
+    "chief executive": {
+      "lemma": "chief executive",
+      "pos": "名",
+      "ja": "最高経営責任者",
+      "note": "CEO と同じ"
+    },
+    "resigned": {
+      "lemma": "resign",
+      "pos": "動",
+      "ja": "辞任した",
+      "note": ""
+    },
+    "immediate": {
+      "lemma": "immediate",
+      "pos": "形",
+      "ja": "即時の",
+      "note": "with immediate effect＝即日、ただちに"
+    },
+    "board": {
+      "lemma": "board",
+      "pos": "名",
+      "ja": "取締役会",
+      "note": ""
+    },
+    "independent": {
+      "lemma": "independent",
+      "pos": "形",
+      "ja": "独立した、第三者の",
+      "note": ""
+    },
+    "investigation": {
+      "lemma": "investigation",
+      "pos": "名",
+      "ja": "調査",
+      "note": ""
+    },
+    "reports": {
+      "lemma": "report",
+      "pos": "名",
+      "ja": "報道、報告",
+      "note": ""
+    },
+    "targeted": {
+      "lemma": "target",
+      "pos": "動",
+      "ja": "標的にした",
+      "note": ""
+    },
+    "stepped down": {
+      "lemma": "step down",
+      "pos": "熟",
+      "ja": "退いた、辞任した",
+      "note": "step down from ～＝～の職を退く"
+    },
+    "finance chief": {
+      "lemma": "finance chief",
+      "pos": "名",
+      "ja": "財務責任者",
+      "note": "CFO のこと"
+    },
+    "serve": {
+      "lemma": "serve",
+      "pos": "動",
+      "ja": "務める",
+      "note": "serve as ～＝～として務める"
+    },
+    "interim": {
+      "lemma": "interim",
+      "pos": "形",
+      "ja": "暫定の",
+      "note": ""
+    },
+    "permanent": {
+      "lemma": "permanent",
+      "pos": "形",
+      "ja": "正式な、常任の",
+      "note": ""
+    },
+    "internal": {
+      "lemma": "internal",
+      "pos": "形",
+      "ja": "内部の、社内の",
+      "note": ""
+    },
+    "external": {
+      "lemma": "external",
+      "pos": "形",
+      "ja": "外部の、社外の",
+      "note": ""
+    },
+    "candidates": {
+      "lemma": "candidate",
+      "pos": "名",
+      "ja": "候補者",
+      "note": ""
+    },
+    "named": {
+      "lemma": "name",
+      "pos": "動",
+      "ja": "任命した",
+      "note": "name A as B＝AをBに任命する"
+    },
+    "director": {
+      "lemma": "director",
+      "pos": "名",
+      "ja": "取締役",
+      "note": ""
+    },
+    "first-ever": {
+      "lemma": "first-ever",
+      "pos": "形",
+      "ja": "史上初の",
+      "note": ""
+    },
+    "chair": {
+      "lemma": "chair",
+      "pos": "名",
+      "ja": "議長",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "worried": {
+      "lemma": "worried",
+      "pos": "形",
+      "ja": "心配して",
+      "note": "be worried about ～"
+    },
+    "sudden": {
+      "lemma": "sudden",
+      "pos": "形",
+      "ja": "突然の",
+      "note": ""
+    },
+    "decades": {
+      "lemma": "decade",
+      "pos": "名",
+      "ja": "10年間",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株、株式",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "quarterly": {
+      "lemma": "quarterly",
+      "pos": "形",
+      "ja": "四半期の",
+      "note": ""
+    },
+    "impact": {
+      "lemma": "impact",
+      "pos": "名",
+      "ja": "影響",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "接続詞 until（～するまで：継続の終わり）と前置詞 by（～までに：期限）の使い分け",
+    "quote": "Colette Kress, the company's finance chief, will serve as interim CEO until the board finds a permanent leader.",
+    "quoteJa": "取締役会が正式な後任を見つけるまで、同社のCFOコレット・クレス氏が暫定CEOを務める。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "until は「～するまで（ずっと）」と、ある状態や動作がいつまで続くかを表す接続詞。ここでは will serve as interim CEO（暫定CEOを務める）という状態が、the board finds a permanent leader（取締役会が正式な後任を見つける）時点まで続くことを示している。未来の話なのに until 節の中が finds と現在形になっている点に注意。時を表す副詞節では、未来のことでも現在形を使う。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "until は「継続の終わり」、by は「期限（それまでに1回終われば良い）」を表す。Ms. Kress will stay in the role until March.（3月までずっとその役を続ける）に対し、The board will choose a new CEO by March.（3月までに新CEOを選ぶ）となる。また until は後ろに節も名詞も置けるが、by の後ろは名詞だけで、節を続けるときは by the time を使う。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では「The office will remain closed ____ the repairs are completed.」の空所に until を選ばせる問題が定番。動詞が remain・stay・wait・continue など「続く」意味なら until、submit・finish・arrive など「1回で終わる」意味なら by を選ぶ。until 節の中の動詞に will を使った選択肢は誤りとして出ることも多い。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Please keep this document until the project is finished.（プロジェクトが終わるまで、この書類を保管してください）／ Please submit the report by Friday.（金曜日までに報告書を提出してください）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "エヌビディアは11月12日、フアン氏がCEOと取締役を即日辞任したと発表した。取締役会は8日、同氏が外国の情報機関に狙われたとの報道を受けて独立調査を始めていた。CFOのクレス氏が暫定CEOを兼ね、株価は大きく下げた。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "創業者が長く率いた会社では、トップが突然去ると経営の空白が生まれやすい。これに備えるのが後継者計画(succession plan)で、平時から次の経営者候補を育てておく。準備が無い場合は、数字と投資家対応に通じたCFOが暫定的に指揮を執ることが多い。エヌビディアは議長職も初めて設け、監督役を置いた。"
+    },
+    {
+      "heading": "📌 3. 他社のトップ交代",
+      "body": "インテルは2018年6月、クルザニッチCEOが社員との過去の交際で社内規定に反したとして辞任し、CFOのスワン氏が暫定CEOに就いた。好業績が評価され、7か月後の2019年1月に正式なCEOとなった。マクドナルドは2019年11月、社員との交際を理由にイースターブルックCEOを解任し、即日後任を決めた。だが同氏は4,000万ドル超の報酬を得て退任し、のちに虚偽説明が判明。会社は2020年に提訴し、2021年に約1億500万ドルを返還させた。インテルは時間をかけて後任を見極め、マクドナルドは即日交代したが退任条件の甘さで代償を払った。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日産自動車は2018年11月、カルロス・ゴーン会長が金銭面の不正の疑いで逮捕され、会長職を解いた。特別委員会は2019年3月、権限の集中が不正の根本原因だと指摘した。日産は同年6月に指名委員会(nominating committee)など3委員会を設け、社外取締役(independent director)を過半数とし、議長も社外取締役から選ぶ体制に改めた。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "succession plan",
+      "pos": "熟",
+      "ja": "後継者計画",
+      "gloss": "（＝今のトップが去ったときに備えて、次の担当者を決め・育てておく計画のこと）",
+      "example": {
+        "en": "Our team leader made a succession plan before she retired.",
+        "ja": "私たちのチームリーダーは、退職する前に後継者計画を作った。"
+      }
+    },
+    {
+      "term": "nominating committee",
+      "pos": "熟",
+      "ja": "指名委員会",
+      "gloss": "（＝取締役や社長の候補を選んで推薦する、取締役会の中の委員会のこと）",
+      "example": {
+        "en": "The nominating committee will meet next month to review the candidates.",
+        "ja": "指名委員会は来月集まり、候補者を検討する。"
+      }
+    },
+    {
+      "term": "independent director",
+      "pos": "熟",
+      "ja": "社外取締役",
+      "gloss": "（＝会社の外から招かれ、経営陣から独立した立場で監督する取締役のこと）",
+      "example": {
+        "en": "The company added two independent directors to its board this year.",
+        "ja": "その会社は今年、取締役会に社外取締役を2人加えた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nvidia CEO Jensen Huang resigns: Live updates",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "NVIDIA Announces CEO Transition",
+      "publisher": "NVIDIA",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Robert Swan named Intel CEO",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2019/01/31/robert-swan-named-intel-ceo",
+      "date": "2019-01-31"
+    },
+    {
+      "title": "Ousted McDonald's CEO returns $105 million after lying about misconduct",
+      "publisher": "CBS News",
+      "url": "https://www.cbsnews.com/news/mcdonalds-ceo-returns-105-million-dollars-steve-easterbrook-miscondcut/",
+      "date": "2021-12-16"
+    },
+    {
+      "title": "Will Nissan reforms finally bring an end to corporate governance woes?",
+      "publisher": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/news/2019/06/24/business/corporate-business/will-nissan-reforms-finally-bring-end-corporate-governance-woes",
+      "date": "2019-06-24"
+    }
+  ]
+}
