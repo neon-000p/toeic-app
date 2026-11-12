@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-12-1648",
+  "date": "2026-11-12",
+  "time": "16:48",
+  "createdAt": "2026-11-12T16:48:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "U.S. Container Imports Hit a Record High in October",
+    "ja": "米コンテナ輸入、10月に過去最高を更新"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. container imports reached an all-time high in October, according to a November 11 report by Descartes, a logistics data company.",
+            "ja": "物流データ会社デカルトが11月11日に公表した報告によると、10月の米国のコンテナ輸入量は過去最高を記録した。"
+          },
+          {
+            "en": "Ports handled about 2.67 million TEUs, the standard unit for counting containers.",
+            "ja": "港湾が取り扱った量は約267万TEU（コンテナを数える標準的な単位）だった。"
+          },
+          {
+            "en": "That volume was 16% higher than a year earlier and broke the previous record set in May 2022.",
+            "ja": "この量は前年同月を16%上回り、2022年5月に記録したこれまでの最高を更新した。"
+          },
+          {
+            "en": "Shipments from China rose for the fourth month in a row and made up nearly 37% of the total.",
+            "ja": "中国からの出荷は4か月連続で増え、全体の37%近くを占めた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The surge shows that demand is strong, but it is also slowing cargo down.",
+            "ja": "この急増は需要の強さを示しているが、同時に貨物の流れを滞らせてもいる。"
+          },
+          {
+            "en": "Seven of the ten busiest ports reported longer delays in October.",
+            "ja": "取扱量の多い上位10港のうち7港で、10月は遅延が長くなった。"
+          },
+          {
+            "en": "At the port of New York and New Jersey, delays averaged 8.1 days.",
+            "ja": "ニューヨーク・ニュージャージー港では、遅延は平均8.1日に達した。"
+          },
+          {
+            "en": "Monthly imports have stayed above 2.5 million units since July, which may be adding pressure to inland delivery networks.",
+            "ja": "月間の輸入量は7月以降ずっと250万単位を上回っており、これが内陸の配送網への負担を強めている可能性がある。"
+          },
+          {
+            "en": "The company advised importers to keep monitoring tariff rules and security risks on major shipping routes.",
+            "ja": "同社は輸入業者に対し、関税のルールと主要航路の安全上のリスクを引き続き注視するよう助言した。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much higher was the October import volume than a year earlier?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2.5%",
+          "ja": "2.5%"
+        },
+        {
+          "key": "B",
+          "text": "8.1%",
+          "ja": "8.1%"
+        },
+        {
+          "key": "C",
+          "text": "16%",
+          "ja": "16%"
+        },
+        {
+          "key": "D",
+          "text": "37%",
+          "ja": "37%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落第3文に That volume was 16% higher than a year earlier とあり、前年同月比の伸びは16%。(A) の 2.5 は第2段落の「月250万単位（2.5 million units）」という輸入量の数字で、割合ではない。(B) の 8.1 はニューヨーク・ニュージャージー港の平均遅延日数（8.1 days）。(D) の 37% は中国からの出荷が全体に占める割合で、いずれも本文の別の数字を使った引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字を問う設問では、設問のキーワード（a year earlier）を本文で探し、その数字の直後の単位（%、days、units）まで確認する。本文に出てくる別の数字が誤答に並ぶのが定番。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, what may be adding pressure to inland delivery networks?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A sharp drop in shipments from China",
+          "ja": "中国からの出荷の急減"
+        },
+        {
+          "key": "B",
+          "text": "Several months of very high import volumes",
+          "ja": "数か月続く非常に多い輸入量"
+        },
+        {
+          "key": "C",
+          "text": "New tariff rules introduced in October",
+          "ja": "10月に導入された新しい関税ルール"
+        },
+        {
+          "key": "D",
+          "text": "A shortage of workers at the ports",
+          "ja": "港湾での労働者不足"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落第4文に Monthly imports have stayed above 2.5 million units since July, which may be adding pressure to inland delivery networks とあり、7月から続く高水準の輸入量が負担の原因とされている。これを Several months of very high import volumes と言い換えた (B) が正解。(A) は本文と逆で、中国からの出荷は4か月連続で増えている。(C) の関税ルールは「注視すべきもの」として最終文に出るだけで、10月に新ルールが導入されたとは書かれていない。(D) の労働者不足は本文にない情報。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "原因を問う設問では、設問の語句（adding pressure to ～）がある文を探し、その文の主語や which が指す内容を確認する。正解は since July → Several months のように言い換えられる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "handle",
+      "pos": "動",
+      "ja": "取り扱う、処理する",
+      "gloss": "",
+      "example": {
+        "en": "Our customer service team handles about 300 calls a day.",
+        "ja": "当社のカスタマーサービス部は1日に約300件の電話に対応している。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "previous",
+      "pos": "形",
+      "ja": "以前の、前の",
+      "gloss": "",
+      "example": {
+        "en": "Sales this quarter were higher than in the previous quarter.",
+        "ja": "今四半期の売上は前の四半期を上回った。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "shipment",
+      "pos": "名",
+      "ja": "出荷、発送（品）",
+      "gloss": "",
+      "example": {
+        "en": "The shipment will arrive at the warehouse on Friday.",
+        "ja": "その出荷品は金曜日に倉庫に届く。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "surge",
+      "pos": "名・動",
+      "ja": "急増（する）、急上昇（する）",
+      "gloss": "",
+      "example": {
+        "en": "The store hired extra staff to deal with the surge in orders.",
+        "ja": "その店は注文の急増に対応するため追加のスタッフを雇った。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "cargo",
+      "pos": "名",
+      "ja": "貨物、積み荷",
+      "gloss": "（＝船・飛行機・トラックで運ばれる荷物のこと）",
+      "example": {
+        "en": "The cargo was moved from the ship to a truck.",
+        "ja": "その貨物は船からトラックに移された。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "delay",
+      "pos": "名・動",
+      "ja": "遅れ、遅延／遅らせる",
+      "gloss": "",
+      "example": {
+        "en": "We apologize for the delay in delivering your order.",
+        "ja": "ご注文品の配達が遅れましたことをおわびいたします。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "advise",
+      "pos": "動",
+      "ja": "助言する、勧める",
+      "gloss": "",
+      "example": {
+        "en": "The manager advised the staff to back up their files every day.",
+        "ja": "部長は部員に、ファイルを毎日バックアップするよう助言した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "monitor",
+      "pos": "動",
+      "ja": "監視する、注視する",
+      "gloss": "",
+      "example": {
+        "en": "We monitor inventory levels every week.",
+        "ja": "当社は在庫水準を毎週確認している。"
+      }
+    }
+  ],
+  "glossary": {
+    "container": {
+      "lemma": "container",
+      "pos": "名",
+      "ja": "コンテナ、容器",
+      "note": ""
+    },
+    "imports": {
+      "lemma": "import",
+      "pos": "名",
+      "ja": "輸入（量）、輸入品",
+      "note": ""
+    },
+    "reached": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "達した",
+      "note": ""
+    },
+    "according": {
+      "lemma": "according to",
+      "pos": "熟",
+      "ja": "～によると",
+      "note": "according to の形で使う"
+    },
+    "logistics": {
+      "lemma": "logistics",
+      "pos": "名",
+      "ja": "物流",
+      "note": ""
+    },
+    "ports": {
+      "lemma": "port",
+      "pos": "名",
+      "ja": "港、港湾",
+      "note": ""
+    },
+    "handled": {
+      "lemma": "handle",
+      "pos": "動",
+      "ja": "取り扱った",
+      "note": ""
+    },
+    "standard": {
+      "lemma": "standard",
+      "pos": "形",
+      "ja": "標準の",
+      "note": ""
+    },
+    "unit": {
+      "lemma": "unit",
+      "pos": "名",
+      "ja": "単位",
+      "note": ""
+    },
+    "volume": {
+      "lemma": "volume",
+      "pos": "名",
+      "ja": "量、取扱量",
+      "note": ""
+    },
+    "previous": {
+      "lemma": "previous",
+      "pos": "形",
+      "ja": "以前の、前の",
+      "note": ""
+    },
+    "record": {
+      "lemma": "record",
+      "pos": "名",
+      "ja": "記録、最高記録",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷、出荷品",
+      "note": ""
+    },
+    "row": {
+      "lemma": "row",
+      "pos": "名",
+      "ja": "列",
+      "note": "in a row で「連続で」"
+    },
+    "total": {
+      "lemma": "total",
+      "pos": "名",
+      "ja": "合計、全体",
+      "note": ""
+    },
+    "surge": {
+      "lemma": "surge",
+      "pos": "名",
+      "ja": "急増",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物、積み荷",
+      "note": ""
+    },
+    "busiest": {
+      "lemma": "busy",
+      "pos": "形",
+      "ja": "最も取扱量の多い",
+      "note": "busy の最上級"
+    },
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "報告した",
+      "note": ""
+    },
+    "delays": {
+      "lemma": "delay",
+      "pos": "名",
+      "ja": "遅れ、遅延",
+      "note": ""
+    },
+    "averaged": {
+      "lemma": "average",
+      "pos": "動",
+      "ja": "平均～だった",
+      "note": ""
+    },
+    "monthly": {
+      "lemma": "monthly",
+      "pos": "形",
+      "ja": "月間の、毎月の",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力、負担",
+      "note": ""
+    },
+    "inland": {
+      "lemma": "inland",
+      "pos": "形",
+      "ja": "内陸の",
+      "note": ""
+    },
+    "delivery": {
+      "lemma": "delivery",
+      "pos": "名",
+      "ja": "配送、配達",
+      "note": ""
+    },
+    "advised": {
+      "lemma": "advise",
+      "pos": "動",
+      "ja": "助言した",
+      "note": "advise A to do で「Aに～するよう助言する」"
+    },
+    "importers": {
+      "lemma": "importer",
+      "pos": "名",
+      "ja": "輸入業者",
+      "note": ""
+    },
+    "monitoring": {
+      "lemma": "monitor",
+      "pos": "動",
+      "ja": "注視すること",
+      "note": "keep ～ing で「～し続ける」"
+    },
+    "tariff": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "現在完了形の継続用法（have＋過去分詞＋since ～：～以来ずっと）",
+    "quote": "Monthly imports have stayed above 2.5 million units since July, which may be adding pressure to inland delivery networks.",
+    "quoteJa": "月間の輸入量は7月以降ずっと250万単位を上回っており、これが内陸の配送網への負担を強めている可能性がある。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "have stayed は「have＋過去分詞」の現在完了形で、ここでは「過去のある時点から今までずっと続いている」という継続を表す。since July（7月以来）が始まりの時点を示しており、「7月から今まで、250万単位超の状態が続いている」という意味になる。後半の , which は前の節全体を受けて「そのことが～」と補足している。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "過去形の Monthly imports stayed above 2.5 million units in July. は「7月に上回っていた」という過去の事実だけを述べ、今も続いているかは分からない。期間の長さを言うときは for を使い、have stayed above 2.5 million units for four months（4か月間ずっと）となる。since の後ろは「始まりの時点」、for の後ろは「期間の長さ」と覚える。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では「Sales ____ steadily since the new store opened.」の空所に have risen を選ばせる問題が定番。since ＋過去の時点があれば現在完了形を選び、過去形 rose や現在形 rise は選ばない。逆に last year や in 2022 など過去の一点を表す語句があるときは現在完了形は使えず、過去形になる。Part 6 でも時制の選択問題として前後の文の時を表す語句が手がかりになる。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "We have worked with this supplier since 2019.（当社は2019年からこの仕入先と取引している）／ Prices have remained stable for the past six months.（価格はこの6か月間、安定している）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米調査会社デカルトが2026年11月11日に公表した報告で、10月の米コンテナ輸入は267万4,808TEUと過去最高になった。2022年5月の記録を約5万TEU上回り、前年同月比は16%増。中国発は98万7,805TEUで、4か月連続の増加だった。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "TEUは長さ20フィートのコンテナ1本分を表す単位。輸入が急に増えると、船が着いても荷下ろしや引き取りが追いつかず、港湾混雑(port congestion)が起きる。荷物が港に滞れば、トラックや鉄道の手配も遅れる。船の空きも減るため、船会社が荷主に請求する運賃(freight rate)は上がりやすい。月250万TEU超が7月から続き、内陸輸送への負担が指摘されている。"
+    },
+    {
+      "heading": "📌 3. 過去の混雑で荷主はどう動いたか",
+      "body": "米ホーム・デポは2021年6月、同社として初めてコンテナ船を1隻まるごと借りる用船(charter)に踏み切った。当時、西海岸向け40フィートコンテナの費用は150%超上がっていた。しかし船の空きが戻り運賃が急落した2022年には、用船をやめている。米ウォルマートも2021年に船を借り、混雑する港へ自社の社員を送って荷揚げを手伝わせた。同社は2012年の港湾ストの際にも用船を使っており、初めて挑んだホーム・デポとは経験の蓄積が違った。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本郵船・商船三井・川崎汽船がコンテナ船事業を統合してつくったオーシャン・ネットワーク・エクスプレス（ONE）は2026年11月4日、今年度の純利益見通しを9億ドルから20億ドルへ引き上げた。7〜9月期の純利益は約13億ドル。積み荷の増加と太平洋航路の運賃上昇が、燃料費の増加を上回った。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "port congestion",
+      "pos": "熟",
+      "ja": "港湾混雑",
+      "gloss": "（＝港に船や荷物が集中して、作業が進まなくなること）",
+      "example": {
+        "en": "Port congestion forced the company to change its delivery schedule.",
+        "ja": "港湾混雑のため、その会社は納品日程を変更せざるを得なかった。"
+      }
+    },
+    {
+      "term": "freight rate",
+      "pos": "熟",
+      "ja": "運賃、貨物運賃",
+      "gloss": "（＝荷物を運んでもらうために運送会社へ払う料金のこと）",
+      "example": {
+        "en": "The freight rate for this route doubled in three months.",
+        "ja": "この航路の運賃は3か月で2倍になった。"
+      }
+    },
+    {
+      "term": "charter",
+      "pos": "名・動",
+      "ja": "用船、貸し切り／借り切る",
+      "gloss": "（＝船や飛行機、バスをまるごと借りること）",
+      "example": {
+        "en": "The firm will charter a bus for the company trip.",
+        "ja": "その会社は社員旅行のためにバスを借り切る予定だ。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "US container imports hit all-time high in October, Descartes reports",
+      "publisher": "Container News",
+      "url": "https://container-news.com/us-container-imports-hit-all-time-high-in-october-descartes-reports/",
+      "date": "2026-11-11"
+    },
+    {
+      "title": "U.S. Container Imports Hit Record High as China Trade Surges, Port Delays Mount",
+      "publisher": "MarineLink",
+      "url": "https://www.marinelink.com/news/us-container-imports-hit-record-high-544286",
+      "date": "2026-11-11"
+    },
+    {
+      "title": "US container imports set all-time volume record in October as Chinese imports spike, Descartes says",
+      "publisher": "Reuters (Investing.com)",
+      "url": "https://www.investing.com/news/economic-indicators/us-container-imports-set-alltime-volume-record-in-october-as-chinese-imports-spike-descartes-says-5019778",
+      "date": "2026-11-11"
+    },
+    {
+      "title": "How bad are global shipping snafus? Home Depot contracted its own container ship as a safeguard",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/amp/2021/06/13/home-depot-contracted-its-own-container-ship-to-avoid-shipping-delays.html",
+      "date": "2021-06-13"
+    },
+    {
+      "title": "ONE more than doubles FY2026 profit forecast",
+      "publisher": "WorldCargo News",
+      "url": "https://www.worldcargonews.com/news/2026/11/one-more-than-doubles-fy2026-profit-forecast/",
+      "date": "2026-11-04"
+    }
+  ]
+}
