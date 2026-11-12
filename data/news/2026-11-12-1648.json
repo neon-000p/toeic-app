@@ -508,5 +508,23 @@
       "url": "https://www.worldcargonews.com/news/2026/11/one-more-than-doubles-fy2026-profit-forecast/",
       "date": "2026-11-04"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-12-1648/00.mp3",
+      "audio/2026-11-12-1648/01.mp3",
+      "audio/2026-11-12-1648/02.mp3",
+      "audio/2026-11-12-1648/03.mp3",
+      "audio/2026-11-12-1648/04.mp3",
+      "audio/2026-11-12-1648/05.mp3",
+      "audio/2026-11-12-1648/06.mp3",
+      "audio/2026-11-12-1648/07.mp3",
+      "audio/2026-11-12-1648/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 246924,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-12T07:50:57.999Z",
+    "trimmed": true
+  }
 }
