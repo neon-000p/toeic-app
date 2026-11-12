@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-11-13-0408",
+  "date": "2026-11-13",
+  "time": "04:08",
+  "createdAt": "2026-11-13T04:08:00+09:00",
+  "sample": false,
+  "docType": "letter",
+  "scene": "手紙｜取引先への倉庫移転と引き取り場所の変更",
+  "intro": "Questions 1-4 refer to the following letter.",
+  "header": [
+    {
+      "label": "",
+      "text": "13 November"
+    },
+    {
+      "label": "",
+      "text": "Dear Mr. Castellano,"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "We are writing to inform you that Corvane Supply will relocate its main warehouse at the end of this month.",
+          "ja": "今月末にコーヴェイン・サプライが主要倉庫を移転することを、お知らせいたします。"
+        },
+        {
+          "en": "All shipments to your company ------- from our new facility at 48 Harlow Road in Eastfield.",
+          "ja": "貴社向けの出荷はすべて、イーストフィールドのハーロウ通り48番地の新施設から発送されます。",
+          "q": 1
+        },
+        {
+          "en": "The current site on Mill Street will close on 28 November.",
+          "ja": "ミル通りの現在の拠点は11月28日に閉鎖します。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "The move will allow us to store twice as much stock and fill large orders more quickly.",
+          "ja": "この移転により、在庫を2倍保管でき、大口の注文にもより早く対応できるようになります。"
+        },
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 2
+        },
+        {
+          "en": "Drivers who collect goods from us should go to the Harlow Road site from 1 December onward.",
+          "ja": "当社で商品を引き取るドライバーの方は、12月1日以降はハーロウ通りの拠点へお越しください。"
+        },
+        {
+          "en": "Loading hours there will be 7:00 A.M. to 6:00 P.M., which is one hour longer than at ------- current location.",
+          "ja": "そちらの積み込み時間は午前7時から午後6時までで、当社の現在の拠点より1時間長くなります。",
+          "q": 3
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "A map of the new site is enclosed with this letter for your reference.",
+          "ja": "ご参考までに、新拠点の地図を本状に同封しております。"
+        },
+        {
+          "en": "We appreciate your ------- during this transition, and please do not hesitate to contact me with any questions.",
+          "ja": "移転期間中のご辛抱に感謝申し上げます。ご不明な点がございましたら、遠慮なく私までご連絡ください。",
+          "q": 4
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "verb",
+      "choices": [
+        {
+          "key": "A",
+          "text": "dispatched",
+          "ja": "（過去）発送した"
+        },
+        {
+          "key": "B",
+          "text": "were dispatched",
+          "ja": "（過去・受動）発送された"
+        },
+        {
+          "key": "C",
+          "text": "will be dispatched",
+          "ja": "（未来・受動）発送される"
+        },
+        {
+          "key": "D",
+          "text": "have been dispatched",
+          "ja": "（現在完了・受動）発送されてきた"
+        }
+      ],
+      "answer": "C",
+      "explanation": "空所の文だけでは時制が決まらない。前の文に「今月末に倉庫を移転する（will relocate）」、後ろの文に「現在の拠点は11月28日に閉鎖する」とあり、新施設からの発送はこれから先のことなので未来の受動態 will be dispatched が入る。have been dispatched は「すでに発送されてきた」となり、まだ移転していない状況と食い違う。",
+      "tip": "Part 6 の時制問題は、空所の文に時の語が無ければ、前後の文の日付や will / last month を探す。"
+    },
+    {
+      "id": "q2",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "However, the change may affect customers who pick up their orders themselves.",
+          "ja": "ただし、この変更は注文品をご自身で引き取られるお客様に影響する場合があります。"
+        },
+        {
+          "key": "B",
+          "text": "We apologize again for the delay in delivering your last order.",
+          "ja": "前回のご注文の配送が遅れたことを、改めてお詫び申し上げます。"
+        },
+        {
+          "key": "C",
+          "text": "The new facility was purchased after a long search last spring.",
+          "ja": "新施設は、長い物件探しを経て昨年の春に購入されました。"
+        },
+        {
+          "key": "D",
+          "text": "Our staff will contact you next week to confirm your new address.",
+          "ja": "来週、当社の担当者から貴社の新しい住所の確認のためにご連絡します。"
+        }
+      ],
+      "answer": "A",
+      "explanation": "前の文は移転の利点（在庫が増え、出荷が早くなる）を述べ、後ろの文は「当社で商品を引き取るドライバーは新拠点へ」と注意を述べている。利点から注意へ切り替える However で始まり、引き取りに来る顧客に話をつなぐ A が両方につながる。D は移転するのが当社なのに「貴社の新しい住所」としており、文書の前提と合わない。B の遅延はどこにも出てこない。",
+      "tip": "一文挿入は、前の文と後ろの文の話題がどう変わるかを先に見る。利点から注意に変われば、However などの転換の語で始まる文が入りやすい。"
+    },
+    {
+      "id": "q3",
+      "type": "pron",
+      "choices": [
+        {
+          "key": "A",
+          "text": "your",
+          "ja": "あなた（方）の"
+        },
+        {
+          "key": "B",
+          "text": "their",
+          "ja": "彼らの"
+        },
+        {
+          "key": "C",
+          "text": "its",
+          "ja": "その"
+        },
+        {
+          "key": "D",
+          "text": "our",
+          "ja": "私たちの"
+        }
+      ],
+      "answer": "D",
+      "explanation": "比べているのは新拠点と、移転前の倉庫（ミル通りの拠点）である。第1段落で、その倉庫は書き手の会社のもの（its main warehouse / The current site）だと分かるので、手紙の書き手から見た our が入る。your current location とすると受取人の会社の所在地になり、倉庫の比較にならない。",
+      "tip": "手紙やメールの代名詞は、誰が誰に書いているかを先に決める。書き手の会社は we / our、受取人は you / your。"
+    },
+    {
+      "id": "q4",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "ability",
+          "ja": "能力"
+        },
+        {
+          "key": "B",
+          "text": "patience",
+          "ja": "辛抱、忍耐"
+        },
+        {
+          "key": "C",
+          "text": "proposal",
+          "ja": "提案"
+        },
+        {
+          "key": "D",
+          "text": "estimate",
+          "ja": "見積もり"
+        }
+      ],
+      "answer": "B",
+      "explanation": "during this transition（移転の間）に相手に感謝するのは、不便をかけることへの「辛抱」なので patience が入る。proposal も appreciate your proposal の形はあるが、移転の期間中という時の表現と結び付かず、受取人が提案をした話も文書に無い。",
+      "tip": "お礼の決まり文句 We appreciate your ------- は、文書の状況（移転・工事・遅れ）から相手に何をお願いしているかで決める。"
+    }
+  ],
+  "glossary": {
+    "inform you that": {
+      "lemma": "inform A that ...",
+      "pos": "熟",
+      "ja": "Aに〜を知らせる",
+      "note": "手紙・メールの書き出しの定番",
+      "example": {
+        "en": "We are pleased to inform you that your application has been approved.",
+        "ja": "お申し込みが承認されたことをお知らせいたします。"
+      }
+    },
+    "relocate": {
+      "lemma": "relocate",
+      "pos": "動",
+      "ja": "移転する、移す",
+      "note": "",
+      "example": {
+        "en": "The bakery plans to relocate to a larger shop downtown next year.",
+        "ja": "そのパン屋は来年、中心街のもっと広い店に移転する予定だ。"
+      }
+    },
+    "twice as much": {
+      "lemma": "twice as much",
+      "pos": "熟",
+      "ja": "2倍の量の",
+      "note": "数えられる名詞には twice as many",
+      "example": {
+        "en": "The new printer uses twice as much paper as the old one.",
+        "ja": "新しいプリンターは古いものの2倍の紙を使う。"
+      }
+    },
+    "fill large orders": {
+      "lemma": "fill an order",
+      "pos": "熟",
+      "ja": "注文に応じる、注文品をそろえて出す",
+      "note": "fill は「注文を満たす」の意味",
+      "example": {
+        "en": "Our factory can fill large orders within five working days.",
+        "ja": "当社の工場は5営業日以内に大口の注文に対応できる。"
+      }
+    },
+    "onward": {
+      "lemma": "onward",
+      "pos": "副",
+      "ja": "（時点）以降",
+      "note": "from ... onward で「〜以降」",
+      "example": {
+        "en": "The store will open at 9:00 A.M. from next Monday onward.",
+        "ja": "来週の月曜日以降、その店は午前9時に開店する。"
+      }
+    },
+    "loading hours": {
+      "lemma": "loading hours",
+      "pos": "名",
+      "ja": "積み込み時間",
+      "note": "",
+      "example": {
+        "en": "Trucks may use the rear gate only during loading hours.",
+        "ja": "トラックが裏門を使えるのは積み込み時間の間だけだ。"
+      }
+    },
+    "enclosed": {
+      "lemma": "enclose",
+      "pos": "動",
+      "ja": "同封する",
+      "note": "is enclosed で「同封されている」",
+      "example": {
+        "en": "Please find the signed contract enclosed with this message.",
+        "ja": "署名済みの契約書を同封しましたのでご確認ください。"
+      }
+    },
+    "for your reference": {
+      "lemma": "for your reference",
+      "pos": "熟",
+      "ja": "ご参考までに",
+      "note": "",
+      "example": {
+        "en": "I have attached last year's budget for your reference.",
+        "ja": "ご参考までに、昨年度の予算を添付しました。"
+      }
+    },
+    "transition": {
+      "lemma": "transition",
+      "pos": "名",
+      "ja": "移行（期間）",
+      "note": "",
+      "example": {
+        "en": "The transition to the new payroll system took about three weeks.",
+        "ja": "新しい給与システムへの移行には約3週間かかった。"
+      }
+    },
+    "do not hesitate to": {
+      "lemma": "do not hesitate to do",
+      "pos": "熟",
+      "ja": "遠慮なく〜する",
+      "note": "please do not hesitate to contact ... は締めの定番",
+      "example": {
+        "en": "If you need more samples, do not hesitate to ask our sales staff.",
+        "ja": "さらに見本が必要でしたら、遠慮なく営業担当にお申し付けください。"
+      }
+    }
+  },
+  "point": {
+    "lead": "空所の文で決まらなければ、前後の文と書き手・読み手の関係に戻る",
+    "items": [
+      {
+        "title": "時制は前後の文の時の表現で決める",
+        "body": "空所の文に日付や時の副詞が無いときは、前後の文の will / 日付 / last month を探し、その出来事が先か後かを決めてから形を選ぶ。"
+      },
+      {
+        "title": "代名詞は「誰が誰に」を先に決める",
+        "body": "手紙やメールでは、書き手の会社が we / our、受取人が you / your。冒頭の1〜2文で書き手と受取人を押さえておくと、代名詞の問題で迷わない。"
+      },
+      {
+        "title": "一文挿入は話題の切り替わりを見る",
+        "body": "前の文と後ろの文で話がどう変わるか（利点から注意、案内から依頼）を先に確かめ、その橋渡しになる文を選ぶ。どちらか片方にしかつながらない文は外す。"
+      }
+    ]
+  }
+}
