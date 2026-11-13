@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "About how much money in total does Aldi expect its new price cuts to save shoppers, according to the article?",
+      "promptJa": "記事によると、Aldi は新たな値下げで買い物客が合計およそいくら節約できると見込んでいますか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT mentioned in the article as an item with a lower price?",
+      "promptJa": "値下げされた品目として、記事で述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

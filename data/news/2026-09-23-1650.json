@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "According to the article, how much did spot freight rates to the U.S. East Coast reach on September 17?",
+      "promptJa": "記事によると、9月17日に米国東海岸向けのスポット運賃はいくらに達しましたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why do carriers cancel sailings, known as blank sailings?",
+      "promptJa": "記事によると、海運会社が「ブランクセーリング」と呼ばれる欠航を行うのはなぜですか。",
       "choices": [
         {
           "key": "A",

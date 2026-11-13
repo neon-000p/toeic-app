@@ -59,6 +59,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "According to the article, about how much in American exports did Canada's new tariffs target?",
+      "promptJa": "記事によると、カナダの新たな関税は米国からの輸出品のおよそいくら分を対象にしていますか。",
       "choices": [
         {
           "key": "A",
@@ -93,6 +94,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT mentioned as an action taken by the Trump administration?",
+      "promptJa": "トランプ政権が取った措置として述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

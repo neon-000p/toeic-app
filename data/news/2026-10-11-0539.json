@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What was the price of Brent after it fell on Friday?",
+      "promptJa": "金曜日に下落した後のブレント原油の価格はいくらでしたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did oil prices jump earlier on Thursday?",
+      "promptJa": "木曜日の早い時間に原油価格が急騰したのはなぜですか。",
       "choices": [
         {
           "key": "A",

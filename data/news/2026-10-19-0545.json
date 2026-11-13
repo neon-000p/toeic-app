@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What does DHL now expect for its 2026 operating profit?",
+      "promptJa": "DHL は2026年の営業利益をどう見込んでいますか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT mentioned as a reason for the higher forecast?",
+      "promptJa": "予想を引き上げた理由として述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

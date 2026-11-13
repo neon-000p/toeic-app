@@ -57,6 +57,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What is the speaker mainly doing?",
+      "promptJa": "話し手は主に何をしていますか。",
       "choices": [
         {
           "key": "A",
@@ -91,6 +92,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "What are visitors not allowed to do on the factory floor?",
+      "promptJa": "見学者が工場のフロアでしてはいけないことは何ですか。",
       "choices": [
         {
           "key": "A",
@@ -124,6 +126,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "What is suggested about the factory?",
+      "promptJa": "工場について何が示唆されていますか。",
       "choices": [
         {
           "key": "A",

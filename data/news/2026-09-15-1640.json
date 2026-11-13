@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What must users do to try the new Siri assistant?",
+      "promptJa": "新しい Siri アシスタントを試すには、利用者は何をしなければなりませんか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to analysts, why is Apple releasing the new Siri gradually?",
+      "promptJa": "アナリストによると、Apple が新しい Siri を段階的に公開しているのはなぜですか。",
       "choices": [
         {
           "key": "A",

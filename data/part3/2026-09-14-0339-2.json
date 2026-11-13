@@ -74,6 +74,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "According to the woman, what is different about the premium package?",
+      "promptJa": "女性によると、プレミアムパッケージは何が違いますか。",
       "choices": [
         {
           "key": "A",
@@ -107,6 +108,7 @@
       "id": "q2",
       "type": "intent",
       "prompt": "What does the woman mean when she says, \"the premium package makes more sense here\"?",
+      "promptJa": "女性が \"the premium package makes more sense here\" と言う際、何を意図していますか。",
       "choices": [
         {
           "key": "A",
@@ -141,6 +143,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What will most likely happen after the man signs the contract?",
+      "promptJa": "男性が契約書に署名した後、何が起こると考えられますか。",
       "choices": [
         {
           "key": "A",

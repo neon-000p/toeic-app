@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "By how much did imports at the port rise from a year earlier?",
+      "promptJa": "この港の輸入量は前年からどれだけ増えましたか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did some shipments arrive in September?",
+      "promptJa": "一部の貨物が9月に到着したのはなぜですか。",
       "choices": [
         {
           "key": "A",

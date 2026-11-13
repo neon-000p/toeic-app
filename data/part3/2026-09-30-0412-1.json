@@ -84,6 +84,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
       "choices": [
         {
           "key": "A",
@@ -118,6 +119,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "Why does the woman rule out the ground-floor hall?",
+      "promptJa": "女性が1階のホールを候補から外すのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -152,6 +154,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What does the woman say she will do today?",
+      "promptJa": "女性は今日何をすると言っていますか。",
       "choices": [
         {
           "key": "A",

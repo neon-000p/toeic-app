@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much did Kroger's adjusted earnings per share exceed analysts' expectations by?",
+      "promptJa": "Kroger の調整後1株当たり利益は、アナリスト予想をどれだけ上回りましたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why did Kroger lower its full-year sales forecast?",
+      "promptJa": "記事によると、Kroger が通期の売上予想を引き下げたのはなぜですか。",
       "choices": [
         {
           "key": "A",

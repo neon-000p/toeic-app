@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much revenue does the company expect in the new fiscal year?",
+      "promptJa": "会社は新年度にどれだけの売上高を見込んでいますか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why does the company expect strong growth?",
+      "promptJa": "記事によると、会社が力強い成長を見込んでいるのはなぜですか。",
       "choices": [
         {
           "key": "A",

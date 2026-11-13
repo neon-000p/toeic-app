@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What share of the cargo in Long Beach is handled at terminals where the watchmen work?",
+      "promptJa": "ロングビーチ港の貨物のうち、警備員が働くターミナルで扱われるのはどれだけの割合ですか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why could a strike by a small group have a large effect?",
+      "promptJa": "小さなグループのストライキが大きな影響を及ぼしうるのはなぜですか。",
       "choices": [
         {
           "key": "A",

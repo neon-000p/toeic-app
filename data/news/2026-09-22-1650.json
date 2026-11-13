@@ -79,6 +79,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "By how much did the average price of the 80 medicines fall?",
+      "promptJa": "80品目の医薬品の平均価格はどれだけ下がりましたか。",
       "choices": [
         {
           "key": "A",
@@ -113,6 +114,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why does a drug's price drop automatically under the price-volume agreement?",
+      "promptJa": "記事によると、価格・数量協定のもとで薬価が自動的に下がるのはなぜですか。",
       "choices": [
         {
           "key": "A",

@@ -61,6 +61,7 @@
       "id": "q1",
       "type": "who",
       "prompt": "Who most likely are the listeners?",
+      "promptJa": "聞き手は誰だと考えられますか。",
       "choices": [
         {
           "key": "A",
@@ -95,6 +96,7 @@
       "id": "q2",
       "type": "intent",
       "prompt": "What does the speaker mean when he says, \"don't be surprised if it looks a little quieter than usual\"?",
+      "promptJa": "話し手が \"don't be surprised if it looks a little quieter than usual\" と言う際、何を意図していますか。",
       "choices": [
         {
           "key": "A",
@@ -129,6 +131,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What are the listeners asked to do?",
+      "promptJa": "聞き手は何をするよう求められていますか。",
       "choices": [
         {
           "key": "A",

@@ -75,6 +75,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "About how much is the generic expected to cost per person each year?",
+      "promptJa": "後発薬の費用は、1人あたり年間およそいくらになると見込まれていますか。",
       "choices": [
         {
           "key": "A",
@@ -109,6 +110,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why can the generic NOT be sold in the U.S. yet?",
+      "promptJa": "この後発薬がまだ米国で販売できないのはなぜですか。",
       "choices": [
         {
           "key": "A",

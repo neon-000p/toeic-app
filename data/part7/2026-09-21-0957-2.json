@@ -84,6 +84,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "Why was the e-mail sent?",
+      "promptJa": "このメールはなぜ送られましたか。",
       "choices": [
         {
           "key": "A",
@@ -122,6 +123,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "When does registration close?",
+      "promptJa": "登録はいつ締め切られますか。",
       "choices": [
         {
           "key": "A",
@@ -160,6 +162,7 @@
       "id": "q3",
       "type": "synonym",
       "prompt": "The word \"accommodated\" in paragraph 2, line 2, is closest in meaning to",
+      "promptJa": "第2段落2行目の \"accommodated\" に最も意味が近いのは",
       "choices": [
         {
           "key": "A",
@@ -198,6 +201,7 @@
       "id": "q4",
       "type": "infer",
       "prompt": "What is suggested about the help desk?",
+      "promptJa": "ヘルプデスクについて何が示唆されていますか。",
       "choices": [
         {
           "key": "A",

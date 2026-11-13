@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "By how much did Apple raise the price of the iPhone 18 Pro?",
+      "promptJa": "Apple は iPhone 18 Pro の価格をどれだけ引き上げましたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why must phone makers pay more for each device?",
+      "promptJa": "スマートフォンメーカーが1台ごとにより多く支払わなければならないのはなぜですか。",
       "choices": [
         {
           "key": "A",

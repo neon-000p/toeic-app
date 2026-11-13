@@ -64,6 +64,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What are the writers mainly discussing?",
+      "promptJa": "書き手たちは主に何について話し合っていますか。",
       "choices": [
         {
           "key": "A",
@@ -102,6 +103,7 @@
       "id": "q2",
       "type": "intent",
       "prompt": "At 10:47 A.M., what does Mr. Ito most likely mean when he writes, \"That's cutting it close\"?",
+      "promptJa": "午前10時47分に、伊藤さんが \"That's cutting it close\" と書いているのは、何を意図していると考えられますか。",
       "choices": [
         {
           "key": "A",
@@ -145,6 +147,7 @@
       "id": "q3",
       "type": "detail",
       "prompt": "What does Mr. Ito agree to do?",
+      "promptJa": "伊藤さんは何をすることに同意していますか。",
       "choices": [
         {
           "key": "A",

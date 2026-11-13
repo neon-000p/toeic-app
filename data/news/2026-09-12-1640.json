@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What is the new starting price of the iPhone 18 Pro?",
+      "promptJa": "iPhone 18 Pro の新しい最低価格はいくらですか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did Apple raise the price of the iPhone 18 Pro?",
+      "promptJa": "Apple が iPhone 18 Pro の価格を引き上げたのはなぜですか。",
       "choices": [
         {
           "key": "A",

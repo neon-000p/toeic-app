@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much does Toshiba plan to spend to expand its factory?",
+      "promptJa": "東芝は工場の拡張にいくら投じる予定ですか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why are investors worried about the news?",
+      "promptJa": "投資家がこのニュースを懸念しているのはなぜですか。",
       "choices": [
         {
           "key": "A",

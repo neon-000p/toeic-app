@@ -75,6 +75,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "When will the new Congress take office?",
+      "promptJa": "新しい議会はいつ発足しますか。",
       "choices": [
         {
           "key": "A",
@@ -109,6 +110,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why may it be difficult for Democrats to remove tariffs quickly?",
+      "promptJa": "民主党が関税をすぐに撤廃するのが難しいかもしれないのはなぜですか。",
       "choices": [
         {
           "key": "A",

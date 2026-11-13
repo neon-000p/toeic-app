@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How large was Samsung's share of global smartphone shipments in the first half of 2026?",
+      "promptJa": "2026年上半期、世界のスマートフォン出荷台数に占める Samsung のシェアはどのくらいでしたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why could Samsung manage rising costs better than some rivals?",
+      "promptJa": "記事によると、Samsung が一部の競合よりもコスト上昇にうまく対処できるかもしれないのはなぜですか。",
       "choices": [
         {
           "key": "A",

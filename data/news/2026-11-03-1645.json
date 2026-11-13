@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "By how much did Brent crude fall on Monday?",
+      "promptJa": "月曜日にブレント原油はどれだけ下落しましたか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why have oil prices stayed high for months?",
+      "promptJa": "記事によると、原油価格が何か月も高止まりしているのはなぜですか。",
       "choices": [
         {
           "key": "A",

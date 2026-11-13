@@ -57,6 +57,7 @@
       "id": "q1",
       "type": "who",
       "prompt": "Who most likely is the speaker?",
+      "promptJa": "話し手は誰だと考えられますか。",
       "choices": [
         {
           "key": "A",
@@ -90,6 +91,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "What has caused the delays?",
+      "promptJa": "遅れの原因は何ですか。",
       "choices": [
         {
           "key": "A",
@@ -123,6 +125,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "What is suggested about the Elm Street station?",
+      "promptJa": "エルム通り駅について何が示唆されていますか。",
       "choices": [
         {
           "key": "A",

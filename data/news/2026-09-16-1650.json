@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "According to the article, on what date did Oracle tell many employees that day would be their last workday?",
+      "promptJa": "記事によると、Oracle が多くの従業員に「この日が最終出勤日だ」と伝えたのは何日ですか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why does Oracle say it is reducing its workforce, according to the article?",
+      "promptJa": "記事によると、Oracle は人員削減の理由を何と説明していますか。",
       "choices": [
         {
           "key": "A",

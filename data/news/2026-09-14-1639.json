@@ -79,6 +79,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "According to the article, how many people are diagnosed with glioma in the U.S. each year?",
+      "promptJa": "記事によると、米国では毎年何人が神経膠腫（グリオーマ）と診断されていますか。",
       "choices": [
         {
           "key": "A",
@@ -113,6 +114,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why do doctors use Pixclara during a brain scan?",
+      "promptJa": "医師が脳のスキャン中に Pixclara を使うのはなぜですか。",
       "choices": [
         {
           "key": "A",

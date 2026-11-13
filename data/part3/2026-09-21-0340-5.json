@@ -74,6 +74,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "Why is the shipment of circuit boards delayed?",
+      "promptJa": "回路基板の出荷が遅れているのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -107,6 +108,7 @@
       "id": "q2",
       "type": "infer",
       "prompt": "What is suggested about the boards from the backup supplier?",
+      "promptJa": "代替の仕入先からの基板について何が示唆されていますか。",
       "choices": [
         {
           "key": "A",
@@ -140,6 +142,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What will the woman most likely do right after this conversation?",
+      "promptJa": "この会話の直後に女性は何をすると考えられますか。",
       "choices": [
         {
           "key": "A",

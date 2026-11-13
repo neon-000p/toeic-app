@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "When will Walmart's Deal Days take place?",
+      "promptJa": "Walmart の「Deal Days」はいつ行われますか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the summary, why does the timing matter?",
+      "promptJa": "要約によると、その時期が重要なのはなぜですか。",
       "choices": [
         {
           "key": "A",

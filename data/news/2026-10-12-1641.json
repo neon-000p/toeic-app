@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "When will Netflix report its third-quarter results?",
+      "promptJa": "Netflix はいつ第3四半期の決算を発表しますか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why does the article say the layoff plan is not yet confirmed?",
+      "promptJa": "記事によると、人員削減計画がまだ確定していないのはなぜですか。",
       "choices": [
         {
           "key": "A",

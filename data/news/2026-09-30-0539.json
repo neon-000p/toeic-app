@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What is the new cash rate set by the Reserve Bank of Australia?",
+      "promptJa": "オーストラリア準備銀行が定めた新しい政策金利（キャッシュレート）はいくらですか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT mentioned as a reason for high inflation?",
+      "promptJa": "インフレが高い理由として述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

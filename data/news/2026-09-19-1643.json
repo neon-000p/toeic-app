@@ -75,6 +75,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What was the approximate price of oil on Thursday, according to the article?",
+      "promptJa": "記事によると、木曜日の原油価格はおよそいくらでしたか。",
       "choices": [
         {
           "key": "A",
@@ -109,6 +110,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why are workers transferring oil from tanker to tanker near Oman's Sohar port?",
+      "promptJa": "オマーンのソハール港付近で作業員がタンカー間で原油を積み替えているのはなぜですか。",
       "choices": [
         {
           "key": "A",

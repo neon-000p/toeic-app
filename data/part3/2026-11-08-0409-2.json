@@ -74,6 +74,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
       "choices": [
         {
           "key": "A",
@@ -108,6 +109,7 @@
       "id": "q2",
       "type": "intent",
       "prompt": "What does the woman imply when she says, \"Sixty\"?",
+      "promptJa": "女性が \"Sixty\" と言う際、何をほのめかしていますか。",
       "choices": [
         {
           "key": "A",
@@ -142,6 +144,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "What is suggested about the reception?",
+      "promptJa": "レセプションについて何が示唆されていますか。",
       "choices": [
         {
           "key": "A",

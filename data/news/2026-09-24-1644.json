@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much did EvilTokens charge new users to sign up?",
+      "promptJa": "EvilTokens は新規利用者の登録にいくら請求していましたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "According to the article, which of the following is NOT true?",
+      "promptJa": "記事によると、正しくないものはどれですか。",
       "choices": [
         {
           "key": "A",

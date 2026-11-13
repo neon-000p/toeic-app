@@ -69,6 +69,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
       "choices": [
         {
           "key": "A",
@@ -103,6 +104,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "Why is Friday difficult for the man?",
+      "promptJa": "男性にとって金曜日が都合が悪いのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -137,6 +139,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What will the woman do today?",
+      "promptJa": "女性は今日何をしますか。",
       "choices": [
         {
           "key": "A",

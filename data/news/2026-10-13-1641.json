@@ -75,6 +75,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What did the Federal Reserve do last month?",
+      "promptJa": "連邦準備制度は先月何をしましたか。",
       "choices": [
         {
           "key": "A",
@@ -109,6 +110,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT mentioned as an effect of higher yields?",
+      "promptJa": "利回り上昇の影響として述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

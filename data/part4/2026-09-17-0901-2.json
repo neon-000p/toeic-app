@@ -57,6 +57,7 @@
       "id": "q1",
       "type": "who",
       "prompt": "Who most likely is the speaker?",
+      "promptJa": "話し手は誰だと考えられますか。",
       "choices": [
         {
           "key": "A",
@@ -91,6 +92,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "Why was the gate changed?",
+      "promptJa": "搭乗口が変更されたのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -124,6 +126,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What are some passengers asked to do?",
+      "promptJa": "一部の乗客は何をするよう求められていますか。",
       "choices": [
         {
           "key": "A",

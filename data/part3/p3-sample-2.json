@@ -82,6 +82,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What problem do the speakers have?",
+      "promptJa": "話し手たちはどんな問題を抱えていますか。",
       "choices": [
         {
           "key": "A",
@@ -116,6 +117,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "Why is Room D not suitable?",
+      "promptJa": "D会議室が適していないのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -150,6 +152,7 @@
       "id": "q3",
       "type": "intent",
       "prompt": "What does the woman imply when she says, \"Then let's wait for facilities\"?",
+      "promptJa": "女性が \"Then let's wait for facilities\" と言う際、何をほのめかしていますか。",
       "choices": [
         {
           "key": "A",

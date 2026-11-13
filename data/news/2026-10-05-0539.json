@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How many jobs did employers add in September?",
+      "promptJa": "9月に雇用主は何人分の雇用を増やしましたか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why may people who lose a job need months to find another?",
+      "promptJa": "失業した人が次の仕事を見つけるのに何か月もかかる可能性があるのはなぜですか。",
       "choices": [
         {
           "key": "A",

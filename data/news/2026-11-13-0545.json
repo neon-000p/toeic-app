@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "Who will lead the company until a permanent CEO is chosen?",
+      "promptJa": "正式な CEO が選ばれるまで、誰が会社を率いますか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "What is NOT mentioned about the board?",
+      "promptJa": "取締役会について述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

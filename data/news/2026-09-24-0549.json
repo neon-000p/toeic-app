@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What was the yield on the 10-year Treasury note on Wednesday, according to the article?",
+      "promptJa": "記事によると、水曜日の10年物米国債の利回りはいくらでしたか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT mentioned in the article as a reason for the jump in Treasury yields?",
+      "promptJa": "米国債利回りが急上昇した理由として、記事で述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much more will customers pay per package during the busiest period?",
+      "promptJa": "最も忙しい時期に、顧客は荷物1個あたりいくら多く支払うことになりますか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT mentioned as a choice for retailers?",
+      "promptJa": "小売業者の選択肢として述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

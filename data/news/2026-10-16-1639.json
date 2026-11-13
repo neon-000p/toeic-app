@@ -75,6 +75,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much had economists expected retail sales to rise in September?",
+      "promptJa": "エコノミストは9月の小売売上高がどれだけ増えると予想していましたか。",
       "choices": [
         {
           "key": "A",
@@ -109,6 +110,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "What mainly caused the increase in retail sales?",
+      "promptJa": "小売売上高の増加の主な要因は何ですか。",
       "choices": [
         {
           "key": "A",

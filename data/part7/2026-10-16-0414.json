@@ -76,6 +76,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What is the purpose of the article?",
+      "promptJa": "この記事の目的は何ですか。",
       "choices": [
         {
           "key": "A",
@@ -114,6 +115,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "Why did the library decide to change its hours?",
+      "promptJa": "図書館が開館時間を変更することにしたのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -152,6 +154,7 @@
       "id": "q3",
       "type": "insert",
       "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "promptJa": "[1]、[2]、[3]、[4] と記された箇所のうち、次の文が入るのに最もふさわしいのはどれですか。",
       "insert": "Several of them also asked for a quiet place to study.",
       "choices": [
         {
@@ -191,6 +194,7 @@
       "id": "q4",
       "type": "detail",
       "prompt": "How will the library pay for the additional costs?",
+      "promptJa": "図書館は追加の費用をどのようにまかないますか。",
       "choices": [
         {
           "key": "A",

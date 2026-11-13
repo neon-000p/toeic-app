@@ -76,6 +76,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What is the purpose of the article?",
+      "promptJa": "この記事の目的は何ですか。",
       "choices": [
         {
           "key": "A",
@@ -114,6 +115,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "How much did the city spend on the renovation?",
+      "promptJa": "市は改修にいくら費やしましたか。",
       "choices": [
         {
           "key": "A",
@@ -152,6 +154,7 @@
       "id": "q3",
       "type": "insert",
       "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "promptJa": "[1]、[2]、[3]、[4] と記された箇所のうち、次の文が入るのに最もふさわしいのはどれですか。",
       "insert": "Vendors who sold at the market before the renovation will be given first choice.",
       "choices": [
         {

@@ -79,6 +79,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What problem does the man report?",
+      "promptJa": "男性はどんな問題を報告していますか。",
       "choices": [
         {
           "key": "A",
@@ -113,6 +114,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "Why can't the regular driver handle the new pickup time?",
+      "promptJa": "いつもの運転手が新しい集荷時間に対応できないのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -146,6 +148,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "What is suggested about the backup driver?",
+      "promptJa": "代わりの運転手について何が示唆されていますか。",
       "choices": [
         {
           "key": "A",

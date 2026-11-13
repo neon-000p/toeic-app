@@ -79,6 +79,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
       "choices": [
         {
           "key": "A",
@@ -113,6 +114,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "According to the woman, why does the request need a second signature?",
+      "promptJa": "女性によると、この申請に2人目の署名が必要なのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -146,6 +148,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What will the man most likely do next?",
+      "promptJa": "男性は次に何をすると考えられますか。",
       "choices": [
         {
           "key": "A",

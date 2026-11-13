@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "By how many percentage points did the Bank of Japan raise its interest rate on September 18?",
+      "promptJa": "日本銀行は9月18日に金利を何パーセントポイント引き上げましたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to Governor Ueda, why might inflation rise further this year?",
+      "promptJa": "植田総裁によると、今年インフレがさらに進む可能性があるのはなぜですか。",
       "choices": [
         {
           "key": "A",

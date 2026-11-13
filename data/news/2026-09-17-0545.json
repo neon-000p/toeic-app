@@ -59,6 +59,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "According to the article, how many routes between Asia and Europe are switching back to the Suez Canal?",
+      "promptJa": "記事によると、アジアと欧州を結ぶ航路のうち、何本がスエズ運河経由に戻りますか。",
       "choices": [
         {
           "key": "A",
@@ -93,6 +94,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did Maersk and Hapag-Lloyd avoid the Suez Canal after 2023?",
+      "promptJa": "Maersk と Hapag-Lloyd が2023年以降スエズ運河を避けていたのはなぜですか。",
       "choices": [
         {
           "key": "A",

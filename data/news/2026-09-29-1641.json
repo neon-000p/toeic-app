@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much profit is DP World estimated to lose each month?",
+      "promptJa": "DP World は毎月どれだけの利益を失うと見積もられていますか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why does DP World want more trucks?",
+      "promptJa": "DP World がトラックを増やしたいのはなぜですか。",
       "choices": [
         {
           "key": "A",

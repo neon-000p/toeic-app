@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "When did Walmart's sale end?",
+      "promptJa": "Walmart のセールはいつ終わりましたか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT true according to the article?",
+      "promptJa": "記事によると、正しくないものはどれですか。",
       "choices": [
         {
           "key": "A",

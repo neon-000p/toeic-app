@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What is the cash rate after Tuesday's decision?",
+      "promptJa": "火曜日の決定後の政策金利（キャッシュレート）はいくらですか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why should higher interest rates help reduce price pressure?",
+      "promptJa": "記事によると、金利の上昇が物価上昇圧力を抑えるのに役立つはずなのはなぜですか。",
       "choices": [
         {
           "key": "A",

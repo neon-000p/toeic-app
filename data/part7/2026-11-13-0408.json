@@ -76,6 +76,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What problem does Ms. Feld report?",
+      "promptJa": "フェルドさんはどんな問題を報告していますか。",
       "choices": [
         {
           "key": "A",
@@ -114,6 +115,7 @@
       "id": "q2",
       "type": "intent",
       "prompt": "At 2:11 P.M., what does Mr. Sato most likely mean when he writes, \"Then I'd say that covers us\"?",
+      "promptJa": "午後2時11分に、佐藤さんが \"Then I'd say that covers us\" と書いているのは、何を意図していると考えられますか。",
       "choices": [
         {
           "key": "A",
@@ -162,6 +164,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "What is suggested about Ms. Brooks?",
+      "promptJa": "ブルックスさんについて何が示唆されていますか。",
       "choices": [
         {
           "key": "A",
@@ -205,6 +208,7 @@
       "id": "q4",
       "type": "detail",
       "prompt": "What will Ms. Feld most likely do next?",
+      "promptJa": "フェルドさんは次に何をすると考えられますか。",
       "choices": [
         {
           "key": "A",

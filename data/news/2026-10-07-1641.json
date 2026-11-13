@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much has Customs already processed in refunds?",
+      "promptJa": "税関はすでにどれだけの還付を処理しましたか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT stated about the new phase?",
+      "promptJa": "新しい段階について述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

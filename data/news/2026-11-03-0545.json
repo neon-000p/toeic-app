@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "By how much did Marriott's RevPAR rise worldwide in the third quarter?",
+      "promptJa": "第3四半期に Marriott の世界全体の RevPAR（販売可能客室1室あたり売上）はどれだけ上昇しましたか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT stated in the article?",
+      "promptJa": "記事で述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

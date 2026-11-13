@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much did the S&P 500 fall on Friday?",
+      "promptJa": "金曜日に S&P 500 はどれだけ下落しましたか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why did bond yields rise?",
+      "promptJa": "記事によると、債券利回りが上昇したのはなぜですか。",
       "choices": [
         {
           "key": "A",

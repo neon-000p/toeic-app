@@ -59,6 +59,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How many total Ariane 6 launches has Amazon Leo now booked with Arianespace?",
+      "promptJa": "Amazon Leo は Arianespace にアリアン6の打ち上げを合計何回発注しましたか。",
       "choices": [
         {
           "key": "A",
@@ -93,6 +94,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT true about the new agreements described in the article?",
+      "promptJa": "記事で説明されている新しい契約について、正しくないものはどれですか。",
       "choices": [
         {
           "key": "A",

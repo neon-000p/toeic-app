@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What was Hasbro's revenue in the third quarter?",
+      "promptJa": "Hasbro の第3四半期の売上高はいくらでしたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why may sales of the games unit fall in the fourth quarter?",
+      "promptJa": "記事によると、第4四半期にゲーム部門の売上が落ちる可能性があるのはなぜですか。",
       "choices": [
         {
           "key": "A",

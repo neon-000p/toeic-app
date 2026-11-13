@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What happened to the yield on the 10-year Treasury note?",
+      "promptJa": "10年物米国債の利回りはどうなりましたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why were investors worried about Meta?",
+      "promptJa": "投資家が Meta について懸念していたのはなぜですか。",
       "choices": [
         {
           "key": "A",

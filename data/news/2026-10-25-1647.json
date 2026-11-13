@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much were Procter & Gamble's sales for the quarter?",
+      "promptJa": "Procter & Gamble のこの四半期の売上高はいくらでしたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did the company's total sales forecast rise to 2% to 4%?",
+      "promptJa": "会社の売上高全体の予想が2〜4％に上がったのはなぜですか。",
       "choices": [
         {
           "key": "A",
