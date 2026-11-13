@@ -393,6 +393,8 @@ a.icon-btn{font-size:17px}
 }
 .chip-mark{background:var(--mark-soft);color:var(--mark-ink)}
 .chip-plain{background:var(--surface-2);color:var(--muted);border-color:var(--line)}
+/* 「済」の札。一覧の「済」（.list .s.done）と同じ緑にそろえる */
+.chip-ok{background:var(--ok-soft);color:var(--ok)}
 
 .muted{color:var(--muted)}
 .small{font-size:13px}
