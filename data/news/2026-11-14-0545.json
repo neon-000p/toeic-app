@@ -439,12 +439,12 @@
       "body": "卸売段階の値上がりは、少し遅れて店頭価格に表れやすい。このため生産者物価は、消費者物価の先行指標(leading indicator)として注目される。企業が仕入れ値の上昇を売値に上乗せできるかは、客を失わずに値上げできる力、つまり価格決定力(pricing power)で決まる。市場は、FRBが12月8〜9日の会合で利上げすると見ている。"
     },
     {
-      "heading": "📌 3. 他社は仕入れ値の上昇にどう対応したか",
-      "body": "米P&Gは2022年6月期、原材料費と運送費の高騰に対し値上げを重ねた。値上げは売上高を4%押し上げ、販売数量も2%増えて、売上高は5%増の802億ドルとなった。一方、米ウォルマートは2022年7月25日、食品と燃料の値上がりで客が衣料や家庭用品を買い控えたとして、通期の利益見通しを従来の1%減から11〜13%減へ引き下げた。株価は時間外で約10%下がり、衣料などの売れ残りを値引きで処分することになった。前者は値上げしても数量を保てたのに対し、後者は客の節約で売れ残りを抱え、値下げに追い込まれた。"
+      "heading": "📌 3. 他社は原材料高にどう対応したか",
+      "body": "英ユニリーバは2026年7〜9月期、原材料高を補うために値上げを強め、価格要因で売上を2.3%押し上げた。それでも販売数量は2.9%増え、基礎的な売上高は5.2%伸びた。通期の数量の伸びの見通しも3%以上へ引き上げた。一方、スイスのネスレは同じ7〜9月期、値上げの寄与が1.1%にとどまり、販売数量の伸び（実質内部成長）が2.8%に高まって、売上高の伸びは4.0%となった。前者は値上げを強めながら数量も伸ばし、後者は値上げ幅を小さくして数量の伸びで成長した点が異なる。"
     },
     {
       "heading": "📌 4. 日本企業では",
-      "body": "日清食品は2022年2月、小麦や包装資材、エネルギー、物流費の上昇を理由に、6月1日出荷分から即席麺など約180品目を5〜12%値上げすると発表した。主力のカップ麺の希望小売価格（税別）は193円から214円となり、主力品の値上げは2019年6月以来、約3年ぶりだった。同社は「自助努力だけではコスト増を吸収できない」と説明した。"
+      "body": "ニッスイは2026年11月13日、原材料費に加えて人件費、包装資材、物流費が上がったとして、家庭用の冷凍食品や練り製品などの出荷価格を2027年2月1日納品分から引き上げると発表した。上げ幅は冷凍食品が約3〜20%、ちくわなどの練り製品が約2〜25%。同社は2026年9月にも冷凍食品を最大17%値上げしており、1年足らずで再びの改定となる。"
     }
   ],
   "keywords": [
@@ -493,22 +493,22 @@
       "date": "2026-11-13"
     },
     {
-      "title": "P&G Announces Fourth Quarter and Fiscal Year 2022 Results",
-      "publisher": "Business Wire",
-      "url": "https://www.businesswire.com/news/home/20220728006053/en/PG-Announces-Fourth-Quarter-and-Fiscal-Year-2022-Results/",
-      "date": "2022-07-28"
+      "title": "Continued strong performance in the third quarter",
+      "publisher": "Unilever",
+      "url": "https://www.unilever.com/news/press-and-media/press-releases/2026/continued-strong-performance-in-the-third-quarter/",
+      "date": "2026-10-28"
     },
     {
-      "title": "Walmart cuts profit outlook as shoppers adapt to inflation",
-      "publisher": "AP (WSLS)",
-      "url": "https://www.wsls.com/business/2022/07/25/walmart-cuts-profit-outlook-as-shoppers-adapt-to-inflation/",
-      "date": "2022-07-25"
+      "title": "Third-quarter and nine-month 2026 sales",
+      "publisher": "Nestlé",
+      "url": "https://www.nestle.com/media/pressreleases/allpressreleases/nine-month-sales-2026",
+      "date": "2026-10-22"
     },
     {
-      "title": "日清食品「カップヌードル」を21円値上げ 「チキンラーメン」など約180品目が5~12%アップ",
-      "publisher": "All About ニュース",
-      "url": "https://news.allabout.co.jp/articles/o/37570/",
-      "date": "2022-02-03"
+      "title": "ニッスイ 家庭用冷凍食品、フィッシュソーセージなど来年2月から値上げ",
+      "publisher": "食品新聞",
+      "url": "https://shokuhin.net/160146/2026/11/13/kakou/reishoku/",
+      "date": "2026-11-13"
     }
   ],
   "audio": {
