@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-14-0545",
+  "date": "2026-11-14",
+  "time": "05:45",
+  "createdAt": "2026-11-14T05:45:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "U.S. Wholesale Prices Climb at Fastest Annual Pace Since 2022",
+    "ja": "米卸売物価、2022年以来の高い伸び"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. wholesale prices rose 0.3% in October, the Labor Department reported on Friday.",
+            "ja": "米国の卸売物価は10月に0.3%上昇したと、米労働省が金曜日に発表した。"
+          },
+          {
+            "en": "The increase was slightly smaller than the 0.4% gain that economists had expected.",
+            "ja": "上昇幅は、エコノミストが予想していた0.4%をわずかに下回った。"
+          },
+          {
+            "en": "However, prices were 6.5% higher than a year earlier, the biggest annual gain since November 2022.",
+            "ja": "しかし物価は前年同月より6.5%高く、2022年11月以来最大の年間上昇率となった。"
+          },
+          {
+            "en": "Food costs led the rise, jumping 1.3% from September, while energy prices edged down 0.1%.",
+            "ja": "上昇をけん引したのは食品で、9月から1.3%上がった。一方、エネルギー価格は0.1%とわずかに下がった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Wholesale prices measure what businesses pay for goods and services before they reach store shelves.",
+            "ja": "卸売物価は、商品やサービスが店頭に並ぶ前の段階で、企業が支払う価格を測るものだ。"
+          },
+          {
+            "en": "When these costs climb, companies often pass on the extra expense to shoppers through higher retail prices.",
+            "ja": "こうしたコストが上がると、企業は多くの場合、小売価格を引き上げて、増えた負担を買い物客に転嫁する。"
+          },
+          {
+            "en": "Fuel has been expensive since a war pushed up oil prices earlier this year.",
+            "ja": "今年初めに戦争で原油価格が押し上げられて以来、燃料は高止まりしている。"
+          },
+          {
+            "en": "The report adds pressure on the Federal Reserve, which meets on December 8 and 9.",
+            "ja": "この統計は、12月8日と9日に会合を開く米連邦準備制度理事会（FRB）への圧力を強める。"
+          },
+          {
+            "en": "Investors widely expect the Fed to raise interest rates at that meeting to slow inflation.",
+            "ja": "投資家の間では、FRBがインフレを抑えるため、その会合で利上げに踏み切るとの見方が広がっている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much were U.S. wholesale prices higher in October than a year earlier?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.3%",
+          "ja": "0.3%"
+        },
+        {
+          "key": "B",
+          "text": "0.4%",
+          "ja": "0.4%"
+        },
+        {
+          "key": "C",
+          "text": "1.3%",
+          "ja": "1.3%"
+        },
+        {
+          "key": "D",
+          "text": "6.5%",
+          "ja": "6.5%"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は (D)。第1段落3文目に prices were 6.5% higher than a year earlier（前年より6.5%高い）とある。(A) の 0.3% は「前月比」の上昇率で、設問の「1年前と比べて」とは比べる相手が違う。(B) の 0.4% はエコノミストの「予想」で、実際の結果ではない。(C) の 1.3% は食品だけの前月比の上昇率で、物価全体の数字ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "Part 7 では「前月比」「前年比」「予想」の数字が1つの段落に並ぶ。設問の比較の基準（than a year earlier / from September / expected）を本文の同じ語句と照合してから選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why might higher wholesale prices affect shoppers?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Companies may pass on the extra cost through higher retail prices.",
+          "ja": "企業が小売価格の値上げで負担を転嫁しうる"
+        },
+        {
+          "key": "B",
+          "text": "Stores have decided to cut food prices before December.",
+          "ja": "店が12月前に食品を値下げすると決めた"
+        },
+        {
+          "key": "C",
+          "text": "Energy prices rose sharply in October.",
+          "ja": "10月にエネルギー価格が急上昇した"
+        },
+        {
+          "key": "D",
+          "text": "The Fed has already lowered interest rates.",
+          "ja": "FRBがすでに利下げした"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正解は (A)。第2段落2文目に companies often pass on the extra expense to shoppers through higher retail prices（企業は小売価格を上げて増えた負担を買い物客に転嫁する）とあり、これを言い換えている。(B) の「食品の値下げ」は本文にない情報で、むしろ食品は1.3%上昇している。(C) は第1段落4文目の energy prices edged down 0.1%（わずかに下落）と逆の内容。(D) は本文と逆で、投資家は利上げ（raise interest rates）を予想している。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由を問う設問（why）では、本文の When ～, … の「条件→結果」の文が根拠になりやすい。正解は本文の pass on the extra expense を pass on the extra cost のように少しだけ言い換えて作られることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "wholesale",
+      "pos": "形",
+      "ja": "卸売りの",
+      "gloss": "",
+      "example": {
+        "en": "Our wholesale customers receive a 20% discount.",
+        "ja": "当社の卸売り顧客は20%の割引を受けられる。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "annual",
+      "pos": "形",
+      "ja": "年間の、年に1度の",
+      "gloss": "",
+      "example": {
+        "en": "The annual sales meeting will be held in Osaka.",
+        "ja": "年次営業会議は大阪で開かれる。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "measure",
+      "pos": "動",
+      "ja": "測る、評価する",
+      "gloss": "",
+      "example": {
+        "en": "We measure customer satisfaction with a short survey.",
+        "ja": "当社は簡単なアンケートで顧客満足度を測っている。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "pass on",
+      "pos": "熟",
+      "ja": "（費用などを）転嫁する、伝える",
+      "gloss": "",
+      "example": {
+        "en": "The supplier will pass on the higher shipping costs to us.",
+        "ja": "その仕入先は、上がった配送費を当社に転嫁するつもりだ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "expense",
+      "pos": "名",
+      "ja": "費用、出費",
+      "gloss": "",
+      "example": {
+        "en": "Please submit your travel expense report by Friday.",
+        "ja": "出張の経費報告書を金曜までに提出してください。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "retail",
+      "pos": "形",
+      "ja": "小売の",
+      "gloss": "",
+      "example": {
+        "en": "The retail price of the printer is $250.",
+        "ja": "そのプリンターの小売価格は250ドルだ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "pressure",
+      "pos": "名",
+      "ja": "圧力、重圧",
+      "gloss": "",
+      "example": {
+        "en": "The team is under pressure to finish the project on schedule.",
+        "ja": "チームは予定どおりにプロジェクトを終えるよう圧力を受けている。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "inflation",
+      "pos": "名",
+      "ja": "インフレ、物価上昇",
+      "gloss": "（＝物の値段が全体的に上がり続けること）",
+      "example": {
+        "en": "Inflation has made office supplies more expensive this year.",
+        "ja": "インフレのため、今年は事務用品が高くなった。"
+      }
+    }
+  ],
+  "glossary": {
+    "wholesale": {
+      "lemma": "wholesale",
+      "pos": "形",
+      "ja": "卸売りの",
+      "note": ""
+    },
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "発表した、報告した",
+      "note": ""
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "増加、上昇",
+      "note": ""
+    },
+    "slightly": {
+      "lemma": "slightly",
+      "pos": "副",
+      "ja": "わずかに",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "エコノミスト、経済学者",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": "had expected で「（発表前に）予想していた」"
+    },
+    "however": {
+      "lemma": "however",
+      "pos": "副",
+      "ja": "しかしながら",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "early",
+      "pos": "副",
+      "ja": "より前に",
+      "note": "a year earlier で「1年前に比べて」"
+    },
+    "annual": {
+      "lemma": "annual",
+      "pos": "形",
+      "ja": "年間の",
+      "note": ""
+    },
+    "gain": {
+      "lemma": "gain",
+      "pos": "名",
+      "ja": "上昇、増加",
+      "note": ""
+    },
+    "led": {
+      "lemma": "lead",
+      "pos": "動",
+      "ja": "先導した、けん引した",
+      "note": "lead the rise で「上昇をけん引する」"
+    },
+    "jumping": {
+      "lemma": "jump",
+      "pos": "動",
+      "ja": "急に上がる",
+      "note": ""
+    },
+    "edged": {
+      "lemma": "edge",
+      "pos": "動",
+      "ja": "少しずつ動く",
+      "note": "edge down で「わずかに下がる」"
+    },
+    "measure": {
+      "lemma": "measure",
+      "pos": "動",
+      "ja": "測る",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "商品、品物",
+      "note": ""
+    },
+    "reach": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "届く、達する",
+      "note": ""
+    },
+    "shelves": {
+      "lemma": "shelf",
+      "pos": "名",
+      "ja": "棚",
+      "note": "store shelves で「店頭」"
+    },
+    "climb": {
+      "lemma": "climb",
+      "pos": "動",
+      "ja": "上昇する",
+      "note": ""
+    },
+    "pass": {
+      "lemma": "pass",
+      "pos": "動",
+      "ja": "渡す",
+      "note": "pass on A to B で「AをBに転嫁する」"
+    },
+    "extra": {
+      "lemma": "extra",
+      "pos": "形",
+      "ja": "余分の、追加の",
+      "note": ""
+    },
+    "expense": {
+      "lemma": "expense",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "retail": {
+      "lemma": "retail",
+      "pos": "形",
+      "ja": "小売の",
+      "note": ""
+    },
+    "expensive": {
+      "lemma": "expensive",
+      "pos": "形",
+      "ja": "高価な",
+      "note": ""
+    },
+    "pushed": {
+      "lemma": "push",
+      "pos": "動",
+      "ja": "押した",
+      "note": "push up で「押し上げる」"
+    },
+    "adds": {
+      "lemma": "add",
+      "pos": "動",
+      "ja": "加える",
+      "note": "add pressure on ～ で「～への圧力を強める」"
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "note": ""
+    },
+    "widely": {
+      "lemma": "widely",
+      "pos": "副",
+      "ja": "広く",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": "raise interest rates で「利上げする」"
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "利子、金利",
+      "note": "interest rates で「金利」"
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "インフレ",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "最上級＋since ～（～以来で最も…）と、前の文全体を言い換える同格の名詞句",
+    "quote": "However, prices were 6.5% higher than a year earlier, the biggest annual gain since November 2022.",
+    "quoteJa": "しかし物価は前年同月より6.5%高く、2022年11月以来最大の年間上昇率となった。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "the biggest annual gain since November 2022 は「最上級＋since ～」で、「～以来で最大の…」という意味になる。ずっと一番という意味ではなく、「2022年11月以降の期間に限れば最大」と期間を区切っている点がポイント。また、この名詞句はカンマの後ろに置かれ、直前の「6.5%高かった」という内容全体を言い換えている（同格）。動詞を使わずに「それは～だった」と補足できるため、ニュースでよく使われる。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "関係詞を使うと ..., which was the biggest annual gain since November 2022. と書ける。また Prices have not risen this fast since November 2022.（2022年11月以来、これほど速く上がったことはない）と現在完了の否定でも同じ意味を表せる。the highest level in four years（4年ぶりの高さ）のように in ＋期間 を使う形も同じ考え方で、「4年間で最高」＝「4年ぶり」と訳す。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では「This is the ____ sales figure since the store opened.」の空所に最上級 highest を選ばせる問題が出る。since の後ろに時点（2022年・開店時など）、in / over の後ろに期間（the past five years）が来ることも問われる。Part 7 では「4年ぶりの高水準」が the highest since ～ や the first time in ～ years で書かれ、言い換えの選択肢と照合させる設問になりやすい。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Our online sales rose 15% in October, the strongest monthly growth since 2023.（10月のネット販売は15%増え、2023年以来で最も高い月間の伸びとなった）／ This is the largest order we have received since the company was founded.（これは創業以来、当社が受けた最大の注文だ）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米労働省が11月13日に発表した10月の生産者物価指数(producer price index)は前月比0.3%上昇と予想を下回ったが、前年同月比では6.5%と2022年11月以来の伸びだった。食品は1.3%上がった。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "卸売段階の値上がりは、少し遅れて店頭価格に表れやすい。このため生産者物価は、消費者物価の先行指標(leading indicator)として注目される。企業が仕入れ値の上昇を売値に上乗せできるかは、客を失わずに値上げできる力、つまり価格決定力(pricing power)で決まる。市場は、FRBが12月8〜9日の会合で利上げすると見ている。"
+    },
+    {
+      "heading": "📌 3. 他社は仕入れ値の上昇にどう対応したか",
+      "body": "米P&Gは2022年6月期、原材料費と運送費の高騰に対し値上げを重ねた。値上げは売上高を4%押し上げ、販売数量も2%増えて、売上高は5%増の802億ドルとなった。一方、米ウォルマートは2022年7月25日、食品と燃料の値上がりで客が衣料や家庭用品を買い控えたとして、通期の利益見通しを従来の1%減から11〜13%減へ引き下げた。株価は時間外で約10%下がり、衣料などの売れ残りを値引きで処分することになった。前者は値上げしても数量を保てたのに対し、後者は客の節約で売れ残りを抱え、値下げに追い込まれた。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日清食品は2022年2月、小麦や包装資材、エネルギー、物流費の上昇を理由に、6月1日出荷分から即席麺など約180品目を5〜12%値上げすると発表した。主力のカップ麺の希望小売価格（税別）は193円から214円となり、主力品の値上げは2019年6月以来、約3年ぶりだった。同社は「自助努力だけではコスト増を吸収できない」と説明した。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "producer price index",
+      "pos": "熟",
+      "ja": "生産者物価指数",
+      "gloss": "（＝企業どうしで取引される商品やサービスの価格の動きを示す数字のこと）",
+      "example": {
+        "en": "The producer price index will be released next Thursday.",
+        "ja": "生産者物価指数は来週木曜に発表される。"
+      }
+    },
+    {
+      "term": "leading indicator",
+      "pos": "熟",
+      "ja": "先行指標",
+      "gloss": "（＝景気や物価の先の動きを早めに示す数字のこと）",
+      "example": {
+        "en": "Many managers watch new orders as a leading indicator of sales.",
+        "ja": "多くの管理職は、新規受注を売上の先行指標として見ている。"
+      }
+    },
+    {
+      "term": "pricing power",
+      "pos": "熟",
+      "ja": "価格決定力",
+      "gloss": "（＝客を失わずに値上げできる力のこと）",
+      "example": {
+        "en": "Strong brands give a company more pricing power.",
+        "ja": "強いブランドがあると、企業の価格決定力は高まる。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
+      "date": "2026-11-13"
+    },
+    {
+      "title": "Wholesale inflation rose in October to highest annual rate in nearly four years",
+      "publisher": "CNN",
+      "url": "https://www.cnn.com/2026/11/13/economy/us-wholesale-inflation-ppi-october",
+      "date": "2026-11-13"
+    },
+    {
+      "title": "P&G Announces Fourth Quarter and Fiscal Year 2022 Results",
+      "publisher": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20220728006053/en/PG-Announces-Fourth-Quarter-and-Fiscal-Year-2022-Results/",
+      "date": "2022-07-28"
+    },
+    {
+      "title": "Walmart cuts profit outlook as shoppers adapt to inflation",
+      "publisher": "AP (WSLS)",
+      "url": "https://www.wsls.com/business/2022/07/25/walmart-cuts-profit-outlook-as-shoppers-adapt-to-inflation/",
+      "date": "2022-07-25"
+    },
+    {
+      "title": "日清食品「カップヌードル」を21円値上げ 「チキンラーメン」など約180品目が5~12%アップ",
+      "publisher": "All About ニュース",
+      "url": "https://news.allabout.co.jp/articles/o/37570/",
+      "date": "2022-02-03"
+    }
+  ]
+}
