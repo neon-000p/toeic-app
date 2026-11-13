@@ -69,6 +69,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What caused the duplicate charge?",
+      "promptJa": "二重請求の原因は何でしたか。",
       "choices": [
         {
           "key": "A",
@@ -102,6 +103,7 @@
       "id": "q2",
       "type": "intent",
       "prompt": "What does the woman mean when she says, \"So we aren't on the hook for both payments\"?",
+      "promptJa": "女性が \"So we aren't on the hook for both payments\" と言う際、何を意図していますか。",
       "choices": [
         {
           "key": "A",
@@ -136,6 +138,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What will the man do if the vendor does not reply by Thursday?",
+      "promptJa": "業者から木曜日までに返事がなければ、男性は何をしますか。",
       "choices": [
         {
           "key": "A",

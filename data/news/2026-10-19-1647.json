@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much diesel did Mr. Trump say Russia would send immediately?",
+      "promptJa": "トランプ氏は、ロシアがすぐにどれだけのディーゼルを送ると述べましたか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the analysts, what do traders need?",
+      "promptJa": "アナリストによると、トレーダーには何が必要ですか。",
       "choices": [
         {
           "key": "A",

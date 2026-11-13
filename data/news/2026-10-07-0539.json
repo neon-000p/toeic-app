@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What is the lowest starting price mentioned for a Googlebook?",
+      "promptJa": "Googlebook の最低価格として挙げられているのはいくらですか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why does Google hope the Googlebook will sell well?",
+      "promptJa": "Google が Googlebook はよく売れると期待しているのはなぜですか。",
       "choices": [
         {
           "key": "A",

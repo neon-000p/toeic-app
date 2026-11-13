@@ -92,6 +92,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What is the purpose of the e-mail?",
+      "promptJa": "このメールの目的は何ですか。",
       "choices": [
         {
           "key": "A",
@@ -135,6 +136,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "According to the e-mail, when can exhibitors start setting up their booths?",
+      "promptJa": "メールによると、出展者はいつからブースの設営を始められますか。",
       "choices": [
         {
           "key": "A",
@@ -173,6 +175,7 @@
       "id": "q3",
       "type": "insert",
       "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "promptJa": "[1]、[2]、[3]、[4] と記された箇所のうち、次の文が入るのに最もふさわしいのはどれですか。",
       "choices": [
         {
           "key": "A",
@@ -212,6 +215,7 @@
       "id": "q4",
       "type": "detail",
       "prompt": "What will happen to payments received after 15 January?",
+      "promptJa": "1月15日以降に受け取った支払いはどうなりますか。",
       "choices": [
         {
           "key": "A",

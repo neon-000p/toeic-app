@@ -79,6 +79,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
       "choices": [
         {
           "key": "A",
@@ -112,6 +113,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "Why will the interviews take place on Tuesday?",
+      "promptJa": "面接が火曜日に行われるのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -147,6 +149,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What will the woman do this afternoon?",
+      "promptJa": "女性は今日の午後何をしますか。",
       "choices": [
         {
           "key": "A",

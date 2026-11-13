@@ -74,6 +74,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What was the error on the invoice?",
+      "promptJa": "請求書の誤りは何でしたか。",
       "choices": [
         {
           "key": "A",
@@ -107,6 +108,7 @@
       "id": "q2",
       "type": "next",
       "prompt": "What will the woman most likely do next?",
+      "promptJa": "女性は次に何をすると考えられますか。",
       "choices": [
         {
           "key": "A",
@@ -141,6 +143,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "Why does the man want the credit note sent out by the end of the day?",
+      "promptJa": "男性が今日中にクレジットノート（返金伝票）を送ってほしいのはなぜですか。",
       "choices": [
         {
           "key": "A",

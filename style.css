@@ -382,6 +382,8 @@ a.icon-btn{font-size:17px}
 }
 
 .choice .cja{display:block;font-family:var(--sans);font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.5}
+/* 解説で設問文の下に添える和訳。設問文（.qprompt）の下余白に食い込ませて、英文とひと組に見せる */
+.qprompt-ja{font-family:var(--sans);font-size:12.5px;font-weight:400;color:var(--muted);line-height:1.55;margin:-6px 0 11px}
 
 .chip{
   display:inline-block;font-size:12px;font-weight:700;letter-spacing:.02em;

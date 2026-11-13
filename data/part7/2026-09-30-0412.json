@@ -84,6 +84,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What is the purpose of the letter?",
+      "promptJa": "この手紙の目的は何ですか。",
       "choices": [
         {
           "key": "A",
@@ -127,6 +128,7 @@
       "id": "q2",
       "type": "insert",
       "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "promptJa": "[1]、[2]、[3]、[4] と記された箇所のうち、次の文が入るのに最もふさわしいのはどれですか。",
       "insert": "This is the first increase since we began providing the service in 2021.",
       "choices": [
         {
@@ -171,6 +173,7 @@
       "id": "q3",
       "type": "detail",
       "prompt": "According to the letter, what is an advantage of renewing before 15 November?",
+      "promptJa": "手紙によると、11月15日より前に更新する利点は何ですか。",
       "choices": [
         {
           "key": "A",
@@ -209,6 +212,7 @@
       "id": "q4",
       "type": "infer",
       "prompt": "What is implied about the Standard Plan?",
+      "promptJa": "スタンダードプランについて何がほのめかされていますか。",
       "choices": [
         {
           "key": "A",

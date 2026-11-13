@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What was the Dow Jones Industrial Average's percentage gain on Friday?",
+      "promptJa": "金曜日のダウ工業株30種平均の上昇率は何％でしたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why did stocks rally on Friday?",
+      "promptJa": "記事によると、金曜日に株価が上昇したのはなぜですか。",
       "choices": [
         {
           "key": "A",

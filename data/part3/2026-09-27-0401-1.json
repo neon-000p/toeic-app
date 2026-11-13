@@ -74,6 +74,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
       "choices": [
         {
           "key": "A",
@@ -108,6 +109,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "How many boxes will be sent out today?",
+      "promptJa": "今日は何箱が発送されますか。",
       "choices": [
         {
           "key": "A",
@@ -141,6 +143,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What will the man probably do after the courier picks up the boxes?",
+      "promptJa": "宅配業者が箱を集荷した後、男性はおそらく何をしますか。",
       "choices": [
         {
           "key": "A",

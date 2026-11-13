@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How did U.S. crude inventories change in the week ended November 6?",
+      "promptJa": "11月6日までの週に米国の原油在庫はどう変化しましたか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why were traders less willing to pay extra for oil?",
+      "promptJa": "記事によると、トレーダーが原油に上乗せ価格を払う意欲が弱まったのはなぜですか。",
       "choices": [
         {
           "key": "A",

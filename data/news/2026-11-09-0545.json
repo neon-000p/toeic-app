@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "According to exit polls, how many voters believed the tariffs hurt the economy?",
+      "promptJa": "出口調査によると、関税が経済に悪影響を与えたと考えた有権者はどれくらいいましたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT stated in the article?",
+      "promptJa": "記事で述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

@@ -53,6 +53,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "Why is the speaker calling?",
+      "promptJa": "話し手はなぜ電話をかけていますか。",
       "choices": [
         {
           "key": "A",
@@ -88,6 +89,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "What does the speaker offer to do?",
+      "promptJa": "話し手は何をすると申し出ていますか。",
       "choices": [
         {
           "key": "A",
@@ -121,6 +123,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What does the speaker ask the listener to do by five o'clock?",
+      "promptJa": "話し手は聞き手に5時までに何をするよう頼んでいますか。",
       "choices": [
         {
           "key": "A",

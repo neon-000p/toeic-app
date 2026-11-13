@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "According to the article, how much does the base version of the iPhone Duo cost?",
+      "promptJa": "記事によると、iPhone Duo の基本モデルの価格はいくらですか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why do analysts consider the price gap between the Pro line and the iPhone Duo significant?",
+      "promptJa": "アナリストが Pro シリーズと iPhone Duo の価格差を重要だと考えるのはなぜですか。",
       "choices": [
         {
           "key": "A",

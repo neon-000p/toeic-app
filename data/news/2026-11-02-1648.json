@@ -59,6 +59,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How many management jobs will Alaska Air Group cut?",
+      "promptJa": "Alaska Air Group は管理職を何人削減しますか。",
       "choices": [
         {
           "key": "A",
@@ -93,6 +94,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did the company announce the cuts?",
+      "promptJa": "会社が削減を発表したのはなぜですか。",
       "choices": [
         {
           "key": "A",

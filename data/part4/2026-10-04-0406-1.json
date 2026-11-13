@@ -49,6 +49,7 @@
       "id": "q1",
       "type": "who",
       "prompt": "Who most likely is the speaker?",
+      "promptJa": "話し手は誰だと考えられますか。",
       "choices": [
         {
           "key": "A",
@@ -82,6 +83,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "What does the speaker say about the service elevators?",
+      "promptJa": "話し手は業務用エレベーターについて何と言っていますか。",
       "choices": [
         {
           "key": "A",
@@ -115,6 +117,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "What does the speaker imply about Saturday morning?",
+      "promptJa": "話し手は土曜日の朝について何をほのめかしていますか。",
       "choices": [
         {
           "key": "A",

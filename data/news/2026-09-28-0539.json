@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "According to the article, how large would Greenland Mines' rare-earth project become if the expansion is approved?",
+      "promptJa": "記事によると、拡張が承認された場合、Greenland Mines のレアアース事業はどのくらいの規模になりますか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why does the new security agreement matter for rare-earth minerals?",
+      "promptJa": "記事によると、新たな安全保障協定がレアアースにとって重要なのはなぜですか。",
       "choices": [
         {
           "key": "A",

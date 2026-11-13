@@ -84,6 +84,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What is being advertised?",
+      "promptJa": "何が宣伝されていますか。",
       "choices": [
         {
           "key": "A",
@@ -122,6 +123,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "What do all members receive?",
+      "promptJa": "会員全員が受け取るものは何ですか。",
       "choices": [
         {
           "key": "A",
@@ -160,6 +162,7 @@
       "id": "q3",
       "type": "insert",
       "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "promptJa": "[1]、[2]、[3]、[4] と記された箇所のうち、次の文が入るのに最もふさわしいのはどれですか。",
       "insert": "Members who need more than ten hours can book extra time at $15 per hour.",
       "choices": [
         {
@@ -199,6 +202,7 @@
       "id": "q4",
       "type": "detail",
       "prompt": "How much will a person who joins the Standard plan on 20 December pay for the first month?",
+      "promptJa": "12月20日にスタンダードプランに入会した人は、最初の月にいくら払いますか。",
       "choices": [
         {
           "key": "A",

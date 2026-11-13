@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How high did the 10-year Treasury yield rise this week?",
+      "promptJa": "今週、10年物米国債の利回りはどこまで上昇しましたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why does the rise in yields matter?",
+      "promptJa": "記事によると、利回りの上昇が重要なのはなぜですか。",
       "choices": [
         {
           "key": "A",

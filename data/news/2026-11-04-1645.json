@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "By how much did Sysco's first-quarter sales rise from a year earlier?",
+      "promptJa": "Sysco の第1四半期の売上高は前年からどれだけ増えましたか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did Sysco lower its full-year sales growth forecast?",
+      "promptJa": "Sysco が通期の売上成長率の予想を引き下げたのはなぜですか。",
       "choices": [
         {
           "key": "A",

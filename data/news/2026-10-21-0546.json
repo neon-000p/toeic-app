@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What tariff rate did the February framework set on Indian goods?",
+      "promptJa": "2月の枠組みでは、インド製品にどれだけの関税率が設定されましたか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why is energy a difficult issue in the talks?",
+      "promptJa": "記事によると、交渉でエネルギーが難しい問題になっているのはなぜですか。",
       "choices": [
         {
           "key": "A",

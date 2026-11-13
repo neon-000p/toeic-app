@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What must companies now do before sending such technology abroad?",
+      "promptJa": "そうした技術を海外に送る前に、企業は今後何をしなければなりませんか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did officials say the step is needed?",
+      "promptJa": "当局者はなぜこの措置が必要だと述べましたか。",
       "choices": [
         {
           "key": "A",

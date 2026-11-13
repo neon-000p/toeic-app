@@ -74,6 +74,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What problem does the woman report?",
+      "promptJa": "女性はどんな問題を報告していますか。",
       "choices": [
         {
           "key": "A",
@@ -107,6 +108,7 @@
       "id": "q2",
       "type": "intent",
       "prompt": "What does the man imply when he says, \"Let me know if IT can't make the deadline\"?",
+      "promptJa": "男性が \"Let me know if IT can't make the deadline\" と言う際、何をほのめかしていますか。",
       "choices": [
         {
           "key": "A",
@@ -141,6 +143,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What will the woman most likely do today?",
+      "promptJa": "女性は今日何をすると考えられますか。",
       "choices": [
         {
           "key": "A",

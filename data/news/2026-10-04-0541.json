@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What share of U.S. imports do the tariffs cover?",
+      "promptJa": "この関税は米国の輸入のどれだけの割合を対象としていますか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "What do the challengers say about the forced-labor reason?",
+      "promptJa": "異議を唱える側は、強制労働という理由について何と言っていますか。",
       "choices": [
         {
           "key": "A",

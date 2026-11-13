@@ -69,6 +69,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
       "choices": [
         {
           "key": "A",
@@ -103,6 +104,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "Why does the man choose the morning flight?",
+      "promptJa": "男性が朝の便を選ぶのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -139,6 +141,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What will the woman probably do next?",
+      "promptJa": "女性はおそらく次に何をしますか。",
       "choices": [
         {
           "key": "A",

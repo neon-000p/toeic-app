@@ -74,6 +74,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly deciding?",
+      "promptJa": "話し手たちは主に何を決めようとしていますか。",
       "choices": [
         {
           "key": "A",
@@ -108,6 +109,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "Why does the woman prefer the evening flight over the morning one?",
+      "promptJa": "女性が朝の便より夕方の便を好むのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -141,6 +143,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "What is suggested about the client?",
+      "promptJa": "顧客について何が示唆されていますか。",
       "choices": [
         {
           "key": "A",

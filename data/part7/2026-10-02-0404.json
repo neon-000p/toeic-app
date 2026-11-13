@@ -140,6 +140,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What is the purpose of the e-mail?",
+      "promptJa": "このメールの目的は何ですか。",
       "choices": [
         {
           "key": "A",
@@ -178,6 +179,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "By when must applications be returned?",
+      "promptJa": "申込書はいつまでに返送しなければなりませんか。",
       "choices": [
         {
           "key": "A",
@@ -216,6 +218,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "What is suggested about Mr. Lindqvist's application?",
+      "promptJa": "リンドクヴィストさんの申し込みについて何が示唆されていますか。",
       "choices": [
         {
           "key": "A",
@@ -259,6 +262,7 @@
       "id": "q4",
       "type": "detail",
       "prompt": "How much will Mr. Lindqvist pay each month?",
+      "promptJa": "リンドクヴィストさんは毎月いくら払いますか。",
       "choices": [
         {
           "key": "A",
@@ -312,6 +316,7 @@
       "id": "q5",
       "type": "notTrue",
       "prompt": "What is NOT mentioned about the bicycle parking?",
+      "promptJa": "自転車置き場について述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

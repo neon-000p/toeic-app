@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much were the seized servers worth?",
+      "promptJa": "押収されたサーバーの価値はいくらでしたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why did customs act against the shipment?",
+      "promptJa": "記事によると、税関がこの貨物に対して措置を取ったのはなぜですか。",
       "choices": [
         {
           "key": "A",

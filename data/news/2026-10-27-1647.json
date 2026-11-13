@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How many economists in the Reuters poll expect no change in rates?",
+      "promptJa": "ロイターの調査で、金利据え置きを予想するエコノミストは何人いますか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT stated in the article?",
+      "promptJa": "記事で述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

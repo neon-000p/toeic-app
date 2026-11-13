@@ -74,6 +74,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
       "choices": [
         {
           "key": "A",
@@ -108,6 +109,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "What problem do the speakers mention?",
+      "promptJa": "話し手たちはどんな問題に触れていますか。",
       "choices": [
         {
           "key": "A",
@@ -142,6 +144,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "What does the woman imply about the office phones?",
+      "promptJa": "女性はオフィスの電話について何をほのめかしていますか。",
       "choices": [
         {
           "key": "A",

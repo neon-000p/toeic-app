@@ -59,6 +59,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "About what share of the votes cast at the shareholder meeting supported the deal?",
+      "promptJa": "株主総会で投じられた票のうち、およそどれだけの割合がこの取引を支持しましたか。",
       "choices": [
         {
           "key": "A",
@@ -93,6 +94,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did Rocket Lab raise close to $2 billion in new stock this month?",
+      "promptJa": "Rocket Lab が今月、新株発行で20億ドル近くを調達したのはなぜですか。",
       "choices": [
         {
           "key": "A",

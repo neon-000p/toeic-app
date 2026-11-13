@@ -112,6 +112,7 @@ data/
       "id": "q1",
       "type": "detail",
       "prompt": "How long do ships now wait on average?",
+      "promptJa": "船は現在、平均してどれくらい待っていますか。",
       "choices": [ { "key": "A", "text": "Two days", "ja": "2日" } ],
       "answer": "C",
       "explanation": "日本語解説。正解の根拠と誤答がなぜ誤りかを書く。",
@@ -169,6 +170,9 @@ Markdown 版は段落まるごとの訳だが、JSON は **文単位で英日を
 
 **`keywords` は背景解説の英語キーワード（2026-11 以降の教材のみ）**
 `background[].body` には「燃料ヘッジ(fuel hedging)」の形で書かれ、アプリは括弧の中の英語に色を付け、その横に ☆ を置く。☆ を押すと `keywords` の `ja` / `gloss` / `example` ごと語彙帳に入る。一覧は出さない（本文の中で完結させる）。`term` は本文の括弧の中と同じ綴りにする。古い教材には無く、無ければ何も出さない。Gemini で背景を英訳するときは、括弧の英語を外してから渡す（訳文で語が重複するため）。
+
+**`questions[].promptJa` は設問文の和訳（時事英語・Part 3・4・7 共通）**
+解説画面で設問文（`prompt`）の下に小さく出す。設問を解いている画面には出さない。Part 3・4 の「"..." と言う際、何を意図していますか」型は、引用部分を英語のまま残す。無い教材では何も出さない。Part 5・6 は設問文が本文そのものなので持たない。
 
 **`vocabulary` と `glossary` は役割が違う**
 `vocabulary` は「覚える8語」（例文・品詞つき、語彙帳の対象）。`glossary` は「詰まらないための語注」（タップで出るだけ）。8語は両方に入ってよい。
@@ -241,6 +245,7 @@ Part 3（会話問題）。**1ファイル＝1セット＝1回分**。会話1本
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
       "choices": [ { "key": "A", "text": "...", "ja": "選択肢の訳" } ],
       "answer": "B",
       "evidence": [0, 1],
@@ -360,6 +365,7 @@ Part 3 との違いは3つ。**話し手が1人**なので `speakers`（配列�
       "id": "q1",
       "type": "gist",
       "prompt": "Why is the speaker calling?",
+      "promptJa": "話し手はなぜ電話をかけていますか。",
       "choices": [ { "key": "A", "text": "...", "ja": "選択肢の訳" } ],
       "answer": "B",
       "evidence": [0, 1],
@@ -632,6 +638,7 @@ Part 7（読解）。**1ファイル＝1セット**。本番と同じ単位で�
       "id": "q4",
       "type": "detail",
       "prompt": "How much will a member pay for the class on 8 October?",
+      "promptJa": "会員は10月8日の講座にいくら払いますか。",
       "choices": [ { "key": "A", "text": "Twenty dollars", "ja": "20ドル" } ],
       "answer": "C",
       "evidence": [ { "d": 1, "p": 0, "s": 2 }, { "d": 0, "p": 0, "s": 1 } ],

@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "Which of the following jobs will be among the first to be affected?",
+      "promptJa": "最初に影響を受ける仕事に含まれるのは次のうちどれですか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why does the union oppose the plan?",
+      "promptJa": "組合がこの計画に反対しているのはなぜですか。",
       "choices": [
         {
           "key": "A",

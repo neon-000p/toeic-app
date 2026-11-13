@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "Until when did the city promise not to lay off workers?",
+      "promptJa": "市はいつまで職員を解雇しないと約束しましたか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did the nurses reject the offer?",
+      "promptJa": "看護師たちがこの提案を拒否したのはなぜですか。",
       "choices": [
         {
           "key": "A",

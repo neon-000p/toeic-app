@@ -116,6 +116,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What is being advertised?",
+      "promptJa": "何が宣伝されていますか。",
       "choices": [
         {
           "key": "A",
@@ -154,6 +155,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "What will Ms. Okafor receive with her unit?",
+      "promptJa": "オカフォーさんはユニットと一緒に何を受け取りますか。",
       "choices": [
         {
           "key": "A",
@@ -197,6 +199,7 @@
       "id": "q3",
       "type": "detail",
       "prompt": "What is required when the contract is signed?",
+      "promptJa": "契約時に何が必要ですか。",
       "choices": [
         {
           "key": "A",
@@ -235,6 +238,7 @@
       "id": "q4",
       "type": "infer",
       "prompt": "What is suggested about Little Bridge Crafts?",
+      "promptJa": "Little Bridge Crafts について何が示唆されていますか。",
       "choices": [
         {
           "key": "A",
@@ -273,6 +277,7 @@
       "id": "q5",
       "type": "notTrue",
       "prompt": "What is NOT stated about Pinewood Storage?",
+      "promptJa": "Pinewood Storage について述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

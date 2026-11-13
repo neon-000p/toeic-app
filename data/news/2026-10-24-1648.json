@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "About how large is the EU's trade gap with China per day?",
+      "promptJa": "EU の対中貿易赤字は1日あたりおよそどのくらいですか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT mentioned as a sector the talks may cover?",
+      "promptJa": "交渉の対象となりうる分野として述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

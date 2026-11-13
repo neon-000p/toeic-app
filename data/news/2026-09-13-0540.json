@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How many barrels of crude oil does the pipeline normally carry each day?",
+      "promptJa": "このパイプラインは通常、1日に何バレルの原油を運んでいますか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why does the East-West Pipeline matter to Saudi Arabia right now?",
+      "promptJa": "東西パイプラインが今サウジアラビアにとって重要なのはなぜですか。",
       "choices": [
         {
           "key": "A",

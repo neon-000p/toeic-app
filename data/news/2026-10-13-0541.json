@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much more does trucked gas cost than pipeline gas?",
+      "promptJa": "トラックで運ぶガスはパイプラインのガスよりどれだけ高いですか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why can Oracle not depend on a pipeline for its New Mexico campus?",
+      "promptJa": "Oracle がニューメキシコのキャンパスでパイプラインに頼れないのはなぜですか。",
       "choices": [
         {
           "key": "A",

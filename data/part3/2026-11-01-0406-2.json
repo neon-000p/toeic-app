@@ -69,6 +69,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What problem does the man report?",
+      "promptJa": "男性はどんな問題を報告していますか。",
       "choices": [
         {
           "key": "A",
@@ -103,6 +104,7 @@
       "id": "q2",
       "type": "infer",
       "prompt": "What is suggested about the customer's address change?",
+      "promptJa": "顧客の住所変更について何が示唆されていますか。",
       "choices": [
         {
           "key": "A",
@@ -137,6 +139,7 @@
       "id": "q3",
       "type": "intent",
       "prompt": "What does the man imply when he says, \"She's been a loyal customer for years\"?",
+      "promptJa": "男性が \"She's been a loyal customer for years\" と言う際、何をほのめかしていますか。",
       "choices": [
         {
           "key": "A",

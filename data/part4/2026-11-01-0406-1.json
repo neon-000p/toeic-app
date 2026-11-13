@@ -53,6 +53,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "Why is the speaker calling?",
+      "promptJa": "話し手はなぜ電話をかけていますか。",
       "choices": [
         {
           "key": "A",
@@ -87,6 +88,7 @@
       "id": "q2",
       "type": "intent",
       "prompt": "What does the speaker mean when he says, \"I know that's short notice\"?",
+      "promptJa": "話し手が \"I know that's short notice\" と言う際、何を意図していますか。",
       "choices": [
         {
           "key": "A",
@@ -121,6 +123,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What is the listener asked to do by this afternoon?",
+      "promptJa": "聞き手は今日の午後までに何をするよう求められていますか。",
       "choices": [
         {
           "key": "A",

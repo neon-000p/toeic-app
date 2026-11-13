@@ -89,6 +89,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What problem are the speakers discussing?",
+      "promptJa": "話し手たちはどんな問題について話していますか。",
       "choices": [
         {
           "key": "A",
@@ -123,6 +124,7 @@
       "id": "q2",
       "type": "intent",
       "prompt": "What does the man mean when he says, \"if it's only sixty minutes\"?",
+      "promptJa": "男性が \"if it's only sixty minutes\" と言う際、何を意図していますか。",
       "choices": [
         {
           "key": "A",
@@ -156,6 +158,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What will most likely happen before the end of the day?",
+      "promptJa": "今日の終わりまでに何が起こると考えられますか。",
       "choices": [
         {
           "key": "A",

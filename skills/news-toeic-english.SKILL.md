@@ -424,6 +424,7 @@ Part 3 など他パートの教材は**別ルーティン・別ディレクト�
       "id": "q1",
       "type": "detail",
       "prompt": "設問文",
+      "promptJa": "設問文の和訳",
       "choices": [
         { "key": "A", "text": "...", "ja": "選択肢の訳" },
         { "key": "B", "text": "...", "ja": "選択肢の訳" },
@@ -480,6 +481,9 @@ Markdown の (1) Summary を**文単位に分割**し、各文に (4) Japanese T
 
 **`questions[].choices[].ja`（新規に作る）**
 各選択肢の日本語訳。アプリの解説画面で英文の下に小さく出す。20字以内を目安に、意訳しすぎず意味が分かる程度にする。誤答がなぜ誤りかを読むとき、英語のまま並べられるより速く判断できるようにするための項目。Markdown 側の (2) は英語のままでよい。
+
+**`questions[].promptJa`（新規に作る）**
+設問文の日本語訳。アプリの解説画面で設問文の下に小さく出す。英文の意味をそのまま、自然な疑問文（「〜ですか。」）にする。NOT問題は「〜でないものはどれですか。」とする。Markdown 側は英語のままでよい。
 
 **`questions[].explanation` と `tip`**
 Markdown の (3) をそのまま使う。解説本体を `explanation`、Part 7 の解法ポイントを `tip` に分ける。
@@ -546,6 +550,7 @@ Markdown の (7) の4ブロックをそのまま。`body` の中のキーワー�
 - `summary.paragraphs` が2つあり、すべての `sentences` に `en` と `ja` が揃っている
 - `questions` が2問、各4択、`answer` が `choices` の `key` のいずれかと一致する
 - すべての選択肢に `ja` がある
+- すべての設問に `promptJa` がある
 - すべての `evidence` の `p` / `s` が実在する添字を指している
 - `vocabulary` が8件、全 `term` が Summary に実在する
 - `glossary` が20語以上30語以下で、全キーが Summary に実在する小文字表層形である

@@ -57,6 +57,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "Why is the speaker calling?",
+      "promptJa": "話し手はなぜ電話をかけていますか。",
       "choices": [
         {
           "key": "A",
@@ -91,6 +92,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "According to the speaker, what caused the delay?",
+      "promptJa": "話し手によると、遅れの原因は何でしたか。",
       "choices": [
         {
           "key": "A",
@@ -124,6 +126,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What does the speaker ask the listener to do?",
+      "promptJa": "話し手は聞き手に何をするよう頼んでいますか。",
       "choices": [
         {
           "key": "A",

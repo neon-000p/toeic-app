@@ -2,14 +2,14 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="app-build" content="2026-11-02 3423279">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EQZky+k1gQh6QMJGIRzx/w8aKR/sToE7dS39Y4ZJdsc=' 'sha256-kkHtFwU1q20NYC/LTV9PikpteDu5bhfw+YZqRNVovO8=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://neon-000p.github.io https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="app-build" content="2026-11-14 cde7258">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EQZky+k1gQh6QMJGIRzx/w8aKR/sToE7dS39Y4ZJdsc=' 'sha256-/atmj4aPZs7vrdnjkYZS1qinfEiu3FVCKC/gSnMjXWY=' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com; frame-src https://neon-000p.github.io https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>News | AkariEN</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="style.css?v=ab5d2bcc">
+<link rel="stylesheet" href="style.css?v=8d7bd45b">
 <script>/* 保存した配色と明るさを、描く前に当てる（読み込み後に切り替わってちらつかないように） */
 (function(){try{var s=JSON.parse(localStorage.getItem('toeic.settings')||'{}'),d=document.documentElement;var p=/^(teal|indigo|violet|sepia|graphite)$/.test(s.palette)?s.palette:'indigo';if(p!=='teal')d.setAttribute('data-palette',p);if(s.mode==='light'||s.mode==='dark')d.setAttribute('data-theme',s.mode)}catch(e){}})();</script>
 <style>
@@ -313,6 +313,7 @@ details.src[open]>summary::before{content:"▾ ";}
       "id": "q1",
       "type": "detail",
       "prompt": "How long do ships now wait on average at the Port of Halford?",
+      "promptJa": "ハルフォード港では現在、船は平均してどれくらい待っていますか。",
       "choices": [
         {
           "key": "A",
@@ -343,6 +344,7 @@ details.src[open]>summary::before{content:"▾ ";}
       "id": "q2",
       "type": "reason",
       "prompt": "Why do analysts doubt that the new night shifts will solve the problem this year?",
+      "promptJa": "アナリストが、新たな夜間シフトでは今年中に問題が解決しないと見ているのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -1074,6 +1076,7 @@ details.src[open]>summary::before{content:"▾ ";}
       return '<div class="card">' +
         '<div class="qnum">Q' + (i + 1) + ' ' + mark + '</div>' +
         '<p class="qprompt">' + esc(q.prompt) + '</p>' +
+        (q.promptJa ? '<p class="qprompt-ja">' + esc(q.promptJa) + '</p>' : '') +
         q.choices.map(function (c) {
           var cls = '';
           if (c.key === q.answer) cls = ' ok';

@@ -57,6 +57,7 @@
       "id": "q1",
       "type": "who",
       "prompt": "Who most likely is the speaker?",
+      "promptJa": "話し手は誰だと考えられますか。",
       "choices": [
         {
           "key": "A",
@@ -90,6 +91,7 @@
       "id": "q2",
       "type": "intent",
       "prompt": "What does the speaker mean when she says, \"there is an automated teller machine next to the main entrance\"?",
+      "promptJa": "話し手が \"there is an automated teller machine next to the main entrance\" と言う際、何を意図していますか。",
       "choices": [
         {
           "key": "A",
@@ -124,6 +126,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What are listeners asked to do if they want to shop later?",
+      "promptJa": "後で買い物をしたい聞き手は何をするよう求められていますか。",
       "choices": [
         {
           "key": "A",

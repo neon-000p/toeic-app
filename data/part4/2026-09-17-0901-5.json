@@ -53,6 +53,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What is the broadcast mainly about?",
+      "promptJa": "この放送は主に何についてですか。",
       "choices": [
         {
           "key": "A",
@@ -87,6 +88,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "What does the speaker say about the blue line?",
+      "promptJa": "話し手はブルーラインについて何と言っていますか。",
       "choices": [
         {
           "key": "A",
@@ -120,6 +122,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "What does the speaker imply about parking near the stations?",
+      "promptJa": "話し手は駅の近くの駐車について何をほのめかしていますか。",
       "choices": [
         {
           "key": "A",

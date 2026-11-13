@@ -191,6 +191,7 @@ Questions 1-5 refer to the following e-mail and schedule.
       "id": "q1",
       "type": "gist",
       "prompt": "What is the purpose of the article?",
+      "promptJa": "この記事の目的は何ですか。",
       "choices": [
         { "key": "A", "text": "To announce the reopening of a market", "ja": "市場の再開を知らせること" },
         { "key": "B", "text": "...", "ja": "..." },
@@ -214,6 +215,7 @@ Questions 1-5 refer to the following e-mail and schedule.
 
 ```json
 { "id": "q3", "type": "insert", "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+  "promptJa": "[1]、[2]、[3]、[4] と記された箇所のうち、次の文が入るのに最もふさわしいのはどれですか。",
   "insert": "Vendors who sold at the old market will be given first choice.",
   "choices": [ { "key": "A", "text": "[1]", "ja": "1の位置" } ],
   "answer": "C", "evidence": [ { "d": 0, "p": 1, "s": 1 } ] }
@@ -254,7 +256,7 @@ node tools/check-part7.js --all
 - `docs[].docType` が10種のいずれか、`intro` が設問数と文書の並びに合っている
 - 語数が範囲内（`single` 110〜200語 / `double` 合計 180〜280語）
 - すべての文に `ja` がある
-- 設問の `prompt`・4択・`ja`・`answer`・`evidence`・`explanation`・`tip` がそろっている
+- 設問の `prompt`・`promptJa`（設問文の和訳。解説画面で設問文の下に出る。引用部分は英語のまま残す）・4択・`ja`・`answer`・`evidence`・`explanation`・`tip` がそろっている
 - `evidence` が実在する文書・段落・文を指している
 - 同じ型が3問以上無い。`gist` が2問以上無い
 - `insert` は `single` のセットにだけ、最大1問。あれば文書に `pos` 1〜4がすべてあり、選択肢が `[1]`〜`[4]`

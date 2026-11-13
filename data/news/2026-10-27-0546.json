@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "By how much did PC shipments fall from a year earlier, according to IDC?",
+      "promptJa": "IDC によると、PC の出荷台数は前年からどれだけ減少しましたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why did demand for PCs weaken?",
+      "promptJa": "記事によると、PC の需要が弱まったのはなぜですか。",
       "choices": [
         {
           "key": "A",

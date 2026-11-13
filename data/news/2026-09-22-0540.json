@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much is the arms package for Taiwan worth, according to the article?",
+      "promptJa": "記事によると、台湾向けの武器売却パッケージの総額はいくらですか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why is it unclear whether the U.S. president will sign the arms deal before the meeting?",
+      "promptJa": "記事によると、米大統領が会談前に武器取引に署名するかどうかがはっきりしないのはなぜですか。",
       "choices": [
         {
           "key": "A",

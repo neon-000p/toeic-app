@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What was the sentiment index in early November?",
+      "promptJa": "11月初めの景況感指数はいくつでしたか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why did the mood improve?",
+      "promptJa": "記事によると、景況感が改善したのはなぜですか。",
       "choices": [
         {
           "key": "A",

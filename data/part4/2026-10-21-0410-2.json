@@ -57,6 +57,7 @@
       "id": "q1",
       "type": "who",
       "prompt": "Who most likely is the speaker?",
+      "promptJa": "話し手は誰だと考えられますか。",
       "choices": [
         {
           "key": "A",
@@ -91,6 +92,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "What will customers receive for signing up for a membership?",
+      "promptJa": "会員登録をすると、客は何を受け取れますか。",
       "choices": [
         {
           "key": "A",
@@ -124,6 +126,7 @@
       "id": "q3",
       "type": "infer",
       "prompt": "What does the speaker imply about the products?",
+      "promptJa": "話し手は商品について何をほのめかしていますか。",
       "choices": [
         {
           "key": "A",

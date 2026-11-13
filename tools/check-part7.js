@@ -136,6 +136,7 @@ function check(file) {
     if (!TYPES.includes(q.type)) say(`${at} の type が7種以外: ${q.type}`);
     used.push(q.type);
     if (!q.prompt) say(`${at} に prompt が無い`);
+    if (!q.promptJa) say(`${at} に promptJa（設問文の和訳）が無い`);
 
     const ch = q.choices || [];
     if (ch.length !== 4) say(`${at} が4択でない: ${ch.length}`);

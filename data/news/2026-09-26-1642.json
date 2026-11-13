@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "What was Darden Restaurants' net income in the first quarter?",
+      "promptJa": "Darden Restaurants の第1四半期の純利益はいくらでしたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did Darden Restaurants' shares drop after the earnings announcement?",
+      "promptJa": "決算発表後に Darden Restaurants の株価が下がったのはなぜですか。",
       "choices": [
         {
           "key": "A",

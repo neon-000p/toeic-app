@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much new capacity will the reactor upgrades add to the grid?",
+      "promptJa": "原子炉の改修によって、送電網にどれだけの新たな発電容量が加わりますか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why is upgrading existing nuclear plants attractive?",
+      "promptJa": "記事によると、既存の原子力発電所を改修することが魅力的なのはなぜですか。",
       "choices": [
         {
           "key": "A",

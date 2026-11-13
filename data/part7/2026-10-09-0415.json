@@ -92,6 +92,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "Why was the date of the inventory count changed?",
+      "promptJa": "棚卸しの日付が変更されたのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -130,6 +131,7 @@
       "id": "q2",
       "type": "notTrue",
       "prompt": "What is NOT mentioned as a benefit for employees who work the full shift?",
+      "promptJa": "シフトを最後まで勤めた従業員への特典として述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",
@@ -168,6 +170,7 @@
       "id": "q3",
       "type": "insert",
       "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "promptJa": "[1]、[2]、[3]、[4] と記された箇所のうち、次の文が入るのに最もふさわしいのはどれですか。",
       "insert": "Anyone unable to take part must let a supervisor know by the same deadline.",
       "choices": [
         {
@@ -207,6 +210,7 @@
       "id": "q4",
       "type": "infer",
       "prompt": "What is suggested about the Riverside Distribution Center?",
+      "promptJa": "リバーサイド配送センターについて何が示唆されていますか。",
       "choices": [
         {
           "key": "A",

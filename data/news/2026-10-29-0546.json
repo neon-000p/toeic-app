@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "By how many points did the confidence index rise in October?",
+      "promptJa": "10月に信頼感指数は何ポイント上昇しましたか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "not",
       "prompt": "Which of the following is NOT stated in the article?",
+      "promptJa": "記事で述べられていないものはどれですか。",
       "choices": [
         {
           "key": "A",

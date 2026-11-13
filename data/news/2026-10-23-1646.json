@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How high did Brent crude climb on Thursday?",
+      "promptJa": "木曜日にブレント原油はどこまで上昇しましたか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why do airlines and shipping firms often raise prices when oil becomes more expensive?",
+      "promptJa": "記事によると、原油が高くなると航空会社や海運会社がしばしば値上げするのはなぜですか。",
       "choices": [
         {
           "key": "A",

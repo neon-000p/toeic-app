@@ -84,6 +84,7 @@
       "id": "q1",
       "type": "gist",
       "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
       "choices": [
         {
           "key": "A",
@@ -118,6 +119,7 @@
       "id": "q2",
       "type": "detail",
       "prompt": "Why is the first man unavailable until three o'clock?",
+      "promptJa": "1人目の男性が3時まで対応できないのはなぜですか。",
       "choices": [
         {
           "key": "A",
@@ -151,6 +153,7 @@
       "id": "q3",
       "type": "next",
       "prompt": "What will the woman most likely do next?",
+      "promptJa": "女性は次に何をすると考えられますか。",
       "choices": [
         {
           "key": "A",

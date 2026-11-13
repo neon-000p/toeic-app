@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much higher were shop prices in Britain in October than a year earlier?",
+      "promptJa": "10月の英国の店頭価格は1年前よりどれだけ高かったですか。",
       "choices": [
         {
           "key": "A",
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "According to the article, why are stores passing more costs on to customers?",
+      "promptJa": "記事によると、店がより多くのコストを客に転嫁しているのはなぜですか。",
       "choices": [
         {
           "key": "A",

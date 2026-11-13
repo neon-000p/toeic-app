@@ -63,6 +63,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How much daily supply of natural gas has the pipeline shutdown removed from the market?",
+      "promptJa": "パイプラインの停止により、1日あたりどれだけの天然ガス供給が市場から失われましたか。",
       "choices": [
         {
           "key": "A",
@@ -97,6 +98,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "Why did natural gas futures rise sharply this week, according to the article?",
+      "promptJa": "記事によると、今週天然ガス先物が急騰したのはなぜですか。",
       "choices": [
         {
           "key": "A",

@@ -71,6 +71,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "How many jobs did private employers add in October, according to ADP?",
+      "promptJa": "ADP によると、10月に民間企業は何人分の雇用を増やしましたか。",
       "answer": "B",
       "explanation": "第1段落の1文目に「Private employers in the United States added 86,000 jobs in October」とあるため、正解は (B) 86,000。(A) の69,000は経済学者の「予想値」で、実際の結果ではない（2文目）。(C) の39,000は貿易・運輸・公益事業という1つの業種だけの増加数。(D) の76,000は本文にない数字。同じ段落に数字が複数出てくるため、「何についての数字か」を必ず確認する。",
       "evidence": {
@@ -105,6 +106,7 @@
       "id": "q2",
       "type": "contrast",
       "prompt": "According to the article, which is true about workers who changed jobs?",
+      "promptJa": "記事によると、転職した労働者について正しいものはどれですか。",
       "answer": "B",
       "explanation": "第2段落の3文目「Their total pay, including bonuses and overtime, rose 7.6 percent.」の Their は直前の job-changers（転職者）を指すため、正解は (B)。(A) は逆で、転職者の基本給は4.8%と全体の3.2%より大きく伸びた。(C) 専門・ビジネスサービスは雇用が減った業種として出てくるだけで、転職者との関連は述べられていない。(D) ADP は統計を発表した会社で、採用主体ではない。",
       "evidence": {

@@ -117,6 +117,7 @@ function check(file) {
   qs.forEach((q, i) => {
     const at = `questions[${i}]`;
     if (!q.prompt) say(`${at} に prompt が無い`);
+    if (!q.promptJa) say(`${at} に promptJa（設問文の和訳）が無い`);
     if (q.type === 'graphic') say(`${at} で graphic を使っている（アプリが図表を出せない）`);
     else if (!TYPES.includes(q.type)) say(`${at} の type が6種以外: ${q.type}`);
     if (usedTypes.includes(q.type)) say(`${at} の type が重複している: ${q.type}`);

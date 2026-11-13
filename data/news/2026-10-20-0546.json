@@ -67,6 +67,7 @@
       "id": "q1",
       "type": "detail",
       "prompt": "By about how much did the popular chip fund gain on Monday?",
+      "promptJa": "月曜日に人気の半導体ファンドはおよそどれだけ上昇しましたか。",
       "choices": [
         {
           "key": "A",
@@ -101,6 +102,7 @@
       "id": "q2",
       "type": "reason",
       "prompt": "What helped ease the pressure on chip stocks on Monday?",
+      "promptJa": "月曜日に半導体株への圧力を和らげたのは何ですか。",
       "choices": [
         {
           "key": "A",
