@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-13-1645",
+  "date": "2026-11-13",
+  "time": "16:45",
+  "createdAt": "2026-11-13T16:45:00+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Oil Heads for Second Weekly Drop as U.S. Keeps Iran Blockade",
+    "ja": "原油2週連続安へ、米国はイラン封鎖を継続"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oil prices were on track for a second straight weekly decline on Friday, with the global benchmark trading at about $95 a barrel.",
+            "ja": "原油価格は金曜日、2週連続の週間下落に向かっており、国際的な指標価格は1バレル約95ドルで取引された。"
+          },
+          {
+            "en": "The benchmark had already fallen 16% the week before.",
+            "ja": "この指標価格は、前の週にすでに16%下落していた。"
+          },
+          {
+            "en": "President Donald Trump said a deal with Iran was not needed to end the war.",
+            "ja": "ドナルド・トランプ大統領は、戦争を終わらせるのにイランとの合意は必要ないと述べた。"
+          },
+          {
+            "en": "His comment suggested that the United States would keep its blockade, which stops Iranian oil shipments from reaching buyers.",
+            "ja": "この発言は、米国が封鎖を続けることを示唆した。この封鎖によって、イラン産原油の積み荷は買い手に届かなくなっている。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Analysts said the remarks lowered the risk of renewed large-scale fighting in the region.",
+            "ja": "アナリストらは、この発言によって地域で大規模な戦闘が再び起きるリスクが下がったと指摘した。"
+          },
+          {
+            "en": "As a result, traders were less willing to pay extra for oil to protect against a sudden supply shortage.",
+            "ja": "その結果、突然の供給不足に備えて原油に上乗せ分を払おうとするトレーダーは減った。"
+          },
+          {
+            "en": "Weak demand also continued to weigh on prices.",
+            "ja": "需要の弱さも、引き続き価格の重荷となった。"
+          },
+          {
+            "en": "Government data showed that U.S. crude inventories rose by 4.7 million barrels in the week ended November 6.",
+            "ja": "政府統計によると、11月6日までの1週間で米国の原油在庫は470万バレル増えた。"
+          },
+          {
+            "en": "Analysts had expected a decline of 1.1 million barrels.",
+            "ja": "アナリストは110万バレルの減少を予想していた。"
+          },
+          {
+            "en": "However, recent attacks on oil tankers show that the risk to supplies has not disappeared.",
+            "ja": "ただし、最近起きた石油タンカーへの攻撃は、供給をめぐるリスクが消えていないことを示している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How did U.S. crude inventories change in the week ended November 6?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They fell by 1.1 million barrels.",
+          "ja": "110万バレル減った"
+        },
+        {
+          "key": "B",
+          "text": "They rose by 4.7 million barrels.",
+          "ja": "470万バレル増えた"
+        },
+        {
+          "key": "C",
+          "text": "They rose by 16 million barrels.",
+          "ja": "1,600万バレル増えた"
+        },
+        {
+          "key": "D",
+          "text": "They fell by 4.7 million barrels.",
+          "ja": "470万バレル減った"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落4文目に U.S. crude inventories rose by 4.7 million barrels in the week ended November 6 とある。(A) の「110万バレル減」は次の文にある「アナリストの予想（had expected）」で、実際の結果ではない。(C) の 16 は前週の価格下落率（16%）を在庫の数字にすり替えた引っかけ。(D) は数字は同じだが rose（増えた）と逆の fell（減った）になっている。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "Part 7 では「予想（expected）」と「実績（rose / showed）」の数字が並ぶことが多い。設問がどちらを聞いているかを確認し、動詞の向き（rise / fall）まで照合する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why were traders less willing to pay extra for oil?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Iran agreed to a peace deal.",
+          "ja": "イランが和平合意に応じた"
+        },
+        {
+          "key": "B",
+          "text": "The United States ended its blockade.",
+          "ja": "米国が封鎖を解いた"
+        },
+        {
+          "key": "C",
+          "text": "The risk of renewed large-scale fighting seemed lower.",
+          "ja": "大規模な戦闘再開のリスクが下がったようだ"
+        },
+        {
+          "key": "D",
+          "text": "Attacks on oil tankers stopped completely.",
+          "ja": "タンカーへの攻撃が完全に止んだ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第2段落1文目で、発言により the risk of renewed large-scale fighting が下がったとあり、次の文が As a result（その結果）で「上乗せ分を払おうとしなくなった」と続く。(A) 本文は「合意は不要」と述べただけで、合意したとは書いていない。(B) 本文は封鎖を「続ける（keep）」ことを示唆しており逆。(D) 最終文で攻撃によるリスクは消えていないとあり、本文と矛盾する。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由を問う設問では As a result / because / due to などの因果を示す語の直前・直後に根拠がある。結果の文だけでなく、その前の文まで読んで原因を特定する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "decline",
+      "pos": "名",
+      "ja": "下落、減少",
+      "gloss": "",
+      "example": {
+        "en": "The company reported a decline in sales last quarter.",
+        "ja": "その会社は前四半期の売上減少を報告した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "gloss": "",
+      "example": {
+        "en": "Many supply contracts use this price as a benchmark.",
+        "ja": "多くの供給契約がこの価格を指標として使っている。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "blockade",
+      "pos": "名",
+      "ja": "封鎖",
+      "gloss": "（＝船や物資の出入りを力で止めること）",
+      "example": {
+        "en": "The blockade delayed several deliveries to our overseas customers.",
+        "ja": "封鎖のため、海外顧客への納品がいくつか遅れた。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "shipment",
+      "pos": "名",
+      "ja": "出荷、積み荷",
+      "gloss": "",
+      "example": {
+        "en": "The next shipment will leave the warehouse on Monday.",
+        "ja": "次の出荷分は月曜日に倉庫を出る。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "renewed",
+      "pos": "形",
+      "ja": "再び起きた、新たな",
+      "gloss": "",
+      "example": {
+        "en": "The manager made a renewed effort to reduce overtime.",
+        "ja": "部長は残業を減らすため、改めて取り組みを始めた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "shortage",
+      "pos": "名",
+      "ja": "不足",
+      "gloss": "",
+      "example": {
+        "en": "A shortage of staff caused delays at the factory.",
+        "ja": "人手不足のため工場で遅れが生じた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "weigh on",
+      "pos": "熟",
+      "ja": "～の重荷になる、～を押し下げる",
+      "gloss": "",
+      "example": {
+        "en": "Higher shipping costs continued to weigh on the company's profits.",
+        "ja": "輸送費の上昇が引き続き同社の利益を圧迫した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "willing",
+      "pos": "形",
+      "ja": "～する意思がある、進んで～する",
+      "gloss": "",
+      "example": {
+        "en": "Our supplier is willing to offer a discount on large orders.",
+        "ja": "当社の仕入先は大口注文なら値引きに応じる意向だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "track": {
+      "lemma": "track",
+      "pos": "名",
+      "ja": "軌道、進路",
+      "note": "on track for ～ で「～に向かっている」"
+    },
+    "straight": {
+      "lemma": "straight",
+      "pos": "形",
+      "ja": "連続した",
+      "note": "a second straight ～ で「2回連続の～」"
+    },
+    "weekly": {
+      "lemma": "weekly",
+      "pos": "形",
+      "ja": "週ごとの、週間の",
+      "note": ""
+    },
+    "decline": {
+      "lemma": "decline",
+      "pos": "名",
+      "ja": "下落、減少",
+      "note": ""
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界的な",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "note": ""
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "名",
+      "ja": "バレル（原油の単位）",
+      "note": "1バレルは約159リットル"
+    },
+    "fallen": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "下落した",
+      "note": "fall-fell-fallen"
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "合意、取引",
+      "note": ""
+    },
+    "suggested": {
+      "lemma": "suggest",
+      "pos": "動",
+      "ja": "示唆した",
+      "note": ""
+    },
+    "blockade": {
+      "lemma": "blockade",
+      "pos": "名",
+      "ja": "封鎖",
+      "note": ""
+    },
+    "iranian": {
+      "lemma": "Iranian",
+      "pos": "形",
+      "ja": "イランの",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷、積み荷",
+      "note": ""
+    },
+    "reaching": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "届く、到達する",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト、分析家",
+      "note": ""
+    },
+    "remarks": {
+      "lemma": "remark",
+      "pos": "名",
+      "ja": "発言",
+      "note": ""
+    },
+    "lowered": {
+      "lemma": "lower",
+      "pos": "動",
+      "ja": "下げた",
+      "note": ""
+    },
+    "renewed": {
+      "lemma": "renewed",
+      "pos": "形",
+      "ja": "再び起きた",
+      "note": ""
+    },
+    "region": {
+      "lemma": "region",
+      "pos": "名",
+      "ja": "地域",
+      "note": ""
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー、取引業者",
+      "note": ""
+    },
+    "willing": {
+      "lemma": "willing",
+      "pos": "形",
+      "ja": "～する意思がある",
+      "note": "be willing to do"
+    },
+    "extra": {
+      "lemma": "extra",
+      "pos": "名",
+      "ja": "追加分、割増",
+      "note": "pay extra で「余分に払う」"
+    },
+    "protect": {
+      "lemma": "protect",
+      "pos": "動",
+      "ja": "守る",
+      "note": "protect against ～ で「～から守る」"
+    },
+    "sudden": {
+      "lemma": "sudden",
+      "pos": "形",
+      "ja": "突然の",
+      "note": ""
+    },
+    "shortage": {
+      "lemma": "shortage",
+      "pos": "名",
+      "ja": "不足",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "weigh": {
+      "lemma": "weigh on",
+      "pos": "熟",
+      "ja": "～の重荷になる",
+      "note": "weigh on ～ の形で使う"
+    },
+    "crude": {
+      "lemma": "crude",
+      "pos": "名",
+      "ja": "原油",
+      "note": "crude oil の略"
+    },
+    "inventories": {
+      "lemma": "inventory",
+      "pos": "名",
+      "ja": "在庫",
+      "note": ""
+    },
+    "tankers": {
+      "lemma": "tanker",
+      "pos": "名",
+      "ja": "タンカー",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "関係代名詞 which の非制限用法（, which ～：先行詞への補足説明）と stop A from doing",
+    "quote": "His comment suggested that the United States would keep its blockade, which stops Iranian oil shipments from reaching buyers.",
+    "quoteJa": "この発言は、米国が封鎖を続けることを示唆した。この封鎖によって、イラン産原油の積み荷は買い手に届かなくなっている。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "カンマの後ろの which は「非制限用法（継続用法）」の関係代名詞で、直前の its blockade（その封鎖）に「それは～するものだ」と補足説明を加えている。訳すときは前から順に「封鎖を続ける。その封鎖は～」と読み下すと自然になる。which の後ろには stop A from doing（Aが～するのを妨げる）が使われ、「イラン産原油の積み荷が買い手に届くのを止めている」という意味になる。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "2文に分けると ... would keep its blockade. The blockade stops Iranian oil shipments from reaching buyers. となる。カンマの無い制限用法 the blockade which stops ... は「（いくつかある封鎖のうち）～する封鎖」と種類を絞り込む意味になり、ニュアンスが変わる。また非制限用法では that は使えず、, that stops ... とは書けない点に注意。stop A from doing は prevent A from doing / keep A from doing でも言い換えられる。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では「The new system, ____ was installed last month, has reduced errors.」の空所に which を選ばせる問題が出る。カンマの直後で先行詞が「もの」なら which、「人」なら who を選び、that は選ばない。また「prevent employees ____ accessing the files」のように from を問う前置詞問題も定番。Part 7 では , which 以下に補足の事実（日付・数字・理由）が置かれ、設問の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Please use the new expense form, which is available on the intranet.（新しい経費精算書を使ってください。社内ネットで入手できます）／ The heavy snow prevented the driver from delivering the order on time.（大雪のため、運転手は注文品を時間どおりに届けられなかった）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "国際指標の原油価格は11月13日、1バレル約95ドルで推移し、2週連続の下落に向かった。前週は16%急落している。トランプ大統領が「イランとの合意は不要」と述べたことに加え、11月6日までの週の米原油在庫が470万バレル増え、110万バレル減という予想を裏切った。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "原油価格には、供給が突然止まる恐れに備えて買い手が払う「保険料」のような上乗せ分が含まれ、これをリスクプレミアム(risk premium)と呼ぶ。今回の発言で大規模な戦闘が再開する可能性は下がったと受け止められ、この上乗せ分がはげ落ちた。さらに在庫の積み上がりは需要の弱さを示すため、値下がりに拍車をかけた。"
+    },
+    {
+      "heading": "📌 3. 他社は燃料高をどう価格に反映したか",
+      "body": "燃料費の変動を料金にどう映すかは、航空会社で分かれた。カナダのポーター航空は2026年3月、ジェット燃料が50%超急騰したことを受けて特典航空券に燃油サーチャージ(fuel surcharge)を導入し、原油が落ち着いた6月23日に40ドルから20ドルへ半減させた。一方エア・カナダは、燃料費を通常の運賃体系(fare structure)の中で吸収し、通常運賃には別建ての上乗せをしなかった（パッケージ旅行には1人50ドルの燃料費を残した）。前者は上乗せを機動的に増減させ、後者は運賃そのものに燃料費を織り込むという違いがある。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本航空(JAL)は2026年10月、11〜12月発券分の燃油サーチャージ引き上げを国に申請し、日本発の北米・欧州線は片道5万円から6万2,000円になった。改定は2か月ごとで、それ以前の燃油価格と為替をもとに額が決まる。このため足元の原油安が反映されるのは、早くても2027年1月以降の発券分となる。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "risk premium",
+      "pos": "熟",
+      "ja": "リスクプレミアム",
+      "gloss": "（＝危険に備えて価格に上乗せされる分のこと）",
+      "example": {
+        "en": "Investors demanded a higher risk premium for the new project.",
+        "ja": "投資家はその新事業に、より高いリスクプレミアムを求めた。"
+      }
+    },
+    {
+      "term": "fuel surcharge",
+      "pos": "熟",
+      "ja": "燃油サーチャージ",
+      "gloss": "（＝燃料費の上昇分として運賃に追加される料金のこと）",
+      "example": {
+        "en": "The delivery company added a fuel surcharge to every invoice.",
+        "ja": "その配送会社はすべての請求書に燃料割増料金を加えた。"
+      }
+    },
+    {
+      "term": "fare structure",
+      "pos": "熟",
+      "ja": "運賃体系",
+      "gloss": "（＝料金の種類や決め方の仕組みのこと）",
+      "example": {
+        "en": "The railway will simplify its fare structure next spring.",
+        "ja": "その鉄道会社は来春、運賃体系を簡素化する。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Oil prices set for second weekly decline as Trump to stay with Iran blockade",
+      "publisher": "CNBC (Reuters)",
+      "url": "https://www.cnbc.com/2026/11/13/oil-prices-set-for-second-weekly-decline-as-trump-to-stay-with-iran-blockade.html",
+      "date": "2026-11-13"
+    },
+    {
+      "title": "Oil prices set for second weekly decline as Trump sticks with Iran blockade",
+      "publisher": "Business Recorder",
+      "url": "https://www.brecorder.com/news/40448723/oil-prices-set-for-second-weekly-decline-as-trump-sticks-with-iran-blockade",
+      "date": "2026-11-13"
+    },
+    {
+      "title": "Some airlines reduce fuel surcharges as oil falls while others hold steady",
+      "publisher": "CTV News",
+      "url": "https://www.ctvnews.ca/business/article/some-airlines-reduce-fuel-surcharges-as-oil-falls-while-others-hold-steady/",
+      "date": "2026-06-25"
+    },
+    {
+      "title": "Porter reduces fuel surcharge for rewards flight redemptions as fuel prices begin to normalize",
+      "publisher": "BNN Bloomberg",
+      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/06/23/porter-reduces-fuel-surcharge-for-rewards-flight-redemptions-as-fuel-prices-begin-to-normalize/",
+      "date": "2026-06-23"
+    },
+    {
+      "title": "JAL、11-12月サーチャージ引き上げ 欧米往復12.4万円に",
+      "publisher": "Aviation Wire",
+      "url": "https://www.aviationwire.jp/archives/352484",
+      "date": "2026-10-15"
+    }
+  ]
+}
