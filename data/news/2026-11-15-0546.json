@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-15-0546",
+  "date": "2026-11-15",
+  "time": "05:46",
+  "createdAt": "2026-11-15T05:46:00+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail & Consumer",
+  "sample": false,
+  "title": {
+    "en": "David Jones to Close Half of Its Stores",
+    "ja": "豪百貨店デビッド・ジョーンズ、半数の店舗を閉鎖へ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "David Jones, Australia's oldest department store chain, will close 19 of its 38 stores by the end of the year.",
+            "ja": "オーストラリア最古の百貨店チェーン、デビッド・ジョーンズは、38店舗のうち19店舗を年内に閉鎖する。"
+          },
+          {
+            "en": "The receivers, FTI Consulting, announced the decision on November 11, less than a week after the company collapsed.",
+            "ja": "管財人のFTIコンサルティングは、同社の経営破綻から1週間もたたない11月11日に、この決定を発表した。"
+          },
+          {
+            "en": "Most of the closing stores are in the outer suburbs of big cities.",
+            "ja": "閉鎖される店舗の多くは、大都市の郊外にある。"
+          },
+          {
+            "en": "The company has about 6,000 employees, but the receivers have not said how many jobs will be lost.",
+            "ja": "同社の従業員は約6,000人だが、管財人は何人分の雇用が失われるかを明らかにしていない。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The 188-year-old retailer ran into trouble after talks with its largest landlord broke down over unpaid rent.",
+            "ja": "創業188年の同社は、未払いの家賃をめぐって最大の家主との交渉が決裂したことで、経営が行き詰まった。"
+          },
+          {
+            "en": "A separate team of administrators is now looking for a buyer or new investors for the business.",
+            "ja": "別の管理人チームが現在、事業の買い手や新たな出資者を探している。"
+          },
+          {
+            "en": "Staff at the affected stores were told the news and will be consulted over the next seven days.",
+            "ja": "対象店舗の従業員にはすでに通知があり、今後7日間にわたって意見聴取が行われる。"
+          },
+          {
+            "en": "Suppliers said they were saddened but understood the decision.",
+            "ja": "納入業者は、残念だが決定には理解を示すと述べた。"
+          },
+          {
+            "en": "Shopping center owners, meanwhile, may now be able to fill the large empty spaces with new tenants.",
+            "ja": "一方、ショッピングセンターの所有者にとっては、空いた広い区画に新たなテナントを入れる機会になるかもしれない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many stores will David Jones close?",
+      "promptJa": "デビッド・ジョーンズは何店舗を閉鎖しますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "7",
+          "ja": "7店舗"
+        },
+        {
+          "key": "B",
+          "text": "19",
+          "ja": "19店舗"
+        },
+        {
+          "key": "C",
+          "text": "38",
+          "ja": "38店舗"
+        },
+        {
+          "key": "D",
+          "text": "188",
+          "ja": "188店舗"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第1段落1文目に will close 19 of its 38 stores（38店舗のうち19店舗を閉鎖する）とある。(C) の「38」は閉鎖前の店舗の総数で、閉鎖する数ではない。(D) の「188」は創業からの年数（188-year-old）。(A) の「7」は本文の seven days（意見聴取の期間の7日間）から取った引っかけで、店舗数とは関係がない。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "「19 of its 38」のように「A of B」で部分と全体の数が並ぶと、全体の数（B）が引っかけ選択肢に使われやすい。設問が「閉鎖する数」か「全体の数」かを確かめてから選ぶこと。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did the retailer run into trouble?",
+      "promptJa": "この小売業者はなぜ経営が行き詰まったのですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Its online sales fell sharply.",
+          "ja": "ネット販売が急減した"
+        },
+        {
+          "key": "B",
+          "text": "Talks with its main landlord failed.",
+          "ja": "主要な家主との交渉が決裂した"
+        },
+        {
+          "key": "C",
+          "text": "Its suppliers stopped sending goods.",
+          "ja": "納入業者が商品の出荷を止めた"
+        },
+        {
+          "key": "D",
+          "text": "It opened too many new stores.",
+          "ja": "新店を出しすぎた"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落1文目に ran into trouble after talks with its largest landlord broke down over unpaid rent（未払いの家賃をめぐって最大の家主との交渉が決裂したことで行き詰まった）とあり、largest landlord が main landlord、broke down が failed に言い換えられている。(A) のネット販売については本文に記述がない。(C) は逆で、納入業者は決定に理解を示したと書かれている。(D) は本文が店を「閉じる」話であり、出店しすぎたという記述はない。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由を問う設問では、本文の語句が別の語に言い換えられた選択肢が正解になりやすい（largest → main、broke down → failed）。本文と同じ単語が入っている選択肢に飛びつかず、意味が一致するかで判断すること。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "receivers",
+      "pos": "名",
+      "ja": "管財人",
+      "gloss": "（＝破綻した会社の財産を管理し、店の閉鎖や売却を決める専門家のこと）",
+      "example": {
+        "en": "The receivers will decide which factories to sell.",
+        "ja": "管財人が、どの工場を売却するかを決める。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "collapsed",
+      "pos": "動",
+      "ja": "破綻した、崩壊した",
+      "gloss": "",
+      "example": {
+        "en": "The deal collapsed after the two sides failed to agree on the price.",
+        "ja": "双方が価格で合意できず、その取引は白紙になった。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "landlord",
+      "pos": "名",
+      "ja": "家主、貸主",
+      "gloss": "",
+      "example": {
+        "en": "Our landlord agreed to repair the office heating system.",
+        "ja": "家主はオフィスの暖房設備の修理に同意した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "unpaid",
+      "pos": "形",
+      "ja": "未払いの",
+      "gloss": "",
+      "example": {
+        "en": "Please contact the accounting department about any unpaid invoices.",
+        "ja": "未払いの請求書については経理部に連絡してください。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "administrators",
+      "pos": "名",
+      "ja": "管理人、運営担当者",
+      "gloss": "",
+      "example": {
+        "en": "The system administrators will update the software tonight.",
+        "ja": "システム管理者が今夜ソフトウェアを更新する。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "affected",
+      "pos": "形",
+      "ja": "影響を受けた、対象の",
+      "gloss": "",
+      "example": {
+        "en": "Customers at the affected branches will receive a refund.",
+        "ja": "対象となる支店の顧客には返金が行われる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "consulted",
+      "pos": "動",
+      "ja": "意見を聞かれた、相談を受けた",
+      "gloss": "",
+      "example": {
+        "en": "Employees will be consulted before the new schedule starts.",
+        "ja": "新しい勤務表が始まる前に、従業員の意見が聞かれる。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "tenants",
+      "pos": "名",
+      "ja": "テナント、賃借人",
+      "gloss": "",
+      "example": {
+        "en": "The building is looking for new tenants for the ground floor.",
+        "ja": "そのビルは1階に入る新しいテナントを探している。"
+      }
+    }
+  ],
+  "glossary": {
+    "oldest": {
+      "lemma": "old",
+      "pos": "形",
+      "ja": "最も古い",
+      "note": ""
+    },
+    "department store": {
+      "lemma": "department store",
+      "pos": "名",
+      "ja": "百貨店",
+      "note": ""
+    },
+    "chain": {
+      "lemma": "chain",
+      "pos": "名",
+      "ja": "チェーン店",
+      "note": ""
+    },
+    "receivers": {
+      "lemma": "receiver",
+      "pos": "名",
+      "ja": "管財人",
+      "note": ""
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "発表した",
+      "note": ""
+    },
+    "decision": {
+      "lemma": "decision",
+      "pos": "名",
+      "ja": "決定",
+      "note": ""
+    },
+    "collapsed": {
+      "lemma": "collapse",
+      "pos": "動",
+      "ja": "破綻した",
+      "note": ""
+    },
+    "outer": {
+      "lemma": "outer",
+      "pos": "形",
+      "ja": "外側の",
+      "note": ""
+    },
+    "suburbs": {
+      "lemma": "suburb",
+      "pos": "名",
+      "ja": "郊外",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    },
+    "lost": {
+      "lemma": "lose",
+      "pos": "動",
+      "ja": "失われる",
+      "note": "be lost で「失われる」（受動態）"
+    },
+    "retailer": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "ran into": {
+      "lemma": "run into",
+      "pos": "熟",
+      "ja": "（困難に）陥った",
+      "note": "run into trouble で「行き詰まる」"
+    },
+    "trouble": {
+      "lemma": "trouble",
+      "pos": "名",
+      "ja": "困難",
+      "note": ""
+    },
+    "landlord": {
+      "lemma": "landlord",
+      "pos": "名",
+      "ja": "家主",
+      "note": ""
+    },
+    "broke down": {
+      "lemma": "break down",
+      "pos": "熟",
+      "ja": "決裂した",
+      "note": "交渉や機械が「うまくいかなくなる」"
+    },
+    "unpaid": {
+      "lemma": "unpaid",
+      "pos": "形",
+      "ja": "未払いの",
+      "note": ""
+    },
+    "rent": {
+      "lemma": "rent",
+      "pos": "名",
+      "ja": "家賃",
+      "note": ""
+    },
+    "separate": {
+      "lemma": "separate",
+      "pos": "形",
+      "ja": "別の",
+      "note": ""
+    },
+    "administrators": {
+      "lemma": "administrator",
+      "pos": "名",
+      "ja": "管理人",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家、出資者",
+      "note": ""
+    },
+    "affected": {
+      "lemma": "affected",
+      "pos": "形",
+      "ja": "影響を受けた",
+      "note": ""
+    },
+    "consulted": {
+      "lemma": "consult",
+      "pos": "動",
+      "ja": "意見を聞かれた",
+      "note": "be consulted で「意見を求められる」"
+    },
+    "suppliers": {
+      "lemma": "supplier",
+      "pos": "名",
+      "ja": "納入業者",
+      "note": ""
+    },
+    "saddened": {
+      "lemma": "sadden",
+      "pos": "動",
+      "ja": "悲しんだ",
+      "note": "be saddened で「悲しく思う」"
+    },
+    "meanwhile": {
+      "lemma": "meanwhile",
+      "pos": "副",
+      "ja": "一方で",
+      "note": ""
+    },
+    "empty": {
+      "lemma": "empty",
+      "pos": "形",
+      "ja": "空の",
+      "note": ""
+    },
+    "tenants": {
+      "lemma": "tenant",
+      "pos": "名",
+      "ja": "テナント",
+      "note": ""
+    },
+    "fill": {
+      "lemma": "fill",
+      "pos": "動",
+      "ja": "埋める",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "間接疑問文（how many jobs will be lost：疑問詞＋主語＋動詞の語順）",
+    "quote": "The company has about 6,000 employees, but the receivers have not said how many jobs will be lost.",
+    "quoteJa": "同社の従業員は約6,000人だが、管財人は何人分の雇用が失われるかを明らかにしていない。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "疑問文が文の一部（ここでは said の目的語）に組み込まれた形を間接疑問文という。how many jobs will be lost は「何人分の雇用が失われるか」という名詞のかたまりになる。ここでは how many jobs が主語なので、もとの疑問文 How many jobs will be lost? と語順は同じだが、文末に「？」は付かない。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "主語が別にある場合は語順が変わる。直接疑問文 When will the stores close?（店はいつ閉まるのか）は、間接疑問文では They have not said when the stores will close. となり、「疑問詞＋主語＋動詞」の平叙文の語順にする。Yes/No で答える疑問文なら whether / if を使い、We don't know whether the store will reopen.（その店が再開するかどうか分からない）とする。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では「Please let us know when ____ to visit.」の空所に you plan を選ばせるなど、間接疑問の中で疑問文の語順（do you plan）を使う誤答が狙われる。Part 6・7 のメールでは I'd like to ask whether ～ / Could you tell me where ～ の形で依頼や問い合わせの用件を示すことが多い。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Could you tell me when the shipment will arrive?（出荷品がいつ届くか教えていただけますか）／ The manager has not decided which supplier we will use next year.（部長は来年どの納入業者を使うかをまだ決めていない）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "豪州最古の百貨店デビッド・ジョーンズは2026年11月5日に経営破綻し、11日には管財人のFTIコンサルティングが38店のうち19店を年内に閉じると発表した。従業員は約6,000人いるが、削減の規模はまだ示されていない。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "今回は、管財人が日々の経営を握る一方で、取締役会が選んだ別の管理人が任意管理手続き(voluntary administration)を進め、買い手や新たな出資者を探す二本立てになっている。赤字の店を先に閉じて家賃などの固定費を減らせば、残る事業は買い手にとって魅力が増す。破綻の直接の引き金は、最大の家主との家賃交渉の決裂だった。"
+    },
+    {
+      "heading": "📌 3. 他社の百貨店はどうだったか",
+      "body": "カナダの老舗百貨店ハドソンズ・ベイは2025年に経営破綻し、6月1日に残る80店をすべて閉じた。裁判所の資料によると8,347人が職を失い、355年続いた会社が丸ごと清算された。これに対し米メーシーズは2024年2月、約150店を2026年末までに閉じる計画を自ら打ち出し、2025年だけで60店を超える店を閉めた。存続させる125店では既存店売上高(comparable sales)が前年比2.7%伸びた四半期もあり、経営陣は2026年3月に再建が「転換点」に来たと述べた。前者は追い込まれて全店を失い、後者は先手を打って店を減らし、残る店の売上を伸ばした。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本でも大型百貨店の閉店が相次ぐ。名鉄百貨店本店（名古屋市）は2026年2月28日、駅前の再開発(redevelopment)に伴い71年の歴史を閉じたが、工事費の上振れで解体や着工の時期は未定となった。そごう・西武も同年3月に西武渋谷店の閉店を発表し、9月30日に58年の営業を終えた。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "voluntary administration",
+      "pos": "熟",
+      "ja": "任意管理手続き",
+      "gloss": "（＝経営が苦しい会社が自ら外部の管理人を選び、再建や売却の道を探るオーストラリアなどの制度のこと）",
+      "example": {
+        "en": "The airline entered voluntary administration after it ran out of cash.",
+        "ja": "その航空会社は資金が尽きたあと、任意管理手続きに入った。"
+      }
+    },
+    {
+      "term": "comparable sales",
+      "pos": "熟",
+      "ja": "既存店売上高",
+      "gloss": "（＝1年以上営業している店だけで比べた売上のこと。新店や閉店の影響を除いて実力を見る）",
+      "example": {
+        "en": "Comparable sales rose 4% in the holiday season.",
+        "ja": "年末商戦の既存店売上高は4%増えた。"
+      }
+    },
+    {
+      "term": "redevelopment",
+      "pos": "名",
+      "ja": "再開発",
+      "gloss": "（＝古い建物を取り壊し、街の区画を新しく作り直すこと）",
+      "example": {
+        "en": "The redevelopment of the station area will take ten years.",
+        "ja": "駅周辺の再開発には10年かかる。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "David Jones's receiver reveals list of 19 stores set to close",
+      "publisher": "ABC News",
+      "url": "https://www.abc.net.au/news/2026-11-11/david-jones-to-close-stores/107372854",
+      "date": "2026-11-11"
+    },
+    {
+      "title": "David Jones closures present 'unique opportunity' for big shopping centres",
+      "publisher": "ABC News",
+      "url": "https://www.abc.net.au/news/2026-11-13/nsw-david-jones-sydney-store-closure-suburban-economic-strain/107380310",
+      "date": "2026-11-13"
+    },
+    {
+      "title": "Hudson's Bay to Close Stores and Terminate 8,300 Employees by June 1",
+      "publisher": "Retail Insider",
+      "url": "https://retail-insider.com/retail-insider/2025/05/hudsons-bay-to-lay-off-8300-employees-as-stores-close/",
+      "date": "2025-05-30"
+    },
+    {
+      "title": "Macy's turnaround hits \"inflection point\" — by getting smaller",
+      "publisher": "Axios",
+      "url": "https://www.axios.com/2026/03/18/macys-store-closings-growth",
+      "date": "2026-03-18"
+    },
+    {
+      "title": "名鉄百貨店、71年の歴史に幕 再開発暗礁、跡地活用は不透明",
+      "publisher": "熊本日日新聞（共同通信）",
+      "url": "https://kumanichi.com/articles/1962284",
+      "date": "2026-02-28"
+    }
+  ]
+}
