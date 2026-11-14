@@ -510,5 +510,23 @@
       "url": "https://global.nissannews.com/en/releases/250715-01-e",
       "date": "2025-07-15"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-14-1645/00.mp3",
+      "audio/2026-11-14-1645/01.mp3",
+      "audio/2026-11-14-1645/02.mp3",
+      "audio/2026-11-14-1645/03.mp3",
+      "audio/2026-11-14-1645/04.mp3",
+      "audio/2026-11-14-1645/05.mp3",
+      "audio/2026-11-14-1645/06.mp3",
+      "audio/2026-11-14-1645/07.mp3",
+      "audio/2026-11-14-1645/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 220332,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-14T07:51:49.154Z",
+    "trimmed": true
+  }
 }
