@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-14-1645",
+  "date": "2026-11-14",
+  "time": "16:45",
+  "createdAt": "2026-11-14T16:45:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "Mercedes-Benz Freezes Investment at German Plants",
+    "ja": "メルセデス、独工場への新規投資を凍結"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Mercedes-Benz has stopped all new investment at its factories in Germany to lower production costs.",
+            "ja": "メルセデス・ベンツは、生産コストを引き下げるため、ドイツ国内の工場への新規投資をすべて停止した。"
+          },
+          {
+            "en": "The company's board made the decision this week after talks with workers' representatives stalled.",
+            "ja": "同社の取締役会は、従業員代表との協議が行き詰まったことを受け、今週この決定を下した。"
+          },
+          {
+            "en": "The carmaker has also warned that it may close two German plants if costs do not come down.",
+            "ja": "同社はまた、コストが下がらなければドイツの2工場を閉鎖する可能性があると警告している。"
+          },
+          {
+            "en": "One would be an assembly plant, and the other would build engines and related parts.",
+            "ja": "1つは組立工場、もう1つはエンジンや関連部品を製造する工場になる見通しだ。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The main issue is labor costs.",
+            "ja": "最大の問題は人件費だ。"
+          },
+          {
+            "en": "According to the company, an hour of factory work in Germany can cost up to five times as much as in Eastern Europe.",
+            "ja": "同社によれば、ドイツでの工場労働1時間あたりのコストは、東欧の最大5倍に達する。"
+          },
+          {
+            "en": "Management wants employees to work 40 hours a week instead of 35, with no increase in pay.",
+            "ja": "経営陣は、賃金を上げずに従業員の週の労働時間を35時間から40時間に延ばしたい考えだ。"
+          },
+          {
+            "en": "At the same time, the carmaker is dealing with falling sales in China, higher import taxes, and rising expenses.",
+            "ja": "同時に同社は、中国での販売減少、輸入関税の引き上げ、経費の増加にも直面している。"
+          },
+          {
+            "en": "For now, it is not clear how long the freeze will last or which plants could be affected.",
+            "ja": "現時点では、投資の凍結がいつまで続くのか、どの工場が影響を受けるのかは明らかになっていない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the company, how does the cost of an hour of factory work in Germany compare with Eastern Europe?",
+      "promptJa": "同社によると、ドイツでの工場労働1時間あたりのコストは東欧と比べてどうですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is about the same.",
+          "ja": "ほぼ同じ"
+        },
+        {
+          "key": "B",
+          "text": "It can be up to two times as much.",
+          "ja": "最大2倍になりうる"
+        },
+        {
+          "key": "C",
+          "text": "It can be up to five times as much.",
+          "ja": "最大5倍になりうる"
+        },
+        {
+          "key": "D",
+          "text": "It can be up to 40 times as much.",
+          "ja": "最大40倍になりうる"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第2段落2文目に an hour of factory work in Germany can cost up to five times as much as in Eastern Europe（ドイツの工場労働1時間のコストは東欧の最大5倍）とある。(A) は本文が大きな差を問題にしている内容と逆。(B) の「2」は閉鎖の可能性がある工場の数（two German plants）で、コストの倍率ではない。(D) の「40」は経営陣が求める週の労働時間（40 hours a week）で、これも倍率ではない。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "Part 7 では本文中の別の数字（工場の数・労働時間など）が引っかけの選択肢に使われる。数字を見つけたら、それが「何の数字か」を設問の主語と照らし合わせてから選ぶこと。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT mentioned as a problem the carmaker is facing?",
+      "promptJa": "この自動車メーカーが直面している問題として述べられていないものはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Falling sales in China",
+          "ja": "中国での販売減少"
+        },
+        {
+          "key": "B",
+          "text": "Higher import taxes",
+          "ja": "輸入関税の引き上げ"
+        },
+        {
+          "key": "C",
+          "text": "Rising expenses",
+          "ja": "経費の増加"
+        },
+        {
+          "key": "D",
+          "text": "A shortage of computer chips",
+          "ja": "半導体の不足"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は (D)。第2段落4文目に falling sales in China, higher import taxes, and rising expenses（中国での販売減少、輸入関税の引き上げ、経費の増加）と3つの問題が並んでおり、(A)(B)(C) はすべて本文にある。半導体（computer chips）の不足については本文のどこにも書かれていないため、(D) が「述べられていないもの」になる。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "NOT 問題は、選択肢を1つずつ本文と照合し、見つかったものを消していく消去法が確実。A, B, and C のように列挙された箇所は、3つの選択肢がまとめて書かれていることが多いので要注意。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "investment",
+      "pos": "名",
+      "ja": "投資",
+      "gloss": "",
+      "example": {
+        "en": "The company plans a large investment in new equipment next year.",
+        "ja": "その会社は来年、新しい設備に大規模な投資を計画している。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "representative",
+      "pos": "名",
+      "ja": "代表者、担当者",
+      "gloss": "",
+      "example": {
+        "en": "A sales representative will contact you within two business days.",
+        "ja": "営業担当者が2営業日以内にご連絡します。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "stall",
+      "pos": "動",
+      "ja": "行き詰まる、停滞する",
+      "gloss": "",
+      "example": {
+        "en": "The contract talks stalled over the delivery schedule.",
+        "ja": "契約交渉は納品スケジュールをめぐって行き詰まった。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "assembly",
+      "pos": "名",
+      "ja": "組み立て",
+      "gloss": "（＝部品を組み合わせて製品に仕上げること。assembly plant は組立工場）",
+      "example": {
+        "en": "The new assembly line will start operating in April.",
+        "ja": "新しい組み立てラインは4月に稼働を始める。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "management",
+      "pos": "名",
+      "ja": "経営陣、管理",
+      "gloss": "",
+      "example": {
+        "en": "Management approved the budget for the office move.",
+        "ja": "経営陣はオフィス移転の予算を承認した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "expense",
+      "pos": "名",
+      "ja": "費用、経費",
+      "gloss": "",
+      "example": {
+        "en": "Please keep all receipts for your travel expenses.",
+        "ja": "出張経費の領収書はすべて保管してください。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "freeze",
+      "pos": "名・動",
+      "ja": "凍結（する）、停止（する）",
+      "gloss": "",
+      "example": {
+        "en": "The company announced a hiring freeze until the end of the year.",
+        "ja": "その会社は年末まで採用を凍結すると発表した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "affect",
+      "pos": "動",
+      "ja": "影響を与える",
+      "gloss": "",
+      "example": {
+        "en": "The road work may affect deliveries to our warehouse.",
+        "ja": "道路工事が当社倉庫への配送に影響するかもしれない。"
+      }
+    }
+  ],
+  "glossary": {
+    "investment": {
+      "lemma": "investment",
+      "pos": "名",
+      "ja": "投資",
+      "note": ""
+    },
+    "factories": {
+      "lemma": "factory",
+      "pos": "名",
+      "ja": "工場",
+      "note": ""
+    },
+    "lower": {
+      "lemma": "lower",
+      "pos": "動",
+      "ja": "下げる",
+      "note": "形容詞 low の比較級と同じ形だが、ここは動詞"
+    },
+    "production": {
+      "lemma": "production",
+      "pos": "名",
+      "ja": "生産",
+      "note": ""
+    },
+    "board": {
+      "lemma": "board",
+      "pos": "名",
+      "ja": "取締役会",
+      "note": "the board で「取締役会」"
+    },
+    "decision": {
+      "lemma": "decision",
+      "pos": "名",
+      "ja": "決定",
+      "note": "make a decision で「決定を下す」"
+    },
+    "representatives": {
+      "lemma": "representative",
+      "pos": "名",
+      "ja": "代表者",
+      "note": ""
+    },
+    "stalled": {
+      "lemma": "stall",
+      "pos": "動",
+      "ja": "行き詰まった",
+      "note": ""
+    },
+    "carmaker": {
+      "lemma": "carmaker",
+      "pos": "名",
+      "ja": "自動車メーカー",
+      "note": ""
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告した",
+      "note": "warn that ～ で「～と警告する」"
+    },
+    "plants": {
+      "lemma": "plant",
+      "pos": "名",
+      "ja": "工場",
+      "note": "「植物」ではなく「工場」の意味"
+    },
+    "assembly": {
+      "lemma": "assembly",
+      "pos": "名",
+      "ja": "組み立て",
+      "note": ""
+    },
+    "related": {
+      "lemma": "related",
+      "pos": "形",
+      "ja": "関連した",
+      "note": ""
+    },
+    "parts": {
+      "lemma": "part",
+      "pos": "名",
+      "ja": "部品",
+      "note": ""
+    },
+    "issue": {
+      "lemma": "issue",
+      "pos": "名",
+      "ja": "問題、課題",
+      "note": ""
+    },
+    "labor": {
+      "lemma": "labor",
+      "pos": "名",
+      "ja": "労働",
+      "note": "labor costs で「人件費」"
+    },
+    "according": {
+      "lemma": "according to",
+      "pos": "熟",
+      "ja": "～によれば",
+      "note": "according to ～ の形で使う"
+    },
+    "management": {
+      "lemma": "management",
+      "pos": "名",
+      "ja": "経営陣",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    },
+    "instead": {
+      "lemma": "instead of",
+      "pos": "熟",
+      "ja": "～の代わりに",
+      "note": "A instead of B で「BではなくA」"
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "増加",
+      "note": ""
+    },
+    "dealing": {
+      "lemma": "deal with",
+      "pos": "熟",
+      "ja": "対処する",
+      "note": "be dealing with で「～に直面・対処している」"
+    },
+    "falling": {
+      "lemma": "fall",
+      "pos": "動",
+      "ja": "減少している",
+      "note": ""
+    },
+    "import": {
+      "lemma": "import",
+      "pos": "名",
+      "ja": "輸入",
+      "note": "import taxes で「輸入関税」"
+    },
+    "taxes": {
+      "lemma": "tax",
+      "pos": "名",
+      "ja": "税金",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇している",
+      "note": ""
+    },
+    "expenses": {
+      "lemma": "expense",
+      "pos": "名",
+      "ja": "経費",
+      "note": ""
+    },
+    "freeze": {
+      "lemma": "freeze",
+      "pos": "名",
+      "ja": "凍結",
+      "note": ""
+    },
+    "last": {
+      "lemma": "last",
+      "pos": "動",
+      "ja": "続く",
+      "note": "形容詞「最後の」ではなく動詞"
+    },
+    "affected": {
+      "lemma": "affect",
+      "pos": "動",
+      "ja": "影響を受けた",
+      "note": "be affected で「影響を受ける」"
+    }
+  },
+  "grammar": {
+    "topic": "倍数表現（up to five times as much as ～：最大で～の5倍）",
+    "quote": "According to the company, an hour of factory work in Germany can cost up to five times as much as in Eastern Europe.",
+    "quoteJa": "同社によれば、ドイツでの工場労働1時間あたりのコストは、東欧の最大5倍に達する。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "「倍数＋as much as ～」で「～の…倍」を表す。five times as much as in Eastern Europe は「東欧での（コストの）5倍」。比べる相手は in Eastern Europe と前置詞句になっており、前半の in Germany と形をそろえている。前に付いた up to は「最大で～まで」という上限を表し、「いつも5倍」ではなく「多いときで5倍」という意味になる。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "比較級を使うと can cost up to five times more than in Eastern Europe とも書ける。2倍は twice as much as、半分は half as much as と言う。数えられる名詞なら as many as（five times as many workers as ～）、形容詞なら as ＋形容詞＋as（three times as large as ～）になる。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では「The new warehouse is twice as ____ as the old one.」の空所に原級 large を選ばせる問題や、times の後ろに as … as を続ける語順が問われる。Part 7 では「3倍」が three times as many や tripled と言い換えられ、選択肢と照合させる設問になりやすい。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Our online store received three times as many orders as last December.（当社のネットストアは昨年12月の3倍の注文を受けた）／ Shipping by air costs about four times as much as shipping by sea.（航空輸送は海上輸送の約4倍の費用がかかる）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "2026年11月12日、社内通達で、メルセデス・ベンツがドイツ国内の工場への新規投資を当面止めたことが明らかになった。労働時間と賃金をめぐる交渉が進まないためで、同社は9月に2工場の閉鎖も警告していた。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "同社によると、ドイツの1時間あたりの人件費は東欧の最大5倍に上る。週35時間の勤務は労組との労働協約(collective agreement)で決まっており、会社だけでは変えられない。合意できなければ、人件費の安い国への生産移管(production transfer)が現実味を帯びる。"
+    },
+    {
+      "heading": "📌 3. 他社のドイツ拠点の見直し",
+      "body": "欧州の自動車業界は、需要に比べて工場が多すぎる過剰生産能力(overcapacity)を抱える。部品大手シェフラーは2026年11月3日、欧州で3,460人を削減し、ドイツの4カ所を含む5拠点を2028年までに閉じると発表した。2030年までに年3億ユーロの経費削減を見込む。一方フォルクスワーゲンは2025年12月、ドレスデン工場での車両生産を終えた。国内工場での生産終了は88年の歴史で初めてだが、約230人に異動や早期退職を示し、敷地の約半分を大学の研究用に回した。前者は人員と拠点を減らして固定費を削り、後者は工場を別の用途に変えて雇用への影響を抑えた。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日産自動車は2025年7月、神奈川県の追浜工場での車両生産を2027年度末で終え、日産自動車九州へ移すと発表した。中国を除く世界の生産能力を年350万台から250万台に減らす再建計画の一環だ。約2,400人の従業員は2027年度末まで同工場で働き、その後の雇用は労組と協議する。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "collective agreement",
+      "pos": "熟",
+      "ja": "労働協約",
+      "gloss": "（＝労働組合と会社が結ぶ、賃金や労働時間などの取り決めのこと）",
+      "example": {
+        "en": "The new collective agreement raises wages by 3% next year.",
+        "ja": "新しい労働協約で、来年の賃金は3%上がる。"
+      }
+    },
+    {
+      "term": "production transfer",
+      "pos": "熟",
+      "ja": "生産移管",
+      "gloss": "（＝ある工場で作っていた製品を別の工場で作るように移すこと）",
+      "example": {
+        "en": "The production transfer to the new plant will be completed by March.",
+        "ja": "新工場への生産移管は3月までに完了する。"
+      }
+    },
+    {
+      "term": "overcapacity",
+      "pos": "名",
+      "ja": "過剰生産能力",
+      "gloss": "（＝需要に比べて生産できる量が多すぎる状態のこと）",
+      "example": {
+        "en": "Overcapacity in the industry has pushed prices down.",
+        "ja": "業界の過剰生産能力が価格を押し下げている。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mercedes-Benz halts new investment in German plants, considers closures",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/2026/11/12/mercedes-benz-halts-new-investment-in-german-plants-considers-closures",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Mercedes-Benz Halts German Investment, Weighs Plant Closures",
+      "publisher": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/world/2026/11/13/mercedes-benz-halts-german-investment-weighs-plant-closures",
+      "date": "2026-11-13"
+    },
+    {
+      "title": "Mercedes halts investment in German plants and mulls closures",
+      "publisher": "Autocar",
+      "url": "https://www.autocar.co.uk/car-news/business/mercedes-halts-investment-german-plants-and-mulls-closures",
+      "date": ""
+    },
+    {
+      "title": "Schaeffler to cut almost 3,500 jobs",
+      "publisher": "electrive",
+      "url": "https://electrive.com/2026/11/03/schaeffler-to-cut-almost-3500-jobs",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "Re:Nissan Update - Nissan plans to transfer production from Oppama Plant to Nissan Motor Kyushu",
+      "publisher": "Nissan",
+      "url": "https://global.nissannews.com/en/releases/250715-01-e",
+      "date": "2025-07-15"
+    }
+  ]
+}
