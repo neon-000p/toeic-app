@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-11-15-0409-2",
+  "date": "2026-11-15",
+  "time": "04:09",
+  "scene": "製造・在庫｜部品の入荷遅れと生産順序の前倒し",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-GB"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "Martin, I just heard from our supplier. The shipment of motors for the blenders is held up at the port.",
+      "ja": "マーティン、今仕入れ先から連絡があったの。ミキサー用のモーターの積み荷が港で止まっているそうよ。"
+    },
+    {
+      "tag": "M",
+      "en": "That's bad timing. We were planning to assemble four hundred blenders this week.",
+      "ja": "それはタイミングが悪いな。今週ミキサーを400台組み立てる予定だったのに。"
+    },
+    {
+      "tag": "W",
+      "en": "They say the parts won't arrive until next Monday, so we'll run short by Thursday.",
+      "ja": "部品は来週の月曜まで届かないそうだから、木曜までには足りなくなるわ。"
+    },
+    {
+      "tag": "M",
+      "en": "Could we order from the backup vendor we used last spring?",
+      "ja": "去年の春に使った予備の業者に注文できないかな？"
+    },
+    {
+      "tag": "W",
+      "en": "I already checked. They'd charge thirty percent more, and they can't ship for ten days anyway.",
+      "ja": "もう確認したわ。30%高くなるし、どのみち10日間は発送できないって。"
+    },
+    {
+      "tag": "M",
+      "en": "Ten days? That's no better than waiting for our regular supplier.",
+      "ja": "10日？それじゃいつもの仕入れ先を待つのと変わらないね。"
+    },
+    {
+      "tag": "W",
+      "en": "Right. So I suggest we move up the coffee maker order and spend those days on that instead.",
+      "ja": "そうなの。だからコーヒーメーカーの注文を前倒しして、その数日をそちらに充てたらどうかしら。"
+    },
+    {
+      "tag": "M",
+      "en": "Good idea. We have plenty of parts for those in the warehouse.",
+      "ja": "いい考えだ。コーヒーメーカーの部品なら倉庫にたくさんある。"
+    },
+    {
+      "tag": "W",
+      "en": "I'll let the sales team know about the delay so they can update delivery dates.",
+      "ja": "営業チームに遅れを伝えて、納期を更新してもらうわね。"
+    },
+    {
+      "tag": "M",
+      "en": "And I'll draw up a new schedule for the line workers this afternoon.",
+      "ja": "僕は今日の午後、ラインの作業員向けに新しい予定表を作るよ。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What problem does the woman mention?",
+      "promptJa": "女性はどんな問題について述べていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A machine on the line has broken down.",
+          "ja": "ラインの機械が故障した。"
+        },
+        {
+          "key": "B",
+          "text": "A customer has canceled an order.",
+          "ja": "顧客が注文を取り消した。"
+        },
+        {
+          "key": "C",
+          "text": "A delivery of parts has been delayed.",
+          "ja": "部品の配送が遅れている。"
+        },
+        {
+          "key": "D",
+          "text": "The warehouse is running out of space.",
+          "ja": "倉庫の空きがなくなりつつある。"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0
+      ],
+      "explanation": "女性は The shipment of motors ... is held up at the port と伝えている。held up を delayed、shipment of motors を delivery of parts と言い換えた C が正解。D の warehouse は後半で『部品が十分ある場所』として出るだけで、問題ではない。",
+      "tip": "held up は Part 3・4 で delayed に置き換わる定番。問題を問う設問の根拠は冒頭にある。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the man mean when he says, \"That's no better than waiting for our regular supplier\"?",
+      "promptJa": "男性が \"That's no better than waiting for our regular supplier\" と言う際、何を意図していますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The other option would not save time.",
+          "ja": "もう一方の案では時間の節約にならない。"
+        },
+        {
+          "key": "B",
+          "text": "He is willing to pay a higher price.",
+          "ja": "高い値段を払ってもかまわない。"
+        },
+        {
+          "key": "C",
+          "text": "The regular supplier is more reliable.",
+          "ja": "いつもの仕入れ先のほうが信頼できる。"
+        },
+        {
+          "key": "D",
+          "text": "He wants to cancel the motor order.",
+          "ja": "モーターの注文を取り消したい。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        4,
+        5
+      ],
+      "explanation": "直前で女性が予備の業者は they can't ship for ten days と伝えている。月曜に届くいつもの仕入れ先より遅いので、『乗り換えても早くならない』という意味になる。C は信頼性の話で、会話では比べているのは到着までの日数。",
+      "tip": "意図問題は引用の直前の行で決まる。ここでは ten days と next Monday の比較が根拠。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about the coffee makers?",
+      "promptJa": "コーヒーメーカーについて何が示唆されていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They will be shipped by the supplier.",
+          "ja": "仕入れ先から発送される。"
+        },
+        {
+          "key": "B",
+          "text": "They cost thirty percent more to make.",
+          "ja": "製造費が30%高い。"
+        },
+        {
+          "key": "C",
+          "text": "Their delivery dates will be postponed.",
+          "ja": "納期が延期される。"
+        },
+        {
+          "key": "D",
+          "text": "They can be made with parts in stock.",
+          "ja": "在庫の部品で作ることができる。"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        6,
+        7
+      ],
+      "explanation": "女性が move up the coffee maker order と提案し、男性が We have plenty of parts for those in the warehouse と応じている。倉庫の部品で作れる、つまり在庫で足りると推測できるので D。B の thirty percent は予備の業者の値上がりの話で、コーヒーメーカーとは無関係。",
+      "tip": "in the warehouse が in stock に言い換わっている。数字の選択肢は、その数字が誰の何の話だったかで消す。"
+    }
+  ],
+  "glossary": {
+    "held up": {
+      "lemma": "hold up",
+      "pos": "熟",
+      "ja": "遅らせる、足止めする",
+      "note": "選択肢では delayed に置き換わる",
+      "example": {
+        "en": "Our flight was held up by heavy snow in Chicago.",
+        "ja": "私たちの便はシカゴの大雪で遅れた。"
+      }
+    },
+    "shipment": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "積み荷、出荷品",
+      "note": "",
+      "example": {
+        "en": "The next shipment of printer paper should arrive on Friday.",
+        "ja": "次のコピー用紙の入荷は金曜に届く予定だ。"
+      }
+    },
+    "bad timing": {
+      "lemma": "bad timing",
+      "pos": "熟",
+      "ja": "間の悪いこと、タイミングの悪さ",
+      "note": "",
+      "example": {
+        "en": "The system went down right before the sale, which was bad timing.",
+        "ja": "セールの直前にシステムが止まり、タイミングが悪かった。"
+      }
+    },
+    "assemble": {
+      "lemma": "assemble",
+      "pos": "動",
+      "ja": "組み立てる",
+      "note": "",
+      "example": {
+        "en": "Workers at the plant assemble about fifty bicycles a day.",
+        "ja": "その工場の作業員は1日に約50台の自転車を組み立てる。"
+      }
+    },
+    "run short": {
+      "lemma": "run short",
+      "pos": "熟",
+      "ja": "（物が）足りなくなる",
+      "note": "run out（尽きる）の手前の状態",
+      "example": {
+        "en": "We always run short of chairs at the year-end party.",
+        "ja": "忘年会ではいつも椅子が足りなくなる。"
+      }
+    },
+    "backup vendor": {
+      "lemma": "backup vendor",
+      "pos": "熟",
+      "ja": "予備の業者、代わりの仕入れ先",
+      "note": "vendor は supplier とほぼ同じ",
+      "example": {
+        "en": "We keep a backup vendor in case our main printer is busy.",
+        "ja": "主な印刷所が忙しい場合に備えて、予備の業者を確保している。"
+      }
+    },
+    "no better than": {
+      "lemma": "no better than",
+      "pos": "熟",
+      "ja": "～と変わらない、～も同然だ",
+      "note": "",
+      "example": {
+        "en": "A late reply is no better than no reply at all.",
+        "ja": "遅い返事は返事がないのと変わらない。"
+      }
+    },
+    "move up": {
+      "lemma": "move up",
+      "pos": "熟",
+      "ja": "（予定を）前倒しする",
+      "note": "bring forward と同じ。postpone の反対",
+      "example": {
+        "en": "The client asked us to move up the deadline to Wednesday.",
+        "ja": "顧客から締め切りを水曜に前倒ししてほしいと頼まれた。"
+      }
+    },
+    "warehouse": {
+      "lemma": "warehouse",
+      "pos": "名",
+      "ja": "倉庫",
+      "note": "選択肢では in stock（在庫で）に置き換わりやすい",
+      "example": {
+        "en": "All returned items are sent back to the warehouse for inspection.",
+        "ja": "返品はすべて検品のため倉庫に戻される。"
+      }
+    },
+    "draw up": {
+      "lemma": "draw up",
+      "pos": "熟",
+      "ja": "（計画・書類を）作成する",
+      "note": "prepare / create の言い換え",
+      "example": {
+        "en": "The lawyer will draw up a new contract by next week.",
+        "ja": "弁護士が来週までに新しい契約書を作成する。"
+      }
+    }
+  },
+  "point": {
+    "flow": "問題の発生（入荷遅れ）→ 影響の数字 → 代替案（別業者）→ 条件による却下 → 別の解決策 → 連絡と作業の分担",
+    "items": [
+      {
+        "title": "問題は冒頭、影響は数字で出る",
+        "body": "問題と解決の会話は、最初の1〜2行で問題が出て、すぐに「何台・いつまでに」という影響の数字が続く。問題を問う設問は冒頭の言い換えで選び、数字は後の設問の引っかけとして覚えておく。"
+      },
+      {
+        "title": "却下された案の数字は誤答になる",
+        "body": "代替案が条件（値段・日数）で退けられる流れでは、その条件の数字が誤答の選択肢に紛れ込む。数字を聞いたら「採用された案か、却下された案か」を必ず結び付けておく。"
+      },
+      {
+        "title": "最後の2行は二人の分担",
+        "body": "解決策が決まると、女性と男性がそれぞれ I'll ... と担当を言う。どちらが何をするかが入れ替わった選択肢がよく出るので、話者ごとに分けて聞く。"
+      }
+    ]
+  }
+}

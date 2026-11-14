@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-11-15-0409-1",
+  "date": "2026-11-15",
+  "time": "04:09",
+  "scene": "採用・研修｜新人研修の講師の代役と日程の入れ替え",
+  "speakers": [
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-CA"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-AU"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "M",
+      "en": "Hi, Grace. I'm running the orientation for the new hires next week, and I need a favor.",
+      "ja": "やあ、グレース。来週の新入社員オリエンテーションを担当しているんだけど、お願いがあるんだ。"
+    },
+    {
+      "tag": "W",
+      "en": "Sure, Tom. What do you need? I'm pretty tied up with the budget report until Wednesday, though.",
+      "ja": "いいわよ、トム。何が必要？ただ、水曜までは予算報告書でかなり手が離せないの。"
+    },
+    {
+      "tag": "M",
+      "en": "Carla was going to lead the safety session on Tuesday morning, but she has to fill in for a manager at another branch.",
+      "ja": "カーラが火曜午前の安全講習を担当する予定だったんだけど、別の支店で管理職の代理を務めなければならなくなったんだ。"
+    },
+    {
+      "tag": "W",
+      "en": "I could take it over, but Tuesday morning doesn't work for me. Could we move it to Thursday?",
+      "ja": "私が引き継いでもいいけど、火曜の午前は都合が悪いの。木曜に移せない？"
+    },
+    {
+      "tag": "M",
+      "en": "Thursday is tricky. The twelve new employees start working in their departments that day.",
+      "ja": "木曜は難しいな。12人の新入社員はその日から各部署で働き始めるんだ。"
+    },
+    {
+      "tag": "W",
+      "en": "Then what about Wednesday afternoon? My report is due at noon, so I'd be free after one.",
+      "ja": "じゃあ水曜の午後はどう？報告書の締め切りが正午だから、1時以降なら空いているわ。"
+    },
+    {
+      "tag": "M",
+      "en": "That works. I'll swap it with the computer training, which only takes ninety minutes.",
+      "ja": "それでいこう。90分しかかからないパソコン研修と入れ替えるよ。"
+    },
+    {
+      "tag": "W",
+      "en": "Great. Can you send me Carla's slides so I can go over them beforehand?",
+      "ja": "よかった。前もって目を通せるように、カーラのスライドを送ってくれる？"
+    },
+    {
+      "tag": "M",
+      "en": "Of course. I'll forward them to you as soon as I get back to my desk.",
+      "ja": "もちろん。席に戻ったらすぐに転送するよ。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hiring twelve new employees",
+          "ja": "12人の新入社員を採用すること"
+        },
+        {
+          "key": "B",
+          "text": "Replacing the leader of a training session",
+          "ja": "研修の講師を代わりの人にすること"
+        },
+        {
+          "key": "C",
+          "text": "Preparing a budget report together",
+          "ja": "予算報告書を一緒に準備すること"
+        },
+        {
+          "key": "D",
+          "text": "Opening another branch office",
+          "ja": "別の支店を開設すること"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        2
+      ],
+      "explanation": "男性は冒頭で I need a favor と切り出し、カーラが安全講習を担当できなくなったと説明している。その後は女性が take it over する前提で日程を詰めているので、話題は講師の交代。A の twelve new employees は研修を受ける側の人数で、採用の話ではない。",
+      "tip": "冒頭の『お願い』の中身が話題になる。twelve や branch など途中の語だけを拾った選択肢に注意する。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why is Thursday not suitable for the session?",
+      "promptJa": "木曜日が講習に適さないのはなぜですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The woman's report is due that day.",
+          "ja": "その日に女性の報告書の締め切りがある。"
+        },
+        {
+          "key": "B",
+          "text": "The computer training is planned then.",
+          "ja": "その時間にパソコン研修が予定されている。"
+        },
+        {
+          "key": "C",
+          "text": "Carla will be at another branch.",
+          "ja": "カーラが別の支店にいる。"
+        },
+        {
+          "key": "D",
+          "text": "New staff will begin work in their departments.",
+          "ja": "新しい社員が各部署で仕事を始める。"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        4
+      ],
+      "explanation": "Thursday is tricky の直後に The twelve new employees start working in their departments that day と理由が述べられている。new employees を new staff、start working を begin work と言い換えた D が正解。A の締め切りは水曜正午の話で、木曜とは関係ない。",
+      "tip": "tricky のような『難しい』の一言のあとに理由が来る。曜日と出来事の組み合わせを取り違えない。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What will the man probably do next?",
+      "promptJa": "男性はおそらく次に何をしますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Send some presentation materials",
+          "ja": "発表資料を送る"
+        },
+        {
+          "key": "B",
+          "text": "Call a manager at a branch",
+          "ja": "支店の管理職に電話する"
+        },
+        {
+          "key": "C",
+          "text": "Cancel the computer training",
+          "ja": "パソコン研修を中止する"
+        },
+        {
+          "key": "D",
+          "text": "Lead the safety session himself",
+          "ja": "安全講習を自分で担当する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        7,
+        8
+      ],
+      "explanation": "女性が Can you send me Carla's slides と頼み、男性は I'll forward them to you と応じている。slides を presentation materials と言い換えた A が正解。C のパソコン研修は中止ではなく、時間を入れ替える（swap）だけ。",
+      "tip": "最後の依頼とそれへの返事が次の行動。forward が send の言い換えになっている点を押さえる。"
+    }
+  ],
+  "glossary": {
+    "new hires": {
+      "lemma": "new hire",
+      "pos": "熟",
+      "ja": "新入社員",
+      "note": "選択肢では new employees / new staff に置き換わる",
+      "example": {
+        "en": "All new hires must attend a two-day training course.",
+        "ja": "新入社員は全員、2日間の研修を受けなければならない。"
+      }
+    },
+    "tied up": {
+      "lemma": "be tied up",
+      "pos": "熟",
+      "ja": "手が離せない、忙しい",
+      "note": "busy / unavailable の言い換え",
+      "example": {
+        "en": "I'm tied up in meetings all morning, so let's talk after lunch.",
+        "ja": "午前中はずっと会議で手が離せないので、昼食後に話しましょう。"
+      }
+    },
+    "fill in for": {
+      "lemma": "fill in for",
+      "pos": "熟",
+      "ja": "（人の）代わりを務める",
+      "note": "cover for とほぼ同じ",
+      "example": {
+        "en": "Could you fill in for me at the front desk on Friday?",
+        "ja": "金曜に受付で私の代わりを務めてもらえますか。"
+      }
+    },
+    "take it over": {
+      "lemma": "take over",
+      "pos": "熟",
+      "ja": "引き継ぐ",
+      "note": "replace / be in charge of の言い換えになりやすい",
+      "example": {
+        "en": "Ms. Lee will take over the project when Mr. Park retires.",
+        "ja": "パーク氏が退職したら、リー氏がそのプロジェクトを引き継ぐ。"
+      }
+    },
+    "tricky": {
+      "lemma": "tricky",
+      "pos": "形",
+      "ja": "扱いにくい、難しい",
+      "note": "Part 3 では断りの前置きとしてよく出る",
+      "example": {
+        "en": "Finding a time when everyone is free is a little tricky.",
+        "ja": "全員の都合が合う時間を見つけるのは少し難しい。"
+      }
+    },
+    "is due": {
+      "lemma": "be due",
+      "pos": "熟",
+      "ja": "締め切りである、期限が来る",
+      "note": "",
+      "example": {
+        "en": "The rent is due on the first day of each month.",
+        "ja": "家賃は毎月1日が支払期限だ。"
+      }
+    },
+    "swap": {
+      "lemma": "swap",
+      "pos": "動",
+      "ja": "入れ替える、交換する",
+      "note": "選択肢では switch / exchange になりやすい",
+      "example": {
+        "en": "Can we swap our shifts on Monday and Tuesday?",
+        "ja": "月曜と火曜のシフトを入れ替えてもらえますか。"
+      }
+    },
+    "go over": {
+      "lemma": "go over",
+      "pos": "熟",
+      "ja": "目を通す、見直す",
+      "note": "review の言い換え",
+      "example": {
+        "en": "Let's go over the contract once more before we sign it.",
+        "ja": "署名する前に、もう一度契約書に目を通しましょう。"
+      }
+    },
+    "beforehand": {
+      "lemma": "beforehand",
+      "pos": "副",
+      "ja": "前もって、事前に",
+      "note": "in advance と同じ意味",
+      "example": {
+        "en": "Please read the agenda beforehand so the meeting runs smoothly.",
+        "ja": "会議が円滑に進むよう、事前に議題を読んでおいてください。"
+      }
+    },
+    "forward": {
+      "lemma": "forward",
+      "pos": "動",
+      "ja": "転送する",
+      "note": "send の言い換え",
+      "example": {
+        "en": "I'll forward the customer's e-mail to the sales team.",
+        "ja": "その顧客のメールを営業チームに転送します。"
+      }
+    }
+  },
+  "point": {
+    "flow": "依頼 → 相手の制約（多忙）→ 代案の日時 → 別の制約で却下 → 妥協案で合意 → 資料の受け渡しという分担",
+    "items": [
+      {
+        "title": "「お願い」の中身が1問目になる",
+        "body": "I need a favor や Can you help me のあとに出る具体的な依頼が会話全体の話題。最初の2行で「誰の代わりに・何を」をつかむと、後の日程のやり取りも追いやすい。"
+      },
+      {
+        "title": "日時の案は「出た順・断られた理由」で整理する",
+        "body": "依頼と調整の会話では、案が2〜3個出て順に却下される。曜日ごとに「誰の何の都合で無理か」をメモ代わりに頭で並べると、理由を問う設問で取り違えない。"
+      },
+      {
+        "title": "合意のあとは資料と連絡の分担",
+        "body": "That works などで合意が出たら、残りの行は「誰が何を送る・準備する」の分担になる。依頼の文（Can you ...?）と返事（I will ...）の組を待ち構えて聞く。"
+      }
+    ]
+  }
+}
