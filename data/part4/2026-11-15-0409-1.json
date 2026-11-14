@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-11-15-0409-1",
+  "date": "2026-11-15",
+  "time": "04:09",
+  "createdAt": "2026-11-15T04:09:00+09:00",
+  "sample": false,
+  "scene": "会議｜経費精算のオンライン化と研修への申し込み",
+  "talkType": "meeting",
+  "intro": "Questions 1 through 3 refer to the following excerpt from a meeting.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-GB"
+  },
+  "lines": [
+    {
+      "en": "Before we wrap up today's meeting, I'd like to explain a change to how we handle travel expenses.",
+      "ja": "今日の会議を終える前に、出張経費の扱い方の変更について説明したいと思います。"
+    },
+    {
+      "en": "Starting December first, all expense reports will be filed through our new online system instead of on paper.",
+      "ja": "12月1日から、すべての経費報告書は紙ではなく新しいオンラインシステムで提出することになります。"
+    },
+    {
+      "en": "Right now, it takes about three weeks for staff to get reimbursed, which is far too long.",
+      "ja": "現在、社員が払い戻しを受けるまでに約3週間かかっており、これは長すぎます。"
+    },
+    {
+      "en": "With the new system, the accounting team expects to cut that down to five business days.",
+      "ja": "新しいシステムでは、経理チームはそれを5営業日に短縮できる見込みです。"
+    },
+    {
+      "en": "You'll simply take a photo of each receipt with your phone and attach it to the report.",
+      "ja": "各領収書をスマートフォンで撮影して、報告書に添付するだけです。"
+    },
+    {
+      "en": "I know some of you aren't comfortable with new software.",
+      "ja": "新しいソフトに慣れていない方がいることは承知しています。"
+    },
+    {
+      "en": "Don't worry, it's easier than booking a meeting room.",
+      "ja": "心配はいりません、会議室を予約するより簡単ですから。"
+    },
+    {
+      "en": "To help you get used to it, we're holding two thirty-minute training sessions next Tuesday.",
+      "ja": "慣れていただけるよう、来週の火曜日に30分の研修を2回開きます。"
+    },
+    {
+      "en": "Please sign up for one of them by this Friday so that we can arrange enough laptops.",
+      "ja": "十分な数のノートパソコンを用意できるよう、今週金曜日までにどちらかに申し込んでください。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the speaker mainly discussing?",
+      "promptJa": "話し手は主に何について話していますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A new way to submit expenses",
+          "ja": "経費を提出する新しい方法"
+        },
+        {
+          "key": "B",
+          "text": "A change in travel destinations",
+          "ja": "出張先の変更"
+        },
+        {
+          "key": "C",
+          "text": "The budget for a training program",
+          "ja": "研修プログラムの予算"
+        },
+        {
+          "key": "D",
+          "text": "A delay in the accounting team's work",
+          "ja": "経理チームの業務の遅れ"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で a change to how we handle travel expenses と主題を示し、続けて expense reports will be filed through our new online system と中身を述べている。filed を submit に言い換えた A が正解。D は『払い戻しに3週間かかる』という現状から連想させる誤答で、経理の遅れそのものが話題ではない。",
+      "tip": "会議の一部は冒頭の I'd like to ... の後ろが主題。travel だけを拾った B に引っ張られない。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when she says, \"it's easier than booking a meeting room\"?",
+      "promptJa": "話し手が \"it's easier than booking a meeting room\" と言う際、何を意図していますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Meeting rooms are often unavailable.",
+          "ja": "会議室はよく埋まっている。"
+        },
+        {
+          "key": "B",
+          "text": "Listeners should reserve a room soon.",
+          "ja": "聞き手はすぐに部屋を予約すべきだ。"
+        },
+        {
+          "key": "C",
+          "text": "The new system is simple to use.",
+          "ja": "新しいシステムは使い方が簡単だ。"
+        },
+        {
+          "key": "D",
+          "text": "Training will be held in a meeting room.",
+          "ja": "研修は会議室で行われる。"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        5,
+        6
+      ],
+      "explanation": "直前で some of you aren't comfortable with new software と聞き手の不安に触れ、Don't worry と続けている。誰でもできる会議室の予約にたとえて、新しいシステムが簡単だと安心させる発言なので C。D は meeting room という語をそのまま使った誤答で、研修の場所は述べられていない。",
+      "tip": "意図問題は引用の直前の文で決まる。不安 → Don't worry → たとえ、の流れなら『簡単・心配ない』の意味になる。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are the listeners asked to do by Friday?",
+      "promptJa": "聞き手は金曜日までに何をするよう求められていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Take photos of their receipts",
+          "ja": "領収書の写真を撮る"
+        },
+        {
+          "key": "B",
+          "text": "Register for a training session",
+          "ja": "研修に申し込む"
+        },
+        {
+          "key": "C",
+          "text": "Bring their own laptops",
+          "ja": "自分のノートパソコンを持ってくる"
+        },
+        {
+          "key": "D",
+          "text": "Submit their expense reports",
+          "ja": "経費報告書を提出する"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        8
+      ],
+      "explanation": "最後に Please sign up for one of them by this Friday と依頼している。them は直前の two thirty-minute training sessions を指すので、sign up を register に言い換えた B が正解。C の laptops は会社側が用意する（arrange）もので、聞き手が持参するのではない。",
+      "tip": "by Friday のような期限の付いた Please ... が3問目の根拠。代名詞 them が何を指すかを1文さかのぼって確かめる。"
+    }
+  ],
+  "glossary": {
+    "wrap up": {
+      "lemma": "wrap up",
+      "pos": "熟",
+      "ja": "（会議・仕事を）終える、締めくくる",
+      "note": "finish / conclude の言い換え",
+      "example": {
+        "en": "Let's wrap up the discussion and decide on the budget.",
+        "ja": "議論を締めくくって、予算を決めましょう。"
+      }
+    },
+    "travel expenses": {
+      "lemma": "travel expenses",
+      "pos": "熟",
+      "ja": "出張経費、旅費",
+      "note": "",
+      "example": {
+        "en": "Travel expenses must be reported within a week of returning.",
+        "ja": "出張経費は帰着から1週間以内に報告しなければならない。"
+      }
+    },
+    "expense reports": {
+      "lemma": "expense report",
+      "pos": "熟",
+      "ja": "経費報告書",
+      "note": "",
+      "example": {
+        "en": "Please attach your hotel bill to the expense report.",
+        "ja": "経費報告書にホテルの請求書を添付してください。"
+      }
+    },
+    "filed": {
+      "lemma": "file",
+      "pos": "動",
+      "ja": "（書類を）提出する",
+      "note": "「ファイルにとじる」ではなく submit の意味。選択肢では submit に置き換わる",
+      "example": {
+        "en": "All requests for time off must be filed two weeks in advance.",
+        "ja": "休暇の申請はすべて2週間前までに提出しなければならない。"
+      }
+    },
+    "get reimbursed": {
+      "lemma": "get reimbursed",
+      "pos": "熟",
+      "ja": "（立て替えた費用の）払い戻しを受ける",
+      "note": "reimbursement（払い戻し）も頻出",
+      "example": {
+        "en": "You can get reimbursed for taxi fares if you keep the receipts.",
+        "ja": "領収書を保管しておけば、タクシー代の払い戻しを受けられる。"
+      }
+    },
+    "cut that down": {
+      "lemma": "cut down",
+      "pos": "熟",
+      "ja": "減らす、短縮する",
+      "note": "reduce / shorten の言い換え",
+      "example": {
+        "en": "The new route will cut the delivery time down by half.",
+        "ja": "新しいルートで配送時間が半分に短縮される。"
+      }
+    },
+    "business days": {
+      "lemma": "business day",
+      "pos": "熟",
+      "ja": "営業日",
+      "note": "週末・祝日を除いた日",
+      "example": {
+        "en": "Your order will be shipped within three business days.",
+        "ja": "ご注文は3営業日以内に発送されます。"
+      }
+    },
+    "attach": {
+      "lemma": "attach",
+      "pos": "動",
+      "ja": "添付する",
+      "note": "",
+      "example": {
+        "en": "I've attached the updated price list to this e-mail.",
+        "ja": "このメールに最新の価格表を添付しました。"
+      }
+    },
+    "get used to": {
+      "lemma": "get used to",
+      "pos": "熟",
+      "ja": "～に慣れる",
+      "note": "",
+      "example": {
+        "en": "It took me a month to get used to the new scheduling software.",
+        "ja": "新しい予定管理ソフトに慣れるのに1か月かかった。"
+      }
+    },
+    "sign up for": {
+      "lemma": "sign up for",
+      "pos": "熟",
+      "ja": "～に申し込む、登録する",
+      "note": "選択肢では register for に置き換わる",
+      "example": {
+        "en": "More than forty employees signed up for the language class.",
+        "ja": "40人以上の社員が語学講座に申し込んだ。"
+      }
+    }
+  },
+  "point": {
+    "flow": "主題（経費の扱いの変更）→ 変更の中身 → 理由（現状3週間）→ 改善後の数字 → 新しい手順 → 不安への配慮 → 研修の案内と期限付きの依頼",
+    "items": [
+      {
+        "title": "変更の話は「何が・いつから・なぜ」の順で来る",
+        "body": "会議で制度の変更を伝えるトークは、冒頭で主題、次に Starting ... で開始日と中身、その後に現状の数字で理由が出る。1問目は冒頭2文の言い換えで選び、数字は理由を問う設問のために取っておく。"
+      },
+      {
+        "title": "現状と改善後の数字を対で聞く",
+        "body": "three weeks → five business days のように、変更の説明には必ず「今」と「これから」の数字が並ぶ。どちらが現状かを取り違えた選択肢がよく出るので、Right now と With the new system の目印で分けて聞く。"
+      },
+      {
+        "title": "最後の Please ... は期限とセットで聞く",
+        "body": "会議の一部の終盤には、聞き手への依頼が期限付きで出る。依頼の動詞（sign up / submit / bring）と期限（by Friday）を組で覚え、別の期限や別の人の行為を使った誤答を消す。"
+      }
+    ]
+  }
+}

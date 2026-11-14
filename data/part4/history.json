@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part4-history",
-  "updatedAt": "2026-11-08T04:25:00+09:00",
+  "updatedAt": "2026-11-15T04:13:10+09:00",
   "items": [
+    {
+      "id": "2026-11-15-0409-2",
+      "date": "2026-11-15",
+      "scene": "放送｜地元食品会社の新工場と採用説明会のニュース",
+      "genre": "放送",
+      "talkType": "broadcast",
+      "types": [
+        "who",
+        "detail",
+        "infer"
+      ],
+      "flow": "告知と指示"
+    },
+    {
+      "id": "2026-11-15-0409-1",
+      "date": "2026-11-15",
+      "scene": "会議｜経費精算のオンライン化と研修への申し込み",
+      "genre": "会議の一部",
+      "talkType": "meeting",
+      "types": [
+        "gist",
+        "intent",
+        "next"
+      ],
+      "flow": "変更の説明と依頼"
+    },
     {
       "id": "2026-11-08-0409-1",
       "date": "2026-11-08",

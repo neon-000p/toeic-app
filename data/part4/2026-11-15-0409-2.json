@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-11-15-0409-2",
+  "date": "2026-11-15",
+  "time": "04:09",
+  "createdAt": "2026-11-15T04:09:00+09:00",
+  "sample": false,
+  "scene": "放送｜地元食品会社の新工場と採用説明会のニュース",
+  "talkType": "broadcast",
+  "intro": "Questions 1 through 3 refer to the following broadcast.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-AU"
+  },
+  "lines": [
+    {
+      "en": "You're listening to Lakeside Business Hour on Radio Ninety-Eight, and I'm Ryan Cole with today's local news.",
+      "ja": "お聞きの番組はラジオ98の『レイクサイド・ビジネスアワー』、今日の地域ニュースをライアン・コールがお伝えします。"
+    },
+    {
+      "en": "Brightmore Foods, the frozen meal maker based here in Lakeside, has announced plans to open a second factory next spring.",
+      "ja": "ここレイクサイドに本社を置く冷凍食品メーカーのブライトモア・フーズは、来春2つ目の工場を開設する計画を発表しました。"
+    },
+    {
+      "en": "The company says demand for its products has risen by forty percent over the past two years.",
+      "ja": "同社によると、製品の需要はこの2年間で40%増えたということです。"
+    },
+    {
+      "en": "Its current plant simply can't keep up, and some orders have been turned away.",
+      "ja": "現在の工場では生産が追いつかず、一部の注文は断らざるを得なかったそうです。"
+    },
+    {
+      "en": "The new site on Harbor Road is expected to create around two hundred jobs.",
+      "ja": "ハーバー通りの新しい工場では、約200人の雇用が生まれる見込みです。"
+    },
+    {
+      "en": "Brightmore will hold a job fair at the community center on November twenty-eighth to fill positions on the production line.",
+      "ja": "ブライトモアは、生産ラインの職を埋めるため、11月28日に公民館で就職説明会を開きます。"
+    },
+    {
+      "en": "Applicants don't need previous experience, since the company will provide full training.",
+      "ja": "会社が十分な研修を行うため、応募者に経験は必要ありません。"
+    },
+    {
+      "en": "Those interested are encouraged to register in advance on the company's Web site.",
+      "ja": "関心のある方は、同社のウェブサイトで事前に登録するよう勧められています。"
+    },
+    {
+      "en": "After the break, we'll take a look at this weekend's weather.",
+      "ja": "この後は、今週末の天気をお伝えします。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely is the speaker?",
+      "promptJa": "話し手はおそらく誰ですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A factory manager",
+          "ja": "工場長"
+        },
+        {
+          "key": "B",
+          "text": "A job applicant",
+          "ja": "求職者"
+        },
+        {
+          "key": "C",
+          "text": "A company spokesperson",
+          "ja": "企業の広報担当者"
+        },
+        {
+          "key": "D",
+          "text": "A radio host",
+          "ja": "ラジオ番組の司会者"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        0
+      ],
+      "explanation": "冒頭で You're listening to Lakeside Business Hour on Radio Ninety-Eight と番組名を告げ、I'm Ryan Cole with today's local news と名乗っている。C は会社の発表内容を伝えている点から連想させる誤答だが、話し手は発表を報じる側で、会社の人ではない。",
+      "tip": "放送は最初の一文の You're listening to ... で話し手が決まる。名乗りの後ろの with today's news まで聞く。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why is Brightmore Foods opening a new factory?",
+      "promptJa": "ブライトモア・フーズはなぜ新しい工場を開くのですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Its current plant is being closed.",
+          "ja": "今の工場が閉鎖される。"
+        },
+        {
+          "key": "B",
+          "text": "Demand for its products has grown.",
+          "ja": "製品の需要が伸びた。"
+        },
+        {
+          "key": "C",
+          "text": "It plans to launch a new product.",
+          "ja": "新製品を発売する予定だ。"
+        },
+        {
+          "key": "D",
+          "text": "The city offered it free land.",
+          "ja": "市が土地を無償で提供した。"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        2,
+        3
+      ],
+      "explanation": "demand for its products has risen by forty percent と述べ、続けて Its current plant simply can't keep up と理由を補っている。risen を grown に言い換えた B が正解。A は current plant という語を使った誤答で、今の工場は閉鎖ではなく『追いつかない』だけ。",
+      "tip": "理由は The company says ... の後ろに来る。risen ⇔ grown / increased の言い換えを待ち構える。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What can be inferred about the new jobs?",
+      "promptJa": "新しい仕事について何が推測できますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They will be located in another city.",
+          "ja": "別の市に置かれる。"
+        },
+        {
+          "key": "B",
+          "text": "They require several years of experience.",
+          "ja": "数年の経験が必要だ。"
+        },
+        {
+          "key": "C",
+          "text": "Many involve manufacturing work.",
+          "ja": "多くは製造の仕事だ。"
+        },
+        {
+          "key": "D",
+          "text": "They will be filled by current staff.",
+          "ja": "今の社員で埋められる。"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        4,
+        5
+      ],
+      "explanation": "新工場で around two hundred jobs が生まれ、説明会は to fill positions on the production line のために開かれる。生産ラインの職を募集するのだから、多くは製造の仕事だと推測できる。B は don't need previous experience と逆。A は新工場が Harbor Road にあり、地元の話なので誤り。",
+      "tip": "推測問題は、はっきり言われていないことを2文の組み合わせで選ぶ。jobs と production line をつなげて考える。"
+    }
+  ],
+  "glossary": {
+    "based here": {
+      "lemma": "be based in",
+      "pos": "熟",
+      "ja": "～に拠点を置く",
+      "note": "based here in ... は「ここ…に本社がある」",
+      "example": {
+        "en": "The design firm is based in Sydney but has clients worldwide.",
+        "ja": "そのデザイン会社はシドニーに拠点を置くが、顧客は世界中にいる。"
+      }
+    },
+    "demand for": {
+      "lemma": "demand for",
+      "pos": "熟",
+      "ja": "～の需要",
+      "note": "",
+      "example": {
+        "en": "Demand for electric bicycles has increased sharply this year.",
+        "ja": "今年は電動自転車の需要が急増した。"
+      }
+    },
+    "has risen": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "増える、上がる",
+      "note": "選択肢では grown / increased に置き換わる",
+      "example": {
+        "en": "Ticket sales have risen steadily since the new campaign began.",
+        "ja": "新しい宣伝が始まってから、チケットの売上は着実に増えている。"
+      }
+    },
+    "keep up": {
+      "lemma": "keep up",
+      "pos": "熟",
+      "ja": "（需要・ペースに）追いつく",
+      "note": "keep up with ～ の形も多い",
+      "example": {
+        "en": "Our small team can't keep up with all the customer inquiries.",
+        "ja": "私たちの小さなチームでは、すべての問い合わせに対応しきれない。"
+      }
+    },
+    "turned away": {
+      "lemma": "turn away",
+      "pos": "熟",
+      "ja": "断る、追い返す",
+      "note": "reject / refuse の言い換え",
+      "example": {
+        "en": "The restaurant was so busy that it turned away several groups.",
+        "ja": "その店は混雑のため、何組かの客を断った。"
+      }
+    },
+    "job fair": {
+      "lemma": "job fair",
+      "pos": "熟",
+      "ja": "就職説明会、合同求人会",
+      "note": "",
+      "example": {
+        "en": "Over thirty companies will take part in the job fair downtown.",
+        "ja": "30社以上が中心街の就職説明会に参加する。"
+      }
+    },
+    "fill positions": {
+      "lemma": "fill a position",
+      "pos": "熟",
+      "ja": "（職の）欠員を埋める、人を採用する",
+      "note": "hire の言い換え",
+      "example": {
+        "en": "The hotel needs to fill three positions before the busy season.",
+        "ja": "そのホテルは繁忙期の前に3人を採用する必要がある。"
+      }
+    },
+    "production line": {
+      "lemma": "production line",
+      "pos": "熟",
+      "ja": "生産ライン",
+      "note": "選択肢では manufacturing work に置き換わる",
+      "example": {
+        "en": "The production line was stopped for an hour for safety checks.",
+        "ja": "安全点検のため、生産ラインが1時間止められた。"
+      }
+    },
+    "applicants": {
+      "lemma": "applicant",
+      "pos": "名",
+      "ja": "応募者",
+      "note": "apply（応募する）の名詞",
+      "example": {
+        "en": "All applicants will be contacted by the end of the month.",
+        "ja": "応募者全員に月末までに連絡がある。"
+      }
+    },
+    "in advance": {
+      "lemma": "in advance",
+      "pos": "熟",
+      "ja": "事前に、前もって",
+      "note": "beforehand と同じ意味",
+      "example": {
+        "en": "Please let us know in advance if you need a parking space.",
+        "ja": "駐車場が必要な場合は事前にお知らせください。"
+      }
+    }
+  },
+  "point": {
+    "flow": "番組と名乗り → ニュースの主題（新工場）→ 理由（需要の数字）→ 影響（雇用の数字）→ 説明会の告知 → 聞き手への勧め → 次の話題の予告",
+    "items": [
+      {
+        "title": "放送は「番組名・名乗り」で話し手が決まる",
+        "body": "ラジオやテレビの放送は、最初の一文で番組と話し手の立場を告げる。who の設問が来たら、伝えている内容（会社の発表）ではなく、伝えている人（司会者・記者）を選ぶ。"
+      },
+      {
+        "title": "ニュースは「発表 → 理由 → 影響」の順で数字が並ぶ",
+        "body": "企業ニュースでは、発表の後に The company says ... で理由、続けて is expected to ... で影響が来る。40% と200人のようにそれぞれの数字がどの段に属するかを聞き分けると、理由と影響の設問を取り違えない。"
+      },
+      {
+        "title": "最後の文は次の話題の予告にすぎない",
+        "body": "After the break, ... は番組の進行で、設問の根拠になりにくい。聞き手への勧め（are encouraged to ...）はその直前にあるので、終盤は予告の一文より前に集中する。"
+      }
+    ]
+  }
+}
