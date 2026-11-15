@@ -496,5 +496,24 @@
       "url": "https://www.jiji.com/jc/article?k=2026042100374&g=soc",
       "date": "2026-04-21"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-15-1646/00.mp3",
+      "audio/2026-11-15-1646/01.mp3",
+      "audio/2026-11-15-1646/02.mp3",
+      "audio/2026-11-15-1646/03.mp3",
+      "audio/2026-11-15-1646/04.mp3",
+      "audio/2026-11-15-1646/05.mp3",
+      "audio/2026-11-15-1646/06.mp3",
+      "audio/2026-11-15-1646/07.mp3",
+      "audio/2026-11-15-1646/08.mp3",
+      "audio/2026-11-15-1646/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 239672,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-15T07:51:44.683Z",
+    "trimmed": true
+  }
 }
