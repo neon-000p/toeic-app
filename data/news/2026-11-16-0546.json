@@ -506,5 +506,22 @@
       "url": "https://www.spokesman.com/stories/2026/jul/06/corporate-japans-rare-earth-warnings-get-louder-as/",
       "date": "2026-07-06"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-16-0546/00.mp3",
+      "audio/2026-11-16-0546/01.mp3",
+      "audio/2026-11-16-0546/02.mp3",
+      "audio/2026-11-16-0546/03.mp3",
+      "audio/2026-11-16-0546/04.mp3",
+      "audio/2026-11-16-0546/05.mp3",
+      "audio/2026-11-16-0546/06.mp3",
+      "audio/2026-11-16-0546/07.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 214528,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-15T20:51:21.769Z",
+    "trimmed": true
+  }
 }
