@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-15-1646",
+  "date": "2026-11-15",
+  "time": "16:46",
+  "createdAt": "2026-11-15T16:46:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "A Nationwide Ground Stop Leaves Air Cargo Backed Up",
+    "ja": "米全土で離陸停止、航空貨物に滞留"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "On Friday, November 13, the FAA stopped all departing flights across the U.S. for more than four hours.",
+            "ja": "11月13日（金）、米連邦航空局（FAA）は、全米で出発便をすべて4時間以上にわたって止めた。"
+          },
+          {
+            "en": "A communication system for air traffic controllers failed after a network upgrade by a contractor, and the cause is still under investigation.",
+            "ja": "委託業者による通信網の更新作業の後に、航空管制官が使う通信システムが故障したもので、原因はまだ調査中だ。"
+          },
+          {
+            "en": "The order covered cargo planes as well as passenger jets, so UPS paused all its U.S. departures.",
+            "ja": "この命令は旅客機だけでなく貨物機も対象としたため、UPSは米国内からの出発便をすべて一時停止した。"
+          },
+          {
+            "en": "Officials said they had found no sign of a cyberattack.",
+            "ja": "当局者は、サイバー攻撃の形跡は見つかっていないと述べた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Lifting the order did not bring operations back to normal right away.",
+            "ja": "命令が解除されても、運航はすぐには平常に戻らなかった。"
+          },
+          {
+            "en": "Many planes and crews were in the wrong cities, and airlines canceled thousands more flights on Saturday.",
+            "ja": "多くの機体と乗務員が本来とは別の都市にいたため、航空各社は土曜日にもさらに数千便を欠航させた。"
+          },
+          {
+            "en": "For shippers, the problem lasted even longer.",
+            "ja": "荷主にとっては、問題はさらに長引いた。"
+          },
+          {
+            "en": "A package that misses one connecting flight can also miss its next sorting operation at a hub.",
+            "ja": "乗り継ぎ便を1便逃した荷物は、拠点空港での次の仕分け作業にも間に合わなくなることがある。"
+          },
+          {
+            "en": "One freight forwarder warned that shipments could move to later flights and that backlogs could continue.",
+            "ja": "ある貨物取扱業者は、荷物が後の便に回され、滞留が続くおそれがあると警告した。"
+          },
+          {
+            "en": "FedEx said it had contingency plans and would resume normal operations when allowed.",
+            "ja": "フェデックスは、緊急時の対応計画があり、許可が出しだい通常の運航を再開すると述べた。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How long did the FAA stop departing flights across the U.S.?",
+      "promptJa": "FAAは全米の出発便をどのくらいの時間止めましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About two hours",
+          "ja": "約2時間"
+        },
+        {
+          "key": "B",
+          "text": "More than four hours",
+          "ja": "4時間以上"
+        },
+        {
+          "key": "C",
+          "text": "A full day",
+          "ja": "まる1日"
+        },
+        {
+          "key": "D",
+          "text": "Through the weekend",
+          "ja": "週末の間ずっと"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第1段落第1文に stopped all departing flights across the U.S. for more than four hours とあり、出発便が止まったのは「4時間以上」。(A) の「約2時間」は本文に出てこない数字。(C) の「まる1日」も本文にない情報。(D) の「週末の間ずっと」は、第2段落で滞留（backlogs）が続くおそれがあると述べた内容や、土曜日にも欠航が出たという話と混同させる引っかけで、出発停止そのものの長さではない。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "期間を問う How long ～? では、for ＋期間（for more than four hours）を本文で探す。後半の「影響が長引いた」という話と、出来事そのものの長さを区別すること。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did airlines cancel more flights on Saturday?",
+      "promptJa": "航空各社が土曜日にさらに多くの便を欠航させたのはなぜですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Their computer systems were hit by a cyberattack.",
+          "ja": "システムがサイバー攻撃を受けた"
+        },
+        {
+          "key": "B",
+          "text": "Many planes and crews were not where they needed to be.",
+          "ja": "機体と乗務員が必要な場所にいなかった"
+        },
+        {
+          "key": "C",
+          "text": "The FAA ordered a second ground stop.",
+          "ja": "FAAが2回目の停止を命じた"
+        },
+        {
+          "key": "D",
+          "text": "A contractor was still upgrading the network.",
+          "ja": "業者がまだ通信網を更新中だった"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落第2文に Many planes and crews were in the wrong cities, and airlines canceled thousands more flights on Saturday とあり、機体と乗務員が別の都市にいたことが土曜日の欠航の原因。in the wrong cities を not where they needed to be と言い換えた (B) が正解。(A) は本文と逆で、第1段落第4文で当局はサイバー攻撃の形跡はないとしている。(C) の2回目の停止命令は本文にない情報。(D) の通信網の更新は故障の前に行われた作業として出てくるだけで、土曜日にも続いていたとは書かれていない。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由を問う設問では、設問の語句（canceled ... flights on Saturday）を含む文を探し、and や so でつながった前半の内容を確認する。正解は in the wrong cities → not where they needed to be のように言い換えられる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "contractor",
+      "pos": "名",
+      "ja": "請負業者、委託業者",
+      "gloss": "",
+      "example": {
+        "en": "The building owner hired a contractor to repair the roof.",
+        "ja": "ビルの所有者は屋根の修理のために請負業者を雇った。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "upgrade",
+      "pos": "名・動",
+      "ja": "（設備などの）更新、改良／更新する",
+      "gloss": "",
+      "example": {
+        "en": "The office will be closed on Monday for a computer upgrade.",
+        "ja": "パソコンの更新作業のため、事務所は月曜日休業となります。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "pause",
+      "pos": "動・名",
+      "ja": "一時停止する／一時停止",
+      "gloss": "",
+      "example": {
+        "en": "We will pause production while the new machines are installed.",
+        "ja": "新しい機械を設置する間、生産を一時停止します。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "crew",
+      "pos": "名",
+      "ja": "乗務員、作業班",
+      "gloss": "",
+      "example": {
+        "en": "A cleaning crew comes to the office every evening.",
+        "ja": "清掃班が毎晩事務所に来る。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "shipper",
+      "pos": "名",
+      "ja": "荷主、発送人",
+      "gloss": "（＝運送会社に荷物の配送を頼む会社や人のこと）",
+      "example": {
+        "en": "The shipper must attach a label to each box.",
+        "ja": "荷主は各箱にラベルを貼らなければならない。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "backlog",
+      "pos": "名",
+      "ja": "（仕事・注文などの）滞り、未処理分",
+      "gloss": "",
+      "example": {
+        "en": "The team worked on Saturday to clear the backlog of orders.",
+        "ja": "チームは注文の滞りを解消するため土曜日に出勤した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "contingency",
+      "pos": "名",
+      "ja": "不測の事態、緊急時の備え",
+      "gloss": "",
+      "example": {
+        "en": "Every department should have a contingency plan for power outages.",
+        "ja": "各部署は停電に備えた緊急時対応計画を持っておくべきだ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "resume",
+      "pos": "動",
+      "ja": "再開する",
+      "gloss": "",
+      "example": {
+        "en": "The meeting will resume after a 15-minute break.",
+        "ja": "会議は15分の休憩の後に再開します。"
+      }
+    }
+  ],
+  "glossary": {
+    "departing": {
+      "lemma": "depart",
+      "pos": "動",
+      "ja": "出発する",
+      "note": "departing flights で「出発便」"
+    },
+    "departures": {
+      "lemma": "departure",
+      "pos": "名",
+      "ja": "出発（便）",
+      "note": ""
+    },
+    "communication": {
+      "lemma": "communication",
+      "pos": "名",
+      "ja": "通信、連絡",
+      "note": ""
+    },
+    "controllers": {
+      "lemma": "controller",
+      "pos": "名",
+      "ja": "管制官、管理者",
+      "note": "air traffic controller で「航空管制官」"
+    },
+    "failed": {
+      "lemma": "fail",
+      "pos": "動",
+      "ja": "故障した、失敗した",
+      "note": ""
+    },
+    "upgrade": {
+      "lemma": "upgrade",
+      "pos": "名",
+      "ja": "更新、改良",
+      "note": ""
+    },
+    "contractor": {
+      "lemma": "contractor",
+      "pos": "名",
+      "ja": "請負業者",
+      "note": ""
+    },
+    "investigation": {
+      "lemma": "investigation",
+      "pos": "名",
+      "ja": "調査",
+      "note": ""
+    },
+    "covered": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "対象とした",
+      "note": "「覆う」ではなく「範囲に含む」の意"
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "paused": {
+      "lemma": "pause",
+      "pos": "動",
+      "ja": "一時停止した",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者、職員",
+      "note": ""
+    },
+    "lifting": {
+      "lemma": "lift",
+      "pos": "動",
+      "ja": "解除すること",
+      "note": "lift an order で「命令を解除する」"
+    },
+    "operations": {
+      "lemma": "operation",
+      "pos": "名",
+      "ja": "運航、業務",
+      "note": ""
+    },
+    "crews": {
+      "lemma": "crew",
+      "pos": "名",
+      "ja": "乗務員",
+      "note": ""
+    },
+    "canceled": {
+      "lemma": "cancel",
+      "pos": "動",
+      "ja": "欠航させた、取り消した",
+      "note": ""
+    },
+    "shippers": {
+      "lemma": "shipper",
+      "pos": "名",
+      "ja": "荷主",
+      "note": ""
+    },
+    "lasted": {
+      "lemma": "last",
+      "pos": "動",
+      "ja": "続いた",
+      "note": "動詞の last は「続く」"
+    },
+    "connecting": {
+      "lemma": "connect",
+      "pos": "形",
+      "ja": "乗り継ぎの",
+      "note": "connecting flight で「乗り継ぎ便」"
+    },
+    "sorting": {
+      "lemma": "sort",
+      "pos": "動",
+      "ja": "仕分けること",
+      "note": ""
+    },
+    "hub": {
+      "lemma": "hub",
+      "pos": "名",
+      "ja": "拠点（空港）",
+      "note": ""
+    },
+    "forwarder": {
+      "lemma": "forwarder",
+      "pos": "名",
+      "ja": "貨物取扱業者",
+      "note": "freight forwarder で「貨物の輸送手配業者」"
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告した",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷品、積み荷",
+      "note": ""
+    },
+    "backlogs": {
+      "lemma": "backlog",
+      "pos": "名",
+      "ja": "滞り、未処理分",
+      "note": ""
+    },
+    "contingency": {
+      "lemma": "contingency",
+      "pos": "名",
+      "ja": "不測の事態",
+      "note": "contingency plan で「緊急時対応計画」"
+    },
+    "resume": {
+      "lemma": "resume",
+      "pos": "動",
+      "ja": "再開する",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "A as well as B（BだけでなくAも：Aに重点を置く並列）",
+    "quote": "The order covered cargo planes as well as passenger jets, so UPS paused all its U.S. departures.",
+    "quoteJa": "この命令は旅客機だけでなく貨物機も対象としたため、UPSは米国内からの出発便をすべて一時停止した。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "A as well as B は「BだけでなくAも」という意味で、2つの名詞を並べる表現。ここでは cargo planes as well as passenger jets で「旅客機だけでなく貨物機も」となる。伝えたい重点は前に置かれた A（cargo planes）の方で、B（passenger jets）は「当然含まれるもの」として後ろに添えられている。この記事が貨物への影響を主題にしているため、貨物機を前に出している。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "not only B but also A に書き換えると The order covered not only passenger jets but also cargo planes. となり、語順が逆になる点に注意（as well as の後ろが「だけでなく」の側）。また主語に使うと、動詞は前の A に合わせる。The manager as well as the staff members is invited.（スタッフだけでなく部長も招待されている）では、主語は The manager なので is になる。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では「The package includes a user guide ____ well as a warranty card.」の空所に as を選ばせる問題や、A as well as B が主語のときの動詞の数（単数・複数）を問う問題が出る。both A and B（動詞は複数）や either A or B（動詞は B に合わせる）との違いも頻出。Part 7 では as well as の前後どちらが話題の中心かを見ると、設問の正解を選びやすい。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "The new system will reduce costs as well as save time.（新システムは時間を節約するだけでなく、コストも削減する）／ Please bring your ID card as well as the visitor pass.（入館証だけでなく身分証もお持ちください）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "2026年11月13日（金）午後3時54分（米東部時間）、米連邦航空局は全米の出発便を止め、午後8時15分に解除した。全22か所の航空路管制センターで通信が途絶えたためで、運輸長官は委託業者の設備更新の後に起きたと説明した。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "地上待機命令(ground stop)は、安全を確保できないときに出発便を空港で足止めする措置。解除されても、機体と乗務員は本来いるはずの空港にいないため、すぐには元のダイヤに戻れない。貨物は拠点空港(hub)で仕分けて次の便に積み替えるため、1便の遅れが次の仕分けや乗り継ぎの遅れにつながり、滞留が数日残る。"
+    },
+    {
+      "heading": "📌 3. 他社の立ち直り方",
+      "body": "2024年7月19日、米クラウドストライクのソフト更新の不具合で、世界中の企業のシステムが止まった。米デルタ航空は、乗務員の配置を管理するシステムが大量の変更を処理しきれず、数千便を欠航した。正常に戻ったのは6日後の7月25日で、同社はクラウドストライクに最大5億ドルの損害を主張した。一方、同じ障害を受けた米アメリカン航空は乗務員管理システムが持ちこたえ、数日で運航を立て直した。2社の差は障害の大きさではなく、止まった後に乗務員の配置を素早く組み直せたかどうかにあった。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "2026年4月21日、福岡航空交通管制部の管制システムに障害が起き、東京航空交通管制部の予備システムに切り替えて午前10時52分に復旧した。対応は2社で分かれた。日本航空は国内線223便を欠航し、約3万3千人に影響が出た。全日本空輸は欠航を30便に抑え、遅延させて運航を続けた。予備系統という冗長性(redundancy)があっても、欠航か遅延かの判断は各社に委ねられる。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "ground stop",
+      "pos": "熟",
+      "ja": "地上待機命令、離陸停止",
+      "gloss": "（＝安全のため、出発便を空港でいっせいに足止めすること）",
+      "example": {
+        "en": "Heavy snow led to a ground stop at the airport this morning.",
+        "ja": "今朝は大雪のため、その空港で離陸停止となった。"
+      }
+    },
+    {
+      "term": "hub",
+      "pos": "名",
+      "ja": "拠点、拠点空港",
+      "gloss": "（＝荷物や乗客が集まり、別の便へ振り分けられる中心地のこと）",
+      "example": {
+        "en": "The company opened a new delivery hub near the highway.",
+        "ja": "その会社は高速道路の近くに新しい配送拠点を開設した。"
+      }
+    },
+    {
+      "term": "redundancy",
+      "pos": "名",
+      "ja": "冗長性、予備の備え",
+      "gloss": "（＝1つが壊れても別の装置で代わりができるよう、余分に用意しておくこと）",
+      "example": {
+        "en": "We added redundancy to our servers so the website never goes down.",
+        "ja": "サイトが止まらないよう、当社はサーバーに予備の備えを加えた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT's Duffy",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+      "date": "2026-11-14"
+    },
+    {
+      "title": "FAA blames Friday's ground stop on 'equipment issue' during telecoms network upgrade",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6040952/faa-ground-stop-airplane-travel",
+      "date": "2026-11-14"
+    },
+    {
+      "title": "FAA Nationwide Ground Stop Halts US Flights, Backs Up Air Cargo",
+      "publisher": "Sourcing Journal",
+      "url": "https://wwd.com/sourcing-journal/logistics/faa-nationwide-us-ground-stop-stoppage-air-cargo-freight-ups-fedex-1239416489/",
+      "date": "2026-11-13"
+    },
+    {
+      "title": "Delta still struggling after CrowdStrike outage while American Airlines back on track",
+      "publisher": "The Dallas Morning News",
+      "url": "https://dallasnews.com/business/airlines/2024/07/22/delta-still-struggling-after-crowdstrike-outage-while-american-airlines-back-on-track",
+      "date": "2024-07-22"
+    },
+    {
+      "title": "航空管制システムに一時不具合 ２５０便超欠航、３．８万人に影響―国交省",
+      "publisher": "時事通信",
+      "url": "https://www.jiji.com/jc/article?k=2026042100374&g=soc",
+      "date": "2026-04-21"
+    }
+  ]
+}
