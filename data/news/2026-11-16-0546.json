@@ -1,0 +1,510 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-16-0546",
+  "date": "2026-11-16",
+  "time": "05:46",
+  "createdAt": "2026-11-16T05:46:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "Trump to Hold First Three-Way Talks with China and Russia",
+    "ja": "米中ロ首脳、初の3者会談へ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "President Donald Trump plans to meet the leaders of China and Russia together next week, the first meeting of its kind.",
+            "ja": "トランプ大統領は来週、中国とロシアの首脳と3人そろって会談する予定で、これは初めての形の会談となる。"
+          },
+          {
+            "en": "Russia's government said the talks will take place on November 19, on the sidelines of a regional summit in China.",
+            "ja": "ロシア政府によると、会談は11月19日、中国で開かれる地域の首脳会議に合わせて行われる。"
+          },
+          {
+            "en": "Trump is also scheduled to hold separate talks and a working lunch with China's leader that day.",
+            "ja": "トランプ氏は同じ日に、中国の指導者との個別会談と昼食を兼ねた会合も予定している。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Officials say nuclear weapons will be the main topic, but they do not expect a concrete agreement.",
+            "ja": "当局者によると、主な議題は核兵器だが、具体的な合意は見込んでいない。"
+          },
+          {
+            "en": "China has not yet confirmed that it will take part in the three-way session.",
+            "ja": "中国は、3者会談に参加するかどうかをまだ確認していない。"
+          },
+          {
+            "en": "For businesses, the talks with China may matter more, because the two countries recently extended a trade truce until January 2027.",
+            "ja": "企業にとっては、中国との個別会談のほうが重要かもしれない。両国は最近、貿易休戦を2027年1月まで延長したばかりだからだ。"
+          },
+          {
+            "en": "Under the deal, China has paused its limits on exports of rare earths, metals used in cars and electronics.",
+            "ja": "この合意のもと、中国は自動車や電子機器に使われる金属であるレアアースの輸出制限を停止している。"
+          },
+          {
+            "en": "However, experts say the short extension does not solve every problem companies face.",
+            "ja": "ただし専門家は、短期間の延長では企業が抱える問題をすべて解決することはできないと指摘している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "When will the three-way talks take place?",
+      "promptJa": "3者会談はいつ行われますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Later this month, on November 10",
+          "ja": "今月の11月10日"
+        },
+        {
+          "key": "B",
+          "text": "On November 19",
+          "ja": "11月19日"
+        },
+        {
+          "key": "C",
+          "text": "In January 2027",
+          "ja": "2027年1月"
+        },
+        {
+          "key": "D",
+          "text": "At the end of next year",
+          "ja": "来年の年末"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落2文目に「the talks will take place on November 19」とあるので、正解は (B)。(C) の January 2027 は第2段落に出てくる「貿易休戦の延長期限」で、会談の日付ではない。(A) の11月10日と (D) の来年末は本文に書かれていない。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "日付を問う設問では、本文に出てくる複数の日付がそれぞれ「何の日付か」を確認する。別の出来事の日付をそのまま並べた選択肢は典型的な引っかけ。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT true about the planned meeting?",
+      "promptJa": "予定されている会談について正しくないものはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Nuclear weapons will be the main topic.",
+          "ja": "核兵器が主な議題になる"
+        },
+        {
+          "key": "B",
+          "text": "China has confirmed that it will join.",
+          "ja": "中国は参加を確認した"
+        },
+        {
+          "key": "C",
+          "text": "Officials do not expect a concrete agreement.",
+          "ja": "具体的な合意は見込まれていない"
+        },
+        {
+          "key": "D",
+          "text": "It will be the first meeting of its kind.",
+          "ja": "初めての形の会談になる"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落2文目に「China has not yet confirmed that it will take part」とあり、中国はまだ参加を確認していない。よって本文と逆の内容の (B) が正解。(A) と (C) は第2段落1文目、(D) は第1段落1文目の「the first meeting of its kind」と一致する。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "NOT問題は、選択肢を1つずつ本文と照らし合わせて消していく。not yet（まだ〜ない）のような否定語を読み落とすと、逆の選択肢を選んでしまう。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "on the sidelines of",
+      "pos": "熟",
+      "ja": "〜に合わせて、〜の場で",
+      "gloss": "（＝大きな会議の本会合とは別の場で、という意味）",
+      "example": {
+        "en": "Several managers met on the sidelines of the trade fair.",
+        "ja": "数人の管理職が見本市に合わせて会合を持った。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "scheduled",
+      "pos": "形",
+      "ja": "（〜する）予定の",
+      "gloss": "",
+      "example": {
+        "en": "The new branch is scheduled to open in April.",
+        "ja": "新しい支店は4月に開業する予定だ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "separate",
+      "pos": "形",
+      "ja": "別々の、個別の",
+      "gloss": "",
+      "example": {
+        "en": "Please send the invoice in a separate email.",
+        "ja": "請求書は別のメールで送ってください。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "concrete",
+      "pos": "形",
+      "ja": "具体的な",
+      "gloss": "",
+      "example": {
+        "en": "The board asked for a concrete plan to cut costs.",
+        "ja": "取締役会はコスト削減の具体的な計画を求めた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "confirm",
+      "pos": "動",
+      "ja": "確認する、確定させる",
+      "gloss": "",
+      "example": {
+        "en": "Please confirm your reservation by Friday.",
+        "ja": "金曜日までに予約を確定してください。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "take part in",
+      "pos": "熟",
+      "ja": "〜に参加する",
+      "gloss": "",
+      "example": {
+        "en": "All new employees will take part in the training program.",
+        "ja": "新入社員は全員、研修プログラムに参加する。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "extend",
+      "pos": "動",
+      "ja": "延長する、広げる",
+      "gloss": "",
+      "example": {
+        "en": "The store will extend its opening hours during the holidays.",
+        "ja": "その店は休暇期間中、営業時間を延長する。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "truce",
+      "pos": "名",
+      "ja": "休戦",
+      "gloss": "（＝争いを一時的に止める取り決めのこと）",
+      "example": {
+        "en": "The two companies reached a truce in their price war.",
+        "ja": "両社は値下げ競争で一時休戦に至った。"
+      }
+    }
+  ],
+  "glossary": {
+    "plans": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "〜する予定だ",
+      "note": "plan to do の形で使う"
+    },
+    "leaders": {
+      "lemma": "leader",
+      "pos": "名",
+      "ja": "指導者、首脳",
+      "note": ""
+    },
+    "government": {
+      "lemma": "government",
+      "pos": "名",
+      "ja": "政府",
+      "note": ""
+    },
+    "sidelines": {
+      "lemma": "sideline",
+      "pos": "名",
+      "ja": "（会議の）傍ら",
+      "note": "on the sidelines of ～ で「～に合わせて」"
+    },
+    "regional": {
+      "lemma": "regional",
+      "pos": "形",
+      "ja": "地域の",
+      "note": ""
+    },
+    "summit": {
+      "lemma": "summit",
+      "pos": "名",
+      "ja": "首脳会議",
+      "note": ""
+    },
+    "scheduled": {
+      "lemma": "scheduled",
+      "pos": "形",
+      "ja": "予定された",
+      "note": "be scheduled to do で「～する予定だ」"
+    },
+    "separate": {
+      "lemma": "separate",
+      "pos": "形",
+      "ja": "個別の",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "nuclear": {
+      "lemma": "nuclear",
+      "pos": "形",
+      "ja": "核の",
+      "note": ""
+    },
+    "weapons": {
+      "lemma": "weapon",
+      "pos": "名",
+      "ja": "兵器",
+      "note": ""
+    },
+    "topic": {
+      "lemma": "topic",
+      "pos": "名",
+      "ja": "議題、話題",
+      "note": ""
+    },
+    "concrete": {
+      "lemma": "concrete",
+      "pos": "形",
+      "ja": "具体的な",
+      "note": ""
+    },
+    "agreement": {
+      "lemma": "agreement",
+      "pos": "名",
+      "ja": "合意",
+      "note": ""
+    },
+    "confirmed": {
+      "lemma": "confirm",
+      "pos": "動",
+      "ja": "確認した",
+      "note": ""
+    },
+    "part": {
+      "lemma": "part",
+      "pos": "名",
+      "ja": "参加",
+      "note": "take part in ～ で「～に参加する」"
+    },
+    "session": {
+      "lemma": "session",
+      "pos": "名",
+      "ja": "会合",
+      "note": ""
+    },
+    "businesses": {
+      "lemma": "business",
+      "pos": "名",
+      "ja": "企業",
+      "note": ""
+    },
+    "matter": {
+      "lemma": "matter",
+      "pos": "動",
+      "ja": "重要である",
+      "note": ""
+    },
+    "extended": {
+      "lemma": "extend",
+      "pos": "動",
+      "ja": "延長した",
+      "note": ""
+    },
+    "truce": {
+      "lemma": "truce",
+      "pos": "名",
+      "ja": "休戦",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "取引、合意",
+      "note": ""
+    },
+    "paused": {
+      "lemma": "pause",
+      "pos": "動",
+      "ja": "一時停止した",
+      "note": ""
+    },
+    "limits": {
+      "lemma": "limit",
+      "pos": "名",
+      "ja": "制限",
+      "note": ""
+    },
+    "exports": {
+      "lemma": "export",
+      "pos": "名",
+      "ja": "輸出",
+      "note": ""
+    },
+    "earths": {
+      "lemma": "rare earth",
+      "pos": "名",
+      "ja": "レアアース",
+      "note": "rare earths で「希土類（レアアース）」"
+    },
+    "electronics": {
+      "lemma": "electronics",
+      "pos": "名",
+      "ja": "電子機器",
+      "note": ""
+    },
+    "extension": {
+      "lemma": "extension",
+      "pos": "名",
+      "ja": "延長",
+      "note": ""
+    },
+    "solve": {
+      "lemma": "solve",
+      "pos": "動",
+      "ja": "解決する",
+      "note": ""
+    },
+    "face": {
+      "lemma": "face",
+      "pos": "動",
+      "ja": "直面する",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "be scheduled to do（～する予定だ：公式な予定を表す受動の定型表現）",
+    "quote": "Trump is also scheduled to hold separate talks and a working lunch with China's leader that day.",
+    "quoteJa": "トランプ氏は同じ日に、中国の指導者との個別会談と昼食を兼ねた会合も予定している。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "be scheduled to do は「～する予定になっている」という意味の定型表現。schedule（予定を組む）の過去分詞を使った受動態で、「誰かがそう予定を組んだ」状態を表す。会議・発売・開業など、日時が公式に決まっている予定によく使う。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Trump is scheduled to hold talks. ＝ Trump plans to hold talks. ＝ Trump will hold talks. の順に「決まっている度合い」が下がる。plan to は本人の意図、be scheduled to は日程表に載った予定。似た形に be supposed to do（～することになっている）、be expected to do（～する見込みだ）がある。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 では「The meeting is scheduled ___ at 3 p.m.」の空所に to begin を選ばせる問題が定番（beginning や begins は不可）。また「scheduled for + 日時」の形（The meeting is scheduled for Monday.）と区別させる問題も多い。to の後は動詞の原形、for の後は日時の名詞。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "The product launch is scheduled to take place on March 3.（製品発表会は3月3日に行われる予定です。）／ The shipment is scheduled for delivery next Tuesday.（荷物は来週火曜日に配達予定です。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "ホワイトハウスとロシア大統領府は、米中ロ3首脳が11月19日に中国・深圳で会談すると明らかにした。APEC首脳会議（18〜19日）に合わせた開催で、トランプ氏は同日、習近平国家主席との個別会談と昼食会も予定する。中国は3者会談をまだ認めていない。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "3者会談の主題は核兵器を減らす軍備管理(arms control)だが、具体的な合意は見込まれていない。企業にとって大きいのは米中の貿易休戦だ。11月10日が期限だった休戦は2027年1月10日まで延び、中国はレアアースの輸出規制(export controls)を止めている。ただ延長は2カ月だけで、輸出許可の申請方法がばらばらな問題も残る。"
+    },
+    {
+      "heading": "📌 3. 米企業は米中対立にどう対応したか",
+      "body": "エヌビディアは2025年4月、米政府が中国向けAI半導体「H20」の輸出に許可を義務づけたため、2〜4月期に45億ドルの費用を計上し、さらに25億ドル分を出荷できなかった。一方アップルは生産地を移した。2025年7月、ティム・クックCEOは米国で売るiPhoneの大半がインド製になったと説明した。中国より関税の低いインドに組み立てを寄せた結果だ。前者は政策の直撃を受け、後者はサプライチェーン(supply chain)を組み替えて影響を抑えた。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本企業はレアアースで中国の規制を受けている。2026年1月、中国は日本向けのレアアースと磁石の輸出を絞り込んだ。ロイターによると、5〜6月に東京証券取引所で開示された資料のうちレアアースに触れた約200件の3分の2超が「規制は悪影響がある、またはありうる」と記した。一方シチズン時計は生産や業績に影響は出ていないとしている。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "arms control",
+      "pos": "熟",
+      "ja": "軍備管理",
+      "gloss": "（＝国どうしで武器の数や種類を制限すること）",
+      "example": {
+        "en": "The two countries agreed to restart arms control talks.",
+        "ja": "両国は軍備管理の協議を再開することで合意した。"
+      }
+    },
+    {
+      "term": "export controls",
+      "pos": "名",
+      "ja": "輸出規制",
+      "gloss": "（＝政府が特定の品目の輸出を許可制にしたり禁じたりすること）",
+      "example": {
+        "en": "New export controls delayed our shipment to Asia.",
+        "ja": "新しい輸出規制のせいで、アジア向けの出荷が遅れた。"
+      }
+    },
+    {
+      "term": "supply chain",
+      "pos": "名",
+      "ja": "サプライチェーン、供給網",
+      "gloss": "（＝原料の調達から製造・配送までのつながり）",
+      "example": {
+        "en": "The company is reviewing its supply chain to reduce risks.",
+        "ja": "その会社はリスクを減らすために供給網を見直している。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trump heads to Asia with hopes of shifting the momentum after midterm setbacks hurt him at home",
+      "publisher": "ABC News (AP)",
+      "url": "https://abcnews.com/Business/wireStory/trump-heads-asia-hopes-shifting-momentum-after-midterm-138156100",
+      "date": "2026-11-15"
+    },
+    {
+      "title": "China extends pause on rare earth export curbs for two months",
+      "publisher": "The National",
+      "url": "https://www.thenationalnews.com/news/us/2026/11/09/china-extends-pause-on-rare-earth-export-curbs-for-two-months/",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "Nvidia takes $4.5 billion H20 writedown over China",
+      "publisher": "Fortune",
+      "url": "https://www.fortune.com/2025/06/03/nvidia-chips-h20-writedown-4-5-billion-china",
+      "date": "2025-06-03"
+    },
+    {
+      "title": "Most US iPhones are now made in India as Apple responds to tariffs",
+      "publisher": "9to5Mac",
+      "url": "https://9to5mac.com/2025/07/31/most-us-iphones-are-now-made-in-india-as-apple-responds-to-tariffs/",
+      "date": "2025-07-31"
+    },
+    {
+      "title": "Corporate Japan's rare-earth warnings get louder as China keeps the spigot closed",
+      "publisher": "The Spokesman-Review (Reuters)",
+      "url": "https://www.spokesman.com/stories/2026/jul/06/corporate-japans-rare-earth-warnings-get-louder-as/",
+      "date": "2026-07-06"
+    }
+  ]
+}
