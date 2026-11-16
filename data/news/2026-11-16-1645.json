@@ -514,5 +514,24 @@
       "url": "https://english.adnkronos.com/2026/01/01/japan-retailers-racing-with-low-priced-goods-amid-inflation/",
       "date": "2026-01-01"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-16-1645/00.mp3",
+      "audio/2026-11-16-1645/01.mp3",
+      "audio/2026-11-16-1645/02.mp3",
+      "audio/2026-11-16-1645/03.mp3",
+      "audio/2026-11-16-1645/04.mp3",
+      "audio/2026-11-16-1645/05.mp3",
+      "audio/2026-11-16-1645/06.mp3",
+      "audio/2026-11-16-1645/07.mp3",
+      "audio/2026-11-16-1645/08.mp3",
+      "audio/2026-11-16-1645/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 246680,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-16T07:51:54.636Z",
+    "trimmed": true
+  }
 }
