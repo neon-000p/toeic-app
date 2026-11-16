@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-16-1645",
+  "date": "2026-11-16",
+  "time": "16:45",
+  "createdAt": "2026-11-16T16:45:00+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail & Consumer",
+  "sample": false,
+  "title": {
+    "en": "Japan's Economy Shrinks as Shoppers Cut Back",
+    "ja": "日本経済が縮小、消費の弱さが響く"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Japan's economy shrank at an annual rate of 0.1% in the July-September quarter, the government said on Monday.",
+            "ja": "政府が月曜日に発表したところによると、日本経済は7〜9月期に年率換算で0.1%縮小した。"
+          },
+          {
+            "en": "It was the first contraction in about a year, and economists had expected small growth instead.",
+            "ja": "マイナス成長は約1年ぶりで、エコノミストはむしろ小幅なプラス成長を予想していた。"
+          },
+          {
+            "en": "The main reason was weaker consumer spending, which fell 0.3% from the previous quarter.",
+            "ja": "主な要因は個人消費の弱さで、前の四半期から0.3%減少した。"
+          },
+          {
+            "en": "It was the second quarterly decline in a row.",
+            "ja": "四半期ベースで2期連続の減少となった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Rising prices have made many households careful about everyday purchases.",
+            "ja": "物価の上昇によって、多くの家計が日々の買い物に慎重になっている。"
+          },
+          {
+            "en": "Shoppers spent less on food such as rice and snacks, and heavy rain and typhoons hurt sales of clothing and travel.",
+            "ja": "消費者は米やお菓子などの食品への支出を減らし、大雨や台風が衣料品や旅行の売り上げに打撃を与えた。"
+          },
+          {
+            "en": "Higher energy imports also pulled growth down.",
+            "ja": "エネルギー輸入の増加も成長率を押し下げた。"
+          },
+          {
+            "en": "The economy shrank even though business investment rose 1.6%, led by spending on AI and labor-saving equipment.",
+            "ja": "AIや省力化設備への支出がけん引して設備投資は1.6%増えたにもかかわらず、経済は縮小した。"
+          },
+          {
+            "en": "Consumer spending makes up more than half of the economy, so weak shoppers can quickly hurt the whole economy.",
+            "ja": "個人消費は経済の半分以上を占めるため、消費者の弱さはすぐに経済全体に響きかねない。"
+          },
+          {
+            "en": "Many economists still expect the Bank of Japan to raise interest rates in December.",
+            "ja": "それでも多くのエコノミストは、日本銀行が12月に利上げすると予想している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did consumer spending fall from the previous quarter?",
+      "promptJa": "個人消費は前の四半期からどれだけ減少しましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.1%",
+          "ja": "0.1%"
+        },
+        {
+          "key": "B",
+          "text": "0.3%",
+          "ja": "0.3%"
+        },
+        {
+          "key": "C",
+          "text": "1.6%",
+          "ja": "1.6%"
+        },
+        {
+          "key": "D",
+          "text": "3.0%",
+          "ja": "3.0%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第1段落3文目に consumer spending, which fell 0.3% from the previous quarter とあります。(A) 0.1% は経済全体（GDP）の年率の縮小幅で、消費の数字ではありません。(C) 1.6% は設備投資（business investment）の伸び率です。(D) 3.0% は本文に出てきません。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字を問う設問では、本文に複数の数字が出てきたら「何の数字か」を主語とセットで確認しましょう。別の数字を使った引っかけが定番です。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT mentioned as a reason for the weak economy?",
+      "promptJa": "経済が弱かった理由として述べられていないものはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Rising prices",
+          "ja": "物価の上昇"
+        },
+        {
+          "key": "B",
+          "text": "Bad weather",
+          "ja": "悪天候"
+        },
+        {
+          "key": "C",
+          "text": "Higher energy imports",
+          "ja": "エネルギー輸入の増加"
+        },
+        {
+          "key": "D",
+          "text": "A drop in business investment",
+          "ja": "設備投資の減少"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は (D)。第2段落4文目に business investment rose 1.6% とあり、設備投資は減ったのではなく増えています。(A) は第2段落1文目の Rising prices、(B) は2文目の heavy rain and typhoons、(C) は3文目の Higher energy imports で、いずれも本文で理由として述べられています。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "NOT 問題は、選択肢を1つずつ本文と照合して消していくのが確実です。最後に残った選択肢が本文と「逆の内容」になっていないかも確認しましょう。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "contraction",
+      "pos": "名",
+      "ja": "縮小、マイナス成長",
+      "gloss": "（＝経済の規模が前の期より小さくなること）",
+      "example": {
+        "en": "Sales returned to growth after a long contraction.",
+        "ja": "長い落ち込みの後、売り上げは再び伸び始めた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "previous",
+      "pos": "形",
+      "ja": "前の、以前の",
+      "gloss": "",
+      "example": {
+        "en": "Please compare the figures with the previous report.",
+        "ja": "数字を前回の報告書と比較してください。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "quarterly",
+      "pos": "形",
+      "ja": "四半期の",
+      "gloss": "",
+      "example": {
+        "en": "The manager presents the quarterly results every three months.",
+        "ja": "部長は3か月ごとに四半期の業績を発表する。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "decline",
+      "pos": "名",
+      "ja": "減少、低下",
+      "gloss": "",
+      "example": {
+        "en": "The store reported a decline in customer visits.",
+        "ja": "その店は来店客数の減少を報告した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "household",
+      "pos": "名",
+      "ja": "世帯、家計",
+      "gloss": "",
+      "example": {
+        "en": "Each household will receive a discount coupon by mail.",
+        "ja": "各世帯に割引クーポンが郵送される。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "purchase",
+      "pos": "名",
+      "ja": "購入、買い物",
+      "gloss": "",
+      "example": {
+        "en": "Please keep your receipt as proof of purchase.",
+        "ja": "購入の証明としてレシートを保管してください。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "investment",
+      "pos": "名",
+      "ja": "投資",
+      "gloss": "",
+      "example": {
+        "en": "The company made a large investment in new software.",
+        "ja": "その会社は新しいソフトウェアに大きな投資をした。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "equipment",
+      "pos": "名",
+      "ja": "設備、機器",
+      "gloss": "",
+      "example": {
+        "en": "The new office equipment will be delivered on Friday.",
+        "ja": "新しい事務機器は金曜日に届く予定だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "shrank": {
+      "lemma": "shrink",
+      "pos": "動",
+      "ja": "縮小する",
+      "note": ""
+    },
+    "annual": {
+      "lemma": "annual",
+      "pos": "形",
+      "ja": "年間の",
+      "note": "annual rate＝年率"
+    },
+    "rate": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "率",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": "3か月ごとの区切り"
+    },
+    "government": {
+      "lemma": "government",
+      "pos": "名",
+      "ja": "政府",
+      "note": ""
+    },
+    "contraction": {
+      "lemma": "contraction",
+      "pos": "名",
+      "ja": "縮小",
+      "note": ""
+    },
+    "economists": {
+      "lemma": "economist",
+      "pos": "名",
+      "ja": "経済学者、エコノミスト",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "instead": {
+      "lemma": "instead",
+      "pos": "副",
+      "ja": "その代わりに",
+      "note": ""
+    },
+    "consumer": {
+      "lemma": "consumer",
+      "pos": "名",
+      "ja": "消費者",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出",
+      "note": ""
+    },
+    "previous": {
+      "lemma": "previous",
+      "pos": "形",
+      "ja": "前の",
+      "note": ""
+    },
+    "quarterly": {
+      "lemma": "quarterly",
+      "pos": "形",
+      "ja": "四半期の",
+      "note": ""
+    },
+    "decline": {
+      "lemma": "decline",
+      "pos": "名",
+      "ja": "減少",
+      "note": ""
+    },
+    "in a row": {
+      "lemma": "in a row",
+      "pos": "熟",
+      "ja": "連続して",
+      "note": ""
+    },
+    "rising": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇する",
+      "note": ""
+    },
+    "households": {
+      "lemma": "household",
+      "pos": "名",
+      "ja": "世帯、家計",
+      "note": ""
+    },
+    "careful": {
+      "lemma": "careful",
+      "pos": "形",
+      "ja": "慎重な",
+      "note": ""
+    },
+    "purchases": {
+      "lemma": "purchase",
+      "pos": "名",
+      "ja": "購入",
+      "note": ""
+    },
+    "typhoons": {
+      "lemma": "typhoon",
+      "pos": "名",
+      "ja": "台風",
+      "note": ""
+    },
+    "imports": {
+      "lemma": "import",
+      "pos": "名",
+      "ja": "輸入",
+      "note": "対義語は export（輸出）"
+    },
+    "pulled": {
+      "lemma": "pull",
+      "pos": "動",
+      "ja": "引く",
+      "note": "pull A down＝Aを押し下げる"
+    },
+    "growth": {
+      "lemma": "growth",
+      "pos": "名",
+      "ja": "成長",
+      "note": ""
+    },
+    "even though": {
+      "lemma": "even though",
+      "pos": "接",
+      "ja": "〜にもかかわらず",
+      "note": ""
+    },
+    "investment": {
+      "lemma": "investment",
+      "pos": "名",
+      "ja": "投資",
+      "note": ""
+    },
+    "led": {
+      "lemma": "lead",
+      "pos": "動",
+      "ja": "率いる",
+      "note": "led by ～＝～がけん引して"
+    },
+    "labor-saving": {
+      "lemma": "labor-saving",
+      "pos": "形",
+      "ja": "省力化の",
+      "note": ""
+    },
+    "equipment": {
+      "lemma": "equipment",
+      "pos": "名",
+      "ja": "設備、機器",
+      "note": "数えられない名詞"
+    },
+    "makes up": {
+      "lemma": "make up",
+      "pos": "熟",
+      "ja": "占める、構成する",
+      "note": ""
+    },
+    "interest rates": {
+      "lemma": "interest rate",
+      "pos": "名",
+      "ja": "金利",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "接続詞 even though（譲歩：〜にもかかわらず）",
+    "quote": "The economy shrank even though business investment rose 1.6%, led by spending on AI and labor-saving equipment.",
+    "quoteJa": "AIや省力化設備への支出がけん引して設備投資は1.6%増えたにもかかわらず、経済は縮小した。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "even though は「〜にもかかわらず」という譲歩を表す接続詞で、後ろに〈主語＋動詞〉の節が続きます。この文では「設備投資が増えた（business investment rose）」という事実と、「経済は縮小した（The economy shrank）」という予想に反する結果を結んでいます。even though の節は「実際に起きた事実」を述べる点がポイントです。末尾の led by ～ は「～にけん引されて」という過去分詞の補足です。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "① 同じ意味：The economy shrank although business investment rose 1.6%.（although もほぼ同じ意味）② 前置詞で書き換え：The economy shrank despite a 1.6% rise in business investment.（despite / in spite of の後ろは名詞句）③ 比較：even if は「たとえ〜しても」という仮定で、事実かどうかは問いません。Even if prices fall, sales may stay weak.（たとえ価格が下がっても…）"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では、空所の後ろが〈主語＋動詞〉なら even though / although、名詞句なら despite / in spite of を選ぶ問題が頻出です。また even though と even if、because（理由）との意味の取り違えを狙う選択肢もよく出ます。Part 7 では even though の後ろに「予想と逆の事実」が来るので、筆者の主張は主節側にあると読み取りましょう。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Sales fell last month even though we offered a 20% discount.（20%の割引を行ったにもかかわらず、先月の売り上げは減少しました。）／ The project was completed on schedule even though two team members were on leave.（チームの2人が休暇中だったにもかかわらず、プロジェクトは予定どおり完了しました。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "政府が11月16日に発表した7〜9月期の実質GDP速報値は年率0.1%減で、約1年ぶりのマイナス成長でした。個人消費は前期比0.3%減と2四半期連続で減り、設備投資は1.6%増えました。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "物価高で収入が追いつかないと、家計は食品や日用品などの必需品で節約し、衣料や旅行といった「なくても困らない」裁量的支出(discretionary spending)を後回しにします。今回は米やお菓子への支出が減り、長雨や台風で衣料・宿泊も鈍りました。また輸入はGDPから差し引かれるため、エネルギー輸入の増加も成長率を押し下げました。"
+    },
+    {
+      "heading": "📌 3. 他社の節約志向への対応",
+      "body": "米マクドナルドは2025年1〜3月期、低所得層の来店客が2ケタ近く減り、米国の既存店売上高(comparable sales)が3.6%減りました。1月に始めた「1ドルで1品追加」の低価格メニューで客足を戻し、4〜6月期は2.5%増に回復しました。一方、米ターゲットは2025年5〜7月期の既存店売上高が3%超減り、同期に5%近く伸ばしたウォルマートに買い物客を奪われ、売上高の減少が続きました。値ごろ感で客数を戻した企業と、安さで競合に負けた企業の差が出ました。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "イオンは2025年4月と10月に、自社で企画するプライベートブランド(private brand)の食品・日用品を値下げしました。さらに2026年5月11日から8月31日までは、同ブランドの食品約3,500品目の価格を約1万店で据え置きました。米や食品の値上がりで節約志向を強める消費者を、ナショナルブランドより安い自社商品で引き留める戦略です。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "discretionary spending",
+      "pos": "熟",
+      "ja": "裁量的支出",
+      "gloss": "（＝衣料や旅行など、生活に必須ではない買い物への支出のこと）",
+      "example": {
+        "en": "Many families cut discretionary spending when prices rise.",
+        "ja": "物価が上がると、多くの家庭は必須でない支出を減らす。"
+      }
+    },
+    {
+      "term": "comparable sales",
+      "pos": "熟",
+      "ja": "既存店売上高",
+      "gloss": "（＝開業から一定期間たった店だけで比べた売上高のこと）",
+      "example": {
+        "en": "The chain's comparable sales rose 3% last quarter.",
+        "ja": "そのチェーンの既存店売上高は前四半期に3%伸びた。"
+      }
+    },
+    {
+      "term": "private brand",
+      "pos": "名",
+      "ja": "プライベートブランド",
+      "gloss": "（＝小売店が自社で企画して売る商品のこと）",
+      "example": {
+        "en": "The supermarket sells its private brand coffee at a lower price.",
+        "ja": "そのスーパーは自社ブランドのコーヒーを安い価格で売っている。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Japan's Economy Shrinks as Bad Weather Weighs on Consumption",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-15/japan-s-economy-contracts-as-bad-weather-weighs-on-consumption",
+      "date": "2026-11-15"
+    },
+    {
+      "title": "McDonald's posts better-than-expected sales as chicken strips, Minecraft meal drive traffic",
+      "publisher": "AP (via KPRC Click2Houston)",
+      "url": "https://www.click2houston.com/business/2025/08/06/mcdonalds-posts-better-that-expected-sales-as-chicken-strips-minecraft-meal-drive-traffic/",
+      "date": "2025-08-06"
+    },
+    {
+      "title": "McDonald's US traffic slides in Q1 2025, same-store sales down",
+      "publisher": "Restaurant Dive",
+      "url": "https://www.restaurantdive.com/news/Mcdonalds-us-traffic-slides-q1-2025-same-store-sales-down/746845/",
+      "date": "2025-05-01"
+    },
+    {
+      "title": "Walmart, Target: budget-conscious consumers pickier where they shop",
+      "publisher": "Star Tribune",
+      "url": "https://www.startribune.com/walmart-target-budget-concious-consumers-pickier-where-they-shop-what-they-spend-money-on/601458197",
+      "date": ""
+    },
+    {
+      "title": "Japan Retailers Racing with Low-Priced Goods amid Inflation",
+      "publisher": "Adnkronos (Jiji Press)",
+      "url": "https://english.adnkronos.com/2026/01/01/japan-retailers-racing-with-low-priced-goods-amid-inflation/",
+      "date": "2026-01-01"
+    }
+  ]
+}
