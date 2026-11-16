@@ -510,5 +510,23 @@
       "url": "https://www.hokkoku.co.jp/articles/-/2285223",
       "date": "2026-11-10"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-17-0546/00.mp3",
+      "audio/2026-11-17-0546/01.mp3",
+      "audio/2026-11-17-0546/02.mp3",
+      "audio/2026-11-17-0546/03.mp3",
+      "audio/2026-11-17-0546/04.mp3",
+      "audio/2026-11-17-0546/05.mp3",
+      "audio/2026-11-17-0546/06.mp3",
+      "audio/2026-11-17-0546/07.mp3",
+      "audio/2026-11-17-0546/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 248940,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-16T20:52:39.895Z",
+    "trimmed": true
+  }
 }
