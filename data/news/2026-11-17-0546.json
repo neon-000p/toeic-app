@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-17-0546",
+  "date": "2026-11-17",
+  "time": "05:46",
+  "createdAt": "2026-11-17T05:46:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "Dutch Bus Workers Reject Final Pay Offer",
+    "ja": "オランダのバス労組、最終賃金提示を拒否"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Bus and regional train workers in the Netherlands have rejected their employers' final offer for a new labor contract.",
+            "ja": "オランダの路線バスと地域鉄道の労働者が、新しい労働協約をめぐる使用者側の最終提示を拒否した。"
+          },
+          {
+            "en": "The two unions, FNV and CNV, released the results on November 13 and 16, with 95% and 93% of their members voting no.",
+            "ja": "2つの労働組合FNVとCNVは11月13日と16日に投票結果を発表し、組合員のそれぞれ95%と93%が反対票を投じた。"
+          },
+          {
+            "en": "The contract covers about 13,000 employees, and most of them are bus drivers.",
+            "ja": "この協約の対象は約1万3000人の従業員で、その大半はバスの運転士だ。"
+          },
+          {
+            "en": "The unions say new strikes are now likely, but no dates have been set yet.",
+            "ja": "組合側は新たなストライキが起こる可能性が高いとしているが、日程はまだ決まっていない。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The offer included a 2% pay raise backdated to July and a further 4% over next year.",
+            "ja": "提示には、7月にさかのぼって適用する2%の賃上げと、来年にかけてのさらに4%の賃上げが含まれていた。"
+          },
+          {
+            "en": "Union leaders said the wage increase itself was acceptable.",
+            "ja": "組合幹部は、賃上げ幅そのものは受け入れられる水準だと述べた。"
+          },
+          {
+            "en": "However, they argued that other terms were too weak, especially rules on income security and work-life balance.",
+            "ja": "しかし、それ以外の条件、とりわけ収入の保障や仕事と生活の両立に関するルールが不十分だと主張した。"
+          },
+          {
+            "en": "In October, the workers held a nationwide strike day that stopped many buses and trains.",
+            "ja": "労働者たちは10月に全国一斉のストライキを1日実施し、多くのバスや列車が止まった。"
+          },
+          {
+            "en": "Another walkout would affect commuters across the country, so employers are under growing pressure to improve the deal.",
+            "ja": "再びストが行われれば全国の通勤客に影響が出るため、使用者側には条件の改善を求める圧力が強まっている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What percentage of CNV members voted against the offer?",
+      "promptJa": "CNVの組合員の何%が提示に反対票を投じましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4%",
+          "ja": "4%"
+        },
+        {
+          "key": "B",
+          "text": "93%",
+          "ja": "93%"
+        },
+        {
+          "key": "C",
+          "text": "95%",
+          "ja": "95%"
+        },
+        {
+          "key": "D",
+          "text": "13%",
+          "ja": "13%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落2文目に「FNV and CNV ... with 95% and 93% of their members voting no」とあり、並べた順に対応させるとFNVが95%、CNVが93%です。よって正解は(B)。(C) 95% はFNVの数字で、順番の取り違えを狙った選択肢です。(A) 4% は第2段落にある来年の賃上げ幅、(D) 13% は対象人数「13,000」から作った紛らわしい数字で、いずれも反対票の割合ではありません。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "「A and B ... 95% and 93%」のように2つの主語と2つの数字が並ぶときは、書かれた順に1対1で対応させます。Part 7 では、本文の別の数字を使った引っかけ選択肢が定番です。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the unions, what is the main problem with the offer?",
+      "promptJa": "組合によると、提示の主な問題点は何ですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The pay raise is too small.",
+          "ja": "賃上げ幅が小さすぎる。"
+        },
+        {
+          "key": "B",
+          "text": "Terms other than pay, such as income security, are too weak.",
+          "ja": "収入保障など賃金以外の条件が不十分。"
+        },
+        {
+          "key": "C",
+          "text": "The contract covers too few workers.",
+          "ja": "協約の対象者が少なすぎる。"
+        },
+        {
+          "key": "D",
+          "text": "The strike dates have already been set.",
+          "ja": "スト日程がすでに決まっている。"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落3文目に「they argued that other terms were too weak, especially rules on income security and work-life balance」とあり、賃金以外の条件が問題だと分かります。よって正解は(B)。(A) は直前の文「the wage increase itself was acceptable（賃上げ幅自体は受け入れられる）」と逆の内容です。(C) の対象人数が少ないという話は本文にありません。(D) は第1段落最終文「no dates have been set yet（日程はまだ決まっていない）」と矛盾します。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "However の直後は筆者や当事者の本音・主張が来やすい位置です。理由を問う設問では、逆接の語（However, but）の後ろを重点的に読みましょう。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "reject",
+      "pos": "動",
+      "ja": "拒否する、却下する",
+      "gloss": "",
+      "example": {
+        "en": "The client rejected our first proposal, so we revised the price.",
+        "ja": "顧客が最初の提案を断ったので、価格を見直した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "contract",
+      "pos": "名",
+      "ja": "契約、契約書",
+      "gloss": "",
+      "example": {
+        "en": "Please sign the contract and return it by Friday.",
+        "ja": "契約書に署名し、金曜までに返送してください。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "cover",
+      "pos": "動",
+      "ja": "（範囲・対象に）含む、適用される",
+      "gloss": "",
+      "example": {
+        "en": "The warranty covers all repairs for two years.",
+        "ja": "保証は2年間すべての修理に適用される。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "union",
+      "pos": "名",
+      "ja": "労働組合",
+      "gloss": "",
+      "example": {
+        "en": "The union will meet with management next week.",
+        "ja": "労働組合は来週、経営陣と会う予定だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "backdated",
+      "pos": "形",
+      "ja": "さかのぼって適用される",
+      "gloss": "（＝過去の日付にさかのぼって効力を持たせること）",
+      "example": {
+        "en": "The salary increase will be backdated to April 1.",
+        "ja": "昇給は4月1日にさかのぼって適用される。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "acceptable",
+      "pos": "形",
+      "ja": "受け入れられる、許容できる",
+      "gloss": "",
+      "example": {
+        "en": "The delivery date is acceptable to both companies.",
+        "ja": "その納期は両社にとって受け入れ可能だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "pressure",
+      "pos": "名",
+      "ja": "圧力、プレッシャー",
+      "gloss": "",
+      "example": {
+        "en": "The team is under pressure to finish the project on schedule.",
+        "ja": "チームはプロジェクトを予定どおり終えるよう圧力を受けている。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "walkout",
+      "pos": "名",
+      "ja": "ストライキ、職場放棄",
+      "gloss": "（＝労働者が抗議のために一斉に仕事をやめること）",
+      "example": {
+        "en": "The airline canceled flights because of a walkout by ground staff.",
+        "ja": "地上職員のストのため、航空会社は便を欠航した。"
+      }
+    }
+  ],
+  "glossary": {
+    "regional": {
+      "lemma": "regional",
+      "pos": "形",
+      "ja": "地域の",
+      "note": ""
+    },
+    "workers": {
+      "lemma": "worker",
+      "pos": "名",
+      "ja": "労働者",
+      "note": ""
+    },
+    "rejected": {
+      "lemma": "reject",
+      "pos": "動",
+      "ja": "拒否した",
+      "note": ""
+    },
+    "employers'": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主の",
+      "note": "employers' ＝雇用主たちの（複数形の所有格）"
+    },
+    "final": {
+      "lemma": "final",
+      "pos": "形",
+      "ja": "最終の",
+      "note": ""
+    },
+    "offer": {
+      "lemma": "offer",
+      "pos": "名",
+      "ja": "提示、申し出",
+      "note": ""
+    },
+    "labor": {
+      "lemma": "labor",
+      "pos": "名",
+      "ja": "労働",
+      "note": ""
+    },
+    "contract": {
+      "lemma": "contract",
+      "pos": "名",
+      "ja": "契約、協約",
+      "note": ""
+    },
+    "unions": {
+      "lemma": "union",
+      "pos": "名",
+      "ja": "労働組合",
+      "note": ""
+    },
+    "released": {
+      "lemma": "release",
+      "pos": "動",
+      "ja": "発表した",
+      "note": ""
+    },
+    "results": {
+      "lemma": "result",
+      "pos": "名",
+      "ja": "結果",
+      "note": ""
+    },
+    "members": {
+      "lemma": "member",
+      "pos": "名",
+      "ja": "組合員、会員",
+      "note": ""
+    },
+    "voting": {
+      "lemma": "vote",
+      "pos": "動",
+      "ja": "投票する",
+      "note": "vote no＝反対票を投じる"
+    },
+    "covers": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "対象とする",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    },
+    "strikes": {
+      "lemma": "strike",
+      "pos": "名",
+      "ja": "ストライキ",
+      "note": ""
+    },
+    "likely": {
+      "lemma": "likely",
+      "pos": "形",
+      "ja": "起こりそうな",
+      "note": ""
+    },
+    "included": {
+      "lemma": "include",
+      "pos": "動",
+      "ja": "含んでいた",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "名",
+      "ja": "昇給",
+      "note": "pay raise＝賃上げ"
+    },
+    "backdated": {
+      "lemma": "backdated",
+      "pos": "形",
+      "ja": "さかのぼって適用の",
+      "note": "backdated to July＝7月にさかのぼって"
+    },
+    "further": {
+      "lemma": "further",
+      "pos": "形",
+      "ja": "さらなる",
+      "note": ""
+    },
+    "wage": {
+      "lemma": "wage",
+      "pos": "名",
+      "ja": "賃金",
+      "note": ""
+    },
+    "acceptable": {
+      "lemma": "acceptable",
+      "pos": "形",
+      "ja": "受け入れられる",
+      "note": ""
+    },
+    "argued": {
+      "lemma": "argue",
+      "pos": "動",
+      "ja": "主張した",
+      "note": ""
+    },
+    "terms": {
+      "lemma": "term",
+      "pos": "名",
+      "ja": "条件",
+      "note": "複数形で「（契約の）条件」"
+    },
+    "security": {
+      "lemma": "security",
+      "pos": "名",
+      "ja": "保障、安定",
+      "note": "income security＝収入の保障"
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "note": ""
+    },
+    "commuters": {
+      "lemma": "commuter",
+      "pos": "名",
+      "ja": "通勤客",
+      "note": ""
+    },
+    "nationwide": {
+      "lemma": "nationwide",
+      "pos": "形",
+      "ja": "全国的な",
+      "note": ""
+    },
+    "walkout": {
+      "lemma": "walkout",
+      "pos": "名",
+      "ja": "ストライキ",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "付帯状況の with（with＋名詞＋-ing：〜が…する状態で）",
+    "quote": "The two unions, FNV and CNV, released the results on November 13 and 16, with 95% and 93% of their members voting no.",
+    "quoteJa": "2つの労働組合FNVとCNVは11月13日と16日に投票結果を発表し、組合員のそれぞれ95%と93%が反対票を投じた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "〈with＋名詞＋-ing〉は「（名詞）が〜している状態で」という付帯状況を表します。この文では、主節「2つの組合が結果を発表した」に、with 95% and 93% of their members voting no（組合員の95%と93%が反対票を投じて）という補足の情報を、文を切らずに添えています。with の後ろの名詞（95% and 93% of their members）が、-ing（voting）の意味上の主語になる点がポイントです。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "① 節で書き換え：..., and 95% and 93% of their members voted no.（and＋文で2つの事実を並べる）② 分詞の形の違い：with＋名詞＋過去分詞 は「〜された状態で」。例：He listened with his arms folded.（腕を組んで聞いた）③ with＋名詞＋形容詞・前置詞句もあります。例：Don't speak with your mouth full.（口に物を入れたまま話さない）"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では with の後ろの名詞と動詞の関係から、-ing（能動：名詞が〜する）か過去分詞（受動：名詞が〜される）かを選ぶ問題が出ます。Part 7 では、売上や調査結果の記事で「with sales rising 5%（売上が5%伸びて）」のように数字の補足に多用されるので、with 以下を「補足情報」と見抜けると速く読めます。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "The survey closed on Friday, with 80% of employees responding.（調査は金曜に締め切られ、従業員の80%が回答した）／ Sales rose for the third month, with online orders accounting for half of the total.（売上は3か月連続で伸び、オンライン注文が全体の半分を占めた）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "オランダの路線バス・地域鉄道の新しい労働協約について、使用者側の最終提示をFNVの組合員の95%（11月13日発表）、CNVの93%（11月16日発表）が拒否した。対象は約1万3000人で、組合は10月14日の全国ストに続く新たなストを協議中だ。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "オランダでは、労組と業界の使用者団体が団体交渉(collective bargaining)で賃金や勤務条件を決め、合意案を組合員の投票にかける。今回は賃上げ率ではなく、収入の保障や高齢の運転士の働き方、仕事と生活の両立といった「お金以外」の条件が争点だ。最終提示が否決されると、組合はストで再交渉を迫るのが通常の流れだ。"
+    },
+    {
+      "heading": "📌 3. 他社の労使交渉",
+      "body": "1件目はオランダ国鉄NS。2025年6月に地域ストが4回起き、全国の列車が止まる日もあった。NSが4%の賃上げと翌年3月からの2.75%の上乗せを示すと、CNVの組合員の67%が受け入れ、争議は終わった。2件目は米ニュージャージー・トランジット。2025年4月、機関士の組合員の87%が暫定合意を否決し、5月16〜18日に約40年ぶりのストに入った。改めて結んだ合意は6月に95%の賛成で批准(ratification)された。NSは上乗せ提示でストの長期化を防ぎ、ニュージャージーはストを経てようやく合意に至った点が違う。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本ではストより、人手不足(labor shortage)による減便が深刻だ。石川県の北陸鉄道グループは2026年11月9日、10路線12区間と51停留所を2027年3月14日のダイヤ改正で廃止し、平日の運行を1日87便減らすと発表した。人手不足による廃止は9年連続で、主力地区の運転士の充足率は2026年1月末で92%にとどまる。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "collective bargaining",
+      "pos": "熟",
+      "ja": "団体交渉",
+      "gloss": "（＝労働組合が会社側とまとめて賃金や条件を話し合うこと）",
+      "example": {
+        "en": "The new holiday rules were agreed through collective bargaining.",
+        "ja": "新しい休暇の規則は団体交渉を通じて合意された。"
+      }
+    },
+    {
+      "term": "ratification",
+      "pos": "名",
+      "ja": "批准、正式承認",
+      "gloss": "（＝合意案を組合員や議会などが正式に認めること）",
+      "example": {
+        "en": "The agreement takes effect after ratification by the board.",
+        "ja": "その合意は取締役会の承認後に発効する。"
+      }
+    },
+    {
+      "term": "labor shortage",
+      "pos": "熟",
+      "ja": "人手不足",
+      "gloss": "（＝必要な数の働き手を確保できない状態のこと）",
+      "example": {
+        "en": "The restaurant shortened its hours because of a labor shortage.",
+        "ja": "そのレストランは人手不足のため営業時間を短縮した。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "More transit strikes possible after FNV members reject deal",
+      "publisher": "NL Times",
+      "url": "https://nltimes.nl/2026/11/14/transit-strikes-possible-fnv-members-reject-deal",
+      "date": "2026-11-14"
+    },
+    {
+      "title": "Leden FNV en CNV wijzen eindbod werkgevers massaal af: staking op komst",
+      "publisher": "SpoorPro",
+      "url": "https://www.spoorpro.nl/personeel/2026/11/16/leden-fnv-en-cnv-wijzen-eindbod-werkgevers-massaal-af-staking-op-komst/",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "Train strikes to end after union members accept NS pay offer",
+      "publisher": "DutchNews.nl",
+      "url": "https://www.dutchnews.nl/2025/07/train-strikes-to-end-after-union-members-accept-ns-pay-offer",
+      "date": "2025-07"
+    },
+    {
+      "title": "NJ Transit engineers ratify new contract after yearslong wage feud",
+      "publisher": "New Jersey Monitor",
+      "url": "https://newjerseymonitor.com/2025/06/10/nj-transit-engineers-ratify-new-contract-after-yearslong-wage-feud/",
+      "date": "2025-06-10"
+    },
+    {
+      "title": "北鉄バス１２区間廃止　金沢、野々市、小松、来年３月　平日８７便、運転士不足、利用低迷で",
+      "publisher": "北國新聞",
+      "url": "https://www.hokkoku.co.jp/articles/-/2285223",
+      "date": "2026-11-10"
+    }
+  ]
+}
