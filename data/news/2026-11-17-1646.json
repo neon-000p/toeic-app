@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-17-1646",
+  "date": "2026-11-17",
+  "time": "16:46",
+  "createdAt": "2026-11-17T16:46:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "US Tightens AI Chip Rules for Overseas Data Centers",
+    "ja": "米国、海外データセンターのAI半導体を許可制に"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "On Monday, the US government announced a new rule on advanced AI chips.",
+            "ja": "米政府は月曜日、先端AI半導体に関する新たな規則を発表した。"
+          },
+          {
+            "en": "Data centers in five countries, including Singapore and Malaysia, must now get a special license before they can buy these chips.",
+            "ja": "シンガポールやマレーシアを含む5カ国のデータセンターは今後、これらの半導体を購入する前に特別な許可を取得しなければならない。"
+          },
+          {
+            "en": "The rule also covers data centers anywhere in the world that rent large amounts of computing power to companies based in China.",
+            "ja": "この規則は、中国に拠点を置く企業に大量の計算能力を貸し出すデータセンターも、世界のどこにあっても対象とする。"
+          },
+          {
+            "en": "Facilities that already serve such customers will have 90 days to apply for a license.",
+            "ja": "すでにそうした顧客にサービスを提供している施設には、許可を申請するための90日間の猶予が与えられる。"
+          },
+          {
+            "en": "However, data centers owned by US companies can receive an exemption.",
+            "ja": "ただし、米国企業が所有するデータセンターは適用除外を受けられる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Officials believe some Chinese firms rented chips through foreign data centers to get around earlier export controls.",
+            "ja": "当局は、一部の中国企業が以前の輸出規制を回避するため、海外のデータセンターを通じて半導体を借りていたとみている。"
+          },
+          {
+            "en": "Export controls are government limits on selling sensitive goods to other countries.",
+            "ja": "輸出規制とは、重要な物品を他国へ販売することに対する政府の制限のことだ。"
+          },
+          {
+            "en": "On Tuesday, shares of several data center companies in the region fell sharply.",
+            "ja": "火曜日には、同地域のデータセンター関連企業数社の株価が急落した。"
+          },
+          {
+            "en": "Analysts say facilities that mainly serve large US cloud firms will likely be in a better position than those that depend on Chinese customers.",
+            "ja": "アナリストらは、主に米大手クラウド企業を顧客とする施設は、中国の顧客に頼る施設よりも有利な立場に立つ可能性が高いと指摘する。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How long do facilities that already serve Chinese customers have to apply for a license?",
+      "promptJa": "すでに中国の顧客にサービスを提供している施設は、どのくらいの期間内に許可を申請する必要がありますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "30 days",
+          "ja": "30日間"
+        },
+        {
+          "key": "B",
+          "text": "60 days",
+          "ja": "60日間"
+        },
+        {
+          "key": "C",
+          "text": "90 days",
+          "ja": "90日間"
+        },
+        {
+          "key": "D",
+          "text": "Five months",
+          "ja": "5カ月間"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落4文目に「Facilities that already serve such customers will have 90 days to apply for a license.」とあり、正解は (C)。(A)(B) は本文に出てこない数字。(D) の five は本文では「5カ国（five countries）」という国の数に使われている語で、期間ではないため誤り。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "数字を問う設問では、本文の別の数字（ここでは five countries）が引っかけに使われやすい。数字が「何の数」なのかまで確かめてから選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT true about the new rule?",
+      "promptJa": "新しい規則について正しくないものはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It requires data centers in five countries to get a license.",
+          "ja": "5カ国のデータセンターに許可取得を求める"
+        },
+        {
+          "key": "B",
+          "text": "It covers data centers that rent computing power to Chinese companies.",
+          "ja": "中国企業に計算能力を貸す施設も対象"
+        },
+        {
+          "key": "C",
+          "text": "It bans all chip sales to data centers owned by US companies.",
+          "ja": "米国企業所有の施設への販売を全面禁止"
+        },
+        {
+          "key": "D",
+          "text": "It aims to stop firms from getting around earlier limits.",
+          "ja": "以前の規制の回避を防ぐ狙い"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落5文目に「data centers owned by US companies can receive an exemption（米国企業が所有するデータセンターは適用除外を受けられる）」とあり、全面禁止とする (C) は本文と逆の内容なので正解。(A) は第1段落2文目、(B) は第1段落3文目、(D) は第2段落1文目の「to get around earlier export controls」と一致するため、いずれも正しい記述。",
+      "evidence": {
+        "p": 0,
+        "s": 4
+      },
+      "tip": "NOT問題は、選択肢を1つずつ本文と照らし合わせて消していく。However（しかし）の直後は例外や逆の情報が来やすく、正解の根拠になりやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "advanced",
+      "pos": "形",
+      "ja": "先進的な、高性能の",
+      "gloss": "",
+      "example": {
+        "en": "Our factory uses advanced machines to cut production time.",
+        "ja": "当社の工場は生産時間を短縮するため高性能な機械を使っている。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "license",
+      "pos": "名",
+      "ja": "許可、免許、ライセンス",
+      "gloss": "",
+      "example": {
+        "en": "You need a license to sell food at the event.",
+        "ja": "そのイベントで食品を販売するには許可が必要だ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "rent",
+      "pos": "動",
+      "ja": "賃借りする、賃貸しする",
+      "gloss": "",
+      "example": {
+        "en": "We plan to rent a larger office near the station next year.",
+        "ja": "来年、駅の近くにもっと広いオフィスを借りる予定だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "computing power",
+      "pos": "名",
+      "ja": "計算能力",
+      "gloss": "（＝コンピューターがデータを処理する力のこと）",
+      "example": {
+        "en": "The new software needs more computing power than our old servers have.",
+        "ja": "新しいソフトには、古いサーバーが持つ以上の計算能力が必要だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "apply for",
+      "pos": "熟",
+      "ja": "〜を申請する、〜に応募する",
+      "gloss": "",
+      "example": {
+        "en": "Employees must apply for a parking permit by the end of the month.",
+        "ja": "従業員は月末までに駐車許可を申請しなければならない。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "exemption",
+      "pos": "名",
+      "ja": "免除、適用除外",
+      "gloss": "",
+      "example": {
+        "en": "Small businesses may receive an exemption from the new fee.",
+        "ja": "小規模事業者は新しい手数料を免除される場合がある。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "export controls",
+      "pos": "名",
+      "ja": "輸出規制",
+      "gloss": "（＝政府が特定の品物の海外への販売を制限すること）",
+      "example": {
+        "en": "The company checked export controls before shipping parts overseas.",
+        "ja": "その会社は部品を海外へ出荷する前に輸出規制を確認した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "depend on",
+      "pos": "熟",
+      "ja": "〜に頼る、〜次第である",
+      "gloss": "",
+      "example": {
+        "en": "Many small shops depend on tourists for most of their sales.",
+        "ja": "多くの小さな店は売上の大半を観光客に頼っている。"
+      }
+    }
+  ],
+  "glossary": {
+    "announced": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "発表した",
+      "note": ""
+    },
+    "advanced": {
+      "lemma": "advanced",
+      "pos": "形",
+      "ja": "先進的な",
+      "note": ""
+    },
+    "license": {
+      "lemma": "license",
+      "pos": "名",
+      "ja": "許可、免許",
+      "note": ""
+    },
+    "including": {
+      "lemma": "include",
+      "pos": "前",
+      "ja": "〜を含めて",
+      "note": "例を挙げるときに使う"
+    },
+    "covers": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "対象とする",
+      "note": ""
+    },
+    "rent": {
+      "lemma": "rent",
+      "pos": "動",
+      "ja": "貸し出す、借りる",
+      "note": "貸す側・借りる側どちらにも使う"
+    },
+    "rented": {
+      "lemma": "rent",
+      "pos": "動",
+      "ja": "借りた",
+      "note": ""
+    },
+    "computing": {
+      "lemma": "computing",
+      "pos": "名",
+      "ja": "計算処理",
+      "note": ""
+    },
+    "amounts": {
+      "lemma": "amount",
+      "pos": "名",
+      "ja": "量",
+      "note": ""
+    },
+    "based": {
+      "lemma": "based",
+      "pos": "形",
+      "ja": "拠点を置く",
+      "note": "based in ～：～に拠点を置く"
+    },
+    "facilities": {
+      "lemma": "facility",
+      "pos": "名",
+      "ja": "施設",
+      "note": ""
+    },
+    "serve": {
+      "lemma": "serve",
+      "pos": "動",
+      "ja": "サービスを提供する",
+      "note": ""
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "apply": {
+      "lemma": "apply",
+      "pos": "動",
+      "ja": "申請する",
+      "note": "apply for ～：～を申請する"
+    },
+    "owned": {
+      "lemma": "own",
+      "pos": "動",
+      "ja": "所有された",
+      "note": ""
+    },
+    "receive": {
+      "lemma": "receive",
+      "pos": "動",
+      "ja": "受ける",
+      "note": ""
+    },
+    "exemption": {
+      "lemma": "exemption",
+      "pos": "名",
+      "ja": "適用除外",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "firms": {
+      "lemma": "firm",
+      "pos": "名",
+      "ja": "企業",
+      "note": ""
+    },
+    "foreign": {
+      "lemma": "foreign",
+      "pos": "形",
+      "ja": "海外の",
+      "note": ""
+    },
+    "export": {
+      "lemma": "export",
+      "pos": "名",
+      "ja": "輸出",
+      "note": ""
+    },
+    "controls": {
+      "lemma": "control",
+      "pos": "名",
+      "ja": "規制",
+      "note": "複数形で「規制措置」"
+    },
+    "limits": {
+      "lemma": "limit",
+      "pos": "名",
+      "ja": "制限",
+      "note": ""
+    },
+    "sensitive": {
+      "lemma": "sensitive",
+      "pos": "形",
+      "ja": "重要な、機密性の高い",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "物品、商品",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式",
+      "note": ""
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "position": {
+      "lemma": "position",
+      "pos": "名",
+      "ja": "立場",
+      "note": ""
+    },
+    "depend": {
+      "lemma": "depend",
+      "pos": "動",
+      "ja": "頼る",
+      "note": "depend on ～"
+    }
+  },
+  "grammar": {
+    "topic": "前置詞 including（〜を含めて：例を挙げる挿入句）",
+    "quote": "Data centers in five countries, including Singapore and Malaysia, must now get a special license before they can buy these chips.",
+    "quoteJa": "シンガポールやマレーシアを含む5カ国のデータセンターは今後、これらの半導体を購入する前に特別な許可を取得しなければならない。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "including は「〜を含めて」という意味の前置詞で、直前の名詞（five countries）の中から代表例を挙げるときに使います。この文では、カンマで挟んだ including Singapore and Malaysia が挿入句になっており、取り除いても「5カ国のデータセンターは許可を取得しなければならない」という文が成り立ちます。主語は Data centers なので、動詞は must get と続きます。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "① such as との比較：five countries such as Singapore and Malaysia もほぼ同じ意味ですが、including は「全体の一部を挙げる」ニュアンスがより明確です。② 関係詞で書き換え：five countries, which include Singapore and Malaysia,（5カ国、そこにはシンガポールとマレーシアが含まれる）③ 反対の意味は excluding（〜を除いて）。例：all costs excluding tax（税抜きの全費用）"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では including / included / include の品詞・形を問う問題がよく出ます。名詞の直後で「〜を含めて」と例を足すなら前置詞の including、「〜が含まれている」と状態を言うなら過去分詞の included（例：Breakfast is included.）です。Part 7 では including の後ろに並ぶ例が、設問の正解の根拠や NOT 問題の選択肢になりやすいので注意しましょう。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "例1：All employees, including part-time staff, must attend the safety training.（パートタイムの職員を含む全従業員が安全研修に参加しなければならない。）例2：The price is $200, including shipping.（価格は送料込みで200ドルです。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米商務省は11月16日、シンガポール、マレーシア、タイ、インドネシア、ブラジルのデータセンター向け先端AI半導体に許可制を導入する暫定規則(interim rule)を出した。中国企業に大量の計算能力を貸す施設も対象で、既存施設には90日の猶予がある。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "これまでの規制は「どの国へ半導体を送るか」を管理してきた。しかしクラウドでは、チップを買わなくても海外の施設から借りて使える。中国企業が第三国のデータセンター経由で先端チップを使う抜け穴(loophole)が問題視され、今回は「誰に使わせるか」まで網を広げた。米大手クラウドを顧客に持つ施設ほど影響は小さいとみられる。"
+    },
+    {
+      "heading": "📌 3. 他社は規制でどうなったか",
+      "body": "米エヌビディアは2025年4月、中国向けAI半導体H20の輸出に許可が必要になったと米政府から通知された。在庫の評価損などで2025年2〜4月期に45億ドルの費用を計上し、さらに25億ドル分のH20を出荷できなかった。一方、オランダの露光装置大手ASMLは、2025年に売上の約3割を占めた中国向けが、2026年4〜6月期には14%まで縮んだ。それでも台湾TSMCなどAI向けの注文が伸び、2026年の売上見通し(sales outlook)を引き上げた。規制で失った売上を、エヌビディアは損失として抱え、ASMLは他の顧客で埋めた点が違う。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "半導体製造装置の東京エレクトロンは、米国の対中規制強化の影響を受けている。2026年3月期の中国向け売上比率は34.1%にとどまり、需要は台湾や韓国へ移った。それでもAI向けの装置需要に支えられ、同期の売上高は約2兆4430億円と過去最高を記録した。中国依存を下げ、AI需要で補う形だ。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "interim rule",
+      "pos": "名",
+      "ja": "暫定規則",
+      "gloss": "（＝正式決定の前に、ひとまず効力を持たせる規則のこと）",
+      "example": {
+        "en": "The agency issued an interim rule while it collects public comments.",
+        "ja": "その機関は意見を集める間、暫定規則を出した。"
+      }
+    },
+    {
+      "term": "loophole",
+      "pos": "名",
+      "ja": "抜け穴",
+      "gloss": "（＝規則のすき間を使って、ルールを避ける方法のこと）",
+      "example": {
+        "en": "The new policy closes a loophole in the expense rules.",
+        "ja": "新しい方針は経費規定の抜け穴をふさぐ。"
+      }
+    },
+    {
+      "term": "sales outlook",
+      "pos": "名",
+      "ja": "売上見通し",
+      "gloss": "（＝今後の売上がどうなるかの予想のこと）",
+      "example": {
+        "en": "The retailer lowered its sales outlook for the holiday season.",
+        "ja": "その小売業者は年末商戦の売上見通しを引き下げた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Nvidia scandal fuels tougher China chip rules as Commerce targets Singapore and Malaysia",
+      "publisher": "Fortune",
+      "url": "https://fortune.com/2026/11/16/new-commerce-rule-nvidia-chip-singapore-malaysia-china/",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "Asia data center hotbed hit by U.S. chip curbs as Trump visits",
+      "publisher": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/business/2026/11/17/tech/asia-data-center-chip-trump/",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Nvidia expects to lose billions in revenue due to H20 chip licensing requirements",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2025/05/28/nvidia-expects-to-lose-billions-in-revenue-due-to-h20-chip-licensing-requirements",
+      "date": "2025-05-28"
+    },
+    {
+      "title": "ASML's China sales slump as export curbs bite",
+      "publisher": "Caixin Global",
+      "url": "https://www.caixinglobal.com/2026-04-16/asmls-china-sales-slump-as-export-curbs-bite-102434749.html",
+      "date": "2026-04-16"
+    },
+    {
+      "title": "Japan's chip equipment giants are losing China and betting on AI to fill the gap",
+      "publisher": "Startup Fortune",
+      "url": "https://startupfortune.com/japans-chip-equipment-giants-are-losing-china-and-betting-on-ai-to-fill-the-gap/",
+      "date": "2026-07-12"
+    }
+  ]
+}
