@@ -510,5 +510,23 @@
       "url": "https://startupfortune.com/japans-chip-equipment-giants-are-losing-china-and-betting-on-ai-to-fill-the-gap/",
       "date": "2026-07-12"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-17-1646/00.mp3",
+      "audio/2026-11-17-1646/01.mp3",
+      "audio/2026-11-17-1646/02.mp3",
+      "audio/2026-11-17-1646/03.mp3",
+      "audio/2026-11-17-1646/04.mp3",
+      "audio/2026-11-17-1646/05.mp3",
+      "audio/2026-11-17-1646/06.mp3",
+      "audio/2026-11-17-1646/07.mp3",
+      "audio/2026-11-17-1646/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 240204,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-17T07:51:45.609Z",
+    "trimmed": true
+  }
 }
