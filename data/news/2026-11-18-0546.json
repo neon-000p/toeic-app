@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-18-0546",
+  "date": "2026-11-18",
+  "time": "05:46",
+  "createdAt": "2026-11-18T05:46:00+09:00",
+  "genre": "医療",
+  "genreEn": "Healthcare & Pharma",
+  "sample": false,
+  "title": {
+    "en": "FDA Approves Roche Breast Cancer Pill Ahead of Schedule",
+    "ja": "米FDA、ロシュの乳がん飲み薬を前倒し承認"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The U.S. Food and Drug Administration has approved a new breast cancer pill from Roche.",
+            "ja": "米食品医薬品局（FDA）は、ロシュの新しい乳がん治療薬（飲み薬）を承認した。"
+          },
+          {
+            "en": "The decision came on Monday, four weeks ahead of the agency's deadline.",
+            "ja": "承認は月曜日に出され、同局の審査期限より4週間早かった。"
+          },
+          {
+            "en": "The pill is meant for patients with advanced cancer that has a specific gene change.",
+            "ja": "この薬は、特定の遺伝子変異がある進行がんの患者を対象としている。"
+          },
+          {
+            "en": "It is taken with another medicine, and a blood test shows which patients qualify.",
+            "ja": "別の薬と併用して服用し、どの患者が対象になるかは血液検査で判定する。"
+          },
+          {
+            "en": "In a study, the combination cut the risk of the disease worsening or death by 62%.",
+            "ja": "試験では、この併用療法により、病気の悪化または死亡のリスクが62%低下した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Similar pills from Eli Lilly and AstraZeneca are already available for patients with the same gene change.",
+            "ja": "同じ遺伝子変異を持つ患者向けには、イーライ・リリーとアストラゼネカの同種の飲み薬がすでに使われている。"
+          },
+          {
+            "en": "However, a second decision, expected by November 30, could matter even more.",
+            "ja": "しかし、11月30日までに出る見通しの2つ目の判断のほうが、さらに重要になる可能性がある。"
+          },
+          {
+            "en": "The FDA will decide whether the pill can be used after surgery for early-stage cancer.",
+            "ja": "FDAは、この薬を早期がんの手術後に使えるかどうかを判断する。"
+          },
+          {
+            "en": "Far more patients have early-stage disease, so approval would greatly expand the market.",
+            "ja": "早期の段階の患者ははるかに多いため、承認されれば市場は大きく広がる。"
+          },
+          {
+            "en": "Meanwhile, the agency said it is still too early to know whether the treatment helps patients live longer.",
+            "ja": "一方で同局は、この治療で患者がより長く生きられるかどうかを判断するのは、まだ早すぎるとしている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much earlier than its deadline did the FDA approve the pill?",
+      "promptJa": "FDAは期限よりどのくらい早くこの薬を承認しましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Two weeks",
+          "ja": "2週間"
+        },
+        {
+          "key": "B",
+          "text": "Four weeks",
+          "ja": "4週間"
+        },
+        {
+          "key": "C",
+          "text": "Thirty days",
+          "ja": "30日"
+        },
+        {
+          "key": "D",
+          "text": "Six months",
+          "ja": "6か月"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落2文目に「four weeks ahead of the agency's deadline（同局の期限より4週間早く）」とあり、正解は (B)。(A)(D) は本文に出てこない期間。(C) の Thirty は、本文では「November 30（11月30日）」という2つ目の判断の日付に使われている数字で、早まった期間ではないため誤り。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "ahead of ～（～より早く）、behind ～（～より遅れて）は、期限や予定との比較を表す定番表現。日付の数字（November 30）と期間の数字を取り違えさせる選択肢に注意する。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT mentioned about the new pill?",
+      "promptJa": "新しい薬について述べられていないものはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is used together with another medicine.",
+          "ja": "別の薬と併用される"
+        },
+        {
+          "key": "B",
+          "text": "A blood test is used to choose patients.",
+          "ja": "血液検査で患者を選ぶ"
+        },
+        {
+          "key": "C",
+          "text": "It has been proven to help patients live longer.",
+          "ja": "延命効果が証明された"
+        },
+        {
+          "key": "D",
+          "text": "A second decision could expand its market.",
+          "ja": "2つ目の判断で市場が広がり得る"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第2段落5文目に「it is still too early to know whether the treatment helps patients live longer（延命につながるかどうかを知るにはまだ早すぎる）」とあり、延命効果が「証明された」とする (C) は本文と逆の内容なので正解。(A)(B) は第1段落4文目「taken with another medicine」「a blood test shows which patients qualify」、(D) は第2段落2〜4文目の内容と一致するため、いずれも本文に述べられている。",
+      "evidence": {
+        "p": 1,
+        "s": 4
+      },
+      "tip": "NOT問題は選択肢を1つずつ本文と照合して消していく。still too early to know（まだ分からない）のような「未確定」の表現は、「証明された」「確定した」と言い切る選択肢の誤りを見抜く手がかりになる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "deadline",
+      "pos": "名",
+      "ja": "期限、締め切り",
+      "gloss": "",
+      "example": {
+        "en": "Please submit the report before the Friday deadline.",
+        "ja": "金曜の締め切りまでに報告書を提出してください。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "ahead of",
+      "pos": "熟",
+      "ja": "〜より早く、〜に先立って",
+      "gloss": "",
+      "example": {
+        "en": "The project was finished two days ahead of schedule.",
+        "ja": "そのプロジェクトは予定より2日早く完了した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "specific",
+      "pos": "形",
+      "ja": "特定の、具体的な",
+      "gloss": "",
+      "example": {
+        "en": "The discount applies only to specific items in the store.",
+        "ja": "その割引は店内の特定の商品にだけ適用される。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "qualify",
+      "pos": "動",
+      "ja": "資格を得る、対象となる",
+      "gloss": "",
+      "example": {
+        "en": "Employees who work over 20 hours a week qualify for health benefits.",
+        "ja": "週20時間を超えて働く従業員は健康保険の対象になる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "combination",
+      "pos": "名",
+      "ja": "組み合わせ、併用",
+      "gloss": "",
+      "example": {
+        "en": "A combination of lower prices and fast delivery helped sales grow.",
+        "ja": "値下げと迅速な配送の組み合わせで売上が伸びた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "available",
+      "pos": "形",
+      "ja": "利用できる、入手できる",
+      "gloss": "",
+      "example": {
+        "en": "The new model will be available in stores next month.",
+        "ja": "新モデルは来月、店頭で購入できるようになる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "early-stage",
+      "pos": "形",
+      "ja": "初期段階の、早期の",
+      "gloss": "（＝病気や事業がまだ始まったばかりの段階であること）",
+      "example": {
+        "en": "The fund invests in early-stage companies in Asia.",
+        "ja": "そのファンドはアジアの創業間もない企業に投資している。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "expand",
+      "pos": "動",
+      "ja": "拡大する、広げる",
+      "gloss": "",
+      "example": {
+        "en": "The retailer plans to expand its online business next year.",
+        "ja": "その小売業者は来年、ネット事業を拡大する計画だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "approved": {
+      "lemma": "approve",
+      "pos": "動",
+      "ja": "承認した",
+      "note": ""
+    },
+    "breast": {
+      "lemma": "breast",
+      "pos": "名",
+      "ja": "胸、乳房",
+      "note": ""
+    },
+    "pill": {
+      "lemma": "pill",
+      "pos": "名",
+      "ja": "錠剤、飲み薬",
+      "note": ""
+    },
+    "decision": {
+      "lemma": "decision",
+      "pos": "名",
+      "ja": "決定、判断",
+      "note": ""
+    },
+    "ahead of": {
+      "lemma": "ahead of",
+      "pos": "熟",
+      "ja": "〜より早く",
+      "note": ""
+    },
+    "agency": {
+      "lemma": "agency",
+      "pos": "名",
+      "ja": "（政府の）機関、局",
+      "note": "ここでは FDA を指す"
+    },
+    "deadline": {
+      "lemma": "deadline",
+      "pos": "名",
+      "ja": "期限",
+      "note": ""
+    },
+    "meant for": {
+      "lemma": "be meant for",
+      "pos": "熟",
+      "ja": "〜向けの",
+      "note": "be meant for ～で「～のためのものだ」"
+    },
+    "advanced": {
+      "lemma": "advanced",
+      "pos": "形",
+      "ja": "進行した",
+      "note": "病気では「進んだ段階の」"
+    },
+    "specific": {
+      "lemma": "specific",
+      "pos": "形",
+      "ja": "特定の",
+      "note": ""
+    },
+    "gene": {
+      "lemma": "gene",
+      "pos": "名",
+      "ja": "遺伝子",
+      "note": ""
+    },
+    "medicine": {
+      "lemma": "medicine",
+      "pos": "名",
+      "ja": "薬",
+      "note": ""
+    },
+    "qualify": {
+      "lemma": "qualify",
+      "pos": "動",
+      "ja": "対象となる",
+      "note": "qualify for ～の形も多い"
+    },
+    "combination": {
+      "lemma": "combination",
+      "pos": "名",
+      "ja": "併用、組み合わせ",
+      "note": ""
+    },
+    "risk": {
+      "lemma": "risk",
+      "pos": "名",
+      "ja": "危険性、リスク",
+      "note": ""
+    },
+    "worsening": {
+      "lemma": "worsen",
+      "pos": "動",
+      "ja": "悪化すること",
+      "note": ""
+    },
+    "similar": {
+      "lemma": "similar",
+      "pos": "形",
+      "ja": "同様の",
+      "note": ""
+    },
+    "available": {
+      "lemma": "available",
+      "pos": "形",
+      "ja": "利用できる",
+      "note": ""
+    },
+    "however": {
+      "lemma": "however",
+      "pos": "副",
+      "ja": "しかし",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込まれる",
+      "note": "expected by ～で「～までに見込まれる」"
+    },
+    "matter": {
+      "lemma": "matter",
+      "pos": "動",
+      "ja": "重要である",
+      "note": ""
+    },
+    "whether": {
+      "lemma": "whether",
+      "pos": "接",
+      "ja": "〜かどうか",
+      "note": ""
+    },
+    "surgery": {
+      "lemma": "surgery",
+      "pos": "名",
+      "ja": "手術",
+      "note": ""
+    },
+    "early-stage": {
+      "lemma": "early-stage",
+      "pos": "形",
+      "ja": "早期の",
+      "note": ""
+    },
+    "disease": {
+      "lemma": "disease",
+      "pos": "名",
+      "ja": "病気",
+      "note": ""
+    },
+    "expand": {
+      "lemma": "expand",
+      "pos": "動",
+      "ja": "拡大する",
+      "note": ""
+    },
+    "meanwhile": {
+      "lemma": "meanwhile",
+      "pos": "副",
+      "ja": "一方で",
+      "note": ""
+    },
+    "treatment": {
+      "lemma": "treatment",
+      "pos": "名",
+      "ja": "治療（法）",
+      "note": ""
+    },
+    "too early to": {
+      "lemma": "too early to do",
+      "pos": "熟",
+      "ja": "〜するには早すぎる",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "too＋形容詞＋to do（〜するには…すぎる／…すぎて〜できない）",
+    "quote": "Meanwhile, the agency said it is still too early to know whether the treatment helps patients live longer.",
+    "quoteJa": "一方で同局は、この治療で患者がより長く生きられるかどうかを判断するのは、まだ早すぎるとしている。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "too early to know は「too＋形容詞＋to不定詞」の形で、「知るには早すぎる」、つまり「早すぎて（まだ）知ることができない」という意味になる。too は「必要な程度を超えて」を表し、文全体は否定の意味を含む。主語の it は時間や状況を表す it で、文の前半 it is still too early は「まだ時期が早すぎる」。to know の目的語として whether ～（～かどうか）の名詞節が続いている。"
+      },
+      {
+        "heading": "書き換え例",
+        "body": "so ～ that … can't を使うと It is so early that we cannot know whether the treatment helps patients live longer. となる。反対に「十分に～なので…できる」は enough を使い、形容詞の後ろに置く：The data is clear enough to make a decision.（データは判断を下せるほど十分に明確だ）。too は形容詞の前、enough は形容詞の後ろ、という語順の違いが重要。"
+      },
+      {
+        "heading": "TOEICでの出題傾向",
+        "body": "Part 5 では too / so / very / enough が選択肢に並び、後ろに to do が続くかどうかで判断させる問題が頻出。形容詞の後ろに to do があれば too、that 節があれば so を選ぶ。enough は形容詞の後ろに置く（large enough）。Part 7 では It is too late to cancel the order.（注文を取り消すには遅すぎる）のように、手続きの期限切れを伝える文で使われる。"
+      },
+      {
+        "heading": "ビジネス応用",
+        "body": "It is too early to say whether the new campaign will increase sales.（新しいキャンペーンが売上を伸ばすかどうかを言うのは時期尚早だ。）／ The package was too heavy to send by regular mail.（その荷物は重すぎて普通郵便では送れなかった。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米FDAは11月16日、ロシュの飲み薬タイプの乳がん治療薬を、審査期限より4週間早く承認した。対象は転移した進行がんで、特定の遺伝子変異がある患者。別の薬との併用で、病気の悪化または死亡のリスクを62%下げた。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語：本命は早期がん",
+      "body": "今回の承認は、血液検査で対象患者を選ぶコンパニオン診断(companion diagnostic)とセットで出た。対象が限られるため、ロシュにとっての本命は11月30日に期限を迎える別の申請だ。手術後の再発予防、つまり早期がんへの適応拡大(label expansion)が認められれば対象患者は大きく増える。その試験では再発または死亡のリスクを30%下げた。"
+    },
+    {
+      "heading": "📌 3. 他社の同じ種類の薬",
+      "body": "米イーライ・リリーは2025年9月25日、同じ遺伝子変異を持つ進行乳がん向けの飲み薬で承認を得た。試験では悪化・死亡リスクを38%下げた。一方、英アストラゼネカの飲み薬は道のりが険しかった。2026年4月にFDAの諮問委員会(advisory committee)が6対3で承認に反対し、5月には追加データの審査のため判断が延期された。9月4日にようやく、条件付きの迅速承認を得た。前者は同じ患者層で先に市場に出た例、後者は専門家の反対で審査が長引き、追加データでようやく承認を得た例である。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "第一三共も、主力の乳がん治療薬で早期がんへの拡大を進めている。FDAは2026年5月15日、早期乳がんの手術前と手術後の2つの使い方を承認した。日本でも2月27日に手術後の使い方の承認を申請した。進行がんで実績を積んだ薬を再発予防に広げ、対象患者を増やす点はロシュと同じ戦略である。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "companion diagnostic",
+      "pos": "名",
+      "ja": "コンパニオン診断",
+      "gloss": "（＝ある薬が効く患者かどうかを事前に調べる検査のこと）",
+      "example": {
+        "en": "The drug is sold together with a companion diagnostic.",
+        "ja": "その薬はコンパニオン診断と一緒に販売されている。"
+      }
+    },
+    {
+      "term": "label expansion",
+      "pos": "名",
+      "ja": "適応拡大",
+      "gloss": "（＝承認済みの薬を、新たな病気や患者にも使えるようにすること）",
+      "example": {
+        "en": "The company expects strong sales growth from a label expansion next year.",
+        "ja": "その会社は来年の適応拡大で大きな売上増を見込んでいる。"
+      }
+    },
+    {
+      "term": "advisory committee",
+      "pos": "名",
+      "ja": "諮問委員会",
+      "gloss": "（＝当局に専門的な意見を伝える外部専門家の会議のこと）",
+      "example": {
+        "en": "An advisory committee will review the safety data next week.",
+        "ja": "来週、諮問委員会が安全性データを検討する。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "FDA approves new breast cancer drug, providing new option for some patients, boost for Roche",
+      "publisher": "STAT",
+      "url": "https://www.statnews.com/2026/11/16/fda-approves-new-roche-breast-cancer-drug/",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "Roche breast cancer pill cleared by FDA",
+      "publisher": "BioPharma Dive",
+      "url": "https://www.biopharmadive.com/news/roche-fda-approve-wilserdly-giredestrant-breast-cancer/874884/",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "FDA Approves Camizestrant for ESR1-Mutated HR+/HER2- Advanced Breast Cancer",
+      "publisher": "CancerNetwork",
+      "url": "https://www.cancernetwork.com/view/fda-approves-camizestrant-for-esr1-mutated-hr-her2-advanced-breast-cancer",
+      "date": "2026-09-04"
+    },
+    {
+      "title": "FDA Approves Lilly's Inluriyo, an Oral SERD, for Advanced Breast Cancer With ESR1 Mutation",
+      "publisher": "American Pharmaceutical Review",
+      "url": "https://www.americanpharmaceuticalreview.com/1315-News/621782-FDA-Approves-Lilly-s-Inluriyo-an-Oral-SERD-for-Advanced-Breast-Cancer-With-ESR1-Mutation/",
+      "date": "2025-09"
+    },
+    {
+      "title": "2026年5月18日付プレスリリース（早期乳がんの術前・術後療法で米国承認）",
+      "publisher": "第一三共",
+      "url": "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202605/20260518_J.pdf",
+      "date": "2026-05-18"
+    }
+  ]
+}
