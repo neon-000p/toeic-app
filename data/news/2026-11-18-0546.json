@@ -508,5 +508,24 @@
       "url": "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202605/20260518_J.pdf",
       "date": "2026-05-18"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-18-0546/00.mp3",
+      "audio/2026-11-18-0546/01.mp3",
+      "audio/2026-11-18-0546/02.mp3",
+      "audio/2026-11-18-0546/03.mp3",
+      "audio/2026-11-18-0546/04.mp3",
+      "audio/2026-11-18-0546/05.mp3",
+      "audio/2026-11-18-0546/06.mp3",
+      "audio/2026-11-18-0546/07.mp3",
+      "audio/2026-11-18-0546/08.mp3",
+      "audio/2026-11-18-0546/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 233528,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-17T20:52:36.875Z",
+    "trimmed": true
+  }
 }
