@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-18-1648",
+  "date": "2026-11-18",
+  "time": "16:48",
+  "createdAt": "2026-11-18T16:48:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "Fed Official Calls for Several More Rate Hikes",
+    "ja": "FRB高官、来春までの複数回利上げを示唆"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "A senior Federal Reserve official said on Tuesday that more interest rate hikes are likely needed.",
+            "ja": "米連邦準備制度理事会（FRB）の高官は火曜日、さらなる利上げが必要になる可能性が高いと述べた。"
+          },
+          {
+            "en": "Alberto Musalem, who leads the Fed's St. Louis branch, said several increases may be required before next spring.",
+            "ja": "セントルイス連銀を率いるアルベルト・ムサレム総裁は、来春までに複数回の利上げが必要になるかもしれないと語った。"
+          },
+          {
+            "en": "He explained that the goal is to bring inflation under control in a timely manner.",
+            "ja": "目的は、インフレを適切なタイミングで抑え込むことだと同氏は説明した。"
+          },
+          {
+            "en": "The Fed raised rates in September to a range of 3.75% to 4% and then held them steady in October.",
+            "ja": "FRBは9月に政策金利を3.75〜4%の範囲に引き上げ、10月は据え置いた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "His comments came as investors were already preparing for a rate hike at the Fed's December meeting.",
+            "ja": "今回の発言は、投資家がすでに12月の会合での利上げに備えていたさなかに出た。"
+          },
+          {
+            "en": "Higher borrowing costs could make loans for homes, cars and business expansion more expensive.",
+            "ja": "借り入れコストが上がれば、住宅や自動車、事業拡大のためのローンが割高になる可能性がある。"
+          },
+          {
+            "en": "Long-term government bond yields are already above 5%, which raises costs for companies.",
+            "ja": "長期国債の利回りはすでに5%を超えており、企業のコストを押し上げている。"
+          },
+          {
+            "en": "Retail sales rose only 0.2% in October, as high prices made shoppers cautious.",
+            "ja": "10月の小売売上高は0.2%増にとどまり、物価高で買い物客が慎重になったことが表れた。"
+          },
+          {
+            "en": "Musalem will not have a vote at the coming meetings.",
+            "ja": "ムサレム氏は今後の会合で投票権を持たない。"
+          },
+          {
+            "en": "However, his remarks show that some officials strongly support higher rates.",
+            "ja": "それでも同氏の発言は、一部の当局者が利上げを強く支持していることを示している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What range did the Fed set for interest rates in September?",
+      "promptJa": "FRBは9月に金利をどの範囲に設定しましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3.25% to 3.5%",
+          "ja": "3.25〜3.5%"
+        },
+        {
+          "key": "B",
+          "text": "3.5% to 3.75%",
+          "ja": "3.5〜3.75%"
+        },
+        {
+          "key": "C",
+          "text": "3.75% to 4%",
+          "ja": "3.75〜4%"
+        },
+        {
+          "key": "D",
+          "text": "4% to 4.25%",
+          "ja": "4〜4.25%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落の最後の文に \"The Fed raised rates in September to a range of 3.75% to 4%\" とある。(A)(B) は本文に出てこない数字で、利上げ前の水準を連想させる引っかけ。(D) は12月にさらに0.25%利上げした場合の水準に近いが、本文には書かれていない「将来の推測」なので誤り。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "数字を問う設問では、設問の時期（in September）と本文の時期が一致する文を探す。似た数字が並ぶ選択肢は、本文に無い数字を順に消していくと速い。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why did retail sales rise only slightly in October?",
+      "promptJa": "記事によると、10月の小売売上高がわずかな伸びにとどまったのはなぜですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "High prices made shoppers cautious.",
+          "ja": "物価高で買い物客が慎重になった"
+        },
+        {
+          "key": "B",
+          "text": "Many stores closed for the holidays.",
+          "ja": "多くの店が休暇で閉まった"
+        },
+        {
+          "key": "C",
+          "text": "The Fed lowered interest rates.",
+          "ja": "FRBが利下げした"
+        },
+        {
+          "key": "D",
+          "text": "Bond yields fell below 5%.",
+          "ja": "債券利回りが5%を下回った"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正解は (A)。第2段落に \"Retail sales rose only 0.2% in October, as high prices made shoppers cautious.\" とあり、接続詞 as（〜なので）の後ろが理由を表す。(B) の店舗の休業は本文に無い情報。(C) は本文と逆で、FRBは利上げしている。(D) も逆で、本文では長期金利は already above 5%（すでに5%超）と書かれている。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "理由を問う設問では because だけでなく as / since / due to などの理由を示す語を手がかりにする。本文と逆の内容（利上げ→利下げ）は定番の引っかけ。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "senior",
+      "pos": "形",
+      "ja": "上級の、幹部の",
+      "gloss": "",
+      "example": {
+        "en": "A senior manager will lead the new project team.",
+        "ja": "上級管理職が新しいプロジェクトチームを率いる。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "hike",
+      "pos": "名",
+      "ja": "（価格・金利などの）引き上げ",
+      "gloss": "（＝金利や料金を上げること。rate hike で「利上げ」）",
+      "example": {
+        "en": "The company announced a price hike for its delivery service.",
+        "ja": "その会社は配送サービスの値上げを発表した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "require",
+      "pos": "動",
+      "ja": "必要とする、求める",
+      "gloss": "",
+      "example": {
+        "en": "This position requires at least three years of sales experience.",
+        "ja": "この職には少なくとも3年の営業経験が必要だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "in a timely manner",
+      "pos": "熟",
+      "ja": "適切な時期に、速やかに",
+      "gloss": "",
+      "example": {
+        "en": "Please respond to customer complaints in a timely manner.",
+        "ja": "顧客からの苦情には速やかに対応してください。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "range",
+      "pos": "名",
+      "ja": "範囲、幅",
+      "gloss": "",
+      "example": {
+        "en": "The hotel offers rooms in a price range of $100 to $200.",
+        "ja": "そのホテルは100〜200ドルの価格帯の部屋を提供している。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "borrowing costs",
+      "pos": "熟",
+      "ja": "借り入れコスト",
+      "gloss": "（＝お金を借りるときに払う利息などの費用のこと）",
+      "example": {
+        "en": "Lower borrowing costs helped the firm open two new stores.",
+        "ja": "借り入れコストが下がったことで、その会社は新店舗を2つ開けた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "expansion",
+      "pos": "名",
+      "ja": "拡大、拡張",
+      "gloss": "",
+      "example": {
+        "en": "The board approved the expansion of the Osaka warehouse.",
+        "ja": "取締役会は大阪倉庫の拡張を承認した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "cautious",
+      "pos": "形",
+      "ja": "慎重な、用心深い",
+      "gloss": "",
+      "example": {
+        "en": "Investors remain cautious ahead of the earnings report.",
+        "ja": "決算発表を前に、投資家は慎重な姿勢を崩していない。"
+      }
+    }
+  ],
+  "glossary": {
+    "senior": {
+      "lemma": "senior",
+      "pos": "形",
+      "ja": "上級の、幹部の",
+      "note": ""
+    },
+    "official": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者、高官",
+      "note": ""
+    },
+    "interest": {
+      "lemma": "interest",
+      "pos": "名",
+      "ja": "利子、金利",
+      "note": "interest rate で「金利」"
+    },
+    "hikes": {
+      "lemma": "hike",
+      "pos": "名",
+      "ja": "引き上げ",
+      "note": "rate hike で「利上げ」"
+    },
+    "hike": {
+      "lemma": "hike",
+      "pos": "名",
+      "ja": "引き上げ",
+      "note": ""
+    },
+    "likely": {
+      "lemma": "likely",
+      "pos": "副",
+      "ja": "おそらく",
+      "note": "be likely to do の形も多い"
+    },
+    "branch": {
+      "lemma": "branch",
+      "pos": "名",
+      "ja": "支部、支店",
+      "note": "ここでは地区連銀のこと"
+    },
+    "several": {
+      "lemma": "several",
+      "pos": "形",
+      "ja": "いくつかの",
+      "note": "3〜5程度を指すことが多い"
+    },
+    "increases": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "増加、引き上げ",
+      "note": ""
+    },
+    "required": {
+      "lemma": "require",
+      "pos": "動",
+      "ja": "必要とされる",
+      "note": "be required で受け身"
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "物価上昇",
+      "note": ""
+    },
+    "under control": {
+      "lemma": "under control",
+      "pos": "熟",
+      "ja": "抑えられて",
+      "note": "bring A under control で「Aを抑え込む」"
+    },
+    "timely": {
+      "lemma": "timely",
+      "pos": "形",
+      "ja": "適時の",
+      "note": ""
+    },
+    "manner": {
+      "lemma": "manner",
+      "pos": "名",
+      "ja": "やり方、方法",
+      "note": ""
+    },
+    "range": {
+      "lemma": "range",
+      "pos": "名",
+      "ja": "範囲、幅",
+      "note": ""
+    },
+    "steady": {
+      "lemma": "steady",
+      "pos": "形",
+      "ja": "安定した",
+      "note": "hold A steady で「Aを据え置く」"
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "preparing": {
+      "lemma": "prepare",
+      "pos": "動",
+      "ja": "準備する",
+      "note": "prepare for で「〜に備える」"
+    },
+    "borrowing": {
+      "lemma": "borrow",
+      "pos": "動",
+      "ja": "借りること",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "loans": {
+      "lemma": "loan",
+      "pos": "名",
+      "ja": "ローン、融資",
+      "note": ""
+    },
+    "expansion": {
+      "lemma": "expansion",
+      "pos": "名",
+      "ja": "拡大",
+      "note": ""
+    },
+    "bond": {
+      "lemma": "bond",
+      "pos": "名",
+      "ja": "債券",
+      "note": ""
+    },
+    "yields": {
+      "lemma": "yield",
+      "pos": "名",
+      "ja": "利回り",
+      "note": ""
+    },
+    "retail": {
+      "lemma": "retail",
+      "pos": "形",
+      "ja": "小売の",
+      "note": ""
+    },
+    "cautious": {
+      "lemma": "cautious",
+      "pos": "形",
+      "ja": "慎重な",
+      "note": ""
+    },
+    "remarks": {
+      "lemma": "remark",
+      "pos": "名",
+      "ja": "発言",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者",
+      "note": ""
+    },
+    "support": {
+      "lemma": "support",
+      "pos": "動",
+      "ja": "支持する",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "第5文型 make＋O＋形容詞（OをCの状態にする）",
+    "quote": "Higher borrowing costs could make loans for homes, cars and business expansion more expensive.",
+    "quoteJa": "借り入れコストが上がれば、住宅や自動車、事業拡大のためのローンが割高になる可能性がある。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "make＋目的語（O）＋形容詞（C）で「OをCの状態にする」という第5文型（SVOC）。この文では O が loans for homes, cars and business expansion（住宅・車・事業拡大のためのローン）と長く、C の more expensive（より高い）が文末に来る。O と C の間には「O is C（ローンが高くなる）」という主語・述語の関係がある。本文の high prices made shoppers cautious（物価高が買い物客を慎重にした）も同じ形。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "If borrowing costs rise, loans will become more expensive.（借り入れコストが上がれば、ローンは高くなる）と become＋形容詞で言い換えられる。make の後ろに動詞の原形を置くと「Oに〜させる（使役）」になり、make shoppers spend less（客に支出を減らさせる）のように意味が変わる。C の位置に副詞は置けない点に注意（× make loans expensively）。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 で make / keep / find＋O＋（　） の空所に形容詞か副詞かを選ばせる問題が定番。正解は形容詞（例：keep customers satisfied, find the report useful）。O が長いと動詞と空所が離れるため、動詞が make / keep / find かを先に確認すると解きやすい。Part 7 では「原因 make 結果」の因果関係を問う設問の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "The new software will make the ordering process faster.（新しいソフトで発注手続きが速くなる）／Clear instructions make our customers more confident.（分かりやすい説明で顧客の安心感が高まる）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "11月17日、セントルイス連銀のムサレム総裁が「2027年春までに複数回の利上げが必要になる可能性が高い」と述べた。FRBは9月に3.75〜4%へ利上げし、10月は据え置いた。12月8〜9日の次回会合では0.25%の利上げがほぼ確実視されている。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "ムサレム氏が重視するのは実質金利(real interest rate)、つまり政策金利からインフレ率を差し引いた値だ。同氏は来春までにこれを2〜2.5%へ上げるべきだとし、現状は約1ポイント足りないと見る。9月の消費者物価は前年比3.7%上昇と、目標の2%を大きく上回る。こうした利上げに前向きな姿勢をタカ派(hawkish)と呼ぶ。"
+    },
+    {
+      "heading": "📌 3. 他国の中央銀行の利上げ",
+      "body": "オーストラリア準備銀行（RBA）は2026年に5回利上げし、11月3日には政策金利を4.85%と2008年以来の高水準に引き上げた。ただし採決は6対3に割れた。一方、日銀は9月18日に0.25%の利上げで政策金利を1.25%とし、1995年以来の水準になったが、2人が反対した。燃料高で物価が上がったRBAは回数を重ねて引き締めを急ぎ、日銀は長い低金利から段階的に抜け出している途中で、同じ利上げでも出発点と速さが大きく違う。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "金利上昇の恩恵を受けたのが三菱UFJフィナンシャル・グループだ。11月13日発表の2026年度上期決算で、純利益は前年同期比26%増の1兆6300億円と過去最高だった。貸し出しで得る純利息収入(net interest income)は29%増の1兆8500億円に伸び、国内金利の上昇が業務純益を約1400億円押し上げた。通期の純利益予想も2兆8000億円へ引き上げた。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "real interest rate",
+      "pos": "名",
+      "ja": "実質金利",
+      "gloss": "（＝金利からインフレ率を差し引いた、実際の負担を表す金利のこと）",
+      "example": {
+        "en": "A high real interest rate can slow down business investment.",
+        "ja": "実質金利が高いと、企業の投資が鈍ることがある。"
+      }
+    },
+    {
+      "term": "hawkish",
+      "pos": "形",
+      "ja": "タカ派の",
+      "gloss": "（＝物価を抑えるため利上げに積極的な立場のこと）",
+      "example": {
+        "en": "The new board member is known for her hawkish views.",
+        "ja": "新しい理事はタカ派の考え方で知られている。"
+      }
+    },
+    {
+      "term": "net interest income",
+      "pos": "名",
+      "ja": "純利息収入",
+      "gloss": "（＝貸出の利息収入から預金の利息支払いを引いた銀行のもうけのこと）",
+      "example": {
+        "en": "The bank's net interest income rose as loan rates went up.",
+        "ja": "貸出金利の上昇で、その銀行の純利息収入が増えた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Fed's Musalem: US likely needs several rate hikes by spring to control inflation",
+      "publisher": "Kitco (Reuters)",
+      "url": "http://www.kitco.com/news/off-the-wire/2026-11-17/feds-musalem-us-likely-needs-several-rate-hikes-spring-control",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "American shoppers are taking a breather ahead of the holiday season",
+      "publisher": "CNN",
+      "url": "https://www.cnn.com/2026/11/17/economy/us-retail-sales-october",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Reserve Bank of Australia raises its cash rate to 4.85%, an 18-year high",
+      "publisher": "Stock Analysis",
+      "url": "https://stockanalysis.com/news/rba-raises-cash-rate-18-year-high/",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "MUFG first-half profit rises 26% to ¥1.63 trillion",
+      "publisher": "Grafa",
+      "url": "https://grafa.com/en/news/united-states/mufg-first-half-profit-rises-26-percent-1-63-trillion-yen",
+      "date": "2026-11-13"
+    }
+  ]
+}
