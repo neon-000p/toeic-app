@@ -508,5 +508,24 @@
       "url": "https://grafa.com/en/news/united-states/mufg-first-half-profit-rises-26-percent-1-63-trillion-yen",
       "date": "2026-11-13"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-18-1648/00.mp3",
+      "audio/2026-11-18-1648/01.mp3",
+      "audio/2026-11-18-1648/02.mp3",
+      "audio/2026-11-18-1648/03.mp3",
+      "audio/2026-11-18-1648/04.mp3",
+      "audio/2026-11-18-1648/05.mp3",
+      "audio/2026-11-18-1648/06.mp3",
+      "audio/2026-11-18-1648/07.mp3",
+      "audio/2026-11-18-1648/08.mp3",
+      "audio/2026-11-18-1648/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 246776,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-18T07:51:21.501Z",
+    "trimmed": true
+  }
 }
