@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-19-0545",
+  "date": "2026-11-19",
+  "time": "05:45",
+  "createdAt": "2026-11-19T05:45:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "Target Posts Its Best Sales Growth in Five Years",
+    "ja": "米ターゲット、5年ぶりの高い売上の伸び"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Target, the U.S. retail chain, reported its strongest sales growth in more than five years on Wednesday.",
+            "ja": "米小売チェーンのターゲットは水曜日、5年余りで最も高い売上の伸びを発表した。"
+          },
+          {
+            "en": "Net sales rose 7.1% to $27.1 billion in the three months through October.",
+            "ja": "10月までの3カ月間の売上高は7.1%増の271億ドルだった。"
+          },
+          {
+            "en": "Comparable sales, which measure stores and websites open for at least a year, increased 5.6%.",
+            "ja": "開業から1年以上たつ店舗とサイトを対象とする既存店売上高は5.6%増えた。"
+          },
+          {
+            "en": "The company also raised its full-year forecast and now expects sales to grow about 6%.",
+            "ja": "同社は通期の見通しも引き上げ、売上高が約6%伸びると予想している。"
+          },
+          {
+            "en": "Its shares jumped about 7% after the announcement.",
+            "ja": "発表を受けて、同社の株価は約7%急伸した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The results suggest that the retailer's turnaround plan is starting to work.",
+            "ja": "今回の決算は、同社の立て直し計画が効果を上げ始めていることを示している。"
+          },
+          {
+            "en": "Over the past year, Target has cut prices on thousands of everyday items to win back budget-conscious shoppers.",
+            "ja": "ターゲットはこの1年、節約志向の買い物客を呼び戻すため、数千点の日用品を値下げしてきた。"
+          },
+          {
+            "en": "Customer traffic rose 5%, and online sales grew faster than sales in its stores.",
+            "ja": "客数は5%増え、ネット販売は店舗の売上よりも速いペースで伸びた。"
+          },
+          {
+            "en": "However, part of the profit gain came from a one-time refund of import taxes.",
+            "ja": "ただし、増益の一部は輸入関税の一時的な払い戻しによるものだった。"
+          },
+          {
+            "en": "Executives said sales in November were stronger than in October, which gives the company momentum heading into the holiday season.",
+            "ja": "経営陣によると11月の売上は10月を上回っており、年末商戦に向けて同社に勢いを与えている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did Target's comparable sales increase?",
+      "promptJa": "ターゲットの既存店売上高はどれだけ増えましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "5%",
+          "ja": "5%"
+        },
+        {
+          "key": "B",
+          "text": "5.6%",
+          "ja": "5.6%"
+        },
+        {
+          "key": "C",
+          "text": "6%",
+          "ja": "6%"
+        },
+        {
+          "key": "D",
+          "text": "7.1%",
+          "ja": "7.1%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第1段落3文目に Comparable sales ... increased 5.6% とある。(A) 5% は客数（Customer traffic）の伸び、(C) 6% は通期の売上高見通し、(D) 7.1% は売上高全体（Net sales）の伸びで、いずれも本文の別の数字を使った引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字が多い記事では、設問の主語（ここでは comparable sales）と同じ語が出てくる文を探し、その文の数字だけを拾う。似た数字は別の指標に付いていることが多い。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT mentioned as a reason for Target's strong results?",
+      "promptJa": "ターゲットの好調な決算の理由として述べられていないものはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Lower prices on everyday items",
+          "ja": "日用品の値下げ"
+        },
+        {
+          "key": "B",
+          "text": "More customers visiting",
+          "ja": "客数の増加"
+        },
+        {
+          "key": "C",
+          "text": "A one-time refund of import taxes",
+          "ja": "輸入関税の一時的な払い戻し"
+        },
+        {
+          "key": "D",
+          "text": "The opening of many new stores",
+          "ja": "多数の新店舗の開業"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は (D)。新店舗の開業は本文に一切出てこない。(A) は第2段落2文目の cut prices on thousands of everyday items、(B) は3文目の Customer traffic rose 5%、(C) は4文目の a one-time refund of import taxes にそれぞれ書かれている。むしろ既存店売上高は「開業1年以上の店」だけで数える指標なので、新店効果とは別の話である。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "NOT 問題は、4つの選択肢を1つずつ本文と照合し、書かれているものを消していく消去法が確実。言い換え（Lower prices ← cut prices、More customers ← traffic rose）に注意する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "gloss": "",
+      "example": {
+        "en": "The retailer plans to open ten new outlets next year.",
+        "ja": "その小売業者は来年、新たに10店舗を開く予定だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "forecast",
+      "pos": "名・動",
+      "ja": "予測、見通し／予測する",
+      "gloss": "",
+      "example": {
+        "en": "The sales team will update its forecast at the end of the month.",
+        "ja": "営業部は月末に見通しを更新する。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "announcement",
+      "pos": "名",
+      "ja": "発表、告知",
+      "gloss": "",
+      "example": {
+        "en": "The announcement about the office move was posted on Monday.",
+        "ja": "オフィス移転の告知は月曜日に掲示された。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "turnaround",
+      "pos": "名",
+      "ja": "（業績の）立て直し、好転",
+      "gloss": "",
+      "example": {
+        "en": "The new manager led a quick turnaround of the struggling branch.",
+        "ja": "新しい支店長は不振の支店を素早く立て直した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "budget-conscious",
+      "pos": "形",
+      "ja": "予算を気にする、節約志向の",
+      "gloss": "",
+      "example": {
+        "en": "Budget-conscious travelers often book their flights early.",
+        "ja": "出費を気にする旅行者は早めに航空券を予約することが多い。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "refund",
+      "pos": "名・動",
+      "ja": "払い戻し、返金／払い戻す",
+      "gloss": "",
+      "example": {
+        "en": "Customers can request a full refund within 30 days.",
+        "ja": "顧客は30日以内なら全額返金を求めることができる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "executive",
+      "pos": "名",
+      "ja": "経営幹部、役員",
+      "gloss": "",
+      "example": {
+        "en": "Two executives will attend the meeting with the supplier.",
+        "ja": "仕入れ先との会議には役員が2人出席する。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "momentum",
+      "pos": "名",
+      "ja": "勢い、弾み",
+      "gloss": "",
+      "example": {
+        "en": "The project gained momentum after the client approved the budget.",
+        "ja": "顧客が予算を承認してから、プロジェクトは勢いづいた。"
+      }
+    }
+  ],
+  "glossary": {
+    "retail": {
+      "lemma": "retail",
+      "pos": "名",
+      "ja": "小売",
+      "note": "retail chain で「小売チェーン」"
+    },
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "発表した",
+      "note": "決算の文脈では「（業績を）発表する」"
+    },
+    "strongest": {
+      "lemma": "strong",
+      "pos": "形",
+      "ja": "最も好調な",
+      "note": ""
+    },
+    "net sales": {
+      "lemma": "net sales",
+      "pos": "名",
+      "ja": "売上高",
+      "note": "返品・値引きを差し引いた売上"
+    },
+    "comparable": {
+      "lemma": "comparable",
+      "pos": "形",
+      "ja": "比較可能な",
+      "note": "comparable sales で「既存店売上高」"
+    },
+    "measure": {
+      "lemma": "measure",
+      "pos": "動",
+      "ja": "測る",
+      "note": ""
+    },
+    "increased": {
+      "lemma": "increase",
+      "pos": "動",
+      "ja": "増えた",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": "raise a forecast で「見通しを上方修正する」"
+    },
+    "full-year": {
+      "lemma": "full-year",
+      "pos": "形",
+      "ja": "通期の",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "見通し",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": "expect A to do の形"
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式、株価",
+      "note": ""
+    },
+    "jumped": {
+      "lemma": "jump",
+      "pos": "動",
+      "ja": "急上昇した",
+      "note": ""
+    },
+    "announcement": {
+      "lemma": "announcement",
+      "pos": "名",
+      "ja": "発表",
+      "note": ""
+    },
+    "suggest": {
+      "lemma": "suggest",
+      "pos": "動",
+      "ja": "示す、示唆する",
+      "note": ""
+    },
+    "retailer": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "turnaround": {
+      "lemma": "turnaround",
+      "pos": "名",
+      "ja": "立て直し",
+      "note": ""
+    },
+    "everyday": {
+      "lemma": "everyday",
+      "pos": "形",
+      "ja": "日常の",
+      "note": ""
+    },
+    "win back": {
+      "lemma": "win back",
+      "pos": "熟",
+      "ja": "取り戻す",
+      "note": ""
+    },
+    "budget-conscious": {
+      "lemma": "budget-conscious",
+      "pos": "形",
+      "ja": "節約志向の",
+      "note": ""
+    },
+    "shoppers": {
+      "lemma": "shopper",
+      "pos": "名",
+      "ja": "買い物客",
+      "note": ""
+    },
+    "traffic": {
+      "lemma": "traffic",
+      "pos": "名",
+      "ja": "客足、来店客数",
+      "note": "小売では customer traffic で「客数」"
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "gain": {
+      "lemma": "gain",
+      "pos": "名",
+      "ja": "増加",
+      "note": "profit gain で「増益」"
+    },
+    "one-time": {
+      "lemma": "one-time",
+      "pos": "形",
+      "ja": "一時的な、1回限りの",
+      "note": ""
+    },
+    "refund": {
+      "lemma": "refund",
+      "pos": "名",
+      "ja": "払い戻し",
+      "note": ""
+    },
+    "import taxes": {
+      "lemma": "import tax",
+      "pos": "名",
+      "ja": "輸入税、関税",
+      "note": ""
+    },
+    "executives": {
+      "lemma": "executive",
+      "pos": "名",
+      "ja": "経営幹部",
+      "note": ""
+    },
+    "momentum": {
+      "lemma": "momentum",
+      "pos": "名",
+      "ja": "勢い",
+      "note": ""
+    },
+    "heading into": {
+      "lemma": "head into",
+      "pos": "熟",
+      "ja": "〜に向かう",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "比較級＋than（比較の対象をそろえる：faster than sales in its stores）",
+    "quote": "Customer traffic rose 5%, and online sales grew faster than sales in its stores.",
+    "quoteJa": "客数は5%増え、ネット販売は店舗の売上よりも速いペースで伸びた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "grew faster than ～ は「～よりも速く伸びた」。副詞 fast の比較級 faster のあとに than を置き、比べる相手を示す。ここで比べているのは online sales（ネットの売上）と sales in its stores（店舗の売上）で、than の前後が同じ種類の名詞（どちらも sales）になっている点が大切。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "英語では「比べる物どうしの形をそろえる」のが原則。× online sales grew faster than its stores（売上と店そのものを比べてしまう）は誤り。名詞の繰り返しを避けたいときは代名詞 that / those を使い、online sales grew faster than those in its stores とも書ける（sales は複数なので those）。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では空所の後ろに than があれば比較級（faster / more efficiently）を選ぶのが基本。また「than の後ろに that か those か」を問う問題も定番で、前の名詞が単数なら that、複数なら those を選ぶ。Part 7 では A grew faster than B から「B のほうが伸びが小さい」と読み替えさせる設問が出る。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Orders from overseas increased faster than those from domestic clients.（海外からの注文は国内顧客からの注文より速いペースで増えた。）／This year's costs were lower than those of last year.（今年の費用は昨年の費用より低かった。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "11月18日発表の8〜10月期決算で、売上高は前年同期比7.1%増の271億ドル、既存店売上高(comparable sales)は5.6%増と、5年余りで最も高い伸びになった。通期の売上高見通しは約6%増へと1ポイント引き上げ、株価は約7%上がった。"
+    },
+    {
+      "heading": "📌 2. 数字の読み方",
+      "body": "既存店売上高は開業1年以上の店とサイトだけを比べる数字で、出店による上乗せを除いた「実力」を示す。伸びは「客数×客単価(average ticket)」に分けて読む。今回は客数が5%増えており、値下げで来店する人そのものを呼び戻したことが分かる。ただし利益には関税の払い戻しという一時的な上乗せも含まれている。"
+    },
+    {
+      "heading": "📌 3. 同業他社ではどうだったか",
+      "body": "ホームセンター最大手のホーム・デポは前日の11月17日に決算を発表した。既存店売上高は2.2%増だったが、取引件数は0.5%減り、伸びは1回あたりの購入額に頼った形だった。通期の既存店見通しは約1.4%増にとどまり、株価は3%余り下げた。一方ウォルマートは2025年11月の決算で、米国の既存店売上高が4.5%増（燃料を除く）となり、幅広い所得層の客を集めて通期予想を引き上げた。客数を増やして伸びた会社は買われ、客単価頼みの会社は売られるという違いが出ている。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "イオンは2026年8月27日、プライベートブランド(private label)「トップバリュ」の食品・日用品145品目を9月2日から最大40%値下げすると発表した。対象は全国約1万店で、5〜8月には食品約3,500品目の価格を据え置く「価格凍結」も行っていた。年内最多の約4,500品目が値上げされた9月に、ターゲットと同じく値ごろ感で客を呼ぶ手を打った。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "comparable sales",
+      "pos": "名",
+      "ja": "既存店売上高",
+      "gloss": "（＝開業1年以上の店だけで比べた売上のこと）",
+      "example": {
+        "en": "The café chain's comparable sales fell 2% in the spring.",
+        "ja": "そのカフェチェーンの既存店売上高は春に2%減った。"
+      }
+    },
+    {
+      "term": "average ticket",
+      "pos": "名",
+      "ja": "客単価",
+      "gloss": "（＝客1人が1回の買い物で使う平均額のこと）",
+      "example": {
+        "en": "The bakery raised its average ticket by selling coffee with bread.",
+        "ja": "そのパン店はパンと一緒にコーヒーを売って客単価を上げた。"
+      }
+    },
+    {
+      "term": "private label",
+      "pos": "名",
+      "ja": "プライベートブランド",
+      "gloss": "（＝小売店が自社の名前で売る独自商品のこと）",
+      "example": {
+        "en": "Our private label snacks are cheaper than national brands.",
+        "ja": "当社のプライベートブランドの菓子は大手メーカー品より安い。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Target shares rise 7% as retailer posts best sales growth in five years, hikes guidance",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Target lifts full-year sales outlook after strong Q3 earnings beat",
+      "publisher": "Fox Business",
+      "url": "https://www.foxbusiness.com/retail/target-price-cuts-help-retailer-post-strongest-sales-growth-years-heading-holidays",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Home Depot (HD) Q3 earnings 2026",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/17/home-depot-hd-q3-earnings-2026.html",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Walmart hikes sales and earnings forecast as it attracts shoppers across incomes",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2025/11/20/walmart-wmt-q3-2026-earnings.html",
+      "date": "2025-11-20"
+    },
+    {
+      "title": "イオンが「トップバリュ」145品目値下げ 期間限定で値頃感アピール",
+      "publisher": "日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOUC278WC0X20C26A8000000/",
+      "date": "2026-08-27"
+    }
+  ]
+}
