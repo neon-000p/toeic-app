@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-20-0545",
+  "date": "2026-11-20",
+  "time": "05:45",
+  "createdAt": "2026-11-20T05:45:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "Strike Threat Grows at Busiest U.S. Port Complex",
+    "ja": "米最大の港湾、警備員のスト懸念が強まる"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "A labor dispute could soon disrupt the ports of Los Angeles and Long Beach, the busiest container gateway in the United States.",
+            "ja": "労使の対立により、米国最大のコンテナの玄関口であるロサンゼルス港とロングビーチ港の業務が近く混乱するおそれがある。"
+          },
+          {
+            "en": "About 250 security workers, known as watchmen, have kept working under several short contract extensions.",
+            "ja": "「ウォッチマン」と呼ばれる約250人の警備員は、短期の契約延長を何度か重ねながら働き続けてきた。"
+          },
+          {
+            "en": "Now their union has said it will not extend the current agreement past 12:01 a.m. on Saturday.",
+            "ja": "その労働組合は今回、現行の協約を土曜午前0時1分より先には延長しない考えを示した。"
+          },
+          {
+            "en": "According to the employers' group, talks on Tuesday ended with little progress.",
+            "ja": "使用者団体によると、火曜日の交渉はほとんど進展がないまま終わった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The watchmen make up only about 2% of the union workers at the ports.",
+            "ja": "ウォッチマンは、両港で働く組合員のわずか約2%にすぎない。"
+          },
+          {
+            "en": "However, a strike could affect terminals that handle more than half of the ports' cargo, including about 85% at Long Beach.",
+            "ja": "しかしストライキが起きれば、両港の貨物の半分以上を扱うターミナルに影響が出るおそれがあり、ロングビーチ港ではその割合が約85%に上る。"
+          },
+          {
+            "en": "The employers also expect thousands of other dock workers to honor a picket line.",
+            "ja": "使用者側は、ほかの数千人の港湾労働者もピケラインを尊重すると見ている。"
+          },
+          {
+            "en": "This means they will not cross a line of striking workers to enter the terminals.",
+            "ja": "つまり、ストをしている労働者の列を越えてターミナルに入ることはしないということだ。"
+          },
+          {
+            "en": "Unless the two sides reach a deal, a strike could begin this weekend, and shippers could face serious delays.",
+            "ja": "労使が合意に至らない限り、今週末にもストが始まる可能性があり、荷主は深刻な遅れに直面しかねない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "About how many watchmen are involved in the contract talks?",
+      "promptJa": "契約交渉に関わっているウォッチマンはおよそ何人ですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 2",
+          "ja": "約2人"
+        },
+        {
+          "key": "B",
+          "text": "About 85",
+          "ja": "約85人"
+        },
+        {
+          "key": "C",
+          "text": "About 250",
+          "ja": "約250人"
+        },
+        {
+          "key": "D",
+          "text": "About 12,000",
+          "ja": "約1万2000人"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落2文目に About 250 security workers, known as watchmen とある。(A) の 2 は第2段落1文目の「組合員に占める割合（約2%）」、(B) の 85 は第2段落2文目の「ロングビーチ港で影響を受けうる貨物の割合（約85%）」で、どちらも % の数字を人数にすり替えた引っかけ。(D) 12,000 は本文に出てこない数字（12:01 の時刻とも無関係）。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "設問のキーワード（watchmen）が最初に出てくる文を探す。数字が多い記事では、人数・割合（%）・時刻など単位の違う数字を選択肢に混ぜてくるので、単位まで照合する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why could a strike by a small group of workers have a large effect?",
+      "promptJa": "少人数の労働者によるストライキが大きな影響を及ぼしうるのはなぜですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Other dock workers are expected not to cross the picket line.",
+          "ja": "他の港湾労働者がピケラインを越えないと見られている"
+        },
+        {
+          "key": "B",
+          "text": "The watchmen make up half of the union workers.",
+          "ja": "ウォッチマンが組合員の半数を占める"
+        },
+        {
+          "key": "C",
+          "text": "The ports have closed for the holidays.",
+          "ja": "両港が休暇で閉鎖している"
+        },
+        {
+          "key": "D",
+          "text": "The employers have accepted all the union's demands.",
+          "ja": "使用者側が組合の要求をすべて受け入れた"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正解は (A)。第2段落3文目に The employers also expect thousands of other dock workers to honor a picket line. とあり、続く4文目で「ストをしている労働者の列を越えてターミナルに入らない」と説明されている。本文の expect ... to honor を are expected not to cross と言い換えている。(B) は第2段落1文目の only about 2% と矛盾する（half は貨物の割合の話）。(C) 休暇による閉鎖は本文にない。(D) は第1段落4文目の talks ... ended with little progress（ほとんど進展なし）と逆の内容。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "However（しかし）の後には、前の文の予想を覆す情報が続く。「少数なのに影響が大きい」理由を問う設問では、However 以降の文を順に読んで根拠を探す。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "dispute",
+      "pos": "名",
+      "ja": "対立、紛争",
+      "gloss": "",
+      "example": {
+        "en": "The two companies settled their dispute over the contract.",
+        "ja": "両社は契約をめぐる対立を解決した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "disrupt",
+      "pos": "動",
+      "ja": "混乱させる、妨げる",
+      "gloss": "",
+      "example": {
+        "en": "The heavy snow disrupted train service this morning.",
+        "ja": "大雪で今朝の列車の運行が乱れた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "extension",
+      "pos": "名",
+      "ja": "延長",
+      "gloss": "",
+      "example": {
+        "en": "We asked the client for a one-week extension of the deadline.",
+        "ja": "私たちは顧客に締め切りの1週間延長を頼んだ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "agreement",
+      "pos": "名",
+      "ja": "協定、合意",
+      "gloss": "",
+      "example": {
+        "en": "Both parties signed the agreement on Monday.",
+        "ja": "両者は月曜日にその協定に署名した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "handle",
+      "pos": "動",
+      "ja": "扱う、処理する",
+      "gloss": "",
+      "example": {
+        "en": "Our new warehouse can handle twice as many orders.",
+        "ja": "新しい倉庫は2倍の注文を処理できる。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "cargo",
+      "pos": "名",
+      "ja": "貨物、積み荷",
+      "gloss": "（＝船や飛行機で運ぶ荷物のこと）",
+      "example": {
+        "en": "The cargo was unloaded at the airport late at night.",
+        "ja": "その貨物は深夜に空港で降ろされた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "picket line",
+      "pos": "名",
+      "ja": "ピケライン",
+      "gloss": "（＝ストの参加者が職場の入口に並び、他の人が働きに入るのを止める列のこと）",
+      "example": {
+        "en": "Some employees refused to cross the picket line outside the factory.",
+        "ja": "一部の従業員は工場の外のピケラインを越えるのを拒んだ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "shipper",
+      "pos": "名",
+      "ja": "荷主、発送者",
+      "gloss": "",
+      "example": {
+        "en": "The shipper will pay for the insurance on this package.",
+        "ja": "この荷物の保険料は荷主が支払う。"
+      }
+    }
+  ],
+  "glossary": {
+    "labor": {
+      "lemma": "labor",
+      "pos": "名",
+      "ja": "労働、労使",
+      "note": ""
+    },
+    "dispute": {
+      "lemma": "dispute",
+      "pos": "名",
+      "ja": "対立、紛争",
+      "note": ""
+    },
+    "disrupt": {
+      "lemma": "disrupt",
+      "pos": "動",
+      "ja": "混乱させる",
+      "note": ""
+    },
+    "ports": {
+      "lemma": "port",
+      "pos": "名",
+      "ja": "港",
+      "note": ""
+    },
+    "busiest": {
+      "lemma": "busy",
+      "pos": "形",
+      "ja": "最も忙しい",
+      "note": "busy の最上級。ここでは「取扱量が最も多い」"
+    },
+    "container": {
+      "lemma": "container",
+      "pos": "名",
+      "ja": "コンテナ",
+      "note": ""
+    },
+    "gateway": {
+      "lemma": "gateway",
+      "pos": "名",
+      "ja": "玄関口、出入口",
+      "note": "ここでは貨物が国に出入りする拠点"
+    },
+    "security": {
+      "lemma": "security",
+      "pos": "名",
+      "ja": "警備、安全",
+      "note": ""
+    },
+    "watchmen": {
+      "lemma": "watchman",
+      "pos": "名",
+      "ja": "警備員",
+      "note": "watchman の複数形"
+    },
+    "extensions": {
+      "lemma": "extension",
+      "pos": "名",
+      "ja": "延長",
+      "note": ""
+    },
+    "union": {
+      "lemma": "union",
+      "pos": "名",
+      "ja": "労働組合",
+      "note": ""
+    },
+    "extend": {
+      "lemma": "extend",
+      "pos": "動",
+      "ja": "延長する",
+      "note": ""
+    },
+    "current": {
+      "lemma": "current",
+      "pos": "形",
+      "ja": "現在の",
+      "note": ""
+    },
+    "agreement": {
+      "lemma": "agreement",
+      "pos": "名",
+      "ja": "協定、合意",
+      "note": ""
+    },
+    "according": {
+      "lemma": "according to",
+      "pos": "熟",
+      "ja": "〜によると",
+      "note": "according to の形で使う"
+    },
+    "employers": {
+      "lemma": "employer",
+      "pos": "名",
+      "ja": "雇用主、使用者",
+      "note": ""
+    },
+    "progress": {
+      "lemma": "progress",
+      "pos": "名",
+      "ja": "進展",
+      "note": ""
+    },
+    "terminals": {
+      "lemma": "terminal",
+      "pos": "名",
+      "ja": "ターミナル",
+      "note": "港で船の荷役を行う区画"
+    },
+    "handle": {
+      "lemma": "handle",
+      "pos": "動",
+      "ja": "扱う、処理する",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物",
+      "note": ""
+    },
+    "including": {
+      "lemma": "including",
+      "pos": "前",
+      "ja": "〜を含めて",
+      "note": ""
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": "expect A to do で「Aが〜すると見込む」"
+    },
+    "honor": {
+      "lemma": "honor",
+      "pos": "動",
+      "ja": "尊重する、守る",
+      "note": "ここではピケラインを越えないこと"
+    },
+    "picket": {
+      "lemma": "picket",
+      "pos": "名",
+      "ja": "ピケ",
+      "note": "picket line でスト参加者が職場の前に作る列"
+    },
+    "striking": {
+      "lemma": "strike",
+      "pos": "動",
+      "ja": "ストをしている",
+      "note": ""
+    },
+    "unless": {
+      "lemma": "unless",
+      "pos": "接",
+      "ja": "〜しない限り",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "合意、取引",
+      "note": ""
+    },
+    "shippers": {
+      "lemma": "shipper",
+      "pos": "名",
+      "ja": "荷主",
+      "note": ""
+    },
+    "delays": {
+      "lemma": "delay",
+      "pos": "名",
+      "ja": "遅れ",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "条件の接続詞 unless（〜しない限り：if ... not とほぼ同じ意味）",
+    "quote": "Unless the two sides reach a deal, a strike could begin this weekend, and shippers could face serious delays.",
+    "quoteJa": "労使が合意に至らない限り、今週末にもストが始まる可能性があり、荷主は深刻な遅れに直面しかねない。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "unless は「〜しない限り」「〜でなければ」を表す条件の接続詞。Unless＋主語＋動詞 で副詞節を作り、主節（a strike could begin ...）が起きる条件を「否定の形」で示す。unless 自体に not の意味が含まれているので、節の中は肯定文（reach a deal）のままにする。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "Unless the two sides reach a deal ＝ If the two sides do not reach a deal とほぼ同じ意味。ただし unless は「それ以外の場合はすべて」という唯一の例外を強調する響きがある。× Unless the two sides don't reach a deal のように not を重ねると意味が逆転するので誤り。また、条件を表す節の中では未来のことでも現在形を使う（× Unless they will reach → ○ Unless they reach）。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では空所に unless / if / although / because などの接続詞を選ばせる問題が頻出。「〜しない限り…」と文意が通るか、節の中が肯定形かを確かめる。unless otherwise noted（特に記載がない限り）、unless otherwise instructed（別段の指示がない限り）は Part 6・7 の通知文によく出る定型表現。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Unless we receive your payment by Friday, your order will be canceled.（金曜までにお支払いが確認できない限り、ご注文は取り消されます。）／All prices include tax unless otherwise noted.（特に記載がない限り、価格はすべて税込みです。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米ロサンゼルス港・ロングビーチ港で、警備員約250人の労働協約をめぐる交渉が行き詰まった。使用者団体によると11月17日の交渉は「ほぼ進展なし」で、組合は21日午前0時1分以降の延長を拒む構え。ロングビーチ港では貨物の約85%を扱うターミナルが影響を受けうる。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "港湾の労組は職種ごとに分かれ、協約も別々に結ぶ。人数の少ない職種でも、ストで門の前にピケを張ると、他の職種の組合員は通常それを越えて働かない。そのため一部の争議がターミナル全体の作業停止(work stoppage)につながる。今回の警備員の協約は、2028年まで有効な港湾労働者全体の協約とは別建てだ。"
+    },
+    {
+      "heading": "📌 3. 北米の港ではどうだったか",
+      "body": "2024年10月1日、米東岸・メキシコ湾岸の港湾労組ILAが1977年以来の全面ストに入り、少なくとも14港が止まった。3日に6年間で約62%の賃上げで暫定合意し、ストは3日間で終わった。争点の自動化(automation)は先送りされ、2025年2月に新協約が承認された。カナダでは2024年11月、バンクーバー港とモントリオール港で使用者側が労働者を締め出し、政府が12日に拘束力のある仲裁(binding arbitration)を命じて港を再開させた。米国は労使の合意で、カナダは政府の介入で決着した。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本でも2025年春、全国港湾と港運同盟が6年ぶりに全国の港でストを行い、3月30日には横浜港で大型船がコンテナを降ろせないまま停泊した。物流会社のNSMは顧客に、出荷の遅れや代替輸送による追加コストの可能性を案内した。使用者側の日本港運協会は国土交通省と連名で、荷主や船社に料金の適正な価格転嫁を求める方針を示した。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "work stoppage",
+      "pos": "名",
+      "ja": "作業停止",
+      "gloss": "（＝ストなどで仕事が止まること）",
+      "example": {
+        "en": "The work stoppage at the plant lasted two days.",
+        "ja": "その工場の作業停止は2日間続いた。"
+      }
+    },
+    {
+      "term": "automation",
+      "pos": "名",
+      "ja": "自動化",
+      "gloss": "（＝人の作業を機械やシステムに任せること）",
+      "example": {
+        "en": "Automation has reduced errors in our billing process.",
+        "ja": "自動化により、当社の請求業務のミスが減った。"
+      }
+    },
+    {
+      "term": "binding arbitration",
+      "pos": "名",
+      "ja": "拘束力のある仲裁",
+      "gloss": "（＝第三者が決めた解決策に双方が必ず従う仕組みのこと）",
+      "example": {
+        "en": "The contract requires binding arbitration if the parties cannot agree.",
+        "ja": "その契約では、当事者が合意できない場合は拘束力のある仲裁によると定めている。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Possible Strike Looms Over Ports of LA, Long Beach Amid Labor Talks",
+      "publisher": "MyNewsLA.com",
+      "url": "https://mynewsla.com/business/2026/11/18/possible-strike-looms-over-ports-of-la-long-beach-amid-labor-talks/",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Possible Strike Looms Over Ports of LA, Long Beach Amid Labor Talks",
+      "publisher": "KFI AM 640",
+      "url": "https://kfiam640.iheart.com/content/2026-11-19-possible-strike-looms-over-ports-of-la-long-beach-amid-labor-talks/",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Port strikes end with deal on wages, averting economic disaster",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2024/10/03/nx-s1-5139450/dockworkers-port-strike-deal",
+      "date": "2024-10-03"
+    },
+    {
+      "title": "Canada orders binding arbitration to end port lockout",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2024/11/12/canada-orders-binding-arbitration-to-end-port-lockout",
+      "date": "2024-11-12"
+    },
+    {
+      "title": "全国港湾と港運同盟、6年ぶり全国でスト",
+      "publisher": "物流ニッポン",
+      "url": "https://logistics.jp/pickup/2025/04/29/54040/",
+      "date": "2025-04-29"
+    }
+  ]
+}
