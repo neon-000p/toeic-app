@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "type": "part6",
+  "id": "2026-11-20-0406",
+  "date": "2026-11-20",
+  "time": "04:06",
+  "createdAt": "2026-11-20T04:06:00+09:00",
+  "sample": false,
+  "docType": "memo",
+  "scene": "社内メモ｜経費精算の締め日の前倒しとスマホでの領収書提出",
+  "intro": "Questions 1-4 refer to the following memo.",
+  "header": [
+    {
+      "label": "To",
+      "text": "All Sales Department Staff"
+    },
+    {
+      "label": "From",
+      "text": "Lena Marchetti, Accounting Department"
+    },
+    {
+      "label": "Subject",
+      "text": "Earlier deadline for expense reports"
+    },
+    {
+      "label": "Date",
+      "text": "20 November"
+    }
+  ],
+  "paragraphs": [
+    {
+      "sentences": [
+        {
+          "en": "Please note that the deadline for submitting monthly expense reports will change starting in December.",
+          "ja": "12月から、月次経費報告書の提出期限が変わりますのでご注意ください。"
+        },
+        {
+          "en": "Reports will be due on the 5th of each month instead of the 10th.",
+          "ja": "報告書の期限は、毎月10日ではなく5日になります。"
+        },
+        {
+          "en": "This will allow the Accounting Department to close the books more quickly at the end of each month.",
+          "ja": "これにより、経理部は毎月末の決算をより早く締められるようになります。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "We realize that this new schedule may be ------- for staff members who travel frequently.",
+          "ja": "この新しい日程は、出張の多い社員の皆さんにとって大変かもしれないことは承知しています。",
+          "q": 1
+        },
+        {
+          "en": "-------",
+          "ja": "",
+          "q": 2
+        },
+        {
+          "en": "Simply take a photo of each receipt and attach it to your report in the online system.",
+          "ja": "領収書を1枚ずつ撮影し、オンラインシステム上の報告書に添付するだけです。"
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Please keep in mind that reports turned in after the deadline will not be processed until the following month.",
+          "ja": "期限後に提出された報告書は、翌月まで処理されないことにご留意ください。"
+        },
+        {
+          "en": "-------, reimbursement for those expenses will be delayed by several weeks.",
+          "ja": "その結果、それらの経費の払い戻しは数週間遅れることになります。",
+          "q": 3
+        },
+        {
+          "en": "Questions about the new procedure should be directed to Martin Albescu at extension 4127.",
+          "ja": "新しい手続きについてのご質問は、内線4127のマーティン・アルベスクまでお寄せください。"
+        },
+        {
+          "en": "Thank you in advance for your ------- during this transition.",
+          "ja": "移行期間中のご協力に、あらかじめお礼申し上げます。",
+          "q": 4
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "choices": [
+        {
+          "key": "A",
+          "text": "challenge",
+          "ja": "（名・動）課題、挑む"
+        },
+        {
+          "key": "B",
+          "text": "challenging",
+          "ja": "（形）大変な、困難な"
+        },
+        {
+          "key": "C",
+          "text": "challenged",
+          "ja": "（過去分詞）挑まれた"
+        },
+        {
+          "key": "D",
+          "text": "challengingly",
+          "ja": "（副）挑むように"
+        }
+      ],
+      "answer": "B",
+      "explanation": "空所は may be のあとで、主語 this new schedule の状態を表す補語になる。「日程が大変な」という意味の形容詞 challenging が入る。challenged も be のあとに置けるが「挑まれた」という受け身の意味になり、日程が主語では意味が通らない。",
+      "tip": "選択肢が同じ語幹で語尾だけ違えば品詞問題。be 動詞のあとで主語の様子を表すなら形容詞。-ing 形と -ed 形が両方あるときは、主語が「与える側」か「受ける側」かで決める。"
+    },
+    {
+      "id": "q2",
+      "type": "sentence",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The new deadline was suggested by several members of the sales team.",
+          "ja": "新しい期限は、営業部の何人かのメンバーが提案したものです。"
+        },
+        {
+          "key": "B",
+          "text": "Travel requests must now be approved by your manager two weeks ahead.",
+          "ja": "出張申請は、今後2週間前までに上司の承認を得なければなりません。"
+        },
+        {
+          "key": "C",
+          "text": "Your new receipt scanner will be delivered to your desk next week.",
+          "ja": "皆さんの新しい領収書スキャナーは、来週デスクに届けられます。"
+        },
+        {
+          "key": "D",
+          "text": "To make this easier, receipts can now be uploaded with your mobile phone.",
+          "ja": "これを楽にするため、領収書は携帯電話からアップロードできるようになりました。"
+        }
+      ],
+      "answer": "D",
+      "explanation": "前の文は「新しい日程は出張の多い社員には大変かもしれない」、後ろの文は「領収書を撮影して添付するだけ」。D は前の文の負担（this）を受けて対策を示し、後ろの文の「写真を撮る」という手順にもつながる。C も領収書の話だが、後ろの文はスキャナーではなく写真を撮る手順なので合わない。",
+      "tip": "一文挿入は、前の文の内容を受けているか（this / these など）と、後ろの文がその続きになっているかの両方を確かめる。"
+    },
+    {
+      "id": "q3",
+      "type": "conj",
+      "choices": [
+        {
+          "key": "A",
+          "text": "As a result",
+          "ja": "その結果"
+        },
+        {
+          "key": "B",
+          "text": "However",
+          "ja": "しかしながら"
+        },
+        {
+          "key": "C",
+          "text": "Instead",
+          "ja": "その代わりに"
+        },
+        {
+          "key": "D",
+          "text": "Otherwise",
+          "ja": "さもなければ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "空所の文だけでは決まらないので、前の文に戻る。前の文は「期限後の報告書は翌月まで処理されない」、空所の文は「払い戻しが数週間遅れる」で、前が原因、後ろが結果の関係になる。Otherwise は「そうしなければ」と条件を表すが、前の文は指示ではなく事実の説明なのでつながらない。",
+      "tip": "文頭の接続副詞は、前の文と空所の文の関係（原因と結果・逆接・追加）を一言でまとめてから選ぶ。"
+    },
+    {
+      "id": "q4",
+      "type": "vocab",
+      "choices": [
+        {
+          "key": "A",
+          "text": "attendance",
+          "ja": "出席"
+        },
+        {
+          "key": "B",
+          "text": "admission",
+          "ja": "入場"
+        },
+        {
+          "key": "C",
+          "text": "cooperation",
+          "ja": "協力"
+        },
+        {
+          "key": "D",
+          "text": "dependence",
+          "ja": "依存"
+        }
+      ],
+      "answer": "C",
+      "explanation": "メモ全体は、締め日の前倒しという新しい手続きへの対応を社員に求める内容で、空所の文は締めのあいさつ。during this transition（この移行期間中）の this transition は、1段落目で知らせた期限の変更を指す。変更に合わせてもらうことへのお礼なので cooperation が合う。attendance は会議などへの「出席」で、手続きの変更とは結びつかない。",
+      "tip": "締めのお礼の語彙は、文書全体で相手に何を頼んだかを思い出して選ぶ。Thank you for your cooperation / patience / understanding は頻出。"
+    }
+  ],
+  "glossary": {
+    "expense reports": {
+      "lemma": "expense report",
+      "pos": "熟",
+      "ja": "経費報告書",
+      "note": "",
+      "example": {
+        "en": "Please attach all receipts to your expense report.",
+        "ja": "経費報告書にはすべての領収書を添付してください。"
+      }
+    },
+    "due": {
+      "lemma": "due",
+      "pos": "形",
+      "ja": "期限が来て、提出すべき",
+      "note": "be due on ＋ 日付 で「〜が期限だ」",
+      "example": {
+        "en": "The rent for the office is due at the end of the month.",
+        "ja": "事務所の家賃は月末が支払期限だ。"
+      }
+    },
+    "instead of": {
+      "lemma": "instead of",
+      "pos": "熟",
+      "ja": "〜の代わりに",
+      "note": "",
+      "example": {
+        "en": "We held the meeting online instead of in the conference room.",
+        "ja": "会議室ではなく、オンラインで会議を開いた。"
+      }
+    },
+    "close the books": {
+      "lemma": "close the books",
+      "pos": "熟",
+      "ja": "（帳簿を）締める、決算を締める",
+      "note": "経理の決まった言い方",
+      "example": {
+        "en": "The accountants need two days to close the books each quarter.",
+        "ja": "経理担当者は四半期ごとに帳簿を締めるのに2日かかる。"
+      }
+    },
+    "keep in mind": {
+      "lemma": "keep in mind",
+      "pos": "熟",
+      "ja": "心に留めておく、留意する",
+      "note": "keep in mind that ＋ 文 の形でよく使う",
+      "example": {
+        "en": "Keep in mind that the store closes early on holidays.",
+        "ja": "祝日は店が早く閉まることを覚えておいてください。"
+      }
+    },
+    "turned in": {
+      "lemma": "turn in",
+      "pos": "熟",
+      "ja": "提出する",
+      "note": "submit とほぼ同じ意味",
+      "example": {
+        "en": "All job applications must be turned in by Friday.",
+        "ja": "求人への応募書類はすべて金曜日までに提出しなければならない。"
+      }
+    },
+    "processed": {
+      "lemma": "process",
+      "pos": "動",
+      "ja": "処理する",
+      "note": "",
+      "example": {
+        "en": "Your order will be processed within two business days.",
+        "ja": "ご注文は2営業日以内に処理されます。"
+      }
+    },
+    "reimbursement": {
+      "lemma": "reimbursement",
+      "pos": "名",
+      "ja": "払い戻し、立て替え金の精算",
+      "note": "動詞は reimburse（払い戻す）",
+      "example": {
+        "en": "Employees can request reimbursement for taxi fares after 10 P.M.",
+        "ja": "社員は午後10時以降のタクシー代の払い戻しを申請できる。"
+      }
+    },
+    "be directed to": {
+      "lemma": "be directed to",
+      "pos": "熟",
+      "ja": "〜に向けられる、〜宛てにする",
+      "note": "問い合わせ先を案内するときの硬い言い方",
+      "example": {
+        "en": "All media inquiries should be directed to the press office.",
+        "ja": "報道関係の問い合わせはすべて広報室までお寄せください。"
+      }
+    },
+    "in advance": {
+      "lemma": "in advance",
+      "pos": "熟",
+      "ja": "前もって、あらかじめ",
+      "note": "Thank you in advance で「よろしくお願いします」に近い",
+      "example": {
+        "en": "Thank you in advance for completing the survey.",
+        "ja": "アンケートへのご協力を、あらかじめお礼申し上げます。"
+      }
+    },
+    "transition": {
+      "lemma": "transition",
+      "pos": "名",
+      "ja": "移行、切り替え",
+      "note": "",
+      "example": {
+        "en": "The transition to the new payroll system took three months.",
+        "ja": "新しい給与システムへの移行には3か月かかった。"
+      }
+    }
+  },
+  "point": {
+    "lead": "空所の文で決まらなければ、前の文と文書の目的に戻る",
+    "items": [
+      {
+        "title": "文頭の空所は前の文との関係で決める",
+        "body": "文頭にカンマ付きの空所があれば接続副詞の問題。空所の文だけを読んでも選べないので、前の文と空所の文を並べ、「原因と結果」「逆接」「追加」のどれかを決めてから選択肢を見る。"
+      },
+      {
+        "title": "一文挿入は前後の両方とつなぐ",
+        "body": "一文挿入は、前の文の内容を this / these で受けているか、後ろの文がその続きになっているかを両方確かめる。話題が合っていても、後ろの文の手順や人物と食い違う選択肢は外す。"
+      },
+      {
+        "title": "締めの語彙は文書全体の用件から選ぶ",
+        "body": "最後の段落のお礼やお願いの語は、1段落目の用件を思い出して選ぶ。変更や移行を知らせる文書なら cooperation / patience、依頼を受けた文書なら assistance、と用件と結びつけると迷わない。"
+      }
+    ]
+  }
+}

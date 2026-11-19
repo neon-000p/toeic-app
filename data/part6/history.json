@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
   "type": "part6-history",
-  "updatedAt": "2026-11-13T04:08:00+09:00",
+  "updatedAt": "2026-11-20T04:10:06+09:00",
   "items": [
+    {
+      "id": "2026-11-20-0406",
+      "date": "2026-11-20",
+      "scene": "社内メモ｜経費精算の締め日の前倒しとスマホでの領収書提出",
+      "docType": "memo",
+      "types": [
+        "form",
+        "sentence",
+        "conj",
+        "vocab"
+      ]
+    },
     {
       "id": "2026-11-13-0408",
       "date": "2026-11-13",
