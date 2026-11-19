@@ -1,8 +1,23 @@
 {
   "schemaVersion": 1,
   "type": "part7-history",
-  "updatedAt": "2026-11-13T04:08:00+09:00",
+  "updatedAt": "2026-11-20T04:11:24+09:00",
   "items": [
+    {
+      "id": "2026-11-20-0406",
+      "date": "2026-11-20",
+      "scene": "説明書｜会議室のビデオ会議システムの使い方",
+      "format": "single",
+      "docTypes": [
+        "instructions"
+      ],
+      "types": [
+        "gist",
+        "insert",
+        "detail",
+        "infer"
+      ]
+    },
     {
       "id": "2026-11-13-0408",
       "date": "2026-11-13",

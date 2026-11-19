@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "type": "part7",
+  "id": "2026-11-20-0406",
+  "date": "2026-11-20",
+  "time": "04:06",
+  "createdAt": "2026-11-20T04:06:00+09:00",
+  "sample": false,
+  "format": "single",
+  "scene": "説明書｜会議室のビデオ会議システムの使い方",
+  "intro": "Questions 1-4 refer to the following instructions.",
+  "docs": [
+    {
+      "docType": "instructions",
+      "label": "説明書",
+      "header": [
+        {
+          "label": "",
+          "text": "Using the Video Conferencing System in Meeting Rooms 3A and 3B"
+        }
+      ],
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "en": "The meeting rooms on the third floor of the Dunmore Building are now equipped with a new video conferencing system.",
+              "ja": "ダンモア・ビル3階の会議室に、新しいビデオ会議システムが設置されました。",
+              "pos": 1
+            },
+            {
+              "en": "These instructions explain how to start and end a call.",
+              "ja": "この説明書では、通話の始め方と終わり方を説明します。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "First, turn on the touch panel on the table by pressing the button on its left side.",
+              "ja": "まず、テーブルの上のタッチパネルを、左側のボタンを押して起動してください。"
+            },
+            {
+              "en": "The screen on the wall will switch on automatically within about thirty seconds.",
+              "ja": "壁のスクリーンは、約30秒以内に自動的に点灯します。",
+              "pos": 2
+            },
+            {
+              "en": "Next, select \"Join Meeting\" and enter the eight-digit code included in your calendar invitation.",
+              "ja": "次に「会議に参加」を選び、予定表の招待に記載された8桁のコードを入力してください。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "If you plan to share a presentation, connect your laptop to the gray cable under the table.",
+              "ja": "プレゼンテーションを共有する場合は、テーブルの下にある灰色のケーブルにノートパソコンをつないでください。",
+              "pos": 3
+            },
+            {
+              "en": "Wireless sharing is not available yet, but it is expected to be set up by the end of January.",
+              "ja": "無線での共有はまだ使えませんが、1月末までに設定される予定です。"
+            }
+          ]
+        },
+        {
+          "sentences": [
+            {
+              "en": "When your call is over, tap \"End\" and switch off the panel so that the system is ready for the next group.",
+              "ja": "通話が終わったら「終了」をタップし、次のグループがすぐ使えるようにパネルの電源を切ってください。"
+            },
+            {
+              "en": "Any problems should be reported to the IT help desk at extension 2290.",
+              "ja": "不具合があれば、内線2290のIT ヘルプデスクに報告してください。",
+              "pos": 4
+            },
+            {
+              "en": "Please do not attempt to adjust the cameras yourself, as they have been carefully positioned.",
+              "ja": "カメラは慎重に位置を合わせてあるので、ご自分で調整しようとしないでください。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What is the purpose of the instructions?",
+      "promptJa": "この説明書の目的は何ですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To announce the opening of new meeting rooms",
+          "ja": "新しい会議室の開設を知らせること"
+        },
+        {
+          "key": "B",
+          "text": "To explain how to operate some equipment",
+          "ja": "ある機器の操作方法を説明すること"
+        },
+        {
+          "key": "C",
+          "text": "To ask staff to reserve rooms in advance",
+          "ja": "社員に会議室の事前予約を求めること"
+        },
+        {
+          "key": "D",
+          "text": "To describe a training session for the IT team",
+          "ja": "IT チーム向けの研修を説明すること"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 0,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第1段落2文目に These instructions explain how to start and end a call（通話の始め方と終わり方を説明する）とあり、以降もパネルやケーブルの使い方が続く。これを「機器の操作方法」と言い換えた B が正解。A は第1段落1文目の meeting rooms と new を使った誤答で、新しいのは会議室ではなくシステムである。",
+      "tip": "目的を問う設問は、冒頭の1〜2文で決まることが多い。本文の語をそのまま使った選択肢より、言い換えた選択肢を疑ってみる。"
+    },
+    {
+      "id": "q2",
+      "type": "insert",
+      "prompt": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?",
+      "promptJa": "[1]、[2]、[3]、[4] と記された箇所のうち、次の文が入るのに最もふさわしいのはどれですか。",
+      "insert": "If it does not, check that the power cord behind the screen is plugged in.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "[1]",
+          "ja": "1の位置"
+        },
+        {
+          "key": "B",
+          "text": "[2]",
+          "ja": "2の位置"
+        },
+        {
+          "key": "C",
+          "text": "[3]",
+          "ja": "3の位置"
+        },
+        {
+          "key": "D",
+          "text": "[4]",
+          "ja": "4の位置"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "入れる文の If it does not は「もしそうならなければ」で、直前に「何かが起きる」という文が必要。[2] の直前は The screen on the wall will switch on automatically（スクリーンが自動的に点灯する）で、「点灯しなければ電源コードを確認する」とつながり、文中の the screen も直前の文と一致する。[4] の直前も不具合の話だが、「報告してください」という指示に If it does not は続かない。",
+      "tip": "挿入文の it / this / If ... not などの指す語を先に決め、それを受けられる文の直後を探す。"
+    },
+    {
+      "id": "q3",
+      "type": "detail",
+      "prompt": "What should users do to join a meeting?",
+      "promptJa": "会議に参加するには、利用者は何をすべきですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Call the IT help desk",
+          "ja": "IT ヘルプデスクに電話する"
+        },
+        {
+          "key": "B",
+          "text": "Connect the gray cable",
+          "ja": "灰色のケーブルをつなぐ"
+        },
+        {
+          "key": "C",
+          "text": "Type in a number from an invitation",
+          "ja": "招待に書かれた番号を入力する"
+        },
+        {
+          "key": "D",
+          "text": "Press the button on the screen",
+          "ja": "スクリーンのボタンを押す"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 1,
+          "s": 2
+        }
+      ],
+      "cross": false,
+      "explanation": "第2段落3文目に select \"Join Meeting\" and enter the eight-digit code included in your calendar invitation とある。「招待に記載された8桁のコードを入力する」を言い換えた C が正解。B の灰色のケーブルは第3段落にあるが、プレゼンテーションを共有するときの手順で、会議への参加とは別である。",
+      "tip": "detail 問題は、設問のキーワード（ここでは join a meeting）を本文で探し、その文だけを読んで選ぶ。"
+    },
+    {
+      "id": "q4",
+      "type": "infer",
+      "prompt": "What is suggested about wireless sharing?",
+      "promptJa": "無線での共有について、何が示唆されていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It will become available in the future.",
+          "ja": "今後使えるようになる。"
+        },
+        {
+          "key": "B",
+          "text": "It works only with certain laptops.",
+          "ja": "特定のノートパソコンでしか使えない。"
+        },
+        {
+          "key": "C",
+          "text": "It requires a code from the IT help desk.",
+          "ja": "IT ヘルプデスクから受け取るコードが必要である。"
+        },
+        {
+          "key": "D",
+          "text": "It is faster than using the cable.",
+          "ja": "ケーブルを使うより速い。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        {
+          "d": 0,
+          "p": 2,
+          "s": 1
+        }
+      ],
+      "cross": false,
+      "explanation": "第3段落2文目に Wireless sharing is not available yet, but it is expected to be set up by the end of January（まだ使えないが1月末までに設定される予定）とある。つまり今後使えるようになるので A が正解。B の laptops、C の code と IT help desk は本文に出てくる語だが、無線での共有については何も書かれていない。",
+      "tip": "infer 問題も根拠は本文の1文にある。not ... yet や is expected to のような「今はまだ・これから」を表す表現を言い換えた選択肢を探す。"
+    }
+  ],
+  "glossary": {
+    "equipped with": {
+      "lemma": "be equipped with",
+      "pos": "熟",
+      "ja": "〜を備えている",
+      "note": "",
+      "example": {
+        "en": "All of our hotel rooms are equipped with a small refrigerator.",
+        "ja": "当ホテルの全客室に小型冷蔵庫が備え付けられている。"
+      }
+    },
+    "automatically": {
+      "lemma": "automatically",
+      "pos": "副",
+      "ja": "自動的に",
+      "note": "",
+      "example": {
+        "en": "Your password will expire automatically after ninety days.",
+        "ja": "パスワードは90日後に自動的に失効する。"
+      }
+    },
+    "invitation": {
+      "lemma": "invitation",
+      "pos": "名",
+      "ja": "招待、招待状",
+      "note": "calendar invitation は予定表アプリから送られる会議の招待",
+      "example": {
+        "en": "Please reply to the invitation by Friday.",
+        "ja": "金曜日までに招待状へのお返事をお願いします。"
+      }
+    },
+    "is expected to": {
+      "lemma": "be expected to",
+      "pos": "熟",
+      "ja": "〜する見込みである",
+      "note": "予定や予測を表す",
+      "example": {
+        "en": "The new branch is expected to open in April.",
+        "ja": "新しい支店は4月に開店する見込みだ。"
+      }
+    },
+    "set up": {
+      "lemma": "set up",
+      "pos": "熟",
+      "ja": "設置する、設定する",
+      "note": "",
+      "example": {
+        "en": "The technicians will set up the projector before the seminar.",
+        "ja": "技術者がセミナーの前にプロジェクターを設置する。"
+      }
+    },
+    "is over": {
+      "lemma": "be over",
+      "pos": "熟",
+      "ja": "終わる、終了している",
+      "note": "",
+      "example": {
+        "en": "We can go to lunch once the training session is over.",
+        "ja": "研修が終わったら昼食に行ける。"
+      }
+    },
+    "switch off": {
+      "lemma": "switch off",
+      "pos": "熟",
+      "ja": "（電源を）切る",
+      "note": "turn off とほぼ同じ",
+      "example": {
+        "en": "Please switch off the lights when you leave the office.",
+        "ja": "退社するときは照明を消してください。"
+      }
+    },
+    "so that": {
+      "lemma": "so that",
+      "pos": "熟",
+      "ja": "〜するように",
+      "note": "後ろに主語＋動詞が続く",
+      "example": {
+        "en": "We printed extra copies so that everyone could have one.",
+        "ja": "全員に行き渡るよう、予備を多めに印刷した。"
+      }
+    },
+    "extension": {
+      "lemma": "extension",
+      "pos": "名",
+      "ja": "内線（番号）",
+      "note": "「延長」の意味もある",
+      "example": {
+        "en": "You can reach the sales office at extension 315.",
+        "ja": "営業部には内線315で連絡できる。"
+      }
+    },
+    "attempt to": {
+      "lemma": "attempt to",
+      "pos": "熟",
+      "ja": "〜しようと試みる",
+      "note": "attempt to ＋ 動詞の原形",
+      "example": {
+        "en": "Do not attempt to open the machine while it is running.",
+        "ja": "作動中に機械を開けようとしないでください。"
+      }
+    },
+    "positioned": {
+      "lemma": "position",
+      "pos": "動",
+      "ja": "（適切な位置に）配置する",
+      "note": "名詞の「位置、職」と同じ形",
+      "example": {
+        "en": "The chairs were positioned in a circle for the workshop.",
+        "ja": "研修会のために椅子が円形に並べられた。"
+      }
+    }
+  },
+  "point": {
+    "lead": "設問のキーワードを本文で探し、その周りの1〜2文だけで決める",
+    "items": [
+      {
+        "title": "手順書は「段落＝手順」として地図を作る",
+        "body": "説明書は「始め方 → 参加の仕方 → 共有 → 終わり方」のように段落ごとに手順が分かれている。最初に段落の役割をざっとつかんでおくと、設問のキーワードがどの段落にあるかがすぐ分かる。"
+      },
+      {
+        "title": "本文の語を使った選択肢ほど疑う",
+        "body": "誤答には本文に出てくる語（meeting rooms、gray cable、IT help desk）が混ぜてある。語が一致しているかではなく、設問が問う内容と同じ文の話かどうかで判断し、言い換えた選択肢を正解の候補にする。"
+      },
+      {
+        "title": "挿入文は指す語から位置を決める",
+        "body": "挿入文に it / this / If ... not のような前を受ける語があれば、それが指せる文を探す。指す相手が直前にあり、挿入した文の内容が次の文ともぶつからない位置が正解になる。"
+      }
+    ]
+  }
+}
