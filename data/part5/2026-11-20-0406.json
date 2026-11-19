@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "type": "part5",
+  "id": "2026-11-20-0406",
+  "date": "2026-11-20",
+  "time": "04:06",
+  "createdAt": "2026-11-20T04:06:00+09:00",
+  "sample": false,
+  "focus": "文法7・語彙3",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "form",
+      "prompt": "Ms. Okafor will ------- the revised budget figures to the finance committee before the end of the quarter.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "presentation",
+          "ja": "（名）発表"
+        },
+        {
+          "key": "B",
+          "text": "presentable",
+          "ja": "（形）人前に出せる"
+        },
+        {
+          "key": "C",
+          "text": "present",
+          "ja": "（動）提示する"
+        },
+        {
+          "key": "D",
+          "text": "presently",
+          "ja": "（副）まもなく"
+        }
+      ],
+      "answer": "C",
+      "ja": "オカフォーさんは、四半期末までに改訂した予算の数字を財務委員会に提示する予定だ。",
+      "explanation": "空所の直前は助動詞 will で、直後に the revised budget figures という目的語が続いている。助動詞のあとには動詞の原形が入るので、他動詞の present が正解。presentation は「発表」という名詞で、will のすぐあとには置けない。",
+      "tip": "選択肢が同じ語幹で語尾だけ違えば品詞問題。空所の前が助動詞（will / must / can）なら、まず動詞の原形を探す。"
+    },
+    {
+      "id": "q2",
+      "type": "vocab",
+      "prompt": "Employees who wish to work from home on Fridays must ------- a request to their supervisor at least two days in advance.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "submit",
+          "ja": "提出する"
+        },
+        {
+          "key": "B",
+          "text": "conduct",
+          "ja": "実施する"
+        },
+        {
+          "key": "C",
+          "text": "approve",
+          "ja": "承認する"
+        },
+        {
+          "key": "D",
+          "text": "assign",
+          "ja": "割り当てる"
+        }
+      ],
+      "answer": "A",
+      "ja": "金曜日に在宅勤務を希望する社員は、少なくとも2日前までに上司に申請を提出しなければならない。",
+      "explanation": "主語は「在宅勤務を希望する社員」で、空所のあとは a request to their supervisor（上司への申請）。社員が上司に申請書を出すので submit が合う。approve も request と結びつくが、承認するのは上司の側であり、to their supervisor ともつながらない。",
+      "tip": "語彙問題は、空所の動詞と目的語・前置詞の組み合わせで決める。submit A to B（A を B に提出する）は頻出の形。"
+    },
+    {
+      "id": "q3",
+      "type": "verb",
+      "prompt": "The board of directors has requested that every department ------- its travel expenses by ten percent next year.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "reduces",
+          "ja": "（三単現）減らす"
+        },
+        {
+          "key": "B",
+          "text": "reduce",
+          "ja": "（原形）減らす"
+        },
+        {
+          "key": "C",
+          "text": "reduced",
+          "ja": "（過去形）減らした"
+        },
+        {
+          "key": "D",
+          "text": "will reduce",
+          "ja": "（未来）減らすだろう"
+        }
+      ],
+      "answer": "B",
+      "ja": "取締役会は、来年度、全部署が出張旅費を10パーセント削減するよう求めている。",
+      "explanation": "request（要求する）のあとの that 節では、主語が何であっても動詞を原形にする。そのため reduce が正解。主語の every department が単数なので reduces を選びたくなるが、要求・提案の that 節では三単現の s を付けない。",
+      "tip": "動詞の形の問題では、まず that 節の前の動詞を見る。request / suggest / require / recommend のあとの that 節は動詞の原形。"
+    },
+    {
+      "id": "q4",
+      "type": "prep",
+      "prompt": "------- arrival at the conference center, participants should pick up their name tags and schedules at the registration desk.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Along",
+          "ja": "〜に沿って"
+        },
+        {
+          "key": "B",
+          "text": "Toward",
+          "ja": "〜の方へ"
+        },
+        {
+          "key": "C",
+          "text": "Beneath",
+          "ja": "〜の下に"
+        },
+        {
+          "key": "D",
+          "text": "Upon",
+          "ja": "〜するとすぐに"
+        }
+      ],
+      "answer": "D",
+      "ja": "会議場に到着したらすぐに、参加者は受付で名札と日程表を受け取ること。",
+      "explanation": "空所のあとは arrival（到着）という動作を表す名詞。upon ＋ 動作の名詞で「〜するとすぐに、〜した時点で」という意味になり、文意に合う。Toward は「〜の方へ」という方向を表すので、到着の時点を表すことはできない。",
+      "tip": "前置詞だけが並んでいたら、空所のあとの名詞の意味を見る。upon arrival / upon request / upon completion はまとめて覚える。"
+    },
+    {
+      "id": "q5",
+      "type": "pron",
+      "prompt": "The hotel ------- the annual sales meeting will be held is located just ten minutes from the airport.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "where",
+          "ja": "（関係副詞）〜する場所"
+        },
+        {
+          "key": "B",
+          "text": "which",
+          "ja": "（関係代名詞）〜するもの"
+        },
+        {
+          "key": "C",
+          "text": "whose",
+          "ja": "（関係代名詞）その〜"
+        },
+        {
+          "key": "D",
+          "text": "what",
+          "ja": "（関係代名詞）〜すること"
+        }
+      ],
+      "answer": "A",
+      "ja": "年次営業会議が開かれるホテルは、空港からわずか10分のところにある。",
+      "explanation": "空所のあとの the annual sales meeting will be held は、主語と動詞がそろって欠けたところの無い文になっている。欠けの無い文を続けて場所を説明できるのは関係副詞の where。which は後ろに主語か目的語が欠けた文が続くときに使うので、ここでは入らない。",
+      "tip": "関係詞の問題は、空所のあとの文に欠けがあるかを見る。欠けが無く、先行詞が場所なら where。"
+    },
+    {
+      "id": "q6",
+      "type": "vocab",
+      "prompt": "Because of strong demand, the store has ------- its opening hours and will now close at 10 P.M. on weekdays.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "postponed",
+          "ja": "延期した"
+        },
+        {
+          "key": "B",
+          "text": "delivered",
+          "ja": "配達した"
+        },
+        {
+          "key": "C",
+          "text": "extended",
+          "ja": "延長した"
+        },
+        {
+          "key": "D",
+          "text": "reserved",
+          "ja": "予約した"
+        }
+      ],
+      "answer": "C",
+      "ja": "需要が高いため、その店は営業時間を延長し、平日は午後10時に閉店することになった。",
+      "explanation": "空所の前に Because of strong demand（需要が高いため）、後ろに will now close at 10 P.M.（午後10時まで営業する）とあるので、営業時間を「延ばした」と分かる。postponed は予定や行事を「先に延ばす」ことで、営業時間を長くする意味では使わない。",
+      "tip": "語彙問題でも文の前半と後半を両方読む。理由（Because of ...）と結果（and will now ...）が空所の語を決めることが多い。"
+    },
+    {
+      "id": "q7",
+      "type": "form",
+      "prompt": "Our customer service team aims to respond to all inquiries in a timely and ------- manner.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "profession",
+          "ja": "（名）職業"
+        },
+        {
+          "key": "B",
+          "text": "professionally",
+          "ja": "（副）専門的に"
+        },
+        {
+          "key": "C",
+          "text": "professionalism",
+          "ja": "（名）プロ意識"
+        },
+        {
+          "key": "D",
+          "text": "professional",
+          "ja": "（形）専門家らしい"
+        }
+      ],
+      "answer": "D",
+      "ja": "当社の顧客サービス部門は、すべての問い合わせに迅速かつ丁寧に対応することを目指している。",
+      "explanation": "a timely and ------- manner の形で、空所は and で timely と並び、名詞 manner を修飾している。timely は -ly で終わるが形容詞なので、空所にも形容詞の professional が入る。語尾につられて副詞の professionally を選ばないこと。",
+      "tip": "and の前後は同じ品詞が並ぶ。and の相手の品詞を確かめれば、空所の品詞が決まる。"
+    },
+    {
+      "id": "q8",
+      "type": "conj",
+      "prompt": "Please confirm your hotel reservation by Friday, March 6; -------, your room may be released to other guests.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "although",
+          "ja": "（接）〜だけれども"
+        },
+        {
+          "key": "B",
+          "text": "otherwise",
+          "ja": "（副）さもなければ"
+        },
+        {
+          "key": "C",
+          "text": "because",
+          "ja": "（接）〜なので"
+        },
+        {
+          "key": "D",
+          "text": "unless",
+          "ja": "（接）〜でない限り"
+        }
+      ],
+      "answer": "B",
+      "ja": "3月6日金曜日までにホテルの予約を確認してください。そうしないと、お部屋がほかのお客様に回される場合があります。",
+      "explanation": "空所の直後にカンマがあり、そのあとに文が続くので、空所には接続副詞が入る。前半の「確認してください」と後半の「部屋がほかの客に回される」をつなぐには、「さもなければ」の otherwise が合う。unless も意味は近いが接続詞なので、直後にカンマを置かずに主語と動詞を続ける必要がある。",
+      "tip": "接続詞と接続副詞が混ざっていたら、空所のあとにカンマがあるかを見る。セミコロン＋空所＋カンマなら接続副詞。"
+    },
+    {
+      "id": "q9",
+      "type": "verbal",
+      "prompt": "The facilities manager had the broken air-conditioning unit in the main lobby ------- by an outside contractor last week.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "repaired",
+          "ja": "（過去分詞）修理された"
+        },
+        {
+          "key": "B",
+          "text": "repair",
+          "ja": "（原形）修理する"
+        },
+        {
+          "key": "C",
+          "text": "repairing",
+          "ja": "（現在分詞）修理している"
+        },
+        {
+          "key": "D",
+          "text": "to repair",
+          "ja": "（to 不定詞）修理するために"
+        }
+      ],
+      "answer": "A",
+      "ja": "施設管理責任者は先週、本館ロビーの故障したエアコンを外部の業者に修理してもらった。",
+      "explanation": "have ＋ 目的語 ＋ 過去分詞で「〜を…してもらう」。目的語の the broken air-conditioning unit は「修理される」側で、後ろに by an outside contractor もあるので、過去分詞の repaired が入る。原形の repair は、目的語が人で「その人に〜させる」ときに使う形。",
+      "tip": "have / get ＋ 目的語 ＋ 空所の問題は、目的語が「する側」か「される側」かを見る。される側なら過去分詞。"
+    },
+    {
+      "id": "q10",
+      "type": "vocab",
+      "prompt": "Tickets for the company's year-end banquet are ------- at the reception desk until December 12.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "capable",
+          "ja": "能力がある"
+        },
+        {
+          "key": "B",
+          "text": "eligible",
+          "ja": "資格がある"
+        },
+        {
+          "key": "C",
+          "text": "responsible",
+          "ja": "責任がある"
+        },
+        {
+          "key": "D",
+          "text": "available",
+          "ja": "入手できる"
+        }
+      ],
+      "answer": "D",
+      "ja": "会社の忘年会のチケットは、12月12日まで受付で入手できる。",
+      "explanation": "主語は Tickets（チケット）で、「受付で12月12日まで手に入る」という意味になる available が合う。eligible は「（人が）資格がある」という意味で、主語に人をとるため、チケットには使えない。",
+      "tip": "形容詞の語彙問題は、主語が人か物かを先に確かめる。available は物にも人にも使えるが、eligible / capable は人が主語。"
+    }
+  ],
+  "glossary": {
+    "revised": {
+      "lemma": "revise",
+      "pos": "動",
+      "ja": "改訂する、見直す",
+      "note": "過去分詞 revised は「改訂された」という形容詞として名詞の前に置かれる",
+      "example": {
+        "en": "Please read the revised schedule before Monday's meeting.",
+        "ja": "月曜日の会議の前に、改訂版の日程表を読んでおいてください。"
+      }
+    },
+    "work from home": {
+      "lemma": "work from home",
+      "pos": "熟",
+      "ja": "在宅勤務する",
+      "note": "",
+      "example": {
+        "en": "Staff may work from home twice a week with approval.",
+        "ja": "社員は承認を得れば週2回在宅勤務できる。"
+      }
+    },
+    "in advance": {
+      "lemma": "in advance",
+      "pos": "熟",
+      "ja": "前もって、事前に",
+      "note": "",
+      "example": {
+        "en": "Please book the meeting room at least a week in advance.",
+        "ja": "会議室は少なくとも1週間前までに予約してください。"
+      }
+    },
+    "travel expenses": {
+      "lemma": "travel expenses",
+      "pos": "熟",
+      "ja": "出張旅費、交通費",
+      "note": "",
+      "example": {
+        "en": "The company covers all travel expenses for the training trip.",
+        "ja": "会社は研修旅行の旅費をすべて負担する。"
+      }
+    },
+    "pick up": {
+      "lemma": "pick up",
+      "pos": "熟",
+      "ja": "受け取る、取りに行く",
+      "note": "",
+      "example": {
+        "en": "You can pick up your new ID card at the security office.",
+        "ja": "新しい社員証は警備室で受け取れます。"
+      }
+    },
+    "be held": {
+      "lemma": "be held",
+      "pos": "熟",
+      "ja": "開催される",
+      "note": "hold（開く）の受動態",
+      "example": {
+        "en": "The job fair will be held in the main hall on Saturday.",
+        "ja": "就職説明会は土曜日に大ホールで開かれる。"
+      }
+    },
+    "strong demand": {
+      "lemma": "strong demand",
+      "pos": "熟",
+      "ja": "高い需要",
+      "note": "demand は「需要」。high demand とも言う",
+      "example": {
+        "en": "There is strong demand for the new tablet among students.",
+        "ja": "その新しいタブレットは学生の間で需要が高い。"
+      }
+    },
+    "timely": {
+      "lemma": "timely",
+      "pos": "形",
+      "ja": "時宜を得た、迅速な",
+      "note": "-ly で終わるが副詞ではなく形容詞",
+      "example": {
+        "en": "We appreciate your timely reply to our inquiry.",
+        "ja": "お問い合わせへの迅速なご返信に感謝いたします。"
+      }
+    },
+    "inquiries": {
+      "lemma": "inquiry",
+      "pos": "名",
+      "ja": "問い合わせ",
+      "note": "",
+      "example": {
+        "en": "The front desk handles inquiries about room rates.",
+        "ja": "客室料金についての問い合わせはフロントが受け付けている。"
+      }
+    },
+    "outside contractor": {
+      "lemma": "outside contractor",
+      "pos": "熟",
+      "ja": "外部の業者、外注先",
+      "note": "contractor は「請負業者」",
+      "example": {
+        "en": "The renovation work was done by an outside contractor.",
+        "ja": "改装工事は外部の業者によって行われた。"
+      }
+    },
+    "facilities manager": {
+      "lemma": "facilities manager",
+      "pos": "名",
+      "ja": "施設管理責任者",
+      "note": "建物や設備の管理を担当する職",
+      "example": {
+        "en": "Report any broken lights to the facilities manager.",
+        "ja": "照明の故障は施設管理責任者に報告してください。"
+      }
+    }
+  },
+  "point": {
+    "lead": "選択肢の見た目で型を決め、その型に合わせて見る場所を変える",
+    "items": [
+      {
+        "title": "品詞問題は前後の「つながり」だけを見る",
+        "body": "語尾だけ違う選択肢なら、空所の直前（助動詞・冠詞・and の相手）と直後（目的語・名詞）だけで品詞が決まる。timely のように -ly で終わる形容詞にだまされないよう、相手の語の品詞を確かめる。"
+      },
+      {
+        "title": "接続の問題は空所のあとの形を見る",
+        "body": "接続詞・接続副詞・関係詞が並んでいたら、空所のあとにカンマがあるか、文に欠けがあるかを見る。カンマがあれば接続副詞、欠けの無い文が続いて先行詞が場所なら where、と形で絞ってから意味を確かめる。"
+      },
+      {
+        "title": "語彙問題は主語と目的語から決める",
+        "body": "語彙問題は空所の前後だけで選ばず、主語が人か物か、目的語に何が来ているかを確かめる。submit a request、tickets are available のように、主語・目的語との組み合わせで自然なものが正解になる。"
+      }
+    ]
+  }
+}

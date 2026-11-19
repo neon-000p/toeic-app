@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part5-history",
-  "updatedAt": "2026-11-13T04:08:00+09:00",
+  "updatedAt": "2026-11-20T04:09:19+09:00",
   "items": [
+    {
+      "id": "2026-11-20-0406",
+      "date": "2026-11-20",
+      "focus": "文法7・語彙3",
+      "types": [
+        "form",
+        "vocab",
+        "verb",
+        "prep",
+        "pron",
+        "vocab",
+        "form",
+        "conj",
+        "verbal",
+        "vocab"
+      ],
+      "topics": [
+        "助動詞のあとの動詞原形",
+        "要求の that 節の動詞原形（仮定法現在）",
+        "upon ＋ 動作の名詞",
+        "場所を先行詞とする関係副詞 where",
+        "and で並ぶ形容詞（-ly で終わる形容詞 timely）",
+        "接続副詞 otherwise",
+        "have ＋ 目的語 ＋ 過去分詞"
+      ]
+    },
     {
       "id": "2026-11-13-0408",
       "date": "2026-11-13",
