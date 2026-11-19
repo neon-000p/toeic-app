@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-19-1645",
+  "date": "2026-11-19",
+  "time": "16:45",
+  "createdAt": "2026-11-19T16:45:00+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Oil Prices Fall as U.S. Fuel Stocks Rise",
+    "ja": "米在庫増で原油価格が下落"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Oil prices fell more than 1% on Wednesday after new data showed a large increase in U.S. crude oil stocks.",
+            "ja": "水曜日、米国の原油在庫が大きく増えたことを示す新たなデータを受け、原油価格は1%余り下落した。"
+          },
+          {
+            "en": "Gasoline inventory also grew more than analysts had expected.",
+            "ja": "ガソリン在庫もアナリストの予想以上に増えた。"
+          },
+          {
+            "en": "The global benchmark price dropped to about $92 a barrel.",
+            "ja": "国際的な指標価格は1バレル約92ドルまで下がった。"
+          },
+          {
+            "en": "The main U.S. price fell even further and closed at its lowest level since late August.",
+            "ja": "米国の主要な価格はさらに大きく下げ、8月下旬以来の安値で取引を終えた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The decline came despite ongoing fighting between the United States and Iran.",
+            "ja": "この下落は、米国とイランの戦闘が続いている中で起きた。"
+          },
+          {
+            "en": "Attacks on ships in the Strait of Hormuz, a key route for oil tankers, have continued.",
+            "ja": "石油タンカーの重要な航路であるホルムズ海峡では、船への攻撃が続いている。"
+          },
+          {
+            "en": "However, traders are paying more attention to a possible supply surplus, which means producers are pumping more oil than buyers need.",
+            "ja": "しかしトレーダーは、供給過剰の可能性、つまり生産者が買い手の必要量より多くの原油をくみ上げていることのほうに注目している。"
+          },
+          {
+            "en": "Exports from the Middle East have increased, and shipping rates for tankers have dropped sharply.",
+            "ja": "中東からの輸出は増え、タンカーの運賃は急落している。"
+          },
+          {
+            "en": "As a result, both major oil prices are on track to lose about 20% this month.",
+            "ja": "その結果、主要な2つの原油価格はいずれも今月、約20%下落する見通しだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What did the global benchmark price drop to on Wednesday?",
+      "promptJa": "水曜日、国際的な指標価格はいくらまで下がりましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About $20 a barrel",
+          "ja": "1バレル約20ドル"
+        },
+        {
+          "key": "B",
+          "text": "About $83 a barrel",
+          "ja": "1バレル約83ドル"
+        },
+        {
+          "key": "C",
+          "text": "About $92 a barrel",
+          "ja": "1バレル約92ドル"
+        },
+        {
+          "key": "D",
+          "text": "About $120 a barrel",
+          "ja": "1バレル約120ドル"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落3文目に The global benchmark price dropped to about $92 a barrel. とある。(A) の 20 は第2段落最後の文にある「今月の下落率（約20%）」で、単位も意味も違う本文の別の数字を使った引っかけ。(B) $83 と (D) $120 は本文に出てこない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "設問の主語（global benchmark price）と同じ語句がある文を探し、その文の数字だけを拾う。% と $ のように単位が違う数字が並ぶ記事では、単位まで照合する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why did oil prices fall despite the fighting?",
+      "promptJa": "記事によると、戦闘が続いているのに原油価格が下がったのはなぜですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Traders focused on a possible supply surplus.",
+          "ja": "トレーダーが供給過剰の可能性に注目した"
+        },
+        {
+          "key": "B",
+          "text": "The fighting between the two countries ended.",
+          "ja": "両国の戦闘が終わった"
+        },
+        {
+          "key": "C",
+          "text": "Airlines decided to buy less fuel.",
+          "ja": "航空会社が燃料の購入を減らした"
+        },
+        {
+          "key": "D",
+          "text": "Shipping rates for tankers rose sharply.",
+          "ja": "タンカーの運賃が急上昇した"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正解は (A)。第2段落3文目に However, traders are paying more attention to a possible supply surplus とあり、戦闘よりも「供給が余っていること」が重視されたと分かる。paying more attention to を focused on と言い換えている。(B) は第2段落1文目の ongoing fighting（続いている戦闘）と逆の内容。(C) 航空会社の話は本文にない。(D) は第2段落4文目の shipping rates ... have dropped sharply（急落した）と逆。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "despite（〜にもかかわらず）が出てくる記事では、直後の However の文に「本当の理由」が来ることが多い。逆接の語を目印に根拠文を探す。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "inventory",
+      "pos": "名",
+      "ja": "在庫",
+      "gloss": "",
+      "example": {
+        "en": "The warehouse manager checks the inventory every Monday.",
+        "ja": "倉庫の責任者は毎週月曜に在庫を確認する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "analyst",
+      "pos": "名",
+      "ja": "アナリスト、分析担当者",
+      "gloss": "",
+      "example": {
+        "en": "Several analysts expect the company to raise its prices.",
+        "ja": "複数のアナリストは、その会社が値上げすると予想している。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "benchmark",
+      "pos": "名",
+      "ja": "指標、基準",
+      "gloss": "（＝ほかと比べるときの目安になる数字のこと）",
+      "example": {
+        "en": "We use last year's sales as a benchmark for this year's goals.",
+        "ja": "今年の目標の基準として昨年の売上を使う。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "decline",
+      "pos": "名・動",
+      "ja": "下落、減少／減る",
+      "gloss": "",
+      "example": {
+        "en": "The store saw a decline in visitors during the rainy season.",
+        "ja": "その店は梅雨の時期に来店客の減少に見舞われた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "ongoing",
+      "pos": "形",
+      "ja": "進行中の、継続している",
+      "gloss": "",
+      "example": {
+        "en": "The ongoing renovation will be finished by the end of March.",
+        "ja": "進行中の改装工事は3月末までに終わる予定だ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "surplus",
+      "pos": "名",
+      "ja": "余剰、余り",
+      "gloss": "（＝必要な量より多く余っていること）",
+      "example": {
+        "en": "The factory sold its surplus materials to a local supplier.",
+        "ja": "その工場は余った資材を地元の業者に売った。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "producer",
+      "pos": "名",
+      "ja": "生産者、メーカー",
+      "gloss": "",
+      "example": {
+        "en": "The coffee producer signed a new contract with a hotel chain.",
+        "ja": "そのコーヒー生産者はホテルチェーンと新たな契約を結んだ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "on track to",
+      "pos": "熟",
+      "ja": "〜する見通しで、順調に〜しそうで",
+      "gloss": "",
+      "example": {
+        "en": "The project is on track to finish ahead of schedule.",
+        "ja": "そのプロジェクトは予定より早く終わる見通しだ。"
+      }
+    }
+  ],
+  "glossary": {
+    "prices": {
+      "lemma": "price",
+      "pos": "名",
+      "ja": "価格",
+      "note": ""
+    },
+    "data": {
+      "lemma": "data",
+      "pos": "名",
+      "ja": "データ、統計",
+      "note": "ここでは政府などが出す在庫の統計"
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "増加",
+      "note": ""
+    },
+    "crude": {
+      "lemma": "crude",
+      "pos": "形",
+      "ja": "未精製の",
+      "note": "crude oil で「原油」"
+    },
+    "stocks": {
+      "lemma": "stock",
+      "pos": "名",
+      "ja": "在庫",
+      "note": "株式の意味もあるが、ここでは在庫"
+    },
+    "gasoline": {
+      "lemma": "gasoline",
+      "pos": "名",
+      "ja": "ガソリン",
+      "note": ""
+    },
+    "inventory": {
+      "lemma": "inventory",
+      "pos": "名",
+      "ja": "在庫",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想した",
+      "note": ""
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界的な",
+      "note": ""
+    },
+    "benchmark": {
+      "lemma": "benchmark",
+      "pos": "名",
+      "ja": "指標",
+      "note": "価格の目安となる代表的な銘柄"
+    },
+    "barrel": {
+      "lemma": "barrel",
+      "pos": "名",
+      "ja": "バレル",
+      "note": "原油の量の単位（約159リットル）"
+    },
+    "closed": {
+      "lemma": "close",
+      "pos": "動",
+      "ja": "（取引を）終えた",
+      "note": "市場の文脈では「終値をつける」"
+    },
+    "level": {
+      "lemma": "level",
+      "pos": "名",
+      "ja": "水準",
+      "note": ""
+    },
+    "decline": {
+      "lemma": "decline",
+      "pos": "名",
+      "ja": "下落",
+      "note": ""
+    },
+    "despite": {
+      "lemma": "despite",
+      "pos": "前",
+      "ja": "〜にもかかわらず",
+      "note": "後ろには名詞が来る"
+    },
+    "ongoing": {
+      "lemma": "ongoing",
+      "pos": "形",
+      "ja": "進行中の",
+      "note": ""
+    },
+    "route": {
+      "lemma": "route",
+      "pos": "名",
+      "ja": "航路、経路",
+      "note": ""
+    },
+    "tankers": {
+      "lemma": "tanker",
+      "pos": "名",
+      "ja": "タンカー",
+      "note": "石油などを運ぶ船"
+    },
+    "traders": {
+      "lemma": "trader",
+      "pos": "名",
+      "ja": "トレーダー",
+      "note": "市場で売買する人"
+    },
+    "attention": {
+      "lemma": "attention",
+      "pos": "名",
+      "ja": "注目",
+      "note": "pay attention to で「〜に注目する」"
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "surplus": {
+      "lemma": "surplus",
+      "pos": "名",
+      "ja": "余剰",
+      "note": ""
+    },
+    "producers": {
+      "lemma": "producer",
+      "pos": "名",
+      "ja": "生産者",
+      "note": ""
+    },
+    "pumping": {
+      "lemma": "pump",
+      "pos": "動",
+      "ja": "くみ上げている",
+      "note": ""
+    },
+    "exports": {
+      "lemma": "export",
+      "pos": "名",
+      "ja": "輸出",
+      "note": ""
+    },
+    "shipping": {
+      "lemma": "shipping",
+      "pos": "名",
+      "ja": "海運、輸送",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "料金、運賃",
+      "note": "shipping rates で「運賃」"
+    },
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "on track to": {
+      "lemma": "on track to",
+      "pos": "熟",
+      "ja": "〜する見通しで",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "現在完了形の「結果」用法（have increased / have dropped：過去の変化が今の状態につながる）",
+    "quote": "Exports from the Middle East have increased, and shipping rates for tankers have dropped sharply.",
+    "quoteJa": "中東からの輸出は増え、タンカーの運賃は急落している。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "have increased / have dropped は〈have＋過去分詞〉の現在完了形。「（過去のある時点から）増えて、今は多い状態にある」「下がって、今は低い状態にある」と、過去の変化が現在の状態につながっていることを表す「結果」用法。いつ増えたかよりも「今どうなっているか」に重点がある。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "過去形 Exports increased last month. は「先月増えた」という過去の出来事だけを述べ、今も多いかどうかは言っていない。現在完了 Exports have increased. は「増えた結果、今は多い」。そのため現在完了は last month / yesterday / in 2020 のような「はっきりした過去の時点」とは一緒に使えない（× have increased last month）。recently / this year / since ～ とは一緒に使える。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では文中の時の語句が決め手になる。since 2020 / for three years / so far / recently があれば現在完了（has risen など）を、ago / last week / in 2019 があれば過去形を選ぶ。Part 7 では Sales have increased. から「現在は売上が以前より多い」と読み取らせる設問が出る。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Our shipping costs have dropped since we changed carriers.（運送会社を替えてから、当社の配送費は下がっている。）／The number of applicants has increased this year.（今年は応募者の数が増えている。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "11月18日、米国の原油とガソリンの在庫が予想以上に増え、北海ブレント原油先物は1%余り下げて1バレル約92ドル、米WTI先物は8月下旬以来の安値で引けた。両指標とも11月は約20%の下落ペースだ。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "原油価格は「供給が止まる不安」と「実際に余っている量」の綱引きで決まる。不安が強いと値段に地政学リスクの上乗せ(risk premium)が乗るが、米国の週間在庫統計で在庫が積み上がると、市場は「足りている」と見て上乗せを削る。今回はホルムズ海峡で攻撃が続く中、中東からの輸出増とタンカー運賃の急落が供給の多さを示した。"
+    },
+    {
+      "heading": "📌 3. 売り手と買い手ではどうだったか",
+      "body": "売り手側の英シェルは2026年10月29日の7〜9月期決算で、調整後利益が108億ドルに増えた一方、2026年の設備投資(capital expenditure)見通しを240億〜260億ドルから230億〜250億ドルへ下げた。買い手側の米デルタ航空は10月9日の決算で、燃料費が前年同期比62%増の約41億ドルに膨らみ、1ガロン平均3.61ドル（前年2.25ドル）だった。通期の1株利益見通しも6.50〜7.50ドルから5.10〜5.60ドルへ下げた。原油高で売り手は利益を伸ばしつつ投資を絞り、買い手は見通しの下方修正を迫られた。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "JALは2026年10月15日、11〜12月発券分の国際線燃油サーチャージ(fuel surcharge)の引き上げを国に申請し、ANAも引き上げた。基準となる8〜9月のシンガポール市場のジェット燃料は平均1バレル159.19ドルで、北米・欧州線は片道6万2000円。サーチャージは2カ月前の燃料価格で決まるため、11月の原油安が反映されるのは次回以降の改定になる。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "risk premium",
+      "pos": "名",
+      "ja": "リスクの上乗せ分",
+      "gloss": "（＝危険があるぶん、価格や金利に上乗せされる部分のこと）",
+      "example": {
+        "en": "Investors demand a higher risk premium for loans to new companies.",
+        "ja": "投資家は新しい会社への融資に、より高いリスクの上乗せを求める。"
+      }
+    },
+    {
+      "term": "capital expenditure",
+      "pos": "名",
+      "ja": "設備投資",
+      "gloss": "（＝工場や機械など、長く使う設備にかけるお金のこと）",
+      "example": {
+        "en": "The hotel plans to increase its capital expenditure on new rooms next year.",
+        "ja": "そのホテルは来年、新しい客室への設備投資を増やす予定だ。"
+      }
+    },
+    {
+      "term": "fuel surcharge",
+      "pos": "名",
+      "ja": "燃油サーチャージ",
+      "gloss": "（＝燃料価格に応じて運賃に追加される料金のこと）",
+      "example": {
+        "en": "The delivery company added a fuel surcharge to every invoice.",
+        "ja": "その配送会社はすべての請求書に燃料の追加料金を加えた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Oil prices fall as higher U.S. crude stocks temper supply risks",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/18/oil-prices-fall-as-higher-us-crude-stocks-temper-supply-risks.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Oil down 1%, expectations of supply surplus",
+      "publisher": "RTÉ",
+      "url": "https://www.rte.ie/news/business/2026/1118/1599640-world-oil-prices/",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Shell's third-quarter earnings rise on record refining margins, stronger gas results",
+      "publisher": "Oil & Gas Journal",
+      "url": "https://www.ogj.com/general-interest/companies/news/55415305/shells-third-quarter-earnings-rise-on-record-refining-margins-stronger-gas-results",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "Rising fuel costs slashed Delta's profit outlook despite strong demand",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2026/10/9/rising-fuel-costs-slashed-deltas-profit-outlook-despite-strong-demand",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "JAL・JTA 国際線燃油サーチャージ 2026年11〜12月発券分（10月15日付）",
+      "publisher": "Aviation Wire",
+      "url": "https://www.aviationwire.jp/archives/352484",
+      "date": "2026-10-15"
+    }
+  ]
+}
