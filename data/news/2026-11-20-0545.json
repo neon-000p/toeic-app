@@ -504,5 +504,23 @@
       "url": "https://logistics.jp/pickup/2025/04/29/54040/",
       "date": "2025-04-29"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-20-0545/00.mp3",
+      "audio/2026-11-20-0545/01.mp3",
+      "audio/2026-11-20-0545/02.mp3",
+      "audio/2026-11-20-0545/03.mp3",
+      "audio/2026-11-20-0545/04.mp3",
+      "audio/2026-11-20-0545/05.mp3",
+      "audio/2026-11-20-0545/06.mp3",
+      "audio/2026-11-20-0545/07.mp3",
+      "audio/2026-11-20-0545/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 234156,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-19T20:51:14.605Z",
+    "trimmed": true
+  }
 }
