@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-21-0545",
+  "date": "2026-11-21",
+  "time": "05:45",
+  "createdAt": "2026-11-21T05:45:00+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail & Consumer",
+  "sample": false,
+  "title": {
+    "en": "Walmart Works to Keep Prices Low as Fuel Costs Rise",
+    "ja": "ウォルマート、燃料高でも低価格の維持に努める"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Walmart, the largest U.S. retailer, raised its sales forecast for the full year on Thursday.",
+            "ja": "米小売最大手のウォルマートは木曜日、通期の売上高見通しを引き上げた。"
+          },
+          {
+            "en": "Sales in the three months through October rose 5.2% to $188.8 billion.",
+            "ja": "10月までの3カ月間の売上高は5.2%増の1,888億ドルとなった。"
+          },
+          {
+            "en": "Online sales in the U.S. grew 23% as more shoppers ordered pickup and delivery from stores.",
+            "ja": "店舗からの受け取りや配達を注文する買い物客が増え、米国のネット販売は23%伸びた。"
+          },
+          {
+            "en": "However, the company said high fuel prices are making its business more expensive.",
+            "ja": "しかし同社は、燃料価格の高さが事業のコストを押し上げていると述べた。"
+          },
+          {
+            "en": "It now expects more than $2 billion in extra fuel-related costs this year.",
+            "ja": "同社は現在、今年は燃料関連の追加費用が20億ドルを超えると見込んでいる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Diesel, the fuel used by most trucks, has stayed close to record levels at about $6 a gallon.",
+            "ja": "ほとんどのトラックが使う燃料である軽油は、1ガロン約6ドルと記録的な水準に近い値が続いている。"
+          },
+          {
+            "en": "The chief executive said these costs eventually work their way into the price of goods.",
+            "ja": "最高経営責任者（CEO）は、こうした費用はいずれ商品の価格に織り込まれていくと述べた。"
+          },
+          {
+            "en": "Still, he said the company would keep prices as low as possible for customers.",
+            "ja": "それでも同氏は、顧客のためにできるだけ価格を低く保つと語った。"
+          },
+          {
+            "en": "This matters because the holiday shopping season is about to begin.",
+            "ja": "これが重要なのは、年末商戦がまもなく始まるからだ。"
+          },
+          {
+            "en": "Shoppers are watching their budgets closely, and retailers are competing hard to attract them with discounts.",
+            "ja": "買い物客は予算を注意深く見ており、小売各社は値引きで客を呼び込もうと激しく競い合っている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did Walmart's online sales in the U.S. grow?",
+      "promptJa": "ウォルマートの米国でのネット販売はどれだけ伸びましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2%",
+          "ja": "2%"
+        },
+        {
+          "key": "B",
+          "text": "5.2%",
+          "ja": "5.2%"
+        },
+        {
+          "key": "C",
+          "text": "23%",
+          "ja": "23%"
+        },
+        {
+          "key": "D",
+          "text": "32%",
+          "ja": "32%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落3文目に \"Online sales in the U.S. grew 23%\" とあるので正解は (C)。(B) の5.2%は「10月までの3カ月間の売上高全体」の伸び率で、ネット販売の数字ではない（本文の別の数字）。(A) は追加費用の「20億ドル（$2 billion）」の2につられた誤り、(D) は23を入れ替えた数字で、どちらも本文に出てこない。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字を問う設問では、何の数字か（売上全体か、ネット販売か）を主語まで確認してから選ぶ。本文に複数の％が出るときは特に注意する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why does the company expect higher costs this year?",
+      "promptJa": "同社はなぜ今年の費用が増えると見込んでいるのですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It opened many new stores.",
+          "ja": "新しい店を多く開いた"
+        },
+        {
+          "key": "B",
+          "text": "Fuel prices have stayed high.",
+          "ja": "燃料価格が高いままだ"
+        },
+        {
+          "key": "C",
+          "text": "Fewer shoppers ordered online.",
+          "ja": "ネットで注文する客が減った"
+        },
+        {
+          "key": "D",
+          "text": "It stopped offering discounts.",
+          "ja": "値引きをやめた"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落4〜5文目に \"high fuel prices are making its business more expensive\" \"more than $2 billion in extra fuel-related costs\" とあり、第2段落1文目でも軽油が記録的な水準に近いと述べている。これを言い換えた (B) が正解。(A) の新規出店は本文にない情報。(C) は本文と逆で、ネット販売は23%伸びている。(D) も本文にない情報で、本文は小売各社が値引きで競っていると述べている。",
+      "evidence": {
+        "p": 0,
+        "s": 4
+      },
+      "tip": "理由を問う設問では、cost / expensive / because など原因を示す語の周辺を探す。正解は fuel prices → Fuel prices have stayed high のように本文を短く言い換えたものが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "retailer",
+      "pos": "名",
+      "ja": "小売業者、小売店",
+      "gloss": "",
+      "example": {
+        "en": "The retailer will open two new outlets next spring.",
+        "ja": "その小売業者は来春、新たに2店舗を開く。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "forecast",
+      "pos": "名・動",
+      "ja": "予測、見通し／予測する",
+      "gloss": "",
+      "example": {
+        "en": "The company lowered its sales forecast for the second half.",
+        "ja": "その会社は下半期の売上見通しを引き下げた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "delivery",
+      "pos": "名",
+      "ja": "配達、配送",
+      "gloss": "",
+      "example": {
+        "en": "Free delivery is available for orders over $50.",
+        "ja": "50ドルを超える注文は配送無料です。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "eventually",
+      "pos": "副",
+      "ja": "最終的には、いずれ",
+      "gloss": "",
+      "example": {
+        "en": "The project was delayed, but it was eventually completed.",
+        "ja": "そのプロジェクトは遅れたが、最終的には完了した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "work their way into",
+      "pos": "熟",
+      "ja": "（徐々に）〜に入り込む、〜に反映される",
+      "gloss": "（＝時間をかけて少しずつ〜の中に入っていくこと）",
+      "example": {
+        "en": "Higher shipping costs will work their way into our prices next year.",
+        "ja": "送料の上昇は来年、当社の価格に反映されるだろう。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "budget",
+      "pos": "名",
+      "ja": "予算",
+      "gloss": "",
+      "example": {
+        "en": "Please submit the travel budget by Friday.",
+        "ja": "金曜までに出張の予算を提出してください。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "attract",
+      "pos": "動",
+      "ja": "引きつける、呼び込む",
+      "gloss": "",
+      "example": {
+        "en": "The new menu helped the restaurant attract more customers.",
+        "ja": "新メニューのおかげで、その店はより多くの客を呼び込めた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "discount",
+      "pos": "名・動",
+      "ja": "値引き、割引／値引きする",
+      "gloss": "",
+      "example": {
+        "en": "Members receive a 10% discount on all items.",
+        "ja": "会員はすべての商品が10%割引になる。"
+      }
+    }
+  ],
+  "glossary": {
+    "retailer": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "raised": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "引き上げた",
+      "note": "raise は「〜を上げる」（他動詞）。rise（上がる）と区別"
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "見通し、予測",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇した",
+      "note": "rise-rose-risen（自動詞）"
+    },
+    "grew": {
+      "lemma": "grow",
+      "pos": "動",
+      "ja": "伸びた",
+      "note": "grow-grew-grown"
+    },
+    "shoppers": {
+      "lemma": "shopper",
+      "pos": "名",
+      "ja": "買い物客",
+      "note": ""
+    },
+    "ordered": {
+      "lemma": "order",
+      "pos": "動",
+      "ja": "注文した",
+      "note": ""
+    },
+    "pickup": {
+      "lemma": "pickup",
+      "pos": "名",
+      "ja": "店頭受け取り",
+      "note": "ネットで注文し店で受け取ること"
+    },
+    "delivery": {
+      "lemma": "delivery",
+      "pos": "名",
+      "ja": "配達",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "expensive": {
+      "lemma": "expensive",
+      "pos": "形",
+      "ja": "費用がかかる",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込む",
+      "note": ""
+    },
+    "extra": {
+      "lemma": "extra",
+      "pos": "形",
+      "ja": "追加の",
+      "note": ""
+    },
+    "fuel-related": {
+      "lemma": "fuel-related",
+      "pos": "形",
+      "ja": "燃料関連の",
+      "note": "-related で「〜関連の」"
+    },
+    "diesel": {
+      "lemma": "diesel",
+      "pos": "名",
+      "ja": "軽油、ディーゼル燃料",
+      "note": "トラックなどに使う燃料"
+    },
+    "record": {
+      "lemma": "record",
+      "pos": "形",
+      "ja": "記録的な",
+      "note": "名詞の前に置いて「過去最高の」"
+    },
+    "levels": {
+      "lemma": "level",
+      "pos": "名",
+      "ja": "水準",
+      "note": ""
+    },
+    "gallon": {
+      "lemma": "gallon",
+      "pos": "名",
+      "ja": "ガロン",
+      "note": "米国では約3.8リットル"
+    },
+    "chief executive": {
+      "lemma": "chief executive",
+      "pos": "名",
+      "ja": "最高経営責任者",
+      "note": "CEO とも言う"
+    },
+    "eventually": {
+      "lemma": "eventually",
+      "pos": "副",
+      "ja": "いずれ、最終的に",
+      "note": ""
+    },
+    "work their way into": {
+      "lemma": "work one's way into",
+      "pos": "熟",
+      "ja": "〜に入り込む",
+      "note": ""
+    },
+    "goods": {
+      "lemma": "goods",
+      "pos": "名",
+      "ja": "商品、品物",
+      "note": "常に複数形"
+    },
+    "still": {
+      "lemma": "still",
+      "pos": "副",
+      "ja": "それでも",
+      "note": "文頭で「それでも」"
+    },
+    "customers": {
+      "lemma": "customer",
+      "pos": "名",
+      "ja": "顧客",
+      "note": ""
+    },
+    "holiday shopping season": {
+      "lemma": "holiday shopping season",
+      "pos": "名",
+      "ja": "年末商戦",
+      "note": "感謝祭からクリスマスごろまで"
+    },
+    "budgets": {
+      "lemma": "budget",
+      "pos": "名",
+      "ja": "予算",
+      "note": ""
+    },
+    "closely": {
+      "lemma": "closely",
+      "pos": "副",
+      "ja": "注意深く",
+      "note": ""
+    },
+    "competing": {
+      "lemma": "compete",
+      "pos": "動",
+      "ja": "競争している",
+      "note": ""
+    },
+    "attract": {
+      "lemma": "attract",
+      "pos": "動",
+      "ja": "引きつける",
+      "note": ""
+    },
+    "discounts": {
+      "lemma": "discount",
+      "pos": "名",
+      "ja": "値引き",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "as＋形容詞＋as possible（できるだけ〜：原級を使った定型表現）",
+    "quote": "Still, he said the company would keep prices as low as possible for customers.",
+    "quoteJa": "それでも同氏は、顧客のためにできるだけ価格を低く保つと語った。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "as low as possible は「as＋形容詞（副詞）の原級＋as possible」で「できるだけ〜」を表す定型表現。keep prices low（価格を低く保つ）の low を as ... as possible ではさみ、「価格をできるだけ低く保つ」となる。possible の代わりに主語＋can を使い、as low as it can（できる限り低く）と言うこともできる。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "The company would keep prices as low as possible. ＝ The company would keep prices as low as it could.（時制の一致で can → could）。比較：as soon as possible（できるだけ早く、ASAP）、as many customers as possible（できるだけ多くの客）のように、名詞を伴うときは as many/much＋名詞＋as possible の語順になる。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では as ------- as possible の空所に原級（形容詞・副詞）を入れる問題がよく出る。比較級（lower）や最上級（lowest）を選ぶひっかけに注意。また、動詞を修飾するときは副詞（as quickly as possible）、keep / make＋O＋C の C の位置なら形容詞（keep prices as low as possible）と、品詞の判断も問われる。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Please reply as soon as possible.（できるだけ早くご返信ください。）／We will keep the delivery time as short as possible.（配送時間をできるだけ短く保ちます。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "ウォルマートは11月19日、8〜10月期の売上高が5.2%増の1,888億ドルだったと発表し、通期の売上高見通しを4.9〜5.2%増に引き上げた。一方、燃料関連の費用は当初の想定より20億ドル超多くなる見込みだ。"
+    },
+    {
+      "heading": "📌 2. 燃料費が値段に届く仕組み",
+      "body": "トラックの燃料である軽油の全米平均は、11月9日の週に1ガロン6.127ドルと、この時期としては過去最高の水準にある。燃料費は店への配送費や仕入れ先の運賃に上乗せされ、最終的に売上原価(cost of goods)を押し上げる。小売企業は、その上昇分を販売価格に転嫁する(pass on)か、自社の利益を削って吸収するかを選ぶことになる。"
+    },
+    {
+      "heading": "📌 3. 他社の燃料高への対応",
+      "body": "アマゾンは2026年4月17日、米国とカナダの出品者が払う配送代行手数料に3.5%の燃料サーチャージ(fuel surcharge)を上乗せした。燃料費の高止まりが続くとして、2027年には対象を広げる方針だ。一方ターゲットは、2026年3月に3,000品目超を値下げするなど、この1年で数千品目の値段を下げてきた。11月18日に発表した8〜10月期は売上高が7.1%増の271億ドルとなり、5年超ぶりの高い伸びを記録した。アマゾンは費用を取引先に負担させ、ターゲットは値下げで客を取り戻した点が対照的だ。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "セブン-イレブン・ジャパンは2026年2月、北海道でおにぎりや弁当など約60品目の製造を1日3回から2回にまとめ、製造と物流の費用を減らす取り組みを始めた。9月には東北・四国・千葉県の一部の約1,750店に広げ、2027年春をめどに全国への展開を検討している。値上げに頼らず、運ぶ回数と作る回数の見直しで費用の増加を抑えるやり方だ。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "cost of goods",
+      "pos": "名",
+      "ja": "売上原価",
+      "gloss": "（＝売った商品を仕入れたり作ったりするのにかかった費用のこと）",
+      "example": {
+        "en": "Rising fuel prices increased our cost of goods this quarter.",
+        "ja": "燃料価格の上昇で、今期の売上原価が増えた。"
+      }
+    },
+    {
+      "term": "pass on",
+      "pos": "熟",
+      "ja": "（費用などを）転嫁する",
+      "gloss": "（＝増えた費用を値上げなどで相手に負担してもらうこと）",
+      "example": {
+        "en": "The supplier decided to pass on higher material costs to its clients.",
+        "ja": "その納入業者は材料費の上昇分を顧客に転嫁することにした。"
+      }
+    },
+    {
+      "term": "fuel surcharge",
+      "pos": "名",
+      "ja": "燃料サーチャージ",
+      "gloss": "（＝燃料価格の上昇分を運賃や手数料に上乗せする追加料金のこと）",
+      "example": {
+        "en": "The airline added a fuel surcharge to all international tickets.",
+        "ja": "その航空会社はすべての国際線航空券に燃料サーチャージを上乗せした。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Walmart Raises FY2027 Forecast as Third-Quarter Revenue Climbs 5.2% to $188.8 Billion",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/walmart-raises-fy2027-forecast-third-133101832.html",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Amazon to add fuel and logistics surcharges",
+      "publisher": "Digital Commerce 360",
+      "url": "https://www.digitalcommerce360.com/2026/04/03/amazon-to-add-fuel-and-logistics-surcharges/",
+      "date": "2026-04-03"
+    },
+    {
+      "title": "Target cuts prices on 3,000 items as stubborn inflation keeps US consumers on edge",
+      "publisher": "BNN Bloomberg (Reuters)",
+      "url": "https://www.bnnbloomberg.ca/business/2026/03/11/target-cuts-prices-on-3000-items-as-stubborn-inflation-keeps-us-consumers-on-edge/",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "セブン-イレブンの国内物流再構築（北海道の製造1日2回化を他地域へ拡大）",
+      "publisher": "ニュースイッチ（日刊工業新聞）",
+      "url": "https://newswitch.jp/p/49031",
+      "date": "2026-04-24"
+    }
+  ]
+}
