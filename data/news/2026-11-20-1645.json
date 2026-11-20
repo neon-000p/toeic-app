@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-20-1645",
+  "date": "2026-11-20",
+  "time": "16:45",
+  "createdAt": "2026-11-20T16:45:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "AI Worries Push U.S. Stocks to Longest Losing Streak Since 2024",
+    "ja": "AI懸念で米国株、2024年以来の長い連敗"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "U.S. stocks fell sharply on Thursday as investors kept selling AI shares.",
+            "ja": "木曜日の米国株は、投資家がAI関連株の売りを続けたことで大きく下落した。"
+          },
+          {
+            "en": "The S&P 500 dropped 2%, its sixth loss in a row and its longest losing streak since 2024.",
+            "ja": "S&P500は2%下落し、6営業日連続の値下がりと、2024年以来最も長い連敗となった。"
+          },
+          {
+            "en": "More than 90% of the stocks in the index lost value.",
+            "ja": "指数を構成する銘柄の9割超が値下がりした。"
+          },
+          {
+            "en": "The decline came on the same day that Anthropic, a fast-growing AI company, began trading.",
+            "ja": "この下落は、急成長するAI企業のAnthropicが株式の取引を始めたのと同じ日に起きた。"
+          },
+          {
+            "en": "Its shares opened 34% above the $83 offering price, but the strong start did not lift the market.",
+            "ja": "同社株は公開価格の83ドルを34%上回って取引が始まったが、その好調な滑り出しも相場全体を押し上げることはなかった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Many investors worry that AI stocks have risen too far and too fast.",
+            "ja": "多くの投資家は、AI関連株があまりにも大きく、あまりにも急速に上がりすぎたと懸念している。"
+          },
+          {
+            "en": "They doubt that the technology will earn enough profit to justify the huge amounts that companies spend on data centers.",
+            "ja": "彼らは、企業がデータセンターに投じている巨額の資金に見合うだけの利益をこの技術が稼げるのか疑問視している。"
+          },
+          {
+            "en": "A measure of expected market swings, called the \"fear index,\" hit its highest level since March.",
+            "ja": "市場の予想変動率を示す指標で「恐怖指数」と呼ばれるものは、3月以来の高水準に達した。"
+          },
+          {
+            "en": "The worries quickly spread, and Asian stock prices also fell on Friday morning.",
+            "ja": "こうした懸念はすぐに広がり、金曜朝にはアジアの株価も下落した。"
+          },
+          {
+            "en": "Investors are now waiting for clear signs that AI spending will pay off.",
+            "ja": "投資家は今、AIへの支出が成果を生むという明確な兆しを待っている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many trading days in a row did the S&P 500 fall?",
+      "promptJa": "S&P500は何営業日連続で下落しましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Two",
+          "ja": "2日"
+        },
+        {
+          "key": "B",
+          "text": "Four",
+          "ja": "4日"
+        },
+        {
+          "key": "C",
+          "text": "Six",
+          "ja": "6日"
+        },
+        {
+          "key": "D",
+          "text": "Eight",
+          "ja": "8日"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落2文目に \"its sixth loss in a row\"（6回連続の下落）とあるので正解は (C)。(A)(B)(D) はいずれも本文に出てこない数字。本文の別の数字「2%」「34%」「90%」につられて (A) を選ばないよう注意。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "in a row（連続で）は回数を問う設問の根拠になりやすい。序数 sixth を見落とさず、選択肢の数字と1つずつ照合する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why are investors worried about AI stocks?",
+      "promptJa": "記事によると、投資家はなぜAI関連株を懸念しているのですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A new AI company's shares opened below their offering price.",
+          "ja": "新しいAI企業の株が公開価格を下回って始まった"
+        },
+        {
+          "key": "B",
+          "text": "They doubt AI will earn enough profit to justify the spending.",
+          "ja": "支出に見合う利益をAIが稼ぐか疑っている"
+        },
+        {
+          "key": "C",
+          "text": "Companies have stopped building data centers.",
+          "ja": "企業がデータセンター建設をやめた"
+        },
+        {
+          "key": "D",
+          "text": "The \"fear index\" fell to its lowest level since March.",
+          "ja": "「恐怖指数」が3月以来の低水準に下がった"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落2文目に \"They doubt that the technology will earn enough profit to justify the huge amounts that companies spend on data centers.\" とあり、(B) がこれを言い換えたもの。(A) は本文と逆（公開価格を34%上回って始まった）。(C) は本文にない情報（企業は巨額を投じ続けている）。(D) も本文と逆で、恐怖指数は3月以来の「高」水準に上がった。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "why を問う設問では worry / doubt / because など理由や感情を表す語の周辺を探す。正解は本文の語句を短く言い換えていることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "sharply",
+      "pos": "副",
+      "ja": "急激に、大きく",
+      "gloss": "",
+      "example": {
+        "en": "Sales rose sharply after the price cut.",
+        "ja": "値下げの後、売上が急激に伸びた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "losing streak",
+      "pos": "熟",
+      "ja": "連敗、連続の下落",
+      "gloss": "",
+      "example": {
+        "en": "The team ended its losing streak with a big win.",
+        "ja": "そのチームは大勝で連敗を止めた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "decline",
+      "pos": "名・動",
+      "ja": "下落、減少／下落する",
+      "gloss": "",
+      "example": {
+        "en": "The company reported a decline in orders last month.",
+        "ja": "その会社は先月の受注の減少を報告した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "offering price",
+      "pos": "熟",
+      "ja": "公開価格",
+      "gloss": "（＝株を初めて売り出すときの1株の値段のこと）",
+      "example": {
+        "en": "The offering price was set at $20 per share.",
+        "ja": "公開価格は1株20ドルに設定された。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "worry",
+      "pos": "動",
+      "ja": "心配する、懸念する",
+      "gloss": "",
+      "example": {
+        "en": "Many managers worry about rising costs.",
+        "ja": "多くの管理職がコストの上昇を心配している。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "justify",
+      "pos": "動",
+      "ja": "正当化する、（費用などに）見合うことを示す",
+      "gloss": "",
+      "example": {
+        "en": "We need strong sales to justify the new hires.",
+        "ja": "新たな採用を正当化するには好調な売上が必要だ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "measure",
+      "pos": "名",
+      "ja": "指標、尺度",
+      "gloss": "",
+      "example": {
+        "en": "Customer satisfaction is an important measure of success.",
+        "ja": "顧客満足度は成功を測る重要な指標だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "pay off",
+      "pos": "熟",
+      "ja": "成果を生む、報われる",
+      "gloss": "",
+      "example": {
+        "en": "Our investment in training began to pay off this year.",
+        "ja": "研修への投資が今年、成果を上げ始めた。"
+      }
+    }
+  ],
+  "glossary": {
+    "sharply": {
+      "lemma": "sharply",
+      "pos": "副",
+      "ja": "急激に",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "kept": {
+      "lemma": "keep",
+      "pos": "動",
+      "ja": "〜し続ける",
+      "note": "keep -ing で「〜し続ける」"
+    },
+    "selling": {
+      "lemma": "sell",
+      "pos": "動",
+      "ja": "売る",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式",
+      "note": "複数形で「株」"
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下落する",
+      "note": ""
+    },
+    "losing": {
+      "lemma": "lose",
+      "pos": "動",
+      "ja": "負ける、失う",
+      "note": "losing streak で「連敗」"
+    },
+    "streak": {
+      "lemma": "streak",
+      "pos": "名",
+      "ja": "連続",
+      "note": "winning streak は「連勝」"
+    },
+    "index": {
+      "lemma": "index",
+      "pos": "名",
+      "ja": "指数",
+      "note": "株価指数のこと"
+    },
+    "decline": {
+      "lemma": "decline",
+      "pos": "名",
+      "ja": "下落",
+      "note": ""
+    },
+    "fast-growing": {
+      "lemma": "fast-growing",
+      "pos": "形",
+      "ja": "急成長する",
+      "note": ""
+    },
+    "trading": {
+      "lemma": "trade",
+      "pos": "動",
+      "ja": "取引する",
+      "note": "begin trading で「上場して取引が始まる」"
+    },
+    "offering": {
+      "lemma": "offering",
+      "pos": "名",
+      "ja": "売り出し",
+      "note": "offering price で「公開価格」"
+    },
+    "lift": {
+      "lemma": "lift",
+      "pos": "動",
+      "ja": "押し上げる",
+      "note": ""
+    },
+    "worry": {
+      "lemma": "worry",
+      "pos": "動",
+      "ja": "心配する",
+      "note": "worry that ... で「…と心配する」"
+    },
+    "risen": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上がる",
+      "note": "rise-rose-risen"
+    },
+    "doubt": {
+      "lemma": "doubt",
+      "pos": "動",
+      "ja": "疑う",
+      "note": "doubt that ... で「…ではないかと疑う」"
+    },
+    "earn": {
+      "lemma": "earn",
+      "pos": "動",
+      "ja": "稼ぐ",
+      "note": ""
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "justify": {
+      "lemma": "justify",
+      "pos": "動",
+      "ja": "正当化する",
+      "note": ""
+    },
+    "huge": {
+      "lemma": "huge",
+      "pos": "形",
+      "ja": "巨大な",
+      "note": ""
+    },
+    "amounts": {
+      "lemma": "amount",
+      "pos": "名",
+      "ja": "金額、量",
+      "note": ""
+    },
+    "measure": {
+      "lemma": "measure",
+      "pos": "名",
+      "ja": "指標",
+      "note": ""
+    },
+    "expected": {
+      "lemma": "expected",
+      "pos": "形",
+      "ja": "予想される",
+      "note": ""
+    },
+    "swings": {
+      "lemma": "swing",
+      "pos": "名",
+      "ja": "変動",
+      "note": "market swings で「相場の変動」"
+    },
+    "worries": {
+      "lemma": "worry",
+      "pos": "名",
+      "ja": "懸念、心配",
+      "note": ""
+    },
+    "spread": {
+      "lemma": "spread",
+      "pos": "動",
+      "ja": "広がる",
+      "note": "spread-spread-spread"
+    },
+    "clear": {
+      "lemma": "clear",
+      "pos": "形",
+      "ja": "明確な",
+      "note": ""
+    },
+    "signs": {
+      "lemma": "sign",
+      "pos": "名",
+      "ja": "兆し",
+      "note": ""
+    },
+    "pay": {
+      "lemma": "pay",
+      "pos": "動",
+      "ja": "支払う",
+      "note": "pay off で「成果を生む」"
+    }
+  },
+  "grammar": {
+    "topic": "目的格の関係代名詞 that（the amounts that companies spend：後ろから名詞を説明し、that の後ろは目的語が欠けた形）",
+    "quote": "They doubt that the technology will earn enough profit to justify the huge amounts that companies spend on data centers.",
+    "quoteJa": "彼らは、企業がデータセンターに投じている巨額の資金に見合うだけの利益をこの技術が稼げるのか疑問視している。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "the huge amounts that companies spend on data centers の that は目的格の関係代名詞。先行詞 the huge amounts を後ろから説明し、「企業がデータセンターに投じる巨額の資金」という意味になる。that の後ろの companies spend ___ on data centers は spend の目的語が欠けており、その欠けた位置に先行詞が入るイメージで読む。なお文頭側の doubt that the technology will ... の that は「…ということ」を表す接続詞で、後ろは主語・動詞・目的語がそろった完全な文になっている。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "目的格の that（which）は省略できる：the huge amounts companies spend on data centers。一方、主格の that は省略できない：companies that spend heavily on data centers（× companies spend heavily ... とすると文の構造が崩れる）。見分け方は「that の直後に主語＋動詞が来ていれば目的格」。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では空所の後ろが「主語＋動詞」で目的語が欠けていれば関係代名詞 that / which、後ろが完全な文なら接続詞 that、と構造で判断させる問題が定番。what は先行詞を含むので、前に名詞（先行詞）があるときは選べない点も頻出のひっかけ。Part 7 では長い名詞句を「名詞＋説明」に切って読むと速くなる。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The report summarizes the costs that the team reduced last quarter.（報告書は、チームが前四半期に削減したコストをまとめている。）／Please review the contract that we sent you yesterday.（昨日お送りした契約書をご確認ください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "11月19日、S&P500は2%下落して6営業日続落となり、2024年以来の長い連敗を記録した。構成銘柄の9割超が値下がりし、恐怖指数は3月以来の高水準に。同日上場したAnthropicは公開価格83ドルを34%上回って始まったが、相場の支えにならなかった。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "AI関連株は将来の利益への期待で買われ、時価総額(market capitalization)が大きく膨らんだ。各社はデータセンターに巨額の設備投資(capital expenditure)を続けており、それに見合う利益が出るか疑われると、期待で上がった分がはがれやすい。新規株式公開(initial public offering)の好調は1社の人気を示すにすぎず、市場全体の不安は消せない。"
+    },
+    {
+      "heading": "📌 3. 他社の「AI株急落」",
+      "body": "Nvidiaは2025年1月27日、中国の新興企業が低コストのAIを公開したことを受けて株価が約17%下落し、1日で約5,900億ドルの時価総額を失った。1社の1日の減少額として米国史上最大だった。Oracleは2025年12月の決算発表後、四半期の設備投資が約120億ドルに膨らんだことと弱い見通しが嫌われ、株価が1日で1割超下落した。前者は「もっと安く作れる競合が出た」という需要側の不安、後者は「借金で投資を膨らませすぎている」という財務面の不安が引き金だった。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "ソフトバンクグループは2026年6月26日、出資する米AI企業の上場が遅れるとの報道を受けて株価が12%超下落し、日経平均も4.15%安となった。同社は出資先の評価額が下がると自社の保有資産の価値も目減りする構造のため、米国のAI株や上場計画の動きに株価が連動しやすい。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "market capitalization",
+      "pos": "名",
+      "ja": "時価総額",
+      "gloss": "（＝株価×発行済み株式数で表す会社の値段のこと）",
+      "example": {
+        "en": "The bank's market capitalization doubled in five years.",
+        "ja": "その銀行の時価総額は5年で2倍になった。"
+      }
+    },
+    {
+      "term": "capital expenditure",
+      "pos": "名",
+      "ja": "設備投資",
+      "gloss": "（＝工場や機械など長く使う設備に使うお金のこと）",
+      "example": {
+        "en": "The airline cut its capital expenditure for next year.",
+        "ja": "その航空会社は来年の設備投資を減らした。"
+      }
+    },
+    {
+      "term": "initial public offering",
+      "pos": "名",
+      "ja": "新規株式公開",
+      "gloss": "（＝会社が初めて株を一般の投資家に売り出し、上場すること）",
+      "example": {
+        "en": "The startup plans an initial public offering next spring.",
+        "ja": "その新興企業は来春に新規株式公開を予定している。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stock Market Today, Nov. 19: Dow Plunges 1,100 Points as the S&P 500 Suffers Its 6th Straight Day of Losses",
+      "publisher": "The Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-dow-plunges-1-100-points-as-the-s-and-p-500-suffers-its-6th-straight-day-of-losses/",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "S&P 500 Slides, Anthropic Jumps 27%: Stock Market Today",
+      "publisher": "Benzinga",
+      "url": "https://benzinga.com/markets/equities/26/11/63446162/stock-market-today-anthropic-ipo-debut-sp-500-sixth-loss-november-19",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Nvidia's $589 Billion DeepSeek Rout Is Largest in Market History",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-01-27/asml-sinks-as-china-ai-startup-triggers-panic-in-tech-stocks",
+      "date": "2025-01-27"
+    },
+    {
+      "title": "Oracle earnings: stock falls 11% as investors are disappointed",
+      "publisher": "Fortune",
+      "url": "https://fortune.com/2025/12/11/oracle-earnings-stock-falls-11-percent-why-investors-disappointed-data-centers-cloud",
+      "date": "2025-12-11"
+    },
+    {
+      "title": "Japan's Nikkei falls as SoftBank tanks on reports of OpenAI's IPO delay",
+      "publisher": "The Star",
+      "url": "https://www.thestar.com.my/business/business-news/2026/06/26/japan039s-nikkei-falls-as-softbank-tanks-on-reports-of-openai039s-ipo-delay",
+      "date": "2026-06-26"
+    }
+  ]
+}
