@@ -514,5 +514,24 @@
       "url": "https://www.thestar.com.my/business/business-news/2026/06/26/japan039s-nikkei-falls-as-softbank-tanks-on-reports-of-openai039s-ipo-delay",
       "date": "2026-06-26"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-20-1645/00.mp3",
+      "audio/2026-11-20-1645/01.mp3",
+      "audio/2026-11-20-1645/02.mp3",
+      "audio/2026-11-20-1645/03.mp3",
+      "audio/2026-11-20-1645/04.mp3",
+      "audio/2026-11-20-1645/05.mp3",
+      "audio/2026-11-20-1645/06.mp3",
+      "audio/2026-11-20-1645/07.mp3",
+      "audio/2026-11-20-1645/08.mp3",
+      "audio/2026-11-20-1645/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 243896,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-20T07:50:44.134Z",
+    "trimmed": true
+  }
 }
