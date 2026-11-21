@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-11-22-0408-2",
+  "date": "2026-11-22",
+  "time": "04:08",
+  "createdAt": "2026-11-22T04:08:00+09:00",
+  "sample": false,
+  "scene": "指示｜新人倉庫スタッフ向けの棚卸しの手順と安全上の注意",
+  "talkType": "instructions",
+  "intro": "Questions 1 through 3 refer to the following instructions.",
+  "speaker": {
+    "tag": "M",
+    "role": "男性",
+    "accent": "en-CA"
+  },
+  "lines": [
+    {
+      "en": "Good morning, everyone, and welcome to your first day on the warehouse team.",
+      "ja": "皆さん、おはようございます。倉庫チームでの初日へようこそ。"
+    },
+    {
+      "en": "Before we begin, I'll walk you through how we carry out our monthly inventory count.",
+      "ja": "始める前に、毎月の棚卸しのやり方を順を追って説明します。"
+    },
+    {
+      "en": "Each of you will be paired with an experienced staff member and assigned two aisles.",
+      "ja": "皆さんはそれぞれ経験のあるスタッフと組になり、通路を2本ずつ担当します。"
+    },
+    {
+      "en": "Usually the count takes about six hours, but with your help we're hoping to finish in four.",
+      "ja": "普段は棚卸しに約6時間かかりますが、皆さんの協力で4時間で終えたいと考えています。"
+    },
+    {
+      "en": "Scan the barcode on every box, then enter the number of items into your handheld device.",
+      "ja": "すべての箱のバーコードを読み取り、品物の数を携帯端末に入力してください。"
+    },
+    {
+      "en": "If the number on the screen doesn't match what you see, don't fix it yourself.",
+      "ja": "画面の数字が実際に見た数と合わない場合は、自分で直さないでください。"
+    },
+    {
+      "en": "Instead, set the box aside and report it to your partner, who will double-check it.",
+      "ja": "代わりにその箱を脇によけてパートナーに報告してください。パートナーが再確認します。"
+    },
+    {
+      "en": "Please be careful near the loading area, since forklifts will be operating there all morning.",
+      "ja": "午前中はずっとフォークリフトが稼働しているので、搬入出エリアの近くでは注意してください。"
+    },
+    {
+      "en": "Before you head out, pick up a safety vest from the bin by the door.",
+      "ja": "持ち場に向かう前に、ドアのそばの箱から安全ベストを取っていってください。"
+    },
+    {
+      "en": "Let's get started.",
+      "ja": "では始めましょう。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "who",
+      "prompt": "Who most likely are the listeners?",
+      "promptJa": "聞き手はおそらく誰ですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Delivery truck drivers",
+          "ja": "配送トラックの運転手"
+        },
+        {
+          "key": "B",
+          "text": "Experienced warehouse supervisors",
+          "ja": "経験豊富な倉庫の監督者"
+        },
+        {
+          "key": "C",
+          "text": "Customers visiting a store",
+          "ja": "店を訪れている客"
+        },
+        {
+          "key": "D",
+          "text": "Newly hired warehouse employees",
+          "ja": "新しく採用された倉庫の従業員"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        0,
+        2
+      ],
+      "explanation": "冒頭で welcome to your first day on the warehouse team と言い、続けて経験のあるスタッフと組になると説明しているので、聞き手は倉庫に入ったばかりの新人です。first day を newly hired と言い換えた D が正解です。B の experienced は本文に出ますが、聞き手と組む先輩スタッフのことで、聞き手自身ではありません。",
+      "tip": "聞き手を問う設問は、冒頭の呼びかけ（welcome to ...、your first day）が根拠です。本文の形容詞が誰を修飾していたかに注意しましょう。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "What does the speaker say about this month's count?",
+      "promptJa": "話し手は今月の棚卸しについて何と言っていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It will take about six hours.",
+          "ja": "約6時間かかる。"
+        },
+        {
+          "key": "B",
+          "text": "It should be shorter than usual.",
+          "ja": "普段より短く済むはずだ。"
+        },
+        {
+          "key": "C",
+          "text": "It will start in the loading area.",
+          "ja": "搬入出エリアから始まる。"
+        },
+        {
+          "key": "D",
+          "text": "It must be finished by tomorrow.",
+          "ja": "明日までに終えなければならない。"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        3
+      ],
+      "explanation": "Usually the count takes about six hours, but ... we're hoping to finish in four と言っています。普段の6時間より短い4時間で終える見込みなので、B が正解です。A の six hours は「普段は」の数字で、今月の見込みではありません。",
+      "tip": "Usually ..., but ... の形では、but の後ろが今回の話です。対になった2つの数字のうち、どちらを聞かれているかを確かめましょう。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What are the listeners asked to do before they start?",
+      "promptJa": "聞き手は始める前に何をするよう求められていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Scan their employee ID badges",
+          "ja": "社員証を読み取る"
+        },
+        {
+          "key": "B",
+          "text": "Move boxes to the loading area",
+          "ja": "箱を搬入出エリアへ運ぶ"
+        },
+        {
+          "key": "C",
+          "text": "Collect a piece of safety equipment",
+          "ja": "安全用の装備を受け取る"
+        },
+        {
+          "key": "D",
+          "text": "Report to their partner's office",
+          "ja": "パートナーの部屋に出向く"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        8
+      ],
+      "explanation": "最後に Before you head out, pick up a safety vest from the bin by the door と指示しています。safety vest を a piece of safety equipment、pick up を collect と言い換えた C が正解です。A の scan はバーコードを読み取る作業の話で、始める前にすることではありません。",
+      "tip": "「始める前に」と時点を絞った設問は、本文の Before you ... の文に答えがあります。作業手順の中の動詞（scan、report）を使った誤答に注意しましょう。"
+    }
+  ],
+  "glossary": {
+    "walk you through": {
+      "lemma": "walk ... through",
+      "pos": "熟",
+      "ja": "（人に）順を追って説明する",
+      "note": "explain の言い換え",
+      "example": {
+        "en": "The manager will walk you through the new expense system.",
+        "ja": "部長が新しい経費システムを順を追って説明します。"
+      }
+    },
+    "carry out": {
+      "lemma": "carry out",
+      "pos": "熟",
+      "ja": "実施する、行う",
+      "note": "conduct の言い換え",
+      "example": {
+        "en": "The city will carry out a survey of local businesses next month.",
+        "ja": "市は来月、地元企業の調査を実施する。"
+      }
+    },
+    "inventory": {
+      "lemma": "inventory",
+      "pos": "名",
+      "ja": "在庫、棚卸し",
+      "note": "take inventory で「棚卸しをする」",
+      "example": {
+        "en": "The store closes early on Sunday to count its inventory.",
+        "ja": "その店は在庫を数えるため日曜日は早く閉まる。"
+      }
+    },
+    "paired with": {
+      "lemma": "be paired with",
+      "pos": "熟",
+      "ja": "〜と組になる",
+      "note": "",
+      "example": {
+        "en": "New sales staff are paired with a senior colleague for their first month.",
+        "ja": "新しい営業スタッフは最初の1か月、先輩社員と組になる。"
+      }
+    },
+    "assigned": {
+      "lemma": "assign",
+      "pos": "動",
+      "ja": "割り当てる、担当させる",
+      "note": "",
+      "example": {
+        "en": "Each team was assigned a different region of the country.",
+        "ja": "各チームは国内の異なる地域を割り当てられた。"
+      }
+    },
+    "aisles": {
+      "lemma": "aisle",
+      "pos": "名",
+      "ja": "（棚の間の）通路",
+      "note": "発音は「アイル」。s は読まない",
+      "example": {
+        "en": "You'll find paper towels in aisle seven, next to the soap.",
+        "ja": "ペーパータオルは7番通路の石けんの隣にあります。"
+      }
+    },
+    "set the box aside": {
+      "lemma": "set aside",
+      "pos": "熟",
+      "ja": "脇によけておく、取っておく",
+      "note": "",
+      "example": {
+        "en": "Please set the damaged items aside so we can return them.",
+        "ja": "返品できるように、傷んだ品物は脇によけておいてください。"
+      }
+    },
+    "double-check": {
+      "lemma": "double-check",
+      "pos": "動",
+      "ja": "再確認する",
+      "note": "",
+      "example": {
+        "en": "Could you double-check the figures before we send the invoice?",
+        "ja": "請求書を送る前に数字を再確認してもらえますか。"
+      }
+    },
+    "loading area": {
+      "lemma": "loading area",
+      "pos": "名",
+      "ja": "荷積み場、搬入出エリア",
+      "note": "loading dock とも言う",
+      "example": {
+        "en": "Trucks may not park in the loading area for more than ten minutes.",
+        "ja": "トラックは荷積み場に10分を超えて駐車してはならない。"
+      }
+    },
+    "head out": {
+      "lemma": "head out",
+      "pos": "熟",
+      "ja": "出かける、（持ち場へ）向かう",
+      "note": "leave の言い換え",
+      "example": {
+        "en": "We should head out now if we want to catch the earlier train.",
+        "ja": "早いほうの電車に乗りたいなら、もう出たほうがいい。"
+      }
+    }
+  },
+  "point": {
+    "flow": "歓迎（誰に向けた話か） → 作業の概要 → 担当の割り振り → 所要時間（通常と今回） → 手順と例外の扱い → 注意 → 開始前の依頼",
+    "items": [
+      {
+        "title": "指示のトークは冒頭で聞き手が決まる",
+        "body": "研修や当日の段取りを伝える指示は、冒頭の歓迎や呼びかけで聞き手の立場（新人、参加者、ボランティア）が示され、1問目はそこから出る。最初の1文で「誰に向けた話か」を必ず押さえてから手順を聞く。"
+      },
+      {
+        "title": "手順・例外・注意を分けて聞く",
+        "body": "指示は「普通の手順 → 合わないときの扱い → 安全上の注意 → 始める前の依頼」の順に並ぶことが多い。If ... / Instead / Before you ... のような合図で区切りを見つけ、設問の「いつ・どんなとき」に合う段を探す。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "type": "part4",
+  "id": "2026-11-22-0408-1",
+  "date": "2026-11-22",
+  "time": "04:08",
+  "createdAt": "2026-11-22T04:08:00+09:00",
+  "sample": false,
+  "scene": "留守番電話｜ケータリング業者からの料理の変更と追加の提案",
+  "talkType": "voicemail",
+  "intro": "Questions 1 through 3 refer to the following telephone message.",
+  "speaker": {
+    "tag": "W",
+    "role": "女性",
+    "accent": "en-AU"
+  },
+  "lines": [
+    {
+      "en": "Hello, this is Rachel Moore from Green Table Catering, returning your call about Thursday's lunch order.",
+      "ja": "もしもし、グリーン・テーブル・ケータリングのレイチェル・ムーアです。木曜日の昼食のご注文の件で、折り返しお電話しています。"
+    },
+    {
+      "en": "You asked us to provide sandwiches and salads for forty people at your staff workshop.",
+      "ja": "社員研修会用に、40人分のサンドイッチとサラダをご依頼いただいています。"
+    },
+    {
+      "en": "Unfortunately, our supplier has run short on fresh salmon, so we can't make the salmon salad you chose.",
+      "ja": "あいにく仕入れ先で生のサーモンが不足しており、お選びいただいたサーモンサラダをお作りできません。"
+    },
+    {
+      "en": "We can offer a grilled chicken salad instead, at no extra charge.",
+      "ja": "代わりに、追加料金なしでグリルチキンのサラダをご用意できます。"
+    },
+    {
+      "en": "And honestly, that's our best seller.",
+      "ja": "それに正直なところ、そちらは当店の一番人気なんです。"
+    },
+    {
+      "en": "Also, you mentioned that a few of your guests don't eat meat.",
+      "ja": "また、お客様の中に肉を召し上がらない方が何人かいらっしゃるとのことでした。"
+    },
+    {
+      "en": "We'd be happy to prepare six vegetable wraps for them, which would add about thirty dollars to the bill.",
+      "ja": "その方々のために野菜のラップサンドを6つご用意できます。お会計に30ドルほど加わります。"
+    },
+    {
+      "en": "Please let me know by Tuesday at noon whether these changes are all right, since we start preparing orders a day in advance.",
+      "ja": "ご注文は前日から準備を始めますので、これらの変更でよいかどうか、火曜日の正午までにお知らせください。"
+    },
+    {
+      "en": "You can reach me directly at 555-0148, or simply reply to my e-mail.",
+      "ja": "555-0148 で私に直接ご連絡いただくか、私のメールにご返信ください。"
+    },
+    {
+      "en": "Thanks, and I look forward to hearing from you.",
+      "ja": "よろしくお願いします。ご連絡をお待ちしております。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "Why is the speaker calling?",
+      "promptJa": "話し手はなぜ電話をかけていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To confirm a delivery address",
+          "ja": "配達先の住所を確認するため"
+        },
+        {
+          "key": "B",
+          "text": "To request payment for a past order",
+          "ja": "過去の注文の支払いを求めるため"
+        },
+        {
+          "key": "C",
+          "text": "To discuss changes to a food order",
+          "ja": "料理の注文の変更について話すため"
+        },
+        {
+          "key": "D",
+          "text": "To invite the listener to a workshop",
+          "ja": "聞き手を研修会に招待するため"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        0,
+        2
+      ],
+      "explanation": "冒頭で returning your call about Thursday's lunch order と用件を述べ、続けてサーモンサラダが作れないと伝えています。昼食の注文内容を変える相談なので C が正解です。D の workshop は本文に出ますが、研修会を開くのは聞き手の側で、話し手が招待しているわけではありません。",
+      "tip": "留守電の1問目は、名乗りの直後の about ... と、その次に出る問題の文で決まります。本文の語（workshop）を使った選択肢は、誰の行為かを確かめましょう。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the speaker mean when she says, \"that's our best seller\"?",
+      "promptJa": "話し手が \"that's our best seller\" と言う際、何を意図していますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A replacement item is likely to please guests.",
+          "ja": "代わりの品は客に喜ばれそうだ。"
+        },
+        {
+          "key": "B",
+          "text": "The salmon salad has already sold out.",
+          "ja": "サーモンサラダはもう売り切れた。"
+        },
+        {
+          "key": "C",
+          "text": "The price of the order will go up.",
+          "ja": "注文の値段が上がる。"
+        },
+        {
+          "key": "D",
+          "text": "The business is very busy this week.",
+          "ja": "店は今週とても忙しい。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "直前で、サーモンサラダの代わりにチキンサラダを追加料金なしで出せると提案しています。そのチキンサラダが一番人気だと付け加えることで、代わりの品でも満足してもらえると勧めているので A が正解です。B はサーモンが足りないという話に引っ張られた誤答で、best seller が指しているのはチキンサラダです。",
+      "tip": "that や it を含む引用は、まず指している物を直前の文で特定します。ここでは that = 代わりのチキンサラダです。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What does the speaker imply about the vegetable wraps?",
+      "promptJa": "話し手は野菜のラップサンドについて何を示唆していますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They will be free of charge.",
+          "ja": "無料で提供される。"
+        },
+        {
+          "key": "B",
+          "text": "They were not in the original order.",
+          "ja": "もとの注文には入っていなかった。"
+        },
+        {
+          "key": "C",
+          "text": "They contain grilled chicken.",
+          "ja": "グリルチキンが入っている。"
+        },
+        {
+          "key": "D",
+          "text": "They must be ordered by Thursday.",
+          "ja": "木曜までに注文しなければならない。"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        6
+      ],
+      "explanation": "話し手は、肉を食べない客がいると聞いたので野菜のラップサンドを用意できると提案し、which would add about thirty dollars to the bill と言っています。料金が加わるということは、もとの注文にはなかった追加の品だとわかるので B が正解です。A の無料（at no extra charge）はチキンサラダの条件で、ラップサンドには30ドルかかります。",
+      "tip": "「料金が加わる」「追加で用意できる」という言い方から、元の状態を逆算するのが示唆問題の典型です。条件がどの品のものかを取り違えないようにしましょう。"
+    }
+  ],
+  "glossary": {
+    "returning your call": {
+      "lemma": "return a call",
+      "pos": "熟",
+      "ja": "折り返し電話する",
+      "note": "留守電の冒頭の定型",
+      "example": {
+        "en": "Hi, this is Mark from the bank, returning your call from this morning.",
+        "ja": "もしもし、銀行のマークです。今朝のお電話に折り返しております。"
+      }
+    },
+    "supplier": {
+      "lemma": "supplier",
+      "pos": "名",
+      "ja": "仕入れ先、供給業者",
+      "note": "vendor とほぼ同じ意味",
+      "example": {
+        "en": "We found a new supplier that can deliver paper twice a week.",
+        "ja": "週2回紙を届けてくれる新しい仕入れ先が見つかった。"
+      }
+    },
+    "run short on": {
+      "lemma": "run short on",
+      "pos": "熟",
+      "ja": "〜が不足する",
+      "note": "選択肢では not enough / sold out などに置き換わる",
+      "example": {
+        "en": "The café often runs short on milk by the afternoon.",
+        "ja": "そのカフェは午後になると牛乳が足りなくなることがよくある。"
+      }
+    },
+    "at no extra charge": {
+      "lemma": "at no extra charge",
+      "pos": "熟",
+      "ja": "追加料金なしで",
+      "note": "free の言い換え",
+      "example": {
+        "en": "Guests can use the hotel gym at no extra charge.",
+        "ja": "宿泊客は追加料金なしでホテルのジムを使える。"
+      }
+    },
+    "best seller": {
+      "lemma": "best seller",
+      "pos": "名",
+      "ja": "一番売れている商品",
+      "note": "popular の言い換え",
+      "example": {
+        "en": "This blue jacket has been our best seller since spring.",
+        "ja": "この青いジャケットは春から当店で一番売れている。"
+      }
+    },
+    "add about thirty dollars to the bill": {
+      "lemma": "add ... to the bill",
+      "pos": "熟",
+      "ja": "会計に〜を加える",
+      "note": "extra cost / additional charge の言い換え",
+      "example": {
+        "en": "Room service will add a small fee to the bill.",
+        "ja": "ルームサービスは会計に少額の料金を加える。"
+      }
+    },
+    "in advance": {
+      "lemma": "in advance",
+      "pos": "熟",
+      "ja": "前もって、事前に",
+      "note": "",
+      "example": {
+        "en": "Please book the meeting room at least two days in advance.",
+        "ja": "会議室は少なくとも2日前までに予約してください。"
+      }
+    },
+    "reach me": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "（人に）連絡をとる",
+      "note": "「届く」ではなく連絡の意味。contact の言い換え",
+      "example": {
+        "en": "You can reach the front desk by dialing zero from your room.",
+        "ja": "客室から0をダイヤルすればフロントに連絡できます。"
+      }
+    },
+    "look forward to hearing from you": {
+      "lemma": "look forward to hearing from",
+      "pos": "熟",
+      "ja": "ご連絡をお待ちしています",
+      "note": "to の後ろは -ing。手紙・留守電の結びの定型",
+      "example": {
+        "en": "Thank you for your application. We look forward to hearing from you soon.",
+        "ja": "ご応募ありがとうございます。近いうちのご連絡をお待ちしています。"
+      }
+    }
+  },
+  "point": {
+    "flow": "名乗りと用件 → 問題（材料の不足） → 代替案（無料の差し替え） → 追加の提案（有料） → 依頼と期限 → 連絡方法",
+    "items": [
+      {
+        "title": "留守電は「名乗り・用件・依頼」の3点で聞く",
+        "body": "業者からの留守電は、冒頭で名乗りと用件（returning your call about ...）、中盤で問題と代わりの案、終盤で期限付きの依頼が出る。1問目は冒頭2文、最後の設問は終盤から出ると決めて、聞く位置を先に割り振っておく。"
+      },
+      {
+        "title": "案が複数出たら、条件を案ごとに結び付ける",
+        "body": "無料の差し替えと有料の追加のように、条件の違う案が並ぶと、誤答は一方の条件をもう一方に付け替えて作られる。案が出るたびに「何を・いくらで」を一組にして覚えると、取り違えを防げる。"
+      }
+    ]
+  }
+}

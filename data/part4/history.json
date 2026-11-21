@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "type": "part4-history",
-  "updatedAt": "2026-11-15T04:13:10+09:00",
+  "updatedAt": "2026-11-22T04:12:51+09:00",
   "items": [
+    {
+      "id": "2026-11-22-0408-2",
+      "date": "2026-11-22",
+      "scene": "指示｜新人倉庫スタッフ向けの棚卸しの手順と安全上の注意",
+      "genre": "作業の指示",
+      "talkType": "instructions",
+      "types": [
+        "who",
+        "detail",
+        "next"
+      ],
+      "flow": "告知と指示"
+    },
+    {
+      "id": "2026-11-22-0408-1",
+      "date": "2026-11-22",
+      "scene": "留守番電話｜ケータリング業者からの料理の変更と追加の提案",
+      "genre": "留守番電話",
+      "talkType": "voicemail",
+      "types": [
+        "gist",
+        "intent",
+        "infer"
+      ],
+      "flow": "問題と代替案"
+    },
     {
       "id": "2026-11-15-0409-2",
       "date": "2026-11-15",
