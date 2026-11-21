@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-11-22-0408-1",
+  "date": "2026-11-22",
+  "time": "04:08",
+  "scene": "店舗・サービス｜印刷店での冊子の仕上がり日と製本方法の選択",
+  "speakers": [
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-US"
+    },
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-AU"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "W",
+      "en": "Hi, I'd like to order two hundred copies of our catalog for a trade show next Friday.",
+      "ja": "こんにちは、来週金曜の展示会用に、当社のカタログを200部注文したいのですが。"
+    },
+    {
+      "tag": "M",
+      "en": "Certainly. We can print them by Wednesday, but our binding machine is booked up until Thursday.",
+      "ja": "かしこまりました。水曜までに印刷はできますが、製本機が木曜まで予約で埋まっています。"
+    },
+    {
+      "tag": "W",
+      "en": "That's cutting it close. Is there any way to speed things up?",
+      "ja": "それはぎりぎりですね。何か早める方法はありますか。"
+    },
+    {
+      "tag": "M",
+      "en": "We could use staples instead of binding, and they'd be ready on Tuesday.",
+      "ja": "製本の代わりにホチキス留めにすれば、火曜には仕上がります。"
+    },
+    {
+      "tag": "W",
+      "en": "Staples might look a little cheap at a trade show. Is there another option?",
+      "ja": "ホチキス留めだと展示会では少し安っぽく見えるかもしれません。ほかの方法はありますか。"
+    },
+    {
+      "tag": "M",
+      "en": "Our other branch could bind them by Wednesday, but there's a forty-dollar rush fee.",
+      "ja": "別の支店なら水曜までに製本できますが、40ドルの特急料金がかかります。"
+    },
+    {
+      "tag": "W",
+      "en": "I'd rather go with proper binding, so let's do that.",
+      "ja": "きちんとした製本にしたいので、そちらでお願いします。"
+    },
+    {
+      "tag": "M",
+      "en": "Understood. Would you like to pick them up, or should we deliver them to your office?",
+      "ja": "承知しました。ご来店で受け取られますか、それとも事務所にお届けしましょうか。"
+    },
+    {
+      "tag": "W",
+      "en": "Please deliver them. I'll be tied up with booth preparations all week.",
+      "ja": "届けてください。今週はずっとブースの準備で手が離せないので。"
+    },
+    {
+      "tag": "M",
+      "en": "No problem. Just fill out this delivery form and pay a deposit today.",
+      "ja": "かしこまりました。本日この配送用紙にご記入いただき、手付金をお支払いください。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "gist",
+      "prompt": "What are the speakers mainly discussing?",
+      "promptJa": "話し手たちは主に何について話していますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Booking space at a trade show",
+          "ja": "展示会の出展スペースを予約すること"
+        },
+        {
+          "key": "B",
+          "text": "Getting printed materials finished in time",
+          "ja": "印刷物を期限内に仕上げること"
+        },
+        {
+          "key": "C",
+          "text": "Repairing a broken binding machine",
+          "ja": "故障した製本機を修理すること"
+        },
+        {
+          "key": "D",
+          "text": "Designing a new product catalog",
+          "ja": "新しい製品カタログをデザインすること"
+        }
+      ],
+      "answer": "B",
+      "evidence": [
+        0,
+        1
+      ],
+      "explanation": "冒頭で女性が order two hundred copies of our catalog for a trade show next Friday と注文し、男性が製本機の空き状況を伝えているので、印刷物を期限に間に合わせる話です。trade show は出てきますが、出展スペースの予約の話ではないので A は誤りです。C の binding machine も本文にありますが、故障ではなく booked up（予約で埋まっている）だけです。",
+      "tip": "1問目の話題は冒頭2行で決まります。本文の語（trade show、binding machine）をそのまま使った選択肢は、話の中心かどうかを確かめてから選びましょう。"
+    },
+    {
+      "id": "q2",
+      "type": "detail",
+      "prompt": "Why does the woman reject the first option?",
+      "promptJa": "女性はなぜ最初の案を断っていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It would cost an extra fee.",
+          "ja": "追加料金がかかるから。"
+        },
+        {
+          "key": "B",
+          "text": "It would be ready too late.",
+          "ja": "仕上がりが遅すぎるから。"
+        },
+        {
+          "key": "C",
+          "text": "The branch is too far away.",
+          "ja": "支店が遠すぎるから。"
+        },
+        {
+          "key": "D",
+          "text": "It would not look high quality.",
+          "ja": "質が高く見えないから。"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        3,
+        4
+      ],
+      "explanation": "最初の案はホチキス留め（staples）で、女性は Staples might look a little cheap at a trade show と言っています。look cheap を not look high quality と言い換えた D が正解です。A の追加料金（rush fee）は2つ目の案の条件で、最初の案とは関係ありません。B も、ホチキス留めは火曜に仕上がるので逆です。",
+      "tip": "2案が出る会話では、条件がどちらの案のものかを取り違えさせる誤答が必ず入ります。案ごとに「早さ・費用・見た目」をメモしながら聞きましょう。"
+    },
+    {
+      "id": "q3",
+      "type": "next",
+      "prompt": "What does the man ask the woman to do?",
+      "promptJa": "男性は女性に何をするよう頼んでいますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Complete a form and pay part of the cost",
+          "ja": "用紙に記入し、代金の一部を払う"
+        },
+        {
+          "key": "B",
+          "text": "Pick up the catalogs on Thursday",
+          "ja": "木曜にカタログを受け取りに来る"
+        },
+        {
+          "key": "C",
+          "text": "Contact the other branch directly",
+          "ja": "別の支店に直接連絡する"
+        },
+        {
+          "key": "D",
+          "text": "Visit the shop again on Wednesday",
+          "ja": "水曜にもう一度来店する"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        9
+      ],
+      "explanation": "最後に男性が Just fill out this delivery form and pay a deposit today と頼んでいます。fill out を complete、deposit（手付金）を pay part of the cost と言い換えた A が正解です。B の pick up は男性が提案しましたが、女性は配達を選んだので誤りです。",
+      "tip": "依頼の設問は最後の発言の命令形・Just ... に答えがあります。途中で断られた案（受け取り）を選ばせる誤答に注意しましょう。"
+    }
+  ],
+  "glossary": {
+    "booked up": {
+      "lemma": "booked up",
+      "pos": "熟",
+      "ja": "予約で埋まっている",
+      "note": "fully booked とも言う",
+      "example": {
+        "en": "The hotel near the airport is booked up for the holiday weekend.",
+        "ja": "空港近くのホテルは連休中、予約でいっぱいだ。"
+      }
+    },
+    "trade show": {
+      "lemma": "trade show",
+      "pos": "名",
+      "ja": "展示会、見本市",
+      "note": "",
+      "example": {
+        "en": "Our team will show the new printer at a trade show in March.",
+        "ja": "私たちのチームは3月の展示会で新しいプリンターを披露する。"
+      }
+    },
+    "cutting it close": {
+      "lemma": "cut it close",
+      "pos": "熟",
+      "ja": "時間がぎりぎりである",
+      "note": "",
+      "example": {
+        "en": "Leaving at seven is cutting it close if your flight is at eight.",
+        "ja": "便が8時なら、7時に出るのは時間がぎりぎりだ。"
+      }
+    },
+    "speed things up": {
+      "lemma": "speed up",
+      "pos": "熟",
+      "ja": "速める、早める",
+      "note": "",
+      "example": {
+        "en": "Hiring two more drivers would help speed things up during the busy season.",
+        "ja": "繁忙期には運転手を2人増やすと作業が早まるだろう。"
+      }
+    },
+    "rush fee": {
+      "lemma": "rush fee",
+      "pos": "名",
+      "ja": "特急料金",
+      "note": "express charge とも言う",
+      "example": {
+        "en": "The shop charges a rush fee for orders needed within 24 hours.",
+        "ja": "その店は24時間以内に必要な注文には特急料金を取る。"
+      }
+    },
+    "go with": {
+      "lemma": "go with",
+      "pos": "熟",
+      "ja": "（案を）選ぶ、採用する",
+      "note": "choose の言い換え",
+      "example": {
+        "en": "After comparing three vendors, we decided to go with the cheapest one.",
+        "ja": "3社の業者を比べたあと、私たちは一番安いところに決めた。"
+      }
+    },
+    "pick them up": {
+      "lemma": "pick up",
+      "pos": "熟",
+      "ja": "受け取る、取りに行く",
+      "note": "",
+      "example": {
+        "en": "Your glasses are ready, so you can pick them up any time today.",
+        "ja": "眼鏡ができあがりましたので、本日いつでも受け取りに来られます。"
+      }
+    },
+    "tied up": {
+      "lemma": "be tied up",
+      "pos": "熟",
+      "ja": "手が離せない、忙しい",
+      "note": "busy / unavailable の言い換え",
+      "example": {
+        "en": "I'm tied up in meetings until three, so let's talk after that.",
+        "ja": "3時まで会議で手が離せないので、そのあとで話しましょう。"
+      }
+    },
+    "fill out": {
+      "lemma": "fill out",
+      "pos": "熟",
+      "ja": "（用紙に）記入する",
+      "note": "選択肢では complete に置き換わる",
+      "example": {
+        "en": "Please fill out this form before your appointment with the doctor.",
+        "ja": "診察の前にこの用紙にご記入ください。"
+      }
+    },
+    "deposit": {
+      "lemma": "deposit",
+      "pos": "名",
+      "ja": "手付金、前金",
+      "note": "pay part of the cost の言い換え",
+      "example": {
+        "en": "We ask for a ten percent deposit when you reserve the hall.",
+        "ja": "会場の予約時には10パーセントの手付金をお願いしています。"
+      }
+    }
+  },
+  "point": {
+    "flow": "依頼（注文） → 制約（製本機の空き） → 2案の提示 → 条件の比較と決定 → 次の手続き",
+    "items": [
+      {
+        "title": "2案は「中身・長所・短所」の3点で聞く",
+        "body": "案が2つ出たら、それぞれの中身・早さや費用などの条件・断られた理由を分けて覚える。設問は「なぜ断ったか」「どちらを選んだか」を問い、誤答はもう一方の案の条件で作られる。"
+      },
+      {
+        "title": "決定のあとに手続きが来る",
+        "body": "比較と決定の会話は、決まった直後に受け取り方法や支払いなどの手続きが続き、そこが最後の設問になる。決定の合図（I'd rather go with / let's do that）を聞いたら、次の依頼に耳を切り替える。"
+      }
+    ]
+  }
+}

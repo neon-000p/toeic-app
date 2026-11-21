@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "type": "part3",
+  "id": "2026-11-22-0408-2",
+  "date": "2026-11-22",
+  "time": "04:08",
+  "scene": "社内｜役員会資料の売上数字の誤りと修正の分担",
+  "speakers": [
+    {
+      "tag": "M",
+      "role": "男性",
+      "accent": "en-GB"
+    },
+    {
+      "tag": "W",
+      "role": "女性",
+      "accent": "en-CA"
+    }
+  ],
+  "lines": [
+    {
+      "tag": "M",
+      "en": "Ms. Lopez, I've been going over the quarterly sales report, and I found a mistake.",
+      "ja": "ロペスさん、四半期の売上報告書を見直していたら、誤りを見つけました。"
+    },
+    {
+      "tag": "W",
+      "en": "Oh no. The board meeting is tomorrow at ten. What's wrong?",
+      "ja": "困ったわね。役員会は明日の10時よ。何が問題なの？"
+    },
+    {
+      "tag": "M",
+      "en": "The northern region's sales were entered twice, so our total is eighty thousand dollars too high.",
+      "ja": "北部地域の売上が二重に入力されていて、合計が8万ドル多くなっています。"
+    },
+    {
+      "tag": "W",
+      "en": "Are the charts in the presentation based on that number too?",
+      "ja": "発表資料のグラフもその数字をもとにしているの？"
+    },
+    {
+      "tag": "M",
+      "en": "Yes, three of the twelve charts use it, so they'll all need updating.",
+      "ja": "はい、12枚のグラフのうち3枚がそれを使っているので、すべて更新が必要です。"
+    },
+    {
+      "tag": "M",
+      "en": "Should I ask Daniel to correct them? He put the charts together.",
+      "ja": "ダニエルに直してもらいましょうか。グラフを作ったのは彼ですから。"
+    },
+    {
+      "tag": "W",
+      "en": "Daniel is on a training course until Monday.",
+      "ja": "ダニエルは月曜まで研修に出ているわ。"
+    },
+    {
+      "tag": "M",
+      "en": "Then I'll take care of it myself. I should be done by five today.",
+      "ja": "では私が自分で対応します。今日の5時までには終わるはずです。"
+    },
+    {
+      "tag": "W",
+      "en": "Good. Send the revised file to me when you're finished, and I'll look it over tonight.",
+      "ja": "よろしい。終わったら修正版のファイルを送って。今夜目を通すから。"
+    },
+    {
+      "tag": "M",
+      "en": "Will do. Should I let the board members know the file will be late?",
+      "ja": "わかりました。役員の方々に、ファイルが遅れると伝えておきましょうか。"
+    },
+    {
+      "tag": "W",
+      "en": "Yes. Tell them they'll get the final version first thing tomorrow.",
+      "ja": "ええ。明日の朝一番に最終版が届くと伝えて。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "What problem does the man mention?",
+      "promptJa": "男性はどんな問題について述べていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A meeting was moved to an earlier time",
+          "ja": "会議が早い時間に変更された"
+        },
+        {
+          "key": "B",
+          "text": "Some charts were sent to the wrong people",
+          "ja": "グラフが間違った相手に送られた"
+        },
+        {
+          "key": "C",
+          "text": "Some sales were recorded more than once",
+          "ja": "一部の売上が二重に記録された"
+        },
+        {
+          "key": "D",
+          "text": "A regional office missed a sales target",
+          "ja": "地域の営業所が売上目標を達成できなかった"
+        }
+      ],
+      "answer": "C",
+      "evidence": [
+        2
+      ],
+      "explanation": "男性は The northern region's sales were entered twice と言っています。entered twice を recorded more than once と言い換えた C が正解です。D は northern region という語を使った誤答で、目標未達の話は出てきません。A の会議は明日10時と言っているだけで、時間の変更はありません。",
+      "tip": "問題の中身を問う設問では、twice → more than once のような数の言い換えがよく使われます。本文の地名や部署名だけが一致する選択肢に飛びつかないようにしましょう。"
+    },
+    {
+      "id": "q2",
+      "type": "intent",
+      "prompt": "What does the woman mean when she says, \"Daniel is on a training course until Monday\"?",
+      "promptJa": "女性が \"Daniel is on a training course until Monday\" と言う際、何を意図していますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A coworker cannot make the changes.",
+          "ja": "同僚は修正ができない。"
+        },
+        {
+          "key": "B",
+          "text": "The training course should be rescheduled.",
+          "ja": "研修の日程を変更すべきだ。"
+        },
+        {
+          "key": "C",
+          "text": "Daniel needs more training on charts.",
+          "ja": "ダニエルはグラフについてもっと研修が必要だ。"
+        },
+        {
+          "key": "D",
+          "text": "The meeting should be postponed until Monday.",
+          "ja": "会議を月曜まで延期すべきだ。"
+        }
+      ],
+      "answer": "A",
+      "evidence": [
+        5,
+        6
+      ],
+      "explanation": "直前で男性が Should I ask Daniel to correct them? と提案し、女性は研修で月曜までいないと答えています。役員会は明日なので、ダニエルには頼めないという意味で、A が正解です。D は Monday という語を使った誤答ですが、女性は会議の延期を提案していません。男性が直後に I'll take care of it myself と言っていることからも確かめられます。",
+      "tip": "意図問題は、引用の直前の提案と直後の反応で挟んで考えます。「その人は不在だ」という返事は、提案を断る遠回しの言い方であることが多いです。"
+    },
+    {
+      "id": "q3",
+      "type": "infer",
+      "prompt": "What is suggested about the board members?",
+      "promptJa": "役員たちについて何が示唆されていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They have already seen the charts",
+          "ja": "すでにグラフを見ている"
+        },
+        {
+          "key": "B",
+          "text": "They will meet on Monday instead",
+          "ja": "代わりに月曜に集まる"
+        },
+        {
+          "key": "C",
+          "text": "They asked for twelve new charts",
+          "ja": "12枚の新しいグラフを求めた"
+        },
+        {
+          "key": "D",
+          "text": "They will get the file later than expected",
+          "ja": "予定より遅くファイルを受け取る"
+        }
+      ],
+      "answer": "D",
+      "evidence": [
+        9,
+        10
+      ],
+      "explanation": "男性が Should I let the board members know the file will be late? と尋ね、女性が first thing tomorrow に最終版が届くと伝えるよう指示しています。本来より遅れて受け取ることになるので D が正解です。C の twelve は資料全体のグラフの枚数で、役員が求めた数ではありません。",
+      "tip": "示唆の設問は、終盤の2行を合わせて初めて答えが出る形が多いです。late と first thing tomorrow をつなげて「予定より遅れる」と読みましょう。"
+    }
+  ],
+  "glossary": {
+    "going over": {
+      "lemma": "go over",
+      "pos": "熟",
+      "ja": "見直す、目を通す",
+      "note": "review の言い換え",
+      "example": {
+        "en": "Let's go over the schedule once more before the client arrives.",
+        "ja": "顧客が来る前に、もう一度日程を見直しましょう。"
+      }
+    },
+    "quarterly": {
+      "lemma": "quarterly",
+      "pos": "形",
+      "ja": "四半期の",
+      "note": "",
+      "example": {
+        "en": "The quarterly results will be announced at the end of the month.",
+        "ja": "四半期の業績は月末に発表される。"
+      }
+    },
+    "board meeting": {
+      "lemma": "board meeting",
+      "pos": "名",
+      "ja": "役員会、取締役会",
+      "note": "",
+      "example": {
+        "en": "The new budget must be approved at next week's board meeting.",
+        "ja": "新しい予算は来週の役員会で承認されなければならない。"
+      }
+    },
+    "entered": {
+      "lemma": "enter",
+      "pos": "動",
+      "ja": "（データを）入力する",
+      "note": "「入る」ではなく入力の意味。選択肢では record に置き換わる",
+      "example": {
+        "en": "Please enter your employee number before starting the program.",
+        "ja": "プログラムを始める前に社員番号を入力してください。"
+      }
+    },
+    "need updating": {
+      "lemma": "need -ing",
+      "pos": "熟",
+      "ja": "〜される必要がある",
+      "note": "need to be updated と同じ意味",
+      "example": {
+        "en": "The price list on our Web site needs updating before the sale.",
+        "ja": "セールの前に、ウェブサイトの価格表を更新する必要がある。"
+      }
+    },
+    "put the charts together": {
+      "lemma": "put together",
+      "pos": "熟",
+      "ja": "作成する、まとめる",
+      "note": "prepare の言い換え",
+      "example": {
+        "en": "Could you put together a short summary of the survey results?",
+        "ja": "アンケート結果の短いまとめを作ってもらえますか。"
+      }
+    },
+    "take care of": {
+      "lemma": "take care of",
+      "pos": "熟",
+      "ja": "対応する、処理する",
+      "note": "handle の言い換え",
+      "example": {
+        "en": "Don't worry about the invoices. I'll take care of them this afternoon.",
+        "ja": "請求書のことは心配しないで。今日の午後に私が処理します。"
+      }
+    },
+    "look it over": {
+      "lemma": "look over",
+      "pos": "熟",
+      "ja": "ざっと目を通す",
+      "note": "",
+      "example": {
+        "en": "I drafted the contract, so please look it over when you have time.",
+        "ja": "契約書の下書きを作ったので、時間があるときに目を通してください。"
+      }
+    },
+    "will do": {
+      "lemma": "will do",
+      "pos": "熟",
+      "ja": "了解です、そうします",
+      "note": "依頼への短い返事",
+      "example": {
+        "en": "\"Please lock the door when you leave.\" \"Will do.\"",
+        "ja": "「出るときにドアに鍵をかけてね」「了解です」"
+      }
+    },
+    "first thing": {
+      "lemma": "first thing",
+      "pos": "熟",
+      "ja": "（朝）一番に",
+      "note": "first thing in the morning の形も多い",
+      "example": {
+        "en": "I'll call the supplier first thing tomorrow to confirm the order.",
+        "ja": "明日の朝一番に業者に電話して注文を確認します。"
+      }
+    }
+  },
+  "point": {
+    "flow": "報告（数字の誤り） → 確認の質問（影響範囲） → 担当者の判断 → 指示（送付と確認） → 期限（関係者への連絡）",
+    "items": [
+      {
+        "title": "報告の会話は「何が・どれだけ」の数字で聞く",
+        "body": "報告と指示の型では、最初の報告に問題の中身と規模の数字が出て、そこが1問目になる。続く確認の質問（Are ... too?）には影響の範囲を示す別の数字が来るので、2つの数字を役割ごとに分けて覚える。"
+      },
+      {
+        "title": "判断が出たら、誰が・いつまでにを押さえる",
+        "body": "上司の判断のあとには、担当者・送り先・期限が順に出る。終盤の設問は「誰に何が起きるか」を問うことが多いので、最後の指示に出てくる人（ここでは役員）と時期の語（late、first thing）を結び付けて聞く。"
+      }
+    ]
+  }
+}
