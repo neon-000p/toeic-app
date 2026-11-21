@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-22-0545",
+  "date": "2026-11-22",
+  "time": "05:45",
+  "createdAt": "2026-11-22T05:45:00+09:00",
+  "genre": "生成AI",
+  "genreEn": "Generative AI",
+  "sample": false,
+  "title": {
+    "en": "Trump Threatens Tax on AI Data Centers Built Abroad",
+    "ja": "トランプ氏、海外のAIデータセンターに課税を警告"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "President Donald Trump said on Friday that he wants to stop American companies from building AI data centers abroad.",
+            "ja": "トランプ大統領は金曜日、米企業が海外にAIデータセンターを建設するのをやめさせたいと述べた。"
+          },
+          {
+            "en": "These are huge buildings full of computers that run AI services.",
+            "ja": "データセンターとは、AIのサービスを動かすコンピューターがぎっしり並んだ巨大な建物のことだ。"
+          },
+          {
+            "en": "He said companies can still build abroad if they choose.",
+            "ja": "同氏は、企業が望むなら今後も海外に建設することはできると語った。"
+          },
+          {
+            "en": "But he warned they would face a \"tremendous tax\" if they do.",
+            "ja": "ただし、そうした場合には「とてつもない税」を課されることになると警告した。"
+          },
+          {
+            "en": "\"If they do it, we want them to build it here,\" he said.",
+            "ja": "「もし建てるのなら、ここに建ててほしい」と同氏は述べた。"
+          },
+          {
+            "en": "He also said the goal was to keep the country ahead of China in AI.",
+            "ja": "また、狙いはAIで中国に対する優位を保つことだとも説明した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Trump did not explain how the tax would work.",
+            "ja": "トランプ氏は、その税がどのような仕組みになるのかを説明しなかった。"
+          },
+          {
+            "en": "It is also unclear what legal power the government has to impose one.",
+            "ja": "政府にそうした税を課す法的な権限があるのかどうかも、はっきりしていない。"
+          },
+          {
+            "en": "In September, he criticized Google's plan to invest at least 13 billion euros in Finland.",
+            "ja": "同氏は9月、グーグルがフィンランドに少なくとも130億ユーロを投資する計画を批判していた。"
+          },
+          {
+            "en": "He said the company chose to build there because getting permits at home was too difficult.",
+            "ja": "同氏は、国内で許可を得るのが難しすぎるため、同社がそこに建設することを選んだのだと述べた。"
+          },
+          {
+            "en": "Meanwhile, an August survey found that 61% of Americans opposed new data centers near their homes.",
+            "ja": "その一方で、8月の調査では、米国人の61%が自宅の近くに新しいデータセンターができることに反対していた。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much does Google plan to invest in data centers in Finland?",
+      "promptJa": "グーグルはフィンランドのデータセンターにいくら投資する計画ですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "At least 6.1 billion euros",
+          "ja": "少なくとも61億ユーロ"
+        },
+        {
+          "key": "B",
+          "text": "At least 13 billion euros",
+          "ja": "少なくとも130億ユーロ"
+        },
+        {
+          "key": "C",
+          "text": "At least 31 billion euros",
+          "ja": "少なくとも310億ユーロ"
+        },
+        {
+          "key": "D",
+          "text": "The amount was not announced",
+          "ja": "金額は発表されていない"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落3文目に \"Google's plan to invest at least 13 billion euros in Finland\" とあるので正解は (B)。(A) の6.1は、調査結果の「61%」という本文の別の数字の桁を変えたもの。(C) の31は13の数字を入れ替えたもので、本文に出てこない。(D) は本文に金額が明記されているので本文と逆の内容。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "数字を問う設問では、設問のキーワード（ここでは Google と Finland）を本文で探し、その近くにある数字を拾う。本文に複数の数字（61%、13 billion）が出る記事では、別の数字やその並べ替えが引っかけになりやすい。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to Trump, why did Google choose to build in Finland?",
+      "promptJa": "トランプ氏によれば、グーグルはなぜフィンランドに建設することを選んだのですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Land in Finland was cheaper.",
+          "ja": "フィンランドの土地が安かったから"
+        },
+        {
+          "key": "B",
+          "text": "Getting permits at home was too difficult.",
+          "ja": "国内で許可を得るのが難しすぎたから"
+        },
+        {
+          "key": "C",
+          "text": "China asked the company to build there.",
+          "ja": "中国が同社にそこへの建設を求めたから"
+        },
+        {
+          "key": "D",
+          "text": "Most Americans wanted it to build abroad.",
+          "ja": "米国人の多くが海外建設を望んだから"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落4文目に \"the company chose to build there because getting permits at home was too difficult\" とあり、because の後ろが理由なので正解は (B)。(A) の土地の安さは本文にない情報。(C) の中国は「AIで中国に対する優位を保つ」という政権の狙いの中で出てくるだけで、グーグルに建設を求めたという話はない。(D) は、本文では61%の米国人が地元への建設に「反対」しているとあるだけで、海外建設を望んだとは書かれていない。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "理由を問う設問（why）では、本文の because / due to / since の後ろを探す。設問の According to Trump のように「誰の意見か」が指定されているときは、その人の発言として書かれた文に根拠を限る。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "abroad",
+      "pos": "副",
+      "ja": "海外で、海外に",
+      "gloss": "",
+      "example": {
+        "en": "Our sales team often travels abroad to meet clients.",
+        "ja": "当社の営業チームは顧客に会うため、よく海外に出張する。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "tremendous",
+      "pos": "形",
+      "ja": "とてつもない、非常に大きな",
+      "gloss": "",
+      "example": {
+        "en": "The new system saved the company a tremendous amount of time.",
+        "ja": "新しいシステムのおかげで、会社は膨大な時間を節約できた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "warn",
+      "pos": "動",
+      "ja": "警告する、注意を促す",
+      "gloss": "",
+      "example": {
+        "en": "The manager warned staff that the office would close early on Friday.",
+        "ja": "部長は、金曜日はオフィスが早く閉まると社員に注意を促した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "impose",
+      "pos": "動",
+      "ja": "（税・規則などを）課す",
+      "gloss": "",
+      "example": {
+        "en": "The city plans to impose a fee on large delivery trucks.",
+        "ja": "市は大型配送トラックに料金を課す予定だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "criticize",
+      "pos": "動",
+      "ja": "批判する",
+      "gloss": "",
+      "example": {
+        "en": "Some customers criticized the store for its long waiting times.",
+        "ja": "一部の客は、待ち時間が長いとその店を批判した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "invest",
+      "pos": "動",
+      "ja": "投資する",
+      "gloss": "",
+      "example": {
+        "en": "The company will invest $2 million in new equipment next year.",
+        "ja": "その会社は来年、新しい設備に200万ドルを投資する。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "permit",
+      "pos": "名",
+      "ja": "許可、許可証",
+      "gloss": "",
+      "example": {
+        "en": "You need a parking permit to use the employee lot.",
+        "ja": "社員用駐車場を使うには駐車許可証が必要だ。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "oppose",
+      "pos": "動",
+      "ja": "反対する",
+      "gloss": "",
+      "example": {
+        "en": "Several board members opposed the plan to move the head office.",
+        "ja": "数人の取締役が本社移転の計画に反対した。"
+      }
+    }
+  ],
+  "glossary": {
+    "president": {
+      "lemma": "president",
+      "pos": "名",
+      "ja": "大統領",
+      "note": ""
+    },
+    "stop": {
+      "lemma": "stop",
+      "pos": "動",
+      "ja": "やめさせる",
+      "note": "stop A from -ing で「Aが〜するのを止める」"
+    },
+    "data": {
+      "lemma": "data",
+      "pos": "名",
+      "ja": "データ",
+      "note": ""
+    },
+    "centers": {
+      "lemma": "center",
+      "pos": "名",
+      "ja": "施設、センター",
+      "note": "data center で「データセンター」"
+    },
+    "huge": {
+      "lemma": "huge",
+      "pos": "形",
+      "ja": "巨大な",
+      "note": ""
+    },
+    "services": {
+      "lemma": "service",
+      "pos": "名",
+      "ja": "サービス",
+      "note": ""
+    },
+    "abroad": {
+      "lemma": "abroad",
+      "pos": "副",
+      "ja": "海外で、海外に",
+      "note": "前置詞なしで build abroad / travel abroad と使う"
+    },
+    "choose": {
+      "lemma": "choose",
+      "pos": "動",
+      "ja": "選ぶ、望む",
+      "note": ""
+    },
+    "warned": {
+      "lemma": "warn",
+      "pos": "動",
+      "ja": "警告した",
+      "note": "warn that ～ で「～だと警告する」"
+    },
+    "face": {
+      "lemma": "face",
+      "pos": "動",
+      "ja": "直面する",
+      "note": ""
+    },
+    "tremendous": {
+      "lemma": "tremendous",
+      "pos": "形",
+      "ja": "とてつもない",
+      "note": ""
+    },
+    "goal": {
+      "lemma": "goal",
+      "pos": "名",
+      "ja": "目標、狙い",
+      "note": ""
+    },
+    "ahead": {
+      "lemma": "ahead",
+      "pos": "副",
+      "ja": "先に、優位に",
+      "note": "ahead of ～ で「～より先に」"
+    },
+    "explain": {
+      "lemma": "explain",
+      "pos": "動",
+      "ja": "説明する",
+      "note": ""
+    },
+    "unclear": {
+      "lemma": "unclear",
+      "pos": "形",
+      "ja": "はっきりしない",
+      "note": ""
+    },
+    "legal": {
+      "lemma": "legal",
+      "pos": "形",
+      "ja": "法的な",
+      "note": ""
+    },
+    "power": {
+      "lemma": "power",
+      "pos": "名",
+      "ja": "権限、力",
+      "note": ""
+    },
+    "impose": {
+      "lemma": "impose",
+      "pos": "動",
+      "ja": "課す",
+      "note": "impose A on B で「BにAを課す」"
+    },
+    "criticized": {
+      "lemma": "criticize",
+      "pos": "動",
+      "ja": "批判した",
+      "note": "criticize A for B（BのことでAを批判する）の形も多い"
+    },
+    "invest": {
+      "lemma": "invest",
+      "pos": "動",
+      "ja": "投資する",
+      "note": "invest A in B で「BにAを投資する」"
+    },
+    "billion": {
+      "lemma": "billion",
+      "pos": "名",
+      "ja": "10億",
+      "note": ""
+    },
+    "permits": {
+      "lemma": "permit",
+      "pos": "名",
+      "ja": "許可",
+      "note": "動詞（許可する）はアクセントが後ろ"
+    },
+    "survey": {
+      "lemma": "survey",
+      "pos": "名",
+      "ja": "調査",
+      "note": ""
+    },
+    "found": {
+      "lemma": "find",
+      "pos": "動",
+      "ja": "明らかにした",
+      "note": "a survey found that ～ で「調査で～とわかった」"
+    },
+    "opposed": {
+      "lemma": "oppose",
+      "pos": "動",
+      "ja": "反対した",
+      "note": "be opposed to ～ の形もある"
+    },
+    "homes": {
+      "lemma": "home",
+      "pos": "名",
+      "ja": "自宅、住まい",
+      "note": ""
+    },
+    "meanwhile": {
+      "lemma": "meanwhile",
+      "pos": "副",
+      "ja": "その一方で",
+      "note": "話題を対比させるときの文頭の副詞"
+    }
+  },
+  "grammar": {
+    "topic": "want＋O＋to do（Oに〜してほしい：望む行動の主体を目的語で示す）",
+    "quote": "\"If they do it, we want them to build it here,\" he said.",
+    "quoteJa": "「もし建てるのなら、ここに建ててほしい」と同氏は述べた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "want＋O（目的語）＋to do で「Oに〜してほしい」という意味になる。want to build なら「（自分が）建てたい」だが、want them to build では間に them（＝企業）が入り、「建てる」のは主語の we ではなく them だと示す。つまり O が to 不定詞の意味上の主語になる形で、文法上は第5文型（S＋V＋O＋C）の一種として扱われる。O に代名詞が来るときは them / him / us のように目的格を使う。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "We want to build it here.（自分たちがここに建てたい）／We want them to build it here.（彼らにここに建ててほしい）。that 節を使った ✕ We want that they build it here. は英語として不自然で、want の後ろには that 節を置かない。同じ形をとる動詞に would like（We would like you to join the meeting.）、ask、tell、expect、encourage、allow がある。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では、空所の前後が「want / ask / encourage＋人＋------」となっていて、to do（不定詞）を選ばせる問題がよく出る。例：The manager asked all employees ------- the survey by Friday.（正解 to complete）。動詞の原形 complete や -ing 形 completing を混ぜる引っかけに注意する。なお let / make / have は O の後ろが原形になるので区別して覚える。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "We would like you to send the invoice by the end of the month.（月末までに請求書をお送りいただきたく存じます。）／The director wants the team to finish the report before the meeting.（部長はチームに、会議の前に報告書を仕上げてほしいと考えている。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "トランプ大統領は米国時間11月20日のホワイトハウスでの会見で、AIデータセンターを海外に建てる米企業に「とてつもない税」を課すと述べた。税率や法的な根拠は示しておらず、大統領令や法案はまだ出ていない。"
+    },
+    {
+      "heading": "📌 2. データセンターが国の争点になる理由",
+      "body": "データセンターの建設には、広い土地と大量の電力、そして自治体の建設許可が要る。トランプ氏は9月、グーグルがフィンランドを選んだのは米国内の許認可が難しすぎるからだと述べた。一方で政権は、AIの計算設備をどこに置くかを中国との競争の問題とみなし、海外へのAI半導体の出荷にも輸出許可(export license)を求めてきた。"
+    },
+    {
+      "heading": "📌 3. 海外か国内か、2社の選択",
+      "body": "マイクロソフトは2025年11月、UAE（アラブ首長国連邦）に2023〜2029年で計152億ドルを投じると発表した。2026年以降の55億ドルはAI・クラウド設備への設備投資(capital expenditure)で、米政府から半導体の輸出許可を得たうえでの海外展開だった。対照的にオープンAIとオラクルは、テキサス州の「スターゲート」拠点を国内に1.2ギガワット規模で整備したが、2026年3月にはそれを超える拡張を見送ったと報じられた。許可を得て海外に出るか、国内に集めるかで2社の選択は分かれた。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "KDDIは2026年1月22日、旧シャープ堺工場の跡地で「大阪堺データセンター」を稼働させた。エヌビディアの最新AIサーバーを備え、4月には法人向けGPUクラウドの正式提供を始めたと報じられている。グーグルのGeminiを社外に出さずに使うサービスにも充てる計画で、データを国内に置きたい企業の要望、いわゆるデータ主権(data sovereignty)に応える受け皿になっている。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "export license",
+      "pos": "名",
+      "ja": "輸出許可",
+      "gloss": "（＝特定の製品を国外へ送るために政府から得る許可のこと）",
+      "example": {
+        "en": "The company is waiting for an export license to ship the machines to Asia.",
+        "ja": "その会社は機械をアジアに出荷するための輸出許可を待っている。"
+      }
+    },
+    {
+      "term": "capital expenditure",
+      "pos": "名",
+      "ja": "設備投資",
+      "gloss": "（＝工場・建物・機械など長く使う設備に使うお金のこと。capex とも略す）",
+      "example": {
+        "en": "The firm cut its capital expenditure to save cash this year.",
+        "ja": "その会社は今年、手元資金を守るために設備投資を減らした。"
+      }
+    },
+    {
+      "term": "data sovereignty",
+      "pos": "名",
+      "ja": "データ主権",
+      "gloss": "（＝データをどの国に置き、どの国の法律で管理するかを自分たちで決められること）",
+      "example": {
+        "en": "Many banks choose local cloud services because of data sovereignty rules.",
+        "ja": "多くの銀行は、データ主権のルールを理由に国内のクラウドサービスを選ぶ。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trump vows to stop U.S. companies from building data centers abroad, threatens 'tremendous tax'",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
+      "date": "2026-11-20"
+    },
+    {
+      "title": "Google to invest €13bn in Finnish AI data centres, its biggest European push yet",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/2026/09/09/google-to-invest-13bn-in-finnish-ai-data-centres-its-biggest-european-push-yet",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "Microsoft's $15.2 billion USD investment in the UAE",
+      "publisher": "Microsoft On the Issues",
+      "url": "https://blogs.microsoft.com/on-the-issues/2025/11/03/microsofts-15-2-billion-usd-investment-in-the-uae/",
+      "date": "2025-11-03"
+    },
+    {
+      "title": "Oracle and OpenAI's Texas Stargate datacenter expansion reportedly on the skids",
+      "publisher": "The Register",
+      "url": "https://www.theregister.com/2026/03/07/openai_oracle_dc/",
+      "date": "2026-03-07"
+    },
+    {
+      "title": "KDDI、大阪堺データセンターを稼働",
+      "publisher": "クラウド Watch（Impress）",
+      "url": "https://cloud.watch.impress.co.jp/docs/news/2058485.html",
+      "date": "2026-01-22"
+    }
+  ]
+}
