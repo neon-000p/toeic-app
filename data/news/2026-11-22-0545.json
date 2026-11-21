@@ -500,5 +500,25 @@
       "url": "https://cloud.watch.impress.co.jp/docs/news/2058485.html",
       "date": "2026-01-22"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-22-0545/00.mp3",
+      "audio/2026-11-22-0545/01.mp3",
+      "audio/2026-11-22-0545/02.mp3",
+      "audio/2026-11-22-0545/03.mp3",
+      "audio/2026-11-22-0545/04.mp3",
+      "audio/2026-11-22-0545/05.mp3",
+      "audio/2026-11-22-0545/06.mp3",
+      "audio/2026-11-22-0545/07.mp3",
+      "audio/2026-11-22-0545/08.mp3",
+      "audio/2026-11-22-0545/09.mp3",
+      "audio/2026-11-22-0545/10.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 223684,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-21T20:52:16.793Z",
+    "trimmed": true
+  }
 }
