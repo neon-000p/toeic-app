@@ -514,5 +514,24 @@
       "url": "https://www.cnbc.com/2026/07/02/japan-airlines-increase-fuel-surcharges-despite-falling-jet-fuel-costs.html",
       "date": "2026-07-02"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-21-1647/00.mp3",
+      "audio/2026-11-21-1647/01.mp3",
+      "audio/2026-11-21-1647/02.mp3",
+      "audio/2026-11-21-1647/03.mp3",
+      "audio/2026-11-21-1647/04.mp3",
+      "audio/2026-11-21-1647/05.mp3",
+      "audio/2026-11-21-1647/06.mp3",
+      "audio/2026-11-21-1647/07.mp3",
+      "audio/2026-11-21-1647/08.mp3",
+      "audio/2026-11-21-1647/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 207416,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-21T07:50:27.543Z",
+    "trimmed": true
+  }
 }
