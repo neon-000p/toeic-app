@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-21-1647",
+  "date": "2026-11-21",
+  "time": "16:47",
+  "createdAt": "2026-11-21T16:47:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "Lufthansa to Cut 1,000 Jobs at Its Main Hubs",
+    "ja": "ルフトハンザ、主要拠点で1,000人削減へ"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Lufthansa plans to cut about 1,000 full-time jobs at its two main hubs, Frankfurt and Munich.",
+            "ja": "ルフトハンザは、2大拠点であるフランクフルトとミュンヘンで、フルタイム約1,000人分の職を削減する計画だ。"
+          },
+          {
+            "en": "Managers told employees about the plan in an internal letter this week.",
+            "ja": "経営陣は今週、社内向けの書簡でこの計画を従業員に伝えた。"
+          },
+          {
+            "en": "The cuts will affect the core airline, not the whole group.",
+            "ja": "削減の対象はグループ全体ではなく、中核の航空会社だ。"
+          },
+          {
+            "en": "The letter said high fuel costs, a war in the Middle East and several strikes had hurt the business this year.",
+            "ja": "書簡は、燃料費の高さ、中東での戦争、そして複数回のストライキが今年の事業に打撃を与えたと説明した。"
+          },
+          {
+            "en": "The airline will also reduce flights on short and medium routes.",
+            "ja": "同社は短・中距離路線の便数も減らす。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "It plans to fly fewer of its older jets and replace some of them with smaller, more efficient planes.",
+            "ja": "同社は古い機体の運航を減らし、その一部をより小型で効率の良い機体に置き換える計画だ。"
+          },
+          {
+            "en": "The news comes as talks with its pilots have broken down.",
+            "ja": "この発表は、パイロットとの交渉が決裂する中で出てきた。"
+          },
+          {
+            "en": "It is not yet clear when the cuts will take place.",
+            "ja": "削減がいつ実施されるかはまだ明らかになっていない。"
+          },
+          {
+            "en": "Last year, the group had already announced a plan to cut about 4,000 administrative jobs by 2030.",
+            "ja": "グループは昨年すでに、2030年までに事務部門の職を約4,000人分削減する計画を発表していた。"
+          },
+          {
+            "en": "It is also unclear whether the new cuts are part of that earlier plan.",
+            "ja": "今回の削減がその以前の計画に含まれるのかどうかも、はっきりしていない。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many jobs does the airline plan to cut at its two main hubs?",
+      "promptJa": "同社は2大拠点で何人分の職を削減する計画ですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 400",
+          "ja": "約400人分"
+        },
+        {
+          "key": "B",
+          "text": "About 1,000",
+          "ja": "約1,000人分"
+        },
+        {
+          "key": "C",
+          "text": "About 2,030",
+          "ja": "約2,030人分"
+        },
+        {
+          "key": "D",
+          "text": "About 4,000",
+          "ja": "約4,000人分"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第1段落1文目に \"cut about 1,000 full-time jobs at its two main hubs\" とあるので正解は (B)。(D) の約4,000人分は、昨年発表済みの「事務部門の職を2030年までに削減する」別の計画の数字（本文の別の数字）。(C) は年号の2030につられた誤り、(A) は4,000の桁を変えた数字で、どちらも本文に出てこない。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "数字を問う設問では、設問の条件（ここでは at its two main hubs）と本文の数字の主語・対象が一致しているかを確かめる。本文に複数の数字が出る記事では、別の計画の数字が引っかけになりやすい。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT mentioned as a reason for the airline's problems this year?",
+      "promptJa": "今年の同社の苦境の理由として述べられていないものはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "High fuel costs",
+          "ja": "燃料費の高さ"
+        },
+        {
+          "key": "B",
+          "text": "A war in the Middle East",
+          "ja": "中東での戦争"
+        },
+        {
+          "key": "C",
+          "text": "Fewer passengers on long routes",
+          "ja": "長距離路線の乗客減少"
+        },
+        {
+          "key": "D",
+          "text": "Several strikes",
+          "ja": "複数回のストライキ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落4文目に \"high fuel costs, a war in the Middle East and several strikes had hurt the business\" とあり、(A)(B)(D) はすべて本文に理由として書かれている。(C) の「長距離路線の乗客減少」は本文にない情報なので、これが正解。本文で減らすとされているのは短・中距離路線の便数（short and medium routes）であり、長距離路線の乗客の話は出てこない。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "NOT問題では、本文で A, B and C のように列挙されている箇所を探し、選択肢を1つずつ照合して消していく。残った1つが「本文にない情報」かを最後に確認する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "hub",
+      "pos": "名",
+      "ja": "拠点、中心地",
+      "gloss": "（＝航空会社が多くの便を集めて乗り継がせる中心の空港のこと）",
+      "example": {
+        "en": "The company opened a new distribution hub near the airport.",
+        "ja": "その会社は空港の近くに新しい物流拠点を開設した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "internal",
+      "pos": "形",
+      "ja": "社内の、内部の",
+      "gloss": "",
+      "example": {
+        "en": "Please read the internal memo before the meeting.",
+        "ja": "会議の前に社内メモを読んでください。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "affect",
+      "pos": "動",
+      "ja": "影響を与える",
+      "gloss": "",
+      "example": {
+        "en": "The new policy will affect all part-time staff.",
+        "ja": "新しい方針はすべてのパート従業員に影響する。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "reduce",
+      "pos": "動",
+      "ja": "減らす、削減する",
+      "gloss": "",
+      "example": {
+        "en": "We need to reduce travel expenses this quarter.",
+        "ja": "今四半期は出張費を減らす必要がある。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "replace",
+      "pos": "動",
+      "ja": "置き換える、取り替える",
+      "gloss": "",
+      "example": {
+        "en": "The office will replace the old printers with new ones next month.",
+        "ja": "事務所は来月、古いプリンターを新しいものに取り替える。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "efficient",
+      "pos": "形",
+      "ja": "効率の良い",
+      "gloss": "",
+      "example": {
+        "en": "The new software makes our billing process more efficient.",
+        "ja": "新しいソフトで請求業務がより効率的になる。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "take place",
+      "pos": "熟",
+      "ja": "行われる、実施される",
+      "gloss": "",
+      "example": {
+        "en": "The annual staff meeting will take place on March 3.",
+        "ja": "年次の全体会議は3月3日に行われる。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "administrative",
+      "pos": "形",
+      "ja": "事務の、管理の",
+      "gloss": "",
+      "example": {
+        "en": "She handles administrative tasks such as scheduling and filing.",
+        "ja": "彼女は日程調整や書類整理などの事務作業を担当している。"
+      }
+    }
+  ],
+  "glossary": {
+    "plans": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "計画する",
+      "note": "plan to do の形で「〜する予定だ」"
+    },
+    "full-time": {
+      "lemma": "full-time",
+      "pos": "形",
+      "ja": "常勤の、フルタイムの",
+      "note": ""
+    },
+    "hubs": {
+      "lemma": "hub",
+      "pos": "名",
+      "ja": "拠点",
+      "note": ""
+    },
+    "managers": {
+      "lemma": "manager",
+      "pos": "名",
+      "ja": "経営陣、管理職",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    },
+    "internal": {
+      "lemma": "internal",
+      "pos": "形",
+      "ja": "社内の",
+      "note": ""
+    },
+    "affect": {
+      "lemma": "affect",
+      "pos": "動",
+      "ja": "影響を与える",
+      "note": "名詞は effect なので混同に注意"
+    },
+    "core": {
+      "lemma": "core",
+      "pos": "形",
+      "ja": "中核の",
+      "note": ""
+    },
+    "whole": {
+      "lemma": "whole",
+      "pos": "形",
+      "ja": "全体の",
+      "note": ""
+    },
+    "fuel": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "costs": {
+      "lemma": "cost",
+      "pos": "名",
+      "ja": "費用",
+      "note": ""
+    },
+    "war": {
+      "lemma": "war",
+      "pos": "名",
+      "ja": "戦争",
+      "note": ""
+    },
+    "several": {
+      "lemma": "several",
+      "pos": "形",
+      "ja": "いくつかの",
+      "note": ""
+    },
+    "strikes": {
+      "lemma": "strike",
+      "pos": "名",
+      "ja": "ストライキ",
+      "note": "「打つ」ではなく労働者の一斉休業の意味"
+    },
+    "hurt": {
+      "lemma": "hurt",
+      "pos": "動",
+      "ja": "打撃を与える",
+      "note": "過去分詞も hurt"
+    },
+    "reduce": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "routes": {
+      "lemma": "route",
+      "pos": "名",
+      "ja": "路線",
+      "note": ""
+    },
+    "replace": {
+      "lemma": "replace",
+      "pos": "動",
+      "ja": "置き換える",
+      "note": "replace A with B で「AをBに置き換える」"
+    },
+    "efficient": {
+      "lemma": "efficient",
+      "pos": "形",
+      "ja": "効率の良い",
+      "note": ""
+    },
+    "talks": {
+      "lemma": "talk",
+      "pos": "名",
+      "ja": "交渉、協議",
+      "note": "複数形 talks で「交渉」の意味になる"
+    },
+    "pilots": {
+      "lemma": "pilot",
+      "pos": "名",
+      "ja": "パイロット",
+      "note": ""
+    },
+    "broken down": {
+      "lemma": "break down",
+      "pos": "熟",
+      "ja": "決裂する",
+      "note": "交渉が決裂する、機械が故障するの両方に使う"
+    },
+    "clear": {
+      "lemma": "clear",
+      "pos": "形",
+      "ja": "明らかな",
+      "note": ""
+    },
+    "take place": {
+      "lemma": "take place",
+      "pos": "熟",
+      "ja": "行われる",
+      "note": ""
+    },
+    "already": {
+      "lemma": "already",
+      "pos": "副",
+      "ja": "すでに",
+      "note": ""
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "発表する",
+      "note": ""
+    },
+    "administrative": {
+      "lemma": "administrative",
+      "pos": "形",
+      "ja": "事務の",
+      "note": ""
+    },
+    "unclear": {
+      "lemma": "unclear",
+      "pos": "形",
+      "ja": "はっきりしない",
+      "note": ""
+    },
+    "whether": {
+      "lemma": "whether",
+      "pos": "接",
+      "ja": "〜かどうか",
+      "note": ""
+    },
+    "earlier": {
+      "lemma": "earlier",
+      "pos": "形",
+      "ja": "以前の",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "間接疑問文（when / whether＋主語＋動詞：疑問文を文の一部に埋め込む）",
+    "quote": "It is not yet clear when the cuts will take place.",
+    "quoteJa": "削減がいつ実施されるかはまだ明らかになっていない。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "疑問詞（when / where / why / how など）や whether（〜かどうか）で始まる疑問文を、文の主語・目的語・補語の位置に埋め込んだ形を「間接疑問文」と呼ぶ。この文では It is not yet clear（まだ明らかでない）の後ろに when the cuts will take place（削減がいつ行われるか）が続き、It はこの when 以下を指す形式主語になっている。最大のポイントは、埋め込まれた部分の語順が「疑問詞＋主語＋動詞」の平叙文の語順になること。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "直接の疑問文なら When will the cuts take place?（will が主語の前）だが、間接疑問文では when the cuts will take place（主語 the cuts の後に will）となる。✕ It is not clear when will the cuts take place. は誤り。Yes/No で答える疑問文を埋め込むときは whether（または if）を使う：Are the new cuts part of that plan? → It is unclear whether the new cuts are part of that plan.（本文第2段落最後の文）。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では、空所の後ろに「主語＋動詞」が続いているかを見て、疑問詞（when / where / whether）と前置詞・関係代名詞を区別させる問題が出る。例：The manager has not decided ------- the meeting will be held.（正解 where / when）。また whether A or B の形や、whether の後ろに語順を倒置した選択肢を混ぜる引っかけにも注意する。Part 7 では It is not yet clear when ... のような文が「まだ決まっていないこと」を問う設問の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Could you tell me when the shipment will arrive?（出荷品がいつ届くか教えていただけますか。）／We are still checking whether the budget includes travel costs.（予算に出張費が含まれているかどうか、まだ確認中です。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "ルフトハンザ航空は11月19〜20日に報じられた社内書簡で、フランクフルトとミュンヘンの2拠点で、フルタイム換算約1,000人分の職を削減する方針を示した。理由には中東の戦争による燃料高、ストライキ、高いコスト体質を挙げた。"
+    },
+    {
+      "heading": "📌 2. 燃料高が人員削減につながる仕組み",
+      "body": "航空会社の費用の大きな部分は燃料費と人件費だ。燃料が急騰すると、採算の悪い便をやめて座席の供給量(capacity)を絞り、その便に関わる人員も減らすことになる。同社は2026年4月、燃料費がイラン戦争前の2倍を超えたとして、夏ダイヤの短距離便約2万便の削減と地域子会社シティラインの運航停止を決めた。長引くパイロットとの労使紛争(labor dispute)も費用を押し上げている。"
+    },
+    {
+      "heading": "📌 3. 他社の燃料高対策",
+      "body": "エールフランスKLMは2026年4月、同年の燃料費が前年より24億ドル増えるとして、座席供給の伸びの計画を3〜5%から2〜4%に下げた。7月にはさらに2〜3%へ下げ、2026年分の追加の燃料ヘッジ(fuel hedging)は行わないと説明した。一方ライアンエアーは、2027年4月までに使う燃料の約80%を1バレル約67ドルで事前に固定しており、急騰の打撃を受けたのは残り20%分に限られた。前もって価格を固めていたかどうかが、2社の打撃の差を生んだ。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本航空(JAL)と全日空(ANA)は、中東情勢による燃料高を受け、2026年5月発券分から国際線の燃油サーチャージをほぼ2倍に引き上げた。日本と北米・欧州を結ぶ路線では5万6,000円となった。両社はシンガポール市場の燃料価格の2カ月平均をもとに料金を見直す仕組みで、人員削減ではなく運賃への上乗せで費用増をまかなった。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "capacity",
+      "pos": "名",
+      "ja": "供給量、座席供給数",
+      "gloss": "（＝航空会社が売り出す座席の量のこと。工場なら生産能力を指す）",
+      "example": {
+        "en": "The factory will increase its capacity by 20% next year.",
+        "ja": "その工場は来年、生産能力を20%増やす。"
+      }
+    },
+    {
+      "term": "labor dispute",
+      "pos": "名",
+      "ja": "労使紛争",
+      "gloss": "（＝賃金や働き方をめぐって会社と労働組合が対立すること）",
+      "example": {
+        "en": "The labor dispute ended after both sides agreed on a new contract.",
+        "ja": "双方が新しい契約に合意し、労使紛争は終わった。"
+      }
+    },
+    {
+      "term": "fuel hedging",
+      "pos": "名",
+      "ja": "燃料ヘッジ",
+      "gloss": "（＝先物などで将来の燃料の購入価格を前もって固定しておくこと）",
+      "example": {
+        "en": "Fuel hedging helped the shipping company keep its costs stable.",
+        "ja": "燃料ヘッジのおかげで、その海運会社は費用を安定させられた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "What we know about Lufthansa's plan to cut 1,000 jobs in Frankfurt and Munich",
+      "publisher": "The Local Germany",
+      "url": "https://www.thelocal.de/20261120/what-we-know-about-lufthansas-plan-to-cut-1000-jobs-in-frankfurt-and-munich",
+      "date": "2026-11-20"
+    },
+    {
+      "title": "Lufthansa cuts 20,000 flights as fuel crisis bites in Germany",
+      "publisher": "The Local Germany",
+      "url": "https://www.thelocal.de/20260422/lufthansa-cuts-20000-flights-as-fuel-crisis-bites-in-germany",
+      "date": "2026-04-22"
+    },
+    {
+      "title": "Air France-KLM Cuts Capacity Outlook As Fuel Bill Jumps $2.4 Billion",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/air-france-klm-cuts-capacity-173522285.html",
+      "date": "2026-04-30"
+    },
+    {
+      "title": "Ryanair 2025/26 PAT rises 40% to €2.26bn",
+      "publisher": "Ryanair",
+      "url": "https://corporate.ryanair.com/news/ryanair-2025-26-pat-rises-40-to-e2-26bn-pre-except-traffic-grows-4-to-208m-despite-boeing-delays/",
+      "date": "2026-05-18"
+    },
+    {
+      "title": "Japan airlines increase fuel surcharges despite falling jet fuel costs",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/02/japan-airlines-increase-fuel-surcharges-despite-falling-jet-fuel-costs.html",
+      "date": "2026-07-02"
+    }
+  ]
+}
