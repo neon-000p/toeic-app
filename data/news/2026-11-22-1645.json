@@ -518,5 +518,25 @@
       "url": "https://www.euronews.com/2025/04/17/egypts-suez-canal-revenue-fell-sharply-in-2024-on-regional-tensions",
       "date": "2025-04-17"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-22-1645/00.mp3",
+      "audio/2026-11-22-1645/01.mp3",
+      "audio/2026-11-22-1645/02.mp3",
+      "audio/2026-11-22-1645/03.mp3",
+      "audio/2026-11-22-1645/04.mp3",
+      "audio/2026-11-22-1645/05.mp3",
+      "audio/2026-11-22-1645/06.mp3",
+      "audio/2026-11-22-1645/07.mp3",
+      "audio/2026-11-22-1645/08.mp3",
+      "audio/2026-11-22-1645/09.mp3",
+      "audio/2026-11-22-1645/10.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 225412,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-22T07:51:27.567Z",
+    "trimmed": true
+  }
 }
