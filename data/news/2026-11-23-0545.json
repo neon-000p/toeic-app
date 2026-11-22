@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-23-0545",
+  "date": "2026-11-23",
+  "time": "05:45",
+  "createdAt": "2026-11-23T05:45:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "TSMC and Samsung Pause Some Chip Shipments to China",
+    "ja": "TSMCとサムスン、中国向け一部半導体の出荷を停止"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Two of the world's largest chipmakers, TSMC and Samsung, have paused some chip shipments to customers in China.",
+            "ja": "世界最大級の半導体メーカーであるTSMCとサムスンの2社が、中国の顧客向けの一部の半導体の出荷を一時停止した。"
+          },
+          {
+            "en": "The move follows a new U.S. export rule that took effect on November 19.",
+            "ja": "この措置は、11月19日に発効した米国の新しい輸出規則を受けたものだ。"
+          },
+          {
+            "en": "Under the rule, the companies need a government license before they can ship certain advanced chips to Chinese designers.",
+            "ja": "この規則の下では、両社は特定の先端半導体を中国の設計会社に出荷する前に、政府の許可を得る必要がある。"
+          },
+          {
+            "en": "TSMC reportedly asked affected customers to halt orders for its 16-nanometer or newer chips, which are smaller and more powerful.",
+            "ja": "報道によると、TSMCは影響を受ける顧客に対し、16ナノメートル以降の世代の半導体（より小さく高性能なもの）の注文を止めるよう求めた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The rule treats advanced chips designed in China as AI chips unless the designer appears on a U.S.-approved list.",
+            "ja": "この規則は、設計会社が米国の承認リストに載っていない限り、中国で設計された先端半導体をAI向け半導体として扱う。"
+          },
+          {
+            "en": "As a result, even chips for smartphones and other consumer products can be held up.",
+            "ja": "その結果、スマートフォンなどの消費者向け製品に使う半導体でさえ、出荷が止められることがある。"
+          },
+          {
+            "en": "TSMC produces processors for several Chinese phone brands, so the delays could affect their production plans.",
+            "ja": "TSMCは中国の複数のスマートフォンブランド向けにプロセッサーを製造しているため、こうした遅れが各社の生産計画に影響するおそれがある。"
+          },
+          {
+            "en": "Applying for a license takes time, and there is no guarantee that it will be approved.",
+            "ja": "許可の申請には時間がかかり、承認される保証もない。"
+          },
+          {
+            "en": "Shares of both chipmakers fell after the news was reported.",
+            "ja": "この報道を受けて、両社の株価は下落した。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "When did the new U.S. export rule take effect?",
+      "promptJa": "米国の新しい輸出規則はいつ発効しましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "On November 9",
+          "ja": "11月9日"
+        },
+        {
+          "key": "B",
+          "text": "On November 16",
+          "ja": "11月16日"
+        },
+        {
+          "key": "C",
+          "text": "On November 19",
+          "ja": "11月19日"
+        },
+        {
+          "key": "D",
+          "text": "On November 29",
+          "ja": "11月29日"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落2文目に \"The move follows a new U.S. export rule that took effect on November 19.\" とあるので正解は (C)。(A) の11月9日、(B) の11月16日、(D) の11月29日はいずれも本文に出てこない日付で、19と似た数字や前後の日付を並べた引っかけである。設問の take effect（発効する）が本文の took effect と同じ表現である点も手がかりになる。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "設問のキーワード（take effect）を本文で探し、その文の中の日付だけを拾う。日付を問う設問では、似た数字（9・19・29）が選択肢に並びやすいので、1桁ずつ照合する。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why could Chinese phone brands be affected?",
+      "promptJa": "記事によると、中国のスマートフォンブランドが影響を受けるおそれがあるのはなぜですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Their shares fell after the news was reported.",
+          "ja": "報道後に株価が下がったから"
+        },
+        {
+          "key": "B",
+          "text": "TSMC makes processors for them.",
+          "ja": "TSMCが彼らのプロセッサーを作っているから"
+        },
+        {
+          "key": "C",
+          "text": "They are on a U.S.-approved list.",
+          "ja": "米国の承認リストに載っているから"
+        },
+        {
+          "key": "D",
+          "text": "They have stopped buying AI chips.",
+          "ja": "AI向け半導体の購入をやめたから"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落3文目に \"TSMC produces processors for several Chinese phone brands, so the delays could affect their production plans.\" とあり、so の前が理由になっているので正解は (B)。本文の produces が選択肢では makes に言い換えられている。(A) 株価が下がったのは「両社（TSMCとサムスン）」で、スマホブランドではない（本文の別の情報）。(C) 承認リストに載っていれば AI 向け半導体として扱われないので、影響を受ける理由としては本文と逆になる。(D) スマホブランドがAI半導体の購入をやめたという話は本文にない。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "why の設問は、本文の so / because / as a result の前後を探すと根拠が見つかりやすい。正解の選択肢は本文の語を同じ意味の別の語（produce → make）に言い換えていることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "pause",
+      "pos": "動",
+      "ja": "一時停止する",
+      "gloss": "",
+      "example": {
+        "en": "We paused the project until the budget was approved.",
+        "ja": "予算が承認されるまで、私たちはそのプロジェクトを一時停止した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "shipment",
+      "pos": "名",
+      "ja": "出荷、発送（品）",
+      "gloss": "",
+      "example": {
+        "en": "The shipment will arrive at the warehouse on Friday.",
+        "ja": "その出荷品は金曜日に倉庫に届く予定だ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "take effect",
+      "pos": "熟",
+      "ja": "（規則などが）発効する、効力を持つ",
+      "gloss": "",
+      "example": {
+        "en": "The new travel policy will take effect next month.",
+        "ja": "新しい出張規定は来月から適用される。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "license",
+      "pos": "名",
+      "ja": "許可、免許、ライセンス",
+      "gloss": "",
+      "example": {
+        "en": "You need a license to sell food at the event.",
+        "ja": "そのイベントで食品を販売するには許可が必要だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "affected",
+      "pos": "形",
+      "ja": "影響を受けた",
+      "gloss": "",
+      "example": {
+        "en": "The airline contacted all affected passengers by email.",
+        "ja": "その航空会社は、影響を受けたすべての乗客にメールで連絡した。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "halt",
+      "pos": "動",
+      "ja": "止める、停止させる",
+      "gloss": "",
+      "example": {
+        "en": "The factory halted production for two days.",
+        "ja": "その工場は2日間生産を停止した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "guarantee",
+      "pos": "名",
+      "ja": "保証",
+      "gloss": "",
+      "example": {
+        "en": "There is no guarantee that the price will stay the same.",
+        "ja": "価格が変わらないという保証はない。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "approve",
+      "pos": "動",
+      "ja": "承認する",
+      "gloss": "",
+      "example": {
+        "en": "The manager approved my request for a day off.",
+        "ja": "部長は私の休暇申請を承認した。"
+      }
+    }
+  ],
+  "glossary": {
+    "chipmakers": {
+      "lemma": "chipmaker",
+      "pos": "名",
+      "ja": "半導体メーカー",
+      "note": ""
+    },
+    "paused": {
+      "lemma": "pause",
+      "pos": "動",
+      "ja": "一時停止した",
+      "note": ""
+    },
+    "shipments": {
+      "lemma": "shipment",
+      "pos": "名",
+      "ja": "出荷",
+      "note": ""
+    },
+    "follows": {
+      "lemma": "follow",
+      "pos": "動",
+      "ja": "〜に続く",
+      "note": "A follows B で「AはBを受けたものだ」"
+    },
+    "export": {
+      "lemma": "export",
+      "pos": "名",
+      "ja": "輸出",
+      "note": ""
+    },
+    "took effect": {
+      "lemma": "take effect",
+      "pos": "熟",
+      "ja": "発効した",
+      "note": ""
+    },
+    "under": {
+      "lemma": "under",
+      "pos": "前",
+      "ja": "〜の下で",
+      "note": "under the rule で「その規則の下では」"
+    },
+    "license": {
+      "lemma": "license",
+      "pos": "名",
+      "ja": "許可",
+      "note": ""
+    },
+    "ship": {
+      "lemma": "ship",
+      "pos": "動",
+      "ja": "出荷する",
+      "note": "船に限らず「発送する」の意味で使う"
+    },
+    "certain": {
+      "lemma": "certain",
+      "pos": "形",
+      "ja": "特定の、一部の",
+      "note": ""
+    },
+    "advanced": {
+      "lemma": "advanced",
+      "pos": "形",
+      "ja": "先端の、高度な",
+      "note": ""
+    },
+    "designers": {
+      "lemma": "designer",
+      "pos": "名",
+      "ja": "設計会社、設計者",
+      "note": ""
+    },
+    "reportedly": {
+      "lemma": "reportedly",
+      "pos": "副",
+      "ja": "報道によると",
+      "note": ""
+    },
+    "affected": {
+      "lemma": "affected",
+      "pos": "形",
+      "ja": "影響を受けた",
+      "note": ""
+    },
+    "halt": {
+      "lemma": "halt",
+      "pos": "動",
+      "ja": "止める",
+      "note": ""
+    },
+    "orders": {
+      "lemma": "order",
+      "pos": "名",
+      "ja": "注文",
+      "note": ""
+    },
+    "powerful": {
+      "lemma": "powerful",
+      "pos": "形",
+      "ja": "高性能な、強力な",
+      "note": ""
+    },
+    "treats": {
+      "lemma": "treat",
+      "pos": "動",
+      "ja": "扱う",
+      "note": "treat A as B で「AをBとして扱う」"
+    },
+    "designed": {
+      "lemma": "design",
+      "pos": "動",
+      "ja": "設計された",
+      "note": ""
+    },
+    "unless": {
+      "lemma": "unless",
+      "pos": "接",
+      "ja": "〜でない限り",
+      "note": ""
+    },
+    "appears": {
+      "lemma": "appear",
+      "pos": "動",
+      "ja": "（名簿などに）載っている",
+      "note": ""
+    },
+    "as a result": {
+      "lemma": "as a result",
+      "pos": "熟",
+      "ja": "その結果",
+      "note": ""
+    },
+    "held up": {
+      "lemma": "hold up",
+      "pos": "熟",
+      "ja": "止められる、遅れる",
+      "note": "be held up で「足止めされる」"
+    },
+    "processors": {
+      "lemma": "processor",
+      "pos": "名",
+      "ja": "プロセッサー（処理用の半導体）",
+      "note": ""
+    },
+    "delays": {
+      "lemma": "delay",
+      "pos": "名",
+      "ja": "遅れ",
+      "note": ""
+    },
+    "production": {
+      "lemma": "production",
+      "pos": "名",
+      "ja": "生産",
+      "note": ""
+    },
+    "applying for": {
+      "lemma": "apply for",
+      "pos": "熟",
+      "ja": "〜を申請すること",
+      "note": ""
+    },
+    "guarantee": {
+      "lemma": "guarantee",
+      "pos": "名",
+      "ja": "保証",
+      "note": ""
+    },
+    "approved": {
+      "lemma": "approve",
+      "pos": "動",
+      "ja": "承認された",
+      "note": ""
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式、株価",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "助動詞＋受動態（can be held up / will be approved：助動詞のあとに be＋過去分詞を置く）",
+    "quote": "As a result, even chips for smartphones and other consumer products can be held up.",
+    "quoteJa": "その結果、スマートフォンなどの消費者向け製品に使う半導体でさえ、出荷が止められることがある。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "can be held up は「助動詞 can ＋ be ＋過去分詞 held up」の形で、「止められることがある」という受動態に助動詞の意味（可能性）を足したもの。主語の chips は自分で止まるのではなく、規則によって「止められる」側なので受動態になる。助動詞のあとは必ず原形なので、is ではなく be を使う。同じ記事の it will be approved（承認されるだろう）も同じ形。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "能動態にすると The rule can hold up even chips for smartphones.（その規則はスマホ向けの半導体さえ止めうる）。受動態にすると「誰が止めるか」より「何が止められるか」に焦点が当たる。ほかの助動詞でも同様：must be submitted（提出されなければならない）、should be checked（確認されるべきだ）、may be delayed（遅れるかもしれない）。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 では「The report must ------- by Friday.」のような空所に (A) submit (B) submitted (C) be submitted (D) submitting が並ぶ。主語の report は「提出される」側なので、助動詞の後ろに be＋過去分詞の (C) を選ぶ。(B) submitted だけでは助動詞の後ろに原形が来ないので誤り。Part 6・7 の社内通知では、will be closed / will be delivered のような未来の受動態が頻出する。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "All expense reports must be submitted by the end of the month.（経費報告書はすべて月末までに提出しなければなりません。）／Your order may be delayed due to bad weather.（悪天候のため、ご注文の品の到着が遅れる場合があります。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米商務省の新しい輸出規制(export controls)が11月19日に発効し、台湾のTSMCと韓国のサムスン電子が、中国企業向けの一部の半導体の出荷を止めた。対象は回路の線幅が16ナノメートル以下の先端品で、米政府の許可が出るまで出荷できない。"
+    },
+    {
+      "heading": "📌 2. 新ルールの仕組み",
+      "body": "新ルールは、中国企業が設計した先端半導体を、設計会社が米国の承認リストに載っていない限り「AI向け半導体」とみなす。製造を請け負う工場や組み立て会社の側が、この扱いに従って許可の有無を確かめる立場になる。スマートフォン向けの半導体も対象に入るため、中国のスマホメーカーの供給網(supply chain)にも遅れが及ぶ。"
+    },
+    {
+      "heading": "📌 3. 中国向け規制、2社の明暗",
+      "body": "米エヌビディアは2025年4月、中国向けAI半導体の輸出に無期限で許可が必要になると米政府から通知され、売れなくなった在庫などに最大約55億ドルの費用を計上した。中国は前年に170億ドル超を売り上げた大市場だった。オランダの露光装置大手ASMLは、中国向けの比率が2025年の約3割から2026年4〜6月期には14%（装置売上ベース）まで下がったが、他地域の需要で補い、2026年の売上見通しを引き上げた。前者は規制で一度に大きな損失が出た例、後者は中国の落ち込みを他地域で吸収した例である。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "半導体製造装置の東京エレクトロンは、日本が2023年7月に先端装置23品目の輸出を規制して以降、売上比率(share of sales)に占める中国の割合が下がり、2026年1〜3月期は前年同期の4割超から3割弱になった。一方でAI向けの装置販売を伸ばし、2026年3月期の売上高は過去最高の約2兆4435億円となった。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "export controls",
+      "pos": "熟",
+      "ja": "輸出規制",
+      "gloss": "（＝国が安全保障などの理由で、特定の品物の輸出を制限すること）",
+      "example": {
+        "en": "The company checks export controls before sending parts overseas.",
+        "ja": "その会社は部品を海外に送る前に輸出規制を確認する。"
+      }
+    },
+    {
+      "term": "supply chain",
+      "pos": "熟",
+      "ja": "供給網、サプライチェーン",
+      "gloss": "（＝原材料の調達から製造・配送までの一連の流れのこと）",
+      "example": {
+        "en": "The storm caused problems across our supply chain.",
+        "ja": "その嵐で、当社の供給網全体に問題が生じた。"
+      }
+    },
+    {
+      "term": "share of sales",
+      "pos": "熟",
+      "ja": "売上比率",
+      "gloss": "（＝売上全体のうち、ある地域や製品が占める割合のこと）",
+      "example": {
+        "en": "Online orders now make up a larger share of sales.",
+        "ja": "今ではオンライン注文が売上のより大きな割合を占めている。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "TSMC, Samsung Reportedly Pause China Consumer Chip Shipments Under New U.S. Rules; 16nm Orders Affected",
+      "publisher": "TrendForce",
+      "url": "https://www.trendforce.com/news/2026/11/20/news-tsmc-samsung-reportedly-pause-china-consumer-chip-shipments-under-new-u-s-rules-16nm-orders-affected",
+      "date": "2026-11-20"
+    },
+    {
+      "title": "TSMC, Samsung Halt Some Chip Shipments to China as U.S. Rules Take Effect",
+      "publisher": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/world/2026/11/20/tsmc-samsung-halt-some-chip-shipments-to-china-as-us-rules",
+      "date": "2026-11-20"
+    },
+    {
+      "title": "Nvidia China H20 chips exports",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2025/04/16/nx-s1-5366665/nvidia-china-h20-chips-exports",
+      "date": "2025-04-16"
+    },
+    {
+      "title": "ASML raises 2026 sales forecast again on booming AI chip demand",
+      "publisher": "DutchNews.nl",
+      "url": "https://www.dutchnews.nl/2026/07/asml-raises-2026-sales-forecast-again-on-booming-ai-chip-demand/",
+      "date": "2026-07-15"
+    },
+    {
+      "title": "Japan's chip equipment giants are losing China and betting on AI to fill the gap",
+      "publisher": "Startup Fortune",
+      "url": "https://startupfortune.com/japans-chip-equipment-giants-are-losing-china-and-betting-on-ai-to-fill-the-gap/",
+      "date": "2026-07-12"
+    }
+  ]
+}
