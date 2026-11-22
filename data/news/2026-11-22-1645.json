@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-22-1645",
+  "date": "2026-11-22",
+  "time": "16:45",
+  "createdAt": "2026-11-22T16:45:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "Tanker Attacks Rise in Hormuz as Trump Seeks a \"Permanent\" Iran Deal",
+    "ja": "ホルムズでタンカー攻撃増加、トランプ氏は恒久合意を模索"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Attacks on oil tankers in the Strait of Hormuz have reached their highest level since the war with Iran began.",
+            "ja": "ホルムズ海峡で石油タンカーへの攻撃が、イランとの戦争が始まって以来の最も高い水準に達している。"
+          },
+          {
+            "en": "The strait is a narrow waterway that carries a large share of the world's oil.",
+            "ja": "同海峡は、世界の石油の大きな割合が通る狭い水路だ。"
+          },
+          {
+            "en": "A British maritime agency counted 31 attacks in and around the strait in October.",
+            "ja": "英国の海事機関は、10月に同海峡とその周辺で31件の攻撃を数えた。"
+          },
+          {
+            "en": "It recorded about 19 more in the first 18 days of November.",
+            "ja": "11月も最初の18日間で、さらに約19件を記録した。"
+          },
+          {
+            "en": "Commercial traffic there is still far below normal.",
+            "ja": "同海峡を通る商船の往来は、今も平常時を大きく下回っている。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "President Donald Trump said he wants a \"permanent\" deal with Iran.",
+            "ja": "ドナルド・トランプ大統領は、イランとの「恒久的な」合意を望んでいると述べた。"
+          },
+          {
+            "en": "He said the goal is to make sure a future president cannot allow Iran to get a nuclear weapon.",
+            "ja": "狙いは、将来の大統領がイランの核兵器保有を認められないようにすることだと同氏は語った。"
+          },
+          {
+            "en": "However, he gave no timetable, and Iran says it is still in contact with mediators.",
+            "ja": "ただし同氏は日程を示しておらず、イランは仲介役と今も連絡を取り合っているとしている。"
+          },
+          {
+            "en": "Meanwhile, oil prices have fallen for three weeks in a row.",
+            "ja": "その一方で、原油価格は3週連続で下落している。"
+          },
+          {
+            "en": "Traders expect a surplus because supply from the region remains high.",
+            "ja": "この地域からの供給が多いままなので、トレーダーは供給の余剰を見込んでいる。"
+          },
+          {
+            "en": "Even so, analysts say the attacks keep prices higher than they would otherwise be.",
+            "ja": "それでもアナリストは、攻撃がなければもっと安いはずの価格を、攻撃が押し上げていると指摘する。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many attacks were counted in and around the strait in October?",
+      "promptJa": "10月に同海峡とその周辺で数えられた攻撃は何件ですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "18",
+          "ja": "18件"
+        },
+        {
+          "key": "B",
+          "text": "19",
+          "ja": "19件"
+        },
+        {
+          "key": "C",
+          "text": "31",
+          "ja": "31件"
+        },
+        {
+          "key": "D",
+          "text": "About 50",
+          "ja": "約50件"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落3文目に \"A British maritime agency counted 31 attacks in and around the strait in October.\" とあるので正解は (C)。(A) の18は「11月の最初の18日間」という日数で、攻撃の件数ではない。(B) の19は11月（18日まで）の件数で、10月の数字ではない。(D) の約50は10月と11月を足した数に近いが、本文にはそのような合計は書かれていない（本文にない情報）。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "設問の October のような「時」を表す語を本文で探し、その文の中の数字だけを拾う。本文に数字が3つ以上（31・19・18）出る記事では、別の月の件数や日数がそのまま引っかけの選択肢になりやすい。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why do traders expect a surplus of oil?",
+      "promptJa": "トレーダーはなぜ石油の余剰を見込んでいるのですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Attacks on tankers have stopped.",
+          "ja": "タンカーへの攻撃が止まったから"
+        },
+        {
+          "key": "B",
+          "text": "Supply from the region remains high.",
+          "ja": "地域からの供給が多いままだから"
+        },
+        {
+          "key": "C",
+          "text": "A permanent deal with Iran has been signed.",
+          "ja": "イランとの恒久的な合意が結ばれたから"
+        },
+        {
+          "key": "D",
+          "text": "Traffic through the strait is back to normal.",
+          "ja": "海峡の往来が平常に戻ったから"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落5文目に \"Traders expect a surplus because supply from the region remains high.\" とあり、because の後ろが理由なので正解は (B)。(A) は本文と逆で、攻撃は過去最高の水準に達している。(C) はトランプ氏が「恒久的な合意を望んでいる」と述べただけで、合意はまだ結ばれておらず日程も示されていない。(D) も本文と逆で、往来は今も平常時を大きく下回っている（第1段落5文目）。",
+      "evidence": {
+        "p": 1,
+        "s": 4
+      },
+      "tip": "Why で始まる設問は、本文の because / since / as / due to などの理由を表す語の直後に答えがあることが多い。設問の expect a surplus をそのまま本文で探すと、根拠の文がすぐ見つかる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "share",
+      "pos": "名",
+      "ja": "割合、分け前",
+      "gloss": "",
+      "example": {
+        "en": "Our company has a large share of the local market.",
+        "ja": "当社は地元市場で大きなシェアを持っている。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "maritime",
+      "pos": "形",
+      "ja": "海事の、海運の",
+      "gloss": "（＝海や船の運航に関わること）",
+      "example": {
+        "en": "She works for a maritime insurance firm in Singapore.",
+        "ja": "彼女はシンガポールの海上保険会社で働いている。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "recorded",
+      "pos": "動",
+      "ja": "記録した",
+      "gloss": "",
+      "example": {
+        "en": "The store recorded its highest sales in December.",
+        "ja": "その店は12月に過去最高の売上を記録した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "commercial",
+      "pos": "形",
+      "ja": "商業の、営利の",
+      "gloss": "",
+      "example": {
+        "en": "The building has both commercial and residential space.",
+        "ja": "その建物には商業用と住居用の両方のスペースがある。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "permanent",
+      "pos": "形",
+      "ja": "恒久的な、常勤の",
+      "gloss": "",
+      "example": {
+        "en": "After six months, she was offered a permanent position.",
+        "ja": "6か月後、彼女は正社員のポジションを打診された。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "timetable",
+      "pos": "名",
+      "ja": "予定表、日程",
+      "gloss": "",
+      "example": {
+        "en": "The manager shared the project timetable with the team.",
+        "ja": "マネージャーはプロジェクトの日程表をチームに共有した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "mediators",
+      "pos": "名",
+      "ja": "仲介者、調停役",
+      "gloss": "",
+      "example": {
+        "en": "The two companies asked a mediator to help settle the dispute.",
+        "ja": "両社は紛争の解決を助けてもらうため、調停役に依頼した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "surplus",
+      "pos": "名",
+      "ja": "余剰、黒字",
+      "gloss": "",
+      "example": {
+        "en": "The factory sold its surplus stock at a discount.",
+        "ja": "その工場は余った在庫を値引きして売った。"
+      }
+    }
+  ],
+  "glossary": {
+    "attacks": {
+      "lemma": "attack",
+      "pos": "名",
+      "ja": "攻撃",
+      "note": ""
+    },
+    "tankers": {
+      "lemma": "tanker",
+      "pos": "名",
+      "ja": "タンカー（油槽船）",
+      "note": ""
+    },
+    "reached": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "達した",
+      "note": ""
+    },
+    "since": {
+      "lemma": "since",
+      "pos": "接",
+      "ja": "〜して以来",
+      "note": ""
+    },
+    "narrow": {
+      "lemma": "narrow",
+      "pos": "形",
+      "ja": "狭い",
+      "note": ""
+    },
+    "waterway": {
+      "lemma": "waterway",
+      "pos": "名",
+      "ja": "水路",
+      "note": ""
+    },
+    "carries": {
+      "lemma": "carry",
+      "pos": "動",
+      "ja": "運ぶ",
+      "note": ""
+    },
+    "share": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "割合",
+      "note": "a large share of 〜 で「〜の大部分」"
+    },
+    "maritime": {
+      "lemma": "maritime",
+      "pos": "形",
+      "ja": "海事の",
+      "note": ""
+    },
+    "agency": {
+      "lemma": "agency",
+      "pos": "名",
+      "ja": "機関、庁",
+      "note": ""
+    },
+    "counted": {
+      "lemma": "count",
+      "pos": "動",
+      "ja": "数えた",
+      "note": ""
+    },
+    "recorded": {
+      "lemma": "record",
+      "pos": "動",
+      "ja": "記録した",
+      "note": ""
+    },
+    "commercial": {
+      "lemma": "commercial",
+      "pos": "形",
+      "ja": "商業の",
+      "note": ""
+    },
+    "traffic": {
+      "lemma": "traffic",
+      "pos": "名",
+      "ja": "往来、交通量",
+      "note": ""
+    },
+    "permanent": {
+      "lemma": "permanent",
+      "pos": "形",
+      "ja": "恒久的な",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "取引、合意",
+      "note": ""
+    },
+    "make sure": {
+      "lemma": "make sure",
+      "pos": "熟",
+      "ja": "確実にする",
+      "note": "make sure (that) S＋V で「必ず〜するようにする」"
+    },
+    "allow": {
+      "lemma": "allow",
+      "pos": "動",
+      "ja": "許す",
+      "note": "allow A to do で「Aが〜するのを許す」"
+    },
+    "nuclear": {
+      "lemma": "nuclear",
+      "pos": "形",
+      "ja": "核の",
+      "note": ""
+    },
+    "weapon": {
+      "lemma": "weapon",
+      "pos": "名",
+      "ja": "兵器",
+      "note": ""
+    },
+    "timetable": {
+      "lemma": "timetable",
+      "pos": "名",
+      "ja": "日程",
+      "note": ""
+    },
+    "in contact with": {
+      "lemma": "in contact with",
+      "pos": "熟",
+      "ja": "〜と連絡を取って",
+      "note": ""
+    },
+    "mediators": {
+      "lemma": "mediator",
+      "pos": "名",
+      "ja": "仲介者",
+      "note": ""
+    },
+    "meanwhile": {
+      "lemma": "meanwhile",
+      "pos": "副",
+      "ja": "その一方で",
+      "note": ""
+    },
+    "in a row": {
+      "lemma": "in a row",
+      "pos": "熟",
+      "ja": "連続で",
+      "note": ""
+    },
+    "surplus": {
+      "lemma": "surplus",
+      "pos": "名",
+      "ja": "余剰",
+      "note": ""
+    },
+    "supply": {
+      "lemma": "supply",
+      "pos": "名",
+      "ja": "供給",
+      "note": ""
+    },
+    "remains": {
+      "lemma": "remain",
+      "pos": "動",
+      "ja": "〜のままである",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "otherwise": {
+      "lemma": "otherwise",
+      "pos": "副",
+      "ja": "そうでなければ",
+      "note": "would otherwise be で「（その要因が）なければ〜だろう」"
+    }
+  },
+  "grammar": {
+    "topic": "be動詞＋to不定詞（The goal is to do：主語の中身を to 不定詞で示す名詞的用法）",
+    "quote": "He said the goal is to make sure a future president cannot allow Iran to get a nuclear weapon.",
+    "quoteJa": "狙いは、将来の大統領がイランの核兵器保有を認められないようにすることだと同氏は語った。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "the goal is to make sure ... は「目標は〜することだ」という意味で、to make sure 以下が be 動詞の補語（C）になっている。to 不定詞が「〜すること」という名詞の働きをする名詞的用法で、主語の goal（目標）の中身を説明している。goal のほか aim / purpose / plan / job / mission など「目的・計画・役割」を表す名詞が主語のとき、この形がよく使われる。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "The goal is to make sure ...（目標は〜することだ）は、動名詞で The goal is making sure ... とも言えるが、目的や計画を述べるときは to 不定詞が自然。一方、We are to meet at noon.（正午に会うことになっている）のように主語が人のときの be to do は「予定・義務」を表す別の用法なので区別する。見分け方は「主語＝to 以下」の関係が成り立つかどうか（目標＝確実にすること）。"
+      },
+      {
+        "heading": "TOEIC での出題",
+        "body": "Part 5 では「The purpose of the meeting is ------- the new budget.」のように、be 動詞の後ろの空所に to discuss を選ばせる問題が出る。discuss（原形）や discussed（過去分詞）を入れると「目的が話し合われる」という受け身の意味になってしまう。Part 7 では \"The aim of this program is to ...\" の後ろが文書の目的を問う設問の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "The purpose of this e-mail is to confirm the delivery date.（本メールの目的は、納期の確認です。）／Our plan is to open two new offices next year.（当社の計画は、来年新たに2つの事務所を開くことです。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "英国の海事機関によると、ホルムズ海峡周辺の攻撃は10月に31件、11月も18日までに約19件と、開戦以来の高い水準が続く。それでも原油価格は3週連続で下がり、トランプ大統領は日程を示さないまま、イランとの「恒久的な」合意を目指すと述べた。"
+    },
+    {
+      "heading": "📌 2. 攻撃が増えても値下がりする理由",
+      "body": "ホルムズ海峡は、ペルシャ湾の産油国が原油を運び出すときに必ず通るチョークポイント(chokepoint)で、代わりの航路がほとんどない。攻撃が増えると、船主が航海ごとに払う戦争保険料(war risk premium)が上がり、輸送費も膨らむ。それでも市場は、ほかの地域からの出荷も多いため、世界全体では供給過剰(supply glut)になるとみている。"
+    },
+    {
+      "heading": "📌 3. 航路の混乱、2つの明暗",
+      "body": "2023年末からの紅海危機では、デンマークの海運大手マースクが船をアフリカ南端の喜望峰回りに切り替えた。遠回りで燃料の消費量は14%増えたが、運賃の上昇がそれを上回り、2024年の営業利益は65億ドルと同社で3番目の好業績になった。一方、船の通航料を収入とするエジプトのスエズ運河は、2024年の収入が約40億ドルと、過去最高だった前年の102.5億ドルから6割以上減った。同じ混乱でも、荷を運ぶ側は運賃で取り戻せたが、通り道を貸す側は収入を失った。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本郵船は開戦直後の2026年3月1日、自社の船にホルムズ海峡への進入をやめるよう指示し、すでに湾内にいる船は安全な場所で待機させた。商船三井と川崎汽船も同じころ通航を止め、川崎汽船は湾内の貨物について「代わりの輸送手段は限られる」と説明した。原油の多くを中東から運ぶ日本の海運各社にとって、海峡の安全が戻るかどうかが航路を元に戻す前提になっている。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "chokepoint",
+      "pos": "名",
+      "ja": "チョークポイント（海上交通の要衝）",
+      "gloss": "（＝多くの船が必ず通る、狭くて代わりのきかない場所のこと）",
+      "example": {
+        "en": "The bridge is a chokepoint for trucks entering the city.",
+        "ja": "その橋は、市内に入るトラックにとっての要衝だ。"
+      }
+    },
+    {
+      "term": "war risk premium",
+      "pos": "熟",
+      "ja": "戦争保険料",
+      "gloss": "（＝戦争や攻撃による損害に備えて、船主が上乗せで払う保険料のこと）",
+      "example": {
+        "en": "The shipping company raised its rates to cover the war risk premium.",
+        "ja": "その海運会社は、戦争保険料をまかなうため料金を引き上げた。"
+      }
+    },
+    {
+      "term": "supply glut",
+      "pos": "熟",
+      "ja": "供給過剰",
+      "gloss": "（＝需要に比べて品物が出回りすぎている状態のこと）",
+      "example": {
+        "en": "A supply glut pushed down the price of memory chips.",
+        "ja": "供給過剰で、メモリーチップの価格が下がった。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Iran Intensifies Hormuz Tanker Attacks Just as Oil Prices Slide",
+      "publisher": "gCaptain (Bloomberg)",
+      "url": "https://gcaptain.com/iran-intensifies-hormuz-tanker-attacks-just-as-oil-prices-slide/",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
+      "publisher": "ABC News",
+      "url": "https://abcnews.com/International/strait-hormuz-attacks-increased-highest-level-iran-war/story?id=138304456",
+      "date": "2026-11-20"
+    },
+    {
+      "title": "\"Going to be permanent\": Trump on making a deal with Iran",
+      "publisher": "ANI",
+      "url": "https://aninews.in/news/world/us/going-to-be-permanent-trump-on-making-a-deal-with-iran20261121215855/",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Maersk reports third best financial year",
+      "publisher": "Maersk",
+      "url": "https://www.maersk.com/pt-br/news/articles/2025/02/06/maersk-reports-third-best-financial-year",
+      "date": "2025-02-06"
+    },
+    {
+      "title": "Egypt's Suez Canal revenue fell sharply in 2024 on regional tensions",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/2025/04/17/egypts-suez-canal-revenue-fell-sharply-in-2024-on-regional-tensions",
+      "date": "2025-04-17"
+    }
+  ]
+}
