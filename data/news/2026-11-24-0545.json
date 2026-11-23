@@ -496,5 +496,24 @@
       "url": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2025-financial-results-highlights-rd",
       "date": "2025-10-30"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-24-0545/00.mp3",
+      "audio/2026-11-24-0545/01.mp3",
+      "audio/2026-11-24-0545/02.mp3",
+      "audio/2026-11-24-0545/03.mp3",
+      "audio/2026-11-24-0545/04.mp3",
+      "audio/2026-11-24-0545/05.mp3",
+      "audio/2026-11-24-0545/06.mp3",
+      "audio/2026-11-24-0545/07.mp3",
+      "audio/2026-11-24-0545/08.mp3",
+      "audio/2026-11-24-0545/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 238232,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-23T20:56:00.332Z",
+    "trimmed": true
+  }
 }
