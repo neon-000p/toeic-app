@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-24-0545",
+  "date": "2026-11-24",
+  "time": "05:45",
+  "createdAt": "2026-11-24T05:45:00+09:00",
+  "genre": "医療",
+  "genreEn": "Healthcare",
+  "sample": false,
+  "title": {
+    "en": "FDA Approves Roche Pill for Early Breast Cancer",
+    "ja": "ロシュの早期乳がん薬、米FDAが承認"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The U.S. Food and Drug Administration (FDA) approved a new breast cancer pill from Roche on Monday.",
+            "ja": "米食品医薬品局（FDA）は月曜日、スイスのロシュの新しい乳がんの飲み薬を承認した。"
+          },
+          {
+            "en": "The drug, Wilserdly, is for patients with early-stage breast cancer after surgery.",
+            "ja": "この薬「ウィルサードリー」は、手術を受けた早期乳がんの患者向けである。"
+          },
+          {
+            "en": "Patients take it once a day to help stop the cancer from coming back.",
+            "ja": "患者は1日1回服用し、がんの再発を防ぐ助けにする。"
+          },
+          {
+            "en": "In a large study, it lowered the risk of the cancer returning or death by 30% compared with standard hormone therapy.",
+            "ja": "大規模な試験では、標準的なホルモン療法と比べて、がんの再発または死亡のリスクを30%下げた。"
+          },
+          {
+            "en": "It is the first new hormone therapy to be approved for these patients in over 20 years.",
+            "ja": "こうした患者向けに承認された新しいホルモン療法は、20年以上ぶりとなる。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The approval came a week ahead of the agency's deadline of November 30.",
+            "ja": "承認は、同局が定めた11月30日の期限より1週間早く出た。"
+          },
+          {
+            "en": "This matters for business because the early-stage market is much larger than the advanced-cancer market.",
+            "ja": "早期がんの市場は進行がんの市場よりはるかに大きいため、この承認は事業面でも重要である。"
+          },
+          {
+            "en": "Roche has set a list price of $22,500 a month before discounts.",
+            "ja": "ロシュは、値引き前の表示価格を月2万2500ドルに設定している。"
+          },
+          {
+            "en": "Three similar pills from rivals are already sold, but none is approved for early-stage patients.",
+            "ja": "競合他社の似た飲み薬3つがすでに販売されているが、早期の患者向けに承認されたものはない。"
+          },
+          {
+            "en": "Some analysts expect yearly sales of more than $10 billion at their peak.",
+            "ja": "一部のアナリストは、ピーク時の年間売上高が100億ドルを超えると予想している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did the drug lower the risk in the study?",
+      "promptJa": "試験で、この薬はリスクをどれだけ下げましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "By 20%",
+          "ja": "20%"
+        },
+        {
+          "key": "B",
+          "text": "By 30%",
+          "ja": "30%"
+        },
+        {
+          "key": "C",
+          "text": "By 50%",
+          "ja": "50%"
+        },
+        {
+          "key": "D",
+          "text": "By 22.5%",
+          "ja": "22.5%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は(B)。第1段落4文目に it lowered the risk ... by 30% とあり、再発または死亡のリスクを30%下げたと明記されている。(A)(C)は本文にない数字。(D)は表示価格「$22,500」の数字を紛らわしく変えたひっかけで、リスクの数字ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "Part 7 では本文に複数の数字が出る。設問の名詞（risk）を本文で探し、その直後の数字だけを拾うと、別の数字（価格・年数）のひっかけを避けられる。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why is the approval important for Roche's business?",
+      "promptJa": "この承認がロシュの事業にとって重要なのはなぜですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The early-stage market is much larger.",
+          "ja": "早期がんの市場がはるかに大きい"
+        },
+        {
+          "key": "B",
+          "text": "The drug is cheaper than rival pills.",
+          "ja": "競合薬より安い"
+        },
+        {
+          "key": "C",
+          "text": "Rival pills were removed from the market.",
+          "ja": "競合薬が市場から撤退した"
+        },
+        {
+          "key": "D",
+          "text": "The agency lowered the drug's price.",
+          "ja": "当局が価格を下げた"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正解は(A)。第2段落2文目に This matters for business because the early-stage market is much larger ... とあり、because の後ろが理由そのもの。(B)価格を競合と比べる記述はない。(C)競合薬は already sold（すでに販売中）で、撤退していないので本文と逆。(D)価格を決めたのはロシュ（Roche has set a list price）で、当局ではない。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "Why 問題は本文の because / since / so that の直後に答えがあることが多い。matters（重要である）のような「重要性」を表す語も根拠の目印になる。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "approval",
+      "pos": "名",
+      "ja": "承認、許可",
+      "gloss": "",
+      "example": {
+        "en": "The project needs approval from the board.",
+        "ja": "そのプロジェクトには取締役会の承認が必要だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "agency",
+      "pos": "名",
+      "ja": "（政府の）機関、局",
+      "gloss": "",
+      "example": {
+        "en": "The agency will review the application next month.",
+        "ja": "その機関は来月、申請を審査する。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "deadline",
+      "pos": "名",
+      "ja": "期限、締め切り",
+      "gloss": "",
+      "example": {
+        "en": "The deadline for the report is Friday.",
+        "ja": "報告書の締め切りは金曜日だ。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "ahead of",
+      "pos": "熟",
+      "ja": "〜より早く、〜に先立って",
+      "gloss": "",
+      "example": {
+        "en": "We finished the project two days ahead of schedule.",
+        "ja": "私たちは予定より2日早くプロジェクトを終えた。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "compared with",
+      "pos": "熟",
+      "ja": "〜と比べて",
+      "gloss": "",
+      "example": {
+        "en": "Sales rose 5% compared with last year.",
+        "ja": "売上は前年と比べて5%増えた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "list price",
+      "pos": "名",
+      "ja": "表示価格、定価",
+      "gloss": "（＝値引き前にカタログなどで示す価格のこと）",
+      "example": {
+        "en": "The list price of the printer is $300.",
+        "ja": "そのプリンターの定価は300ドルだ。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "peak",
+      "pos": "名",
+      "ja": "ピーク、最高時",
+      "gloss": "",
+      "example": {
+        "en": "Hotel prices reach their peak in August.",
+        "ja": "ホテルの料金は8月にピークに達する。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "hormone therapy",
+      "pos": "名",
+      "ja": "ホルモン療法",
+      "gloss": "（＝体の中のホルモンの働きを抑えて、病気の進行を防ぐ治療のこと）",
+      "example": {
+        "en": "The new clinic offers hormone therapy to its patients.",
+        "ja": "その新しいクリニックは患者にホルモン療法を提供している。"
+      }
+    }
+  ],
+  "glossary": {
+    "approved": {
+      "lemma": "approve",
+      "pos": "動",
+      "ja": "承認した",
+      "note": ""
+    },
+    "pill": {
+      "lemma": "pill",
+      "pos": "名",
+      "ja": "錠剤、飲み薬",
+      "note": ""
+    },
+    "early-stage": {
+      "lemma": "early-stage",
+      "pos": "形",
+      "ja": "初期の、早期の",
+      "note": ""
+    },
+    "surgery": {
+      "lemma": "surgery",
+      "pos": "名",
+      "ja": "手術",
+      "note": ""
+    },
+    "once a day": {
+      "lemma": "once a day",
+      "pos": "熟",
+      "ja": "1日1回",
+      "note": ""
+    },
+    "coming back": {
+      "lemma": "come back",
+      "pos": "熟",
+      "ja": "戻ること、再発",
+      "note": ""
+    },
+    "lowered": {
+      "lemma": "lower",
+      "pos": "動",
+      "ja": "下げた",
+      "note": ""
+    },
+    "risk": {
+      "lemma": "risk",
+      "pos": "名",
+      "ja": "危険性、リスク",
+      "note": ""
+    },
+    "returning": {
+      "lemma": "return",
+      "pos": "動",
+      "ja": "再発すること",
+      "note": "名詞の後ろで「〜が…すること」の意味"
+    },
+    "death": {
+      "lemma": "death",
+      "pos": "名",
+      "ja": "死亡",
+      "note": ""
+    },
+    "compared with": {
+      "lemma": "compared with",
+      "pos": "熟",
+      "ja": "〜と比べて",
+      "note": ""
+    },
+    "standard": {
+      "lemma": "standard",
+      "pos": "形",
+      "ja": "標準的な",
+      "note": ""
+    },
+    "hormone therapy": {
+      "lemma": "hormone therapy",
+      "pos": "名",
+      "ja": "ホルモン療法",
+      "note": ""
+    },
+    "approval": {
+      "lemma": "approval",
+      "pos": "名",
+      "ja": "承認",
+      "note": ""
+    },
+    "ahead of": {
+      "lemma": "ahead of",
+      "pos": "熟",
+      "ja": "〜より早く",
+      "note": ""
+    },
+    "agency": {
+      "lemma": "agency",
+      "pos": "名",
+      "ja": "（政府の）機関",
+      "note": ""
+    },
+    "deadline": {
+      "lemma": "deadline",
+      "pos": "名",
+      "ja": "期限",
+      "note": ""
+    },
+    "matters": {
+      "lemma": "matter",
+      "pos": "動",
+      "ja": "重要である",
+      "note": "名詞の matter（問題）と区別"
+    },
+    "advanced-cancer": {
+      "lemma": "advanced cancer",
+      "pos": "形",
+      "ja": "進行がんの",
+      "note": ""
+    },
+    "list price": {
+      "lemma": "list price",
+      "pos": "名",
+      "ja": "表示価格",
+      "note": ""
+    },
+    "discounts": {
+      "lemma": "discount",
+      "pos": "名",
+      "ja": "値引き",
+      "note": ""
+    },
+    "similar": {
+      "lemma": "similar",
+      "pos": "形",
+      "ja": "似ている",
+      "note": ""
+    },
+    "rivals": {
+      "lemma": "rival",
+      "pos": "名",
+      "ja": "競合他社",
+      "note": ""
+    },
+    "none": {
+      "lemma": "none",
+      "pos": "名",
+      "ja": "どれも〜ない",
+      "note": ""
+    },
+    "analysts": {
+      "lemma": "analyst",
+      "pos": "名",
+      "ja": "アナリスト",
+      "note": ""
+    },
+    "yearly": {
+      "lemma": "yearly",
+      "pos": "形",
+      "ja": "年間の",
+      "note": ""
+    },
+    "peak": {
+      "lemma": "peak",
+      "pos": "名",
+      "ja": "ピーク、最高時",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "the first＋名詞＋to不定詞（〜する最初の…：to不定詞の形容詞的用法。受け身は to be＋過去分詞）",
+    "quote": "It is the first new hormone therapy to be approved for these patients in over 20 years.",
+    "quoteJa": "こうした患者向けに承認された新しいホルモン療法は、20年以上ぶりとなる。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "the first new hormone therapy（最初の新しいホルモン療法）という名詞のかたまりを、後ろの to be approved（承認される）が説明している。to不定詞が名詞を後ろから修飾する「形容詞的用法」である。名詞が「承認される側」なので、to approve ではなく受け身の to be＋過去分詞になる。the first / the last / the only の後ろでよく使われる形。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "関係代名詞で書き換えると It is the first new hormone therapy that has been approved for these patients ... となる。to不定詞を使うほうが短く、ニュースでよく好まれる。能動の例：She was the first employee to arrive.（彼女は最初に到着した社員だった）。名詞が動作をする側なら to do、される側なら to be done と覚える。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 で The company was the first ------- the new system. のように空所に to introduce / introducing / introduced を選ばせる問題が出る。the first＋名詞の後ろは to不定詞が基本。Part 7 では the first ... in over 20 years（20年以上ぶりの）が「前例の少なさ」を示す根拠としてよく問われる。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Our branch was the first to reach this year's sales target.（当支店は今年の売上目標を最初に達成した支店だった）／ This is the only product to be approved for use in hospitals.（これは病院での使用が承認された唯一の製品だ）。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米食品医薬品局（FDA）は11月23日、スイスのロシュの飲み薬「ウィルサードリー」を、手術後の早期乳がんの再発を防ぐ薬として承認した。審査期限の11月30日より1週間早い。大規模な試験では、再発または死亡のリスクを標準のホルモン療法より30%下げた。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "新薬は、企業が承認申請(regulatory filing)を出したあと当局の審査を受ける。この申請は優先審査(priority review)の対象となり、通常より短い期間で結論が出た。同じ薬は11月16日に進行がん向けにも承認済みだが、手術後の患者は人数が多く、長い期間飲み続けるため市場ははるかに大きい。表示価格は月2万2500ドルである。"
+    },
+    {
+      "heading": "📌 3. 他社の乳がん薬では",
+      "body": "米イーライリリーの乳がん薬「ベージニオ」は、進行がんに加えて再発リスクの高い早期乳がんにも使われ、2025年の売上高は四半期の合計で約57億ドルに達した。同社は2025年10月、早期乳がんで2年間服用した患者の生存期間が延びたと発表している。一方、英アストラゼネカの同じ種類の飲み薬カミゼストラントは、2026年4月の諮問委員会で過半数の支持を得られず、9月に迅速承認(accelerated approval)を受けるにとどまった。長期の試験ではっきりした結果を出せたかどうかが、2社の違いだった。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "ロシュグループの中外製薬は、2026年5月にこの薬を日本で承認申請した。対象は手術後の乳がんと、手術できない・再発した乳がんの2つである。ただし、ロシュは同年3月、日本も参加した進行乳がんの国際試験で主な目標を達成できなかったと発表した。国内でどこまでの患者に使えるかが、中外製薬の売上の伸びを左右する。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "regulatory filing",
+      "pos": "名",
+      "ja": "承認申請",
+      "gloss": "（＝製品の販売許可を得るために当局へ書類を出すこと）",
+      "example": {
+        "en": "The company made a regulatory filing for its new device in May.",
+        "ja": "その会社は5月に新しい機器の承認申請を出した。"
+      }
+    },
+    {
+      "term": "priority review",
+      "pos": "名",
+      "ja": "優先審査",
+      "gloss": "（＝重要な申請を通常より早く審査すること）",
+      "example": {
+        "en": "The application was granted priority review.",
+        "ja": "その申請は優先審査の対象になった。"
+      }
+    },
+    {
+      "term": "accelerated approval",
+      "pos": "名",
+      "ja": "迅速承認",
+      "gloss": "（＝追加の確認を条件に、早めに出す承認のこと）",
+      "example": {
+        "en": "The product received accelerated approval last year.",
+        "ja": "その製品は昨年、迅速承認を受けた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "FDA approves Roche’s Wilserdly (giredestrant) for early-stage ER-positive breast cancer, making it the first new endocrine therapy in this setting in over 20 years",
+      "publisher": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/11/23/3408771/0/en/fda-approves-roche-s-wilserdly-giredestrant-for-early-stage-er-positive-breast-cancer-making-it-the-first-new-endocrine-therapy-in-this-setting-in-over-20-years.html",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "Roche opens key early-stage breast cancer market for oral SERDs with Wilserdly FDA nod",
+      "publisher": "Fierce Pharma",
+      "url": "https://www.fiercepharma.com/pharma/roche-opens-key-early-stage-breast-cancer-market-oral-serds-wilserdly-fda-nod",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "Roche’s next major breast cancer drug, Wilserdly, secures FDA approval as 4th oral SERD",
+      "publisher": "Fierce Pharma",
+      "url": "https://www.fiercepharma.com/pharma/roche-next-big-breast-cancer-drug-wilserdly-secures-fda-approval-4th-oral-serd",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "FDA grants accelerated approval to camizestrant with a CDK4/6 inhibitor for ESR1-mutated HR-positive, HER2-negative locally advanced or metastatic breast cancer",
+      "publisher": "U.S. FDA",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-camizestrant-cdk46-inhibitor-esr1-mutated-hr-positive-her2-negative",
+      "date": "2026-09-04"
+    },
+    {
+      "title": "Lilly reports third-quarter 2025 financial results",
+      "publisher": "Eli Lilly and Company",
+      "url": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2025-financial-results-highlights-rd",
+      "date": "2025-10-30"
+    }
+  ]
+}
