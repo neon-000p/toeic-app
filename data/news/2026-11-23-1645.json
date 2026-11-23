@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-23-1645",
+  "date": "2026-11-23",
+  "time": "16:45",
+  "createdAt": "2026-11-23T16:45:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "Warm Weather Forces Gap to Lower Its Sales Forecast",
+    "ja": "暖かい秋でGapが売上見通しを下方修正"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Gap Inc. lowered its full-year sales forecast after warm weather slowed demand for fall clothing.",
+            "ja": "米Gapは、暖かい天候で秋物衣料の需要が鈍ったことを受け、通期の売上高見通しを引き下げた。"
+          },
+          {
+            "en": "The company said third-quarter sales rose 2% to about $4 billion.",
+            "ja": "同社によると、第3四半期の売上高は2%増の約40億ドルだった。"
+          },
+          {
+            "en": "However, it now expects annual sales to be roughly flat, down from an earlier forecast of 1% to 1.5% growth.",
+            "ja": "しかし、年間の売上高は前年並みにとどまる見込みとし、従来の1〜1.5%増という予想から引き下げた。"
+          },
+          {
+            "en": "The CEO said demand softened in October and early November because temperatures stayed high.",
+            "ja": "最高経営責任者（CEO）は、気温が高いままだったため、10月から11月初めにかけて需要が弱まったと説明した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The weakest area was Old Navy, the group's largest brand.",
+            "ja": "最も振るわなかったのは、グループ最大のブランドであるOld Navyだった。"
+          },
+          {
+            "en": "Its sales rose only 1% to $2.3 billion, and it had to offer discounts during the warmer weeks.",
+            "ja": "同ブランドの売上高は1%増の23億ドルにとどまり、暖かい週には値引きをせざるを得なかった。"
+          },
+          {
+            "en": "These promotions attracted shoppers, but they also reduced profit margins.",
+            "ja": "こうした販促は買い物客を呼び込んだが、利益率も押し下げた。"
+          },
+          {
+            "en": "In contrast, the Gap brand performed well, with comparable sales up 9%.",
+            "ja": "対照的に、Gapブランドは好調で、既存店売上高は9%伸びた。"
+          },
+          {
+            "en": "The company said customer traffic has improved since the weather turned cooler.",
+            "ja": "同社は、気温が下がってからは客足が回復していると述べた。"
+          },
+          {
+            "en": "The update came just before the busy holiday shopping season.",
+            "ja": "この発表は、忙しい年末商戦が始まる直前に行われた。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did the company's third-quarter sales increase?",
+      "promptJa": "同社の第3四半期の売上高はどれだけ増えましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1%",
+          "ja": "1%"
+        },
+        {
+          "key": "B",
+          "text": "1.5%",
+          "ja": "1.5%"
+        },
+        {
+          "key": "C",
+          "text": "2%",
+          "ja": "2%"
+        },
+        {
+          "key": "D",
+          "text": "9%",
+          "ja": "9%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "第1段落2文目に \"The company said third-quarter sales rose 2% to about $4 billion.\" とあるので正解は (C)。設問の increase が本文では rose に言い換えられている。(A) 1% は Old Navy の売上の伸び、(B) 1.5% は従来の年間見通しの上限、(D) 9% は Gap ブランドの既存店売上高の伸びで、いずれも本文の別の数字を使った引っかけである。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "数字を問う設問では、本文に複数のパーセントが出てくることが多い。設問の主語（the company's third-quarter sales）と同じ主語の文を探し、その文の数字だけを選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why did Old Navy offer discounts?",
+      "promptJa": "記事によると、Old Navy が値引きをしたのはなぜですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To sell its remaining summer clothing",
+          "ja": "夏物の売れ残りを売るため"
+        },
+        {
+          "key": "B",
+          "text": "Because the weather stayed warm",
+          "ja": "暖かい天気が続いたから"
+        },
+        {
+          "key": "C",
+          "text": "To compete with the Gap brand",
+          "ja": "Gapブランドと競うため"
+        },
+        {
+          "key": "D",
+          "text": "Because customer traffic was too high",
+          "ja": "客足が多すぎたから"
+        }
+      ],
+      "answer": "B",
+      "explanation": "第2段落2文目に \"it had to offer discounts during the warmer weeks\" とあり、第1段落でも暖かい天候で秋物の需要が鈍ったと説明されているので正解は (B)。(A) 夏物の売れ残りについては本文に書かれていない（本文にない情報）。(C) Gap ブランドは同じ会社の好調なブランドとして対比されているだけで、競争のために値引きしたわけではない。(D) 客足は気温が下がってから回復したと書かれており、多すぎたという話は本文と逆である。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "why の設問は、該当する文だけでなく前後の文脈（ここでは warm weather → demand softened → discounts）をつなげて答える。本文の warmer weeks が選択肢では the weather stayed warm に言い換えられている。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "forecast",
+      "pos": "名",
+      "ja": "予測、見通し",
+      "gloss": "",
+      "example": {
+        "en": "The sales team updated its forecast for next quarter.",
+        "ja": "営業チームは来四半期の見通しを更新した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for hotel rooms rises during the holidays.",
+        "ja": "休暇の時期にはホテルの客室の需要が高まる。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "soften",
+      "pos": "動",
+      "ja": "弱まる、和らぐ",
+      "gloss": "",
+      "example": {
+        "en": "Sales softened after the summer campaign ended.",
+        "ja": "夏のキャンペーンが終わると売上が弱まった。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "annual",
+      "pos": "形",
+      "ja": "年間の、年1回の",
+      "gloss": "",
+      "example": {
+        "en": "The annual meeting will be held in March.",
+        "ja": "年次総会は3月に開かれる。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "discount",
+      "pos": "名",
+      "ja": "値引き、割引",
+      "gloss": "",
+      "example": {
+        "en": "Members receive a 10% discount on all items.",
+        "ja": "会員は全商品10%引きで購入できる。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "promotion",
+      "pos": "名",
+      "ja": "販売促進、販促キャンペーン",
+      "gloss": "",
+      "example": {
+        "en": "The store is running a promotion on winter coats.",
+        "ja": "その店は冬物コートの販促を行っている。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "margin",
+      "pos": "名",
+      "ja": "利益率、利ざや",
+      "gloss": "（＝売上のうち利益として残る割合のこと）",
+      "example": {
+        "en": "Higher shipping costs reduced our margin.",
+        "ja": "配送費の上昇で当社の利益率が下がった。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "traffic",
+      "pos": "名",
+      "ja": "客足、来店者数",
+      "gloss": "",
+      "example": {
+        "en": "The new sign helped increase traffic to the shop.",
+        "ja": "新しい看板のおかげで店の客足が増えた。"
+      }
+    }
+  ],
+  "glossary": {
+    "lowered": {
+      "lemma": "lower",
+      "pos": "動",
+      "ja": "引き下げた",
+      "note": ""
+    },
+    "full-year": {
+      "lemma": "full-year",
+      "pos": "形",
+      "ja": "通期の、1年間の",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "名",
+      "ja": "見通し、予測",
+      "note": ""
+    },
+    "slowed": {
+      "lemma": "slow",
+      "pos": "動",
+      "ja": "鈍らせた",
+      "note": ""
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "fall": {
+      "lemma": "fall",
+      "pos": "名",
+      "ja": "秋",
+      "note": "米国英語。英国では autumn"
+    },
+    "clothing": {
+      "lemma": "clothing",
+      "pos": "名",
+      "ja": "衣料品",
+      "note": ""
+    },
+    "third-quarter": {
+      "lemma": "third-quarter",
+      "pos": "形",
+      "ja": "第3四半期の",
+      "note": ""
+    },
+    "margins": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "見込む",
+      "note": ""
+    },
+    "annual": {
+      "lemma": "annual",
+      "pos": "形",
+      "ja": "年間の",
+      "note": ""
+    },
+    "roughly": {
+      "lemma": "roughly",
+      "pos": "副",
+      "ja": "おおよそ",
+      "note": ""
+    },
+    "flat": {
+      "lemma": "flat",
+      "pos": "形",
+      "ja": "横ばいの",
+      "note": "売上や価格が増えも減りもしないこと"
+    },
+    "softened": {
+      "lemma": "soften",
+      "pos": "動",
+      "ja": "弱まった",
+      "note": ""
+    },
+    "temperatures": {
+      "lemma": "temperature",
+      "pos": "名",
+      "ja": "気温",
+      "note": ""
+    },
+    "weakest": {
+      "lemma": "weak",
+      "pos": "形",
+      "ja": "最も弱い",
+      "note": ""
+    },
+    "offer": {
+      "lemma": "offer",
+      "pos": "動",
+      "ja": "提供する",
+      "note": ""
+    },
+    "discounts": {
+      "lemma": "discount",
+      "pos": "名",
+      "ja": "値引き",
+      "note": ""
+    },
+    "promotions": {
+      "lemma": "promotion",
+      "pos": "名",
+      "ja": "販促",
+      "note": ""
+    },
+    "attracted": {
+      "lemma": "attract",
+      "pos": "動",
+      "ja": "引きつけた",
+      "note": ""
+    },
+    "reduced": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らした",
+      "note": ""
+    },
+    "profit margins": {
+      "lemma": "profit margin",
+      "pos": "熟",
+      "ja": "利益率",
+      "note": ""
+    },
+    "in contrast": {
+      "lemma": "in contrast",
+      "pos": "熟",
+      "ja": "対照的に",
+      "note": ""
+    },
+    "performed": {
+      "lemma": "perform",
+      "pos": "動",
+      "ja": "業績を上げた",
+      "note": "perform well で「好調だ」"
+    },
+    "comparable sales": {
+      "lemma": "comparable sales",
+      "pos": "熟",
+      "ja": "既存店売上高",
+      "note": "1年以上営業している店だけで比べた売上"
+    },
+    "traffic": {
+      "lemma": "traffic",
+      "pos": "名",
+      "ja": "客足",
+      "note": ""
+    },
+    "improved": {
+      "lemma": "improve",
+      "pos": "動",
+      "ja": "改善した",
+      "note": ""
+    },
+    "turned": {
+      "lemma": "turn",
+      "pos": "動",
+      "ja": "（〜の状態に）なった",
+      "note": "turn cooler で「涼しくなる」"
+    },
+    "update": {
+      "lemma": "update",
+      "pos": "名",
+      "ja": "最新の発表",
+      "note": ""
+    },
+    "holiday shopping season": {
+      "lemma": "holiday shopping season",
+      "pos": "熟",
+      "ja": "年末商戦",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "付帯状況の with（with＋名詞＋形容詞・副詞：〜が…の状態で）",
+    "quote": "In contrast, the Gap brand performed well, with comparable sales up 9%.",
+    "quoteJa": "対照的に、Gapブランドは好調で、既存店売上高は9%伸びた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "with comparable sales up 9% は「with ＋名詞（comparable sales）＋状態を表す語（up 9%）」の形で、「既存店売上高が9%上がった状態で」という意味を前の文に付け足している。これを付帯状況の with という。with の後ろには動詞を置かず、名詞と、その名詞がどんな状態かを示す形容詞・副詞・前置詞句・分詞が続く。ここでは up が「上がって」という状態を表す副詞として働いている。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "接続詞を使って書き換えると ..., and its comparable sales were up 9%.（そして既存店売上高は9%増だった）。with を使うと be 動詞や接続詞を省けるので、数字を短く添えられる。分詞を使う形もある：with sales rising（売上が伸びながら）、with the door closed（ドアを閉めたまま）。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 では「The meeting ended early, ------- most questions answered.」のような空所に (A) with (B) and (C) so (D) because が並ぶ。後ろが「名詞＋過去分詞」で動詞が無いので、接続詞の (B)(C)(D) は入らず (A) with を選ぶ。Part 7 の決算記事では with profits down 5% / with orders up sharply のように数字を添える形でよく出る。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Our team finished the year strongly, with online orders up 15%.（当チームはオンライン注文が15%増と、力強く1年を終えました。）／He left the office with the lights on.（彼は電気をつけたまま事務所を出た。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米衣料大手Gapは11月19日、8〜10月期の売上高が前年同期比2%増の約40億ドルだったと発表した。一方、10月から11月初めの高い気温で秋冬物が伸びず、通期の売上見通しを「1〜1.5%増」から「ほぼ横ばい」に引き下げた。"
+    },
+    {
+      "heading": "📌 2. 季節商品と値下げの仕組み",
+      "body": "衣料品の秋冬物は、気温が下がったときに一気に売れる季節商品だ。暖かい日が続くとコートやセーターが店に残り、シーズン中に値下げ処分(markdown)をしないと売れ残る。値下げは客を呼ぶ一方で利益率を削る。Gapの主力Old Navyも暖かい週に販促を増やしたが、既存店売上高(comparable sales)は横ばいにとどまった。"
+    },
+    {
+      "heading": "📌 3. 暖冬に他社はどう対応したか",
+      "body": "欧州の格安衣料チェーンのプライマークは2026年9月、長引く暑さで秋冬物の購入時期が遅れたと発表した。売れ残りそうな季節在庫(seasonal inventory)を動かすため秋冬物の数百品目を値下げし、直近四半期の既存店売上は約3%減の見通しとなった。米ディスカウント衣料のバーリントンは2025年11月、9月の暖かさで客足が落ち、コートやブーツの売上が2桁減ったと説明した。既存店売上は1%増にとどまったが、10月半ばに気温が下がると伸び率は1桁台半ばに戻った。前者は値下げで在庫を動かし、後者は寒さで需要が戻るのを待った例である。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "ユニクロの2026年10月の国内既存店売上高は前年同月比5.5%減だった。気象庁によると10月の平均気温は歴代2位の高さで、月の後半にインナーやフリースなどの冬物が伸び悩み、客数は9.8%減った。一方、しまむらは同じ10月の既存店売上高が4.0%増で、同じ暖かい10月でも各社の明暗が分かれた。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "markdown",
+      "pos": "名",
+      "ja": "値下げ、値下げ処分",
+      "gloss": "（＝売れ残りそうな商品の価格を下げて売り切ること）",
+      "example": {
+        "en": "The store announced a 30% markdown on summer shoes.",
+        "ja": "その店は夏物の靴を30%値下げすると発表した。"
+      }
+    },
+    {
+      "term": "comparable sales",
+      "pos": "熟",
+      "ja": "既存店売上高",
+      "gloss": "（＝1年以上営業している店だけで比べた売上のこと）",
+      "example": {
+        "en": "Comparable sales rose 4% in the first quarter.",
+        "ja": "第1四半期の既存店売上高は4%増えた。"
+      }
+    },
+    {
+      "term": "seasonal inventory",
+      "pos": "熟",
+      "ja": "季節在庫",
+      "gloss": "（＝特定の季節にしか売れない商品の在庫のこと）",
+      "example": {
+        "en": "We need more space to store seasonal inventory before December.",
+        "ja": "12月の前に季節在庫を置く場所を増やす必要がある。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Warm weather thwarts Old Navy recovery, as Gap continues to shine",
+      "publisher": "Retail Dive",
+      "url": "https://www.retaildive.com/news/old-navy-recovery-gap-shines-q3-earnings-warm-weather/875291/",
+      "date": "2026-11-20"
+    },
+    {
+      "title": "Gap reports positive Q3 but cuts profit forecast",
+      "publisher": "FashionUnited",
+      "url": "https://fashionunited.uk/news/business/gap-reports-positive-q3-but-cuts-profit-forecast/2026112091488",
+      "date": "2026-11-20"
+    },
+    {
+      "title": "Trading Update September 2026",
+      "publisher": "Associated British Foods",
+      "url": "https://www.abf.co.uk/media/news/2026/trading-update-september-2026",
+      "date": "2026-09-10"
+    },
+    {
+      "title": "'Unseasonably Warm' Weather Hits Burlington Revenue",
+      "publisher": "Tiger Brokers",
+      "url": "https://www.itiger.com/news/2586474919",
+      "date": "2025-11-25"
+    },
+    {
+      "title": "カジュアル衣料4社／10月の既存店売上高はユニクロ5.5％減、しまむら4.0％増",
+      "publisher": "流通ニュース",
+      "url": "https://www.ryutsuu.biz/sales/s111041.html",
+      "date": "2026-11-05"
+    }
+  ]
+}
