@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-24-1645",
+  "date": "2026-11-24",
+  "time": "16:45",
+  "createdAt": "2026-11-24T16:45:00+09:00",
+  "genre": "エネルギー",
+  "genreEn": "Energy",
+  "sample": false,
+  "title": {
+    "en": "Climate Talks Fail Over Fossil Fuel Wording",
+    "ja": "化石燃料の文言で対立、COP31が合意なく閉幕"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Global climate talks in Turkey ended on November 22 without a final agreement.",
+            "ja": "トルコで開かれていた国際的な気候変動会議は、11月22日、最終合意のないまま閉幕した。"
+          },
+          {
+            "en": "The European Union and several other countries, including Panama, rejected the last draft of the deal.",
+            "ja": "欧州連合（EU）とパナマを含む複数の国が、合意の最終案を拒否した。"
+          },
+          {
+            "en": "They said the text did not clearly name fossil fuels such as oil, gas and coal.",
+            "ja": "これらの国は、文書が石油・ガス・石炭といった化石燃料を明確に名指ししていないと主張した。"
+          },
+          {
+            "en": "It was the first time since 2009 that the yearly meeting closed without a deal accepted by every country.",
+            "ja": "毎年開かれるこの会議が、全参加国の受け入れる合意のないまま終わったのは、2009年以来のことだった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Some oil-producing nations were blamed for blocking stronger wording during the negotiations.",
+            "ja": "交渉の中で、より強い文言を阻んだとして一部の産油国が非難された。"
+          },
+          {
+            "en": "The result matters for energy companies and their investors.",
+            "ja": "この結果は、エネルギー企業とその投資家にとって重要な意味を持つ。"
+          },
+          {
+            "en": "Without a clear global signal, oil and gas producers may feel less pressure to reduce their output.",
+            "ja": "世界共通の明確なメッセージがなければ、石油・ガスの生産者は生産量を減らす圧力をそれほど感じなくなるかもしれない。"
+          },
+          {
+            "en": "At the same time, suppliers of wind and solar power could find it harder to raise money for new projects.",
+            "ja": "その一方で、風力や太陽光の電力を供給する企業は、新しい事業のための資金を集めにくくなる可能性がある。"
+          },
+          {
+            "en": "As a result, companies are likely to depend more on each country's own rules when they plan long-term investments.",
+            "ja": "その結果、企業は長期の投資を計画する際、各国独自のルールにより頼ることになりそうだ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the article, what happened for the first time since 2009?",
+      "promptJa": "記事によると、2009年以来初めて起きたことは何ですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The meeting was held in Turkey.",
+          "ja": "会議がトルコで開かれた"
+        },
+        {
+          "key": "B",
+          "text": "Oil producers agreed to reduce their output.",
+          "ja": "産油国が減産に合意した"
+        },
+        {
+          "key": "C",
+          "text": "The yearly meeting closed without a deal accepted by every country.",
+          "ja": "全参加国が受け入れる合意なしに閉幕した"
+        },
+        {
+          "key": "D",
+          "text": "Wind and solar suppliers raised record amounts of money.",
+          "ja": "風力・太陽光企業が過去最高の資金を集めた"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落の最後の文 It was the first time since 2009 that the yearly meeting closed without a deal accepted by every country. に「2009年以来初めて、全参加国が受け入れる合意なしに閉幕した」とはっきり書かれている。(A) 会議がトルコで開かれたことは第1文にあるが、「2009年以来初めて」とは書かれていない。(B) 本文は逆で、明確なメッセージがないと生産者は減産の圧力を感じにくくなると述べており、減産に合意したとは書いていない。(D) 風力・太陽光の企業はむしろ資金を集めにくくなる可能性があると書かれており、「過去最高の資金」は本文にない情報。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "設問の for the first time since 2009 のような年や数字は、本文で同じ表現を探すと根拠文がすぐ見つかる。本文の別の場所にある事実（開催地など）を使った選択肢に注意する。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT mentioned as a possible effect of the result?",
+      "promptJa": "この結果の影響として述べられていないものはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Oil and gas producers may feel less pressure to cut output.",
+          "ja": "石油・ガス生産者の減産圧力が弱まる"
+        },
+        {
+          "key": "B",
+          "text": "Wind and solar suppliers could find it harder to raise money.",
+          "ja": "風力・太陽光企業の資金集めが難しくなる"
+        },
+        {
+          "key": "C",
+          "text": "Companies may depend more on each country's own rules.",
+          "ja": "企業が各国独自のルールに頼るようになる"
+        },
+        {
+          "key": "D",
+          "text": "Gasoline prices for drivers will rise next month.",
+          "ja": "来月ガソリン価格が上がる"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は (D)。第2段落では結果の影響として、(A) 石油・ガス生産者が減産の圧力を感じにくくなる（第3文）、(B) 風力・太陽光の供給企業が資金を集めにくくなる（第4文）、(C) 企業が各国独自のルールにより頼る（第5文）の3つが述べられている。ガソリン価格が来月上がるという話はどこにもないため、(D) が「述べられていないもの」となる。",
+      "evidence": {
+        "p": 1,
+        "s": 2
+      },
+      "tip": "NOT問題は、選択肢を1つずつ本文と照らし合わせ、書かれているものを消していく。言い換え（reduce → cut）にも気づけるようにしておく。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "agreement",
+      "pos": "名",
+      "ja": "合意、協定",
+      "gloss": "",
+      "example": {
+        "en": "The two companies reached an agreement on the price.",
+        "ja": "両社は価格について合意に達した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "reject",
+      "pos": "動",
+      "ja": "拒否する、受け入れない",
+      "gloss": "",
+      "example": {
+        "en": "The manager rejected the proposal because it was too expensive.",
+        "ja": "部長は費用がかかりすぎるとして、その提案を却下した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "draft",
+      "pos": "名",
+      "ja": "草案、下書き",
+      "gloss": "",
+      "example": {
+        "en": "Please send me the draft of the contract by Friday.",
+        "ja": "金曜日までに契約書の草案を送ってください。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "negotiation",
+      "pos": "名",
+      "ja": "交渉",
+      "gloss": "",
+      "example": {
+        "en": "The negotiations with the supplier took three weeks.",
+        "ja": "供給業者との交渉には3週間かかった。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "output",
+      "pos": "名",
+      "ja": "生産量、出力",
+      "gloss": "",
+      "example": {
+        "en": "The factory increased its output by 10% this year.",
+        "ja": "その工場は今年、生産量を10%増やした。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "supplier",
+      "pos": "名",
+      "ja": "供給業者、仕入れ先",
+      "gloss": "",
+      "example": {
+        "en": "We are looking for a new supplier of office paper.",
+        "ja": "当社はコピー用紙の新しい仕入れ先を探している。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "raise money",
+      "pos": "熟",
+      "ja": "資金を集める",
+      "gloss": "",
+      "example": {
+        "en": "The charity raised money to build a new library.",
+        "ja": "その慈善団体は新しい図書館を建てるための資金を集めた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "fossil fuel",
+      "pos": "名",
+      "ja": "化石燃料",
+      "gloss": "（＝石油・ガス・石炭のように、大昔の生き物から地中でできた燃料のこと）",
+      "example": {
+        "en": "The company plans to use less fossil fuel in its delivery trucks.",
+        "ja": "その会社は配送トラックで使う化石燃料を減らす計画だ。"
+      }
+    }
+  ],
+  "glossary": {
+    "talks": {
+      "lemma": "talk",
+      "pos": "名",
+      "ja": "協議、会談",
+      "note": "複数形で「交渉・協議」の意味"
+    },
+    "agreement": {
+      "lemma": "agreement",
+      "pos": "名",
+      "ja": "合意",
+      "note": ""
+    },
+    "several": {
+      "lemma": "several",
+      "pos": "形",
+      "ja": "いくつかの",
+      "note": ""
+    },
+    "including": {
+      "lemma": "include",
+      "pos": "前",
+      "ja": "〜を含めて",
+      "note": ""
+    },
+    "rejected": {
+      "lemma": "reject",
+      "pos": "動",
+      "ja": "拒否した",
+      "note": ""
+    },
+    "draft": {
+      "lemma": "draft",
+      "pos": "名",
+      "ja": "草案",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "合意、取引",
+      "note": ""
+    },
+    "clearly": {
+      "lemma": "clearly",
+      "pos": "副",
+      "ja": "はっきりと",
+      "note": ""
+    },
+    "fossil": {
+      "lemma": "fossil",
+      "pos": "形",
+      "ja": "化石の",
+      "note": "fossil fuels で「化石燃料」"
+    },
+    "fuels": {
+      "lemma": "fuel",
+      "pos": "名",
+      "ja": "燃料",
+      "note": ""
+    },
+    "yearly": {
+      "lemma": "yearly",
+      "pos": "形",
+      "ja": "毎年の",
+      "note": ""
+    },
+    "accepted": {
+      "lemma": "accept",
+      "pos": "動",
+      "ja": "受け入れた",
+      "note": ""
+    },
+    "blamed": {
+      "lemma": "blame",
+      "pos": "動",
+      "ja": "非難された",
+      "note": "be blamed for 〜 で「〜のことで責められる」"
+    },
+    "blocking": {
+      "lemma": "block",
+      "pos": "動",
+      "ja": "阻むこと",
+      "note": ""
+    },
+    "wording": {
+      "lemma": "wording",
+      "pos": "名",
+      "ja": "言い回し、文言",
+      "note": ""
+    },
+    "negotiations": {
+      "lemma": "negotiation",
+      "pos": "名",
+      "ja": "交渉",
+      "note": ""
+    },
+    "matters": {
+      "lemma": "matter",
+      "pos": "動",
+      "ja": "重要である",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "signal": {
+      "lemma": "signal",
+      "pos": "名",
+      "ja": "合図、メッセージ",
+      "note": ""
+    },
+    "producers": {
+      "lemma": "producer",
+      "pos": "名",
+      "ja": "生産者",
+      "note": ""
+    },
+    "pressure": {
+      "lemma": "pressure",
+      "pos": "名",
+      "ja": "圧力",
+      "note": ""
+    },
+    "reduce": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "output": {
+      "lemma": "output",
+      "pos": "名",
+      "ja": "生産量",
+      "note": ""
+    },
+    "suppliers": {
+      "lemma": "supplier",
+      "pos": "名",
+      "ja": "供給業者",
+      "note": ""
+    },
+    "raise": {
+      "lemma": "raise",
+      "pos": "動",
+      "ja": "（資金を）集める",
+      "note": "raise money で「資金を集める」"
+    },
+    "depend": {
+      "lemma": "depend",
+      "pos": "動",
+      "ja": "頼る",
+      "note": "depend on 〜 で「〜に頼る」"
+    },
+    "long-term": {
+      "lemma": "long-term",
+      "pos": "形",
+      "ja": "長期の",
+      "note": ""
+    },
+    "investments": {
+      "lemma": "investment",
+      "pos": "名",
+      "ja": "投資",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "形式目的語 it（find it＋形容詞＋to do：〜するのが…だとわかる・感じる）",
+    "quote": "At the same time, suppliers of wind and solar power could find it harder to raise money for new projects.",
+    "quoteJa": "その一方で、風力や太陽光の電力を供給する企業は、新しい事業のための資金を集めにくくなる可能性がある。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "find it harder to raise money の it は「形式目的語」。本当の目的語は後ろの to raise money（資金を集めること）で、それが長いので仮に it を置き、find の後ろに「it＋形容詞（harder）」を続けている。find O C（O が C だとわかる・感じる）の O に it が入った形で、意味は「資金を集めるのがより難しいと感じる」。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "形式目的語を使わないと find to raise money harder となり、英語としては使えない。to不定詞を find の直後に置くことはできないため、必ず it を先に置く。比較：It is harder to raise money.（形式主語の it）／ They find it harder to raise money.（形式目的語の it）。make it possible to do（〜することを可能にする）も同じ形。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 で The new software makes ------- easier to track orders. のように空所に it を選ばせる問題が出る（that や this は不可）。find it difficult to do / make it possible to do / consider it necessary to do の形で覚えておくと速く解ける。Part 7 では「〜しにくくなった」という課題を示す根拠文によく出る。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Many customers find it difficult to use the old website.（多くの顧客が古いウェブサイトを使いにくいと感じている）／ The new system will make it possible to process orders within a day.（新システムで、注文を1日以内に処理できるようになる）。"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "2026年11月22日、トルコのアンタルヤで開かれた国連の気候会議COP31が、合意文書を採択できずに閉幕した。EUやパナマが、最終案に化石燃料の文言が無いとして拒否。全会一致の合意なしに終わるのは2009年のコペンハーゲン以来。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "COPの決定は全会一致が原則で、1か国でも反対すれば文書は採択できない。2023年のCOP28（ドバイ）では「化石燃料からの移行」が初めて文書に入ったが、今回の案はその合意に触れるだけで化石燃料という語を外した。各国の足並みがそろわないと、企業はエネルギー転換(energy transition)の速さを読みにくく、長期の投資判断が難しくなる。"
+    },
+    {
+      "heading": "📌 3. 欧州エネルギー企業の選択",
+      "body": "英BPは2025年2月に戦略を見直し、再エネなど移行分野への投資を年15億〜20億ドルに減らす一方、石油・ガスへの投資を年100億ドルに増やした。デンマークの洋上風力大手オーステッドは2025年8月、米国の事業環境が悪化して米国案件の持ち分売却を断念し、600億デンマーククローネの株主割当増資(rights issue)を発表。株価は1日で27%超下落したが、10月に増資を終えた。前者は化石燃料に軸足を戻し、後者は株主から資金を集め直して再エネにとどまった。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "国内最大の発電会社JERAは2026年2月、カタールエナジーと最大年300万トンのLNG（液化天然ガス）を27年間買う長期契約(long-term contract)を結んだ。供給は2028年に始まる。2030年代に既存契約のうち約1,600万トン分が期限を迎えるため、ガスの確保を急いでいる。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "energy transition",
+      "pos": "名",
+      "ja": "エネルギー転換",
+      "gloss": "（＝石油や石炭から、再エネなど排出の少ないエネルギーへ切り替えていくこと）",
+      "example": {
+        "en": "The energy transition will change how factories use power.",
+        "ja": "エネルギー転換は工場の電力の使い方を変えるだろう。"
+      }
+    },
+    {
+      "term": "rights issue",
+      "pos": "名",
+      "ja": "株主割当増資",
+      "gloss": "（＝今の株主に新しい株を割り当てて、資金を集めること）",
+      "example": {
+        "en": "The airline announced a rights issue to repay its debt.",
+        "ja": "その航空会社は借金を返すため、株主割当増資を発表した。"
+      }
+    },
+    {
+      "term": "long-term contract",
+      "pos": "名",
+      "ja": "長期契約",
+      "gloss": "",
+      "example": {
+        "en": "The hotel signed a long-term contract with a cleaning company.",
+        "ja": "そのホテルは清掃会社と長期契約を結んだ。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "COP31 climate talks fail after EU and others reject final deal proposal",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/2026/11/22/cop31-climate-talks-fail-after-eu-and-others-reject-final-deal-proposal",
+      "date": "2026-11-22"
+    },
+    {
+      "title": "COP31 talks break down as EU rejects deal without reference to fossil fuels",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/22/fossil-fuel-impasse-pushes-cop31-climate-talks-into-second-day-of-overtime",
+      "date": "2026-11-22"
+    },
+    {
+      "title": "Growing shareholder value: a reset bp",
+      "publisher": "BP",
+      "url": "https://www.bp.com/en-GB/press-and-publications/press-releases/growing-shareholder-value-a-reset-bp",
+      "date": "2025-02-26"
+    },
+    {
+      "title": "Ørsted shares plunge 27% as US wind project sale collapses, $9.4B rights issue announced",
+      "publisher": "Invezz",
+      "url": "https://invezz.com/news/2025/08/11/orsted-shares-plunge-27-as-us-wind-project-sale-collapses-9-4b-rights-issue-announced/",
+      "date": "2025-08-11"
+    },
+    {
+      "title": "QatarEnergy, JERA sign 27-year agreement to supply Japan with LNG",
+      "publisher": "Qatar News Agency",
+      "url": "https://qna.org.qa/en/News-Area/News/2026-2/3/qatarenergy-jera-sign-27-year-agreement-to-supply-japan-with-lng",
+      "date": "2026-02-03"
+    }
+  ]
+}
