@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-25-0545",
+  "date": "2026-11-25",
+  "time": "05:45",
+  "createdAt": "2026-11-25T05:45:00+09:00",
+  "genre": "テクノロジー",
+  "genreEn": "Technology",
+  "sample": false,
+  "title": {
+    "en": "Nvidia Brings Back Its Founder as CEO",
+    "ja": "エヌビディア、創業者フアン氏をCEOに復帰"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Nvidia's board voted on November 23 to bring back Jensen Huang as chief executive, effective immediately.",
+            "ja": "エヌビディアの取締役会は11月23日、ジェンスン・フアン氏を即日付で最高経営責任者（CEO）に復帰させることを決議した。"
+          },
+          {
+            "en": "The chip maker's founder had resigned less than two weeks earlier over reports about his private life.",
+            "ja": "この半導体メーカーの創業者である同氏は、その2週間足らず前に、私生活をめぐる報道を受けて辞任していた。"
+          },
+          {
+            "en": "During his absence, finance chief Colette Kress served as interim, or temporary, CEO.",
+            "ja": "同氏の不在中は、財務責任者のコレット・クレス氏が暫定、つまり一時的なCEOを務めた。"
+          },
+          {
+            "en": "She will now return to her role as chief financial officer.",
+            "ja": "クレス氏は今後、最高財務責任者（CFO）の職に戻る。"
+          },
+          {
+            "en": "Only days before the vote, the board had said it did not intend to reinstate him.",
+            "ja": "決議のわずか数日前まで、取締役会は同氏を復帰させるつもりはないと述べていた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The board said the vote was unanimous and that it had received input from government officials on national security.",
+            "ja": "取締役会は、決議は全会一致であり、国家安全保障について政府高官から意見を受けたと説明した。"
+          },
+          {
+            "en": "The reversal also followed a sharp fall in the company's shares after his departure.",
+            "ja": "この方針転換の背景には、同氏の退任後に同社の株価が急落したこともあった。"
+          },
+          {
+            "en": "Investors care deeply about who leads Nvidia because its chips power many of the world's AI data centers.",
+            "ja": "同社の半導体は世界の多くのAIデータセンターを動かしているため、投資家は誰が同社を率いるかに強い関心を持っている。"
+          },
+          {
+            "en": "However, the matter is not fully closed.",
+            "ja": "しかし、この問題は完全に決着したわけではない。"
+          },
+          {
+            "en": "A board committee will continue its investigation into his conduct, and the results could still affect his position.",
+            "ja": "取締役会の委員会は同氏の行動に関する調査を続ける予定で、その結果次第では同氏の立場に影響が出る可能性がまだある。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "According to the article, when had Mr. Huang resigned?",
+      "promptJa": "記事によると、フアン氏はいつ辞任していましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Less than two weeks before the board's vote",
+          "ja": "取締役会の決議の2週間足らず前"
+        },
+        {
+          "key": "B",
+          "text": "Exactly one month before the board's vote",
+          "ja": "取締役会の決議のちょうど1か月前"
+        },
+        {
+          "key": "C",
+          "text": "Two years before the board's vote",
+          "ja": "取締役会の決議の2年前"
+        },
+        {
+          "key": "D",
+          "text": "On November 23",
+          "ja": "11月23日"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正解は (A)。第1段落の第2文 The chip maker's founder had resigned less than two weeks earlier ... に「その2週間足らず前に辞任していた」と書かれている。earlier は第1文の「11月23日の決議」を基準にしている。(B) 「ちょうど1か月前」は本文にない数字。(C) 「2年前」も本文にない。(D) 11月23日は取締役会が復帰を決議した日で、辞任した日ではない。本文の別の日付を使った引っかけである。",
+      "evidence": {
+        "p": 0,
+        "s": 1
+      },
+      "tip": "less than two weeks earlier の earlier は「何より前か」を必ず確認する。本文に出てくる日付（November 23）がそのまま選択肢にあっても、何の日付かを確かめてから選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT stated in the article?",
+      "promptJa": "記事に書かれていないことはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The board's vote was unanimous.",
+          "ja": "取締役会の決議は全会一致だった"
+        },
+        {
+          "key": "B",
+          "text": "The company's shares fell after Mr. Huang left.",
+          "ja": "フアン氏の退任後に株価が下がった"
+        },
+        {
+          "key": "C",
+          "text": "A board committee will continue its investigation.",
+          "ja": "委員会が調査を続ける"
+        },
+        {
+          "key": "D",
+          "text": "Mr. Huang agreed to give up his seat on the board.",
+          "ja": "フアン氏が取締役の座を手放すことに同意した"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は (D)。第2段落を見ると、(A) 決議が全会一致だったこと（第1文）、(B) 退任後に株価が急落したこと（第2文 a sharp fall in the company's shares）、(C) 委員会が調査を続けること（第5文）はすべて書かれている。フアン氏が取締役の座を手放すことに同意したという話はどこにもないため、(D) が「書かれていないもの」となる。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "NOT問題は選択肢を1つずつ本文と照らし合わせ、書かれているものを消していく。fell（下がった）と a sharp fall（急落）のような品詞の言い換えにも気づけるようにする。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "effective",
+      "pos": "形",
+      "ja": "（規則・人事が）発効して、有効な",
+      "gloss": "",
+      "example": {
+        "en": "The new travel policy will be effective from April 1.",
+        "ja": "新しい出張規定は4月1日から有効になる。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "resign",
+      "pos": "動",
+      "ja": "辞任する、辞職する",
+      "gloss": "",
+      "example": {
+        "en": "Ms. Lee resigned from her position to start her own business.",
+        "ja": "リー氏は自分の会社を始めるために職を辞した。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "interim",
+      "pos": "形",
+      "ja": "暫定の、仮の",
+      "gloss": "",
+      "example": {
+        "en": "Mr. Ito will serve as interim manager until a replacement is hired.",
+        "ja": "後任が採用されるまで、伊藤氏が暫定の部長を務める。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "intend",
+      "pos": "動",
+      "ja": "〜するつもりである、意図する",
+      "gloss": "",
+      "example": {
+        "en": "We intend to open two new stores next year.",
+        "ja": "当社は来年、新店舗を2つ開くつもりだ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "reinstate",
+      "pos": "動",
+      "ja": "（元の地位・職に）復帰させる、元に戻す",
+      "gloss": "",
+      "example": {
+        "en": "The company reinstated the free shipping service after customers complained.",
+        "ja": "顧客から苦情が出たため、その会社は送料無料サービスを復活させた。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "unanimous",
+      "pos": "形",
+      "ja": "全会一致の、満場一致の",
+      "gloss": "",
+      "example": {
+        "en": "The committee reached a unanimous decision on the budget.",
+        "ja": "委員会は予算について全会一致の決定に達した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "input",
+      "pos": "名",
+      "ja": "意見、提案",
+      "gloss": "",
+      "example": {
+        "en": "We would appreciate your input on the new office layout.",
+        "ja": "新しいオフィスの配置について、ご意見をいただけるとありがたい。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "departure",
+      "pos": "名",
+      "ja": "退任、退職、出発",
+      "gloss": "",
+      "example": {
+        "en": "After the manager's departure, the team had to divide her tasks.",
+        "ja": "部長の退職後、チームは彼女の仕事を分担しなければならなかった。"
+      }
+    }
+  ],
+  "glossary": {
+    "voted": {
+      "lemma": "vote",
+      "pos": "動",
+      "ja": "投票で決めた",
+      "note": ""
+    },
+    "effective": {
+      "lemma": "effective",
+      "pos": "形",
+      "ja": "発効して",
+      "note": "effective immediately で「即日付で」"
+    },
+    "founder": {
+      "lemma": "founder",
+      "pos": "名",
+      "ja": "創業者",
+      "note": ""
+    },
+    "resigned": {
+      "lemma": "resign",
+      "pos": "動",
+      "ja": "辞任した",
+      "note": ""
+    },
+    "private": {
+      "lemma": "private",
+      "pos": "形",
+      "ja": "個人的な",
+      "note": "private life で「私生活」"
+    },
+    "absence": {
+      "lemma": "absence",
+      "pos": "名",
+      "ja": "不在",
+      "note": ""
+    },
+    "finance": {
+      "lemma": "finance",
+      "pos": "名",
+      "ja": "財務",
+      "note": "finance chief で「財務責任者」"
+    },
+    "interim": {
+      "lemma": "interim",
+      "pos": "形",
+      "ja": "暫定の",
+      "note": ""
+    },
+    "temporary": {
+      "lemma": "temporary",
+      "pos": "形",
+      "ja": "一時的な",
+      "note": ""
+    },
+    "role": {
+      "lemma": "role",
+      "pos": "名",
+      "ja": "役割、職",
+      "note": ""
+    },
+    "financial": {
+      "lemma": "financial",
+      "pos": "形",
+      "ja": "財務の",
+      "note": ""
+    },
+    "officer": {
+      "lemma": "officer",
+      "pos": "名",
+      "ja": "役員",
+      "note": "chief financial officer で「最高財務責任者」"
+    },
+    "intend": {
+      "lemma": "intend",
+      "pos": "動",
+      "ja": "〜するつもりだ",
+      "note": "intend to do の形で使う"
+    },
+    "reinstate": {
+      "lemma": "reinstate",
+      "pos": "動",
+      "ja": "復帰させる",
+      "note": ""
+    },
+    "unanimous": {
+      "lemma": "unanimous",
+      "pos": "形",
+      "ja": "全会一致の",
+      "note": ""
+    },
+    "received": {
+      "lemma": "receive",
+      "pos": "動",
+      "ja": "受け取った",
+      "note": ""
+    },
+    "input": {
+      "lemma": "input",
+      "pos": "名",
+      "ja": "意見",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者、高官",
+      "note": ""
+    },
+    "national": {
+      "lemma": "national",
+      "pos": "形",
+      "ja": "国家の",
+      "note": ""
+    },
+    "security": {
+      "lemma": "security",
+      "pos": "名",
+      "ja": "安全保障",
+      "note": "national security で「国家安全保障」"
+    },
+    "reversal": {
+      "lemma": "reversal",
+      "pos": "名",
+      "ja": "方針転換、逆転",
+      "note": ""
+    },
+    "sharp": {
+      "lemma": "sharp",
+      "pos": "形",
+      "ja": "急な、急激な",
+      "note": "a sharp fall で「急落」"
+    },
+    "shares": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株、株式",
+      "note": ""
+    },
+    "departure": {
+      "lemma": "departure",
+      "pos": "名",
+      "ja": "退任、出発",
+      "note": ""
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "matter": {
+      "lemma": "matter",
+      "pos": "名",
+      "ja": "問題、事柄",
+      "note": ""
+    },
+    "committee": {
+      "lemma": "committee",
+      "pos": "名",
+      "ja": "委員会",
+      "note": ""
+    },
+    "investigation": {
+      "lemma": "investigation",
+      "pos": "名",
+      "ja": "調査",
+      "note": "investigation into ... で「〜に関する調査」"
+    },
+    "conduct": {
+      "lemma": "conduct",
+      "pos": "名",
+      "ja": "行い、行動",
+      "note": ""
+    },
+    "affect": {
+      "lemma": "affect",
+      "pos": "動",
+      "ja": "影響する",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "過去完了（had＋過去分詞：過去のある時点よりさらに前の出来事を表す）",
+    "quote": "The chip maker's founder had resigned less than two weeks earlier over reports about his private life.",
+    "quoteJa": "この半導体メーカーの創業者である同氏は、その2週間足らず前に、私生活をめぐる報道を受けて辞任していた。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "had resigned は過去完了形（had＋過去分詞）。記事の基準となる過去の時点は「11月23日の決議」で、辞任はそれよりさらに前の出来事なので過去完了で表している。less than two weeks earlier（その2週間足らず前に）の earlier も「基準の過去の時点より前」を示し、過去完了と相性がよい。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "過去形で順番どおりに並べると Mr. Huang resigned in mid-November. The board brought him back on November 23. となる。1文にまとめると When the board brought him back, he had already resigned. のように、先に起きたほうを had＋過去分詞にする。本文の Only days before the vote, the board had said it did not intend to reinstate him. も同じく「決議より前に言っていた」ことを表す過去完了である。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 では By the time ... 過去形, 主語＋had＋過去分詞 の形が定番で、空所に had finished / had left などを選ばせる。by the time や before が過去形の節とセットで出たら過去完了を疑う。Part 7 では had＋過去分詞の文が「それ以前の経緯」を示すため、出来事の順番を問う設問の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "By the time the client called, we had already shipped the order.（顧客から電話があった時には、すでに注文品を発送していた。）／The manager had approved the budget before the meeting started.（部長は会議が始まる前に予算を承認していた。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米半導体大手エヌビディアの取締役会は11月23日、11月12日に辞任を発表したばかりの創業者フアン氏を、CEO・社長・取締役に即日復帰させると全会一致で決めた。暫定CEOを務めたクレス氏はCFOに戻る。辞任後、同社の株価は大きく下げていた。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "CEOを選び、その仕事を監督するのは取締役会の役目で、これが企業統治(corporate governance)の基本だ。ただ、創業者が30年以上率いてきた会社では、技術の方向性や大口顧客との関係が一人に集中しやすい。その人が抜けると業績や株価が大きく揺れる。これをキーパーソンリスク(key person risk)と呼ぶ。"
+    },
+    {
+      "heading": "📌 3. 他社のトップ復帰",
+      "body": "2023年11月、米OpenAIの取締役会はアルトマンCEOを突然解任した。しかし社員の約97%が「取締役会が退かなければ辞める」という書簡に署名し、わずか5日後に復帰が決まった。解任を決めた取締役会は、1人を除いて入れ替えられた。一方、米ディズニーは2022年11月、業績不振を受けてチャペックCEOを退かせ、前任のアイガー氏を2年の任期付きで呼び戻し、後継者の育成も任せた。OpenAIは社員の圧力で同じ人物が戻り取締役会が交代した例、ディズニーは取締役会が主導して前任者を呼び戻した例である。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本電産（現ニデック）では2022年4月、創業者の永守重信氏が、外部から招いた関潤氏を1年足らずでCEOから外し、自らCEOに復帰した。関氏は同年9月に退社し、後継者計画(succession planning)の難しさが浮き彫りになった。その後、同社では不適切な会計処理が発覚し、永守氏は2025年12月に取締役会長を辞任した。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "corporate governance",
+      "pos": "名",
+      "ja": "企業統治",
+      "gloss": "（＝会社が正しく経営されているかを取締役会などが監督する仕組み）",
+      "example": {
+        "en": "The bank improved its corporate governance by adding outside directors.",
+        "ja": "その銀行は社外取締役を増やして企業統治を強化した。"
+      }
+    },
+    {
+      "term": "key person risk",
+      "pos": "名",
+      "ja": "キーパーソンリスク",
+      "gloss": "（＝特定の一人に頼りすぎて、その人が抜けると会社が困る危険）",
+      "example": {
+        "en": "Small firms often face key person risk when only one employee knows the clients.",
+        "ja": "顧客を一人の社員しか知らない場合、小さな会社はキーパーソンリスクを抱えやすい。"
+      }
+    },
+    {
+      "term": "succession planning",
+      "pos": "名",
+      "ja": "後継者計画",
+      "gloss": "（＝次のリーダーを前もって選び育てておく計画）",
+      "example": {
+        "en": "Good succession planning helps a company avoid confusion when a leader retires.",
+        "ja": "しっかりした後継者計画があれば、リーダーが引退しても会社は混乱を避けられる。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "publisher": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "Nvidia brings Jensen Huang back, and Trump claims credit",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "OpenAI reinstates Sam Altman as its chief executive",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2023/11/22/1214621010/openai-reinstates-sam-altman-as-its-chief-executive",
+      "date": "2023-11-22"
+    },
+    {
+      "title": "Disney announces ex-CEO Bob Iger will return for 2 years",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2022/11/20/1138175652/disney-announces-ex-ceo-bob-iger-will-return-for-2-years",
+      "date": "2022-11-20"
+    },
+    {
+      "title": "Nidec Founder Resigns as Chairman amid Accounting Scandal",
+      "publisher": "Nippon.com (Jiji Press)",
+      "url": "https://www.nippon.com/en/news/yjj2025121901078",
+      "date": "2025-12-19"
+    }
+  ]
+}
