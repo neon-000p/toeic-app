@@ -498,5 +498,23 @@
       "url": "https://qna.org.qa/en/News-Area/News/2026-2/3/qatarenergy-jera-sign-27-year-agreement-to-supply-japan-with-lng",
       "date": "2026-02-03"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-24-1645/00.mp3",
+      "audio/2026-11-24-1645/01.mp3",
+      "audio/2026-11-24-1645/02.mp3",
+      "audio/2026-11-24-1645/03.mp3",
+      "audio/2026-11-24-1645/04.mp3",
+      "audio/2026-11-24-1645/05.mp3",
+      "audio/2026-11-24-1645/06.mp3",
+      "audio/2026-11-24-1645/07.mp3",
+      "audio/2026-11-24-1645/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 227148,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-24T07:50:43.887Z",
+    "trimmed": true
+  }
 }
