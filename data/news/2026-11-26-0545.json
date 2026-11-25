@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-26-0545",
+  "date": "2026-11-26",
+  "time": "05:45",
+  "createdAt": "2026-11-26T05:45:00+09:00",
+  "genre": "金融",
+  "genreEn": "Finance",
+  "sample": false,
+  "title": {
+    "en": "US Inflation Rises to 3.8%, Making a December Rate Hike Likely",
+    "ja": "米インフレ3.8%に加速、12月利上げが濃厚に"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "A key measure of US inflation rose to 3.8% in October, according to government data released on Wednesday.",
+            "ja": "米国の主要なインフレ指標が10月に3.8%に上昇したことが、水曜日に発表された政府統計で明らかになった。"
+          },
+          {
+            "en": "The figure is nearly twice the Federal Reserve's target of 2%.",
+            "ja": "この数字は、米連邦準備制度理事会（FRB）が目標とする2%のほぼ2倍にあたる。"
+          },
+          {
+            "en": "Core prices, which leave out food and energy, increased by 3.3%.",
+            "ja": "食品とエネルギーを除いたコア物価は、3.3%上昇した。"
+          },
+          {
+            "en": "Consumers spent 0.3% more in dollar terms, but they actually bought slightly less once higher prices were considered.",
+            "ja": "消費者の支出額はドル建てで0.3%増えたが、物価の上昇分を考慮すると、実際に買った量はわずかに減った。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The data makes it very likely that the Fed will raise interest rates at its meeting on December 8 and 9.",
+            "ja": "この統計により、FRBが12月8〜9日の会合で利上げする可能性は非常に高くなった。"
+          },
+          {
+            "en": "Investors expect an increase of a quarter of a percentage point, which would lift the main rate to between 4% and 4.25%.",
+            "ja": "投資家は0.25%の引き上げを予想しており、実現すれば政策金利は4〜4.25%に上がる。"
+          },
+          {
+            "en": "Some officials want an even bigger step.",
+            "ja": "当局者の中には、さらに大きな引き上げを望む声もある。"
+          },
+          {
+            "en": "Governor Christopher Waller has said a half-point increase may be needed to bring inflation under control.",
+            "ja": "クリストファー・ウォラー理事は、インフレを抑え込むには0.5%の引き上げが必要かもしれないと述べている。"
+          },
+          {
+            "en": "Higher rates would make loans for homes, cars and businesses more expensive.",
+            "ja": "金利が上がれば、住宅や自動車、事業向けのローンはより割高になる。"
+          },
+          {
+            "en": "Many households are already worried about the rising cost of living.",
+            "ja": "多くの家庭は、すでに生活費の上昇を心配している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did core prices rise in October?",
+      "promptJa": "10月にコア物価はどれだけ上昇しましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.3%",
+          "ja": "0.3%"
+        },
+        {
+          "key": "B",
+          "text": "2%",
+          "ja": "2%"
+        },
+        {
+          "key": "C",
+          "text": "3.3%",
+          "ja": "3.3%"
+        },
+        {
+          "key": "D",
+          "text": "3.8%",
+          "ja": "3.8%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落の第3文に Core prices, which leave out food and energy, increased by 3.3%. とある。(D) 3.8% は食品・エネルギーを含む全体のインフレ率で、「コア」の数字ではない。(B) 2% は FRB の目標値、(A) 0.3% は消費者の支出額の伸びで、どちらも本文の別の数字を流用した引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "同じ記事に似た種類の数字（%）が複数あるときは、設問のキーワード（ここでは core）が本文のどの数字と結びついているかを主語で確認する。全体の数字と内訳の数字を取り違える誤答は Part 7 の定番。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why does Governor Waller think a larger rate increase may be needed?",
+      "promptJa": "ウォラー理事は、なぜより大きな利上げが必要かもしれないと考えていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To make loans cheaper for businesses",
+          "ja": "企業向けのローンを安くするため"
+        },
+        {
+          "key": "B",
+          "text": "To bring inflation under control",
+          "ja": "インフレを抑え込むため"
+        },
+        {
+          "key": "C",
+          "text": "To encourage consumers to spend more",
+          "ja": "消費者の支出を促すため"
+        },
+        {
+          "key": "D",
+          "text": "To meet investors' expectations exactly",
+          "ja": "投資家の予想にぴったり合わせるため"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落の第4文に a half-point increase may be needed to bring inflation under control とあり、目的は to 不定詞の部分で示されている。(A) は本文と逆で、第2段落の第5文では金利が上がるとローンは more expensive（割高）になると述べている。(C) も逆の内容で、利上げは支出を抑える方向に働く。(D) 投資家が予想しているのは0.25%の引き上げで、0.5%はそれを上回るため「予想に合わせる」は誤り。",
+      "evidence": {
+        "p": 1,
+        "s": 3
+      },
+      "tip": "Why 〜? の設問では、本文の to 不定詞（〜するために）や because / so that の部分が答えになりやすい。選択肢の言い換えだけでなく、本文と逆の内容（cheaper と more expensive）を混ぜた誤答に注意する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "measure",
+      "pos": "名",
+      "ja": "指標、尺度",
+      "gloss": "",
+      "example": {
+        "en": "Sales per employee is a useful measure of productivity.",
+        "ja": "従業員1人あたりの売上高は、生産性を測る便利な指標だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "figure",
+      "pos": "名",
+      "ja": "数字、数値",
+      "gloss": "",
+      "example": {
+        "en": "The sales figure for October was higher than we expected.",
+        "ja": "10月の売上の数字は、予想を上回った。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "target",
+      "pos": "名",
+      "ja": "目標",
+      "gloss": "",
+      "example": {
+        "en": "The team reached its sales target two weeks early.",
+        "ja": "そのチームは売上目標を2週間早く達成した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "core",
+      "pos": "形",
+      "ja": "中核の、（物価で）変動の大きい品目を除いた",
+      "gloss": "（＝物価の統計で、値動きの激しい食品とエネルギーを除いた部分のこと）",
+      "example": {
+        "en": "Our core business is selling office furniture.",
+        "ja": "当社の中核事業はオフィス家具の販売だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "consider",
+      "pos": "動",
+      "ja": "考慮する、検討する",
+      "gloss": "",
+      "example": {
+        "en": "The manager will consider your request before Friday.",
+        "ja": "部長は金曜までにあなたの依頼を検討する予定だ。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "gloss": "",
+      "example": {
+        "en": "The company met with investors to explain its new plan.",
+        "ja": "その会社は投資家と会い、新しい計画を説明した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "lift",
+      "pos": "動",
+      "ja": "引き上げる、押し上げる",
+      "gloss": "",
+      "example": {
+        "en": "The new product helped lift sales by 15%.",
+        "ja": "新製品のおかげで売上が15%伸びた。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "under control",
+      "pos": "熟",
+      "ja": "抑え込まれて、管理下にあって",
+      "gloss": "",
+      "example": {
+        "en": "We need to keep travel costs under control this year.",
+        "ja": "今年は出張費を抑えておく必要がある。"
+      }
+    }
+  ],
+  "glossary": {
+    "measure": {
+      "lemma": "measure",
+      "pos": "名",
+      "ja": "指標、尺度",
+      "note": ""
+    },
+    "inflation": {
+      "lemma": "inflation",
+      "pos": "名",
+      "ja": "インフレ、物価上昇",
+      "note": ""
+    },
+    "rose": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇する",
+      "note": "rise-rose-risen と変化する"
+    },
+    "according": {
+      "lemma": "according to",
+      "pos": "前",
+      "ja": "〜によると",
+      "note": "according to の形で使う"
+    },
+    "released": {
+      "lemma": "release",
+      "pos": "動",
+      "ja": "発表する、公表する",
+      "note": ""
+    },
+    "figure": {
+      "lemma": "figure",
+      "pos": "名",
+      "ja": "数字、数値",
+      "note": ""
+    },
+    "nearly": {
+      "lemma": "nearly",
+      "pos": "副",
+      "ja": "ほぼ、ほとんど",
+      "note": ""
+    },
+    "twice": {
+      "lemma": "twice",
+      "pos": "副",
+      "ja": "2倍",
+      "note": ""
+    },
+    "target": {
+      "lemma": "target",
+      "pos": "名",
+      "ja": "目標",
+      "note": ""
+    },
+    "core": {
+      "lemma": "core",
+      "pos": "形",
+      "ja": "中核の",
+      "note": "物価では食品・エネルギーを除いた数字"
+    },
+    "leave": {
+      "lemma": "leave out",
+      "pos": "熟",
+      "ja": "除く、省く",
+      "note": "leave out の形で「〜を外す」"
+    },
+    "increased": {
+      "lemma": "increase",
+      "pos": "動",
+      "ja": "増える、上がる",
+      "note": ""
+    },
+    "consumers": {
+      "lemma": "consumer",
+      "pos": "名",
+      "ja": "消費者",
+      "note": ""
+    },
+    "terms": {
+      "lemma": "in ... terms",
+      "pos": "熟",
+      "ja": "〜の面で",
+      "note": "in dollar terms で「ドル建てで」"
+    },
+    "slightly": {
+      "lemma": "slightly",
+      "pos": "副",
+      "ja": "わずかに",
+      "note": ""
+    },
+    "considered": {
+      "lemma": "consider",
+      "pos": "動",
+      "ja": "考慮する",
+      "note": ""
+    },
+    "likely": {
+      "lemma": "likely",
+      "pos": "形",
+      "ja": "ありそうな",
+      "note": "it is likely that ... で「〜しそうだ」"
+    },
+    "investors": {
+      "lemma": "investor",
+      "pos": "名",
+      "ja": "投資家",
+      "note": ""
+    },
+    "expect": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "4分の1",
+      "note": "a quarter of a percentage point は0.25%"
+    },
+    "percentage": {
+      "lemma": "percentage point",
+      "pos": "名",
+      "ja": "パーセントポイント",
+      "note": ""
+    },
+    "lift": {
+      "lemma": "lift",
+      "pos": "動",
+      "ja": "引き上げる",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者、幹部",
+      "note": ""
+    },
+    "step": {
+      "lemma": "step",
+      "pos": "名",
+      "ja": "措置、一歩",
+      "note": ""
+    },
+    "governor": {
+      "lemma": "governor",
+      "pos": "名",
+      "ja": "理事、総裁",
+      "note": "中央銀行の役職名"
+    },
+    "needed": {
+      "lemma": "need",
+      "pos": "動",
+      "ja": "必要とする",
+      "note": ""
+    },
+    "control": {
+      "lemma": "under control",
+      "pos": "熟",
+      "ja": "抑え込まれて",
+      "note": "under control の形で使う"
+    },
+    "loans": {
+      "lemma": "loan",
+      "pos": "名",
+      "ja": "ローン、融資",
+      "note": ""
+    },
+    "expensive": {
+      "lemma": "expensive",
+      "pos": "形",
+      "ja": "高価な、割高な",
+      "note": ""
+    },
+    "households": {
+      "lemma": "household",
+      "pos": "名",
+      "ja": "世帯、家庭",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "関係代名詞 which の非制限用法（名詞, which ...：先行詞に補足説明を加える）",
+    "quote": "Core prices, which leave out food and energy, increased by 3.3%.",
+    "quoteJa": "食品とエネルギーを除いたコア物価は、3.3%上昇した。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "Core prices のあとにコンマで区切った which leave out food and energy が挟まり、「コア物価というのは食品とエネルギーを除いたものだが」と補足説明を加えている。これが非制限用法で、コンマの間を取り除いても Core prices increased by 3.3%. という文が成り立つ。which の後ろは主語が欠けた形（which が主語）で、動詞 leave は先行詞 Core prices（複数）に合わせている。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "コンマの無い制限用法 the prices which leave out food and energy は「（いくつかある物価のうち）食品とエネルギーを除いた物価」と、どれを指すかを絞り込む。非制限用法は相手が既にどれか分かっている名詞に情報を足すだけ。また非制限用法では that は使えない（Core prices, that leave out ... は誤り）。2文に分けると Core prices increased by 3.3%. They leave out food and energy. となる。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 では「名詞, ____ ＋動詞」の空所に which / who を選ばせ、that や what を誤答に混ぜる問題が出る。コンマの直後なら that は消してよい。先行詞が人なら who、物なら which。Part 7 ではコンマの間に用語の定義が入ることが多く、「〜とは何か」を問う設問の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The new office, which opens in April, has space for 200 employees.（4月に開く新オフィスには、従業員200人分の席がある。）／Please contact Ms. Lee, who manages our shipping team.（配送チームを統括しているリーさんにご連絡ください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米政府が11月25日に発表した10月の個人消費支出物価指数（PCE）は前年比3.8%上昇し、FRBの目標2%のほぼ2倍となった。食品とエネルギーを除くコアは3.3%。支出額は0.3%増えたが、物価の上昇分を除いた実質ではわずかに減った。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "FRBが物価の判断で最も重視するのがこのPCEだ。物価が目標を大きく上回ると、FRBは政策金利(policy rate)を引き上げて借り入れのコストを高め、需要を冷ます。上げ幅はベーシスポイント(basis point)で表し、25bpは0.25%にあたる。市場は12月8〜9日の会合で25bp上げ、誘導目標を3.75〜4.00%から4.00〜4.25%にすると見ている。"
+    },
+    {
+      "heading": "📌 3. 他の中央銀行の利上げ",
+      "body": "英イングランド銀行は11月4日に終えた会合で、中東の紛争によるエネルギー高を受けて政策金利を0.25%上げて4%とした。投票は8対1で、反対の1人は0.5%の利上げを主張した。日本銀行は9月18日に0.25%上げて1.25%と31年ぶりの水準にしたが、2人が反対し、総裁が次の利上げを約束しなかったため、円は逆に下落した。上げ幅が同じでも、次の一手の示し方で市場の受け止めは分かれた。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "米国の金利は、ローンで車を買う人が多い日本の自動車メーカーの販売に直結する。米調査会社の予測では、2026年6月の新車ローンの月々の支払いは平均813ドルと、6月として過去最高だった。各社は3月、金利高を補うため販売奨励金(incentive)を積み増した。その中でトヨタ自動車は上半期の米国販売を前年比1.5%増の107万3,678台に伸ばし、首位を保った。伸びを支えたのはハイブリッド車だった。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "policy rate",
+      "pos": "名",
+      "ja": "政策金利",
+      "gloss": "（＝中央銀行が景気や物価を調整するために決める基準の金利のこと）",
+      "example": {
+        "en": "The central bank kept its policy rate unchanged this month.",
+        "ja": "中央銀行は今月、政策金利を据え置いた。"
+      }
+    },
+    {
+      "term": "basis point",
+      "pos": "名",
+      "ja": "ベーシスポイント",
+      "gloss": "（＝0.01%を1とする金利の変化の単位のこと）",
+      "example": {
+        "en": "The bank cut its lending rate by 50 basis points.",
+        "ja": "その銀行は貸出金利を0.5%引き下げた。"
+      }
+    },
+    {
+      "term": "incentive",
+      "pos": "名",
+      "ja": "販売奨励金、優遇策",
+      "gloss": "（＝買う人や売る人を後押しするための値引きや特典のこと）",
+      "example": {
+        "en": "The dealer offered a cash incentive to customers who bought before December.",
+        "ja": "その販売店は12月までに買った客に現金の特典を出した。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fed's preferred inflation gauge accelerated to 3.8% in October",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Inflation rose to 3.8% in October in Fed's preferred gauge",
+      "publisher": "Washington Examiner",
+      "url": "http://www.washingtonexaminer.com/policy/finance-and-economy/4810543/inflation-october-fed-preferred-gauge-affordability-woes/",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Bank Rate increased to 4% - November 2026 Monetary Policy Summary and Minutes",
+      "publisher": "Bank of England",
+      "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+      "date": "2026-11"
+    },
+    {
+      "title": "Bank of Japan lifts rate to 31-year high of 1.25% on Sept 18",
+      "publisher": "Nation Thailand",
+      "url": "https://www.nationthailand.com/news/world/40071184",
+      "date": "2026-09-18"
+    },
+    {
+      "title": "Mid-Year 2026 U.S. Auto Sales Results - Nearly All Automakers Reporting",
+      "publisher": "CarPro",
+      "url": "https://www.carpro.com/blog/mid-year-2026-u.s.-auto-sales-results-nearly-all-automakers-reporting",
+      "date": "2026-07"
+    }
+  ]
+}
