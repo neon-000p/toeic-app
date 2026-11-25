@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-25-1645",
+  "date": "2026-11-25",
+  "time": "16:45",
+  "createdAt": "2026-11-25T16:45:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "US Prepares New Tariffs on China, EU and 14 Other Economies",
+    "ja": "米、中国・EUなど16経済圏に新関税を準備"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The US government is preparing new tariffs on China, the European Union and 14 other economies.",
+            "ja": "米政府は、中国、欧州連合（EU）など14の経済圏に対する新たな関税の準備を進めている。"
+          },
+          {
+            "en": "The plan follows a trade investigation that began in March.",
+            "ja": "この計画は、3月に始まった貿易調査を受けたものだ。"
+          },
+          {
+            "en": "Officials say these economies give subsidies to factories, which then produce far more goods than the market needs.",
+            "ja": "当局者によると、これらの経済圏は工場に補助金を出しており、その工場が市場の需要をはるかに上回る量の製品を生産しているという。"
+          },
+          {
+            "en": "They argue that this extra output unfairly undercuts American companies.",
+            "ja": "当局者は、この余剰生産が米国企業を不当に価格面で圧迫していると主張している。"
+          },
+          {
+            "en": "The exact rates and timing have not been confirmed yet.",
+            "ja": "具体的な税率と実施時期は、まだ確定していない。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The new duties are meant to replace broader tariffs that the country's highest court struck down earlier this year.",
+            "ja": "新たな関税は、同国の最高裁判所が今年初めに無効と判断した、より広範な関税に代わるものとして位置づけられている。"
+          },
+          {
+            "en": "They would come on top of the 10% to 12.5% tariffs announced earlier in 2026.",
+            "ja": "新関税は、2026年に入って発表された10〜12.5%の関税に上乗せされる見通しだ。"
+          },
+          {
+            "en": "Rates will be set for each economy separately instead of as one rate for everyone.",
+            "ja": "税率は一律ではなく、経済圏ごとに個別に設定される。"
+          },
+          {
+            "en": "Partners with existing trade deals are not expected to pay more than the levels in those agreements.",
+            "ja": "すでに貿易協定を結んでいる相手国・地域には、協定で定めた水準を超える税率は課されない見込みだ。"
+          },
+          {
+            "en": "However, the move comes at a time when many voters are worried about the rising cost of living.",
+            "ja": "ただし、今回の動きは、多くの有権者が生活費の上昇を懸念している時期と重なっている。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "Besides China and the European Union, how many economies are targeted by the planned tariffs?",
+      "promptJa": "中国とEUのほかに、計画中の関税の対象となる経済圏はいくつですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4",
+          "ja": "4"
+        },
+        {
+          "key": "B",
+          "text": "10",
+          "ja": "10"
+        },
+        {
+          "key": "C",
+          "text": "14",
+          "ja": "14"
+        },
+        {
+          "key": "D",
+          "text": "16",
+          "ja": "16"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落の第1文に China, the European Union and 14 other economies とあり、中国とEU以外は14の経済圏である。(D) 16 は中国とEUを含めた合計で、設問の Besides（〜のほかに）を読み落とすと選んでしまう。(B) 10 は第2段落の「10% to 12.5%」という税率の数字を流用した引っかけ。(A) 4 は本文にない数字。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "Besides / Other than / In addition to が設問にあるときは「合計」か「それ以外」かを必ず確認する。本文の数字が複数出てくる記事では、数字が何の数なのか（国の数か、税率か）を単位ごとに区別して照合する。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT mentioned about the new tariffs?",
+      "promptJa": "新たな関税について述べられていないものはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They would replace tariffs that a court struck down.",
+          "ja": "裁判所が無効とした関税に代わる"
+        },
+        {
+          "key": "B",
+          "text": "Rates will differ from one economy to another.",
+          "ja": "税率は経済圏ごとに異なる"
+        },
+        {
+          "key": "C",
+          "text": "They will take effect on January 1.",
+          "ja": "1月1日に発効する"
+        },
+        {
+          "key": "D",
+          "text": "Trade-deal partners should not pay more than agreed levels.",
+          "ja": "協定相手は合意水準を超えない"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落の最後の文に The exact rates and timing have not been confirmed yet. とあり、実施時期はまだ決まっていない。「1月1日に発効」という記述は本文にない。(A) は第2段落第1文の replace broader tariffs that the country's highest court struck down、(B) は第3文の set for each economy separately、(D) は第4文の not expected to pay more than the levels in those agreements にそれぞれ書かれている。",
+      "evidence": {
+        "p": 0,
+        "s": 4
+      },
+      "tip": "NOT問題は、4つの選択肢を1つずつ本文と照合し、書かれているものを消していく消去法で解く。言い換え（separately → differ from one economy to another）に気づけるかがポイント。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "gloss": "（＝輸入品にかける税金のこと）",
+      "example": {
+        "en": "The company raised its prices because of new tariffs on imported parts.",
+        "ja": "その会社は、輸入部品にかかる新しい関税のために値上げした。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "investigation",
+      "pos": "名",
+      "ja": "調査",
+      "gloss": "",
+      "example": {
+        "en": "The investigation into the shipping delay will take two weeks.",
+        "ja": "配送遅延についての調査には2週間かかる予定だ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "subsidy",
+      "pos": "名",
+      "ja": "補助金",
+      "gloss": "（＝政府が企業などに出すお金のこと）",
+      "example": {
+        "en": "The city offers subsidies to small businesses that hire local workers.",
+        "ja": "市は、地元の人を雇う中小企業に補助金を出している。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "output",
+      "pos": "名",
+      "ja": "生産量、生産高",
+      "gloss": "",
+      "example": {
+        "en": "The factory increased its output to meet holiday demand.",
+        "ja": "その工場は年末の需要に応えるため生産量を増やした。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "undercut",
+      "pos": "動",
+      "ja": "（相手より安く売って）競争で上回る",
+      "gloss": "",
+      "example": {
+        "en": "The new store undercuts its rivals by selling the same items for less.",
+        "ja": "その新しい店は同じ商品をより安く売ることで競合を圧迫している。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "confirm",
+      "pos": "動",
+      "ja": "確定する、確認する",
+      "gloss": "",
+      "example": {
+        "en": "Please call the hotel to confirm your reservation.",
+        "ja": "予約を確定するため、ホテルに電話してください。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "replace",
+      "pos": "動",
+      "ja": "取って代わる、置き換える",
+      "gloss": "",
+      "example": {
+        "en": "The new software will replace the old system next month.",
+        "ja": "新しいソフトウェアは来月、旧システムに取って代わる。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "existing",
+      "pos": "形",
+      "ja": "既存の、現行の",
+      "gloss": "",
+      "example": {
+        "en": "The discount applies to both new and existing customers.",
+        "ja": "その割引は新規の顧客にも既存の顧客にも適用される。"
+      }
+    }
+  ],
+  "glossary": {
+    "preparing": {
+      "lemma": "prepare",
+      "pos": "動",
+      "ja": "準備する",
+      "note": ""
+    },
+    "tariffs": {
+      "lemma": "tariff",
+      "pos": "名",
+      "ja": "関税",
+      "note": ""
+    },
+    "economies": {
+      "lemma": "economy",
+      "pos": "名",
+      "ja": "経済圏、経済",
+      "note": "国や地域をまとめて指す語として使う"
+    },
+    "follows": {
+      "lemma": "follow",
+      "pos": "動",
+      "ja": "〜に続く、〜を受ける",
+      "note": ""
+    },
+    "investigation": {
+      "lemma": "investigation",
+      "pos": "名",
+      "ja": "調査",
+      "note": ""
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者、役人",
+      "note": ""
+    },
+    "subsidies": {
+      "lemma": "subsidy",
+      "pos": "名",
+      "ja": "補助金",
+      "note": ""
+    },
+    "factories": {
+      "lemma": "factory",
+      "pos": "名",
+      "ja": "工場",
+      "note": ""
+    },
+    "produce": {
+      "lemma": "produce",
+      "pos": "動",
+      "ja": "生産する",
+      "note": ""
+    },
+    "argue": {
+      "lemma": "argue",
+      "pos": "動",
+      "ja": "主張する",
+      "note": ""
+    },
+    "extra": {
+      "lemma": "extra",
+      "pos": "形",
+      "ja": "余分の",
+      "note": ""
+    },
+    "output": {
+      "lemma": "output",
+      "pos": "名",
+      "ja": "生産量",
+      "note": ""
+    },
+    "unfairly": {
+      "lemma": "unfairly",
+      "pos": "副",
+      "ja": "不当に",
+      "note": ""
+    },
+    "undercuts": {
+      "lemma": "undercut",
+      "pos": "動",
+      "ja": "安売りで圧迫する",
+      "note": ""
+    },
+    "exact": {
+      "lemma": "exact",
+      "pos": "形",
+      "ja": "正確な、具体的な",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "税率、率",
+      "note": ""
+    },
+    "timing": {
+      "lemma": "timing",
+      "pos": "名",
+      "ja": "時期",
+      "note": ""
+    },
+    "confirmed": {
+      "lemma": "confirm",
+      "pos": "動",
+      "ja": "確定する",
+      "note": ""
+    },
+    "duties": {
+      "lemma": "duty",
+      "pos": "名",
+      "ja": "関税",
+      "note": "tariff とほぼ同じ意味で使われる"
+    },
+    "meant": {
+      "lemma": "mean",
+      "pos": "動",
+      "ja": "意図する",
+      "note": "be meant to do で「〜するためのものだ」"
+    },
+    "replace": {
+      "lemma": "replace",
+      "pos": "動",
+      "ja": "取って代わる",
+      "note": ""
+    },
+    "broader": {
+      "lemma": "broad",
+      "pos": "形",
+      "ja": "より広範な",
+      "note": ""
+    },
+    "struck": {
+      "lemma": "strike",
+      "pos": "動",
+      "ja": "打つ",
+      "note": "strike down で「無効にする」"
+    },
+    "announced": {
+      "lemma": "announce",
+      "pos": "動",
+      "ja": "発表する",
+      "note": ""
+    },
+    "separately": {
+      "lemma": "separately",
+      "pos": "副",
+      "ja": "個別に",
+      "note": ""
+    },
+    "existing": {
+      "lemma": "existing",
+      "pos": "形",
+      "ja": "既存の",
+      "note": ""
+    },
+    "deals": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "取引、協定",
+      "note": ""
+    },
+    "agreements": {
+      "lemma": "agreement",
+      "pos": "名",
+      "ja": "協定、合意",
+      "note": ""
+    },
+    "voters": {
+      "lemma": "voter",
+      "pos": "名",
+      "ja": "有権者",
+      "note": ""
+    },
+    "cost of living": {
+      "lemma": "cost of living",
+      "pos": "熟",
+      "ja": "生活費",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "比較級の強調 far（far more A than B：〜よりはるかに多くのA）",
+    "quote": "Officials say these economies give subsidies to factories, which then produce far more goods than the market needs.",
+    "quoteJa": "当局者によると、これらの経済圏は工場に補助金を出しており、その工場が市場の需要をはるかに上回る量の製品を生産しているという。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "far more goods than the market needs は「市場が必要とするよりはるかに多くの製品」。more ... than は比較級で、その前に置いた far が「はるかに、ずっと」と差の大きさを強めている。比較級を強める副詞には far のほか much / even / still / a lot がある。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "far を外して produce more goods than the market needs とすると「市場の需要より多く」という事実だけになり、差の大きさは伝わらない。much more goods とは言わない点に注意（goods は数えられる名詞の複数形なので many more goods が正しい。far more はどちらにも使える）。逆に very more とは言えない。very は原級（very large）を強める語で、比較級は強められない。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 では「空所＋比較級」の形で、far / much / even を選ばせ、very を誤答に混ぜる問題が定番。空所の直後が more ～ / ～er than なら very は消してよい。Part 7 では far more ... than が「大きな差」を示すため、記事の主張（なぜ問題なのか）を問う設問の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The new warehouse can store far more products than the old one.（新しい倉庫は、旧倉庫よりはるかに多くの商品を保管できる。）／Online orders were far higher than we expected this month.（今月のオンライン注文は予想をはるかに上回った。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "米政府が中国、EUなど計16の経済圏に新たな関税を課す準備に入ったと、11月24日に報じられた。3月に始めた補助金の調査に基づき、今年発動した10〜12.5%の関税に上乗せする。税率は経済圏ごとに決め、時期は未定だ。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "補助金を受けた工場が国内の需要を大きく超えて作れる状態を、過剰生産能力(excess capacity)と呼ぶ。余った製品が安く輸出されると、相手国の企業は値下げ競争で不利になる。2月に最高裁は、緊急事態を理由にした関税は大統領の権限外だと6対3で判断した。政権は不公正な貿易に対抗できる別の法律に切り替え、関税を作り直している。"
+    },
+    {
+      "heading": "📌 3. 他社は還付金をどう使ったか",
+      "body": "最高裁の判断を受け、無効になった関税の還付(refund)が4月20日に始まり、総額は約1,660億ドルに上る見込みだ。米アップルは約22億ドル相当の還付を受けたとみられ、クックCEOは8月、それを米国での先端製造への追加投資に回すと表明した。一方、米ホーム・デポは第2四半期に7億3,000万ドルを受け取り、そのうち6億8,500万ドルを商品の仕入れ原価の引き下げに充てた。顧客に直接返す計画は示していない。アップルは国内生産の拡大という将来への備えに、ホーム・デポは目の前のコストの穴埋めに使ったという違いがある。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "今回の対象には日本も含まれる。トヨタ自動車は2026年3月期、米国の関税で営業利益(operating income)を1兆3,800億円削られながらも、3兆7,000億円台を確保した。今期も関税で6,700億円の減益を見込む。新関税は日米の貿易協定の水準を超えない見通しで、この想定が膨らむかどうかは税率の発表次第だ。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "excess capacity",
+      "pos": "名",
+      "ja": "過剰生産能力",
+      "gloss": "（＝需要を大きく上回る量を作れてしまう設備や体制のこと）",
+      "example": {
+        "en": "The steel industry has struggled with excess capacity for years.",
+        "ja": "鉄鋼業界は何年も過剰生産能力に苦しんでいる。"
+      }
+    },
+    {
+      "term": "refund",
+      "pos": "名・動",
+      "ja": "払い戻し、還付",
+      "gloss": "",
+      "example": {
+        "en": "Customers can get a full refund within 30 days of purchase.",
+        "ja": "購入から30日以内なら全額の払い戻しを受けられる。"
+      }
+    },
+    {
+      "term": "operating income",
+      "pos": "名",
+      "ja": "営業利益",
+      "gloss": "（＝本業でもうけた利益のこと）",
+      "example": {
+        "en": "Our operating income rose 8% thanks to lower shipping costs.",
+        "ja": "配送費が下がったおかげで、当社の営業利益は8%増えた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "US ready to slap tariffs on China, EU and others over subsidized production, AP sources say",
+      "publisher": "Associated Press (KSAT)",
+      "url": "https://www.ksat.com/news/politics/2026/11/25/us-ready-to-slap-tariffs-on-china-eu-and-others-over-subsidized-production-ap-sources-say/",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Trump prepares a new round of targeted tariffs",
+      "publisher": "Axios",
+      "url": "https://axios.com/2026/11/24/trump-tariffs-china-affordability",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "New Trump Tariffs Won't Top Trade Deal Levels, Will Be Targeted",
+      "publisher": "Bloomberg",
+      "url": "https://bloomberg.com/news/articles/2026-11-24/new-trump-tariffs-won-t-top-trade-deal-levels-will-be-targeted",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Apple will invest tariff refund into U.S. manufacturing",
+      "publisher": "NPR (WFAE)",
+      "url": "https://www.wfae.org/2026-08-04/apple-will-invest-tariff-refund-into-u-s-manufacturing",
+      "date": "2026-08-04"
+    },
+    {
+      "title": "Toyota operating profits drop 21.5% as US tariffs take Y1.38tn toll",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/toyota-operating-profits-drop-21-152020806.html",
+      "date": "2026-05-08"
+    }
+  ]
+}
