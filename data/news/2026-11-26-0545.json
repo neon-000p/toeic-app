@@ -514,5 +514,24 @@
       "url": "https://www.carpro.com/blog/mid-year-2026-u.s.-auto-sales-results-nearly-all-automakers-reporting",
       "date": "2026-07"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-26-0545/00.mp3",
+      "audio/2026-11-26-0545/01.mp3",
+      "audio/2026-11-26-0545/02.mp3",
+      "audio/2026-11-26-0545/03.mp3",
+      "audio/2026-11-26-0545/04.mp3",
+      "audio/2026-11-26-0545/05.mp3",
+      "audio/2026-11-26-0545/06.mp3",
+      "audio/2026-11-26-0545/07.mp3",
+      "audio/2026-11-26-0545/08.mp3",
+      "audio/2026-11-26-0545/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 250040,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-25T20:51:09.377Z",
+    "trimmed": true
+  }
 }
