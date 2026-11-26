@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-27-0546",
+  "date": "2026-11-27",
+  "time": "05:46",
+  "createdAt": "2026-11-27T05:46:00+09:00",
+  "genre": "小売・消費",
+  "genreEn": "Retail & Consumer",
+  "sample": false,
+  "title": {
+    "en": "Online Holiday Shopping Gets Off to a Fast Start",
+    "ja": "米ネット年末商戦、序盤は9.1%増の好発進"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Shoppers in the U.S. spent $82.5 billion online between November 1 and November 22, according to new data from Adobe.",
+            "ja": "アドビが発表した新しいデータによると、米国の消費者は11月1日から22日までにネット通販で825億ドルを使った。"
+          },
+          {
+            "en": "That was 9.1% more than in the same period last year.",
+            "ja": "これは前年の同じ期間より9.1%多い。"
+          },
+          {
+            "en": "Online spending topped $3 billion every day, and it went over $4 billion on two days.",
+            "ja": "ネットでの支出は毎日30億ドルを上回り、2日間は40億ドルを超えた。"
+          },
+          {
+            "en": "This was the first time daily sales passed $4 billion before Thanksgiving.",
+            "ja": "感謝祭より前に1日の売上が40億ドルを超えたのは、これが初めてだった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The early growth is faster than the 6.7% increase Adobe expects for the full season through December 31.",
+            "ja": "この序盤の伸びは、アドビが12月31日までのシーズン全体について予想している6.7%増を上回っている。"
+          },
+          {
+            "en": "Retailers hope the trend will continue on Black Friday, when online sales are forecast to rise 9.2% to $12.9 billion.",
+            "ja": "小売各社は、この流れがブラックフライデーにも続くことを期待している。この日のネット売上は9.2%増の129億ドルになると予測されている。"
+          },
+          {
+            "en": "Many shoppers are using \"buy now, pay later\" plans, which let them pay for purchases in small amounts over several weeks.",
+            "ja": "多くの消費者は「後払い」プランを利用している。このプランを使うと、購入代金を数週間かけて少額ずつ支払うことができる。"
+          },
+          {
+            "en": "Spending through these plans reached $6.1 billion, up 6.5% from a year earlier.",
+            "ja": "こうしたプランを通じた支出は61億ドルに達し、前年より6.5%増えた。"
+          },
+          {
+            "en": "Traffic to store websites from AI chatbots that suggest products has also more than doubled.",
+            "ja": "商品を提案するAIチャットボット（自動で会話するプログラム）経由の小売サイトへのアクセスも、2倍以上に増えた。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How much did shoppers in the U.S. spend online between November 1 and November 22?",
+      "promptJa": "米国の消費者は11月1日から22日までに、ネットでいくら使いましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$3 billion",
+          "ja": "30億ドル"
+        },
+        {
+          "key": "B",
+          "text": "$6.1 billion",
+          "ja": "61億ドル"
+        },
+        {
+          "key": "C",
+          "text": "$12.9 billion",
+          "ja": "129億ドル"
+        },
+        {
+          "key": "D",
+          "text": "$82.5 billion",
+          "ja": "825億ドル"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は (D)。第1段落の第1文に Shoppers in the U.S. spent $82.5 billion online between November 1 and November 22 とある。(A) $3 billion は「毎日これを上回った」1日あたりの金額、(B) $6.1 billion は後払いプランを通じた支出額、(C) $12.9 billion はブラックフライデー1日のネット売上の予測値。いずれも本文に出てくる別の数字を流用した引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 0
+      },
+      "tip": "金額がいくつも並ぶ記事では、設問の期間（between November 1 and November 22）と主語（shoppers）が本文のどの数字と結びついているかを確認する。1日あたり・特定の日・特定の支払い方法など、条件の違う数字を選ばないのが Part 7 の基本。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "According to the article, what is NOT true about the early holiday shopping season?",
+      "promptJa": "記事によると、年末商戦の序盤について正しくないものはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Online spending was more than $3 billion every day.",
+          "ja": "ネット支出は毎日30億ドル超だった"
+        },
+        {
+          "key": "B",
+          "text": "Spending grew faster than Adobe's full-season forecast.",
+          "ja": "支出はアドビの通期予想より速く伸びた"
+        },
+        {
+          "key": "C",
+          "text": "Online sales on Black Friday are expected to fall.",
+          "ja": "ブラックフライデーのネット売上は減る見込み"
+        },
+        {
+          "key": "D",
+          "text": "Traffic from AI chatbots more than doubled.",
+          "ja": "AIチャットボット経由のアクセスが2倍超に"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第2段落の第2文に online sales are forecast to rise 9.2% to $12.9 billion とあり、ブラックフライデーのネット売上は「増える」と予測されているので、fall（減る）は本文と逆の内容。(A) は第1段落の第3文 topped $3 billion every day、(B) は第2段落の第1文 The early growth is faster than the 6.7% increase、(D) は第2段落の最後の文 has also more than doubled と一致する。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "NOT 問題は、4つの選択肢を1つずつ本文と照合し、一致したものを消していく。rise と fall、increase と decrease のように、本文の動詞を反対の意味の語に入れ替えた選択肢が正解（＝本文と食い違うもの）になりやすい。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "period",
+      "pos": "名",
+      "ja": "期間",
+      "gloss": "",
+      "example": {
+        "en": "The trial period for the new software is 30 days.",
+        "ja": "新しいソフトウェアの試用期間は30日間だ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "top",
+      "pos": "動",
+      "ja": "（数量が）〜を上回る",
+      "gloss": "",
+      "example": {
+        "en": "Ticket sales for the conference topped 2,000 this year.",
+        "ja": "今年の会議のチケット販売数は2,000枚を上回った。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "daily",
+      "pos": "形",
+      "ja": "毎日の、1日あたりの",
+      "gloss": "",
+      "example": {
+        "en": "The manager checks the daily sales report every morning.",
+        "ja": "店長は毎朝、日次の売上報告を確認する。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "retailer",
+      "pos": "名",
+      "ja": "小売業者、小売店",
+      "gloss": "",
+      "example": {
+        "en": "The retailer plans to open five new stores next spring.",
+        "ja": "その小売業者は来春、新店舗を5つ開く予定だ。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "forecast",
+      "pos": "名・動",
+      "ja": "予測（する）、見通し",
+      "gloss": "",
+      "example": {
+        "en": "Sales are forecast to grow by 5% next quarter.",
+        "ja": "来四半期の売上は5%伸びると予測されている。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "purchase",
+      "pos": "名・動",
+      "ja": "購入（品）、購入する",
+      "gloss": "",
+      "example": {
+        "en": "Please keep your receipt as proof of purchase.",
+        "ja": "購入の証明として、レシートを保管してください。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "amount",
+      "pos": "名",
+      "ja": "金額、量",
+      "gloss": "",
+      "example": {
+        "en": "The total amount will be charged to your credit card.",
+        "ja": "合計金額はクレジットカードに請求されます。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "traffic",
+      "pos": "名",
+      "ja": "（サイトへの）アクセス、訪問者数",
+      "gloss": "（＝ウェブサイトを訪れる人の数や回数のこと）",
+      "example": {
+        "en": "Our website traffic increased after the new advertisement.",
+        "ja": "新しい広告を出したあと、当社サイトへのアクセスが増えた。"
+      }
+    }
+  ],
+  "glossary": {
+    "shoppers": {
+      "lemma": "shopper",
+      "pos": "名",
+      "ja": "買い物客、消費者",
+      "note": ""
+    },
+    "spent": {
+      "lemma": "spend",
+      "pos": "動",
+      "ja": "（お金を）使う",
+      "note": "spend - spent - spent"
+    },
+    "billion": {
+      "lemma": "billion",
+      "pos": "名",
+      "ja": "10億",
+      "note": "$82.5 billion＝825億ドル"
+    },
+    "according to": {
+      "lemma": "according to",
+      "pos": "熟",
+      "ja": "〜によると",
+      "note": ""
+    },
+    "data": {
+      "lemma": "data",
+      "pos": "名",
+      "ja": "データ",
+      "note": ""
+    },
+    "period": {
+      "lemma": "period",
+      "pos": "名",
+      "ja": "期間",
+      "note": ""
+    },
+    "spending": {
+      "lemma": "spending",
+      "pos": "名",
+      "ja": "支出、消費",
+      "note": ""
+    },
+    "topped": {
+      "lemma": "top",
+      "pos": "動",
+      "ja": "〜を上回った",
+      "note": ""
+    },
+    "daily": {
+      "lemma": "daily",
+      "pos": "形",
+      "ja": "1日あたりの",
+      "note": ""
+    },
+    "passed": {
+      "lemma": "pass",
+      "pos": "動",
+      "ja": "（数値を）超えた",
+      "note": ""
+    },
+    "growth": {
+      "lemma": "growth",
+      "pos": "名",
+      "ja": "成長、伸び",
+      "note": ""
+    },
+    "increase": {
+      "lemma": "increase",
+      "pos": "名",
+      "ja": "増加",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": ""
+    },
+    "season": {
+      "lemma": "season",
+      "pos": "名",
+      "ja": "（商戦の）時期",
+      "note": "ここでは年末商戦のこと"
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "trend": {
+      "lemma": "trend",
+      "pos": "名",
+      "ja": "傾向、流れ",
+      "note": ""
+    },
+    "forecast": {
+      "lemma": "forecast",
+      "pos": "動",
+      "ja": "予測する",
+      "note": "過去分詞も forecast（be forecast to do）"
+    },
+    "rise": {
+      "lemma": "rise",
+      "pos": "動",
+      "ja": "上昇する",
+      "note": ""
+    },
+    "plans": {
+      "lemma": "plan",
+      "pos": "名",
+      "ja": "（支払いの）プラン",
+      "note": ""
+    },
+    "purchases": {
+      "lemma": "purchase",
+      "pos": "名",
+      "ja": "購入品、買い物",
+      "note": ""
+    },
+    "amounts": {
+      "lemma": "amount",
+      "pos": "名",
+      "ja": "金額",
+      "note": ""
+    },
+    "several": {
+      "lemma": "several",
+      "pos": "形",
+      "ja": "いくつかの",
+      "note": ""
+    },
+    "reached": {
+      "lemma": "reach",
+      "pos": "動",
+      "ja": "〜に達した",
+      "note": ""
+    },
+    "traffic": {
+      "lemma": "traffic",
+      "pos": "名",
+      "ja": "（サイトへの）アクセス",
+      "note": "道路の「交通量」の意味もある"
+    },
+    "chatbots": {
+      "lemma": "chatbot",
+      "pos": "名",
+      "ja": "チャットボット",
+      "note": "自動で会話するプログラム"
+    },
+    "suggest": {
+      "lemma": "suggest",
+      "pos": "動",
+      "ja": "提案する",
+      "note": ""
+    },
+    "doubled": {
+      "lemma": "double",
+      "pos": "動",
+      "ja": "2倍になった",
+      "note": "more than doubled＝2倍以上になった"
+    }
+  },
+  "grammar": {
+    "topic": "使役動詞 let（let＋O＋動詞の原形：Oに〜させる・〜するのを許す）",
+    "quote": "Many shoppers are using \"buy now, pay later\" plans, which let them pay for purchases in small amounts over several weeks.",
+    "quoteJa": "多くの消費者は「後払い」プランを利用している。このプランを使うと、購入代金を数週間かけて少額ずつ支払うことができる。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "which 以下の let them pay for purchases が使役動詞 let の文。let＋目的語（them＝shoppers）＋動詞の原形（pay）で「Oが〜するのを許す・Oに〜させてあげる」という意味になる。主語は which（＝後払いプラン）なので、「後払いプランは、消費者が少額ずつ支払うことを可能にしている」と読む。let の後ろは to pay ではなく、to の付かない原形 pay である点が最大のポイント。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "同じ内容は allow を使って ..., which allow them to pay ... と書けるが、allow の後ろは to 不定詞になる。enable them to pay も同様に to が必要。使役動詞の make（make＋O＋原形：むりやり〜させる）や have（have＋O＋原形：〜してもらう）も原形をとるが、let は「本人がしたいことを許す」という許可の意味で、強制の make とは意味が異なる。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 では let ＋ 目的語の後ろの空所に pay / to pay / paying / paid を並べ、原形を選ばせる問題が定番。allow / enable / permit が使われていれば to 不定詞を選ぶので、動詞を見て形を切り替える。Part 6・7 のメールでは Please let me know ...（お知らせください）が頻出で、これも let＋O＋原形の形。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The new system lets customers track their orders online.（新しいシステムで、顧客はネットで注文状況を追跡できる。）／Please let us know if you need more time.（さらに時間が必要でしたらお知らせください。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "アドビは11月25日、米国の11月1日〜22日のネット通販支出が825億ドルと前年同期比9.1%増えたと発表した。期間中は毎日30億ドルを超え、感謝祭より前に1日40億ドルを超えた日が初めて2日あった。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "米国の年末商戦(holiday season)は11月から12月末までを指し、感謝祭翌日のブラックフライデーと週明けのサイバーマンデーが山場になる。アドビは11〜12月のネット通販を前年比6.7%増の2751億ドルと予想しており、序盤の9.1%増はこの予想を上回る勢いである。"
+    },
+    {
+      "heading": "📌 3. 他社ではどうだったか",
+      "body": "ウォルマートは11月19日、8〜10月期の売上高が前年同期比5.2%増の1888億ドルだったと発表した。米国のネット販売は23%増え、20%を超える伸びは11四半期連続となった。店舗から商品を届ける配達や店舗受け取り(store pickup)が伸びを支えた。ターゲットは11月18日、8〜10月期の既存店売上高(comparable sales)が5.6%増え、うちデジタル販売は9.8%増だったと発表した。値下げで客数を5%増やした。ウォルマートは店舗網を配送拠点として使い、ターゲットは値下げで来店とネット利用の両方を増やした点が異なる。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "イオンは2026年、「イオン 超!ブラックフライデーフェス」に先立つネット先行セールを10月31日からイオンスタイルオンラインで始め、ほぼ全品15%引きのクーポンを11月16日まで配った。店頭の本番は11月20日から30日まで、全国約600店で開いている。ネットで早めに需要を取り込み、店舗の本番につなげる二段構えである。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "holiday season",
+      "pos": "名",
+      "ja": "年末商戦、年末年始の時期",
+      "gloss": "（＝米国で感謝祭からクリスマス・年末までの、買い物が最も多い時期のこと）",
+      "example": {
+        "en": "The store hires extra staff for the holiday season.",
+        "ja": "その店は年末商戦に向けて臨時の従業員を雇う。"
+      }
+    },
+    {
+      "term": "store pickup",
+      "pos": "名",
+      "ja": "店舗受け取り",
+      "gloss": "（＝ネットで注文した商品を、近くの店舗で受け取るサービスのこと）",
+      "example": {
+        "en": "Customers who choose store pickup do not pay a shipping fee.",
+        "ja": "店舗受け取りを選んだ客は送料を払わない。"
+      }
+    },
+    {
+      "term": "comparable sales",
+      "pos": "名",
+      "ja": "既存店売上高",
+      "gloss": "（＝開業から1年以上たつ店舗やサイトだけで比べた売上のこと。新店の分を除いて実力を見る）",
+      "example": {
+        "en": "The chain's comparable sales rose 3% in the spring.",
+        "ja": "そのチェーンの既存店売上高は春に3%伸びた。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Adobe data shows online holiday spending up 9.1% ahead of Thanksgiving",
+      "publisher": "Digital Commerce 360",
+      "url": "https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "How much will Americans spend this holiday shopping season?",
+      "publisher": "Deseret News",
+      "url": "https://www.deseret.com/business/2026/11/25/holiday-shopping-records-sales-online-in-person-inflation-economy-consumer-sentiment-ai-assistance/",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Walmart quarterly net income down 19.5%, revenue up 5.2%",
+      "publisher": "Talk Business & Politics",
+      "url": "https://talkbusiness.net/2026/11/walmart-quarterly-net-income-down-19-5-revenue-up-5-2/",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Target Q3 2026 Earnings",
+      "publisher": "Target Corporation",
+      "url": "https://corporate.target.com/news-features/article/2026/11/q3-2026-earnings",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "イオンが「超！ブラックフライデーフェス」を11月20日から開催。参加型企画を強化し、ネット先行セールも実施",
+      "publisher": "ストアガイド",
+      "url": "https://storeguide.proguide.co.jp/event/9561/",
+      "date": ""
+    }
+  ]
+}
