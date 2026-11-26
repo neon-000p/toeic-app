@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-26-1646",
+  "date": "2026-11-26",
+  "time": "16:46",
+  "createdAt": "2026-11-26T16:46:00+09:00",
+  "genre": "企業決算",
+  "genreEn": "Corporate Earnings",
+  "sample": false,
+  "title": {
+    "en": "Memory Costs Squeeze HP's PC Business",
+    "ja": "メモリー高騰、HPのパソコン事業を圧迫"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "HP reported this week that its revenue rose 9% to $16 billion in the quarter that ended in October.",
+            "ja": "HPは今週、10月に終わった四半期の売上高が9%増の160億ドルになったと発表した。"
+          },
+          {
+            "en": "However, the company shipped far fewer computers than a year earlier, and its profit per share fell.",
+            "ja": "しかし、出荷したパソコンの台数は前年を大きく下回り、1株当たり利益も減った。"
+          },
+          {
+            "en": "The main reason is memory, a key part that stores data inside every computer.",
+            "ja": "主な原因はメモリーで、これはあらゆるパソコンの中でデータを保存する重要な部品である。"
+          },
+          {
+            "en": "Memory now makes up about 40% of the cost of parts in a PC, up from less than 20% a year ago.",
+            "ja": "メモリーはいまやパソコン部品のコストの約40%を占めており、1年前の20%未満から大きく上昇した。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Memory makers are selling more chips to AI data centers, leaving fewer for ordinary computers.",
+            "ja": "メモリーメーカーはAIデータセンター向けの販売を増やしており、その結果、一般のパソコンに回る分が少なくなっている。"
+          },
+          {
+            "en": "As a result, PC prices have gone up, and consumer demand weakened late in the quarter.",
+            "ja": "その結果パソコンの価格は上がり、四半期の終盤には個人向けの需要が弱まった。"
+          },
+          {
+            "en": "HP's profit margin on computers dropped to just 3%, below its usual target range.",
+            "ja": "HPのパソコン事業の利益率はわずか3%に落ち込み、通常の目標範囲を下回った。"
+          },
+          {
+            "en": "The company expects memory costs to keep rising next year, although more slowly.",
+            "ja": "同社は、来年もメモリーのコストは上がり続けるが、上昇のペースは鈍ると見ている。"
+          },
+          {
+            "en": "It also plans more promotions to clear extra inventory in stores.",
+            "ja": "また、店頭にだぶついた在庫を売り切るため、販売促進を増やす計画だ。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "About what share of the cost of parts in a PC does memory now make up?",
+      "promptJa": "メモリーは現在、パソコン部品のコストのおよそ何割を占めていますか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3%",
+          "ja": "3%"
+        },
+        {
+          "key": "B",
+          "text": "9%",
+          "ja": "9%"
+        },
+        {
+          "key": "C",
+          "text": "About 40%",
+          "ja": "約40%"
+        },
+        {
+          "key": "D",
+          "text": "Less than 20%",
+          "ja": "20%未満"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落の第4文に Memory now makes up about 40% of the cost of parts in a PC とある。(A) 3% はパソコン事業の利益率、(B) 9% は売上高の伸び率、(D) 20%未満は1年前の割合で、今の数字ではない。いずれも本文の別の数字を流用した引っかけ。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "数字が多い記事では、設問の主語（ここでは memory）と動詞（make up）が本文のどの数字と結びついているかを確認する。now と a year ago のように時点の違う数字が並ぶときは、設問の時制（does ... now）と照合するのが Part 7 の基本。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why are fewer memory chips available for ordinary computers?",
+      "promptJa": "記事によると、一般のパソコン向けのメモリーが少なくなっているのはなぜですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "HP bought too much memory last year.",
+          "ja": "HPが昨年メモリーを買いすぎた"
+        },
+        {
+          "key": "B",
+          "text": "Memory makers are selling more chips to AI data centers.",
+          "ja": "メーカーがAIデータセンターへの販売を増やしている"
+        },
+        {
+          "key": "C",
+          "text": "Consumers are buying more AI PCs than before.",
+          "ja": "消費者がAIパソコンを以前より多く買っている"
+        },
+        {
+          "key": "D",
+          "text": "Stores are holding too little inventory.",
+          "ja": "店の在庫が少なすぎる"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落の第1文に Memory makers are selling more chips to AI data centers, leaving fewer for ordinary computers. とあり、AIデータセンター向けの販売増が原因だと分かる。(A) は本文にない情報。(C) AIパソコンの購入増は本文にない情報。(D) は本文と逆で、本文は在庫が余っている（extra inventory）と述べている。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "理由を問う設問では、because だけでなく分詞構文（, leaving ...）や As a result などの因果を示す表現を手がかりに根拠文を探す。本文にある語（AI, inventory）を使った誤答に注意する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "revenue",
+      "pos": "名",
+      "ja": "収益、売上高",
+      "gloss": "",
+      "example": {
+        "en": "The company's revenue grew by 12% in the first half of the year.",
+        "ja": "その会社の売上高は上半期に12%伸びた。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "ship",
+      "pos": "動",
+      "ja": "出荷する、発送する",
+      "gloss": "",
+      "example": {
+        "en": "We will ship your order within three business days.",
+        "ja": "ご注文の品は3営業日以内に発送します。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "make up",
+      "pos": "熟",
+      "ja": "（割合を）占める、構成する",
+      "gloss": "",
+      "example": {
+        "en": "Women make up half of our sales team.",
+        "ja": "当社の営業チームの半数を女性が占めている。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "data center",
+      "pos": "名",
+      "ja": "データセンター",
+      "gloss": "（＝大量のコンピューターを置いてデータの保存や計算を行う施設のこと）",
+      "example": {
+        "en": "The bank moved its customer records to a new data center.",
+        "ja": "その銀行は顧客記録を新しいデータセンターに移した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "gloss": "",
+      "example": {
+        "en": "Demand for the new printer was higher than expected.",
+        "ja": "新しいプリンターの需要は予想より高かった。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "margin",
+      "pos": "名",
+      "ja": "利益率、利ざや",
+      "gloss": "",
+      "example": {
+        "en": "The store improved its margin by reducing delivery costs.",
+        "ja": "その店は配送コストを減らして利益率を改善した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "promotion",
+      "pos": "名",
+      "ja": "販売促進、販促キャンペーン",
+      "gloss": "",
+      "example": {
+        "en": "The summer promotion helped us attract new customers.",
+        "ja": "夏の販促キャンペーンが新規顧客の獲得に役立った。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "inventory",
+      "pos": "名",
+      "ja": "在庫",
+      "gloss": "",
+      "example": {
+        "en": "Please check the inventory before placing a new order.",
+        "ja": "新たに発注する前に在庫を確認してください。"
+      }
+    }
+  ],
+  "glossary": {
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "発表する、報告する",
+      "note": ""
+    },
+    "revenue": {
+      "lemma": "revenue",
+      "pos": "名",
+      "ja": "売上高、収益",
+      "note": ""
+    },
+    "quarter": {
+      "lemma": "quarter",
+      "pos": "名",
+      "ja": "四半期",
+      "note": "1年を4つに分けた3か月の期間"
+    },
+    "however": {
+      "lemma": "however",
+      "pos": "副",
+      "ja": "しかしながら",
+      "note": ""
+    },
+    "shipped": {
+      "lemma": "ship",
+      "pos": "動",
+      "ja": "出荷した",
+      "note": ""
+    },
+    "profit": {
+      "lemma": "profit",
+      "pos": "名",
+      "ja": "利益",
+      "note": ""
+    },
+    "per": {
+      "lemma": "per",
+      "pos": "前",
+      "ja": "〜につき",
+      "note": "profit per share＝1株当たり利益"
+    },
+    "share": {
+      "lemma": "share",
+      "pos": "名",
+      "ja": "株式",
+      "note": "ここでは株1株のこと"
+    },
+    "memory": {
+      "lemma": "memory",
+      "pos": "名",
+      "ja": "メモリー（記憶装置）",
+      "note": ""
+    },
+    "stores": {
+      "lemma": "store",
+      "pos": "動",
+      "ja": "保存する",
+      "note": "名詞の store（店）とは別"
+    },
+    "makes": {
+      "lemma": "make",
+      "pos": "動",
+      "ja": "（make up で）占める",
+      "note": "make up ＋割合"
+    },
+    "parts": {
+      "lemma": "part",
+      "pos": "名",
+      "ja": "部品",
+      "note": ""
+    },
+    "chips": {
+      "lemma": "chip",
+      "pos": "名",
+      "ja": "半導体チップ",
+      "note": ""
+    },
+    "data": {
+      "lemma": "data",
+      "pos": "名",
+      "ja": "データ",
+      "note": "data centers＝データセンター"
+    },
+    "leaving": {
+      "lemma": "leave",
+      "pos": "動",
+      "ja": "残す",
+      "note": "分詞構文：その結果〜を残す"
+    },
+    "ordinary": {
+      "lemma": "ordinary",
+      "pos": "形",
+      "ja": "普通の、一般の",
+      "note": ""
+    },
+    "consumer": {
+      "lemma": "consumer",
+      "pos": "名",
+      "ja": "消費者",
+      "note": "consumer demand＝個人向け需要"
+    },
+    "demand": {
+      "lemma": "demand",
+      "pos": "名",
+      "ja": "需要",
+      "note": ""
+    },
+    "weakened": {
+      "lemma": "weaken",
+      "pos": "動",
+      "ja": "弱まった",
+      "note": ""
+    },
+    "margin": {
+      "lemma": "margin",
+      "pos": "名",
+      "ja": "利益率",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下がった",
+      "note": ""
+    },
+    "target": {
+      "lemma": "target",
+      "pos": "名",
+      "ja": "目標",
+      "note": ""
+    },
+    "range": {
+      "lemma": "range",
+      "pos": "名",
+      "ja": "範囲",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": "expect A to do＝Aが〜すると予想する"
+    },
+    "although": {
+      "lemma": "although",
+      "pos": "接",
+      "ja": "〜だけれども",
+      "note": "ここでは although (they will rise) more slowly の省略"
+    },
+    "promotions": {
+      "lemma": "promotion",
+      "pos": "名",
+      "ja": "販売促進",
+      "note": ""
+    },
+    "clear": {
+      "lemma": "clear",
+      "pos": "動",
+      "ja": "（在庫を）売り切る",
+      "note": "clear inventory＝在庫を一掃する"
+    },
+    "extra": {
+      "lemma": "extra",
+      "pos": "形",
+      "ja": "余分な",
+      "note": ""
+    },
+    "inventory": {
+      "lemma": "inventory",
+      "pos": "名",
+      "ja": "在庫",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "結果を表す分詞構文（, ＋ -ing：…して、その結果〜する）",
+    "quote": "Memory makers are selling more chips to AI data centers, leaving fewer for ordinary computers.",
+    "quoteJa": "メモリーメーカーはAIデータセンター向けの販売を増やしており、その結果、一般のパソコンに回る分が少なくなっている。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "文の後半の , leaving fewer for ordinary computers が分詞構文。主節（メーカーがAI向けに多く売っている）の「結果として起きること」を -ing で後ろに続けている。leaving の意味上の主語は、主節全体の内容（AI向けに多く売っていること）で、fewer は fewer chips の chips を省略した形。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "接続詞を使うと Memory makers are selling more chips to AI data centers, and this leaves fewer for ordinary computers. や ..., so there are fewer chips for ordinary computers. となる。分詞構文はこの and this / so を -ing 1語にまとめ、文を短くする書き方。似た形の付帯状況（, smiling：〜しながら）は「同時に起きていること」を表すのに対し、結果の分詞構文は「その後に生じる結果」を表す。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 ではコンマの後ろの空所に leaving / left / leaves / to leave を並べ、動詞の形を選ばせる問題が出る。コンマの前で文が完結していて、後ろに接続詞が無ければ -ing を選ぶ。Part 7 では , causing ... / , resulting in ... / , making ... の後ろに影響や結果が書かれることが多く、「〜の結果どうなったか」を問う設問の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The shipment was delayed by two days, causing problems for several stores.（出荷が2日遅れ、いくつかの店舗で支障が出た。）／Sales rose sharply in March, making it our best month this year.（3月は売上が急増し、今年で最も好調な月となった。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "HPは11月24日、10月末までの四半期決算を発表した。売上高は前年比9%増の160億ドルだったが、1株当たり利益は0.93ドルから0.83ドルに減った。パソコン部門の利益率は3%にとどまり、2027年度の1株利益見通しは3.15〜3.45ドルとした。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "パソコン1台に使う部品とその費用の一覧を部品表(bill of materials)と呼ぶ。メモリー各社がAIデータセンター向けの高性能品に生産を振り向けた結果、パソコン向けは供給不足(supply shortage)となり、価格が急騰した。HPでは部品表に占めるメモリーと記憶装置の比率が、1年で15〜18%から約40%まで上がった。値上げ(price increase)をしてもコスト増に追いつかない。"
+    },
+    {
+      "heading": "📌 3. 他社ではどうだったか",
+      "body": "中国のレノボは2026年8月、4〜6月期の売上高が前年同期比43%増の269億4000万ドルになったと発表した。メモリー高に対応してパソコンを年内に2回値上げし、AIサーバーの需要も取り込んだ。米デルは2025年11月の決算で、AIサーバーの受注が1四半期で123億ドルに達したと発表した。部材コストの上昇は直販や価格改定で取り戻す方針を示した。レノボはパソコン本体の値上げを先に実行し、デルはAIサーバーの大型受注でパソコンの逆風を補った点が異なる。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "国内パソコン大手の富士通クライアントコンピューティング（FCCL）は2026年1月、春モデル4シリーズ7機種を従来モデルより高い価格で発表した。10月には冬モデル5シリーズ11機種を投入した。発表会では、部材が高騰する中でも新製品の投入を続け、AI機能などの価値を示して価格に見合う製品にする方針を説明した。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "bill of materials",
+      "pos": "名",
+      "ja": "部品表",
+      "gloss": "（＝製品1つをつくるのに必要な部品と数量・費用の一覧のこと）",
+      "example": {
+        "en": "The engineer updated the bill of materials for the new printer.",
+        "ja": "技術者は新しいプリンターの部品表を更新した。"
+      }
+    },
+    {
+      "term": "supply shortage",
+      "pos": "名",
+      "ja": "供給不足",
+      "gloss": "（＝必要な量に対して、手に入る量が足りない状態のこと）",
+      "example": {
+        "en": "A supply shortage delayed the opening of the new café.",
+        "ja": "供給不足のため、新しいカフェの開店が遅れた。"
+      }
+    },
+    {
+      "term": "price increase",
+      "pos": "名",
+      "ja": "値上げ",
+      "gloss": "",
+      "example": {
+        "en": "Customers will receive an e-mail about the price increase next month.",
+        "ja": "顧客には来月の値上げについてメールが届く。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "HP Earnings: Memory Went From 15% to 40% of a PC's Parts Cost in a Year",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/25/hp-earnings-memory-went-from-15-to-40-of-a-pcs-parts-cost-in-a-year/",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "HP Q4 FY 2026: Premium PC Demand Offsets Falling Shipments",
+      "publisher": "Futurum Group",
+      "url": "https://futurumgroup.com/insights/hp-q4-fy-2026-premium-pc-demand-offsets-falling-shipments/",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Lenovo quarterly revenue soars 43% on AI infrastructure boom",
+      "publisher": "BusinessDay",
+      "url": "https://www.businessday.co.za/world/international-companies/2026-08-13-lenovo-quarterly-revenue-soars-43-on-ai-infrastructure-boom/",
+      "date": "2026-08-13"
+    },
+    {
+      "title": "Dell Technologies ups AI server shipment outlook amid strong Q3",
+      "publisher": "Constellation Research",
+      "url": "https://www.constellationr.com/blog-news/insights/dell-technologies-ups-ai-server-shipment-outlook-amid-strong-q3",
+      "date": "2025-11-25"
+    },
+    {
+      "title": "FMV 2026年冬モデル新製品を発表",
+      "publisher": "ORICON NEWS",
+      "url": "https://www.oricon.co.jp/pressrelease/3049498/",
+      "date": "2026-10-22"
+    }
+  ]
+}
