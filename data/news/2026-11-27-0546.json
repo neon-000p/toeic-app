@@ -492,5 +492,23 @@
       "url": "https://storeguide.proguide.co.jp/event/9561/",
       "date": ""
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-27-0546/00.mp3",
+      "audio/2026-11-27-0546/01.mp3",
+      "audio/2026-11-27-0546/02.mp3",
+      "audio/2026-11-27-0546/03.mp3",
+      "audio/2026-11-27-0546/04.mp3",
+      "audio/2026-11-27-0546/05.mp3",
+      "audio/2026-11-27-0546/06.mp3",
+      "audio/2026-11-27-0546/07.mp3",
+      "audio/2026-11-27-0546/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 267948,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-26T20:51:32.325Z",
+    "trimmed": true
+  }
 }
