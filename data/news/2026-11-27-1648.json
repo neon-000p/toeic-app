@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-27-1648",
+  "date": "2026-11-27",
+  "time": "16:48",
+  "createdAt": "2026-11-27T16:48:00+09:00",
+  "genre": "雇用・人事",
+  "genreEn": "Employment & HR",
+  "sample": false,
+  "title": {
+    "en": "SAP Considers Cutting at Least 10,000 Jobs in AI Shift",
+    "ja": "独SAP、AI転換で1万人超の削減を検討"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "German software company SAP is considering cutting at least 10,000 jobs as it rebuilds its business around artificial intelligence.",
+            "ja": "ドイツのソフトウェア大手SAPが、人工知能（AI）を軸に事業を立て直すなかで、少なくとも1万人の人員削減を検討している。"
+          },
+          {
+            "en": "The plan was first reported by Bloomberg on Thursday, based on people familiar with the matter.",
+            "ja": "この計画は、事情に詳しい関係者の話として、木曜日にブルームバーグが最初に報じた。"
+          },
+          {
+            "en": "The cuts would affect about 9% of its global workforce of more than 110,000 employees.",
+            "ja": "削減の対象は、11万人を超える全世界の従業員の約9%に及ぶ見通しだ。"
+          },
+          {
+            "en": "The company has asked every department to find areas to reduce, with product, engineering and sales as the main targets.",
+            "ja": "同社はすべての部門に削減できる分野を洗い出すよう求めており、製品・開発部門と営業部門が主な対象となっている。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The final number has not been decided yet and could change after talks with labor representatives.",
+            "ja": "最終的な人数はまだ決まっておらず、労働者側の代表との協議を経て変わる可能性がある。"
+          },
+          {
+            "en": "SAP declined to say whether any job cuts are planned.",
+            "ja": "SAPは、人員削減を予定しているかどうかについて明言を避けた。"
+          },
+          {
+            "en": "Its chief executive is pushing an \"AI-first\" strategy, which means putting AI at the center of every product.",
+            "ja": "同社の最高経営責任者（CEO）は「AIファースト」戦略を推し進めている。これは、すべての製品の中心にAIを据えるという意味だ。"
+          },
+          {
+            "en": "In July, the company limited new hiring mainly to AI roles.",
+            "ja": "同社は7月、新規採用を主にAI関連の職種に限定した。"
+          },
+          {
+            "en": "The move shows how large firms are shifting money and staff from traditional work to AI development.",
+            "ja": "今回の動きは、大企業が資金と人材を従来型の業務からAI開発へどのように移しているかを示している。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "About what share of SAP's global workforce would be affected by the cuts?",
+      "promptJa": "削減の対象になるのは、SAPの全世界の従業員のおよそ何割ですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 5%",
+          "ja": "約5%"
+        },
+        {
+          "key": "B",
+          "text": "About 9%",
+          "ja": "約9%"
+        },
+        {
+          "key": "C",
+          "text": "About 10%",
+          "ja": "約10%"
+        },
+        {
+          "key": "D",
+          "text": "About 11%",
+          "ja": "約11%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第1段落の第3文に The cuts would affect about 9% of its global workforce of more than 110,000 employees. とある。(C) 10% は、削減人数「10,000」の数字に引っ張られた誤答。(D) 11% は従業員数「110,000」の頭の数字を使った引っかけ。(A) 5% は本文に出てこない数字である。",
+      "evidence": {
+        "p": 0,
+        "s": 2
+      },
+      "tip": "数字を問う設問では、本文の「別の数字」（10,000 や 110,000）を少し変えた選択肢が必ず混ざる。何の数字か（人数か割合か）を確かめてから選ぶこと。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "According to the article, why could the final number of job cuts change?",
+      "promptJa": "記事によると、最終的な削減人数が変わる可能性があるのはなぜですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Because the company's sales fell sharply",
+          "ja": "売上が急減したから"
+        },
+        {
+          "key": "B",
+          "text": "Because of talks with labor representatives",
+          "ja": "労働者側代表との協議があるから"
+        },
+        {
+          "key": "C",
+          "text": "Because the chief executive plans to leave",
+          "ja": "CEOが退任する予定だから"
+        },
+        {
+          "key": "D",
+          "text": "Because new hiring will start again in July",
+          "ja": "7月に新規採用を再開するから"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落の第1文に The final number has not been decided yet and could change after talks with labor representatives. とあり、労働者側代表との協議の結果次第で人数が変わると読み取れる。(A) 売上の急減は本文にない情報。(C) CEO は AI-first 戦略を推し進めている人物として登場するだけで、退任の話はない。(D) 7月には採用を「AI関連職に限定した」のであって、再開するとは書かれておらず、本文と逆の内容である。",
+      "evidence": {
+        "p": 1,
+        "s": 0
+      },
+      "tip": "why を問う設問は、本文の could change after ... のような「条件・きっかけ」を示す表現の直後に答えがあることが多い。設問のキーワード（final number / change）を本文で探して、その文だけを丁寧に読む。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "familiar with",
+      "pos": "熟",
+      "ja": "〜をよく知っている、〜に詳しい",
+      "gloss": "",
+      "example": {
+        "en": "Our new manager is familiar with the accounting software.",
+        "ja": "新しいマネージャーはその会計ソフトに詳しい。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "workforce",
+      "pos": "名",
+      "ja": "全従業員、労働力",
+      "gloss": "",
+      "example": {
+        "en": "The company plans to expand its workforce by 15% next year.",
+        "ja": "その会社は来年、従業員を15%増やす計画だ。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "department",
+      "pos": "名",
+      "ja": "部門、部署",
+      "gloss": "",
+      "example": {
+        "en": "Please send your travel request to the human resources department.",
+        "ja": "出張申請は人事部に送ってください。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "reduce",
+      "pos": "動",
+      "ja": "減らす、削減する",
+      "gloss": "",
+      "example": {
+        "en": "We need to reduce shipping costs before the end of the quarter.",
+        "ja": "四半期末までに配送費を減らす必要がある。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "representative",
+      "pos": "名",
+      "ja": "代表者、担当者",
+      "gloss": "",
+      "example": {
+        "en": "A sales representative will contact you within two business days.",
+        "ja": "営業担当者が2営業日以内にご連絡します。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "decline",
+      "pos": "動",
+      "ja": "（丁寧に）断る、辞退する",
+      "gloss": "",
+      "example": {
+        "en": "The supplier declined to comment on the delay.",
+        "ja": "その納入業者は遅延についてコメントを控えた。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "strategy",
+      "pos": "名",
+      "ja": "戦略",
+      "gloss": "",
+      "example": {
+        "en": "The board approved a new marketing strategy for Asia.",
+        "ja": "取締役会はアジア向けの新しいマーケティング戦略を承認した。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "limit",
+      "pos": "動",
+      "ja": "制限する、限定する",
+      "gloss": "",
+      "example": {
+        "en": "The store limited each customer to two items during the sale.",
+        "ja": "その店はセール中、客1人あたり2点までに制限した。"
+      }
+    }
+  ],
+  "glossary": {
+    "considering": {
+      "lemma": "consider",
+      "pos": "動",
+      "ja": "検討する",
+      "note": "consider ＋ -ing で「〜することを検討する」"
+    },
+    "cutting": {
+      "lemma": "cut",
+      "pos": "動",
+      "ja": "削減する",
+      "note": ""
+    },
+    "rebuilds": {
+      "lemma": "rebuild",
+      "pos": "動",
+      "ja": "立て直す",
+      "note": ""
+    },
+    "artificial": {
+      "lemma": "artificial",
+      "pos": "形",
+      "ja": "人工の",
+      "note": "artificial intelligence＝人工知能（AI）"
+    },
+    "intelligence": {
+      "lemma": "intelligence",
+      "pos": "名",
+      "ja": "知能",
+      "note": ""
+    },
+    "reported": {
+      "lemma": "report",
+      "pos": "動",
+      "ja": "報じる",
+      "note": ""
+    },
+    "familiar": {
+      "lemma": "familiar",
+      "pos": "形",
+      "ja": "よく知っている",
+      "note": "familiar with ～＝～に詳しい"
+    },
+    "matter": {
+      "lemma": "matter",
+      "pos": "名",
+      "ja": "件、事柄",
+      "note": "people familiar with the matter＝事情に詳しい関係者"
+    },
+    "affect": {
+      "lemma": "affect",
+      "pos": "動",
+      "ja": "影響を与える",
+      "note": ""
+    },
+    "global": {
+      "lemma": "global",
+      "pos": "形",
+      "ja": "世界全体の",
+      "note": ""
+    },
+    "workforce": {
+      "lemma": "workforce",
+      "pos": "名",
+      "ja": "全従業員",
+      "note": ""
+    },
+    "employees": {
+      "lemma": "employee",
+      "pos": "名",
+      "ja": "従業員",
+      "note": ""
+    },
+    "department": {
+      "lemma": "department",
+      "pos": "名",
+      "ja": "部門",
+      "note": ""
+    },
+    "reduce": {
+      "lemma": "reduce",
+      "pos": "動",
+      "ja": "減らす",
+      "note": ""
+    },
+    "engineering": {
+      "lemma": "engineering",
+      "pos": "名",
+      "ja": "技術・開発部門",
+      "note": ""
+    },
+    "targets": {
+      "lemma": "target",
+      "pos": "名",
+      "ja": "対象",
+      "note": ""
+    },
+    "final": {
+      "lemma": "final",
+      "pos": "形",
+      "ja": "最終的な",
+      "note": ""
+    },
+    "decided": {
+      "lemma": "decide",
+      "pos": "動",
+      "ja": "決める",
+      "note": "has not been decided＝まだ決まっていない"
+    },
+    "labor": {
+      "lemma": "labor",
+      "pos": "名",
+      "ja": "労働者（側）",
+      "note": ""
+    },
+    "representatives": {
+      "lemma": "representative",
+      "pos": "名",
+      "ja": "代表者",
+      "note": ""
+    },
+    "declined": {
+      "lemma": "decline",
+      "pos": "動",
+      "ja": "断る、控える",
+      "note": "decline to do＝〜するのを断る"
+    },
+    "planned": {
+      "lemma": "plan",
+      "pos": "動",
+      "ja": "計画する",
+      "note": ""
+    },
+    "executive": {
+      "lemma": "executive",
+      "pos": "名",
+      "ja": "経営幹部",
+      "note": "chief executive＝最高経営責任者（CEO）"
+    },
+    "strategy": {
+      "lemma": "strategy",
+      "pos": "名",
+      "ja": "戦略",
+      "note": ""
+    },
+    "limited": {
+      "lemma": "limit",
+      "pos": "動",
+      "ja": "制限した",
+      "note": "limit A to B＝AをBに限定する"
+    },
+    "hiring": {
+      "lemma": "hiring",
+      "pos": "名",
+      "ja": "採用",
+      "note": ""
+    },
+    "roles": {
+      "lemma": "role",
+      "pos": "名",
+      "ja": "職務、役割",
+      "note": ""
+    },
+    "shifting": {
+      "lemma": "shift",
+      "pos": "動",
+      "ja": "移す",
+      "note": "shift A from B to C＝AをBからCへ移す"
+    },
+    "traditional": {
+      "lemma": "traditional",
+      "pos": "形",
+      "ja": "従来の",
+      "note": ""
+    },
+    "development": {
+      "lemma": "development",
+      "pos": "名",
+      "ja": "開発",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "現在完了の受動態（has not been＋過去分詞：まだ〜されていない）",
+    "quote": "The final number has not been decided yet and could change after talks with labor representatives.",
+    "quoteJa": "最終的な人数はまだ決まっておらず、労働者側の代表との協議を経て変わる可能性がある。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "前半の The final number has not been decided yet が現在完了の受動態。has been＋過去分詞（decided）で「（今までに）〜された」、否定の has not been decided で「（今の時点で）まだ決められていない」という意味になる。主語の the final number（最終的な人数）は「決める」側ではなく「決められる」側なので受動態になり、yet（まだ）と組み合わせて「決定に至っていない現状」を表す。後半の could change は「変わる可能性がある」という推量。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "能動態にすると They have not decided the final number yet.（彼らはまだ最終的な人数を決めていない）。誰が決めるかよりも「人数が未定であること」を伝えたいので、ニュースでは受動態が好まれる。過去形の受動態 The final number was not decided.（決められなかった）は過去の一時点の話になり、「今もまだ未定」というニュアンスが消える点に注意。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 では has (been) ------- の空所に、過去分詞（decided）か現在分詞（deciding）かを選ばせる問題が頻出。主語が「〜される」側なら been＋過去分詞を選ぶ。yet（否定文の文末）、already、recently、since などは現在完了の目印になる。Part 7 では has not been confirmed / has not been announced が「まだ確定していない情報」を示し、NOT 問題や推測問題の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "The date of the training session has not been confirmed yet.（研修の日程はまだ確定していません）／Your order has been shipped and will arrive on Monday.（ご注文の品は発送済みで、月曜日に到着予定です）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "独SAPが少なくとも1万人、世界の従業員約11万人の約9%に当たる削減を検討していると、ブルームバーグが11月26日に報じた。製品・開発と営業が主な対象で、人数は労働者側との協議で変わり得る。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "AIで定型業務が自動化されると、企業は浮いた人件費をAI開発に回そうとする。手段は主に3つ。人を減らす人員削減(headcount reduction)、別の部門へ人を移す配置転換(redeployment)、新しい人を採らない採用凍結(hiring freeze)だ。SAPは7月に採用をAI関連職へ絞っており、今回は今いる人員そのものを減らす段階に進む。"
+    },
+    {
+      "heading": "📌 3. 他社ではどうだったか",
+      "body": "セールスフォースは2025年9月、AIエージェントが顧客対応の約半分を担うようになったとして、サポート部門を約9,000人から約5,000人へ、4,000人減らしたと明らかにした。サポート費用は年初から17%下がり、一部の人員は営業へ移した。一方、クラーナは2024年、AIアシスタントが700人分の仕事をこなすとして採用凍結を続けたが、2025年5月に「コストを重視しすぎてサービスの質が落ちた」として、人の顧客対応係の採用を再開した。前者は削減と配置転換を組み合わせ、後者は減らしすぎて方針を戻した点が異なる。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "みずほフィナンシャルグループは2026年2月、国内の事務職約1万5,000人のうち、今後10年で最大5,000人分の業務をAIに置き換える方針を示した。書類確認やデータ入力を自動化する一方、「人員削減ではない」とし、浮いた人材は店舗営業などへ移す。解雇でなく配置転換で吸収する点が、SAPとは異なる。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "headcount reduction",
+      "pos": "熟",
+      "ja": "人員削減",
+      "gloss": "（＝会社が従業員の数を減らすこと）",
+      "example": {
+        "en": "The headcount reduction will be completed by March.",
+        "ja": "人員削減は3月までに完了する予定だ。"
+      }
+    },
+    {
+      "term": "redeployment",
+      "pos": "名",
+      "ja": "配置転換",
+      "gloss": "（＝社員を別の部署や仕事へ移すこと）",
+      "example": {
+        "en": "The redeployment of staff to the new branch starts next month.",
+        "ja": "新支店への社員の配置転換は来月始まる。"
+      }
+    },
+    {
+      "term": "hiring freeze",
+      "pos": "熟",
+      "ja": "採用凍結",
+      "gloss": "（＝一定期間、新しい社員を採らないこと）",
+      "example": {
+        "en": "Because of the hiring freeze, we cannot fill the open position.",
+        "ja": "採用凍結のため、空いているポストを埋められない。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "SAP Weighs Cutting at Least 10,000 Positions in AI Restructuring",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
+      "date": "2026-11-26"
+    },
+    {
+      "title": "German software major SAP weighs cutting at least 10,000 jobs in AI push: Bloomberg",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+      "date": "2026-11-27"
+    },
+    {
+      "title": "Salesforce CEO confirms 4,000 layoffs 'because I need less heads' with AI",
+      "publisher": "NBC News",
+      "url": "https://www.nbcnews.com/business/business-news/salesforce-ceo-confirms-4000-layoffs-need-less-heads-ai-rcna228703",
+      "date": "2025-09-02"
+    },
+    {
+      "title": "Klarna Turns From AI to Real Person Customer Service",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-05-08/klarna-turns-from-ai-to-real-person-customer-service",
+      "date": "2025-05-08"
+    },
+    {
+      "title": "Mizuho Plans to Replace 5,000 Clerical Jobs with AI in 10 Years",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-02-27/mizuho-plans-to-replace-5-000-clerical-jobs-with-ai-in-10-years",
+      "date": "2026-02-27"
+    }
+  ]
+}
