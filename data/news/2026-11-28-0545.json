@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-28-0545",
+  "date": "2026-11-28",
+  "time": "05:45",
+  "createdAt": "2026-11-28T05:45:00+09:00",
+  "genre": "物流",
+  "genreEn": "Logistics",
+  "sample": false,
+  "title": {
+    "en": "Container Shipping Rates Fall for an Eighth Week Across the Pacific",
+    "ja": "太平洋航路のコンテナ運賃、8週連続下落"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "The cost of shipping goods by container fell again this week, according to a weekly index from the research firm Drewry.",
+            "ja": "調査会社ドルーリーの週間指数によると、コンテナで貨物を運ぶ費用が今週も下がった。"
+          },
+          {
+            "en": "The index dropped 3% to $4,032 for one 40-foot container, the standard large steel box used on cargo ships.",
+            "ja": "指数は3%下落し、40フィートコンテナ1本あたり4,032ドルとなった。40フィートコンテナとは、貨物船で使われる標準的な大型の鉄製の箱のことだ。"
+          },
+          {
+            "en": "Prices on routes across the Pacific have now fallen for the eighth consecutive week.",
+            "ja": "太平洋を渡る航路の運賃は、これで8週連続の下落となった。"
+          },
+          {
+            "en": "The rate from Shanghai to the US West Coast decreased by 8% to $6,437.",
+            "ja": "上海から米西海岸までの運賃は8%下がり、6,437ドルとなった。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "The trend was different on routes to Europe.",
+            "ja": "欧州向けの航路では、動きが異なった。"
+          },
+          {
+            "en": "Rates from Shanghai to ports in the Mediterranean rose 8%, while rates to northern Europe stayed unchanged.",
+            "ja": "上海から地中海の港までの運賃は8%上昇した一方、北欧州向けの運賃は横ばいだった。"
+          },
+          {
+            "en": "Drewry expects prices across the Pacific to keep falling but rates to Europe to rise in December.",
+            "ja": "ドルーリーは、太平洋航路の運賃は今後も下がり続ける一方、欧州向けの運賃は12月に上昇すると予想している。"
+          },
+          {
+            "en": "Even after the recent declines, the index is still more than double its level a year ago.",
+            "ja": "最近の下落を経てもなお、指数は1年前の水準の2倍を超えている。"
+          },
+          {
+            "en": "For retailers and manufacturers that import goods, the weekly index is a key guide when they plan budgets and negotiate shipping contracts.",
+            "ja": "商品を輸入する小売業者やメーカーにとって、この週間指数は予算を立てたり輸送契約を交渉したりする際の重要な目安となる。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "By how much did the rate from Shanghai to the US West Coast decrease?",
+      "promptJa": "上海から米西海岸までの運賃は、どれだけ下がりましたか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "By 3%",
+          "ja": "3%"
+        },
+        {
+          "key": "B",
+          "text": "By 7%",
+          "ja": "7%"
+        },
+        {
+          "key": "C",
+          "text": "By 8%",
+          "ja": "8%"
+        },
+        {
+          "key": "D",
+          "text": "By 10%",
+          "ja": "10%"
+        }
+      ],
+      "answer": "C",
+      "explanation": "正解は (C)。第1段落の第4文に The rate from Shanghai to the US West Coast decreased by 8% to $6,437. とある。(A) 3% は指数全体（コンテナ1本あたり4,032ドル）の下落率で、航路別の数字ではない。(B) 7% と (D) 10% は本文に出てこない数字である。なお地中海向けの「8%」は上昇なので、数字は同じでも向きが逆になる点に注意。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "同じ記事に「3%」「8%」のような複数の割合が出るときは、設問の主語（どの航路の運賃か）と動詞（下がったのか上がったのか）を本文と照らし合わせてから選ぶ。"
+    },
+    {
+      "id": "q2",
+      "type": "not",
+      "prompt": "What is NOT mentioned about the shipping market in the article?",
+      "promptJa": "記事の中で、海運市場について述べられていないものはどれですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Rates to ports in the Mediterranean rose.",
+          "ja": "地中海の港向けの運賃が上がった"
+        },
+        {
+          "key": "B",
+          "text": "Rates to northern Europe did not change.",
+          "ja": "北欧州向けの運賃は変わらなかった"
+        },
+        {
+          "key": "C",
+          "text": "The index is more than double its level a year ago.",
+          "ja": "指数は1年前の2倍を超える"
+        },
+        {
+          "key": "D",
+          "text": "Shipping lines added more ships to Pacific routes.",
+          "ja": "船会社が太平洋航路に船を増やした"
+        }
+      ],
+      "answer": "D",
+      "explanation": "正解は (D)。船会社が太平洋航路に船を追加したという話は本文のどこにもない（本文にない情報）。(A) と (B) は第2段落の第2文 Rates from Shanghai to ports in the Mediterranean rose 8%, while rates to northern Europe stayed unchanged. に、(C) は第2段落の第4文 the index is still more than double its level a year ago に書かれている。(B) の did not change は本文の stayed unchanged の言い換えである。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "NOT 問題は、選択肢を1つずつ本文と照合して「書いてある」ものを消していく消去法が確実。本文の表現は stayed unchanged → did not change のように言い換えられて選択肢に出ることが多い。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "index",
+      "pos": "名",
+      "ja": "指数、指標",
+      "gloss": "（＝物価や費用の動きを数字で表したもの）",
+      "example": {
+        "en": "The consumer price index rose 0.3% last month.",
+        "ja": "先月、消費者物価指数は0.3%上昇した。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "standard",
+      "pos": "形",
+      "ja": "標準的な、一般的な",
+      "gloss": "",
+      "example": {
+        "en": "All new employees receive a standard laptop on their first day.",
+        "ja": "新入社員は全員、初日に標準仕様のノートPCを受け取る。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "consecutive",
+      "pos": "形",
+      "ja": "連続した",
+      "gloss": "",
+      "example": {
+        "en": "Sales at the store have grown for three consecutive months.",
+        "ja": "その店の売上は3か月連続で伸びている。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "decrease",
+      "pos": "動",
+      "ja": "減少する、下がる",
+      "gloss": "",
+      "example": {
+        "en": "The number of applicants decreased by 10% this year.",
+        "ja": "今年は応募者数が10%減少した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "unchanged",
+      "pos": "形",
+      "ja": "変わらない、横ばいの",
+      "gloss": "",
+      "example": {
+        "en": "The meeting schedule remains unchanged despite the holiday.",
+        "ja": "休日にもかかわらず、会議の予定は変わらない。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "decline",
+      "pos": "名",
+      "ja": "下落、減少",
+      "gloss": "",
+      "example": {
+        "en": "The company reported a decline in overseas orders.",
+        "ja": "その会社は海外受注の減少を報告した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "budget",
+      "pos": "名",
+      "ja": "予算",
+      "gloss": "",
+      "example": {
+        "en": "Please submit your travel budget by Friday.",
+        "ja": "出張予算を金曜日までに提出してください。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "negotiate",
+      "pos": "動",
+      "ja": "交渉する",
+      "gloss": "",
+      "example": {
+        "en": "We negotiated a lower price with the new supplier.",
+        "ja": "私たちは新しい仕入れ先と交渉して価格を下げてもらった。"
+      }
+    }
+  ],
+  "glossary": {
+    "shipping": {
+      "lemma": "shipping",
+      "pos": "名",
+      "ja": "輸送、海運",
+      "note": ""
+    },
+    "container": {
+      "lemma": "container",
+      "pos": "名",
+      "ja": "コンテナ",
+      "note": "海上輸送で荷物を詰める大きな鉄の箱"
+    },
+    "according": {
+      "lemma": "according to",
+      "pos": "前",
+      "ja": "〜によると",
+      "note": "according to ＋ 情報源"
+    },
+    "weekly": {
+      "lemma": "weekly",
+      "pos": "形",
+      "ja": "毎週の",
+      "note": ""
+    },
+    "index": {
+      "lemma": "index",
+      "pos": "名",
+      "ja": "指数",
+      "note": ""
+    },
+    "research": {
+      "lemma": "research",
+      "pos": "名",
+      "ja": "調査、研究",
+      "note": ""
+    },
+    "firm": {
+      "lemma": "firm",
+      "pos": "名",
+      "ja": "会社",
+      "note": ""
+    },
+    "dropped": {
+      "lemma": "drop",
+      "pos": "動",
+      "ja": "下がった",
+      "note": ""
+    },
+    "standard": {
+      "lemma": "standard",
+      "pos": "形",
+      "ja": "標準的な",
+      "note": ""
+    },
+    "steel": {
+      "lemma": "steel",
+      "pos": "名",
+      "ja": "鉄鋼",
+      "note": ""
+    },
+    "cargo": {
+      "lemma": "cargo",
+      "pos": "名",
+      "ja": "貨物、積み荷",
+      "note": ""
+    },
+    "routes": {
+      "lemma": "route",
+      "pos": "名",
+      "ja": "航路、路線",
+      "note": ""
+    },
+    "consecutive": {
+      "lemma": "consecutive",
+      "pos": "形",
+      "ja": "連続した",
+      "note": "for the eighth consecutive week＝8週連続で"
+    },
+    "rate": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "料金、運賃",
+      "note": ""
+    },
+    "rates": {
+      "lemma": "rate",
+      "pos": "名",
+      "ja": "料金、運賃",
+      "note": ""
+    },
+    "decreased": {
+      "lemma": "decrease",
+      "pos": "動",
+      "ja": "減少した",
+      "note": "decrease by 8%＝8%減る（by は差を表す）"
+    },
+    "trend": {
+      "lemma": "trend",
+      "pos": "名",
+      "ja": "傾向、動向",
+      "note": ""
+    },
+    "ports": {
+      "lemma": "port",
+      "pos": "名",
+      "ja": "港",
+      "note": ""
+    },
+    "unchanged": {
+      "lemma": "unchanged",
+      "pos": "形",
+      "ja": "変わらない",
+      "note": ""
+    },
+    "expects": {
+      "lemma": "expect",
+      "pos": "動",
+      "ja": "予想する",
+      "note": "expect A to do＝Aが〜すると予想する"
+    },
+    "declines": {
+      "lemma": "decline",
+      "pos": "名",
+      "ja": "下落",
+      "note": ""
+    },
+    "level": {
+      "lemma": "level",
+      "pos": "名",
+      "ja": "水準",
+      "note": ""
+    },
+    "double": {
+      "lemma": "double",
+      "pos": "形",
+      "ja": "2倍の",
+      "note": "more than double＝2倍を超える"
+    },
+    "retailers": {
+      "lemma": "retailer",
+      "pos": "名",
+      "ja": "小売業者",
+      "note": ""
+    },
+    "manufacturers": {
+      "lemma": "manufacturer",
+      "pos": "名",
+      "ja": "製造業者、メーカー",
+      "note": ""
+    },
+    "import": {
+      "lemma": "import",
+      "pos": "動",
+      "ja": "輸入する",
+      "note": ""
+    },
+    "guide": {
+      "lemma": "guide",
+      "pos": "名",
+      "ja": "目安、指針",
+      "note": ""
+    },
+    "budgets": {
+      "lemma": "budget",
+      "pos": "名",
+      "ja": "予算",
+      "note": ""
+    },
+    "negotiate": {
+      "lemma": "negotiate",
+      "pos": "動",
+      "ja": "交渉する",
+      "note": ""
+    },
+    "contracts": {
+      "lemma": "contract",
+      "pos": "名",
+      "ja": "契約",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "序数＋consecutive＋名詞（for the eighth consecutive week：8週連続で）",
+    "quote": "Prices on routes across the Pacific have now fallen for the eighth consecutive week.",
+    "quoteJa": "太平洋を渡る航路の運賃は、これで8週連続の下落となった。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "for the ＋序数（eighth）＋ consecutive ＋ 単数名詞（week）で「〜回（〜期）連続で」を表す。consecutive は「切れ目なく続く」という意味の形容詞。序数を使うので、名詞は weeks ではなく単数の week になり、冠詞は the が付く。動詞は have now fallen の現在完了で、「今週の時点で8週目の下落に達した」という継続・結果の意味を持つ。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "同じ意味は for eight consecutive weeks（基数＋複数名詞・冠詞なし）や for eight weeks in a row でも言える。for the eighth consecutive weeks（序数なのに複数形）や for eight consecutive week（基数なのに単数形）はどちらも誤り。序数なら the＋単数、基数なら複数、とセットで覚える。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 では for the third ------- year の空所に consecutive / continuous / constant などを選ばせる語彙問題が出る。「途切れずに連続する回数」を数えるときは consecutive が定番。Part 7 では決算発表や業界レポートで for the fifth consecutive quarter（5四半期連続で）のように使われ、「何回連続か」を問う数字の設問の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネス文書での応用",
+        "body": "Our branch has met its sales target for the third consecutive month.（当支店は3か月連続で売上目標を達成しました）／The factory has operated without an accident for 500 consecutive days.（その工場は500日連続で無事故を続けています）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "英調査会社ドルーリーの世界コンテナ運賃指数は11月26日、40フィート1本あたり4,032ドルと前週比3%下がった。太平洋航路は8週連続の下落で、上海―米西海岸は8%安。上海―地中海は8%上がり、指数は前年の2倍超を保つ。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "コンテナの運賃(freight rate)は、運びたい荷物の量と使える船のスペースの釣り合いで決まる。米国向けの荷動きが落ち着くと船の空きが増え、運賃は下がる。船会社は値崩れを防ぐため、予定していた航海を取りやめる欠航(blank sailing)で供給を絞ることが多い。航路ごとに釣り合いが違えば、今回のように動きも分かれる。"
+    },
+    {
+      "heading": "📌 3. 海外の船会社では",
+      "body": "デンマークのマースクは2026年11月5日、今年3回目の上方修正で通期の基礎的な営業利益の見通しを45億〜65億ドルから80億〜85億ドルへ引き上げた。ただ増益は荷物の量でなく運賃の高さによるもので、四半期利益が市場予想に届かず株価は11%下げた。独ハパックロイドも同じ四半期に見通しを引き上げた。平均運賃は1TEU（20フィートコンテナ1本分）あたり1,808ドルと前年比28%上がったが、輸送量はほぼ横ばいだった。マースクは上方修正が株高につながらず、ハパックロイドは量が増えないまま運賃だけで利益を伸ばした点が違う。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "日本郵船など日本の海運大手3社がコンテナ船事業を統合した合弁会社(joint venture)のONEは11月4日、通期の純利益見通しを9億ドルから20億ドルへ引き上げた。今期2回目の上方修正で、中東の海峡をめぐる今の状況が年度末まで続くことを前提にしている。太平洋航路の運賃が下がり続ければ、出資する3社の業績もこの前提の見直しを迫られる。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "freight rate",
+      "pos": "名",
+      "ja": "運賃",
+      "gloss": "（＝荷物を運んでもらうときに払う料金のこと）",
+      "example": {
+        "en": "The supplier raised its freight rate by 5% this month.",
+        "ja": "その仕入れ先は今月、運賃を5%引き上げた。"
+      }
+    },
+    {
+      "term": "blank sailing",
+      "pos": "名",
+      "ja": "欠航（予定航海の取りやめ）",
+      "gloss": "（＝船会社が予定していた便を取りやめること）",
+      "example": {
+        "en": "The carrier announced a blank sailing for next week due to low demand.",
+        "ja": "その船会社は需要が少ないため、来週の便を欠航にすると発表した。"
+      }
+    },
+    {
+      "term": "joint venture",
+      "pos": "名",
+      "ja": "合弁会社",
+      "gloss": "（＝複数の会社が共同で出資してつくる会社のこと）",
+      "example": {
+        "en": "The two companies formed a joint venture to sell electric cars in Asia.",
+        "ja": "その2社はアジアで電気自動車を売るために合弁会社を設立した。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "World Container Index - 26 Nov",
+      "publisher": "Drewry",
+      "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry",
+      "date": "2026-11-26"
+    },
+    {
+      "title": "Drewry: The World Container Index decreased 3% this week 48-2026",
+      "publisher": "Shipping Telegraph",
+      "url": "https://shippingtelegraph.com/freight-news/drewry-the-world-container-index-decreased-3-this-week-48-2026/",
+      "date": "2026-11-26"
+    },
+    {
+      "title": "Maersk shares fall despite third profit guidance raise in 2026",
+      "publisher": "Baird Maritime",
+      "url": "https://www.bairdmaritime.com/shipping/boxships/maersk-shares-fall-despite-third-profit-guidance-raise-in-2026",
+      "date": "2026-11"
+    },
+    {
+      "title": "Hapag-Lloyd's third quarter EBITDA rises to US$1.7 billion",
+      "publisher": "FreshPlaza",
+      "url": "https://www.freshplaza.com/europe/article/9892046/hapag-lloyd-s-third-quarter-ebitda-rises-to-us-1-7-billion/",
+      "date": "2026-11"
+    },
+    {
+      "title": "ONE lifts profit forecast to $2 billion as earnings surge",
+      "publisher": "FreightWaves",
+      "url": "https://freightwaves.com/news/one-lifts-profit-forecast-to-2-billion-as-earnings-surge",
+      "date": "2026-11"
+    }
+  ]
+}
