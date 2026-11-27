@@ -510,5 +510,23 @@
       "url": "https://www.bloomberg.com/news/articles/2026-02-27/mizuho-plans-to-replace-5-000-clerical-jobs-with-ai-in-10-years",
       "date": "2026-02-27"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-27-1648/00.mp3",
+      "audio/2026-11-27-1648/01.mp3",
+      "audio/2026-11-27-1648/02.mp3",
+      "audio/2026-11-27-1648/03.mp3",
+      "audio/2026-11-27-1648/04.mp3",
+      "audio/2026-11-27-1648/05.mp3",
+      "audio/2026-11-27-1648/06.mp3",
+      "audio/2026-11-27-1648/07.mp3",
+      "audio/2026-11-27-1648/08.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 234540,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-27T07:51:27.550Z",
+    "trimmed": true
+  }
 }
