@@ -508,5 +508,24 @@
       "url": "https://www.heavyquipmag.com/2026/06/18/kobelco-takes-remote-controlled-excavation-to-ukraine-as-debris-removal-safety-comes-into-focus/",
       "date": "2026-06-18"
     }
-  ]
+  ],
+  "audio": {
+    "lines": [
+      "audio/2026-11-28-1646/00.mp3",
+      "audio/2026-11-28-1646/01.mp3",
+      "audio/2026-11-28-1646/02.mp3",
+      "audio/2026-11-28-1646/03.mp3",
+      "audio/2026-11-28-1646/04.mp3",
+      "audio/2026-11-28-1646/05.mp3",
+      "audio/2026-11-28-1646/06.mp3",
+      "audio/2026-11-28-1646/07.mp3",
+      "audio/2026-11-28-1646/08.mp3",
+      "audio/2026-11-28-1646/09.mp3"
+    ],
+    "voice": "Leda",
+    "bytes": 231128,
+    "model": "gemini-3.1-flash-tts-preview",
+    "madeAt": "2026-11-28T07:53:27.793Z",
+    "trimmed": true
+  }
 }
