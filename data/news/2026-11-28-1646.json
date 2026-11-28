@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "type": "news",
+  "id": "2026-11-28-1646",
+  "date": "2026-11-28",
+  "time": "16:46",
+  "createdAt": "2026-11-28T16:46:00+09:00",
+  "genre": "地政学",
+  "genreEn": "Geopolitics",
+  "sample": false,
+  "title": {
+    "en": "EU Leaders End Budget Summit Without a Deal",
+    "ja": "EU首脳会議、長期予算で合意できず閉幕"
+  },
+  "summary": {
+    "paragraphs": [
+      {
+        "role": "what",
+        "sentences": [
+          {
+            "en": "Leaders of the European Union failed to agree on a new long-term budget at a special summit this week.",
+            "ja": "欧州連合（EU）の首脳は今週の臨時首脳会議で、新たな長期予算について合意できなかった。"
+          },
+          {
+            "en": "The talks lasted more than 12 hours and ended shortly after midnight on November 27.",
+            "ja": "協議は12時間を超え、11月27日の午前0時過ぎに終わった。"
+          },
+          {
+            "en": "The budget would cover 2028 to 2034.",
+            "ja": "この予算は2028年から2034年までを対象とする。"
+          },
+          {
+            "en": "They also failed to approve a new loan of 45 billion euros for Ukraine, although 24 of the 27 member states supported it.",
+            "ja": "首脳らはウクライナ向けの450億ユーロの新たな融資も承認できなかった。27の加盟国のうち24か国は支持していた。"
+          }
+        ]
+      },
+      {
+        "role": "why",
+        "sentences": [
+          {
+            "en": "Neither the budget nor the loan can move forward without the support of every member state.",
+            "ja": "予算も融資も、すべての加盟国の支持がなければ前に進めることができない。"
+          },
+          {
+            "en": "The European Commission proposed nearly 2 trillion euros, but several wealthier countries said the amount was too high.",
+            "ja": "欧州委員会は2兆ユーロ近くを提案したが、比較的豊かな複数の国が金額が大きすぎると主張した。"
+          },
+          {
+            "en": "They want deeper cuts.",
+            "ja": "これらの国は、さらに踏み込んだ削減を求めている。"
+          },
+          {
+            "en": "The loan would help Ukraine pay for its economic and military needs next year.",
+            "ja": "この融資は、ウクライナが来年の経済面・軍事面で必要な費用を賄う助けになる。"
+          },
+          {
+            "en": "Leaders will meet again on December 17 and 18 to try to reach a deal.",
+            "ja": "首脳らは合意を目指し、12月17日と18日に再び会合を開く。"
+          },
+          {
+            "en": "Officials say a deal is needed this year so EU funds can start on time in 2028.",
+            "ja": "当局者によると、EUの資金を2028年に予定どおり出し始めるには、年内の合意が必要だという。"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "detail",
+      "prompt": "How many member states supported the new loan for Ukraine?",
+      "promptJa": "ウクライナ向けの新たな融資を支持した加盟国はいくつですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "12",
+          "ja": "12か国"
+        },
+        {
+          "key": "B",
+          "text": "24",
+          "ja": "24か国"
+        },
+        {
+          "key": "C",
+          "text": "27",
+          "ja": "27か国"
+        },
+        {
+          "key": "D",
+          "text": "45",
+          "ja": "45か国"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第1段落の最後の文に \"24 of the 27 member states supported it\" とあり、融資を支持したのは24か国。(A) 12 は協議時間の「12 hours」を使った引っかけ。(C) 27 は加盟国の総数で、全会一致が得られなかったからこそ融資は承認されていない。(D) 45 は融資額「45 billion euros」の数字で、国の数ではない。",
+      "evidence": {
+        "p": 0,
+        "s": 3
+      },
+      "tip": "数字を問う設問では、本文に出てくる複数の数字（時間・金額・国の数）がそのまま誤答に使われる。設問の名詞（member states）と同じ語の直前の数字を探すこと。"
+    },
+    {
+      "id": "q2",
+      "type": "reason",
+      "prompt": "Why did several wealthier countries object to the European Commission's proposal?",
+      "promptJa": "比較的豊かな複数の国が欧州委員会の提案に反対したのはなぜですか。",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They wanted more money for Ukraine.",
+          "ja": "ウクライナ向けの資金を増やしたかった"
+        },
+        {
+          "key": "B",
+          "text": "They thought the total amount was too high.",
+          "ja": "総額が大きすぎると考えた"
+        },
+        {
+          "key": "C",
+          "text": "They wanted the budget to start in 2027.",
+          "ja": "予算を2027年に始めたかった"
+        },
+        {
+          "key": "D",
+          "text": "They did not want to meet in December.",
+          "ja": "12月に会合したくなかった"
+        }
+      ],
+      "answer": "B",
+      "explanation": "正解は (B)。第2段落2文目に \"several wealthier countries said the amount was too high\" とあり、続く文でも \"They want deeper cuts\" と削減を求めている。(A) は本文と逆方向で、これらの国は支出を減らしたい側。(C) 予算は2028〜2034年が対象で、2027年開始の話は本文にない（2027年は融資を使う「来年」）。(D) 12月17〜18日に再び会合すると書かれており、会合を拒んだという記述はない。",
+      "evidence": {
+        "p": 1,
+        "s": 1
+      },
+      "tip": "理由を問う設問は、本文の said / because / too high などの表現を言い換えた選択肢が正解になりやすい。the amount was too high → the total amount was too high のような言い換えに注目する。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "no": 1,
+      "term": "long-term",
+      "pos": "形",
+      "ja": "長期の",
+      "gloss": "",
+      "example": {
+        "en": "The company signed a long-term contract with its main supplier.",
+        "ja": "その会社は主要な仕入れ先と長期契約を結んだ。"
+      }
+    },
+    {
+      "no": 2,
+      "term": "summit",
+      "pos": "名",
+      "ja": "首脳会議、サミット",
+      "gloss": "（＝国のトップどうしが集まる会議のこと）",
+      "example": {
+        "en": "The CEOs of five companies met at a business summit in Tokyo.",
+        "ja": "5社の最高経営責任者が東京のビジネスサミットで顔を合わせた。"
+      }
+    },
+    {
+      "no": 3,
+      "term": "approve",
+      "pos": "動",
+      "ja": "承認する",
+      "gloss": "",
+      "example": {
+        "en": "The manager approved my request for two days off.",
+        "ja": "部長は私の2日間の休暇申請を承認した。"
+      }
+    },
+    {
+      "no": 4,
+      "term": "loan",
+      "pos": "名",
+      "ja": "融資、貸付金",
+      "gloss": "",
+      "example": {
+        "en": "The bank offered the small business a loan to buy new equipment.",
+        "ja": "銀行はその小さな会社に新しい設備を買うための融資を提示した。"
+      }
+    },
+    {
+      "no": 5,
+      "term": "member state",
+      "pos": "熟",
+      "ja": "加盟国",
+      "gloss": "（＝EUや国連などの組織に加わっている国のこと）",
+      "example": {
+        "en": "Each member state sends one representative to the meeting.",
+        "ja": "各加盟国は会合に代表を1人送る。"
+      }
+    },
+    {
+      "no": 6,
+      "term": "propose",
+      "pos": "動",
+      "ja": "提案する",
+      "gloss": "",
+      "example": {
+        "en": "She proposed a new schedule for the product launch.",
+        "ja": "彼女は製品発売の新しいスケジュールを提案した。"
+      }
+    },
+    {
+      "no": 7,
+      "term": "cut",
+      "pos": "名・動",
+      "ja": "削減（する）",
+      "gloss": "",
+      "example": {
+        "en": "The department had to make cuts to its travel budget.",
+        "ja": "その部署は出張予算を削減しなければならなかった。"
+      }
+    },
+    {
+      "no": 8,
+      "term": "move forward",
+      "pos": "熟",
+      "ja": "前に進む、進展する",
+      "gloss": "",
+      "example": {
+        "en": "The project can move forward once the client signs the contract.",
+        "ja": "顧客が契約に署名すれば、その計画は前に進められる。"
+      }
+    }
+  ],
+  "glossary": {
+    "leaders": {
+      "lemma": "leader",
+      "pos": "名",
+      "ja": "指導者、首脳",
+      "note": ""
+    },
+    "failed": {
+      "lemma": "fail",
+      "pos": "動",
+      "ja": "〜できなかった",
+      "note": "fail to do＝〜し損なう"
+    },
+    "agree": {
+      "lemma": "agree",
+      "pos": "動",
+      "ja": "合意する",
+      "note": "agree on＋事柄＝〜について合意する"
+    },
+    "long-term": {
+      "lemma": "long-term",
+      "pos": "形",
+      "ja": "長期の",
+      "note": ""
+    },
+    "budget": {
+      "lemma": "budget",
+      "pos": "名",
+      "ja": "予算",
+      "note": ""
+    },
+    "special": {
+      "lemma": "special",
+      "pos": "形",
+      "ja": "臨時の、特別の",
+      "note": ""
+    },
+    "summit": {
+      "lemma": "summit",
+      "pos": "名",
+      "ja": "首脳会議",
+      "note": ""
+    },
+    "lasted": {
+      "lemma": "last",
+      "pos": "動",
+      "ja": "続いた",
+      "note": "last＝（期間が）続く"
+    },
+    "shortly": {
+      "lemma": "shortly",
+      "pos": "副",
+      "ja": "まもなく、少し",
+      "note": "shortly after＝〜の直後に"
+    },
+    "midnight": {
+      "lemma": "midnight",
+      "pos": "名",
+      "ja": "午前0時",
+      "note": ""
+    },
+    "proposed": {
+      "lemma": "propose",
+      "pos": "動",
+      "ja": "提案した",
+      "note": ""
+    },
+    "cover": {
+      "lemma": "cover",
+      "pos": "動",
+      "ja": "対象とする",
+      "note": ""
+    },
+    "approve": {
+      "lemma": "approve",
+      "pos": "動",
+      "ja": "承認する",
+      "note": ""
+    },
+    "loan": {
+      "lemma": "loan",
+      "pos": "名",
+      "ja": "融資",
+      "note": ""
+    },
+    "although": {
+      "lemma": "although",
+      "pos": "接",
+      "ja": "〜だけれども",
+      "note": ""
+    },
+    "member": {
+      "lemma": "member",
+      "pos": "名",
+      "ja": "加盟、一員",
+      "note": "member state＝加盟国"
+    },
+    "states": {
+      "lemma": "state",
+      "pos": "名",
+      "ja": "国家",
+      "note": ""
+    },
+    "supported": {
+      "lemma": "support",
+      "pos": "動",
+      "ja": "支持した",
+      "note": ""
+    },
+    "neither": {
+      "lemma": "neither",
+      "pos": "接",
+      "ja": "〜も…もない",
+      "note": "neither A nor B＝AもBも〜ない"
+    },
+    "forward": {
+      "lemma": "move forward",
+      "pos": "熟",
+      "ja": "前に進む",
+      "note": "move forward＝進展する"
+    },
+    "commission": {
+      "lemma": "commission",
+      "pos": "名",
+      "ja": "委員会",
+      "note": "European Commission＝欧州委員会"
+    },
+    "wealthier": {
+      "lemma": "wealthy",
+      "pos": "形",
+      "ja": "より豊かな",
+      "note": "wealthy の比較級"
+    },
+    "amount": {
+      "lemma": "amount",
+      "pos": "名",
+      "ja": "金額、量",
+      "note": ""
+    },
+    "deeper": {
+      "lemma": "deep",
+      "pos": "形",
+      "ja": "より大幅な",
+      "note": "deep cuts＝大幅な削減"
+    },
+    "cuts": {
+      "lemma": "cut",
+      "pos": "名",
+      "ja": "削減",
+      "note": ""
+    },
+    "military": {
+      "lemma": "military",
+      "pos": "形",
+      "ja": "軍事の",
+      "note": ""
+    },
+    "deal": {
+      "lemma": "deal",
+      "pos": "名",
+      "ja": "合意、取引",
+      "note": "reach a deal＝合意に達する"
+    },
+    "officials": {
+      "lemma": "official",
+      "pos": "名",
+      "ja": "当局者、担当者",
+      "note": ""
+    },
+    "funds": {
+      "lemma": "fund",
+      "pos": "名",
+      "ja": "資金",
+      "note": ""
+    }
+  },
+  "grammar": {
+    "topic": "相関接続詞 neither A nor B（AもBも〜ない）",
+    "quote": "Neither the budget nor the loan can move forward without the support of every member state.",
+    "quoteJa": "予算も融資も、すべての加盟国の支持がなければ前に進めることができない。",
+    "blocks": [
+      {
+        "heading": "構文",
+        "body": "neither A nor B は「AもBも〜ない」と、2つをまとめて否定する相関接続詞。A と B には同じ種類の語句（ここでは the budget と the loan という名詞）を置く。文自体に not は付けず、neither と nor が否定の働きをする。"
+      },
+      {
+        "heading": "書き換え・比較",
+        "body": "同じ意味は The budget cannot move forward, and the loan cannot either. や Both the budget and the loan cannot move forward without ... とも言えるが、後者は「両方とも〜というわけではない（部分否定）」と誤解されやすい。肯定の形は either A or B（AかBのどちらか）、both A and B（AもBも両方）。主語になる場合、動詞は nor の後ろの B に合わせる：Neither the manager nor the staff members were informed.（B が複数なので were）。"
+      },
+      {
+        "heading": "TOEICでの出題",
+        "body": "Part 5 では、Neither の後ろの空所に nor を選ばせる「ペア」の問題が定番（either … or／both … and／not only … but also と混ぜて出る）。Neither を見たら nor、Either を見たら or を探す。動詞の数の一致（B に合わせる）を問う問題もある。Part 7 では「どちらも〜ない」を言い換えた NOT 問題の根拠になりやすい。"
+      },
+      {
+        "heading": "ビジネスでの応用",
+        "body": "Neither the sales team nor the marketing team has received the updated price list.（営業チームもマーケティングチームも、新しい価格表をまだ受け取っていない。）／ We can accept neither the delivery date nor the price in your proposal.（ご提案の納期も価格も、当社としては受け入れられません。）"
+      }
+    ]
+  },
+  "background": [
+    {
+      "heading": "📌 1. 何が起きたのか",
+      "body": "11月26日にブリュッセルで開かれたEU臨時首脳会議は、12時間を超える協議の末、27日未明に合意なしで終わった。2028〜2034年の長期予算に加え、24か国が支持したウクライナ向け450億ユーロの融資も決まらず、12月17〜18日の首脳会議に持ち越された。"
+    },
+    {
+      "heading": "📌 2. 仕組み・用語",
+      "body": "EUの長期予算は7年単位の多年度財政枠組み(multiannual financial framework)で、成立には27か国すべての賛成が要る。受け取る補助金より多くを払う純拠出国(net contributor)は総額を抑えたがり、1か国でも拒否権(veto)を使えば決まらない。年内に合意できないと、2028年1月から資金を出すための法整備が間に合わなくなる。"
+    },
+    {
+      "heading": "📌 3. 過去の予算交渉では",
+      "body": "2020年7月の臨時首脳会議は4日4晩に及んだが、2021〜2027年の長期予算1兆743億ユーロと7,500億ユーロのコロナ復興基金でまとまり、欧州委員会が市場から最大7,500億ユーロを借り入れる仕組みも決まった。一方、2023年12月にはハンガリーがウクライナ向け500億ユーロの支援に拒否権を使い、27か国の合意は翌2024年2月の首脳会議までずれ込んだ。前者は長い協議で一度にまとめ、後者は1か国の反対で決定が約1か月半遅れた。"
+    },
+    {
+      "heading": "📌 4. 日本企業では",
+      "body": "ウクライナの復興工事には日本企業も加わっている。コベルコ建機は国連開発計画と覚書を結び、遠隔操作システム「K-DIVE」でがれきを撤去する試験を2026年10月に始めた。ソリトンシステムズも2026年6月に国連開発計画との提携を発表し、現地の複数のLTE回線を束ねて重機を遠くから動かす技術を持ち込む。同社は2025年10月にキーウで実演を済ませている。"
+    }
+  ],
+  "keywords": [
+    {
+      "term": "multiannual financial framework",
+      "pos": "名",
+      "ja": "多年度財政枠組み",
+      "gloss": "（＝EUが7年ごとに決める長期予算の枠組みのこと）",
+      "example": {
+        "en": "The new multiannual financial framework will start in 2028.",
+        "ja": "新しい多年度財政枠組みは2028年に始まる。"
+      }
+    },
+    {
+      "term": "net contributor",
+      "pos": "名",
+      "ja": "純拠出国",
+      "gloss": "（＝受け取る額より多くのお金を出している国のこと）",
+      "example": {
+        "en": "As a net contributor, the country pays more than it receives.",
+        "ja": "純拠出国として、その国は受け取る額より多く支払っている。"
+      }
+    },
+    {
+      "term": "veto",
+      "pos": "名・動",
+      "ja": "拒否権（を行使する）",
+      "gloss": "（＝1人・1か国の反対で決定を止められる権利のこと）",
+      "example": {
+        "en": "The board chair can veto any plan that goes over budget.",
+        "ja": "取締役会の議長は、予算を超える計画に拒否権を使える。"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "EU leaders split over budget spending and a $49 billion loan to Ukraine",
+      "publisher": "AP (The Hill)",
+      "url": "https://thehill.com/homenews/ap/ap-international/ap-eu-leaders-split-over-budget-spending-and-a-49-billion-loan-to-ukraine/",
+      "date": "2026-11-27"
+    },
+    {
+      "title": "EU leaders struggle to agree on long-term budget, $49bn Ukraine loan",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2026/11/26/eu-leaders-struggle-to-agree-on-long-term-budget-more-money-for-ukraine",
+      "date": "2026-11-26"
+    },
+    {
+      "title": "Special European Council, 17-21 July 2020",
+      "publisher": "EEAS",
+      "url": "https://www.eeas.europa.eu/delegations/japan/special-european-council-17-21-july-2020_en",
+      "date": "2020-07-21"
+    },
+    {
+      "title": "Hungary blocks $54bn EU financial aid for Ukraine",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/amp/news/2023/12/15/hungary-blocks-54bn-eu-financial-aid-for-ukraine",
+      "date": "2023-12-15"
+    },
+    {
+      "title": "Kobelco Takes Remote-Controlled Excavation to Ukraine as Debris Removal Safety Comes Into Focus",
+      "publisher": "HeavyQuip Magazine",
+      "url": "https://www.heavyquipmag.com/2026/06/18/kobelco-takes-remote-controlled-excavation-to-ukraine-as-debris-removal-safety-comes-into-focus/",
+      "date": "2026-06-18"
+    }
+  ]
+}
